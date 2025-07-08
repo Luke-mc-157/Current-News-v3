@@ -2,7 +2,7 @@
 // server/services/xSearch.js
 import axios from "axios";
 
-async function fetchXPosts(topics) {
+export async function fetchXPosts(topics) {
   const XAI_API_KEY = process.env.XAI_API_KEY;
   if (!XAI_API_KEY) {
     throw new Error("XAI_API_KEY is not set in Replit Secrets");
@@ -52,5 +52,3 @@ async function fetchXPosts(topics) {
 
   return results;
 }
-
-module.exports = { fetchXPosts };
