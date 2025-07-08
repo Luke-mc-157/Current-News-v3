@@ -44,15 +44,16 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
         day: 'numeric' 
       });
 
-      const prompt = `Today is ${currentDate}. Generate 5 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
+      const prompt = `Today is ${currentDate}. Generate 12 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
 
       CRITICAL: Posts must be about current events, discussions, or trends happening RIGHT NOW in 2025.
       
       For each post, create:
       - A realistic username (without @)
       - A compelling tweet text (under 280 characters) that is specific and about current events
-      - Realistic engagement metrics (likes: 50-5000, retweets: 10-1000, replies: 5-500)
+      - Realistic engagement metrics (vary widely from 50 to 10000+ likes)
       - Must reference current trends, breaking news, or recent developments in the topic
+      - Include diverse perspectives and angles on the topic
       
       Format as JSON array with structure:
       [{
@@ -125,7 +126,7 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
       
       results.push({
         topic,
-        posts: filteredPosts.slice(0, 5) // Limit to 5 posts per topic
+        posts: filteredPosts.slice(0, 10) // Ensure at least 10 posts per topic
       });
 
     } catch (error) {

@@ -32,7 +32,34 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
     });
   }
 
-  return organizedResults;
+  // Sort results by engagement level (highest to lowest)
+  // Extract numeric engagement from posts and sort
+  const sortedResults = organizedResults.sort((a, b) => {
+    const engagementA = extractTotalEngagement(a.sourcePosts);
+    const engagementB = extractTotalEngagement(b.sourcePosts);
+    return engagementB - engagementA;
+  });
+  
+  return sortedResults;
+}
+
+function extractTotalEngagement(sourcePosts: Array<{ text: string; url: string }>): number {
+  let totalEngagement = 0;
+  
+  for (const post of sourcePosts) {
+    // Extract likes from format "@username: text (X likes)"
+    const likesMatch = post.text.match(/\((\d+)\s*likes/i);
+    const retweetsMatch = post.text.match(/(\d+)\s*retweets?/i);
+    
+    if (likesMatch) {
+      totalEngagement += parseInt(likesMatch[1]);
+    }
+    if (retweetsMatch) {
+      totalEngagement += parseInt(retweetsMatch[1]) * 2; // Weight retweets more
+    }
+  }
+  
+  return totalEngagement;
 }
 
 function determineCategory(topic: string): string {

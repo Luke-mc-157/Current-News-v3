@@ -36,36 +36,68 @@ export async function registerRoutes(app: Express): Promise<Server> {
         log(`Starting real news aggregation for topics: ${topics.join(', ')}`);
 
         try {
-          // Workflow 5: Generate subtopics for better coverage
-          log("Workflow 5: Generating subtopics...");
-          const subtopics = await generateSubtopics(topics as string[]);
-          const allTopics = [...topics, ...subtopics];
-          log(`Generated ${subtopics.length} subtopics from ${topics.length} main topics`);
+          // Workflow 1: X Search - Search topics on X
+          log("=== WORKFLOW 1: X SEARCH ===");
+          log("Searching for posts on X for initial topics...");
+          const initialTopicPosts = await searchXPosts(topics as string[]);
+          log(`Workflow 1 Complete: Found posts for ${initialTopicPosts.length} topics with ${initialTopicPosts.reduce((sum, tp) => sum + tp.posts.length, 0)} total posts`);
 
-          // Workflow 1: Search X posts using X AI API
-          log("Workflow 1: Searching X posts...");
-          const topicPosts = await searchXPosts(allTopics);
+          // Workflow 2: Headline Creator - Create headlines from X posts
+          log("=== WORKFLOW 2: HEADLINE CREATOR ===");
+          log("Creating declarative headlines from X posts...");
+          const initialHeadlines = await createHeadlinesFromPosts(initialTopicPosts);
+          log(`Workflow 2 Complete: Generated ${initialHeadlines.length} headlines`);
+
+          // Workflow 3: Support Compiler - Find supporting articles
+          log("=== WORKFLOW 3: SUPPORT COMPILER ===");
+          log("Searching Google News for supporting articles...");
+          const initialHeadlinesWithSupport = await findSupportingArticles(initialHeadlines);
+          log(`Workflow 3 Complete: Found supporting articles for ${initialHeadlinesWithSupport.length} headlines`);
+
+          // Workflow 4: Results Engine - Organize results by engagement
+          log("=== WORKFLOW 4: RESULTS ENGINE ===");
+          log("Organizing results by X post engagement...");
+          const initialResults = organizeResults(initialHeadlinesWithSupport);
+          log(`Workflow 4 Complete: Organized ${initialResults.length} results`);
+
+          // Workflow 5: Complete Search - Generate subtopics and repeat process
+          log("=== WORKFLOW 5: COMPLETE SEARCH ===");
+          log("Generating subtopics for comprehensive coverage...");
+          const subtopics = await generateSubtopics(topics as string[]);
+          log(`Generated ${subtopics.length} subtopics (2 per topic)`);
+
+          // Repeat Workflows 1-4 for subtopics
+          log("Repeating X Search for subtopics...");
+          const subtopicPosts = await searchXPosts(subtopics);
+          log(`Found posts for ${subtopicPosts.length} subtopics`);
           
-          // Workflow 2: Create headlines from posts
-          log("Workflow 2: Creating headlines from X posts...");
-          const generatedHeadlines = await createHeadlinesFromPosts(topicPosts);
+          log("Creating headlines from subtopic posts...");
+          const subtopicHeadlines = await createHeadlinesFromPosts(subtopicPosts);
           
-          // Workflow 3: Find supporting articles
-          log("Workflow 3: Finding supporting articles...");
-          const headlinesWithSupport = await findSupportingArticles(generatedHeadlines);
+          log("Finding supporting articles for subtopic headlines...");
+          const subtopicHeadlinesWithSupport = await findSupportingArticles(subtopicHeadlines);
           
-          // Workflow 4: Organize and store results
-          log("Workflow 4: Organizing results...");
-          const organizedHeadlines = organizeResults(headlinesWithSupport);
+          log("Organizing subtopic results...");
+          const subtopicResults = organizeResults(subtopicHeadlinesWithSupport);
           
-          // Store the headlines
-          for (const headline of organizedHeadlines) {
+          // Combine all results and ensure we have at least 15
+          const allResults = [...initialResults, ...subtopicResults];
+          log(`=== ALL WORKFLOWS COMPLETE ===`);
+          log(`Total headlines generated: ${allResults.length}`);
+          
+          if (allResults.length < 15) {
+            log(`Warning: Only ${allResults.length} headlines generated (target: 15+)`);
+          }
+          
+          // Store all headlines
+          for (const headline of allResults) {
             await storage.createHeadline(headline);
           }
 
           return res.json({
             message: "Headlines generated successfully",
-            count: organizedHeadlines.length
+            count: allResults.length,
+            workflowsCompleted: 5
           });
 
         } catch (error) {

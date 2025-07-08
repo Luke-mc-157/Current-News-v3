@@ -91,7 +91,7 @@ ${postsText}`;
           headline,
           topic,
           sourcePosts: topPosts.map(p => ({
-            text: `@${p.author_handle}: ${p.text}`,
+            text: `@${p.author_handle}: ${p.text} (${p.public_metrics.like_count} likes, ${p.public_metrics.retweet_count} retweets)`,
             url: p.url
           }))
         });
