@@ -70,11 +70,29 @@ export async function fetchXPosts(topics) {
           }))
         : [];
 
-      const filteredPosts = posts
+      // First try to get posts with good engagement (5+ likes)
+      let filteredPosts = posts
         .filter((post) => new Date(post.time) >= new Date(SINCE))
-        .filter((post) => post.likes >= 10) // Only posts with at least 10 likes for quality
-        .sort((a, b) => b.likes - a.likes) // Rank by engagement (likes)
-        .slice(0, 2); // Top 2 posts with highest engagement
+        .filter((post) => post.likes >= 5)
+        .sort((a, b) => b.likes - a.likes)
+        .slice(0, 2);
+
+      // If no posts with 5+ likes, fall back to any posts with engagement
+      if (filteredPosts.length === 0) {
+        filteredPosts = posts
+          .filter((post) => new Date(post.time) >= new Date(SINCE))
+          .filter((post) => post.likes >= 1)
+          .sort((a, b) => b.likes - a.likes)
+          .slice(0, 2);
+      }
+
+      // If still no posts, get the most recent posts regardless of engagement
+      if (filteredPosts.length === 0) {
+        filteredPosts = posts
+          .filter((post) => new Date(post.time) >= new Date(SINCE))
+          .sort((a, b) => b.likes - a.likes)
+          .slice(0, 2);
+      }
 
       if (!filteredPosts.length) {
         console.warn(`No posts found for topic: ${topic}`);

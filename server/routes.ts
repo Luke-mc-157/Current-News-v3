@@ -24,7 +24,12 @@ export function registerRoutes(app) {
         throw new Error("No X posts found for any topic");
       }
 
-      const headlinesByTopic = await generateHeadlines(posts);
+      // Filter out topics with no posts before generating headlines
+      const postsWithData = Object.fromEntries(
+        Object.entries(posts).filter(([topic, topicPosts]) => topicPosts.length > 0)
+      );
+
+      const headlinesByTopic = await generateHeadlines(postsWithData);
       const hasHeadlines = Object.values(headlinesByTopic).some((h) => h.length > 0);
       if (!hasHeadlines) {
         throw new Error("No headlines generated from X posts");
@@ -34,7 +39,7 @@ export function registerRoutes(app) {
 
       let headlines = [];
       for (const topic in headlinesByTopic) {
-        if (!posts[topic]?.length) {
+        if (!postsWithData[topic]?.length) {
           console.warn(`Skipping ${topic}: no X posts found`);
           continue;
         }
@@ -46,8 +51,8 @@ export function registerRoutes(app) {
             summary: headline.summary,
             category: topic,
             createdAt: new Date().toISOString(),
-            engagement: posts[topic].reduce((sum, p) => sum + p.likes, 0),
-            sourcePosts: posts[topic],
+            engagement: postsWithData[topic].reduce((sum, p) => sum + p.likes, 0),
+            sourcePosts: postsWithData[topic],
             supportingArticles: articles,
           });
         });
