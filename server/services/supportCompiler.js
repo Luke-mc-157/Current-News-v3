@@ -1,5 +1,5 @@
 // server/services/supportCompiler.js
-const Parser = require("rss-parser");
+import Parser from "rss-parser";
 
 async function fetchSupportingArticles(headlinesByTopic) {
   const parser = new Parser();
@@ -33,4 +33,4 @@ async function fetchSupportingArticles(headlinesByTopic) {
   return results;
 }
 
-module.exports = { fetchSupportingArticles };
+export { fetchSupportingArticles };

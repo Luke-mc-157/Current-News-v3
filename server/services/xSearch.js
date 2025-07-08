@@ -1,6 +1,6 @@
 
 // server/services/xSearch.js
-const axios = require("axios");
+import axios from "axios";
 
 async function fetchXPosts(topics) {
   const XAI_API_KEY = process.env.XAI_API_KEY;
@@ -57,4 +57,4 @@ async function fetchXPosts(topics) {
   return results;
 }
 
-module.exports = { fetchXPosts };
+export { fetchXPosts };

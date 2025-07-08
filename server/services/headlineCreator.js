@@ -1,6 +1,6 @@
 
 // server/services/headlineCreator.js
-const axios = require("axios");
+import axios from "axios";
 
 async function generateHeadlines(postsByTopic) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -48,4 +48,4 @@ async function generateHeadlines(postsByTopic) {
   return headlines;
 }
 
-module.exports = { generateHeadlines };
+export { generateHeadlines };
