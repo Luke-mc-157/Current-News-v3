@@ -2,121 +2,99 @@
 
 ## Overview
 
-Current is a news aggregation application that creates AI-generated podcasts from real-time news content. The platform allows users to input topics of interest and receive personalized news headlines with supporting information. Users can also configure podcast generation settings to receive AI-generated audio content based on their preferences.
-
-## System Architecture
-
-### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Routing**: Wouter for client-side routing
-- **State Management**: TanStack Query (React Query) for server state management
-- **UI Framework**: shadcn/ui components built on Radix UI primitives
-- **Styling**: Tailwind CSS with custom design tokens
-- **Build Tool**: Vite with React plugin and custom error overlay
-
-### Backend Architecture
-- **Runtime**: Node.js with Express.js
-- **Language**: TypeScript with ES modules
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (serverless PostgreSQL)
-- **Session Management**: PostgreSQL-based sessions with connect-pg-simple
-- **API Design**: RESTful endpoints with JSON responses
-
-### Data Storage Solutions
-- **Primary Database**: PostgreSQL hosted on Neon
-- **ORM**: Drizzle ORM with TypeScript-first schema definitions
-- **Migration Strategy**: Drizzle Kit for schema migrations
-- **Fallback Storage**: In-memory storage implementation for development
-
-## Key Components
-
-### Database Schema
-- **Users Table**: User authentication and profile data
-- **User Topics Table**: JSON-based storage of user interest topics
-- **Headlines Table**: Generated news headlines with metadata, source posts, and supporting articles
-- **Podcast Settings Table**: User preferences for podcast generation (frequency, timing, voice, etc.)
-
-### API Endpoints
-- `POST /api/generate-headlines`: Creates personalized headlines based on user topics (minimum 5 topics required)
-- `GET /api/headlines`: Retrieves all generated headlines
-- `POST /api/podcast-settings`: Saves user podcast generation preferences
-
-### Frontend Components
-- **TopicInput**: Comma-separated topic input with real-time parsing and validation
-- **HeadlineCard**: Expandable cards displaying headlines with source posts and supporting articles
-- **PodcastModal**: Configuration interface for podcast generation settings
-- **Toast System**: User feedback for actions and errors
-
-## Data Flow
-
-1. **Topic Submission**: Users enter 5+ topics via comma-separated input
-2. **Headline Generation**: Backend processes topics and generates realistic news headlines with metadata
-3. **Content Display**: Headlines are presented in expandable cards with engagement metrics and sources
-4. **Podcast Configuration**: Users can configure podcast delivery preferences (frequency, timing, voice, etc.)
-5. **Data Persistence**: All user preferences and generated content are stored in PostgreSQL
-
-## External Dependencies
-
-### UI and Styling
-- **Radix UI**: Accessible component primitives
-- **Tailwind CSS**: Utility-first CSS framework
-- **Lucide React**: Icon library
-- **class-variance-authority**: Type-safe variant generation
-- **clsx**: Conditional className utility
-
-### Data Management
-- **TanStack React Query**: Server state management with caching
-- **React Hook Form**: Form state and validation
-- **Zod**: Runtime type validation and schema definition
-- **date-fns**: Date manipulation utilities
-
-### Database and Backend
-- **Drizzle ORM**: Type-safe database operations
-- **Neon Database**: Serverless PostgreSQL provider
-- **Express.js**: Web application framework
-- **tsx**: TypeScript execution for development
-
-## Deployment Strategy
-
-### Development Environment
-- **Dev Server**: Vite development server with HMR
-- **Backend**: tsx for TypeScript execution with file watching
-- **Database**: Neon Database with environment-based connection
-
-### Production Build
-- **Frontend**: Vite production build to `dist/public`
-- **Backend**: esbuild bundling with Node.js platform targeting
-- **Database Migrations**: Drizzle Kit push for schema updates
-- **Environment Variables**: `DATABASE_URL` required for database connection
-
-### Build Commands
-- `npm run dev`: Development with file watching
-- `npm run build`: Production build for both frontend and backend
-- `npm run start`: Production server execution
-- `npm run db:push`: Database schema deployment
-
-## Changelog
-
-Changelog:
-- July 08, 2025. Initial setup
-- July 08, 2025. Removed ALL mock/example data and implemented real API integrations:
-  - Added 5 workflow modules for real news aggregation
-  - Integrated OpenAI API for headline generation and topic expansion
-  - Removed ScrapingBee API, preparing for new support compilation method
-  - All headlines are now generated from real-time data sources
-  - No example or demo data is ever shown
-- July 08, 2025. Replaced ScrapingBee with Google News RSS feeds:
-  - Removed all ScrapingBee dependencies and code
-  - Implemented Google News RSS parser using rss-parser library
-  - Support compiler now fetches top 3 articles per headline from Google News
-  - Articles include title, URL, and source information
-- July 08, 2025. Final X API integration with real data:
-  - Replaced X AI (Grok) simulation with real X API v2
-  - Integrated authentic X_BEARER_TOKEN for real-time tweet search
-  - Fixed server startup issues and JSON parsing errors
-  - App now fetches genuine X posts using Twitter API v2 endpoints
-  - All data sources are now authentic (no mock or generated content)
+Current is an intelligent news aggregation application that transforms real-time social media content into personalized news summaries using AI-driven content compilation and multi-source information synthesis. The application fetches authentic posts from X (Twitter), generates compelling headlines using OpenAI, and compiles supporting articles from Google News RSS feeds.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## System Architecture
+
+### Frontend Architecture
+- **React 18** with TypeScript for type safety and modern development
+- **Wouter** for lightweight client-side routing
+- **TanStack Query** for efficient server state management and caching
+- **shadcn/ui** components built on Radix UI for accessible, customizable UI components
+- **Tailwind CSS** for utility-first styling with CSS variables for theming
+- **Vite** for fast development and optimized builds
+
+### Backend Architecture
+- **Node.js** with Express.js for the REST API server
+- **TypeScript** with ES modules for type safety and modern JavaScript features
+- Modular service architecture with separate workflows for each major function
+- In-memory storage with plans for PostgreSQL integration using Drizzle ORM
+
+### Data Storage Strategy
+- **Current**: In-memory storage for development and proof of concept
+- **Planned**: PostgreSQL with Neon Database (serverless) for production
+- **ORM**: Drizzle ORM configured for PostgreSQL with type-safe database operations
+- Database schema supports users, topics, headlines, and podcast settings
+
+## Key Components
+
+### 1. Workflow System
+The backend implements five distinct workflows that process user requests:
+
+- **X Search (Workflow 1)**: Searches topics on X/Twitter, compiles posts with highest engagement from last 24 hours
+- **Headline Creator (Workflow 2)**: Uses OpenAI GPT to create declarative headlines from X posts
+- **Support Compiler (Workflow 3)**: Searches Google News RSS for supporting articles for each headline
+- **Results Engine (Workflow 4)**: Organizes and ranks results by engagement metrics
+- **Complete Search (Workflow 5)**: Generates subtopics using OpenAI to expand coverage when needed
+
+### 2. Frontend Components
+- **TopicInput**: Handles user input of 5+ topics with real-time validation
+- **HeadlineCard**: Displays generated headlines with expandable source posts and articles
+- **PodcastModal**: Configures podcast generation settings (planned feature)
+
+### 3. API Integration Services
+- **xSearch.js**: Interfaces with X API v2 for real-time post retrieval
+- **headlineCreator.js**: OpenAI API integration for headline generation
+- **supportCompiler.js**: Google News RSS parsing for supporting articles
+- **completeSearch.js**: OpenAI API for subtopic generation
+
+## Data Flow
+
+1. **User Input**: User enters 5+ topics through the frontend interface
+2. **Topic Processing**: Backend validates topics and initiates the workflow system
+3. **X Search**: Fetches recent posts for each topic using X API v2
+4. **Headline Generation**: OpenAI processes posts to create factual headlines
+5. **Article Compilation**: Google News RSS provides supporting articles
+6. **Results Organization**: Headlines ranked by engagement and presented to user
+7. **Expansion Search**: If fewer than 15 headlines, subtopics are generated for additional coverage
+
+## External Dependencies
+
+### APIs and Services
+- **X API v2**: Real-time tweet search with authentication via Bearer Token
+- **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation
+- **Google News RSS**: Public RSS feeds for supporting article discovery
+- **Neon Database**: Serverless PostgreSQL for production data storage
+
+### Development Tools
+- **Drizzle Kit**: Database migrations and schema management
+- **ESBuild**: Fast JavaScript bundling for production builds
+- **PostCSS**: CSS processing with Tailwind CSS integration
+
+### Known Issues
+- Current X API integration shows errors indicating incorrect API key or model access
+- ScrapingBee integration mentioned in attached files but not implemented in current codebase
+- Database configuration present but using in-memory storage in current implementation
+
+## Deployment Strategy
+
+### Development Environment
+- **Replit-ready**: Configured with Replit-specific plugins and error handling
+- **Hot Module Replacement**: Vite provides instant feedback during development
+- **Environment Variables**: Sensitive API keys managed through Replit Secrets
+
+### Production Build
+- **Static Assets**: Frontend built to `dist/public` for static serving
+- **Server Bundle**: Backend bundled with ESBuild for Node.js deployment
+- **Database Migration**: Drizzle migrations ready for PostgreSQL deployment
+
+### Environment Variables Required
+- `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for post retrieval
+- `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation
+- `DATABASE_URL`: PostgreSQL connection string for production database
+
+The application follows a clear separation of concerns with modular services, type-safe interfaces, and modern development practices. The workflow-based architecture allows for easy expansion of features while maintaining clean code organization.
