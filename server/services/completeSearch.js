@@ -1,8 +1,8 @@
 
-const axios = require("axios");
-const { fetchXPosts } = require("./xSearch");
-const { generateHeadlines } = require("./headlineCreator");
-const { fetchSupportingArticles } = require("./supportCompiler");
+import axios from "axios";
+import { fetchXPosts } from "./xSearch.js";
+import { generateHeadlines } from "./headlineCreator.js";
+import { fetchSupportingArticles } from "./supportCompiler.js";
 
 async function completeSearch(topics, currentHeadlines) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
