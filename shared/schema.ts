@@ -58,8 +58,24 @@ export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
 
 export type UserTopics = typeof userTopics.$inferSelect;
-export type Headline = typeof headlines.$inferSelect;
 export type PodcastSettings = typeof podcastSettings.$inferSelect;
+
+// Headline type for application use
+export type Headline = {
+  id: string;
+  title: string;
+  summary: string;
+  category: string;
+  createdAt: string;
+  engagement: number;
+  sourcePosts: Array<{
+    handle: string;
+    text: string;
+    time: string;
+    url: string;
+    likes: number;
+  }>;
+};
 export type User = typeof users.$inferSelect;
 export type InsertUser = z.infer<typeof insertUserSchema>;
 
