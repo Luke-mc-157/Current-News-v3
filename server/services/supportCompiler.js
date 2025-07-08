@@ -40,4 +40,4 @@ async function fetchSupportingArticles(headlinesByTopic) {
   return results;
 }
 
-module.exports = { fetchSupportingArticles };
+export { fetchSupportingArticles };
