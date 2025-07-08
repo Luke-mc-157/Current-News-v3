@@ -75,6 +75,10 @@ export type Headline = {
     url: string;
     likes: number;
   }>;
+  supportingArticles: Array<{
+    title: string;
+    url: string;
+  }>;
 };
 export type User = typeof users.$inferSelect;
 export type InsertUser = z.infer<typeof insertUserSchema>;
