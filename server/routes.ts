@@ -1,6 +1,7 @@
 
 // server/routes.ts
 import express from "express";
+import http from "http";
 import { fetchXPosts } from "./services/xSearch.js";
 import { generateHeadlines } from "./services/headlineCreator.js";
 import { fetchSupportingArticles } from "./services/supportCompiler.js";
@@ -74,5 +75,6 @@ export function registerRoutes(app) {
   });
 
   app.use(router);
-  return app.listen();
+  
+  return http.createServer(app);
 }
