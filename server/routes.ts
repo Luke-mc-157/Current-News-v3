@@ -2,12 +2,14 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertUserTopicsSchema, insertPodcastSettingsSchema } from "@shared/schema";
-import { searchXPosts } from "./workflows/x-search";
-import { createHeadlinesFromPosts } from "./workflows/headline-creator";
 import { findSupportingArticles } from "./workflows/support-compiler";
 import { organizeResults } from "./workflows/results-engine";
 import { generateSubtopics } from "./workflows/complete-search";
 import { log } from "./vite";
+
+// Import JavaScript services
+const { fetchXPosts } = require("./services/xSearch");
+const { generateHeadlines } = require("./services/headlineCreator");
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Generate headlines based on user topics
@@ -36,16 +38,34 @@ export async function registerRoutes(app: Express): Promise<Server> {
         log(`Starting real news aggregation for topics: ${topics.join(', ')}`);
 
         try {
-          // Workflow 1: X Search - Search topics on X
+          // Workflow 1: X Search - Search topics on X using JavaScript service
           log("=== WORKFLOW 1: X SEARCH ===");
           log("Searching for posts on X for initial topics...");
-          const initialTopicPosts = await searchXPosts(topics as string[]);
-          log(`Workflow 1 Complete: Found posts for ${initialTopicPosts.length} topics with ${initialTopicPosts.reduce((sum, tp) => sum + tp.posts.length, 0)} total posts`);
+          const initialTopicPosts = await fetchXPosts(topics as string[]);
+          log(`Workflow 1 Complete: Found posts for ${Object.keys(initialTopicPosts).length} topics with ${Object.values(initialTopicPosts).reduce((sum: number, posts: any[]) => sum + posts.length, 0)} total posts`);
 
-          // Workflow 2: Headline Creator - Create headlines from X posts
+          // Workflow 2: Headline Creator - Create headlines from X posts using JavaScript service
           log("=== WORKFLOW 2: HEADLINE CREATOR ===");
           log("Creating declarative headlines from X posts...");
-          const initialHeadlines = await createHeadlinesFromPosts(initialTopicPosts);
+          const initialHeadlinesRaw = await generateHeadlines(initialTopicPosts);
+          
+          // Convert JavaScript service output to TypeScript format
+          const initialHeadlines = [];
+          for (const topic in initialHeadlinesRaw) {
+            const posts = initialTopicPosts[topic] || [];
+            const headlines = initialHeadlinesRaw[topic] || [];
+            
+            headlines.forEach((headline: any) => {
+              initialHeadlines.push({
+                headline: headline.title,
+                topic: topic,
+                sourcePosts: posts.map((post: any) => ({
+                  text: post.text,
+                  url: post.url
+                }))
+              });
+            });
+          }
           log(`Workflow 2 Complete: Generated ${initialHeadlines.length} headlines`);
 
           // Workflow 3: Support Compiler - Find supporting articles
@@ -68,11 +88,29 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
           // Repeat Workflows 1-4 for subtopics
           log("Repeating X Search for subtopics...");
-          const subtopicPosts = await searchXPosts(subtopics);
-          log(`Found posts for ${subtopicPosts.length} subtopics`);
+          const subtopicPostsRaw = await fetchXPosts(subtopics);
+          log(`Found posts for ${Object.keys(subtopicPostsRaw).length} subtopics`);
           
           log("Creating headlines from subtopic posts...");
-          const subtopicHeadlines = await createHeadlinesFromPosts(subtopicPosts);
+          const subtopicHeadlinesRaw = await generateHeadlines(subtopicPostsRaw);
+          
+          // Convert JavaScript service output to TypeScript format
+          const subtopicHeadlines = [];
+          for (const topic in subtopicHeadlinesRaw) {
+            const posts = subtopicPostsRaw[topic] || [];
+            const headlines = subtopicHeadlinesRaw[topic] || [];
+            
+            headlines.forEach((headline: any) => {
+              subtopicHeadlines.push({
+                headline: headline.title,
+                topic: topic,
+                sourcePosts: posts.map((post: any) => ({
+                  text: post.text,
+                  url: post.url
+                }))
+              });
+            });
+          }
           
           log("Finding supporting articles for subtopic headlines...");
           const subtopicHeadlinesWithSupport = await findSupportingArticles(subtopicHeadlines);
