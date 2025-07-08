@@ -1,8 +1,8 @@
-
 // server/services/completeSearch.js
 const axios = require("axios");
 const { fetchXPosts } = require("./xSearch");
 const { generateHeadlines } = require("./headlineCreator");
+const { fetchSupportingArticles } = require("./supportCompiler");
 
 async function completeSearch(topics, currentHeadlines) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -48,10 +48,12 @@ async function completeSearch(topics, currentHeadlines) {
   const allSubtopics = Object.values(subtopics).flat();
   const posts = await fetchXPosts(allSubtopics);
   const headlinesBySubtopic = await generateHeadlines(posts);
+  const articlesBySubtopic = await fetchSupportingArticles(headlinesBySubtopic);
 
   const newHeadlines = [];
   for (const subtopic in headlinesBySubtopic) {
     headlinesBySubtopic[subtopic].forEach((headline, index) => {
+      const articles = articlesBySubtopic[subtopic]?.find((a) => a.headline === headline.title)?.articles || [];
       newHeadlines.push({
         id: `${subtopic}-${index}`,
         title: headline.title,
@@ -60,7 +62,7 @@ async function completeSearch(topics, currentHeadlines) {
         createdAt: new Date().toISOString(),
         engagement: posts[subtopic].reduce((sum, p) => sum + p.likes, 0),
         sourcePosts: posts[subtopic],
-        supportingArticles: [],
+        supportingArticles: articles,
       });
     });
   }
