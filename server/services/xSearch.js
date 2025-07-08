@@ -17,7 +17,7 @@ export async function fetchXPosts(topics) {
       }
       
       const response = await axios.get(
-        "https://api.x.com/2/tweets/search/recent",
+        "https://api.twitter.com/2/tweets/search/recent",
         {
           params: {
             query: `${topic} lang:en -is:retweet`, // English, no retweets
@@ -35,10 +35,10 @@ export async function fetchXPosts(topics) {
 
       const posts = response.data.data
         ? response.data.data.map((tweet, index) => ({
-            handle: response.data.includes.users.find((user) => user.id === tweet.author_id)?.username || `user${index}`,
+            handle: `@${response.data.includes.users.find((user) => user.id === tweet.author_id)?.username || `user${index}`}`,
             text: tweet.text,
             time: tweet.created_at,
-            url: `https://x.com/${response.data.includes.users.find((user) => user.id === tweet.author_id)?.username}/status/${tweet.id}`,
+            url: `https://twitter.com/${response.data.includes.users.find((user) => user.id === tweet.author_id)?.username}/status/${tweet.id}`,
             likes: tweet.public_metrics.like_count,
           }))
         : [];
