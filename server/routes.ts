@@ -10,13 +10,16 @@ import { log } from "./vite";
 // Import JavaScript services using dynamic imports
 let fetchXPosts: any;
 let generateHeadlines: any;
+let completeSearch: any;
 
 // Initialize services
 const initServices = async () => {
   const xSearchModule = await import("./services/xSearch.js");
   const headlineCreatorModule = await import("./services/headlineCreator.js");
+  const completeSearchModule = await import("./services/completeSearch.js");
   fetchXPosts = xSearchModule.fetchXPosts;
   generateHeadlines = headlineCreatorModule.generateHeadlines;
+  completeSearch = completeSearchModule.completeSearch;
 };
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -32,139 +35,42 @@ export async function registerRoutes(app: Express): Promise<Server> {
         await initServices();
         servicesInitialized = true;
       }
+
+      const { topics } = req.body;
+      if (!topics || topics.length < 5) {
+        return res.status(400).json({ message: "At least 5 topics required" });
+      }
+
       try {
-        const parsed = insertUserTopicsSchema.parse({
-          topics: req.body.topics
-        });
-
-        const topics = Array.isArray(parsed.topics) ? parsed.topics : [];
-
-        if (!Array.isArray(topics) || topics.length < 5) {
-          return res.status(400).json({ 
-            message: "Please provide at least 5 topics to generate headlines." 
-          });
-        }
-
-        if (!process.env.OPENAI_API_KEY) {
-          return res.status(500).json({ 
-            message: "OpenAI API key is not configured. Please add OPENAI_API_KEY to environment variables." 
-          });
-        }
-
-        log(`Starting real news aggregation for topics: ${topics.join(', ')}`);
-
-        try {
-          // Workflow 1: X Search - Search topics on X using JavaScript service
-          log("=== WORKFLOW 1: X SEARCH ===");
-          log("Searching for posts on X for initial topics...");
-          const initialTopicPosts = await fetchXPosts(topics as string[]);
-          log(`Workflow 1 Complete: Found posts for ${Object.keys(initialTopicPosts).length} topics with ${Object.values(initialTopicPosts).reduce((sum: number, posts: any[]) => sum + posts.length, 0)} total posts`);
-
-          // Workflow 2: Headline Creator - Create headlines from X posts using JavaScript service
-          log("=== WORKFLOW 2: HEADLINE CREATOR ===");
-          log("Creating declarative headlines from X posts...");
-          const initialHeadlinesRaw = await generateHeadlines(initialTopicPosts);
-          
-          // Convert JavaScript service output to TypeScript format
-          const initialHeadlines = [];
-          for (const topic in initialHeadlinesRaw) {
-            const posts = initialTopicPosts[topic] || [];
-            const headlines = initialHeadlinesRaw[topic] || [];
-            
-            headlines.forEach((headline: any) => {
-              initialHeadlines.push({
-                headline: headline.title,
-                topic: topic,
-                sourcePosts: posts.map((post: any) => ({
-                  text: post.text,
-                  url: post.url
-                }))
-              });
+        const posts = await fetchXPosts(topics);
+        const headlinesByTopic = await generateHeadlines(posts);
+        let headlines = [];
+        for (const topic in headlinesByTopic) {
+          headlinesByTopic[topic].forEach((headline: any, index: number) => {
+            headlines.push({
+              id: `${topic}-${index}`,
+              title: headline.title,
+              summary: headline.summary,
+              category: topic,
+              createdAt: new Date().toISOString(),
+              engagement: posts[topic].reduce((sum: number, p: any) => sum + p.likes, 0),
+              sourcePosts: posts[topic],
+              supportingArticles: [],
             });
-          }
-          log(`Workflow 2 Complete: Generated ${initialHeadlines.length} headlines`);
-
-          // Workflow 3: Support Compiler - Find supporting articles
-          log("=== WORKFLOW 3: SUPPORT COMPILER ===");
-          log("Searching Google News for supporting articles...");
-          const initialHeadlinesWithSupport = await findSupportingArticles(initialHeadlines);
-          log(`Workflow 3 Complete: Found supporting articles for ${initialHeadlinesWithSupport.length} headlines`);
-
-          // Workflow 4: Results Engine - Organize results by engagement
-          log("=== WORKFLOW 4: RESULTS ENGINE ===");
-          log("Organizing results by X post engagement...");
-          const initialResults = organizeResults(initialHeadlinesWithSupport);
-          log(`Workflow 4 Complete: Organized ${initialResults.length} results`);
-
-          // Workflow 5: Complete Search - Generate subtopics and repeat process
-          log("=== WORKFLOW 5: COMPLETE SEARCH ===");
-          log("Generating subtopics for comprehensive coverage...");
-          const subtopics = await generateSubtopics(topics as string[]);
-          log(`Generated ${subtopics.length} subtopics (2 per topic)`);
-
-          // Repeat Workflows 1-4 for subtopics
-          log("Repeating X Search for subtopics...");
-          const subtopicPostsRaw = await fetchXPosts(subtopics);
-          log(`Found posts for ${Object.keys(subtopicPostsRaw).length} subtopics`);
-          
-          log("Creating headlines from subtopic posts...");
-          const subtopicHeadlinesRaw = await generateHeadlines(subtopicPostsRaw);
-          
-          // Convert JavaScript service output to TypeScript format
-          const subtopicHeadlines = [];
-          for (const topic in subtopicHeadlinesRaw) {
-            const posts = subtopicPostsRaw[topic] || [];
-            const headlines = subtopicHeadlinesRaw[topic] || [];
-            
-            headlines.forEach((headline: any) => {
-              subtopicHeadlines.push({
-                headline: headline.title,
-                topic: topic,
-                sourcePosts: posts.map((post: any) => ({
-                  text: post.text,
-                  url: post.url
-                }))
-              });
-            });
-          }
-          
-          log("Finding supporting articles for subtopic headlines...");
-          const subtopicHeadlinesWithSupport = await findSupportingArticles(subtopicHeadlines);
-          
-          log("Organizing subtopic results...");
-          const subtopicResults = organizeResults(subtopicHeadlinesWithSupport);
-          
-          // Combine all results and ensure we have at least 15
-          const allResults = [...initialResults, ...subtopicResults];
-          log(`=== ALL WORKFLOWS COMPLETE ===`);
-          log(`Total headlines generated: ${allResults.length}`);
-          
-          if (allResults.length < 15) {
-            log(`Warning: Only ${allResults.length} headlines generated (target: 15+)`);
-          }
-          
-          // Store all headlines
-          for (const headline of allResults) {
-            await storage.createHeadline(headline);
-          }
-
-          return res.json({
-            message: "Headlines generated successfully",
-            count: allResults.length,
-            workflowsCompleted: 5
           });
-
-        } catch (error) {
-          log(`Error in headline generation: ${error}`);
-          return res.status(500).json({ error: "Failed to generate headlines" });
         }
 
+        headlines = await completeSearch(topics, headlines);
+        
+        // Store all headlines
+        for (const headline of headlines) {
+          await storage.createHeadline(headline);
+        }
+
+        res.json({ success: true, headlines });
       } catch (error) {
-        console.error("Error generating headlines:", error);
-        res.status(500).json({ 
-          message: "Failed to generate headlines",
-          error: error instanceof Error ? error.message : String(error)
-        });
+        console.error("Error in /api/generate-headlines:", error);
+        res.status(500).json({ message: "Failed to generate headlines" });
       }
     }
   );
