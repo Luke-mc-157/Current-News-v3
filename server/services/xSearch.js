@@ -39,10 +39,10 @@ export async function fetchXPosts(topics) {
         "https://api.twitter.com/2/tweets/search/recent",
         {
           params: {
-            query: `${topic} lang:en -is:retweet`, // English, no retweets
-            max_results: 10,
+            query: `"${topic.replace(/['"]/g, '').substring(0, 200)}" lang:en -is:retweet`, // Clean topic, English, no retweets
+            max_results: 100,
             "tweet.fields": "created_at,public_metrics,author_id",
-            expansions: "author_id",
+            expansions: "author_id", 
             "user.fields": "username",
           },
           headers: {
@@ -72,8 +72,9 @@ export async function fetchXPosts(topics) {
 
       const filteredPosts = posts
         .filter((post) => new Date(post.time) >= new Date(SINCE))
+        .filter((post) => post.likes >= 10) // Only posts with at least 10 likes for quality
         .sort((a, b) => b.likes - a.likes) // Rank by engagement (likes)
-        .slice(0, 5); // Top 5 posts, matching Grok 3
+        .slice(0, 2); // Top 2 posts with highest engagement
 
       if (!filteredPosts.length) {
         console.warn(`No posts found for topic: ${topic}`);
