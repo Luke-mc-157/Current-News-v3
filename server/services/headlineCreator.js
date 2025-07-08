@@ -1,11 +1,11 @@
 
 // server/services/headlineCreator.js
-import axios from "axios";
+const axios = require("axios");
 
 async function generateHeadlines(postsByTopic) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
   if (!OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is not set");
+    throw new Error("OPENAI_API_KEY is not set in Replit Secrets");
   }
 
   const headlines = {};
@@ -16,6 +16,12 @@ async function generateHeadlines(postsByTopic) {
       .slice(0, 5)
       .map((post) => post.text);
 
+    if (!posts.length) {
+      console.warn(`No posts available for ${topic}, skipping headline generation`);
+      headlines[topic] = [];
+      continue;
+    }
+
     try {
       const response = await axios.post(
         "https://api.openai.com/v1/chat/completions",
@@ -25,7 +31,7 @@ async function generateHeadlines(postsByTopic) {
             {
               role: "system",
               content:
-                "Create factual, declarative news headlines and summaries (no adjectives or opinions) from the provided X posts. Return an array of objects with 'title' and 'summary' for each headline. Use your best judgment to determine if multiple headlines are needed per topic.",
+                "Generate 1-2 factual, declarative news headlines and summaries based solely on the provided X posts from the last 24 hours. Do not invent information or use external knowledge. If insufficient data, return an empty array. Return as JSON: [{title: string, summary: string}, ...]",
             },
             { role: "user", content: `Topic: ${topic}\nPosts: ${posts.join("\n")}` },
           ],
@@ -38,9 +44,9 @@ async function generateHeadlines(postsByTopic) {
         }
       );
 
-      headlines[topic] = JSON.parse(response.data.choices[0].message.content);
+      headlines[topic] = JSON.parse(response.data.choices[0].message.content) || [];
     } catch (error) {
-      console.error(`Error generating headlines for ${topic}:`, error.response?.status, error.response?.data);
+      console.error(`Error generating headlines for ${topic}:`, error.response?.status, error.response?.data || error.message);
       headlines[topic] = [];
     }
   }
@@ -48,4 +54,4 @@ async function generateHeadlines(postsByTopic) {
   return headlines;
 }
 
-export { generateHeadlines };
+module.exports = { generateHeadlines };
