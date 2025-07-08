@@ -7,15 +7,31 @@ import { organizeResults } from "./workflows/results-engine";
 import { generateSubtopics } from "./workflows/complete-search";
 import { log } from "./vite";
 
-// Import JavaScript services
-const { fetchXPosts } = require("./services/xSearch");
-const { generateHeadlines } = require("./services/headlineCreator");
+// Import JavaScript services using dynamic imports
+let fetchXPosts: any;
+let generateHeadlines: any;
+
+// Initialize services
+const initServices = async () => {
+  const xSearchModule = await import("./services/xSearch.js");
+  const headlineCreatorModule = await import("./services/headlineCreator.js");
+  fetchXPosts = xSearchModule.fetchXPosts;
+  generateHeadlines = headlineCreatorModule.generateHeadlines;
+};
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Initialize services on first use
+  let servicesInitialized = false;
+
   // Generate headlines based on user topics
   app.post(
     "/api/generate-headlines", 
     async (req, res) => {
+      // Initialize services if not already done
+      if (!servicesInitialized) {
+        await initServices();
+        servicesInitialized = true;
+      }
       try {
         const parsed = insertUserTopicsSchema.parse({
           topics: req.body.topics
