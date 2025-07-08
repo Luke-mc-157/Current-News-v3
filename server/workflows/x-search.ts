@@ -37,16 +37,26 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
     try {
       log(`Searching X for topic: ${topic}`);
       
-      const prompt = `Generate 5 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
+      const currentDate = new Date().toLocaleDateString('en-US', { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      });
+
+      const prompt = `Today is ${currentDate}. Generate 5 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
+
+      CRITICAL: Posts must be about current events, discussions, or trends happening RIGHT NOW in 2025.
+      
       For each post, create:
       - A realistic username (without @)
-      - A compelling tweet text (under 280 characters) that is specific and timely
-      - Realistic engagement metrics
-      - Must be about current events from the last 24 hours
+      - A compelling tweet text (under 280 characters) that is specific and about current events
+      - Realistic engagement metrics (likes: 50-5000, retweets: 10-1000, replies: 5-500)
+      - Must reference current trends, breaking news, or recent developments in the topic
       
       Format as JSON array with structure:
       [{
-        "text": "tweet content",
+        "text": "tweet content about current events",
         "author_handle": "username",
         "likes": number,
         "retweets": number,

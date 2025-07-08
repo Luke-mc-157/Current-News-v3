@@ -29,7 +29,7 @@ export async function findSupportingArticles(headlines: GeneratedHeadline[]): Pr
       const searchQuery = encodeURIComponent(headline);
       const googleNewsUrl = `https://news.google.com/search?q=${searchQuery}&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d`;
       
-      const scrapingBeeUrl = `https://app.scrapingbee.com/api/v1/?api_key=${scrapingBeeKey}&url=${encodeURIComponent(googleNewsUrl)}&render_js=false`;
+      const scrapingBeeUrl = `https://app.scrapingbee.com/api/v1/?api_key=${scrapingBeeKey}&url=${encodeURIComponent(googleNewsUrl)}&render_js=false&custom_google=true`;
 
       const response = await fetch(scrapingBeeUrl, { timeout: 20000 } as any);
       

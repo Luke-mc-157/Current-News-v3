@@ -5,8 +5,9 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
   const organizedResults: InsertHeadline[] = [];
 
   for (const result of headlinesWithSupport) {
-    // Only keep headlines that have at least 1 X post AND at least 1 news article
-    if (result.sourcePosts.length === 0 || result.supportingArticles.length === 0) {
+    // Only keep headlines that have at least 1 X post
+    // Supporting articles are optional - if news search fails, we still show results based on X posts
+    if (result.sourcePosts.length === 0) {
       continue;
     }
     
@@ -18,7 +19,9 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
     
     organizedResults.push({
       title: result.headline,
-      summary: `Factual headline derived from ${result.sourcePosts.length} X posts about ${result.topic}. Supported by ${result.supportingArticles.length} news articles.`,
+      summary: result.supportingArticles.length > 0 
+        ? `Factual headline derived from ${result.sourcePosts.length} X posts about ${result.topic}. Supported by ${result.supportingArticles.length} news articles.`
+        : `Breaking headline derived from ${result.sourcePosts.length} X posts about ${result.topic} from the last 24 hours.`,
       category,
       engagement: engagementLevel,
       sourcePosts: result.sourcePosts,
