@@ -54,4 +54,4 @@ async function generateHeadlines(postsByTopic) {
   return headlines;
 }
 
-module.exports = { generateHeadlines };
+export { generateHeadlines };
