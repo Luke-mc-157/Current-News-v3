@@ -60,7 +60,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
+      // Sort headlines by engagement (highest first)
+      headlines = headlines.sort((a: any, b: any) => b.engagement - a.engagement);
+
+      // Run Workflow 5 if needed
       headlines = await completeSearch(topics, headlines);
+      // Sort again after adding subtopic headlines
+      headlines = headlines.sort((a: any, b: any) => b.engagement - a.engagement);
+
       headlinesStore = headlines;
       res.json({ success: true, headlines });
     } catch (error: any) {
@@ -70,7 +77,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   app.get("/api/headlines", (req, res) => {
-    res.json({ headlines: headlinesStore });
+    // Ensure headlines are sorted by engagement when fetched
+    const sortedHeadlines = headlinesStore.sort((a: any, b: any) => b.engagement - a.engagement);
+    res.json({ headlines: sortedHeadlines });
   });
 
   const server = createServer(app);
