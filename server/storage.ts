@@ -58,7 +58,8 @@ export class MemStorage implements IStorage {
     const userTopics: UserTopics = { 
       ...topics, 
       id,
-      createdAt: new Date()
+      createdAt: new Date(),
+      userId: topics.userId || null
     };
     this.userTopics.set(id, userTopics);
     return userTopics;
@@ -75,7 +76,9 @@ export class MemStorage implements IStorage {
     const newHeadline: Headline = {
       ...headline,
       id,
-      createdAt: new Date()
+      createdAt: new Date(),
+      sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts : [],
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : []
     };
     this.headlines.set(id, newHeadline);
     return newHeadline;
@@ -92,7 +95,9 @@ export class MemStorage implements IStorage {
     const newSettings: PodcastSettings = {
       ...settings,
       id,
-      createdAt: new Date()
+      createdAt: new Date(),
+      userId: settings.userId || null,
+      times: Array.isArray(settings.times) ? settings.times : []
     };
     this.podcastSettings.set(id, newSettings);
     return newSettings;
