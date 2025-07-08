@@ -70,48 +70,25 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
 
         {isExpanded && (
           <div className="border-t border-slate-200 pt-4">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
-                  <svg className="w-4 h-4 mr-1 text-black" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-                  </svg>
-                  X Posts ({headline.sourcePosts.length})
-                </h5>
-                <div className="space-y-2">
-                  {headline.sourcePosts.map((post, index) => (
-                    <a
-                      key={index}
-                      href={post.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-sm text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                      {post.text}
-                    </a>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
-                  <svg className="w-4 h-4 mr-1 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                  </svg>
-                  Supporting Articles ({headline.supportingArticles.length})
-                </h5>
-                <div className="space-y-2">
-                  {headline.supportingArticles.map((article, index) => (
-                    <a
-                      key={index}
-                      href={article.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-sm text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                      {article.title}
-                    </a>
-                  ))}
-                </div>
+            <div>
+              <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
+                <svg className="w-4 h-4 mr-1 text-black" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                </svg>
+                X Posts ({headline.sourcePosts.length})
+              </h5>
+              <div className="space-y-2">
+                {headline.sourcePosts.map((post, index) => (
+                  <a
+                    key={index}
+                    href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    {post.text}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
