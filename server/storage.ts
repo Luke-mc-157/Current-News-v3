@@ -57,7 +57,7 @@ export class MemStorage implements IStorage {
     const id = this.currentTopicsId++;
     const userTopics: UserTopics = { 
       id,
-      topics: Array.isArray(topics.topics) ? topics.topics : [],
+      topics: Array.isArray(topics.topics) ? topics.topics as string[] : [],
       userId: topics.userId || null,
       createdAt: new Date()
     };
@@ -79,8 +79,8 @@ export class MemStorage implements IStorage {
       summary: headline.summary,
       category: headline.category,
       engagement: headline.engagement,
-      sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts : [],
-      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : [],
+      sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts as Array<{text: string, url: string}> : [],
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles as Array<{title: string, url: string}> : [],
       createdAt: new Date()
     };
     this.headlines.set(id, newHeadline);
@@ -99,7 +99,7 @@ export class MemStorage implements IStorage {
       id,
       userId: settings.userId || null,
       frequency: settings.frequency,
-      times: Array.isArray(settings.times) ? settings.times : [],
+      times: Array.isArray(settings.times) ? settings.times as string[] : [],
       length: settings.length,
       voice: settings.voice,
       name: settings.name,

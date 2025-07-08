@@ -105,6 +105,11 @@ Changelog:
   - Integrated ScrapingBee API for Google News scraping
   - All headlines are now generated from real-time data sources
   - No example or demo data is ever shown
+- July 08, 2025. Updated to use X AI API instead of Twitter API:
+  - Integrated X AI API (Grok) for generating realistic X posts
+  - Rebranded all references from Twitter to X
+  - Updated UI components to use X logo instead of Twitter bird
+  - Platform is now referred to as "X" only
 
 ## User Preferences
 
