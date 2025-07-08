@@ -110,6 +110,11 @@ Changelog:
   - Rebranded all references from Twitter to X
   - Updated UI components to use X logo instead of Twitter bird
   - Platform is now referred to as "X" only
+- July 08, 2025. Replaced ScrapingBee with Google News RSS feeds:
+  - Removed all ScrapingBee dependencies and code
+  - Implemented Google News RSS parser using rss-parser library
+  - Support compiler now fetches top 3 articles per headline from Google News
+  - Articles include title, URL, and source information
 
 ## User Preferences
 
