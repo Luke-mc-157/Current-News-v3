@@ -13,8 +13,8 @@ export function registerRoutes(app) {
 
   router.post("/api/generate-headlines", async (req, res) => {
     const { topics } = req.body;
-    if (!topics || topics.length < 5) {
-      return res.status(400).json({ message: "At least 5 topics required" });
+    if (!topics || topics.length < 1) {
+      return res.status(400).json({ message: "At least 1 topic required" });
     }
 
     try {

@@ -53,7 +53,7 @@ export default function Home() {
               Enter Your Topics of Interest
             </h2>
             <p className="text-slate-600 text-sm">
-              Add at least 5 topics separated by commas to get personalized news headlines
+              Add topics separated by commas to get personalized news headlines
             </p>
           </div>
 
