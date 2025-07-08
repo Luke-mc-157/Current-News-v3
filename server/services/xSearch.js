@@ -4,6 +4,18 @@ import axios from "axios";
 let rateLimitReset = null;
 let lastRequestTime = null;
 
+// Broad viral-content queries that typically surface high-engagement posts
+const VIRAL_QUERIES = [
+  'from:Reuters OR from:AP OR from:BBCBreaking OR from:CNN OR from:FoxNews',
+  'from:POTUS OR from:VP OR from:SpeakerJohnson OR from:SenSchumer',
+  'from:elonmusk OR from:BillGates OR from:sundarpichai OR from:tim_cook',
+  'breaking news OR just in OR BREAKING',
+  'viral OR trending OR "everyone is talking about"',
+  'politics OR election OR policy OR congress',
+  'weather OR climate OR storm OR flood',
+  'sports OR NFL OR NBA OR Premier League'
+];
+
 export async function fetchXPosts(topics) {
   const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN;
   if (!X_BEARER_TOKEN) {
@@ -11,9 +23,33 @@ export async function fetchXPosts(topics) {
   }
 
   const results = {};
-  const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+  const SINCE = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString(); // 48 hours for viral content to accumulate
 
-  const fetchTopicPosts = async (topic, retryCount = 0) => {
+  // Helper function to categorize posts into topics
+  const categorizePost = (postText, userTopics) => {
+    const lowerText = postText.toLowerCase();
+    
+    for (const topic of userTopics) {
+      const topicWords = topic.toLowerCase().split(' ').filter(word => word.length > 3);
+      const matchCount = topicWords.filter(word => lowerText.includes(word)).length;
+      
+      // If at least half the topic words match, categorize it
+      if (matchCount >= Math.ceil(topicWords.length / 2)) {
+        return topic;
+      }
+    }
+    
+    // Check for partial matches
+    for (const topic of userTopics) {
+      if (lowerText.includes(topic.toLowerCase().substring(0, 10))) {
+        return topic;
+      }
+    }
+    
+    return null;
+  };
+
+  const fetchViralPosts = async (query, retryCount = 0) => {
     try {
       // Check if we need to wait for rate limit reset
       if (rateLimitReset && Date.now() < rateLimitReset) {
@@ -39,12 +75,12 @@ export async function fetchXPosts(topics) {
         "https://api.twitter.com/2/tweets/search/recent",
         {
           params: {
-            query: `${topic.replace(/['"]/g, '').substring(0, 200)} lang:en -is:retweet`, // Search broadly to get more results
+            query: `${query} lang:en -is:retweet`, // Use viral query
             max_results: 100,
             "tweet.fields": "created_at,public_metrics,author_id",
             expansions: "author_id",
             "user.fields": "username",
-            start_time: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(), // Last 7 days for more viral content
+            start_time: SINCE,
           },
           headers: {
             Authorization: `Bearer ${X_BEARER_TOKEN}`,
@@ -77,21 +113,14 @@ export async function fetchXPosts(topics) {
       // Log engagement stats for debugging
       if (posts.length > 0) {
         const likesArray = posts.map(p => p.likes);
-        console.log(`Topic: ${topic} - Found ${posts.length} posts. Likes range: ${Math.min(...likesArray)} to ${Math.max(...likesArray)}`);
+        console.log(`Query: ${query} - Found ${posts.length} posts. Likes range: ${Math.min(...likesArray)} to ${Math.max(...likesArray)}`);
       }
 
-      // Sort all posts by engagement and take the top 2
-      const filteredPosts = posts
+      // Return all high-engagement posts
+      return posts
         .filter((post) => new Date(post.time) >= new Date(SINCE))
-        .sort((a, b) => b.likes - a.likes) // Sort by highest likes first
-        .slice(0, 2); // Get the 2 posts with highest engagement
-
-      if (!filteredPosts.length) {
-        console.warn(`No posts found for topic: ${topic}`);
-      } else {
-        console.log(`Fetched ${filteredPosts.length} posts for topic: ${topic}`);
-      }
-      return [topic, filteredPosts];
+        .filter((post) => post.likes >= 100) // Only posts with significant engagement
+        .sort((a, b) => b.likes - a.likes); // Sort by highest likes first
     } catch (error) {
       // Handle rate limiting with longer retry delays
       if (error.response?.status === 429) {
@@ -100,11 +129,11 @@ export async function fetchXPosts(topics) {
         if (resetTime) {
           rateLimitReset = parseInt(resetTime) * 1000; // Convert to milliseconds
           const waitTime = Math.ceil((rateLimitReset - Date.now()) / 1000);
-          console.warn(`Rate limited for ${topic}. Reset in ${waitTime} seconds at ${new Date(rateLimitReset).toLocaleTimeString()}`);
+          console.warn(`Rate limited for query. Reset in ${waitTime} seconds at ${new Date(rateLimitReset).toLocaleTimeString()}`);
         } else {
           // Fallback: wait 15 minutes if no reset header
           rateLimitReset = Date.now() + (15 * 60 * 1000);
-          console.warn(`Rate limited for ${topic}. No reset header, waiting 15 minutes...`);
+          console.warn(`Rate limited for query. No reset header, waiting 15 minutes...`);
         }
         
         if (retryCount < 1) {
@@ -112,11 +141,11 @@ export async function fetchXPosts(topics) {
           console.log(`Waiting ${waitTime} seconds for rate limit reset...`);
           await new Promise(resolve => setTimeout(resolve, rateLimitReset - Date.now() + 1000));
           rateLimitReset = null; // Clear after waiting
-          return fetchTopicPosts(topic, retryCount + 1);
+          return fetchViralPosts(query, retryCount + 1);
         }
       }
       
-      console.error(`Error fetching X posts for ${topic}:`, {
+      console.error(`Error fetching X posts for query "${query}":`, {
         status: error.response?.status,
         statusText: error.response?.statusText,
         data: error.response?.data,
@@ -124,16 +153,60 @@ export async function fetchXPosts(topics) {
         reset: error.response?.headers?.['x-rate-limit-reset'] ? new Date(parseInt(error.response?.headers?.['x-rate-limit-reset']) * 1000).toLocaleTimeString() : 'N/A',
         message: error.message
       });
-      return [topic, []];
+      return [];
     }
   };
 
-  // Process topics sequentially to avoid rate limiting
-  for (let i = 0; i < topics.length; i++) {
-    const topic = topics[i];
-    console.log(`Processing topic ${i + 1}/${topics.length}: ${topic}`);
-    const [topicName, posts] = await fetchTopicPosts(topic);
-    results[topicName] = posts;
+  // Initialize results for all topics
+  for (const topic of topics) {
+    results[topic] = [];
+  }
+
+  // Collect all viral posts from different queries
+  const allViralPosts = [];
+  let queryIndex = 0;
+  
+  console.log(`Searching for viral posts across ${VIRAL_QUERIES.length} trending queries...`);
+  
+  for (const query of VIRAL_QUERIES) {
+    console.log(`Viral search ${queryIndex + 1}/${VIRAL_QUERIES.length}: ${query}`);
+    
+    const viralPosts = await fetchViralPosts(query);
+    allViralPosts.push(...viralPosts);
+    
+    queryIndex++;
+    
+    // Stop if we have enough posts or hit rate limits
+    if (allViralPosts.length >= 50 || rateLimitReset) {
+      break;
+    }
+  }
+
+  console.log(`Found ${allViralPosts.length} total viral posts. Categorizing into topics...`);
+
+  // Remove duplicates based on post text
+  const uniquePosts = Array.from(
+    new Map(allViralPosts.map(post => [post.text.substring(0, 100), post])).values()
+  );
+
+  // Categorize posts into user topics
+  for (const post of uniquePosts) {
+    const category = categorizePost(post.text, topics);
+    
+    if (category && results[category].length < 2) {
+      results[category].push(post);
+      console.log(`Categorized post with ${post.likes} likes into topic: ${category}`);
+    }
+  }
+
+  // Log results summary
+  for (const topic of topics) {
+    if (results[topic].length === 0) {
+      console.warn(`No viral posts found for topic: ${topic}`);
+    } else {
+      const likes = results[topic].map(p => p.likes).join(', ');
+      console.log(`Topic "${topic}": ${results[topic].length} posts with likes: ${likes}`);
+    }
   }
 
   return results;

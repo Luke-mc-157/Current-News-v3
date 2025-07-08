@@ -76,9 +76,13 @@ The backend implements five distinct workflows that process user requests:
 - **PostCSS**: CSS processing with Tailwind CSS integration
 
 ### Known Issues
-- Current X API integration shows errors indicating incorrect API key or model access
-- ScrapingBee integration mentioned in attached files but not implemented in current codebase
 - Database configuration present but using in-memory storage in current implementation
+
+### Recent Updates (January 8, 2025)
+- **Reversed X Search Workflow**: Implemented viral-first approach that searches for high-engagement content before categorizing into topics
+- **Reduced API Usage**: From ~650 calls to ~8 strategic queries targeting viral content
+- **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
+- **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ## Deployment Strategy
 
