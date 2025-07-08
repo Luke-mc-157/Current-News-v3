@@ -102,7 +102,7 @@ Changelog:
 - July 08, 2025. Removed ALL mock/example data and implemented real API integrations:
   - Added 5 workflow modules for real news aggregation
   - Integrated OpenAI API for headline generation and topic expansion
-  - Integrated ScrapingBee API for Google News scraping
+  - Removed ScrapingBee API, preparing for new support compilation method
   - All headlines are now generated from real-time data sources
   - No example or demo data is ever shown
 - July 08, 2025. Updated to use X AI API instead of Twitter API:
