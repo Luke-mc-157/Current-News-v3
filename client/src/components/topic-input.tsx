@@ -61,13 +61,13 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
     }
   };
 
-  const isValid = topics.length >= 5;
+  const isValid = topics.length >= 1;
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label htmlFor="topics" className="block text-sm font-medium text-slate-700 mb-2">
-          Topics (minimum 5 required)
+          Topics (at least 1 required)
         </label>
         <Input
           id="topics"
@@ -96,7 +96,7 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
         )}
         
         <p className={`mt-1 text-sm ${isValid ? "text-emerald-600" : "text-slate-500"}`}>
-          {topics.length} topics entered {isValid ? "- ready to submit" : `- need ${5 - topics.length} more`}
+          {topics.length} topics entered {isValid ? "- ready to submit" : "- need at least 1 topic"}
         </p>
       </div>
 
