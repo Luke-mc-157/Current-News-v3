@@ -1,55 +1,51 @@
 
 // server/services/xSearch.js
-import axios from "axios";
+const axios = require("axios");
 
 async function fetchXPosts(topics) {
   const XAI_API_KEY = process.env.XAI_API_KEY;
   if (!XAI_API_KEY) {
-    throw new Error("XAI_API_KEY is not set");
+    throw new Error("XAI_API_KEY is not set in Replit Secrets");
   }
 
-  const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
   const results = {};
+  const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
   for (const topic of topics) {
     try {
-      const response = await axios.get("https://api.x.ai/v1/search/tweets", {
-        headers: {
-          Authorization: `Bearer ${XAI_API_KEY}`,
+      const response = await axios.post(
+        "https://api.x.ai/v1/chat/completions",
+        {
+          model: "grok-beta",
+          messages: [
+            {
+              role: "system",
+              content:
+                "Search X for recent posts (last 24 hours) about the given topic. Return an array of up to 10 posts, each with handle, text, time (ISO format), URL, and likes. Use only real-time X data. If no posts are found, return an empty array.",
+            },
+            { role: "user", content: `Topic: ${topic}` },
+          ],
         },
-        params: {
-          query: topic,
-          max_results: 100,
-          start_time: SINCE,
-          expansions: "author_id",
-          "tweet.fields": "created_at,public_metrics",
-          "user.fields": "username",
-        },
-        timeout: 20000,
-      });
+        {
+          headers: {
+            Authorization: `Bearer ${XAI_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          timeout: 20000,
+        }
+      );
 
-      const users = response.data.includes?.users || [];
-      const userMap = users.reduce((map, user) => {
-        map[user.id] = user.username;
-        return map;
-      }, {});
-
-      let posts = response.data.data || [];
-      posts = posts
-        .filter((post) => new Date(post.created_at) >= new Date(SINCE))
-        .map((post) => ({
-          handle: userMap[post.author_id] || "unknown",
-          text: post.text,
-          time: post.created_at,
-          url: `https://x.com/${userMap[post.author_id]}/status/${post.id}`,
-          likes: post.public_metrics.like_count,
-        }))
+      const posts = JSON.parse(response.data.choices[0].message.content) || [];
+      results[topic] = posts
+        .filter((post) => new Date(post.time) >= new Date(SINCE))
         .sort((a, b) => b.likes - a.likes)
-        .slice(0, 10); // Top 10 by likes
+        .slice(0, 10);
 
-      results[topic] = posts;
+      if (!posts.length) {
+        console.warn(`No posts found for topic: ${topic}`);
+      }
     } catch (error) {
-      console.error(`Error fetching X posts for ${topic}:`, error.response?.status, error.response?.data);
+      console.error(`Error fetching X posts for ${topic}:`, error.response?.status, error.response?.data || error.message);
       results[topic] = [];
     }
   }
@@ -57,4 +53,4 @@ async function fetchXPosts(topics) {
   return results;
 }
 
-export { fetchXPosts };
+module.exports = { fetchXPosts };
