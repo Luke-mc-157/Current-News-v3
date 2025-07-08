@@ -56,7 +56,7 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (topics.length >= 5) {
+    if (topics.length >= 1) {
       generateHeadlinesMutation.mutate(topics);
     }
   };
