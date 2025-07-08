@@ -87,4 +87,4 @@ async function completeSearch(topics, currentHeadlines) {
     .slice(0, 15);
 }
 
-module.exports = { completeSearch };
+export { completeSearch };
