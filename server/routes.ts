@@ -1,19 +1,18 @@
+import express, { type Express } from "express";
+import { createServer, type Server } from "http";
 
-const express = require("express");
-const { createServer } = require("http");
-
-// Dynamic imports for CommonJS services
-let fetchXPosts;
-let generateHeadlines;
-let fetchSupportingArticles;
-let completeSearch;
+// Dynamic imports for ES modules
+let fetchXPosts: any;
+let generateHeadlines: any;
+let fetchSupportingArticles: any;
+let completeSearch: any;
 
 // Initialize services
 const initServices = async () => {
-  const xSearchModule = require("./services/xSearch");
-  const headlineCreatorModule = require("./services/headlineCreator");
-  const supportCompilerModule = require("./services/supportCompiler");
-  const completeSearchModule = require("./services/completeSearch");
+  const xSearchModule = await import("./services/xSearch.js");
+  const headlineCreatorModule = await import("./services/headlineCreator.js");
+  const supportCompilerModule = await import("./services/supportCompiler.js");
+  const completeSearchModule = await import("./services/completeSearch.js");
   
   fetchXPosts = xSearchModule.fetchXPosts;
   generateHeadlines = headlineCreatorModule.generateHeadlines;
@@ -21,12 +20,12 @@ const initServices = async () => {
   completeSearch = completeSearchModule.completeSearch;
 };
 
-async function registerRoutes(app) {
+export async function registerRoutes(app: Express): Promise<Server> {
   // Initialize services on first use
   let servicesInitialized = false;
 
   // Store headlines in memory (replace with database in production)
-  let headlinesStore = [];
+  let headlinesStore: any[] = [];
 
   app.post("/api/generate-headlines", async (req, res) => {
     // Initialize services if not already done
@@ -42,79 +41,48 @@ async function registerRoutes(app) {
 
     try {
       const posts = await fetchXPosts(topics);
-      
-      // Validate that we have actual posts
-      const hasPosts = Object.values(posts).some((p) => p.length > 0);
-      if (!hasPosts) {
-        throw new Error("No X posts found for any topic");
-      }
-
       const headlinesByTopic = await generateHeadlines(posts);
-      
-      // Validate that we have actual headlines
-      const hasHeadlines = Object.values(headlinesByTopic).some((h) => h.length > 0);
-      if (!hasHeadlines) {
-        throw new Error("No headlines generated from X posts");
-      }
-
       const articlesByTopic = await fetchSupportingArticles(headlinesByTopic);
 
-      let headlines = [];
+      let headlines: any[] = [];
       for (const topic in headlinesByTopic) {
-        // Skip topics without posts
-        if (!posts[topic]?.length) {
-          console.warn(`Skipping ${topic}: no X posts found`);
-          continue;
-        }
-        
-        headlinesByTopic[topic].forEach((headline, index) => {
-          const articles = articlesByTopic[topic]?.find((a) => a.headline === headline.title)?.articles || [];
+        headlinesByTopic[topic].forEach((headline: any, index: number) => {
+          const articles = articlesByTopic[topic]?.find((a: any) => a.headline === headline.title)?.articles || [];
           headlines.push({
             id: `${topic}-${index}`,
             title: headline.title,
             summary: headline.summary,
             category: topic,
             createdAt: new Date().toISOString(),
-            engagement: posts[topic].reduce((sum, p) => sum + p.likes, 0),
+            engagement: posts[topic].reduce((sum: number, p: any) => sum + p.likes, 0),
             sourcePosts: posts[topic],
             supportingArticles: articles,
           });
         });
       }
 
-      // Final validation - ensure we have valid headlines
-      if (!headlines.length) {
-        throw new Error("No valid headlines generated");
-      }
-
       // Sort headlines by engagement (highest first)
-      headlines = headlines.sort((a, b) => b.engagement - a.engagement);
+      headlines = headlines.sort((a: any, b: any) => b.engagement - a.engagement);
 
-      // Run complete search if needed
+      // Run Workflow 5 if needed
       headlines = await completeSearch(topics, headlines);
-      
       // Sort again after adding subtopic headlines
-      headlines = headlines.sort((a, b) => b.engagement - a.engagement);
+      headlines = headlines.sort((a: any, b: any) => b.engagement - a.engagement);
 
       headlinesStore = headlines;
       res.json({ success: true, headlines });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error in /api/generate-headlines:", error.message);
-      res.status(500).json({ message: "Failed to generate headlines: " + error.message });
+      res.status(500).json({ message: "Failed to generate headlines" });
     }
   });
 
   app.get("/api/headlines", (req, res) => {
-    if (!headlinesStore.length) {
-      return res.status(404).json({ headlines: [], message: "No headlines available" });
-    }
     // Ensure headlines are sorted by engagement when fetched
-    const sortedHeadlines = headlinesStore.sort((a, b) => b.engagement - a.engagement);
+    const sortedHeadlines = headlinesStore.sort((a: any, b: any) => b.engagement - a.engagement);
     res.json({ headlines: sortedHeadlines });
   });
 
   const server = createServer(app);
   return server;
 }
-
-module.exports = { registerRoutes };
