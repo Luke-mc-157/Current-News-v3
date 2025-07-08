@@ -1,13 +1,13 @@
-// server/services/completeSearch.js
-import axios from "axios";
-import { fetchXPosts } from "./xSearch.js";
-import { generateHeadlines } from "./headlineCreator.js";
-import { fetchSupportingArticles } from "./supportCompiler.js";
+
+const axios = require("axios");
+const { fetchXPosts } = require("./xSearch");
+const { generateHeadlines } = require("./headlineCreator");
+const { fetchSupportingArticles } = require("./supportCompiler");
 
 async function completeSearch(topics, currentHeadlines) {
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
   if (!OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is not set");
+    throw new Error("OPENAI_API_KEY is not set in Replit Secrets");
   }
 
   if (currentHeadlines.length >= 15) {
@@ -25,7 +25,7 @@ async function completeSearch(topics, currentHeadlines) {
             {
               role: "system",
               content:
-                "Generate 2 specific subtopics for the given topic to improve news coverage. Return as an array.",
+                "Generate 2 specific subtopics for the given topic to improve news coverage. Return as JSON array.",
             },
             { role: "user", content: `Topic: ${topic}` },
           ],
@@ -38,20 +38,35 @@ async function completeSearch(topics, currentHeadlines) {
         }
       );
 
-      subtopics[topic] = JSON.parse(response.data.choices[0].message.content);
+      subtopics[topic] = JSON.parse(response.data.choices[0].message.content) || [];
     } catch (error) {
-      console.error(`Error generating subtopics for ${topic}:`, error.response?.status, error.response?.data);
+      console.error(`Error generating subtopics for ${topic}:`, error.response?.status, error.response?.data || error.message);
       subtopics[topic] = [];
     }
   }
 
   const allSubtopics = Object.values(subtopics).flat();
+  if (!allSubtopics.length) {
+    console.warn("No subtopics generated, returning current headlines");
+    return currentHeadlines.sort((a, b) => b.engagement - a.engagement);
+  }
+
   const posts = await fetchXPosts(allSubtopics);
+  const hasPosts = Object.values(posts).some((p) => p.length > 0);
+  if (!hasPosts) {
+    console.warn("No posts found for subtopics, returning current headlines");
+    return currentHeadlines.sort((a, b) => b.engagement - a.engagement);
+  }
+
   const headlinesBySubtopic = await generateHeadlines(posts);
   const articlesBySubtopic = await fetchSupportingArticles(headlinesBySubtopic);
 
   const newHeadlines = [];
   for (const subtopic in headlinesBySubtopic) {
+    if (!posts[subtopic]?.length) {
+      console.warn(`Skipping subtopic ${subtopic}: no X posts found`);
+      continue;
+    }
     headlinesBySubtopic[subtopic].forEach((headline, index) => {
       const articles = articlesBySubtopic[subtopic]?.find((a) => a.headline === headline.title)?.articles || [];
       newHeadlines.push({
@@ -67,10 +82,9 @@ async function completeSearch(topics, currentHeadlines) {
     });
   }
 
-  // Combine and sort by engagement
   return [...currentHeadlines, ...newHeadlines]
     .sort((a, b) => b.engagement - a.engagement)
     .slice(0, 15);
 }
 
-export { completeSearch };
+module.exports = { completeSearch };
