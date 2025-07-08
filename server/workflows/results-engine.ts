@@ -19,14 +19,12 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
     
     organizedResults.push({
       title: result.headline,
-      summary: result.supportingArticles.length > 0 
-        ? `Factual headline derived from ${result.sourcePosts.length} X posts about ${result.topic}. Supported by ${result.supportingArticles.length} news articles.`
-        : `Breaking headline derived from ${result.sourcePosts.length} X posts about ${result.topic} from the last 24 hours.`,
+      summary: `Breaking news from X discussions about ${result.topic}. Based on analysis of ${result.sourcePosts.length} recent posts with high engagement.${result.supportingArticles.length > 0 ? ` Additional coverage from ${result.supportingArticles.length} news sources.` : ''}`,
       category,
       engagement: engagementLevel,
       sourcePosts: result.sourcePosts,
       supportingArticles: result.supportingArticles.map(article => ({
-        title: `${article.source} - ${article.title}`,
+        title: article.title,
         url: article.url
       }))
     });

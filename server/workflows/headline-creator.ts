@@ -37,20 +37,21 @@ export async function createHeadlinesFromPosts(topicPosts: TopicPosts[]): Promis
         day: 'numeric' 
       });
 
-      const prompt = `Today is ${currentDate}. Create specific, factual news headlines using the following X posts about "${topic}" from the last 24 hours. 
-The headlines MUST be specific and based on the actual content of the posts AND reflect current events happening NOW.
+      const prompt = `Today is ${currentDate}. Analyze these X posts about "${topic}" and create 2-3 factual news headlines.
 
-CRITICAL REQUIREMENTS:
-- Headlines must be about events happening TODAY or YESTERDAY only
-- NO references to events from 2021, 2022, or any past years
-- Headlines must be specific and reference actual events, names, or facts from the posts
-- Include specific details: names, places, actions, outcomes happening RIGHT NOW
-- If the posts don't contain current newsworthy events, create headlines about current trends or discussions
-- Format: One headline per line, no numbering
-- Focus on breaking news, current discussions, or recent developments
+REQUIREMENTS:
+- Headlines must accurately reflect the content and themes in the X posts
+- Focus on the most engaging and newsworthy elements from the posts
+- Headlines should be specific about current events happening in January 2025
+- Use journalistic style - clear, direct, and informative
+- Each headline should be 8-15 words
+- Do NOT create headlines about events that aren't mentioned in the posts
+- Format: One headline per line, no numbering or quotes
 
-Posts about ${topic}:
-${postsText}`;
+Analyze these posts for common themes and breaking news:
+${postsText}
+
+Create headlines that accurately summarize the most important information from these posts:`;
 
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',

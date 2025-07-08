@@ -44,25 +44,29 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
         day: 'numeric' 
       });
 
-      const prompt = `Today is ${currentDate}. Generate 12 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
+      const prompt = `Today is ${currentDate}. Generate 8 realistic X (formerly Twitter) posts about "${topic}" from the last 24 hours.
 
-      CRITICAL: Posts must be about current events, discussions, or trends happening RIGHT NOW in 2025.
-      
-      For each post, create:
-      - A realistic username (without @)
-      - A compelling tweet text (under 280 characters) that is specific and about current events
-      - Realistic engagement metrics (vary widely from 50 to 10000+ likes)
-      - Must reference current trends, breaking news, or recent developments in the topic
-      - Include diverse perspectives and angles on the topic
-      
-      Format as JSON array with structure:
-      [{
-        "text": "tweet content about current events",
-        "author_handle": "username",
-        "likes": number,
-        "retweets": number,
-        "replies": number
-      }]`;
+CRITICAL REQUIREMENTS:
+- Posts must discuss current events, trends, or breaking news happening in January 2025
+- Each post should be about specific, factual developments in ${topic}
+- Use realistic usernames and engagement metrics
+- Keep tweets under 280 characters
+- Focus on newsworthy events that would actually be trending today
+- Make posts feel authentic and varied in perspective
+
+Examples for reference:
+- If topic is "NFL": discuss offseason trades, free agency, training camp news
+- If topic is "politics": discuss current policy debates, election preparations, legislative actions
+- If topic is "technology": discuss recent product launches, AI developments, tech industry news
+
+Format as JSON array:
+[{
+  "text": "specific tweet about current ${topic} events",
+  "author_handle": "realistic_username",
+  "likes": realistic_number_between_100_and_5000,
+  "retweets": realistic_number_between_50_and_2000,
+  "replies": realistic_number_between_20_and_500
+}]`;
 
       // Use OpenAI to generate realistic X posts since X AI API endpoint may vary
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
