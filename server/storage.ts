@@ -56,10 +56,10 @@ export class MemStorage implements IStorage {
   async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
     const id = this.currentTopicsId++;
     const userTopics: UserTopics = { 
-      ...topics, 
       id,
-      createdAt: new Date(),
-      userId: topics.userId || null
+      topics: Array.isArray(topics.topics) ? topics.topics : [],
+      userId: topics.userId || null,
+      createdAt: new Date()
     };
     this.userTopics.set(id, userTopics);
     return userTopics;
@@ -74,11 +74,14 @@ export class MemStorage implements IStorage {
   async createHeadline(headline: InsertHeadline): Promise<Headline> {
     const id = this.currentHeadlineId++;
     const newHeadline: Headline = {
-      ...headline,
       id,
-      createdAt: new Date(),
+      title: headline.title,
+      summary: headline.summary,
+      category: headline.category,
+      engagement: headline.engagement,
       sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts : [],
-      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : []
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : [],
+      createdAt: new Date()
     };
     this.headlines.set(id, newHeadline);
     return newHeadline;
@@ -93,11 +96,15 @@ export class MemStorage implements IStorage {
   async createPodcastSettings(settings: InsertPodcastSettings): Promise<PodcastSettings> {
     const id = this.currentPodcastId++;
     const newSettings: PodcastSettings = {
-      ...settings,
       id,
-      createdAt: new Date(),
       userId: settings.userId || null,
-      times: Array.isArray(settings.times) ? settings.times : []
+      frequency: settings.frequency,
+      times: Array.isArray(settings.times) ? settings.times : [],
+      length: settings.length,
+      voice: settings.voice,
+      name: settings.name,
+      email: settings.email,
+      createdAt: new Date()
     };
     this.podcastSettings.set(id, newSettings);
     return newSettings;
