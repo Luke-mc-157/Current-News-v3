@@ -39,11 +39,12 @@ export async function fetchXPosts(topics) {
         "https://api.twitter.com/2/tweets/search/recent",
         {
           params: {
-            query: `"${topic.replace(/['"]/g, '').substring(0, 200)}" lang:en -is:retweet`, // Clean topic, English, no retweets
+            query: `${topic.replace(/['"]/g, '').substring(0, 200)} lang:en -is:retweet`, // Search broadly to get more results
             max_results: 100,
             "tweet.fields": "created_at,public_metrics,author_id",
-            expansions: "author_id", 
+            expansions: "author_id",
             "user.fields": "username",
+            start_time: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(), // Last 7 days for more viral content
           },
           headers: {
             Authorization: `Bearer ${X_BEARER_TOKEN}`,
@@ -61,38 +62,29 @@ export async function fetchXPosts(topics) {
       }
 
       const posts = response.data.data
-        ? response.data.data.map((tweet, index) => ({
-            handle: `@${response.data.includes.users.find((user) => user.id === tweet.author_id)?.username || `user${index}`}`,
-            text: tweet.text,
-            time: tweet.created_at,
-            url: `https://twitter.com/${response.data.includes.users.find((user) => user.id === tweet.author_id)?.username}/status/${tweet.id}`,
-            likes: tweet.public_metrics.like_count,
-          }))
+        ? response.data.data.map((tweet, index) => {
+            const username = response.data.includes?.users?.find((user) => user.id === tweet.author_id)?.username || `user${index}`;
+            return {
+              handle: `@${username}`,
+              text: tweet.text,
+              time: tweet.created_at,
+              url: `https://twitter.com/${username}/status/${tweet.id}`,
+              likes: tweet.public_metrics.like_count,
+            };
+          })
         : [];
+      
+      // Log engagement stats for debugging
+      if (posts.length > 0) {
+        const likesArray = posts.map(p => p.likes);
+        console.log(`Topic: ${topic} - Found ${posts.length} posts. Likes range: ${Math.min(...likesArray)} to ${Math.max(...likesArray)}`);
+      }
 
-      // First try to get posts with good engagement (5+ likes)
-      let filteredPosts = posts
+      // Sort all posts by engagement and take the top 2
+      const filteredPosts = posts
         .filter((post) => new Date(post.time) >= new Date(SINCE))
-        .filter((post) => post.likes >= 5)
-        .sort((a, b) => b.likes - a.likes)
-        .slice(0, 2);
-
-      // If no posts with 5+ likes, fall back to any posts with engagement
-      if (filteredPosts.length === 0) {
-        filteredPosts = posts
-          .filter((post) => new Date(post.time) >= new Date(SINCE))
-          .filter((post) => post.likes >= 1)
-          .sort((a, b) => b.likes - a.likes)
-          .slice(0, 2);
-      }
-
-      // If still no posts, get the most recent posts regardless of engagement
-      if (filteredPosts.length === 0) {
-        filteredPosts = posts
-          .filter((post) => new Date(post.time) >= new Date(SINCE))
-          .sort((a, b) => b.likes - a.likes)
-          .slice(0, 2);
-      }
+        .sort((a, b) => b.likes - a.likes) // Sort by highest likes first
+        .slice(0, 2); // Get the 2 posts with highest engagement
 
       if (!filteredPosts.length) {
         console.warn(`No posts found for topic: ${topic}`);
