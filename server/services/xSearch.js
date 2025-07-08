@@ -1,5 +1,9 @@
 import axios from "axios";
 
+// Track rate limit state globally
+let rateLimitReset = null;
+let lastRequestTime = null;
+
 export async function fetchXPosts(topics) {
   const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN;
   if (!X_BEARER_TOKEN) {
@@ -11,10 +15,25 @@ export async function fetchXPosts(topics) {
 
   const fetchTopicPosts = async (topic, retryCount = 0) => {
     try {
-      // Add delay between requests to avoid rate limiting
-      if (retryCount > 0) {
-        await new Promise(resolve => setTimeout(resolve, 2000 * retryCount));
+      // Check if we need to wait for rate limit reset
+      if (rateLimitReset && Date.now() < rateLimitReset) {
+        const waitTime = Math.ceil((rateLimitReset - Date.now()) / 1000);
+        console.log(`Rate limit active. Waiting ${waitTime} seconds for reset...`);
+        await new Promise(resolve => setTimeout(resolve, rateLimitReset - Date.now() + 1000));
+        rateLimitReset = null; // Clear after waiting
       }
+
+      // Ensure minimum 5 seconds between requests
+      if (lastRequestTime) {
+        const timeSinceLastRequest = Date.now() - lastRequestTime;
+        if (timeSinceLastRequest < 5000) {
+          const waitTime = 5000 - timeSinceLastRequest;
+          console.log(`Waiting ${Math.ceil(waitTime/1000)} seconds before next request...`);
+          await new Promise(resolve => setTimeout(resolve, waitTime));
+        }
+      }
+
+      lastRequestTime = Date.now();
       
       const response = await axios.get(
         "https://api.twitter.com/2/tweets/search/recent",
@@ -32,6 +51,14 @@ export async function fetchXPosts(topics) {
           timeout: 15000,
         }
       );
+
+      // Update rate limit tracking from response headers
+      const remaining = response.headers['x-rate-limit-remaining'];
+      const resetTime = response.headers['x-rate-limit-reset'];
+      
+      if (remaining !== undefined) {
+        console.log(`Rate limit remaining: ${remaining}`);
+      }
 
       const posts = response.data.data
         ? response.data.data.map((tweet, index) => ({
@@ -56,17 +83,34 @@ export async function fetchXPosts(topics) {
       return [topic, filteredPosts];
     } catch (error) {
       // Handle rate limiting with longer retry delays
-      if (error.response?.status === 429 && retryCount < 1) {
-        console.warn(`Rate limited for ${topic}, waiting 15 seconds before retry...`);
-        await new Promise(resolve => setTimeout(resolve, 15000));
-        return fetchTopicPosts(topic, retryCount + 1);
+      if (error.response?.status === 429) {
+        // Extract rate limit reset time from headers
+        const resetTime = error.response?.headers?.['x-rate-limit-reset'];
+        if (resetTime) {
+          rateLimitReset = parseInt(resetTime) * 1000; // Convert to milliseconds
+          const waitTime = Math.ceil((rateLimitReset - Date.now()) / 1000);
+          console.warn(`Rate limited for ${topic}. Reset in ${waitTime} seconds at ${new Date(rateLimitReset).toLocaleTimeString()}`);
+        } else {
+          // Fallback: wait 15 minutes if no reset header
+          rateLimitReset = Date.now() + (15 * 60 * 1000);
+          console.warn(`Rate limited for ${topic}. No reset header, waiting 15 minutes...`);
+        }
+        
+        if (retryCount < 1) {
+          const waitTime = Math.ceil((rateLimitReset - Date.now()) / 1000);
+          console.log(`Waiting ${waitTime} seconds for rate limit reset...`);
+          await new Promise(resolve => setTimeout(resolve, rateLimitReset - Date.now() + 1000));
+          rateLimitReset = null; // Clear after waiting
+          return fetchTopicPosts(topic, retryCount + 1);
+        }
       }
       
       console.error(`Error fetching X posts for ${topic}:`, {
         status: error.response?.status,
         statusText: error.response?.statusText,
         data: error.response?.data,
-        headers: error.response?.headers?.['x-rate-limit-remaining'],
+        remaining: error.response?.headers?.['x-rate-limit-remaining'],
+        reset: error.response?.headers?.['x-rate-limit-reset'] ? new Date(parseInt(error.response?.headers?.['x-rate-limit-reset']) * 1000).toLocaleTimeString() : 'N/A',
         message: error.message
       });
       return [topic, []];
@@ -76,11 +120,7 @@ export async function fetchXPosts(topics) {
   // Process topics sequentially to avoid rate limiting
   for (let i = 0; i < topics.length; i++) {
     const topic = topics[i];
-    if (i > 0) {
-      // Add 4-second delay between requests to respect rate limits (300 requests per 15 minutes)
-      console.log(`Waiting 4 seconds before next request...`);
-      await new Promise(resolve => setTimeout(resolve, 4000));
-    }
+    console.log(`Processing topic ${i + 1}/${topics.length}: ${topic}`);
     const [topicName, posts] = await fetchTopicPosts(topic);
     results[topicName] = posts;
   }
