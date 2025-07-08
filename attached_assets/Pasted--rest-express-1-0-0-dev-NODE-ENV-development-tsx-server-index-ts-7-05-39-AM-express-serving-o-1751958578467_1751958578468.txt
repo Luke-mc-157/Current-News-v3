@@ -1,0 +1,74 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+7:05:39 AM [express] serving on port 5000
+Error fetching X posts for liverpool f.c.: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for U.S. politics: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for geopolitical news: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for Austin TX local news: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for weather events: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for NFL: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for MLB: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for U.S. sports: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error in /api/generate-headlines: No X posts found for any topic
+7:05:51 AM [express] POST /api/generate-headlines 500 in 774ms :: {"message":"Failed to generate hea…
+Error fetching X posts for liverpool f.c.: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for U.S. politics: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for geopolitical news: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for Austin TX local news: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for weather events: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for NFL: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for MLB: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error fetching X posts for U.S. sports: 404 {
+  code: 'Some requested entity was not found',
+  error: "The model grok-beta does not exist or your team 4d61b1bb-a9a8-43e2-906a-5dfe0bba5877 does not have access to it. Please ensure you're using the correct API key. If you believe this is a mistake, please contact support and quote your team ID and the model name."
+}
+Error in /api/generate-headlines: No X posts found for any topic
+7:05:58 AM [express] POST /api/generate-headlines 500 in 523ms :: {"message":"Failed to generate hea…
+       
