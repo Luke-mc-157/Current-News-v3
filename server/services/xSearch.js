@@ -55,14 +55,20 @@ export async function fetchXPosts(topics) {
       }
       return [topic, filteredPosts];
     } catch (error) {
-      // Handle rate limiting with retry
-      if (error.response?.status === 429 && retryCount < 2) {
-        console.warn(`Rate limited for ${topic}, retrying in ${2 * (retryCount + 1)} seconds...`);
-        await new Promise(resolve => setTimeout(resolve, 2000 * (retryCount + 1)));
+      // Handle rate limiting with longer retry delays
+      if (error.response?.status === 429 && retryCount < 1) {
+        console.warn(`Rate limited for ${topic}, waiting 15 seconds before retry...`);
+        await new Promise(resolve => setTimeout(resolve, 15000));
         return fetchTopicPosts(topic, retryCount + 1);
       }
       
-      console.error(`Error fetching X posts for ${topic}:`, error.response?.status, error.response?.data || error.message);
+      console.error(`Error fetching X posts for ${topic}:`, {
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        data: error.response?.data,
+        headers: error.response?.headers?.['x-rate-limit-remaining'],
+        message: error.message
+      });
       return [topic, []];
     }
   };
@@ -71,8 +77,9 @@ export async function fetchXPosts(topics) {
   for (let i = 0; i < topics.length; i++) {
     const topic = topics[i];
     if (i > 0) {
-      // Add delay between requests to respect rate limits
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Add 4-second delay between requests to respect rate limits (300 requests per 15 minutes)
+      console.log(`Waiting 4 seconds before next request...`);
+      await new Promise(resolve => setTimeout(resolve, 4000));
     }
     const [topicName, posts] = await fetchTopicPosts(topic);
     results[topicName] = posts;
