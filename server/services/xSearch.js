@@ -9,23 +9,27 @@ export async function fetchXPosts(topics) {
   const results = {};
   const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
-  const fetchTopicPosts = async (topic) => {
+  const fetchTopicPosts = async (topic, retryCount = 0) => {
     try {
+      // Add delay between requests to avoid rate limiting
+      if (retryCount > 0) {
+        await new Promise(resolve => setTimeout(resolve, 2000 * retryCount));
+      }
+      
       const response = await axios.get(
         "https://api.x.com/2/tweets/search/recent",
         {
           params: {
-            query: `${topic} lang:en -is:retweet from:verified`, // English, no retweets, verified users
+            query: `${topic} lang:en -is:retweet`, // English, no retweets
             max_results: 10,
-            tweet_fields: "created_at,public_metrics,author_id",
+            "tweet.fields": "created_at,public_metrics,author_id",
             expansions: "author_id",
-            user_fields: "username",
+            "user.fields": "username",
           },
           headers: {
             Authorization: `Bearer ${X_BEARER_TOKEN}`,
-            "Content-Type": "application/json",
           },
-          timeout: 15000, // 15 seconds
+          timeout: 15000,
         }
       );
 
@@ -51,16 +55,28 @@ export async function fetchXPosts(topics) {
       }
       return [topic, filteredPosts];
     } catch (error) {
+      // Handle rate limiting with retry
+      if (error.response?.status === 429 && retryCount < 2) {
+        console.warn(`Rate limited for ${topic}, retrying in ${2 * (retryCount + 1)} seconds...`);
+        await new Promise(resolve => setTimeout(resolve, 2000 * (retryCount + 1)));
+        return fetchTopicPosts(topic, retryCount + 1);
+      }
+      
       console.error(`Error fetching X posts for ${topic}:`, error.response?.status, error.response?.data || error.message);
       return [topic, []];
     }
   };
 
-  const promises = topics.map(fetchTopicPosts);
-  const topicResults = await Promise.all(promises);
-  topicResults.forEach(([topic, posts]) => {
-    results[topic] = posts;
-  });
+  // Process topics sequentially to avoid rate limiting
+  for (let i = 0; i < topics.length; i++) {
+    const topic = topics[i];
+    if (i > 0) {
+      // Add delay between requests to respect rate limits
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+    const [topicName, posts] = await fetchTopicPosts(topic);
+    results[topicName] = posts;
+  }
 
   return results;
 }
