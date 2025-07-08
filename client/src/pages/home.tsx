@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-slate-900">Current</h1>
               <span className="ml-2 text-sm text-slate-500 hidden sm:block">
-                AI-Powered News Aggregation
+                News That Matters to You
               </span>
             </div>
             <nav className="hidden md:flex space-x-8">
