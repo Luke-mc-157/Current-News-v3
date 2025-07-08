@@ -20,22 +20,26 @@ export async function createHeadlinesFromPosts(topicPosts: TopicPosts[]): Promis
     if (posts.length === 0) continue;
 
     try {
+      // Sort posts by engagement (likes) and take top 5
+      const topPosts = posts
+        .sort((a, b) => b.public_metrics.like_count - a.public_metrics.like_count)
+        .slice(0, 5);
+      
       // Prepare posts data for OpenAI
-      const postsText = posts.map(p => 
+      const postsText = topPosts.map(p => 
         `Post by @${p.author_handle} (${p.public_metrics.like_count} likes, ${p.public_metrics.retweet_count} retweets):\n${p.text}`
       ).join('\n\n');
 
-      const prompt = `Create applicable news headlines using the following X/Twitter posts about "${topic}". 
-The headlines MUST be factual and contain no opinions or adjectives. 
-Use your best judgment to determine if there are multiple headlines per topic. 
-Provide all of your headlines in a list format.
+      const prompt = `Create specific, factual news headlines using the following X posts about "${topic}" from the last 24 hours. 
+The headlines MUST be specific and based on the actual content of the posts.
 
 IMPORTANT RULES:
-- Headlines must be declarative statements only
-- NO adjectives or opinionated language
+- Headlines must be specific and reference actual events, names, or facts from the posts
+- NO generic headlines like "Team plays game" or "Person discusses topic"
+- Include specific details: names, places, actions, outcomes
 - Each headline must represent actual events or facts from the posts
-- If posts discuss different aspects, create separate headlines
 - Format: One headline per line, no numbering
+- Headlines should reflect current events from today/yesterday only
 
 Posts:
 ${postsText}`;
@@ -51,7 +55,7 @@ ${postsText}`;
           messages: [
             {
               role: 'system',
-              content: 'You are a news headline generator that creates only factual, declarative headlines without any adjectives or opinions.'
+              content: 'You are a news headline generator that creates specific, factual headlines based on current events from the last 24 hours.'
             },
             {
               role: 'user',
@@ -78,8 +82,8 @@ ${postsText}`;
         headlines.push({
           headline,
           topic,
-          sourcePosts: posts.map(p => ({
-            text: `@${p.author_handle}: ${p.text.substring(0, 100)}...`,
+          sourcePosts: topPosts.map(p => ({
+            text: `@${p.author_handle}: ${p.text}`,
             url: p.url
           }))
         });

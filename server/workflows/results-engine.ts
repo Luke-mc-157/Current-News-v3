@@ -5,6 +5,11 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
   const organizedResults: InsertHeadline[] = [];
 
   for (const result of headlinesWithSupport) {
+    // Only keep headlines that have at least 1 X post AND at least 1 news article
+    if (result.sourcePosts.length === 0 || result.supportingArticles.length === 0) {
+      continue;
+    }
+    
     // Determine category based on topic keywords
     const category = determineCategory(result.topic);
     
@@ -13,7 +18,7 @@ export function organizeResults(headlinesWithSupport: HeadlineWithSupport[]): In
     
     organizedResults.push({
       title: result.headline,
-      summary: `Factual headline derived from ${result.sourcePosts.length} X/Twitter posts about ${result.topic}. Supported by ${result.supportingArticles.length} news articles.`,
+      summary: `Factual headline derived from ${result.sourcePosts.length} X posts about ${result.topic}. Supported by ${result.supportingArticles.length} news articles.`,
       category,
       engagement: engagementLevel,
       sourcePosts: result.sourcePosts,

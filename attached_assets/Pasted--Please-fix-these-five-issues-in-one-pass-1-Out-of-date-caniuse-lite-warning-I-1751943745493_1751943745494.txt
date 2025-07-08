@@ -1,0 +1,77 @@
+````
+### 🔧 Please fix these five issues in one pass
+
+#### 1  Out-of-date caniuse-lite warning  
+• In **Gemfile** set  
+  ```ruby
+  gem "tailwindcss-rails", "~> 2.7.2"
+````
+
+• Run `bundle update tailwindcss-rails` (or `bundle install` if it was absent).
+• Restart the server; the “Browserslist … 9 months old” warning should disappear.
+
+#### 2  ScrapingBee “BAD REQUEST” errors
+
+• Add secret `SCRAPINGBEE_API_KEY = WGY9G5LVUONB2D6IW1QLJX4N96D8DJX16QT30BF1K1G65KLLJAEGD8B7TW0HQWL2RGZ4ZQ88UL1OCETU` if it isn’t already set.
+• In the module that fetches supporting articles (e.g. `utils/scrape.js`) replace the call with:
+
+```js
+const axios = require("axios");
+const apiKey = process.env.SCRAPINGBEE_API_KEY;
+const targetUrl = "https://news.google.com/search?q=" + encodeURIComponent(headline);
+const scrapingBeeUrl =
+  `https://app.scrapingbee.com/api/v1/?api_key=${apiKey}&url=${encodeURIComponent(targetUrl)}&render_js=false`;
+
+const { data } = await axios.get(scrapingBeeUrl, { timeout: 20000 });
+```
+
+• URL-encode every headline (`encodeURIComponent`).
+• On non-200 responses log `error.response.status` and `error.response.data`.
+• Verify the console no longer shows “ScrapingBee API error: BAD REQUEST”.
+
+#### 3  24-hour freshness filter for X posts
+
+• In the X search module (e.g. `services/xSearch.js`) add:
+
+```js
+const SINCE = new Date(Date.now() - 24*60*60*1000).toISOString();
+
+const params = {
+  query: userTopicsQuery,
+  max_results: 100,
+  start_time: SINCE,                          // NEW
+  expansions: "author_id,attachments.media_keys",
+  "tweet.fields": "created_at,public_metrics"
+};
+
+posts = posts.filter(p => new Date(p.created_at) >= new Date(SINCE));
+```
+
+#### 4  24-hour freshness filter for Google-News articles
+
+• In the article-search module build the target URL with the “past 24 h” filter:
+
+```js
+const targetUrl =
+  "https://news.google.com/search?q=" +
+  encodeURIComponent(headline) +
+  "&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d";
+```
+
+#### 5  Result assembly & vague headlines
+
+• Only keep a headline if it has **≥ 1 X post** *and* **≥ 1 news article** that passed the 24-hour filters.
+• Regenerate the headline text from the top 5 posts (highest `public_metrics.like_count`) so it is specific, e.g.:
+
+```js
+const headline = openAiSummarize(topFivePostsTexts);  // existing helper
+```
+
+• Subheadlines must cite the actual article titles; drop any that still reference dates older than SINCE.
+
+---
+
+Save all files and restart the app. The UI should now show recent, specific headlines with supporting links, and the console should be clean of the earlier warnings and BAD REQUEST errors.
+
+```
+```

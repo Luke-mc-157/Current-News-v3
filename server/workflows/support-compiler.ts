@@ -25,15 +25,17 @@ export async function findSupportingArticles(headlines: GeneratedHeadline[]): Pr
 
   for (const { headline, topic, sourcePosts } of headlines) {
     try {
-      // Search Google News using ScrapingBee
+      // Search Google News using ScrapingBee with 24-hour filter
       const searchQuery = encodeURIComponent(headline);
-      const googleNewsUrl = `https://news.google.com/search?q=${searchQuery}&hl=en-US&gl=US&ceid=US:en`;
+      const googleNewsUrl = `https://news.google.com/search?q=${searchQuery}&hl=en-US&gl=US&ceid=US:en&tbs=qdr:d`;
       
-      const scrapingBeeUrl = `https://app.scrapingbee.com/api/v1/?api_key=${scrapingBeeKey}&url=${encodeURIComponent(googleNewsUrl)}&render_js=true&wait=3000`;
+      const scrapingBeeUrl = `https://app.scrapingbee.com/api/v1/?api_key=${scrapingBeeKey}&url=${encodeURIComponent(googleNewsUrl)}&render_js=false`;
 
-      const response = await fetch(scrapingBeeUrl);
+      const response = await fetch(scrapingBeeUrl, { timeout: 20000 } as any);
       
       if (!response.ok) {
+        const errorData = await response.text();
+        log(`ScrapingBee error - Status: ${response.status}, Data: ${errorData}`);
         throw new Error(`ScrapingBee API error: ${response.statusText}`);
       }
 

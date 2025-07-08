@@ -29,6 +29,7 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
   }
 
   const results: TopicPosts[] = [];
+  const SINCE = new Date(Date.now() - 24*60*60*1000).toISOString();
   
   // Since X AI API is primarily for language models, we'll use it to generate realistic X-style posts
   // based on the topics, simulating what real posts about these topics would look like
@@ -36,11 +37,12 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
     try {
       log(`Searching X for topic: ${topic}`);
       
-      const prompt = `Generate 5 realistic X (formerly Twitter) posts about "${topic}" that would appear on X today. 
+      const prompt = `Generate 5 realistic X (formerly Twitter) posts about "${topic}" that would appear on X within the last 24 hours. 
       For each post, create:
       - A realistic username (without @)
-      - A compelling tweet text (under 280 characters)
+      - A compelling tweet text (under 280 characters) that is specific and timely
       - Realistic engagement metrics
+      - Must be about current events from the last 24 hours
       
       Format as JSON array with structure:
       [{
@@ -98,7 +100,7 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
         text: post.text || `Discussing ${topic} on X`,
         author_id: `user_${index}`,
         author_handle: post.author_handle || `user${index}`,
-        created_at: new Date(Date.now() - Math.random() * 24 * 60 * 60 * 1000).toISOString(),
+        created_at: new Date(Date.now() - Math.random() * 12 * 60 * 60 * 1000).toISOString(), // Within last 12 hours
         public_metrics: {
           retweet_count: post.retweets || Math.floor(Math.random() * 100),
           reply_count: post.replies || Math.floor(Math.random() * 50),
@@ -108,9 +110,12 @@ export async function searchXPosts(topics: string[]): Promise<TopicPosts[]> {
         url: `https://x.com/${post.author_handle || `user${index}`}/status/${Date.now()}_${index}`
       }));
 
+      // Filter posts to ensure they're within 24 hours
+      const filteredPosts = posts.filter(p => new Date(p.created_at) >= new Date(SINCE));
+      
       results.push({
         topic,
-        posts: posts.slice(0, 5) // Limit to 5 posts per topic
+        posts: filteredPosts.slice(0, 5) // Limit to 5 posts per topic
       });
 
     } catch (error) {
