@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp, Clock, TrendingUp, Tag } from "lucide-react";
+import { ChevronDown, ChevronUp, Clock, TrendingUp, Tag, Newspaper } from "lucide-react";
 import type { Headline } from "@shared/schema";
 
 interface HeadlineCardProps {
@@ -69,7 +69,7 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
         </div>
 
         {isExpanded && (
-          <div className="border-t border-slate-200 pt-4">
+          <div className="border-t border-slate-200 pt-4 space-y-6">
             <div>
               <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
                 <svg className="w-4 h-4 mr-1 text-black" viewBox="0 0 24 24" fill="currentColor">
@@ -91,6 +91,28 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
                 ))}
               </div>
             </div>
+
+            {headline.supportingArticles && headline.supportingArticles.length > 0 && (
+              <div>
+                <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
+                  <Newspaper className="w-4 h-4 mr-1" />
+                  Supporting Articles ({headline.supportingArticles.length})
+                </h5>
+                <div className="space-y-2">
+                  {headline.supportingArticles.map((article, index) => (
+                    <a
+                      key={index}
+                      href={article.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-sm text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      • {article.title}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </CardContent>
