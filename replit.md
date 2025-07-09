@@ -116,6 +116,7 @@ The application now includes a comprehensive podcast generation system:
 - **Efficient X API Usage**: Compiles targeted source queries outside X API to minimize rate limit usage
 - **Podcast Test Page**: Added "/podcast-test" route with cached headlines to test podcast system without X API calls
 - **ElevenLabs Voice Integration**: Fixed voice ID issues, now using Bryan (Professional Narrator) as default with 5 curated voice options
+- **SendGrid Email Integration**: Replaced Gmail/nodemailer with SendGrid API for professional email delivery with better deliverability
 
 ## Deployment Strategy
 
@@ -135,7 +136,8 @@ The application now includes a comprehensive podcast generation system:
 - `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation (legacy)
 - `ELEVENLABS_API_KEY`: ElevenLabs API key for voice synthesis (10,000 chars/month free tier)
 - `DATABASE_URL`: PostgreSQL connection string for production database
-- `EMAIL_USER` & `EMAIL_PASS`: SMTP credentials for email delivery (optional)
+- `SENDGRID_API_KEY`: SendGrid API key for professional email delivery (100 emails/day free tier)
+- `EMAIL_FROM`: Verified sender email address for SendGrid (e.g., podcasts@yourdomain.com)
 
 The application follows a clear separation of concerns with modular services, type-safe interfaces, and modern development practices. The workflow-based architecture allows for easy expansion of features while maintaining clean code organization.
 

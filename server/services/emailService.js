@@ -1,5 +1,6 @@
-// Email service for sending podcast episodes
-import nodemailer from 'nodemailer';
+// Email service for sending podcast episodes using SendGrid
+// https://github.com/sendgrid/sendgrid-nodejs
+import sgMail from '@sendgrid/mail';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,41 +8,24 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Email configuration - using environment variables
-const EMAIL_HOST = process.env.EMAIL_HOST || 'smtp.gmail.com';
-const EMAIL_PORT = process.env.EMAIL_PORT || 587;
-const EMAIL_USER = process.env.EMAIL_USER;
-const EMAIL_PASS = process.env.EMAIL_PASS;
-const EMAIL_FROM = process.env.EMAIL_FROM || EMAIL_USER;
+// SendGrid configuration
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+const EMAIL_FROM = process.env.EMAIL_FROM || 'podcasts@yourdomain.com'; // Change to your verified sender
 
-// Create reusable transporter
-let transporter = null;
-
-function getTransporter() {
-  if (!transporter && EMAIL_USER && EMAIL_PASS) {
-    transporter = nodemailer.createTransport({
-      host: EMAIL_HOST,
-      port: EMAIL_PORT,
-      secure: EMAIL_PORT === 465,
-      auth: {
-        user: EMAIL_USER,
-        pass: EMAIL_PASS
-      }
-    });
-  }
-  return transporter;
+// Initialize SendGrid
+if (SENDGRID_API_KEY) {
+  sgMail.setApiKey(SENDGRID_API_KEY);
+  // sgMail.setDataResidency('eu'); // uncomment if using EU subuser
 }
 
-// Send podcast episode via email
+// Send podcast episode via email using SendGrid
 export async function sendPodcastEmail(recipientEmail, episodeData, audioFilePath) {
-  const transporter = getTransporter();
-  
-  if (!transporter) {
-    throw new Error("Email service not configured. Please set EMAIL_USER and EMAIL_PASS in secrets.");
+  if (!SENDGRID_API_KEY) {
+    throw new Error("SendGrid API key not configured. Please add SENDGRID_API_KEY to your secrets.");
   }
   
   try {
-    console.log(`Sending podcast email to ${recipientEmail}...`);
+    console.log(`Sending podcast email to ${recipientEmail} via SendGrid...`);
     
     // Prepare email content
     const emailHtml = `
@@ -68,26 +52,36 @@ export async function sendPodcastEmail(recipientEmail, episodeData, audioFilePat
     // Prepare attachments
     const attachments = [];
     if (audioFilePath && fs.existsSync(audioFilePath)) {
+      const audioBuffer = fs.readFileSync(audioFilePath);
       attachments.push({
         filename: `podcast-${new Date().toISOString().split('T')[0]}.mp3`,
-        path: audioFilePath
+        content: audioBuffer.toString('base64'),
+        type: 'audio/mpeg',
+        disposition: 'attachment'
       });
     }
     
-    // Send email
-    const info = await transporter.sendMail({
-      from: EMAIL_FROM,
+    // SendGrid message object
+    const msg = {
       to: recipientEmail,
+      from: EMAIL_FROM, // Must be verified sender
       subject: `${episodeData.podcastName || 'Current News'} - ${new Date().toLocaleDateString()}`,
+      text: `Your personalized news podcast is ready! Duration: ${episodeData.durationMinutes} minutes. Voice: ${episodeData.voiceName}`,
       html: emailHtml,
       attachments: attachments
-    });
+    };
     
-    console.log(`Email sent successfully: ${info.messageId}`);
-    return { success: true, messageId: info.messageId };
+    // Send email using SendGrid
+    await sgMail.send(msg);
+    
+    console.log('Email sent successfully via SendGrid');
+    return { success: true, service: 'SendGrid' };
     
   } catch (error) {
-    console.error("Error sending email:", error.message);
+    console.error("SendGrid email error:", error);
+    if (error.response) {
+      console.error("SendGrid error details:", error.response.body);
+    }
     throw error;
   }
 }
@@ -103,17 +97,15 @@ export function scheduleEmailDelivery(userId, email, schedule) {
 
 // Check if email service is configured
 export function isEmailServiceConfigured() {
-  return !!(EMAIL_USER && EMAIL_PASS);
+  return !!SENDGRID_API_KEY;
 }
 
 // Get detailed email service status for debugging
 export function getEmailServiceStatus() {
   return {
-    configured: !!(EMAIL_USER && EMAIL_PASS),
-    hasUser: !!EMAIL_USER,
-    hasPassword: !!EMAIL_PASS,
-    host: EMAIL_HOST,
-    port: EMAIL_PORT,
-    from: EMAIL_FROM
+    configured: !!SENDGRID_API_KEY,
+    service: 'SendGrid',
+    hasApiKey: !!SENDGRID_API_KEY,
+    fromAddress: EMAIL_FROM
   };
 }
