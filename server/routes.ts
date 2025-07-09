@@ -67,9 +67,10 @@ export function registerRoutes(app) {
         );
         
         headlinesByTopic[topic].forEach((headline, index) => {
-          // Assign unique posts to each headline (max 2 posts per headline)
-          const startIndex = index * 2;
-          const postsForHeadline = availablePosts.slice(startIndex, startIndex + 2);
+          // Assign unique posts to each headline (5-10 posts per headline)
+          const postsPerHeadline = Math.min(Math.max(5, Math.floor(availablePosts.length / headlinesByTopic[topic].length)), 10);
+          const startIndex = index * postsPerHeadline;
+          const postsForHeadline = availablePosts.slice(startIndex, startIndex + postsPerHeadline);
           
           if (postsForHeadline.length === 0) {
             // If no posts available, skip this headline

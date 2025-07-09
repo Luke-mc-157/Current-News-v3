@@ -26,7 +26,7 @@ async function completeSearch(topics, currentHeadlines) {
             {
               role: "system",
               content:
-                "Generate 2 specific subtopics for the given topic to improve news coverage. Return as JSON array.",
+                "Generate 3-4 specific subtopics for the given topic to improve news coverage and reach 15 total headlines. Return as JSON array.",
             },
             { role: "user", content: `Topic: ${topic}` },
           ],
@@ -77,9 +77,10 @@ async function completeSearch(topics, currentHeadlines) {
     );
     
     headlinesBySubtopic[subtopic].forEach((headline, index) => {
-      // Assign unique posts to each headline (max 2 posts per headline)
-      const startIndex = index * 2;
-      const postsForHeadline = availablePosts.slice(startIndex, startIndex + 2);
+      // Assign unique posts to each headline (5-10 posts per headline)
+      const postsPerHeadline = Math.min(Math.max(5, Math.floor(availablePosts.length / headlinesBySubtopic[subtopic].length)), 10);
+      const startIndex = index * postsPerHeadline;
+      const postsForHeadline = availablePosts.slice(startIndex, startIndex + postsPerHeadline);
       
       if (postsForHeadline.length === 0) {
         console.warn(`No available posts for subtopic headline: ${headline.title}`);

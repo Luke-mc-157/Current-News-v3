@@ -117,6 +117,7 @@ The application now includes a comprehensive podcast generation system:
 - **Podcast Test Page**: Added "/podcast-test" route with cached headlines to test podcast system without X API calls
 - **ElevenLabs Voice Integration**: Fixed voice ID issues, now using Bryan (Professional Narrator) as default with 5 curated voice options
 - **SendGrid Email Integration**: Replaced Gmail/nodemailer with SendGrid API for professional email delivery with better deliverability
+- **Enhanced Headlines System**: Improved to generate 15 specific headlines with 5-10 X posts each, using 15-20 sources per topic for comprehensive coverage
 
 ## Deployment Strategy
 

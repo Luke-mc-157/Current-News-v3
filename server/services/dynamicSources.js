@@ -16,12 +16,14 @@ export async function suggestVerifiedSources(topics) {
           role: "system",
           content: `You are an expert at identifying the most credible and authoritative sources for news topics. 
 
-For each topic, suggest the most relevant verified X/Twitter accounts that would post authentic, factual content about that topic. Focus on:
+For each topic, suggest 15-20 of the most relevant verified X/Twitter accounts that would post authentic, factual content about that topic. Focus on:
 
 1. OFFICIAL accounts (government agencies, organizations)
-2. VERIFIED journalists and news outlets
+2. VERIFIED journalists and news outlets  
 3. SUBJECT MATTER EXPERTS (academics, researchers)
 4. CREDIBLE institutions and think tanks
+5. LOCAL news sources and regional experts
+6. SPECIALIZED reporters covering the topic
 
 Avoid:
 - Random influencers or opinion accounts
@@ -73,10 +75,10 @@ export function buildSourceQueries(topicSources) {
   for (const topicSource of topicSources) {
     const sourceHandles = topicSource.suggested_sources.map(s => s.handle);
     
-    // Group sources into smaller queries (max 6 sources per query for broader coverage)
+    // Group sources into smaller queries (max 10 sources per query for broader coverage)
     const sourceGroups = [];
-    for (let i = 0; i < sourceHandles.length; i += 6) {
-      sourceGroups.push(sourceHandles.slice(i, i + 6));
+    for (let i = 0; i < sourceHandles.length; i += 10) {
+      sourceGroups.push(sourceHandles.slice(i, i + 10));
     }
     
     // Create OR queries for each group

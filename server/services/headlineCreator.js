@@ -13,7 +13,7 @@ async function generateHeadlines(postsByTopic) {
   for (const topic in postsByTopic) {
     const posts = postsByTopic[topic]
       .sort((a, b) => b.likes - a.likes)
-      .slice(0, 5)
+      .slice(0, 10)
       .map((post) => post.text);
 
     if (!posts.length) {
@@ -31,7 +31,7 @@ async function generateHeadlines(postsByTopic) {
             {
               role: "system",
               content:
-                "Generate 1-2 news headlines using ONLY the exact information from X posts. RULES: 1) NO invented details, numbers, or names not in posts 2) Extract main topics/themes only 3) Prefer vague headlines over specific claims 4) Examples: 'Political discussions around border security' NOT 'President announces new border policy' 5) 'Weather concerns in Texas region' NOT 'Texas Governor reports 161 missing'. Return JSON: [{title: string, summary: string}]",
+                "Generate 3-4 specific news headlines using ONLY the exact information from X posts. RULES: 1) NO invented details, numbers, or names not in posts 2) CREATE SPECIFIC headlines about actual events mentioned in posts 3) Include specific people, places, events when mentioned in posts 4) Examples: 'President announces new border policy' if mentioned in posts, 'Texas Governor reports 161 missing' if exact number in posts 5) Each headline should cover different specific events from the posts 6) Use exact quotes and factual details from posts. Return JSON: [{title: string, summary: string}]",
             },
             { role: "user", content: `Topic: ${topic}\nPosts: ${posts.join("\n")}` },
           ],
