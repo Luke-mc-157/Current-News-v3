@@ -1,4 +1,4 @@
-import { users, userTopics, headlines, podcastSettings, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode } from "@shared/schema";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -13,6 +13,14 @@ export interface IStorage {
   
   createPodcastSettings(settings: InsertPodcastSettings): Promise<PodcastSettings>;
   getPodcastSettings(userId: number): Promise<PodcastSettings[]>;
+  
+  createPodcastContent(content: InsertPodcastContent): Promise<PodcastContent>;
+  getPodcastContentByHeadlineId(headlineId: string): Promise<PodcastContent[]>;
+  
+  createPodcastEpisode(episode: InsertPodcastEpisode): Promise<PodcastEpisode>;
+  getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined>;
+  getLatestPodcastEpisode(userId: number): Promise<PodcastEpisode | undefined>;
+  updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined>;
 }
 
 export class MemStorage implements IStorage {
@@ -20,20 +28,28 @@ export class MemStorage implements IStorage {
   private userTopics: Map<number, UserTopics>;
   private headlines: Map<number, Headline>;
   private podcastSettings: Map<number, PodcastSettings>;
+  private podcastContent: Map<number, PodcastContent>;
+  private podcastEpisodes: Map<number, PodcastEpisode>;
   private currentId: number;
   private currentTopicsId: number;
   private currentHeadlineId: number;
   private currentPodcastId: number;
+  private currentContentId: number;
+  private currentEpisodeId: number;
 
   constructor() {
     this.users = new Map();
     this.userTopics = new Map();
     this.headlines = new Map();
     this.podcastSettings = new Map();
+    this.podcastContent = new Map();
+    this.podcastEpisodes = new Map();
     this.currentId = 1;
     this.currentTopicsId = 1;
     this.currentHeadlineId = 1;
     this.currentPodcastId = 1;
+    this.currentContentId = 1;
+    this.currentEpisodeId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -114,6 +130,63 @@ export class MemStorage implements IStorage {
     return Array.from(this.podcastSettings.values()).filter(
       (settings) => settings.userId === userId
     );
+  }
+
+  async createPodcastContent(content: InsertPodcastContent): Promise<PodcastContent> {
+    const id = this.currentContentId++;
+    const newContent: PodcastContent = {
+      id,
+      headlineId: content.headlineId,
+      contentType: content.contentType,
+      fullText: content.fullText,
+      sourceUrl: content.sourceUrl || null,
+      fetchedAt: new Date()
+    };
+    this.podcastContent.set(id, newContent);
+    return newContent;
+  }
+
+  async getPodcastContentByHeadlineId(headlineId: string): Promise<PodcastContent[]> {
+    return Array.from(this.podcastContent.values()).filter(
+      (content) => content.headlineId === headlineId
+    );
+  }
+
+  async createPodcastEpisode(episode: InsertPodcastEpisode): Promise<PodcastEpisode> {
+    const id = this.currentEpisodeId++;
+    const newEpisode: PodcastEpisode = {
+      id,
+      userId: episode.userId || null,
+      headlineIds: Array.isArray(episode.headlineIds) ? episode.headlineIds as string[] : [],
+      script: episode.script,
+      audioUrl: episode.audioUrl || null,
+      voiceId: episode.voiceId || null,
+      durationMinutes: episode.durationMinutes || null,
+      createdAt: new Date(),
+      emailSentAt: episode.emailSentAt || null
+    };
+    this.podcastEpisodes.set(id, newEpisode);
+    return newEpisode;
+  }
+
+  async getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined> {
+    return this.podcastEpisodes.get(id);
+  }
+
+  async getLatestPodcastEpisode(userId: number): Promise<PodcastEpisode | undefined> {
+    const userEpisodes = Array.from(this.podcastEpisodes.values())
+      .filter(episode => episode.userId === userId)
+      .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+    return userEpisodes[0];
+  }
+
+  async updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined> {
+    const episode = this.podcastEpisodes.get(id);
+    if (!episode) return undefined;
+    
+    const updatedEpisode = { ...episode, ...updates };
+    this.podcastEpisodes.set(id, updatedEpisode);
+    return updatedEpisode;
   }
 }
 

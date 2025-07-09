@@ -38,6 +38,27 @@ export const podcastSettings = pgTable("podcast_settings", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+export const podcastContent = pgTable("podcast_content", {
+  id: serial("id").primaryKey(),
+  headlineId: text("headline_id").notNull(),
+  contentType: text("content_type").notNull(), // 'post' or 'article'
+  fullText: text("full_text").notNull(),
+  sourceUrl: text("source_url"),
+  fetchedAt: timestamp("fetched_at").defaultNow().notNull(),
+});
+
+export const podcastEpisodes = pgTable("podcast_episodes", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id"),
+  headlineIds: jsonb("headline_ids").$type<string[]>().notNull(),
+  script: text("script").notNull(),
+  audioUrl: text("audio_url"),
+  voiceId: text("voice_id"),
+  durationMinutes: integer("duration_minutes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  emailSentAt: timestamp("email_sent_at"),
+});
+
 export const insertUserTopicsSchema = createInsertSchema(userTopics).omit({
   id: true,
   createdAt: true,
@@ -53,12 +74,26 @@ export const insertPodcastSettingsSchema = createInsertSchema(podcastSettings).o
   createdAt: true,
 });
 
+export const insertPodcastContentSchema = createInsertSchema(podcastContent).omit({
+  id: true,
+  fetchedAt: true,
+});
+
+export const insertPodcastEpisodeSchema = createInsertSchema(podcastEpisodes).omit({
+  id: true,
+  createdAt: true,
+});
+
 export type InsertUserTopics = z.infer<typeof insertUserTopicsSchema>;
 export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
+export type InsertPodcastContent = z.infer<typeof insertPodcastContentSchema>;
+export type InsertPodcastEpisode = z.infer<typeof insertPodcastEpisodeSchema>;
 
 export type UserTopics = typeof userTopics.$inferSelect;
 export type PodcastSettings = typeof podcastSettings.$inferSelect;
+export type PodcastContent = typeof podcastContent.$inferSelect;
+export type PodcastEpisode = typeof podcastEpisodes.$inferSelect;
 
 // Headline type for application use
 export type Headline = {

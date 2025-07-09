@@ -2,13 +2,11 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
-import PodcastModal from "@/components/podcast-modal";
+import PodcastGenerator from "@/components/podcast-generator";
 import { Button } from "@/components/ui/button";
-import { Podcast } from "lucide-react";
 import type { Headline } from "@shared/schema";
 
 export default function Home() {
-  const [isPodcastModalOpen, setIsPodcastModalOpen] = useState(false);
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
 
   const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
@@ -59,15 +57,11 @@ export default function Home() {
 
           <TopicInput onTopicsSubmitted={setSubmittedTopics} />
 
-          <div className="flex flex-col sm:flex-row gap-3 mt-4">
-            <Button
-              onClick={() => setIsPodcastModalOpen(true)}
-              className="bg-accent text-white hover:bg-emerald-700"
-            >
-              <Podcast className="w-4 h-4 mr-2" />
-              Generate Podcast
-            </Button>
-          </div>
+          {headlines.length > 0 && (
+            <div className="flex flex-col sm:flex-row gap-3 mt-4">
+              <PodcastGenerator headlinesAvailable={headlines.length > 0} />
+            </div>
+          )}
         </section>
 
         {/* Results Section */}
@@ -109,11 +103,6 @@ export default function Home() {
           </section>
         )}
       </main>
-
-      <PodcastModal
-        isOpen={isPodcastModalOpen}
-        onClose={() => setIsPodcastModalOpen(false)}
-      />
     </div>
   );
 }
