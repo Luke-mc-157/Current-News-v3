@@ -144,7 +144,7 @@ export function registerRoutes(app) {
 
   // Podcast generation routes
   router.post("/api/generate-podcast", async (req, res) => {
-    const { durationMinutes = 10, voiceId = 'rachel', podcastName = 'Current News' } = req.body;
+    const { durationMinutes = 10, voiceId = '9BWtsMINqrJLrRacOk9x', podcastName = 'Current News' } = req.body;
     
     try {
       if (!headlinesStore.length) {
@@ -219,8 +219,9 @@ export function registerRoutes(app) {
       const mainAudioUrl = audioUrls[0];
       
       // Update episode with audio URL
-      await storage.updatePodcastEpisode(episodeId, { audioUrl: mainAudioUrl });
+      await storage.updatePodcastEpisode(parseInt(episodeId), { audioUrl: mainAudioUrl });
       
+      console.log(`Audio generation completed for episode ${episodeId}: ${mainAudioUrl}`);
       res.json({ 
         success: true, 
         audioUrl: mainAudioUrl,
@@ -278,6 +279,9 @@ export function registerRoutes(app) {
   // Serve podcast audio files
   app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
 
+  // Serve static podcast audio files
+  app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
+  
   app.use(router);
   
   return http.createServer(app);

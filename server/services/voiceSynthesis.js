@@ -10,14 +10,11 @@ const __dirname = path.dirname(__filename);
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_API_URL = 'https://api.elevenlabs.io/v1';
 
-// Available voices (you can expand this based on ElevenLabs offerings)
+// Default voice fallbacks if API call fails
 export const VOICE_OPTIONS = [
-  { id: 'rachel', name: 'Rachel', description: 'Clear American female voice' },
-  { id: 'clyde', name: 'Clyde', description: 'Deep American male voice' },
-  { id: 'domi', name: 'Domi', description: 'British female voice' },
-  { id: 'bella', name: 'Bella', description: 'Soft American female voice' },
-  { id: 'antoni', name: 'Antoni', description: 'British male voice' },
-  { id: 'elli', name: 'Elli', description: 'Young American female voice' }
+  { id: '9BWtsMINqrJLrRacOk9x', name: 'Aria', description: 'Clear American female voice' },
+  { id: 'pqHfZKP75CvOlQylNhV4', name: 'Bill', description: 'American male voice' },
+  { id: 'EXAVITQu4vr4xnSDxMaL', name: 'Sarah', description: 'Professional female voice' }
 ];
 
 // Get available voices from ElevenLabs
@@ -51,7 +48,7 @@ export async function getAvailableVoices() {
 }
 
 // Generate audio from text
-export async function generateAudio(text, voiceId = 'rachel', episodeId) {
+export async function generateAudio(text, voiceId = '9BWtsMINqrJLrRacOk9x', episodeId) {
   if (!ELEVENLABS_API_KEY) {
     throw new Error("ElevenLabs API key not set. Please add ELEVENLABS_API_KEY to your secrets.");
   }

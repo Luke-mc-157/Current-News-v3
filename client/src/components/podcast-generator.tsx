@@ -17,7 +17,7 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
   const [script, setScript] = useState<string | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [selectedDuration, setSelectedDuration] = useState('10');
-  const [selectedVoice, setSelectedVoice] = useState('rachel');
+  const [selectedVoice, setSelectedVoice] = useState('9BWtsMINqrJLrRacOk9x');
   const { toast } = useToast();
 
   const handleGeneratePodcast = async () => {
