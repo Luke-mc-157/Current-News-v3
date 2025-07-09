@@ -59,6 +59,7 @@ export async function sendPodcastEmail(recipientEmail, episodeData, audioFilePat
         type: 'audio/mpeg',
         disposition: 'attachment'
       });
+      console.log(`Audio attachment added: ${audioBuffer.length} bytes`);
     }
     
     // SendGrid message object
