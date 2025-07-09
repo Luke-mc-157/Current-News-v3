@@ -31,7 +31,7 @@ async function generateHeadlines(postsByTopic) {
             {
               role: "system",
               content:
-                "Generate 2-3 STRICTLY FACTUAL news headlines based ONLY on the provided X posts. CRITICAL RULES: 1) Use only information directly stated in the posts 2) Do not add details, quotes, or specifics not present in the posts 3) Keep headlines general and broad 4) Focus on events, not specific quotes or actions 5) If posts lack clear factual information, return fewer headlines. Return as JSON: [{title: string, summary: string}, ...]",
+                "Generate 1-2 news headlines using ONLY the exact information from X posts. RULES: 1) NO invented details, numbers, or names not in posts 2) Extract main topics/themes only 3) Prefer vague headlines over specific claims 4) Examples: 'Political discussions around border security' NOT 'President announces new border policy' 5) 'Weather concerns in Texas region' NOT 'Texas Governor reports 161 missing'. Return JSON: [{title: string, summary: string}]",
             },
             { role: "user", content: `Topic: ${topic}\nPosts: ${posts.join("\n")}` },
           ],
@@ -44,7 +44,19 @@ async function generateHeadlines(postsByTopic) {
         }
       );
 
-      headlines[topic] = JSON.parse(response.data.choices[0].message.content) || [];
+      try {
+        const content = response.data.choices[0].message.content;
+        // Clean up the response and ensure it's valid JSON
+        let cleanedContent = content.trim().replace(/^```json\s*/, '').replace(/\s*```$/, '');
+        
+        // Fix unquoted JSON property names
+        cleanedContent = cleanedContent.replace(/(\{|,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:/g, '$1"$2":');
+        
+        headlines[topic] = JSON.parse(cleanedContent) || [];
+      } catch (parseError) {
+        console.error(`Error parsing headlines for ${topic}:`, parseError.message, "Raw content:", response.data.choices[0].message.content);
+        headlines[topic] = [];
+      }
     } catch (error) {
       console.error(`Error generating headlines for ${topic}:`, error.response?.status, error.response?.data || error.message);
       headlines[topic] = [];

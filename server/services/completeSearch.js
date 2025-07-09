@@ -93,11 +93,20 @@ async function completeSearch(topics, currentHeadlines) {
       const articles = articlesBySubtopic[subtopic]?.find((a) => a.headline === headline.title)?.articles || [];
       const engagement = postsForHeadline.reduce((sum, p) => sum + p.likes, 0);
       
+      // Find parent topic for categorization
+      let parentTopic = 'General';
+      for (const [topic, subs] of Object.entries(subtopics)) {
+        if (subs.includes(subtopic)) {
+          parentTopic = topic;
+          break;
+        }
+      }
+      
       newHeadlines.push({
         id: `${subtopic}-${index}`,
         title: headline.title,
         summary: headline.summary,
-        category: subtopic,
+        category: parentTopic, // Use parent topic instead of subtopic
         createdAt: new Date().toISOString(),
         engagement: engagement,
         sourcePosts: postsForHeadline,

@@ -60,7 +60,12 @@ function extractTotalEngagement(sourcePosts: Array<{ text: string; url: string }
   return totalEngagement;
 }
 
-function determineCategory(topic: string): string {
+function determineCategory(topic: string | unknown): string {
+  // Ensure topic is a string
+  if (typeof topic !== 'string') {
+    console.warn(`Invalid topic type: ${typeof topic}, value: ${topic}`);
+    return 'General';
+  }
   const topicLower = topic.toLowerCase();
   
   if (topicLower.includes('tech') || topicLower.includes('ai') || topicLower.includes('software') || topicLower.includes('crypto')) {

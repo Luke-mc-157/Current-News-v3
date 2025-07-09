@@ -43,6 +43,11 @@ export async function fetchXPosts(topics) {
     
     // First try exact topic matching
     for (const topic of userTopics) {
+      // Ensure topic is a string
+      if (typeof topic !== 'string') {
+        console.warn(`Invalid topic type in categorizePost: ${typeof topic}`);
+        continue;
+      }
       const topicLower = topic.toLowerCase();
       if (lowerText.includes(topicLower)) {
         return topic;
@@ -58,6 +63,9 @@ export async function fetchXPosts(topics) {
     
     // Then try keyword-based categorization
     for (const topic of userTopics) {
+      if (typeof topic !== 'string') {
+        continue;
+      }
       const topicLower = topic.toLowerCase();
       
       for (const [category, keywords] of Object.entries(topicKeywords)) {
@@ -229,9 +237,9 @@ export async function fetchXPosts(topics) {
     console.log(`Only found ${totalPosts} categorized posts. Searching for general trending content...`);
     
     const generalQueries = [
-      'min_faves:500',
-      'min_faves:1000',
-      'news min_faves:200'
+      'news',
+      'breaking news',
+      'trending'
     ];
     
     for (const query of generalQueries) {
