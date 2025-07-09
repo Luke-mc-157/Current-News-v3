@@ -62,21 +62,45 @@ async function completeSearch(topics, currentHeadlines) {
   const articlesBySubtopic = await fetchSupportingArticles(headlinesBySubtopic);
 
   const newHeadlines = [];
+  let usedSubtopicPosts = new Set();
+  
   for (const subtopic in headlinesBySubtopic) {
     if (!posts[subtopic]?.length) {
       console.warn(`Skipping subtopic ${subtopic}: no X posts found`);
       continue;
     }
+    
+    // Get available posts for this subtopic (not yet used)
+    const availablePosts = posts[subtopic].filter(post => 
+      !usedSubtopicPosts.has(post.text.substring(0, 100))
+    );
+    
     headlinesBySubtopic[subtopic].forEach((headline, index) => {
+      // Assign unique posts to each headline (max 2 posts per headline)
+      const startIndex = index * 2;
+      const postsForHeadline = availablePosts.slice(startIndex, startIndex + 2);
+      
+      if (postsForHeadline.length === 0) {
+        console.warn(`No available posts for subtopic headline: ${headline.title}`);
+        return;
+      }
+      
+      // Mark these posts as used
+      postsForHeadline.forEach(post => 
+        usedSubtopicPosts.add(post.text.substring(0, 100))
+      );
+      
       const articles = articlesBySubtopic[subtopic]?.find((a) => a.headline === headline.title)?.articles || [];
+      const engagement = postsForHeadline.reduce((sum, p) => sum + p.likes, 0);
+      
       newHeadlines.push({
         id: `${subtopic}-${index}`,
         title: headline.title,
         summary: headline.summary,
         category: subtopic,
         createdAt: new Date().toISOString(),
-        engagement: posts[subtopic].reduce((sum, p) => sum + p.likes, 0),
-        sourcePosts: posts[subtopic],
+        engagement: engagement,
+        sourcePosts: postsForHeadline,
         supportingArticles: articles,
       });
     });

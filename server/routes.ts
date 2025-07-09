@@ -38,21 +38,46 @@ export function registerRoutes(app) {
       const articlesByTopic = await fetchSupportingArticles(headlinesByTopic);
 
       let headlines = [];
+      let usedPosts = new Set(); // Track used posts to avoid duplicates
+      
       for (const topic in headlinesByTopic) {
         if (!postsWithData[topic]?.length) {
           console.warn(`Skipping ${topic}: no X posts found`);
           continue;
         }
+        
+        // Get available posts for this topic (not yet used)
+        const availablePosts = postsWithData[topic].filter(post => 
+          !usedPosts.has(post.text.substring(0, 100))
+        );
+        
         headlinesByTopic[topic].forEach((headline, index) => {
+          // Assign unique posts to each headline (max 2 posts per headline)
+          const startIndex = index * 2;
+          const postsForHeadline = availablePosts.slice(startIndex, startIndex + 2);
+          
+          if (postsForHeadline.length === 0) {
+            // If no posts available, skip this headline
+            console.warn(`No available posts for headline: ${headline.title}`);
+            return;
+          }
+          
+          // Mark these posts as used
+          postsForHeadline.forEach(post => 
+            usedPosts.add(post.text.substring(0, 100))
+          );
+          
           const articles = articlesByTopic[topic]?.find((a) => a.headline === headline.title)?.articles || [];
+          const engagement = postsForHeadline.reduce((sum, p) => sum + p.likes, 0);
+          
           headlines.push({
             id: `${topic}-${index}`,
             title: headline.title,
             summary: headline.summary,
             category: topic,
             createdAt: new Date().toISOString(),
-            engagement: postsWithData[topic].reduce((sum, p) => sum + p.likes, 0),
-            sourcePosts: postsWithData[topic],
+            engagement: engagement,
+            sourcePosts: postsForHeadline,
             supportingArticles: articles,
           });
         });

@@ -29,20 +29,44 @@ export async function fetchXPosts(topics) {
   const categorizePost = (postText, userTopics) => {
     const lowerText = postText.toLowerCase();
     
+    // Create topic keywords map for flexible matching
+    const topicKeywords = {
+      'politics': ['politics', 'political', 'policy', 'government', 'congress', 'senate', 'house', 'president', 'trump', 'biden', 'election', 'vote', 'law', 'bill', 'democrat', 'republican'],
+      'geopolitical': ['geopolitical', 'diplomatic', 'international', 'foreign', 'relations', 'treaty', 'alliance', 'sanctions', 'trade', 'war', 'peace', 'conflict', 'ukraine', 'russia', 'china', 'nato'],
+      'liverpool': ['liverpool', 'lfc', 'reds', 'anfield', 'premier league', 'soccer', 'football', 'klopp', 'salah', 'mane'],
+      'sports': ['sports', 'football', 'basketball', 'soccer', 'nfl', 'nba', 'game', 'match', 'team', 'player', 'score'],
+      'austin': ['austin', 'texas', 'tx', 'sxsw', 'downtown', 'local'],
+      'weather': ['weather', 'storm', 'hurricane', 'flood', 'rain', 'climate', 'temperature', 'forecast'],
+      'tech': ['technology', 'tech', 'ai', 'artificial intelligence', 'computer', 'software', 'app', 'digital'],
+      'economy': ['economy', 'economic', 'market', 'stock', 'finance', 'money', 'inflation', 'recession', 'growth']
+    };
+    
+    // First try exact topic matching
     for (const topic of userTopics) {
-      const topicWords = topic.toLowerCase().split(' ').filter(word => word.length > 3);
-      const matchCount = topicWords.filter(word => lowerText.includes(word)).length;
+      const topicLower = topic.toLowerCase();
+      if (lowerText.includes(topicLower)) {
+        return topic;
+      }
       
-      // If at least half the topic words match, categorize it
-      if (matchCount >= Math.ceil(topicWords.length / 2)) {
+      // Check individual words
+      const topicWords = topicLower.split(' ').filter(word => word.length > 3);
+      const matchCount = topicWords.filter(word => lowerText.includes(word)).length;
+      if (matchCount >= Math.max(1, Math.ceil(topicWords.length / 2))) {
         return topic;
       }
     }
     
-    // Check for partial matches
+    // Then try keyword-based categorization
     for (const topic of userTopics) {
-      if (lowerText.includes(topic.toLowerCase().substring(0, 10))) {
-        return topic;
+      const topicLower = topic.toLowerCase();
+      
+      for (const [category, keywords] of Object.entries(topicKeywords)) {
+        if (topicLower.includes(category)) {
+          const matches = keywords.filter(keyword => lowerText.includes(keyword)).length;
+          if (matches > 0) {
+            return topic;
+          }
+        }
       }
     }
     
@@ -189,13 +213,44 @@ export async function fetchXPosts(topics) {
     new Map(allViralPosts.map(post => [post.text.substring(0, 100), post])).values()
   );
 
-  // Categorize posts into user topics
+  // Categorize posts into user topics - allow more posts per topic initially
   for (const post of uniquePosts) {
     const category = categorizePost(post.text, topics);
     
-    if (category && results[category].length < 2) {
+    if (category && results[category].length < 5) { // Allow up to 5 posts per topic
       results[category].push(post);
       console.log(`Categorized post with ${post.likes} likes into topic: ${category}`);
+    }
+  }
+  
+  // If we don't have enough content across all topics, try general searches
+  const totalPosts = Object.values(results).reduce((sum, posts) => sum + posts.length, 0);
+  if (totalPosts < 15) {
+    console.log(`Only found ${totalPosts} categorized posts. Searching for general trending content...`);
+    
+    const generalQueries = [
+      'min_faves:500',
+      'min_faves:1000',
+      'news min_faves:200'
+    ];
+    
+    for (const query of generalQueries) {
+      if (rateLimitReset) break;
+      
+      console.log(`General viral search: ${query}`);
+      const generalPosts = await fetchViralPosts(query);
+      
+      // Try to categorize these posts too
+      for (const post of generalPosts) {
+        const category = categorizePost(post.text, topics);
+        if (category && results[category].length < 5) {
+          results[category].push(post);
+          console.log(`Added general post with ${post.likes} likes to topic: ${category}`);
+        }
+      }
+      
+      const newTotal = Object.values(results).reduce((sum, posts) => sum + posts.length, 0);
+      if (newTotal >= 15) break;
     }
   }
 
