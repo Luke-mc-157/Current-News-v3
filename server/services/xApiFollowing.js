@@ -69,14 +69,19 @@ export async function fetchUserFollowing(username) {
 
     console.log(`Fetching following list for @${username}...`);
 
-    // Step 1: Get user ID from username
+    // Try Bearer Token first as it's working for other API calls
+    const bearerToken = process.env.X_BEARER_TOKEN;
+    if (!bearerToken) {
+      throw new Error("X_BEARER_TOKEN not found. Unable to fetch following list.");
+    }
+
+    // Step 1: Get user ID from username using Bearer Token
     const userUrl = `https://api.twitter.com/2/users/by/username/${username}`;
-    const userAuth = generateAuthHeader(userUrl, 'GET');
     
-    console.log(`Requesting user info for @${username}...`);
+    console.log(`Requesting user info for @${username} with Bearer Token...`);
     const userResponse = await axios.get(userUrl, {
       headers: {
-        'Authorization': userAuth,
+        'Authorization': `Bearer ${bearerToken}`,
         'Content-Type': 'application/json'
       }
     });
@@ -106,11 +111,10 @@ export async function fetchUserFollowing(username) {
         params.pagination_token = nextToken;
       }
 
-      const followingAuth = generateAuthHeader(followingUrl, 'GET', params);
-      
+      console.log(`Fetching following list batch ${requestCount}...`);
       const followingResponse = await axios.get(followingUrl, {
         headers: {
-          'Authorization': followingAuth,
+          'Authorization': `Bearer ${bearerToken}`,
           'Content-Type': 'application/json'
         },
         params
