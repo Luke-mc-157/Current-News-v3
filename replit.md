@@ -65,8 +65,9 @@ The backend implements five distinct workflows that process user requests:
 ## External Dependencies
 
 ### APIs and Services
-- **X API v2**: Real-time tweet search with authentication via Bearer Token
-- **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation
+- **X API v2**: Real-time tweet search with authentication via Bearer Token for authentic content discovery
+- **xAI API**: Grok-2-1212 model for content authenticity analysis and intelligent topic categorization
+- **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation (legacy)
 - **Google News RSS**: Public RSS feeds for supporting article discovery
 - **Neon Database**: Serverless PostgreSQL for production data storage
 
@@ -84,6 +85,13 @@ The backend implements five distinct workflows that process user requests:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
+### Latest Updates (January 9, 2025)
+- **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization
+- **Authentic Content Discovery**: Removed keyword-based "viral" queries, now focuses on verified sources (Reuters, AP, BBC, government officials, tech leaders)
+- **Real Content Focus**: Eliminates posts with keywords like "breaking news", "viral", "trending" to find genuine authentic posts
+- **AI-Powered Authenticity**: Uses xAI to analyze posts for authenticity_score and significance_score
+- **Intelligent Topic Matching**: xAI provides semantic understanding for better topic categorization vs keyword matching
+
 ## Deployment Strategy
 
 ### Development Environment
@@ -97,8 +105,9 @@ The backend implements five distinct workflows that process user requests:
 - **Database Migration**: Drizzle migrations ready for PostgreSQL deployment
 
 ### Environment Variables Required
-- `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for post retrieval
-- `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation
+- `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for authentic post retrieval
+- `XAI_API_KEY`: xAI API key for content authenticity analysis and intelligent categorization
+- `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation (legacy)
 - `DATABASE_URL`: PostgreSQL connection string for production database
 
 The application follows a clear separation of concerns with modular services, type-safe interfaces, and modern development practices. The workflow-based architecture allows for easy expansion of features while maintaining clean code organization.

@@ -1,19 +1,24 @@
 import axios from "axios";
+import { analyzePostsForAuthenticity, categorizePostsWithXAI } from "./xaiAnalyzer.js";
 
 // Track rate limit state globally
 let rateLimitReset = null;
 let lastRequestTime = null;
 
-// Broad viral-content queries that typically surface high-engagement posts
-const VIRAL_QUERIES = [
-  'from:Reuters OR from:AP OR from:BBCBreaking OR from:CNN OR from:FoxNews',
+// Authentic content sources - verified accounts and thought leaders
+const AUTHENTIC_SOURCES = [
+  // News organizations (verified)
+  'from:Reuters OR from:AP OR from:BBCWorld OR from:nytimes OR from:WSJ',
+  // Government officials (verified)
   'from:POTUS OR from:VP OR from:SpeakerJohnson OR from:SenSchumer',
+  // Tech leaders (verified)
   'from:elonmusk OR from:BillGates OR from:sundarpichai OR from:tim_cook',
-  'breaking news OR just in OR BREAKING',
-  'viral OR trending OR "everyone is talking about"',
-  'politics OR election OR policy OR congress',
-  'weather OR climate OR storm OR flood',
-  'sports OR NFL OR NBA OR Premier League'
+  // Medical/Science experts (verified)
+  'from:NIH OR from:CDCgov OR from:WHO OR from:NASA',
+  // Economic/Finance experts (verified)
+  'from:federalreserve OR from:USTreasury OR from:IMFNews',
+  // International relations (verified)
+  'from:UN OR from:StateDept OR from:EU_Council'
 ];
 
 export async function fetchXPosts(topics) {
@@ -25,63 +30,9 @@ export async function fetchXPosts(topics) {
   const results = {};
   const SINCE = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString(); // 48 hours for viral content to accumulate
 
-  // Helper function to categorize posts into topics
-  const categorizePost = (postText, userTopics) => {
-    const lowerText = postText.toLowerCase();
-    
-    // Create topic keywords map for flexible matching
-    const topicKeywords = {
-      'politics': ['politics', 'political', 'policy', 'government', 'congress', 'senate', 'house', 'president', 'trump', 'biden', 'election', 'vote', 'law', 'bill', 'democrat', 'republican'],
-      'geopolitical': ['geopolitical', 'diplomatic', 'international', 'foreign', 'relations', 'treaty', 'alliance', 'sanctions', 'trade', 'war', 'peace', 'conflict', 'ukraine', 'russia', 'china', 'nato'],
-      'liverpool': ['liverpool', 'lfc', 'reds', 'anfield', 'premier league', 'soccer', 'football', 'klopp', 'salah', 'mane'],
-      'sports': ['sports', 'football', 'basketball', 'soccer', 'nfl', 'nba', 'game', 'match', 'team', 'player', 'score'],
-      'austin': ['austin', 'texas', 'tx', 'sxsw', 'downtown', 'local'],
-      'weather': ['weather', 'storm', 'hurricane', 'flood', 'rain', 'climate', 'temperature', 'forecast'],
-      'tech': ['technology', 'tech', 'ai', 'artificial intelligence', 'computer', 'software', 'app', 'digital'],
-      'economy': ['economy', 'economic', 'market', 'stock', 'finance', 'money', 'inflation', 'recession', 'growth']
-    };
-    
-    // First try exact topic matching
-    for (const topic of userTopics) {
-      // Ensure topic is a string
-      if (typeof topic !== 'string') {
-        console.warn(`Invalid topic type in categorizePost: ${typeof topic}`);
-        continue;
-      }
-      const topicLower = topic.toLowerCase();
-      if (lowerText.includes(topicLower)) {
-        return topic;
-      }
-      
-      // Check individual words
-      const topicWords = topicLower.split(' ').filter(word => word.length > 3);
-      const matchCount = topicWords.filter(word => lowerText.includes(word)).length;
-      if (matchCount >= Math.max(1, Math.ceil(topicWords.length / 2))) {
-        return topic;
-      }
-    }
-    
-    // Then try keyword-based categorization
-    for (const topic of userTopics) {
-      if (typeof topic !== 'string') {
-        continue;
-      }
-      const topicLower = topic.toLowerCase();
-      
-      for (const [category, keywords] of Object.entries(topicKeywords)) {
-        if (topicLower.includes(category)) {
-          const matches = keywords.filter(keyword => lowerText.includes(keyword)).length;
-          if (matches > 0) {
-            return topic;
-          }
-        }
-      }
-    }
-    
-    return null;
-  };
+  // Note: Using xAI for intelligent categorization instead of keyword matching
 
-  const fetchViralPosts = async (query, retryCount = 0) => {
+  const fetchAuthenticPosts = async (query, retryCount = 0) => {
     try {
       // Check if we need to wait for rate limit reset
       if (rateLimitReset && Date.now() < rateLimitReset) {
@@ -173,7 +124,7 @@ export async function fetchXPosts(topics) {
           console.log(`Waiting ${waitTime} seconds for rate limit reset...`);
           await new Promise(resolve => setTimeout(resolve, rateLimitReset - Date.now() + 1000));
           rateLimitReset = null; // Clear after waiting
-          return fetchViralPosts(query, retryCount + 1);
+          return fetchAuthenticPosts(query, retryCount + 1);
         }
       }
       
@@ -194,71 +145,62 @@ export async function fetchXPosts(topics) {
     results[topic] = [];
   }
 
-  // Collect all viral posts from different queries
-  const allViralPosts = [];
+  // Collect all authentic posts from verified sources
+  const allAuthenticPosts = [];
   let queryIndex = 0;
   
-  console.log(`Searching for viral posts across ${VIRAL_QUERIES.length} trending queries...`);
+  console.log(`Searching for authentic posts from ${AUTHENTIC_SOURCES.length} verified sources...`);
   
-  for (const query of VIRAL_QUERIES) {
-    console.log(`Viral search ${queryIndex + 1}/${VIRAL_QUERIES.length}: ${query}`);
+  for (const query of AUTHENTIC_SOURCES) {
+    console.log(`Authentic search ${queryIndex + 1}/${AUTHENTIC_SOURCES.length}: ${query}`);
     
-    const viralPosts = await fetchViralPosts(query);
-    allViralPosts.push(...viralPosts);
+    const authenticPosts = await fetchAuthenticPosts(query);
+    allAuthenticPosts.push(...authenticPosts);
     
     queryIndex++;
     
     // Stop if we have enough posts or hit rate limits
-    if (allViralPosts.length >= 50 || rateLimitReset) {
+    if (allAuthenticPosts.length >= 100 || rateLimitReset) {
       break;
     }
   }
 
-  console.log(`Found ${allViralPosts.length} total viral posts. Categorizing into topics...`);
+  console.log(`Found ${allAuthenticPosts.length} total authentic posts. Analyzing with xAI...`);
 
   // Remove duplicates based on post text
   const uniquePosts = Array.from(
-    new Map(allViralPosts.map(post => [post.text.substring(0, 100), post])).values()
+    new Map(allAuthenticPosts.map(post => [post.text.substring(0, 100), post])).values()
   );
 
-  // Categorize posts into user topics - allow more posts per topic initially
-  for (const post of uniquePosts) {
-    const category = categorizePost(post.text, topics);
-    
-    if (category && results[category].length < 5) { // Allow up to 5 posts per topic
-      results[category].push(post);
-      console.log(`Categorized post with ${post.likes} likes into topic: ${category}`);
+  // Use xAI to analyze posts for authenticity and relevance
+  const authenticAnalysis = await analyzePostsForAuthenticity(uniquePosts.map(post => ({
+    text: post.text,
+    author_handle: post.handle,
+    public_metrics: { 
+      like_count: post.likes,
+      retweet_count: 0 // We don't have retweet data in our format
     }
-  }
-  
-  // If we don't have enough content across all topics, try general searches
-  const totalPosts = Object.values(results).reduce((sum, posts) => sum + posts.length, 0);
-  if (totalPosts < 15) {
-    console.log(`Only found ${totalPosts} categorized posts. Searching for general trending content...`);
+  })));
+
+  // Filter posts based on xAI authenticity analysis
+  const authenticPosts = uniquePosts.filter(post => {
+    const analysis = authenticAnalysis.find(a => a.text === post.text);
+    return analysis && analysis.authenticity_score > 0.7 && analysis.significance_score > 0.6;
+  });
+
+  console.log(`xAI filtered ${authenticPosts.length} high-quality posts from ${uniquePosts.length} total posts`);
+
+  // Use xAI for intelligent categorization
+  const categorizedPosts = await categorizePostsWithXAI(authenticPosts, topics);
+
+  // Organize posts by topic based on xAI analysis
+  for (const categorizedPost of categorizedPosts) {
+    const topic = categorizedPost.matched_topic;
+    const post = authenticPosts.find(p => p.text === categorizedPost.text);
     
-    const generalQueries = [
-      'news',
-      'breaking news',
-      'trending'
-    ];
-    
-    for (const query of generalQueries) {
-      if (rateLimitReset) break;
-      
-      console.log(`General viral search: ${query}`);
-      const generalPosts = await fetchViralPosts(query);
-      
-      // Try to categorize these posts too
-      for (const post of generalPosts) {
-        const category = categorizePost(post.text, topics);
-        if (category && results[category].length < 5) {
-          results[category].push(post);
-          console.log(`Added general post with ${post.likes} likes to topic: ${category}`);
-        }
-      }
-      
-      const newTotal = Object.values(results).reduce((sum, posts) => sum + posts.length, 0);
-      if (newTotal >= 15) break;
+    if (post && topic && results[topic] && results[topic].length < 5) {
+      results[topic].push(post);
+      console.log(`xAI categorized post with ${post.likes} likes into topic: ${topic} (relevance: ${categorizedPost.relevance_score})`);
     }
   }
 
