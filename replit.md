@@ -41,10 +41,25 @@ The backend implements five distinct workflows that process user requests:
 - **Results Engine (Workflow 4)**: Organizes and ranks results by engagement metrics
 - **Complete Search (Workflow 5)**: Generates subtopics using OpenAI to expand coverage when needed
 
+### 2. Podcast Generation System
+The application now includes a comprehensive podcast generation system:
+
+- **Content Compilation**: Fetches full text from all X posts and article URLs
+- **Script Generation**: Uses xAI Grok-2-1212 to create factual podcast scripts
+- **Voice Synthesis**: Integrates ElevenLabs API for high-quality voice generation
+- **Audio Delivery**: Provides web player and email distribution options
+- **User Controls**: Duration selection (5-30 min), voice selection, instant playback
+
 ### 2. Frontend Components
 - **TopicInput**: Handles user input of 5+ topics with real-time validation
 - **HeadlineCard**: Displays generated headlines with expandable source posts and articles
-- **PodcastModal**: Configures podcast generation settings (planned feature)
+- **PodcastGenerator**: Complete podcast generation interface with:
+  - Duration selection (5, 10, 15, 30 minutes)
+  - Voice selection from ElevenLabs options
+  - Script generation with "View Podcast Script" button
+  - Audio player with download option
+  - Email delivery functionality
+- **SourcesManager**: UI for managing trusted X/Twitter sources per topic
 
 ### 3. API Integration Services
 - **xSearch.js**: Interfaces with X API v2 for real-time post retrieval from dynamic sources
@@ -53,6 +68,10 @@ The backend implements five distinct workflows that process user requests:
 - **headlineCreator.js**: OpenAI API integration for headline generation
 - **supportCompiler.js**: Google News RSS parsing for supporting articles
 - **completeSearch.js**: OpenAI API for subtopic generation
+- **contentFetcher.js**: Fetches full article content for podcast compilation
+- **podcastGenerator.js**: xAI-powered factual script generation
+- **voiceSynthesis.js**: ElevenLabs API integration for voice generation
+- **emailService.js**: Podcast distribution via email attachments
 
 ## Data Flow
 
@@ -110,8 +129,17 @@ The backend implements five distinct workflows that process user requests:
 
 ### Environment Variables Required
 - `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for authentic post retrieval
-- `XAI_API_KEY`: xAI API key for content authenticity analysis and intelligent categorization
+- `XAI_API_KEY`: xAI API key for content authenticity analysis and podcast script generation
 - `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation (legacy)
+- `ELEVENLABS_API_KEY`: ElevenLabs API key for voice synthesis (10,000 chars/month free tier)
 - `DATABASE_URL`: PostgreSQL connection string for production database
+- `EMAIL_USER` & `EMAIL_PASS`: SMTP credentials for email delivery (optional)
 
 The application follows a clear separation of concerns with modular services, type-safe interfaces, and modern development practices. The workflow-based architecture allows for easy expansion of features while maintaining clean code organization.
+
+### Podcast Generation Features
+- **Script Viewer**: Development-only "View Podcast Script" button opens generated scripts in new browser tab
+- **Voice Options**: 19 available voices from ElevenLabs with various accents and styles
+- **Factual Content**: Scripts generated with strict no-opinion policy, only summarizing source material
+- **Multi-format Delivery**: Web player with controls, downloadable MP3, and email distribution
+- **Character Limit Management**: Automatic script segmentation for ElevenLabs free tier compliance
