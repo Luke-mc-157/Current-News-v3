@@ -144,7 +144,12 @@ export async function fetchUserFollowing(username) {
     if (error.response?.status === 401) {
       throw new Error(`OAuth authentication failed. Please check your X API credentials have the correct permissions.`);
     } else if (error.response?.status === 403) {
-      throw new Error(`Access denied for @${username}. The account may be private or you may not have permission to view their following list.`);
+      const errorDetail = error.response?.data?.detail || '';
+      if (errorDetail.includes('Project') || errorDetail.includes('client-not-enrolled')) {
+        throw new Error(`X API following list requires elevated access. Your current API key doesn't have permission to access following lists. This feature requires a Twitter Developer Project with appropriate API access level.`);
+      } else {
+        throw new Error(`Access denied for @${username}. The account may be private or you may not have permission to view their following list.`);
+      }
     } else if (error.response?.status === 404) {
       throw new Error(`User @${username} not found`);
     } else if (error.response?.status === 429) {

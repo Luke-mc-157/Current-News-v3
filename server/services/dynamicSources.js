@@ -178,6 +178,7 @@ export async function compileVerifiedSources(topics, userId = 'default', xHandle
     compiledSources.push(topicSources);
   }
   
+  console.log(`Compiled sources for ${compiledSources.length} topics`);
   return compiledSources;
 }
 
