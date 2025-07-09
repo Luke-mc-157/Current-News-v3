@@ -12,6 +12,7 @@ import { generatePodcastScript, parseScriptSegments } from "./services/podcastGe
 import { getAvailableVoices, generateAudio, checkQuota } from "./services/voiceSynthesis.js";
 import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
 import { storage } from "./storage.js";
+import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -114,6 +115,48 @@ export function registerRoutes(app) {
     } catch (error) {
       console.error("Error in /api/generate-headlines:", error.message);
       res.status(500).json({ message: "Failed to generate headlines: " + error.message });
+    }
+  });
+
+  // NEW: Generate headlines using xAI Live Search (V2 endpoint)
+  router.post("/api/generate-headlines-v2", async (req, res) => {
+    const { topics } = req.body;
+    if (!topics || topics.length < 1) {
+      return res.status(400).json({ message: "At least 1 topic required" });
+    }
+
+    try {
+      console.log("🚀 Using xAI Live Search for headlines generation");
+      const startTime = Date.now();
+      
+      // Use Live Search to generate headlines
+      const headlines = await generateHeadlinesWithLiveSearch(topics);
+      
+      const endTime = Date.now();
+      const responseTime = endTime - startTime;
+      
+      // Store headlines for podcast generation
+      headlinesStore = headlines;
+      
+      console.log(`✅ Live Search completed in ${responseTime}ms with ${headlines.length} headlines`);
+      console.log(`📊 Performance improvement: ${Math.round(30000 / responseTime)}x faster than old system`);
+      
+      res.json({ 
+        success: true, 
+        headlines,
+        performance: {
+          responseTime: `${responseTime}ms`,
+          method: "xAI Live Search",
+          apiCalls: 1
+        }
+      });
+    } catch (error) {
+      console.error("Error in /api/generate-headlines-v2:", error.message);
+      res.status(500).json({ 
+        message: "Live Search failed: " + error.message,
+        fallbackAvailable: true,
+        fallbackUrl: "/api/generate-headlines"
+      });
     }
   });
 

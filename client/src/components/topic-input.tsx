@@ -9,20 +9,26 @@ import { apiRequest } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
+  useLiveSearch?: boolean;
 }
 
-export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
-    mutationFn: (topics: string[]) =>
-      apiRequest("POST", "/api/generate-headlines", { topics }),
-    onSuccess: () => {
+    mutationFn: (topics: string[]) => {
+      const endpoint = useLiveSearch ? "/api/generate-headlines-v2" : "/api/generate-headlines";
+      return apiRequest("POST", endpoint, { topics });
+    },
+    onSuccess: (data) => {
+      const performanceInfo = data.performance 
+        ? ` in ${data.performance.responseTime} using ${data.performance.method}` 
+        : "";
       toast({
         title: "Headlines Generated",
-        description: "Your personalized news headlines have been created.",
+        description: `Your personalized news headlines have been created${performanceInfo}.`,
       });
       onTopicsSubmitted(topics);
     },
@@ -105,8 +111,17 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
         disabled={!isValid || generateHeadlinesMutation.isPending}
         className="w-full sm:w-auto"
       >
-        <Search className="w-4 h-4 mr-2" />
-        {generateHeadlinesMutation.isPending ? "Generating..." : "Generate Headlines"}
+        {generateHeadlinesMutation.isPending ? (
+          <>
+            <span className="animate-spin mr-2">⏳</span> 
+            {useLiveSearch ? "Using Live Search..." : "Generating Headlines..."}
+          </>
+        ) : (
+          <>
+            <Search className="w-4 h-4 mr-2" />
+            Generate Headlines for {topics.length} Topic{topics.length !== 1 ? 's' : ''}
+          </>
+        )}
       </Button>
     </form>
   );
