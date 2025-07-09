@@ -7,79 +7,6 @@ const xai = new OpenAI({
 });
 
 // Use xAI to intelligently suggest verified sources for topics
-// Fallback verified sources for common topics
-function getFallbackVerifiedSources(topics) {
-  const fallbackSources = {
-    'US politics': [
-      { handle: 'Reuters', type: 'news_organization', reasoning: 'Primary news source with global coverage' },
-      { handle: 'AP', type: 'news_organization', reasoning: 'Associated Press - trusted news wire' },
-      { handle: 'CNN', type: 'news_organization', reasoning: 'Major news network' },
-      { handle: 'BBCBreaking', type: 'news_organization', reasoning: 'BBC news updates' },
-      { handle: 'nytimes', type: 'news_organization', reasoning: 'New York Times' }
-    ],
-    'liverpool fc': [
-      { handle: 'LFC', type: 'official_organization', reasoning: 'Official Liverpool FC account' },
-      { handle: 'SkySportsNews', type: 'news_organization', reasoning: 'Sports news coverage' },
-      { handle: 'BBCSport', type: 'news_organization', reasoning: 'BBC Sports coverage' },
-      { handle: 'ESPN', type: 'news_organization', reasoning: 'ESPN sports coverage' }
-    ],
-    'geopolitical news': [
-      { handle: 'Reuters', type: 'news_organization', reasoning: 'Primary news source with global coverage' },
-      { handle: 'AP', type: 'news_organization', reasoning: 'Associated Press - trusted news wire' },
-      { handle: 'BBCWorld', type: 'news_organization', reasoning: 'BBC World Service' },
-      { handle: 'CFR_org', type: 'think_tank', reasoning: 'Council on Foreign Relations' }
-    ],
-    'NFL': [
-      { handle: 'NFL', type: 'official_organization', reasoning: 'Official NFL account' },
-      { handle: 'ESPNNFLNews', type: 'news_organization', reasoning: 'ESPN NFL coverage' },
-      { handle: 'NFLNetwork', type: 'news_organization', reasoning: 'NFL Network official' }
-    ],
-    'MLB': [
-      { handle: 'MLB', type: 'official_organization', reasoning: 'Official MLB account' },
-      { handle: 'ESPN', type: 'news_organization', reasoning: 'ESPN baseball coverage' },
-      { handle: 'MLBNetwork', type: 'news_organization', reasoning: 'MLB Network official' }
-    ],
-    'tech news': [
-      { handle: 'TechCrunch', type: 'news_organization', reasoning: 'Leading tech news source' },
-      { handle: 'TheVerge', type: 'news_organization', reasoning: 'Technology news and reviews' },
-      { handle: 'WSJ', type: 'news_organization', reasoning: 'Wall Street Journal tech coverage' }
-    ],
-    'weather events': [
-      { handle: 'NWS', type: 'official_government', reasoning: 'National Weather Service' },
-      { handle: 'weatherchannel', type: 'news_organization', reasoning: 'The Weather Channel' },
-      { handle: 'NOAA', type: 'official_government', reasoning: 'National Oceanic and Atmospheric Administration' }
-    ],
-    'Austin TX local news': [
-      { handle: 'KVUE', type: 'news_organization', reasoning: 'Local Austin news station' },
-      { handle: 'statesman', type: 'news_organization', reasoning: 'Austin American-Statesman' },
-      { handle: 'austintexasgov', type: 'official_government', reasoning: 'City of Austin official' }
-    ]
-  };
-
-  return topics.map(topic => {
-    const lowerTopic = topic.toLowerCase();
-    let sources = [];
-    
-    // Find matching sources
-    for (const [key, value] of Object.entries(fallbackSources)) {
-      if (lowerTopic.includes(key.toLowerCase()) || key.toLowerCase().includes(lowerTopic)) {
-        sources = value;
-        break;
-      }
-    }
-    
-    // Default sources if no match found
-    if (sources.length === 0) {
-      sources = fallbackSources['US politics'].slice(0, 3);
-    }
-    
-    return {
-      topic,
-      suggested_sources: sources
-    };
-  });
-}
-
 export async function suggestVerifiedSources(topics) {
   try {
     const response = await xai.chat.completions.create({
@@ -135,9 +62,7 @@ Return JSON with this structure:
     return suggestions.topic_sources || [];
   } catch (error) {
     console.error("xAI source suggestion error:", error.message);
-    console.log("Using fallback verified sources...");
-    // Fallback to manual verified sources while xAI key is being resolved
-    return getFallbackVerifiedSources(topics);
+    return [];
   }
 }
 
