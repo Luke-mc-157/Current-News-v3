@@ -41,7 +41,11 @@ export function registerRoutes(app) {
       );
 
       const headlinesByTopic = await generateHeadlines(postsWithData);
+      console.log("Generated headlines by topic:", JSON.stringify(headlinesByTopic, null, 2));
+      
       const hasHeadlines = Object.values(headlinesByTopic).some((h) => h.length > 0);
+      console.log("Has headlines:", hasHeadlines);
+      
       if (!hasHeadlines) {
         throw new Error("No headlines generated from X posts");
       }
@@ -94,7 +98,11 @@ export function registerRoutes(app) {
         });
       }
 
+      console.log(`Final headlines count: ${headlines.length}`);
       if (!headlines.length) {
+        console.error("No valid headlines generated - debugging info:");
+        console.error("HeadlinesByTopic:", Object.keys(headlinesByTopic));
+        console.error("PostsWithData:", Object.keys(postsWithData));
         throw new Error("No valid headlines generated");
       }
 
