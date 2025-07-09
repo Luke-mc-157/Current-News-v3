@@ -57,10 +57,7 @@ export default function Home() {
             </p>
           </div>
 
-          <TopicInput onTopicsSubmitted={(topics, xHandle) => {
-            setSubmittedTopics(topics);
-            // xHandle is passed to backend via the API request
-          }} />
+          <TopicInput onTopicsSubmitted={setSubmittedTopics} />
 
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
             <Button

@@ -1,5 +1,4 @@
 import OpenAI from "openai";
-import { fetchUserFollowing } from "./xApiFollowing.js";
 
 // Initialize xAI client
 const xai = new OpenAI({
@@ -105,32 +104,19 @@ export function getUserTrustedSources(userId) {
   return userTrustedSources.get(userId) || [];
 }
 
-// Combine user-defined sources with xAI suggestions and X following list
-export async function compileVerifiedSources(topics, userId = 'default', xHandle = null) {
+// Combine user-defined sources with xAI suggestions
+export async function compileVerifiedSources(topics, userId = 'default') {
   console.log(`Compiling verified sources for topics: ${topics.join(', ')}`);
   
   // Get user-defined trusted sources
   const userSources = getUserTrustedSources(userId);
   console.log(`User has ${userSources.length} defined trusted sources`);
   
-  // Get X following list if X handle provided
-  let followingHandles = [];
-  if (xHandle) {
-    try {
-      followingHandles = await fetchUserFollowing(xHandle);
-      console.log(`Fetched ${followingHandles.length} accounts that @${xHandle} follows`);
-    } catch (error) {
-      console.error(`Error fetching following list for @${xHandle}:`, error.message);
-      // Continue without following list instead of failing
-      // This allows the app to work even if OAuth credentials need adjustment
-    }
-  }
-
   // Get xAI suggestions for topics
   const suggestedSources = await suggestVerifiedSources(topics);
   console.log(`xAI suggested sources for ${suggestedSources.length} topics`);
   
-  // Combine user sources with suggestions and following list
+  // Combine user sources with suggestions
   const compiledSources = [];
   
   for (const topic of topics) {
@@ -157,28 +143,10 @@ export async function compileVerifiedSources(topics, userId = 'default', xHandle
     if (aiSuggestion) {
       topicSources.suggested_sources.push(...aiSuggestion.suggested_sources);
     }
-
-    // Add following handles as supplementary sources for all topics
-    if (followingHandles.length > 0) {
-      // Sample a subset of following handles to avoid too many sources
-      const maxFollowingSources = 20;
-      const sampledFollowing = followingHandles
-        .sort(() => 0.5 - Math.random())
-        .slice(0, maxFollowingSources);
-      
-      for (const handle of sampledFollowing) {
-        topicSources.suggested_sources.push({
-          handle: handle,
-          type: 'following',
-          reasoning: `Account followed by @${xHandle}`
-        });
-      }
-    }
     
     compiledSources.push(topicSources);
   }
   
-  console.log(`Compiled sources for ${compiledSources.length} topics`);
   return compiledSources;
 }
 
