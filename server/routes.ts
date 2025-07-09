@@ -6,6 +6,7 @@ import { fetchXPosts } from "./services/xSearch.js";
 import { generateHeadlines } from "./services/headlineCreator.js";
 import { fetchSupportingArticles } from "./services/supportCompiler.js";
 import { completeSearch } from "./services/completeSearch.js";
+import { setUserTrustedSources, getUserTrustedSources } from "./services/dynamicSources.js";
 
 export function registerRoutes(app) {
   const router = express.Router();
@@ -102,6 +103,25 @@ export function registerRoutes(app) {
       return res.status(404).json({ headlines: [], message: "No headlines available" });
     }
     res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
+  });
+
+  // User trusted sources management
+  router.get("/api/user-sources/:userId", (req, res) => {
+    const { userId } = req.params;
+    const sources = getUserTrustedSources(userId);
+    res.json({ sources });
+  });
+
+  router.post("/api/user-sources/:userId", (req, res) => {
+    const { userId } = req.params;
+    const { sources } = req.body;
+    
+    if (!Array.isArray(sources)) {
+      return res.status(400).json({ error: "Sources must be an array" });
+    }
+    
+    setUserTrustedSources(userId, sources);
+    res.json({ message: "Trusted sources updated successfully" });
   });
 
   app.use(router);

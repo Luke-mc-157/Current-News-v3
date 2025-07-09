@@ -1,27 +1,14 @@
 import axios from "axios";
 import { analyzePostsForAuthenticity, categorizePostsWithXAI } from "./xaiAnalyzer.js";
+import { compileVerifiedSources, buildSourceQueries } from "./dynamicSources.js";
 
 // Track rate limit state globally
 let rateLimitReset = null;
 let lastRequestTime = null;
 
-// Authentic content sources - verified accounts and thought leaders
-const AUTHENTIC_SOURCES = [
-  // News organizations (verified)
-  'from:Reuters OR from:AP OR from:BBCWorld OR from:nytimes OR from:WSJ',
-  // Government officials (verified)
-  'from:POTUS OR from:VP OR from:SpeakerJohnson OR from:SenSchumer',
-  // Tech leaders (verified)
-  'from:elonmusk OR from:BillGates OR from:sundarpichai OR from:tim_cook',
-  // Medical/Science experts (verified)
-  'from:NIH OR from:CDCgov OR from:WHO OR from:NASA',
-  // Economic/Finance experts (verified)
-  'from:federalreserve OR from:USTreasury OR from:IMFNews',
-  // International relations (verified)
-  'from:UN OR from:StateDept OR from:EU_Council'
-];
+// Dynamic sources will be compiled per topic using xAI and user preferences
 
-export async function fetchXPosts(topics) {
+export async function fetchXPosts(topics, userId = 'default') {
   const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN;
   if (!X_BEARER_TOKEN) {
     throw new Error("X_BEARER_TOKEN is not set in Replit Secrets");
@@ -145,16 +132,20 @@ export async function fetchXPosts(topics) {
     results[topic] = [];
   }
 
-  // Collect all authentic posts from verified sources
+  // Compile dynamic verified sources for these topics
+  const topicSources = await compileVerifiedSources(topics, userId);
+  const sourceQueries = buildSourceQueries(topicSources);
+  
+  // Collect all authentic posts from compiled sources
   const allAuthenticPosts = [];
   let queryIndex = 0;
   
-  console.log(`Searching for authentic posts from ${AUTHENTIC_SOURCES.length} verified sources...`);
+  console.log(`Searching for authentic posts from ${sourceQueries.length} compiled source queries...`);
   
-  for (const query of AUTHENTIC_SOURCES) {
-    console.log(`Authentic search ${queryIndex + 1}/${AUTHENTIC_SOURCES.length}: ${query}`);
+  for (const sourceQuery of sourceQueries) {
+    console.log(`Authentic search ${queryIndex + 1}/${sourceQueries.length}: ${sourceQuery.query} (for topic: ${sourceQuery.topic})`);
     
-    const authenticPosts = await fetchAuthenticPosts(query);
+    const authenticPosts = await fetchAuthenticPosts(sourceQuery.query);
     allAuthenticPosts.push(...authenticPosts);
     
     queryIndex++;

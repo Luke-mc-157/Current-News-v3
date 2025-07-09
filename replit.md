@@ -47,7 +47,9 @@ The backend implements five distinct workflows that process user requests:
 - **PodcastModal**: Configures podcast generation settings (planned feature)
 
 ### 3. API Integration Services
-- **xSearch.js**: Interfaces with X API v2 for real-time post retrieval
+- **xSearch.js**: Interfaces with X API v2 for real-time post retrieval from dynamic sources
+- **dynamicSources.js**: Compiles user-defined and xAI-suggested verified sources per topic
+- **xaiAnalyzer.js**: xAI integration for content authenticity analysis and categorization
 - **headlineCreator.js**: OpenAI API integration for headline generation
 - **supportCompiler.js**: Google News RSS parsing for supporting articles
 - **completeSearch.js**: OpenAI API for subtopic generation
@@ -87,10 +89,12 @@ The backend implements five distinct workflows that process user requests:
 
 ### Latest Updates (January 9, 2025)
 - **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization
-- **Authentic Content Discovery**: Removed keyword-based "viral" queries, now focuses on verified sources (Reuters, AP, BBC, government officials, tech leaders)
-- **Real Content Focus**: Eliminates posts with keywords like "breaking news", "viral", "trending" to find genuine authentic posts
+- **Dynamic Verified Sources**: User-specific trusted sources combined with xAI-suggested sources per topic
+- **Real Content Focus**: Searches verified sources without using trending keywords like "breaking news", "viral", "trending"
 - **AI-Powered Authenticity**: Uses xAI to analyze posts for authenticity_score and significance_score
 - **Intelligent Topic Matching**: xAI provides semantic understanding for better topic categorization vs keyword matching
+- **User-Controlled Sources**: Users can define their own trusted sources per topic through the UI
+- **Efficient X API Usage**: Compiles targeted source queries outside X API to minimize rate limit usage
 
 ## Deployment Strategy
 

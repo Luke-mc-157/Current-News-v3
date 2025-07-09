@@ -33,6 +33,8 @@ Rank posts by authenticity and significance. Avoid posts that are:
 - Superficial reactions without substance
 - Misleading or sensationalized content
 
+Note: Do not reject posts simply because they contain words like "breaking news", "viral", or "trending" - focus on the actual content quality and authenticity.
+
 Return JSON with this structure:
 {
   "authentic_posts": [
