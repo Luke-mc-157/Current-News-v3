@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
@@ -16,6 +16,15 @@ export default function Home() {
 
   const headlines: Headline[] = headlinesData?.headlines || [];
 
+  // Cache headlines when they are fetched successfully
+  useEffect(() => {
+    if (headlines.length > 0 && submittedTopics.length > 0) {
+      localStorage.setItem('cached_headlines', JSON.stringify(headlines));
+      localStorage.setItem('cached_topics', JSON.stringify(submittedTopics));
+      console.log(`Cached ${headlines.length} headlines for podcast testing`);
+    }
+  }, [headlines, submittedTopics]);
+
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Header */}
@@ -29,8 +38,8 @@ export default function Home() {
               </span>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
-                Dashboard
+              <a href="/podcast-test" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Podcast Test
               </a>
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 My Podcasts
