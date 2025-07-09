@@ -19,31 +19,29 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     // Build topic-specific prompts
     const topicString = topics.map(topic => `"${topic}"`).join(", ");
     
-    const prompt = `Generate 15 specific event-focused headlines about these topics: ${topicString}
+    const prompt = `Generate exactly 15 news headlines about these topics: ${topicString}
 
-Requirements for each headline:
-1. Must be about specific events or developments from the last 24 hours
-2. Include concrete details (names, numbers, places, outcomes)
-3. Based on real X posts and news articles you find
-4. Focus on high-engagement content
+IMPORTANT: You MUST generate exactly 15 headlines, no more, no less.
 
-For each headline provide:
-- The headline text
-- A brief 1-2 sentence summary
-- The main topic category it belongs to
-- Engagement level (high/medium based on social media metrics)
+For each headline:
+- Base it on information from the last 24-48 hours when possible
+- Include specific details where available
+- If recent specific events are limited, include trending discussions or ongoing developments
+- Mix breaking news with analysis and trending topics
 
-Format your response as a JSON array with this structure:
-[
-  {
-    "title": "headline text",
-    "summary": "brief summary",
-    "category": "topic category",
-    "engagement": "high or medium"
-  }
-]
+Return a JSON object with this exact structure:
+{
+  "headlines": [
+    {
+      "title": "headline text here",
+      "summary": "1-2 sentence summary",
+      "category": "which topic this relates to",
+      "engagement": "high or medium"
+    }
+  ]
+}
 
-Search for high-engagement X posts (100+ likes) and credible news sources.`;
+The "headlines" array MUST contain exactly 15 items. Fill all 15 slots even if some are based on trending discussions rather than breaking events.`;
 
     // Call Live Search API
     const response = await openai.chat.completions.create({
@@ -59,7 +57,7 @@ Search for high-engagement X posts (100+ likes) and credible news sources.`;
         sources: [
           {
             type: "x",
-            post_favorite_count: 100  // High engagement filter
+            post_favorite_count: 50  // Lower threshold for more results
           },
           {
             type: "news"
@@ -82,20 +80,26 @@ Search for high-engagement X posts (100+ likes) and credible news sources.`;
     let headlines;
     try {
       const content = response.choices[0].message.content;
-      console.log("Raw Live Search response:", content.substring(0, 200) + "...");
       
-      const parsed = JSON.parse(content);
-      // Look for array in various possible locations
-      headlines = parsed.headlines || parsed.results || parsed.data || parsed;
+      // Clean the content - remove any markdown code blocks if present
+      const cleanContent = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
       
-      // Ensure it's an array
-      if (!Array.isArray(headlines)) {
-        // If it's an object with numeric keys, convert to array
-        if (typeof headlines === 'object') {
-          headlines = Object.values(headlines);
-        } else {
-          headlines = [headlines]; // Wrap single item in array
-        }
+      const parsed = JSON.parse(cleanContent);
+      
+      // Look for headlines array
+      if (parsed.headlines && Array.isArray(parsed.headlines)) {
+        headlines = parsed.headlines;
+      } else if (Array.isArray(parsed)) {
+        headlines = parsed;
+      } else {
+        // Try to extract any array from the object
+        headlines = parsed.results || parsed.data || [];
+      }
+      
+      // Validate we have headlines
+      if (!Array.isArray(headlines) || headlines.length === 0) {
+        console.error("No headlines array found in response");
+        headlines = [];
       }
       
       console.log(`Parsed ${headlines.length} headlines from Live Search response`);
