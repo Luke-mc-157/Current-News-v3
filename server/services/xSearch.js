@@ -150,8 +150,9 @@ export async function fetchXPosts(topics, userId = 'default') {
     
     queryIndex++;
     
-    // Stop if we have enough posts or hit rate limits
-    if (allAuthenticPosts.length >= 100 || rateLimitReset) {
+    // Continue searching until we cover all topics or hit rate limits
+    if (rateLimitReset) {
+      console.log("Stopping search due to rate limit");
       break;
     }
   }
@@ -189,7 +190,7 @@ export async function fetchXPosts(topics, userId = 'default') {
     const topic = categorizedPost.matched_topic;
     const post = authenticPosts.find(p => p.text === categorizedPost.text);
     
-    if (post && topic && results[topic] && results[topic].length < 5) {
+    if (post && topic && results[topic] && results[topic].length < 10) {
       results[topic].push(post);
       console.log(`xAI categorized post with ${post.likes} likes into topic: ${topic} (relevance: ${categorizedPost.relevance_score})`);
     }

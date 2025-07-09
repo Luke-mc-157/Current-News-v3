@@ -10,6 +10,7 @@ async function completeSearch(topics, currentHeadlines) {
     throw new Error("OPENAI_API_KEY is not set in Replit Secrets");
   }
 
+  // Only trigger if we have fewer than 15 headlines
   if (currentHeadlines.length >= 15) {
     return currentHeadlines.sort((a, b) => b.engagement - a.engagement);
   }

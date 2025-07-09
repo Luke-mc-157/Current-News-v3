@@ -73,10 +73,10 @@ export function buildSourceQueries(topicSources) {
   for (const topicSource of topicSources) {
     const sourceHandles = topicSource.suggested_sources.map(s => s.handle);
     
-    // Group sources into queries (max 10 sources per query for X API)
+    // Group sources into smaller queries (max 6 sources per query for broader coverage)
     const sourceGroups = [];
-    for (let i = 0; i < sourceHandles.length; i += 10) {
-      sourceGroups.push(sourceHandles.slice(i, i + 10));
+    for (let i = 0; i < sourceHandles.length; i += 6) {
+      sourceGroups.push(sourceHandles.slice(i, i + 6));
     }
     
     // Create OR queries for each group
