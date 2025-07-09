@@ -31,7 +31,7 @@ async function generateHeadlines(postsByTopic) {
             {
               role: "system",
               content:
-                "Generate 3-4 factual, declarative news headlines and summaries based solely on the provided X posts. Each headline should focus on different aspects of the topic. Do not invent information or use external knowledge. If insufficient data, return fewer headlines. Return as JSON: [{title: string, summary: string}, ...]",
+                "Generate 2-3 STRICTLY FACTUAL news headlines based ONLY on the provided X posts. CRITICAL RULES: 1) Use only information directly stated in the posts 2) Do not add details, quotes, or specifics not present in the posts 3) Keep headlines general and broad 4) Focus on events, not specific quotes or actions 5) If posts lack clear factual information, return fewer headlines. Return as JSON: [{title: string, summary: string}, ...]",
             },
             { role: "user", content: `Topic: ${topic}\nPosts: ${posts.join("\n")}` },
           ],
