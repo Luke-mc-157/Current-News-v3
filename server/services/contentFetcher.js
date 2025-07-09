@@ -55,14 +55,18 @@ export async function compileContentForPodcast(headlines) {
     
     // Fetch full article content
     if (headline.supportingArticles && headline.supportingArticles.length > 0) {
+      console.log(`Fetching full content for ${headline.supportingArticles.length} articles for headline: ${headline.title}`);
       for (const article of headline.supportingArticles) {
         const fullContent = await fetchArticleContent(article.url);
         if (fullContent) {
+          console.log(`✓ Fetched ${fullContent.length} characters from ${article.title}`);
           headlineContent.articles.push({
             title: article.title,
             url: article.url,
             content: fullContent
           });
+        } else {
+          console.log(`✗ Failed to fetch content from ${article.url}`);
         }
       }
     }

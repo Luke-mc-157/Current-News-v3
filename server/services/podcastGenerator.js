@@ -22,8 +22,7 @@ export async function generatePodcastScript(compiledContent, durationMinutes = 1
       category: item.category,
       keyPosts: item.posts.slice(0, 3).map(p => ({
         author: p.handle,
-        content: p.text,
-        engagement: p.likes
+        content: p.text
       })),
       articleHighlights: item.articles.slice(0, 2).map(a => ({
         source: a.title,
@@ -38,20 +37,26 @@ export async function generatePodcastScript(compiledContent, durationMinutes = 1
           role: "system",
           content: `You are a professional news podcast scriptwriter creating factual, engaging news summaries. Your task is to write a ${durationMinutes}-minute podcast script (approximately ${targetWordCount} words).
 
-CRITICAL RULES:
-1. NO OPINIONS: Only report facts from the provided sources. Never add your own commentary or analysis.
+CRITICAL VOICE OPTIMIZATION RULES:
+1. VERBATIM READING: This script will be read exactly as written by an AI voice. Write ONLY what should be spoken.
+2. NO SPECIAL CHARACTERS: Avoid asterisks (*), parentheses for stage directions, or any formatting symbols.
+3. NO STAGE DIRECTIONS: Never include (opening music), (transition), (pause), or similar instructions.
+4. NATURAL SPEECH: Write as if speaking directly to a listener. Use complete sentences that flow naturally.
+
+CONTENT RULES:
+1. NO OPINIONS: Only report facts from the provided sources. Never add commentary or analysis.
 2. QUOTE SOURCES: When mentioning opinions, always attribute them: "According to [source]..." or "[Person] stated that..."
 3. FACTUAL LANGUAGE: Use neutral, objective language. Avoid adjectives that imply judgment.
-4. NATURAL FLOW: Write conversationally as if speaking to a friend, but maintain journalistic integrity.
+4. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
 5. CITE SOURCES: Reference the X posts and articles naturally within the narrative.
 
 SCRIPT STRUCTURE:
 - Opening: Brief welcome and overview of topics (30 seconds)
 - Main segments: One for each major story, with smooth transitions
-- For each story: Present facts, quote key sources, mention engagement metrics if relevant
+- For each story: Present facts from articles and posts, quote key sources
 - Closing: Quick recap and sign-off (20 seconds)
 
-Remember: This podcast delivers the news users would find on social media, presented professionally without editorial bias.`
+Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content.`
         },
         {
           role: "user",

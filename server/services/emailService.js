@@ -105,3 +105,15 @@ export function scheduleEmailDelivery(userId, email, schedule) {
 export function isEmailServiceConfigured() {
   return !!(EMAIL_USER && EMAIL_PASS);
 }
+
+// Get detailed email service status for debugging
+export function getEmailServiceStatus() {
+  return {
+    configured: !!(EMAIL_USER && EMAIL_PASS),
+    hasUser: !!EMAIL_USER,
+    hasPassword: !!EMAIL_PASS,
+    host: EMAIL_HOST,
+    port: EMAIL_PORT,
+    from: EMAIL_FROM
+  };
+}

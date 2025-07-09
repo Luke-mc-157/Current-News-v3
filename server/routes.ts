@@ -259,7 +259,13 @@ export function registerRoutes(app) {
     
     try {
       if (!isEmailServiceConfigured()) {
-        return res.status(400).json({ error: "Email service not configured. Please set EMAIL_USER and EMAIL_PASS in secrets." });
+        const { getEmailServiceStatus } = await import('./services/emailService.js');
+        const status = getEmailServiceStatus();
+        console.log('Email service status:', status);
+        return res.status(400).json({ 
+          error: "Email service not configured. Please add EMAIL_USER and EMAIL_PASS to your Replit secrets.",
+          details: `Missing: ${!status.hasUser ? 'EMAIL_USER ' : ''}${!status.hasPassword ? 'EMAIL_PASS' : ''}`
+        });
       }
       
       const episode = await storage.getPodcastEpisode(parseInt(episodeId));
