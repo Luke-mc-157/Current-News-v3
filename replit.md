@@ -118,6 +118,7 @@ The application now includes a comprehensive podcast generation system:
 - **ElevenLabs Voice Integration**: Fixed voice ID issues, now using Bryan (Professional Narrator) as default with 5 curated voice options
 - **SendGrid Email Integration**: Replaced Gmail/nodemailer with SendGrid API for professional email delivery with better deliverability
 - **Enhanced Headlines System**: Improved to generate 15 specific headlines with 5-10 X posts each, using 15-20 sources per topic for comprehensive coverage
+- **Web Search-Based Subtopic Discovery**: Replaced LLM-based subtopic generation with real-time trending keyword discovery to improve subtopic search success rate and eliminate training data lag
 
 ## Deployment Strategy
 
