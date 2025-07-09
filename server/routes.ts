@@ -123,6 +123,24 @@ export function registerRoutes(app) {
     res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
   });
 
+  // Load cached headlines for testing (used by podcast test page)
+  router.post("/api/load-cached-headlines", (req, res) => {
+    const { headlines } = req.body;
+    
+    if (!Array.isArray(headlines)) {
+      return res.status(400).json({ error: "Headlines must be an array" });
+    }
+    
+    headlinesStore = headlines;
+    console.log(`Loaded ${headlines.length} cached headlines into backend store for testing`);
+    
+    res.json({ 
+      success: true, 
+      message: `Loaded ${headlines.length} cached headlines for testing`,
+      headlines: headlinesStore
+    });
+  });
+
   // User trusted sources management
   router.get("/api/user-sources/:userId", (req, res) => {
     const { userId } = req.params;

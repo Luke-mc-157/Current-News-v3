@@ -19,6 +19,22 @@ export default function PodcastTest() {
         const parsedHeadlines = JSON.parse(cachedHeadlines);
         setHeadlines(parsedHeadlines);
         console.log(`Loaded ${parsedHeadlines.length} cached headlines for podcast testing`);
+        
+        // Send cached headlines to backend so podcast generation works
+        fetch('/api/load-cached-headlines', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ headlines: parsedHeadlines })
+        }).then(response => {
+          if (response.ok) {
+            console.log('Successfully loaded cached headlines into backend');
+          } else {
+            console.error('Failed to load cached headlines into backend');
+          }
+        }).catch(error => {
+          console.error('Error loading cached headlines into backend:', error);
+        });
+        
       } catch (error) {
         console.error('Error parsing cached headlines:', error);
       }
