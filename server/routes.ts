@@ -144,7 +144,7 @@ export function registerRoutes(app) {
 
   // Podcast generation routes
   router.post("/api/generate-podcast", async (req, res) => {
-    const { durationMinutes = 10, voiceId = '9BWtsMINqrJLrRacOk9x', podcastName = 'Current News' } = req.body;
+    const { durationMinutes = 10, voiceId = 'nPczCjzI2devNBz1zQrb', podcastName = 'Current News' } = req.body;
     
     try {
       if (!headlinesStore.length) {

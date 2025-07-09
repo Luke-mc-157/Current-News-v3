@@ -10,11 +10,13 @@ const __dirname = path.dirname(__filename);
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_API_URL = 'https://api.elevenlabs.io/v1';
 
-// Default voice fallbacks if API call fails
+// Curated voice options based on ElevenLabs premium voices
 export const VOICE_OPTIONS = [
+  { id: 'nPczCjzI2devNBz1zQrb', name: 'Bryan - Professional Narrator', description: 'Warm and confident American male voice, perfect for news and educational content' },
   { id: '9BWtsMINqrJLrRacOk9x', name: 'Aria', description: 'Clear American female voice' },
-  { id: 'pqHfZKP75CvOlQylNhV4', name: 'Bill', description: 'American male voice' },
-  { id: 'EXAVITQu4vr4xnSDxMaL', name: 'Sarah', description: 'Professional female voice' }
+  { id: 'pqHfZKP75CvOlQylNhV4', name: 'Bill', description: 'Friendly American male voice' },
+  { id: 'EXAVITQu4vr4xnSDxMaL', name: 'Sarah', description: 'Professional female voice' },
+  { id: 'VR6AewLTigWG4xSOukaG', name: 'Arnold', description: 'Crisp American male voice' }
 ];
 
 // Get available voices from ElevenLabs
@@ -47,8 +49,8 @@ export async function getAvailableVoices() {
   }
 }
 
-// Generate audio from text
-export async function generateAudio(text, voiceId = '9BWtsMINqrJLrRacOk9x', episodeId) {
+// Generate audio from text  
+export async function generateAudio(text, voiceId = 'nPczCjzI2devNBz1zQrb', episodeId) {
   if (!ELEVENLABS_API_KEY) {
     throw new Error("ElevenLabs API key not set. Please add ELEVENLABS_API_KEY to your secrets.");
   }

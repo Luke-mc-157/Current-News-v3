@@ -17,7 +17,7 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
   const [script, setScript] = useState<string | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [selectedDuration, setSelectedDuration] = useState('10');
-  const [selectedVoice, setSelectedVoice] = useState('9BWtsMINqrJLrRacOk9x');
+  const [selectedVoice, setSelectedVoice] = useState('nPczCjzI2devNBz1zQrb');
   const { toast } = useToast();
 
   const handleGeneratePodcast = async () => {
@@ -226,12 +226,11 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="rachel">Rachel (American Female)</SelectItem>
-                  <SelectItem value="clyde">Clyde (American Male)</SelectItem>
-                  <SelectItem value="domi">Domi (British Female)</SelectItem>
-                  <SelectItem value="antoni">Antoni (British Male)</SelectItem>
-                  <SelectItem value="bella">Bella (Soft Female)</SelectItem>
-                  <SelectItem value="elli">Elli (Young Female)</SelectItem>
+                  <SelectItem value="nPczCjzI2devNBz1zQrb">Bryan - Professional Narrator (Warm American Male)</SelectItem>
+                  <SelectItem value="9BWtsMINqrJLrRacOk9x">Aria (Clear American Female)</SelectItem>
+                  <SelectItem value="pqHfZKP75CvOlQylNhV4">Bill (Friendly American Male)</SelectItem>
+                  <SelectItem value="EXAVITQu4vr4xnSDxMaL">Sarah (Professional Female)</SelectItem>
+                  <SelectItem value="VR6AewLTigWG4xSOukaG">Arnold (Crisp American Male)</SelectItem>
                 </SelectContent>
               </Select>
             </div>

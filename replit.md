@@ -114,6 +114,8 @@ The application now includes a comprehensive podcast generation system:
 - **Intelligent Topic Matching**: xAI provides semantic understanding for better topic categorization vs keyword matching
 - **User-Controlled Sources**: Users can define their own trusted sources per topic through the UI
 - **Efficient X API Usage**: Compiles targeted source queries outside X API to minimize rate limit usage
+- **Podcast Test Page**: Added "/podcast-test" route with cached headlines to test podcast system without X API calls
+- **ElevenLabs Voice Integration**: Fixed voice ID issues, now using Bryan (Professional Narrator) as default with 5 curated voice options
 
 ## Deployment Strategy
 
