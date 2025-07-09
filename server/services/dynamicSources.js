@@ -122,6 +122,7 @@ export async function compileVerifiedSources(topics, userId = 'default', xHandle
     } catch (error) {
       console.error(`Error fetching following list for @${xHandle}:`, error.message);
       // Continue without following list instead of failing
+      // This allows the app to work even if OAuth credentials need adjustment
     }
   }
 

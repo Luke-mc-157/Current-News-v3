@@ -73,6 +73,7 @@ export async function fetchUserFollowing(username) {
     const userUrl = `https://api.twitter.com/2/users/by/username/${username}`;
     const userAuth = generateAuthHeader(userUrl, 'GET');
     
+    console.log(`Requesting user info for @${username}...`);
     const userResponse = await axios.get(userUrl, {
       headers: {
         'Authorization': userAuth,
@@ -135,14 +136,16 @@ export async function fetchUserFollowing(username) {
     return followingHandles;
 
   } catch (error) {
+    console.error("X API following fetch error:", error.response?.data || error.message);
     if (error.response?.status === 401) {
+      throw new Error(`OAuth authentication failed. Please check your X API credentials have the correct permissions.`);
+    } else if (error.response?.status === 403) {
       throw new Error(`Access denied for @${username}. The account may be private or you may not have permission to view their following list.`);
     } else if (error.response?.status === 404) {
       throw new Error(`User @${username} not found`);
     } else if (error.response?.status === 429) {
       throw new Error(`Rate limit exceeded while fetching following list for @${username}. Please try again later.`);
     } else {
-      console.error("X API following fetch error:", error.response?.data || error.message);
       throw new Error(`Failed to fetch following list for @${username}: ${error.message}`);
     }
   }
