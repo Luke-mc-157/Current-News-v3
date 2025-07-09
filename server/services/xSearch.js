@@ -8,7 +8,7 @@ let lastRequestTime = null;
 
 // Dynamic sources will be compiled per topic using xAI and user preferences
 
-export async function fetchXPosts(topics, userId = 'default') {
+export async function fetchXPosts(topics, userId = 'default', xHandle = null) {
   const X_BEARER_TOKEN = process.env.X_BEARER_TOKEN;
   if (!X_BEARER_TOKEN) {
     throw new Error("X_BEARER_TOKEN is not set in Replit Secrets");
@@ -133,7 +133,7 @@ export async function fetchXPosts(topics, userId = 'default') {
   }
 
   // Compile dynamic verified sources for these topics
-  const topicSources = await compileVerifiedSources(topics, userId);
+  const topicSources = await compileVerifiedSources(topics, userId, xHandle);
   const sourceQueries = buildSourceQueries(topicSources);
   
   // Collect all authentic posts from compiled sources

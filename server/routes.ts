@@ -13,13 +13,13 @@ export function registerRoutes(app) {
   let headlinesStore = [];
 
   router.post("/api/generate-headlines", async (req, res) => {
-    const { topics } = req.body;
+    const { topics, xHandle } = req.body;
     if (!topics || topics.length < 1) {
       return res.status(400).json({ message: "At least 1 topic required" });
     }
 
     try {
-      const posts = await fetchXPosts(topics);
+      const posts = await fetchXPosts(topics, 'default', xHandle);
       const hasPosts = Object.values(posts).some((p) => p.length > 0);
       if (!hasPosts) {
         throw new Error("No X posts found for any topic");

@@ -8,23 +8,24 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 
 interface TopicInputProps {
-  onTopicsSubmitted: (topics: string[]) => void;
+  onTopicsSubmitted: (topics: string[], xHandle?: string) => void;
 }
 
 export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
+  const [xHandle, setXHandle] = useState("");
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
-    mutationFn: (topics: string[]) =>
-      apiRequest("POST", "/api/generate-headlines", { topics }),
+    mutationFn: ({ topics, xHandle }: { topics: string[], xHandle?: string }) =>
+      apiRequest("POST", "/api/generate-headlines", { topics, xHandle }),
     onSuccess: () => {
       toast({
         title: "Headlines Generated",
         description: "Your personalized news headlines have been created.",
       });
-      onTopicsSubmitted(topics);
+      onTopicsSubmitted(topics, xHandle);
     },
     onError: (error: any) => {
       toast({
@@ -57,7 +58,7 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (topics.length >= 1) {
-      generateHeadlinesMutation.mutate(topics);
+      generateHeadlinesMutation.mutate({ topics, xHandle: xHandle.trim() || undefined });
     }
   };
 
@@ -97,6 +98,24 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
         
         <p className={`mt-1 text-sm ${isValid ? "text-emerald-600" : "text-slate-500"}`}>
           {topics.length} topics entered {isValid ? "- ready to submit" : "- need at least 1 topic"}
+        </p>
+      </div>
+
+      <div>
+        <label htmlFor="xHandle" className="block text-sm font-medium text-slate-700 mb-2">
+          X Handle (optional)
+          <span className="text-xs text-slate-500 ml-1">- Add accounts you follow as supplementary sources</span>
+        </label>
+        <Input
+          id="xHandle"
+          type="text"
+          placeholder="e.g. your_username (without @)"
+          value={xHandle}
+          onChange={(e) => setXHandle(e.target.value)}
+          className="w-full"
+        />
+        <p className="text-xs text-slate-500 mt-1">
+          Your following list will be used as additional sources alongside our curated sources
         </p>
       </div>
 
