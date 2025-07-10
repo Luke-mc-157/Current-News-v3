@@ -249,6 +249,10 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
               {
                 type: "news", 
                 country: "US"
+              },
+              {
+                type: "rss",
+                links: ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]
               }
             ],
             max_search_results: 20,
@@ -619,9 +623,9 @@ export async function getTrendingTopics() {
         sources: [
           { type: "web", country: "US" },
           { type: "news", country: "US" },
-          { type: "rss", links: ["https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json"] }
+          { type: "rss", links: ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] }
         ],
-        max_search_results: 25
+        max_search_results: 20
       },
       response_format: { type: "json_object" }
     });
