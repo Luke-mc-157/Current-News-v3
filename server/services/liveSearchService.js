@@ -20,21 +20,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What is the latest news related to ${topic}? Return 5 X posts with the highest engagement related to ${topic} and 5 news articles to support the posts.
-
-Return a JSON object with this exact structure:
-{
-  "headlines": [
-    {
-      "title": "factual headline based on real sources",
-      "summary": "brief summary using actual details from sources",
-      "category": "${topic}",
-      "engagement": "high or medium"
-    }
-  ]
-}
-
-Generate 3 headlines using real information from your search results. Be factual and specific.`;
+      const prompt = `What is the latest news related to ${topic}?`;
 
       try {
         // Calculate date 24 hours ago in YYYY-MM-DD format (ISO8601)
@@ -82,7 +68,7 @@ Generate 3 headlines using real information from your search results. Be factual
             max_search_results: 10,
             return_citations: true
           },
-          response_format: { type: "json_object" }
+          // No format restriction for relaxed prompt
         });
         
         // Race between API call and timeout
@@ -96,18 +82,86 @@ Generate 3 headlines using real information from your search results. Be factual
         allCitations.push(...topicCitations);
         console.log(`📎 Found ${topicCitations.length} citations for ${topic}`);
         
-        // Parse JSON response
-        const content = response.choices[0].message.content;
-        const cleanContent = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-        const parsed = JSON.parse(cleanContent);
+        // Check if citations include metadata
+        if (response.citation_metadata) {
+          console.log(`📋 Citation metadata available:`, JSON.stringify(response.citation_metadata, null, 2));
+        }
         
+        // Parse response - with relaxed prompt, xAI may return natural language
+        const content = response.choices[0].message.content;
+        console.log(`📄 Raw response for ${topic}:`, content.substring(0, 200) + '...');
+        
+        // Try to extract headlines from natural language response
         let topicHeadlines = [];
-        if (parsed.headlines && Array.isArray(parsed.headlines)) {
-          topicHeadlines = parsed.headlines;
-        } else if (Array.isArray(parsed)) {
-          topicHeadlines = parsed;
-        } else {
-          topicHeadlines = parsed.results || parsed.data || [];
+        
+        // Check if response contains JSON
+        if (content.includes('{') || content.includes('[')) {
+          try {
+            const cleanContent = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+            const parsed = JSON.parse(cleanContent);
+            
+            if (parsed.headlines && Array.isArray(parsed.headlines)) {
+              topicHeadlines = parsed.headlines;
+            } else if (Array.isArray(parsed)) {
+              topicHeadlines = parsed;
+            } else {
+              topicHeadlines = parsed.results || parsed.data || [];
+            }
+          } catch (parseError) {
+            console.log(`⚠️ Could not parse JSON for ${topic}, extracting from text`);
+          }
+        }
+        
+        // If no headlines from JSON, create from natural language
+        if (topicHeadlines.length === 0) {
+          // Extract key points from the response
+          const lines = content.split('\n').filter(line => line.trim());
+          const keyPoints = [];
+          
+          // Look for numbered points or bullet points in the response
+          for (const line of lines) {
+            const cleaned = line.replace(/^[-•*]\s*/, '').replace(/^\d+\.\s*/, '').trim();
+            
+            // Skip lines that are too short or are just headers
+            if (cleaned.length < 20) continue;
+            
+            // Extract title and summary from each point
+            let title = '';
+            let summary = cleaned;
+            
+            // Look for patterns like "**Title**: Description"
+            const boldMatch = cleaned.match(/\*\*(.*?)\*\*:?\s*(.*)/);
+            if (boldMatch) {
+              title = boldMatch[1].trim();
+              summary = boldMatch[2].trim();
+            } else {
+              // Use first sentence as title
+              const firstSentence = cleaned.match(/^([^.!?]+[.!?])/);
+              title = firstSentence ? firstSentence[1].trim() : cleaned.substring(0, 80) + '...';
+            }
+            
+            keyPoints.push({
+              title: title.substring(0, 100),
+              summary: summary,
+              category: topic,
+              engagement: "medium"
+            });
+            
+            // Limit to 3-5 headlines per topic
+            if (keyPoints.length >= 3) break;
+          }
+          
+          // If still no headlines, create a generic one
+          if (keyPoints.length === 0) {
+            keyPoints.push({
+              title: `Latest ${topic} Updates`,
+              summary: content.substring(0, 200),
+              category: topic,
+              engagement: "medium"
+            });
+          }
+          
+          topicHeadlines = keyPoints;
         }
         
         // Add topic-specific citations to each headline
@@ -115,7 +169,8 @@ Generate 3 headlines using real information from your search results. Be factual
           ...headline,
           category: topic,
           topicCitations: topicCitations,
-          topicIndex: i
+          topicIndex: i,
+          responseContent: content // Pass the response content for article title extraction
         }));
         
         allHeadlines.push(...headlinesWithCitations);
@@ -170,11 +225,13 @@ Generate 3 headlines using real information from your search results. Be factual
         };
       });
       
-      // Create supporting articles from real article citations (targeting 5 per topic)
-      const supportingArticles = articleCitations.slice(0, 5).map(url => {
+      // Create supporting articles from real article citations
+      const supportingArticles = articleCitations.map((url, idx) => {
         try {
-          const domain = new URL(url).hostname;
-          // Extract meaningful title from domain
+          const urlObj = new URL(url);
+          const domain = urlObj.hostname;
+          
+          // Extract meaningful source name from domain
           let sourceTitle = domain;
           if (domain.includes('reuters.com')) sourceTitle = 'Reuters';
           else if (domain.includes('cnn.com')) sourceTitle = 'CNN';
@@ -184,16 +241,65 @@ Generate 3 headlines using real information from your search results. Be factual
           else if (domain.includes('wsj.com')) sourceTitle = 'Wall Street Journal';
           else if (domain.includes('nytimes.com')) sourceTitle = 'New York Times';
           else if (domain.includes('washingtonpost.com')) sourceTitle = 'Washington Post';
+          else if (domain.includes('theguardian.com')) sourceTitle = 'The Guardian';
+          else if (domain.includes('apnews.com')) sourceTitle = 'Associated Press';
+          else sourceTitle = domain.replace('www.', '').split('.')[0]; // Clean domain name
+          
+          // Try to extract article title from URL and content
+          const pathSegments = urlObj.pathname.split('/').filter(seg => seg.length > 0);
+          let articleTitle = '';
+          
+          // First, check if we can match the URL to content in the response
+          const urlDomain = domain.replace('www.', '');
+          const responseContent = headline.responseContent || '';
+          
+          // Look for mentions of the source in the response
+          if (responseContent) {
+            const sourcePattern = new RegExp(`(${sourceTitle}|${urlDomain})[^.]*\\.`, 'gi');
+            const matches = responseContent.match(sourcePattern);
+            if (matches && matches[0]) {
+              // Extract the sentence mentioning this source
+              articleTitle = matches[0]
+                .replace(new RegExp(`\\(source:\\s*${sourceTitle}\\)`, 'i'), '')
+                .replace(/\.$/, '')
+                .trim()
+                .substring(0, 100);
+            }
+          }
+          
+          // If no title from content, try URL path
+          if (!articleTitle) {
+            for (let i = pathSegments.length - 1; i >= 0; i--) {
+              const segment = pathSegments[i];
+              // Skip date segments, category names, etc.
+              if (segment.match(/^\d{4}$/) || segment.match(/^\d{1,2}$/) || segment.length < 10) continue;
+              
+              // Convert slug to title (replace hyphens with spaces, capitalize)
+              articleTitle = segment
+                .replace(/-/g, ' ')
+                .replace(/\b\w/g, char => char.toUpperCase())
+                .substring(0, 80);
+              break;
+            }
+          }
+          
+          // If still no title, create one based on headline and source
+          if (!articleTitle || articleTitle.length < 10) {
+            // Use a portion of the main headline for variety
+            const headlineWords = headline.title.split(' ');
+            const shortHeadline = headlineWords.slice(0, 6).join(' ');
+            articleTitle = `${sourceTitle}: ${shortHeadline}${headlineWords.length > 6 ? '...' : ''}`;
+          }
           
           return {
-            title: `${sourceTitle}: ${headline.title.substring(0, 60)}${headline.title.length > 60 ? '...' : ''}`,
+            title: articleTitle,
             url: url, // Use actual article URL
             source: sourceTitle
           };
         } catch (e) {
           return {
-            title: headline.title.substring(0, 80),
-            url: url, // Use actual article URL even if domain parsing fails
+            title: `Article on ${headline.category}`,
+            url: url,
             source: 'News Source'
           };
         }
