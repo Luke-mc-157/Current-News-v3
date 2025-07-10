@@ -57,14 +57,12 @@ Generate exactly 15 headlines using real information from your search results. B
           },
           {
             type: "x",
-            post_favorite_count: 50
+            post_favorite_count: 150,
+            post_view_count: 15000
           },
           {
             type: "news", 
             country: "US"
-          },
-          {
-            type: "rss"
           }
         ],
         max_search_results: 25,
