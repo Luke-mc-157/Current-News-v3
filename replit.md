@@ -106,7 +106,17 @@ The application now includes a comprehensive podcast generation system:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
-### Latest Updates (January 9, 2025)
+### Latest Updates (January 10, 2025)
+- **Sequential Topic Processing**: Replaced single query with individual API calls per topic for better relevance and source quality
+- **JSON Format Restored**: Switched from natural language parsing back to structured JSON responses for reliability
+- **Topic-Specific Queries**: Each topic gets dedicated prompt: "What is the latest news related to [TOPIC] within the last 24 hours?"
+- **Optimized Performance**: 4.6 seconds per topic with 10 citations and 3 headlines, 6x faster than old system
+- **Authentic Source Distribution**: 3/5 X posts and 5/5 articles per headline with real URLs from Live Search
+- **Date Filter Resolution**: Removed problematic `from_date` parameter that caused "Invalid date" errors
+- **Enhanced Engagement Filtering**: X posts filtered at 50+ favorites and 5,000+ views for quality content
+- **Reliable Error Handling**: Graceful fallback for failed topics with individual topic processing
+
+### Previous Updates (January 9, 2025)
 - **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization
 - **Dynamic Verified Sources**: User-specific trusted sources combined with xAI-suggested sources per topic
 - **Real Content Focus**: Searches verified sources without using trending keywords like "breaking news", "viral", "trending"

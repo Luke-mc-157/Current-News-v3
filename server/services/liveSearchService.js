@@ -37,10 +37,8 @@ Return a JSON object with this exact structure:
 Generate 3 headlines using real information from your search results. Be factual and specific.`;
 
       try {
-        // Calculate date 24 hours ago
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        const fromDate = yesterday.toISOString();
+        // Removed date filter to fix "Invalid date" error
+        // The prompt already specifies "within the last 24 hours"
         
         // Call Live Search API for this specific topic
         const response = await openai.chat.completions.create({
@@ -53,7 +51,6 @@ Generate 3 headlines using real information from your search results. Be factual
           ],
           search_parameters: {
             mode: "on",
-            from_date: fromDate,
             sources: [
               {
                 type: "web",
