@@ -56,7 +56,7 @@ export async function analyzePostsForAuthenticity(posts) {
     }
     
     const postsText = posts.map(post => ({
-      text: post.text,
+      text: post.realText || post.text, // Use real fetched text if available
       author: post.author_handle,
       url: post.url || '',
       engagement: (post.public_metrics?.like_count || 0) + 
@@ -101,13 +101,14 @@ Return JSON with this structure:
 
     const analysis = JSON.parse(responseContent);
     
-    // Filter posts with authenticity score > 0.7 and validate scores
+    // Filter posts with authenticity score > 0.6 and validate scores
     const authenticPosts = (analysis.authentic_posts || [])
       .filter(post => {
         // Validate scores are numbers
         const authScore = parseFloat(post.authenticity_score);
         const sigScore = parseFloat(post.significance_score);
-        return !isNaN(authScore) && !isNaN(sigScore) && authScore > 0.7;
+        console.log(`Post [${post.url}] scored ${authScore}, reasoning: ${post.reasoning}`);
+        return !isNaN(authScore) && !isNaN(sigScore) && authScore > 0.6;
       })
       .map(post => ({
         ...post,
@@ -116,7 +117,7 @@ Return JSON with this structure:
         url: post.url || posts.find(p => p.text === post.text)?.url || ''
       }));
     
-    console.log(`✅ Analyzed ${posts.length} posts: ${authenticPosts.length} passed authenticity threshold (>0.7)`);
+    console.log(`✅ Analyzed ${posts.length} posts: ${authenticPosts.length} passed authenticity threshold (>0.6)`);
     return authenticPosts;
   } catch (error) {
     console.error("xAI analysis error:", error.message);
