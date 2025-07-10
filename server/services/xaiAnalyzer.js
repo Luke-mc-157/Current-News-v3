@@ -65,12 +65,7 @@ export async function analyzePostsForAuthenticity(posts) {
                   (post.public_metrics?.view_count || 0) * 0.001
     }));
 
-    const response = await xai.chat.completions.create({
-      model: "grok-4-0709",
-      messages: [
-        {
-          role: "system",
-          content: `You are an expert at identifying authentic, meaningful posts that matter to users seeking truth. Analyze these X posts and identify which ones contain:
+    const systemPrompt = `You are an expert at identifying authentic, meaningful posts that matter to users seeking truth. Analyze these X posts and identify which ones contain:
 
 1. AUTHENTIC information (not speculation or rumors)
 2. SUBSTANTIAL content that matters to informed users
@@ -91,32 +86,37 @@ Return JSON with this structure:
     {
       "text": "post text",
       "author": "handle",
+      "url": "post url",
       "authenticity_score": 0.9,
       "significance_score": 0.8,
       "reasoning": "why this post matters"
     }
   ]
-}`
-        },
-        {
-          role: "user",
-          content: `Analyze these posts:\n\n${JSON.stringify(postsText, null, 2)}`
-        }
-      ],
-      response_format: { type: "json_object" }
-    });
+}`;
 
-    const analysis = JSON.parse(response.choices[0].message.content);
+    const responseContent = await callXAI(
+      systemPrompt,
+      `Analyze these posts:\n\n${JSON.stringify(postsText, null, 2)}`
+    );
+
+    const analysis = JSON.parse(responseContent);
     
-    // Filter posts with authenticity score > 0.7
+    // Filter posts with authenticity score > 0.7 and validate scores
     const authenticPosts = (analysis.authentic_posts || [])
-      .filter(post => post.authenticity_score > 0.7)
+      .filter(post => {
+        // Validate scores are numbers
+        const authScore = parseFloat(post.authenticity_score);
+        const sigScore = parseFloat(post.significance_score);
+        return !isNaN(authScore) && !isNaN(sigScore) && authScore > 0.7;
+      })
       .map(post => ({
         ...post,
-        url: posts.find(p => p.text === post.text)?.url || ''
+        authenticity_score: parseFloat(post.authenticity_score),
+        significance_score: parseFloat(post.significance_score),
+        url: post.url || posts.find(p => p.text === post.text)?.url || ''
       }));
     
-    console.log(`Filtered ${authenticPosts.length}/${posts.length} posts with authenticity > 0.7`);
+    console.log(`✅ Analyzed ${posts.length} posts: ${authenticPosts.length} passed authenticity threshold (>0.7)`);
     return authenticPosts;
   } catch (error) {
     console.error("xAI analysis error:", error.message);
@@ -127,12 +127,7 @@ Return JSON with this structure:
 // Use xAI to categorize posts into user topics intelligently
 export async function categorizePostsWithXAI(posts, userTopics) {
   try {
-    const response = await xai.chat.completions.create({
-      model: "grok-4-0709",
-      messages: [
-        {
-          role: "system",
-          content: `You are an expert at understanding content and matching it to user interests. 
+    const systemPrompt = `You are an expert at understanding content and matching it to user interests. 
 
 Given these user topics: ${userTopics.join(', ')}
 
@@ -152,17 +147,15 @@ Return JSON with this structure:
       "reasoning": "why this matches the topic"
     }
   ]
-}`
-        },
-        {
-          role: "user",
-          content: `Posts to categorize:\n\n${JSON.stringify(posts.map(p => ({ text: p.text, author: p.author_handle })), null, 2)}`
-        }
-      ],
-      response_format: { type: "json_object" }
-    });
+}`;
 
-    const categorization = JSON.parse(response.choices[0].message.content);
+    const responseContent = await callXAI(
+      systemPrompt,
+      `Posts to categorize:\n\n${JSON.stringify(posts.map(p => ({ text: p.text, author: p.author_handle })), null, 2)}`
+    );
+
+    const categorization = JSON.parse(responseContent);
+    console.log(`✅ Categorized ${posts.length} posts into ${userTopics.length} topics`);
     return categorization.categorized_posts || [];
   } catch (error) {
     console.error("xAI categorization error:", error.message);
@@ -173,12 +166,7 @@ Return JSON with this structure:
 // Discover topics from authentic high-engagement content
 export async function discoverAuthenticTopics(posts) {
   try {
-    const response = await xai.chat.completions.create({
-      model: "grok-4-0709",
-      messages: [
-        {
-          role: "system",
-          content: `You are an expert at identifying emerging topics from authentic, high-engagement social media content. 
+    const systemPrompt = `You are an expert at identifying emerging topics from authentic, high-engagement social media content. 
 
 Analyze these posts from verified, credible sources and identify:
 - Emerging themes and topics that people genuinely care about
@@ -197,21 +185,19 @@ Focus on substance over sensationalism. Return JSON with:
       "significance_score": 0.8
     }
   ]
-}`
-        },
-        {
-          role: "user",
-          content: `Analyze these high-engagement posts:\n\n${JSON.stringify(posts.map(p => ({ 
-            text: p.text, 
-            author: p.author_handle,
-            engagement: p.public_metrics.like_count + p.public_metrics.retweet_count
-          })), null, 2)}`
-        }
-      ],
-      response_format: { type: "json_object" }
-    });
+}`;
 
-    const topics = JSON.parse(response.choices[0].message.content);
+    const responseContent = await callXAI(
+      systemPrompt,
+      `Analyze these high-engagement posts:\n\n${JSON.stringify(posts.map(p => ({ 
+        text: p.text, 
+        author: p.author_handle,
+        engagement: p.public_metrics.like_count + p.public_metrics.retweet_count
+      })), null, 2)}`
+    );
+
+    const topics = JSON.parse(responseContent);
+    console.log(`✅ Discovered ${topics.discovered_topics?.length || 0} authentic topics from ${posts.length} posts`);
     return topics.discovered_topics || [];
   } catch (error) {
     console.error("xAI topic discovery error:", error.message);

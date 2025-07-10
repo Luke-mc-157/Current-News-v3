@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import axios from "axios";
 import * as cheerio from "cheerio";
+import { analyzePostsForAuthenticity } from './xaiAnalyzer.js';
 
 const openai = new OpenAI({ 
   baseURL: "https://api.x.ai/v1", 
@@ -329,7 +330,10 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
     // Sort by engagement
     transformedHeadlines.sort((a, b) => b.engagement - a.engagement);
     
-    return transformedHeadlines;
+    // Filter headlines through authenticity analyzer
+    const authenticHeadlines = await filterWithAnalyzer(transformedHeadlines);
+    
+    return authenticHeadlines;
     
   } catch (error) {
     console.error("Live Search error:", error);
@@ -367,6 +371,58 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
   }
   
   return liveSearchCategory;
+}
+
+// Filter headlines through authenticity analyzer
+async function filterWithAnalyzer(headlines) {
+  try {
+    // Extract all source posts for analysis
+    const postsForAnalysis = headlines.flatMap(h => 
+      h.sourcePosts.map(p => ({
+        text: h.summary, // Using headline summary as the text to analyze
+        author_handle: p.handle,
+        public_metrics: { 
+          like_count: p.likes || 0,
+          retweet_count: 0,
+          reply_count: 0,
+          view_count: 0
+        },
+        url: p.url
+      }))
+    );
+    
+    // If no posts to analyze, return all headlines
+    if (postsForAnalysis.length === 0) {
+      console.log("⚠️ No source posts to analyze for authenticity");
+      return headlines;
+    }
+    
+    // Analyze posts for authenticity
+    const authenticPosts = await analyzePostsForAuthenticity(postsForAnalysis);
+    
+    // Create a set of authentic URLs for fast lookup
+    const authenticUrls = new Set(authenticPosts.map(p => p.url));
+    
+    // Filter headlines: keep only those with at least one authentic source post
+    const authenticHeadlines = headlines.filter(h => {
+      const authenticSourceCount = h.sourcePosts.filter(p => authenticUrls.has(p.url)).length;
+      const hasAuthenticSources = authenticSourceCount > 0 || h.sourcePosts.length === 0;
+      
+      if (!hasAuthenticSources) {
+        console.log(`❌ Filtered out headline "${h.title}" - no authentic sources`);
+      }
+      
+      return hasAuthenticSources;
+    });
+    
+    console.log(`✅ Authenticity filter: ${authenticHeadlines.length}/${headlines.length} headlines passed`);
+    return authenticHeadlines;
+    
+  } catch (error) {
+    console.error("Error in authenticity filtering:", error);
+    // Return all headlines if filtering fails
+    return headlines;
+  }
 }
 
 // Get trending topics (for future use)
