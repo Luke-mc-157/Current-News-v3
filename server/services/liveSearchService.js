@@ -41,7 +41,7 @@ Generate exactly 15 headlines using real information from your search results. B
 
     // Call Live Search API
     const response = await openai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-3",
       messages: [
         {
           role: "user",
@@ -244,7 +244,7 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
 export async function getTrendingTopics() {
   try {
     const response = await openai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-3",
       messages: [
         {
           role: "user",
