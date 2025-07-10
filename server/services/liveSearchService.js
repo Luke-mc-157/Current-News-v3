@@ -44,7 +44,7 @@ Generate 3 headlines using real information from your search results. Be factual
         
         // Call Live Search API for this specific topic
         const response = await openai.chat.completions.create({
-          model: "grok-3",
+          model: "grok-4-0709",
           messages: [
             {
               role: "user",
@@ -259,7 +259,7 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
 export async function getTrendingTopics() {
   try {
     const response = await openai.chat.completions.create({
-      model: "grok-3",
+      model: "grok-4-0709",
       messages: [
         {
           role: "user",

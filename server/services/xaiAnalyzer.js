@@ -16,7 +16,7 @@ export async function analyzePostsForAuthenticity(posts) {
     }));
 
     const response = await xai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-4-0709",
       messages: [
         {
           role: "system",
@@ -68,7 +68,7 @@ Return JSON with this structure:
 export async function categorizePostsWithXAI(posts, userTopics) {
   try {
     const response = await xai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-4-0709",
       messages: [
         {
           role: "system",
@@ -114,7 +114,7 @@ Return JSON with this structure:
 export async function discoverAuthenticTopics(posts) {
   try {
     const response = await xai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-4-0709",
       messages: [
         {
           role: "system",

@@ -10,7 +10,7 @@ const xai = new OpenAI({
 export async function suggestVerifiedSources(topics) {
   try {
     const response = await xai.chat.completions.create({
-      model: "grok-2-1212",
+      model: "grok-4-0709",
       messages: [
         {
           role: "system",

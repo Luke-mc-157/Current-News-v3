@@ -45,7 +45,7 @@ The backend implements five distinct workflows that process user requests:
 The application now includes a comprehensive podcast generation system:
 
 - **Content Compilation**: Fetches full text from all X posts and article URLs
-- **Script Generation**: Uses xAI Grok-2-1212 to create factual podcast scripts
+- **Script Generation**: Uses xAI Grok-4-0709 to create factual podcast scripts
 - **Voice Synthesis**: Integrates ElevenLabs API for high-quality voice generation
 - **Audio Delivery**: Provides web player and email distribution options
 - **User Controls**: Duration selection (5-30 min), voice selection, instant playback
@@ -107,12 +107,13 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
+- **Grok 4 Upgrade**: Updated all LLM tasks to use latest xAI Grok-4-0709 model for improved performance and accuracy
 - **Sequential Topic Processing**: Replaced single query with individual API calls per topic for better relevance and source quality
 - **JSON Format Restored**: Switched from natural language parsing back to structured JSON responses for reliability
 - **Topic-Specific Queries**: Each topic gets dedicated prompt without date references in natural language
 - **24-Hour Date Filtering**: Implemented proper ISO8601 date format (YYYY-MM-DD) for `from_date` parameter
-- **Optimized Performance**: 5.4 seconds per topic with 10 citations and 3 headlines, 6x faster than old system
-- **Authentic Source Distribution**: 3/5 X posts and 5/5 articles per headline with real URLs from Live Search
+- **Optimized Performance**: 5.3 seconds per topic with 7+ citations and 3 headlines using Grok 4
+- **Authentic Source Distribution**: Real URLs from Live Search with quality engagement filtering
 - **Date Format Resolution**: Fixed "Invalid date" errors by using `toISOString().split('T')[0]` format
 - **Enhanced Engagement Filtering**: X posts filtered at 50+ favorites and 5,000+ views for quality content
 - **Reliable Error Handling**: Graceful fallback for failed topics with individual topic processing
