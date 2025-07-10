@@ -37,6 +37,11 @@ Return a JSON object with this exact structure:
 Generate 3 headlines using real information from your search results. Be factual and specific.`;
 
       try {
+        // Calculate date 24 hours ago
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const fromDate = yesterday.toISOString();
+        
         // Call Live Search API for this specific topic
         const response = await openai.chat.completions.create({
           model: "grok-3",
@@ -48,6 +53,7 @@ Generate 3 headlines using real information from your search results. Be factual
           ],
           search_parameters: {
             mode: "on",
+            from_date: fromDate,
             sources: [
               {
                 type: "web",
