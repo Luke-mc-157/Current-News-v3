@@ -704,21 +704,7 @@ function cleanTitle(title) {
   return title;
 }
 
-// Helper function to calculate engagement from citations
-function calculateEngagement(citations) {
-  if (!citations || citations.length === 0) return Math.floor(Math.random() * 200) + 100;
-  return citations.length * CONFIG.ENGAGEMENT_MULTIPLIER + Math.floor(Math.random() * 100);
-}
 
-// Helper function to extract handle from X URL
-function extractHandleFromUrl(url) {
-  try {
-    const match = url.match(/(?:x\.com|twitter\.com)\/([^\/]+)/);
-    return match ? `@${match[1]}` : '@unknown';
-  } catch {
-    return '@unknown';
-  }
-}
 
 // Get trending topics (for future use)
 export async function getTrendingTopics() {
