@@ -108,6 +108,30 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
+- **X API WORKFLOW INTEGRATION**: Implemented official X API v2 integration to replace web scraping for improved accuracy
+  - `fetchXPostMetadata` function uses bearer token authentication for official API calls
+  - Fetches comprehensive metadata: text, likes, retweets, replies, views, author info
+  - Falls back to scraping only when API fails, ensuring resilience
+- **FULL ARTICLE CONTENT FETCHING**: Extended beyond titles to fetch complete article body text
+  - `fetchArticleContent` extracts up to 5000 characters of article content
+  - Multiple selector strategies for different news site layouts
+  - Manages token limits through intelligent truncation
+- **AGGREGATED DATA COLLECTION**: System now compiles comprehensive data post-Live Search
+  - Live search results with headlines and summaries
+  - X posts with enhanced metadata from official API
+  - Full article content for deeper analysis
+  - Complete citation tracking across all sources
+- **NEWSLETTER GENERATION LAYER**: Added Grok-4-0709 powered newsletter refinement
+  - `generateNewsletter` function processes all aggregated data
+  - Creates refined, factual summaries with proper citations
+  - Configurable via `useNewsletter` toggle for flexible deployment
+  - Zero-opinion policy enforced for pure factual reporting
+- **MODULAR HELPER FUNCTIONS**: Improved code organization with extracted utility functions
+  - Configuration constants centralized for easy management
+  - Error handling and retry logic standardized
+  - Clean separation of concerns for maintainability
+
+### Previous Updates (January 10, 2025)
 - **GROK-4-0709 UPGRADE**: Updated all Live Search operations from Grok-3 to Grok-4-0709 for enhanced AI processing capabilities
 - **RSS FEED INTEGRATION**: Added RSS as a new source type with specific feed: https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json
 - **COMPREHENSIVE X POST FETCHING**: Implemented real X post content extraction using axios/cheerio with fallback handling

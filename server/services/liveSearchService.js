@@ -46,8 +46,37 @@ function isValidTitle(title) {
   return true;
 }
 
-// Helper function to fetch X post details with improved error handling
-async function fetchXPostDetails(url) {
+// Helper function to fetch X post metadata using official X API
+async function fetchXPostMetadata(postId) {
+  try {
+    const response = await axios.get(`https://api.twitter.com/2/tweets/${postId}?tweet.fields=text,public_metrics,created_at,author_id&expansions=author_id`, {
+      headers: { 
+        'Authorization': `Bearer ${process.env.X_BEARER_TOKEN}` 
+      },
+      timeout: CONFIG.API_TIMEOUT
+    });
+    
+    const tweet = response.data.data;
+    const author = response.data.includes?.users?.[0];
+    
+    return {
+      text: tweet.text,
+      likes: tweet.public_metrics.like_count,
+      retweets: tweet.public_metrics.retweet_count,
+      replies: tweet.public_metrics.reply_count,
+      views: tweet.public_metrics.impression_count,
+      time: tweet.created_at,
+      author_handle: author ? `@${author.username}` : '@unknown'
+    };
+  } catch (e) {
+    console.error(`X API fetch failed for ${postId}: ${e.message}`);
+    // Fallback to scraping if API fails
+    return fetchXPostDetailsFallback(`https://x.com/i/status/${postId}`);
+  }
+}
+
+// Fallback function using scraping (original implementation)
+async function fetchXPostDetailsFallback(url) {
   try {
     // Add random delay to avoid rate limiting
     await sleep(randomDelay());
@@ -98,6 +127,17 @@ async function fetchXPostDetails(url) {
     const postId = url.split('/status/')[1]?.split('?')[0];
     return createFallbackXPost(url, postId);
   }
+}
+
+// Helper function to fetch X post details
+async function fetchXPostDetails(url) {
+  // Extract post ID from URL
+  const postId = url.split('/status/')[1]?.split('?')[0];
+  if (postId && process.env.X_BEARER_TOKEN) {
+    return fetchXPostMetadata(postId);
+  }
+  // Fallback to scraping if no API token or invalid URL
+  return fetchXPostDetailsFallback(url);
 }
 
 // Helper function to extract engagement metrics
@@ -191,6 +231,7 @@ async function fetchArticleTitle(url) {
     }
     
     // Check if title matches site name (e.g., just "CNN")
+    const urlObj = new URL(url);
     const domain = urlObj.hostname.replace('www.', '').split('.')[0].toLowerCase();
     if (titleLower === domain || titleLower === domain.toUpperCase()) {
       return null;
@@ -207,6 +248,70 @@ async function fetchArticleTitle(url) {
       console.warn(`Title fetch failed for ${url}: ${e.message}`);
     }
     return null;
+  }
+}
+
+// Helper function to fetch full article content
+async function fetchArticleContent(url) {
+  try {
+    // Validate URL
+    if (!isValidUrl(url)) {
+      return { headline: 'Unavailable', body: 'Invalid URL', source: '' };
+    }
+    
+    const { data } = await axios.get(url, { 
+      headers: { 'User-Agent': UserAgent.getRandom() }, 
+      timeout: CONFIG.ARTICLE_TIMEOUT 
+    });
+    const $ = cheerio.load(data);
+    
+    // Extract headline
+    const headline = $('h1').first().text().trim() || $('title').text().trim() || 'Untitled';
+    
+    // Extract body content - try multiple selectors
+    let body = '';
+    
+    // Try article tag first
+    const articleText = $('article p').map((i, el) => $(el).text()).get().join('\n').trim();
+    if (articleText.length > 100) {
+      body = articleText;
+    } else {
+      // Try main content selectors
+      const mainSelectors = [
+        'main p',
+        '[role="main"] p',
+        '.content p',
+        '.article-body p',
+        '.story-body p',
+        'div.text p',
+        'div.body p'
+      ];
+      
+      for (const selector of mainSelectors) {
+        const content = $(selector).map((i, el) => $(el).text()).get().join('\n').trim();
+        if (content.length > 100) {
+          body = content;
+          break;
+        }
+      }
+      
+      // Fallback to all paragraphs
+      if (!body) {
+        body = $('p').map((i, el) => $(el).text()).get().join('\n').trim();
+      }
+    }
+    
+    // Truncate to manage token limits
+    body = body.substring(0, 5000);
+    
+    // Extract source
+    const urlObj = new URL(url);
+    const source = urlObj.hostname.replace('www.', '');
+    
+    return { headline, body, source };
+  } catch (e) {
+    console.error(`Content fetch failed for ${url}: ${e.message}`);
+    return { headline: 'Unavailable', body: 'Content fetch failed', source: '' };
   }
 }
 
@@ -550,6 +655,72 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
     // Filter headlines through authenticity analyzer
     const authenticHeadlines = await filterWithAnalyzer(transformedHeadlines);
     
+    // Collect aggregated data for newsletter generation
+    console.log("📊 Collecting aggregated data for enhanced processing...");
+    
+    // Fetch full article content for newsletter generation
+    const articlesWithContent = await Promise.all(
+      authenticHeadlines.flatMap(h => 
+        h.supportingArticles.slice(0, 2).map(async article => ({
+          url: article.url,
+          content: await fetchArticleContent(article.url)
+        }))
+      )
+    );
+    
+    // Collect X posts with enhanced metadata
+    const xPostsData = authenticHeadlines.flatMap(h => 
+      h.sourcePosts.map(p => ({
+        url: p.url,
+        metadata: {
+          text: p.text,
+          likes: p.likes,
+          handle: p.handle,
+          time: p.time
+        }
+      }))
+    );
+    
+    const aggregatedData = {
+      liveSearchResults: allHeadlines.map(h => ({
+        title: h.title,
+        summary: h.summary,
+        category: h.category
+      })),
+      xPosts: xPostsData,
+      articles: articlesWithContent,
+      citations: allCitations
+    };
+    
+    // Optional: Generate refined newsletter using the aggregated data
+    const useNewsletter = false; // Toggle this to enable newsletter generation
+    if (useNewsletter) {
+      console.log("📰 Generating refined newsletter...");
+      const newsletter = await generateNewsletter(aggregatedData, topics);
+      
+      // Transform newsletter format to match expected headline format
+      if (newsletter && newsletter.length > 0) {
+        const newsletterHeadlines = newsletter.map((story, index) => ({
+          id: `newsletter-${Date.now()}-${index}`,
+          title: story.story_title,
+          summary: story.summary,
+          category: topics[0] || "General",
+          createdAt: new Date().toISOString(),
+          engagement: 1000 + index * 100,
+          sourcePosts: [],
+          supportingArticles: story.citations.map(url => ({
+            title: "Article",
+            url: url,
+            source: new URL(url).hostname
+          }))
+        }));
+        
+        console.log(`✅ Newsletter generated with ${newsletterHeadlines.length} refined stories`);
+        return newsletterHeadlines;
+      }
+    }
+    
+    // Return original authentic headlines if newsletter not enabled
     return authenticHeadlines;
     
   } catch (error) {
@@ -705,6 +876,38 @@ function cleanTitle(title) {
 }
 
 
+
+// Generate refined newsletter using Grok-4-0709
+export async function generateNewsletter(aggregatedData, topics) {
+  const systemPrompt = `You are a news aggregator. Read all of this content and return a newsletter containing headlines, a concise summary of the top news stories and citations, all separated by story. Focus on accuracy and user interests: ${topics.join(', ')}. Output as JSON: {
+    "newsletter": [
+      {
+        "story_title": "Headline",
+        "summary": "Concise factual summary (2-3 sentences)",
+        "citations": ["url1", "url2"]
+      }
+    ]
+  } ZERO opinions; base on provided data only.`;
+  
+  const userContent = `Data:\nLive Search Headlines/Summaries: ${JSON.stringify(aggregatedData.liveSearchResults)}\nX Posts: ${JSON.stringify(aggregatedData.xPosts)}\nArticles: ${JSON.stringify(aggregatedData.articles)}\nCitations: ${JSON.stringify(aggregatedData.citations)}`;
+  
+  try {
+    const response = await openai.chat.completions.create({
+      model: "grok-4-0709",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userContent }
+      ],
+      response_format: { type: "json_object" }
+    });
+    
+    const newsletter = JSON.parse(response.choices[0].message.content).newsletter;
+    return newsletter;
+  } catch (e) {
+    console.error("Newsletter generation error:", e);
+    return []; // Fallback
+  }
+}
 
 // Get trending topics (for future use)
 export async function getTrendingTopics() {
