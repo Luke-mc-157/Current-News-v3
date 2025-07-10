@@ -221,7 +221,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error("API call timed out after 20 seconds")), 20000);
+          setTimeout(() => reject(new Error("API call timed out after 2 minutes")), 120000);
         });
         
         // Call Live Search API with Grok 4 (updated model)
