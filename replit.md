@@ -87,10 +87,11 @@ The application now includes a comprehensive podcast generation system:
 
 ### APIs and Services
 - **X API v2**: Real-time tweet search with authentication via Bearer Token for authentic content discovery
-- **xAI API**: Grok-2-1212 model for content authenticity analysis and intelligent topic categorization
+- **xAI API**: Hybrid model usage - Grok 3 for Live Search queries, Grok-4-0709 for complex reasoning tasks
 - **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation (legacy)
 - **Google News RSS**: Public RSS feeds for supporting article discovery
 - **Neon Database**: Serverless PostgreSQL for production data storage
+- **ElevenLabs API**: Voice synthesis for podcast generation with multiple voice options
 
 ### Development Tools
 - **Drizzle Kit**: Database migrations and schema management
@@ -107,16 +108,15 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
-- **Grok 4 Upgrade**: Updated all LLM tasks to use latest xAI Grok-4-0709 model for improved performance and accuracy
-- **Sequential Topic Processing**: Replaced single query with individual API calls per topic for better relevance and source quality
-- **JSON Format Restored**: Switched from natural language parsing back to structured JSON responses for reliability
-- **Topic-Specific Queries**: Each topic gets dedicated prompt without date references in natural language
+- **Hybrid Model Strategy**: Using Grok 3 for Live Search (optimized for fast queries) and Grok 4 for complex reasoning tasks
+- **Grok 4 Integration**: Updated podcast generation, content analysis, and source suggestion to use xAI Grok-4-0709
+- **Live Search Optimization**: Kept Grok 3 for Live Search as Grok 4 causes timeout issues with search queries
+- **Sequential Topic Processing**: Individual API calls per topic for better relevance and source quality
 - **24-Hour Date Filtering**: Implemented proper ISO8601 date format (YYYY-MM-DD) for `from_date` parameter
-- **Optimized Performance**: 5.3 seconds per topic with 7+ citations and 3 headlines using Grok 4
+- **Optimized Performance**: 6.3 seconds per topic with 7+ citations and 3 headlines using Grok 3 for search
+- **Timeout Protection**: Added 20-second timeout wrapper to prevent API calls from hanging
 - **Authentic Source Distribution**: Real URLs from Live Search with quality engagement filtering
-- **Date Format Resolution**: Fixed "Invalid date" errors by using `toISOString().split('T')[0]` format
-- **Enhanced Engagement Filtering**: X posts filtered at 50+ favorites and 5,000+ views for quality content
-- **Reliable Error Handling**: Graceful fallback for failed topics with individual topic processing
+- **Enhanced Error Handling**: Graceful fallback for failed topics with timeout protection
 
 ### Previous Updates (January 9, 2025)
 - **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization

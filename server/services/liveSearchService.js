@@ -42,9 +42,19 @@ Generate 3 headlines using real information from your search results. Be factual
         yesterday.setDate(yesterday.getDate() - 1);
         const fromDate = yesterday.toISOString().split('T')[0]; // "YYYY-MM-DD"
         
-        // Call Live Search API for this specific topic
-        const response = await openai.chat.completions.create({
-          model: "grok-4-0709",
+        // Add timeout wrapper for Grok 4 which might be slower
+        const topicStartTime = Date.now();
+        console.log(`⏱️ Starting API call for topic: ${topic}`);
+        
+        // Create a timeout promise
+        const timeoutPromise = new Promise((_, reject) => {
+          setTimeout(() => reject(new Error("API call timed out after 20 seconds")), 20000);
+        });
+        
+        // Call Live Search API for this specific topic with timeout
+        // Using Grok 3 for Live Search as it's optimized for fast queries
+        const apiPromise = openai.chat.completions.create({
+          model: "grok-3",
           messages: [
             {
               role: "user",
@@ -74,6 +84,12 @@ Generate 3 headlines using real information from your search results. Be factual
           },
           response_format: { type: "json_object" }
         });
+        
+        // Race between API call and timeout
+        const response = await Promise.race([apiPromise, timeoutPromise]);
+        
+        const topicResponseTime = Date.now() - topicStartTime;
+        console.log(`⏱️ API call completed for ${topic} in ${topicResponseTime}ms`);
 
         // Get citations for this topic
         const topicCitations = response.citations || [];
@@ -259,7 +275,7 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
 export async function getTrendingTopics() {
   try {
     const response = await openai.chat.completions.create({
-      model: "grok-4-0709",
+      model: "grok-3",
       messages: [
         {
           role: "user",
