@@ -255,7 +255,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
                 links: ["https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json"]
               }
             ],
-            max_search_results: 25,
+            max_search_results: 20,
             return_citations: true
           },
           response_format: { type: "json_object" }
@@ -625,7 +625,7 @@ export async function getTrendingTopics() {
           { type: "news", country: "US" },
           { type: "rss", links: ["https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json"] }
         ],
-        max_search_results: 10
+        max_search_results: 25
       },
       response_format: { type: "json_object" }
     });
