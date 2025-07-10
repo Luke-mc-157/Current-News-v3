@@ -129,51 +129,51 @@ Generate exactly 15 headlines using real information from your search results. B
         !url.includes('x.com') && !url.includes('twitter.com')
       );
       
-      // Create source posts from real X citations
-      const sourcePosts = xCitations.slice(0, 8).map((url, i) => ({
-        handle: extractHandleFromUrl(url),
-        text: `View the original post at ${url}`,
-        time: new Date(Date.now() - i * 3600000).toISOString(),
-        url: url,
-        likes: Math.floor(Math.random() * 500) + 100
-      }));
+      // Create source posts from real X citations ONLY
+      const sourcePosts = xCitations.slice(0, 8).map((url, i) => {
+        const handle = extractHandleFromUrl(url);
+        return {
+          handle: handle,
+          text: `Post by ${handle} related to ${headline.title}`,
+          time: new Date(Date.now() - i * 3600000).toISOString(),
+          url: url, // Use actual X post URL
+          likes: Math.floor(Math.random() * 500) + 100
+        };
+      });
       
-      // Ensure minimum 3 X posts per headline
-      while (sourcePosts.length < 3 && sourcePosts.length < 8) {
-        sourcePosts.push({
-          handle: `@source${sourcePosts.length + 1}`,
-          text: `Related content for: ${headline.title}`,
-          time: new Date().toISOString(),
-          url: `https://x.com/search?q=${encodeURIComponent(headline.title)}`,
-          likes: Math.floor(Math.random() * 300) + 50
-        });
-      }
-      
-      // Create supporting articles from real article citations
+      // Create supporting articles from real article citations ONLY
       const supportingArticles = articleCitations.slice(0, 5).map(url => {
         try {
           const domain = new URL(url).hostname;
+          // Extract meaningful title from domain
+          let sourceTitle = domain;
+          if (domain.includes('reuters.com')) sourceTitle = 'Reuters';
+          else if (domain.includes('cnn.com')) sourceTitle = 'CNN';
+          else if (domain.includes('bbc.com')) sourceTitle = 'BBC';
+          else if (domain.includes('techcrunch.com')) sourceTitle = 'TechCrunch';
+          else if (domain.includes('bloomberg.com')) sourceTitle = 'Bloomberg';
+          else if (domain.includes('wsj.com')) sourceTitle = 'Wall Street Journal';
+          
           return {
-            title: `${headline.title} - ${domain}`,
-            url: url,
-            source: domain
+            title: `${sourceTitle}: ${headline.title.substring(0, 60)}${headline.title.length > 60 ? '...' : ''}`,
+            url: url, // Use actual article URL
+            source: sourceTitle
           };
         } catch (e) {
           return {
-            title: headline.title,
-            url: url,
+            title: headline.title.substring(0, 80),
+            url: url, // Use actual article URL even if domain parsing fails
             source: 'News Source'
           };
         }
       });
-      
-      // Ensure minimum 3 articles per headline
-      while (supportingArticles.length < 3) {
-        supportingArticles.push({
-          title: `Related: ${headline.title}`,
-          url: `https://news.google.com/search?q=${encodeURIComponent(headline.title)}`,
-          source: 'Google News'
-        });
+
+      // Log warning if insufficient authentic sources
+      if (sourcePosts.length < 3) {
+        console.warn(`Headline "${headline.title}" has only ${sourcePosts.length} authentic X posts from Live Search`);
+      }
+      if (supportingArticles.length < 3) {
+        console.warn(`Headline "${headline.title}" has only ${supportingArticles.length} authentic articles from Live Search`);
       }
 
       // Calculate engagement
@@ -187,8 +187,8 @@ Generate exactly 15 headlines using real information from your search results. B
         category: mapToExistingCategory(headline.category, topics),
         createdAt: new Date().toISOString(),
         engagement: finalEngagement,
-        sourcePosts: sourcePosts,
-        supportingArticles: supportingArticles
+        sourcePosts: sourcePosts, // Only authentic X posts from Live Search
+        supportingArticles: supportingArticles // Only authentic articles from Live Search
       };
     });
 
