@@ -1,9 +1,69 @@
 import OpenAI from "openai";
+import axios from "axios";
+import * as cheerio from "cheerio";
 
 const openai = new OpenAI({ 
   baseURL: "https://api.x.ai/v1", 
   apiKey: process.env.XAI_API_KEY 
 });
+
+// Helper function to fetch article title
+async function fetchArticleTitle(url) {
+  try {
+    const { data } = await axios.get(url, { 
+      timeout: 3000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; NewsAggregator/1.0)'
+      }
+    });
+    const $ = cheerio.load(data);
+    let title = $('title').text().trim();
+    
+    // Try meta og:title if title is generic
+    if (!title || title.length < 10) {
+      title = $('meta[property="og:title"]').attr('content') || '';
+    }
+    
+    // Clean up common patterns
+    title = title.replace(/ - [^-]*$/, '').trim(); // Remove site name
+    title = title.substring(0, 100);
+    
+    if (title.length < 10) return null;
+    return title;
+  } catch (e) {
+    console.warn(`Title fetch failed for ${url}: ${e.message}`);
+    return null;
+  }
+}
+
+// Extract title from URL as fallback
+function extractTitleFromUrl(url, headline) {
+  try {
+    const urlObj = new URL(url);
+    const pathSegments = urlObj.pathname.split('/').filter(seg => seg.length > 0);
+    
+    // Look for the last meaningful segment
+    for (let i = pathSegments.length - 1; i >= 0; i--) {
+      const segment = pathSegments[i];
+      // Skip date segments, category names, etc.
+      if (segment.match(/^\d{4}$/) || segment.match(/^\d{1,2}$/) || segment.length < 10) continue;
+      
+      // Convert slug to title
+      const title = segment
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, char => char.toUpperCase())
+        .substring(0, 80);
+      
+      if (title.length > 10) return title;
+    }
+    
+    // Fallback to source + headline snippet
+    const domain = urlObj.hostname.replace('www.', '').split('.')[0];
+    return `${domain}: ${headline.title.substring(0, 50)}...`;
+  } catch {
+    return `Article about ${headline.category}`;
+  }
+}
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default") {
   const startTime = Date.now();
@@ -15,30 +75,38 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     const allHeadlines = [];
     const allCitations = [];
     
-    // Process each topic individually
+    // Process each topic individually for better control
     for (let i = 0; i < topics.length; i++) {
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What is the latest news related to ${topic}?`;
+      const prompt = `What is the latest news related to ${topic}? 
+Respond ONLY as a JSON object with this exact structure:
+{
+  "headlines": [
+    {
+      "title": "Factual headline based on real sources",
+      "summary": "Short factual summary with inline citations [0][1] from sources. Include at least 2 citations per summary using [n] format."
+    }
+  ]
+}
+Mandatory: Include inline citations [n] referencing citation order. ZERO opinions or introductions. Only facts from sources.`;
 
       try {
-        // Calculate date 24 hours ago in YYYY-MM-DD format (ISO8601)
+        // Calculate date 24 hours ago
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
-        const fromDate = yesterday.toISOString().split('T')[0]; // "YYYY-MM-DD"
+        const fromDate = yesterday.toISOString().split('T')[0];
         
-        // Add timeout wrapper for Grok 4 which might be slower
+        // Add timeout wrapper
         const topicStartTime = Date.now();
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
-        // Create a timeout promise
         const timeoutPromise = new Promise((_, reject) => {
           setTimeout(() => reject(new Error("API call timed out after 20 seconds")), 20000);
         });
         
-        // Call Live Search API for this specific topic with timeout
-        // Using Grok 3 for Live Search as it's optimized for fast queries
+        // Call Live Search API with Grok 3 (optimized for search)
         const apiPromise = openai.chat.completions.create({
           model: "grok-3",
           messages: [
@@ -68,10 +136,9 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
             max_search_results: 10,
             return_citations: true
           },
-          // No format restriction for relaxed prompt
+          response_format: { type: "json_object" }
         });
         
-        // Race between API call and timeout
         const response = await Promise.race([apiPromise, timeoutPromise]);
         
         const topicResponseTime = Date.now() - topicStartTime;
@@ -82,114 +149,93 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         allCitations.push(...topicCitations);
         console.log(`📎 Found ${topicCitations.length} citations for ${topic}`);
         
-        // Check if citations include metadata
-        if (response.citation_metadata) {
-          console.log(`📋 Citation metadata available:`, JSON.stringify(response.citation_metadata, null, 2));
+        // Parse response with improved JSON extraction
+        const content = response.choices[0].message.content;
+        console.log(`📄 Raw response preview:`, content.substring(0, 200) + '...');
+        
+        // Clean and extract JSON
+        let jsonContent = content.trim();
+        const jsonStart = jsonContent.indexOf('{');
+        const jsonEnd = jsonContent.lastIndexOf('}') + 1;
+        if (jsonStart >= 0 && jsonEnd > jsonStart) {
+          jsonContent = jsonContent.slice(jsonStart, jsonEnd);
         }
         
-        // Parse response - with relaxed prompt, xAI may return natural language
-        const content = response.choices[0].message.content;
-        console.log(`📄 Raw response for ${topic}:`, content.substring(0, 200) + '...');
-        
-        // Try to extract headlines from natural language response
         let topicHeadlines = [];
         
-        // Check if response contains JSON
-        if (content.includes('{') || content.includes('[')) {
-          try {
-            const cleanContent = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-            const parsed = JSON.parse(cleanContent);
-            
-            if (parsed.headlines && Array.isArray(parsed.headlines)) {
-              topicHeadlines = parsed.headlines;
-            } else if (Array.isArray(parsed)) {
-              topicHeadlines = parsed;
-            } else {
-              topicHeadlines = parsed.results || parsed.data || [];
-            }
-          } catch (parseError) {
-            console.log(`⚠️ Could not parse JSON for ${topic}, extracting from text`);
-          }
-        }
-        
-        // If no headlines from JSON, create from natural language
-        if (topicHeadlines.length === 0) {
-          // Extract key points from the response
-          const lines = content.split('\n').filter(line => line.trim());
-          const keyPoints = [];
+        try {
+          const parsed = JSON.parse(jsonContent);
           
-          // Look for numbered points or bullet points in the response
+          if (parsed.headlines && Array.isArray(parsed.headlines)) {
+            topicHeadlines = parsed.headlines;
+          } else {
+            console.warn(`Unexpected JSON structure for ${topic}`);
+            topicHeadlines = [];
+          }
+        } catch (parseError) {
+          console.log(`⚠️ JSON parse failed for ${topic}, extracting from text`);
+          
+          // Extract from natural language if JSON fails
+          const lines = content.split('\n').filter(line => line.trim());
+          topicHeadlines = [];
+          
           for (const line of lines) {
-            const cleaned = line.replace(/^[-•*]\s*/, '').replace(/^\d+\.\s*/, '').trim();
+            if (topicHeadlines.length >= 3) break;
             
-            // Skip lines that are too short or are just headers
+            const cleaned = line.replace(/^[-•*]\s*/, '').replace(/^\d+\.\s*/, '').trim();
             if (cleaned.length < 20) continue;
             
-            // Extract title and summary from each point
-            let title = '';
-            let summary = cleaned;
-            
-            // Look for patterns like "**Title**: Description"
+            // Look for bold patterns
             const boldMatch = cleaned.match(/\*\*(.*?)\*\*:?\s*(.*)/);
             if (boldMatch) {
-              title = boldMatch[1].trim();
-              summary = boldMatch[2].trim();
-            } else {
-              // Use first sentence as title
-              const firstSentence = cleaned.match(/^([^.!?]+[.!?])/);
-              title = firstSentence ? firstSentence[1].trim() : cleaned.substring(0, 80) + '...';
+              topicHeadlines.push({
+                title: boldMatch[1].trim().substring(0, 100),
+                summary: boldMatch[2].trim()
+              });
             }
-            
-            keyPoints.push({
-              title: title.substring(0, 100),
-              summary: summary,
-              category: topic,
-              engagement: "medium"
-            });
-            
-            // Limit to 3-5 headlines per topic
-            if (keyPoints.length >= 3) break;
           }
-          
-          // If still no headlines, create a generic one
-          if (keyPoints.length === 0) {
-            keyPoints.push({
-              title: `Latest ${topic} Updates`,
-              summary: content.substring(0, 200),
-              category: topic,
-              engagement: "medium"
-            });
-          }
-          
-          topicHeadlines = keyPoints;
         }
         
-        // Add topic-specific citations to each headline
-        const headlinesWithCitations = topicHeadlines.map((headline, index) => ({
-          ...headline,
-          category: topic,
-          topicCitations: topicCitations,
-          topicIndex: i,
-          responseContent: content // Pass the response content for article title extraction
-        }));
+        // Process headlines with citation parsing
+        const headlinesWithCitations = topicHeadlines.map((headline) => {
+          // Extract citation indices from summary
+          const citationMatches = headline.summary.match(/\[(\d+)\]/g) || [];
+          const indices = [...new Set(citationMatches.map(m => parseInt(m.slice(1, -1))))];
+          
+          // Map indices to actual citations
+          const headlineCitations = indices
+            .map(i => topicCitations[i])
+            .filter(Boolean);
+          
+          // If no inline citations, use all topic citations
+          const finalCitations = headlineCitations.length > 0 ? headlineCitations : topicCitations;
+          
+          return {
+            ...headline,
+            category: topic,
+            topicCitations: finalCitations,
+            topicIndex: i,
+            engagement: calculateEngagement(finalCitations)
+          };
+        });
         
         allHeadlines.push(...headlinesWithCitations);
         console.log(`✅ Generated ${topicHeadlines.length} headlines for ${topic}`);
         
       } catch (topicError) {
         console.error(`❌ Error processing topic ${topic}:`, topicError.message);
-        // Add fallback headline for failed topic
+        // Add fallback headline
         allHeadlines.push({
           title: `Latest ${topic} News Update`,
           summary: `Recent developments in ${topic}`,
           category: topic,
-          engagement: "medium",
+          engagement: 500,
           topicCitations: [],
           topicIndex: i
         });
       }
       
-      // Small delay between requests to avoid rate limiting
+      // Delay between topics
       if (i < topics.length - 1) {
         await new Promise(resolve => setTimeout(resolve, 500));
       }
@@ -197,15 +243,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
 
     const responseTime = Date.now() - startTime;
     console.log(`✅ Live Search completed in ${responseTime}ms`);
-    console.log(`📎 Found ${allCitations.length} total citations from Live Search`);
     console.log(`📰 Generated ${allHeadlines.length} headlines from ${topics.length} topics`);
 
-    // Transform headlines using topic-specific citations from Live Search
-    const transformedHeadlines = allHeadlines.map((headline, index) => {
-      // Use citations specific to this headline's topic
+    // Transform headlines with async article title fetching
+    const transformedHeadlines = await Promise.all(allHeadlines.map(async (headline, index) => {
       const headlineCitations = headline.topicCitations || [];
       
-      // Separate X posts from articles using real citation URLs
+      // Separate X posts from articles
       const xCitations = headlineCitations.filter(url => 
         url.includes('x.com') || url.includes('twitter.com')
       );
@@ -213,109 +257,60 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         !url.includes('x.com') && !url.includes('twitter.com')
       );
       
-      // Create source posts from real X citations (targeting 5 per topic)
+      // Create source posts
       const sourcePosts = xCitations.slice(0, 5).map((url, i) => {
         const handle = extractHandleFromUrl(url);
         return {
           handle: handle,
           text: `Post by ${handle} related to ${headline.title}`,
           time: new Date(Date.now() - i * 3600000).toISOString(),
-          url: url, // Use actual X post URL
+          url: url,
           likes: Math.floor(Math.random() * 1000) + 100
         };
       });
       
-      // Create supporting articles from real article citations
-      const supportingArticles = articleCitations.map((url, idx) => {
-        try {
-          const urlObj = new URL(url);
-          const domain = urlObj.hostname;
+      // Create supporting articles with real titles
+      const supportingArticles = await Promise.all(
+        articleCitations.slice(0, 5).map(async url => {
+          // Try to fetch actual title
+          let title = await fetchArticleTitle(url);
           
-          // Extract meaningful source name from domain
-          let sourceTitle = domain;
-          if (domain.includes('reuters.com')) sourceTitle = 'Reuters';
-          else if (domain.includes('cnn.com')) sourceTitle = 'CNN';
-          else if (domain.includes('bbc.com')) sourceTitle = 'BBC';
-          else if (domain.includes('techcrunch.com')) sourceTitle = 'TechCrunch';
-          else if (domain.includes('bloomberg.com')) sourceTitle = 'Bloomberg';
-          else if (domain.includes('wsj.com')) sourceTitle = 'Wall Street Journal';
-          else if (domain.includes('nytimes.com')) sourceTitle = 'New York Times';
-          else if (domain.includes('washingtonpost.com')) sourceTitle = 'Washington Post';
-          else if (domain.includes('theguardian.com')) sourceTitle = 'The Guardian';
-          else if (domain.includes('apnews.com')) sourceTitle = 'Associated Press';
-          else sourceTitle = domain.replace('www.', '').split('.')[0]; // Clean domain name
-          
-          // Try to extract article title from URL and content
-          const pathSegments = urlObj.pathname.split('/').filter(seg => seg.length > 0);
-          let articleTitle = '';
-          
-          // First, check if we can match the URL to content in the response
-          const urlDomain = domain.replace('www.', '');
-          const responseContent = headline.responseContent || '';
-          
-          // Look for mentions of the source in the response
-          if (responseContent) {
-            const sourcePattern = new RegExp(`(${sourceTitle}|${urlDomain})[^.]*\\.`, 'gi');
-            const matches = responseContent.match(sourcePattern);
-            if (matches && matches[0]) {
-              // Extract the sentence mentioning this source
-              articleTitle = matches[0]
-                .replace(new RegExp(`\\(source:\\s*${sourceTitle}\\)`, 'i'), '')
-                .replace(/\.$/, '')
-                .trim()
-                .substring(0, 100);
-            }
+          // Fallback to URL extraction if fetch fails
+          if (!title) {
+            title = extractTitleFromUrl(url, headline);
           }
           
-          // If no title from content, try URL path
-          if (!articleTitle) {
-            for (let i = pathSegments.length - 1; i >= 0; i--) {
-              const segment = pathSegments[i];
-              // Skip date segments, category names, etc.
-              if (segment.match(/^\d{4}$/) || segment.match(/^\d{1,2}$/) || segment.length < 10) continue;
-              
-              // Convert slug to title (replace hyphens with spaces, capitalize)
-              articleTitle = segment
-                .replace(/-/g, ' ')
-                .replace(/\b\w/g, char => char.toUpperCase())
-                .substring(0, 80);
-              break;
-            }
-          }
-          
-          // If still no title, create one based on headline and source
-          if (!articleTitle || articleTitle.length < 10) {
-            // Use a portion of the main headline for variety
-            const headlineWords = headline.title.split(' ');
-            const shortHeadline = headlineWords.slice(0, 6).join(' ');
-            articleTitle = `${sourceTitle}: ${shortHeadline}${headlineWords.length > 6 ? '...' : ''}`;
+          // Extract source name
+          let source = 'News Source';
+          try {
+            const domain = new URL(url).hostname;
+            if (domain.includes('reuters.com')) source = 'Reuters';
+            else if (domain.includes('cnn.com')) source = 'CNN';
+            else if (domain.includes('bbc.com')) source = 'BBC';
+            else if (domain.includes('techcrunch.com')) source = 'TechCrunch';
+            else if (domain.includes('bloomberg.com')) source = 'Bloomberg';
+            else if (domain.includes('wsj.com')) source = 'Wall Street Journal';
+            else if (domain.includes('nytimes.com')) source = 'New York Times';
+            else if (domain.includes('washingtonpost.com')) source = 'Washington Post';
+            else if (domain.includes('theguardian.com')) source = 'The Guardian';
+            else if (domain.includes('apnews.com')) source = 'Associated Press';
+            else source = domain.replace('www.', '').split('.')[0];
+          } catch (e) {
+            // Keep default
           }
           
           return {
-            title: articleTitle,
-            url: url, // Use actual article URL
-            source: sourceTitle
-          };
-        } catch (e) {
-          return {
-            title: `Article on ${headline.category}`,
+            title: title,
             url: url,
-            source: 'News Source'
+            source: source
           };
-        }
-      });
+        })
+      );
 
-      // Log source count (targeting 5 X posts + 5 articles per topic)
+      // Log warnings if sources are low
       if (sourcePosts.length < 5) {
         console.warn(`Topic "${headline.category}" headline "${headline.title}" has only ${sourcePosts.length}/5 authentic X posts`);
       }
-      if (supportingArticles.length < 5) {
-        console.warn(`Topic "${headline.category}" headline "${headline.title}" has only ${supportingArticles.length}/5 authentic articles`);
-      }
-
-      // Calculate engagement
-      const baseEngagement = headline.engagement === "high" ? 1500 : 800;
-      const finalEngagement = baseEngagement + Math.floor(Math.random() * 500);
 
       return {
         id: `live-search-${Date.now()}-${index}`,
@@ -323,15 +318,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         summary: headline.summary || "No summary available",
         category: mapToExistingCategory(headline.category, topics),
         createdAt: new Date().toISOString(),
-        engagement: finalEngagement,
-        sourcePosts: sourcePosts, // Only authentic X posts from Live Search
-        supportingArticles: supportingArticles // Only authentic articles from Live Search
+        engagement: headline.engagement || 500,
+        sourcePosts: sourcePosts,
+        supportingArticles: supportingArticles
       };
-    });
+    }));
 
     console.log(`📰 Generated ${transformedHeadlines.length} headlines with ${allCitations.length} citations`);
-    console.log(`✅ Live Search replaced 5 workflows with ${topics.length} sequential API calls`);
-    console.log(`📊 Performance: ${responseTime}ms for ${topics.length} topics`);
     
     // Sort by engagement
     transformedHeadlines.sort((a, b) => b.engagement - a.engagement);
@@ -344,7 +337,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   }
 }
 
-// Helper function to extract X handle from URL
+// Calculate engagement based on citations
+function calculateEngagement(citations) {
+  const baseEngagement = citations.length * 200;
+  return baseEngagement + Math.floor(Math.random() * 500) + 300;
+}
+
+// Extract X handle from URL
 function extractHandleFromUrl(url) {
   try {
     const match = url.match(/(?:x\.com|twitter\.com)\/([^\/\?]+)/);
@@ -354,13 +353,12 @@ function extractHandleFromUrl(url) {
   }
 }
 
-// Map Live Search categories to existing app categories
+// Map categories
 function mapToExistingCategory(liveSearchCategory, originalTopics) {
   if (!liveSearchCategory) return originalTopics[0] || "General";
   
   const categoryLower = liveSearchCategory.toLowerCase();
   
-  // Find matching original topic
   for (const topic of originalTopics) {
     if (categoryLower.includes(topic.toLowerCase()) || 
         topic.toLowerCase().includes(categoryLower)) {
@@ -368,16 +366,10 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
     }
   }
   
-  // Category mapping
-  if (categoryLower.includes("tech") || categoryLower.includes("ai")) return "Technology";
-  if (categoryLower.includes("polit")) return "Politics";
-  if (categoryLower.includes("sport") || categoryLower.includes("football")) return "Sports";
-  if (categoryLower.includes("liverpool")) return "Liverpool FC";
-  
-  return originalTopics[0] || "General";
+  return liveSearchCategory;
 }
 
-// Get trending topics using Live Search (for future use)
+// Get trending topics (for future use)
 export async function getTrendingTopics() {
   try {
     const response = await openai.chat.completions.create({
@@ -385,25 +377,25 @@ export async function getTrendingTopics() {
       messages: [
         {
           role: "user",
-          content: "What are the top 10 trending topics on X right now? List only topic names."
+          content: "What are the top 5 trending news topics today? Return as JSON array of strings."
         }
       ],
       search_parameters: {
         mode: "on",
-        sources: [{ type: "x" }],
-        max_search_results: 20
-      }
+        sources: [
+          { type: "web", country: "US" },
+          { type: "news", country: "US" }
+        ],
+        max_search_results: 10
+      },
+      response_format: { type: "json_object" }
     });
-    
+
     const content = response.choices[0].message.content;
-    const topics = content.split('\n')
-      .map(line => line.replace(/^\d+\.?\s*/, '').trim())
-      .filter(topic => topic.length > 0)
-      .slice(0, 10);
-    
-    return topics;
+    const parsed = JSON.parse(content);
+    return parsed.topics || parsed.trends || [];
   } catch (error) {
     console.error("Error fetching trending topics:", error);
-    return ["Technology", "Politics", "Sports", "Entertainment", "Science"];
+    return [];
   }
 }

@@ -6,13 +6,63 @@ const xai = new OpenAI({
   apiKey: process.env.XAI_API_KEY,
 });
 
+// Shared helper for xAI API calls with search parameters
+async function callXAI(systemPrompt, userContent, searchParams = {}) {
+  try {
+    const response = await xai.chat.completions.create({
+      model: "grok-4-0709",
+      messages: [
+        {
+          role: "system",
+          content: systemPrompt + " Base analysis on factual sources; ZERO opinions in reasoning."
+        },
+        {
+          role: "user",
+          content: userContent
+        }
+      ],
+      response_format: { type: "json_object" },
+      search_parameters: searchParams.mode ? searchParams : {
+        mode: "on",
+        sources: [
+          { type: "web", country: "US" },
+          { type: "x" }
+        ],
+        max_search_results: 5
+      }
+    });
+    
+    return response.choices[0].message.content;
+  } catch (error) {
+    console.error("xAI API error:", error);
+    throw error;
+  }
+}
+
 // Use xAI to analyze posts for authenticity and relevance
 export async function analyzePostsForAuthenticity(posts) {
   try {
+    // Batch posts if too many to avoid token overflow
+    const BATCH_SIZE = 10;
+    if (posts.length > BATCH_SIZE) {
+      console.log(`Batching ${posts.length} posts into chunks of ${BATCH_SIZE}`);
+      const results = [];
+      for (let i = 0; i < posts.length; i += BATCH_SIZE) {
+        const batch = posts.slice(i, i + BATCH_SIZE);
+        const batchResult = await analyzePostsForAuthenticity(batch);
+        results.push(...batchResult);
+      }
+      return results;
+    }
+    
     const postsText = posts.map(post => ({
       text: post.text,
       author: post.author_handle,
-      engagement: post.public_metrics.like_count + post.public_metrics.retweet_count
+      url: post.url || '',
+      engagement: (post.public_metrics?.like_count || 0) + 
+                  (post.public_metrics?.retweet_count || 0) +
+                  (post.public_metrics?.reply_count || 0) * 0.5 +
+                  (post.public_metrics?.view_count || 0) * 0.001
     }));
 
     const response = await xai.chat.completions.create({
@@ -57,7 +107,17 @@ Return JSON with this structure:
     });
 
     const analysis = JSON.parse(response.choices[0].message.content);
-    return analysis.authentic_posts || [];
+    
+    // Filter posts with authenticity score > 0.7
+    const authenticPosts = (analysis.authentic_posts || [])
+      .filter(post => post.authenticity_score > 0.7)
+      .map(post => ({
+        ...post,
+        url: posts.find(p => p.text === post.text)?.url || ''
+      }));
+    
+    console.log(`Filtered ${authenticPosts.length}/${posts.length} posts with authenticity > 0.7`);
+    return authenticPosts;
   } catch (error) {
     console.error("xAI analysis error:", error.message);
     return [];

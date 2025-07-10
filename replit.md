@@ -117,6 +117,12 @@ The application now includes a comprehensive podcast generation system:
 - **Timeout Protection**: Added 20-second timeout wrapper to prevent API calls from hanging
 - **Authentic Source Distribution**: Real URLs from Live Search with quality engagement filtering
 - **Enhanced Error Handling**: Graceful fallback for failed topics with timeout protection
+- **Article Title Fetching**: Implemented axios/cheerio to fetch real article titles from URLs instead of URL slugs
+- **Inline Citation Parsing**: Added [n] citation format in summaries to match specific sources to headlines
+- **Authenticity Filtering**: Posts must have >0.7 authenticity score from xAI analysis
+- **Improved JSON Parsing**: Extracts JSON properly even when xAI includes preamble text
+- **Enhanced Engagement Metrics**: Includes views, replies in addition to likes/retweets
+- **Batched Processing**: xaiAnalyzer splits large post sets to avoid token overflow
 
 ### Previous Updates (January 9, 2025)
 - **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization
