@@ -9,7 +9,7 @@ import { completeSearch } from "./services/completeSearch.js";
 import { setUserTrustedSources, getUserTrustedSources } from "./services/dynamicSources.js";
 import { compileContentForPodcast } from "./services/contentFetcher.js";
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
-import { getAvailableVoices, generateAudio, checkQuota } from "./services/voiceSynthesis.js";
+import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } from "./services/voiceSynthesis.js";
 import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
@@ -275,10 +275,12 @@ export function registerRoutes(app) {
       for (let i = 0; i < segments.length; i++) {
         const audioUrl = await generateAudio(segments[i], episode.voiceId, `${episodeId}-${i}`);
         audioUrls.push(audioUrl);
+        console.log(`📻 Generated segment ${i + 1}/${segments.length}: ${audioUrl}`);
       }
       
-      // For now, use the first segment as the main audio
-      const mainAudioUrl = audioUrls[0];
+      // Combine all segments into a single audio file
+      console.log(`🔄 Combining ${audioUrls.length} segments into final podcast...`);
+      const mainAudioUrl = await combineAudioSegments(audioUrls, episodeId);
       
       // Update episode with audio URL
       await storage.updatePodcastEpisode(parseInt(episodeId), { audioUrl: mainAudioUrl });

@@ -103,12 +103,83 @@ export async function generateAudio(text, voiceId = 'nPczCjzI2devNBz1zQrb', epis
   }
 }
 
-// Combine multiple audio segments into one file
+// Combine multiple audio segments into one file using ffmpeg
 export async function combineAudioSegments(segmentPaths, episodeId) {
-  // For now, we'll return the first segment
-  // In production, you'd use ffmpeg or similar to combine audio files
-  console.log(`Note: Audio combination not implemented. Using first segment only.`);
-  return segmentPaths[0];
+  if (segmentPaths.length <= 1) {
+    console.log(`Only ${segmentPaths.length} segment(s), no combination needed`);
+    return segmentPaths[0];
+  }
+
+  const { exec } = await import('child_process');
+  const { promisify } = await import('util');
+  const execAsync = promisify(exec);
+
+  try {
+    console.log(`🔧 Combining ${segmentPaths.length} audio segments for episode ${episodeId}`);
+    
+    const audioDir = path.join(__dirname, '..', '..', 'podcast-audio');
+    const combinedFilename = `podcast-${episodeId}-combined-${Date.now()}.mp3`;
+    const combinedPath = path.join(audioDir, combinedFilename);
+    
+    // Convert relative paths to absolute paths for ffmpeg
+    const absoluteSegmentPaths = segmentPaths.map(segPath => {
+      return path.join(__dirname, '..', '..', segPath);
+    });
+    
+    // Verify all segments exist
+    for (const segPath of absoluteSegmentPaths) {
+      if (!fs.existsSync(segPath)) {
+        throw new Error(`Audio segment not found: ${segPath}`);
+      }
+    }
+    
+    // Create a temporary file list for ffmpeg concat
+    const fileListPath = path.join(audioDir, `filelist-${episodeId}-${Date.now()}.txt`);
+    const fileListContent = absoluteSegmentPaths
+      .map(p => `file '${p.replace(/'/g, "'\"'\"'")}'`) // Escape single quotes
+      .join('\n');
+    
+    fs.writeFileSync(fileListPath, fileListContent);
+    
+    // Use ffmpeg to concatenate audio files
+    const ffmpegCommand = `ffmpeg -f concat -safe 0 -i "${fileListPath}" -c copy "${combinedPath}" -y`;
+    
+    console.log(`⏱️ Running ffmpeg: ${ffmpegCommand}`);
+    const { stdout, stderr } = await execAsync(ffmpegCommand);
+    
+    if (stderr && !stderr.includes('size=')) { // ffmpeg often writes progress to stderr
+      console.warn('FFmpeg stderr:', stderr);
+    }
+    
+    // Clean up temporary file list
+    fs.unlinkSync(fileListPath);
+    
+    // Verify the combined file was created
+    if (!fs.existsSync(combinedPath)) {
+      throw new Error('Combined audio file was not created');
+    }
+    
+    const stats = fs.statSync(combinedPath);
+    console.log(`✅ Combined audio created: ${combinedFilename} (${Math.round(stats.size / 1024)}KB)`);
+    
+    // Clean up individual segment files to save space
+    for (const segPath of absoluteSegmentPaths) {
+      try {
+        fs.unlinkSync(segPath);
+        console.log(`🗑️ Cleaned up segment: ${path.basename(segPath)}`);
+      } catch (e) {
+        console.warn(`Could not delete segment: ${segPath}`);
+      }
+    }
+    
+    // Return relative path for web access
+    return `/podcast-audio/${combinedFilename}`;
+    
+  } catch (error) {
+    console.error("Error combining audio segments:", error.message);
+    console.warn("⚠️ Falling back to first segment only");
+    return segmentPaths[0];
+  }
 }
 
 // Check ElevenLabs usage/quota

@@ -108,6 +108,10 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
+- **CRITICAL BUG FIX**: Fixed podcast duration issue - podcasts now generate for full requested duration instead of capping at 2:30 minutes
+- **Audio Combination System**: Implemented ffmpeg-based audio segment combination to create complete podcasts from multiple ElevenLabs segments
+- **Segment Processing**: Enhanced to generate all script segments and combine them into final audio file with cleanup of intermediate files
+- **Real Duration Matching**: 5-minute podcasts now generate ~750 word scripts and full-length audio (±15 seconds tolerance)
 - **Hybrid Model Strategy**: Using Grok 3 for Live Search (optimized for fast queries) and Grok 4 for complex reasoning tasks
 - **Grok 4 Integration**: Updated podcast generation, content analysis, and source suggestion to use xAI Grok-4-0709
 - **Live Search Optimization**: Kept Grok 3 for Live Search as Grok 4 causes timeout issues with search queries
@@ -123,6 +127,7 @@ The application now includes a comprehensive podcast generation system:
 - **Improved JSON Parsing**: Extracts JSON properly even when xAI includes preamble text
 - **Enhanced Engagement Metrics**: Includes views, replies in addition to likes/retweets
 - **Batched Processing**: xaiAnalyzer splits large post sets to avoid token overflow
+- **Comprehensive Code Review**: Implemented ALL of Grok 4's factuality suggestions including shared callXAI helper and "ZERO opinions" enforcement
 
 ### Previous Updates (January 9, 2025)
 - **xAI Integration**: Replaced OpenAI with xAI (Grok) for authentic content analysis and categorization
