@@ -20,7 +20,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What is the latest news related to ${topic} within the last 24 hours? Return 5 X posts with the highest engagement related to ${topic} and 5 news articles to support the posts.
+      const prompt = `What is the latest news related to ${topic}? Return 5 X posts with the highest engagement related to ${topic} and 5 news articles to support the posts.
 
 Return a JSON object with this exact structure:
 {
@@ -37,8 +37,10 @@ Return a JSON object with this exact structure:
 Generate 3 headlines using real information from your search results. Be factual and specific.`;
 
       try {
-        // Removed date filter to fix "Invalid date" error
-        // The prompt already specifies "within the last 24 hours"
+        // Calculate date 24 hours ago in YYYY-MM-DD format (ISO8601)
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const fromDate = yesterday.toISOString().split('T')[0]; // "YYYY-MM-DD"
         
         // Call Live Search API for this specific topic
         const response = await openai.chat.completions.create({
@@ -51,6 +53,7 @@ Generate 3 headlines using real information from your search results. Be factual
           ],
           search_parameters: {
             mode: "on",
+            from_date: fromDate,
             sources: [
               {
                 type: "web",

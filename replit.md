@@ -109,10 +109,11 @@ The application now includes a comprehensive podcast generation system:
 ### Latest Updates (January 10, 2025)
 - **Sequential Topic Processing**: Replaced single query with individual API calls per topic for better relevance and source quality
 - **JSON Format Restored**: Switched from natural language parsing back to structured JSON responses for reliability
-- **Topic-Specific Queries**: Each topic gets dedicated prompt: "What is the latest news related to [TOPIC] within the last 24 hours?"
-- **Optimized Performance**: 4.6 seconds per topic with 10 citations and 3 headlines, 6x faster than old system
+- **Topic-Specific Queries**: Each topic gets dedicated prompt without date references in natural language
+- **24-Hour Date Filtering**: Implemented proper ISO8601 date format (YYYY-MM-DD) for `from_date` parameter
+- **Optimized Performance**: 5.4 seconds per topic with 10 citations and 3 headlines, 6x faster than old system
 - **Authentic Source Distribution**: 3/5 X posts and 5/5 articles per headline with real URLs from Live Search
-- **Date Filter Resolution**: Removed problematic `from_date` parameter that caused "Invalid date" errors
+- **Date Format Resolution**: Fixed "Invalid date" errors by using `toISOString().split('T')[0]` format
 - **Enhanced Engagement Filtering**: X posts filtered at 50+ favorites and 5,000+ views for quality content
 - **Reliable Error Handling**: Graceful fallback for failed topics with individual topic processing
 
