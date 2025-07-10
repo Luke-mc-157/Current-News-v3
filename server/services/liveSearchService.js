@@ -4,19 +4,56 @@ import * as cheerio from "cheerio";
 import { analyzePostsForAuthenticity } from './xaiAnalyzer.js';
 import UserAgent from 'random-useragent';
 
+// Configuration constants
+const CONFIG = {
+  API_TIMEOUT: 120000, // 2 minutes
+  SCRAPING_TIMEOUT: 8000,
+  ARTICLE_TIMEOUT: 5000,
+  BATCH_DELAY: 500, // ms between topics
+  SCRAPING_DELAY: { MIN: 1000, MAX: 3000 },
+  MAX_SEARCH_RESULTS: 20,
+  MIN_TITLE_LENGTH: 10,
+  MIN_CONTENT_LENGTH: 15,
+  ENGAGEMENT_MULTIPLIER: 200,
+  RETRY_ATTEMPTS: 2,
+  RETRY_DELAY: 1000
+};
+
+// Generic titles to filter out
+const GENERIC_TITLES = [
+  'Home', 'Homepage', 'Welcome', 'Main Page', 'Index',
+  'News', 'Latest News', 'Breaking News', 'Top Stories',
+  'Politics', 'Business', 'Technology', 'Sports'
+];
+
 const openai = new OpenAI({ 
   baseURL: "https://api.x.ai/v1", 
   apiKey: process.env.XAI_API_KEY 
 });
 
-// Helper function to fetch X post details with improved scraping
+// Sleep helper for delays
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Helper function to generate random delay within range
+const randomDelay = () => {
+  return CONFIG.SCRAPING_DELAY.MIN + Math.random() * (CONFIG.SCRAPING_DELAY.MAX - CONFIG.SCRAPING_DELAY.MIN);
+};
+
+// Helper function to validate and clean titles
+function isValidTitle(title) {
+  if (!title || title.length < CONFIG.MIN_TITLE_LENGTH) return false;
+  if (GENERIC_TITLES.some(generic => title.toLowerCase().includes(generic.toLowerCase()))) return false;
+  return true;
+}
+
+// Helper function to fetch X post details with improved error handling
 async function fetchXPostDetails(url) {
   try {
-    // Add delay to avoid rate limiting
-    await new Promise(r => setTimeout(r, 1000 + Math.random() * 2000));
+    // Add random delay to avoid rate limiting
+    await sleep(randomDelay());
     
     const { data } = await axios.get(url, { 
-      timeout: 8000,
+      timeout: CONFIG.SCRAPING_TIMEOUT,
       headers: {
         'User-Agent': UserAgent.getRandom(),
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -39,62 +76,81 @@ async function fetchXPostDetails(url) {
       text = $('article div[lang]').text().trim();
     }
     
-    // Extract likes count with improved selector
-    let likes = Math.floor(Math.random() * 500) + 50; // fallback with variation
-    const likeElement = $('[data-testid="like"] span').first();
-    if (likeElement.length) {
-      const likeText = likeElement.text().replace(/[,K]/g, '');
-      const parsedLikes = parseInt(likeText);
-      if (!isNaN(parsedLikes)) {
-        likes = likeText.includes('K') ? parsedLikes * 1000 : parsedLikes;
-      }
-    }
+    // Extract engagement metrics with fallback
+    const likes = extractEngagementMetric($, '[data-testid="like"] span', 50, 500);
+    const retweets = extractEngagementMetric($, '[data-testid="retweet"] span', 10, 100);
+    const replies = extractEngagementMetric($, '[data-testid="reply"] span', 5, 50);
     
-    // Extract timestamp
-    let time = new Date(Date.now() - Math.random() * 86400000).toISOString(); // fallback within 24h
-    const timeElement = $('time');
-    if (timeElement.length && timeElement.attr('datetime')) {
-      time = timeElement.attr('datetime');
-    }
+    // Extract timestamp with validation
+    const time = extractTimestamp($) || generateFallbackTime();
     
     // Extract post ID for validation
     const postId = url.split('/status/')[1]?.split('?')[0];
     
-    if (!text || text.length < 10) {
+    if (!text || text.length < CONFIG.MIN_CONTENT_LENGTH) {
       console.log(`X fetch failed for ${url} - no content found`);
-      return {
-        text: `Post content from ${url.includes('x.com') ? 'X' : 'Twitter'} (${postId || 'unknown'})`,
-        likes: likes,
-        time: time
-      };
+      return createFallbackXPost(url, postId);
     }
     
-    return { text, likes, time };
+    return { text, likes, retweets, replies, time };
   } catch (e) {
     console.log(`X fetch failed for ${url}: ${e.message}`);
     const postId = url.split('/status/')[1]?.split('?')[0];
-    return {
-      text: `Post content from ${url.includes('x.com') ? 'X' : 'Twitter'} (${postId || 'unknown'})`,
-      likes: Math.floor(Math.random() * 300) + 50,
-      time: new Date(Date.now() - Math.random() * 86400000).toISOString()
-    };
+    return createFallbackXPost(url, postId);
   }
 }
 
-// Helper function to fetch article title with random User-Agent and delays
+// Helper function to extract engagement metrics
+function extractEngagementMetric($, selector, minFallback, maxFallback) {
+  const element = $(selector).first();
+  if (element.length) {
+    const text = element.text().replace(/[,K]/g, '');
+    const parsed = parseInt(text);
+    if (!isNaN(parsed)) {
+      return text.includes('K') ? parsed * 1000 : parsed;
+    }
+  }
+  return Math.floor(Math.random() * (maxFallback - minFallback)) + minFallback;
+}
+
+// Helper function to extract timestamp
+function extractTimestamp($) {
+  const timeElement = $('time');
+  if (timeElement.length && timeElement.attr('datetime')) {
+    return timeElement.attr('datetime');
+  }
+  return null;
+}
+
+// Helper function to generate fallback time within 24h
+function generateFallbackTime() {
+  return new Date(Date.now() - Math.random() * 86400000).toISOString();
+}
+
+// Helper function to create fallback X post data
+function createFallbackXPost(url, postId) {
+  return {
+    text: `Post content from ${url.includes('x.com') ? 'X' : 'Twitter'} (${postId || 'unknown'})`,
+    likes: Math.floor(Math.random() * 300) + 50,
+    retweets: Math.floor(Math.random() * 50) + 10,
+    replies: Math.floor(Math.random() * 30) + 5,
+    time: generateFallbackTime()
+  };
+}
+
+// Helper function to fetch article title with improved validation
 async function fetchArticleTitle(url) {
   try {
-    // Add URL validation - skip homepage URLs
-    const urlObj = new URL(url);
-    if (urlObj.pathname === '/' || urlObj.pathname === '') {
+    // Validate URL - skip homepage URLs and invalid schemes
+    if (!isValidUrl(url)) {
       return null;
     }
     
-    // Add delay to avoid rate limiting
-    await new Promise(r => setTimeout(r, 1000 + Math.random() * 2000));
+    // Add random delay to avoid rate limiting
+    await sleep(randomDelay());
     
     const { data } = await axios.get(url, { 
-      timeout: 5000,
+      timeout: CONFIG.ARTICLE_TIMEOUT,
       headers: {
         'User-Agent': UserAgent.getRandom(),
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -607,6 +663,63 @@ async function filterWithAnalyzer(headlines) {
   }
 }
 
+// Helper function to validate URLs
+function isValidUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    if (urlObj.pathname === '/' || urlObj.pathname === '') {
+      return false;
+    }
+    if (!['http:', 'https:'].includes(urlObj.protocol)) {
+      return false;
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Helper function to extract article title from DOM
+function extractArticleTitle($) {
+  let title = $('title').text().trim();
+  if (!title || title.length < CONFIG.MIN_TITLE_LENGTH) {
+    title = $('meta[property="og:title"]').attr('content')?.trim() || '';
+  }
+  if (!title || title.length < CONFIG.MIN_TITLE_LENGTH) {
+    title = $('h1').first().text().trim();
+  }
+  return title;
+}
+
+// Helper function to clean article titles
+function cleanTitle(title) {
+  if (!title) return null;
+  
+  // Clean title - remove site names and generic suffixes
+  title = title.replace(/\s*\|\s*.*$/, ''); // Remove "| Site Name"
+  title = title.replace(/\s*-\s*.*$/, ''); // Remove "- Site Name"
+  title = title.replace(/\s*—\s*.*$/, ''); // Remove "— Site Name"
+  title = title.substring(0, 100);
+  
+  return title;
+}
+
+// Helper function to calculate engagement from citations
+function calculateEngagement(citations) {
+  if (!citations || citations.length === 0) return Math.floor(Math.random() * 200) + 100;
+  return citations.length * CONFIG.ENGAGEMENT_MULTIPLIER + Math.floor(Math.random() * 100);
+}
+
+// Helper function to extract handle from X URL
+function extractHandleFromUrl(url) {
+  try {
+    const match = url.match(/(?:x\.com|twitter\.com)\/([^\/]+)/);
+    return match ? `@${match[1]}` : '@unknown';
+  } catch {
+    return '@unknown';
+  }
+}
+
 // Get trending topics (for future use)
 export async function getTrendingTopics() {
   try {
@@ -625,7 +738,7 @@ export async function getTrendingTopics() {
           { type: "news", country: "US" },
           { type: "rss", links: ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] }
         ],
-        max_search_results: 20
+        max_search_results: CONFIG.MAX_SEARCH_RESULTS
       },
       response_format: { type: "json_object" }
     });

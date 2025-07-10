@@ -1,69 +1,135 @@
 import OpenAI from "openai";
 
+// Configuration constants
+const CONFIG = {
+  BATCH_SIZE: 10,
+  AUTHENTICITY_THRESHOLD: 0.5,
+  SIGNIFICANCE_THRESHOLD: 0.4,
+  MAX_RETRIES: 2,
+  RETRY_DELAY: 1000,
+  MAX_POST_LENGTH: 500,
+  ENGAGEMENT_WEIGHTS: {
+    likes: 1.0,
+    retweets: 1.0,
+    replies: 0.5,
+    views: 0.001
+  }
+};
+
 // Initialize xAI client using OpenAI-compatible interface
 const xai = new OpenAI({
   baseURL: "https://api.x.ai/v1",
   apiKey: process.env.XAI_API_KEY,
 });
 
-// Shared helper for xAI API calls with search parameters
+// Sleep helper for delays
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Shared helper for xAI API calls with retry logic
 async function callXAI(systemPrompt, userContent, searchParams = {}) {
-  try {
-    const response = await xai.chat.completions.create({
-      model: "grok-4-0709",
-      messages: [
-        {
-          role: "system",
-          content: systemPrompt + " Base analysis on factual sources; ZERO opinions in reasoning."
-        },
-        {
-          role: "user",
-          content: userContent
-        }
-      ],
-      response_format: { type: "json_object" },
-      search_parameters: searchParams.mode ? searchParams : {
-        mode: "on",
-        sources: [
-          { type: "web", country: "US" },
-          { type: "x" }
-        ],
-        max_search_results: 5
+  let lastError;
+  
+  for (let attempt = 0; attempt <= CONFIG.MAX_RETRIES; attempt++) {
+    try {
+      if (attempt > 0) {
+        console.log(`Retrying xAI API call (attempt ${attempt + 1}/${CONFIG.MAX_RETRIES + 1})`);
+        await sleep(CONFIG.RETRY_DELAY * Math.pow(2, attempt - 1)); // Exponential backoff
       }
-    });
-    
-    return response.choices[0].message.content;
-  } catch (error) {
-    console.error("xAI API error:", error);
-    throw error;
+      
+      const response = await xai.chat.completions.create({
+        model: "grok-4-0709",
+        messages: [
+          {
+            role: "system",
+            content: systemPrompt + " Base analysis on factual sources; ZERO opinions in reasoning."
+          },
+          {
+            role: "user",
+            content: userContent
+          }
+        ],
+        response_format: { type: "json_object" },
+        search_parameters: searchParams.mode ? searchParams : {
+          mode: "on",
+          sources: [
+            { type: "web", country: "US" },
+            { type: "x" }
+          ],
+          max_search_results: 5
+        }
+      });
+      
+      return response.choices[0].message.content;
+    } catch (error) {
+      lastError = error;
+      console.error(`xAI API error (attempt ${attempt + 1}):`, error.message);
+      
+      // Don't retry on certain errors
+      if (error.status === 401 || error.status === 403) {
+        throw error;
+      }
+    }
   }
+  
+  throw lastError;
 }
 
 // Use xAI to analyze posts for authenticity and relevance
 export async function analyzePostsForAuthenticity(posts) {
   try {
-    // Batch posts if too many to avoid token overflow
-    const BATCH_SIZE = 10;
-    if (posts.length > BATCH_SIZE) {
-      console.log(`Batching ${posts.length} posts into chunks of ${BATCH_SIZE}`);
+    // Iterative batching to avoid stack overflow for large inputs
+    if (posts.length > CONFIG.BATCH_SIZE) {
+      console.log(`Batching ${posts.length} posts into chunks of ${CONFIG.BATCH_SIZE}`);
       const results = [];
-      for (let i = 0; i < posts.length; i += BATCH_SIZE) {
-        const batch = posts.slice(i, i + BATCH_SIZE);
-        const batchResult = await analyzePostsForAuthenticity(batch);
-        results.push(...batchResult);
+      
+      for (let i = 0; i < posts.length; i += CONFIG.BATCH_SIZE) {
+        const batch = posts.slice(i, i + CONFIG.BATCH_SIZE);
+        console.log(`Processing batch ${Math.floor(i / CONFIG.BATCH_SIZE) + 1}/${Math.ceil(posts.length / CONFIG.BATCH_SIZE)}`);
+        
+        const batchResult = await analyzeBatch(batch);
+        if (Array.isArray(batchResult)) {
+          results.push(...batchResult);
+        }
       }
       return results;
     }
     
-    const postsText = posts.map(post => ({
-      text: post.realText || post.text, // Use real fetched text if available
-      author: post.author_handle,
-      url: post.url || '',
-      engagement: (post.public_metrics?.like_count || 0) + 
-                  (post.public_metrics?.retweet_count || 0) +
-                  (post.public_metrics?.reply_count || 0) * 0.5 +
-                  (post.public_metrics?.view_count || 0) * 0.001
-    }));
+    return await analyzeBatch(posts);
+  } catch (error) {
+    console.error("Error in analyzePostsForAuthenticity:", error);
+    return [];
+  }
+}
+
+// Helper function to calculate engagement score
+function calculateEngagement(metrics) {
+  if (!metrics) return 0;
+  
+  const weights = CONFIG.ENGAGEMENT_WEIGHTS;
+  return (metrics.like_count || 0) * weights.likes + 
+         (metrics.retweet_count || 0) * weights.retweets +
+         (metrics.reply_count || 0) * weights.replies +
+         (metrics.view_count || 0) * weights.views;
+}
+
+// Helper function to clamp scores between 0 and 1
+function clampScore(score) {
+  if (isNaN(score)) return 0;
+  return Math.max(0, Math.min(1, score));
+}
+
+// Helper function to analyze a single batch
+async function analyzeBatch(posts) {
+  try {
+    const postsText = posts.map(post => {
+      const text = post.realText || post.text || '';
+      return {
+        text: text.length > CONFIG.MAX_POST_LENGTH ? text.substring(0, CONFIG.MAX_POST_LENGTH) + '...' : text,
+        author: post.author_handle,
+        url: post.url || '',
+        engagement: calculateEngagement(post.public_metrics)
+      };
+    });
 
     const systemPrompt = `You are an expert at identifying authentic, meaningful posts that matter to users seeking truth. Analyze these X posts and identify which ones contain:
 
@@ -99,26 +165,52 @@ Return JSON with this structure:
       `Analyze these posts:\n\n${JSON.stringify(postsText, null, 2)}`
     );
 
-    const analysis = JSON.parse(responseContent);
-    
-    // Filter posts with authenticity score > 0.5 and validate scores
-    const authenticPosts = (analysis.authentic_posts || [])
-      .filter(post => {
-        // Validate scores are numbers
-        const authScore = parseFloat(post.authenticity_score);
-        const sigScore = parseFloat(post.significance_score);
-        console.log(`Post [${post.url}] scored ${authScore}, reasoning: ${post.reasoning}`);
-        return !isNaN(authScore) && !isNaN(sigScore) && authScore > 0.5;
-      })
-      .map(post => ({
-        ...post,
-        authenticity_score: parseFloat(post.authenticity_score),
-        significance_score: parseFloat(post.significance_score),
-        url: post.url || posts.find(p => p.text === post.text)?.url || ''
-      }));
-    
-    console.log(`✅ Analyzed ${posts.length} posts: ${authenticPosts.length} passed authenticity threshold (>0.5)`);
-    return authenticPosts;
+    // Robust JSON parsing with validation
+    let parsed;
+    try {
+      parsed = JSON.parse(responseContent);
+    } catch (parseError) {
+      console.error("Failed to parse xAI response as JSON:", parseError);
+      return [];
+    }
+
+    const authentic_posts = parsed.authentic_posts;
+    if (!Array.isArray(authentic_posts)) {
+      console.error("xAI response does not contain valid authentic_posts array");
+      return [];
+    }
+
+    // Filter posts by authenticity and significance scores with validation
+    const filtered = authentic_posts.filter(post => {
+      const authScore = clampScore(parseFloat(post.authenticity_score));
+      const sigScore = clampScore(parseFloat(post.significance_score));
+      
+      if (isNaN(authScore) || isNaN(sigScore)) {
+        console.warn("Invalid scores in post analysis:", post);
+        return false;
+      }
+      
+      return authScore > CONFIG.AUTHENTICITY_THRESHOLD && sigScore > CONFIG.SIGNIFICANCE_THRESHOLD;
+    });
+
+    // Map back to original posts with URLs using better matching
+    const result = filtered.map(analyzedPost => {
+      const originalPost = posts.find(p => 
+        p.text === analyzedPost.text || 
+        p.realText === analyzedPost.text ||
+        p.url === analyzedPost.url
+      );
+      
+      return {
+        ...analyzedPost,
+        url: originalPost?.url || analyzedPost.url,
+        authenticity_score: clampScore(parseFloat(analyzedPost.authenticity_score)),
+        significance_score: clampScore(parseFloat(analyzedPost.significance_score))
+      };
+    });
+
+    console.log(`✅ Analyzed ${posts.length} posts, found ${result.length} authentic`);
+    return result;
   } catch (error) {
     console.error("xAI analysis error:", error.message);
     return [];
