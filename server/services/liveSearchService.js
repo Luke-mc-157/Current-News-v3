@@ -211,10 +211,12 @@ Respond ONLY as a JSON object with this exact structure:
 Mandatory: Include inline citations [n] referencing citation order. ZERO opinions or introductions. Only facts from sources.`;
 
       try {
-        // Calculate date 24 hours ago
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        const fromDate = yesterday.toISOString().split('T')[0];
+        // Calculate exactly 24 hours ago
+        const now = new Date();
+        const twentyFourHoursAgo = new Date(now.getTime() - (24 * 60 * 60 * 1000));
+        const fromDate = twentyFourHoursAgo.toISOString().split('T')[0];
+        
+        console.log(`🕐 Searching from ${fromDate} (exactly 24 hours ago) to present`);
         
         // Add timeout wrapper
         const topicStartTime = Date.now();
