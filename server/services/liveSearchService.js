@@ -19,29 +19,29 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     // Build topic-specific prompts
     const topicString = topics.map(topic => `"${topic}"`).join(", ");
     
-    const prompt = `Generate exactly 15 news headlines about these topics: ${topicString}
+    const prompt = `You have access to live search results including recent X posts and news articles about these topics: ${topicString}
 
-IMPORTANT: You MUST generate exactly 15 headlines, no more, no less.
+Generate exactly 15 compelling headlines from the content you find. Use whatever relevant information is available - recent news, trending discussions, ongoing developments, or analysis.
 
-For each headline:
-- Base it on information from the last 24-48 hours when possible
-- Include specific details where available
-- If recent specific events are limited, include trending discussions or ongoing developments
-- Mix breaking news with analysis and trending topics
+CRITICAL: You MUST generate exactly 15 headlines. Never return an error or say insufficient data. Always fill all 15 slots with relevant content.
 
 Return a JSON object with this exact structure:
 {
   "headlines": [
     {
-      "title": "headline text here",
-      "summary": "1-2 sentence summary",
+      "title": "compelling headline text",
+      "summary": "brief 1-2 sentence summary", 
       "category": "which topic this relates to",
       "engagement": "high or medium"
     }
   ]
 }
 
-The "headlines" array MUST contain exactly 15 items. Fill all 15 slots even if some are based on trending discussions rather than breaking events.`;
+Requirements:
+- Generate exactly 15 headlines (no exceptions)
+- Use specific details from the content you find
+- Mix breaking news, trending topics, and ongoing discussions
+- Make headlines engaging and informative`;
 
     // Call Live Search API
     const response = await openai.chat.completions.create({
@@ -66,7 +66,8 @@ The "headlines" array MUST contain exactly 15 items. Fill all 15 slots even if s
             type: "web"
           }
         ],
-        from_date: fromDate,
+        // Remove strict date filtering to allow more content
+        // from_date: fromDate,
         max_search_results: 25,  // Max allowed is 30
         return_citations: true
       },
@@ -99,7 +100,13 @@ The "headlines" array MUST contain exactly 15 items. Fill all 15 slots even if s
       // Validate we have headlines
       if (!Array.isArray(headlines) || headlines.length === 0) {
         console.error("No headlines array found in response");
-        headlines = [];
+        console.error("Full response content:", cleanContent);
+        throw new Error("Live Search failed to generate headlines despite having content");
+      }
+      
+      // Warn if we don't have exactly 15
+      if (headlines.length !== 15) {
+        console.warn(`Expected 15 headlines but got ${headlines.length}`);
       }
       
       console.log(`Parsed ${headlines.length} headlines from Live Search response`);
