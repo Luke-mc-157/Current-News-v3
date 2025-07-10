@@ -211,12 +211,10 @@ Respond ONLY as a JSON object with this exact structure:
 Mandatory: Include inline citations [n] referencing citation order. ZERO opinions or introductions. Only facts from sources.`;
 
       try {
-        // Calculate exactly 24 hours ago
-        const now = new Date();
-        const twentyFourHoursAgo = new Date(now.getTime() - (24 * 60 * 60 * 1000));
-        const fromDate = twentyFourHoursAgo.toISOString().split('T')[0];
-        
-        console.log(`🕐 Searching from ${fromDate} (exactly 24 hours ago) to present`);
+        // Calculate date 24 hours ago
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const fromDate = yesterday.toISOString().split('T')[0];
         
         // Add timeout wrapper
         const topicStartTime = Date.now();
@@ -245,8 +243,8 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
               },
               {
                 type: "x",
-                post_favorite_count: 50,
-                post_view_count: 5000
+                post_favorite_count: 150,
+                post_view_count: 15000
               },
               {
                 type: "news", 
@@ -257,7 +255,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
                 url: "https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json"
               }
             ],
-            max_search_results: 10,
+            max_search_results: 50,
             return_citations: true
           },
           response_format: { type: "json_object" }
