@@ -87,7 +87,7 @@ The application now includes a comprehensive podcast generation system:
 
 ### APIs and Services
 - **X API v2**: Real-time tweet search with authentication via Bearer Token for authentic content discovery
-- **xAI API**: Hybrid model usage - Grok 3 for Live Search queries, Grok-4-0709 for complex reasoning tasks
+- **xAI API**: Grok-4-0709 for all Live Search queries and complex reasoning tasks
 - **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation (legacy)
 - **Google News RSS**: Public RSS feeds for supporting article discovery
 - **Neon Database**: Serverless PostgreSQL for production data storage
@@ -108,6 +108,8 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
+- **GROK-4-0709 UPGRADE**: Updated all Live Search operations from Grok-3 to Grok-4-0709 for enhanced AI processing capabilities
+- **RSS FEED INTEGRATION**: Added RSS as a new source type with specific feed: https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json
 - **COMPREHENSIVE X POST FETCHING**: Implemented real X post content extraction using axios/cheerio with fallback handling
 - **IMPROVED ARTICLE FILTERING**: Enhanced article title fetching with homepage detection and generic title filtering
 - **ENHANCED AUTHENTICITY SCORING**: Lowered threshold to >0.5 and added average score fallback for better content inclusion
@@ -116,18 +118,15 @@ The application now includes a comprehensive podcast generation system:
 - **Audio Combination System**: Implemented ffmpeg-based audio segment combination to create complete podcasts from multiple ElevenLabs segments
 - **Segment Processing**: Enhanced to generate all script segments and combine them into final audio file with cleanup of intermediate files
 - **Real Duration Matching**: 5-minute podcasts now generate ~750 word scripts and full-length audio (±15 seconds tolerance)
-- **Hybrid Model Strategy**: Using Grok 3 for Live Search (optimized for fast queries) and Grok 4 for complex reasoning tasks
-- **Grok 4 Integration**: Updated podcast generation, content analysis, and source suggestion to use xAI Grok-4-0709
-- **Live Search Optimization**: Kept Grok 3 for Live Search as Grok 4 causes timeout issues with search queries
+- **Multi-Source Integration**: Now pulls from web, X/Twitter, news, and RSS sources for comprehensive coverage
 - **Sequential Topic Processing**: Individual API calls per topic for better relevance and source quality
 - **24-Hour Date Filtering**: Implemented proper ISO8601 date format (YYYY-MM-DD) for `from_date` parameter
-- **Optimized Performance**: 6.3 seconds per topic with 7+ citations and 3 headlines using Grok 3 for search
 - **Timeout Protection**: Added 20-second timeout wrapper to prevent API calls from hanging
 - **Authentic Source Distribution**: Real URLs from Live Search with quality engagement filtering
 - **Enhanced Error Handling**: Graceful fallback for failed topics with timeout protection
 - **Article Title Fetching**: Implemented axios/cheerio to fetch real article titles from URLs instead of URL slugs
 - **Inline Citation Parsing**: Added [n] citation format in summaries to match specific sources to headlines
-- **Authenticity Filtering**: Posts must have >0.7 authenticity score from xAI analysis
+- **Authenticity Filtering**: Posts must have >0.5 authenticity score from xAI analysis (lowered from 0.7)
 - **Improved JSON Parsing**: Extracts JSON properly even when xAI includes preamble text
 - **Enhanced Engagement Metrics**: Includes views, replies in addition to likes/retweets
 - **Batched Processing**: xaiAnalyzer splits large post sets to avoid token overflow

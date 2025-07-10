@@ -224,9 +224,9 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
           setTimeout(() => reject(new Error("API call timed out after 20 seconds")), 20000);
         });
         
-        // Call Live Search API with Grok 3 (optimized for search)
+        // Call Live Search API with Grok 4 (updated model)
         const apiPromise = openai.chat.completions.create({
-          model: "grok-3",
+          model: "grok-4-0709",
           messages: [
             {
               role: "user",
@@ -249,6 +249,10 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
               {
                 type: "news", 
                 country: "US"
+              },
+              {
+                type: "rss",
+                url: "https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json"
               }
             ],
             max_search_results: 10,
@@ -607,7 +611,7 @@ async function filterWithAnalyzer(headlines) {
 export async function getTrendingTopics() {
   try {
     const response = await openai.chat.completions.create({
-      model: "grok-3",
+      model: "grok-4-0709",
       messages: [
         {
           role: "user",
@@ -618,7 +622,8 @@ export async function getTrendingTopics() {
         mode: "on",
         sources: [
           { type: "web", country: "US" },
-          { type: "news", country: "US" }
+          { type: "news", country: "US" },
+          { type: "rss", url: "https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json" }
         ],
         max_search_results: 10
       },
