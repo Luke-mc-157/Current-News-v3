@@ -32,8 +32,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
           },
           {
             type: "x",
-            post_favorite_count: 150,
-            post_view_count: 15000
+            post_favorite_count: 50,
+            post_view_count: 5000
           },
           {
             type: "news", 
