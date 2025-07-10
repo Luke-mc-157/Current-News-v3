@@ -52,17 +52,22 @@ Generate exactly 15 headlines using real information from your search results. B
         mode: "on",
         sources: [
           {
+            type: "web",
+            country: "US"
+          },
+          {
             type: "x",
-            post_favorite_count: 50  // Lower threshold for more results
+            post_favorite_count: 50
           },
           {
-            type: "news"
+            type: "news", 
+            country: "US"
           },
           {
-            type: "web"
+            type: "rss"
           }
         ],
-        max_search_results: 25,  // Max allowed is 30
+        max_search_results: 25,
         return_citations: true
       },
       response_format: { type: "json_object" }
