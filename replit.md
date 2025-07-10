@@ -108,6 +108,10 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 10, 2025)
+- **COMPREHENSIVE X POST FETCHING**: Implemented real X post content extraction using axios/cheerio with fallback handling
+- **IMPROVED ARTICLE FILTERING**: Enhanced article title fetching with homepage detection and generic title filtering
+- **ENHANCED AUTHENTICITY SCORING**: Lowered threshold to >0.5 and added average score fallback for better content inclusion
+- **REAL TEXT INTEGRATION**: X posts now fetch actual post text, likes, and timestamps instead of placeholder data
 - **CRITICAL BUG FIX**: Fixed podcast duration issue - podcasts now generate for full requested duration instead of capping at 2:30 minutes
 - **Audio Combination System**: Implemented ffmpeg-based audio segment combination to create complete podcasts from multiple ElevenLabs segments
 - **Segment Processing**: Enhanced to generate all script segments and combine them into final audio file with cleanup of intermediate files

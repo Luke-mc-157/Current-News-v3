@@ -8,13 +8,60 @@ const openai = new OpenAI({
   apiKey: process.env.XAI_API_KEY 
 });
 
-// Helper function to fetch article title
+// Helper function to fetch X post details
+async function fetchXPostDetails(url) {
+  try {
+    const { data } = await axios.get(url, { 
+      timeout: 5000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+      }
+    });
+    const $ = cheerio.load(data);
+    
+    // Extract post text
+    let text = $('div[data-testid="tweetText"]').text().trim();
+    if (!text) {
+      text = $('[data-testid="tweet"] div[lang]').text().trim();
+    }
+    if (!text) {
+      text = 'Post content unavailable';
+    }
+    
+    // Extract likes count
+    let likes = 100; // fallback
+    const likeSpan = $('span[data-testid="like"]');
+    if (likeSpan.length) {
+      const likeText = likeSpan.text().replace(/,/g, '');
+      likes = parseInt(likeText) || 100;
+    }
+    
+    // Extract timestamp
+    let time = new Date().toISOString(); // fallback
+    const timeElement = $('time');
+    if (timeElement.length && timeElement.attr('datetime')) {
+      time = timeElement.attr('datetime');
+    }
+    
+    return { text, likes, time };
+  } catch (e) {
+    console.warn(`Error fetching X post ${url}: ${e.message}`);
+    return {
+      text: 'Error fetching post content',
+      likes: 100,
+      time: new Date().toISOString()
+    };
+  }
+}
+
+// Helper function to fetch article title with improved filtering
 async function fetchArticleTitle(url) {
   try {
     const { data } = await axios.get(url, { 
       timeout: 3000,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; NewsAggregator/1.0)'
+        'User-Agent': 'Mozilla/5.0 (compatible; NewsAggregator/1.0)',
+        'Accept-Language': 'en-US,en;q=0.9'
       }
     });
     const $ = cheerio.load(data);
@@ -29,7 +76,17 @@ async function fetchArticleTitle(url) {
     title = title.replace(/ - [^-]*$/, '').trim(); // Remove site name
     title = title.substring(0, 100);
     
-    if (title.length < 10) return null;
+    // Check for homepage indicators
+    if (title.includes('Home') || title.includes('Welcome') || title.length < 15) {
+      return null;
+    }
+    
+    // Check if title matches site name (e.g., just "CNN")
+    const domain = new URL(url).hostname.replace('www.', '').split('.')[0].toLowerCase();
+    if (title.toLowerCase() === domain || title.toLowerCase() === domain.toUpperCase()) {
+      return null;
+    }
+    
     return title;
   } catch (e) {
     console.warn(`Title fetch failed for ${url}: ${e.message}`);
@@ -258,27 +315,42 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         !url.includes('x.com') && !url.includes('twitter.com')
       );
       
-      // Create source posts
-      const sourcePosts = xCitations.slice(0, 5).map((url, i) => {
+      // Create source posts with real fetched content
+      const sourcePosts = await Promise.all(xCitations.slice(0, 5).map(async (url, i) => {
         const handle = extractHandleFromUrl(url);
+        const details = await fetchXPostDetails(url);
         return {
           handle: handle,
-          text: `Post by ${handle} related to ${headline.title}`,
-          time: new Date(Date.now() - i * 3600000).toISOString(),
+          text: details.text,
+          time: details.time,
           url: url,
-          likes: Math.floor(Math.random() * 1000) + 100
+          likes: details.likes
         };
-      });
+      }));
       
-      // Create supporting articles with real titles
-      const supportingArticles = await Promise.all(
+      // Create supporting articles with real titles and filtering
+      const supportingArticlesRaw = await Promise.all(
         articleCitations.slice(0, 5).map(async url => {
           // Try to fetch actual title
           let title = await fetchArticleTitle(url);
           
-          // Fallback to URL extraction if fetch fails
+          // If title includes 'Home', 'Welcome', or length <15, set null
+          if (title && (title.includes('Home') || title.includes('Welcome') || title.length < 15)) {
+            title = null;
+          }
+          
+          // Fallback to URL extraction if fetch fails and still viable
           if (!title) {
             title = extractTitleFromUrl(url, headline);
+            // Re-check the extracted title
+            if (title && (title.includes('Home') || title.includes('Welcome') || title.length < 15)) {
+              title = null;
+            }
+          }
+          
+          // If title is null, mark for filtering
+          if (!title) {
+            return null;
           }
           
           // Extract source name
@@ -307,6 +379,12 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
           };
         })
       );
+
+      // Filter out null articles and log if all are bad
+      const supportingArticles = supportingArticlesRaw.filter(article => article !== null);
+      if (supportingArticlesRaw.length > 0 && supportingArticles.length === 0) {
+        console.log(`Bad articles for [${headline.title}] - all filtered out as homepage/generic`);
+      }
 
       // Log warnings if sources are low
       if (sourcePosts.length < 5) {
@@ -380,6 +458,7 @@ async function filterWithAnalyzer(headlines) {
     const postsForAnalysis = headlines.flatMap(h => 
       h.sourcePosts.map(p => ({
         text: h.summary, // Using headline summary as the text to analyze
+        realText: p.text, // Include real fetched text from X posts
         author_handle: p.handle,
         public_metrics: { 
           like_count: p.likes || 0,
@@ -406,6 +485,21 @@ async function filterWithAnalyzer(headlines) {
     // Filter headlines: keep only those with at least one authentic source post
     const authenticHeadlines = headlines.filter(h => {
       const authenticSourceCount = h.sourcePosts.filter(p => authenticUrls.has(p.url)).length;
+      
+      // If no authentic sources but has source posts, check average score
+      if (authenticSourceCount === 0 && h.sourcePosts.length > 0) {
+        // Calculate average authenticity score from authentic posts
+        if (authenticPosts.length > 0) {
+          const averageScore = authenticPosts.reduce((sum, p) => sum + p.authenticity_score, 0) / authenticPosts.length;
+          if (averageScore > 0.5) {
+            console.log(`✅ Keeping headline "${h.title}" - average authenticity score ${averageScore.toFixed(2)} > 0.5`);
+            return true;
+          }
+        }
+        console.log(`❌ Filtered out headline "${h.title}" - no authentic sources and low average score`);
+        return false;
+      }
+      
       const hasAuthenticSources = authenticSourceCount > 0 || h.sourcePosts.length === 0;
       
       if (!hasAuthenticSources) {
