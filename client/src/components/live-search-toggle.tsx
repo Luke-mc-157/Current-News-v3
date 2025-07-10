@@ -23,7 +23,7 @@ export default function LiveSearchToggle({ useLiveSearch, onToggle }: LiveSearch
           </Label>
           <p className="text-xs text-muted-foreground">
             {useLiveSearch 
-              ? "Fast, single API call (8s)" 
+              ? "Fast, single API call" 
               : "Traditional workflow system (30-60s)"}
           </p>
         </div>
