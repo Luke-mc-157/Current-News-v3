@@ -126,12 +126,15 @@ X POSTS:
 ${xPostsText}
 
 WEB/NEWS DATA:
-${topicData.webData}
+${topicData.webData.substring(0, 1500)}
 
 CITATIONS:
-${citationsText}
+${citationsText.substring(0, 500)}
 `;
   }).join('\n\n---\n\n');
+  
+  console.log(`📊 Data summary stats: ${dataSummary.length} chars total`);
+  console.log(`📋 Topics in summary: ${allTopicData.map(t => t.topic).join(', ')}`);
   
   try {
     const response = await client.chat.completions.create({
@@ -173,16 +176,18 @@ Extract real URLs from the provided citations and X posts. No synthetic data.`
           content: dataSummary
         }
       ],
-      max_tokens: 2000
+      max_tokens: 4000
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
+    console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
     
     // Parse JSON response
     try {
       const headlines = JSON.parse(content);
       console.log(`✅ Parsed ${headlines.length} headlines from newsletter`);
+      console.log(`📋 Headlines by topic: ${headlines.map(h => `${h.category}: "${h.title}"`).join(', ')}`);
       
       // Transform to expected format
       return headlines.map((headline, index) => ({
@@ -198,6 +203,7 @@ Extract real URLs from the provided citations and X posts. No synthetic data.`
       
     } catch (parseError) {
       console.error('❌ Failed to parse newsletter JSON:', parseError.message);
+      console.error('🔍 Raw content that failed to parse:', content);
       return [];
     }
     
