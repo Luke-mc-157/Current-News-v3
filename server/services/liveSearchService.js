@@ -66,22 +66,33 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
 async function getTopicDataFromLiveSearch(topic) {
   console.log(`⏱️ Starting Live Search API call for topic: ${topic}`);
   
+  // Calculate 24-hour time window
+  const now = new Date();
+  const twentyFourHoursAgo = new Date(now.getTime() - (24 * 60 * 60 * 1000));
+
+  // Format dates as ISO strings (YYYY-MM-DD format)
+  const fromDate = twentyFourHoursAgo.toISOString().split('T')[0];
+  const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
       model: "grok-3-fast",
       messages: [
         {
           role: "user",
-          content: `Get latest news about ${topic} from from the last 24 hours. Include complete source URLs to specific posts and articles in your citations. Only include data posted or written from the last 24 hours.`
+          content: `Get latest news about ${topic} from the specified date range. Include complete source URLs to specific posts and articles in your citations.`
         }
       ],
       search_parameters: {
         mode: "on",
         max_search_results: 15,
         return_citations: true
-      },
-      max_tokens: 4000
-    });
+        from_date: fromDate,
+          to_date: toDate
+        },
+        max_tokens: 4000
+        });
+
+        console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
     
     const content = response.choices[0].message.content;
     const citations = response.citations || [];
