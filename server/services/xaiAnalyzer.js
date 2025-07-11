@@ -9,7 +9,7 @@ const xai = new OpenAI({
 async function callXAI(systemPrompt, userContent, searchParams = {}) {
   try {
     const response = await xai.chat.completions.create({
-      model: "grok-4",
+      model: "grok-3-fast",
       messages: [
         {
           role: "system",

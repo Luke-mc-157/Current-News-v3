@@ -87,10 +87,10 @@ async function getTopicDataFromLiveSearch(topic) {
         max_search_results: 15,
         return_citations: true,
         from_date: fromDate,
-        to_date: toDate
-      },
-      max_tokens: 6000
-    });
+          to_date: toDate
+        },
+        max_tokens: 6000
+        });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
     
@@ -159,7 +159,7 @@ ${citationsText}
       messages: [
         {
           role: "system",
-          content: `You are a news editor. Create headlines from the provided data.
+          content: `You are a news editor. Create headlines and supporting information from the provided data. Open all URL citations to get further facts and details. Only write content that is free of opinions. You may only use opinioted verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement first.
 
 Return ONLY a JSON array of headlines in this exact format:
 [
@@ -193,6 +193,9 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
           content: dataSummary
         }
       ],
+      search_parameters: {
+        mode: "on"
+      },
       max_tokens: 10000
     });
     
