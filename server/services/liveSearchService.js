@@ -85,12 +85,12 @@ async function getTopicDataFromLiveSearch(topic) {
       search_parameters: {
         mode: "on",
         max_search_results: 15,
-        return_citations: true
+        return_citations: true,
         from_date: fromDate,
-          to_date: toDate
-        },
-        max_tokens: 4000
-        });
+        to_date: toDate
+      },
+      max_tokens: 4000
+    });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
     
