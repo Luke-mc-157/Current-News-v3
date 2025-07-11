@@ -1,5 +1,5 @@
 import axios from "axios";
-import { analyzePostsForAuthenticity, categorizePostsWithXAI } from "./xaiAnalyzer.js";
+import { categorizePostsWithXAI } from "./xaiAnalyzer.js";
 import { compileVerifiedSources, buildSourceQueries } from "./dynamicSources.js";
 
 // Track rate limit state globally
@@ -164,35 +164,20 @@ export async function fetchXPosts(topics, userId = 'default') {
     new Map(allAuthenticPosts.map(post => [post.text.substring(0, 100), post])).values()
   );
 
-  // Use xAI to analyze posts for authenticity and relevance
-  const authenticAnalysis = await analyzePostsForAuthenticity(uniquePosts.map(post => ({
-    text: post.text,
-    author_handle: post.handle,
-    public_metrics: { 
-      like_count: post.likes,
-      retweet_count: 0 // We don't have retweet data in our format
-    }
-  })));
+  // Skip authenticity analysis as requested - use all posts
+  console.log(`✅ Using all ${uniquePosts.length} unique posts without authenticity filtering`);
 
-  // Filter posts based on xAI authenticity analysis
-  const authenticPosts = uniquePosts.filter(post => {
-    const analysis = authenticAnalysis.find(a => a.text === post.text);
-    return analysis && analysis.authenticity_score > 0.7 && analysis.significance_score > 0.6;
-  });
-
-  console.log(`xAI filtered ${authenticPosts.length} high-quality posts from ${uniquePosts.length} total posts`);
-
-  // Use xAI for intelligent categorization
-  const categorizedPosts = await categorizePostsWithXAI(authenticPosts, topics);
+  // Use xAI for intelligent categorization  
+  const categorization = await categorizePostsWithXAI(uniquePosts, topics);
 
   // Organize posts by topic based on xAI analysis
-  for (const categorizedPost of categorizedPosts) {
-    const topic = categorizedPost.matched_topic;
-    const post = authenticPosts.find(p => p.text === categorizedPost.text);
+  for (const categoryGroup of categorization.categorizedPosts) {
+    const topic = categoryGroup.topic;
+    const posts = categoryGroup.posts;
     
-    if (post && topic && results[topic] && results[topic].length < 10) {
-      results[topic].push(post);
-      console.log(`xAI categorized post with ${post.likes} likes into topic: ${topic} (relevance: ${categorizedPost.relevance_score})`);
+    if (results[topic]) {
+      results[topic].push(...posts.slice(0, 10)); // Limit to 10 posts per topic
+      console.log(`Categorized ${posts.length} posts for topic: ${topic}`);
     }
   }
 
