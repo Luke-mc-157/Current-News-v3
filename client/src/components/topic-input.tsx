@@ -19,7 +19,7 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }:
 
   const generateHeadlinesMutation = useMutation({
     mutationFn: (topics: string[]) => {
-      const endpoint = useLiveSearch ? "/api/generate-headlines-v3" : "/api/generate-headlines";
+      const endpoint = "/api/generate-headlines-v3"; // Always use real data endpoint
       return apiRequest("POST", endpoint, { topics });
     },
     onSuccess: (data) => {

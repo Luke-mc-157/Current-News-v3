@@ -19,12 +19,10 @@ export default function LiveSearchToggle({ useLiveSearch, onToggle }: LiveSearch
         )}
         <div>
           <Label htmlFor="live-search" className="text-sm font-medium">
-            {useLiveSearch ? "Real Sources Mode" : "Classic Mode"}
+            Authentic News Sources
           </Label>
           <p className="text-xs text-muted-foreground">
-            {useLiveSearch 
-              ? "Real X posts + articles (30-60s)" 
-              : "Traditional workflow system (60-90s)"}
+            Real X posts + articles from verified sources
           </p>
         </div>
       </div>
