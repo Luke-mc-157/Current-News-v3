@@ -397,7 +397,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error("API call timed out after 5 minutes")), 300000);
+          setTimeout(() => reject(new Error("API call timed out after 3 minutes")), 180000);
         });
         
         // Call Live Search API with Grok 4 (updated model)
@@ -414,24 +414,16 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
             from_date: fromDate,
             sources: [
               {
-                type: "web",
-                country: "US"
-              },
-              {
                 type: "x",
-                post_favorite_count: 50,
-                post_view_count: 5000
+                post_favorite_count: 25,
+                post_view_count: 2000
               },
               {
                 type: "news", 
                 country: "US"
-              },
-              {
-                type: "rss",
-                links: ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]
               }
             ],
-            max_search_results: 10,
+            max_search_results: 5,
             return_citations: true
           },
           response_format: { type: "json_object" }
@@ -446,6 +438,16 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         const topicCitations = response.citations || [];
         allCitations.push(...topicCitations);
         console.log(`📎 Found ${topicCitations.length} citations for ${topic}`);
+        
+        // Debug: Log actual citations to understand the data structure
+        console.log('🔍 DEBUG: Citation sample:', topicCitations.slice(0, 3));
+        
+        // Debug: Check for X URLs specifically
+        const xUrls = topicCitations.filter(url => 
+          (typeof url === 'string' && (url.includes('x.com') || url.includes('twitter.com'))) ||
+          (typeof url === 'object' && url.url && (url.url.includes('x.com') || url.url.includes('twitter.com')))
+        );
+        console.log(`🔍 DEBUG: Found ${xUrls.length} X URLs in citations:`, xUrls.slice(0, 2));
         
         // Parse response with improved JSON extraction
         const content = response.choices[0].message.content;
@@ -522,15 +524,8 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         
       } catch (topicError) {
         console.error(`❌ Error processing topic ${topic}:`, topicError.message);
-        // Add fallback headline
-        allHeadlines.push({
-          title: `Latest ${topic} News Update`,
-          summary: `Recent developments in ${topic}`,
-          category: topic,
-          engagement: 500,
-          topicCitations: [],
-          topicIndex: i
-        });
+        // REMOVE fallback headlines - if we can't get real data, don't add fake data
+        console.log(`⚠️ Skipping ${topic} - no fallback headlines will be created`);
       }
       
       // Delay between topics
@@ -547,13 +542,22 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
     const transformedHeadlines = await Promise.all(allHeadlines.map(async (headline, index) => {
       const headlineCitations = headline.topicCitations || [];
       
-      // Separate X posts from articles
-      const xCitations = headlineCitations.filter(url => 
-        url.includes('x.com') || url.includes('twitter.com')
-      );
-      const articleCitations = headlineCitations.filter(url => 
-        !url.includes('x.com') && !url.includes('twitter.com')
-      );
+      // Separate X posts from articles - handle both string and object citations
+      const xCitations = headlineCitations.filter(citation => {
+        const url = typeof citation === 'string' ? citation : citation.url;
+        return url && (url.includes('x.com') || url.includes('twitter.com'));
+      }).map(citation => typeof citation === 'string' ? citation : citation.url);
+      
+      const articleCitations = headlineCitations.filter(citation => {
+        const url = typeof citation === 'string' ? citation : citation.url;
+        return url && !url.includes('x.com') && !url.includes('twitter.com');
+      }).map(citation => typeof citation === 'string' ? citation : citation.url);
+      
+      // Debug: Log what we found
+      console.log(`🔍 DEBUG: Headline "${headline.title}" - X citations: ${xCitations.length}, Article citations: ${articleCitations.length}`);
+      if (xCitations.length > 0) {
+        console.log('🔍 DEBUG: X URLs found:', xCitations.slice(0, 2));
+      }
       
       // Create source posts with real fetched content
       const sourcePosts = await Promise.all(xCitations.slice(0, 5).map(async (url, i) => {

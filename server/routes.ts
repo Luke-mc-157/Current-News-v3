@@ -160,6 +160,97 @@ export function registerRoutes(app) {
     }
   });
 
+  // NEW: Generate headlines using working X API + OpenAI workflow (V3 endpoint)
+  router.post("/api/generate-headlines-v3", async (req, res) => {
+    const { topics } = req.body;
+    if (!topics || topics.length < 1) {
+      return res.status(400).json({ message: "At least 1 topic required" });
+    }
+
+    try {
+      console.log("🔍 Using working X API + OpenAI workflow for headlines generation");
+      const startTime = Date.now();
+      
+      // Step 1: Get real X posts using working X API
+      console.log("📱 Fetching real X posts for topics:", topics);
+      const postsByTopic = await fetchXPosts(topics);
+      
+      // Check if we have posts
+      const hasPosts = Object.values(postsByTopic).some((p) => p.length > 0);
+      if (!hasPosts) {
+        return res.status(404).json({ 
+          message: "No X posts found for any topic",
+          debug: { topics, postsByTopic }
+        });
+      }
+
+      // Step 2: Generate headlines from real posts
+      console.log("📰 Generating headlines from real X posts");
+      const headlinesByTopic = await generateHeadlines(postsByTopic);
+      
+      // Step 3: Get supporting articles
+      console.log("📄 Fetching supporting articles");
+      const headlinesWithSupport = await fetchSupportingArticles(headlinesByTopic);
+      
+      // Step 4: Transform to frontend format
+      const transformedHeadlines = [];
+      let headlineId = 0;
+      
+      for (const [topic, headlines] of Object.entries(headlinesWithSupport)) {
+        const topicPosts = postsByTopic[topic] || [];
+        
+        for (const headline of headlines) {
+          const sourcePosts = topicPosts.slice(0, 10).map(post => ({
+            handle: post.handle,
+            text: post.text,
+            time: post.time,
+            url: post.url,
+            likes: post.likes
+          }));
+          
+          const supportingArticles = headline.supportingArticles || [];
+          
+          transformedHeadlines.push({
+            id: `working-${Date.now()}-${headlineId++}`,
+            title: headline.title,
+            summary: headline.summary,
+            category: topic,
+            createdAt: new Date().toISOString(),
+            engagement: sourcePosts.reduce((sum, post) => sum + post.likes, 0),
+            sourcePosts,
+            supportingArticles
+          });
+        }
+      }
+      
+      const endTime = Date.now();
+      const responseTime = endTime - startTime;
+      
+      // Store headlines for podcast generation
+      headlinesStore = transformedHeadlines;
+      
+      console.log(`✅ Working workflow completed in ${responseTime}ms with ${transformedHeadlines.length} headlines`);
+      console.log(`📊 Generated headlines with real X posts and supporting articles`);
+      
+      res.json({ 
+        success: true, 
+        headlines: transformedHeadlines,
+        performance: {
+          responseTime: `${responseTime}ms`,
+          method: "X API + OpenAI",
+          realXPosts: Object.values(postsByTopic).reduce((sum, posts) => sum + posts.length, 0),
+          supportingArticles: transformedHeadlines.reduce((sum, h) => sum + h.supportingArticles.length, 0)
+        }
+      });
+    } catch (error) {
+      console.error("Error in /api/generate-headlines-v3:", error.message);
+      res.status(500).json({ 
+        message: "Working workflow failed: " + error.message,
+        stack: error.stack
+      });
+    }
+  });
+
   router.get("/api/headlines", (req, res) => {
     if (!headlinesStore.length) {
       return res.status(404).json({ headlines: [], message: "No headlines available" });
