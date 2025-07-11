@@ -133,10 +133,6 @@ async function compileNewsletterWithGrok(allTopicData) {
   
   // Prepare data summary for Grok
   const dataSummary = allTopicData.map(topicData => {
-    const xPostsText = topicData.xPosts.map(post => 
-      `X Post: ${post.text} (${post.public_metrics?.like_count || 0} likes) - ${post.url}`
-    ).join('\n');
-    
     const citationsText = topicData.citations.map((citation, index) => 
       `Citation [${index}]: ${citation}`
     ).join('\n');
@@ -144,10 +140,7 @@ async function compileNewsletterWithGrok(allTopicData) {
     return `
 TOPIC: ${topicData.topic}
 
-X POSTS:
-${xPostsText}
-
-WEB/NEWS DATA:
+LIVE SEARCH DATA:
 ${topicData.webData.substring(0, 1500)}
 
 CITATIONS (${topicData.citations.length} URLs):
