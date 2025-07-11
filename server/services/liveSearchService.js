@@ -131,6 +131,7 @@ async function fetchXPostDetailsFallback(url) {
 
 // Helper function to fetch X post details
 async function fetchXPostDetails(url) {
+  console.log('X Token present:', !!process.env.X_BEARER_TOKEN);
   // Extract post ID from URL
   const postId = url.split('/status/')[1]?.split('?')[0];
   if (postId && process.env.X_BEARER_TOKEN) {
@@ -181,6 +182,12 @@ function createFallbackXPost(url, postId) {
 // Helper function to fetch article title with improved validation
 async function fetchArticleTitle(url) {
   try {
+    // Skip blocked sites
+    if (url.includes('reuters.com')) {
+      console.log(`Skipping blocked site: ${url}`);
+      return null;
+    }
+    
     // Validate URL - skip homepage URLs and invalid schemes
     if (!isValidUrl(url)) {
       return null;
@@ -254,6 +261,12 @@ async function fetchArticleTitle(url) {
 // Helper function to fetch full article content
 async function fetchArticleContent(url) {
   try {
+    // Skip blocked sites
+    if (url.includes('reuters.com')) {
+      console.log(`Skipping blocked site: ${url}`);
+      return { headline: 'Unavailable', body: 'Content blocked', source: '' };
+    }
+    
     // Validate URL
     if (!isValidUrl(url)) {
       return { headline: 'Unavailable', body: 'Invalid URL', source: '' };
@@ -283,6 +296,7 @@ async function fetchArticleContent(url) {
         '.content p',
         '.article-body p',
         '.story-body p',
+        '.entry-content p',
         'div.text p',
         'div.body p'
       ];
@@ -360,12 +374,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
       const prompt = `What is the latest news related to ${topic}? 
+Focus on specific article URLs and X posts from verified users. 
 Respond ONLY as a JSON object with this exact structure:
 {
   "headlines": [
     {
       "title": "Factual headline based on real sources",
-      "summary": "Short factual summary with inline citations [0][1] from sources. Include at least 2 citations per summary using [n] format."
+      "summary": "Short factual summary with inline citations [0][1] from sources. Include at least 2 citations per summary using [n] format, preferring full article pages over category/homepages and recent X posts."
     }
   ]
 }
@@ -404,8 +419,8 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
               },
               {
                 type: "x",
-                post_favorite_count: 150,
-                post_view_count: 15000
+                post_favorite_count: 50,
+                post_view_count: 5000
               },
               {
                 type: "news", 
