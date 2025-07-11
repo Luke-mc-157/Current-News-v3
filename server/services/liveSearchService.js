@@ -176,7 +176,7 @@ Extract real URLs from the provided citations and X posts. No synthetic data.`
           content: dataSummary
         }
       ],
-      max_tokens: 4000
+      max_tokens: 10000
     });
     
     const content = response.choices[0].message.content;
