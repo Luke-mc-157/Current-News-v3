@@ -64,7 +64,7 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
         }
       ],
       temperature: 0.7,
-      max_tokens: Math.min(4000, targetWordCount * 2) // Allow some flexibility
+      max_tokens: Math.min(10000, targetWordCount * 2) // Allow some flexibility
     });
     
     const script = response.choices[0].message.content;
