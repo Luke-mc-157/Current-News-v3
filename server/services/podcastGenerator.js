@@ -63,6 +63,9 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
           content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(contentSummary, null, 2)}`
         }
       ],
+      search_parameters: {
+        mode: "on"
+      },
       temperature: 0.7,
       max_tokens: Math.min(10000, targetWordCount * 2) // Allow some flexibility
     });
