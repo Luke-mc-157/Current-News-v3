@@ -708,7 +708,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
     };
     
     // Optional: Generate refined newsletter using the aggregated data
-    const useNewsletter = false; // Toggle this to enable newsletter generation
+    const useNewsletter = true; // Toggle this to enable newsletter generation
     if (useNewsletter) {
       console.log("📰 Generating refined newsletter...");
       const newsletter = await generateNewsletter(aggregatedData, topics);
