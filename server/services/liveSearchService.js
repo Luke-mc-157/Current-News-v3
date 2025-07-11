@@ -366,19 +366,15 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What are the latest news and developments about ${topic}? 
-
-Respond ONLY as a JSON object with this exact structure:
+      const prompt = `Latest news about ${topic}. JSON format:
 {
   "headlines": [
     {
-      "title": "Specific factual headline from sources",
-      "summary": "Brief factual summary with citations [0][1] from sources"
+      "title": "News headline",
+      "summary": "Summary with citations [0][1]"
     }
   ]
-}
-
-Include inline citations [n] in summaries. Only facts from sources, no opinions.`;
+}`;
 
       try {
         // Calculate date 24 hours ago
@@ -391,7 +387,10 @@ Include inline citations [n] in summaries. Only facts from sources, no opinions.
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error("API call timed out after 2 minutes")), 120000);
+          setTimeout(() => {
+            console.log(`⏰ TIMEOUT: Topic ${topic} exceeded 60 seconds, aborting...`);
+            reject(new Error("API call timed out after 60 seconds"));
+          }, 60000);
         });
         
         // Call Live Search API with Grok 4 (updated model)
@@ -404,24 +403,13 @@ Include inline citations [n] in summaries. Only facts from sources, no opinions.
             }
           ],
           search_parameters: {
-            mode: "on",
-            from_date: fromDate,
+            mode: "auto",
             sources: [
               {
-                type: "x",
-                post_favorite_count: 10,
-                post_view_count: 1000
-              },
-              {
-                type: "web",
-                country: "US"
-              },
-              {
-                type: "news",
-                country: "US"
+                type: "web"
               }
             ],
-            max_search_results: 15,
+            max_search_results: 5,
             return_citations: true
           },
           response_format: { type: "json_object" }
@@ -452,27 +440,48 @@ Include inline citations [n] in summaries. Only facts from sources, no opinions.
         // Parse response with improved JSON extraction
         const content = response.choices[0].message.content;
         console.log(`📄 Raw response preview:`, content.substring(0, 400) + '...');
-        console.log(`📄 Full raw response:`, content);
-        
-        // Clean and extract JSON
-        let jsonContent = content.trim();
-        const jsonStart = jsonContent.indexOf('{');
-        const jsonEnd = jsonContent.lastIndexOf('}') + 1;
-        if (jsonStart >= 0 && jsonEnd > jsonStart) {
-          jsonContent = jsonContent.slice(jsonStart, jsonEnd);
-        }
         
         let topicHeadlines = [];
         
         try {
-          const parsed = JSON.parse(jsonContent);
+          // Try multiple JSON extraction strategies
+          let jsonContent = content.trim();
           
-          if (parsed.headlines && Array.isArray(parsed.headlines)) {
-            topicHeadlines = parsed.headlines;
-          } else {
-            console.warn(`Unexpected JSON structure for ${topic}`);
-            topicHeadlines = [];
+          // Strategy 1: Direct parse if already valid JSON
+          try {
+            const parsed = JSON.parse(jsonContent);
+            if (parsed.headlines && Array.isArray(parsed.headlines)) {
+              topicHeadlines = parsed.headlines;
+            }
+          } catch {
+            // Strategy 2: Extract JSON block
+            const jsonStart = jsonContent.indexOf('{');
+            const jsonEnd = jsonContent.lastIndexOf('}') + 1;
+            if (jsonStart >= 0 && jsonEnd > jsonStart) {
+              jsonContent = jsonContent.slice(jsonStart, jsonEnd);
+              try {
+                const parsed = JSON.parse(jsonContent);
+                if (parsed.headlines && Array.isArray(parsed.headlines)) {
+                  topicHeadlines = parsed.headlines;
+                }
+              } catch {
+                // Strategy 3: Find headlines array specifically
+                const headlinesMatch = jsonContent.match(/"headlines"\s*:\s*\[(.*?)\]/s);
+                if (headlinesMatch) {
+                  try {
+                    const headlinesJson = `{"headlines":[${headlinesMatch[1]}]}`;
+                    const parsed = JSON.parse(headlinesJson);
+                    topicHeadlines = parsed.headlines;
+                  } catch {
+                    console.log(`⚠️ All JSON parsing strategies failed for ${topic}`);
+                  }
+                }
+              }
+            }
           }
+          
+          console.log(`✅ Successfully parsed ${topicHeadlines.length} headlines for ${topic}`);
+          
         } catch (parseError) {
           console.log(`⚠️ JSON parse failed for ${topic}, extracting from text`);
           

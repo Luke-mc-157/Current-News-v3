@@ -19,12 +19,12 @@ export default function LiveSearchToggle({ useLiveSearch, onToggle }: LiveSearch
         )}
         <div>
           <Label htmlFor="live-search" className="text-sm font-medium">
-            {useLiveSearch ? "xAI Live Search" : "Classic Mode"}
+            {useLiveSearch ? "Real Sources Mode" : "Classic Mode"}
           </Label>
           <p className="text-xs text-muted-foreground">
             {useLiveSearch 
-              ? "Fast, single API call" 
-              : "Traditional workflow system (30-60s)"}
+              ? "Real X posts + articles (30-60s)" 
+              : "Traditional workflow system (60-90s)"}
           </p>
         </div>
       </div>
