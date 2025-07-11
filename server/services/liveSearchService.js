@@ -220,24 +220,8 @@ async function fetchArticleTitle(url) {
     title = title.replace(/ \| [^|]*$/, '').trim(); // Remove site name after |
     title = title.substring(0, 100);
     
-    // Enhanced filtering - skip generic/homepage titles
+    // Basic validation - only check for minimum length
     if (!title || title.length < 10) {
-      return null;
-    }
-    
-    const titleLower = title.toLowerCase();
-    if (titleLower.includes('home') || 
-        titleLower.includes('welcome') || 
-        titleLower === 'news' ||
-        titleLower.includes('breaking news') ||
-        title.length < 10) {
-      return null;
-    }
-    
-    // Check if title matches site name (e.g., just "CNN")
-    const urlObj = new URL(url);
-    const domain = urlObj.hostname.replace('www.', '').split('.')[0].toLowerCase();
-    if (titleLower === domain || titleLower === domain.toUpperCase()) {
       return null;
     }
     
@@ -406,10 +390,23 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
             mode: "auto",
             sources: [
               {
-                type: "web"
+                type: "x",
+                post_favorite_count: 10,
+                post_view_count: 1000
+              },
+              {
+                type: "web",
+                country: "US"
+              },
+              {
+                type: "news",
+                country: "US"
+              },
+              {
+                type: "rss"
               }
             ],
-            max_search_results: 5,
+            max_search_results: 15,
             return_citations: true
           },
           response_format: { type: "json_object" }
@@ -532,41 +529,21 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
           
           console.log(`🔍 Mapped citations: ${headlineCitations.slice(0,3).join(', ')}`);
           
-          // Create synthetic source data since xAI Live Search doesn't return citation URLs
-          const sourcePosts = [];
-          const supportingArticles = [];
+          // Use mapped citations if found, otherwise use all topic citations
+          const finalCitations = headlineCitations.length > 0 ? headlineCitations : topicCitations.slice(0, 3);
           
-          // Create believable source posts based on the headline content
-          if (headline.title && headline.summary) {
-            // Create 2-3 source posts per headline
-            for (let i = 0; i < 3; i++) {
-              sourcePosts.push({
-                handle: `@${topic.toLowerCase()}news`,
-                text: `${headline.summary.split('.')[0]}.`,
-                time: new Date(Date.now() - Math.random() * 24 * 60 * 60 * 1000).toISOString(),
-                url: `https://x.com/${topic.toLowerCase()}news/status/${Date.now() + i}`,
-                likes: Math.floor(Math.random() * 500) + 50
-              });
-            }
-            
-            // Create 1-2 supporting articles
-            for (let i = 0; i < 2; i++) {
-              supportingArticles.push({
-                title: headline.title,
-                url: `https://example-news-${i}.com/article/${Date.now() + i}`,
-                source: `News Source ${i + 1}`
-              });
-            }
-          }
+          const xUrls = finalCitations.filter(url => url.includes('x.com') || url.includes('twitter.com'));
+          const articleUrls = finalCitations.filter(url => !url.includes('x.com') && !url.includes('twitter.com'));
           
-          console.log(`🔍 Created ${sourcePosts.length} source posts and ${supportingArticles.length} articles`);
+          console.log(`🔍 Final result - X URLs: ${xUrls.length}, Article URLs: ${articleUrls.length}`);
           
           return {
             ...headline,
             category: topic,
-            sourcePosts: sourcePosts,
-            supportingArticles: supportingArticles,
-            engagement: Math.floor(Math.random() * 800) + 200
+            topicCitations: finalCitations,
+            xUrls: xUrls,
+            articleUrls: articleUrls,
+            engagement: calculateEngagement(finalCitations)
           };
         });
         
@@ -628,27 +605,18 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         console.log(`No X for ${headline.category}`);
       }
       
-      // Create supporting articles with real titles and filtering
+      // Create supporting articles with real titles
       const supportingArticlesRaw = await Promise.all(
         articleCitations.slice(0, 5).map(async url => {
           // Try to fetch actual title
           let title = await fetchArticleTitle(url);
           
-          // If title includes 'Home', 'Welcome', or length <15, set null
-          if (title && (title.includes('Home') || title.includes('Welcome') || title.length < 15)) {
-            title = null;
-          }
-          
-          // Fallback to URL extraction if fetch fails and still viable
+          // Fallback to URL extraction if fetch fails
           if (!title) {
             title = extractTitleFromUrl(url, headline);
-            // Re-check the extracted title
-            if (title && (title.includes('Home') || title.includes('Welcome') || title.length < 15)) {
-              title = null;
-            }
           }
           
-          // If title is null, mark for filtering
+          // Only filter if title is null/undefined
           if (!title) {
             return null;
           }
@@ -680,25 +648,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         })
       );
 
-      // Filter out null articles and log if all are bad
-      const supportingArticles = supportingArticlesRaw.filter(article => article !== null);
-      if (supportingArticlesRaw.length > 0 && supportingArticles.length === 0) {
-        console.log(`Bad articles for [${headline.title}] - all filtered out as homepage/generic`);
-      }
-      
-      // Additional validation - filter out articles with titles that are too generic
-      const validArticles = supportingArticles.filter(article => {
-        const title = article.title;
-        if (!title || title.length < 15) return false;
-        
-        const titleLower = title.toLowerCase();
-        const genericTerms = ['news', 'home', 'welcome', 'breaking', 'latest'];
-        const isGeneric = genericTerms.some(term => 
-          titleLower === term || titleLower.startsWith(term + ' ') || titleLower.endsWith(' ' + term)
-        );
-        
-        return !isGeneric;
-      });
+      // Filter out null articles only
+      const validArticles = supportingArticlesRaw.filter(article => article !== null);
 
       // Log warnings if sources are low
       if (sourcePosts.length < 5) {
