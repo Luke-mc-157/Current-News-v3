@@ -76,11 +76,11 @@ async function getTopicDataFromLiveSearch(topic) {
         }
       ],
       search_parameters: {
-        mode: "auto",
-        max_search_results: 15,
+        mode: "on",
+        max_search_results: 20,
         return_citations: true
       },
-      max_tokens: 1000
+      max_tokens: 5000
     });
     
     const content = response.choices[0].message.content;
