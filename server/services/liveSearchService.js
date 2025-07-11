@@ -29,7 +29,7 @@ const GENERIC_TITLES = [
 const openai = new OpenAI({ 
   baseURL: "https://api.x.ai/v1", 
   apiKey: process.env.XAI_API_KEY,
-  timeout: 360000 // 6 minutes timeout as recommended for reasoning models
+  timeout: 120000 // 2 minutes timeout for faster testing
 });
 
 // Sleep helper for delays
@@ -183,11 +183,7 @@ function createFallbackXPost(url, postId) {
 // Helper function to fetch article title with improved validation
 async function fetchArticleTitle(url) {
   try {
-    // Skip blocked sites
-    if (url.includes('reuters.com')) {
-      console.log(`Skipping blocked site: ${url}`);
-      return null;
-    }
+
     
     // Validate URL - skip homepage URLs and invalid schemes
     if (!isValidUrl(url)) {
@@ -262,11 +258,7 @@ async function fetchArticleTitle(url) {
 // Helper function to fetch full article content
 async function fetchArticleContent(url) {
   try {
-    // Skip blocked sites
-    if (url.includes('reuters.com')) {
-      console.log(`Skipping blocked site: ${url}`);
-      return { headline: 'Unavailable', body: 'Content blocked', source: '' };
-    }
+
     
     // Validate URL
     if (!isValidUrl(url)) {
@@ -399,7 +391,7 @@ Include inline citations [n] in summaries. Only facts from sources, no opinions.
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error("API call timed out after 6 minutes")), 360000);
+          setTimeout(() => reject(new Error("API call timed out after 2 minutes")), 120000);
         });
         
         // Call Live Search API with Grok 4 (updated model)
@@ -680,8 +672,8 @@ Include inline citations [n] in summaries. Only facts from sources, no opinions.
     // Sort by engagement
     transformedHeadlines.sort((a, b) => b.engagement - a.engagement);
     
-    // Filter headlines through authenticity analyzer
-    const authenticHeadlines = await filterWithAnalyzer(transformedHeadlines);
+    // Use all generated headlines without authenticity filtering
+    const authenticHeadlines = transformedHeadlines;
     
     // Collect aggregated data for newsletter generation
     console.log("📊 Collecting aggregated data for enhanced processing...");
@@ -789,78 +781,7 @@ function mapToExistingCategory(liveSearchCategory, originalTopics) {
   return liveSearchCategory;
 }
 
-// Filter headlines through authenticity analyzer
-async function filterWithAnalyzer(headlines) {
-  try {
-    // Extract all source posts for analysis
-    const postsForAnalysis = headlines.flatMap(h => 
-      h.sourcePosts.map(p => ({
-        text: h.summary, // Using headline summary as the text to analyze
-        realText: p.text, // Include real fetched text from X posts
-        author_handle: p.handle,
-        public_metrics: { 
-          like_count: p.likes || 0,
-          retweet_count: 0,
-          reply_count: 0,
-          view_count: 0
-        },
-        url: p.url
-      }))
-    );
-    
-    // If no posts to analyze, return all headlines
-    if (postsForAnalysis.length === 0) {
-      console.log("⚠️ No source posts to analyze for authenticity");
-      return headlines;
-    }
-    
-    // Analyze posts for authenticity
-    const authenticPosts = await analyzePostsForAuthenticity(postsForAnalysis);
-    
-    // Create a set of authentic URLs for fast lookup
-    const authenticUrls = new Set(authenticPosts.map(p => p.url));
-    
-    // Filter headlines: keep only those with at least one authentic source post
-    const authenticHeadlines = headlines.filter(h => {
-      const authenticSourceCount = h.sourcePosts.filter(p => authenticUrls.has(p.url)).length;
-      
-      // Keep headline if sourcePosts.length === 0 or avg score > 0.4
-      if (h.sourcePosts.length === 0) {
-        console.log(`✅ Keeping headline "${h.title}" - no source posts to analyze`);
-        return true;
-      }
-      
-      // If no authentic sources but has source posts, check average score with 0.4 threshold
-      if (authenticSourceCount === 0) {
-        if (authenticPosts.length > 0) {
-          const averageScore = authenticPosts.reduce((sum, p) => sum + p.authenticity_score, 0) / authenticPosts.length;
-          if (averageScore > 0.4) {
-            console.log(`✅ Keeping headline "${h.title}" - average authenticity score ${averageScore.toFixed(2)} > 0.4`);
-            return true;
-          }
-        }
-        console.log(`❌ Filtered out headline "${h.title}" - no authentic sources and low average score`);
-        return false;
-      }
-      
-      const hasAuthenticSources = authenticSourceCount > 0;
-      
-      if (!hasAuthenticSources) {
-        console.log(`❌ Filtered out headline "${h.title}" - no authentic sources`);
-      }
-      
-      return hasAuthenticSources;
-    });
-    
-    console.log(`✅ Authenticity filter: ${authenticHeadlines.length}/${headlines.length} headlines passed`);
-    return authenticHeadlines;
-    
-  } catch (error) {
-    console.error("Error in authenticity filtering:", error);
-    // Return all headlines if filtering fails
-    return headlines;
-  }
-}
+
 
 // Helper function to validate URLs
 function isValidUrl(url) {
