@@ -75,7 +75,7 @@ async function getTopicDataFromLiveSearch(topic) {
   const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-mini",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "user",
