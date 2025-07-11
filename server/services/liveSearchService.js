@@ -72,7 +72,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "user",
-          content: `Get latest news about ${topic} from web sources, news outlets, and RSS feeds. Include source URLs.`
+          content: `Get latest news about ${topic} from from the last 24 hours. Include source URLs in your citations.`
         }
       ],
       search_parameters: {
@@ -80,7 +80,7 @@ async function getTopicDataFromLiveSearch(topic) {
         max_search_results: 15,
         return_citations: true
       },
-      max_tokens: 5000
+      max_tokens: 4000
     });
     
     const content = response.choices[0].message.content;
