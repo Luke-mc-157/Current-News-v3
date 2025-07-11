@@ -28,7 +28,8 @@ const GENERIC_TITLES = [
 
 const openai = new OpenAI({ 
   baseURL: "https://api.x.ai/v1", 
-  apiKey: process.env.XAI_API_KEY 
+  apiKey: process.env.XAI_API_KEY,
+  timeout: 360000 // 6 minutes timeout as recommended for reasoning models
 });
 
 // Sleep helper for delays
@@ -373,18 +374,19 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What is the latest news related to ${topic} within the last 24 hours? Limit to 3-5 key stories. 
-Focus on specific article URLs and X posts from verified users. 
+      const prompt = `What are the latest news and developments about ${topic}? 
+
 Respond ONLY as a JSON object with this exact structure:
 {
   "headlines": [
     {
-      "title": "Factual headline based on real sources",
-      "summary": "Short factual summary with inline citations [0][1] from sources. Include at least 2 citations per summary using [n] format, preferring full article pages over category/homepages and recent X posts."
+      "title": "Specific factual headline from sources",
+      "summary": "Brief factual summary with citations [0][1] from sources"
     }
   ]
 }
-Mandatory: Include inline citations [n] referencing citation order. ZERO opinions or introductions. Only facts from sources.`;
+
+Include inline citations [n] in summaries. Only facts from sources, no opinions.`;
 
       try {
         // Calculate date 24 hours ago
@@ -397,12 +399,12 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         console.log(`⏱️ Starting API call for topic: ${topic}`);
         
         const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => reject(new Error("API call timed out after 3 minutes")), 180000);
+          setTimeout(() => reject(new Error("API call timed out after 6 minutes")), 360000);
         });
         
         // Call Live Search API with Grok 4 (updated model)
         const apiPromise = openai.chat.completions.create({
-          model: "grok-4-0709",
+          model: "grok-4",
           messages: [
             {
               role: "user",
@@ -415,15 +417,19 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
             sources: [
               {
                 type: "x",
-                post_favorite_count: 25,
-                post_view_count: 2000
+                post_favorite_count: 10,
+                post_view_count: 1000
               },
               {
-                type: "news", 
+                type: "web",
+                country: "US"
+              },
+              {
+                type: "news",
                 country: "US"
               }
             ],
-            max_search_results: 5,
+            max_search_results: 15,
             return_citations: true
           },
           response_format: { type: "json_object" }
@@ -441,6 +447,8 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         
         // Debug: Log actual citations to understand the data structure
         console.log('🔍 DEBUG: Citation sample:', topicCitations.slice(0, 3));
+        console.log('🔍 DEBUG: Full citations structure:', JSON.stringify(topicCitations, null, 2));
+        console.log('🔍 DEBUG: Full response object keys:', Object.keys(response));
         
         // Debug: Check for X URLs specifically
         const xUrls = topicCitations.filter(url => 
@@ -451,7 +459,8 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
         
         // Parse response with improved JSON extraction
         const content = response.choices[0].message.content;
-        console.log(`📄 Raw response preview:`, content.substring(0, 200) + '...');
+        console.log(`📄 Raw response preview:`, content.substring(0, 400) + '...');
+        console.log(`📄 Full raw response:`, content);
         
         // Clean and extract JSON
         let jsonContent = content.trim();
@@ -712,7 +721,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
     };
     
     // Optional: Generate refined newsletter using the aggregated data
-    const useNewsletter = true; // Toggle this to enable newsletter generation
+    const useNewsletter = false; // Toggle this to enable newsletter generation
     if (useNewsletter) {
       console.log("📰 Generating refined newsletter...");
       const newsletter = await generateNewsletter(aggregatedData, topics);
@@ -727,7 +736,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
           createdAt: new Date().toISOString(),
           engagement: 1000 + index * 100,
           sourcePosts: [],
-          supportingArticles: story.citations.map(url => ({
+          supportingArticles: story.citations.filter(url => isValidUrl(url)).map(url => ({
             title: "Article",
             url: url,
             source: new URL(url).hostname
