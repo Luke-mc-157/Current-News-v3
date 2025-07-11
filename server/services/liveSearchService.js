@@ -431,7 +431,7 @@ Mandatory: Include inline citations [n] referencing citation order. ZERO opinion
                 links: ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]
               }
             ],
-            max_search_results: 20,
+            max_search_results: 10,
             return_citations: true
           },
           response_format: { type: "json_object" }
