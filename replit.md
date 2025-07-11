@@ -119,6 +119,11 @@ The application now includes a comprehensive podcast generation system:
   - **Fixes Applied**: Increased max_tokens to 10000, truncated web data to 1500 chars per topic, truncated citations to 500 chars per topic
   - **Results**: 3-topic test shows "Generated 3 headlines from 3 topics" (all topics processed vs previous 1 topic only)
   - **Data Collection**: Working perfectly for all topics (15 citations each), newsletter compilation was the bottleneck
+- **✅ FIXED HOME PAGE LINKS ISSUE**: Resolved supporting articles linking to home pages instead of specific articles
+  - **Root Cause**: Citation truncation (500 chars) was cutting off specific article URLs during newsletter compilation
+  - **Fix Applied**: Removed citation truncation, enhanced Grok-4 instructions to use exact URLs from citations
+  - **System Enhancement**: Added explicit "CRITICAL: Extract exact URLs from citations" instruction to prevent generic home page links
+  - **Result**: Supporting articles now preserve specific article URLs from xAI Live Search citations
 - **STREAMLINED ARCHITECTURE**: Reduced codebase complexity using "chainsaw" approach
   - liveSearchService.js: 700+ lines → 240 lines (essential flow only)
   - xaiAnalyzer.js: 300+ lines → 70 lines (basic categorization only)

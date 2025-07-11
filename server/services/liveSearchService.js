@@ -92,6 +92,12 @@ async function getTopicDataFromLiveSearch(topic) {
       console.log(`🔗 Citations: ${citations.slice(0, 3).join(', ')}`);
     }
     
+    // Debug: Log raw response data for user analysis
+    console.log(`\n🔍 RAW xAI RESPONSE FOR ${topic}:`);
+    console.log(`📄 Full Content: ${content}`);
+    console.log(`📋 All Citations: ${JSON.stringify(citations, null, 2)}`);
+    console.log(`🔚 END RAW RESPONSE FOR ${topic}\n`);
+    
     return {
       content: content,
       citations: citations
@@ -128,8 +134,8 @@ ${xPostsText}
 WEB/NEWS DATA:
 ${topicData.webData.substring(0, 1500)}
 
-CITATIONS:
-${citationsText.substring(0, 500)}
+CITATIONS (${topicData.citations.length} URLs):
+${citationsText}
 `;
   }).join('\n\n---\n\n');
   
@@ -169,7 +175,7 @@ Return ONLY a JSON array of headlines in this exact format:
   }
 ]
 
-Extract real URLs from the provided citations and X posts. No synthetic data.`
+CRITICAL: Extract exact URLs from the provided citations. Use specific article URLs, not home page URLs. Each supporting article must have a real URL from the citation list. No synthetic data.`
         },
         {
           role: "user",

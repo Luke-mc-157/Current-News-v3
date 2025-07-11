@@ -251,6 +251,98 @@ export function registerRoutes(app) {
     }
   });
 
+  // Test endpoint to see raw xAI Live Search responses
+  router.post("/api/test-raw-xai", async (req, res) => {
+    const { topics } = req.body;
+    if (!topics || topics.length < 1) {
+      return res.status(400).json({ message: "At least 1 topic required" });
+    }
+
+    try {
+      console.log('🧪 Testing raw xAI Live Search responses');
+      
+      // Import OpenAI client
+      const OpenAI = (await import('openai')).default;
+      const client = new OpenAI({
+        baseURL: "https://api.x.ai/v1",
+        apiKey: process.env.XAI_API_KEY,
+      });
+      
+      const rawResponses = [];
+      
+      // Test just the first topic for faster response
+      const topic = topics[0];
+      console.log(`🔍 Testing raw xAI response for: ${topic}`);
+      
+      try {
+        const response = await Promise.race([
+          client.chat.completions.create({
+            model: "grok-4",
+            messages: [
+              {
+                role: "user",
+                content: `Get latest news about ${topic} from from the last 24 hours. Include source URLs in your citations.`
+              }
+            ],
+            search_parameters: {
+              mode: "on",
+              max_search_results: 15,
+              return_citations: true
+            },
+            max_tokens: 2000
+          }),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Request timeout')), 30000)
+          )
+        ]);
+        
+        const content = response.choices[0].message.content;
+        const citations = response.citations || [];
+        
+        console.log(`📄 Raw response received: ${content.length} chars, ${citations.length} citations`);
+        
+        rawResponses.push({
+          topic: topic,
+          content: content,
+          citations: citations,
+          contentLength: content.length,
+          citationCount: citations.length,
+          citationPreview: citations.slice(0, 5), // Show first 5 citations
+          contentPreview: content.substring(0, 1000) + (content.length > 1000 ? '...' : ''),
+          fullResponse: {
+            content: content,
+            citations: citations,
+            responseMetadata: {
+              model: response.model,
+              usage: response.usage
+            }
+          }
+        });
+        
+      } catch (error) {
+        console.error(`❌ Error for topic ${topic}:`, error.message);
+        rawResponses.push({
+          topic: topic,
+          error: error.message,
+          content: '',
+          citations: []
+        });
+      }
+      
+      res.json({ 
+        success: true, 
+        rawResponses: rawResponses,
+        totalTopics: rawResponses.length,
+        message: `Retrieved raw xAI response for ${topic}`,
+        note: "This is the raw response before any processing in the livesearch workflow"
+      });
+      
+    } catch (error) {
+      console.error('❌ Error testing raw xAI:', error.message);
+      res.status(500).json({ message: error.message });
+    }
+  });
+
   router.get("/api/headlines", (req, res) => {
     if (!headlinesStore.length) {
       return res.status(404).json({ headlines: [], message: "No headlines available" });
