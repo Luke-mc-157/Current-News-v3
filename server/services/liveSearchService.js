@@ -52,8 +52,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
-  // Step 2: Send all collected data to Grok-4 for newsletter compilation
-  console.log('📝 Step 2: Compiling newsletter with Grok-4...');
+  // Step 2: Send all collected data to Grok for newsletter compilation
+  console.log('📝 Step 2: Compiling newsletter with Grok...');
   const newsletter = await compileNewsletterWithGrok(allTopicData);
   
   const responseTime = Date.now() - startTime;
@@ -87,10 +87,11 @@ async function getTopicDataFromLiveSearch(topic) {
         max_search_results: 25,
         return_citations: true,
         from_date: fromDate,
-          to_date: toDate
-        },
-        max_tokens: 20000
-        });
+        to_date: toDate,
+        sources: [{ "type": "x", "post_view_count": 50000 }]
+      },
+      max_tokens: 20000
+    });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
     
