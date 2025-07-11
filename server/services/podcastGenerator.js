@@ -31,7 +31,7 @@ export async function generatePodcastScript(compiledContent, durationMinutes = 1
     }));
     
     const response = await xai.chat.completions.create({
-      model: "grok-4-0709",
+      model: "grok-3-fast",
       messages: [
         {
           role: "system",

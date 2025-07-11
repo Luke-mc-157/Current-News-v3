@@ -68,7 +68,7 @@ async function getTopicDataFromLiveSearch(topic) {
   
   try {
     const response = await client.chat.completions.create({
-      model: "grok-4",
+      model: "grok-3-fast",
       messages: [
         {
           role: "user",
@@ -113,7 +113,7 @@ async function getTopicDataFromLiveSearch(topic) {
 }
 
 async function compileNewsletterWithGrok(allTopicData) {
-  console.log('🤖 Compiling newsletter with Grok-4...');
+  console.log('🤖 Compiling newsletter with grok-3-fast...');
   
   // Prepare data summary for Grok
   const dataSummary = allTopicData.map(topicData => {
@@ -144,7 +144,7 @@ ${citationsText}
   
   try {
     const response = await client.chat.completions.create({
-      model: "grok-4",
+      model: "grok-3-fast",
       messages: [
         {
           role: "system",
