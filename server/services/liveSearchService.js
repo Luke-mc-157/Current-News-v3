@@ -191,7 +191,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
           content: dataSummary
         }
       ],
-      max_tokens: 10000
+      max_tokens: 20000
     });
     
     const content = response.choices[0].message.content;
