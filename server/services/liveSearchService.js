@@ -89,12 +89,12 @@ async function getTopicDataFromLiveSearch(topic) {
         from_date: fromDate,
         to_date: toDate,
         sources: [
-          {"type": "web"},
-          {"type": "x", "post_view_count": 10000},
+          {"type": "web", "country": "US" },
+          {"type": "x", "post_view_count": 2500},
           {"type": "news"}
         ]
       },
-      max_tokens: 40000
+      max_tokens: 50000
     });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
@@ -157,7 +157,7 @@ ${citationsText}
       messages: [
         {
           role: "system",
-          content: `You are a news editor. Create headlines and supporting information from the provided data. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinioted verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement first.
+          content: `You are a news editor. Create headlines and supporting information from the provided data. Create as many headlines as allowed by the data. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
 
 Return ONLY a JSON array of headlines in this exact format:
 [
@@ -167,11 +167,11 @@ Return ONLY a JSON array of headlines in this exact format:
     "category": "topic name",
     "sourcePosts": [
       {
-        "handle": "@username",
+        "X handle": "@username",
         "text": "post text",
         "url": "x.com URL",
         "time": "timestamp",
-        "likes": number
+        "views": number
       }
     ],
     "supportingArticles": [
