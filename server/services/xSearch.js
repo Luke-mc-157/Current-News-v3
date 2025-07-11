@@ -157,14 +157,13 @@ export async function fetchXPosts(topics, userId = 'default') {
     }
   }
 
-  console.log(`Found ${allAuthenticPosts.length} total authentic posts. Analyzing with xAI...`);
+  console.log(`Found ${allAuthenticPosts.length} total authentic posts.`);
 
   // Remove duplicates based on post text
   const uniquePosts = Array.from(
     new Map(allAuthenticPosts.map(post => [post.text.substring(0, 100), post])).values()
   );
 
-  // Skip authenticity analysis as requested - use all posts
   console.log(`✅ Using all ${uniquePosts.length} unique posts without authenticity filtering`);
 
   // Use xAI for intelligent categorization  

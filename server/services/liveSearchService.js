@@ -11,8 +11,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   console.log('🚀 Using xAI Live Search for headlines generation');
   const startTime = Date.now();
   
-  // Step 1: Collect all data from all sources for all topics
-  console.log('📡 Step 1: Collecting data from all sources...');
+  // Step 1: Call xAI Live Search API first for all topics
+  console.log('📡 Step 1: xAI Live Search API calls for all topics...');
   const allTopicData = [];
   
   for (let i = 0; i < topics.length; i++) {
@@ -20,16 +20,14 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
     
     try {
-      // Get X posts using existing X API integration
-      console.log(`🐦 Fetching X posts for ${topic}...`);
-      const xPosts = await fetchXPosts([topic], userId);
-      const topicXPosts = xPosts[0]?.posts || [];
-      console.log(`📱 Found ${topicXPosts.length} X posts for ${topic}`);
-      
-      // Get web/news/RSS data using xAI Live Search
-      console.log(`🌐 Fetching web/news/RSS data for ${topic}...`);
+      // First: Get data from xAI Live Search API (X, web, news, RSS)
+      console.log(`🌐 xAI Live Search for ${topic}...`);
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
-      console.log(`📰 Found ${liveSearchData.citations?.length || 0} citations for ${topic}`);
+      console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
+      
+      // Second: Skip X API search - xAI Live Search already includes X data
+      console.log(`⏭️ Skipping separate X API search - xAI Live Search includes X data`);
+      const topicXPosts = [];
       
       allTopicData.push({
         topic: topic,
@@ -79,24 +77,6 @@ async function getTopicDataFromLiveSearch(topic) {
       ],
       search_parameters: {
         mode: "auto",
-        sources: [
-          {
-            type: "x",
-            post_favorite_count: 10,
-            post_view_count: 1000
-          },
-          {
-            type: "web",
-            country: "US"
-          },
-          {
-            type: "news",
-            country: "US"
-          },
-          {
-            type: "rss"
-          }
-        ],
         max_search_results: 15,
         return_citations: true
       },
@@ -107,6 +87,10 @@ async function getTopicDataFromLiveSearch(topic) {
     const citations = response.citations || [];
     
     console.log(`📊 Live Search returned ${content.length} chars, ${citations.length} citations`);
+    console.log(`🔍 Content preview: ${content.substring(0, 200)}...`);
+    if (citations.length > 0) {
+      console.log(`🔗 Citations: ${citations.slice(0, 3).join(', ')}`);
+    }
     
     return {
       content: content,
@@ -186,7 +170,7 @@ Extract real URLs from the provided citations and X posts. No synthetic data.`
         },
         {
           role: "user",
-          content: dataSum‌mary
+          content: dataSummary
         }
       ],
       max_tokens: 2000
