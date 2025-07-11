@@ -77,7 +77,7 @@ async function getTopicDataFromLiveSearch(topic) {
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 20,
+        max_search_results: 15,
         return_citations: true
       },
       max_tokens: 5000
