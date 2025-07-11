@@ -88,7 +88,11 @@ async function getTopicDataFromLiveSearch(topic) {
         return_citations: true,
         from_date: fromDate,
         to_date: toDate,
-        sources: [{ "type": "x", "post_view_count": 50000 }]
+        sources: [
+          {"type": "web"},
+          {"type": "x", "post_view_count": 50000},
+          {"type": "news"}
+        ]
       },
       max_tokens: 20000
     });
