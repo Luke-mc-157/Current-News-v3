@@ -72,7 +72,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "user",
-          content: `Get latest news about ${topic} from from the last 24 hours. Include source URLs in your citations.`
+          content: `Get latest news about ${topic} from from the last 24 hours. Include complete source URLs to specific posts and articles in your citations. Only include data posted or written from the last 24 hours.`
         }
       ],
       search_parameters: {
