@@ -90,11 +90,11 @@ async function getTopicDataFromLiveSearch(topic) {
         to_date: toDate,
         sources: [
           {"type": "web"},
-          {"type": "x", "post_view_count": 50000},
+          {"type": "x", "post_view_count": 10000},
           {"type": "news"}
         ]
       },
-      max_tokens: 20000
+      max_tokens: 40000
     });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
