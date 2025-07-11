@@ -373,7 +373,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const topic = topics[i];
       console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
       
-      const prompt = `What is the latest news related to ${topic}? 
+      const prompt = `What is the latest news related to ${topic} within the last 24 hours? Limit to 3-5 key stories. 
 Focus on specific article URLs and X posts from verified users. 
 Respond ONLY as a JSON object with this exact structure:
 {
