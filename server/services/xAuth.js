@@ -1,7 +1,8 @@
 import { TwitterApi } from 'twitter-api-v2';
 
-// Your X app's Client ID from developer portal
-const clientId = process.env.X_CLIENT_ID; // Store in Replit env vars for security
+// Use X Bearer Token for API access (simpler than OAuth)
+const bearerToken = process.env.X_BEARER_TOKEN;
+const clientId = process.env.X_CLIENT_ID; // Optional for OAuth
 const callbackUrl = process.env.REPL_SLUG && process.env.REPL_OWNER
   ? `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`
   : 'http://localhost:5000/auth/twitter/callback';
@@ -75,14 +76,23 @@ export function createAuthenticatedClient(accessToken) {
   return new TwitterApi(accessToken);
 }
 
+// Create bearer token client (no user auth required)
+export function createBearerTokenClient() {
+  if (!bearerToken) {
+    throw new Error('X Bearer Token not configured');
+  }
+  return new TwitterApi(bearerToken);
+}
+
 // Verify if X API credentials are configured
 export function isXAuthConfigured() {
-  return Boolean(clientId);
+  return Boolean(bearerToken || clientId);
 }
 
 // Get configuration status
 export function getXAuthStatus() {
   console.log('X Auth Status:', {
+    bearerToken: bearerToken ? 'Present' : 'Missing',
     clientId: clientId ? 'Present' : 'Missing',
     callbackUrl,
     replSlug: process.env.REPL_SLUG,
@@ -91,7 +101,9 @@ export function getXAuthStatus() {
   
   return {
     configured: isXAuthConfigured(),
+    bearerTokenPresent: Boolean(bearerToken),
     clientIdPresent: Boolean(clientId),
+    oauthAvailable: Boolean(clientId),
     callbackUrl
   };
 }

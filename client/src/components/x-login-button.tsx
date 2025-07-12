@@ -61,7 +61,23 @@ export default function XLoginButton({
         throw new Error('Failed to generate login URL');
       }
 
-      const { loginUrl } = await response.json();
+      const responseData = await response.json();
+      
+      // Handle bearer token authentication (no user login required)
+      if (responseData.bearerTokenAuth) {
+        toast({
+          title: "X API Connected",
+          description: "Using bearer token authentication - ready to fetch posts!",
+        });
+        setAuthStatus('Bearer Token Active');
+        setIsLoading(false);
+        if (onAuthSuccess) {
+          onAuthSuccess('bearer_token_active');
+        }
+        return;
+      }
+      
+      const { loginUrl } = responseData;
       
       // Open X login in new window
       const authWindow = window.open(
