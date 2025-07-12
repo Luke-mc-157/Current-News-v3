@@ -1,4 +1,4 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens } from "@shared/schema";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -21,6 +21,11 @@ export interface IStorage {
   getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined>;
   getLatestPodcastEpisode(userId: number): Promise<PodcastEpisode | undefined>;
   updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined>;
+  
+  // X Auth token methods
+  createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens>;
+  getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined>;
+  updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined>;
 }
 
 export class MemStorage implements IStorage {
@@ -30,12 +35,14 @@ export class MemStorage implements IStorage {
   private podcastSettings: Map<number, PodcastSettings>;
   private podcastContent: Map<number, PodcastContent>;
   private podcastEpisodes: Map<number, PodcastEpisode>;
+  private xAuthTokens: Map<number, XAuthTokens>;
   private currentId: number;
   private currentTopicsId: number;
   private currentHeadlineId: number;
   private currentPodcastId: number;
   private currentContentId: number;
   private currentEpisodeId: number;
+  private currentTokenId: number;
 
   constructor() {
     this.users = new Map();
@@ -44,12 +51,14 @@ export class MemStorage implements IStorage {
     this.podcastSettings = new Map();
     this.podcastContent = new Map();
     this.podcastEpisodes = new Map();
+    this.xAuthTokens = new Map();
     this.currentId = 1;
     this.currentTopicsId = 1;
     this.currentHeadlineId = 1;
     this.currentPodcastId = 1;
     this.currentContentId = 1;
     this.currentEpisodeId = 1;
+    this.currentTokenId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -90,14 +99,20 @@ export class MemStorage implements IStorage {
   async createHeadline(headline: InsertHeadline): Promise<Headline> {
     const id = this.currentHeadlineId++;
     const newHeadline: Headline = {
-      id,
+      id: id.toString(),
       title: headline.title,
       summary: headline.summary,
       category: headline.category,
-      engagement: headline.engagement,
-      sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts as Array<{text: string, url: string}> : [],
-      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles as Array<{title: string, url: string}> : [],
-      createdAt: new Date()
+      engagement: typeof headline.engagement === 'string' ? parseInt(headline.engagement) : 0,
+      sourcePosts: (headline.sourcePosts || []).map((post: any) => ({
+        handle: post.handle || '',
+        text: post.text || '',
+        time: post.time || '',
+        url: post.url || '',
+        likes: post.likes || 0
+      })),
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : [],
+      createdAt: new Date().toISOString()
     };
     this.headlines.set(id, newHeadline);
     return newHeadline;
@@ -105,7 +120,7 @@ export class MemStorage implements IStorage {
 
   async getHeadlines(): Promise<Headline[]> {
     return Array.from(this.headlines.values()).sort(
-      (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
+      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );
   }
 
@@ -187,6 +202,37 @@ export class MemStorage implements IStorage {
     const updatedEpisode = { ...episode, ...updates };
     this.podcastEpisodes.set(id, updatedEpisode);
     return updatedEpisode;
+  }
+
+  async createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens> {
+    const id = this.currentTokenId++;
+    const newToken: XAuthTokens = {
+      id,
+      userId: token.userId,
+      xHandle: token.xHandle,
+      accessToken: token.accessToken,
+      refreshToken: token.refreshToken || null,
+      expiresAt: token.expiresAt || null,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
+    this.xAuthTokens.set(id, newToken);
+    return newToken;
+  }
+
+  async getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined> {
+    return Array.from(this.xAuthTokens.values()).find(
+      (token) => token.userId === userId
+    );
+  }
+
+  async updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined> {
+    const token = await this.getXAuthTokenByUserId(userId);
+    if (!token) return undefined;
+    
+    const updatedToken = { ...token, ...updates, updatedAt: new Date() };
+    this.xAuthTokens.set(token.id, updatedToken);
+    return updatedToken;
   }
 }
 

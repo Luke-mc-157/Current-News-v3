@@ -122,6 +122,14 @@ The application now includes a comprehensive podcast generation system:
   - **Mark - ConvoAI** (1SM7GgM6IMuvQlz2BwM3): ConvoAI voice
   - Total voice options: 8 premium voices available system-wide
   - Voice options synchronized between main app and test environment
+- **✅ X TIMELINE INTEGRATION**: Implemented user timeline posts fetching and integration
+  - PostgreSQL database schema updated with `x_auth_tokens` table for secure token storage
+  - Database storage layer updated to handle X authentication tokens (create, read, update)
+  - X OAuth callback now stores user tokens in database for persistent authentication
+  - `liveSearchService.js` enhanced to accept `userHandle` and `accessToken` parameters
+  - Timeline posts fetched from followed accounts (last 24h, up to 500 posts across 5 pages)
+  - Posts categorized by topics using xAI and integrated with Live Search results
+  - Enhanced headlines generation includes personalized content from user's timeline
 
 ### Previous Updates (January 11, 2025)
 - **✅ SUCCESSFUL xAI LIVE SEARCH IMPLEMENTATION**: Fixed API configuration and achieved working live search system

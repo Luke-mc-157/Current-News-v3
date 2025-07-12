@@ -130,8 +130,21 @@ export function registerRoutes(app) {
       console.log("🚀 Using xAI Live Search for headlines generation");
       const startTime = Date.now();
       
-      // Use Live Search to generate headlines
-      const headlines = await generateHeadlinesWithLiveSearch(topics);
+      // Check if user has authenticated with X
+      const userId = 1; // In production, get from session/JWT
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      
+      let userHandle = null;
+      let accessToken = null;
+      
+      if (authToken) {
+        userHandle = authToken.xHandle;
+        accessToken = authToken.accessToken;
+        console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
+      }
+      
+      // Use Live Search to generate headlines with optional timeline posts
+      const headlines = await generateHeadlinesWithLiveSearch(topics, userId, userHandle, accessToken);
       
       const endTime = Date.now();
       const responseTime = endTime - startTime;
@@ -575,11 +588,42 @@ export function registerRoutes(app) {
     try {
       const authResult = await handleXCallback(code, state);
       
-      // Store auth data temporarily (use secure storage in production)
+      // Get authenticated X user info using the token
+      const { createAuthenticatedClient } = await import('./services/xAuth.js');
+      const client = createAuthenticatedClient(authResult.accessToken);
+      const { data: user } = await client.v2.me();
+      
+      // Store in database (for now use userId 1 as default)
+      const userId = 1; // In production, get from session/JWT
+      
+      // Check if token already exists for this user
+      const existingToken = await storage.getXAuthTokenByUserId(userId);
+      
+      if (existingToken) {
+        // Update existing token
+        await storage.updateXAuthToken(userId, {
+          xHandle: user.username,
+          accessToken: authResult.accessToken,
+          refreshToken: authResult.refreshToken,
+          expiresAt: authResult.expiresIn ? new Date(Date.now() + authResult.expiresIn * 1000) : null
+        });
+      } else {
+        // Create new token
+        await storage.createXAuthToken({
+          userId,
+          xHandle: user.username,
+          accessToken: authResult.accessToken,
+          refreshToken: authResult.refreshToken,
+          expiresAt: authResult.expiresIn ? new Date(Date.now() + authResult.expiresIn * 1000) : null
+        });
+      }
+      
+      // Store auth data temporarily for immediate use
       userAuthData.accessToken = authResult.accessToken;
       userAuthData.refreshToken = authResult.refreshToken;
       userAuthData.authenticated = true;
       userAuthData.timestamp = Date.now();
+      userAuthData.xHandle = user.username;
       
       // Return success page that closes popup
       res.send(`

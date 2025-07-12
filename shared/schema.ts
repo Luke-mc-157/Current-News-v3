@@ -8,6 +8,17 @@ export const users = pgTable("users", {
   password: text("password").notNull(),
 });
 
+export const xAuthTokens = pgTable("x_auth_tokens", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  xHandle: text("x_handle").notNull(),
+  accessToken: text("access_token").notNull(),
+  refreshToken: text("refresh_token"),
+  expiresAt: timestamp("expires_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
 export const userTopics = pgTable("user_topics", {
   id: serial("id").primaryKey(),
   userId: integer("user_id"),
@@ -84,16 +95,24 @@ export const insertPodcastEpisodeSchema = createInsertSchema(podcastEpisodes).om
   createdAt: true,
 });
 
+export const insertXAuthTokensSchema = createInsertSchema(xAuthTokens).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
 export type InsertUserTopics = z.infer<typeof insertUserTopicsSchema>;
 export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
 export type InsertPodcastContent = z.infer<typeof insertPodcastContentSchema>;
 export type InsertPodcastEpisode = z.infer<typeof insertPodcastEpisodeSchema>;
+export type InsertXAuthTokens = z.infer<typeof insertXAuthTokensSchema>;
 
 export type UserTopics = typeof userTopics.$inferSelect;
 export type PodcastSettings = typeof podcastSettings.$inferSelect;
 export type PodcastContent = typeof podcastContent.$inferSelect;
 export type PodcastEpisode = typeof podcastEpisodes.$inferSelect;
+export type XAuthTokens = typeof xAuthTokens.$inferSelect;
 
 // Headline type for application use
 export type Headline = {

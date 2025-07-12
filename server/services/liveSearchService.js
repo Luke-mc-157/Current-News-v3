@@ -1,5 +1,7 @@
 import OpenAI from "openai";
 import { fetchXPosts } from './xSearch.js';
+import { TwitterApi } from 'twitter-api-v2';
+import { categorizePostsWithXAI } from './xaiAnalyzer.js';
 
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
@@ -7,9 +9,62 @@ const client = new OpenAI({
   timeout: 120000
 });
 
-export async function generateHeadlinesWithLiveSearch(topics, userId = "default") {
+export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
   console.log('🚀 Using xAI Live Search for headlines generation');
   const startTime = Date.now();
+  
+  // Step 0: Fetch user's timeline posts if authenticated
+  let followedPosts = [];
+  let userXId = null;
+  
+  if (userHandle && accessToken) {
+    try {
+      const xClient = new TwitterApi(accessToken);
+      
+      // Get user ID from handle
+      console.log(`🔍 Getting user ID for ${userHandle}`);
+      const { data: user } = await xClient.v2.userByUsername(userHandle);
+      userXId = user.id;
+      
+      // Fetch timeline posts (reverse chronological from followed accounts)
+      console.log(`📱 Fetching timeline for user ${userHandle}`);
+      const options = {
+        start_time: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(), // Last 24h
+        max_results: 100,
+        'tweet.fields': ['public_metrics', 'created_at', 'text', 'author_id'],
+        expansions: ['author_id'],
+        'user.fields': ['username']
+      };
+      
+      const timeline = await xClient.v2.userTimeline(userXId, options);
+      
+      if (timeline.data?.data) {
+        followedPosts = timeline.data.data;
+        
+        // Fetch additional pages (up to 5 total)
+        let nextToken = timeline.meta?.next_token;
+        let pageCount = 1;
+        
+        while (nextToken && pageCount < 5) {
+          const nextPage = await xClient.v2.userTimeline(userXId, { 
+            ...options, 
+            pagination_token: nextToken 
+          });
+          
+          if (nextPage.data?.data) {
+            followedPosts.push(...nextPage.data.data);
+          }
+          
+          nextToken = nextPage.meta?.next_token;
+          pageCount++;
+        }
+        
+        console.log(`✅ Fetched ${followedPosts.length} posts from followed accounts`);
+      }
+    } catch (error) {
+      console.error(`❌ Timeline fetch error: ${error.message}`);
+    }
+  }
   
   // Step 1: Call xAI Live Search API first for all topics
   console.log('📡 Step 1: xAI Live Search API calls for all topics...');
@@ -49,6 +104,62 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     // Delay between topics
     if (i < topics.length - 1) {
       await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+  }
+  
+  // Step 1.5: If we have timeline posts, categorize them and add to topic data
+  if (followedPosts.length > 0 && userHandle) {
+    console.log('🔄 Categorizing timeline posts by topics...');
+    
+    try {
+      // Format posts for categorization
+      const formattedPosts = followedPosts.map(post => {
+        // Get author username from includes
+        const authorUsername = userHandle; // Default to authenticated user
+        
+        return {
+          id: post.id,
+          text: post.text,
+          author_id: post.author_id,
+          author_handle: authorUsername,
+          created_at: post.created_at,
+          public_metrics: post.public_metrics || {
+            retweet_count: 0,
+            reply_count: 0,
+            like_count: 0,
+            quote_count: 0,
+            impression_count: 0
+          },
+          url: `https://x.com/${authorUsername}/status/${post.id}`
+        };
+      });
+      
+      // Use xaiAnalyzer to categorize posts by topics
+      const { categorizedPosts } = await categorizePostsWithXAI(formattedPosts, topics);
+      
+      // Add categorized posts to corresponding topics
+      for (const cat of categorizedPosts) {
+        const topicIndex = allTopicData.findIndex(t => t.topic === cat.topic);
+        if (topicIndex !== -1) {
+          const timelinePosts = cat.posts.map(post => ({
+            text: post.text,
+            url: post.url,
+            time: post.created_at,
+            views: post.public_metrics.impression_count || 0,
+            likes: post.public_metrics.like_count || 0,
+            handle: post.author_handle,
+            source: 'timeline'
+          }));
+          
+          // Add timeline posts to the topic's xPosts array
+          allTopicData[topicIndex].xPosts.push(...timelinePosts);
+          console.log(`➕ Added ${timelinePosts.length} timeline posts to topic: ${cat.topic}`);
+        }
+      }
+      
+      console.log('✅ Timeline posts categorized and integrated');
+    } catch (error) {
+      console.error('❌ Error categorizing timeline posts:', error.message);
     }
   }
   
