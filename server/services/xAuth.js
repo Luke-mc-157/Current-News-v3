@@ -2,9 +2,9 @@ import { TwitterApi } from 'twitter-api-v2';
 
 // Your X app's Client ID from developer portal
 const clientId = process.env.X_CLIENT_ID; // Store in Replit env vars for security
-const callbackUrl = process.env.NODE_ENV === 'production' 
-  ? 'https://your-app-name.replit.app/auth/twitter/callback'
-  : 'https://your-repl-name--your-username.repl.co/auth/twitter/callback';
+const callbackUrl = process.env.REPL_SLUG && process.env.REPL_OWNER
+  ? `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`
+  : 'http://localhost:5000/auth/twitter/callback';
 
 // In-memory session store for demo (use Redis/DB in production)
 const sessions = new Map();
@@ -82,6 +82,13 @@ export function isXAuthConfigured() {
 
 // Get configuration status
 export function getXAuthStatus() {
+  console.log('X Auth Status:', {
+    clientId: clientId ? 'Present' : 'Missing',
+    callbackUrl,
+    replSlug: process.env.REPL_SLUG,
+    replOwner: process.env.REPL_OWNER
+  });
+  
   return {
     configured: isXAuthConfigured(),
     clientIdPresent: Boolean(clientId),
