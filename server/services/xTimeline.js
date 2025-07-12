@@ -43,6 +43,9 @@ export async function fetchUserFollows(accessToken, userId) {
     } else if (error.code === 401) {
       throw new Error('X API authentication failed. Please re-authenticate.');
     } else if (error.code === 403) {
+      if (error.data?.reason === 'client-not-enrolled') {
+        throw new Error('X App must be attached to a Project. Visit https://developer.twitter.com/en/docs/projects/overview');
+      }
       throw new Error('X API access forbidden. Check your API permissions.');
     }
     
@@ -61,18 +64,20 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
     
     console.log(`Fetching user tweets for ${userId} (Basic tier - user timeline only)`);
 
-    // Basic tier: Use tweets lookup for user's own tweets only
-    // Note: Basic tier can only access authenticated user's own data
-    const response = await client.v2.userById(userId, {
-      'user.fields': 'id,username,name,verified,public_metrics'
+    // Use correct method for user's own tweets (Basic tier accessible)
+    // Note: Basic tier can only access authenticated user's own tweets
+    const response = await client.v2.userTweets(userId, {
+      max_results: 100, // Basic tier limit
+      'tweet.fields': 'id,text,created_at,author_id,public_metrics',
+      'user.fields': 'id,username,name,verified'
     });
 
     if (!response.data) {
-      console.log('No user tweets returned from X API');
+      console.log('No timeline tweets returned from X API');
       return [];
     }
 
-    // Transform X API response to our database format (own posts only)
+    // Transform X API response to our database format
     const posts = response.data.map(post => {
       return {
         postId: post.id,
@@ -102,6 +107,9 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
     } else if (error.code === 401) {
       throw new Error('X API authentication failed. Please re-authenticate.');
     } else if (error.code === 403) {
+      if (error.data?.reason === 'client-not-enrolled') {
+        throw new Error('X App must be attached to a Project. Visit https://developer.twitter.com/en/docs/projects/overview');
+      }
       throw new Error('X API access forbidden. Check your API permissions.');
     }
     

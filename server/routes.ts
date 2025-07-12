@@ -632,7 +632,8 @@ export function registerRoutes(app) {
         });
       }
 
-      // Basic tier: Only user authentication available
+      // Import X timeline service for Basic tier endpoints
+      const { fetchUserFollows, fetchUserTimeline, storeUserData } = await import('./services/xTimeline.js');
       
       // Get X user ID from token (we'll need to fetch it)
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
@@ -641,20 +642,23 @@ export function registerRoutes(app) {
       
       console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
 
-      // Basic tier limitations - cannot access follows or timeline data
-      console.log(`Basic tier confirmed for user: ${xUser.username} (${xUser.id})`);
+      // Basic tier: 5 requests/15 mins for both endpoints
+      const [follows, timelinePosts] = await Promise.all([
+        fetchUserFollows(authToken.accessToken, xUser.id),
+        fetchUserTimeline(authToken.accessToken, xUser.id, 7) // Last 7 days
+      ]);
+
+      // Store in database
+      const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
 
       res.json({
         success: true,
         xUserId: xUser.id,
         xHandle: xUser.username,
-        message: `X authentication verified for ${xUser.username}`,
-        limitation: "Basic tier ($200/month) restrictions apply",
-        availableInBasic: "User authentication, basic profile data",
-        requiresProTier: "Following list, timeline data, other users' content",
-        proTierCost: "$5,000/month",
-        follows: 0,
-        posts: 0
+        ...storeResult,
+        message: `Successfully fetched X data for ${xUser.username} (Basic tier: 5 req/15min per endpoint)`,
+        issue: "Need to attach App ID 31188075 to a Project in X developer portal",
+        fix: "Visit https://developer.twitter.com/en/docs/projects/overview"
       });
 
     } catch (error) {

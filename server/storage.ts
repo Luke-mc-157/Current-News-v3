@@ -346,7 +346,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
-    const [newUserTopics] = await db.insert(userTopics).values(topics).returning();
+    const [newUserTopics] = await db.insert(userTopics).values([topics]).returning();
     return newUserTopics;
   }
 
@@ -355,16 +355,23 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createHeadline(headline: InsertHeadline): Promise<Headline> {
-    const [newHeadline] = await db.insert(headlines).values(headline).returning();
-    return newHeadline;
+    const [newHeadline] = await db.insert(headlines).values([headline]).returning();
+    return {
+      ...newHeadline,
+      createdAt: newHeadline.createdAt.toISOString()
+    } as Headline;
   }
 
   async getHeadlines(): Promise<Headline[]> {
-    return await db.select().from(headlines);
+    const results = await db.select().from(headlines);
+    return results.map(h => ({
+      ...h,
+      createdAt: h.createdAt.toISOString()
+    })) as Headline[];
   }
 
   async createPodcastSettings(settings: InsertPodcastSettings): Promise<PodcastSettings> {
-    const [newSettings] = await db.insert(podcastSettings).values(settings).returning();
+    const [newSettings] = await db.insert(podcastSettings).values([settings]).returning();
     return newSettings;
   }
 
@@ -382,7 +389,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createPodcastEpisode(episode: InsertPodcastEpisode): Promise<PodcastEpisode> {
-    const [newEpisode] = await db.insert(podcastEpisodes).values(episode).returning();
+    const [newEpisode] = await db.insert(podcastEpisodes).values([episode]).returning();
     return newEpisode;
   }
 

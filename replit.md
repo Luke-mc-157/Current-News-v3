@@ -108,6 +108,12 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 12, 2025)
+- **🔧 X API PROJECT ENROLLMENT REQUIRED**: Identified root cause of 403 "client-not-enrolled" errors
+  - Basic tier ($200/month) DOES support required endpoints: GET /2/users/:id/timelines/reverse_chronological and POST /2/users/:id/following (5 requests/15 mins each)
+  - Issue: X App ID 31188075 must be attached to a Project in developer portal
+  - Solution: Visit https://developer.twitter.com/en/docs/projects/overview to create/attach Project
+  - Fixed twitter-api-v2 method calls: `client.v2.userTweets()` for timeline, `client.v2.following()` for follows
+  - Authentication working correctly, only Project enrollment missing for full API access
 - **✅ X API OAUTH INTEGRATION**: Added complete OAuth 2.0 authentication flow for X (Twitter) API
   - New dependency: `twitter-api-v2` for official X API client
   - `xAuth.js` service handles PKCE OAuth flow with secure session management
