@@ -567,22 +567,10 @@ export function registerRoutes(app) {
     try {
       if (!isXAuthConfigured()) {
         return res.status(400).json({ 
-          error: "X API not configured. Please add X_BEARER_TOKEN or X_CLIENT_ID to your environment variables." 
+          error: "X API not configured. Please add X_CLIENT_ID to your environment variables." 
         });
       }
       
-      const status = getXAuthStatus();
-      
-      // If only bearer token is available (no OAuth), simulate successful auth
-      if (status.bearerTokenPresent && !status.clientIdPresent) {
-        // Return success immediately since we'll use bearer token
-        return res.json({ 
-          bearerTokenAuth: true,
-          message: "Using X Bearer Token authentication - no user login required"
-        });
-      }
-      
-      // Standard OAuth flow if client ID is available
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
       const loginUrlObject = getXLoginUrl(state);
       
