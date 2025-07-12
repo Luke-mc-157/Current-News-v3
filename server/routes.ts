@@ -572,7 +572,10 @@ export function registerRoutes(app) {
       }
       
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
-      const loginUrl = getXLoginUrl(state);
+      const loginUrlObject = getXLoginUrl(state);
+      
+      // Extract the actual URL string from the object returned by twitter-api-v2
+      const loginUrl = loginUrlObject.url || loginUrlObject;
       
       res.json({ loginUrl, state });
     } catch (error) {
