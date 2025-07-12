@@ -27,7 +27,7 @@ export const userTopics = pgTable("user_topics", {
 });
 
 export const headlines = pgTable("headlines", {
-  id: serial("id").primaryKey(),
+  id: text("id").primaryKey(),
   title: text("title").notNull(),
   summary: text("summary").notNull(),
   category: text("category").notNull(),

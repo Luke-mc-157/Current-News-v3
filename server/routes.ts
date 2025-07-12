@@ -632,8 +632,7 @@ export function registerRoutes(app) {
         });
       }
 
-      // Import X timeline service
-      const { fetchUserFollows, fetchUserTimeline, storeUserData } = await import('./services/xTimeline.js');
+      // Basic tier: Only user authentication available
       
       // Get X user ID from token (we'll need to fetch it)
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
@@ -642,21 +641,20 @@ export function registerRoutes(app) {
       
       console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
 
-      // Fetch follows and timeline data from X API
-      const [follows, timelinePosts] = await Promise.all([
-        fetchUserFollows(authToken.accessToken, xUser.id),
-        fetchUserTimeline(authToken.accessToken, xUser.id, 7) // Last 7 days
-      ]);
-
-      // Store in database
-      const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
+      // Basic tier limitations - cannot access follows or timeline data
+      console.log(`Basic tier confirmed for user: ${xUser.username} (${xUser.id})`);
 
       res.json({
         success: true,
         xUserId: xUser.id,
         xHandle: xUser.username,
-        ...storeResult,
-        message: `Successfully fetched and stored X data for ${xUser.username}`
+        message: `X authentication verified for ${xUser.username}`,
+        limitation: "Basic tier ($200/month) restrictions apply",
+        availableInBasic: "User authentication, basic profile data",
+        requiresProTier: "Following list, timeline data, other users' content",
+        proTierCost: "$5,000/month",
+        follows: 0,
+        posts: 0
       });
 
     } catch (error) {

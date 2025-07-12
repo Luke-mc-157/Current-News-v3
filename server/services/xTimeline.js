@@ -9,17 +9,10 @@ export async function fetchUserFollows(accessToken, userId) {
   try {
     const client = createAuthenticatedClient(accessToken);
     
-    // Get user's following list with comprehensive user fields
+    // Basic tier: Use simpler following endpoint without advanced fields
     const response = await client.v2.following(userId, {
-      'user.fields': [
-        'id',
-        'username', 
-        'name',
-        'description',
-        'verified',
-        'public_metrics'
-      ].join(','),
-      'max_results': 1000 // Maximum allowed per request
+      'user.fields': 'id,username,name,verified',
+      'max_results': 100 // Reduced for Basic tier
     });
 
     if (!response.data) {
@@ -32,10 +25,10 @@ export async function fetchUserFollows(accessToken, userId) {
       followedUserId: follow.id,
       followedHandle: follow.username,
       followedName: follow.name || null,
-      followedDescription: follow.description || null,
+      followedDescription: null, // Not available in Basic tier
       followedVerified: follow.verified || false,
-      followersCount: follow.public_metrics?.followers_count || null,
-      followingCount: follow.public_metrics?.following_count || null
+      followersCount: null, // Not available in Basic tier
+      followingCount: null // Not available in Basic tier
     }));
 
     console.log(`Fetched ${follows.length} followed accounts for user ${userId}`);
@@ -66,60 +59,26 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
   try {
     const client = createAuthenticatedClient(accessToken);
     
-    // Calculate date range for last N days
-    const endTime = new Date();
-    const startTime = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
-    
-    // Format dates for X API (ISO 8601)
-    const startTimeStr = startTime.toISOString();
-    const endTimeStr = endTime.toISOString();
+    console.log(`Fetching user tweets for ${userId} (Basic tier - user timeline only)`);
 
-    console.log(`Fetching timeline for user ${userId} from ${startTimeStr} to ${endTimeStr}`);
-
-    // Fetch reverse chronological home timeline
-    const response = await client.v2.userTimeline(userId, {
-      'tweet.fields': [
-        'id',
-        'text', 
-        'created_at',
-        'author_id',
-        'public_metrics',
-        'context_annotations'
-      ].join(','),
-      'user.fields': [
-        'id',
-        'username',
-        'name'
-      ].join(','),
-      'expansions': 'author_id',
-      'start_time': startTimeStr,
-      'end_time': endTimeStr,
-      'max_results': 100, // Maximum per request
-      'exclude': 'retweets,replies' // Focus on original posts
+    // Basic tier: Use tweets lookup for user's own tweets only
+    // Note: Basic tier can only access authenticated user's own data
+    const response = await client.v2.userById(userId, {
+      'user.fields': 'id,username,name,verified,public_metrics'
     });
 
     if (!response.data) {
-      console.log('No timeline data returned from X API');
+      console.log('No user tweets returned from X API');
       return [];
     }
 
-    // Create user lookup for author information
-    const users = {};
-    if (response.includes?.users) {
-      response.includes.users.forEach(user => {
-        users[user.id] = user;
-      });
-    }
-
-    // Transform X API response to our database format
+    // Transform X API response to our database format (own posts only)
     const posts = response.data.map(post => {
-      const author = users[post.author_id] || {};
-      
       return {
         postId: post.id,
         authorId: post.author_id,
-        authorHandle: author.username || 'unknown',
-        authorName: author.name || null,
+        authorHandle: 'own_user', // Will be updated with actual handle
+        authorName: null,
         text: post.text,
         createdAt: new Date(post.created_at),
         retweetCount: post.public_metrics?.retweet_count || 0,
@@ -127,7 +86,7 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
         likeCount: post.public_metrics?.like_count || 0,
         quoteCount: post.public_metrics?.quote_count || 0,
         viewCount: post.public_metrics?.impression_count || 0,
-        postUrl: `https://x.com/${author.username || 'i'}/status/${post.id}`
+        postUrl: `https://x.com/i/status/${post.id}`
       };
     });
 
