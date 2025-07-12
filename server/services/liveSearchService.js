@@ -157,7 +157,7 @@ ${citationsText}
       messages: [
         {
           role: "system",
-          content: `You are a news editor. Create headlines and supporting information from the provided data. Create as many headlines as allowed by the data. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
+          content: `You are a news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
 
 Return ONLY a JSON array of headlines in this exact format:
 [
