@@ -111,7 +111,7 @@ export class MemStorage implements IStorage {
         url: post.url || '',
         likes: post.likes || 0
       })),
-      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles : [],
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles as Array<{title: string; url: string}> : [],
       createdAt: new Date().toISOString()
     };
     this.headlines.set(id, newHeadline);
