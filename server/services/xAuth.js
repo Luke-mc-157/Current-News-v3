@@ -7,32 +7,20 @@ const clientSecret = process.env.X_CLIENT_SECRET;
 
 // Determine the correct callback URL based on environment
 function getCallbackUrl() {
-  console.log('Environment variables:', {
-    REPLIT_DOMAINS: process.env.REPLIT_DOMAINS,
-    REPL_SLUG: process.env.REPL_SLUG,
-    REPL_OWNER: process.env.REPL_OWNER
-  });
-
   // Check for Replit domains first
   if (process.env.REPLIT_DOMAINS) {
     const domains = process.env.REPLIT_DOMAINS.split(',');
     const primaryDomain = domains[0]; // Use the first domain
-    const url = `https://${primaryDomain}/auth/twitter/callback`;
-    console.log('Using REPLIT_DOMAINS callback URL:', url);
-    return url;
+    return `https://${primaryDomain}/auth/twitter/callback`;
   }
   
   // Fallback to old format
   if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
-    const url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
-    console.log('Using REPL_SLUG callback URL:', url);
-    return url;
+    return `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
   }
   
   // Local development fallback
-  const url = 'http://127.0.0.1:5000/auth/twitter/callback';
-  console.log('Using local development callback URL:', url);
-  return url;
+  return 'http://127.0.0.1:5000/auth/twitter/callback';
 }
 
 const callbackUrl = getCallbackUrl();
@@ -40,14 +28,22 @@ const callbackUrl = getCallbackUrl();
 // In-memory session store for demo (use Redis/DB in production)
 const sessions = new Map();
 
+// Base64URL encoding function (RFC 7636 compliant)
+function base64URLEncode(str) {
+  return str.toString('base64')
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=/g, '');
+}
+
 // PKCE code verifier generation (must be 43-128 characters)
 function generateCodeVerifier() {
-  return crypto.randomBytes(32).toString('base64url');
+  return base64URLEncode(crypto.randomBytes(32));
 }
 
 // Generate code challenge from verifier using SHA-256
 function generateCodeChallenge(verifier) {
-  return crypto.createHash('sha256').update(verifier).digest('base64url');
+  return base64URLEncode(crypto.createHash('sha256').update(verifier).digest());
 }
 
 // Step 1: Generate login URL for user
@@ -55,12 +51,7 @@ export function getXLoginUrl(state) {
   const codeVerifier = generateCodeVerifier();
   const codeChallenge = generateCodeChallenge(codeVerifier);
   
-  console.log('PKCE Debug:', {
-    state,
-    codeVerifier,
-    codeChallenge,
-    codeVerifierLength: codeVerifier.length
-  });
+  console.log('PKCE generated for state:', state, 'verifier length:', codeVerifier.length);
   
   // Store code verifier for this session
   sessions.set(state, { codeVerifier, timestamp: Date.now() });
@@ -79,24 +70,15 @@ export function getXLoginUrl(state) {
 
 // Step 2: Handle OAuth callback
 export async function handleXCallback(code, state) {
-  console.log('OAuth Callback Debug:', {
-    code: code?.substring(0, 20) + '...',
-    state,
-    callbackUrl,
-    sessionsCount: sessions.size
-  });
+  console.log('OAuth callback received for state:', state);
 
   const sessionData = sessions.get(state);
   if (!sessionData) {
-    console.log('Available sessions:', Array.from(sessions.keys()));
+    console.log('Session not found. Available sessions:', Array.from(sessions.keys()));
     throw new Error('Invalid or expired session state');
   }
   
-  console.log('Session Data:', {
-    codeVerifier: sessionData.codeVerifier?.substring(0, 20) + '...',
-    timestamp: sessionData.timestamp,
-    ageMinutes: (Date.now() - sessionData.timestamp) / 60000
-  });
+  console.log('Session found, attempting token exchange...');
   
   // Clean up old sessions (basic cleanup)
   const now = Date.now();
