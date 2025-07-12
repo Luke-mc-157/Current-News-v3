@@ -3,9 +3,38 @@ import crypto from 'crypto';
 
 // Your X app's Client ID from developer portal
 const clientId = process.env.X_CLIENT_ID; // Store in Replit env vars for security
-const callbackUrl = process.env.REPL_SLUG && process.env.REPL_OWNER
-  ? `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`
-  : 'http://127.0.0.1:5000/auth/twitter/callback'; // Use 127.0.0.1 instead of localhost
+
+// Determine the correct callback URL based on environment
+function getCallbackUrl() {
+  console.log('Environment variables:', {
+    REPLIT_DOMAINS: process.env.REPLIT_DOMAINS,
+    REPL_SLUG: process.env.REPL_SLUG,
+    REPL_OWNER: process.env.REPL_OWNER
+  });
+
+  // Check for Replit domains first
+  if (process.env.REPLIT_DOMAINS) {
+    const domains = process.env.REPLIT_DOMAINS.split(',');
+    const primaryDomain = domains[0]; // Use the first domain
+    const url = `https://${primaryDomain}/auth/twitter/callback`;
+    console.log('Using REPLIT_DOMAINS callback URL:', url);
+    return url;
+  }
+  
+  // Fallback to old format
+  if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
+    const url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
+    console.log('Using REPL_SLUG callback URL:', url);
+    return url;
+  }
+  
+  // Local development fallback
+  const url = 'http://127.0.0.1:5000/auth/twitter/callback';
+  console.log('Using local development callback URL:', url);
+  return url;
+}
+
+const callbackUrl = getCallbackUrl();
 
 // In-memory session store for demo (use Redis/DB in production)
 const sessions = new Map();

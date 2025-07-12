@@ -116,6 +116,12 @@ The application now includes a comprehensive podcast generation system:
   - Header integration for "Login with X" functionality with visual feedback
   - In-memory session storage for demo (production should use secure database storage)
   - Auto-closing popup window and real-time authentication status checking
+- **✅ FIXED OAUTH CALLBACK URL ISSUE**: Resolved DNS callback errors in X authentication
+  - Fixed callback URL generation to use correct Replit domain format
+  - Updated from `workspace.lmclaughlin157.repl.co` to proper UUID-based domain
+  - Enhanced environment variable detection with REPLIT_DOMAINS support
+  - Added debugging output for callback URL configuration
+  - Required X Developer Portal callback URL update for proper authentication
 - **✅ ENHANCED VOICE SYSTEM**: Added 3 new ElevenLabs voices across both frontend and backend
   - **Cowboy Bob VF** (KTPVrSVAEUSJRClDzBw7): Aged American Storyteller
   - **Dr. Von Fusion VF** (yjJ45q8TVCrtMhEKurxY): Quirky Mad Scientist  
