@@ -567,6 +567,33 @@ export function registerRoutes(app) {
       res.status(500).json({ error: error.message });
     }
   });
+
+  // X Auth configuration debug endpoint
+  router.get("/api/auth/x/debug", (req, res) => {
+    try {
+      const status = getXAuthStatus();
+      const websiteUrl = status.callbackUrl.replace('/auth/twitter/callback', '');
+      
+      res.json({
+        configured: status.configured,
+        currentUrls: {
+          websiteUrl,
+          callbackUrl: status.callbackUrl
+        },
+        xDeveloperPortalInstructions: {
+          step1: 'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
+          step2: 'Navigate to: Projects & Apps → Your App → Settings',
+          step3: 'Under "Authentication Settings", add these EXACT URLs:',
+          websiteUrl: `Website URL: ${websiteUrl}`,
+          callbackUrl: `Callback URL: ${status.callbackUrl}`,
+          step4: 'Save changes and test authentication',
+          note: 'URLs must be exact matches (case-sensitive, no trailing slashes)'
+        }
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
   
   // Generate X login URL
   router.post("/api/auth/x/login", (req, res) => {
