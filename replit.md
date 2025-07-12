@@ -111,17 +111,18 @@ The application now includes a comprehensive podcast generation system:
 - **✅ X API OAUTH INTEGRATION**: Added complete OAuth 2.0 authentication flow for X (Twitter) API
   - New dependency: `twitter-api-v2` for official X API client
   - `xAuth.js` service handles PKCE OAuth flow with secure session management
-  - Authentication routes: `/api/auth/x/login`, `/auth/twitter/callback`, `/api/auth/x/status`, `/api/auth/x/check`
+  - Authentication routes: `/api/auth/x/login`, `/auth/twitter/callback`, `/api/auth/x/status`, `/api/auth/x/check`, `/api/auth/x/debug`
   - `XLoginButton` component with popup-based authentication and status polling
   - Header integration for "Login with X" functionality with visual feedback
   - In-memory session storage for demo (production should use secure database storage)
   - Auto-closing popup window and real-time authentication status checking
-- **✅ FIXED OAUTH CALLBACK URL ISSUE**: Resolved DNS callback errors in X authentication
-  - Fixed callback URL generation to use correct Replit domain format
-  - Updated from `workspace.lmclaughlin157.repl.co` to proper UUID-based domain
-  - Enhanced environment variable detection with REPLIT_DOMAINS support
-  - Added debugging output for callback URL configuration
-  - Required X Developer Portal callback URL update for proper authentication
+- **✅ FIXED OAUTH PKCE AUTHENTICATION**: Resolved all OAuth 2.0 authentication issues
+  - Fixed PKCE code challenge method from lowercase `s256` to uppercase `S256` per OAuth 2.0 spec
+  - Implemented proper RFC 7636 compliant base64URL encoding (removed by using library's built-in)
+  - Let twitter-api-v2 library handle PKCE generation internally for better compatibility
+  - Added all required scopes: `users.read`, `tweet.read`, `follows.read`, `offline.access`
+  - Fixed scope format to space-separated string instead of array
+  - Purpose: Fetch user's followed handles and their recent posts for Live Search integration
 - **✅ ENHANCED VOICE SYSTEM**: Added 3 new ElevenLabs voices across both frontend and backend
   - **Cowboy Bob VF** (KTPVrSVAEUSJRClDzBw7): Aged American Storyteller
   - **Dr. Von Fusion VF** (yjJ45q8TVCrtMhEKurxY): Quirky Mad Scientist  

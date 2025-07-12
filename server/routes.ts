@@ -605,10 +605,12 @@ export function registerRoutes(app) {
       }
       
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
-      const loginUrlObject = getXLoginUrl(state);
+      const authLink = getXLoginUrl(state);
       
-      // Extract the actual URL string from the object returned by twitter-api-v2
-      const loginUrl = loginUrlObject.url || loginUrlObject;
+      // Extract the URL from the auth link object
+      const loginUrl = authLink.url;
+      
+      console.log('Generated auth URL with scopes:', authLink.scope);
       
       res.json({ loginUrl, state });
     } catch (error) {
