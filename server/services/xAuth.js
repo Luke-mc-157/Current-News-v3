@@ -1,8 +1,9 @@
 import { TwitterApi } from 'twitter-api-v2';
 import crypto from 'crypto';
 
-// Your X app's Client ID from developer portal
-const clientId = process.env.X_CLIENT_ID; // Store in Replit env vars for security
+// Your X app's Client ID and Secret from developer portal
+const clientId = process.env.X_CLIENT_ID;
+const clientSecret = process.env.X_CLIENT_SECRET;
 
 // Determine the correct callback URL based on environment
 function getCallbackUrl() {
@@ -57,7 +58,10 @@ export function getXLoginUrl(state) {
   // Store code verifier for this session
   sessions.set(state, { codeVerifier, timestamp: Date.now() });
   
-  const client = new TwitterApi({ clientId });
+  const client = new TwitterApi({ 
+    clientId,
+    clientSecret 
+  });
   return client.generateOAuth2AuthLink(callbackUrl, {
     scope: ['users.read'], // Start with minimal scope for testing
     state,
@@ -81,7 +85,10 @@ export async function handleXCallback(code, state) {
     }
   }
   
-  const client = new TwitterApi({ clientId });
+  const client = new TwitterApi({ 
+    clientId,
+    clientSecret 
+  });
   try {
     const { accessToken, refreshToken, expiresIn } = await client.loginWithOAuth2({
       code,
@@ -112,21 +119,15 @@ export function createAuthenticatedClient(accessToken) {
 
 // Verify if X API credentials are configured
 export function isXAuthConfigured() {
-  return Boolean(clientId);
+  return Boolean(clientId && clientSecret);
 }
 
 // Get configuration status
 export function getXAuthStatus() {
-  console.log('X Auth Status:', {
-    clientId: clientId ? 'Present' : 'Missing',
-    callbackUrl,
-    replSlug: process.env.REPL_SLUG,
-    replOwner: process.env.REPL_OWNER
-  });
-  
   return {
-    configured: isXAuthConfigured(),
+    configured: Boolean(clientId && clientSecret),
     clientIdPresent: Boolean(clientId),
+    clientSecretPresent: Boolean(clientSecret),
     callbackUrl
   };
 }
