@@ -41,7 +41,10 @@ export default function XLoginButton({
       const statusResponse = await fetch('/api/auth/x/status');
       const status = await statusResponse.json();
       
+      console.log('Frontend status check:', status);
+      
       if (!status.configured) {
+        console.error('X API not configured:', status);
         toast({
           variant: "destructive",
           title: "X API Not Configured",

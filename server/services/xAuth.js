@@ -55,6 +55,13 @@ export function getXLoginUrl(state) {
   const codeVerifier = generateCodeVerifier();
   const codeChallenge = generateCodeChallenge(codeVerifier);
   
+  console.log('PKCE Debug:', {
+    state,
+    codeVerifier,
+    codeChallenge,
+    codeVerifierLength: codeVerifier.length
+  });
+  
   // Store code verifier for this session
   sessions.set(state, { codeVerifier, timestamp: Date.now() });
   
@@ -72,10 +79,24 @@ export function getXLoginUrl(state) {
 
 // Step 2: Handle OAuth callback
 export async function handleXCallback(code, state) {
+  console.log('OAuth Callback Debug:', {
+    code: code?.substring(0, 20) + '...',
+    state,
+    callbackUrl,
+    sessionsCount: sessions.size
+  });
+
   const sessionData = sessions.get(state);
   if (!sessionData) {
+    console.log('Available sessions:', Array.from(sessions.keys()));
     throw new Error('Invalid or expired session state');
   }
+  
+  console.log('Session Data:', {
+    codeVerifier: sessionData.codeVerifier?.substring(0, 20) + '...',
+    timestamp: sessionData.timestamp,
+    ageMinutes: (Date.now() - sessionData.timestamp) / 60000
+  });
   
   // Clean up old sessions (basic cleanup)
   const now = Date.now();
