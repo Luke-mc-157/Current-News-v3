@@ -91,6 +91,8 @@ export default function XLoginButton({
           const authCheckResponse = await fetch('/api/auth/x/check');
           const authResult = await authCheckResponse.json();
           
+          console.log('Auth check polling result:', authResult);
+          
           if (authResult.authenticated) {
             clearInterval(checkAuth);
             authWindow.close();
@@ -99,7 +101,7 @@ export default function XLoginButton({
             
             toast({
               title: "Login Successful!",
-              description: "You've been authenticated with X. You can now access premium features.",
+              description: `Welcome ${authResult.xHandle}! You can now access premium features.`,
             });
 
             if (onAuthSuccess) {

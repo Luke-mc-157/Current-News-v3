@@ -550,7 +550,13 @@ export function registerRoutes(app) {
   app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
 
   // X OAuth authentication routes
-  let userAuthData = {}; // In-memory storage for demo (use database in production)
+  let userAuthData = { 
+    authenticated: false,
+    accessToken: null,
+    refreshToken: null,
+    timestamp: null,
+    xHandle: null
+  }; // In-memory storage for demo (use database in production)
   
   // X Auth status endpoint
   router.get("/api/auth/x/status", (req, res) => {
@@ -627,6 +633,12 @@ export function registerRoutes(app) {
       userAuthData.authenticated = true;
       userAuthData.timestamp = Date.now();
       userAuthData.xHandle = user.username;
+      
+      console.log('X Authentication successful:', {
+        xHandle: user.username,
+        authenticated: userAuthData.authenticated,
+        timestamp: userAuthData.timestamp
+      });
       
       // Return success page that closes popup
       res.send(`
@@ -721,10 +733,32 @@ export function registerRoutes(app) {
                            userAuthData.timestamp && 
                            (Date.now() - userAuthData.timestamp < 3600000); // 1 hour expiry
     
+    console.log('X Auth Check:', {
+      authenticated: userAuthData.authenticated,
+      timestamp: userAuthData.timestamp,
+      isAuthenticated,
+      timeSinceAuth: userAuthData.timestamp ? Date.now() - userAuthData.timestamp : null
+    });
+    
     res.json({ 
       authenticated: isAuthenticated,
-      accessToken: isAuthenticated ? userAuthData.accessToken : null
+      accessToken: isAuthenticated ? userAuthData.accessToken : null,
+      xHandle: isAuthenticated ? userAuthData.xHandle : null
     });
+  });
+
+  // Reset auth state (for testing or logout)
+  router.post("/api/auth/x/reset", (req, res) => {
+    userAuthData = {
+      authenticated: false,
+      accessToken: null,
+      refreshToken: null,
+      timestamp: null,
+      xHandle: null
+    };
+    
+    console.log('X Auth state reset');
+    res.json({ success: true, message: 'Authentication state reset' });
   });
   
   app.use(router);
