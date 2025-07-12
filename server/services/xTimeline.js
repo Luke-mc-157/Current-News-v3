@@ -64,12 +64,10 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
     
     console.log(`Fetching user tweets for ${userId} (Basic tier - user timeline only)`);
 
-    // Use correct method for user's own tweets (Basic tier accessible)
-    // Note: Basic tier can only access authenticated user's own tweets
-    const response = await client.v2.userTweets(userId, {
+    // Use correct method for user timeline (Basic tier accessible)
+    const response = await client.v2.userTimeline(userId, {
       max_results: 100, // Basic tier limit
-      'tweet.fields': 'id,text,created_at,author_id,public_metrics',
-      'user.fields': 'id,username,name,verified'
+      'tweet.fields': 'id,text,created_at,author_id,public_metrics'
     });
 
     if (!response.data) {

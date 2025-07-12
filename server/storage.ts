@@ -346,7 +346,11 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
-    const [newUserTopics] = await db.insert(userTopics).values([topics]).returning();
+    const cleanTopics = {
+      ...topics,
+      topics: Array.isArray(topics.topics) ? topics.topics as string[] : Array.from(topics.topics || []) as string[]
+    };
+    const [newUserTopics] = await db.insert(userTopics).values([cleanTopics]).returning();
     return newUserTopics;
   }
 
@@ -355,7 +359,13 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createHeadline(headline: InsertHeadline): Promise<Headline> {
-    const [newHeadline] = await db.insert(headlines).values([headline]).returning();
+    const cleanHeadline = {
+      ...headline,
+      id: `headline_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      sourcePosts: Array.isArray(headline.sourcePosts) ? headline.sourcePosts as Array<{text: string, url: string}> : Array.from(headline.sourcePosts || []) as Array<{text: string, url: string}>,
+      supportingArticles: Array.isArray(headline.supportingArticles) ? headline.supportingArticles as Array<{title: string, url: string}> : Array.from(headline.supportingArticles || []) as Array<{title: string, url: string}>
+    };
+    const [newHeadline] = await db.insert(headlines).values([cleanHeadline]).returning();
     return {
       ...newHeadline,
       createdAt: newHeadline.createdAt.toISOString()
@@ -371,7 +381,11 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createPodcastSettings(settings: InsertPodcastSettings): Promise<PodcastSettings> {
-    const [newSettings] = await db.insert(podcastSettings).values([settings]).returning();
+    const cleanSettings = {
+      ...settings,
+      times: Array.isArray(settings.times) ? settings.times as string[] : Array.from(settings.times || []) as string[]
+    };
+    const [newSettings] = await db.insert(podcastSettings).values([cleanSettings]).returning();
     return newSettings;
   }
 
@@ -389,7 +403,11 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createPodcastEpisode(episode: InsertPodcastEpisode): Promise<PodcastEpisode> {
-    const [newEpisode] = await db.insert(podcastEpisodes).values([episode]).returning();
+    const cleanEpisode = {
+      ...episode,
+      headlineIds: Array.isArray(episode.headlineIds) ? episode.headlineIds as string[] : Array.from(episode.headlineIds || []) as string[]
+    };
+    const [newEpisode] = await db.insert(podcastEpisodes).values([cleanEpisode]).returning();
     return newEpisode;
   }
 

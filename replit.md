@@ -108,7 +108,13 @@ The application now includes a comprehensive podcast generation system:
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
 ### Latest Updates (January 12, 2025)
-- **🔧 X API PROJECT ENROLLMENT REQUIRED**: Identified root cause of 403 "client-not-enrolled" errors
+- **✅ FIXED DATABASE STORAGE ISSUES**: Resolved all TypeScript/Drizzle ORM compatibility issues
+  - Fixed array handling: Proper conversion from array-like objects to real arrays
+  - Fixed engagement field type: Changed from text to integer in database schema
+  - Fixed database insertion: Added proper array wrapping for Drizzle `.values()` method
+  - Fixed headline ID generation: Auto-generate IDs since InsertHeadline omits id field
+  - Database migrations working correctly, storage layer fully functional
+- **🔧 X API PROJECT ENROLLMENT STILL REQUIRED**: Confirmed 403 "client-not-enrolled" errors persist
   - Basic tier ($200/month) DOES support required endpoints: GET /2/users/:id/timelines/reverse_chronological and POST /2/users/:id/following (5 requests/15 mins each)
   - Issue: X App ID 31188075 must be attached to a Project in developer portal
   - Solution: Visit https://developer.twitter.com/en/docs/projects/overview to create/attach Project
