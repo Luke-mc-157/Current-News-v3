@@ -1,33 +1,39 @@
 import { TwitterApi } from 'twitter-api-v2';
+import crypto from 'crypto';
 
 // Your X app's Client ID from developer portal
 const clientId = process.env.X_CLIENT_ID; // Store in Replit env vars for security
 const callbackUrl = process.env.REPL_SLUG && process.env.REPL_OWNER
   ? `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`
-  : 'http://localhost:5000/auth/twitter/callback';
+  : 'http://127.0.0.1:5000/auth/twitter/callback'; // Use 127.0.0.1 instead of localhost
 
 // In-memory session store for demo (use Redis/DB in production)
 const sessions = new Map();
 
-// PKCE code verifier generation
+// PKCE code verifier generation (must be 43-128 characters)
 function generateCodeVerifier() {
-  return [...Array(128)].map(() => Math.random().toString(36)[2] || '0').join('');
+  return crypto.randomBytes(32).toString('base64url');
+}
+
+// Generate code challenge from verifier using SHA-256
+function generateCodeChallenge(verifier) {
+  return crypto.createHash('sha256').update(verifier).digest('base64url');
 }
 
 // Step 1: Generate login URL for user
 export function getXLoginUrl(state) {
   const codeVerifier = generateCodeVerifier();
-  const codeChallenge = codeVerifier; // For simplicity; in production, hash it with SHA-256
+  const codeChallenge = generateCodeChallenge(codeVerifier);
   
   // Store code verifier for this session
   sessions.set(state, { codeVerifier, timestamp: Date.now() });
   
   const client = new TwitterApi({ clientId });
   return client.generateOAuth2AuthLink(callbackUrl, {
-    scope: ['tweet.read', 'users.read', 'offline.access'],
+    scope: ['tweet.read', 'users.read'], // Removed offline.access as it may not be approved
     state,
     code_challenge: codeChallenge,
-    code_challenge_method: 'plain', // Or 's256' if hashing
+    code_challenge_method: 's256', // Use SHA-256 for security
   });
 }
 
