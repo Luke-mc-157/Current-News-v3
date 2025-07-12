@@ -107,7 +107,23 @@ The application now includes a comprehensive podcast generation system:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
-### Latest Updates (January 11, 2025)
+### Latest Updates (January 12, 2025)
+- **✅ X API OAUTH INTEGRATION**: Added complete OAuth 2.0 authentication flow for X (Twitter) API
+  - New dependency: `twitter-api-v2` for official X API client
+  - `xAuth.js` service handles PKCE OAuth flow with secure session management
+  - Authentication routes: `/api/auth/x/login`, `/auth/twitter/callback`, `/api/auth/x/status`, `/api/auth/x/check`
+  - `XLoginButton` component with popup-based authentication and status polling
+  - Header integration for "Login with X" functionality with visual feedback
+  - In-memory session storage for demo (production should use secure database storage)
+  - Auto-closing popup window and real-time authentication status checking
+- **✅ ENHANCED VOICE SYSTEM**: Added 3 new ElevenLabs voices across both frontend and backend
+  - **Cowboy Bob VF** (KTPVrSVAEUSJRClDzBw7): Aged American Storyteller
+  - **Dr. Von Fusion VF** (yjJ45q8TVCrtMhEKurxY): Quirky Mad Scientist  
+  - **Mark - ConvoAI** (1SM7GgM6IMuvQlz2BwM3): ConvoAI voice
+  - Total voice options: 8 premium voices available system-wide
+  - Voice options synchronized between main app and test environment
+
+### Previous Updates (January 11, 2025)
 - **✅ SUCCESSFUL xAI LIVE SEARCH IMPLEMENTATION**: Fixed API configuration and achieved working live search system
   - xAI Live Search API successfully called FIRST as requested by user
   - Real data collection: 2396 characters with 15 authentic citations
@@ -219,6 +235,7 @@ The application now includes a comprehensive podcast generation system:
 
 ### Environment Variables Required
 - `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for authentic post retrieval
+- `X_CLIENT_ID`: X API OAuth 2.0 Client ID for user authentication and premium features
 - `XAI_API_KEY`: xAI API key for content authenticity analysis and podcast script generation
 - `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation (legacy)
 - `ELEVENLABS_API_KEY`: ElevenLabs API key for voice synthesis (10,000 chars/month free tier)

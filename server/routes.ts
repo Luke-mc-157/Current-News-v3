@@ -13,6 +13,7 @@ import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } f
 import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
+import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus } from "./services/xAuth.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -534,6 +535,150 @@ export function registerRoutes(app) {
 
   // Serve static podcast audio files
   app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
+
+  // X OAuth authentication routes
+  let userAuthData = {}; // In-memory storage for demo (use database in production)
+  
+  // X Auth status endpoint
+  router.get("/api/auth/x/status", (req, res) => {
+    try {
+      const status = getXAuthStatus();
+      res.json(status);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  // Generate X login URL
+  router.post("/api/auth/x/login", (req, res) => {
+    try {
+      if (!isXAuthConfigured()) {
+        return res.status(400).json({ 
+          error: "X API not configured. Please add X_CLIENT_ID to your environment variables." 
+        });
+      }
+      
+      const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
+      const loginUrl = getXLoginUrl(state);
+      
+      res.json({ loginUrl, state });
+    } catch (error) {
+      console.error("Error generating X login URL:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  // X OAuth callback endpoint
+  router.get("/auth/twitter/callback", async (req, res) => {
+    const { code, state } = req.query;
+    
+    try {
+      const authResult = await handleXCallback(code, state);
+      
+      // Store auth data temporarily (use secure storage in production)
+      userAuthData.accessToken = authResult.accessToken;
+      userAuthData.refreshToken = authResult.refreshToken;
+      userAuthData.authenticated = true;
+      userAuthData.timestamp = Date.now();
+      
+      // Return success page that closes popup
+      res.send(`
+        <html>
+          <head>
+            <title>X Authentication Successful</title>
+            <style>
+              body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f3f4f6;
+              }
+              .container {
+                text-align: center;
+                padding: 2rem;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+              }
+              .success {
+                color: #059669;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="success">✓ Authentication Successful!</div>
+              <p>You can close this window and return to the application.</p>
+              <script>
+                // Auto-close popup after 3 seconds
+                setTimeout(() => {
+                  window.close();
+                }, 3000);
+              </script>
+            </div>
+          </body>
+        </html>
+      `);
+    } catch (error) {
+      console.error("X OAuth callback error:", error);
+      res.status(400).send(`
+        <html>
+          <head>
+            <title>X Authentication Failed</title>
+            <style>
+              body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f3f4f6;
+              }
+              .container {
+                text-align: center;
+                padding: 2rem;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+              }
+              .error {
+                color: #dc2626;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="error">✗ Authentication Failed</div>
+              <p>${error.message}</p>
+              <p>Please close this window and try again.</p>
+            </div>
+          </body>
+        </html>
+      `);
+    }
+  });
+  
+  // Check auth status for frontend polling
+  router.get("/api/auth/x/check", (req, res) => {
+    const isAuthenticated = userAuthData.authenticated && 
+                           userAuthData.timestamp && 
+                           (Date.now() - userAuthData.timestamp < 3600000); // 1 hour expiry
+    
+    res.json({ 
+      authenticated: isAuthenticated,
+      accessToken: isAuthenticated ? userAuthData.accessToken : null
+    });
+  });
   
   app.use(router);
   
