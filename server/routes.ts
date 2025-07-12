@@ -619,6 +619,90 @@ export function registerRoutes(app) {
     }
   });
   
+  // Fetch and store user's X follows and timeline data
+  router.post("/api/x/fetch-user-data", async (req, res) => {
+    try {
+      const userId = 1; // In production, get from session/JWT
+      
+      // Get user's X auth token
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      if (!authToken) {
+        return res.status(401).json({ 
+          error: "User not authenticated with X. Please login with X first." 
+        });
+      }
+
+      // Import X timeline service
+      const { fetchUserFollows, fetchUserTimeline, storeUserData } = await import('./services/xTimeline.js');
+      
+      // Get X user ID from token (we'll need to fetch it)
+      const { createAuthenticatedClient } = await import('./services/xAuth.js');
+      const client = createAuthenticatedClient(authToken.accessToken);
+      const { data: xUser } = await client.v2.me();
+      
+      console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
+
+      // Fetch follows and timeline data from X API
+      const [follows, timelinePosts] = await Promise.all([
+        fetchUserFollows(authToken.accessToken, xUser.id),
+        fetchUserTimeline(authToken.accessToken, xUser.id, 7) // Last 7 days
+      ]);
+
+      // Store in database
+      const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
+
+      res.json({
+        success: true,
+        xUserId: xUser.id,
+        xHandle: xUser.username,
+        ...storeResult,
+        message: `Successfully fetched and stored X data for ${xUser.username}`
+      });
+
+    } catch (error) {
+      console.error("Error fetching X user data:", error);
+      res.status(500).json({ 
+        error: error.message || "Failed to fetch X user data" 
+      });
+    }
+  });
+
+  // Get stored user follows
+  router.get("/api/x/follows", async (req, res) => {
+    try {
+      const userId = 1; // In production, get from session/JWT
+      const follows = await storage.getUserFollows(userId);
+      
+      res.json({
+        success: true,
+        follows,
+        count: follows.length
+      });
+    } catch (error) {
+      console.error("Error getting user follows:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Get stored user timeline posts
+  router.get("/api/x/timeline", async (req, res) => {
+    try {
+      const userId = 1; // In production, get from session/JWT
+      const days = parseInt(req.query.days) || 7;
+      const posts = await storage.getUserTimelinePosts(userId, days);
+      
+      res.json({
+        success: true,
+        posts,
+        count: posts.length,
+        days
+      });
+    } catch (error) {
+      console.error("Error getting user timeline:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   // X OAuth callback endpoint
   router.get("/auth/twitter/callback", async (req, res) => {
     const { code, state } = req.query;

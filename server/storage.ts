@@ -1,4 +1,4 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts } from "@shared/schema";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -26,6 +26,16 @@ export interface IStorage {
   createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens>;
   getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined>;
   updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined>;
+  
+  // User follows methods
+  createUserFollow(follow: InsertUserFollows): Promise<UserFollows>;
+  getUserFollows(userId: number): Promise<UserFollows[]>;
+  deleteUserFollows(userId: number): Promise<void>;
+  
+  // User timeline posts methods  
+  createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts>;
+  getUserTimelinePosts(userId: number, days?: number): Promise<UserTimelinePosts[]>;
+  deleteOldTimelinePosts(userId: number, days: number): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -36,6 +46,8 @@ export class MemStorage implements IStorage {
   private podcastContent: Map<number, PodcastContent>;
   private podcastEpisodes: Map<number, PodcastEpisode>;
   private xAuthTokens: Map<number, XAuthTokens>;
+  private userFollows: Map<number, UserFollows>;
+  private userTimelinePosts: Map<number, UserTimelinePosts>;
   private currentId: number;
   private currentTopicsId: number;
   private currentHeadlineId: number;
@@ -43,6 +55,8 @@ export class MemStorage implements IStorage {
   private currentContentId: number;
   private currentEpisodeId: number;
   private currentTokenId: number;
+  private currentFollowId: number;
+  private currentPostId: number;
 
   constructor() {
     this.users = new Map();
@@ -52,6 +66,8 @@ export class MemStorage implements IStorage {
     this.podcastContent = new Map();
     this.podcastEpisodes = new Map();
     this.xAuthTokens = new Map();
+    this.userFollows = new Map();
+    this.userTimelinePosts = new Map();
     this.currentId = 1;
     this.currentTopicsId = 1;
     this.currentHeadlineId = 1;
@@ -59,6 +75,79 @@ export class MemStorage implements IStorage {
     this.currentContentId = 1;
     this.currentEpisodeId = 1;
     this.currentTokenId = 1;
+    this.currentFollowId = 1;
+    this.currentPostId = 1;
+  }
+
+  async createUserFollow(follow: InsertUserFollows): Promise<UserFollows> {
+    const id = this.currentFollowId++;
+    const newFollow: UserFollows = {
+      id,
+      userId: follow.userId,
+      followedUserId: follow.followedUserId,
+      followedHandle: follow.followedHandle,
+      followedName: follow.followedName || null,
+      followedDescription: follow.followedDescription || null,
+      followedVerified: follow.followedVerified || false,
+      followersCount: follow.followersCount || null,
+      followingCount: follow.followingCount || null,
+      createdAt: new Date()
+    };
+    this.userFollows.set(id, newFollow);
+    return newFollow;
+  }
+
+  async getUserFollows(userId: number): Promise<UserFollows[]> {
+    return Array.from(this.userFollows.values()).filter(
+      (follow) => follow.userId === userId
+    );
+  }
+
+  async deleteUserFollows(userId: number): Promise<void> {
+    const keysToDelete = Array.from(this.userFollows.entries())
+      .filter(([_, follow]) => follow.userId === userId)
+      .map(([key, _]) => key);
+    
+    keysToDelete.forEach(key => this.userFollows.delete(key));
+  }
+
+  async createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts> {
+    const id = this.currentPostId++;
+    const newPost: UserTimelinePosts = {
+      id,
+      userId: post.userId,
+      postId: post.postId,
+      authorId: post.authorId,
+      authorHandle: post.authorHandle,
+      authorName: post.authorName || null,
+      text: post.text,
+      createdAt: post.createdAt,
+      retweetCount: post.retweetCount || 0,
+      replyCount: post.replyCount || 0,
+      likeCount: post.likeCount || 0,
+      quoteCount: post.quoteCount || 0,
+      viewCount: post.viewCount || 0,
+      postUrl: post.postUrl || null,
+      fetchedAt: new Date()
+    };
+    this.userTimelinePosts.set(id, newPost);
+    return newPost;
+  }
+
+  async getUserTimelinePosts(userId: number, days: number = 7): Promise<UserTimelinePosts[]> {
+    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+    return Array.from(this.userTimelinePosts.values()).filter(
+      (post) => post.userId === userId && post.createdAt >= cutoffDate
+    );
+  }
+
+  async deleteOldTimelinePosts(userId: number, days: number): Promise<void> {
+    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+    const keysToDelete = Array.from(this.userTimelinePosts.entries())
+      .filter(([_, post]) => post.userId === userId && post.createdAt < cutoffDate)
+      .map(([key, _]) => key);
+    
+    keysToDelete.forEach(key => this.userTimelinePosts.delete(key));
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -236,4 +325,132 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+// Use DatabaseStorage instead of MemStorage
+import { db } from "./db";
+import { eq, and, gte, lt, desc } from "drizzle-orm";
+
+export class DatabaseStorage implements IStorage {
+  async getUser(id: number): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const [user] = await db.insert(users).values(insertUser).returning();
+    return user;
+  }
+
+  async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
+    const [newUserTopics] = await db.insert(userTopics).values(topics).returning();
+    return newUserTopics;
+  }
+
+  async getUserTopics(userId: number): Promise<UserTopics[]> {
+    return await db.select().from(userTopics).where(eq(userTopics.userId, userId));
+  }
+
+  async createHeadline(headline: InsertHeadline): Promise<Headline> {
+    const [newHeadline] = await db.insert(headlines).values(headline).returning();
+    return newHeadline;
+  }
+
+  async getHeadlines(): Promise<Headline[]> {
+    return await db.select().from(headlines);
+  }
+
+  async createPodcastSettings(settings: InsertPodcastSettings): Promise<PodcastSettings> {
+    const [newSettings] = await db.insert(podcastSettings).values(settings).returning();
+    return newSettings;
+  }
+
+  async getPodcastSettings(userId: number): Promise<PodcastSettings[]> {
+    return await db.select().from(podcastSettings).where(eq(podcastSettings.userId, userId));
+  }
+
+  async createPodcastContent(content: InsertPodcastContent): Promise<PodcastContent> {
+    const [newContent] = await db.insert(podcastContent).values(content).returning();
+    return newContent;
+  }
+
+  async getPodcastContentByHeadlineId(headlineId: string): Promise<PodcastContent[]> {
+    return await db.select().from(podcastContent).where(eq(podcastContent.headlineId, headlineId));
+  }
+
+  async createPodcastEpisode(episode: InsertPodcastEpisode): Promise<PodcastEpisode> {
+    const [newEpisode] = await db.insert(podcastEpisodes).values(episode).returning();
+    return newEpisode;
+  }
+
+  async getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined> {
+    const [episode] = await db.select().from(podcastEpisodes).where(eq(podcastEpisodes.id, id));
+    return episode || undefined;
+  }
+
+  async getLatestPodcastEpisode(userId: number): Promise<PodcastEpisode | undefined> {
+    const [episode] = await db.select().from(podcastEpisodes).where(eq(podcastEpisodes.userId, userId)).orderBy(desc(podcastEpisodes.createdAt)).limit(1);
+    return episode || undefined;
+  }
+
+  async updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined> {
+    const [updatedEpisode] = await db.update(podcastEpisodes).set(updates).where(eq(podcastEpisodes.id, id)).returning();
+    return updatedEpisode || undefined;
+  }
+
+  async createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens> {
+    const [newToken] = await db.insert(xAuthTokens).values(token).returning();
+    return newToken;
+  }
+
+  async getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined> {
+    const [token] = await db.select().from(xAuthTokens).where(eq(xAuthTokens.userId, userId));
+    return token || undefined;
+  }
+
+  async updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined> {
+    const [updatedToken] = await db.update(xAuthTokens).set(updates).where(eq(xAuthTokens.userId, userId)).returning();
+    return updatedToken || undefined;
+  }
+
+  async createUserFollow(follow: InsertUserFollows): Promise<UserFollows> {
+    const [newFollow] = await db.insert(userFollows).values(follow).returning();
+    return newFollow;
+  }
+
+  async getUserFollows(userId: number): Promise<UserFollows[]> {
+    return await db.select().from(userFollows).where(eq(userFollows.userId, userId));
+  }
+
+  async deleteUserFollows(userId: number): Promise<void> {
+    await db.delete(userFollows).where(eq(userFollows.userId, userId));
+  }
+
+  async createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts> {
+    const [newPost] = await db.insert(userTimelinePosts).values(post).returning();
+    return newPost;
+  }
+
+  async getUserTimelinePosts(userId: number, days: number = 7): Promise<UserTimelinePosts[]> {
+    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+    return await db.select().from(userTimelinePosts)
+      .where(and(
+        eq(userTimelinePosts.userId, userId),
+        gte(userTimelinePosts.createdAt, cutoffDate)
+      ));
+  }
+
+  async deleteOldTimelinePosts(userId: number, days: number): Promise<void> {
+    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+    await db.delete(userTimelinePosts)
+      .where(and(
+        eq(userTimelinePosts.userId, userId),
+        lt(userTimelinePosts.createdAt, cutoffDate)
+      ));
+  }
+}
+
+export const storage = new DatabaseStorage();
