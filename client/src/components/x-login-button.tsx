@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { ExternalLink, Twitter } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+
+// X.com logo component
+const XIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    className={className}
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 interface XLoginButtonProps {
   onAuthSuccess?: (accessToken: string) => void;
@@ -128,7 +140,7 @@ export default function XLoginButton({
         size={size}
         className={`gap-2 ${className}`}
       >
-        <Twitter className="w-4 h-4" />
+        <XIcon className="w-4 h-4" />
         {isLoading ? 'Connecting...' : 'Login with X'}
       </Button>
 
@@ -136,7 +148,7 @@ export default function XLoginButton({
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <Twitter className="w-5 h-5" />
+              <XIcon className="w-5 h-5" />
               X Authentication
             </DialogTitle>
             <DialogDescription>
