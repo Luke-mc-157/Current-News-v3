@@ -30,7 +30,7 @@ export function getXLoginUrl(state) {
   
   const client = new TwitterApi({ clientId });
   return client.generateOAuth2AuthLink(callbackUrl, {
-    scope: ['tweet.read', 'users.read'], // Removed offline.access as it may not be approved
+    scope: ['users.read'], // Start with minimal scope for testing
     state,
     code_challenge: codeChallenge,
     code_challenge_method: 's256', // Use SHA-256 for security
