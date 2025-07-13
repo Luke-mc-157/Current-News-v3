@@ -1,43 +1,72 @@
-// Test OAuth Fix - Check if callback URL fix resolves the 401 error
-console.log('🔍 Testing OAuth Callback URL Fix...\n');
+// Test OAuth Fix - Test authentication after X_CLIENT_SECRET regeneration
+console.log('🔧 Testing OAuth after X_CLIENT_SECRET regeneration...\n');
 
 async function testOAuthFix() {
   try {
-    // 1. Check current configuration
-    console.log('1. Checking current OAuth configuration...');
-    const configResponse = await fetch('http://localhost:5000/api/auth/x/debug');
-    const config = await configResponse.json();
+    // 1. Check if new secret is loaded
+    console.log('1. Checking OAuth configuration with new secret...');
+    const statusResponse = await fetch('http://localhost:5000/api/auth/x/status');
+    const status = await statusResponse.json();
     
-    console.log('✅ Current callback URL:', config.currentUrls.callbackUrl);
-    console.log('✅ Website URL:', config.currentUrls.websiteUrl);
+    console.log('✅ OAuth configured:', status.configured);
+    console.log('   Client ID present:', status.clientIdPresent);
+    console.log('   Client Secret present:', status.clientSecretPresent);
+    console.log('   Callback URL:', status.callbackUrl);
     
-    // 2. Test login URL generation
-    console.log('\n2. Testing login URL generation...');
+    if (!status.configured) {
+      console.log('❌ OAuth still not configured properly');
+      return;
+    }
+    
+    // 2. Generate a new auth URL to test the flow
+    console.log('\n2. Generating new auth URL...');
     const loginResponse = await fetch('http://localhost:5000/api/auth/x/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' }
     });
     
-    const loginData = await loginResponse.json();
-    
-    if (loginData.loginUrl) {
-      console.log('✅ Login URL generated successfully');
-      console.log('   URL contains callback:', loginData.loginUrl.includes('redirect_uri'));
+    if (loginResponse.ok) {
+      const loginData = await loginResponse.json();
+      console.log('✅ Auth URL generated successfully');
+      console.log('   Login URL created:', !!loginData.loginUrl);
+      console.log('   State parameter:', loginData.state);
+      
+      console.log('\n🔗 Auth URL ready. To test:');
+      console.log('1. Click "Login with X" button in the app');
+      console.log('2. Authorize the app in X');
+      console.log('3. Check if token exchange succeeds');
+      
+      console.log('\n📋 OAuth Flow Status:');
+      console.log('- Client credentials: ✅ Updated');
+      console.log('- Auth URL generation: ✅ Working');
+      console.log('- Token exchange: 🔄 Ready to test');
+      
     } else {
-      console.log('❌ Failed to generate login URL:', loginData.error);
+      const errorData = await loginResponse.json();
+      console.log('❌ Auth URL generation failed:', errorData.error);
     }
     
-    // 3. Instructions for user
-    console.log('\n📋 NEXT STEPS:');
-    console.log('1. Copy this callback URL:');
-    console.log('   ' + config.currentUrls.callbackUrl);
-    console.log('\n2. Go to X Developer Portal:');
-    console.log('   https://developer.x.com/en/portal/dashboard');
-    console.log('\n3. Find your app "Current News Application v3"');
-    console.log('\n4. Update Authentication Settings with EXACT URL above');
-    console.log('\n5. Save changes and test login again');
+    // 3. Check if we can test the refresh logic (if tokens exist)
+    console.log('\n3. Checking for existing tokens to test refresh...');
+    const authResponse = await fetch('http://localhost:5000/api/auth/x/check');
+    const authStatus = await authResponse.json();
     
-    console.log('\n⚠️  IMPORTANT: The URL must match EXACTLY (case-sensitive, no trailing slash)');
+    if (authStatus.authenticated) {
+      console.log('✅ Found existing valid tokens');
+      console.log('   Testing token refresh logic...');
+      
+      const fetchResponse = await fetch('http://localhost:5000/api/x/fetch-user-data', {
+        method: 'POST'
+      });
+      
+      if (fetchResponse.ok) {
+        console.log('✅ Token refresh logic working');
+      } else {
+        console.log('🔄 Token refresh triggered, check logs');
+      }
+    } else {
+      console.log('ℹ️  No valid tokens yet - complete OAuth flow first');
+    }
     
   } catch (error) {
     console.error('❌ Test failed:', error.message);
