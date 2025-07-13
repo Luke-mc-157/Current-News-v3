@@ -99,11 +99,20 @@ export async function handleXCallback(code, state) {
     clientSecret 
   });
   try {
+    console.log('Token exchange details:');
+    console.log('- Code:', code?.substring(0, 20) + '...');
+    console.log('- Code Verifier:', sessionData.codeVerifier?.substring(0, 20) + '...');
+    console.log('- Redirect URI:', callbackUrl);
+    console.log('- Client ID:', clientId);
+    console.log('- Client Secret present:', !!clientSecret);
+
     const { accessToken, refreshToken, expiresIn } = await client.loginWithOAuth2({
       code,
       codeVerifier: sessionData.codeVerifier,
       redirectUri: callbackUrl,
     });
+    
+    console.log('✅ Token exchange successful!');
     
     // Clean up the session
     sessions.delete(state);
@@ -115,7 +124,17 @@ export async function handleXCallback(code, state) {
       success: true
     };
   } catch (error) {
-    console.error('X OAuth error:', error);
+    console.error('❌ X OAuth token exchange failed:');
+    console.error('Error code:', error.code);
+    console.error('Error data:', error.data);
+    console.error('Error headers:', error.headers);
+    
+    // Debug the credentials being used
+    console.log('🔍 Debug info:');
+    console.log('- Client ID being used:', clientId);
+    console.log('- Client Secret length:', clientSecret?.length);
+    console.log('- Callback URL:', callbackUrl);
+    
     sessions.delete(state);
     throw new Error('Authentication failed: ' + error.message);
   }
