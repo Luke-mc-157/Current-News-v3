@@ -540,12 +540,78 @@ async function inferEmergentTopicsFromTimeline(posts) {
   }
 }
 
+// Phase 2: Pre-summarize each topic to avoid truncation
+async function preSummarizeTopic(topicData, topicName) {
+  console.log(`📝 Pre-summarizing topic: ${topicName}`);
+  
+  try {
+    const response = await client.chat.completions.create({
+      model: "grok-3-fast",
+      messages: [
+        {
+          role: "system",
+          content: `Summarize this topic's key findings. Focus on most important stories with highest engagement. Keep ALL source URLs intact. Return a condensed version maintaining all citations.`
+        },
+        {
+          role: "user",
+          content: topicData
+        }
+      ],
+      max_tokens: 3000
+    });
+    
+    return response.choices[0].message.content;
+  } catch (error) {
+    console.error(`❌ Pre-summarization failed for ${topicName}: ${error.message}`);
+    return topicData; // Return original if summarization fails
+  }
+}
+
+// Phase 2: Process topics in chunks to avoid overload
+async function processTopicsInChunks(topicsData, chunkSize = 2) {
+  const chunks = [];
+  for (let i = 0; i < topicsData.length; i += chunkSize) {
+    chunks.push(topicsData.slice(i, i + chunkSize));
+  }
+  
+  const processedChunks = [];
+  for (const chunk of chunks) {
+    const chunkResults = await Promise.all(
+      chunk.map(async ({ topic, data }) => {
+        const summarized = await preSummarizeTopic(data, topic);
+        return { topic, summarized };
+      })
+    );
+    processedChunks.push(...chunkResults);
+  }
+  
+  return processedChunks;
+}
+
 async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
-  console.log('🤖 Compiling newsletter with grok-4...');
+  console.log('🤖 Phase 2: Enhanced newsletter compilation with grok-4...');
   console.log(`📊 Processing ${sourceBreakdown.xaiPosts + sourceBreakdown.articles + sourceBreakdown.timelinePosts} total sources`);
   console.log(`📏 Data length: ${compiledData.length} chars`);
   
   try {
+    // Phase 2: Split data into topics for chunked processing
+    const topicsData = [];
+    const sections = compiledData.split('\n\n---\n\n');
+    
+    for (const section of sections) {
+      if (section.startsWith('TOPIC:')) {
+        const lines = section.split('\n');
+        const topic = lines[0].replace('TOPIC: ', '');
+        topicsData.push({ topic, data: section });
+      }
+    }
+    
+    // Phase 2: Pre-summarize topics to avoid truncation
+    const summarizedTopics = await processTopicsInChunks(topicsData);
+    const condensedData = summarizedTopics.map(t => t.summarized).join('\n\n---\n\n');
+    
+    console.log(`📏 Condensed data length: ${condensedData.length} chars (from ${compiledData.length})`);
+    
     const response = await client.chat.completions.create({
       model: "grok-4",
       messages: [
@@ -554,17 +620,17 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
           content: `You are a world class news editor. Create headlines from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
 
 DATA FORMAT PROVIDED:
-- Each TOPIC section contains: Live Search Summary, X Posts with full metadata, and Supporting Articles
-- USER'S TIMELINE POSTS section contains personalized posts from followed accounts
-- All X posts include: handle, text, views, likes, and URL
+- Pre-summarized topic sections with key findings and all source URLs
+- Each section maintains X posts metadata and article citations
+- All engagement metrics preserved for ranking
 
-CRITICAL INSTRUCTIONS:
-1. Create headlines using the provided X posts and article data
-2. Mix timeline posts and xAI search posts as sourcePosts where topically relevant
-3. Prioritize high-engagement posts (views/likes) in sourcePosts
-4. Each headline must have 3-5 sourcePosts from the provided data
+PHASE 2 INSTRUCTIONS:
+1. Create 3-4 headlines per topic (avoiding truncation)
+2. Preserve ALL source URLs exactly as provided
+3. Rank by engagement metrics
+4. Each headline needs 3-5 supporting sources
 
-Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines.
+Timeline posts appendix will be added separately.
 
 Return ONLY a JSON array in this exact format:
 [
@@ -608,10 +674,10 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
           role: "user",
-          content: compiledData
+          content: condensedData
         }
       ],
-      max_tokens: 20000
+      max_tokens: 10000  // Phase 2: Reduced from 20000 to avoid truncation
     });
     
     const content = response.choices[0].message.content;
@@ -635,14 +701,22 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         }
       }
       
+      // Phase 2: Add timeline posts appendix separately
+      if (!appendix && sourceBreakdown.timelinePosts > 0) {
+        appendix = await generateTimelineAppendix(compiledData);
+      }
+      
       console.log(`✅ Parsed ${headlines.length} headlines from newsletter`);
       console.log(`📋 Headlines by topic: ${headlines.map(h => `${h.category}: "${h.title}"`).join(', ')}`);
+      
+      // Phase 2: Validate headlines for missing sources
+      headlines = validateHeadlineSources(headlines, compiledData);
       
       // For now, log the appendix - integrate into podcast generation later
       if (appendix && appendix.fromYourFeed) {
         console.log('📱 From Your Feed highlights:');
         appendix.fromYourFeed.forEach((item, i) => {
-          console.log(`  ${i + 1}. ${item.summary} (${item.engagement} engagement)`);
+          console.log(`  ${i + 1}. ${item.summary} (${item.engagement || item.view_count} engagement)`);
         });
       }
       
@@ -680,6 +754,70 @@ function calculateEngagement(sourcePosts = []) {
 export async function generateNewsletter(aggregatedData, topics) {
   // This function is referenced elsewhere but can be simplified
   return generateHeadlinesWithLiveSearch(topics);
+}
+
+// Phase 2: Generate timeline appendix separately if not included
+async function generateTimelineAppendix(compiledData) {
+  console.log('📱 Phase 2: Generating timeline appendix...');
+  
+  const timelineMatch = compiledData.match(/USER'S TIMELINE POSTS \((\d+) posts\):([\s\S]*?)(?=\n\n---|\z)/);
+  if (!timelineMatch) return null;
+  
+  try {
+    const response = await client.chat.completions.create({
+      model: "grok-3-fast",
+      messages: [
+        {
+          role: "system",
+          content: `Select 3-5 high-engagement timeline posts not used in headlines. Return JSON: {"fromYourFeed": [{"summary": "factual summary", "url": "x.com URL", "view_count": number}]}`
+        },
+        {
+          role: "user",
+          content: timelineMatch[0]
+        }
+      ],
+      max_tokens: 1000
+    });
+    
+    const parsed = JSON.parse(response.choices[0].message.content);
+    return parsed;
+  } catch (error) {
+    console.error('❌ Timeline appendix generation failed:', error.message);
+    return null;
+  }
+}
+
+// Phase 2: Post-validation to recover missing sources
+function validateHeadlineSources(headlines, originalData) {
+  console.log('🔍 Phase 2: Validating headline sources...');
+  
+  let missingCount = 0;
+  
+  headlines.forEach((headline, idx) => {
+    // Check if headline has sufficient sources
+    const sourceCount = (headline.sourcePosts?.length || 0) + (headline.supportingArticles?.length || 0);
+    
+    if (sourceCount < 3) {
+      console.warn(`⚠️ Headline ${idx + 1} has only ${sourceCount} sources (minimum 3 recommended)`);
+      missingCount++;
+    }
+    
+    // Validate URLs are real and not placeholders
+    headline.supportingArticles?.forEach((article, artIdx) => {
+      if (!article.url || article.url.includes('example.com') || !article.url.startsWith('http')) {
+        console.error(`❌ Invalid article URL in headline ${idx + 1}, article ${artIdx + 1}: ${article.url}`);
+        missingCount++;
+      }
+    });
+  });
+  
+  if (missingCount > 0) {
+    console.warn(`⚠️ Phase 2 validation found ${missingCount} issues with sources`);
+  } else {
+    console.log('✅ Phase 2 validation passed: All headlines have sufficient sources');
+  }
+  
+  return headlines;
 }
 
 export async function getTrendingTopics() {
