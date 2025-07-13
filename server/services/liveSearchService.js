@@ -147,7 +147,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         id: post.id,
         text: post.text,
         author_id: post.author_id,
-        author_handle: userHandle,
+        author_handle: post.authorHandle || `@unknown`,
         created_at: post.created_at,
         public_metrics: post.public_metrics || {
           retweet_count: 0,
@@ -156,7 +156,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
           quote_count: 0,
           view_count: 0
         },
-        url: `https://x.com/${userHandle}/status/${post.id}`,
+        url: `https://x.com/${post.authorHandle || 'unknown'}/status/${post.id}`,
         source: 'timeline'
       });
     });
