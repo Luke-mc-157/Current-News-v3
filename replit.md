@@ -125,6 +125,23 @@ The application now includes a comprehensive podcast generation system:
     - **Updated Timeline Capacity**: Increased from 100 to 175 posts per fetch for richer data
     - Verified working: User @Mc_Lunderscore timeline fetched before Live Search at 3:54 AM UTC
   - **Ready for Production**: Timeline function fully integrated with search workflows using authentic user data
+- **✅ ENHANCED TIMELINE INTEGRATION**: Advanced personalization features implemented (January 13, 2025 04:08 UTC)
+  - **Emergent Topics Discovery**: New AI-powered analysis identifies 1-3 trending topics from user's timeline
+    - Analyzes high-engagement posts (top 50% by views + likes) using Grok-3-fast
+    - Automatically appends discovered topics to user's search query
+    - Example: User searches "AI", system discovers "AI Ethics" from viral timeline posts
+  - **Timeline Posts Integration**: Timeline posts now integrated into search results
+    - Posts tagged with `source: 'timeline'` for proper identification
+    - High-relevance timeline posts become primary sources in headlines
+    - Enhances personalization by incorporating user's followed content
+  - **"From Your Feed" Appendix**: New podcast appendix feature
+    - Selects 3-5 high-engagement timeline posts not used in headlines
+    - Provides factual summaries with engagement metrics
+    - Adds personal touch to generated content while maintaining factual accuracy
+  - **Technical Implementation**: 
+    - Fixed `view_count` vs `impression_count` field mapping
+    - Enhanced data summary includes timeline posts for Grok analysis
+    - Appendix parsing logic for future podcast integration
 
 ### Previous Updates (January 12, 2025)
 - **✅ FIXED DATABASE STORAGE ISSUES**: Resolved all TypeScript/Drizzle ORM compatibility issues

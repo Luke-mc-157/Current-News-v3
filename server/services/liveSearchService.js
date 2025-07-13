@@ -46,6 +46,16 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
+  // Infer emergent topics from timeline if available
+  if (followedPosts.length > 0) {
+    console.log('🔍 Inferring emergent topics from timeline...');
+    const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts);
+    if (emergentTopics.length > 0) {
+      topics = [...new Set([...topics, ...emergentTopics])]; // Dedupe and append
+      console.log(`➕ Added emergent topics: ${emergentTopics.join(', ')}`);
+    }
+  }
+  
   // Step 1: Call xAI Live Search API first for all topics
   console.log('📡 Step 1: xAI Live Search API calls for all topics...');
   const allTopicData = [];
@@ -219,6 +229,42 @@ async function getTopicDataFromLiveSearch(topic) {
   }
 }
 
+async function inferEmergentTopicsFromTimeline(posts) {
+  if (!posts.length) return [];
+
+  // Filter high-engagement: Sort by views + likes, take top half
+  const sortedPosts = posts.sort((a, b) => {
+    const engA = (a.public_metrics?.view_count || 0) + (a.public_metrics?.like_count || 0);
+    const engB = (b.public_metrics?.view_count || 0) + (b.public_metrics?.like_count || 0);
+    return engB - engA;
+  });
+  const highEngPosts = sortedPosts.slice(0, Math.ceil(posts.length / 2));
+
+  // Format for Grok
+  const postsSummary = highEngPosts.map(p => `Post: ${p.text} (Engagement: ${p.public_metrics?.view_count || 0} views, ${p.public_metrics?.like_count || 0} likes)`).join('\n');
+
+  try {
+    const response = await client.chat.completions.create({
+      model: "grok-3-fast",
+      messages: [
+        {
+          role: "system",
+          content: `Analyze these high-engagement X posts from the user's timeline. Infer 1-3 emergent topics (e.g., "AI Ethics", "Local Elections"). Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+        },
+        { role: "user", content: postsSummary }
+      ],
+      max_tokens: 500
+    });
+
+    const content = response.choices[0].message.content;
+    const parsed = JSON.parse(content);
+    return parsed.emergentTopics || [];
+  } catch (error) {
+    console.error('Emergent topics inference failed:', error);
+    return [];
+  }
+}
+
 async function compileNewsletterWithGrok(allTopicData) {
   console.log('🤖 Compiling newsletter with grok-3-fast...');
   
@@ -228,12 +274,23 @@ async function compileNewsletterWithGrok(allTopicData) {
       `Citation [${index}]: ${citation}`
     ).join('\n');
     
+    // Include timeline posts if available
+    const timelinePostsText = topicData.xPosts
+      .filter(post => post.source === 'timeline')
+      .map(post => `- @${post.handle}: "${post.text}" (${post.views} views, ${post.likes} likes) ${post.url}`)
+      .join('\n');
+    
+    const timelineSection = timelinePostsText ? `
+TIMELINE POSTS:
+${timelinePostsText}
+` : '';
+    
     return `
 TOPIC: ${topicData.topic}
 
 LIVE SEARCH DATA:
 ${topicData.webData.substring(0, 1500)}
-
+${timelineSection}
 CITATIONS (${topicData.citations.length} URLs):
 ${citationsText}
 `;
@@ -250,7 +307,11 @@ ${citationsText}
           role: "system",
           content: `You are a news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
 
-Return ONLY a JSON array of headlines in this exact format:
+If timeline posts (source: 'timeline') relate to headlines, integrate them as primary sourcePosts.
+
+Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines; provide factual summaries and links.
+
+Return ONLY a JSON array of headlines in this exact format, with appendix as a separate object at the end:
 [
   {
     "title": "Specific headline from sources",
@@ -272,6 +333,19 @@ Return ONLY a JSON array of headlines in this exact format:
         "source": "source name"
       }
     ]
+  },
+  // ... more headlines
+  {
+    "appendix": {
+      "fromYourFeed": [
+        {
+          "summary": "Factual summary of post",
+          "url": "x.com URL",
+          "engagement": number
+        }
+        // 3-5 items
+      ]
+    }
   }
 ]
 
@@ -291,9 +365,31 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
     
     // Parse JSON response
     try {
-      const headlines = JSON.parse(content);
+      const parsedData = JSON.parse(content);
+      
+      // Separate headlines and appendix
+      let headlines = [];
+      let appendix = null;
+      
+      for (const item of parsedData) {
+        if (item.appendix) {
+          appendix = item.appendix;
+          console.log(`📎 Found "From Your Feed" appendix with ${appendix.fromYourFeed?.length || 0} items`);
+        } else if (item.title) {
+          headlines.push(item);
+        }
+      }
+      
       console.log(`✅ Parsed ${headlines.length} headlines from newsletter`);
       console.log(`📋 Headlines by topic: ${headlines.map(h => `${h.category}: "${h.title}"`).join(', ')}`);
+      
+      // For now, log the appendix - integrate into podcast generation later
+      if (appendix && appendix.fromYourFeed) {
+        console.log('📱 From Your Feed highlights:');
+        appendix.fromYourFeed.forEach((item, i) => {
+          console.log(`  ${i + 1}. ${item.summary} (${item.engagement} engagement)`);
+        });
+      }
       
       // Transform to expected format
       return headlines.map((headline, index) => ({
