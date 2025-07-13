@@ -11,25 +11,13 @@ import type { Headline } from "@shared/schema";
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
   const [useLiveSearch, setUseLiveSearch] = useState(true); // Default to Live Search
-  const [isGenerating, setIsGenerating] = useState(false);
 
-  const { data: headlinesData, isLoading: headlinesLoading, error: headlinesError } = useQuery({
+  const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
     queryKey: ["/api/headlines"],
     enabled: submittedTopics.length > 0,
   });
 
   const headlines: Headline[] = headlinesData?.headlines || [];
-  
-  // Debug logging
-  useEffect(() => {
-    console.log('Headlines query state:', {
-      loading: headlinesLoading,
-      error: headlinesError,
-      dataReceived: !!headlinesData,
-      headlinesCount: headlines.length,
-      enabled: submittedTopics.length > 0
-    });
-  }, [headlinesLoading, headlinesError, headlinesData, headlines.length, submittedTopics.length]);
 
   // Cache headlines when they are fetched successfully
   useEffect(() => {
@@ -92,12 +80,8 @@ export default function Home() {
               onToggle={setUseLiveSearch} 
             />
             <TopicInput 
-              onTopicsSubmitted={(topics) => {
-                console.log('Topics submitted:', topics);
-                setSubmittedTopics(topics);
-              }} 
+              onTopicsSubmitted={setSubmittedTopics} 
               useLiveSearch={useLiveSearch}
-              onLoadingChange={setIsGenerating}
             />
           </div>
 
@@ -118,7 +102,7 @@ export default function Home() {
               </span>
             </div>
 
-            {headlinesLoading || isGenerating ? (
+            {headlinesLoading ? (
               <div className="space-y-6">
                 {Array.from({ length: 3 }).map((_, i) => (
                   <div key={i} className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">

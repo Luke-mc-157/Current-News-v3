@@ -5,26 +5,24 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { X, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest, queryClient } from "@/lib/queryClient";
+import { apiRequest } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
   useLiveSearch?: boolean;
-  onLoadingChange?: (isLoading: boolean) => void;
 }
 
-export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, onLoadingChange }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
-    mutationFn: (topicsToSubmit: string[]) => {
+    mutationFn: (topics: string[]) => {
       const endpoint = useLiveSearch ? "/api/generate-headlines-v2" : "/api/generate-headlines";
-      return apiRequest("POST", endpoint, { topics: topicsToSubmit });
+      return apiRequest("POST", endpoint, { topics });
     },
     onSuccess: (data) => {
-      console.log('Live Search response:', data);
       const performanceInfo = data.performance 
         ? ` in ${data.performance.responseTime} using ${data.performance.method}` 
         : "";
@@ -32,18 +30,7 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
         title: "Headlines Generated",
         description: `Your personalized news headlines have been created${performanceInfo}.`,
       });
-      
-      // Don't clear topics, just notify parent and refresh headlines
       onTopicsSubmitted(topics);
-      
-      // Force a refetch with a small delay to ensure backend has stored the headlines
-      setTimeout(() => {
-        console.log('Invalidating headlines query...');
-        queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
-        queryClient.refetchQueries({ queryKey: ["/api/headlines"] });
-      }, 100);
-      
-      onLoadingChange?.(false);
     },
     onError: (error: any) => {
       toast({
@@ -51,7 +38,6 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
         description: error.message || "Failed to generate headlines",
         variant: "destructive",
       });
-      onLoadingChange?.(false);
     },
   });
 
@@ -78,7 +64,6 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
     e.preventDefault();
     if (topics.length >= 1) {
       generateHeadlinesMutation.mutate(topics);
-      onLoadingChange?.(true);
     }
   };
 
@@ -129,7 +114,7 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
         {generateHeadlinesMutation.isPending ? (
           <>
             <span className="animate-spin mr-2">⏳</span> 
-            {useLiveSearch ? "Using Live Search (this may take several minutes)..." : "Generating Headlines..."}
+            {useLiveSearch ? "Using Live Search..." : "Generating Headlines..."}
           </>
         ) : (
           <>

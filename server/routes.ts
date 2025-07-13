@@ -25,7 +25,6 @@ export function registerRoutes(app) {
   const router = express.Router();
   let headlinesStore = [];
   let appendixStore = null;
-  let headlinesTimestamp = 0; // Track when headlines were last generated
 
   router.post("/api/generate-headlines", async (req, res) => {
     const { topics } = req.body;
@@ -129,7 +128,6 @@ export function registerRoutes(app) {
       headlines = await completeSearch(topics, headlines);
       headlines = headlines.sort((a, b) => b.engagement - a.engagement);
       headlinesStore = headlines;
-      headlinesTimestamp = Date.now();
       res.json({ success: true, headlines });
     } catch (error) {
       console.error("Error in /api/generate-headlines:", error.message);
@@ -171,7 +169,6 @@ export function registerRoutes(app) {
       // Store headlines and appendix for podcast generation
       headlinesStore = headlines;
       appendixStore = appendix;
-      headlinesTimestamp = Date.now();
       
       console.log(`✅ Live Search completed in ${responseTime}ms with ${headlines.length} headlines`);
       console.log(`📊 Performance improvement: ${Math.round(30000 / responseTime)}x faster than old system`);
@@ -278,7 +275,6 @@ export function registerRoutes(app) {
       
       // Store headlines for podcast generation
       headlinesStore = transformedHeadlines;
-      headlinesTimestamp = Date.now();
       
       console.log(`✅ Working workflow completed in ${responseTime}ms with ${transformedHeadlines.length} headlines`);
       console.log(`📊 Generated headlines with real X posts and supporting articles`);
@@ -398,25 +394,7 @@ export function registerRoutes(app) {
     if (!headlinesStore.length) {
       return res.status(404).json({ headlines: [], message: "No headlines available" });
     }
-    const headlinesAge = headlinesTimestamp > 0 ? Date.now() - headlinesTimestamp : 0;
-    res.json({ 
-      headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement),
-      timestamp: headlinesTimestamp,
-      age: headlinesAge
-    });
-  });
-  
-  // Status endpoint for debugging
-  router.get("/api/headlines/status", (req, res) => {
-    const age = headlinesTimestamp > 0 ? Date.now() - headlinesTimestamp : 0;
-    res.json({
-      count: headlinesStore.length,
-      timestamp: headlinesTimestamp,
-      age: age,
-      ageSeconds: Math.round(age / 1000),
-      fresh: headlinesTimestamp > 0 && age < 5 * 60 * 1000,
-      firstHeadline: headlinesStore[0]?.title || null
-    });
+    res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
   });
 
   // Quick endpoint to check post count
@@ -437,23 +415,7 @@ export function registerRoutes(app) {
       return res.status(400).json({ error: "Headlines must be an array" });
     }
     
-    // Only load cached headlines if no fresh headlines exist or they're older than 5 minutes
-    const headlinesAge = headlinesTimestamp > 0 ? Date.now() - headlinesTimestamp : Infinity;
-    const fiveMinutes = 5 * 60 * 1000;
-    
-    console.log(`📊 Cache check: store=${headlinesStore.length}, timestamp=${headlinesTimestamp}, age=${Math.round(headlinesAge/1000)}s, fresh=${headlinesAge < fiveMinutes}`);
-    
-    if (headlinesStore.length > 0 && headlinesTimestamp > 0 && headlinesAge < fiveMinutes) {
-      console.log(`🚫 Skipping cached headlines load - fresh headlines exist (${Math.round(headlinesAge / 1000)}s old)`);
-      return res.json({ 
-        success: false, 
-        message: `Fresh headlines already exist (${Math.round(headlinesAge / 1000)}s old)`,
-        headlines: headlinesStore
-      });
-    }
-    
     headlinesStore = headlines;
-    headlinesTimestamp = headlines.length > 0 ? Date.now() : 0; // Only set timestamp for non-empty headlines
     console.log(`Loaded ${headlines.length} cached headlines into backend store for testing`);
     
     res.json({ 

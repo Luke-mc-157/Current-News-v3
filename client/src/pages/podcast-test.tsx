@@ -25,16 +25,11 @@ export default function PodcastTest() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ headlines: parsedHeadlines })
-        }).then(response => response.json())
-        .then(data => {
-          if (data.success) {
+        }).then(response => {
+          if (response.ok) {
             console.log('Successfully loaded cached headlines into backend');
           } else {
-            console.log('Using existing fresh headlines:', data.message);
-            // If fresh headlines exist, use those instead
-            if (data.headlines) {
-              setHeadlines(data.headlines);
-            }
+            console.error('Failed to load cached headlines into backend');
           }
         }).catch(error => {
           console.error('Error loading cached headlines into backend:', error);
