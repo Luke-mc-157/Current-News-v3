@@ -705,6 +705,85 @@ export function registerRoutes(app) {
     }
   });
 
+  // Quick test endpoint to verify Project attachment fix
+  router.post("/api/x/test-project-attachment", async (req, res) => {
+    try {
+      const userId = 1;
+      
+      // Get user's X auth token
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      if (!authToken) {
+        return res.status(401).json({ 
+          error: "User not authenticated with X. Please login with X first.",
+          needsAuth: true
+        });
+      }
+
+      // Test the exact endpoints that were failing
+      const { createAuthenticatedClient } = await import('./services/xAuth.js');
+      const client = createAuthenticatedClient(authToken.accessToken);
+      
+      // Get current user info
+      const { data: xUser } = await client.v2.me();
+      
+      console.log(`Testing Project attachment for: ${xUser.username} (${xUser.id})`);
+
+      // Test both endpoints quickly
+      const results = {};
+      
+      try {
+        const following = await client.v2.following(xUser.id, { max_results: 5 });
+        results.following = {
+          success: true,
+          count: following.data?.length || 0,
+          message: "Following endpoint working!"
+        };
+      } catch (error) {
+        results.following = {
+          success: false,
+          error: error.data?.reason || error.message,
+          needsProjectAttachment: error.data?.reason === 'client-not-enrolled'
+        };
+      }
+      
+      try {
+        const timeline = await client.v2.userTimeline(xUser.id, { max_results: 5 });
+        results.timeline = {
+          success: true,
+          count: timeline.data?.length || 0,
+          message: "Timeline endpoint working!"
+        };
+      } catch (error) {
+        results.timeline = {
+          success: false,
+          error: error.data?.reason || error.message,
+          needsProjectAttachment: error.data?.reason === 'client-not-enrolled'
+        };
+      }
+
+      const allWorking = results.following.success && results.timeline.success;
+
+      res.json({
+        success: allWorking,
+        xUser: { id: xUser.id, username: xUser.username },
+        endpoints: results,
+        message: allWorking 
+          ? "Project attachment successful! All endpoints working!"
+          : "Project attachment still needed. Complete steps in X Developer Portal.",
+        nextStep: allWorking 
+          ? "Run full data fetch: POST /api/x/fetch-user-data"
+          : "Attach App 31188075 to a Project in https://developer.twitter.com/en/portal/dashboard"
+      });
+
+    } catch (error) {
+      console.error("Error testing Project attachment:", error);
+      res.status(500).json({ 
+        error: error.message,
+        message: "Authentication or Project attachment issue"
+      });
+    }
+  });
+
   // X OAuth callback endpoint
   router.get("/auth/twitter/callback", async (req, res) => {
     const { code, state } = req.query;
