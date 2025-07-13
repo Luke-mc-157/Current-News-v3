@@ -13,12 +13,23 @@ export default function Home() {
   const [useLiveSearch, setUseLiveSearch] = useState(true); // Default to Live Search
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
+  const { data: headlinesData, isLoading: headlinesLoading, error: headlinesError } = useQuery({
     queryKey: ["/api/headlines"],
     enabled: submittedTopics.length > 0,
   });
 
   const headlines: Headline[] = headlinesData?.headlines || [];
+  
+  // Debug logging
+  useEffect(() => {
+    console.log('Headlines query state:', {
+      loading: headlinesLoading,
+      error: headlinesError,
+      dataReceived: !!headlinesData,
+      headlinesCount: headlines.length,
+      enabled: submittedTopics.length > 0
+    });
+  }, [headlinesLoading, headlinesError, headlinesData, headlines.length, submittedTopics.length]);
 
   // Cache headlines when they are fetched successfully
   useEffect(() => {
@@ -81,7 +92,10 @@ export default function Home() {
               onToggle={setUseLiveSearch} 
             />
             <TopicInput 
-              onTopicsSubmitted={setSubmittedTopics} 
+              onTopicsSubmitted={(topics) => {
+                console.log('Topics submitted:', topics);
+                setSubmittedTopics(topics);
+              }} 
               useLiveSearch={useLiveSearch}
               onLoadingChange={setIsGenerating}
             />

@@ -24,6 +24,7 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
       return apiRequest("POST", endpoint, { topics: topicsToSubmit });
     },
     onSuccess: (data) => {
+      console.log('Live Search response:', data);
       const performanceInfo = data.performance 
         ? ` in ${data.performance.responseTime} using ${data.performance.method}` 
         : "";
@@ -35,8 +36,13 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false, o
       // Don't clear topics, just notify parent and refresh headlines
       onTopicsSubmitted(topics);
       
-      // Invalidate the headlines query to trigger a refetch
-      queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
+      // Force a refetch with a small delay to ensure backend has stored the headlines
+      setTimeout(() => {
+        console.log('Invalidating headlines query...');
+        queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
+        queryClient.refetchQueries({ queryKey: ["/api/headlines"] });
+      }, 100);
+      
       onLoadingChange?.(false);
     },
     onError: (error: any) => {
