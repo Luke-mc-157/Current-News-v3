@@ -129,8 +129,8 @@ export async function storeUserData(storage, userId, follows, timelinePosts) {
       }
     }
 
-    // Clean up old posts (keep only last 7 days)
-    await storage.deleteOldTimelinePosts(userId, 7);
+    // Clean up old posts (keep only last 30 hours)
+    await storage.deleteOldTimelinePosts(userId, 30);
 
     console.log(`Stored ${storedPosts} new timeline posts for user ${userId}`);
     

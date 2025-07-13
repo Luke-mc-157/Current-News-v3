@@ -35,7 +35,7 @@ export interface IStorage {
   // User timeline posts methods  
   createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts>;
   getUserTimelinePosts(userId: number, days?: number): Promise<UserTimelinePosts[]>;
-  deleteOldTimelinePosts(userId: number, days: number): Promise<void>;
+  deleteOldTimelinePosts(userId: number, hours: number): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -141,8 +141,8 @@ export class MemStorage implements IStorage {
     );
   }
 
-  async deleteOldTimelinePosts(userId: number, days: number): Promise<void> {
-    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+  async deleteOldTimelinePosts(userId: number, hours: number = 30): Promise<void> {
+    const cutoffDate = new Date(Date.now() - (hours * 60 * 60 * 1000));
     const keysToDelete = Array.from(this.userTimelinePosts.entries())
       .filter(([_, post]) => post.userId === userId && post.createdAt < cutoffDate)
       .map(([key, _]) => key);
@@ -469,8 +469,8 @@ export class DatabaseStorage implements IStorage {
       ));
   }
 
-  async deleteOldTimelinePosts(userId: number, days: number): Promise<void> {
-    const cutoffDate = new Date(Date.now() - (days * 24 * 60 * 60 * 1000));
+  async deleteOldTimelinePosts(userId: number, hours: number = 30): Promise<void> {
+    const cutoffDate = new Date(Date.now() - (hours * 60 * 60 * 1000));
     await db.delete(userTimelinePosts)
       .where(and(
         eq(userTimelinePosts.userId, userId),
