@@ -70,13 +70,30 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
       'tweet.fields': 'id,text,created_at,author_id,public_metrics'
     });
 
-    if (!response.data) {
+    console.log('Timeline response meta:', response.meta);
+    console.log('Timeline data type:', typeof response.data);
+    console.log('Timeline data isArray:', Array.isArray(response.data));
+    console.log('Timeline data length:', response.data?.length);
+    
+    // Handle the response data - it should be an array
+    let tweets = [];
+    if (response.data && Array.isArray(response.data)) {
+      tweets = response.data;
+    } else if (response.data) {
+      console.log('Data structure unexpected:', Object.keys(response.data));
+      return [];
+    } else {
       console.log('No timeline tweets returned from X API');
       return [];
     }
 
+    if (tweets.length === 0) {
+      console.log('Empty timeline data returned');
+      return [];
+    }
+
     // Transform X API response to our database format
-    const posts = response.data.map(post => {
+    const posts = tweets.map(post => {
       return {
         postId: post.id,
         authorId: post.author_id,

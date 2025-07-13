@@ -619,7 +619,7 @@ export function registerRoutes(app) {
     }
   });
   
-  // Fetch and store user's X follows and timeline data
+  // Fetch and store user's X data (timeline working, follows needs Project attachment)
   router.post("/api/x/fetch-user-data", async (req, res) => {
     try {
       const userId = 1; // In production, get from session/JWT
@@ -635,30 +635,62 @@ export function registerRoutes(app) {
       // Import X timeline service for Basic tier endpoints
       const { fetchUserFollows, fetchUserTimeline, storeUserData } = await import('./services/xTimeline.js');
       
-      // Get X user ID from token (we'll need to fetch it)
+      // Get X user ID from token
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
       const client = createAuthenticatedClient(authToken.accessToken);
       const { data: xUser } = await client.v2.me();
       
       console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
 
-      // Basic tier: 5 requests/15 mins for both endpoints
-      const [follows, timelinePosts] = await Promise.all([
-        fetchUserFollows(authToken.accessToken, xUser.id),
-        fetchUserTimeline(authToken.accessToken, xUser.id, 7) // Last 7 days
-      ]);
+      // Try both endpoints, but continue if one fails
+      let follows = [];
+      let timelinePosts = [];
+      const results = {};
 
-      // Store in database
+      // Try to fetch follows (may fail with Project attachment error)
+      try {
+        follows = await fetchUserFollows(authToken.accessToken, xUser.id);
+        results.follows = { success: true, count: follows.length };
+      } catch (error) {
+        console.log('Follows endpoint failed (expected):', error.message);
+        results.follows = { 
+          success: false, 
+          error: error.message,
+          needsProjectAttachment: error.message.includes('Project')
+        };
+      }
+
+      // Try to fetch timeline (should work with new app)
+      try {
+        timelinePosts = await fetchUserTimeline(authToken.accessToken, xUser.id, 7);
+        results.timeline = { success: true, count: timelinePosts.length };
+      } catch (error) {
+        console.log('Timeline endpoint failed:', error.message);
+        results.timeline = { success: false, error: error.message };
+      }
+
+      // Store whatever data we got
       const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
 
+      const hasAnyData = follows.length > 0 || timelinePosts.length > 0;
+
       res.json({
-        success: true,
+        success: hasAnyData,
         xUserId: xUser.id,
         xHandle: xUser.username,
         ...storeResult,
-        message: `Successfully fetched X data for ${xUser.username} (Basic tier: 5 req/15min per endpoint)`,
-        issue: "Need to attach App ID 31188075 to a Project in X developer portal",
-        fix: "Visit https://developer.twitter.com/en/docs/projects/overview"
+        endpoints: results,
+        message: hasAnyData 
+          ? `Partial success: ${results.timeline.success ? 'Timeline' : ''} ${results.follows.success ? 'Follows' : ''} working`
+          : "Project attachment needed for both endpoints",
+        status: {
+          timelineWorking: results.timeline.success,
+          followsWorking: results.follows.success,
+          newApp: "Current News Application v3 - Timeline endpoint functional"
+        },
+        nextSteps: results.follows.success 
+          ? "All endpoints working! Ready for Live Search integration."
+          : "Complete Project attachment for follows endpoint in X Developer Portal"
       });
 
     } catch (error) {

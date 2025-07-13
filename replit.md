@@ -107,19 +107,27 @@ The application now includes a comprehensive podcast generation system:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
-### Latest Updates (January 12, 2025)
+### Latest Updates (January 13, 2025)
+- **⚡ PARTIAL X API SUCCESS**: New app "Current News Application v3" working with timeline endpoint
+  - Created new X app within project to resolve attachment issues
+  - Timeline endpoint (GET /2/users/:id/timelines/reverse_chronological) now functional ✅
+  - Following endpoint (GET /2/users/:id/following) still needs Project attachment ❌
+  - Updated implementation to handle mixed endpoint availability gracefully
+  - OAuth authentication working correctly with new app credentials
+  - Ready for Live Search integration using timeline data
+
+### Previous Updates (January 12, 2025)
 - **✅ FIXED DATABASE STORAGE ISSUES**: Resolved all TypeScript/Drizzle ORM compatibility issues
   - Fixed array handling: Proper conversion from array-like objects to real arrays
   - Fixed engagement field type: Changed from text to integer in database schema
   - Fixed database insertion: Added proper array wrapping for Drizzle `.values()` method
   - Fixed headline ID generation: Auto-generate IDs since InsertHeadline omits id field
   - Database migrations working correctly, storage layer fully functional
-- **🔧 X API PROJECT ENROLLMENT STILL REQUIRED**: Confirmed 403 "client-not-enrolled" errors persist
-  - Basic tier ($200/month) DOES support required endpoints: GET /2/users/:id/timelines/reverse_chronological and POST /2/users/:id/following (5 requests/15 mins each)
-  - Issue: X App ID 31188075 must be attached to a Project in developer portal
-  - Solution: Visit https://developer.twitter.com/en/docs/projects/overview to create/attach Project
-  - Fixed twitter-api-v2 method calls: `client.v2.userTweets()` for timeline, `client.v2.following()` for follows
-  - Authentication working correctly, only Project enrollment missing for full API access
+- **🔧 X API PROJECT ENROLLMENT PROGRESS**: Partial resolution achieved
+  - Basic tier ($200/month) DOES support required endpoints: GET /2/users/:id/timelines/reverse_chronological and GET /2/users/:id/following (5 requests/15 mins each)
+  - Solution: Created new app "Current News Application v3" within project structure
+  - Fixed twitter-api-v2 method calls: `client.v2.userTimeline()` for timeline, `client.v2.following()` for follows
+  - Authentication working correctly, timeline endpoint functional
 - **✅ X API OAUTH INTEGRATION**: Added complete OAuth 2.0 authentication flow for X (Twitter) API
   - New dependency: `twitter-api-v2` for official X API client
   - `xAuth.js` service handles PKCE OAuth flow with secure session management
