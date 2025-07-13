@@ -109,13 +109,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
       console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
       
-      // Second: Skip X API search - xAI Live Search already includes X data
-      console.log(`⏭️ Skipping separate X API search - xAI Live Search includes X data`);
-      const topicXPosts = [];
-      
       allTopicData.push({
         topic: topic,
-        xPosts: topicXPosts,
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
       });
@@ -124,7 +119,6 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
       allTopicData.push({
         topic: topic,
-        xPosts: [],
         webData: '',
         citations: []
       });
