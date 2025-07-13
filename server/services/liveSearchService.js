@@ -43,13 +43,17 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     } catch (error) {
       console.error(`❌ Timeline fetch error: ${error.message}`);
       
-      // Fallback: Use stored timeline data from database
-      if (error.message.includes('rate limit')) {
-        console.log(`💾 Fallback: Retrieving stored timeline data from database...`);
-        try {
-          const { storage } = await import('../storage.js');
-          const storedPosts = await storage.getUserTimelinePosts(userId, 7);
-          
+      // Fallback: Use stored timeline data from database for any fetch failure
+      // (rate limits, network issues, etc.)
+      console.log(`💾 FALLBACK ACTIVATED: Retrieving stored timeline data from database...`);
+      try {
+        const { storage } = await import('../storage.js');
+        const storedPosts = await storage.getUserTimelinePosts(userId, 7);
+        
+        if (storedPosts.length === 0) {
+          console.log(`❌ No stored timeline posts found in database`);
+          followedPosts = [];
+        } else {
           // Transform stored posts to expected format and limit to 175 most recent
           followedPosts = storedPosts
             .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
@@ -68,25 +72,28 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
               }
             }));
           
-          console.log(`✅ Using ${followedPosts.length} stored timeline posts as fallback`);
-        } catch (fallbackError) {
-          console.error(`❌ Fallback failed: ${fallbackError.message}`);
-          followedPosts = []; // Continue without timeline data if fallback fails
+          console.log(`✅ FALLBACK SUCCESS: Using ${followedPosts.length} stored timeline posts from database`);
+          console.log(`📅 Stored posts date range: ${new Date(followedPosts[followedPosts.length-1]?.created_at).toISOString()} to ${new Date(followedPosts[0]?.created_at).toISOString()}`);
         }
-      } else {
-        followedPosts = []; // Continue without timeline data for non-rate-limit errors
+      } catch (fallbackError) {
+        console.error(`❌ FALLBACK FAILED: ${fallbackError.message}`);
+        followedPosts = []; // Continue without timeline data if fallback fails
       }
     }
   }
   
   // Infer emergent topics from timeline if available
   if (followedPosts.length > 0) {
-    console.log('🔍 Inferring emergent topics from timeline...');
+    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts...`);
     const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts);
     if (emergentTopics.length > 0) {
       topics = [...new Set([...topics, ...emergentTopics])]; // Dedupe and append
       console.log(`➕ Added emergent topics: ${emergentTopics.join(', ')}`);
+    } else {
+      console.log(`📭 No emergent topics discovered from timeline posts`);
     }
+  } else {
+    console.log(`📭 No timeline posts available for emergent topics discovery`);
   }
   
   // Step 1: Call xAI Live Search API first for all topics
@@ -132,7 +139,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 1.5: If we have timeline posts, categorize them and add to topic data
   if (followedPosts.length > 0 && userHandle) {
-    console.log('🔄 Categorizing timeline posts by topics...');
+    console.log(`🔄 Categorizing ${followedPosts.length} timeline posts by ${topics.length} topics...`);
     
     try {
       // Format posts for categorization
@@ -168,7 +175,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
             text: post.text,
             url: post.url,
             time: post.created_at,
-            views: post.public_metrics.impression_count || 0,
+            views: post.public_metrics.view_count || 0,
             likes: post.public_metrics.like_count || 0,
             handle: post.author_handle,
             source: 'timeline'
