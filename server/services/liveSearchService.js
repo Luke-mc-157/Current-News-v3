@@ -82,6 +82,24 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
+  // Filter timeline posts by engagement (Phase 1 improvement)
+  if (followedPosts.length > 0) {
+    console.log(`📊 Filtering ${followedPosts.length} timeline posts by engagement...`);
+    
+    // Calculate median engagement
+    const engagements = followedPosts.map(p => (p.public_metrics.view_count || 0) + (p.public_metrics.like_count || 0));
+    engagements.sort((a, b) => a - b);
+    const median = engagements[Math.floor(engagements.length / 2)] || 0;
+    
+    // Filter to keep only above-median engagement posts
+    const originalCount = followedPosts.length;
+    followedPosts = followedPosts.filter(p => 
+      ((p.public_metrics.view_count || 0) + (p.public_metrics.like_count || 0)) > median
+    );
+    
+    console.log(`✅ Filtered from ${originalCount} to ${followedPosts.length} high-engagement posts (above median: ${median})`);
+  }
+  
   // Infer emergent topics from timeline if available
   if (followedPosts.length > 0) {
     console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts...`);
@@ -161,7 +179,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
-  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts);
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken);
   
   // Step 3: Generate newsletter with compiled data
   console.log('📝 Step 3: Generating newsletter with compiled data...');
@@ -220,11 +238,12 @@ function categorizeCitations(citations) {
   return { xPostIds, articleUrls };
 }
 
-// Batch fetch X posts using X API
-async function fetchXPostsBatch(postIds) {
+// Batch fetch X posts using X API (with user token for full metrics)
+async function fetchXPostsBatch(postIds, accessToken) {
   if (postIds.length === 0) return [];
   
-  console.log(`🐦 Fetching ${postIds.length} X posts via batch API...`);
+  const isUsingUserToken = !!accessToken;
+  console.log(`🐦 Fetching ${postIds.length} X posts via batch API (${isUsingUserToken ? 'with user token' : 'with app token'})...`);
   
   // Batch up to 100 post IDs per request
   const batches = [];
@@ -234,17 +253,21 @@ async function fetchXPostsBatch(postIds) {
   
   const allPosts = [];
   
+  // Use user's accessToken if available for better metrics, otherwise use app bearer token
+  const client = new TwitterApi(accessToken || process.env.X_BEARER_TOKEN);
+  
   for (const batch of batches) {
     try {
       const idsString = batch.join(',');
-      const response = await fetch(`https://api.twitter.com/2/tweets?ids=${idsString}&tweet.fields=created_at,author_id,public_metrics,text&user.fields=username&expansions=author_id`, {
-        headers: {
-          'Authorization': `Bearer ${process.env.X_BEARER_TOKEN}`,
-          'Content-Type': 'application/json'
-        }
+      
+      // Use TwitterApi for better error handling and user context
+      const tweetsLookup = await client.v2.tweets(idsString, {
+        'tweet.fields': ['created_at', 'author_id', 'public_metrics', 'text'],
+        'user.fields': ['username'],
+        expansions: ['author_id']
       });
       
-      const data = await response.json();
+      const data = tweetsLookup;
       
       if (data.data) {
         // Transform to timeline format
@@ -319,7 +342,7 @@ async function extractArticleData(url) {
 }
 
 // Compile all raw search data with metadata
-async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts) {
+async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken) {
   console.log('🔄 Compiling raw search data with X API batch fetching...');
   
   const compiledTopics = [];
@@ -332,24 +355,22 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     
     console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
     
-    // Batch fetch X posts with authentic metadata
-    const xPostSources = await fetchXPostsBatch(xPostIds);
+    // Batch fetch X posts with authentic metadata (use user token for better data)
+    const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
     totalXAIPosts += xPostSources.length;
     
-    // Process articles individually (limit to 10 per topic)
-    const articleSources = [];
-    for (let i = 0; i < Math.min(articleUrls.length, 10); i++) {
-      const articleData = await extractArticleData(articleUrls[i]);
-      if (articleData) {
-        articleSources.push(articleData);
-        totalArticles++;
-      }
-      
-      // Small delay between article requests
-      if (i < Math.min(articleUrls.length - 1, 9)) {
-        await new Promise(resolve => setTimeout(resolve, 200));
-      }
-    }
+    // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
+    const articlePromises = articleUrls.slice(0, 15).map(async (url, index) => {
+      // Stagger requests slightly to avoid overwhelming servers
+      await new Promise(resolve => setTimeout(resolve, index * 100));
+      return extractArticleData(url);
+    });
+    
+    const articleResults = await Promise.all(articlePromises);
+    const articleSources = articleResults.filter(article => article !== null);
+    totalArticles += articleSources.length;
+    
+    console.log(`✅ Fetched ${articleSources.length} articles out of ${Math.min(articleUrls.length, 15)} attempted`);
     
     compiledTopics.push({
       topic: topicData.topic,
