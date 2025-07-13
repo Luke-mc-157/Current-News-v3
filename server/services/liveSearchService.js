@@ -165,6 +165,14 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 3: Generate newsletter with compiled data
   console.log('📝 Step 3: Generating newsletter with compiled data...');
+  
+  // Log the full raw compiled data before sending to Grok
+  console.log('🔍 Full raw compiled data being sent to Grok:');
+  console.log('============== START COMPILED DATA ==============');
+  console.log(compiledResult.compiledData);
+  console.log('============== END COMPILED DATA ==============');
+  console.log(`📊 Breakdown: ${JSON.stringify(compiledResult.breakdown)}`);
+  
   const { headlines, appendix } = await compileNewsletterWithGrok(compiledResult.compiledData, compiledResult.breakdown);
   
   const responseTime = Date.now() - startTime;
