@@ -364,6 +364,16 @@ export function registerRoutes(app) {
     res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
   });
 
+  // Quick endpoint to check post count
+  router.get("/api/posts/count", async (_req, res) => {
+    try {
+      const posts = await storage.getUserTimelinePosts(1); // Check user 1's posts
+      res.json({ count: posts.length, success: true });
+    } catch (error) {
+      res.status(500).json({ error: error.message, success: false });
+    }
+  });
+
   // Load cached headlines for testing (used by podcast test page)
   router.post("/api/load-cached-headlines", (req, res) => {
     const { headlines } = req.body;
