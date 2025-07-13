@@ -42,7 +42,40 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.log(`✅ Retrieved ${followedPosts.length} timeline posts from database`);
     } catch (error) {
       console.error(`❌ Timeline fetch error: ${error.message}`);
-      followedPosts = []; // Continue without timeline data if fetch fails
+      
+      // Fallback: Use stored timeline data from database
+      if (error.message.includes('rate limit')) {
+        console.log(`💾 Fallback: Retrieving stored timeline data from database...`);
+        try {
+          const { storage } = await import('../storage.js');
+          const storedPosts = await storage.getUserTimelinePosts(userId, 7);
+          
+          // Transform stored posts to expected format and limit to 175 most recent
+          followedPosts = storedPosts
+            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+            .slice(0, 175)
+            .map(post => ({
+              id: post.postId,
+              text: post.text,
+              author_id: post.authorId,
+              created_at: post.createdAt,
+              public_metrics: {
+                retweet_count: post.retweetCount,
+                reply_count: post.replyCount,
+                like_count: post.likeCount,
+                quote_count: post.quoteCount,
+                view_count: post.viewCount
+              }
+            }));
+          
+          console.log(`✅ Using ${followedPosts.length} stored timeline posts as fallback`);
+        } catch (fallbackError) {
+          console.error(`❌ Fallback failed: ${fallbackError.message}`);
+          followedPosts = []; // Continue without timeline data if fallback fails
+        }
+      } else {
+        followedPosts = []; // Continue without timeline data for non-rate-limit errors
+      }
     }
   }
   
