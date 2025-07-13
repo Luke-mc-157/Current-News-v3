@@ -36,59 +36,53 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
       });
 
       console.log('Timeline API response structure:', {
-        hasData: !!response.data,
-        dataType: Array.isArray(response.data) ? 'array' : typeof response.data,
-        dataLength: response.data?.length,
-        hasIncludes: !!response.includes,
-        hasMeta: !!response.meta,
-        firstPostSample: response.data?.[0]?.id
+        hasResponseData: !!response.data,
+        hasRealData: !!response._realData,
+        responseDataType: typeof response.data,
+        responseKeys: Object.keys(response),
+        tweetsLength: response.tweets?.length,
+        dataLength: response.data?.length
       });
 
-      if (!response.data || !Array.isArray(response.data)) {
-        console.log('No timeline posts returned from X API or data is not an array');
-        console.log('Response data type:', typeof response.data);
-        console.log('Response data keys:', Object.keys(response));
+      // Extract the actual tweets from the response - twitter-api-v2 may wrap data differently
+      const tweets = response.tweets || response.data || response._realData?.data;
+      
+      if (!tweets || !Array.isArray(tweets)) {
+        console.log('No timeline posts returned from X API or tweets is not an array');
+        console.log('Tweets:', tweets);
+        console.log('Response structure:', JSON.stringify(response, null, 2));
         break;
       }
 
       // Create users map for author details
-      const usersMap = new Map((response.includes?.users || []).map(u => [u.id, u]));
+      const users = response.includes?.users || response._realData?.includes?.users || [];
+      const usersMap = new Map(users.map(u => [u.id, u]));
 
-      // Transform and filter by date, then add to list
-      console.log(`Cutoff time: ${cutoffTime.toISOString()}`);
-      const filteredPosts = response.data
-        .filter(post => {
-          const postDate = new Date(post.created_at);
-          const isRecent = postDate >= cutoffTime;
-          console.log(`Post ${post.id}: ${postDate.toISOString()} >= ${cutoffTime.toISOString()} = ${isRecent}`);
-          return isRecent;
-        })
-        .map(post => ({
-          postId: post.id,
-          authorId: post.author_id,
-          authorHandle: usersMap.get(post.author_id)?.username || 'unknown',
-          authorName: usersMap.get(post.author_id)?.name || null,
-          text: post.text,
-          createdAt: new Date(post.created_at),
-          retweetCount: post.public_metrics?.retweet_count || 0,
-          replyCount: post.public_metrics?.reply_count || 0,
-          likeCount: post.public_metrics?.like_count || 0,
-          quoteCount: post.public_metrics?.quote_count || 0,
-          viewCount: post.public_metrics?.impression_count || 0,
-          postUrl: `https://x.com/${usersMap.get(post.author_id)?.username || 'i'}/status/${post.id}`
-        }));
+      // Transform posts without date filtering for testing
+      const transformedPosts = tweets.map(post => ({
+        postId: post.id,
+        authorId: post.author_id,
+        authorHandle: usersMap.get(post.author_id)?.username || 'unknown',
+        authorName: usersMap.get(post.author_id)?.name || null,
+        text: post.text,
+        createdAt: new Date(post.created_at),
+        retweetCount: post.public_metrics?.retweet_count || 0,
+        replyCount: post.public_metrics?.reply_count || 0,
+        likeCount: post.public_metrics?.like_count || 0,
+        quoteCount: post.public_metrics?.quote_count || 0,
+        viewCount: post.public_metrics?.impression_count || 0,
+        postUrl: `https://x.com/${usersMap.get(post.author_id)?.username || 'i'}/status/${post.id}`
+      }));
       
-      posts.push(...filteredPosts);
-      console.log(`Page ${pageCount + 1}: ${response.data.length} total posts, ${filteredPosts.length} within ${days} days`);
+      posts.push(...transformedPosts);
+      console.log(`Page ${pageCount + 1}: ${tweets.length} total posts, ${transformedPosts.length} transformed posts`);
+      console.log(`Sample transformed post:`, JSON.stringify(transformedPosts[0], null, 2));
 
-      nextToken = response.meta?.next_token;
+      nextToken = response.meta?.next_token || response._realData?.meta?.next_token;
       pageCount++;
       
-      // Early break if we found recent posts (no need to paginate for recent data)
-      if (filteredPosts.length > 0) {
-        console.log(`Found ${filteredPosts.length} recent posts, stopping pagination`);
-        break;
-      }
+      // Break after first page for testing
+      break;
     } while (nextToken && pageCount < maxPages);
 
     console.log(`Fetched ${posts.length} timeline posts for user ${userId} across ${pageCount} pages`);
