@@ -456,7 +456,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "user",
-          content: `Get latest news about ${topic} from the specified date range. Include complete source URLs to specific posts and articles in your citations.`
+          content: `Get latest news about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Include complete source URLs to specific posts and articles in your citations.`
         }
       ],
       search_parameters: {
@@ -464,7 +464,6 @@ async function getTopicDataFromLiveSearch(topic) {
         max_search_results: 25,
         return_citations: true,
         from_date: fromDate,
-        to_date: toDate,
         sources: [
           {"type": "web", "country": "US" },
           {"type": "x", "post_view_count": 2500},
