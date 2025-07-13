@@ -311,11 +311,11 @@ ${timelineText}
   
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-4",
       messages: [
         {
           role: "system",
-          content: `You are a news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
+          content: `You are a world class news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
 
 CRITICAL: If USER'S TIMELINE POSTS are provided, you must:
 1. Analyze which timeline posts relate to which topics
@@ -332,11 +332,11 @@ Return ONLY a JSON array of headlines in this exact format, with appendix as a s
     "category": "topic name",
     "sourcePosts": [
       {
-        "handle": "@username",
+        "author_name": "post author_name",
         "text": "post text", 
         "url": "x.com URL",
         "time": "timestamp",
-        "likes": number
+        "view_count": number
       }
     ],
     "supportingArticles": [
@@ -352,9 +352,9 @@ Return ONLY a JSON array of headlines in this exact format, with appendix as a s
     "appendix": {
       "fromYourFeed": [
         {
-          "summary": "Factual summary of post",
+          "summary": "Factual summary of post, i.e. "author_name posted "post text" at date/time",
           "url": "x.com URL",
-          "engagement": number
+          "view_count": number
         }
         // 3-5 items
       ]
