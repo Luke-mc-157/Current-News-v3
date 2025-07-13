@@ -83,7 +83,7 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
     const startTime = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(); // Changed: Hardcoded to last 24 hours only (ignores days param for this requirement)
     
     do {
-      const response = await client.v2.reverseChronologicalTimeline(userId, { // Changed from userTimeline
+      const response = await client.v2.homeTimeline({ // Fixed: correct method for reverse chronological timeline
         max_results: 100,
         'tweet.fields': 'id,text,created_at,author_id,public_metrics',
         expansions: 'author_id', // Added to get user details
@@ -92,7 +92,15 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
         pagination_token: nextToken,
       });
 
-      if (!response.data) {
+      console.log('Timeline response structure:', {
+        hasData: !!response.data,
+        dataType: typeof response.data,
+        dataLength: response.data?.length,
+        hasIncludes: !!response.includes,
+        usersCount: response.includes?.users?.length || 0
+      });
+
+      if (!response.data || !Array.isArray(response.data) || response.data.length === 0) {
         console.log('No timeline posts returned from X API');
         break;
       }

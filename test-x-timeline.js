@@ -1,58 +1,70 @@
-// Test script for X timeline integration
-import { TwitterApi } from 'twitter-api-v2';
+// Test the corrected timeline method
+import { createAuthenticatedClient } from './server/services/xAuth.js';
 
 async function testTimelineFetch() {
-  // This requires an authenticated user's access token
-  // In production, this would come from the database after OAuth flow
-  const accessToken = process.env.TEST_X_ACCESS_TOKEN;
-  const userHandle = process.env.TEST_X_HANDLE || 'testuser';
-  
-  if (!accessToken) {
-    console.error('❌ No X access token found. Please authenticate first via the web UI.');
-    console.log('1. Run the app and click "Login with X" button');
-    console.log('2. Complete the OAuth flow');
-    console.log('3. Check the database for stored tokens');
-    return;
-  }
+  console.log('🔍 Testing corrected timeline method...');
   
   try {
-    console.log('🔍 Testing X timeline fetch...');
-    const client = new TwitterApi(accessToken);
+    // Import storage to get auth token
+    const { storage } = await import('./server/storage.ts');
+    const authToken = await storage.getXAuthTokenByUserId(1);
     
-    // Get user info
-    const { data: user } = await client.v2.userByUsername(userHandle);
-    console.log(`✅ Found user: ${user.username} (ID: ${user.id})`);
+    if (!authToken) {
+      console.log('❌ No authenticated user found. Please login with X first.');
+      return;
+    }
     
-    // Fetch timeline
-    const options = {
-      start_time: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
-      max_results: 10,
-      'tweet.fields': ['public_metrics', 'created_at', 'text', 'author_id'],
-      expansions: ['author_id'],
-      'user.fields': ['username']
-    };
+    console.log('✅ Found authenticated user:', authToken.xHandle);
     
-    const timeline = await client.v2.userTimeline(user.id, options);
+    // Test the corrected method
+    const client = createAuthenticatedClient(authToken.accessToken);
     
-    if (timeline.data?.data) {
-      console.log(`\n📱 Timeline posts (${timeline.data.data.length} found):`);
-      timeline.data.data.forEach((post, i) => {
-        console.log(`\n${i + 1}. Post ID: ${post.id}`);
-        console.log(`   Text: ${post.text.substring(0, 100)}...`);
-        console.log(`   Likes: ${post.public_metrics?.like_count || 0}`);
-        console.log(`   Created: ${post.created_at}`);
+    // Get user ID
+    const { data: user } = await client.v2.me();
+    console.log(`Testing timeline for: ${user.username} (${user.id})`);
+    
+    // Test homeTimeline method
+    console.log('\n📱 Testing homeTimeline method...');
+    try {
+      const timeline = await client.v2.homeTimeline({
+        max_results: 5, // Small test to avoid hitting rate limits
+        'tweet.fields': 'id,text,created_at,author_id,public_metrics',
+        expansions: 'author_id',
+        'user.fields': 'username,name'
       });
-    } else {
-      console.log('❌ No timeline posts found');
+      
+      console.log('✅ homeTimeline method SUCCESS!');
+      console.log('   Data type:', typeof timeline.data);
+      console.log('   Data length:', timeline.data?.length || 0);
+      console.log('   Users included:', timeline.includes?.users?.length || 0);
+      
+      if (timeline.data && timeline.data.length > 0) {
+        console.log('   Sample tweet:', {
+          id: timeline.data[0].id,
+          text: timeline.data[0].text.substring(0, 50) + '...',
+          author_id: timeline.data[0].author_id
+        });
+        
+        // Test user mapping
+        const usersMap = new Map((timeline.includes?.users || []).map(u => [u.id, u]));
+        const sampleAuthor = usersMap.get(timeline.data[0].author_id);
+        console.log('   Sample author:', sampleAuthor?.username || 'unknown');
+      }
+      
+    } catch (error) {
+      console.log('❌ homeTimeline method failed:');
+      console.log('   Error type:', error.constructor.name);
+      console.log('   Error message:', error.message);
+      console.log('   Error code:', error.code);
+      
+      if (error.code === 429) {
+        console.log('   Rate limit hit - method exists but hit quota');
+      }
     }
     
   } catch (error) {
-    console.error('❌ Error testing timeline:', error.message);
-    if (error.code === 401) {
-      console.log('🔐 Authentication error - token may be expired');
-    }
+    console.error('❌ Test failed:', error.message);
   }
 }
 
-// Run the test
-testTimelineFetch();
+testTimelineFetch().catch(console.error);
