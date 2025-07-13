@@ -550,7 +550,7 @@ async function preSummarizeTopic(topicData, topicName) {
       messages: [
         {
           role: "system",
-          content: `Summarize this topic's key findings. Focus on most important stories with highest engagement. Keep ALL source URLs intact. Return a condensed version maintaining all citations.`
+          content: `Summarize this topic's key findings. CRITICAL: Preserve the exact structure including "X POSTS FROM SEARCH" and "SUPPORTING ARTICLES" sections. Keep ALL X posts and their metadata (handle, text, views, likes, URL). Keep ALL article URLs. Return the same format but condensed.`
         },
         {
           role: "user",
@@ -625,12 +625,11 @@ DATA FORMAT PROVIDED:
 - All engagement metrics preserved for ranking
 
 PHASE 2 INSTRUCTIONS:
-1. Create 3-4 headlines per topic (avoiding truncation)
-2. Preserve ALL source URLs exactly as provided
-3. Rank by engagement metrics
-4. Each headline needs 3-5 supporting sources
-
-Timeline posts appendix will be added separately.
+1. Create 3-4 headlines per topic from the provided data
+2. CRITICAL: Use X POSTS FROM SEARCH as sourcePosts in your headlines
+3. Include both X posts and articles - prioritize high engagement X posts
+4. Each headline MUST have sourcePosts array with X post data
+5. Preserve exact URLs and metadata from the provided data
 
 Return ONLY a JSON array in this exact format:
 [
@@ -720,8 +719,11 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         });
       }
       
+      // Phase 3: Validate and enhance headlines with X posts
+      const validatedHeadlines = await validateAndEnhanceHeadlines(headlines, compiledData);
+      
       // Transform to expected format
-      const transformedHeadlines = headlines.map((headline, index) => ({
+      const transformedHeadlines = validatedHeadlines.map((headline, index) => ({
         id: `newsletter-${Date.now()}-${index}`,
         title: headline.title,
         summary: headline.summary,
@@ -754,6 +756,71 @@ function calculateEngagement(sourcePosts = []) {
 export async function generateNewsletter(aggregatedData, topics) {
   // This function is referenced elsewhere but can be simplified
   return generateHeadlinesWithLiveSearch(topics);
+}
+
+// Phase 3: Validate and enhance headlines with X posts
+async function validateAndEnhanceHeadlines(headlines, compiledData) {
+  console.log('🔍 Phase 3: Validating and enhancing headlines with X posts...');
+  
+  // Extract all available X posts from compiled data
+  const availableXPosts = [];
+  const xPostsMatches = compiledData.matchAll(/X POSTS FROM SEARCH \(\d+\):([\s\S]*?)(?=SUPPORTING ARTICLES|USER'S TIMELINE POSTS|\n\n---|\z)/g);
+  
+  for (const match of xPostsMatches) {
+    const postsSection = match[1];
+    const postMatches = postsSection.matchAll(/- @([^:]+): "([^"]+)" \((\d+) views, (\d+) likes\) (https:\/\/[^\s]+)/g);
+    
+    for (const postMatch of postMatches) {
+      availableXPosts.push({
+        handle: `@${postMatch[1]}`,
+        text: postMatch[2],
+        url: postMatch[5],
+        time: new Date().toISOString(),
+        likes: parseInt(postMatch[4])
+      });
+    }
+  }
+  
+  console.log(`📊 Found ${availableXPosts.length} total X posts available for enhancement`);
+  
+  // Enhance each headline
+  const enhancedHeadlines = headlines.map((headline, idx) => {
+    // Check if headline has X posts
+    if (!headline.sourcePosts || headline.sourcePosts.length === 0) {
+      console.warn(`⚠️ Phase 3: Headline ${idx + 1} has no X posts, attempting to add from available pool`);
+      
+      // Try to find relevant X posts based on category/topic
+      const relevantPosts = availableXPosts.filter(post => {
+        const lowerText = post.text.toLowerCase();
+        const lowerCategory = headline.category.toLowerCase();
+        return lowerCategory.split(' ').some(word => lowerText.includes(word));
+      }).slice(0, 3);
+      
+      if (relevantPosts.length > 0) {
+        console.log(`✅ Added ${relevantPosts.length} X posts to headline ${idx + 1}`);
+        headline.sourcePosts = relevantPosts;
+      }
+    }
+    
+    return headline;
+  });
+  
+  // Final validation
+  let xPostCount = 0;
+  enhancedHeadlines.forEach((headline, idx) => {
+    const postCount = headline.sourcePosts?.length || 0;
+    xPostCount += postCount;
+    
+    if (postCount === 0) {
+      console.error(`❌ Phase 3 CRITICAL: Headline ${idx + 1} still has no X posts after enhancement`);
+    } else {
+      console.log(`✅ Headline ${idx + 1}: ${postCount} X posts`);
+    }
+  });
+  
+  console.log(`📊 Phase 3 complete: Total X posts across all headlines: ${xPostCount}`);
+  
+  return enhancedHeadlines;
 }
 
 // Phase 2: Generate timeline appendix separately if not included
