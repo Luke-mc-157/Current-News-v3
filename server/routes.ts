@@ -856,6 +856,7 @@ export function registerRoutes(app) {
       if (existingToken) {
         // Update existing token
         await storage.updateXAuthToken(userId, {
+          xUserId: user.id,
           xHandle: user.username,
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
@@ -866,6 +867,7 @@ export function registerRoutes(app) {
         // Create new token
         await storage.createXAuthToken({
           userId,
+          xUserId: user.id,
           xHandle: user.username,
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,

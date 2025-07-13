@@ -11,6 +11,7 @@ export const users = pgTable("users", {
 export const xAuthTokens = pgTable("x_auth_tokens", {
   id: serial("id").primaryKey(),
   userId: integer("user_id").notNull(),
+  xUserId: text("x_user_id"), // X user ID (e.g., 1222191403427680259)
   xHandle: text("x_handle"),
   accessToken: text("access_token").notNull(),
   refreshToken: text("refresh_token"),
