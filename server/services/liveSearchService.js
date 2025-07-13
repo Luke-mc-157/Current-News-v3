@@ -195,13 +195,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 2: Send all collected data to Grok for newsletter compilation
   console.log('📝 Step 2: Compiling newsletter with Grok...');
-  const newsletter = await compileNewsletterWithGrok(allTopicData);
+  const { headlines, appendix } = await compileNewsletterWithGrok(allTopicData);
   
   const responseTime = Date.now() - startTime;
   console.log(`✅ Live Search completed in ${responseTime}ms`);
-  console.log(`📰 Generated ${newsletter.length} headlines from ${topics.length} topics`);
+  console.log(`📰 Generated ${headlines.length} headlines from ${topics.length} topics`);
   
-  return newsletter;
+  return { headlines, appendix };
 }
 
 async function getTopicDataFromLiveSearch(topic) {
@@ -432,7 +432,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
       }
       
       // Transform to expected format
-      return headlines.map((headline, index) => ({
+      const transformedHeadlines = headlines.map((headline, index) => ({
         id: `newsletter-${Date.now()}-${index}`,
         title: headline.title,
         summary: headline.summary,
@@ -442,6 +442,8 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         sourcePosts: headline.sourcePosts || [],
         supportingArticles: headline.supportingArticles || []
       }));
+      
+      return { headlines: transformedHeadlines, appendix };
       
     } catch (parseError) {
       console.error('❌ Failed to parse newsletter JSON:', parseError.message);

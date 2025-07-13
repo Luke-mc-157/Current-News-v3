@@ -24,6 +24,7 @@ const __dirname = path.dirname(__filename);
 export function registerRoutes(app) {
   const router = express.Router();
   let headlinesStore = [];
+  let appendixStore = null;
 
   router.post("/api/generate-headlines", async (req, res) => {
     const { topics } = req.body;
@@ -159,13 +160,15 @@ export function registerRoutes(app) {
       }
       
       // Use Live Search to generate headlines with optional timeline posts
-      const headlines = await generateHeadlinesWithLiveSearch(topics, userId, userHandle, accessToken);
+      const result = await generateHeadlinesWithLiveSearch(topics, userId, userHandle, accessToken);
+      const { headlines, appendix } = result;
       
       const endTime = Date.now();
       const responseTime = endTime - startTime;
       
-      // Store headlines for podcast generation
+      // Store headlines and appendix for podcast generation
       headlinesStore = headlines;
+      appendixStore = appendix;
       
       console.log(`✅ Live Search completed in ${responseTime}ms with ${headlines.length} headlines`);
       console.log(`📊 Performance improvement: ${Math.round(30000 / responseTime)}x faster than old system`);
@@ -453,8 +456,8 @@ export function registerRoutes(app) {
       // Compile all content for podcast
       const compiledContent = await compileContentForPodcast(headlinesStore);
       
-      // Generate podcast script
-      const script = await generatePodcastScript(compiledContent, durationMinutes, podcastName);
+      // Generate podcast script with appendix if available
+      const script = await generatePodcastScript(compiledContent, appendixStore, durationMinutes, podcastName);
       
       // Create podcast episode record
       const episode = await storage.createPodcastEpisode({

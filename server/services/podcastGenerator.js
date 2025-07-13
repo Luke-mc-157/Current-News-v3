@@ -8,7 +8,7 @@ const xai = new OpenAI({
 });
 
 // Generate podcast script from compiled content
-export async function generatePodcastScript(compiledContent, durationMinutes = 10, podcastName = "Current News") {
+export async function generatePodcastScript(compiledContent, appendix = null, durationMinutes = 10, podcastName = "Current News") {
   try {
     console.log(`Generating ${durationMinutes}-minute podcast script for ${compiledContent.length} headlines...`);
     
@@ -29,6 +29,17 @@ export async function generatePodcastScript(compiledContent, durationMinutes = 1
         excerpt: a.content.substring(0, 500)
       }))
     }));
+    
+    // Add appendix if available
+    let appendixContent = '';
+    if (appendix && appendix.fromYourFeed?.length > 0) {
+      appendixContent = appendix.fromYourFeed.map(item => ({
+        summary: item.summary,
+        url: item.url,
+        engagement: item.engagement
+      }));
+      console.log(`Including "From Your Feed" appendix with ${appendixContent.length} items in script`);
+    }
     
     const response = await xai.chat.completions.create({
       model: "grok-3-fast",
@@ -54,13 +65,14 @@ SCRIPT STRUCTURE:
 - Opening: Brief welcome and overview of topics (30 seconds)
 - Main segments: One for each major story, with smooth transitions
 - For each story: Present facts from articles and posts, quote key sources
+- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline, with links mentioned naturally, e.g., 'For more, check x.com/link']"
 - Closing: Quick recap and sign-off (20 seconds)
 
 Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content.`
         },
         {
           role: "user",
-          content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(contentSummary, null, 2)}`
+          content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(contentSummary, null, 2)}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
         }
       ],
       search_parameters: {
