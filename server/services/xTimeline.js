@@ -26,11 +26,12 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
       // Make the API call to the reverse chronological timeline endpoint using correct method
       console.log('Making API call with client:', !!client);
       console.log('Client.v2 exists:', !!client.v2);
-      const response = await client.v2.userTimeline(userId, {
+      const response = await client.v2.reverseChronologicalTimeline(userId, { // Changed: Use reverseChronologicalTimeline instead of userTimeline to fetch home feed (from followed), not own tweets
         max_results: 100,
-        'tweet.fields': 'id,text,created_at,author_id,public_metrics',
-        expansions: 'author_id', // Get user details
-        'user.fields': 'username,name', // For authorHandle and authorName
+        'tweet.fields': 'id,text,created_at,author_id,public_metrics,source', // Changed: Added 'source' to match your fetch example; includes all metrics like like_count, retweet_count, etc.
+        expansions: 'author_id,referenced_tweets.id,attachments.media_keys', // Changed: Added referenced_tweets.id and attachments.media_keys to match your fetch; gets quoted/replied tweets and media
+        'user.fields': 'username,name', // Kept for authorHandle and authorName
+        'media.fields': 'url', // Added: To get media URLs, matching your fetch example
         start_time: startTime, // Time filter
         pagination_token: nextToken,
       });
