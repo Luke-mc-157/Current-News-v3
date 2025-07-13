@@ -168,10 +168,25 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Log the full raw compiled data before sending to Grok
   console.log('🔍 Full raw compiled data being sent to Grok:');
-  console.log('============== START COMPILED DATA ==============');
-  console.log(compiledResult.compiledData);
-  console.log('============== END COMPILED DATA ==============');
+  console.log(`📏 Data length: ${compiledResult.compiledData.length} characters`);
   console.log(`📊 Breakdown: ${JSON.stringify(compiledResult.breakdown)}`);
+  
+  // Write full compiled data to file for inspection (since console truncates)
+  try {
+    const fs = await import('fs');
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const filename = `compiled-data-${timestamp}.txt`;
+    await fs.promises.writeFile(filename, compiledResult.compiledData);
+    console.log(`📄 Full compiled data written to: ${filename}`);
+  } catch (error) {
+    console.error(`❌ Could not write compiled data file: ${error.message}`);
+  }
+  
+  // Also log first 2000 characters to console for quick preview
+  console.log('📝 PREVIEW (first 2000 chars):');
+  console.log('============== START PREVIEW ==============');
+  console.log(compiledResult.compiledData.substring(0, 2000));
+  console.log('============== END PREVIEW ==============');
   
   const { headlines, appendix } = await compileNewsletterWithGrok(compiledResult.compiledData, compiledResult.breakdown);
   
