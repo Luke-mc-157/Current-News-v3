@@ -4,40 +4,51 @@ import { createAuthenticatedClient } from './xAuth.js';
  * Fetch user's followed handles using X API v2
  * Implements: GET /2/users/:id/following
  * API Guide: https://docs.x.com/x-api/users/followers-by-user-id
+ * Basic tier: 15 req/15 min, max_results 1000
  */
 export async function fetchUserFollows(accessToken, userId) {
   try {
     const client = createAuthenticatedClient(accessToken);
     
-    // Basic tier: Use simpler following endpoint without advanced fields
-    const response = await client.v2.following(userId, {
-      'user.fields': 'id,username,name,verified',
-      'max_results': 100 // Reduced for Basic tier
-    });
+    let follows = [];
+    let nextToken = undefined;
+    let pageCount = 0;
+    const maxPages = 5; // Respect rate limits (15 req/15 min); adjust as needed
+    
+    do {
+      const response = await client.v2.following(userId, {
+        'user.fields': 'id,username,name,verified,description,public_metrics', // Added description and public_metrics (available in Basic)
+        max_results: 1000, // Increased to max for Basic tier
+        pagination_token: nextToken,
+      });
 
-    if (!response.data) {
-      console.log('No follows data returned from X API');
-      return [];
-    }
+      if (!response.data) {
+        console.log('No follows data returned from X API');
+        break;
+      }
 
-    // Transform X API response to our database format
-    const follows = response.data.map(follow => ({
-      followedUserId: follow.id,
-      followedHandle: follow.username,
-      followedName: follow.name || null,
-      followedDescription: null, // Not available in Basic tier
-      followedVerified: follow.verified || false,
-      followersCount: null, // Not available in Basic tier
-      followingCount: null // Not available in Basic tier
-    }));
+      // Transform and add to list
+      follows.push(...response.data.map(follow => ({
+        followedUserId: follow.id,
+        followedHandle: follow.username,
+        followedName: follow.name || null,
+        followedDescription: follow.description || null, // Now available
+        followedVerified: follow.verified || false,
+        followersCount: follow.public_metrics?.followers_count || null, // Now available
+        followingCount: follow.public_metrics?.following_count || null, // Now available
+      })));
 
-    console.log(`Fetched ${follows.length} followed accounts for user ${userId}`);
+      nextToken = response.meta.next_token;
+      pageCount++;
+    } while (nextToken && pageCount < maxPages);
+
+    console.log(`Fetched ${follows.length} followed accounts for user ${userId} across ${pageCount} pages`);
     return follows;
 
   } catch (error) {
     console.error('Error fetching user follows:', error);
+    console.error('Full error data:', JSON.stringify(error.data, null, 2)); // Added for better debugging
     
-    // Handle specific X API errors
     if (error.code === 429) {
       throw new Error('X API rate limit exceeded. Please try again later.');
     } else if (error.code === 401) {
@@ -57,66 +68,65 @@ export async function fetchUserFollows(accessToken, userId) {
  * Fetch user's reverse chronological home timeline using X API v2
  * Implements: GET /2/users/:id/timelines/reverse_chronological  
  * API Guide: https://docs.x.com/x-api/posts/timelines/introduction#reverse-chronological-home-timeline
+ * Basic tier: 15 req/15 min, max_results 100
  */
 export async function fetchUserTimeline(accessToken, userId, days = 7) {
   try {
     const client = createAuthenticatedClient(accessToken);
     
-    console.log(`Fetching user tweets for ${userId} (Basic tier - user timeline only)`);
+    console.log(`Fetching reverse chronological home timeline for ${userId} (last 24 hours only)`);
 
-    // Use correct method for user timeline (Basic tier accessible)
-    const response = await client.v2.userTimeline(userId, {
-      max_results: 100, // Basic tier limit
-      'tweet.fields': 'id,text,created_at,author_id,public_metrics'
-    });
-
-    console.log('Timeline response meta:', response.meta);
-    console.log('Timeline data type:', typeof response.data);
-    console.log('Timeline data isArray:', Array.isArray(response.data));
-    console.log('Timeline data length:', response.data?.length);
+    let posts = [];
+    let nextToken = undefined;
+    let pageCount = 0;
+    const maxPages = 5; // Respect rate limits
+    const startTime = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(); // Changed: Hardcoded to last 24 hours only (ignores days param for this requirement)
     
-    // Handle the response data - it should be an array
-    let tweets = [];
-    if (response.data && Array.isArray(response.data)) {
-      tweets = response.data;
-    } else if (response.data) {
-      console.log('Data structure unexpected:', Object.keys(response.data));
-      return [];
-    } else {
-      console.log('No timeline tweets returned from X API');
-      return [];
-    }
+    do {
+      const response = await client.v2.reverseChronologicalTimeline(userId, { // Changed from userTimeline
+        max_results: 100,
+        'tweet.fields': 'id,text,created_at,author_id,public_metrics',
+        expansions: 'author_id', // Added to get user details
+        'user.fields': 'username,name', // Added for authorHandle and authorName
+        start_time: startTime, // Added time filter
+        pagination_token: nextToken,
+      });
 
-    if (tweets.length === 0) {
-      console.log('Empty timeline data returned');
-      return [];
-    }
+      if (!response.data) {
+        console.log('No timeline posts returned from X API');
+        break;
+      }
 
-    // Transform X API response to our database format
-    const posts = tweets.map(post => {
-      return {
+      // Create users map for author details
+      const usersMap = new Map((response.includes?.users || []).map(u => [u.id, u]));
+
+      // Transform and add to list
+      posts.push(...response.data.map(post => ({
         postId: post.id,
         authorId: post.author_id,
-        authorHandle: 'own_user', // Will be updated with actual handle
-        authorName: null,
+        authorHandle: usersMap.get(post.author_id)?.username || 'unknown', // Now populated
+        authorName: usersMap.get(post.author_id)?.name || null, // Now populated
         text: post.text,
         createdAt: new Date(post.created_at),
         retweetCount: post.public_metrics?.retweet_count || 0,
         replyCount: post.public_metrics?.reply_count || 0,
         likeCount: post.public_metrics?.like_count || 0,
         quoteCount: post.public_metrics?.quote_count || 0,
-        viewCount: post.public_metrics?.impression_count || 0,
-        postUrl: `https://x.com/i/status/${post.id}`
-      };
-    });
+        viewCount: post.public_metrics?.impression_count || 0, // Often 0 for non-owned tweets; consider using likeCount + retweetCount for engagement proxy
+        postUrl: `https://x.com/${usersMap.get(post.author_id)?.username || 'i'}/status/${post.id}` // Now accurate
+      })));
 
-    console.log(`Fetched ${posts.length} timeline posts for user ${userId}`);
+      nextToken = response.meta.next_token;
+      pageCount++;
+    } while (nextToken && pageCount < maxPages);
+
+    console.log(`Fetched ${posts.length} timeline posts for user ${userId} across ${pageCount} pages`);
     return posts;
 
   } catch (error) {
     console.error('Error fetching user timeline:', error);
+    console.error('Full error data:', JSON.stringify(error.data, null, 2)); // Added for better debugging
     
-    // Handle specific X API errors
     if (error.code === 429) {
       throw new Error('X API rate limit exceeded. Please try again later.');
     } else if (error.code === 401) {
@@ -148,27 +158,29 @@ export async function storeUserData(storage, userId, follows, timelinePosts) {
       });
     }
 
-    // Store timeline posts (check for duplicates)
+    // Store timeline posts (check for duplicates by postId)
     const existingPosts = await storage.getUserTimelinePosts(userId);
     const existingPostIds = new Set(existingPosts.map(p => p.postId));
     
+    let storedPosts = 0;
     for (const post of timelinePosts) {
       if (!existingPostIds.has(post.postId)) {
         await storage.createUserTimelinePost({
           userId,
           ...post
         });
+        storedPosts++;
       }
     }
 
     // Clean up old posts (keep only last 7 days)
     await storage.deleteOldTimelinePosts(userId, 7);
 
-    console.log(`Stored ${follows.length} follows and ${timelinePosts.length} timeline posts for user ${userId}`);
+    console.log(`Stored ${follows.length} follows and ${storedPosts} new timeline posts for user ${userId}`);
     
     return {
       followsStored: follows.length,
-      postsStored: timelinePosts.filter(p => !existingPostIds.has(p.postId)).length,
+      postsStored: storedPosts,
       totalFollows: follows.length,
       totalPosts: timelinePosts.length
     };
