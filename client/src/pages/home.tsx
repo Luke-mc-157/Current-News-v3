@@ -11,6 +11,7 @@ import type { Headline } from "@shared/schema";
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
   const [useLiveSearch, setUseLiveSearch] = useState(true); // Default to Live Search
+  const [isGenerating, setIsGenerating] = useState(false);
 
   const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
     queryKey: ["/api/headlines"],
@@ -82,6 +83,7 @@ export default function Home() {
             <TopicInput 
               onTopicsSubmitted={setSubmittedTopics} 
               useLiveSearch={useLiveSearch}
+              onLoadingChange={setIsGenerating}
             />
           </div>
 
@@ -102,7 +104,7 @@ export default function Home() {
               </span>
             </div>
 
-            {headlinesLoading ? (
+            {headlinesLoading || isGenerating ? (
               <div className="space-y-6">
                 {Array.from({ length: 3 }).map((_, i) => (
                   <div key={i} className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
