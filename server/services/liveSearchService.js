@@ -356,7 +356,16 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
     
     // Batch fetch X posts with authentic metadata (use user token for better data)
-    const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
+    let xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
+    
+    // Filter Sources Pre-Compilation: Sort by engagement and limit to top 10
+    xPostSources.sort((a, b) => {
+      const engagementA = (a.public_metrics.impression_count || a.public_metrics.view_count || 0) + a.public_metrics.like_count;
+      const engagementB = (b.public_metrics.impression_count || b.public_metrics.view_count || 0) + b.public_metrics.like_count;
+      return engagementB - engagementA;
+    });
+    xPostSources = xPostSources.slice(0, 10); // Limit to top 10 high-engagement posts
+    
     totalXAIPosts += xPostSources.length;
     
     // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
@@ -367,7 +376,11 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     });
     
     const articleResults = await Promise.all(articlePromises);
-    const articleSources = articleResults.filter(article => article !== null);
+    let articleSources = articleResults.filter(article => article !== null);
+    
+    // Limit to 10 articles to reduce bloat
+    articleSources = articleSources.slice(0, 10);
+    
     totalArticles += articleSources.length;
     
     console.log(`✅ Fetched ${articleSources.length} articles out of ${Math.min(articleUrls.length, 15)} attempted`);
@@ -608,16 +621,28 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
     
     // Phase 2: Pre-summarize topics to avoid truncation
     const summarizedTopics = await processTopicsInChunks(topicsData);
-    const condensedData = summarizedTopics.map(t => t.summarized).join('\n\n---\n\n');
     
-    console.log(`📏 Condensed data length: ${condensedData.length} chars (from ${compiledData.length})`);
+    console.log(`📏 Pre-summarized ${summarizedTopics.length} topics`);
     
-    const response = await client.chat.completions.create({
-      model: "grok-4",
-      messages: [
-        {
-          role: "system",
-          content: `You are a world class news editor. Create headlines from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
+    // Chunk Grok calls: Process topics in groups of 4
+    const chunkSize = 4;
+    const topicChunks = [];
+    for (let i = 0; i < summarizedTopics.length; i += chunkSize) {
+      topicChunks.push(summarizedTopics.slice(i, i + chunkSize));
+    }
+    
+    console.log(`🔄 Processing ${topicChunks.length} chunks of topics...`);
+    
+    const chunkResponses = await Promise.all(topicChunks.map(async (chunk, index) => {
+      const chunkData = chunk.map(t => t.summarized).join('\n\n---\n\n');
+      console.log(`📝 Processing chunk ${index + 1}/${topicChunks.length} with ${chunk.length} topics`);
+      
+      return client.chat.completions.create({
+        model: "grok-4",
+        messages: [
+          {
+            role: "system",
+            content: `You are a world class news editor. Create 3-5 headlines per topic from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
 
 DATA FORMAT PROVIDED:
 - Pre-summarized topic sections with key findings and all source URLs
@@ -670,81 +695,93 @@ Return ONLY a JSON array in this exact format:
 ]
 
 CRITICAL: Extract exact URLs from the provided citations. Use specific article URLs, not home page URLs. Each supporting article must have a real URL from the citation list. No synthetic data.`
-        },
-        {
-          role: "user",
-          content: condensedData
-        }
-      ],
-      max_tokens: 10000  // Phase 2: Reduced from 20000 to avoid truncation
-    });
+          },
+          {
+            role: "user",
+            content: chunkData
+          }
+        ],
+        max_tokens: 25000  // Raised max_tokens for more headlines
+      });
+    }));
     
-    const content = response.choices[0].message.content;
-    console.log('📄 Newsletter compilation response received');
-    console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
+    // Combine all chunk responses
+    const allHeadlines = [];
+    let combinedAppendix = null;
     
-    // Parse JSON response
-    try {
-      const parsedData = JSON.parse(content);
+    for (const response of chunkResponses) {
+      const content = response.choices[0].message.content;
+      console.log(`📄 Chunk response received, length: ${content.length}`);
       
-      // Separate headlines and appendix
-      let headlines = [];
-      let appendix = null;
-      
-      for (const item of parsedData) {
-        if (item.appendix) {
-          appendix = item.appendix;
-          console.log(`📎 Found "From Your Feed" appendix with ${appendix.fromYourFeed?.length || 0} items`);
-        } else if (item.title) {
-          headlines.push(item);
+      try {
+        const parsedChunk = JSON.parse(content);
+        
+        for (const item of parsedChunk) {
+          if (item.appendix) {
+            // Merge appendix items if multiple chunks have them
+            if (!combinedAppendix) {
+              combinedAppendix = item.appendix;
+            } else if (item.appendix.fromYourFeed) {
+              combinedAppendix.fromYourFeed = [...(combinedAppendix.fromYourFeed || []), ...item.appendix.fromYourFeed];
+            }
+          } else if (item.title) {
+            allHeadlines.push(item);
+          }
         }
+      } catch (parseError) {
+        console.error(`❌ Failed to parse chunk: ${parseError.message}`);
       }
-      
-      // Phase 2: Add timeline posts appendix separately
-      if (!appendix && sourceBreakdown.timelinePosts > 0) {
-        appendix = await generateTimelineAppendix(compiledData);
-      }
-      
-      console.log(`✅ Parsed ${headlines.length} headlines from newsletter`);
-      console.log(`📋 Headlines by topic: ${headlines.map(h => `${h.category}: "${h.title}"`).join(', ')}`);
-      
-      // Phase 2: Validate headlines for missing sources
-      headlines = validateHeadlineSources(headlines, compiledData);
-      
-      // For now, log the appendix - integrate into podcast generation later
-      if (appendix && appendix.fromYourFeed) {
-        console.log('📱 From Your Feed highlights:');
-        appendix.fromYourFeed.forEach((item, i) => {
-          console.log(`  ${i + 1}. ${item.summary} (${item.engagement || item.view_count} engagement)`);
-        });
-      }
-      
-      // Phase 3: Validate and enhance headlines with X posts
-      const validatedHeadlines = await validateAndEnhanceHeadlines(headlines, compiledData);
-      
-      // Transform to expected format
-      const transformedHeadlines = validatedHeadlines.map((headline, index) => ({
-        id: `newsletter-${Date.now()}-${index}`,
-        title: headline.title,
-        summary: headline.summary,
-        category: headline.category,
-        createdAt: new Date().toISOString(),
-        engagement: calculateEngagement(headline.sourcePosts),
-        sourcePosts: headline.sourcePosts || [],
-        supportingArticles: headline.supportingArticles || []
-      }));
-      
-      return { headlines: transformedHeadlines, appendix };
-      
-    } catch (parseError) {
-      console.error('❌ Failed to parse newsletter JSON:', parseError.message);
-      console.error('🔍 Raw content that failed to parse:', content);
-      return [];
     }
+    
+    console.log(`✅ Combined ${allHeadlines.length} headlines from ${topicChunks.length} chunks`);
+    console.log(`📋 Headlines by topic: ${allHeadlines.map(h => `${h.category}: "${h.title}"`).join(', ')}`);
+    
+    // Use the combined headlines from all chunks
+    let headlines = allHeadlines;
+    let appendix = combinedAppendix;
+    
+    // Phase 2: Add timeline posts appendix separately if not present
+    if (!appendix && sourceBreakdown.timelinePosts > 0) {
+      appendix = await generateTimelineAppendix(compiledData);
+    }
+    
+    // Phase 2: Validate headlines for missing sources
+    headlines = validateHeadlineSources(headlines, compiledData);
+    
+    // Validate headline count
+    const expectedMinHeadlines = topicsData.length * 3; // 3 headlines per topic minimum
+    if (headlines.length < expectedMinHeadlines) {
+      console.warn(`⚠️ Low headline count: ${headlines.length} headlines for ${topicsData.length} topics (expected at least ${expectedMinHeadlines})`);
+    }
+    
+    // For now, log the appendix - integrate into podcast generation later
+    if (appendix && appendix.fromYourFeed) {
+      console.log('📱 From Your Feed highlights:');
+      appendix.fromYourFeed.forEach((item, i) => {
+        console.log(`  ${i + 1}. ${item.summary} (${item.engagement || item.view_count} engagement)`);
+      });
+    }
+    
+    // Phase 3: Validate and enhance headlines with X posts
+    const validatedHeadlines = await validateAndEnhanceHeadlines(headlines, compiledData);
+    
+    // Transform to expected format
+    const transformedHeadlines = validatedHeadlines.map((headline, index) => ({
+      id: `newsletter-${Date.now()}-${index}`,
+      title: headline.title,
+      summary: headline.summary,
+      category: headline.category,
+      createdAt: new Date().toISOString(),
+      engagement: calculateEngagement(headline.sourcePosts),
+      sourcePosts: headline.sourcePosts || [],
+      supportingArticles: headline.supportingArticles || []
+    }));
+    
+    return { headlines: transformedHeadlines, appendix };
     
   } catch (error) {
     console.error('❌ Newsletter compilation failed:', error.message);
-    return [];
+    return { headlines: [], appendix: null };
   }
 }
 
