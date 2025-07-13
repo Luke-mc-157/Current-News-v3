@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import axios from 'axios';
 import { fetchXPosts } from './xSearch.js';
 import { TwitterApi } from 'twitter-api-v2';
 import { fetchUserTimeline } from './xTimeline.js';
@@ -158,15 +159,241 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log('✅ Timeline posts formatted and ready for Grok categorization');
   }
   
-  // Step 2: Send all collected data to Grok for newsletter compilation
-  console.log('📝 Step 2: Compiling newsletter with Grok...');
-  const { headlines, appendix } = await compileNewsletterWithGrok(allTopicData, formattedTimelinePosts);
+  // Step 2: Compile raw search data with metadata
+  console.log('📝 Step 2: Compiling raw search data...');
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts);
+  
+  // Step 3: Generate newsletter with compiled data
+  console.log('📝 Step 3: Generating newsletter with compiled data...');
+  const { headlines, appendix } = await compileNewsletterWithGrok(compiledResult.compiledData, compiledResult.breakdown);
   
   const responseTime = Date.now() - startTime;
   console.log(`✅ Live Search completed in ${responseTime}ms`);
   console.log(`📰 Generated ${headlines.length} headlines from ${topics.length} topics`);
   
   return { headlines, appendix };
+}
+
+// Extract post ID from X URL
+function extractPostIdFromXURL(url) {
+  const match = url.match(/(?:x\.com|twitter\.com)\/[^\/]+\/status\/(\d+)/);
+  return match ? match[1] : null;
+}
+
+// Categorize citations into X posts vs articles
+function categorizeCitations(citations) {
+  const xPostIds = [];
+  const articleUrls = [];
+  
+  citations.forEach(url => {
+    if (url.includes('x.com') || url.includes('twitter.com')) {
+      const postId = extractPostIdFromXURL(url);
+      if (postId) xPostIds.push(postId);
+    } else {
+      articleUrls.push(url);
+    }
+  });
+  
+  return { xPostIds, articleUrls };
+}
+
+// Batch fetch X posts using X API
+async function fetchXPostsBatch(postIds) {
+  if (postIds.length === 0) return [];
+  
+  console.log(`🐦 Fetching ${postIds.length} X posts via batch API...`);
+  
+  // Batch up to 100 post IDs per request
+  const batches = [];
+  for (let i = 0; i < postIds.length; i += 100) {
+    batches.push(postIds.slice(i, i + 100));
+  }
+  
+  const allPosts = [];
+  
+  for (const batch of batches) {
+    try {
+      const idsString = batch.join(',');
+      const response = await fetch(`https://api.twitter.com/2/tweets?ids=${idsString}&tweet.fields=created_at,author_id,public_metrics,text&user.fields=username&expansions=author_id`, {
+        headers: {
+          'Authorization': `Bearer ${process.env.X_BEARER_TOKEN}`,
+          'Content-Type': 'application/json'
+        }
+      });
+      
+      const data = await response.json();
+      
+      if (data.data) {
+        // Transform to timeline format
+        const transformedPosts = data.data.map(tweet => {
+          const author = data.includes?.users?.find(user => user.id === tweet.author_id);
+          return {
+            id: tweet.id,
+            text: tweet.text,
+            author_id: tweet.author_id,
+            author_handle: author?.username || 'unknown',
+            created_at: tweet.created_at,
+            public_metrics: tweet.public_metrics || {
+              retweet_count: 0,
+              reply_count: 0,
+              like_count: 0,
+              quote_count: 0,
+              impression_count: tweet.public_metrics?.impression_count || 0
+            },
+            url: `https://x.com/${author?.username || 'unknown'}/status/${tweet.id}`,
+            source: 'xai_search'
+          };
+        });
+        
+        allPosts.push(...transformedPosts);
+        console.log(`✅ Fetched batch of ${transformedPosts.length} posts`);
+      }
+      
+      // Small delay between batches to be respectful
+      if (batches.length > 1) {
+        await new Promise(resolve => setTimeout(resolve, 500));
+      }
+      
+    } catch (error) {
+      console.error(`❌ Failed to fetch X posts batch:`, error.message);
+    }
+  }
+  
+  console.log(`📊 Total X posts fetched: ${allPosts.length}`);
+  return allPosts;
+}
+
+// Extract article metadata using axios/cheerio
+async function extractArticleData(url) {
+  try {
+    const response = await axios.get(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NewsBot/1.0)' },
+      timeout: 8000
+    });
+    
+    const $ = (await import('cheerio')).load(response.data);
+    
+    return {
+      title: $('title').text() || $('meta[property="og:title"]').attr('content') || `[Article from ${new URL(url).hostname}]`,
+      url: url,
+      summary: $('meta[property="og:description"]').attr('content') || '[Summary not available]',
+      source: new URL(url).hostname
+    };
+  } catch (error) {
+    // Fallback for failed article fetching
+    try {
+      const hostname = new URL(url).hostname;
+      return {
+        title: `[Article from ${hostname}]`,
+        url: url,
+        summary: '[Content not accessible]',
+        source: hostname
+      };
+    } catch (urlError) {
+      return null;
+    }
+  }
+}
+
+// Compile all raw search data with metadata
+async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts) {
+  console.log('🔄 Compiling raw search data with X API batch fetching...');
+  
+  const compiledTopics = [];
+  let totalXAIPosts = 0;
+  let totalArticles = 0;
+  
+  // Process each topic's citations
+  for (const topicData of allTopicData) {
+    const { xPostIds, articleUrls } = categorizeCitations(topicData.citations);
+    
+    console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
+    
+    // Batch fetch X posts with authentic metadata
+    const xPostSources = await fetchXPostsBatch(xPostIds);
+    totalXAIPosts += xPostSources.length;
+    
+    // Process articles individually (limit to 10 per topic)
+    const articleSources = [];
+    for (let i = 0; i < Math.min(articleUrls.length, 10); i++) {
+      const articleData = await extractArticleData(articleUrls[i]);
+      if (articleData) {
+        articleSources.push(articleData);
+        totalArticles++;
+      }
+      
+      // Small delay between article requests
+      if (i < Math.min(articleUrls.length - 1, 9)) {
+        await new Promise(resolve => setTimeout(resolve, 200));
+      }
+    }
+    
+    compiledTopics.push({
+      topic: topicData.topic,
+      liveSearchContent: topicData.webData.substring(0, 1000),
+      xPostSources: xPostSources,
+      articleSources: articleSources,
+      originalCitationCount: topicData.citations.length
+    });
+  }
+  
+  // Create structured text for Grok
+  const topicsSection = compiledTopics.map(topic => {
+    const xPostsText = topic.xPostSources.map(post => 
+      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`
+    ).join('\n');
+    
+    const articlesText = topic.articleSources.map(article => 
+      `- ${article.title}: ${article.summary} [${article.url}]`
+    ).join('\n');
+    
+    return `
+TOPIC: ${topic.topic}
+
+LIVE SEARCH SUMMARY:
+${topic.liveSearchContent}
+
+X POSTS FROM SEARCH (${topic.xPostSources.length}):
+${xPostsText || 'None found'}
+
+SUPPORTING ARTICLES (${topic.articleSources.length}):
+${articlesText || 'None found'}
+`;
+  }).join('\n---\n');
+  
+  // Add timeline posts section
+  let timelineSection = '';
+  if (formattedTimelinePosts.length > 0) {
+    const timelineText = formattedTimelinePosts.map(post => 
+      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
+    ).join('\n');
+    
+    timelineSection = `
+
+---
+
+USER'S TIMELINE POSTS (${formattedTimelinePosts.length} posts):
+${timelineText}`;
+  }
+  
+  const compiledData = topicsSection + timelineSection;
+  
+  console.log(`✅ Data compilation complete:`);
+  console.log(`📊 Topics: ${compiledTopics.length}`);
+  console.log(`🐦 xAI X Posts: ${totalXAIPosts}`);
+  console.log(`📰 Articles: ${totalArticles}`);
+  console.log(`📱 Timeline Posts: ${formattedTimelinePosts.length}`);
+  console.log(`📏 Total data length: ${compiledData.length} chars`);
+  
+  return {
+    compiledData: compiledData,
+    totalSources: totalXAIPosts + totalArticles + formattedTimelinePosts.length,
+    breakdown: {
+      xaiPosts: totalXAIPosts,
+      articles: totalArticles,
+      timelinePosts: formattedTimelinePosts.length
+    }
+  };
 }
 
 async function getTopicDataFromLiveSearch(topic) {
@@ -270,44 +497,10 @@ async function inferEmergentTopicsFromTimeline(posts) {
   }
 }
 
-async function compileNewsletterWithGrok(allTopicData, timelinePosts = []) {
-  console.log('🤖 Compiling newsletter with grok-3-fast...');
-  
-  // Prepare data summary for Grok
-  const dataSummary = allTopicData.map(topicData => {
-    const citationsText = topicData.citations.map((citation, index) => 
-      `Citation [${index}]: ${citation}`
-    ).join('\n');
-    
-    return `
-TOPIC: ${topicData.topic}
-
-LIVE SEARCH DATA:
-${topicData.webData.substring(0, 1500)}
-
-CITATIONS (${topicData.citations.length} URLs):
-${citationsText}
-`;
-  }).join('\n\n---\n\n');
-  
-  // Add timeline posts section if available
-  let timelineSection = '';
-  if (timelinePosts.length > 0) {
-    const timelineText = timelinePosts.map(post => 
-      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
-    ).join('\n');
-    
-    timelineSection = `
-
----
-
-USER'S TIMELINE POSTS (${timelinePosts.length} posts):
-${timelineText}
-`;
-  }
-  
-  console.log(`📊 Data summary stats: ${dataSummary.length} chars total`);
-  console.log(`📋 Topics in summary: ${allTopicData.map(t => t.topic).join(', ')}`);
+async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
+  console.log('🤖 Compiling newsletter with grok-4...');
+  console.log(`📊 Processing ${sourceBreakdown.xaiPosts + sourceBreakdown.articles + sourceBreakdown.timelinePosts} total sources`);
+  console.log(`📏 Data length: ${compiledData.length} chars`);
   
   try {
     const response = await client.chat.completions.create({
@@ -315,16 +508,22 @@ ${timelineText}
       messages: [
         {
           role: "system",
-          content: `You are a world class news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
+          content: `You are a world class news editor. Create headlines from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
 
-CRITICAL: If USER'S TIMELINE POSTS are provided, you must:
-1. Analyze which timeline posts relate to which topics
-2. Include relevant timeline posts as sourcePosts for appropriate headlines
-3. Mark timeline posts with source: 'timeline' in sourcePosts
+DATA FORMAT PROVIDED:
+- Each TOPIC section contains: Live Search Summary, X Posts with full metadata, and Supporting Articles
+- USER'S TIMELINE POSTS section contains personalized posts from followed accounts
+- All X posts include: handle, text, views, likes, and URL
 
-Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines; provide factual summaries, links and fields: author_name and post text.
+CRITICAL INSTRUCTIONS:
+1. Create headlines using the provided X posts and article data
+2. Mix timeline posts and xAI search posts as sourcePosts where topically relevant
+3. Prioritize high-engagement posts (views/likes) in sourcePosts
+4. Each headline must have 3-5 sourcePosts from the provided data
 
-Return ONLY a JSON array of headlines in this exact format, with appendix as a separate object at the end:
+Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines.
+
+Return ONLY a JSON array in this exact format:
 [
   {
     "title": "Specific headline from sources",
@@ -332,11 +531,11 @@ Return ONLY a JSON array of headlines in this exact format, with appendix as a s
     "category": "topic name",
     "sourcePosts": [
       {
-        "author_name": "post author_name",
+        "handle": "@username",
         "text": "post text", 
         "url": "x.com URL",
         "time": "timestamp",
-        "view_count": number
+        "likes": number
       }
     ],
     "supportingArticles": [
@@ -366,7 +565,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
           role: "user",
-          content: dataSummary + timelineSection
+          content: compiledData
         }
       ],
       max_tokens: 20000
