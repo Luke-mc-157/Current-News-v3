@@ -11,9 +11,10 @@ export const users = pgTable("users", {
 export const xAuthTokens = pgTable("x_auth_tokens", {
   id: serial("id").primaryKey(),
   userId: integer("user_id").notNull(),
-  xHandle: text("x_handle").notNull(),
+  xHandle: text("x_handle"),
   accessToken: text("access_token").notNull(),
   refreshToken: text("refresh_token"),
+  expiresIn: integer("expires_in"), // seconds
   expiresAt: timestamp("expires_at"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),

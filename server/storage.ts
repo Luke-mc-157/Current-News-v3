@@ -298,9 +298,10 @@ export class MemStorage implements IStorage {
     const newToken: XAuthTokens = {
       id,
       userId: token.userId,
-      xHandle: token.xHandle,
+      xHandle: token.xHandle || null,
       accessToken: token.accessToken,
       refreshToken: token.refreshToken || null,
+      expiresIn: token.expiresIn || null,
       expiresAt: token.expiresAt || null,
       createdAt: new Date(),
       updatedAt: new Date()

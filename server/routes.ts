@@ -635,9 +635,13 @@ export function registerRoutes(app) {
       // Import X timeline service for timeline endpoint
       const { fetchUserTimeline, storeUserData } = await import('./services/xTimeline.js');
       
-      // Get X user ID from token
+      // Get X user ID from token with refresh capability
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
-      const client = createAuthenticatedClient(authToken.accessToken);
+      const client = await createAuthenticatedClient(
+        authToken.accessToken,
+        authToken.refreshToken,
+        authToken.expiresAt
+      );
       const { data: xUser } = await client.v2.me();
       
       console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
@@ -839,7 +843,8 @@ export function registerRoutes(app) {
           xHandle: user.username,
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
-          expiresAt: authResult.expiresIn ? new Date(Date.now() + authResult.expiresIn * 1000) : null
+          expiresIn: authResult.expiresIn,
+          expiresAt: authResult.expiresAt
         });
       } else {
         // Create new token
@@ -848,7 +853,8 @@ export function registerRoutes(app) {
           xHandle: user.username,
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
-          expiresAt: authResult.expiresIn ? new Date(Date.now() + authResult.expiresIn * 1000) : null
+          expiresIn: authResult.expiresIn,
+          expiresAt: authResult.expiresAt
         });
       }
       

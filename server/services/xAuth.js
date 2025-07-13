@@ -94,10 +94,12 @@ export async function handleXCallback(code, state) {
     }
   }
   
+  // Create client with explicit credentials for OAuth token exchange
   const client = new TwitterApi({ 
     clientId,
     clientSecret 
   });
+  
   try {
     console.log('Token exchange details:');
     console.log('- Code:', code?.substring(0, 20) + '...');
@@ -106,13 +108,22 @@ export async function handleXCallback(code, state) {
     console.log('- Client ID:', clientId);
     console.log('- Client Secret present:', !!clientSecret);
 
-    const { accessToken, refreshToken, expiresIn } = await client.loginWithOAuth2({
+    // Use the explicit oauth2 token exchange method
+    const tokenResponse = await client.loginWithOAuth2({
       code,
       codeVerifier: sessionData.codeVerifier,
       redirectUri: callbackUrl,
     });
+
+    const { accessToken, refreshToken, expiresIn } = tokenResponse;
     
     console.log('✅ Token exchange successful!');
+    console.log('- Access token length:', accessToken?.length);
+    console.log('- Refresh token length:', refreshToken?.length);
+    console.log('- Expires in seconds:', expiresIn);
+    
+    // Calculate expiration timestamp
+    const expiresAt = new Date(Date.now() + (expiresIn * 1000));
     
     // Clean up the session
     sessions.delete(state);
@@ -121,6 +132,7 @@ export async function handleXCallback(code, state) {
       accessToken,
       refreshToken,
       expiresIn,
+      expiresAt,
       success: true
     };
   } catch (error) {
@@ -140,8 +152,41 @@ export async function handleXCallback(code, state) {
   }
 }
 
-// Create authenticated client instance
-export function createAuthenticatedClient(accessToken) {
+// Refresh access token using refresh token
+export async function refreshAccessToken(refreshToken) {
+  const client = new TwitterApi({ 
+    clientId,
+    clientSecret 
+  });
+  try {
+    const { accessToken, refreshToken: newRefreshToken, expiresIn } = await client.refreshOAuth2Token(refreshToken);
+    return {
+      accessToken,
+      refreshToken: newRefreshToken,
+      expiresIn
+    };
+  } catch (error) {
+    console.error('Token refresh failed:', error);
+    throw new Error('Failed to refresh access token. Please re-authenticate.');
+  }
+}
+
+// Create authenticated client with automatic token refresh
+export async function createAuthenticatedClient(accessToken, refreshToken, expiresAt) {
+  // Check if expired (add 5 minute buffer for safety)
+  if (expiresAt && Date.now() > expiresAt - 300000) {
+    if (!refreshToken) {
+      throw new Error('No refresh token available. Please re-authenticate.');
+    }
+    
+    console.log('Access token near expiry, refreshing...');
+    const refreshed = await refreshAccessToken(refreshToken);
+    
+    // Note: Caller should update the stored token in database
+    console.log('Token refreshed successfully');
+    return new TwitterApi(refreshed.accessToken);
+  }
+  
   return new TwitterApi(accessToken);
 }
 
