@@ -12,6 +12,20 @@ const client = new OpenAI({
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
   console.log('🚀 Using xAI Live Search for headlines generation');
+  console.log(`📊 Processing ${topics.length} topics`);
+  
+  // Safety limit for large topic lists
+  const MAX_TOPICS = 20;
+  if (topics.length > MAX_TOPICS) {
+    console.warn(`⚠️ Topic limit exceeded: ${topics.length} > ${MAX_TOPICS}. Processing first ${MAX_TOPICS} topics only.`);
+    topics = topics.slice(0, MAX_TOPICS);
+  }
+  
+  // Memory monitoring
+  const formatMemory = (bytes) => (bytes / 1024 / 1024).toFixed(2) + ' MB';
+  const initialMemory = process.memoryUsage();
+  console.log(`💾 Initial memory: RSS=${formatMemory(initialMemory.rss)}, Heap=${formatMemory(initialMemory.heapUsed)}`);
+  
   const startTime = Date.now();
   
   // Step 0: Fetch user's timeline posts if authenticated
@@ -114,38 +128,64 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`📭 No timeline posts available for emergent topics discovery`);
   }
   
-  // Step 1: Call xAI Live Search API first for all topics
-  console.log('📡 Step 1: xAI Live Search API calls for all topics...');
+  // Step 1: Call xAI Live Search API with batch processing
+  console.log('📡 Step 1: xAI Live Search API calls with batch processing...');
   const allTopicData = [];
+  const BATCH_SIZE = 5; // Process 5 topics at a time to prevent memory overload
   
-  for (let i = 0; i < topics.length; i++) {
-    const topic = topics[i];
-    console.log(`📝 Processing topic ${i + 1}/${topics.length}: ${topic}`);
+  // Process topics in batches
+  for (let batchStart = 0; batchStart < topics.length; batchStart += BATCH_SIZE) {
+    const batchEnd = Math.min(batchStart + BATCH_SIZE, topics.length);
+    const batch = topics.slice(batchStart, batchEnd);
+    console.log(`\n🔄 Processing batch ${Math.floor(batchStart / BATCH_SIZE) + 1}/${Math.ceil(topics.length / BATCH_SIZE)} (topics ${batchStart + 1}-${batchEnd})`);
     
-    try {
-      // First: Get data from xAI Live Search API (X, web, news, RSS)
-      console.log(`🌐 xAI Live Search for ${topic}...`);
-      const liveSearchData = await getTopicDataFromLiveSearch(topic);
-      console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
+    // Process batch in parallel
+    const batchPromises = batch.map(async (topic, index) => {
+      const topicIndex = batchStart + index;
+      console.log(`📝 Processing topic ${topicIndex + 1}/${topics.length}: ${topic}`);
       
-      allTopicData.push({
-        topic: topic,
-        webData: liveSearchData.content,
-        citations: liveSearchData.citations || []
-      });
-      
-    } catch (error) {
-      console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
-      allTopicData.push({
-        topic: topic,
-        webData: '',
-        citations: []
-      });
+      try {
+        // Add staggered delay to prevent API rate limiting
+        await new Promise(resolve => setTimeout(resolve, index * 500));
+        
+        // Get data from xAI Live Search API
+        console.log(`🌐 xAI Live Search for ${topic}...`);
+        const liveSearchData = await getTopicDataFromLiveSearch(topic);
+        console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
+        
+        return {
+          topic: topic,
+          webData: liveSearchData.content,
+          citations: liveSearchData.citations || []
+        };
+      } catch (error) {
+        console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
+        return {
+          topic: topic,
+          webData: '',
+          citations: []
+        };
+      }
+    });
+    
+    // Wait for batch to complete
+    const batchResults = await Promise.all(batchPromises);
+    allTopicData.push(...batchResults);
+    
+    // Memory check after each batch
+    const currentMemory = process.memoryUsage();
+    console.log(`💾 Memory after batch: RSS=${formatMemory(currentMemory.rss)}, Heap=${formatMemory(currentMemory.heapUsed)}`);
+    
+    // Force garbage collection if available (requires --expose-gc flag)
+    if (global.gc) {
+      global.gc();
+      console.log('🧹 Garbage collection triggered');
     }
     
-    // Delay between topics
-    if (i < topics.length - 1) {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+    // Delay between batches (except for last batch)
+    if (batchEnd < topics.length) {
+      console.log('⏳ Waiting 2 seconds before next batch...');
+      await new Promise(resolve => setTimeout(resolve, 2000));
     }
   }
   
@@ -185,9 +225,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   console.log('📝 Step 3: Generating newsletter with compiled data...');
   
   // Log the full raw compiled data before sending to Grok
-  console.log('🔍 Full raw compiled data being sent to Grok:');
-  console.log(`📏 Data length: ${compiledResult.compiledData.length} characters`);
-  console.log(`📊 Breakdown: ${JSON.stringify(compiledResult.breakdown)}`);
+  console.log(`📏 Compiled data length: ${compiledResult.compiledData.length} characters`);
+  console.log(`📊 Source breakdown: ${JSON.stringify(compiledResult.breakdown)}`);
   
   // Write full compiled data to file for inspection (since console truncates)
   try {
@@ -211,6 +250,12 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   const responseTime = Date.now() - startTime;
   console.log(`✅ Live Search completed in ${responseTime}ms`);
   console.log(`📰 Generated ${headlines.length} headlines from ${topics.length} topics`);
+  
+  // Final memory report
+  const finalMemory = process.memoryUsage();
+  console.log(`\n💾 Final memory usage:`);
+  console.log(`- RSS: ${formatMemory(finalMemory.rss)} (Δ +${formatMemory(finalMemory.rss - initialMemory.rss)})`);
+  console.log(`- Heap: ${formatMemory(finalMemory.heapUsed)} (Δ +${formatMemory(finalMemory.heapUsed - initialMemory.heapUsed)})`);
   
   return { headlines, appendix };
 }
@@ -368,8 +413,8 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     
     totalXAIPosts += xPostSources.length;
     
-    // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
-    const articlePromises = articleUrls.slice(0, 15).map(async (url, index) => {
+    // Process articles in parallel (limit to 8 per topic to reduce memory usage)
+    const articlePromises = articleUrls.slice(0, 8).map(async (url, index) => {
       // Stagger requests slightly to avoid overwhelming servers
       await new Promise(resolve => setTimeout(resolve, index * 100));
       return extractArticleData(url);
@@ -483,7 +528,7 @@ async function getTopicDataFromLiveSearch(topic) {
           {"type": "news"}
         ]
       },
-      max_tokens: 50000
+      max_tokens: 15000  // Reduced from 50000 to prevent memory issues
     });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
@@ -497,11 +542,13 @@ async function getTopicDataFromLiveSearch(topic) {
       console.log(`🔗 Citations: ${citations.slice(0, 3).join(', ')}`);
     }
     
-    // Debug: Log raw response data for user analysis
-    console.log(`\n🔍 RAW xAI RESPONSE FOR ${topic}:`);
-    console.log(`📄 Full Content: ${content}`);
-    console.log(`📋 All Citations: ${JSON.stringify(citations, null, 2)}`);
-    console.log(`🔚 END RAW RESPONSE FOR ${topic}\n`);
+    // Debug: Log summary only to prevent memory bloat
+    if (process.env.DEBUG_MODE === 'true') {
+      console.log(`\n🔍 RAW xAI RESPONSE FOR ${topic}:`);
+      console.log(`📄 Full Content: ${content}`);
+      console.log(`📋 All Citations: ${JSON.stringify(citations, null, 2)}`);
+      console.log(`🔚 END RAW RESPONSE FOR ${topic}\n`);
+    }
     
     return {
       content: content,
@@ -510,6 +557,13 @@ async function getTopicDataFromLiveSearch(topic) {
     
   } catch (error) {
     console.error(`❌ Live Search failed for ${topic}: ${error.message}`);
+    // Add more detailed error logging
+    if (error.response) {
+      console.error(`API Response Error: ${error.response.status} - ${error.response.statusText}`);
+    }
+    if (error.code === 'ECONNABORTED' || error.code === 'ETIMEDOUT') {
+      console.error('Request timed out - API may be overloaded');
+    }
     return {
       content: '',
       citations: []

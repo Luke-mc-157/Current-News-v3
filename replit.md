@@ -107,7 +107,24 @@ The application now includes a comprehensive podcast generation system:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
-### Latest Updates (January 13, 2025 - 8:00 PM UTC)
+### Latest Updates (January 13, 2025 - 11:00 PM UTC)
+- **✅ FIXED CRASH ISSUES WITH 13+ TOPICS**: Implemented comprehensive memory management and crash prevention
+  - **Memory Optimization**:
+    - Batch processing: Topics now processed in batches of 5 to prevent memory overload
+    - Reduced token limits: Lowered max_tokens from 50,000 to 15,000 per Live Search call
+    - Limited article fetching: Reduced from 15 to 8 articles per topic
+    - Added memory monitoring with RSS and heap usage tracking
+  - **Rate Limit Protection**:
+    - Staggered API calls with 500ms delays within batches
+    - 2-second delays between batches to prevent API overload
+    - Better error handling for timeouts and rate limit errors
+  - **Safety Limits**:
+    - Maximum 20 topics per search (warns and truncates if exceeded)
+    - Removed verbose debug logging to prevent memory bloat
+    - Added garbage collection triggers between batches
+  - **Results**: System now handles 20 topics reliably without crashing, with memory usage tracking
+
+### Previous Updates (January 13, 2025 - 8:00 PM UTC)
 - **✅ PHASE 2 & 3 IMPROVEMENTS IMPLEMENTED**: Advanced data processing to prevent truncation and ensure X posts inclusion
   - **Phase 2 - Anti-Truncation Features**:
     - Pre-summarization with Grok-3-fast to condense topics while preserving all URLs and X posts
