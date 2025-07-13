@@ -122,6 +122,7 @@ The application now includes a comprehensive podcast generation system:
     - Enhanced `/api/generate-headlines-v2` (xAI Live Search) to use new fetchUserTimeline function
     - Updated `/api/generate-headlines-v3` (X API + OpenAI) to fetch timeline first
     - Timeline posts cleaned up automatically (30 hours retention) on each fetch
+    - **Updated Timeline Capacity**: Increased from 100 to 175 posts per fetch for richer data
     - Verified working: User @Mc_Lunderscore timeline fetched before Live Search at 3:54 AM UTC
   - **Ready for Production**: Timeline function fully integrated with search workflows using authentic user data
 
