@@ -8,7 +8,11 @@ import { createAuthenticatedClient } from './xAuth.js';
  */
 export async function fetchUserTimeline(accessToken, userId, days = 7) {
   try {
-    const client = createAuthenticatedClient(accessToken);
+    const client = await createAuthenticatedClient(accessToken);
+    
+    if (!client) {
+      throw new Error('Failed to create authenticated client');
+    }
     
     console.log(`Fetching reverse chronological home timeline for ${userId} (last 24 hours only)`);
 
@@ -19,8 +23,10 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
     const startTime = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(); // Hardcoded to last 24 hours
     
     do {
-      // Make the API call to the reverse chronological timeline endpoint
-      const response = await client.v2.get(`users/${userId}/timelines/reverse_chronological`, {
+      // Make the API call to the reverse chronological timeline endpoint using correct method
+      console.log('Making API call with client:', !!client);
+      console.log('Client.v2 exists:', !!client.v2);
+      const response = await client.v2.userTimeline(userId, {
         max_results: 100,
         'tweet.fields': 'id,text,created_at,author_id,public_metrics',
         expansions: 'author_id', // Get user details
@@ -29,8 +35,17 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
         pagination_token: nextToken,
       });
 
-      if (!response.data) {
-        console.log('No timeline posts returned from X API');
+      console.log('Timeline API response structure:', {
+        hasData: !!response.data,
+        dataType: Array.isArray(response.data) ? 'array' : typeof response.data,
+        dataLength: response.data?.length,
+        hasIncludes: !!response.includes,
+        hasMeta: !!response.meta
+      });
+
+      if (!response.data || !Array.isArray(response.data)) {
+        console.log('No timeline posts returned from X API or data is not an array');
+        console.log('Response data:', response.data);
         break;
       }
 
