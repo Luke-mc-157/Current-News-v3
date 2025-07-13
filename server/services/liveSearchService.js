@@ -289,7 +289,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
       messages: [
         {
           role: "system",
-          content: `Analyze these high-engagement X posts from the user's timeline. Infer 1-3 emergent topics (e.g., "AI Ethics", "Local Elections"). Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+          content: `Analyze these high-engagement X posts from the user's timeline. Infer 2-6 emergent topics (e.g., "AI Ethics", "Local Elections"). Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
         },
         { role: "user", content: postsSummary }
       ],
@@ -349,7 +349,7 @@ ${citationsText}
 
 If timeline posts (source: 'timeline') relate to headlines, integrate them as primary sourcePosts.
 
-Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines; provide factual summaries and links.
+Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines; provide factual summaries, links and fields: author_name and post text.
 
 Return ONLY a JSON array of headlines in this exact format, with appendix as a separate object at the end:
 [

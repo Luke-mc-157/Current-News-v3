@@ -65,8 +65,8 @@ SCRIPT STRUCTURE:
 - Opening: Brief welcome and overview of topics (30 seconds)
 - Main segments: One for each major story, with smooth transitions
 - For each story: Present facts from articles and posts, quote key sources
-- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline, with links mentioned naturally, e.g., 'For more, check x.com/link']"
-- Closing: Quick recap and sign-off (20 seconds)
+- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structed as: "auther_name" posted "text"."
+- Closing: sign-off (10 seconds)
 
 Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content.`
         },
