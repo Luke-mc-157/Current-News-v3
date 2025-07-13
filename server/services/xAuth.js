@@ -108,11 +108,22 @@ export async function handleXCallback(code, state) {
     console.log('- Client ID:', clientId);
     console.log('- Client Secret present:', !!clientSecret);
 
-    // Use the explicit oauth2 token exchange method
+    // Use the explicit oauth2 token exchange method with debug logging
+    console.log('Attempting token exchange with:');
+    console.log('- Code length:', code?.length);
+    console.log('- Code verifier length:', sessionData.codeVerifier?.length);
+    console.log('- Redirect URI:', callbackUrl);
+    
     const tokenResponse = await client.loginWithOAuth2({
-      code,
+      code: code,
       codeVerifier: sessionData.codeVerifier,
       redirectUri: callbackUrl,
+    });
+
+    console.log('Token response received:', {
+      hasAccessToken: !!tokenResponse.accessToken,
+      hasRefreshToken: !!tokenResponse.refreshToken,
+      expiresIn: tokenResponse.expiresIn
     });
 
     const { accessToken, refreshToken, expiresIn } = tokenResponse;

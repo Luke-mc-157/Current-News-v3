@@ -826,10 +826,26 @@ export function registerRoutes(app) {
     try {
       const authResult = await handleXCallback(code, state);
       
+      if (!authResult || !authResult.success) {
+        throw new Error('Token exchange failed');
+      }
+      
       // Get authenticated X user info using the token
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
-      const client = createAuthenticatedClient(authResult.accessToken);
-      const { data: user } = await client.v2.me();
+      const client = await createAuthenticatedClient(authResult.accessToken);
+      
+      if (!client) {
+        throw new Error('Failed to create authenticated client');
+      }
+      
+      let user;
+      try {
+        const userResponse = await client.v2.me();
+        user = userResponse.data;
+      } catch (meError) {
+        console.error('Error calling client.v2.me():', meError);
+        throw new Error('Failed to fetch user info with access token');
+      }
       
       // Store in database (for now use userId 1 as default)
       const userId = 1; // In production, get from session/JWT
@@ -949,8 +965,13 @@ export function registerRoutes(app) {
           <body>
             <div class="container">
               <div class="error">✗ Authentication Failed</div>
-              <p>${error.message}</p>
+              <p>${error.message.includes('unauthorized_client') 
+                  ? 'OAuth configuration issue. The callback URL in your X Developer Portal may not match exactly.' 
+                  : error.message}</p>
               <p>Please close this window and try again.</p>
+              ${error.message.includes('unauthorized_client') 
+                ? `<p><strong>Required Callback URL:</strong><br><code style="font-size: 0.9em; padding: 4px; background: #f3f4f6; border-radius: 4px;">${req.protocol}://${req.get('host')}/auth/twitter/callback</code></p>`
+                : ''}
             </div>
           </body>
         </html>

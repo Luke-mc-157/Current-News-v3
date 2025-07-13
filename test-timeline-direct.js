@@ -1,41 +1,54 @@
-// Direct Timeline Test - Test just the working timeline endpoint
+// Test Timeline Direct - Debug the exact OAuth issue
+console.log('🔧 Direct OAuth Token Exchange Debug...\n');
+
+// Import needed modules
 import { TwitterApi } from 'twitter-api-v2';
 
 async function testTimelineDirect() {
-  console.log('🔍 Testing Timeline Endpoint Directly...\n');
-  
   try {
-    // Use the new app credentials directly
-    const client = new TwitterApi({
-      clientId: process.env.X_CLIENT_ID,
-      clientSecret: process.env.X_CLIENT_SECRET
-    });
+    // Check environment variables
+    console.log('1. Checking environment variables...');
+    const clientId = process.env.X_CLIENT_ID;
+    const clientSecret = process.env.X_CLIENT_SECRET;
     
-    console.log('✅ New Client ID:', process.env.X_CLIENT_ID);
+    console.log('Client ID present:', !!clientId);
+    console.log('Client Secret present:', !!clientSecret);
+    console.log('Client ID length:', clientId?.length);
+    console.log('Client Secret length:', clientSecret?.length);
     
-    // We need a test access token. Since the user is already authenticated,
-    // let's use our API to get the timeline data
-    console.log('Calling our API endpoint...');
-    
-    const response = await fetch('http://localhost:5000/api/x/test-project-attachment', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
-    });
-    
-    const result = await response.json();
-    console.log('API Response:', JSON.stringify(result, null, 2));
-    
-    if (result.endpoints?.timeline?.success) {
-      console.log('\n🎉 TIMELINE ENDPOINT CONFIRMED WORKING!');
-      console.log('Posts found:', result.endpoints.timeline.count);
+    if (!clientId || !clientSecret) {
+      console.log('❌ Missing OAuth credentials');
+      return;
     }
     
-    if (result.endpoints?.following?.needsProjectAttachment) {
-      console.log('\n⚠️  Following endpoint still needs Project attachment');
-    }
+    // Test client creation
+    console.log('\n2. Testing TwitterApi client creation...');
+    const client = new TwitterApi({ 
+      clientId,
+      clientSecret 
+    });
+    
+    console.log('✅ Client created successfully');
+    
+    // Test manual token exchange (simulating what happens in callback)
+    console.log('\n3. Manual token exchange would require:');
+    console.log('- Authorization code from X');
+    console.log('- Code verifier from PKCE flow');
+    console.log('- Exact redirect URI match');
+    
+    console.log('\n🔍 Known Issues to Check:');
+    console.log('1. Callback URL must EXACTLY match in X Developer Portal');
+    console.log('2. Client Secret must be the latest regenerated version');
+    console.log('3. PKCE code verifier must match code challenge');
+    console.log('4. Authorization code must be used immediately (expires quickly)');
+    
+    console.log('\n📋 Next Steps:');
+    console.log('1. Verify callback URL in X Developer Portal');
+    console.log('2. Try OAuth flow with new credentials');
+    console.log('3. Check console logs during token exchange');
     
   } catch (error) {
-    console.error('❌ Test failed:', error.message);
+    console.error('❌ Direct test failed:', error.message);
   }
 }
 
