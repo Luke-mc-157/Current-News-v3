@@ -641,9 +641,17 @@ export function registerRoutes(app) {
   // Generate X login URL
   router.post("/api/auth/x/login", (req, res) => {
     try {
-      if (!isXAuthConfigured()) {
-        return res.status(400).json({ 
-          error: "X API not configured. Please add X_CLIENT_ID to your environment variables." 
+      const { validateXAuthEnvironment } = require('./services/xAuth.js');
+      
+      // Enhanced validation before attempting to generate URL
+      const validation = validateXAuthEnvironment();
+      if (!validation.valid) {
+        console.error('❌ X OAuth environment validation failed:', validation.issues);
+        return res.status(400).json({
+          error: 'OAuth configuration invalid',
+          issues: validation.issues,
+          config: validation.config,
+          success: false
         });
       }
       
@@ -653,12 +661,22 @@ export function registerRoutes(app) {
       // Extract the URL from the auth link object
       const loginUrl = authLink.url;
       
-      console.log('Generated auth URL with scopes:', authLink.scope);
+      console.log('✅ Generated auth URL with scopes:', authLink.scope);
+      console.log('- State:', state);
+      console.log('- URL length:', loginUrl.length);
       
-      res.json({ loginUrl, state });
+      res.json({ 
+        loginUrl, 
+        state,
+        success: true,
+        validation: validation
+      });
     } catch (error) {
-      console.error("Error generating X login URL:", error);
-      res.status(500).json({ error: error.message });
+      console.error("❌ Error generating X login URL:", error);
+      res.status(500).json({ 
+        error: error.message,
+        success: false
+      });
     }
   });
   
@@ -864,7 +882,107 @@ export function registerRoutes(app) {
 
   // X OAuth callback endpoint
   router.get("/auth/twitter/callback", async (req, res) => {
-    const { code, state } = req.query;
+    const { code, state, error, error_description } = req.query;
+    
+    console.log('📥 OAuth callback received:');
+    console.log('- Code present:', !!code);
+    console.log('- State present:', !!state);
+    console.log('- Error present:', !!error);
+    console.log('- Full query params:', req.query);
+    console.log('- Request URL:', req.url);
+    console.log('- Request headers:', req.headers);
+    
+    // Handle X OAuth errors (user denied, etc.)
+    if (error) {
+      console.error('❌ X OAuth returned error:', error);
+      console.error('Error description:', error_description);
+      
+      const errorMessage = error === 'access_denied' 
+        ? 'User denied access to the application'
+        : `OAuth error: ${error} - ${error_description}`;
+      
+      return res.status(400).send(`
+        <html>
+          <head>
+            <title>X Authentication Error</title>
+            <style>
+              body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f3f4f6;
+              }
+              .container {
+                text-align: center;
+                padding: 2rem;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+              }
+              .error {
+                color: #dc2626;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="error">✗ Authentication Error</div>
+              <p>${errorMessage}</p>
+              <p>Please close this window and try again.</p>
+            </div>
+          </body>
+        </html>
+      `);
+    }
+    
+    // Validate required parameters
+    if (!code || !state) {
+      console.error('❌ Missing required OAuth parameters');
+      return res.status(400).send(`
+        <html>
+          <head>
+            <title>X Authentication Error</title>
+            <style>
+              body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background: #f3f4f6;
+              }
+              .container {
+                text-align: center;
+                padding: 2rem;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+              }
+              .error {
+                color: #dc2626;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="error">✗ Invalid OAuth Response</div>
+              <p>Missing required authentication parameters. This may indicate a callback URL mismatch.</p>
+              <p>Please close this window and try again.</p>
+            </div>
+          </body>
+        </html>
+      `);
+    }
     
     try {
       const authResult = await handleXCallback(code, state);
@@ -1024,6 +1142,46 @@ export function registerRoutes(app) {
     }
   });
   
+  // Debug endpoint to show exact OAuth configuration
+  router.get("/api/auth/x/debug", (req, res) => {
+    const { getXAuthStatus, validateXAuthEnvironment } = require('./services/xAuth.js');
+    const status = getXAuthStatus();
+    const validation = validateXAuthEnvironment();
+    
+    // Get the exact callback URL that will be used
+    const callbackUrl = status.callbackUrl;
+    const currentUrl = `${req.protocol}://${req.get('host')}/auth/twitter/callback`;
+    
+    res.json({
+      configured: status.configured,
+      clientId: status.clientId,
+      hasClientSecret: status.hasClientSecret,
+      callbackUrl: callbackUrl,
+      currentRequestUrl: currentUrl,
+      urlsMatch: callbackUrl === currentUrl,
+      validation: validation,
+      environment: {
+        replit_domains: process.env.REPLIT_DOMAINS,
+        repl_slug: process.env.REPL_SLUG,
+        repl_owner: process.env.REPL_OWNER,
+        node_env: process.env.NODE_ENV
+      },
+      headers: {
+        host: req.get('host'),
+        'x-forwarded-proto': req.get('x-forwarded-proto'),
+        'x-forwarded-host': req.get('x-forwarded-host'),
+        'x-forwarded-port': req.get('x-forwarded-port'),
+        'x-real-ip': req.get('x-real-ip')
+      },
+      recommendations: [
+        'Ensure callback URL in X Developer Portal matches exactly',
+        'Check that X_CLIENT_ID and X_CLIENT_SECRET are correctly set',
+        'Verify your X app has the required permissions',
+        'Make sure your X app is not suspended or restricted'
+      ]
+    });
+  });
+
   // Check auth status for frontend polling
   router.get("/api/auth/x/check", (req, res) => {
     const isAuthenticated = userAuthData.authenticated && 
