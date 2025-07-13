@@ -13,7 +13,7 @@ import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } f
 import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
-import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus } from "./services/xAuth.js";
+import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, validateXAuthEnvironment } from "./services/xAuth.js";
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -639,10 +639,8 @@ export function registerRoutes(app) {
   });
   
   // Generate X login URL
-  router.post("/api/auth/x/login", (req, res) => {
+  router.post("/api/auth/x/login", async (req, res) => {
     try {
-      const { validateXAuthEnvironment } = require('./services/xAuth.js');
-      
       // Enhanced validation before attempting to generate URL
       const validation = validateXAuthEnvironment();
       if (!validation.valid) {
@@ -1144,7 +1142,6 @@ export function registerRoutes(app) {
   
   // Debug endpoint to show exact OAuth configuration
   router.get("/api/auth/x/debug", (req, res) => {
-    const { getXAuthStatus, validateXAuthEnvironment } = require('./services/xAuth.js');
     const status = getXAuthStatus();
     const validation = validateXAuthEnvironment();
     
