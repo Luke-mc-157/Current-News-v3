@@ -142,6 +142,12 @@ The application now includes a comprehensive podcast generation system:
     - Fixed `view_count` vs `impression_count` field mapping
     - Enhanced data summary includes timeline posts for Grok analysis
     - Appendix parsing logic for future podcast integration
+- **✅ SIMPLIFIED TIMELINE CATEGORIZATION**: Removed xaiAnalyzer dependency (January 13, 2025 05:30 UTC)
+  - **Removed categorizePostsWithXAI**: Eliminated separate AI categorization step for timeline posts
+  - **Grok-Driven Categorization**: Timeline posts now sent directly to Grok for intelligent topic matching
+  - **Improved Architecture**: Reduced complexity by removing intermediate AI processing layer
+  - **Enhanced Instructions**: Updated Grok prompt to explicitly handle timeline post categorization
+  - **Maintained Features**: All personalization features (emergent topics, timeline integration, appendix) remain functional
 
 ### Previous Updates (January 12, 2025)
 - **✅ FIXED DATABASE STORAGE ISSUES**: Resolved all TypeScript/Drizzle ORM compatibility issues

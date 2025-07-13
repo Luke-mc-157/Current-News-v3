@@ -1,7 +1,6 @@
 import OpenAI from "openai";
 import { fetchXPosts } from './xSearch.js';
 import { TwitterApi } from 'twitter-api-v2';
-import { categorizePostsWithXAI } from './xaiAnalyzer.js';
 import { fetchUserTimeline } from './xTimeline.js';
 
 const client = new OpenAI({
@@ -137,65 +136,37 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
-  // Step 1.5: If we have timeline posts, categorize them and add to topic data
+  // Step 1.5: Format timeline posts for Grok to categorize
+  const formattedTimelinePosts = [];
   if (followedPosts.length > 0 && userHandle) {
-    console.log(`🔄 Categorizing ${followedPosts.length} timeline posts by ${topics.length} topics...`);
+    console.log(`📱 Formatting ${followedPosts.length} timeline posts for Grok categorization...`);
     
-    try {
-      // Format posts for categorization
-      const formattedPosts = followedPosts.map(post => {
-        // Get author username from includes
-        const authorUsername = userHandle; // Default to authenticated user
-        
-        return {
-          id: post.id,
-          text: post.text,
-          author_id: post.author_id,
-          author_handle: authorUsername,
-          created_at: post.created_at,
-          public_metrics: post.public_metrics || {
-            retweet_count: 0,
-            reply_count: 0,
-            like_count: 0,
-            quote_count: 0,
-            impression_count: 0
-          },
-          url: `https://x.com/${authorUsername}/status/${post.id}`
-        };
+    // Format posts for Grok to analyze
+    followedPosts.forEach(post => {
+      formattedTimelinePosts.push({
+        id: post.id,
+        text: post.text,
+        author_id: post.author_id,
+        author_handle: userHandle,
+        created_at: post.created_at,
+        public_metrics: post.public_metrics || {
+          retweet_count: 0,
+          reply_count: 0,
+          like_count: 0,
+          quote_count: 0,
+          view_count: 0
+        },
+        url: `https://x.com/${userHandle}/status/${post.id}`,
+        source: 'timeline'
       });
-      
-      // Use xaiAnalyzer to categorize posts by topics
-      const { categorizedPosts } = await categorizePostsWithXAI(formattedPosts, topics);
-      
-      // Add categorized posts to corresponding topics
-      for (const cat of categorizedPosts) {
-        const topicIndex = allTopicData.findIndex(t => t.topic === cat.topic);
-        if (topicIndex !== -1) {
-          const timelinePosts = cat.posts.map(post => ({
-            text: post.text,
-            url: post.url,
-            time: post.created_at,
-            views: post.public_metrics.view_count || 0,
-            likes: post.public_metrics.like_count || 0,
-            handle: post.author_handle,
-            source: 'timeline'
-          }));
-          
-          // Add timeline posts to the topic's xPosts array
-          allTopicData[topicIndex].xPosts.push(...timelinePosts);
-          console.log(`➕ Added ${timelinePosts.length} timeline posts to topic: ${cat.topic}`);
-        }
-      }
-      
-      console.log('✅ Timeline posts categorized and integrated');
-    } catch (error) {
-      console.error('❌ Error categorizing timeline posts:', error.message);
-    }
+    });
+    
+    console.log('✅ Timeline posts formatted and ready for Grok categorization');
   }
   
   // Step 2: Send all collected data to Grok for newsletter compilation
   console.log('📝 Step 2: Compiling newsletter with Grok...');
-  const { headlines, appendix } = await compileNewsletterWithGrok(allTopicData);
+  const { headlines, appendix } = await compileNewsletterWithGrok(allTopicData, formattedTimelinePosts);
   
   const responseTime = Date.now() - startTime;
   console.log(`✅ Live Search completed in ${responseTime}ms`);
@@ -305,7 +276,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
   }
 }
 
-async function compileNewsletterWithGrok(allTopicData) {
+async function compileNewsletterWithGrok(allTopicData, timelinePosts = []) {
   console.log('🤖 Compiling newsletter with grok-3-fast...');
   
   // Prepare data summary for Grok
@@ -314,27 +285,32 @@ async function compileNewsletterWithGrok(allTopicData) {
       `Citation [${index}]: ${citation}`
     ).join('\n');
     
-    // Include timeline posts if available
-    const timelinePostsText = topicData.xPosts
-      .filter(post => post.source === 'timeline')
-      .map(post => `- @${post.handle}: "${post.text}" (${post.views} views, ${post.likes} likes) ${post.url}`)
-      .join('\n');
-    
-    const timelineSection = timelinePostsText ? `
-TIMELINE POSTS:
-${timelinePostsText}
-` : '';
-    
     return `
 TOPIC: ${topicData.topic}
 
 LIVE SEARCH DATA:
 ${topicData.webData.substring(0, 1500)}
-${timelineSection}
+
 CITATIONS (${topicData.citations.length} URLs):
 ${citationsText}
 `;
   }).join('\n\n---\n\n');
+  
+  // Add timeline posts section if available
+  let timelineSection = '';
+  if (timelinePosts.length > 0) {
+    const timelineText = timelinePosts.map(post => 
+      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
+    ).join('\n');
+    
+    timelineSection = `
+
+---
+
+USER'S TIMELINE POSTS (${timelinePosts.length} posts):
+${timelineText}
+`;
+  }
   
   console.log(`📊 Data summary stats: ${dataSummary.length} chars total`);
   console.log(`📋 Topics in summary: ${allTopicData.map(t => t.topic).join(', ')}`);
@@ -347,7 +323,10 @@ ${citationsText}
           role: "system",
           content: `You are a news editor. Create headlines and supporting information from the provided data. All "### Key News Highlights:" must have their own respective headlines. Open all URL citations and read all content in them to get further facts and details. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Once you have created your content, rank the headlines by engagement on supporting X posts with the highest engagement (view count) first.
 
-If timeline posts (source: 'timeline') relate to headlines, integrate them as primary sourcePosts.
+CRITICAL: If USER'S TIMELINE POSTS are provided, you must:
+1. Analyze which timeline posts relate to which topics
+2. Include relevant timeline posts as sourcePosts for appropriate headlines
+3. Mark timeline posts with source: 'timeline' in sourcePosts
 
 Add a "From Your Feed" appendix: Select 3-5 high-engagement timeline posts not used in headlines; provide factual summaries, links and fields: author_name and post text.
 
@@ -359,11 +338,11 @@ Return ONLY a JSON array of headlines in this exact format, with appendix as a s
     "category": "topic name",
     "sourcePosts": [
       {
-        "X handle": "@username",
-        "text": "post text",
+        "handle": "@username",
+        "text": "post text", 
         "url": "x.com URL",
         "time": "timestamp",
-        "views": number
+        "likes": number
       }
     ],
     "supportingArticles": [
@@ -393,7 +372,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
           role: "user",
-          content: dataSummary
+          content: dataSummary + timelineSection
         }
       ],
       max_tokens: 20000
