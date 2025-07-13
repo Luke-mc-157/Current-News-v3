@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import { fetchXPosts } from './xSearch.js';
 import { TwitterApi } from 'twitter-api-v2';
 import { categorizePostsWithXAI } from './xaiAnalyzer.js';
+import { fetchUserTimeline } from './xTimeline.js';
 
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
@@ -15,54 +16,33 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 0: Fetch user's timeline posts if authenticated
   let followedPosts = [];
-  let userXId = null;
   
   if (userHandle && accessToken) {
     try {
-      const xClient = new TwitterApi(accessToken);
+      console.log(`📱 Fetching user timeline for authenticated user ${userHandle}`);
       
-      // Get user ID from handle
-      console.log(`🔍 Getting user ID for ${userHandle}`);
-      const { data: user } = await xClient.v2.userByUsername(userHandle);
-      userXId = user.id;
+      // Use the official fetchUserTimeline function that stores data in database
+      const timelinePosts = await fetchUserTimeline(accessToken, userId, 7);
       
-      // Fetch timeline posts (reverse chronological from followed accounts)
-      console.log(`📱 Fetching timeline for user ${userHandle}`);
-      const options = {
-        start_time: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(), // Last 24h
-        max_results: 100,
-        'tweet.fields': ['public_metrics', 'created_at', 'text', 'author_id'],
-        expansions: ['author_id'],
-        'user.fields': ['username']
-      };
-      
-      const timeline = await xClient.v2.userTimeline(userXId, options);
-      
-      if (timeline.data?.data) {
-        followedPosts = timeline.data.data;
-        
-        // Fetch additional pages (up to 5 total)
-        let nextToken = timeline.meta?.next_token;
-        let pageCount = 1;
-        
-        while (nextToken && pageCount < 5) {
-          const nextPage = await xClient.v2.userTimeline(userXId, { 
-            ...options, 
-            pagination_token: nextToken 
-          });
-          
-          if (nextPage.data?.data) {
-            followedPosts.push(...nextPage.data.data);
-          }
-          
-          nextToken = nextPage.meta?.next_token;
-          pageCount++;
+      // Transform timeline posts to the format expected by the rest of the function
+      followedPosts = timelinePosts.map(post => ({
+        id: post.postId,
+        text: post.text,
+        author_id: post.authorId,
+        created_at: post.createdAt,
+        public_metrics: {
+          retweet_count: post.retweetCount,
+          reply_count: post.replyCount,
+          like_count: post.likeCount,
+          quote_count: post.quoteCount,
+          view_count: post.viewCount
         }
-        
-        console.log(`✅ Fetched ${followedPosts.length} posts from followed accounts`);
-      }
+      }));
+      
+      console.log(`✅ Retrieved ${followedPosts.length} timeline posts from database`);
     } catch (error) {
       console.error(`❌ Timeline fetch error: ${error.message}`);
+      followedPosts = []; // Continue without timeline data if fetch fails
     }
   }
   

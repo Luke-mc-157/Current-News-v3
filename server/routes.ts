@@ -14,6 +14,7 @@ import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailServ
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
 import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus } from "./services/xAuth.js";
+import { fetchUserTimeline } from "./services/xTimeline.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -31,6 +32,20 @@ export function registerRoutes(app) {
     }
 
     try {
+      // Check if user has authenticated with X and fetch timeline first
+      const userId = 1; // In production, get from session/JWT
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      
+      if (authToken) {
+        console.log(`📱 User ${authToken.xHandle} authenticated - fetching timeline before search`);
+        try {
+          await fetchUserTimeline(authToken.accessToken, userId, 7);
+          console.log(`✅ Timeline updated for user ${authToken.xHandle}`);
+        } catch (timelineError) {
+          console.error(`❌ Timeline fetch failed: ${timelineError.message}`);
+          // Continue with search even if timeline fails
+        }
+      }
       const posts = await fetchXPosts(topics);
       const hasPosts = Object.values(posts).some((p) => p.length > 0);
       if (!hasPosts) {
@@ -184,6 +199,21 @@ export function registerRoutes(app) {
     try {
       console.log("🔍 Using working X API + OpenAI workflow for headlines generation");
       const startTime = Date.now();
+      
+      // Check if user has authenticated with X and fetch timeline first
+      const userId = 1; // In production, get from session/JWT
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      
+      if (authToken) {
+        console.log(`📱 User ${authToken.xHandle} authenticated - fetching timeline before search`);
+        try {
+          await fetchUserTimeline(authToken.accessToken, userId, 7);
+          console.log(`✅ Timeline updated for user ${authToken.xHandle}`);
+        } catch (timelineError) {
+          console.error(`❌ Timeline fetch failed: ${timelineError.message}`);
+          // Continue with search even if timeline fails
+        }
+      }
       
       // Step 1: Get real X posts using working X API
       console.log("📱 Fetching real X posts for topics:", topics);
