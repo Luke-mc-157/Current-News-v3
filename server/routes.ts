@@ -5,6 +5,7 @@ import http from "http";
 // Old workflow imports removed - using only xAI Live Search
 
 import { compileContentForPodcast } from "./services/contentFetcher.js";
+import axios from 'axios';
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
 import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } from "./services/voiceSynthesis.js";
 import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
@@ -182,6 +183,81 @@ export function registerRoutes(app) {
     }
     res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
   });
+
+  // Debug endpoint to test axios/cheerio article scraping
+  router.post("/api/debug/scrape-article", async (req, res) => {
+    const { url } = req.body;
+    
+    if (!url) {
+      return res.status(400).json({ error: "URL is required" });
+    }
+
+    try {
+      console.log(`🔍 Testing article scraping for: ${url}`);
+      
+      // Test metadata extraction (same as extractArticleData in liveSearchService)
+      const metadataResult = await extractArticleMetadata(url);
+      
+      // Test body content extraction (same as fetchArticleContent in contentFetcher)
+      const bodyResult = await extractArticleBody(url);
+      
+      res.json({
+        url: url,
+        metadata: metadataResult,
+        body: {
+          content: bodyResult,
+          length: bodyResult ? bodyResult.length : 0,
+          preview: bodyResult ? bodyResult.substring(0, 500) + "..." : null
+        }
+      });
+      
+    } catch (error) {
+      console.error("Error testing article scraping:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  async function extractArticleMetadata(url) {
+    try {
+      const response = await axios.get(url, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NewsBot/1.0)' },
+        timeout: 8000
+      });
+      
+      const { load } = await import('cheerio');
+      const $ = load(response.data);
+      
+      return {
+        title: $('title').text() || $('meta[property="og:title"]').attr('content') || `[Article from ${new URL(url).hostname}]`,
+        ogTitle: $('meta[property="og:title"]').attr('content'),
+        ogDescription: $('meta[property="og:description"]').attr('content'),
+        metaDescription: $('meta[name="description"]').attr('content'),
+        source: new URL(url).hostname,
+        responseSize: response.data.length
+      };
+    } catch (error) {
+      return { error: error.message };
+    }
+  }
+
+  async function extractArticleBody(url) {
+    try {
+      const response = await fetch(url);
+      const html = await response.text();
+      
+      // Basic content extraction - remove scripts, styles, etc.
+      const textContent = html
+        .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+        .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      
+      return textContent.substring(0, 5000); // Return first 5000 chars for testing
+    } catch (error) {
+      return null;
+    }
+  }
 
   // Quick endpoint to check post count
   router.get("/api/posts/count", async (_req, res) => {
