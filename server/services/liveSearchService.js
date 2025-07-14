@@ -360,7 +360,7 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     totalXAIPosts += xPostSources.length;
     
     // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
-    const articlePromises = articleUrls.slice(0, 15).map(async (url, index) => {
+    const articlePromises = articleUrls.slice(0, 7).map(async (url, index) => {
       // Stagger requests slightly to avoid overwhelming servers
       await new Promise(resolve => setTimeout(resolve, index * 100));
       return extractArticleData(url);
@@ -540,53 +540,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
   }
 }
 
-// Phase 2: Pre-summarize each topic to avoid truncation
-async function preSummarizeTopic(topicData, topicName) {
-  console.log(`📝 Pre-summarizing topic: ${topicName}`);
-  
-  try {
-    const response = await client.chat.completions.create({
-      model: "grok-3-fast",
-      messages: [
-        {
-          role: "system",
-          content: `Summarize this topic's key findings. CRITICAL: Preserve the exact structure including "X POSTS FROM SEARCH" and "SUPPORTING ARTICLES" sections. Keep ALL X posts and their metadata (handle, text, views, likes, URL). Keep ALL article URLs. Return the same format but condensed.`
-        },
-        {
-          role: "user",
-          content: topicData
-        }
-      ],
-      max_tokens: 3000
-    });
-    
-    return response.choices[0].message.content;
-  } catch (error) {
-    console.error(`❌ Pre-summarization failed for ${topicName}: ${error.message}`);
-    return topicData; // Return original if summarization fails
-  }
-}
 
-// Phase 2: Process topics in chunks to avoid overload
-async function processTopicsInChunks(topicsData, chunkSize = 2) {
-  const chunks = [];
-  for (let i = 0; i < topicsData.length; i += chunkSize) {
-    chunks.push(topicsData.slice(i, i + chunkSize));
-  }
-  
-  const processedChunks = [];
-  for (const chunk of chunks) {
-    const chunkResults = await Promise.all(
-      chunk.map(async ({ topic, data }) => {
-        const summarized = await preSummarizeTopic(data, topic);
-        return { topic, summarized };
-      })
-    );
-    processedChunks.push(...chunkResults);
-  }
-  
-  return processedChunks;
-}
 
 async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
   console.log('🤖 Phase 2: Enhanced newsletter compilation with grok-4...');
@@ -594,23 +548,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
   console.log(`📏 Data length: ${compiledData.length} chars`);
   
   try {
-    // Phase 2: Split data into topics for chunked processing
-    const topicsData = [];
-    const sections = compiledData.split('\n\n---\n\n');
-    
-    for (const section of sections) {
-      if (section.startsWith('TOPIC:')) {
-        const lines = section.split('\n');
-        const topic = lines[0].replace('TOPIC: ', '');
-        topicsData.push({ topic, data: section });
-      }
-    }
-    
-    // Phase 2: Pre-summarize topics to avoid truncation
-    const summarizedTopics = await processTopicsInChunks(topicsData);
-    const condensedData = summarizedTopics.map(t => t.summarized).join('\n\n---\n\n');
-    
-    console.log(`📏 Condensed data length: ${condensedData.length} chars (from ${compiledData.length})`);
+    console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
       model: "grok-4",
@@ -620,11 +558,11 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
           content: `You are a world class news editor. Create headlines from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
 
 DATA FORMAT PROVIDED:
-- Pre-summarized topic sections with key findings and all source URLs
-- Each section maintains X posts metadata and article citations
+- Full compiled research data with complete topic sections
+- Each section contains X posts metadata and article citations  
 - All engagement metrics preserved for ranking
 
-PHASE 2 INSTRUCTIONS:
+INSTRUCTIONS:
 1. Create 3-4 headlines per topic from the provided data
 2. CRITICAL: Use X POSTS FROM SEARCH as sourcePosts in your headlines
 3. Include both X posts and articles - prioritize high engagement X posts
@@ -673,16 +611,16 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
           role: "user",
-          content: condensedData
+          content: compiledData
         }
       ],
-      max_tokens: Math.min(28000, Math.max(10000, topicsData.length * 5000))  // Dynamic scaling based on topic count
+      max_tokens: 15000  // Fixed high limit for full compiled data processing
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
     console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
-    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${Math.min(28000, Math.max(10000, topicsData.length * 50000))})`);
+    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${15000})`);
     
     // Parse JSON response with improved error handling
     try {
@@ -746,10 +684,10 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
     } catch (parseError) {
       console.error('❌ Failed to parse newsletter JSON:', parseError.message);
       console.error('🔍 Raw content that failed to parse:', content);
-      console.error(`📊 Topic count: ${topicsData.length}, Response length: ${content.length}`);
+      console.error(`📊 Response length: ${content.length}`);
       
-      // For large topic searches, try to extract what we can
-      if (topicsData.length > 5) {
+      // For large data responses, try to extract what we can
+      if (content.length > 10000) {
         console.log('🔧 Large topic search detected, attempting partial extraction...');
         const partialHeadlines = attemptPartialHeadlineExtraction(content);
         if (partialHeadlines.length > 0) {
