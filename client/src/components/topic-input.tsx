@@ -5,15 +5,14 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { X, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
+import { apiRequest, queryClient } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
-  onHeadlinesReceived: (headlines: any[]) => void;
   useLiveSearch?: boolean;
 }
 
-export default function TopicInput({ onTopicsSubmitted, onHeadlinesReceived, useLiveSearch = false }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
@@ -25,7 +24,6 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesReceived, use
       return await response.json();
     },
     onSuccess: (data) => {
-      console.log("Mutation success! Response data:", data);
       const performanceInfo = data.performance 
         ? ` in ${data.performance.responseTime} using ${data.performance.method}` 
         : "";
@@ -33,13 +31,8 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesReceived, use
         title: "Headlines Generated",
         description: `Your personalized news headlines have been created${performanceInfo}.`,
       });
-      // Pass headlines directly from response
-      if (data.headlines) {
-        console.log("Passing headlines to parent:", data.headlines.length, "headlines");
-        onHeadlinesReceived(data.headlines);
-      } else {
-        console.warn("No headlines found in response data:", data);
-      }
+      // Invalidate and refetch headlines query
+      queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
       onTopicsSubmitted(topics);
     },
     onError: (error: any) => {

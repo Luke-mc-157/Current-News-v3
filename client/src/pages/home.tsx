@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
 import PodcastGenerator from "@/components/podcast-generator";
@@ -9,20 +10,14 @@ import type { Headline } from "@shared/schema";
 
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
-  const [headlines, setHeadlines] = useState<Headline[]>([]);
-  const [isGenerating, setIsGenerating] = useState(false);
   const [useLiveSearch, setUseLiveSearch] = useState(true); // Default to Live Search
 
-  const handleHeadlinesReceived = (newHeadlines: Headline[]) => {
-    console.log("Headlines received in Home component:", newHeadlines.length, "headlines");
-    setHeadlines(newHeadlines);
-    setIsGenerating(false);
-  };
+  const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
+    queryKey: ["/api/headlines"],
+    enabled: submittedTopics.length > 0,
+  });
 
-  const handleTopicsSubmitted = (topics: string[]) => {
-    setSubmittedTopics(topics);
-    setIsGenerating(true);
-  };
+  const headlines: Headline[] = headlinesData?.headlines || [];
 
   // Cache headlines when they are fetched successfully
   useEffect(() => {
@@ -85,8 +80,7 @@ export default function Home() {
               onToggle={setUseLiveSearch} 
             />
             <TopicInput 
-              onTopicsSubmitted={handleTopicsSubmitted}
-              onHeadlinesReceived={handleHeadlinesReceived}
+              onTopicsSubmitted={setSubmittedTopics} 
               useLiveSearch={useLiveSearch}
             />
           </div>
@@ -108,7 +102,7 @@ export default function Home() {
               </span>
             </div>
 
-            {isGenerating ? (
+            {headlinesLoading ? (
               <div className="space-y-6">
                 {Array.from({ length: 3 }).map((_, i) => (
                   <div key={i} className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
