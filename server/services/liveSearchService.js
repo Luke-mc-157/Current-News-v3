@@ -563,8 +563,8 @@ DATA FORMAT PROVIDED:
 - All engagement metrics preserved for ranking
 
 INSTRUCTIONS:
-1. Create 3-4 headlines per topic from the provided data
-2. CRITICAL: Use X POSTS FROM SEARCH as sourcePosts in your headlines
+1. For EVERY topic in the provided data, create 2-6 headlines based on the volume and richness of available sources (e.g., more headlines for topics with many X posts/articles; fewer for sparse ones). Ensure headlines are justified by the data—only generate a headline if it's supported by at least 2 specific sources (X posts or articles).
+2. CRITICAL: Use X POSTS FROM SEARCH and X POSTS FROM USER'S TIMELINE POSTS as sourcePosts in your headlines
 3. Include both X posts and articles - prioritize high engagement X posts
 4. Each headline MUST have sourcePosts array with X post data
 5. Preserve exact URLs and metadata from the provided data

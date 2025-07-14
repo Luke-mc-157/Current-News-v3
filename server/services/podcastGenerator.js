@@ -117,46 +117,10 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
       max_tokens: Math.max(15000, targetWordCount * 1.5) // Dynamic scaling: ensure sufficient tokens for longer podcasts
     });
     
-    let script = response.choices[0].message.content;
+    const script = response.choices[0].message.content;
     const wordCount = script.split(/\s+/).length;
-    const targetMin = targetWordCount - 100;
-    const targetMax = targetWordCount + 100;
     
     console.log(`Generated podcast script with ${wordCount} words (target: ${targetWordCount})`);
-    
-    // Validation: Check if script meets duration requirements
-    if (wordCount < targetMin) {
-      console.log(`⚠️ Script too short (${wordCount} words, need ${targetWordCount}). Attempting extension...`);
-      
-      // Try to extend the script with a follow-up request
-      const extensionResponse = await xai.chat.completions.create({
-        model: "grok-4",
-        messages: [
-          {
-            role: "system",
-            content: `The previous script was too short (${wordCount} words). You need to EXTEND it to reach exactly ${targetWordCount} words. Add more detailed coverage of each story, expand transitions, and include more comprehensive analysis from the provided sources. Maintain the same factual, professional tone.`
-          },
-          {
-            role: "user",
-            content: `EXTEND this script to ${targetWordCount} words by adding more detailed coverage:\n\n${script}\n\nUSE THIS RESEARCH DATA for expansion:\n${isRawCompiledData ? compiledData.substring(0, 20000) : JSON.stringify(compiledData)}`
-          }
-        ],
-        temperature: 0.7,
-        max_tokens: Math.max(15000, (targetWordCount - wordCount) * 1.5)
-      });
-      
-      script = extensionResponse.choices[0].message.content;
-      const finalWordCount = script.split(/\s+/).length;
-      console.log(`Extended script to ${finalWordCount} words`);
-    }
-    
-    // Final word count check
-    const finalWords = script.split(/\s+/).length;
-    if (finalWords < targetMin) {
-      console.log(`❌ Warning: Final script (${finalWords} words) still below target (${targetWordCount} words)`);
-    } else {
-      console.log(`✅ Script length validated: ${finalWords} words for ${durationMinutes}-minute podcast`);
-    }
     
     return script;
   } catch (error) {
