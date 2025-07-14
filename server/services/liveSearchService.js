@@ -278,6 +278,7 @@ async function fetchXPostsBatch(postIds, accessToken) {
             text: tweet.text,
             author_id: tweet.author_id,
             author_handle: author?.username || 'unknown',
+            author_name: author?.name || null, // X API standard field
             created_at: tweet.created_at,
             public_metrics: tweet.public_metrics || {
               retweet_count: 0,
@@ -577,6 +578,7 @@ Return ONLY a JSON array in this exact format:
     "category": "topic name",
     "sourcePosts": [
       {
+        "author_name": "Display Name",
         "handle": "@username",
         "text": "post text", 
         "url": "x.com URL",

@@ -65,6 +65,7 @@ export async function fetchUserTimeline(accessToken, userId, days = 7) {
         authorId: post.author_id,
         authorHandle: usersMap.get(post.author_id)?.username || 'unknown',
         authorName: usersMap.get(post.author_id)?.name || null,
+        author_name: usersMap.get(post.author_id)?.name || null, // X API standard field
         text: post.text,
         createdAt: new Date(post.created_at),
         retweetCount: post.public_metrics?.retweet_count || 0,

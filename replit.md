@@ -128,6 +128,19 @@ The application now includes a comprehensive podcast generation system:
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
 ### Latest Updates (January 14, 2025)
+- **✅ AUTHOR_NAME FIELD STANDARDIZATION**: Implemented consistent use of "author_name" throughout the application to match X API standards
+  - **Database Schema Updated**: Enhanced sourcePosts type to include `author_name` field alongside existing handle, text, url, and likes fields
+  - **X API Integration Updated**: All X API response processing now includes `author_name` from the user display name field
+    - `xTimeline.js`: Added author_name extraction from X API user data
+    - `liveSearchService.js`: Enhanced post transformation to include author_name 
+    - `xSearch.js`: Updated post mapping to capture display names from X API
+  - **Backend Services Updated**: All sourcePosts creation points now include author_name
+    - `routes.ts`: V3 endpoint sourcePosts mapping includes author_name
+    - `contentFetcher.js`: Podcast content compilation preserves author_name
+    - `workflows/headline-creator.ts`: Timeline post transformation includes author_name
+  - **Frontend Display Enhanced**: HeadlineCard component now shows "Display Name (@handle)" format when author_name is available
+  - **Grok Prompt Updated**: Newsletter compilation instructions specify author_name in sourcePosts structure
+  - **Results**: All X posts now consistently display user display names alongside handles for better user identification
 - **✅ PODCAST GENERATION SYSTEM FIXES**: Resolved critical script truncation and duration compliance issues
   - **Dynamic Token Scaling**: Implemented `Math.max(15000, targetWordCount * 1.5)` to ensure sufficient tokens for longer podcasts (previously capped at 10k)
   - **Enhanced Duration Compliance**: Added explicit word count targets and validation with automatic retry for short scripts

@@ -34,7 +34,7 @@ export const headlines = pgTable("headlines", {
   summary: text("summary").notNull(),
   category: text("category").notNull(),
   engagement: integer("engagement").notNull(),
-  sourcePosts: jsonb("source_posts").$type<Array<{text: string, url: string}>>().notNull(),
+  sourcePosts: jsonb("source_posts").$type<Array<{author_name: string, text: string, url: string, likes: number}>>().notNull(),
   supportingArticles: jsonb("supporting_articles").$type<Array<{title: string, url: string}>>().notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
