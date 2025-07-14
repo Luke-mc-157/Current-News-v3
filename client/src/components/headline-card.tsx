@@ -86,7 +86,7 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
                     rel="noopener noreferrer"
                     className="block text-sm text-blue-600 hover:text-blue-800 transition-colors"
                   >
-                    {post.author_handle || post.author_name}
+                    {post.handle || post.author_name}
                   </a>
                 ))}
               </div>

@@ -45,7 +45,7 @@ export async function compileContentForPodcast(headlines) {
     // Include full X post content (we already have it)
     if (headline.sourcePosts && headline.sourcePosts.length > 0) {
       headlineContent.posts = headline.sourcePosts.map(post => ({
-        author_handle: post.author_handle,
+        handle: post.handle,
         text: post.text,
         time: post.time,
         url: post.url,

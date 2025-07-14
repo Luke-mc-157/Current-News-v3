@@ -577,7 +577,7 @@ Return ONLY a JSON array in this exact format:
     "category": "topic name",
     "sourcePosts": [
       {
-        "author_handle": "@username",
+        "handle": "@username",
         "text": "post text", 
         "url": "x.com URL",
         "time": "timestamp",
@@ -729,7 +729,7 @@ async function validateAndEnhanceHeadlines(headlines, compiledData) {
     
     for (const postMatch of postMatches) {
       availableXPosts.push({
-        author_handle: `@${postMatch[1]}`,
+        handle: `@${postMatch[1]}`,
         text: postMatch[2],
         url: postMatch[5],
         time: new Date().toISOString(),
