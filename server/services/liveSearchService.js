@@ -29,6 +29,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         id: post.postId,
         text: post.text,
         author_id: post.authorId,
+        author_name: post.authorName,
         created_at: post.createdAt,
         public_metrics: {
           retweet_count: post.retweetCount,
@@ -62,6 +63,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
               id: post.postId,
               text: post.text,
               author_id: post.authorId,
+              author_name: post.authorName,
               created_at: post.createdAt,
               public_metrics: {
                 retweet_count: post.retweetCount,
@@ -160,7 +162,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         id: post.id,
         text: post.text,
         author_id: post.author_id,
-        author_handle: post.authorHandle,
+        author_name: post.author_name,
         created_at: post.created_at,
         public_metrics: post.public_metrics || {
           retweet_count: 0,
@@ -169,7 +171,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
           quote_count: 0,
           view_count: 0
         },
-        url: `https://x.com/${post.authorHandle}/status/${post.id}`,
+        url: `https://x.com/i/status/${post.id}`,
         source: 'timeline'
       });
     });
@@ -277,7 +279,7 @@ async function fetchXPostsBatch(postIds, accessToken) {
             id: tweet.id,
             text: tweet.text,
             author_id: tweet.author_id,
-            author_handle: author?.username || 'unknown',
+            author_name: author?.name || author?.username || 'Unknown',
             created_at: tweet.created_at,
             public_metrics: tweet.public_metrics || {
               retweet_count: 0,
@@ -384,7 +386,7 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
   // Create structured text for Grok
   const topicsSection = compiledTopics.map(topic => {
     const xPostsText = topic.xPostSources.map(post => 
-      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`
+      `- ${post.author_name || 'Unknown'}: "${post.text}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`
     ).join('\n');
     
     const articlesText = topic.articleSources.map(article => 
@@ -409,7 +411,7 @@ ${articlesText || 'None found'}
   let timelineSection = '';
   if (formattedTimelinePosts.length > 0) {
     const timelineText = formattedTimelinePosts.map(post => 
-      `- @${post.author_handle}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
+      `- ${post.author_name || 'Unknown'}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
     ).join('\n');
     
     timelineSection = `
@@ -580,7 +582,7 @@ Return ONLY a JSON array in this exact format:
     "category": "topic name",
     "sourcePosts": [
       {
-        "handle": "@username",
+        "handle": "author name",
         "text": "post text", 
         "url": "x.com URL",
         "time": "timestamp",
@@ -728,11 +730,11 @@ async function validateAndEnhanceHeadlines(headlines, compiledData) {
   
   for (const match of xPostsMatches) {
     const postsSection = match[1];
-    const postMatches = postsSection.matchAll(/- @([^:]+): "([^"]+)" \((\d+) views, (\d+) likes\) (https:\/\/[^\s]+)/g);
+    const postMatches = postsSection.matchAll(/- ([^:]+): "([^"]+)" \((\d+) views, (\d+) likes\) (https:\/\/[^\s]+)/g);
     
     for (const postMatch of postMatches) {
       availableXPosts.push({
-        handle: `@${postMatch[1]}`,
+        handle: postMatch[1],
         text: postMatch[2],
         url: postMatch[5],
         time: new Date().toISOString(),
