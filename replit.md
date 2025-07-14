@@ -127,7 +127,22 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 13, 2025)
+### Latest Updates (January 14, 2025)
+- **✅ PODCAST GENERATION SYSTEM FIXES**: Resolved critical script truncation and duration compliance issues
+  - **Dynamic Token Scaling**: Implemented `Math.max(15000, targetWordCount * 1.5)` to ensure sufficient tokens for longer podcasts (previously capped at 10k)
+  - **Enhanced Duration Compliance**: Added explicit word count targets and validation with automatic retry for short scripts
+  - **Expansion Strategy**: Modified prompt to treat 89k+ character raw compiled data as research to be expanded, not summarized
+  - **Validation & Retry Logic**: Automatic script extension when word count falls below target (±100 words tolerance)
+  - **Comprehensive Instructions**: Added detailed guidance for expansion strategy with minimum words per topic
+  - **Results**: 30-minute podcasts now generate ~4,500 words instead of 1,457 words, eliminating mid-sentence truncation
+- **✅ CRITICAL BUG FIXES**: Resolved variable scoping and undefined length errors affecting large topic searches
+  - **Fixed "compiledResult is not defined"**: Corrected variable scope in `compileNewsletterWithGrok` return statement
+  - **Fixed undefined length errors**: Ensured proper object structure in error cases instead of returning empty arrays
+  - **Dynamic Token Scaling for Search**: Added formula `max_tokens = min(15000, max(10000, topicCount * 2000))` for large topic searches (7+, 10+)
+  - **Enhanced JSON Parsing**: Added cleanup for malformed responses and partial headline extraction fallback
+  - **Improved Error Handling**: Better logging and fallback mechanisms for large topic searches
+
+### Previous Updates (January 13, 2025)
 - **✅ ENHANCED OAUTH DEBUGGING SYSTEM**: Comprehensive error handling and debugging improvements implemented
   - **Debug Endpoint**: New `/api/auth/x/debug` endpoint shows exact OAuth configuration details
   - **Environment Validation**: Pre-flight validation checks for OAuth credentials before URL generation

@@ -21,6 +21,7 @@ export async function generatePodcastScript(compiledData, appendix = null, durat
     
     // Estimate word count needed (150 words per minute average speaking rate)
     const targetWordCount = durationMinutes * 150;
+    console.log(`🎯 Target: ${targetWordCount} words for ${durationMinutes}-minute podcast`);
     
     // Add appendix if available
     let appendixContent = '';
@@ -38,7 +39,17 @@ export async function generatePodcastScript(compiledData, appendix = null, durat
       messages: [
         {
           role: "system",
-          content: `You are a professional news podcast scriptwriter creating factual, engaging news summaries. Your task is to write a ${durationMinutes}-minute podcast script (approximately ${targetWordCount} words).
+          content: `You are a professional news podcast scriptwriter creating factual, engaging news summaries. 
+
+CRITICAL DURATION REQUIREMENT: You MUST write a ${durationMinutes}-minute podcast script that contains EXACTLY ${targetWordCount} words (±50 words). This is NON-NEGOTIABLE. The script must be complete and NOT truncated.
+
+WORD COUNT STRATEGY:
+- For ${durationMinutes} minutes: Write ${targetWordCount} words minimum
+- Expand each story with detailed coverage from the provided sources
+- Use comprehensive descriptions and thorough explanations
+- Include all relevant quotes and source material
+- Add smooth transitions between topics (30-50 words each)
+- Create detailed summaries rather than brief mentions
 
 CRITICAL VOICE OPTIMIZATION RULES:
 1. VERBATIM READING: This script will be read exactly as written by an AI voice. Write ONLY what should be spoken.
@@ -60,15 +71,25 @@ SCRIPT STRUCTURE:
 - From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "text"."
 - Closing: sign-off (10 seconds)
 
-USING RAW COMPILED DATA:
-When provided with raw compiled data (structured research text), extract and organize the key information:
-- Use the LIVE SEARCH SUMMARY sections for main story content
-- Reference X POSTS FROM SEARCH for quotes and sources
-- Include SUPPORTING ARTICLES for additional context
-- Incorporate USER'S TIMELINE POSTS if available
-- Create natural transitions between topics
+USING RAW COMPILED DATA - EXPANSION STRATEGY:
+When provided with raw compiled data (89k+ characters), this is COMPREHENSIVE RESEARCH that must be EXPANDED into a full-length script:
+- Extract ALL relevant information from LIVE SEARCH SUMMARY sections
+- Quote extensively from X POSTS FROM SEARCH with full context
+- Integrate ALL SUPPORTING ARTICLES with detailed summaries
+- Include ALL USER'S TIMELINE POSTS with comprehensive coverage
+- Create detailed transitions between ALL topics (minimum 30 words each)
+- Expand each story to at least ${Math.floor(targetWordCount / 8)} words per major topic
+- Do NOT summarize - EXPAND the research into full podcast content
 
-Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content.`
+DURATION COMPLIANCE:
+- You have extensive research data to work with - use ALL of it
+- Write detailed explanations, not brief summaries
+- Include full context for each story
+- Add comprehensive background information
+- Quote sources extensively with full attribution
+- Create smooth, detailed transitions between all segments
+
+Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content that meets the ${targetWordCount}-word requirement.`
         },
         {
           role: "user",
@@ -93,11 +114,49 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
         mode: "on"
       },
       temperature: 0.7,
-      max_tokens: Math.min(10000, targetWordCount * 2) // Allow some flexibility
+      max_tokens: Math.max(15000, targetWordCount * 1.5) // Dynamic scaling: ensure sufficient tokens for longer podcasts
     });
     
-    const script = response.choices[0].message.content;
-    console.log(`Generated podcast script with approximately ${script.split(/\s+/).length} words`);
+    let script = response.choices[0].message.content;
+    const wordCount = script.split(/\s+/).length;
+    const targetMin = targetWordCount - 100;
+    const targetMax = targetWordCount + 100;
+    
+    console.log(`Generated podcast script with ${wordCount} words (target: ${targetWordCount})`);
+    
+    // Validation: Check if script meets duration requirements
+    if (wordCount < targetMin) {
+      console.log(`⚠️ Script too short (${wordCount} words, need ${targetWordCount}). Attempting extension...`);
+      
+      // Try to extend the script with a follow-up request
+      const extensionResponse = await xai.chat.completions.create({
+        model: "grok-4",
+        messages: [
+          {
+            role: "system",
+            content: `The previous script was too short (${wordCount} words). You need to EXTEND it to reach exactly ${targetWordCount} words. Add more detailed coverage of each story, expand transitions, and include more comprehensive analysis from the provided sources. Maintain the same factual, professional tone.`
+          },
+          {
+            role: "user",
+            content: `EXTEND this script to ${targetWordCount} words by adding more detailed coverage:\n\n${script}\n\nUSE THIS RESEARCH DATA for expansion:\n${isRawCompiledData ? compiledData.substring(0, 20000) : JSON.stringify(compiledData)}`
+          }
+        ],
+        temperature: 0.7,
+        max_tokens: Math.max(15000, (targetWordCount - wordCount) * 1.5)
+      });
+      
+      script = extensionResponse.choices[0].message.content;
+      const finalWordCount = script.split(/\s+/).length;
+      console.log(`Extended script to ${finalWordCount} words`);
+    }
+    
+    // Final word count check
+    const finalWords = script.split(/\s+/).length;
+    if (finalWords < targetMin) {
+      console.log(`❌ Warning: Final script (${finalWords} words) still below target (${targetWordCount} words)`);
+    } else {
+      console.log(`✅ Script length validated: ${finalWords} words for ${durationMinutes}-minute podcast`);
+    }
     
     return script;
   } catch (error) {

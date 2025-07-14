@@ -676,13 +676,13 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
           content: condensedData
         }
       ],
-      max_tokens: Math.min(15000, Math.max(10000, topicsData.length * 2000))  // Dynamic scaling based on topic count
+      max_tokens: Math.min(28000, Math.max(10000, topicsData.length * 5000))  // Dynamic scaling based on topic count
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
     console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
-    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${Math.min(15000, Math.max(10000, topicsData.length * 2000))})`);
+    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${Math.min(28000, Math.max(10000, topicsData.length * 50000))})`);
     
     // Parse JSON response with improved error handling
     try {
