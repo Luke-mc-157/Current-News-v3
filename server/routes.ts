@@ -261,7 +261,7 @@ export function registerRoutes(app) {
         .replace(/\s+/g, ' ')
         .trim();
       
-      return textContent.substring(0, 5000); // Return first 5000 chars for testing
+      return textContent.substring(0, 15000); // Return first 15000 chars for testing
     } catch (error) {
       return null;
     }
