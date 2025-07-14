@@ -194,7 +194,7 @@ export class MemStorage implements IStorage {
       category: headline.category,
       engagement: typeof headline.engagement === 'string' ? parseInt(headline.engagement) : 0,
       sourcePosts: (headline.sourcePosts || []).map((post: any) => ({
-        handle: post.handle || '',
+        author_handle: post.author_handle || '',
         text: post.text || '',
         time: post.time || '',
         url: post.url || '',

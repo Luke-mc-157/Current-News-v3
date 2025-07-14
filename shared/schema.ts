@@ -170,7 +170,7 @@ export type Headline = {
   createdAt: string;
   engagement: number;
   sourcePosts: Array<{
-    handle: string;
+    author_handle: string;
     text: string;
     time: string;
     url: string;

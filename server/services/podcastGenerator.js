@@ -100,7 +100,7 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
                 summary: item.summary,
                 category: item.category,
                 keyPosts: item.posts?.slice(0, 3).map(p => ({
-                  author: p.handle,
+                  author: p.author_handle,
                   content: p.text
                 })) || [],
                 articleHighlights: item.articles?.slice(0, 2).map(a => ({

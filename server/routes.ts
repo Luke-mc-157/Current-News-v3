@@ -250,7 +250,7 @@ export function registerRoutes(app) {
         
         for (const headline of headlines) {
           const sourcePosts = topicPosts.slice(0, 10).map(post => ({
-            handle: post.handle,
+            author_handle: post.author_handle,
             text: post.text,
             time: post.time,
             url: post.url,
