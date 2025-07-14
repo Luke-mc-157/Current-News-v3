@@ -311,7 +311,7 @@ async function fetchXPostsBatch(postIds, accessToken) {
   return allPosts;
 }
 
-// Extract article metadata using axios/cheerio
+// Extract article metadata and full content using axios/cheerio
 async function extractArticleData(url) {
   try {
     const response = await axios.get(url, {
@@ -321,11 +321,21 @@ async function extractArticleData(url) {
     
     const $ = (await import('cheerio')).load(response.data);
     
+    // Extract full article content (same logic as contentFetcher.js)
+    const fullContent = response.data
+      .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+      .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    
     return {
       title: $('title').text() || $('meta[property="og:title"]').attr('content') || `[Article from ${new URL(url).hostname}]`,
       url: url,
       summary: $('meta[property="og:description"]').attr('content') || '[Summary not available]',
-      source: new URL(url).hostname
+      source: new URL(url).hostname,
+      fullContent: fullContent.substring(0, 15000), // Include full content up to 15k chars
+      contentLength: fullContent.length
     };
   } catch (error) {
     // Fallback for failed article fetching
@@ -335,7 +345,9 @@ async function extractArticleData(url) {
         title: `[Article from ${hostname}]`,
         url: url,
         summary: '[Content not accessible]',
-        source: hostname
+        source: hostname,
+        fullContent: '[Content not accessible]',
+        contentLength: 0
       };
     } catch (urlError) {
       return null;
@@ -372,7 +384,9 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     const articleSources = articleResults.filter(article => article !== null);
     totalArticles += articleSources.length;
     
-    console.log(`✅ Fetched ${articleSources.length} articles out of ${Math.min(articleUrls.length, 15)} attempted`);
+    const totalContentChars = articleSources.reduce((sum, article) => sum + (article.contentLength || 0), 0);
+    console.log(`✅ Fetched ${articleSources.length} articles out of ${Math.min(articleUrls.length, 7)} attempted`);
+    console.log(`📄 Total article content: ${totalContentChars.toLocaleString()} characters`);
     
     compiledTopics.push({
       topic: topicData.topic,
@@ -390,8 +404,9 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     ).join('\n');
     
     const articlesText = topic.articleSources.map(article => 
-      `- ${article.title}: ${article.summary} [${article.url}]`
-    ).join('\n');
+      `- ${article.title}: ${article.summary} [${article.url}]
+FULL CONTENT (${article.contentLength} chars): ${article.fullContent}`
+    ).join('\n\n');
     
     return `
 TOPIC: ${topic.topic}
