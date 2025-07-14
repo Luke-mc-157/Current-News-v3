@@ -9,20 +9,23 @@ import { apiRequest } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
+  onHeadlinesReceived: (headlines: any[]) => void;
   useLiveSearch?: boolean;
 }
 
-export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted, onHeadlinesReceived, useLiveSearch = false }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
-    mutationFn: (topics: string[]) => {
+    mutationFn: async (topics: string[]) => {
       const endpoint = useLiveSearch ? "/api/generate-headlines-v2" : "/api/generate-headlines";
-      return apiRequest("POST", endpoint, { topics });
+      const response = await apiRequest("POST", endpoint, { topics });
+      return await response.json();
     },
     onSuccess: (data) => {
+      console.log("Mutation success! Response data:", data);
       const performanceInfo = data.performance 
         ? ` in ${data.performance.responseTime} using ${data.performance.method}` 
         : "";
@@ -30,6 +33,13 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }:
         title: "Headlines Generated",
         description: `Your personalized news headlines have been created${performanceInfo}.`,
       });
+      // Pass headlines directly from response
+      if (data.headlines) {
+        console.log("Passing headlines to parent:", data.headlines.length, "headlines");
+        onHeadlinesReceived(data.headlines);
+      } else {
+        console.warn("No headlines found in response data:", data);
+      }
       onTopicsSubmitted(topics);
     },
     onError: (error: any) => {
