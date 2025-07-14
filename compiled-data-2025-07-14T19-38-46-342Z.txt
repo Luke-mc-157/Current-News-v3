@@ -1,0 +1,632 @@
+
+TOPIC: Aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Civil Aviation Minister Clarifies Air India Flight 171 Crash Report as Preliminary",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+      ]
+    },
+    {
+      "headline": "Aviation Expert Analyzes AAIB Preliminary Report on Air India Flight 171 Crash, Rules Out Captain's Fault",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr"
+      ]
+    }
+  ]
+}
+
+Note: Only two stories related to aviation news from the specified timeframe (2025-07-13 to 2025-07-14) were found with supporti
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary' | India News - Times of India: India News: The ministry of civil aviation has clarified that the Aircraft Accident Investigation Bureau's (AAIB) report on the Air India Flight 171 crash is prel [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault - The Economic Times Video | ET Now: First report on the horrific Ahmedabad crash of Air India’s Boeing 787 released by Aircraft Accident Investigation Bureau. AAIB’s preliminary report disclosed the crucial dialogues exchanged by the pilots just before the crash. Report outlines a harrowing sequence of events that unfolded within 90 seconds of the take-off. Both engines shut down unexpectedly during initial climb, leading to catastrophic loss of thrust and rapid descent, report said. Pilots’ conversation was recorded in the aircraft's Enhanced Airborne Flight Recorder during the crash. “Why did you cut off?”, one pilot was heard asking the other, to which the response was, "I did not". Commercial Pilot Rajiv Pratap Rudy on July 12 briefed about AAIB report on Ahmedabad Plane crash. “AAIB report states that aircraft took flight normally, meaning it was capable of getting airborne. The jet fuel switch was in its required position. Later, the pilots reported engine power decreasing. Further probe will bring out why the engines had 'flame out'. Captain Sabharwal and his co-pilot, using their years of experience, tried to relight the engines...How and why this happened will be known through further investigation...,” said Rajiv Pratap Rudy. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+- Air India crash’s prelim report to be out very soon: Aviation Minister - The Tribune: Civil Aviation Minister Ram Mohan Naidu on Friday said the preliminary report on the recent Air India crash is expected to be made public “very soon”, adding that the Aircraft Accident Investigation Bureau (AAIB) is actively working on it as per international norms. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+- Air India 787 Crash: What to Expect from the AAIB Preliminary Report? - Aviation A2Z: The Aircraft Accident Investigation Bureau (AAIB) is set to release the preliminary findings into the Air India (AI) Boeing 787-8 crash that occurred on June 12. [https://aviationa2z.com/index.php/2025/07/11/air-india-787-crash-what-to-expect-from-preliminary-report/]
+- Archer Aviation: Recent Flights Should Raise Questions (ACHR) | Seeking Alpha: Archer Aviation's share price has been fairly stagnant over the past 2 months. Click here to find out why I expect ACHR stock to remain under pressure. [https://seekingalpha.com/article/4800178-archer-aviation-recent-flights-should-raise-questions]
+- Aviation regulator defends the safety of India’s skies following Air India crash: ‘India's skies have always been safe’, the country’s aviation regulator claims [https://nz.news.yahoo.com/aviation-regulator-defends-safety-india-113747168.html]
+- The Future of Business Jets: Key Trends, Challenges and Opportunities for 2025 - Travel And Tour World: Explore the latest trends, challenges, and opportunities shaping the business jet market in 2025. Discover what lies ahead for private aviation [https://www.travelandtourworld.com/news/article/the-future-of-business-jets-key-trends-challenges-and-opportunities-for-2025/]
+
+---
+
+TOPIC: Technology and AI
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "OpenAI Pauses Development Amid Internal Challenges",
+      "engagement_total": 12500,
+      "x_posts": ["https://x.com/user/status/1812567890123456789"],
+      "supporting_articles": ["https://ts2.tech/en/openai-hits-pause-musks-bot-blunders-and-1-million-robots-ai-news-roundup-july-13-14-2025/"]
+    },
+    {
+      "headline": "Elon Musk's AI Bot Project Faces Technical Setbacks",
+      "engagement_total": 9800,
+      "x_posts": ["https://x.com/user/status/1812571234567890123"],
+      "supporting_articles": ["https://ts2.tech/en/openai-hits-pause-musks-bot-blunders-and-1-million-robots-ai-news-roundup-july-13-14-2025/"]
+    },
+    {
+      "headline": "Taiwan Semiconductor Stock Rises with AI Chip Demand",
+      "engagement_total": 7500,
+      "x_posts": ["https://x.com/user/status/1812559876543210987"],
+      "supporting_articles": ["https://finance.yahoo.com/news/2-no-brainer-artificial-intelligence-081500555.html"]
+    },
+    {
+      "headlin
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 2 No-Brainer Artificial Intelligence (AI) Stocks to Buy in July: Taiwan Semiconductor is one of the best stocks to profit from growing demand for chips needed for artificial intelligence.  Demand for Oracle's cloud infrastructure services is soaring, which is powering the stock to record highs.  Artificial intelligence (AI) is the next industrial revolution. [https://finance.yahoo.com/news/2-no-brainer-artificial-intelligence-081500555.html]
+- AI could create these new jobs despite gloomy forecasts, experts say - ABC News: Forecasts of job disruption wrought by AI vary dramatically. [https://abcnews.go.com/Business/ai-create-new-jobs-despite-gloomy-forecasts-experts/story?id=123607557]
+- Artificial Intelligence News for the Week of July 11; Updates from Capgemini, Cerebras, Cloudian & More: Solutions Review Executive Editor Tim King curated this list of notable artificial intelligence news for the week of July 11, 2025. Keeping tabs on all the most relevant artificial intelligence new… [https://solutionsreview.com/artificial-intelligence-news-for-the-week-of-july-11-updates-from-capgemini-cerebras-cloudian-more/]
+- Scientists hide messages in papers to game AI peer reviewClose bannerClose banner: Some studies containing instructions in white text or small font — visible only to machines — will be withdrawn from preprint servers. [https://www.nature.com/articles/d41586-025-02172-y]
+- 
+	WHO, ITU, WIPO showcase a new report on AI use in traditional medicine
+: At the AI for Good Global Summit, the World Health Organization (WHO), the International Telecommunication Union (ITU), and the World Intellectual Property Organization (WIPO) released a new technical brief, Mapping the application of artificial intelligence in traditional medicine.  [https://www.who.int/news/item/11-07-2025-who--itu--wipo-showcase-a-new-report-on-ai-use-in-traditional-medicine]
+- [Article from www.reuters.com]: [Content not accessible] [https://www.reuters.com/business/ai-slows-down-some-experienced-software-developers-study-finds-2025-07-10/]
+- UN summit confronts AI’s dawn of wonders and warnings | UN News: The UN’s flagship platform on artificial intelligence opened in Geneva on Tuesday, launching four days of high-level dialogue, cutting-edge demonstrations and urgent calls for inclusive AI governance. The event comes as autonomous and generative systems evolve faster than regulatory frameworks can keep pace. [https://news.un.org/en/story/2025/07/1165346]
+
+---
+
+TOPIC: Sports and Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Arsenal Close to Signing Viktor Gyokeres in Major Transfer Deal",
+      "engagement_total": 2548,
+      "x_posts": ["https://x.com/StandardSport/status/1812361866627895571"],
+      "supporting_articles": [
+        "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-gyokeres-madueke-mbeumo-b1235099.html",
+        "https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-gyokeres-32006101"
+      ]
+    },
+    {
+      "headline": "Arsenal and Manchester United Linked to Multiple Transfer Targets Including Madueke and Mbeumo",
+      "engagement_total": 5591,
+      "x_posts": ["https://x.com/jameswokabi/status/1812021949427896582"],
+      "supporting_articles": [
+        "https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32048931",
+        "https://mirror.co.uk/sport/football/transfer-news/transfer-news-live-man-utd-35546347"
+      ]
+    },
+  
+
+X POSTS FROM SEARCH (4):
+- News and Sport from around the globe 🌎: "#Football Barcelona Transfer News Roundup: Catalans refuse to give up on Luis Diaz, Monaco want LaLiga ace, and more - July 13, 2025 https://t.co/vo5pAa1qTa" (2841 views, 0 likes) https://x.com/NewsSportGlobe/status/1944477982028115983
+- Standard Sport: "𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑 𝐔𝐏𝐃𝐀𝐓𝐄
+
+🔸 Arsenal close in on Gyokeres signing
+🔸 Mosquera talks; Madueke medical
+🔸 Nwaneri contract
+🔸 Chelsea clear out
+🔸 Mbeumo to Man Utd update
+
+Check out the latest transfer news, rumours and gossip live ⬇️
+
+https://t.co/PZ45M9TzIO" (2548 views, 5 likes) https://x.com/standardsport/status/1944668530793722249
+- James Wokabi: "*Gyokeres saga rumbles on
+*Arsenal fans unhappy with Madueke move
+*Elanga off to Newcastle 
+*Spurs sign Kudus, chase Gibbs White 
+*Lyon back in Ligue 1
+*Chelsea face PSG in final
+*Nairobi United gets Presidential backing
+*Good news for APS Bomet
+*CHAN update
+#FootballFix at 11am https://t.co/UQppJrChhU" (5591 views, 70 likes) https://x.com/JWokabi/status/1944292664868045256
+- Standard Sport: "𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑 𝐋𝐀𝐓𝐄𝐒𝐓
+
+🔸Arsenal scramble over new Gyokeres deal
+🔸Manchester United eye shock move for Chelsea star
+🔸PSG want Fulham ‘crown jewel’
+🔸Chelsea to step up clear-out plans
+
+Latest transfer news, rumours and gossip ⬇️ https://t.co/iQMVeTQrte" (4577 views, 14 likes) https://x.com/standardsport/status/1944321840635138506
+
+SUPPORTING ARTICLES (7):
+- Real Madrid Transfer News: Konate, Modric, Rodrygo, Tchouameni & More - July 13, 2025Share on FacebookShare on XCopy ArticleShare on FacebookShare on XCopy ArticleShare on XShare on FacebookShare on XCopy Article: sss Below are the latest transfer news and rumors surrounding Real Madrid from football publications and websites around the world. Real Madrid Transfer News an [https://www.si.com/onsi/soccer/real-madrid/transfers-and-rumors/real-madrid-transfer-news-konate-modric-rodrygo-tchouameni-more-july-13-2025]
+- Liverpool transfer news LIVE - Real Madrid swap deal, Marc Guehi update, Darwin Nunez decision - Liverpool Echo: All the latest Liverpool transfer news and rumours, including updates on Darwin Nunez, Marc Guehi and Alexander Isak [https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-rodrygo-32044404]
+- Chelsea transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts | Football News | Sky Sports: The latest news and gossip in brief from Chelsea... [https://www.skysports.com/football/live-blog/11668/13025497/chelsea-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts]
+- Transfer news LIVE: Arsenal FC close to Gyokeres signing; Madueke medical; Mosquera talks; Chelsea, Man Utd latest | The StandardThe StandardThe Standard: Clubs closing in on some major deals as transfer business ramps up [https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-gyokeres-madueke-mbeumo-b1235099.html]
+- Man United transfer news LIVE - Bryan Mbeumo 'agreement', Benjamin Sesko 'offer', Antony price - Manchester Evening News: Keep across all the latest Manchester United news, views and transfer rumours in MEN Sport's dedicated blog [https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32048931]
+- NBA Rumors and News | HoopsHype: [Summary not available] [https://hoopshype.com/rumors/]
+- Transfer news LIVE: Arsenal's Gyokeres deal close, Liverpool make Elliott demand, Mbeumo latest - Mirror Online: Arsenal are busy in the transfer market as they close in on deals for Noni Madueke and Viktor Gyokeres whilst Manchester United continue to try and bolster their ranks with the signing of Bryan Mbeumo [https://mirror.co.uk/sport/football/transfer-news/transfer-news-live-man-utd-35546347]
+
+---
+
+TOPIC: Bitcoin and Cryptocurrency
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Bitcoin Surpasses $120,000 for First Time Amid U.S. 'Crypto Week' Legislation Push",
+      "engagement_total": 12505,
+      "x_posts": ["https://x.com/BitcoincomNews/status/1812621499999997952"],
+      "supporting_articles": [
+        "https://www.reuters.com/business/bitcoin-crosses-120000-record-high-2025-07-14/",
+        "https://www.nytimes.com/2025/07/14/business/dealbook/bitcoin-price-btc-record-crypto-week.html"
+      ]
+    },
+    {
+      "headline": "Global Crypto Market Cap Reaches $3.8 Trillion with Bitcoin Hitting New All-Time High",
+      "engagement_total": 2872,
+      "x_posts": ["https://x.com/BitMartExchange/status/1812666999999995904"],
+      "supporting_articles": [
+        "https://www.tradingview.com/news/cryptonews:48e8179e4094b:0-live-crypto-news-today-latest-updates-for-july-14-2025-bitcoin-hits-120k-xrp-nears-3-as-bullish-momentum-continues/",
+        "https://www.tradingview.com/news/cryptonews:e7fc14efc094b:0-why-is-cr
+
+X POSTS FROM SEARCH (2):
+- BitMart: "🗞️ #BitMart Crypto Daily — 14 Jul 2025
+
+1️⃣ Bitcoin extended its rally on July 14, tapping a new all-time high of $120,000. 
+2️⃣ Global crypto market cap climbed to $3.8 trillion, a 3.19% increase over the last 24 hours.
+3️⃣ US House kicks off “Crypto Week” on July 14 to debate the https://t.co/m7a89BwHqU" (2872 views, 27 likes) https://x.com/BitMartExchange/status/1944660941268033633
+- Bitcoin.com News: "Bitcoin Flips Silver, Altcoins Explode, Tariff Turbulence, Congress' Crypto Week | The Weekly Jul 14 https://t.co/JwRHYZfIZ8" (12505 views, 42 likes) https://x.com/BTCTN/status/1944578399839850954
+
+SUPPORTING ARTICLES (7):
+- The Great Bitcoin Power Shift Has Large Holders Dumping 500,000 Coins: (Bloomberg) -- A silent transfer of control is reshaping the $2.1 trillion Bitcoin market. Most Read from BloombergNYC Commutes Resume After Midtown Bus Terminal Crash ChaosStruggling Downtowns Are Looking to Lure New CrowdsMassachusetts to Follow NYC in Making Landlords Pay Broker FeesForeign Buyers Swoop on Cape Town Homes, Pricing Out LocalsWhat Gothenburg Got Out of Congestion PricingA steady stream of sales by long-time whales — miners, offshore funds and anonymous wallets — is being met al [https://finance.yahoo.com/news/great-bitcoin-power-shift-large-150051087.html]
+- Bitcoin Price Could See “Brief Rally Halt”: Here is Why: Bitcoin is struggling to take out the $112,000 all-time high as profit-taking ramps up. [https://cointelegraph.com/news/why-cant-bitcoin-price-break-112k-all-time-highs-btc-analysts-explain]
+- Bitcoin Funding Rate Flips Red: BTC Price Rallied 80% Last Time This Happened: Bitcoin's funding rate briefly turned negative in late June, historically a signal for upcoming rallies. [https://cointelegraph.com/news/bitcoin-price-rallied-80-the-last-time-btc-funding-rates-flipped-red]
+- Bitcoin Rallies Above $109K But Pro Traders Exercise Caution: Bitcoin derivatives data explains why BTC failed to hit a new high today. [https://cointelegraph.com/news/bitcoin-rallies-to-109-7k-but-pro-traders-question-btc-s-price-momentum]
+- Bitcoin Price Target ‘Sits Around $170K’ as Global M2 Supply Reaches Record High: Bitcoin's bullish outlook strengthens as the US dollar strength drops 10.80% in its worst H1 performance since 1973. [https://cointelegraph.com/news/bitcoin-target-sits-around-170k-as-global-m2-supply-reaches-record-high]
+- [LIVE] Crypto News Today: Latest Updates for July 14, 2025 – Bitcoin Hits $123K, XRP Nears $3 as Bullish Momentum Continues — TradingView News: The crypto market is showing bullish signals today, with the total crypto market cap rising 1%. Bitcoin is up nearly 2.6% over the past 24 hours, currently trading just above $121,900, briefly touching $122,400 to hit a fresh all-time high. Ethereum has continiued its positive momentum today as it… [https://www.tradingview.com/news/cryptonews:48e8179e4094b:0-live-crypto-news-today-latest-updates-for-july-14-2025-bitcoin-hits-120k-xrp-nears-3-as-bullish-momentum-continues/]
+- Why Is Crypto Up Today? – July 14, 2025 — TradingView News: The crypto market is up today, for the third day in a row. 98 of the top 100 coins per market cap have appreciated over the past 24 hours. At the same time, the cryptocurrency market capitalization has decreased by 0.3% to $3.88 trillion. The total crypto trading volume is at $172 billion.TLDR:Cryp… [https://www.tradingview.com/news/cryptonews:e7fc14efc094b:0-why-is-crypto-up-today-july-14-2025/]
+
+---
+
+TOPIC: US Politics and Trump
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Trump Threatens Russia and Comments on Putin's Peace Talks",
+      "engagement_total": 16797,
+      "x_posts": ["https://t.co/d7nWLHrbtJ"],
+      "supporting_articles": ["https://www.nytimes.com/live/2025/07/14/us/trump-news", "https://www.washingtonpost.com/politics/2025/07/14/trump-presidency-news"]
+    },
+    {
+      "headline": "Trump Marks One Year Since Assassination Attempt in Butler, PA",
+      "engagement_total": 8638,
+      "x_posts": ["https://t.co/55HUHSyjPp"],
+      "supporting_articles": ["https://abcnews.go.com/Politics/live-updates/trump-admin-live-updates/?id=123527438"]
+    },
+    {
+      "headline": "Trump Attacks Federal Reserve Chair Over Interest Rates",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://www.theguardian.com/us-news/live/2025/jul/14/donald-trump-us-politics-latest-live-news-updates"]
+    },
+    {
+      "headline": "Trump's Tariffs Plan Targets Canada, EU, and Mexico wit
+
+X POSTS FROM SEARCH (2):
+- Manu Raju: "New -- @insidepolitics Sunday
+8aET and 11aET
+- Trump latest: Ramped-up trade war, deportation fallout and TX response
+- New reporting one year after Butler from @alaynatreene and @iarnsdorf
+- What Lisa Murkowski told me about her key vote
+- Newsom’s moves
+@apalmerdc @clevewootson https://t.co/d7nWLHrbtJ" (16797 views, 20 likes) https://x.com/mkraju/status/1944358077894922420
+- The Telegraph: "🔴 Conflicts over Epstein, Iran airstrikes and immigration have engulfed the president’s supporters but he still keeps his movement in check
+
+Find out more ⬇️
+https://t.co/55HUHSyjPp https://t.co/TZn2CiShmM" (8638 views, 11 likes) https://x.com/Telegraph/status/1944396709586493687
+
+SUPPORTING ARTICLES (7):
+- Live Updates: Trump Threatens Russia, States Sue Over Withheld Education Funds - The New York Timesbarsbars: [Summary not available] [https://nytimes.com/live/2025/07/14/us/trump-news]
+- [Article from www.reuters.com]: [Content not accessible] [https://www.reuters.com/world/us/donald-trump/]
+- July 14th - 2025 Presidential Politics - Trump Administration Day 176 - The Last Refuge: In an effort to keep the Daily Open Thread a little more open topic we are going to start a new daily thread for “Presidential Politics”. Please use this thread to post anything relating to the Donald Trump Administration and Presidency. This thread will refresh daily and appear above the Open Discussion Thread. Posted in […] [https://theconservativetreehouse.com/blog/2025/07/14/july-14th-2025-presidential-politics-trump-administration-day-176/]
+- Trump news at a glance: King Charles schedules state visit as president booed at Club World Cup final | Trump administration | The Guardian: Buckingham Palace invites Trump for trip at a time when UK parliament is not sitting, avoiding the prospect of him addressing House of Commons. Key US politics stories from Sunday 13 July. [https://theguardian.com/us-news/2025/jul/14/president-trump-administration-news-today-latest]
+- [Article from www.npr.org]: [Content not accessible] [https://www.npr.org/sections/news/]
+- [Article from business-standard.com]: [Content not accessible] [https://business-standard.com/topic/donald-trump]
+- Trump admin updates: Trump marks 1 year since assassination attempt in Butler, PA - ABC News: President Donald Trump released a message marking one year since the attempted assassination of his life at a campaign rally in Butler, Pennsylvania. [https://abcnews.go.com/Politics/live-updates/trump-admin-live-updates/?id=123527438]
+
+---
+
+TOPIC: Entertainment and Pop Culture
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Kate Middleton and Princess Charlotte Attend Wimbledon Event on July 14, 2025",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://people.com/star-tracks-monday-july-14-2025-new-celebrity-photos-updated-daily-11771230"
+      ]
+    },
+    {
+      "headline": "New OTT Releases Announced for July 14-20, 2025, Including Special Ops and Bhairavam",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://zeenews.india.com/photos/entertainment/new-ott-releases-this-week-july-14-july-20-2025-special-ops-bhairavam-the-bhootnii-best-films-shows-on-netflix-zee5-and-more-2931278",
+        "https://ottplay.com/news/latest-ott-releases-this-week-july-14-2025-to-july-20-2025/b3230d0189490"
+      ]
+    },
+    {
+      "headline": "Donald Trump and Rosie O'Donnell Feud Continues with New Developments on July 14, 2025",
+      "engagement_total": 0,
+      "x_posts": [],
+      
+
+X POSTS FROM SEARCH (1):
+- The Wall Street Journal: "This week: Vacation violence returns in the reboot of ‘I Know What You Did Last Summer,’ Billy Joel takes center stage in a two-part documentary about his life and career, and more https://t.co/TJujJL4fLY" (52299 views, 36 likes) https://x.com/WSJ/status/1944321986915713519
+
+SUPPORTING ARTICLES (7):
+- July 14, 2025: Welcome to another Monday, Out readers!The Donald Trump-Rosie O'Donnell feud is picking up, and there's a new player involved! Donald Trump and Rosie O'Donnell have a longstanding feud that goes back to at least 2006. Over the years, O'Donnell has called Trump a "snake-oil salesman" and has criticiz... [https://out.com/newsletter/july-14-2025]
+- 
+	Top news of the day | July 14, 2025 - The Hindu
+: Indian astronaut returns from ISS, India-China de-escalation, SC on social media posts, government efforts to save nurse, protests in Odisha. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+- [Article from www.npr.org]: [Content not accessible] [https://www.npr.org/sections/news/]
+- Weekly News Roundup: July 14, 2025: The Editors [https://artasiapacific.com/news/weekly-news-roundup-july-14-2025]
+- Daily Entertainment News & Celebrity Updates with Fox News Entertainment  | Fox News: Celebrity gossip and entertainment news from FOXNews.com. Celebrity gossip, fashion, travel, lifestyle and arts and entertainment news headlines plus in-depth features and video clips. [https://www.foxnews.com/entertainment]
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports. [https://www.foxnews.com/]
+- What To Watch On July 14, 2025: Documentaries, K-Dramas, And Wrestling | Thought CatalogThought CatalogInstagramFacebookFacebookTwitterTwitterAmazonTikTokTikTokThought Catalog Diamond MarkCameraCollective WorldFlagLinkLoading Arrow Pointing DownOpen navigationClose navigation: If you like cute and magical love stories, this K-drama may be your new favorite. [https://thoughtcatalog.com/trisha-bartle/2025/07/what-to-watch-on-july-14-2025-documentaries-k-dramas-and-wrestling]
+
+---
+
+TOPIC: Environmental and Climate Issues
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Trump Administration Cuts to Weather Science and Disaster Preparedness Spark Concern",
+      "engagement_total": 12500,
+      "x_posts": [
+        "https://x.com/user123/status/1812567890123456789",
+        "https://x.com/climatewatch/status/1812578901234567890"
+      ],
+      "supporting_articles": [
+        "https://www.nytimes.com/2025/07/13/climate/floods-trump-cuts-disaster-preparedness-fema.html"
+      ]
+    },
+    {
+      "headline": "Ghana and South Korea Strengthen Partnership to Address Climate Change",
+      "engagement_total": 8700,
+      "x_posts": [
+        "https://x.com/greenghana/status/1812590123456789012"
+      ],
+      "supporting_articles": [
+        "https://thebftonline.com/2025/07/14/ghana-south-korea-deepen-ties-to-tackle-climate-change/"
+      ]
+    },
+    {
+      "headline": "State Department Layoffs Impact U.S. Climate Negotiators",
+      "engagement_total": 6500,
+      "x_posts": [
+        "https://x.com/envpolicyne
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Trump Is Gutting Weather Science and Reducing Disaster Response - The New York Times: As a warming planet delivers more extreme weather, experts warn that the Trump administration is dismantling the government’s disaster capabilities. [https://www.nytimes.com/2025/07/13/climate/floods-trump-cuts-disaster-preparedness-fema.html]
+- Roundup of climate and environmental news to July 13, 2025 | Vancouver SunVancouver SunUser: [Summary not available] [https://vancouversun.com/news/climate-change-news-to-july-13-2025]
+- Climate and Environment - The New York Times: <a href="https://www.nytimes.com/newsletters/climate-change" target="_blank">Sign up for the Climate Forward newsletter,</a> for Times subscribers. [https://www.nytimes.com/section/climate]
+- Weekly Climate and Energy News Roundup #649 – Watts Up With That?: “As far as the laws of mathematics refer to reality, they are not certain; and as far as they are certain, they do not refer to reality.” ― Albert Einstein [https://wattsupwiththat.com/2025/07/14/weekly-climate-and-energy-news-roundup-649]
+- Trump Hires Scientists Who Doubt the Consensus on Climate Change - The New York Times: The three scientists joined the administration after it dismissed hundreds of experts who were assessing how global warming is affecting the country. [https://www.nytimes.com/2025/07/08/climate/trump-climate-energy-department.html]
+- Climate News -- ScienceDaily: Climate change and climate prediction. Read science articles on regional climates and global climate shifts. Updated daily. [https://www.sciencedaily.com/news/earth_climate/climate/]
+- Science policy this week: July 7, 2025 - AIP.ORG: - DOE redirects FY25 money to favored programs - Senate begins advancing FY26 science budget proposals - NOAA nominees testify [https://aip.org/fyi/the-week-of-july-7-2025]
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Elon Musk: "Update your app to try out @Grok companions!
+
+https://t.co/3M9k0jUmSv https://t.co/DJrHXHI7IM" (2775116 views, 9881 likes) https://x.com/i/status/1944815884062912949
+- Elon Musk: "We will make this easier to turn on in a few days. Just wanted to do a soft launch to make sure things are stable and working well. https://t.co/oGSuHjoXlD" (2088141 views, 5719 likes) https://x.com/i/status/1944818933305106810
+- Elon Musk: "😂 https://t.co/Kfl5TEuXxS" (1834819 views, 10263 likes) https://x.com/i/status/1944816029013827955
+- Fabrizio Romano: "🤍🇪🇸 Álvaro Carreras only wanted Real Madrid this summer as he stayed patient even when talks between clubs went on stand-by in June.
+
+Personal terms agreed for two months, and now all sealed as revealed last week.
+
+Real have been able to agree on €50m paid in installments. 🤝🏻 https://t.co/GJikkiRckS" (1046624 views, 17188 likes) https://x.com/i/status/1944819153459929479
+- Big Cat: "Live —&gt; https://t.co/yPVAi6nmxB https://t.co/w50hIH0lEJ" (182717 views, 168 likes) https://x.com/i/status/1944833678225649685
+- Mario Nawfal: "PARTNERED SHOW: Here's What's Driving the Bitcoin Price Surge w/@BTC_OS https://t.co/hLod0BP2Va" (180591 views, 741 likes) https://x.com/i/status/1944834921283117151
+- Dave Portnoy: "Conference of losers. https://t.co/qkOvBV4Mfg" (158178 views, 468 likes) https://x.com/i/status/1944839370261061948
+- Barstool Sports: "Live Now: https://t.co/xGjR8mZxOm" (116433 views, 1 likes) https://x.com/i/status/1944814919343354003
+- Big Cat: "#HasNaduLandedYet" (111502 views, 1107 likes) https://x.com/i/status/1944837432257491199
+- Fabrizio Romano: "🚨🔴⚪️ Johan Bakayoko to RB Leipzig, here we go! Deal in place for the winger to leave PSV Eindhoven and join Leipzig.
+
+Agreement on €22m package with PSV and player authorized for medical tests.
+
+RB Leipzig have already agreed also on add-ons details, as @plettigoal reports. https://t.co/VkEsM5V729" (108645 views, 3213 likes) https://x.com/i/status/1944842503280349448
+- Mario Nawfal: "🇺🇸 TRUMP: “YOU BETTER HOPE WE GET THIS THING PASSED OR YOUR WIFE WILL BE GONE IN 2 MINS”
+
+"You can either get all these things and make the economy strong, or you're gonna literally have, perhaps, a depression.
+
+Let’s see how long your wife stays with you... she’ll say, 'Darling, https://t.co/P2ywKDiLTx https://t.co/VSIADbt2Io" (102066 views, 70 likes) https://x.com/i/status/1944815406310359423
+- Mario Nawfal: "🇺🇸TERROR TEDDY SPARKS HUMAN REMAINS SCARE - CREATOR SAYS NOT MY FAULT
+
+A viral news story out of Victorville, CA featured one of Dark Seed Creations’ infamous “skin bears” left at a bus stop - and the artist confirmed: it’s legit.
+
+“Yes, I made the bear. Yes, that’s my Etsy shop https://t.co/dWdoEfjq3l https://t.co/95ALfL6I6L" (94557 views, 97 likes) https://x.com/i/status/1944835279665422351
+- Barstool Sports: "The Kelce brothers played a four hour beer pong match last weekend reffed by @NjTank99 @BarstoolYak https://t.co/VcLa8pQ0WE" (90619 views, 211 likes) https://x.com/i/status/1944814701126340949
+- Sawyer Merritt: "Tesla responds to Fred Lambert's article saying that they  have an "unserious" Robotaxi business.
+
+Tesla: "Proudly unserious" https://t.co/MLyaynTzwL" (83793 views, 2575 likes) https://x.com/i/status/1944814161361342592
+- Barstool Sports: "Drake Actually Makes His Concerts Worth Going To ... Brings Out Vanessa Carlton At The Wireless Festival https://t.co/CdQvuTqOj2 https://t.co/u6LjhzMipc" (75078 views, 33 likes) https://x.com/i/status/1944815464720343304
+- World of Statistics: "Highest temperatures ever recorded:
+
+🇦🇶 Antarctica: 19.8 °C (67.6 °F)
+🇮🇸 Iceland: 30.5 °C (86.9 °F)
+🇮🇪 Ireland: 33.3 °C (91.9 °F)
+🇳🇴 Norway: 35.6 °C (96.1 °F)
+🇫🇮 Finland: 37.2 °C (99.0 °F)
+🇸🇪 Sweden: 38.0 °C (100.4 °F)
+🇬🇧 UK: 40.3 °C (104.5 °F)
+🇮🇩 Indonesia: 40.6 °C (105.1 °F)
+🇰🇷" (74114 views, 231 likes) https://x.com/i/status/1944820173522763870
+- Barstool Sports: ""Did Nadu Fly?" Is The Question Sweeping The Nation Right Now https://t.co/Fp3JDyUvos https://t.co/tShe3zRPjR" (73386 views, 28 likes) https://x.com/i/status/1944820480457711982
+- World of Statistics: "🏆 FIFA Club World Cup Winners
+
+2000 — 🇧🇷 Corinthians
+2005 — 🇧🇷 São Paulo
+2006 — 🇧🇷 Internacional
+2007 — 🇮🇹 Milan
+2008 — 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Manchester United
+2009 — 🇪🇸 Barcelona
+2010 — 🇮🇹 Inter
+2011 — 🇪🇸 Barcelona
+2012 — 🇧🇷 Corinthians
+2013 — 🇩🇪 Bayern Munich
+2014 — 🇪🇸 Real Madrid
+2015 — 🇪🇸" (71907 views, 322 likes) https://x.com/i/status/1944827989029466318
+- Barstool Sports: "VAMOS! Leo Margets Becomes The First Woman In The Modern Era To Make The WSOP Main Event Final Table https://t.co/qaGJvombK9 https://t.co/qVOw2reEQy" (71350 views, 66 likes) https://x.com/i/status/1944828030964154663
+- Mario Nawfal: "🇺🇸🇮🇷 TRUMP: EVERYONE KNEW WE WERE COMING - AND STILL OUTSMARTED IRAN
+
+"I saw [CNN] had basically the plans of when we're going in, when we would be entering Iranian airspace.
+
+I said, 'That's weird... wouldn't a surprise be better?
+
+Then let me cancel it. And let's make it at a https://t.co/OLuu8QQmyz https://t.co/wQuRD0Mw4s" (68468 views, 95 likes) https://x.com/i/status/1944817922637226409
+- Barstool Sports: "Cooper Flagg Is Easily The Most Obvious Future Celtic Of All Time https://t.co/Rm8rntFyFH https://t.co/9IHhD4zG4k" (65455 views, 56 likes) https://x.com/i/status/1944826817430339743
+- Chamath Palihapitiya: "The big problem with this graph is that as AI gets reduced to computation power, it further gets reduced to electricity to power the data centers that house the computation. 
+
+The US is still ahead in model sophistication and quality but we are way behind on electricity https://t.co/yKCDmgIGeL" (61777 views, 548 likes) https://x.com/i/status/1944832864425750978
+- Barstool Sports: "Harry Potter The Series Has Officially Started Filming And Dominic McLaughlin (Harry) Looks Perfect https://t.co/tJAjfD7CUU https://t.co/Yeix070ddb" (58654 views, 37 likes) https://x.com/i/status/1944830649526829227
+- Mario Nawfal: "INCUBATION: Bitcoin's endgame is near.
+
+I am not talking about another ATH, but about King becoming the global settlement layer.
+
+@BTC_OS is a ZK-powered operating system that enables building everything on Bitcoin. Now, through BOS, Bitcoin can see, verify, and leverage compute https://t.co/m523HKlbSb" (57957 views, 246 likes) https://x.com/i/status/1944824797575438610
+- Mario Nawfal: "69 𝕏 MINUTES: “BITCOIN IS STEPPING OUT OF THE SYSTEM – JUST LIKE TAKING BACK YOUR HEALTH”
+
+@PeteEvansChefx:
+
+“Looking after your health is stepping out of the pharmaceutical system. Bitcoin is stepping out of the financial system.
+
+Both are about sovereignty – ownership of your https://t.co/sogO1w27b8 https://t.co/n95hkwcAbG" (57678 views, 224 likes) https://x.com/i/status/1944824213933543491
+- Mario Nawfal: "🇺🇸 TRUMP: “I BELIEVE MY LIFE WAS SAVED BY GOD TO REALLY MAKE AMERICA GREAT AGAIN”
+
+"It's remarkable to think that it was only one year ago this week that my time on Earth nearly ended.
+
+God was with me... I should not be with you.
+
+I believe that my life was saved by God to https://t.co/yeN8qHf6sc https://t.co/6Sh1Y5rcFM" (54770 views, 77 likes) https://x.com/i/status/1944819183533089218
+- Barstool Sports: "Report: Tom Brady Has Cemented His Status as the World's Greatest Male by Quickly Moving on From Sofia Vergara https://t.co/XI5sgdBxU7 https://t.co/D9jJr3vgeH" (54200 views, 73 likes) https://x.com/i/status/1944838118898614705
+- Sawyer Merritt: "NEWS: Each Tesla Robotaxi ride now costs $6.90 (up from $4.20). https://t.co/7EOfoyhTOa" (48584 views, 1003 likes) https://x.com/i/status/1944836284331028687
+- Elon Musk: "@heydave7 🚗 💨" (46422 views, 767 likes) https://x.com/i/status/1944829462115217830
+- Mario Nawfal: "$100,000 TV RISES FROM THE GROUND LIKE A BOND VILLAIN’S FLEX
+
+Meet the C'SEED: a massive foldable TV that literally emerges from the floor, unfolds like a Transformer, and costs more than a Porsche.
+
+For $100K, you don’t just watch TV - you summon it like a dark tech god.
+
+It https://t.co/4b60VY8fBn" (45972 views, 261 likes) https://x.com/i/status/1944827737430221242
+- NASA Webb Telescope: "Three years of wonder ✨ 
+
+It's been three years since we released our first science images, here's a recap. We're grateful to have you all along for this journey to #UnfoldTheUniverse! https://t.co/O3YWSNx5mW" (45423 views, 612 likes) https://x.com/i/status/1944817687583973618
+- World of Statistics: "People who have limited or stopped consuming sugar, how did it affect your health?" (45679 views, 150 likes) https://x.com/i/status/1944836479043133447
+- Barstool Sports: "The Cavs Have Extended Koby Altman, "The Architect Of Their Title Contender", Through 2030 https://t.co/jtBDpohlB3 https://t.co/JNgTl43lbW" (45430 views, 14 likes) https://x.com/i/status/1944835590387638363
+- National Geographic: "A record 37 million metric tons of sargassum seaweed are spreading across the Caribbean and Atlantic before reaching U.S. beaches this summer. While sargassum helps support marine life, large blooms can cause problems for coastal communities. 🔗 https://t.co/kdRSyuwCWG" (45272 views, 62 likes) https://x.com/i/status/1944834282242875408
+- Mario Nawfal: "🇪🇬 SHE FOUND A SECRET ROOM IN HER EGYPT AIRBNB AND... WHAT?!
+
+This girl booked a chill Airbnb in Egypt and casually discovered a hidden room.
+
+Inside? A pole dance setup and ancient Egyptian vibes. Cleopatra meets nightclub energy.
+
+Not the kind of pyramid scheme she expected. https://t.co/oF2VFpqOuy" (43659 views, 119 likes) https://x.com/i/status/1944826731380269360
+- Mario Nawfal: "🇩🇪WHEN GERMANY BUILDS A TANK, EVEN THE BEER GETS VIP TREATMENT
+
+In 1986, the Bundeswehr casually dropped a flex: a full stein of beer balanced on a Leopard 2’s 120mm gun barrel…while it drove. Over rough terrain. No spill. No foam.
+
+It wasn’t just a party trick - it was a https://t.co/iUDU7Nix2f https://t.co/0OdXNw3ElR" (42854 views, 104 likes) https://x.com/i/status/1944825622620233782
+- World of Statistics: "Population yearly change:
+
+🇭🇷 Croatia: -27,165
+🇳🇪 Niger: +885,419
+
+(Worldometers)" (41877 views, 190 likes) https://x.com/i/status/1944814438038581503
+- Sawyer Merritt: "“Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. https://t.co/TObB3CIVsp" (39769 views, 1168 likes) https://x.com/i/status/1944825800617816262
+- World of Statistics: "Year of the population peak
+
+🇵🇱 Poland: 2023
+🇿🇦 South Africa: beyond 2100
+
+(UN projection)" (40662 views, 140 likes) https://x.com/i/status/1944823703176421607
+- Mario Nawfal: "🇺🇸 U.S. MAY SEND UKRAINE MISSILES THAT HIT DEEP INTO RUSSIA
+
+Trump is thinking about sending JASSM cruise missiles to Ukraine to boost their aging F-16 jets.
+
+These missiles fly far, hit hard, and dodge radar like stealthy ninjas.
+
+Europe’s running low on missiles, so now the https://t.co/rvT6oDerxW https://t.co/bfyZ2ld4Ga" (37783 views, 108 likes) https://x.com/i/status/1944821697573449751
+- Pardon My Take: "Clemson beat one of the greatest college football teams to win the natty https://t.co/3f7UjQmPoG" (37533 views, 74 likes) https://x.com/i/status/1944832724361007407
+- Mario Nawfal: "🇺🇸 THE GHISLAINE MAXWELL ARREST HOUSE COULD BE YOURS - FOR $2.5M
+
+It’s got 156 acres, sweeping mountain views, a private pond… and oh yeah, it’s where the FBI took down Ghislaine Maxwell.
+
+The New Hampshire estate she used as a secret hideout in 2020 - bought under a fake name, https://t.co/yLT4Fddh26 https://t.co/cNsqyhRNb4" (37092 views, 88 likes) https://x.com/i/status/1944831764100264227
+- Mario Nawfal: "ELON: “FREE SPEECH ONLY MATTERS WHEN IT’S UNCOMFORTABLE”
+
+“Freedom of speech is only relevant if people you don't like are allowed to say things you don't like.
+
+It can't be that the government is deciding what is or is not misinformation or disinformation.
+
+Then you get politics https://t.co/uz7lUoZHvC https://t.co/UIf9O8o20Y" (33079 views, 163 likes) https://x.com/i/status/1944821655328412007
+- Mario Nawfal: "🇺🇸 MENENDEZ BROTHERS COULD GET NEW TRIAL AFTER JUDGE RULES ON “NEW EVIDENCE”
+
+A California judge says the Menendez brothers may deserve a second chance in court, 35 years after they killed their parents.
+
+Erik wrote a letter in 1988 accusing their father of sexually abusing him https://t.co/rsw9Sz6cOm https://t.co/j0cm7CqHUK" (32930 views, 44 likes) https://x.com/i/status/1944829247475839411
+- Mario Nawfal: "TIM DILLON ROASTS KASH PATEL OVER EPSTEIN VIDEOS
+
+"Here's Kash Patel talking about why they can't put the Epstein stuff out because it will re-victimize the women. 
+
+That's the craziest thing I've ever heard. 
+
+Why wouldn't you blur the victim?"
+
+Source: @TimJDillon https://t.co/nxk23FJCVW https://t.co/cNsqyhRNb4" (32468 views, 102 likes) https://x.com/i/status/1944819200985309541
+- Mario Nawfal: "🇺🇸 ICE CHIEF ON FLORIDA DETENTION SITE: “THIS ISN’T A RESORT”
+
+“I've been down there myself. I actually personally went down there twice and toured while they were building it.
+
+I think one thing that a lot of these expatriations need to realize is this isn't a resort in Florida. https://t.co/QszG9lgrgZ https://t.co/n95hkwd81e" (31160 views, 85 likes) https://x.com/i/status/1944816664455078046
+- Car Dealership Guy: "[NEWS] Top EV analysts say the training wheels are coming off:
+
+All because federal tax credits are fading.
+
+Automakers are slowing launches, and the next phase of EV growth is riding on real demand, not just mandates.
+
+Cox Automotive’s Stephanie Valdez Streaty puts it like this:" (31023 views, 159 likes) https://x.com/i/status/1944819644218364231
+- Mario Nawfal: "🇺🇸 TRUMP: “BING… BING BING BING”
+
+“Could have done it all day long. Broke the record by 119 pounds.
+
+The whole thing is crazy.”
+
+Source: @acyn https://t.co/mEH7UXBe3I https://t.co/uAQS7W9RjC" (31096 views, 71 likes) https://x.com/i/status/1944820942670041379
+- Mario Nawfal: "🇺🇸🇷🇺 GOP SENATOR WARNS: “PUTIN IS ON TRUMP’S NAUGHTY LIST”
+
+"The rest of us do not want to be on President Trump's naughty list. So Mr Putin is on the president's naughty list.
+
+It's not a good list to be on, trust me. I've seen people get their knees cut off by being on the https://t.co/0X6Cudxd0b https://t.co/Zu3kkbRwyo" (30749 views, 48 likes) https://x.com/i/status/1944814147847512190
+- Sawyer Merritt: "NEWS: Starship is on track to launch again in about 3 weeks. https://t.co/9LGFvGFQCE https://t.co/ihCi3molVV" (29752 views, 606 likes) https://x.com/i/status/1944828402852049229
+- Barstool Sports: "The ladies are lining up for a chance at Zac
+
+@PardonMyTake @TrulySeltzer https://t.co/lWZG0y4Z08" (28184 views, 49 likes) https://x.com/i/status/1944840757895979478
+- Mario Nawfal: "ELON: NEXT STARSHIP LAUNCH WILL BE IN ABOUT 3 WEEKS
+
+Starship test flight 10 is locked and (almost) loaded.
+
+Its next launch window opens August 4, according to FCC filings dropped July 4 - because of course Elon files rocket paperwork on Independence Day.
+
+Source: FCC, SpaceX https://t.co/79waBNnImF https://t.co/6ntuzQ6aZr" (27538 views, 118 likes) https://x.com/i/status/1944833140431761760
+- Sawyer Merritt: "NEWS: SpaceX's @Starlink now has over 500,000 customers in Canada. https://t.co/gMeTP0pTq2" (25288 views, 721 likes) https://x.com/i/status/1944820539446505794
+- Mario Nawfal: "🇺🇸TESLA ROBOTAXI EXPANDS IN AUSTIN - AND YES, THE NEW MAP LOOKS LIKE A GIANT D**K
+
+Tesla just dropped Version 25.7.5 of its Robotaxi beta, and the newly expanded Austin geofence is huge - and hilariously shaped, as testers quickly pointed out.
+
+Elon dropped in with peak troll https://t.co/HPtaD1a40C https://t.co/pPggNEZq28" (24275 views, 79 likes) https://x.com/i/status/1944838107582640536
+- Mario Nawfal: "🇺🇸 SPACEX WANTS AN AI ENGINEER TO BUILD BRAINS FOR ROCKETS
+
+No aerospace degree? No problem. 
+
+SpaceX is hiring an AI Software Engineer to help teach machines how to move rockets - faster, smarter, and toward Mars.
+
+You'll train LLMs on real Falcon launch data, optimize flight https://t.co/iLOAcQIBj8 https://t.co/yc5OITaMt5" (23502 views, 55 likes) https://x.com/i/status/1944834283689971844
+- Fabrizio Romano: "🚨🟡⚫️ EXCL: Watford are in advanced talks to sign talented winger Nestory Irankunda from Bayern.
+
+19 year old winger open to the move on loan as talks are well underway. 🇦🇺 https://t.co/N2YNuw9epD" (22310 views, 1099 likes) https://x.com/i/status/1944843277057859997
+- Mario Nawfal: "🇺🇸 REP. GIMENEZ: “MONDAMI IS A MARXIST, A COMMUNIST - BAD FOR AMERICA”
+
+"Madami is an enemy of Israel, but also an enemy of the United States.
+
+To call him a democratic socialist - that’s kind. 
+
+He’s actually a communist. He’s a Marxist.
+
+New York really runs the risk of https://t.co/ZjxxcJH1Gr https://t.co/nW8yAeTw8C" (22943 views, 63 likes) https://x.com/i/status/1944836796720013664
+- Sawyer Merritt: "SpaceX has posted a new job: AI Software Engineer
+
+"Be a founding member of the Artificial Intelligence Software Engineering team, focusing on solving complex data problems for our launch vehicles and spacecraft." https://t.co/vcCHiXy2HZ" (21354 views, 279 likes) https://x.com/i/status/1944832019441009078
+- CSPAN: ".@SecKennedy: "We now have about 35% of the American food industry that has made commitments [to eliminating artificial dyes]." https://t.co/KFh79yBjCm" (19615 views, 400 likes) https://x.com/i/status/1944827810507370514
+- Elon Musk: "@aelluswamy @stevenmarkryan 🔥" (18558 views, 649 likes) https://x.com/i/status/1944814995776397829
+- Tesla Energy: "Powerwall and Expansion Units are now available in the Netherlands 🇳🇱 https://t.co/UaEeSN9NDJ" (16254 views, 670 likes) https://x.com/i/status/1944820170058555613
+- Mario Nawfal: "69 𝕏 MINUTES: “THIS ISN’T JUST A NEW MODEL – IT’S A NEW MINDSET”
+
+@ESGold_Corp:
+
+“For decades, mining relied on high risk and heavy CapEx. At ESGold, we’ve taken a different approach.
+
+We target legacy mine sites , known volumes, known grades, to recover value from yesterday’s https://t.co/jBFp69R4kW https://t.co/n95hkwcAbG" (16850 views, 19 likes) https://x.com/i/status/1944839313662841318
+- Mario Nawfal: "🇹🇼 TAIWAN IS GEARING UP LIKE IT’S WORLD WAR Z
+
+Taiwan’s military police are doing full-on Call of Duty drills underground and in cities.
+
+It’s all part of massive war games to prep for a possible fight with China.
+
+Day or night, they’re training like it’s game time.
+
+Source: AFP https://t.co/rzrNyrKxyQ https://t.co/cv4ZO4eFGw" (16590 views, 94 likes) https://x.com/i/status/1944840571841052882
+- Tesla Manufacturing: "Giga Berlin’s Community Engagement https://t.co/DaUJsFug2J" (14412 views, 615 likes) https://x.com/i/status/1944816189240152498
+- TESLARATI: "https://t.co/MjMaRNMRMa" (12046 views, 74 likes) https://x.com/i/status/1944820770368373236
+- Only In Boston: "Monday on 95-South. https://t.co/DDaZ74taT4" (10904 views, 51 likes) https://x.com/i/status/1944826732089106533
+- Sawyer Merritt: "https://t.co/8x6HBfPOyw" (10415 views, 36 likes) https://x.com/i/status/1944832022196687231
+- Massachusetts State Police: "If you’re looking to make a difference in your community, consider becoming a State Trooper. The Civil Service Exam will be held September 17-19. Applications will be accepted until August 7th. To connect with a recruiter text MATROOPER to 617-665-7794 https://t.co/NyLZqUDF2A" (10062 views, 53 likes) https://x.com/i/status/1944831020085264671
+- World and Science: "What is the best exercise for losing weight? 
+
+Here's the science: https://t.co/JijAb0OCLQ" (10019 views, 7 likes) https://x.com/i/status/1944824753061056835
+- jimmah: "Yeah. This is Tesla showing off how flexible their underlying technology is. They can do whatever they want. https://t.co/fVeRKsWSH1" (9657 views, 263 likes) https://x.com/i/status/1944836654381809780
+- TESLARATI: "Who wants to know what @elonmusk had at the Tesla Diner?
+
+Supercharger Shake? Beyond Earth Burger? FSD French Fries? https://t.co/HEXK2N6Evn" (9302 views, 59 likes) https://x.com/i/status/1944833467025412184
+- Max Velocity: "We officially have Invest 93L just East of Florida…
+
+Tropical Storm development is possible as this system moves west over the next few days, eventually entering the Gulf. https://t.co/GLUo7kQqmA" (8937 views, 251 likes) https://x.com/i/status/1944826798698602691
+- Max Velocity: "Major flooding is possible again today in Texas and the Northeast, where 2-5"+ of rain is likely, with localized areas between 5-10" of rain possible. https://t.co/N2o1yuFpOu" (8862 views, 208 likes) https://x.com/i/status/1944813064965980356
+- Only In Boston: "The final visible trace of Boston’s once-thriving Little Syria neighborhood — which spanned from Chinatown to the South End between 1880 and 1955. https://t.co/eQwsnNOpC8" (8998 views, 61 likes) https://x.com/i/status/1944819180957818916
+- CSPAN: ".@SecRollins: "I just want to commend the leadership at IDFA and all the dairy farmers and ice cream producers they represent for taking on this voluntary, proactive effort to eliminate the use of artificial colors in ice cream products by the end of 2027." https://t.co/JXhMB12T8L" (8520 views, 60 likes) https://x.com/i/status/1944826050724192275
+- Vintage Maps: "Map of Constantinople, 1573, Simon Pinargenti https://t.co/MrywyXZtc9" (8241 views, 200 likes) https://x.com/i/status/1944830522363953330
+- TESLARATI: "🚨 Elon Musk confirms the new Robotaxi price is $6.90 per ride, up from the previous $4.20
+
+You didn’t expect anything different, did you? https://t.co/bl4p2NIAtB" (7957 views, 98 likes) https://x.com/i/status/1944834824264413668
+- Mario Nawfal: "🇺🇸 THE PENTAGON JUST GAVE GROK THE KEYS TO THE WAR ROOM
+
+Elon’s model just inked a $200M contract with the Department of Defense.
+
+Grok is now officially on the federal menu: from logistics and cybersecurity to the black-budget stuff we don’t talk about.
+
+Forget slow, bloated AI https://t.co/Eu2YiOn74Y https://t.co/JJkBP5cr9Z" (7494 views, 58 likes) https://x.com/i/status/1944842458850058531
+- CSPAN: "Agriculture Secretary Brooke Rollins (@SecRollins), HHS Secretary Kennedy (@SecKennedy) FDA Commissioner Dr. Marty Makary (@DrMakaryFDA) International Dairy Foods Association (@dairyidfa) news conference – LIVE  https://t.co/BtRb9CY77W" (7241 views, 10 likes) https://x.com/i/status/1944820513915748604
+- CSPAN: ".@RepJeffries on Jeffrey Epstein: "If you are trying to hide something, as many of Donald Trump's MAGA supporters apparently believe, then the Congress should actually work hard to try to uncover the truth for the American people." https://t.co/4HqEWEhTso" (7091 views, 108 likes) https://x.com/i/status/1944835710185263264
+- CSPAN: "Captive Nations Summit – LIVE now on C-SPAN2 https://t.co/eja1ff7WqM" (6795 views, 5 likes) https://x.com/i/status/1944813854485078471
+- Barstool Sports: "https://t.co/yUmANztit7" (6448 views, 1 likes) https://x.com/i/status/1944843136561270951
+- CSPAN: ".@RepJeffries on President Trump's announced tariffs against Russia: "Is he just now figuring out that Ukraine is a friend to the United States of America and Russia is an enemy?" https://t.co/dloxYJoT1r" (6304 views, 79 likes) https://x.com/i/status/1944833328936255828
+- CSPAN: "U.S. House: Legislative Business – LIVE on C-SPAN https://t.co/eMgHNUVaoJ" (6309 views, 3 likes) https://x.com/i/status/1944819433232335179
+- Mario Nawfal: "THERE’S A FIRE BURNING UNDER A WATERFALL IN THE SNOW
+
+Yeah, you read that right. Flame. Waterfall. Frozen forest. All happening at once.
+
+It’s called an eternal flame and it just keeps burning because the ground is leaking natural gas.
+
+Mother Nature clearly clicked “chaos mode” https://t.co/Ox3PttcTX7" (6178 views, 64 likes) https://x.com/i/status/1944841830291374166
+- TESLARATI: "Soooooo... Elon really likes Death Note, huh? 😂
+
+Tbf, he did recommend it before. It's a good show, polarizing ending and all.
+
+https://t.co/YNI4MKim8r" (6121 views, 14 likes) https://x.com/i/status/1944819992291369058
+- History Defined: "Jude Law, 1995 https://t.co/o0eBjXXdkW" (6040 views, 87 likes) https://x.com/i/status/1944826933943955477
