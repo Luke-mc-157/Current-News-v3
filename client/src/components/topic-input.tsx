@@ -115,7 +115,7 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
         {generateHeadlinesMutation.isPending ? (
           <>
             <span className="animate-spin mr-2">⏳</span> 
-            {useLiveSearch ? "Using Live Search..." : "Generating Headlines..."}
+            Using Live Search...
           </>
         ) : (
           <>
