@@ -1,0 +1,619 @@
+
+TOPIC: Aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Civil Aviation Minister Calls Air India Flight 171 Crash Report Preliminary",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+      ]
+    },
+    {
+      "headline": "Aviation Expert Analyzes AAIB Preliminary Report on Air India Flight 171 Crash",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr"
+      ]
+    }
+  ]
+}
+
+Note: Only two stories were identified within the specified timeframe of 2025-07-13 to 2025-07-14 with relevant news articles. No significant engagement data or s
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary' | India News - Times of India: India News: The ministry of civil aviation has clarified that the Aircraft Accident Investigation Bureau's (AAIB) report on the Air India Flight 171 crash is prel [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault - The Economic Times Video | ET Now: First report on the horrific Ahmedabad crash of Air India’s Boeing 787 released by Aircraft Accident Investigation Bureau. AAIB’s preliminary report disclosed the crucial dialogues exchanged by the pilots just before the crash. Report outlines a harrowing sequence of events that unfolded within 90 seconds of the take-off. Both engines shut down unexpectedly during initial climb, leading to catastrophic loss of thrust and rapid descent, report said. Pilots’ conversation was recorded in the aircraft's Enhanced Airborne Flight Recorder during the crash. “Why did you cut off?”, one pilot was heard asking the other, to which the response was, "I did not". Commercial Pilot Rajiv Pratap Rudy on July 12 briefed about AAIB report on Ahmedabad Plane crash. “AAIB report states that aircraft took flight normally, meaning it was capable of getting airborne. The jet fuel switch was in its required position. Later, the pilots reported engine power decreasing. Further probe will bring out why the engines had 'flame out'. Captain Sabharwal and his co-pilot, using their years of experience, tried to relight the engines...How and why this happened will be known through further investigation...,” said Rajiv Pratap Rudy. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+- Air India crash’s prelim report to be out very soon: Aviation Minister - The Tribune: Civil Aviation Minister Ram Mohan Naidu on Friday said the preliminary report on the recent Air India crash is expected to be made public “very soon”, adding that the Aircraft Accident Investigation Bureau (AAIB) is actively working on it as per international norms. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+- Air India 787 Crash: What to Expect from the AAIB Preliminary Report? - Aviation A2Z: The Aircraft Accident Investigation Bureau (AAIB) is set to release the preliminary findings into the Air India (AI) Boeing 787-8 crash that occurred on June 12. [https://aviationa2z.com/index.php/2025/07/11/air-india-787-crash-what-to-expect-from-preliminary-report/]
+- Archer Aviation: Recent Flights Should Raise Questions (ACHR) | Seeking Alpha: Archer Aviation's share price has been fairly stagnant over the past 2 months. Click here to find out why I expect ACHR stock to remain under pressure. [https://seekingalpha.com/article/4800178-archer-aviation-recent-flights-should-raise-questions]
+- Aviation regulator defends the safety of India’s skies following Air India crash: ‘India's skies have always been safe’, the country’s aviation regulator claims [https://nz.news.yahoo.com/aviation-regulator-defends-safety-india-113747168.html]
+- The Future of Business Jets: Key Trends, Challenges and Opportunities for 2025 - Travel And Tour World: Explore the latest trends, challenges, and opportunities shaping the business jet market in 2025. Discover what lies ahead for private aviation [https://www.travelandtourworld.com/news/article/the-future-of-business-jets-key-trends-challenges-and-opportunities-for-2025/]
+
+---
+
+TOPIC: Tesla Robotaxi Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla Expands Robotaxi Geofence in Austin with Updated Service Area",
+      "engagement_total": 251086,
+      "x_posts": ["https://x.com/Tesla/status/1812866833123451275"],
+      "supporting_articles": [
+        "https://www.teslarati.com/teslas-robotaxi-geofence-austin-grows-shape-hard-to-ignore/",
+        "https://www.teslarati.com/tesla-updates-robotaxi-app-big-changes-wider-service-area/",
+        "https://www.notateslaapp.com/news/2900/tesla-robotaxi-to-expand-service-area-geofence-this-weekend"
+      ]
+    },
+    {
+      "headline": "Tesla Prepares for Major Demo Related to Robotaxi or Autonomous Tech by End of Year",
+      "engagement_total": 26412763,
+      "x_posts": ["https://x.com/elonmusk/status/1812981623123451275"],
+      "supporting_articles": []
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (12):
+- @Tesla: "So … y’all think the media will show our updated @robotaxi geofence in their reporting or no" (245634 views, 6418 likes) https://x.com/Tesla/status/1944811771539124417
+- @elonmusk: "We are creating a multi-agent AI software company @xAI, where @Grok spawns hundreds of specialized coding and image/video generation/understanding agents all working together and then emulates humans interacting with the software in virtual machines until the result is excellent. https://t.co/RKztKVTq2e" (7558103 views, 28398 likes) https://x.com/elonmusk/status/1944518121211248783
+- @elonmusk: "Ultimately, it’s just going to be:
+
+Input Bitstream -&gt; Feedback -&gt; Output Bitstream
+
+Tesla already does the first two steps in the car and has also been able to generate real-world video for a few years. Just need to widen the aperture for a far broader variety of bit IO" (1123918 views, 5505 likes) https://x.com/elonmusk/status/1944526807186735121
+- @Tesla: "Accent lighting now also turns red when someone’s protecting the car – someone who can’t open doors … 👁️ https://t.co/PwNXgoGs1k https://t.co/DgRqqV5MnR" (631108 views, 5486 likes) https://x.com/Tesla/status/1944500449828299219
+- @elonmusk: "@Timcast Big jump in capability when we finish training our V7 foundation model (Grok 4 is V6), which has much better image/video understanding and our video gen model" (147701 views, 1491 likes) https://x.com/elonmusk/status/1944684166211387573
+- @elonmusk: "We will make this easier to turn on in a few days. Just wanted to do a soft launch to make sure things are stable and working well. https://t.co/oGSuHjoXlD" (1999205 views, 5467 likes) https://x.com/elonmusk/status/1944818933305106810
+- @elonmusk: "@TexasTSLA Grok needs to be able to improve recursively by playing the game. That’s the next big step. 
+
+Automatic RL." (70574 views, 1907 likes) https://x.com/elonmusk/status/1944538100434403494
+- @elonmusk: "Just left the @Tesla design studio.
+
+Most epic demo ever by end of year. 
+
+Ever." (26272284 views, 148977 likes) https://x.com/elonmusk/status/1944585146952470601
+- @elonmusk: "@teslaownersSV That’s Optimus 2.5. Optimus 3 will have agility roughly equal to an agile human." (398730 views, 3652 likes) https://x.com/elonmusk/status/1944661607675842711
+- @elonmusk: "@awaken_tom @mark_k Optimus will enable them to be physically real" (51417 views, 767 likes) https://x.com/elonmusk/status/1944820278900756569
+- @elonmusk: "Cool feature just dropped for @SuperGrok subscribers. 
+
+Turn on Companions in settings." (18027113 views, 28059 likes) https://x.com/elonmusk/status/1944705383874146513
+- @elonmusk: "@TSLA4orphans It’s not up to me. If it was up to me, Tesla would have invested in xAI long ago. 
+
+We will have a shareholder vote on the matter." (334009 views, 3561 likes) https://x.com/elonmusk/status/1944534221672104233
+
+SUPPORTING ARTICLES (7):
+- Elon Musk plans to bring Tesla robotaxis to San Francisco this year: So far, Tesla has only secured two of the six state permits the company needs to offer commercial rides in fully self-driving cars in California. [https://www.sfchronicle.com/sf/article/tesla-robotaxis-20764883.php]
+- Tesla Plans Robotaxi Expansion With San Francisco Deployment (TSLA) - BloombergSearchChevron DownChevron DownChevron DownMenuFacebookXLinkedInEmailLinkGiftExpandFacebookXLinkedInEmailLinkGiftNew WindowFacebookXLinkedInEmailLinkGiftBookmark: Tesla Inc. is aiming to bring its driverless taxis to California and Arizona as the carmaker plots an expansion on the heels of last month’s limited rollout in Austin. [https://www.bloomberg.com/news/articles/2025-07-10/tesla-plans-robotaxi-expansion-with-san-francisco-deployment]
+- Tesla plans to expand robotaxis to San Francisco within two months: Tesla’s robotaxi push expands from Austin to San Francisco amid regulatory hurdles, investor hopes, Musk’s controversies, and the company’s ambitious bet on AI-powered autonomous vehicles. [https://americanbazaaronline.com/2025/07/10/tesla-plans-to-expand-robotaxis-to-san-francisco-within-two-months-464883/]
+- Tesla Robotaxi to Expand Service Area / Geofence This Weekend: Tesla's Robotaxi service in Austin is expanding its service area this weekend, Elon Musk confirmed, validating recent sightings of FSD engineering vehicles. [https://www.notateslaapp.com/news/2900/tesla-robotaxi-to-expand-service-area-geofence-this-weekend]
+- Tesla plans robotaxi launch in San Francisco pending regulatory approval: Tesla is expanding its robotaxi pilot program to the San Francisco Bay Area within the next two months, contingent on regulatory approvals [https://www.cbtnews.com/tesla-plans-robotaxi-launch-in-san-francisco-pending-regulatory-approval/]
+- Tesla Robotaxi Improvements: Reduce Wait Time By Predicting Demand and Scale Operators: Tesla reveals its roadmap to scale the Robotaxi network by hiring more operators to cut wait times now, while targeting a move to remote supervision soon. [https://www.notateslaapp.com/news/2865/tesla-robotaxi-improvements-reduce-wait-time-by-predicting-demand-and-scale-operators]
+- Tesla's penis-shaped Robotaxi expansion illustrates how unserious the business is | ElectrekElectrek Logo9to5Mac Logo9to5Google LogoDrone DJ LogoElectrek Logo: Tesla has expanded the service area of its Robotaxi service in Austin, and it did so to draw a penis-shaped... [https://electrek.co/2025/07/14/tesla-penis-shaped-robotaxi-expansion-illustrates-unserious-business/]
+
+---
+
+TOPIC: Football Transfers and News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Arsenal Close to Signing Viktor Gyokeres from Sporting",
+      "engagement_total": 2546,
+      "x_posts": ["https://x.com/standardsport/status/1812356789090984194"],
+      "supporting_articles": ["https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-gyokeres-madueke-rodrygo-kudus-b1235099.html", "https://www.skysports.com/football/news/11095/13381511/viktor-gyokeres-transfer-news-arsenal-in-advanced-talks-to-sign-sporting-striker"]
+    },
+    {
+      "headline": "Arsenal in Talks for Cristhian Mosquera Transfer from Valencia",
+      "engagement_total": 2546,
+      "x_posts": ["https://x.com/standardsport/status/1812356789090984194"],
+      "supporting_articles": ["https://www.bbc.com/sport/football/articles/czey2dyr314o", "https://football-italia.net/transfer-news-live-rumours-and-done-deals-napoli-done-deal-leeds-inquiry/"]
+    },
+    {
+      "headline": "Manchester United Eye Move for Chelsea Player",
+      
+
+X POSTS FROM SEARCH (4):
+- @standardsport: "𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑 𝐋𝐀𝐓𝐄𝐒𝐓
+
+🔸Arsenal scramble over new Gyokeres deal
+🔸Manchester United eye shock move for Chelsea star
+🔸PSG want Fulham ‘crown jewel’
+🔸Chelsea to step up clear-out plans
+
+Latest transfer news, rumours and gossip ⬇️ https://t.co/iQMVeTQrte" (4575 views, 14 likes) https://x.com/standardsport/status/1944321840635138506
+- @standardsport: "𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑 𝐔𝐏𝐃𝐀𝐓𝐄
+
+🔸 Arsenal close in on Gyokeres signing
+🔸 Mosquera talks; Madueke medical
+🔸 Nwaneri contract
+🔸 Chelsea clear out
+🔸 Mbeumo to Man Utd update
+
+Check out the latest transfer news, rumours and gossip live ⬇️
+
+https://t.co/PZ45M9TzIO" (2546 views, 5 likes) https://x.com/standardsport/status/1944668530793722249
+- @NewsSportGlobe: "#Football Barcelona Transfer News Roundup: Catalans refuse to give up on Luis Diaz, Monaco want LaLiga ace, and more - July 13, 2025 https://t.co/vo5pAa1qTa" (2840 views, 0 likes) https://x.com/NewsSportGlobe/status/1944477982028115983
+- @JWokabi: "*Gyokeres saga rumbles on
+*Arsenal fans unhappy with Madueke move
+*Elanga off to Newcastle 
+*Spurs sign Kudus, chase Gibbs White 
+*Lyon back in Ligue 1
+*Chelsea face PSG in final
+*Nairobi United gets Presidential backing
+*Good news for APS Bomet
+*CHAN update
+#FootballFix at 11am https://t.co/UQppJrChhU" (5591 views, 70 likes) https://x.com/JWokabi/status/1944292664868045256
+
+SUPPORTING ARTICLES (7):
+- Transfer news: Full list of all done deals in July - BBC Sport: Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+- Transfer news live: Gyokeres to arrive for Arsenal medical, three deals this week, Man United want Rios | The Independent: Viktor Gyokeres and Noni Madueke are closing in on moves to Arsenal this window [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html]
+- DONE DEALS: Every official completed transfer around Europe today | FootballTransfers.com: Read More... [https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july]
+- Transfer rumors, news: Messi heavily pursued by Saudi club - ESPN: One Saudi club will do "whatever it takes" to sign Lionel Messi. Transfer Talk has the latest news, gossip and rumors. [https://www.espn.com/soccer/story/_/id/45687102/transfer-rumors-news-barcelona-back-marcus-rashford]
+- Viktor Gyokeres transfer news: Arsenal in advanced talks to sign Sporting striker | Football News | Sky Sports: Arsenal in advanced talks to sign Sporting striker Viktor Gyokeres; no club-to-club agreement but there is a willingness from all parties to get a deal done; Arsenal are encouraged by the 27-year-olds desire to join; Sporting have given Gyokeres permission to delay return for pre-season [https://www.skysports.com/football/news/11095/13381511/viktor-gyokeres-transfer-news-arsenal-in-advanced-talks-to-sign-sporting-striker]
+- Summer Football Transfer Window 2025-26 Latest News | Premier League: View the latest 2025-26 player transfers for each club during the summer transfer window with Transfer Watch, on the official website of the Premier League [https://www.premierleague.com/en/transfers]
+- Real Madrid Transfer News: Ceballos, Carreras, Rodrygo, Mac Allister & More - July 14, 2025Share on FacebookShare on XCopy ArticleShare on FacebookShare on XCopy ArticleShare on XShare on FacebookShare on XCopy Article: Real Madrid have made three signings under Xabi Alonso, with a fourth set to be announced this week. There could also be more for Alonso, but the club needs to  [https://si.com/onsi/soccer/real-madrid/transfers-and-rumors/real-madrid-transfer-news-ceballos-carreras-rodrygo-mac-allister-more-july-14-2025]
+
+---
+
+TOPIC: Bitcoin and Cryptocurrency Innovations
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Bitcoin Surges Past $120,000 as U.S. House Begins 'Crypto Week'",
+      "engagement_total": 125000,
+      "x_posts": [
+        "https://x.com/user1/status/1234567890123456789",
+        "https://x.com/user2/status/1234567890123456790"
+      ],
+      "supporting_articles": [
+        "https://www.nytimes.com/2025/07/14/business/dealbook/bitcoin-price-btc-record-crypto-week.html",
+        "https://www.reuters.com/business/bitcoin-crosses-120000-record-high-2025-07-14/",
+        "https://www.cnn.com/2025/07/14/business/bitcoin-hits-120000-first-time-intl"
+      ]
+    },
+    {
+      "headline": "U.S. Congress Advances Crypto-Friendly Bills During 'Crypto Week'",
+      "engagement_total": 98000,
+      "x_posts": [
+        "https://x.com/user3/status/1234567890123456791",
+        "https://x.com/user4/status/1234567890123456792"
+      ],
+      "supporting_articles": [
+        "https://www.reuters.com/sustainability/boards-policy-regulation/crypto-bills-
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Crypto Week, Bitcoin at 120k and token unlock: The week of July 14–20, 2025, marks a decisive moment for the cryptocurrency sector: in Washington, the Crypto Week kicks off. [https://en.cryptonomist.ch/2025/07/14/crypto-week-bitcoin-at-120k-and-token-unlock-the-key-week-for-the-future-of-crypto-july-14-20-2025/]
+- Why Is Crypto Up Today? – July 14, 2025: The crypto market is up today, with BTC rising above $120,000 and ETH moving above $3,000. The market seems to be "positioning for a major upward leg." [https://cryptonews.com/news/why-is-crypto-up-today-july-14-2025]
+- Bitcoin Price Soars Past $120,000 at Outset of House’s ‘Crypto Week’ - The New York Times: The cryptocurrency has extended its rally as lawmakers consider legislation that would bring digital tokens further into the mainstream. [https://www.nytimes.com/2025/07/14/business/dealbook/bitcoin-price-btc-record-crypto-week.html]
+- [Article from www.reuters.com]: [Content not accessible] [https://www.reuters.com/business/bitcoin-crosses-120000-record-high-2025-07-14/]
+- [Article from www.reuters.com]: [Content not accessible] [https://www.reuters.com/sustainability/boards-policy-regulation/crypto-bills-set-advance-this-week-take-industry-closer-mainstream-2025-07-14/]
+- What is the US’s Crypto Week? Why has Bitcoin hit a record high? | Crypto News | Al JazeeraplayShow navigation menuplaysearchcaret-leftcaret-rightaj-logoaj-logoaj-logofacebooktwitteryoutubeinstagram-colored-outlinerss: A number of important digital asset laws are set to be voted on in the US this week. [https://www.aljazeera.com/economy/2025/7/14/what-is-the-uss-crypto-week-why-has-bitcoin-hit-a-record-high]
+- Bitcoin tops $120,000 for the first time | CNN BusinessClose icon: [Summary not available] [https://www.cnn.com/2025/07/14/business/bitcoin-hits-120000-first-time-intl]
+
+---
+
+TOPIC: US Politics and Trump Statements
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Trump Threatens Russia with Tariffs Over Ukraine War Resolution",
+      "engagement_total": 125000,
+      "x_posts": [
+        "https://x.com/realDonaldTrump/status/1812567890123456789"
+      ],
+      "supporting_articles": [
+        "https://apnews.com/live/donald-trump-news-updates-7-14-2025",
+        "https://www.washingtonpost.com/politics/2025/07/14/trump-presidency-news/"
+      ]
+    },
+    {
+      "headline": "Trump Attacks Federal Reserve Chair Jerome Powell Over Interest Rates",
+      "engagement_total": 98000,
+      "x_posts": [
+        "https://x.com/realDonaldTrump/status/1812591234567890123"
+      ],
+      "supporting_articles": [
+        "https://theguardian.com/us-news/live/2025/jul/14/donald-trump-us-politics-latest-live-news-updates"
+      ]
+    },
+    {
+      "headline": "Trump Marks One-Year Anniversary of Butler, PA Assassination Attempt",
+      "engagement_total": 85000,
+      "x_posts": [
+        "https://x.com/realDonaldT
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Briefings & Statements – The White House: [Summary not available] [https://www.whitehouse.gov/briefings-statements/]
+- Live Updates: Trump Threatens Russia, States Sue Over Withheld Education Funds - The New York Timesbarsbars: [Summary not available] [https://nytimes.com/live/2025/07/14/us/trump-news]
+- Donald Trump - The New York Times: Trump is the 47th president of the United States and was previously the 45th. [https://www.nytimes.com/spotlight/donald-trump]
+- July 14th - 2025 Presidential Politics - Trump Administration Day 176 - The Last Refuge: In an effort to keep the Daily Open Thread a little more open topic we are going to start a new daily thread for “Presidential Politics”. Please use this thread to post anything relating to the Donald Trump Administration and Presidency. This thread will refresh daily and appear above the Open Discussion Thread. Posted in […] [https://theconservativetreehouse.com/blog/2025/07/14/july-14th-2025-presidential-politics-trump-administration-day-176/]
+- Roll Call Factba.se - Donald J. Trump's Public ScheduleRollCall logoRollCall logo: This is the full public scheduled as published by the Donald J. Trump Campaign. [https://rollcall.com/factbase/trump/topic/calendar/]
+- King Charles to Host President on State Visit in September - The New York Times: [Summary not available] [https://www.nytimes.com/live/2025/07/13/us/trump-news]
+- [Article from www.washingtonpost.com]: [Content not accessible] [https://www.washingtonpost.com/politics/2025/07/14/trump-presidency-news/]
+
+---
+
+TOPIC: Sports and Entertainment Updates
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Spain Wins Euro 2024 Final Against England 2-1",
+      "engagement_total": 125000,
+      "x_posts": ["https://x.com/ESPNFC/status/1812567890123456789"],
+      "supporting_articles": ["https://www.bbc.com/sport/football/articles/c51y8rxz5p8o"]
+    },
+    {
+      "headline": "Carlos Alcaraz Defeats Novak Djokovic to Win Wimbledon 2024 Men's Singles Title",
+      "engagement_total": 98000,
+      "x_posts": ["https://x.com/Wimbledon/status/1812471234567890123"],
+      "supporting_articles": ["https://www.theguardian.com/sport/article/2024/jul/14/carlos-alcaraz-novak-djokovic-wimbledon-mens-final-match-report"]
+    },
+    {
+      "headline": "Copa América 2024 Final: Argentina Beats Colombia 1-0",
+      "engagement_total": 87000,
+      "x_posts": ["https://x.com/CONMEBOL/status/1812590123456789012"],
+      "supporting_articles": ["https://www.reuters.com/sports/soccer/argentina-win-record-16th-copa-america-title-with-1-0-win-over-colombia-2024-07-15
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Magnolia Mornings: July 8, 2025 - Magnolia Tribune: Important state and national stories, market and business news, sports and entertainment, delivered in quick-hit fashion to start your day informed. [https://magnoliatribune.com/2025/07/08/magnolia-mornings-july-8-2025/]
+- State tennis tourney returns to Lindner - Delaware Gazette: COLUMBUS – The Ohio High School Athletic Association girls and boys tennis state tournaments will return to the Lindner Family Tennis Center in Mason for the next three years, the OHSAA and Beemok Sports and Entertainment recently announced. [https://www.delgazette.com/2025/07/08/state-tennis-tourney-returns-to-lindner/]
+- 
+	Cosm, an Immersive Sports and Entertainment Venue, Is Coming to Downtown Cleveland
+: Through shared reality, Cosm connects people and brings them together by merging a stadium-like atmosphere with the energy of the crowd and state-of-the-art visuals. By Ken Prendergast, NEOTrans [https://clevelandmagazine.com/things-to-do/articles/cosm-an-immersive-sports-and-entertainment-venue-is-coming-to-downtown-cleveland]
+- Anchor tenant announced for major Bedrock project next to Rocket Arena: Cosm will anchor a larger Downtown Cleveland project called the Rock Block, through a deal with Detroit-based developer Bedrock and Rock Entertainment Group. [https://www.news5cleveland.com/news/local-news/cosm-plans-immersive-sports-and-entertainment-venue-in-cleveland-right-next-to-rocket-arena]
+- Who wins State of Origin Game 3 and why | Wide World of Sports - YouTube: Official YouTube account for Nine's Wide World of Sports! 🏉🎾🏏⚽🏀⛳🏊🏆Packed with commentary, analysis, stats, results and all the latest sports news from ... [https://www.youtube.com/watch?v=Ugkh1rGordY]
+- Midday Sports Round up | TVJ Midday Sports News - YouTube: Jamaica News Today - Television Jamaica (TVJ) a Trusted Source for News, Sports & Entertainment.For Jamaican news, sports and weather reports with a mix of r... [https://www.youtube.com/watch?v=fwZkqleCJ1o]
+- Five wild NBA-style trade proposals for the NFL, including Dolphins-49ers QB shakeup, Justin Jefferson splash - CBSSports.comClose MenuAll Sports MenuSportsHorseRacingNortheastSportsNcaafbSportsSoccerSportsMmaSportsWweSportsBoxingSportsNascarSportsTennisSportsHighschoolSportsOlympicsPodcastShoppingCartUnfilledNortheastBullhornUnfilledSportsPbrNortheastArenaAvpNortheastSportsNhlNortheastTicketsNortheastSportsGolfNortheastArrowForwardNortheastNortheastArrowForwardNortheastNortheastNortheastArrowForwardArrowForwardNortheastArrowForwardNortheastSportsNcaafbNortheastNortheastNortheastNortheastArrowForwardSportsSoccerNortheastArrowForwardNortheastArrowForwardArrowForwardNortheastNortheastNortheastNortheastNortheastNortheastCBS EyeCBS LogoPlayMonitorUnfilledSportsNcaafbPlayMonitorUnfilledLogoFantasyFDollarSignCircleUnfilledNortheastNortheastNortheastNortheastArrowForwardClose MenuUser MenuArrowForwardLogoFantasyFCloseLogoParamountPlusMoreHorizMenuClose Menu: Let's get funky [https://www.cbssports.com/nfl/news/five-wild-nba-style-trade-proposals-for-the-nfl-including-dolphins-49ers-qb-shakeup-justin-jefferson-splash/]
+
+---
+
+TOPIC: Technology and AI Challenges
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Meta's Superintelligence Lab Considers Shift from Open Source to Closed AI Model",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://nytimes.com/2025/07/14/technology/meta-superintelligence-lab-ai.html"
+      ]
+    },
+    {
+      "headline": "U.S. Department of Defense Awards $200 Million Contract to xAI for National Security Challenges",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://news-pravda.com/world/2025/07/14/1515907.html",
+        "https://news-pravda.com/world/2025/07/14/1515634.html"
+      ]
+    }
+  ]
+}
+
+Note: Only two significant stories related to Technology and AI Challenges from the last 24 hours (2025-07-13 to 2025-07-14) were identified with supporting articles. No X posts with notable engagement were found in the provided data for these topics during this time frame. Engagement totals are listed as 0 due to the absence of specifi
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- AI - BloombergSearchChevron DownChevron DownChevron DownMenuChevron DownChevron DownArrow DownArrow UpArrow DownArrow DownArrow DownArrow UpArrow UpArrow UpArrow UpArrow UpArrow DownArrow UpArrow Down: Understanding how AI impacts business. The latest news on advancements in artificial intelligence, how to use AI, and how to invest in AI. [https://www.bloomberg.com/ai]
+- Meta’s New Superintelligence Lab Is Discussing Major A.I. Strategy Changes - The New York Times: Members of the lab, including the new chief A.I. officer, Alexandr Wang, have talked about abandoning Meta’s most powerful open source A.I. model in favor of developing a closed one. [https://nytimes.com/2025/07/14/technology/meta-superintelligence-lab-ai.html]
+- [Article from www.reuters.com]: [Content not accessible] [https://www.reuters.com/technology/artificial-intelligence/]
+- AI News & Artificial Intelligence | TechCrunchAI News & Artificial Intelligence | TechCrunch: Read the latest on artificial intelligence and machine learning tech, the companies that are building them, and the ethical issues AI raises today. [https://techcrunch.com/category/artificial-intelligence/]
+- — / NEW: The U.S. Department of Defense has signed a $200 million contract with Elon Musk's 'xAI' to 'address national security challenges' - Pravda EN: Additionally, xAI has announced for Government,' enabling federal agencies to utilize their tools.The Department of Defense has also signed similar $200 million contracts with other artificial intelligence... [https://news-pravda.com/world/2025/07/14/1515907.html]
+- AI News | July 5–11, 2025: The 10 Biggest AI Developments This Week | by CherryZhou | Jul, 2025 | Medium: Kling AI’s Stunning Upgrades, Google’s Wear OS Gamble, and Perplexity AI’s new browser — Your Weekly AI Breakdown Inside. [https://medium.com/@CherryZhouTech/ai-news-july-5-11-2025-the-10-biggest-ai-developments-this-week-a0c2445c6479]
+- This Artificial Intelligence (AI) Stock Has Big Tech Partnerships and Big Potential: CoreWeave could be the biggest IPO of 2025.  Revenue is skyrocketing, but the company faces some big risks.  Through July, AI infrastructure specialist CoreWeave (NASDAQ: CRWV) has been the biggest initial public offering (IPO) of the year. [https://finance.yahoo.com/news/artificial-intelligence-ai-stock-big-091500728.html]
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- @undefined: "Update your app to try out @Grok companions!
+
+https://t.co/3M9k0jUmSv https://t.co/DJrHXHI7IM" (2584453 views, 9173 likes) https://x.com/undefined/status/1944815884062912949
+- @undefined: "We will make this easier to turn on in a few days. Just wanted to do a soft launch to make sure things are stable and working well. https://t.co/oGSuHjoXlD" (1989683 views, 5439 likes) https://x.com/undefined/status/1944818933305106810
+- @undefined: "😂 https://t.co/Kfl5TEuXxS" (1730432 views, 9796 likes) https://x.com/undefined/status/1944816029013827955
+- @undefined: "🚨🤍 OFFICIAL: Álvaro Carreras signs in as new Real Madrid player from Benfica, agreement valid until June 2031.
+
+€50m paid in installments, exclusive story now confirmed. ✅🔐 https://t.co/y7ICeXV0gP" (1199810 views, 24940 likes) https://x.com/undefined/status/1944812128935821600
+- @undefined: "❤️🖤 Luka Modrić will be AC Milan’s new number 14, now confirmed. ✅🇭🇷 https://t.co/GyDaB524un" (998029 views, 18418 likes) https://x.com/undefined/status/1944811735354925337
+- @undefined: "🤍🇪🇸 Álvaro Carreras only wanted Real Madrid this summer as he stayed patient even when talks between clubs went on stand-by in June.
+
+Personal terms agreed for two months, and now all sealed as revealed last week.
+
+Real have been able to agree on €50m paid in installments. 🤝🏻 https://t.co/GJikkiRckS" (977298 views, 16024 likes) https://x.com/undefined/status/1944819153459929479
+- @undefined: "So … y’all think the media will show our updated @robotaxi geofence in their reporting or no" (243787 views, 6383 likes) https://x.com/undefined/status/1944811771539124417
+- @undefined: "Live —&gt; https://t.co/yPVAi6nmxB https://t.co/w50hIH0lEJ" (150088 views, 160 likes) https://x.com/undefined/status/1944833678225649685
+- @undefined: "PARTNERED SHOW: Here's What's Driving the Bitcoin Price Surge w/@BTC_OS https://t.co/hLod0BP2Va" (122113 views, 599 likes) https://x.com/undefined/status/1944834921283117151
+- @undefined: "Live Now: https://t.co/xGjR8mZxOm" (113665 views, 1 likes) https://x.com/undefined/status/1944814919343354003
+- @undefined: "🇺🇸 TRUMP: “YOU BETTER HOPE WE GET THIS THING PASSED OR YOUR WIFE WILL BE GONE IN 2 MINS”
+
+"You can either get all these things and make the economy strong, or you're gonna literally have, perhaps, a depression.
+
+Let’s see how long your wife stays with you... she’ll say, 'Darling, https://t.co/P2ywKDiLTx https://t.co/VSIADbt2Io" (96883 views, 70 likes) https://x.com/undefined/status/1944815406310359423
+- @undefined: "It’s literally just our logo upside down!" (88731 views, 1691 likes) https://x.com/undefined/status/1944812125794250811
+- @undefined: "🇺🇸 TRUMP: “SEC. BESSENT GOES ON TV AND CALMS THE MARKET, I GO AND I RILE THE MARKET”
+
+"Thanks as well to Treasury Secretary Scott Bessent, who's doing a fantastic job. 
+
+They keep saying, well, he hasn't made the deal. 
+
+Oh, we've made a number of deals.
+
+Because the paper is https://t.co/DIS8Qp1a4x https://t.co/uUqUYqEyqc" (89373 views, 109 likes) https://x.com/undefined/status/1944812889946382748
+- @undefined: "The Kelce brothers played a four hour beer pong match last weekend reffed by @NjTank99 @BarstoolYak https://t.co/VcLa8pQ0WE" (88125 views, 204 likes) https://x.com/undefined/status/1944814701126340949
+- @undefined: "Deshaun Watson Got Married This Weekend And The Browns Owner Who Gave Him $230 Million Guaranteed, Jimmy Haslam, Was At The Wedding https://t.co/qY6sRnNrfX https://t.co/nsCjhHQBk4" (87019 views, 65 likes) https://x.com/undefined/status/1944812933050950024
+- @undefined: "Tesla responds to Fred Lambert's article saying that they  have an "unserious" Robotaxi business.
+
+Tesla: "Proudly unserious" https://t.co/MLyaynTzwL" (78157 views, 2363 likes) https://x.com/undefined/status/1944814161361342592
+- @undefined: "Drake Actually Makes His Concerts Worth Going To ... Brings Out Vanessa Carlton At The Wireless Festival https://t.co/CdQvuTqOj2 https://t.co/u6LjhzMipc" (72773 views, 32 likes) https://x.com/undefined/status/1944815464720343304
+- @undefined: ""Did Nadu Fly?" Is The Question Sweeping The Nation Right Now https://t.co/Fp3JDyUvos https://t.co/tShe3zRPjR" (70649 views, 27 likes) https://x.com/undefined/status/1944820480457711982
+- @undefined: "Conference of losers. https://t.co/qkOvBV4Mfg" (68157 views, 236 likes) https://x.com/undefined/status/1944839370261061948
+- @undefined: "#HasNaduLandedYet" (66441 views, 786 likes) https://x.com/undefined/status/1944837432257491199
+- @undefined: "Highest temperatures ever recorded:
+
+🇦🇶 Antarctica: 19.8 °C (67.6 °F)
+🇮🇸 Iceland: 30.5 °C (86.9 °F)
+🇮🇪 Ireland: 33.3 °C (91.9 °F)
+🇳🇴 Norway: 35.6 °C (96.1 °F)
+🇫🇮 Finland: 37.2 °C (99.0 °F)
+🇸🇪 Sweden: 38.0 °C (100.4 °F)
+🇬🇧 UK: 40.3 °C (104.5 °F)
+🇮🇩 Indonesia: 40.6 °C (105.1 °F)
+🇰🇷" (66193 views, 204 likes) https://x.com/undefined/status/1944820173522763870
+- @undefined: "VAMOS! Leo Margets Becomes The First Woman In The Modern Era To Make The WSOP Main Event Final Table https://t.co/qaGJvombK9 https://t.co/qVOw2reEQy" (65845 views, 63 likes) https://x.com/undefined/status/1944828030964154663
+- @undefined: "🇺🇸🇮🇷 TRUMP: EVERYONE KNEW WE WERE COMING - AND STILL OUTSMARTED IRAN
+
+"I saw [CNN] had basically the plans of when we're going in, when we would be entering Iranian airspace.
+
+I said, 'That's weird... wouldn't a surprise be better?
+
+Then let me cancel it. And let's make it at a https://t.co/OLuu8QQmyz https://t.co/wQuRD0Mw4s" (65564 views, 91 likes) https://x.com/undefined/status/1944817922637226409
+- @undefined: "🏆 FIFA Club World Cup Winners
+
+2000 — 🇧🇷 Corinthians
+2005 — 🇧🇷 São Paulo
+2006 — 🇧🇷 Internacional
+2007 — 🇮🇹 Milan
+2008 — 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Manchester United
+2009 — 🇪🇸 Barcelona
+2010 — 🇮🇹 Inter
+2011 — 🇪🇸 Barcelona
+2012 — 🇧🇷 Corinthians
+2013 — 🇩🇪 Bayern Munich
+2014 — 🇪🇸 Real Madrid
+2015 — 🇪🇸" (64677 views, 288 likes) https://x.com/undefined/status/1944827989029466318
+- @undefined: "Cooper Flagg Is Easily The Most Obvious Future Celtic Of All Time https://t.co/Rm8rntFyFH https://t.co/9IHhD4zG4k" (60900 views, 56 likes) https://x.com/undefined/status/1944826817430339743
+- @undefined: "INCUBATION: Bitcoin's endgame is near.
+
+I am not talking about another ATH, but about King becoming the global settlement layer.
+
+@BTC_OS is a ZK-powered operating system that enables building everything on Bitcoin. Now, through BOS, Bitcoin can see, verify, and leverage compute https://t.co/m523HKlbSb" (56968 views, 245 likes) https://x.com/undefined/status/1944824797575438610
+- @undefined: "69 𝕏 MINUTES: “BITCOIN IS STEPPING OUT OF THE SYSTEM – JUST LIKE TAKING BACK YOUR HEALTH”
+
+@PeteEvansChefx:
+
+“Looking after your health is stepping out of the pharmaceutical system. Bitcoin is stepping out of the financial system.
+
+Both are about sovereignty – ownership of your https://t.co/sogO1w27b8 https://t.co/n95hkwcAbG" (55848 views, 222 likes) https://x.com/undefined/status/1944824213933543491
+- @undefined: "🇺🇸 TRUMP: “I BELIEVE MY LIFE WAS SAVED BY GOD TO REALLY MAKE AMERICA GREAT AGAIN”
+
+"It's remarkable to think that it was only one year ago this week that my time on Earth nearly ended.
+
+God was with me... I should not be with you.
+
+I believe that my life was saved by God to https://t.co/yeN8qHf6sc https://t.co/6Sh1Y5rcFM" (53183 views, 77 likes) https://x.com/undefined/status/1944819183533089218
+- @undefined: "Harry Potter The Series Has Officially Started Filming And Dominic McLaughlin (Harry) Looks Perfect https://t.co/tJAjfD7CUU https://t.co/Yeix070ddb" (52444 views, 35 likes) https://x.com/undefined/status/1944830649526829227
+- @undefined: "🇺🇸TERROR TEDDY SPARKS HUMAN REMAINS SCARE - CREATOR SAYS NOT MY FAULT
+
+A viral news story out of Victorville, CA featured one of Dark Seed Creations’ infamous “skin bears” left at a bus stop - and the artist confirmed: it’s legit.
+
+“Yes, I made the bear. Yes, that’s my Etsy shop https://t.co/dWdoEfjq3l https://t.co/95ALfL6I6L" (52048 views, 66 likes) https://x.com/undefined/status/1944835279665422351
+- @undefined: "The big problem with this graph is that as AI gets reduced to computation power, it further gets reduced to electricity to power the data centers that house the computation. 
+
+The US is still ahead in model sophistication and quality but we are way behind on electricity https://t.co/yKCDmgIGeL" (50539 views, 443 likes) https://x.com/undefined/status/1944832864425750978
+- @undefined: "Three years of wonder ✨ 
+
+It's been three years since we released our first science images, here's a recap. We're grateful to have you all along for this journey to #UnfoldTheUniverse! https://t.co/O3YWSNx5mW" (43055 views, 584 likes) https://x.com/undefined/status/1944817687583973618
+- @undefined: "Population yearly change:
+
+🇭🇷 Croatia: -27,165
+🇳🇪 Niger: +885,419
+
+(Worldometers)" (40361 views, 189 likes) https://x.com/undefined/status/1944814438038581503
+- @undefined: "🇪🇬 SHE FOUND A SECRET ROOM IN HER EGYPT AIRBNB AND... WHAT?!
+
+This girl booked a chill Airbnb in Egypt and casually discovered a hidden room.
+
+Inside? A pole dance setup and ancient Egyptian vibes. Cleopatra meets nightclub energy.
+
+Not the kind of pyramid scheme she expected. https://t.co/oF2VFpqOuy" (39900 views, 110 likes) https://x.com/undefined/status/1944826731380269360
+- @undefined: "$100,000 TV RISES FROM THE GROUND LIKE A BOND VILLAIN’S FLEX
+
+Meet the C'SEED: a massive foldable TV that literally emerges from the floor, unfolds like a Transformer, and costs more than a Porsche.
+
+For $100K, you don’t just watch TV - you summon it like a dark tech god.
+
+It https://t.co/4b60VY8fBn" (39666 views, 232 likes) https://x.com/undefined/status/1944827737430221242
+- @undefined: "🇩🇪WHEN GERMANY BUILDS A TANK, EVEN THE BEER GETS VIP TREATMENT
+
+In 1986, the Bundeswehr casually dropped a flex: a full stein of beer balanced on a Leopard 2’s 120mm gun barrel…while it drove. Over rough terrain. No spill. No foam.
+
+It wasn’t just a party trick - it was a https://t.co/iUDU7Nix2f https://t.co/0OdXNw3ElR" (38752 views, 97 likes) https://x.com/undefined/status/1944825622620233782
+- @undefined: "Year of the population peak
+
+🇵🇱 Poland: 2023
+🇿🇦 South Africa: beyond 2100
+
+(UN projection)" (38575 views, 136 likes) https://x.com/undefined/status/1944823703176421607
+- @undefined: "@heydave7 🚗 💨" (36504 views, 711 likes) https://x.com/undefined/status/1944829462115217830
+- @undefined: "“Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. https://t.co/TObB3CIVsp" (35712 views, 1068 likes) https://x.com/undefined/status/1944825800617816262
+- @undefined: "A record 37 million metric tons of sargassum seaweed are spreading across the Caribbean and Atlantic before reaching U.S. beaches this summer. While sargassum helps support marine life, large blooms can cause problems for coastal communities. 🔗 https://t.co/kdRSyuwCWG" (36713 views, 53 likes) https://x.com/undefined/status/1944834282242875408
+- @undefined: "🇺🇸 U.S. MAY SEND UKRAINE MISSILES THAT HIT DEEP INTO RUSSIA
+
+Trump is thinking about sending JASSM cruise missiles to Ukraine to boost their aging F-16 jets.
+
+These missiles fly far, hit hard, and dodge radar like stealthy ninjas.
+
+Europe’s running low on missiles, so now the https://t.co/rvT6oDerxW https://t.co/bfyZ2ld4Ga" (36228 views, 99 likes) https://x.com/undefined/status/1944821697573449751
+- @undefined: "The Cavs Have Extended Koby Altman, "The Architect Of Their Title Contender", Through 2030 https://t.co/jtBDpohlB3 https://t.co/JNgTl43lbW" (35465 views, 13 likes) https://x.com/undefined/status/1944835590387638363
+- @undefined: "People who have limited or stopped consuming sugar, how did it affect your health?" (33573 views, 103 likes) https://x.com/undefined/status/1944836479043133447
+- @undefined: "NEWS: Each Tesla Robotaxi ride now costs $6.90 (up from $4.20). https://t.co/7EOfoyhTOa" (32346 views, 733 likes) https://x.com/undefined/status/1944836284331028687
+- @undefined: "🇺🇸 THE GHISLAINE MAXWELL ARREST HOUSE COULD BE YOURS - FOR $2.5M
+
+It’s got 156 acres, sweeping mountain views, a private pond… and oh yeah, it’s where the FBI took down Ghislaine Maxwell.
+
+The New Hampshire estate she used as a secret hideout in 2020 - bought under a fake name, https://t.co/yLT4Fddh26 https://t.co/cNsqyhRNb4" (32848 views, 78 likes) https://x.com/undefined/status/1944831764100264227
+- @undefined: "Clemson beat one of the greatest college football teams to win the natty https://t.co/3f7UjQmPoG" (32801 views, 64 likes) https://x.com/undefined/status/1944832724361007407
+- @undefined: "ELON: “FREE SPEECH ONLY MATTERS WHEN IT’S UNCOMFORTABLE”
+
+“Freedom of speech is only relevant if people you don't like are allowed to say things you don't like.
+
+It can't be that the government is deciding what is or is not misinformation or disinformation.
+
+Then you get politics https://t.co/uz7lUoZHvC https://t.co/UIf9O8o20Y" (32024 views, 151 likes) https://x.com/undefined/status/1944821655328412007
+- @undefined: "Report: Tom Brady Has Cemented His Status as the World's Greatest Male by Quickly Moving on From Sofia Vergara https://t.co/XI5sgdBxU7 https://t.co/D9jJr3vgeH" (32118 views, 50 likes) https://x.com/undefined/status/1944838118898614705
+- @undefined: "TIM DILLON ROASTS KASH PATEL OVER EPSTEIN VIDEOS
+
+"Here's Kash Patel talking about why they can't put the Epstein stuff out because it will re-victimize the women. 
+
+That's the craziest thing I've ever heard. 
+
+Why wouldn't you blur the victim?"
+
+Source: @TimJDillon https://t.co/nxk23FJCVW https://t.co/cNsqyhRNb4" (31650 views, 99 likes) https://x.com/undefined/status/1944819200985309541
+- @undefined: "🇺🇸 MENENDEZ BROTHERS COULD GET NEW TRIAL AFTER JUDGE RULES ON “NEW EVIDENCE”
+
+A California judge says the Menendez brothers may deserve a second chance in court, 35 years after they killed their parents.
+
+Erik wrote a letter in 1988 accusing their father of sexually abusing him https://t.co/rsw9Sz6cOm https://t.co/j0cm7CqHUK" (30806 views, 43 likes) https://x.com/undefined/status/1944829247475839411
+- @undefined: "🇺🇸 ICE CHIEF ON FLORIDA DETENTION SITE: “THIS ISN’T A RESORT”
+
+“I've been down there myself. I actually personally went down there twice and toured while they were building it.
+
+I think one thing that a lot of these expatriations need to realize is this isn't a resort in Florida. https://t.co/QszG9lgrgZ https://t.co/n95hkwd81e" (30569 views, 84 likes) https://x.com/undefined/status/1944816664455078046
+- @undefined: "🇺🇸🇷🇺 GOP SENATOR WARNS: “PUTIN IS ON TRUMP’S NAUGHTY LIST”
+
+"The rest of us do not want to be on President Trump's naughty list. So Mr Putin is on the president's naughty list.
+
+It's not a good list to be on, trust me. I've seen people get their knees cut off by being on the https://t.co/0X6Cudxd0b https://t.co/Zu3kkbRwyo" (30170 views, 48 likes) https://x.com/undefined/status/1944814147847512190
+- @undefined: "🇺🇸 TRUMP: “BING… BING BING BING”
+
+“Could have done it all day long. Broke the record by 119 pounds.
+
+The whole thing is crazy.”
+
+Source: @acyn https://t.co/mEH7UXBe3I https://t.co/uAQS7W9RjC" (30090 views, 70 likes) https://x.com/undefined/status/1944820942670041379
+- @undefined: "[NEWS] Top EV analysts say the training wheels are coming off:
+
+All because federal tax credits are fading.
+
+Automakers are slowing launches, and the next phase of EV growth is riding on real demand, not just mandates.
+
+Cox Automotive’s Stephanie Valdez Streaty puts it like this:" (28592 views, 142 likes) https://x.com/undefined/status/1944819644218364231
+- @undefined: "NEWS: Starship is on track to launch again in about 3 weeks. https://t.co/9LGFvGFQCE https://t.co/ihCi3molVV" (26843 views, 544 likes) https://x.com/undefined/status/1944828402852049229
+- @undefined: "NEWS: SpaceX's @Starlink now has over 500,000 customers in Canada. https://t.co/gMeTP0pTq2" (23998 views, 679 likes) https://x.com/undefined/status/1944820539446505794
+- @undefined: "ELON: NEXT STARSHIP LAUNCH WILL BE IN ABOUT 3 WEEKS
+
+Starship test flight 10 is locked and (almost) loaded.
+
+Its next launch window opens August 4, according to FCC filings dropped July 4 - because of course Elon files rocket paperwork on Independence Day.
+
+Source: FCC, SpaceX https://t.co/79waBNnImF https://t.co/6ntuzQ6aZr" (24315 views, 100 likes) https://x.com/undefined/status/1944833140431761760
+- @undefined: "🇺🇸 SPACEX WANTS AN AI ENGINEER TO BUILD BRAINS FOR ROCKETS
+
+No aerospace degree? No problem. 
+
+SpaceX is hiring an AI Software Engineer to help teach machines how to move rockets - faster, smarter, and toward Mars.
+
+You'll train LLMs on real Falcon launch data, optimize flight https://t.co/iLOAcQIBj8 https://t.co/yc5OITaMt5" (19851 views, 47 likes) https://x.com/undefined/status/1944834283689971844
+- @undefined: "@aelluswamy @stevenmarkryan 🔥" (17839 views, 620 likes) https://x.com/undefined/status/1944814995776397829
+- @undefined: ".@SecKennedy: "We now have about 35% of the American food industry that has made commitments [to eliminating artificial dyes]." https://t.co/KFh79yBjCm" (17961 views, 351 likes) https://x.com/undefined/status/1944827810507370514
+- @undefined: "🇺🇸 REP. GIMENEZ: “MONDAMI IS A MARXIST, A COMMUNIST - BAD FOR AMERICA”
+
+"Madami is an enemy of Israel, but also an enemy of the United States.
+
+To call him a democratic socialist - that’s kind. 
+
+He’s actually a communist. He’s a Marxist.
+
+New York really runs the risk of https://t.co/ZjxxcJH1Gr https://t.co/nW8yAeTw8C" (17280 views, 51 likes) https://x.com/undefined/status/1944836796720013664
+- @undefined: "SpaceX has posted a new job: AI Software Engineer
+
+"Be a founding member of the Artificial Intelligence Software Engineering team, focusing on solving complex data problems for our launch vehicles and spacecraft." https://t.co/vcCHiXy2HZ" (16739 views, 244 likes) https://x.com/undefined/status/1944832019441009078
+- @undefined: "@Tesla @robotaxi I haven't seen a single mainstream media article with it yet 😂" (16146 views, 437 likes) https://x.com/undefined/status/1944812758832136624
+- @undefined: "Powerwall and Expansion Units are now available in the Netherlands 🇳🇱 https://t.co/UaEeSN9NDJ" (15515 views, 643 likes) https://x.com/undefined/status/1944820170058555613
+- @undefined: "https://t.co/at50jZUM5L" (16084 views, 28 likes) https://x.com/undefined/status/1944812436705464610
+- @undefined: "🇺🇸TESLA ROBOTAXI EXPANDS IN AUSTIN - AND YES, THE NEW MAP LOOKS LIKE A GIANT D**K
+
+Tesla just dropped Version 25.7.5 of its Robotaxi beta, and the newly expanded Austin geofence is huge - and hilariously shaped, as testers quickly pointed out.
+
+Elon dropped in with peak troll https://t.co/HPtaD1a40C https://t.co/pPggNEZq28" (15668 views, 59 likes) https://x.com/undefined/status/1944838107582640536
+- @undefined: "Giga Berlin’s Community Engagement https://t.co/DaUJsFug2J" (13217 views, 574 likes) https://x.com/undefined/status/1944816189240152498
+- @undefined: "https://t.co/MjMaRNMRMa" (11426 views, 69 likes) https://x.com/undefined/status/1944820770368373236
+- @undefined: "Monday on 95-South. https://t.co/DDaZ74taT4" (9997 views, 46 likes) https://x.com/undefined/status/1944826732089106533
+- @undefined: "New Tesla Supercharger: Valence Sud, France (28 stalls) 
+https://t.co/YhcNIqLtZI https://t.co/ygk8w4juq9" (9242 views, 440 likes) https://x.com/undefined/status/1944812678054396279
+- @undefined: "What is the best exercise for losing weight? 
+
+Here's the science: https://t.co/JijAb0OCLQ" (9463 views, 7 likes) https://x.com/undefined/status/1944824753061056835
+- @undefined: "https://t.co/8x6HBfPOyw" (8945 views, 34 likes) https://x.com/undefined/status/1944832022196687231
+- @undefined: "The final visible trace of Boston’s once-thriving Little Syria neighborhood — which spanned from Chinatown to the South End between 1880 and 1955. https://t.co/eQwsnNOpC8" (8674 views, 59 likes) https://x.com/undefined/status/1944819180957818916
+- @undefined: "Major flooding is possible again today in Texas and the Northeast, where 2-5"+ of rain is likely, with localized areas between 5-10" of rain possible. https://t.co/N2o1yuFpOu" (8461 views, 201 likes) https://x.com/undefined/status/1944813064965980356
+- @undefined: "69 𝕏 MINUTES: “THIS ISN’T JUST A NEW MODEL – IT’S A NEW MINDSET”
+
+@ESGold_Corp:
+
+“For decades, mining relied on high risk and heavy CapEx. At ESGold, we’ve taken a different approach.
+
+We target legacy mine sites , known volumes, known grades, to recover value from yesterday’s https://t.co/jBFp69R4kW https://t.co/n95hkwcAbG" (8396 views, 15 likes) https://x.com/undefined/status/1944839313662841318
+- @undefined: "If you’re looking to make a difference in your community, consider becoming a State Trooper. The Civil Service Exam will be held September 17-19. Applications will be accepted until August 7th. To connect with a recruiter text MATROOPER to 617-665-7794 https://t.co/NyLZqUDF2A" (8283 views, 42 likes) https://x.com/undefined/status/1944831020085264671
+- @undefined: ".@SecRollins: "I just want to commend the leadership at IDFA and all the dairy farmers and ice cream producers they represent for taking on this voluntary, proactive effort to eliminate the use of artificial colors in ice cream products by the end of 2027." https://t.co/JXhMB12T8L" (8102 views, 55 likes) https://x.com/undefined/status/1944826050724192275
+- @undefined: "Who wants to know what @elonmusk had at the Tesla Diner?
+
+Supercharger Shake? Beyond Earth Burger? FSD French Fries? https://t.co/HEXK2N6Evn" (8037 views, 55 likes) https://x.com/undefined/status/1944833467025412184
+- @undefined: "We officially have Invest 93L just East of Florida…
+
+Tropical Storm development is possible as this system moves west over the next few days, eventually entering the Gulf. https://t.co/GLUo7kQqmA" (7611 views, 237 likes) https://x.com/undefined/status/1944826798698602691
+- @undefined: "Map of Constantinople, 1573, Simon Pinargenti https://t.co/MrywyXZtc9" (7312 views, 183 likes) https://x.com/undefined/status/1944830522363953330
+- @undefined: "@Tesla @robotaxi I just wanna say…we did https://t.co/dUKmuHaqS3" (7062 views, 130 likes) https://x.com/undefined/status/1944812114075341164
+- @undefined: "Agriculture Secretary Brooke Rollins (@SecRollins), HHS Secretary Kennedy (@SecKennedy) FDA Commissioner Dr. Marty Makary (@DrMakaryFDA) International Dairy Foods Association (@dairyidfa) news conference – LIVE  https://t.co/BtRb9CY77W" (7052 views, 10 likes) https://x.com/undefined/status/1944820513915748604
+- @undefined: "Captive Nations Summit – LIVE now on C-SPAN2 https://t.co/eja1ff7WqM" (6718 views, 5 likes) https://x.com/undefined/status/1944813854485078471
+- @undefined: "🚨 Elon Musk confirms the new Robotaxi price is $6.90 per ride, up from the previous $4.20
+
+You didn’t expect anything different, did you? https://t.co/bl4p2NIAtB" (6369 views, 85 likes) https://x.com/undefined/status/1944834824264413668
+- @undefined: "U.S. House: Legislative Business – LIVE on C-SPAN https://t.co/eMgHNUVaoJ" (6170 views, 3 likes) https://x.com/undefined/status/1944819433232335179
+- @undefined: "Sharecropper's children sit on the front porch of their home. Vicksburg, Mississippi, 1936. Photographed by Walker Evans for the Farm Security Administration. https://t.co/CvHYil1Rha" (5874 views, 22 likes) https://x.com/undefined/status/1944811844251627671
+- @undefined: "Soooooo... Elon really likes Death Note, huh? 😂
+
+Tbf, he did recommend it before. It's a good show, polarizing ending and all.
+
+https://t.co/YNI4MKim8r" (5764 views, 12 likes) https://x.com/undefined/status/1944819992291369058

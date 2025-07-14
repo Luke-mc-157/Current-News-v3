@@ -5,22 +5,21 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { X, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
+import { apiRequest, queryClient } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
-  useLiveSearch?: boolean;
 }
 
-export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
-    mutationFn: (topics: string[]) => {
-      const endpoint = useLiveSearch ? "/api/generate-headlines-v2" : "/api/generate-headlines";
-      return apiRequest("POST", endpoint, { topics });
+    mutationFn: async (topics: string[]) => {
+      const response = await apiRequest("POST", "/api/generate-headlines", { topics });
+      return await response.json();
     },
     onSuccess: (data) => {
       const performanceInfo = data.performance 
@@ -30,6 +29,8 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }:
         title: "Headlines Generated",
         description: `Your personalized news headlines have been created${performanceInfo}.`,
       });
+      // Invalidate and refetch headlines query
+      queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
       onTopicsSubmitted(topics);
     },
     onError: (error: any) => {
@@ -114,7 +115,7 @@ export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }:
         {generateHeadlinesMutation.isPending ? (
           <>
             <span className="animate-spin mr-2">⏳</span> 
-            {useLiveSearch ? "Using Live Search..." : "Generating Headlines..."}
+            Using Live Search...
           </>
         ) : (
           <>

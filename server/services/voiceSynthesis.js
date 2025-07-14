@@ -16,7 +16,10 @@ export const VOICE_OPTIONS = [
   { id: '9BWtsMINqrJLrRacOk9x', name: 'Aria', description: 'Clear American female voice' },
   { id: 'pqHfZKP75CvOlQylNhV4', name: 'Bill', description: 'Friendly American male voice' },
   { id: 'EXAVITQu4vr4xnSDxMaL', name: 'Sarah', description: 'Professional female voice' },
-  { id: 'VR6AewLTigWG4xSOukaG', name: 'Arnold', description: 'Crisp American male voice' }
+  { id: 'VR6AewLTigWG4xSOukaG', name: 'Arnold', description: 'Crisp American male voice' },
+  { id: 'KTPVrSVAEUSJRClDzBw7', name: 'Cowboy Bob VF', description: 'Aged American Storyteller' },
+  { id: 'yjJ45q8TVCrtMhEKurxY', name: 'Dr. Von Fusion VF', description: 'Quirky Mad Scientist' },
+  { id: '1SM7GgM6IMuvQlz2BwM3', name: 'Mark - ConvoAI', description: 'ConvoAI voice' }
 ];
 
 // Get available voices from ElevenLabs

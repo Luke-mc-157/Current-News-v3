@@ -231,6 +231,9 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
                   <SelectItem value="pqHfZKP75CvOlQylNhV4">Bill (Friendly American Male)</SelectItem>
                   <SelectItem value="EXAVITQu4vr4xnSDxMaL">Sarah (Professional Female)</SelectItem>
                   <SelectItem value="VR6AewLTigWG4xSOukaG">Arnold (Crisp American Male)</SelectItem>
+                  <SelectItem value="KTPVrSVAEUSJRClDzBw7">Cowboy Bob VF (Aged American Storyteller)</SelectItem>
+                  <SelectItem value="yjJ45q8TVCrtMhEKurxY">Dr. Von Fusion VF (Quirky Mad Scientist)</SelectItem>
+                  <SelectItem value="1SM7GgM6IMuvQlz2BwM3">Mark - ConvoAI</SelectItem>
                 </SelectContent>
               </Select>
             </div>

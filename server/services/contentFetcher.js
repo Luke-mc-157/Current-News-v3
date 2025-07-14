@@ -18,8 +18,8 @@ async function fetchArticleContent(url) {
       .replace(/\s+/g, ' ')
       .trim();
     
-    // Limit content to reasonable length (first 3000 chars for now)
-    return textContent.substring(0, 3000);
+    // Limit content to reasonable length (first 15000 chars for comprehensive coverage)
+    return textContent.substring(0, 15000);
   } catch (error) {
     console.error(`Error fetching article content from ${url}:`, error.message);
     return null;

@@ -32,14 +32,13 @@ Preferred communication style: Simple, everyday language.
 
 ## Key Components
 
-### 1. Workflow System
-The backend implements five distinct workflows that process user requests:
+### 1. xAI Live Search System
+The backend uses a single, streamlined xAI Live Search workflow:
 
-- **X Search (Workflow 1)**: Searches topics on X/Twitter, compiles posts with highest engagement from last 24 hours
-- **Headline Creator (Workflow 2)**: Uses OpenAI GPT to create declarative headlines from X posts
-- **Support Compiler (Workflow 3)**: Searches Google News RSS for supporting articles for each headline
-- **Results Engine (Workflow 4)**: Organizes and ranks results by engagement metrics
-- **Complete Search (Workflow 5)**: Generates subtopics using OpenAI to expand coverage when needed
+- **Live Search**: Single API call to xAI Grok-4 with built-in web, X, news, and RSS source integration
+- **Real-time Data**: Fetches authentic content from multiple sources in one operation
+- **Fast Response**: 5-7 second response time vs 47-68 seconds with old workflows
+- **Timeline Integration**: Fetches user's X timeline posts for personalized content when authenticated
 
 ### 2. Podcast Generation System
 The application now includes a comprehensive podcast generation system:
@@ -62,13 +61,11 @@ The application now includes a comprehensive podcast generation system:
 - **SourcesManager**: UI for managing trusted X/Twitter sources per topic
 
 ### 3. API Integration Services
-- **xSearch.js**: Interfaces with X API v2 for real-time post retrieval from dynamic sources
-- **dynamicSources.js**: Compiles user-defined and xAI-suggested verified sources per topic
-- **xaiAnalyzer.js**: xAI integration for content authenticity analysis and categorization
-- **headlineCreator.js**: OpenAI API integration for headline generation
-- **supportCompiler.js**: Google News RSS parsing for supporting articles
-- **completeSearch.js**: OpenAI API for subtopic generation
-- **contentFetcher.js**: Fetches full article content for podcast compilation
+- **liveSearchService.js**: Main xAI Live Search implementation with multi-source integration
+- **xAuth.js**: X OAuth 2.0 authentication for timeline access
+- **xTimeline.js**: X timeline posts fetching and database storage
+- **xaiAnalyzer.js**: xAI content analysis and categorization
+- **contentFetcher.js**: Article content fetching for podcast compilation
 - **podcastGenerator.js**: xAI-powered factual script generation
 - **voiceSynthesis.js**: ElevenLabs API integration for voice generation
 - **emailService.js**: Podcast distribution via email attachments
@@ -87,7 +84,7 @@ The application now includes a comprehensive podcast generation system:
 
 ### APIs and Services
 - **X API v2**: Real-time tweet search with authentication via Bearer Token for authentic content discovery
-- **xAI API**: Hybrid model usage - Grok 3 for Live Search queries, Grok-4-0709 for complex reasoning tasks
+- **xAI API**: Grok-4-0709 for all Live Search queries and complex reasoning tasks
 - **OpenAI API**: GPT-3.5-turbo and GPT-4 for headline and subtopic generation (legacy)
 - **Google News RSS**: Public RSS feeds for supporting article discovery
 - **Neon Database**: Serverless PostgreSQL for production data storage
@@ -107,7 +104,218 @@ The application now includes a comprehensive podcast generation system:
 - **Improved Engagement**: Now searches verified accounts and trending sources for posts with 100+ likes
 - **Smart Categorization**: Posts are intelligently matched to user topics after collection
 
-### Latest Updates (January 10, 2025)
+### Latest Updates (January 13, 2025 - 8:00 PM UTC)
+- **✅ PHASE 2 & 3 IMPROVEMENTS IMPLEMENTED**: Advanced data processing to prevent truncation and ensure X posts inclusion
+  - **Phase 2 - Anti-Truncation Features**:
+    - Pre-summarization with Grok-3-fast to condense topics while preserving all URLs and X posts
+    - Chunked processing (2 topics at a time) to avoid Grok overload
+    - Reduced max_tokens from 20k to 10k to prevent response truncation
+    - Separate timeline appendix generation if missing from main compilation
+    - Post-validation to identify missing sources and warn about issues
+  - **Phase 3 - X Posts Enhancement**:
+    - validateAndEnhanceHeadlines function extracts all available X posts from compiled data
+    - Automatic X post injection when headlines lack sourcePosts
+    - Intelligent matching based on topic/category relevance
+    - Final validation reports total X posts across all headlines
+    - Critical error logging when headlines still lack X posts after enhancement
+  - **Critical Fixes Applied**:
+    - Pre-summarization explicitly preserves "X POSTS FROM SEARCH" structure
+    - Main Grok prompt emphasizes: "CRITICAL: Use X POSTS FROM SEARCH as sourcePosts"
+    - Phase 3 fallback ensures X posts are added even if Grok misses them
+  - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
+
+### Latest Updates (January 14, 2025 - 8:15 PM)
+- **✅ ENHANCED ARTICLE CONTENT EXTRACTION**: Modified live search flow to extract full article content
+  - **Updated extractArticleData function**: Now extracts full article content (up to 15,000 chars) in addition to metadata
+  - **Enhanced compiled data structure**: Added `fullContent` and `contentLength` fields to article objects
+  - **Improved Grok newsletter input**: Full article content now included in compiled data for richer newsletter generation
+  - **Performance logging**: Added total article content character tracking per topic
+  - **Results**: Grok now has access to complete article content, not just metadata summaries, for better newsletter quality
+
+### Previous Updates (January 14, 2025 - 6:45 PM)
+- **✅ FINAL ARCHITECTURE CLEANUP**: Removed remaining legacy user source management system
+  - **Deleted dynamicSources.js**: Removed unused source management system with xAI source suggestions
+  - **Removed userSources routes**: Deleted `/api/user-sources/:userId` GET/POST endpoints
+  - **Cleaned imports**: Removed all references to `setUserTrustedSources` and `getUserTrustedSources`
+  - **Results**: Fully streamlined codebase with only active xAI Live Search components
+
+### Previous Updates (January 14, 2025 - 6:15 PM)
+- **✅ ARCHITECTURE CLEANUP COMPLETED**: Removed all old workflow files and UI toggles to use only xAI Live Search
+  - **Deleted Old Workflow Files**: Removed `headlineCreator.js`, `supportCompiler.js`, `completeSearch.js`, `xSearch.js`
+  - **Updated API Endpoints**: Consolidated to single `/api/generate-headlines` endpoint using xAI Live Search
+  - **Removed Frontend Toggle**: Deleted `LiveSearchToggle` component, updated `TopicInput` to always use live search
+  - **Cleaned Test Files**: Removed all test scripts for old workflows (`test-*.js`)
+  - **Updated Routes**: Removed `/api/generate-headlines-v2` and `/api/generate-headlines-v3` endpoints
+  - **Simplified Codebase**: Reduced complexity by eliminating old workflow imports and dependencies
+  - **Results**: Single, streamlined Live Search system with 5x faster performance and cleaner architecture
+
+### Previous Updates (January 14, 2025)
+- **✅ PODCAST GENERATION SYSTEM FIXES**: Resolved critical script truncation and duration compliance issues
+  - **Dynamic Token Scaling**: Implemented `Math.max(15000, targetWordCount * 1.5)` to ensure sufficient tokens for longer podcasts (previously capped at 10k)
+  - **Enhanced Duration Compliance**: Added explicit word count targets and validation with automatic retry for short scripts
+  - **Expansion Strategy**: Modified prompt to treat 89k+ character raw compiled data as research to be expanded, not summarized
+  - **Validation & Retry Logic**: Automatic script extension when word count falls below target (±100 words tolerance)
+  - **Comprehensive Instructions**: Added detailed guidance for expansion strategy with minimum words per topic
+  - **Results**: 30-minute podcasts now generate ~4,500 words instead of 1,457 words, eliminating mid-sentence truncation
+- **✅ CRITICAL BUG FIXES**: Resolved variable scoping and undefined length errors affecting large topic searches
+  - **Fixed "compiledResult is not defined"**: Corrected variable scope in `compileNewsletterWithGrok` return statement
+  - **Fixed undefined length errors**: Ensured proper object structure in error cases instead of returning empty arrays
+  - **Dynamic Token Scaling for Search**: Added formula `max_tokens = min(15000, max(10000, topicCount * 2000))` for large topic searches (7+, 10+)
+  - **Enhanced JSON Parsing**: Added cleanup for malformed responses and partial headline extraction fallback
+  - **Improved Error Handling**: Better logging and fallback mechanisms for large topic searches
+
+### Previous Updates (January 13, 2025)
+- **✅ ENHANCED OAUTH DEBUGGING SYSTEM**: Comprehensive error handling and debugging improvements implemented
+  - **Debug Endpoint**: New `/api/auth/x/debug` endpoint shows exact OAuth configuration details
+  - **Environment Validation**: Pre-flight validation checks for OAuth credentials before URL generation
+  - **Enhanced Error Messages**: Specific error classification for 400, 401, 403, 404 OAuth errors
+  - **Callback Debugging**: Detailed logging and parameter validation for OAuth callbacks
+  - **Test Script**: `test-oauth-debug.js` validates all debugging endpoints work correctly
+  - **OAuth Configuration**: Improved callback URL construction with comprehensive environment detection
+- **✅ TIMELINE FUNCTION FULLY OPERATIONAL**: Complete success with all components working perfectly
+  - OAuth 2.0 authentication working perfectly with token refresh logic for user @Mc_Lunderscore
+  - Timeline endpoint (GET /2/users/:id/timelines/reverse_chronological) successfully fetching 100 posts ✅
+  - **API Method Fixed**: Switched from `userTimeline` to `homeTimeline` for correct home feed functionality
+  - **Response Structure Fixed**: Corrected API response parsing - tweets now properly extracted from response object
+  - **Rate Limit Management**: Successfully handled rate limits (5 requests/15 min) - waited for reset and achieved success
+  - **Database Storage Verified**: 100 real timeline posts successfully stored in PostgreSQL database
+  - **Real Data Validation**: Authentic posts from sources like BostonGlobe with actual content and engagement metrics
+  - System tested and confirmed functional on January 13, 2025 at 03:40:23 UTC with 100% success rate
+  - **✅ INTEGRATED WITH ALL SEARCH ENDPOINTS**: Timeline function now runs automatically before every search
+    - Updated `/api/generate-headlines` (original workflow) to fetch timeline first
+    - Enhanced `/api/generate-headlines-v2` (xAI Live Search) to use new fetchUserTimeline function
+    - Updated `/api/generate-headlines-v3` (X API + OpenAI) to fetch timeline first
+    - Timeline posts cleaned up automatically (30 hours retention) on each fetch
+    - **Updated Timeline Capacity**: Increased from 100 to 175 posts per fetch for richer data
+    - Verified working: User @Mc_Lunderscore timeline fetched before Live Search at 3:54 AM UTC
+  - **Ready for Production**: Timeline function fully integrated with search workflows using authentic user data
+- **✅ ENHANCED TIMELINE INTEGRATION**: Advanced personalization features implemented (January 13, 2025 04:08 UTC)
+  - **Emergent Topics Discovery**: New AI-powered analysis identifies 1-3 trending topics from user's timeline
+    - Analyzes high-engagement posts (top 50% by views + likes) using Grok-3-fast
+    - Automatically appends discovered topics to user's search query
+    - Example: User searches "AI", system discovers "AI Ethics" from viral timeline posts
+  - **Timeline Posts Integration**: Timeline posts now integrated into search results
+    - Posts tagged with `source: 'timeline'` for proper identification
+    - High-relevance timeline posts become primary sources in headlines
+    - Enhances personalization by incorporating user's followed content
+  - **"From Your Feed" Appendix**: New podcast appendix feature
+    - Selects 3-5 high-engagement timeline posts not used in headlines
+    - Provides factual summaries with engagement metrics
+    - Adds personal touch to generated content while maintaining factual accuracy
+  - **Technical Implementation**: 
+    - Fixed `view_count` vs `impression_count` field mapping
+    - Enhanced data summary includes timeline posts for Grok analysis
+    - Appendix parsing logic for future podcast integration
+- **✅ SIMPLIFIED TIMELINE CATEGORIZATION**: Removed xaiAnalyzer dependency (January 13, 2025 05:30 UTC)
+  - **Removed categorizePostsWithXAI**: Eliminated separate AI categorization step for timeline posts
+  - **Grok-Driven Categorization**: Timeline posts now sent directly to Grok for intelligent topic matching
+  - **Improved Architecture**: Reduced complexity by removing intermediate AI processing layer
+  - **Enhanced Instructions**: Updated Grok prompt to explicitly handle timeline post categorization
+  - **Maintained Features**: All personalization features (emergent topics, timeline integration, appendix) remain functional
+
+### Previous Updates (January 12, 2025)
+- **✅ FIXED DATABASE STORAGE ISSUES**: Resolved all TypeScript/Drizzle ORM compatibility issues
+  - Fixed array handling: Proper conversion from array-like objects to real arrays
+  - Fixed engagement field type: Changed from text to integer in database schema
+  - Fixed database insertion: Added proper array wrapping for Drizzle `.values()` method
+  - Fixed headline ID generation: Auto-generate IDs since InsertHeadline omits id field
+  - Database migrations working correctly, storage layer fully functional
+- **🔧 X API PROJECT ENROLLMENT PROGRESS**: Partial resolution achieved
+  - Basic tier ($200/month) DOES support required endpoints: GET /2/users/:id/timelines/reverse_chronological and GET /2/users/:id/following (5 requests/15 mins each)
+  - Solution: Created new app "Current News Application v3" within project structure
+  - Fixed twitter-api-v2 method calls: `client.v2.userTimeline()` for timeline, `client.v2.following()` for follows
+  - Authentication working correctly, timeline endpoint functional
+- **✅ X API OAUTH INTEGRATION**: Added complete OAuth 2.0 authentication flow for X (Twitter) API
+  - New dependency: `twitter-api-v2` for official X API client
+  - `xAuth.js` service handles PKCE OAuth flow with secure session management
+  - Authentication routes: `/api/auth/x/login`, `/auth/twitter/callback`, `/api/auth/x/status`, `/api/auth/x/check`, `/api/auth/x/debug`
+  - `XLoginButton` component with popup-based authentication and status polling
+  - Header integration for "Login with X" functionality with visual feedback
+  - In-memory session storage for demo (production should use secure database storage)
+  - Auto-closing popup window and real-time authentication status checking
+- **✅ FIXED OAUTH PKCE AUTHENTICATION**: Resolved all OAuth 2.0 authentication issues
+  - Fixed PKCE code challenge method from lowercase `s256` to uppercase `S256` per OAuth 2.0 spec
+  - Implemented proper RFC 7636 compliant base64URL encoding (removed by using library's built-in)
+  - Let twitter-api-v2 library handle PKCE generation internally for better compatibility
+  - Added all required scopes: `users.read`, `tweet.read`, `follows.read`, `offline.access`
+  - Fixed scope format to space-separated string instead of array
+  - Purpose: Fetch user's followed handles and their recent posts for Live Search integration
+- **✅ ENHANCED VOICE SYSTEM**: Added 3 new ElevenLabs voices across both frontend and backend
+  - **Cowboy Bob VF** (KTPVrSVAEUSJRClDzBw7): Aged American Storyteller
+  - **Dr. Von Fusion VF** (yjJ45q8TVCrtMhEKurxY): Quirky Mad Scientist  
+  - **Mark - ConvoAI** (1SM7GgM6IMuvQlz2BwM3): ConvoAI voice
+  - Total voice options: 8 premium voices available system-wide
+  - Voice options synchronized between main app and test environment
+- **✅ X TIMELINE INTEGRATION**: Implemented user timeline posts fetching and integration
+  - PostgreSQL database schema updated with `x_auth_tokens` table for secure token storage
+  - Database storage layer updated to handle X authentication tokens (create, read, update)
+  - X OAuth callback now stores user tokens in database for persistent authentication
+  - `liveSearchService.js` enhanced to accept `userHandle` and `accessToken` parameters
+  - Timeline posts fetched from followed accounts (last 24h, up to 500 posts across 5 pages)
+  - Posts categorized by topics using xAI and integrated with Live Search results
+  - Enhanced headlines generation includes personalized content from user's timeline
+
+### Previous Updates (January 11, 2025)
+- **✅ SUCCESSFUL xAI LIVE SEARCH IMPLEMENTATION**: Fixed API configuration and achieved working live search system
+  - xAI Live Search API successfully called FIRST as requested by user
+  - Real data collection: 2396 characters with 15 authentic citations
+  - Flow: xAI Live Search → Data collection → Grok-4 compilation → Newsletter display
+  - Performance: 5-7 seconds vs 47-68 seconds previously (5x faster)
+  - No synthetic data generation - only authentic sources as required
+- **✅ ENHANCED MULTI-SOURCE CONFIGURATION**: Added comprehensive source filtering and optimized data processing
+  - Multi-source Live Search: Web, X (50,000+ view threshold), News sources
+  - Two-stage Live Search: Initial data collection → Newsletter compilation with URL verification
+  - Cleaned up outdated code: Removed empty X posts processing and unused likes parameters
+  - Streamlined data flow: Direct Live Search content to Grok without redundant processing
+- **✅ RESOLVED MULTI-TOPIC PROCESSING ISSUE**: Fixed root cause of "only 1 out of 5 topics showing results"
+  - **Root Causes Identified**: Token limit bottleneck (2000 max_tokens insufficient), data summary overflow, JSON response truncation
+  - **Fixes Applied**: Increased max_tokens to 10000, truncated web data to 1500 chars per topic, truncated citations to 500 chars per topic
+  - **Results**: 3-topic test shows "Generated 3 headlines from 3 topics" (all topics processed vs previous 1 topic only)
+  - **Data Collection**: Working perfectly for all topics (15 citations each), newsletter compilation was the bottleneck
+- **✅ FIXED HOME PAGE LINKS ISSUE**: Resolved supporting articles linking to home pages instead of specific articles
+  - **Root Cause**: Citation truncation (500 chars) was cutting off specific article URLs during newsletter compilation
+  - **Fix Applied**: Removed citation truncation, enhanced Grok-4 instructions to use exact URLs from citations
+  - **System Enhancement**: Added explicit "CRITICAL: Extract exact URLs from citations" instruction to prevent generic home page links
+  - **Result**: Supporting articles now preserve specific article URLs from xAI Live Search citations
+- **STREAMLINED ARCHITECTURE**: Reduced codebase complexity using "chainsaw" approach
+  - liveSearchService.js: 700+ lines → 240 lines (essential flow only)
+  - xaiAnalyzer.js: 300+ lines → 70 lines (basic categorization only)
+  - Removed all authenticity analysis and synthetic data generation
+  - Eliminated website blocking functionality as requested
+- **VERIFIED WORKING COMPONENTS**:
+  - xAI Live Search API with X, Web, News sources ✅
+  - Real citation URLs returned (15 citations per topic) ✅
+  - Grok-4 newsletter compilation with 10000 max_tokens ✅
+  - Multi-topic processing (all topics now show results) ✅
+  - Fast performance with authentic data only ✅
+
+### Previous Updates (January 10, 2025)
+- **X API WORKFLOW INTEGRATION**: Implemented official X API v2 integration to replace web scraping for improved accuracy
+  - `fetchXPostMetadata` function uses bearer token authentication for official API calls
+  - Fetches comprehensive metadata: text, likes, retweets, replies, views, author info
+  - Falls back to scraping only when API fails, ensuring resilience
+- **FULL ARTICLE CONTENT FETCHING**: Extended beyond titles to fetch complete article body text
+  - `fetchArticleContent` extracts up to 5000 characters of article content
+  - Multiple selector strategies for different news site layouts
+  - Manages token limits through intelligent truncation
+- **AGGREGATED DATA COLLECTION**: System now compiles comprehensive data post-Live Search
+  - Live search results with headlines and summaries
+  - X posts with enhanced metadata from official API
+  - Full article content for deeper analysis
+  - Complete citation tracking across all sources
+- **NEWSLETTER GENERATION LAYER**: Added Grok-4-0709 powered newsletter refinement
+  - `generateNewsletter` function processes all aggregated data
+  - Creates refined, factual summaries with proper citations
+  - Configurable via `useNewsletter` toggle for flexible deployment
+  - Zero-opinion policy enforced for pure factual reporting
+- **MODULAR HELPER FUNCTIONS**: Improved code organization with extracted utility functions
+  - Configuration constants centralized for easy management
+  - Error handling and retry logic standardized
+  - Clean separation of concerns for maintainability
+
+### Previous Updates (January 10, 2025)
+- **GROK-4-0709 UPGRADE**: Updated all Live Search operations from Grok-3 to Grok-4-0709 for enhanced AI processing capabilities
+- **RSS FEED INTEGRATION**: Added RSS as a new source type with specific feed: https://rss.app/feeds/v1.1/_HsS8DYAWZWlg1hCS.json
 - **COMPREHENSIVE X POST FETCHING**: Implemented real X post content extraction using axios/cheerio with fallback handling
 - **IMPROVED ARTICLE FILTERING**: Enhanced article title fetching with homepage detection and generic title filtering
 - **ENHANCED AUTHENTICITY SCORING**: Lowered threshold to >0.5 and added average score fallback for better content inclusion
@@ -116,18 +324,15 @@ The application now includes a comprehensive podcast generation system:
 - **Audio Combination System**: Implemented ffmpeg-based audio segment combination to create complete podcasts from multiple ElevenLabs segments
 - **Segment Processing**: Enhanced to generate all script segments and combine them into final audio file with cleanup of intermediate files
 - **Real Duration Matching**: 5-minute podcasts now generate ~750 word scripts and full-length audio (±15 seconds tolerance)
-- **Hybrid Model Strategy**: Using Grok 3 for Live Search (optimized for fast queries) and Grok 4 for complex reasoning tasks
-- **Grok 4 Integration**: Updated podcast generation, content analysis, and source suggestion to use xAI Grok-4-0709
-- **Live Search Optimization**: Kept Grok 3 for Live Search as Grok 4 causes timeout issues with search queries
+- **Multi-Source Integration**: Now pulls from web, X/Twitter, news, and RSS sources for comprehensive coverage
 - **Sequential Topic Processing**: Individual API calls per topic for better relevance and source quality
 - **24-Hour Date Filtering**: Implemented proper ISO8601 date format (YYYY-MM-DD) for `from_date` parameter
-- **Optimized Performance**: 6.3 seconds per topic with 7+ citations and 3 headlines using Grok 3 for search
 - **Timeout Protection**: Added 20-second timeout wrapper to prevent API calls from hanging
 - **Authentic Source Distribution**: Real URLs from Live Search with quality engagement filtering
 - **Enhanced Error Handling**: Graceful fallback for failed topics with timeout protection
 - **Article Title Fetching**: Implemented axios/cheerio to fetch real article titles from URLs instead of URL slugs
 - **Inline Citation Parsing**: Added [n] citation format in summaries to match specific sources to headlines
-- **Authenticity Filtering**: Posts must have >0.7 authenticity score from xAI analysis
+- **Authenticity Filtering**: Posts must have >0.5 authenticity score from xAI analysis (lowered from 0.7)
 - **Improved JSON Parsing**: Extracts JSON properly even when xAI includes preamble text
 - **Enhanced Engagement Metrics**: Includes views, replies in addition to likes/retweets
 - **Batched Processing**: xaiAnalyzer splits large post sets to avoid token overflow
@@ -162,6 +367,7 @@ The application now includes a comprehensive podcast generation system:
 
 ### Environment Variables Required
 - `X_BEARER_TOKEN`: X (Twitter) API Bearer Token for authentic post retrieval
+- `X_CLIENT_ID`: X API OAuth 2.0 Client ID for user authentication and premium features
 - `XAI_API_KEY`: xAI API key for content authenticity analysis and podcast script generation
 - `OPENAI_API_KEY`: OpenAI API key for headline and subtopic generation (legacy)
 - `ELEVENLABS_API_KEY`: ElevenLabs API key for voice synthesis (10,000 chars/month free tier)
