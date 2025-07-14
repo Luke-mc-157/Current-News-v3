@@ -25,6 +25,7 @@ export function registerRoutes(app) {
   const router = express.Router();
   let headlinesStore = [];
   let appendixStore = null;
+  let compiledDataStore = null; // Store raw compiled data for podcast generation
 
   router.post("/api/generate-headlines", async (req, res) => {
     const { topics } = req.body;
@@ -166,9 +167,10 @@ export function registerRoutes(app) {
       const endTime = Date.now();
       const responseTime = endTime - startTime;
       
-      // Store headlines and appendix for podcast generation
+      // Store headlines, appendix, and compiled data for podcast generation
       headlinesStore = headlines;
       appendixStore = appendix;
+      compiledDataStore = result.compiledData;
       
       console.log(`✅ Live Search completed in ${responseTime}ms with ${headlines.length} headlines`);
       console.log(`📊 Performance improvement: ${Math.round(30000 / responseTime)}x faster than old system`);
@@ -453,11 +455,16 @@ export function registerRoutes(app) {
         return res.status(400).json({ error: "No headlines available. Generate headlines first." });
       }
 
-      // Compile all content for podcast
-      const compiledContent = await compileContentForPodcast(headlinesStore);
-      
-      // Generate podcast script with appendix if available
-      const script = await generatePodcastScript(compiledContent, appendixStore, durationMinutes, podcastName);
+      // Use raw compiled data if available, otherwise fall back to processed content
+      let script;
+      if (compiledDataStore) {
+        console.log(`📄 Using raw compiled data for podcast generation (${compiledDataStore.length} chars)`);
+        script = await generatePodcastScript(compiledDataStore, appendixStore, durationMinutes, podcastName);
+      } else {
+        console.log(`📄 Using processed content for podcast generation (legacy mode)`);
+        const compiledContent = await compileContentForPodcast(headlinesStore);
+        script = await generatePodcastScript(compiledContent, appendixStore, durationMinutes, podcastName);
+      }
       
       // Create podcast episode record
       const episode = await storage.createPodcastEpisode({

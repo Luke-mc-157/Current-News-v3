@@ -734,7 +734,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         supportingArticles: headline.supportingArticles || []
       }));
       
-      return { headlines: transformedHeadlines, appendix };
+      return { headlines: transformedHeadlines, appendix, compiledData: compiledResult.compiledData };
       
     } catch (parseError) {
       console.error('❌ Failed to parse newsletter JSON:', parseError.message);

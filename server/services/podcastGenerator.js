@@ -7,28 +7,20 @@ const xai = new OpenAI({
   apiKey: process.env.XAI_API_KEY,
 });
 
-// Generate podcast script from compiled content
-export async function generatePodcastScript(compiledContent, appendix = null, durationMinutes = 10, podcastName = "Current News") {
+// Generate podcast script from raw compiled data
+export async function generatePodcastScript(compiledData, appendix = null, durationMinutes = 10, podcastName = "Current News") {
   try {
-    console.log(`Generating ${durationMinutes}-minute podcast script for ${compiledContent.length} headlines...`);
+    // Handle both old format (processed content) and new format (raw compiled data)
+    const isRawCompiledData = typeof compiledData === 'string';
+    
+    if (isRawCompiledData) {
+      console.log(`Generating ${durationMinutes}-minute podcast script from raw compiled data (${compiledData.length} chars)...`);
+    } else {
+      console.log(`Generating ${durationMinutes}-minute podcast script for ${compiledData.length} headlines... (legacy format)`);
+    }
     
     // Estimate word count needed (150 words per minute average speaking rate)
     const targetWordCount = durationMinutes * 150;
-    
-    // Create structured content for the prompt
-    const contentSummary = compiledContent.map(item => ({
-      headline: item.title,
-      summary: item.summary,
-      category: item.category,
-      keyPosts: item.posts.slice(0, 3).map(p => ({
-        author: p.handle,
-        content: p.text
-      })),
-      articleHighlights: item.articles.slice(0, 2).map(a => ({
-        source: a.title,
-        excerpt: a.content.substring(0, 500)
-      }))
-    }));
     
     // Add appendix if available
     let appendixContent = '';
@@ -65,14 +57,36 @@ SCRIPT STRUCTURE:
 - Opening: Brief welcome and overview of topics (10 seconds)
 - Main segments: One for each major story, with smooth transitions
 - For each story: Present facts from articles and posts, quote key sources
-- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structed as: "auther_name" posted "text"."
+- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "text"."
 - Closing: sign-off (10 seconds)
+
+USING RAW COMPILED DATA:
+When provided with raw compiled data (structured research text), extract and organize the key information:
+- Use the LIVE SEARCH SUMMARY sections for main story content
+- Reference X POSTS FROM SEARCH for quotes and sources
+- Include SUPPORTING ARTICLES for additional context
+- Incorporate USER'S TIMELINE POSTS if available
+- Create natural transitions between topics
 
 Remember: Write exactly what the voice should say. No formatting, no stage directions, just pure spoken content.`
         },
         {
           role: "user",
-          content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(contentSummary, null, 2)}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
+          content: isRawCompiledData 
+            ? `Create a ${durationMinutes}-minute podcast script for "${podcastName}" using this comprehensive research data:\n\n${compiledData}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
+            : `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(compiledData.map(item => ({
+                headline: item.title,
+                summary: item.summary,
+                category: item.category,
+                keyPosts: item.posts?.slice(0, 3).map(p => ({
+                  author: p.handle,
+                  content: p.text
+                })) || [],
+                articleHighlights: item.articles?.slice(0, 2).map(a => ({
+                  source: a.title,
+                  excerpt: a.content?.substring(0, 500) || ''
+                })) || []
+              })), null, 2)}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
         }
       ],
       search_parameters: {
