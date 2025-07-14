@@ -452,11 +452,15 @@ async function getTopicDataFromLiveSearch(topic) {
   const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-mini-fast",
+      model: "grok-3-fast",
       messages: [
         {
+          role: "system",
+          content: "You have live access to X posts, news publications, and the web. Compile the biggest news stories on the topic, prioritizing those breaking first on X. Find at least 4 stories with highest engagement (views, likes, retweets). If fewer than 4, note it and return what exists. Output as JSON: { 'stories': [{ 'headline': 'Factual declarative headline', 'engagement_total': number, 'x_posts': ['specific X post URLs'], 'supporting_articles': ['specific news article URLs'] }] }, sorted descending by engagement_total. Use factual, declarative statements only—no opinions. Citations must link to specific articles or X posts, never homepages or categories."
+        },
+        {
           role: "user",
-          content: `Get latest news about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Include complete source URLs to specific posts and articles in your citations.`
+          content: `Get latest news about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Synthesize factual headlines from X posts and back them with Google News articles.`
         }
       ],
       search_parameters: {
@@ -465,9 +469,8 @@ async function getTopicDataFromLiveSearch(topic) {
         return_citations: true,
         from_date: fromDate,
         sources: [
-          {"type": "web", "country": "US" },
           {"type": "x", "post_view_count": 2500},
-          {"type": "news"}
+          {"type": "news", "country": "US" }
         ]
       },
       max_tokens: 50000
