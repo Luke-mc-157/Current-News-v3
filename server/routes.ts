@@ -3,7 +3,7 @@
 import express from "express";
 import http from "http";
 // Old workflow imports removed - using only xAI Live Search
-import { setUserTrustedSources, getUserTrustedSources } from "./services/dynamicSources.js";
+
 import { compileContentForPodcast } from "./services/contentFetcher.js";
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
 import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } from "./services/voiceSynthesis.js";
@@ -211,24 +211,7 @@ export function registerRoutes(app) {
     });
   });
 
-  // User trusted sources management
-  router.get("/api/user-sources/:userId", (req, res) => {
-    const { userId } = req.params;
-    const sources = getUserTrustedSources(userId);
-    res.json({ sources });
-  });
 
-  router.post("/api/user-sources/:userId", (req, res) => {
-    const { userId } = req.params;
-    const { sources } = req.body;
-    
-    if (!Array.isArray(sources)) {
-      return res.status(400).json({ error: "Sources must be an array" });
-    }
-    
-    setUserTrustedSources(userId, sources);
-    res.json({ message: "Trusted sources updated successfully" });
-  });
 
   // Podcast generation routes
   router.post("/api/generate-podcast", async (req, res) => {
