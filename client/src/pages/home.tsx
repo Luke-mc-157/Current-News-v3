@@ -3,14 +3,14 @@ import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
 import PodcastGenerator from "@/components/podcast-generator";
-import LiveSearchToggle from "@/components/live-search-toggle";
+// Live search toggle removed - using only xAI Live Search
 import XLoginButton from "@/components/x-login-button";
 import { Button } from "@/components/ui/button";
 import type { Headline } from "@shared/schema";
 
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
-  const [useLiveSearch, setUseLiveSearch] = useState(true); // Default to Live Search
+  // Always use Live Search - removed toggle functionality
 
   const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
     queryKey: ["/api/headlines"],
@@ -75,13 +75,8 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            <LiveSearchToggle 
-              useLiveSearch={useLiveSearch} 
-              onToggle={setUseLiveSearch} 
-            />
             <TopicInput 
-              onTopicsSubmitted={setSubmittedTopics} 
-              useLiveSearch={useLiveSearch}
+              onTopicsSubmitted={setSubmittedTopics}
             />
           </div>
 

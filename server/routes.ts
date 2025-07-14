@@ -2,10 +2,7 @@
 // server/routes.ts
 import express from "express";
 import http from "http";
-import { fetchXPosts } from "./services/xSearch.js";
-import { generateHeadlines } from "./services/headlineCreator.js";
-import { fetchSupportingArticles } from "./services/supportCompiler.js";
-import { completeSearch } from "./services/completeSearch.js";
+// Old workflow imports removed - using only xAI Live Search
 import { setUserTrustedSources, getUserTrustedSources } from "./services/dynamicSources.js";
 import { compileContentForPodcast } from "./services/contentFetcher.js";
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
@@ -27,117 +24,10 @@ export function registerRoutes(app) {
   let appendixStore = null;
   let compiledDataStore = null; // Store raw compiled data for podcast generation
 
+  // Old workflow endpoint removed - using only xAI Live Search
+
+  // Main endpoint: Generate headlines using xAI Live Search
   router.post("/api/generate-headlines", async (req, res) => {
-    const { topics } = req.body;
-    if (!topics || topics.length < 1) {
-      return res.status(400).json({ message: "At least 1 topic required" });
-    }
-
-    try {
-      // Check if user has authenticated with X and fetch timeline first
-      const userId = 1; // In production, get from session/JWT
-      const authToken = await storage.getXAuthTokenByUserId(userId);
-      
-      if (authToken) {
-        console.log(`📱 User ${authToken.xHandle} authenticated - fetching timeline before search`);
-        try {
-          await fetchUserTimeline(authToken.accessToken, userId, 7);
-          console.log(`✅ Timeline updated for user ${authToken.xHandle}`);
-        } catch (timelineError) {
-          console.error(`❌ Timeline fetch failed: ${timelineError.message}`);
-          // Continue with search even if timeline fails
-        }
-      }
-      const posts = await fetchXPosts(topics);
-      const hasPosts = Object.values(posts).some((p) => p.length > 0);
-      if (!hasPosts) {
-        throw new Error("No X posts found for any topic");
-      }
-
-      // Filter out topics with no posts before generating headlines
-      const postsWithData = Object.fromEntries(
-        Object.entries(posts).filter(([topic, topicPosts]) => topicPosts.length > 0)
-      );
-
-      const headlinesByTopic = await generateHeadlines(postsWithData);
-      console.log("Generated headlines by topic:", JSON.stringify(headlinesByTopic, null, 2));
-      
-      const hasHeadlines = Object.values(headlinesByTopic).some((h) => h.length > 0);
-      console.log("Has headlines:", hasHeadlines);
-      
-      if (!hasHeadlines) {
-        throw new Error("No headlines generated from X posts");
-      }
-
-      const articlesByTopic = await fetchSupportingArticles(headlinesByTopic);
-
-      let headlines = [];
-      let usedPosts = new Set(); // Track used posts to avoid duplicates
-      
-      for (const topic in headlinesByTopic) {
-        if (!postsWithData[topic]?.length) {
-          console.warn(`Skipping ${topic}: no X posts found`);
-          continue;
-        }
-        
-        // Get available posts for this topic (not yet used)
-        const availablePosts = postsWithData[topic].filter(post => 
-          !usedPosts.has(post.text.substring(0, 100))
-        );
-        
-        headlinesByTopic[topic].forEach((headline, index) => {
-          // Assign unique posts to each headline (5-10 posts per headline)
-          const postsPerHeadline = Math.min(Math.max(5, Math.floor(availablePosts.length / headlinesByTopic[topic].length)), 10);
-          const startIndex = index * postsPerHeadline;
-          const postsForHeadline = availablePosts.slice(startIndex, startIndex + postsPerHeadline);
-          
-          if (postsForHeadline.length === 0) {
-            // If no posts available, skip this headline
-            console.warn(`No available posts for headline: ${headline.title}`);
-            return;
-          }
-          
-          // Mark these posts as used
-          postsForHeadline.forEach(post => 
-            usedPosts.add(post.text.substring(0, 100))
-          );
-          
-          const articles = articlesByTopic[topic]?.find((a) => a.headline === headline.title)?.articles || [];
-          const engagement = postsForHeadline.reduce((sum, p) => sum + p.likes, 0);
-          
-          headlines.push({
-            id: `${topic}-${index}`,
-            title: headline.title,
-            summary: headline.summary,
-            category: topic,
-            createdAt: new Date().toISOString(),
-            engagement: engagement,
-            sourcePosts: postsForHeadline,
-            supportingArticles: articles,
-          });
-        });
-      }
-
-      console.log(`Final headlines count: ${headlines.length}`);
-      if (!headlines.length) {
-        console.error("No valid headlines generated - debugging info:");
-        console.error("HeadlinesByTopic:", Object.keys(headlinesByTopic));
-        console.error("PostsWithData:", Object.keys(postsWithData));
-        throw new Error("No valid headlines generated");
-      }
-
-      headlines = await completeSearch(topics, headlines);
-      headlines = headlines.sort((a, b) => b.engagement - a.engagement);
-      headlinesStore = headlines;
-      res.json({ success: true, headlines });
-    } catch (error) {
-      console.error("Error in /api/generate-headlines:", error.message);
-      res.status(500).json({ message: "Failed to generate headlines: " + error.message });
-    }
-  });
-
-  // NEW: Generate headlines using xAI Live Search (V2 endpoint)
-  router.post("/api/generate-headlines-v2", async (req, res) => {
     const { topics } = req.body;
     if (!topics || topics.length < 1) {
       return res.status(400).json({ message: "At least 1 topic required" });
@@ -185,120 +75,14 @@ export function registerRoutes(app) {
         }
       });
     } catch (error) {
-      console.error("Error in /api/generate-headlines-v2:", error.message);
+      console.error("Error in /api/generate-headlines:", error.message);
       res.status(500).json({ 
-        message: "Live Search failed: " + error.message,
-        fallbackAvailable: true,
-        fallbackUrl: "/api/generate-headlines"
+        message: "Live Search failed: " + error.message
       });
     }
   });
 
-  // NEW: Generate headlines using working X API + OpenAI workflow (V3 endpoint)
-  router.post("/api/generate-headlines-v3", async (req, res) => {
-    const { topics } = req.body;
-    if (!topics || topics.length < 1) {
-      return res.status(400).json({ message: "At least 1 topic required" });
-    }
-
-    try {
-      console.log("🔍 Using working X API + OpenAI workflow for headlines generation");
-      const startTime = Date.now();
-      
-      // Check if user has authenticated with X and fetch timeline first
-      const userId = 1; // In production, get from session/JWT
-      const authToken = await storage.getXAuthTokenByUserId(userId);
-      
-      if (authToken) {
-        console.log(`📱 User ${authToken.xHandle} authenticated - fetching timeline before search`);
-        try {
-          await fetchUserTimeline(authToken.accessToken, userId, 7);
-          console.log(`✅ Timeline updated for user ${authToken.xHandle}`);
-        } catch (timelineError) {
-          console.error(`❌ Timeline fetch failed: ${timelineError.message}`);
-          // Continue with search even if timeline fails
-        }
-      }
-      
-      // Step 1: Get real X posts using working X API
-      console.log("📱 Fetching real X posts for topics:", topics);
-      const postsByTopic = await fetchXPosts(topics);
-      
-      // Check if we have posts
-      const hasPosts = Object.values(postsByTopic).some((p) => p.length > 0);
-      if (!hasPosts) {
-        return res.status(404).json({ 
-          message: "No X posts found for any topic",
-          debug: { topics, postsByTopic }
-        });
-      }
-
-      // Step 2: Generate headlines from real posts
-      console.log("📰 Generating headlines from real X posts");
-      const headlinesByTopic = await generateHeadlines(postsByTopic);
-      
-      // Step 3: Get supporting articles
-      console.log("📄 Fetching supporting articles");
-      const headlinesWithSupport = await fetchSupportingArticles(headlinesByTopic);
-      
-      // Step 4: Transform to frontend format
-      const transformedHeadlines = [];
-      let headlineId = 0;
-      
-      for (const [topic, headlines] of Object.entries(headlinesWithSupport)) {
-        const topicPosts = postsByTopic[topic] || [];
-        
-        for (const headline of headlines) {
-          const sourcePosts = topicPosts.slice(0, 10).map(post => ({
-            handle: post.handle,
-            text: post.text,
-            time: post.time,
-            url: post.url,
-            likes: post.likes
-          }));
-          
-          const supportingArticles = headline.supportingArticles || [];
-          
-          transformedHeadlines.push({
-            id: `working-${Date.now()}-${headlineId++}`,
-            title: headline.title,
-            summary: headline.summary,
-            category: topic,
-            createdAt: new Date().toISOString(),
-            engagement: sourcePosts.reduce((sum, post) => sum + post.likes, 0),
-            sourcePosts,
-            supportingArticles
-          });
-        }
-      }
-      
-      const endTime = Date.now();
-      const responseTime = endTime - startTime;
-      
-      // Store headlines for podcast generation
-      headlinesStore = transformedHeadlines;
-      
-      console.log(`✅ Working workflow completed in ${responseTime}ms with ${transformedHeadlines.length} headlines`);
-      console.log(`📊 Generated headlines with real X posts and supporting articles`);
-      
-      res.json({ 
-        success: true, 
-        headlines: transformedHeadlines,
-        performance: {
-          responseTime: `${responseTime}ms`,
-          method: "X API + OpenAI",
-          realXPosts: Object.values(postsByTopic).reduce((sum, posts) => sum + posts.length, 0),
-          supportingArticles: transformedHeadlines.reduce((sum, h) => sum + h.supportingArticles.length, 0)
-        }
-      });
-    } catch (error) {
-      console.error("Error in /api/generate-headlines-v3:", error.message);
-      res.status(500).json({ 
-        message: "Working workflow failed: " + error.message,
-        stack: error.stack
-      });
-    }
-  });
+  // Old X API + OpenAI workflow endpoint removed
 
   // Test endpoint to see raw xAI Live Search responses
   router.post("/api/test-raw-xai", async (req, res) => {

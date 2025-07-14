@@ -32,14 +32,13 @@ Preferred communication style: Simple, everyday language.
 
 ## Key Components
 
-### 1. Workflow System
-The backend implements five distinct workflows that process user requests:
+### 1. xAI Live Search System
+The backend uses a single, streamlined xAI Live Search workflow:
 
-- **X Search (Workflow 1)**: Searches topics on X/Twitter, compiles posts with highest engagement from last 24 hours
-- **Headline Creator (Workflow 2)**: Uses OpenAI GPT to create declarative headlines from X posts
-- **Support Compiler (Workflow 3)**: Searches Google News RSS for supporting articles for each headline
-- **Results Engine (Workflow 4)**: Organizes and ranks results by engagement metrics
-- **Complete Search (Workflow 5)**: Generates subtopics using OpenAI to expand coverage when needed
+- **Live Search**: Single API call to xAI Grok-4 with built-in web, X, news, and RSS source integration
+- **Real-time Data**: Fetches authentic content from multiple sources in one operation
+- **Fast Response**: 5-7 second response time vs 47-68 seconds with old workflows
+- **Timeline Integration**: Fetches user's X timeline posts for personalized content when authenticated
 
 ### 2. Podcast Generation System
 The application now includes a comprehensive podcast generation system:
@@ -62,13 +61,12 @@ The application now includes a comprehensive podcast generation system:
 - **SourcesManager**: UI for managing trusted X/Twitter sources per topic
 
 ### 3. API Integration Services
-- **xSearch.js**: Interfaces with X API v2 for real-time post retrieval from dynamic sources
-- **dynamicSources.js**: Compiles user-defined and xAI-suggested verified sources per topic
-- **xaiAnalyzer.js**: xAI integration for content authenticity analysis and categorization
-- **headlineCreator.js**: OpenAI API integration for headline generation
-- **supportCompiler.js**: Google News RSS parsing for supporting articles
-- **completeSearch.js**: OpenAI API for subtopic generation
-- **contentFetcher.js**: Fetches full article content for podcast compilation
+- **liveSearchService.js**: Main xAI Live Search implementation with multi-source integration
+- **xAuth.js**: X OAuth 2.0 authentication for timeline access
+- **xTimeline.js**: X timeline posts fetching and database storage
+- **dynamicSources.js**: User-defined source management (for future features)
+- **xaiAnalyzer.js**: xAI content analysis and categorization
+- **contentFetcher.js**: Article content fetching for podcast compilation
 - **podcastGenerator.js**: xAI-powered factual script generation
 - **voiceSynthesis.js**: ElevenLabs API integration for voice generation
 - **emailService.js**: Podcast distribution via email attachments
@@ -127,7 +125,17 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 14, 2025)
+### Latest Updates (January 14, 2025 - 6:15 PM)
+- **✅ ARCHITECTURE CLEANUP COMPLETED**: Removed all old workflow files and UI toggles to use only xAI Live Search
+  - **Deleted Old Workflow Files**: Removed `headlineCreator.js`, `supportCompiler.js`, `completeSearch.js`, `xSearch.js`
+  - **Updated API Endpoints**: Consolidated to single `/api/generate-headlines` endpoint using xAI Live Search
+  - **Removed Frontend Toggle**: Deleted `LiveSearchToggle` component, updated `TopicInput` to always use live search
+  - **Cleaned Test Files**: Removed all test scripts for old workflows (`test-*.js`)
+  - **Updated Routes**: Removed `/api/generate-headlines-v2` and `/api/generate-headlines-v3` endpoints
+  - **Simplified Codebase**: Reduced complexity by eliminating old workflow imports and dependencies
+  - **Results**: Single, streamlined Live Search system with 5x faster performance and cleaner architecture
+
+### Previous Updates (January 14, 2025)
 - **✅ PODCAST GENERATION SYSTEM FIXES**: Resolved critical script truncation and duration compliance issues
   - **Dynamic Token Scaling**: Implemented `Math.max(15000, targetWordCount * 1.5)` to ensure sufficient tokens for longer podcasts (previously capped at 10k)
   - **Enhanced Duration Compliance**: Added explicit word count targets and validation with automatic retry for short scripts

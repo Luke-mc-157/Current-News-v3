@@ -9,18 +9,16 @@ import { apiRequest, queryClient } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
-  useLiveSearch?: boolean;
 }
 
-export default function TopicInput({ onTopicsSubmitted, useLiveSearch = false }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
 
   const generateHeadlinesMutation = useMutation({
     mutationFn: async (topics: string[]) => {
-      const endpoint = useLiveSearch ? "/api/generate-headlines-v2" : "/api/generate-headlines";
-      const response = await apiRequest("POST", endpoint, { topics });
+      const response = await apiRequest("POST", "/api/generate-headlines", { topics });
       return await response.json();
     },
     onSuccess: (data) => {

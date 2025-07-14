@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import axios from 'axios';
-import { fetchXPosts } from './xSearch.js';
+// Removed fetchXPosts import - no longer used in live search
 import { TwitterApi } from 'twitter-api-v2';
 import { fetchUserTimeline } from './xTimeline.js';
 
