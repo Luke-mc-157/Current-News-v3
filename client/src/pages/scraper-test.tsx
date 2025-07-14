@@ -50,6 +50,12 @@ export default function ScraperTest() {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
 
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        const text = await response.text();
+        throw new Error(`Expected JSON but received ${contentType}. Response: ${text.substring(0, 200)}...`);
+      }
+
       const data = await response.json();
       console.log("Scraping result:", data);
       

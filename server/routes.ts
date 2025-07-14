@@ -186,9 +186,12 @@ export function registerRoutes(app) {
 
   // Debug endpoint to test axios/cheerio article scraping
   router.post("/api/debug/scrape-article", async (req, res) => {
+    console.log("🔍 Scraper endpoint called with:", req.body);
+    
     const { url } = req.body;
     
     if (!url) {
+      console.log("❌ No URL provided");
       return res.status(400).json({ error: "URL is required" });
     }
 
@@ -197,11 +200,13 @@ export function registerRoutes(app) {
       
       // Test metadata extraction (same as extractArticleData in liveSearchService)
       const metadataResult = await extractArticleMetadata(url);
+      console.log("✅ Metadata extracted:", metadataResult);
       
       // Test body content extraction (same as fetchArticleContent in contentFetcher)
       const bodyResult = await extractArticleBody(url);
+      console.log("✅ Body content extracted:", bodyResult ? `${bodyResult.length} chars` : "null");
       
-      res.json({
+      const response = {
         url: url,
         metadata: metadataResult,
         body: {
@@ -209,10 +214,13 @@ export function registerRoutes(app) {
           length: bodyResult ? bodyResult.length : 0,
           preview: bodyResult ? bodyResult.substring(0, 500) + "..." : null
         }
-      });
+      };
+      
+      console.log("✅ Sending response:", JSON.stringify(response, null, 2));
+      res.json(response);
       
     } catch (error) {
-      console.error("Error testing article scraping:", error);
+      console.error("❌ Error testing article scraping:", error);
       res.status(500).json({ error: error.message });
     }
   });
