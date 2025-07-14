@@ -42,7 +42,7 @@ export async function generatePodcastScript(compiledContent, appendix = null, du
     }
     
     const response = await xai.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-4",
       messages: [
         {
           role: "system",
@@ -62,7 +62,7 @@ CONTENT RULES:
 5. CITE SOURCES: Reference the X posts and articles naturally within the narrative.
 
 SCRIPT STRUCTURE:
-- Opening: Brief welcome and overview of topics (30 seconds)
+- Opening: Brief welcome and overview of topics (10 seconds)
 - Main segments: One for each major story, with smooth transitions
 - For each story: Present facts from articles and posts, quote key sources
 - From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structed as: "auther_name" posted "text"."
