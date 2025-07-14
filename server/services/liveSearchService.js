@@ -206,13 +206,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   console.log(compiledResult.compiledData.substring(0, 2000));
   console.log('============== END PREVIEW ==============');
   
-  const { headlines, appendix } = await compileNewsletterWithGrok(compiledResult.compiledData, compiledResult.breakdown);
+  const { headlines, appendix, compiledData } = await compileNewsletterWithGrok(compiledResult.compiledData, compiledResult.breakdown);
   
   const responseTime = Date.now() - startTime;
   console.log(`✅ Live Search completed in ${responseTime}ms`);
   console.log(`📰 Generated ${headlines.length} headlines from ${topics.length} topics`);
   
-  return { headlines, appendix };
+  return { headlines, appendix, compiledData };
 }
 
 // Extract post ID from X URL
@@ -676,16 +676,23 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
           content: condensedData
         }
       ],
-      max_tokens: 10000  // Phase 2: Reduced from 20000 to avoid truncation
+      max_tokens: Math.min(15000, Math.max(10000, topicsData.length * 2000))  // Dynamic scaling based on topic count
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
     console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
+    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${Math.min(15000, Math.max(10000, topicsData.length * 2000))})`);
     
-    // Parse JSON response
+    // Parse JSON response with improved error handling
     try {
-      const parsedData = JSON.parse(content);
+      // Clean up response in case of formatting issues
+      let cleanContent = content.trim();
+      if (cleanContent.includes('```json')) {
+        cleanContent = cleanContent.replace(/```json\s*/, '').replace(/```\s*$/, '');
+      }
+      
+      const parsedData = JSON.parse(cleanContent);
       
       // Separate headlines and appendix
       let headlines = [];
@@ -734,17 +741,29 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         supportingArticles: headline.supportingArticles || []
       }));
       
-      return { headlines: transformedHeadlines, appendix, compiledData: compiledResult.compiledData };
+      return { headlines: transformedHeadlines, appendix, compiledData: compiledData };
       
     } catch (parseError) {
       console.error('❌ Failed to parse newsletter JSON:', parseError.message);
       console.error('🔍 Raw content that failed to parse:', content);
-      return [];
+      console.error(`📊 Topic count: ${topicsData.length}, Response length: ${content.length}`);
+      
+      // For large topic searches, try to extract what we can
+      if (topicsData.length > 5) {
+        console.log('🔧 Large topic search detected, attempting partial extraction...');
+        const partialHeadlines = attemptPartialHeadlineExtraction(content);
+        if (partialHeadlines.length > 0) {
+          console.log(`✅ Extracted ${partialHeadlines.length} headlines from partial response`);
+          return { headlines: partialHeadlines, appendix: null, compiledData: compiledData };
+        }
+      }
+      
+      return { headlines: [], appendix: null, compiledData: compiledData };
     }
     
   } catch (error) {
     console.error('❌ Newsletter compilation failed:', error.message);
-    return [];
+    return { headlines: [], appendix: null, compiledData: compiledData };
   }
 }
 
@@ -882,6 +901,40 @@ function validateHeadlineSources(headlines, originalData) {
     console.warn(`⚠️ Phase 2 validation found ${missingCount} issues with sources`);
   } else {
     console.log('✅ Phase 2 validation passed: All headlines have sufficient sources');
+  }
+  
+  return headlines;
+}
+
+// Fallback function to extract headlines from malformed JSON (for large topic searches)
+function attemptPartialHeadlineExtraction(content) {
+  const headlines = [];
+  try {
+    // Try to extract title patterns from the content
+    const titleMatches = content.match(/"title":\s*"([^"]+)"/g);
+    const summaryMatches = content.match(/"summary":\s*"([^"]+)"/g);
+    const categoryMatches = content.match(/"category":\s*"([^"]+)"/g);
+    
+    if (titleMatches && titleMatches.length > 0) {
+      for (let i = 0; i < Math.min(titleMatches.length, 10); i++) {
+        const title = titleMatches[i].replace(/"title":\s*"/, '').replace(/"$/, '');
+        const summary = summaryMatches?.[i]?.replace(/"summary":\s*"/, '').replace(/"$/, '') || 'Summary not available';
+        const category = categoryMatches?.[i]?.replace(/"category":\s*"/, '').replace(/"$/, '') || 'General';
+        
+        headlines.push({
+          id: `partial-${Date.now()}-${i}`,
+          title,
+          summary,
+          category,
+          createdAt: new Date().toISOString(),
+          engagement: 100,
+          sourcePosts: [],
+          supportingArticles: []
+        });
+      }
+    }
+  } catch (error) {
+    console.error('❌ Partial extraction failed:', error.message);
   }
   
   return headlines;
