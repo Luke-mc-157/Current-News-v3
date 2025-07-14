@@ -92,7 +92,6 @@ Create headlines that accurately summarize the most important information from t
           headline,
           topic,
           sourcePosts: topPosts.map(p => ({
-            author_name: p.author_name || null,
             text: `@${p.author_handle}: ${p.text} (${p.public_metrics.like_count} likes, ${p.public_metrics.retweet_count} retweets)`,
             url: p.url
           }))

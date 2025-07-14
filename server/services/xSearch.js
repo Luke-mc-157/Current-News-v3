@@ -69,11 +69,9 @@ export async function fetchXPosts(topics, userId = 'default') {
 
       const posts = response.data.data
         ? response.data.data.map((tweet, index) => {
-            const user = response.data.includes?.users?.find((user) => user.id === tweet.author_id);
-            const username = user?.username || `user${index}`;
+            const username = response.data.includes?.users?.find((user) => user.id === tweet.author_id)?.username || `user${index}`;
             return {
               handle: `@${username}`,
-              author_name: user?.name || null, // X API standard field
               text: tweet.text,
               time: tweet.created_at,
               url: `https://twitter.com/${username}/status/${tweet.id}`,
