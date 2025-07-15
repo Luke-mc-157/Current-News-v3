@@ -52,7 +52,7 @@ export async function fetchUserTimeline(userId, days = 7) {
     let nextToken = undefined;
     let pageCount = 0;
     const maxPages = 5; // Respect rate limits
-    const maxPosts = 175; // Target 175 posts
+    const maxPosts = 200; // Target 200 posts
     const cutoffTime = new Date(Date.now() - days * 24 * 60 * 60 * 1000); // Filter posts by specified days
     
     do {
@@ -127,14 +127,7 @@ export async function fetchUserTimeline(userId, days = 7) {
         console.log(`No more pages available, stopping at ${posts.length} posts`);
         break;
       }
-    } while (nextToken && pageCount < maxPages);
 
-    // Trim to exactly 175 posts if we fetched more
-    if (posts.length > maxPosts) {
-      posts = posts.slice(0, maxPosts);
-      console.log(`Trimmed to ${maxPosts} most recent posts`);
-    }
-    
     console.log(`Fetched ${posts.length} timeline posts for user ${userId} across ${pageCount} pages`);
     
     // Store timeline posts in database
