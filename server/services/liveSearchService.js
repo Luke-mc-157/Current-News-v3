@@ -19,7 +19,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   if (userHandle && accessToken) {
     try {
-      console.log(`📱 Fetching user timeline for authenticated user ${userHandle}`);
+      console.log(`📱 Fetching user timeline for authenticated user ${userHandle} (userId: ${userId})`);
+      console.log(`🔍 Timeline fetch conditions: userHandle=${userHandle}, accessToken present=${!!accessToken}, userId=${userId}`);
       
       // Use the official fetchUserTimeline function that stores data in database
       const timelinePosts = await fetchUserTimeline(userId, 7);
@@ -41,6 +42,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       }));
       
       console.log(`✅ Retrieved ${followedPosts.length} timeline posts from database`);
+      console.log(`🔄 Timeline posts sample:`, timelinePosts.slice(0, 2));
     } catch (error) {
       console.error(`❌ Timeline fetch error: ${error.message}`);
       
