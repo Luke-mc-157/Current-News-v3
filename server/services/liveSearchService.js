@@ -608,7 +608,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X first. Then, search for news articles and web content."
+          content: "You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X first. Then, search for news articles and web content. Then, search for semantic posts on X that are not included in the previous searches."
         },
         {
           role: "user",
@@ -848,7 +848,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
       console.error(`📊 Response length: ${content.length}`);
       
       // For large data responses, try to extract what we can
-      if (content.length > 10000) {
+      if (content.length > 200000) {
         console.log('🔧 Large topic search detected, attempting partial extraction...');
         const partialHeadlines = attemptPartialHeadlineExtraction(content);
         if (partialHeadlines.length > 0) {
