@@ -607,16 +607,16 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Output as JSON: { 'stories': [{ 'headline': 'Factual declarative headline', 'engagement_total': number, 'x_posts': ['specific X post URLs'], 'supporting_articles': ['specific news article URLs'] }] }, sorted descending by engagement_total. Use factual, declarative statements derived from X posts and supporting articles only—no opinions. Citations must link to specific articles and X posts, never homepages or categories."
+          content: "You have live access to X posts, news publications, and the web. Output as JSON."
         },
         {
           role: "user",
-          content: `Compile the biggest news stories about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Calculate engagement for each X post (views + likes).`
-        }
+          content: `Compile the biggest news stories about ${topic} from the last 24 hours (${fromDate} to ${toDate}).`
+        },
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 20,
+        max_search_results: 8,
         return_citations: true,
         from_date: fromDate,
         sources: [

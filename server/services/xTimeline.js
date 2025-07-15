@@ -127,7 +127,14 @@ export async function fetchUserTimeline(userId, days = 7) {
         console.log(`No more pages available, stopping at ${posts.length} posts`);
         break;
       }
+    } while (nextToken && pageCount < maxPages);
 
+    // Trim to exactly 175 posts if we fetched more
+    if (posts.length > maxPosts) {
+      posts = posts.slice(0, maxPosts);
+      console.log(`Trimmed to ${maxPosts} most recent posts`);
+    }
+    
     console.log(`Fetched ${posts.length} timeline posts for user ${userId} across ${pageCount} pages`);
     
     // Store timeline posts in database
