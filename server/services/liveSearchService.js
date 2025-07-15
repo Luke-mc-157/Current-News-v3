@@ -385,7 +385,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give its users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
+          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
@@ -400,6 +400,7 @@ ${article.fullContent}
         {
           "quote": "Exact quoted text",
           "attributedTo": "Source of the quote (person/organization), or 'Unknown' if not specified"
+          "context": "Context or surrounding text of the quote (optional)"
         }
       ]
     }
@@ -410,7 +411,7 @@ Articles to analyze:
 ${articlesText}`
         }
       ],
-      max_tokens: 50000,
+      max_tokens: 60000,
       response_format: { type: "json_object" }
     });
 
@@ -603,7 +604,7 @@ async function getTopicDataFromLiveSearch(topic) {
   const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",
@@ -620,7 +621,7 @@ async function getTopicDataFromLiveSearch(topic) {
         return_citations: true,
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 5000},
+          {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
           {"type": "news", "country": "US" },
           {"type": "web", "country": "US" }
         ]
