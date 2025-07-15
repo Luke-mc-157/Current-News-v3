@@ -130,7 +130,9 @@ The application now includes a comprehensive podcast generation system:
   - **Enhanced analysis extraction**: Uses grok-3-mini-fast to extract source, page title, article summary, and quotes with attribution
   - **Factual content focus**: System prompts ensure only factual data extraction without opinions unless quoted from sources
   - **Integrated workflow**: AI analysis automatically runs after article content extraction and feeds into Grok compilation
-  - **Results**: Each topic now receives comprehensive AI-powered article analysis in addition to full content extraction
+  - **Character count optimization**: AI-summarized content replaces full article content in compiled data fed to Grok
+  - **JSON response format**: Structured JSON output ensures consistent data parsing and integration
+  - **Results**: Massive character count reduction while maintaining factual accuracy and quote attribution
 
 ### Previous Updates (January 14, 2025 - 8:15 PM)
 - **✅ ENHANCED ARTICLE CONTENT EXTRACTION**: Modified live search flow to extract full article content
