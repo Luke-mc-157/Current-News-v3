@@ -124,7 +124,16 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 15, 2025 - 2:45 AM)
+### Latest Updates (January 15, 2025 - 5:55 PM)
+- **✅ TIMELINE FETCH INTEGRATION FIX**: Resolved critical authentication error preventing X timeline fetching for authenticated users
+  - **Fixed Client Object Structure**: Corrected `fetchUserTimeline` to properly extract TwitterApi client from `createAuthenticatedClient` wrapper object
+  - **Enhanced Database Integration**: Function now retrieves full token data (access, refresh, expires) from PostgreSQL instead of requiring parameters
+  - **Automatic Token Refresh**: Seamlessly refreshes expired tokens and updates database when needed during timeline fetch
+  - **Updated Function Signature**: Simplified from `fetchUserTimeline(accessToken, userId, days)` to `fetchUserTimeline(userId, days)`
+  - **Persistent Authentication**: Fully integrated with database-stored authentication tokens for reliable timeline access
+  - **Results**: Timeline fetch now works correctly without "Cannot read properties of undefined (reading 'homeTimeline')" error
+
+### Previous Updates (January 15, 2025 - 2:45 AM)
 - **✅ ARTICLE SUMMARY INTEGRATION FIX**: Resolved critical issue where AI-generated article summaries weren't making it into compiled data
   - **Fixed JSON Format Mismatch**: Corrected `summarizeArticlesByTopic` to use proper JSON object format instead of array for `response_format: { type: "json_object" }`
   - **Enhanced Error Handling**: Added comprehensive logging to track AI analysis success/failure and identify when fallbacks occur

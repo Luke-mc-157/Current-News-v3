@@ -615,12 +615,11 @@ export function registerRoutes(app) {
       // Only fetch timeline using the reverse chronological endpoint
       try {
         console.log('Calling fetchUserTimeline with:', {
-          userId: xUser.id,
-          handle: xUser.username,
-          accessToken: authToken.accessToken.substring(0, 20) + '...'
+          userId: sessionUserId,
+          handle: xUser.username
         });
         
-        timelinePosts = await fetchUserTimeline(authToken.accessToken, xUser.id, 7);
+        timelinePosts = await fetchUserTimeline(sessionUserId, 7);
         results.timeline = { success: true, count: timelinePosts.length };
         console.log(`Successfully fetched ${timelinePosts.length} timeline posts`);
       } catch (error) {

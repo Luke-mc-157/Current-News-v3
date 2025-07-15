@@ -22,7 +22,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.log(`📱 Fetching user timeline for authenticated user ${userHandle}`);
       
       // Use the official fetchUserTimeline function that stores data in database
-      const timelinePosts = await fetchUserTimeline(accessToken, userId, 7);
+      const timelinePosts = await fetchUserTimeline(userId, 7);
       
       // Transform timeline posts to the format expected by the rest of the function
       followedPosts = timelinePosts.map(post => ({

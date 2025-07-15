@@ -1,4 +1,5 @@
 import { createAuthenticatedClient } from './xAuth.js';
+import { storage } from '../storage.js';
 
 /**
  * Fetch user's reverse chronological home timeline using X API v2
@@ -6,12 +7,43 @@ import { createAuthenticatedClient } from './xAuth.js';
  * API Guide: https://docs.x.com/x-api/posts/timelines/introduction#reverse-chronological-home-timeline
  * Basic tier: 15 req/15 min, max_results 100
  */
-export async function fetchUserTimeline(accessToken, userId, days = 7) {
+export async function fetchUserTimeline(userId, days = 7) {
   try {
-    const client = await createAuthenticatedClient(accessToken);
+    // Get full token data from database
+    const tokenData = await storage.getXAuthTokenByUserId(userId);
+    if (!tokenData) {
+      throw new Error('No authentication tokens found for user. Please re-authenticate.');
+    }
+
+    console.log('Retrieved token data:', {
+      hasAccessToken: !!tokenData.accessToken,
+      hasRefreshToken: !!tokenData.refreshToken,
+      expiresAt: tokenData.expiresAt
+    });
+
+    // Create authenticated client with full token data
+    const result = await createAuthenticatedClient(
+      tokenData.accessToken, 
+      tokenData.refreshToken, 
+      tokenData.expiresAt
+    );
     
-    if (!client) {
+    if (!result || !result.client) {
       throw new Error('Failed to create authenticated client');
+    }
+
+    // Extract the actual TwitterApi client
+    const client = result.client;
+    
+    // Update tokens in database if they were refreshed
+    if (result.updatedTokens) {
+      console.log('Updating refreshed tokens in database...');
+      await storage.updateXAuthToken(userId, {
+        accessToken: result.updatedTokens.accessToken,
+        refreshToken: result.updatedTokens.refreshToken,
+        expiresAt: new Date(result.updatedTokens.expiresAt)
+      });
+      console.log('✅ Updated refreshed tokens in database');
     }
     
     console.log(`Fetching reverse chronological home timeline for ${userId} (last 24 hours only)`);

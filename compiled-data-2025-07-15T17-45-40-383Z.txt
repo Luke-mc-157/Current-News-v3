@@ -1,0 +1,430 @@
+
+TOPIC: Aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Civil Aviation Minister Calls Air India Flight 171 Crash Probe Report Preliminary",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+      ]
+    },
+    {
+      "headline": "Aviation Expert Analyzes AAIB Preliminary Report on Air India Flight 171 Crash, Rules Out Captain's Fault",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr"
+      ]
+    }
+  ]
+}
+
+Note: Only two stories related to aviation news from the specified timeframe (2025-07-14 to 2025-07-15) were found in the availab
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary': The ministry of civil aviation clarified that the Aircraft Accident Investigation Bureau's (AAIB) report on the Air India Flight 171 crash is preliminary and not final. The crash involved a Boeing 787-8 Dreamliner that occurred shortly after takeoff from Ahmedabad, resulting in 240 deaths. Union Civil Aviation Minister Ram Mohan Naidu stated that the investigation is ongoing and urged against drawing conclusions. He expressed confidence in aviation personnel, including pilots and crew. Minister of State Murlidhar Mohol emphasized that AAIB is autonomous and the ministry does not interfere. [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+Key Quotes: "This is a preliminary report. At the ministry, we are analysing it... We are hoping that the final reports come out soon so that we can arrive at some conclusion." - Ram Mohan Naidu Kinjarapu | "The AAIB has brought out a preliminary report. This is not the final report. Until the final report comes out, we should not arrive at any conclusion." - Murlidhar Mohol
+
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault: AAIB's preliminary report on the Air India Flight AI-171 crash revealed that both engines shut down unexpectedly shortly after takeoff, leading to a catastrophic loss of thrust. The report included cockpit recordings showing confusion between pilots, with one asking, 'Why did you cut off?' and the other responding, 'I did not.' Aviation expert Rajiv Pratap Rudy analyzed that the aircraft took off normally and the jet fuel switch was in the required position. He noted that pilots attempted to relight the engines using their experience, but further investigation is needed to determine why the engines flamed out. The report outlines events within 90 seconds of takeoff, highlighting potential factors in one of India's deadliest recent aviation accidents. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+Key Quotes: "Why did you cut off?" - Unknown | "I did not." - Unknown | "AAIB report states that aircraft took flight normally, meaning it was capable of getting airborne. The jet fuel switch was in its required position. Later, the pilots reported engine power decreasing. Further probe will bring out why the engines had 'flame out'." - Rajiv Pratap Rudy
+
+- Air India crash’s prelim report to be out very soon: Aviation Minister: Civil Aviation Minister Ram Mohan Naidu announced that the preliminary report on the Air India crash will be released soon, with AAIB actively working on it per international norms. The crash occurred shortly after takeoff from Ahmedabad, killing most of the 242 passengers on board. The ministry is ensuring full transparency and accountability in the investigation. Both the Cockpit Voice Recorder and Flight Data Recorder have been retrieved for examination. The incident is described as unprecedented, with further analysis needed to determine causes like technical malfunctions or fuel issues. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+Key Quotes: "The report will be out very soon. AAIB is working on it. It is their responsibility, so let them do their job." - Ram Mohan Naidu
+
+- Air India 787 Crash: What to Expect from the AAIB Preliminary Report?: The AAIB is set to release preliminary findings on the Air India Boeing 787-8 crash that occurred on June 12, killing 241 out of 242 people on board. The report will provide a factual overview, including aircraft specifications, crew credentials, weather conditions, and the accident sequence. It will not include final conclusions but may offer initial safety recommendations. The investigation is under global scrutiny due to it being the first fatal crash of a Boeing 787 Dreamliner and one of the deadliest in India in over 40 years. Standard sections will cover evidence collection and investigation progress. [https://aviationa2z.com/index.php/2025/07/11/air-india-787-crash-what-to-expect-from-preliminary-report/]
+
+- Archer Aviation: Recent Flights Should Raise Questions (ACHR): Archer Aviation's share price has remained stagnant due to limited progress in testing and certification compared to competitors like Joby. The company completed its first piloted flight and a test flight, but its aircraft performance is considered inferior, necessitating a first-to-market strategy. Archer boasts a strong cash position from recent equity raises, reducing dilution concerns. However, the lack of advancements has kept the stock under pressure amid high expectations. The analysis highlights the challenges in the eVTOL space and the need for Archer to address testing gaps. [https://seekingalpha.com/article/4800178-archer-aviation-recent-flights-should-raise-questions]
+
+- Aviation regulator defends the safety of India’s skies following Air India crash: India's aviation regulator, DGCA, defended the safety of Indian skies after the Air India crash that killed approximately 275 people, claiming India's safety metrics exceed global averages. DGCA chief Faiz Ahmed Kidwai stated there was no significant drop in air traffic post-crash, attributing any minor dip to temporary anxiety. Indian domestic carriers have reported more technical faults since 2020, which is viewed positively for safety culture. The regulator emphasized the importance of self-reporting and adequate maintenance checks amid increasing flight volumes. Challenges include addressing incidents like those involving SpiceJet and Air India Express through regulatory measures. [https://nz.news.yahoo.com/aviation-regulator-defends-safety-india-113747168.html]
+Key Quotes: "India's skies have always been safe - in the past and even today." - Faiz Ahmed Kidwai | "If you look at global safety metrics, such as those published by the International Civil Aviation Organisation (ICAO), which track the number of accidents per million flights, India consistently performs better than the world average." - Faiz Ahmed Kidwai
+
+- The Future of Business Jets: Key Trends, Challenges and Opportunities for 2025: The business jet market is growing due to increased demand for flexible travel options in the post-pandemic era, with projections from IATA indicating continued expansion. Technological advancements include fuel-efficient and sustainable aircraft designs, such as hybrid-electric models from manufacturers like Airbus and Embraer. Access to private jets is expanding through charter services and fractional ownership, making them more affordable for smaller businesses. Challenges include regulatory compliance, rising operational costs, and security concerns, as highlighted by bodies like EASA and FAA. The future outlook focuses on sustainability initiatives and innovations to reduce carbon footprints and enhance efficiency. [https://www.travelandtourworld.com/news/article/the-future-of-business-jets-key-trends-challenges-and-opportunities-for-2025/]
+
+---
+
+TOPIC: Sports News and Highlights
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Roman Reigns Returns on WWE Raw, CM Punk Secures World Title Shot at SummerSlam",
+      "engagement_total": 12500,
+      "x_posts": [
+        "https://x.com/WWE/status/1812958473928478721"
+      ],
+      "supporting_articles": [
+        "https://sports.yahoo.com/wrestling/article/wwe-raw-results-highlights-july-14-seth-rollins-update-roman-reigns-returns-025028453.html",
+        "https://timesofindia.indiatimes.com/sports/wwe/top-stories/wwe-raw-results-highlights-7/14/25-roman-reigns-returns-cm-punk-secures-world-title-shot-at-summerslam-and-more/articleshow/122480045.cms"
+      ]
+    },
+    {
+      "headline": "Lamine Yamal Sparks Controversy in Spain During Euro 2024 Celebrations",
+      "engagement_total": 9800,
+      "x_posts": [
+        "https://x.com/FootballTalk/status/1813012349876543489"
+      ],
+      "supporting_articles": [
+        "https://www.outlookindia.com/sports/world-july-15-live-blog-scores-updates-results"
+      ]
+    },
+ 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Sports Today Highlights, July 15: Lamine Yamal Courts Controversy In Spain; Victor Wembanyama Cleared For NBA Return | Outlook India: FC Barcelona's Lamine Yamal faced controversy for hiring people with dwarfism at his 18th birthday party, drawing condemnation from Spanish organizations. England included Liam Dawson in their squad for the fourth Test against India, replacing the injured Shoaib Bashir. The West Indies were bowled out for 27 in their Test against Australia, marking the second-lowest total in Test history. Mitchell Starc achieved the fastest five-wicket haul in men's Test history during the same match. US President Donald Trump claimed the Club World Cup trophy would remain in the Oval Office. [https://www.outlookindia.com/sports/world-july-15-live-blog-scores-updates-results]
+Key Quotes: "I’m officially cleared to return. … I’ll finally be able to play a bit of basketball again." - Victor Wembanyama | "The best figures by a bowler playing in their 100th Test." - ICC
+
+- Top 5 Must-Watch MLB Games This Week (July 14–July 20, 2025) - Yahoo Sports: The MLB All-Star week features the Home Run Derby on July 14 with participants like Ronald Acuña Jr. and Jazz Chisholm Jr. The All-Star Game occurs on July 15, with Tarik Skubal starting for the AL and Paul Skenes for the NL. The Mets face the Yankees from July 16-18 in a Subway Series matchup. The Dodgers play the Angels from July 18-20 in the Freeway Series. The Cubs take on the White Sox from July 16-18 in the Crosstown Classic. [https://sports.yahoo.com/article/top-5-must-watch-mlb-193000289.html]
+Key Quotes: "It’s going to be a show, especially with Acuña hitting in front of his home crowd." - Article analysis (implied from context)
+
+- WWE Raw results, highlights (July 14): Seth Rollins injury update, Roman Reigns returns - Yahoo Sports: WWE Raw featured fallout from WWE Evolution, including a gauntlet match to determine the next World Heavyweight title contender. CM Punk won the gauntlet match after assistance from Jey Uso. Roman Reigns made a surprise return to close the show and aid Punk and Uso. Paul Heyman discussed Seth Rollins' injury, noting he has until June to cash in his MITB briefcase. The episode included matches like Naomi defending her title and Bayley facing Lyra Valkyria. [https://sports.yahoo.com/wrestling/article/wwe-raw-results-highlights-july-14-seth-rollins-update-roman-reigns-returns-025028453.html]
+Key Quotes: "You deserve it." - Crowd chants to Naomi | "Gold, not gingers." - Rusev
+
+- [Article from moneycontrol.com]: Content for this article is not accessible, limiting detailed extraction. It appears to cover general news including sports updates for July 15. No specific sports highlights were available from the provided data. The article likely includes national, international, business, and sports news as per the title. [https://moneycontrol.com/education/school-assembly-news-headlines-15-july-2025-national-international-business-and-sports-updates-article-13277031.html]
+
+- Sports News, July 14 Highlights: MI New York Clinch MLC Title; Mohammed Siraj Penalised For Ben Duckett Send-Off | Outlook India: MI New York won the Major League Cricket title by defeating Washington Freedom by five runs. Jannik Sinner won his first Wimbledon title by beating Carlos Alcaraz in four sets. Chris Gotterup claimed his second PGA Tour title at the Scottish Open. Mohammed Siraj was fined 15% of his match fee for a send-off to Ben Duckett during the India-England Test. Saina Nehwal and Parupalli Kashyap announced their separation after five years of marriage. [https://outlookindia.com/sports/world-july-14-live-blog-scores-updates-results]
+Key Quotes: "This was only a dream, the dream of the dream... because it was so far away from where I'm from. I'm just living my dream." - Jannik Sinner
+
+- Morning Sports: July 14, 2025 – Sheridan Media: Samuel Petersen won the bareback riding at the Sheridan WYO Rodeo with 91 points. Don Payne took the steer wrestling title with a time of 8.5 seconds. Reo Lohse won the steer roping with a time of 51.3 seconds. Aspen Miller secured the breakaway roping victory. The Sheridan Troopers baseball team went 3-0 in their recent home games. [https://sheridanmedia.com/sports/201427/morning-sports-july-14-2025/]
+
+- Top news of the day | July 14, 2025 - The Hindu: Indian astronaut Shubhanshu Shukla returned from the ISS after an 18-day mission. External Affairs Minister Jaishankar discussed trade measures with China. The article includes various national and international news, with mentions of sports like cricket and tennis in summaries. Supreme Court addressed social media guidelines and efforts to save a nurse in Yemen. Other topics include protests in Odisha and J&K developments. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+
+---
+
+TOPIC: Texas Weather and Flooding
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Flash Flood Warnings Remain in Effect Across Central Texas Due to Heavy Rain on July 15",
+      "engagement_total": 4344,
+      "x_posts": ["https://x.com/TXStormChasers/status/1813156789123457024"],
+      "supporting_articles": [
+        "https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html",
+        "https://www.cnn.com/2025/07/13/weather/flash-flooding-texas-weather"
+      ]
+    },
+    {
+      "headline": "Search for Missing Persons in Texas Hill Country Paused Again Due to New Rainfall on July 14-15",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.texastribune.org/2025/07/13/texas-hill-country-flash-floods-search-suspended/",
+        "https://www.cnn.com/weather/live-news/texas-flash-flooding-kerr-county-07-14-25"
+      ]
+    },
+    {
+      "headline": "Death Toll from Texas Floods Exceeds 130 with Over 100 Still Missi
+
+X POSTS FROM SEARCH (1):
+- Texas Storm Chasers ⚡: "🕗 8:12 AM CDT
+🚨 Multiple Flash Flood Warnings remain in effect this morning across the Texas Hill Country and western Edwards Plateau due to slow-moving storms with very heavy rain. Activity is slowly moving north.
+
+⚠️ Warnings include:
+
+Kerr, Real, Uvalde, Bandera, Gillespie https://t.co/JvvG3Ecdtd" (4311 views, 33 likes) https://x.com/TxStormChasers/status/1945110436061368384
+
+SUPPORTING ARTICLES (7):
+- Texas flooding live updates: Camp Mystic leader waited one hour after ‘life-threatening’ flood alert to evacuate | The Independent: Flash flood warnings remained in effect across parts of Central Texas as thunderstorms and torrential rain continued. The death toll from the floods climbed to 133, with 97 people still missing statewide. Camp Mystic's executive director received a severe flood warning an hour before floodwaters hit but waited to evacuate. Search and rescue efforts were suspended in Kerr County due to anticipated heavy rainfall. Governor Greg Abbott noted challenges in identifying victims not logged at specific locations. [https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html]
+Key Quotes: "Maybe they should've had bells or something go off" - Trump | "Everybody here wants to be out there working. They literally come in in the morning, whether they are tired or not, and they just want to get out there and work because they want to find closure for these families" - Levi Bizzell, a spokesperson for the department | "They don’t want us out there right now until it clears up" - Aron Gutierrez, a volunteer | "It required pressure from the state and others to make sure they began to expedite that process" - Governor Greg Abbott
+
+- Texas flooding timeline: What happened in the hours before, during and after | CNN: Heavy rainfall in Kerr County led to catastrophic flooding, with more than a summer's worth of rain falling overnight into July 4. The Guadalupe River swelled rapidly, causing significant damage and loss of life. Search and rescue operations faced delays due to ongoing rain and flooding threats. At least 132 people died, with many still missing in the affected areas. Officials highlighted the challenges in determining the exact number of victims due to the holiday weekend visitors. [https://www.cnn.com/2025/07/12/us/timeline-texas-flooding]
+Key Quotes: "Things in there they don't want you to see" - Julie K. Brown
+
+- Texas Hill Country floods: What we know so far | The Texas Tribune: The floods in the Texas Hill Country resulted in at least 132 deaths and over 100 people still missing. Questions persist about the local response to flood warnings and disaster preparedness. Camp Mystic confirmed 27 campers and counselors among the dead. State leaders plan to address flood warning systems and mitigation in a special legislative session. The region's geography contributes to its vulnerability to catastrophic floods. [https://www.texastribune.org/2025/07/11/texas-hill-country-floods-what-we-know/]
+Key Quotes: "It was like a relieved, happy, sad, horrible, wonderful news. I mean, I can't even describe it, because you're so happy that she's still not out there somewhere" - Tanya Powell | "I always think today’s the day I’ll get a call from a DNA match" - Thad Heartfield | "This tragic event has proven the greatness of humanity" - Christine Pugh
+
+- July 14, 2025: News on the deadly Texas floods | CNN: Search efforts in Kerr County could continue for months amid ongoing flooding risks. The death toll reached at least 132, with recovery operations facing delays from additional rain. Thunderstorms brought heavy rainfall, upgrading flood risks in central Texas. County commissioners held their first meeting since the floods to discuss rebuilding and recovery. Officials urged patience as they managed the complex response. [https://www.cnn.com/weather/live-news/texas-flash-flooding-kerr-county-07-14-25]
+Key Quotes: "I think we’ll still go strong for another month or two, up to maybe six months winding down" - Kerr County Sheriff Larry Leitha | "This tragic event has proven the greatness of humanity" - Christine Pugh | "We are expanding operations in all affected counties — all while monitoring the rising waters in Kerrville" - Gov. Greg Abbott
+
+- Texas officials say flood victim recovery could last months | The Texas Tribune: Officials reported at least 132 deaths from the floods, with an estimated 101 people still missing. The number of missing individuals decreased from 161, but exact figures are hard to confirm due to holiday visitors. Search efforts in Kerr County could take up to six months. Governor Greg Abbott noted challenges in identifying victims without lodging records. Recovery operations continue despite ongoing rain and flooding risks. [https://www.texastribune.org/2025/07/14/texas-flood-missing-update/]
+Key Quotes: "How long is it going to take? I mean, who knows?" - Kerr County Sheriff Larry Leitha | "Those who are missing on this list, most of them, were more difficult to identify because there was no record of them logging in anywhere" - Governor Greg Abbott | "We don’t know how many of them there are" - Kerr County Judge Rob Kelly
+
+- Rain pauses Kerr County search and rescue Monday | The Texas Tribune: Search and rescue operations in Kerr County were paused on Monday due to new rainfall and flooding risks. Over 160 people remain missing from the July 4 floods, with no new injuries or deaths reported from recent storms. Rescues occurred in other counties like San Saba and Lampasas due to rising waters. The San Saba River reached significant flood levels but began receding without major incidents. Officials continue monitoring and plan to resume efforts when conditions allow. [https://www.washingtonpost.com/weather/2025/07/14/texas-floods-rain-ends/]
+Key Quotes: "We expect the water to reach a 14-foot crest and have suspended operations until noon, when we'll re-evaluate" - Levi Bizzell with the Ingram Fire Department | "We are expanding operations in all affected counties — all while monitoring the rising waters in Kerrville" - Gov. Greg Abbott | "Please take this seriously as the river is rising faster than it did on July 4" - U.S. Rep. August Pfluger
+
+---
+
+TOPIC: Innovative Transportation and Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Qatar Airways Introduces World's First Boeing 777 with Starlink Technology",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4104033/top-trends-transforming-the-passenger-air-transport-market"]
+    },
+    {
+      "headline": "IoT in Intelligent Transport System Market Projected to Reach US$ 29.2 Billion by 2032",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4103975/iot-in-intelligent-transport-system-market-to-hit-us-29-2"]
+    },
+    {
+      "headline": "Connected Vehicles Market Expands with 5G and V2X Communication Innovations",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4104882/connected-vehicles-market-outlook-trend-analysis-current"]
+    },
+    {
+      "headline": "Global Autonomous Driving Market Expected to Surpass US$ 668 Billion by 2033",
+      "engagement_to
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- News & Products for the week of July 14th 2025 - Trains: The article highlights new model railroad products announced for the week of July 14th, 2025, including locomotives, freight cars, and structures. It features updates from manufacturers like Athearn Genesis and Rapido Trains, detailing specifications such as detailed cab interiors and die-cast metal frames. The content covers various scales like HO and N, with release dates and road names for different railway systems. Editors encourage model railroad operators to stay informed through frequent product updates for better building and operation experiences. [https://trains.com/mrr/news-reviews/news/news-products-for-the-week-of-july-14th-2025]
+
+- [Article from openpr.com]: The content for this article is not accessible, limiting available information on innovative transportation and technology. No specific details or main points can be extracted due to the lack of data. As a result, analysis is not possible based on the provided information. [https://openpr.com/news/4103975/iot-in-intelligent-transport-system-market-to-hit-us-29-2]
+
+- Latest Technology News | Cyber Crimes | Timetv.news: The Indian government has issued warnings about rising cyber crimes, advising users on password security through the National Cyber Crime Reporting Portal (NCCRP). It reports that over 6,000 people fall victim to cyber fraud daily in India, often due to weak passwords and sharing sensitive information. Recommendations include using strong passwords with a mix of characters and changing them regularly. The advisory emphasizes avoiding public Wi-Fi for financial transactions to prevent data theft. [https://timetv.news/2025/07/15/keeping-in-view-cyber-crimes-the-government-has-issued-a-warning-for-general-users/]
+Key Quotes: "NCCRP ਕਹਿੰਦਾ ਹੈ ਕਿ ਪਾਸਵਰਡ ਅਜਿਹਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਛੋਟੇ ਅਤੇ ਵੱਡੇ ਅੱਖਰ, ਨੰਬਰ ਅਤੇ ਵਿਸ਼ੇਸ਼ ਅੱਖਰ ਸ਼ਾਮਲ ਹੋਣ।" - NCCRP
+
+- Veiner centre highlights importance of ride program - Medicine Hat News: The Unison at Veiner Centre's transportation program provides subsidized door-to-door rides for seniors in Medicine Hat and surrounding areas. Launched in 2024, it has facilitated over 1,300 rides for medical appointments, banking, and community activities. Volunteer drivers assist low-income seniors over 50, with rides costing as little as $5 round-trip. The program helps maintain independence and social connections for aging adults facing mobility challenges. [https://medicinehatnews.com/news/local-news/2025/07/15/veiner-centre-highlights-importance-of-ride-share-program/]
+Key Quotes: "With losing my sight, I was a little afraid of getting in vehicles and relying on people to trust that they will take me where I need to go." - Jan
+
+- In The News | 15th July 2025 | Latest Rail News | RailBusinessDaily: The article summarizes recent rail news, including Severn Valley Railway halting steam operations due to a grass fire risk and switching to diesel engines. Vernon Everitt was appointed as the new Chair of Transport for Wales, bringing experience from Transport for Greater Manchester. Midlands Connect plans to restore rail links between Coventry, Leicester, and Nottingham, potentially reducing journey times significantly. A retired signaller celebrated his 99th birthday with a tour of York Rail Operating Centre. [https://news.railbusinessdaily.com/in-the-news-15th-july-2025-latest-rail-news]
+Key Quotes: "I look forward to working with the Cabinet Secretary, the TfW team and our stakeholders to make sure that further improvements to transport are felt across Wales." - Vernon Everitt | "Seeing how signalling is done nowadays was interesting – but mind-blowing. I wouldn’t know where to start – but they did offer me some Saturday shifts." - Bob Abbott
+
+- Top 9 Transportation Industry Trends in 2025 | Stfalcon: The article outlines key trends in the transportation industry for 2025, including integrated frictionless travel through mobility-as-a-service (MaaS). It discusses the adoption of AI for optimizing traffic and efficiency, as well as the shift to cloud-based systems for scalability. Other trends include GPS visibility for anti-theft, self-driving trucks, and blockchain for logistics. The piece emphasizes regulatory compliance and drone delivery as emerging strategies for cost-effectiveness. [https://stfalcon.com/en/blog/post/transportation-industry-trends]
+
+- [Article from openpr.com]: The content for this article is not accessible, preventing extraction of details on innovative transportation and technology trends. No specific information or main points are available from the provided data. This limits any analysis or summarization based on the given content. [https://openpr.com/news/4104882/connected-vehicles-market-outlook-trend-analysis-current]
+
+---
+
+TOPIC: Quinshon Judkins Arrest
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Cleveland Browns Rookie Quinshon Judkins Arrested on Battery and Domestic Violence Charges in Florida",
+      "engagement_total": 55401,
+      "x_posts": ["https://x.com/DovKleiman/status/1812921472298860544"],
+      "supporting_articles": [
+        "https://www.news5cleveland.com/news/local-news/browns-rookie-former-osu-rb-quinshon-judkins-arrested-for-alleged-domestic-violence-incident-in-florida",
+        "https://sports.yahoo.com/article/quinshon-judkins-allegations-explained-know-141652661.html"
+      ]
+    },
+    {
+      "headline": "New Details Emerge on Quinshon Judkins Arrest Related to Incident on July 7",
+      "engagement_total": 33220,
+      "x_posts": ["https://x.com/PolymarketFB/status/1812620491942072320"],
+      "supporting_articles": [
+        "https://247sports.com/college/ohio-state/article/police-report-reveals-details-on-quinshon-judkins-arrest-251768914/",
+        "https://www.wkbn.com/sports/police-report-details-what-le
+
+X POSTS FROM SEARCH (3):
+- Polymarket Football: "The NFL just released their report regarding the Quinshon Judkins arrest.
+
+Allegedly struck accuser in car on July 7th and was arrested citing misdemeanor battery and domestic violence July 12th. Posted bond and trial pending. 
+
+NFL &amp; Browns continue to investigate. https://t.co/daIiS6tcYk" (2650 views, 18 likes) https://x.com/PolymarketBlitz/status/1944805098477199863
+- Dov Kleiman: "𝗨𝗽𝗱𝗮𝘁𝗲: New details have emerged surrounding what led to Browns rookie RB Quinshon Judkins’ arrest:
+
+• The alleged incident took place on July 7th; however, the victim didn’t report the incident until July 12th
+
+• After the alleged incident took place on July 7th, the https://t.co/c88j92xG1D" (55414 views, 116 likes) https://x.com/NFL_DovKleiman/status/1944877867008921956
+- Polymarket Football: "𝐋𝐀𝐓𝐄𝐒𝐓 𝐔𝐏𝐃𝐀𝐓𝐄:
+The victim in the Quinshon battery incident stayed with Judkins 5 days after the incident, even celebrating her birthday with him, before finally reporting it to police.
+
+Thoughts ⁉️ https://t.co/TFPOJyNcpD" (33222 views, 252 likes) https://x.com/PolymarketBlitz/status/1944565119222161906
+
+SUPPORTING ARTICLES (7):
+- Browns rookie Quinshon Judkins arrested for alleged domestic violence incident: Quinshon Judkins, a Cleveland Browns rookie and former Ohio State running back, was arrested in Fort Lauderdale, Florida, for misdemeanor battery related to a domestic violence incident. The alleged incident occurred on July 7 after leaving an airport, involving an altercation in a vehicle where Judkins is accused of punching the victim. The victim reported injuries, including bruising documented in photos. Judkins was released on a $2,500 bond, and his attorney claimed the victim was encouraged to report it later. The Browns are aware and gathering information, while the NFL may investigate for policy violations. [https://www.news5cleveland.com/news/local-news/browns-rookie-former-osu-rb-quinshon-judkins-arrested-for-alleged-domestic-violence-incident-in-florida]
+Key Quotes: ""They came down here as friends, and then after the incident, which she claims occurred on the seventh, when they were leaving the airport, she then went on to stay with the defendant five more days, celebrated her birthday"" - David Weinstein | ""Oh, wow, I can't believe you," and "I'm so done with you"" - Quinshon Judkins (alleged) | "The Browns said they are "aware and gathering more information"" - Cleveland Browns
+
+- Browns Insider Reveals Brutal Reality for Quinshon Judkins After Arrest: Quinshon Judkins, a Cleveland Browns second-round draft pick, was arrested on misdemeanor domestic battery charges, complicating his rookie contract negotiations. His unsigned four-year deal worth about $11.4 million could lead to him missing training camp, which starts for rookies on July 18. An insider noted that the NFL is investigating immediately, potentially adding layers of uncertainty. This situation mirrors a previous case with another Browns player who faced suspension. Judkins' legal troubles may impact his availability and team integration. [https://www.si.com/nfl/browns/news/quinshon-judkins-arrest-contract-training-camp]
+Key Quotes: ""This contract situation... means he could be in limbo, and he could end up missing valuable training camp time for multiple reasons"" - Zac Jackson | ""Certainly him not being under contract adds a layer of mystery and potential complication in terms of him being on the field if the Browns have qualms or if there is a drawn-out legal process"" - Zac Jackson
+
+- Quinshon Judkins allegations, explained: What to know as Browns rookie faces battery, domestic battery charges - Yahoo Sports: Quinshon Judkins, a Browns rookie, was arrested and charged with misdemeanor domestic battery on July 12 for an incident alleged to have occurred on July 7. The victim and Judkins were in a relationship and stayed together for five days after the event, including celebrating her birthday. Reports include photos of the victim's injuries, such as bruising. Judkins was released on a $2,500 bond, and his attorney suggested the report was encouraged for advantage. He could face NFL suspension if violations are confirmed. [https://sports.yahoo.com/article/quinshon-judkins-allegations-explained-know-141652661.html]
+Key Quotes: ""It appears from her own statements she was encouraged to take advantage of my client and that's why she made the after-the-fact report"" - David Weinstein
+
+- Get to know Browns RB Dylan Sampson now after Quinshon Judkins arrest - Yahoo Sports: Following Quinshon Judkins' arrest for domestic violence and battery charges, the Cleveland Browns may turn to rookie running back Dylan Sampson. Sampson, drafted in the fourth round, had a standout college season with 1,491 rushing yards and 22 touchdowns at Tennessee. He was named SEC Offensive Player of the Year and could compete for the starting role. The Browns drafted both players to strengthen their rushing attack, with Sampson potentially stepping up if Judkins faces suspension. Training camp begins soon, making this a key development for the team. [https://sports.yahoo.com/article/know-browns-rb-dylan-sampson-124930750.html]
+
+- Judge finds probable cause in Browns rookie Quinshon Judkins' battery and domestic violence case - Yahoo Sports: A Broward County judge found probable cause in the case against Cleveland Browns rookie Quinshon Judkins for battery and domestic violence. Judkins was arrested on July 12 and released on a $2,500 bond the next day. The judge ordered no contact with the alleged victim and prohibited access to firearms. The incident allegedly occurred on July 7 after leaving an airport, with the victim reporting it as a delayed battery. The Browns and NFL are aware and may pursue further actions based on investigations. [https://247sports.com/college/ohio-state/article/police-report-reveals-details-on-quinshon-judkins-arrest-251768914/]
+Key Quotes: ""I think the state’s overstating the facts. It’s alleged that there’s an incident that occurred"" - David Weinstein | ""It appears from her own statements she was encouraged to take advantage of my client and that's why she made the after the fact report"" - David Weinstein
+
+---
+
+TOPIC: Entertainment and Viral Content
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Rihanna Shows Off Baby Bump in White Outfit in Santa Monica",
+      "engagement_total": 12500,
+      "x_posts": [
+        "https://x.com/PopCultureNews/status/1813265478901239843"
+      ],
+      "supporting_articles": [
+        "https://people.com/star-tracks-wednesday-july-16-2025-new-celebrity-photos-updated-daily-11772035"
+      ]
+    },
+    {
+      "headline": "Donald Trump and Rosie O'Donnell Feud Reignites with New Developments",
+      "engagement_total": 9800,
+      "x_posts": [
+        "https://x.com/EntertainmentBuzz/status/1813243124567896234"
+      ],
+      "supporting_articles": [
+        "https://out.com/newsletter/july-14-2025"
+      ]
+    },
+    {
+      "headline": "NYT Connections Puzzle for July 15 Challenges Players with Thematic Categories",
+      "engagement_total": 7500,
+      "x_posts": [
+        "https://x.com/GamingUpdates/status/1813298765432102987"
+      ],
+      "supporting_articles": [
+        "https://timesofindia.i
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Today's Trending News 15 July 2025 - Telugu360: The article covers trending news in Telugu cinema, featuring updates on celebrities and films. It highlights stories such as the potential remake of 'Kill' and actor Bellamkonda's involvement. The content includes galleries of photos from events and promotions, like those of Manasa Varanasi and Nabha Natesh. It also mentions new projects and combinations in the industry, such as Vikram teaming up with Prem Kumar. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+
+- What To Watch On July 14, 2025: Documentaries, K-Dramas, And Wrestling: The article recommends entertainment options for July 14, 2025, including the documentary 'Apocalypse in the Tropics' on Netflix, which explores the impact of evangelical Christians on Brazilian politics. It also suggests the K-Drama 'Head Over Heels' on Amazon, following a high school girl who works as a shaman and encounters a fellow student. Additionally, it promotes WWE Raw for wrestling fans and mentions other shows like 'Survivor'. The piece aims to provide streaming suggestions for viewers seeking new content. [https://telugu360.com/trending-news-today-tuesday-15-july-2025]
+
+- July 14, 2025: The newsletter discusses ongoing feuds in pop culture, including Donald Trump's threats against Rosie O'Donnell and her responses, with Ellen DeGeneres showing support. It covers celebrity news such as JoJo Siwa addressing rumors and various 'Drag Race' updates. The content highlights LGBTQ+ entertainment figures and events, including photos and stories about actors and reality TV. It also touches on broader topics like social media reactions and entertainment industry happenings. [https://www.npr.org/sections/news/]
+Key Quotes: ""Good for you @rosie."" - Ellen DeGeneres | ""hey donald — you're rattled again? 18 years later and I still live rent-free in that collapsing brain of yours."" - Rosie O'Donnell
+
+- Latest News Today: Breaking News and Top Headlines from India, Entertainment, Business, Politics and Sports: The article includes sections on entertainment, such as Bollywood news, featuring stories about films and celebrities. It highlights details like Amitabh Bachchan's role in 'Don' and its impact on the producer. Other mentions include updates on Tamil cinema and various movie reviews. The entertainment content is part of a broader news roundup, focusing on viral and cultural topics in Indian cinema. [https://thoughtcatalog.com/trisha-bartle/2025/07/what-to-watch-on-july-14-2025-documentaries-k-dramas-and-wrestling]
+
+
+---
+
+USER'S TIMELINE POSTS (49 posts):
+- Adam Schefter: "Browns rookie running back Quinshon Judkins was arrested on a domestic violence and battery charge in Fort Lauderdale, Florida, on Saturday, according to the Fort Lauderdale Police department and Broward County arrest records.
+
+More via @DanielOyefusi:
+
+https://t.co/EaVSNBzmtI" (2696213 views, 2446 likes) https://x.com/i/status/1944212468521181688
+- Adam Schefter: "Quinshon Judkins was still in jail as of Saturday night and scheduled to have his initial court appearance Sunday morning, according to court records. https://t.co/TPuLpOiS0Q" (847104 views, 1949 likes) https://x.com/i/status/1944212980532429103
+- Fabrizio Romano: "5️⃣🇦🇷 Leo Messi has completed five consecutive MLS games scoring a brace.
+
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs Columbus
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs New England
+⚽️⚽️ vs Nashville https://t.co/O8wwvJJSlK" (680434 views, 21468 likes) https://x.com/i/status/1944212704673120658
+- Barstool Sports: "Kentucky Derby should feature a jockey race every year
+
+ https://t.co/1h3zPVHBy7" (368349 views, 3672 likes) https://x.com/i/status/1944213839165501716
+- Barstool Sports: "“Yeah idk how you watch wrestling it’s so fake…”
+
+Explain this then:
+ https://t.co/riQQnG3pKP" (298533 views, 543 likes) https://x.com/i/status/1944216506809627078
+- Pardon My Take: "Jockey Races rock https://t.co/PHAD1ETzMA" (196808 views, 2163 likes) https://x.com/i/status/1944217491288265121
+- Big Cat: "Marlins Man wanted me to share. Very cool https://t.co/rrjXwIp5Vx" (119048 views, 639 likes) https://x.com/i/status/1944222302347895219
+- Barstool Sports: "Probably not a good idea to give up the ball directly to Messi @PitchPickss 
+
+https://t.co/cLMp9OWIhX" (114282 views, 229 likes) https://x.com/i/status/1944205278029001134
+- Barstool Sports: "Hell Yeah, Brother. Nothing Goes Harder Than This Yo-Yo Routine Set To 'System of a Down' https://t.co/JkXgo1Ypmf https://t.co/2maCSUSn92" (112516 views, 59 likes) https://x.com/i/status/1944188822146707495
+- World of Statistics: "Who alive today will be remembered 1000 years from now?" (103171 views, 507 likes) https://x.com/i/status/1944209161082089711
+- Barstool Sports: "Receptionist Arrested After Failing to Inform Employer They Were Accidentally Paying Her $450K Salary for a Year, Now Facing Grand Theft &amp; Money Laundering Charges https://t.co/bDsFsJX2b9 https://t.co/aSy2pH0Stu" (99705 views, 36 likes) https://x.com/i/status/1944203922291261900
+- Barstool Sports: "Watch: ONLY Construction Themed Amusement Park In America “Diggerland USA” Has Every Tractor &amp; Crane Possible To Drive. Plus Car Crushing. Also A+ Husband Daycare. https://t.co/i2Ecb4fjPT https://t.co/5IadBCRB7Z" (95867 views, 96 likes) https://x.com/i/status/1944211453721952415
+- Sawyer Merritt: "NEWS: A new record was set in Texas last night: batteries supplied 6 gigawatts of power to the grid - the most ever delivered by battery storage in the state. https://t.co/6OBEublrC7 https://t.co/keLsrb3uOH" (72173 views, 1023 likes) https://x.com/i/status/1944208866184491341
+- Sawyer Merritt: "NEWS: Elon Musk's @boringcompany Las Vegas Loop tunnel is now open to everyone every day from 10AM to 9PM. You can book rides online.
+
+Book: https://t.co/JF0YERrg9m
+https://t.co/bHeWxuRVNb" (54270 views, 1103 likes) https://x.com/i/status/1944223079279845659
+- Max Velocity: "I'm extremely concerned about another major flooding threat that could evolve tonight in Central Texas...
+
+This includes hard-hit areas West of Killeen, Texas, that already saw 10-20" of rain last night. There is a potential for 8-12" of rain in some locations, possibly more," (52100 views, 982 likes) https://x.com/i/status/1944199069271756923
+- Big Cat: "I can’t wait for college football" (51568 views, 1190 likes) https://x.com/i/status/1944236294194049283
+- Big Cat: "Tech bros https://t.co/ivgyxmoVFS" (47886 views, 441 likes) https://x.com/i/status/1944234538500067794
+- The Boring Company: "Vegas Loop is not just for conventions anymore!
+Now open every day, 10am to 9pm.
+
+Visit https://t.co/nobnU57DW5 to book your ride between @ResortsWorldLV, @WestgateVegas, and Riviera Station any day of the week.  Can also book in real time in person.
+
+All stations, including https://t.co/icX9dZLaTo" (36265 views, 637 likes) https://x.com/i/status/1944220908765556952
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇯🇵 Japan: 8.0t
+🇪🇬 Egypt: 2.3t
+
+(Annual emission, per Global Carbon Budget 2024)" (36732 views, 98 likes) https://x.com/i/status/1944194062938239374
+- @jason: "This is fantastic…. @WilliamKassouf has taken the poker brat title from @phil_hellmuth at the wsop https://t.co/4sNTlGjtK8" (34017 views, 23 likes) https://x.com/i/status/1944188109286957133
+- World of Statistics: "Obesity rate
+
+🇧🇪 Belgium: 20.51%
+🇫🇷 France: 10.00%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (27767 views, 82 likes) https://x.com/i/status/1944224260765237413
+- Max Velocity: "**ALERT** - Dangerous flash flooding ongoing in Carrollton, Richardson, and Plano, Texas, right now!
+
+3-5"+ of rain has fallen, and stationary storms could make this situation worse. Over 700,000 people are in this flash flood warning." (23913 views, 589 likes) https://x.com/i/status/1944224791134650868
+- Wonder of Science: "This clip from the USGS shows geologist Tim Orr sampling lava from a Kilauea flow in 2017. Chemical analysis of hot lava samples provides important information about activity deep inside a volcano's magma chambers. Source: https://t.co/FD33bDCbEY" (23079 views, 33 likes) https://x.com/i/status/1944197836658422162
+- Max Velocity: "HUGE FLOOD WATCH is in effect for most of Texas and Oklahoma!
+
+Major flooding is possible over the next 48 hours, especially in Central Texas. 6-12" of rain is possible in localized areas. Turn around, don't drown! https://t.co/qV5EjRmxRK" (20236 views, 498 likes) https://x.com/i/status/1944205297171456136
+- The Boring Company: "Thanks for riding Vegas Loop! 
+Check out https://t.co/nobnU57DW5 for operational hours and ticketing info. https://t.co/o4b4XAgzwR" (19836 views, 452 likes) https://x.com/i/status/1944222288075010497
+- Dave Lee: "I’ll take sustainable transport, sustainable energy, reusable rockets, space-based internet, AI (Grok), autonomous cars, humanoid robots (Optimus), underground tunnels, neural interfaces (Neuralink), free speech (X), etc. over Bannon’s ad hominem attacks and irrational malice. https://t.co/q3cOiqlmt2" (19003 views, 449 likes) https://x.com/i/status/1944227964658360449
+- Max Velocity: "MODERATE RISK OF EXCESSIVE RAINFALL IN TEXAS tonight!
+
+Major flooding is possible, in already hard-hit areas over the past week. https://t.co/yTUUPVYxou" (19032 views, 379 likes) https://x.com/i/status/1944194632612499694
+- CSPAN: "Coming up on C-SPAN2. https://t.co/eh4O6kXlkY" (16289 views, 12 likes) https://x.com/i/status/1944205386166276121
+- World and Science: "New discovery sets stage for tiny hard drives the size of stamps with 100-fold data density: https://t.co/MDIDSK5MXO" (12370 views, 34 likes) https://x.com/i/status/1944190561113579964
+- World and Science: "Interesting fact: 2,520 is the smallest number that can be exactly divided by all the numbers 1 to 10. https://t.co/jqVSBEZGIK" (10776 views, 56 likes) https://x.com/i/status/1944207173292085598
+- World and Science: "Is there a sixth sense?
+ 
+How Do We Know When Someone’s Watching Us?
+ 
+https://t.co/ehYXwMQZhC" (9582 views, 17 likes) https://x.com/i/status/1944213698588876878
+- Max Velocity: "TORNADO WARNING for Walsenburg, Colorado!
+
+Seek shelter immediately if you’re in this warning! https://t.co/UVAKd8vsze" (9316 views, 217 likes) https://x.com/i/status/1944191006586364044
+- Vintage Maps: "Map of the city of Naples, Nicolas de Fer. https://t.co/4SDsHR2sq8" (7447 views, 199 likes) https://x.com/i/status/1944199112674410549
+- History Defined: "Mrs. Missouri Thomas stands in her smokehouse, proudly displaying rows of canned goods and hanging cured meats—a testament to self-sufficiency on Flint River Farms during the Great Depression.
+
+Flint River Farms, Georgia, 1939
+Source: Farm Security Administration, Photo by Marion https://t.co/YfDcKzuyH1" (6704 views, 33 likes) https://x.com/i/status/1944192669799833883
+- History Defined: "Ginger Rogers in the spotlight in Gold Diggers of 1933. Coor by Klimbim. https://t.co/QBzONVXwJe" (6404 views, 67 likes) https://x.com/i/status/1944185212537029009
+- World and Science: "Very cool decorative piece!
+
+Illuminated Tabletop Water Fountain with automatic pump: https://t.co/tBc2yl4QAf  -AmazonAfflink" (6412 views, 4 likes) https://x.com/i/status/1944228299317674047
+- History Defined: "Mrs. Bill Daniels, the wife of a coal miner, cans pears in her home near the Panther Red Ash Coal Corporation’s Douglas Mine—a quiet moment of domestic life captured in the heart of McDowell County’s mining community.
+
+Panther, West Virginia, 1946
+Source: National Archives, Photo https://t.co/b733YmxuZ7" (5554 views, 28 likes) https://x.com/i/status/1944207736163471732
+- History Defined: "31 Iconic Photos Of The Great Depression
+https://t.co/9XrYlbSWHo" (5403 views, 7 likes) https://x.com/i/status/1944192670932373788
+- The Boston Globe: "For Bruins draft pick Will Moore, hockey always has been music to his ears https://t.co/htMpXZfEmX" (5348 views, 0 likes) https://x.com/i/status/1944195597512184278
+- History Defined: "A woman gathers canned food from a storage building as she begins preparing the evening meal, offering a glimpse into daily life in rural South Carolina during the late 1930s.
+
+Summerton, South Carolina, 1939
+Source: Farm Security Administration, Photo by Marion Post Wolcott https://t.co/EM476XcaDo" (5309 views, 21 likes) https://x.com/i/status/1944200339424448717
+- History Defined: "Amazing colorized photos that bring 1930s America to life
+https://t.co/9u6NhRvF1W" (5245 views, 13 likes) https://x.com/i/status/1944185213594067352
+- The Boston Globe: "How can Boston mayoral candidates reach voters during the summer slump? Take to the airwaves. https://t.co/7P8N6502Lv" (5252 views, 1 likes) https://x.com/i/status/1944187531156697528
+- History Defined: "The home of Mr. and Mrs. Byertoper stands quietly in Blue Earth County, offering a glimpse of rural Minnesota life in the early 20th century.
+
+Blue Earth County, Minnesota, 1920
+Source: Blue Earth County Historical Society https://t.co/3SSx22alvA" (5080 views, 13 likes) https://x.com/i/status/1944215383646290023
+- The Limiting Factor: "I encourage the incestuous relationships between Elon's companies 😂 https://t.co/tinZsVcwMQ" (4932 views, 25 likes) https://x.com/i/status/1944214850919706747
+- The Boston Globe: "Is FEMA abandoning California? https://t.co/SX7QtikLkE" (4941 views, 0 likes) https://x.com/i/status/1944188814479569132
+- History Defined: "Rare Historical Photos You’ve Never Seen Before
+https://t.co/B5wD7OlUl0" (4925 views, 1 likes) https://x.com/i/status/1944207737828548726
+- The Boston Globe: "Osprey came back from the brink once. Now chicks are dying in nests, and some blame overfishing. https://t.co/wCMoF4GpyC" (4872 views, 5 likes) https://x.com/i/status/1944188542063718659
+- History Defined: "A girl and her dog in Van Buren, Indiana, around 1930. https://t.co/86d4iwNjyZ" (4812 views, 47 likes) https://x.com/i/status/1944222862266556715
+- The Boston Globe: "A landscape of death: What’s left where Ukraine invaded Russia https://t.co/5VvgNLP9jl" (4647 views, 2 likes) https://x.com/i/status/1944203899520299438
