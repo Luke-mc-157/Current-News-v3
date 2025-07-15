@@ -387,23 +387,54 @@ ${article.fullContent}
         },
         {
           role: "system", 
-          content: "Analyze these articles comprehensively. Extract the following from the articles: Source (Publication), Page Title (Article Headline), article summary with main points, quotes from within the article with attributed sources for each quote (if available)."
+          content: "Analyze these articles comprehensively. Return ONLY a JSON array of objects, one per article provided. No additional text, explanations, or wrappers. If no quotes, return empty array for quotes."
         },
         {
           role: "user",
-          content: `Analyze these ${articleSources.length} articles for topic "${topicName}":\n\n${articlesText}`
+          content: `Extract structured data from these ${articleSources.length} articles for topic "${topicName}". Return JSON format:
+[
+  {
+    "source": "The publication name (e.g., 'BBC Sport')",
+    "title": "The article headline", 
+    "summary": "Concise factual summary with main points in 2-4 sentences",
+    "quotes": [
+      {
+        "quote": "Exact quoted text",
+        "attributedTo": "Source of the quote (person/organization), or 'Unknown' if not specified"
+      }
+    ]
+  }
+]
+
+Articles to analyze:
+${articlesText}`
         }
       ],
-      max_tokens: 4000
+      max_tokens: 4000,
+      response_format: { type: "json_object" }
     });
 
     const analysisContent = response.choices[0].message.content;
     console.log(`✅ Article analysis complete for ${topicName}: ${analysisContent.length} chars`);
     
+    // Parse JSON response
+    let parsedAnalysis;
+    try {
+      parsedAnalysis = JSON.parse(analysisContent);
+    } catch (parseError) {
+      console.warn(`⚠️ Failed to parse JSON for ${topicName}, using fallback:`, parseError.message);
+      parsedAnalysis = [{
+        source: "Analysis Failed",
+        title: `Analysis failed for ${topicName}`,
+        summary: "Unable to parse AI analysis response",
+        quotes: []
+      }];
+    }
+    
     return {
       topic: topicName,
       articleCount: articleSources.length,
-      analysis: analysisContent,
+      analysis: parsedAnalysis,
       processedAt: new Date().toISOString()
     };
 
@@ -412,7 +443,12 @@ ${article.fullContent}
     return {
       topic: topicName,
       articleCount: articleSources.length,
-      analysis: `[Analysis failed: ${error.message}]`,
+      analysis: [{
+        source: "Error",
+        title: `Analysis failed for ${topicName}`,
+        summary: `Analysis failed: ${error.message}`,
+        quotes: []
+      }],
       processedAt: new Date().toISOString()
     };
   }
@@ -478,9 +514,25 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
 FULL CONTENT (${article.contentLength} chars): ${article.fullContent}`
     ).join('\n\n');
     
-    // Include AI analysis if available
-    const analysisSection = topic.articleAnalysis ? 
-      `\n\nAI ARTICLE ANALYSIS:\n${topic.articleAnalysis.analysis}` : '';
+    // Include AI analysis if available (formatted from JSON)
+    let analysisSection = '';
+    if (topic.articleAnalysis && Array.isArray(topic.articleAnalysis.analysis)) {
+      const formattedAnalysis = topic.articleAnalysis.analysis.map((article, index) => {
+        const quotesText = article.quotes && article.quotes.length > 0 
+          ? article.quotes.map(q => `"${q.quote}" - ${q.attributedTo}`).join('\n  ')
+          : 'No quotes found';
+        
+        return `
+ARTICLE ${index + 1} ANALYSIS:
+Source: ${article.source}
+Title: ${article.title}  
+Summary: ${article.summary}
+Quotes:
+  ${quotesText}`;
+      }).join('\n');
+      
+      analysisSection = `\n\nAI ARTICLE ANALYSIS:\n${formattedAnalysis}`;
+    }
     
     return `
 TOPIC: ${topic.topic}
