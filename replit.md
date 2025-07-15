@@ -124,7 +124,16 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 15, 2025 - 2:35 AM)
+### Latest Updates (January 15, 2025 - 2:45 AM)
+- **✅ ARTICLE SUMMARY INTEGRATION FIX**: Resolved critical issue where AI-generated article summaries weren't making it into compiled data
+  - **Fixed JSON Format Mismatch**: Corrected `summarizeArticlesByTopic` to use proper JSON object format instead of array for `response_format: { type: "json_object" }`
+  - **Enhanced Error Handling**: Added comprehensive logging to track AI analysis success/failure and identify when fallbacks occur
+  - **Improved Data Validation**: Added robust checks for article analysis structure before integration into compiled data
+  - **Better Debugging**: Added visibility into JSON parsing failures with raw content preview for troubleshooting
+  - **Optimized Fallback**: When AI analysis fails, creates proper fallback structure using original article metadata
+  - **Results**: Article summaries with quotes and factual analysis now properly flow from AI processing into Grok's newsletter generation
+
+### Previous Updates (January 15, 2025 - 2:35 AM)
 - **✅ PERSISTENT AUTHENTICATION SYSTEM**: Implemented persistent X OAuth 2.0 authentication to eliminate constant reauthentication
   - **Express Session Management**: Added express-session middleware for secure user session persistence
   - **Database Token Storage**: Enhanced OAuth callback to store user tokens in PostgreSQL with automatic upsert

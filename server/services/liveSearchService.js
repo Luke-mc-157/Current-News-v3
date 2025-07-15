@@ -383,24 +383,26 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON array of objects, one per article provided. No additional text, explanations, or wrappers. If no quotes, return empty array for quotes."
+          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give its users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
           content: `Extract structured data from these ${articleSources.length} articles for topic "${topicName}". Return JSON format:
-[
-  {
-    "source": "The publication name (e.g., 'BBC Sport')",
-    "title": "The article headline", 
-    "summary": "Concise factual summary with main points in 2-4 sentences",
-    "quotes": [
-      {
-        "quote": "Exact quoted text",
-        "attributedTo": "Source of the quote (person/organization), or 'Unknown' if not specified"
-      }
-    ]
-  }
-]
+{
+  "articles": [
+    {
+      "source": "The publication name (e.g., 'BBC Sport')",
+      "title": "The article headline", 
+      "summary": "Concise factual summary with main points in 2-4 sentences",
+      "quotes": [
+        {
+          "quote": "Exact quoted text",
+          "attributedTo": "Source of the quote (person/organization), or 'Unknown' if not specified"
+        }
+      ]
+    }
+  ]
+}
 
 Articles to analyze:
 ${articlesText}`
@@ -416,15 +418,20 @@ ${articlesText}`
     // Parse JSON response
     let parsedAnalysis;
     try {
-      parsedAnalysis = JSON.parse(analysisContent);
+      const jsonResult = JSON.parse(analysisContent);
+      parsedAnalysis = jsonResult.articles || jsonResult; // Handle both formats
+      console.log(`🔍 Parsed ${parsedAnalysis.length} article analyses for ${topicName}`);
     } catch (parseError) {
-      console.warn(`⚠️ Failed to parse JSON for ${topicName}, using fallback:`, parseError.message);
-      parsedAnalysis = [{
-        source: "Analysis Failed",
-        title: `Analysis failed for ${topicName}`,
-        summary: "Unable to parse AI analysis response",
+      console.warn(`⚠️ Failed to parse JSON for ${topicName}, raw content:`, analysisContent.substring(0, 500));
+      console.warn(`⚠️ Parse error:`, parseError.message);
+      
+      // Create fallback with original article data
+      parsedAnalysis = articleSources.map((article, index) => ({
+        source: article.source || "Unknown",
+        title: article.title || `Article ${index + 1}`,
+        summary: article.summary || "No summary available",
         quotes: []
-      }];
+      }));
     }
     
     return {
@@ -486,7 +493,13 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     // Generate AI analysis for articles if we have any
     let articleAnalysis = null;
     if (articleSources.length > 0) {
+      console.log(`🔄 Starting AI analysis for ${topicData.topic}: ${articleSources.length} articles`);
       articleAnalysis = await summarizeArticlesByTopic(articleSources, topicData.topic);
+      console.log(`✅ AI analysis complete for ${topicData.topic}:`, {
+        hasAnalysis: !!articleAnalysis,
+        hasAnalysisArray: !!(articleAnalysis?.analysis),
+        analysisCount: articleAnalysis?.analysis?.length || 0
+      });
     }
     
     compiledTopics.push({
@@ -507,7 +520,8 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     
     // Use AI analysis instead of full content to reduce character count
     let articlesText = '';
-    if (topic.articleAnalysis && Array.isArray(topic.articleAnalysis.analysis)) {
+    if (topic.articleAnalysis && topic.articleAnalysis.analysis && Array.isArray(topic.articleAnalysis.analysis) && topic.articleAnalysis.analysis.length > 0) {
+      console.log(`🔄 Using AI analysis for ${topic.topic}: ${topic.articleAnalysis.analysis.length} analyses`);
       articlesText = topic.articleAnalysis.analysis.map((analysis, index) => {
         const originalArticle = topic.articleSources[index];
         const quotesText = analysis.quotes && analysis.quotes.length > 0 
@@ -518,6 +532,7 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
       }).join('\n\n');
     } else {
       // Fallback to metadata only (no full content) if AI analysis failed
+      console.log(`⚠️ Using fallback for ${topic.topic}: no AI analysis available`);
       articlesText = topic.articleSources.map(article => 
         `- ${article.title}: ${article.summary} [${article.url}]`
       ).join('\n\n');
