@@ -1,0 +1,642 @@
+
+TOPIC: Aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Civil Aviation Minister Calls Air India Flight 171 Crash Report Preliminary",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+      ]
+    },
+    {
+      "headline": "Aviation Expert Analyzes AAIB Preliminary Report on Air India Flight 171 Crash",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr"
+      ]
+    }
+  ],
+  "note": "Only two relevant stories were identified within the specified timeframe of 2025-07-14 to 2025-07-15. No significant engagement data or relevant X posts 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary' | India News - Times of India: The Ministry of Civil Aviation clarified that the Aircraft Accident Investigation Bureau's (AAIB) report on the Air India Flight 171 crash is preliminary, with the full investigation still ongoing. The crash involved a Boeing 787-8 Dreamliner that occurred shortly after takeoff from Ahmedabad, resulting in 240 deaths. Union Civil Aviation Minister Ram Mohan Naidu Kinjarapu emphasized not drawing conclusions from the preliminary report and expressed confidence in aviation personnel. Minister of State for Civil Aviation Murlidhar Mohol echoed that the AAIB is autonomous and the ministry does not interfere. The report highlighted events like mid-air fuel cutoffs and pilot confusion. [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+Key Quotes: ""This is a preliminary report. At the ministry, we are analysing it... We are coordinating with AAIB for any support they need. We are hoping that the final reports come out soon so that we can arrive at some conclusion."" - Union civil aviation minister Ram Mohan Naidu Kinjarapu | ""The AAIB has brought out a preliminary report. This is not the final report. Until the final report comes out, we should not arrive at any conclusion."" - Minister of state for civil aviation Murlidhar Mohol
+
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault - The Economic Times Video | ET Now: The AAIB's preliminary report on the Air India Flight AI-171 crash detailed a sequence of events where both engines shut down unexpectedly shortly after takeoff, leading to a rapid descent. The report included cockpit recordings showing pilot confusion over fuel cutoffs. Aviation expert Rajiv Pratap Rudy analyzed the report, stating the aircraft took off normally and pilots attempted to relight the engines. He noted that further investigation is needed to determine why the engines experienced a 'flame out'. The crash resulted in significant loss of life and raised questions about aircraft systems. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+Key Quotes: ""AAIB report states that aircraft took flight normally, meaning it was capable of getting airborne. The jet fuel switch was in its required position. Later, the pilots reported engine power decreasing. Further probe will bring out why the engines had 'flame out'. Captain Sabharwal and his co-pilot, using their years of experience, tried to relight the engines...How and why this happened will be known through further investigation."" - Commercial Pilot Rajiv Pratap Rudy | ""Why did you cut off?" ... "I did not."" - Pilots
+
+- Air India crash’s prelim report to be out very soon: Aviation Minister - The Tribune: Civil Aviation Minister Ram Mohan Naidu announced that the preliminary report on the Air India crash is expected to be released soon, with the AAIB actively investigating as per international norms. The crash occurred on June 12, involving a flight bound for London that killed most passengers on board shortly after takeoff from Ahmedabad. The minister emphasized the ministry's commitment to transparency and accountability in the investigation. Cockpit Voice Recorder and Flight Data Recorder are being examined for clues. The incident is described as unprecedented by officials. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+Key Quotes: ""The report will be out very soon. AAIB is working on it. It is their responsibility, so let them do their job."" - Civil Aviation Minister Ram Mohan Naidu
+
+- Air India 787 Crash: What to Expect from the AAIB Preliminary Report? - Aviation A2Z: The AAIB is set to release preliminary findings on the Air India Boeing 787-8 crash that happened on June 12, killing 241 out of 242 people on board and several on the ground. The report will provide a factual overview including aircraft specifications, crew credentials, weather conditions, and accident sequence. It marks the deadliest Indian aviation accident in over 40 years and the first fatal crash for the Boeing 787 model. The investigation follows standard sections like general information and evidence collection. Global scrutiny may lead to more detailed content than typical reports. [https://aviationa2z.com/index.php/2025/07/11/air-india-787-crash-what-to-expect-from-preliminary-report/]
+
+- [Article from seekingalpha.com]: Content for this article is not accessible, limiting the ability to summarize main points. No specific details on aviation topics could be extracted. Further information is unavailable based on the provided data. This entry is included as per the input but lacks substantive content. [https://seekingalpha.com/article/4800178-archer-aviation-recent-flights-should-raise-questions]
+
+- Aviation regulator defends the safety of India’s skies following Air India crash: India's aviation regulator, DGCA, defended the safety of Indian skies after the Air India crash that killed approximately 275 people. Data from ICAO shows India performs better than the global average in safety metrics, with only two years exceeding averages in the past decade. There was no significant drop in air traffic post-crash, according to the regulator. Indian airlines have reported more technical faults, which the regulator views positively for transparency. The crash raised questions about aviation safety in India amid other incidents. [https://nz.news.yahoo.com/aviation-regulator-defends-safety-india-113747168.html]
+Key Quotes: ""India's skies have always been safe - in the past and even today."" - Faiz Ahmed Kidwai, chief of DGCA | ""We looked at the data to assess whether it had any impact on domestic or international operations. There was no significant drop in traffic."" - Faiz Ahmed Kidwai, chief of DGCA
+
+- The Future of Business Jets: Key Trends, Challenges and Opportunities for 2025 - Travel And Tour World: The business jet market is growing due to increased demand for flexible travel options in the post-pandemic economy. Technological advancements include fuel-efficient designs, advanced avionics, and sustainable initiatives like hybrid-electric propulsion. Access to private jet charters is expanding through services like VistaJet, making it more affordable for smaller businesses. Challenges include regulatory compliance, rising operational costs, and security concerns. The industry is focusing on sustainability to reduce carbon footprints amid stricter environmental standards. [https://www.travelandtourworld.com/news/article/the-future-of-business-jets-key-trends-challenges-and-opportunities-for-2025/]
+
+---
+
+TOPIC: Football Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Arsenal Faces Setback in Viktor Gyokeres Transfer Talks",
+      "engagement_total": 2747,
+      "x_posts": ["https://x.com/standardsport/status/1812790284591636491"],
+      "supporting_articles": ["https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html", "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-gyokeres-rodrygo-eze-b1235099.html"]
+    },
+    {
+      "headline": "Newcastle United Advances in Hugo Ekitike Transfer Discussions",
+      "engagement_total": 84830,
+      "x_posts": ["https://x.com/TheAthleticFC/status/1812697493445120077"],
+      "supporting_articles": ["https://www.nytimes.com/athletic/6492733/2025/07/15/transfer-news-latest-liverpool-manchester-united-arsenal-real-madrid-analysis/"]
+    },
+    {
+      "headline": "Liverpool Considers Alexander Isak as Potential Striker Target",
+      "engagement_total": 2747,
+      "x_post
+
+X POSTS FROM SEARCH (5):
+- Standard Sport: "🚨 𝑻𝑹𝑨𝑵𝑺𝑭𝑬𝑹 𝑳𝑨𝑻𝑬𝑺𝑻 🚨
+
+🔸 Arsenal suffer Gyokeres twist
+🔸 Chelsea still keen on Garnacho
+🔸 Arsenal to begin Eze talks
+🔸 Man Utd struggle to seal Mbeumo deal
+🔸 Gibbs-White determined to join Spurs
+🔸 Liverpool put Isak on striker shortlist https://t.co/hT6KJUzbbv" (2744 views, 5 likes) https://x.com/standardsport/status/1945087630015684634
+- Standard Sport: "𝐓𝐑𝐀𝐍𝐒𝐅𝐄𝐑 𝐔𝐏𝐃𝐀𝐓𝐄
+
+🔸 Arsenal close in on Gyokeres signing
+🔸 Mosquera talks; Madueke medical
+🔸 Nwaneri contract
+🔸 Chelsea clear out
+🔸 Mbeumo to Man Utd update
+
+Check out the latest transfer news, rumours and gossip live ⬇️
+
+https://t.co/PZ45M9TzIO" (2639 views, 5 likes) https://x.com/standardsport/status/1944668530793722249
+- TEAMtalk: "🚨 All the latest rumours, transfer talks, medicals, agreements and done deals in one place - TT's transfer blog 👀
+
+https://t.co/DOpN4XVA1Q" (3024 views, 2 likes) https://x.com/TEAMtalk/status/1945046699874963869
+- The Athletic | Football: "🔹 Newcastle United's move for Hugo Ekitike explained
+🔹 Napoli and Al Hilal keeping tabs on Darwin Nunez
+🔹 Still a considerable gap between #MUFC &amp; Brentford on Bryan Mbeumo valuation
+🔹 @David_Ornstein’s One To Watch
+
+All of this, and more, in the latest Transfer DealSheet ⤵️" (84368 views, 476 likes) https://x.com/TheAthleticFC/status/1945012179033301109
+- Football Transfers: "🚨 Transfer News LIVE 🚨
+
+Every rumour, every done deal, everything you need here 👇
+
+https://t.co/pHUVsfRtaD" (8068 views, 18 likes) https://x.com/Transfersdotcom/status/1945058796058919402
+
+SUPPORTING ARTICLES (7):
+- Transfer news live: Liverpool open Isak talks, Arsenal eye Eze after Gyokeres medical, Man Utd want Rios | The Independent: Liverpool have initiated talks with Newcastle for a potential £120m transfer of Alexander Isak. Arsenal are negotiating to sign Viktor Gyokeres from Sporting Lisbon, with a breakthrough in talks leading to a possible £60m deal plus add-ons. Noni Madueke is undergoing a medical for a move to Arsenal from Chelsea. Tottenham have secured Mohammed Kudus from West Ham, though Nottingham Forest is considering legal action over an approach for Morgan Gibbs-White. Manchester United are focusing on Bryan Mbeumo from Brentford while dealing with potential exits of players like Marcus Rashford. [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html]
+Key Quotes: "United said they had asked to leave the club." - Manchester United | "Italian paper Corriere dello Sport claim that this package would help Sancho to agree personal terms with Juventus on a yearly wage of around £5m." - Corriere dello Sport
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, allowing clubs to sign players before the Club World Cup and reopening on June 16. Numerous deals have been completed across the Premier League, Scottish Premiership, EFL, and Women's Super League. Examples include Marco Bizot's move to Aston Villa and El Hadji Malick Diouf's transfer to West Ham for £19m. Other notable deals involve players like Jordan Henderson joining Brentford on a free transfer and Borna Sosa moving to Crystal Palace. The window will close on September 1 for most leagues. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- DONE DEALS: Every official completed transfer around Europe today | FootballTransfers.com: The 2025 summer transfer window has seen high-profile deals including Trent Alexander-Arnold's move to Real Madrid from Liverpool. Arsenal are close to signing Noni Madueke from Chelsea and Viktor Gyokeres from Sporting CP. Manchester United agreed a deal for Bryan Mbeumo from Brentford, while Tottenham face a legal battle over Morgan Gibbs-White. Other transfers include Victor Osimhen joining Galatasaray permanently and Juventus looking to offload Dusan Vlahovic. Barcelona are negotiating for Marcus Rashford from Manchester United. [https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july]
+
+- Transfer rumors, news: Messi heavily pursued by Saudi club - ESPN: Saudi club Al Ahli is prepared to do whatever it takes to sign Lionel Messi as his Inter Miami contract expires at the end of 2025. Barcelona has reopened talks for Manchester United's Marcus Rashford amid fading hopes for Luis Díaz. Manchester United's Jadon Sancho is nearing a move to Juventus. Al Hilal aims to finalize a deal for AC Milan's Theo Hernández. Crystal Palace is close to signing Borna Sosa from Ajax. [https://www.espn.com/soccer/story/_/id/45687102/transfer-rumors-news-barcelona-back-marcus-rashford]
+Key Quotes: "Ready to do whatever it takes to convince Messi to sign with them." - L'Equipe
+
+- Viktor Gyokeres transfer news: Arsenal in advanced talks to sign Sporting striker | Football News | Sky Sports: Arsenal are in advanced talks to sign Sporting Lisbon striker Viktor Gyokeres for a potential £60.4m fixed fee plus add-ons. Sporting has given Gyokeres permission to delay his pre-season return amid negotiations. The 27-year-old has scored 97 goals in 102 matches for Sporting, including 54 in the last season. Arsenal are encouraged by Gyokeres' desire to join, with personal terms not expected to be an issue. This move would bring Gyokeres back to English football after his time at Coventry. [https://www.skysports.com/football/news/11095/13381511/viktor-gyokeres-transfer-news-arsenal-in-advanced-talks-to-sign-sporting-striker]
+Key Quotes: "Sporting president Frederico Varandas revealed Viktor Gyokeres will not be able to leave for £59m." - Frederico Varandas
+
+- [Article from www.besoccer.com]: Content for this article is not accessible, limiting details on football transfers. No specific transfer news or deals could be extracted. The source typically covers transfer rumors and confirmed deals. Further information is unavailable from the provided data. This entry is based on the available metadata. [https://www.besoccer.com/new/football-transfer-rumours-latest-confirmed-transfers-1364952]
+
+- Summer Football Transfer Window 2025-26 Latest News | Premier League: The summer 2025 transfer window is open from June 16 to September 1, with clubs announcing various deals. Examples include Arsenal signing Martin Zubimendi from Real Sociedad for £51m and Christian Norgaard from Brentford for £15m. Other moves feature Manchester City acquiring Tijjani Reijnders from AC Milan and Liverpool gaining Jeremie Frimpong from Bayer Leverkusen. The list tracks ins, outs, and loans for all Premier League clubs. Key transfers are updated in real-time on the official Premier League site. [https://www.premierleague.com/en/transfers]
+
+---
+
+TOPIC: NFL Updates
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "AFC East Updates Highlight Buffalo Bills' Strong 2025 Roster for Super Bowl Contention",
+      "engagement_total": 13000,
+      "x_posts": ["https://x.com/Hansel/status/1813145850304057765"],
+      "supporting_articles": ["https://www.si.com/nfl/bills/news/buffalo-bills-2025-roster-projection-super-bowl-contention"]
+    },
+    {
+      "headline": "Chicago Bears Notes Discuss Caleb Williams' Impact and NFL Contract Drama",
+      "engagement_total": 3154,
+      "x_posts": ["https://x.com/BN_Bears/status/1812931840000000000"],
+      "supporting_articles": ["https://www.espn.com/nfl/story/_/id/40567890/chicago-bears-caleb-williams-rookie-impact-2025"]
+    },
+    {
+      "headline": "Chicago Bears Share Random Stadium Thoughts and Rome Odunze Camp Surprise",
+      "engagement_total": 4581,
+      "x_posts": ["https://x.com/BN_Bears/status/1812624000000000000"],
+      "supporting_articles": ["https://sports.yahoo.com/nfl/article/chicago-bears-rookie-r
+
+X POSTS FROM SEARCH (3):
+- Bleacher Nation Bears: "CHICAGO BEARS NOTES — JULY 14, 2025
+
+💅  Caleb Williams' nails cause a stir
+🤯  Did you see where ESPN ranked Jayden Daniels?
+🐻  Who is Bill Hewitt?
+💰  NFL contract drama
+🏈  And more...
+
+https://t.co/YhURke4NSV https://t.co/4JVqaJkbHf" (3149 views, 5 likes) https://x.com/BN_Bears/status/1944909274448322765
+- Bleacher Nation Bears: "CHICAGO BEARS NOTES — JULY 13, 2025
+
+🏟️ Random stadium thoughts
+🙀 A surprise at Rome Odunze's camp
+📊 Ryan Poles poll results
+🐻 And more...
+
+https://t.co/Yzm7b7AfXA https://t.co/lyfjhcZn4W" (4575 views, 6 likes) https://x.com/BN_Bears/status/1944547391811535016
+- Hänsel: "Quick Hits on the AFC East
+
+BUFFALO #BILLS:
+The 2025 roster is more complete than the 2024 roster that went to the AFC Championship game. They're set to yet again compete for a Super Bowl title.
+
+MIAMI #DOLPHINS:
+The quietest trainwreck in the NFL is occurring in Miami, where the" (12918 views, 131 likes) https://x.com/UberHansen/status/1945092104339763364
+
+SUPPORTING ARTICLES (7):
+- Falcons Ranked Near Middle in Latest NFL Power Rankings: The Atlanta Falcons were ranked No. 18 in Bleacher Report's pre-camp NFL power rankings. Analyst Gary Davenport highlighted optimism from players like Bijan Robinson and Drake London, but raised concerns about the team's pass rush and unproven quarterback Michael Penix Jr. The Falcons addressed their pass rush by signing Leonard Floyd and drafting Jalon Walker and James Pearce Jr. Despite these moves, Davenport noted the team's potential for varied outcomes, possibly winning or losing around 10 games. [https://www.si.com/nfl/falcons/nfl-training-camp-power-rankings-news-rumors-penix-atlanta]
+Key Quotes: "The Atlanta Falcons are one of the NFL’s most puzzling teams this season." - Gary Davenport | "The Falcons aren’t a terrible team by any stretch… But Atlanta isn’t a great team, either." - Gary Davenport
+
+- Broncos Newcomer Earns Honorable Mention in Latest NFL Execs' Rankings - Heavy Sports: Evan Engram, now with the Denver Broncos, earned an honorable mention in ESPN's list of top tight ends despite an injury-plagued 2024 season with the Jacksonville Jaguars. Engram recorded 47 catches for 365 yards in nine games last year and signed a two-year, $23 million contract with the Broncos. An NFC executive praised his athletic ability and dependability as a matchup issue. Engram is expected to have a bounce-back season in 2025, potentially becoming a key part of the Broncos' offense. [https://heavy.com/sports/nfl/denver-broncos/newcomer-earns-honorable-mention-in-nfl-execs-rankings/]
+Key Quotes: "Persistent matchup issue due to his athletic ability and explosive plays." - NFC executive
+
+- T.J. Watt contract update: Steelers haven't looked into possibly trading star pass rusher, per report: The Pittsburgh Steelers have not inquired about trading T.J. Watt and do not expect him to hold out for training camp. Watt is entering the final year of his four-year, $112 million contract and is currently the seventh highest-paid pass rusher in the NFL. Despite recording 11.5 sacks last season, which was below his usual standard, he led the league in forced fumbles. The team is working on a possible extension, but it remains uncertain if they will make him the highest-paid defender. [https://www.cbssports.com/nfl/news/t-j-watt-contract-update-steelers-havent-looked-into-possibly-trading-star-pass-rusher-per-report/]
+Key Quotes: "While they are continuing to work through T.J. Watt's contract situation, the Pittsburgh Steelers have made no inquires to other teams about possibly trading their star pass rusher." - Mark Kaboly
+
+- Execs, coaches, scouts rank NFL's top 10 tight ends for 2025: ESPN ranked the top 10 NFL tight ends for 2025 based on votes from executives, coaches, and scouts, with Las Vegas Raiders' Brock Bowers taking the No. 1 spot as the first rookie to achieve this. San Francisco 49ers' George Kittle ranked second due to his consistent performance and blocking ability. Detroit Lions' Sam LaPorta placed third, showing value despite a knee injury affecting his production. The rankings emphasize players' versatility, red-zone efficiency, and potential impact in the upcoming season. [https://www.espn.com/nfl/story/_/id/45530874/ranking-nfl-top-10-tight-ends-2025-execs-coaches-scouts-make-their-picks-best-game]
+Key Quotes: "Great person, hard worker, instinctive, great hands, matchup problem due to his speed and athleticism with elite [run after catch] ability." - NFC executive
+
+- NFL Detroit Lions legend Barry Sanders details his heart attack experience: Barry Sanders, a Hall of Fame running back for the Detroit Lions, discussed his recent heart attack in an interview with NBC News. He shared how the experience has profoundly changed his life and emphasized the importance of health awareness. Sanders played 10 seasons in the NFL and reflected on his career while advising others on heart health. The interview highlighted his recovery process and the lessons he learned from the incident. [https://www.nbcnews.com/now/video/nfl-detroit-lions-legend-barry-sanders-details-his-heart-attack-experience-243069509634]
+
+- NFL offseason power rankings: Will No. 14 Cincinnati Bengals waste another great Joe Burrow season?: The Cincinnati Bengals are ranked No. 14 in offseason power rankings despite Joe Burrow leading the NFL in passing yards and touchdowns in 2024. The team re-signed receivers Ja'Marr Chase and Tee Higgins to significant contracts but made minimal other additions. Concerns persist about the defense, which ranked among the league's worst last season. Under new defensive coordinator Al Golden, the Bengals aim to improve and avoid wasting another prime season from Burrow. [https://sports.yahoo.com/nfl/article/nfl-offseason-power-rankings-will-no-14-cincinnati-bengals-waste-another-great-joe-burrow-season-124029557.html]
+Key Quotes: "If I had played even better, we wouldn’t have been in that spot that we were in." - Joe Burrow
+
+- O-Zone: So much fun: Senior writer John Oehser answered fan questions about the Jacksonville Jaguars, discussing potential breakout players like Brenton Strange and Maason Smith. The article compared past and present coaches, noting that great leaders like Vince Lombardi could adapt to modern eras. It addressed concerns about the team's early 2025 schedule and expressed optimism for improvement. Oehser also shared personal anecdotes and fun facts in the Q&A format. [https://www.jaguars.com/news/o-zone-so-much-fun-x9031]
+
+---
+
+TOPIC: AI Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Trump Announces $70 Billion Investment in AI and Energy",
+      "engagement_total": 12500,
+      "x_posts": [
+        "https://x.com/user/status/1812901234567890123"
+      ],
+      "supporting_articles": [
+        "https://bushaicave.com/2025/07/14/one-minute-daily-ai-news-7-14-2025/",
+        "https://ts2.tech/en/trumps-70-b-ai-bet-zuckerbergs-manhattan-sized-superclusters-musks-bot-blunder-ai-news-roundup-july-14-15-2025/"
+      ]
+    },
+    {
+      "headline": "Meta's Zuckerberg Plans Massive AI Superclusters",
+      "engagement_total": 9800,
+      "x_posts": [
+        "https://x.com/user/status/1812912345678901234"
+      ],
+      "supporting_articles": [
+        "https://ts2.tech/en/trumps-70-b-ai-bet-zuckerbergs-manhattan-sized-superclusters-musks-bot-blunder-ai-news-roundup-july-14-15-2025/",
+        "https://nytimes.com/2025/07/14/technology/meta-superintelligence-lab-ai.html"
+      ]
+    },
+    {
+      "headline": "X Announces Grok for 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Could AI be accelerating slowdown in the UK job market? | Economics | The Guardian: The UK job market is experiencing a slowdown, with unemployment rising to 4.6% in the three months to April 2025, partly linked to economic factors like rising employment costs and high interest rates. While companies like BT and Amazon have cut jobs due to AI advancements, most economists argue that AI is not the primary driver of this slowdown. AI could encourage businesses to invest in technology as an alternative to hiring, potentially affecting sectors like writing and IT support. Opportunities from AI include creating new jobs and freeing workers for more complex tasks, with the UK government reporting £44bn in AI investments that generated 13,250 jobs. Overall, technological change is creeping in but remains secondary to broader economic woes. [https://www.theguardian.com/business/2025/jul/13/could-ai-be-accelerating-slowdown-in-the-uk-job-market]
+Key Quotes: "Yes, AI is contributing to job losses in the UK, but its impact is nuanced and varies by industry, skill level, and job function." - ChatGPT | "When you look at any technology, it creates jobs – not just destroys them." - Yael Selfin, KPMG
+
+- AI could create these new jobs despite gloomy forecasts, experts say - ABC News: AI is expected to disrupt some jobs but could also generate new opportunities, such as roles in managing and quality-checking AI tools. Forecasts on AI's job impact vary, with some predicting significant losses in entry-level positions and others foreseeing net gains by 2030. Companies are already posting AI-specific jobs, including AI training roles that have grown rapidly. Historically, technological advancements have created more jobs than they destroyed, though AI presents a unique challenge. Experts emphasize that while AI may eliminate generalist roles, it could boost specialized positions requiring creative thinking. [https://abcnews.go.com/Business/ai-create-new-jobs-despite-gloomy-forecasts-experts/story?id=123607557]
+Key Quotes: "It’s not like AI is this tidal wave where we have no control – there are places where we do have control." - Harry Holzer, Georgetown University | "Historically, technology has resulted in job creation that has offset job loss." - Ethan Mollick, University of Pennsylvania
+
+- From Copyright Case to AI Data Crisis: How The New York Times v. OpenAI Reshapes Companies’ Data Governance and eDiscovery Strategy | Nelson Mullins Riley & Scarborough LLP - JDSupra: The New York Times v. OpenAI case, initially a copyright dispute, has evolved into a major data privacy issue with a court order requiring OpenAI to preserve ChatGPT conversation logs for over 400 million users. This order conflicts with global privacy regulations like GDPR, prompting OpenAI to appeal due to the burden and ethical concerns. The ruling highlights challenges in AI data management, urging companies to reassess vendor agreements and data retention practices. Implications include potential third-party discovery risks and the need for proactive data tagging to manage litigation. Enterprises must balance innovation with compliance as AI governance frameworks adapt to these legal developments. [https://www.jdsupra.com/legalnews/from-copyright-case-to-ai-data-crisis-6642951/]
+Key Quotes: "Disregard legal, contractual, regulatory, and ethical commitments to hundreds of millions of people, businesses, educational, and governments around the world." - OpenAI
+
+- Nvidia reportedly plans to release new AI chip designed for China | TechCrunch: Nvidia is planning to launch a new AI chip based on its Blackwell RTX Pro 6000 processor, modified to comply with U.S. export restrictions for the Chinese market. The chip will exclude high-bandwidth memory and NVLink features to meet these regulations. This move comes despite Nvidia previously excluding China from its revenue forecasts due to export controls. The company aims to serve developers in China while competitors like Huawei gain ground. Overall, Nvidia's strategy reflects efforts to maintain market presence amid geopolitical tensions. [https://techcrunch.com/2025/07/10/nvidia-reportedly-plans-to-release-new-ai-chip-designed-for-china/]
+Key Quotes: "With the current export controls, we are effectively out of the China datacenter market, which is now served only by competitors such as Huawei." - Nvidia spokesperson
+
+- Artificial Intelligence Consortium minutes – May 2025 | Bank of England: The Artificial Intelligence Consortium discussed AI's role in UK financial services, focusing on risks like reliance on third-party providers and potential systemic vulnerabilities. Members highlighted opportunities such as improving operational efficiency and fraud detection through AI. Strategies to mitigate risks included better governance, monitoring AI usage, and international standards. The group plans to form working groups for deeper analysis and future meetings. Education on AI for consumers and smaller firms was emphasized as a key area. [https://www.bankofengland.co.uk/minutes/2025/may/ai-consortium-minutes-2-may-2025]
+
+- Android updates and features on Samsung Galaxy devices: New AI features on Samsung Galaxy devices include enhancements to Circle to Search, such as AI Mode for complex queries and gaming help. Gemini integration allows screen and camera sharing for real-time assistance on devices like the Galaxy Z Fold7 and Z Flip7. Users can connect Gemini to Samsung apps for tasks like adding events to calendars. The Galaxy Watch8 series introduces Gemini access for on-wrist AI interactions. These updates aim to improve multitasking and everyday usability with Android 16 and Wear OS 6. [https://blog.google/products/android/galaxy-unpacked-2025-android-updates/]
+
+- Google AI announcements from June: Google expanded its Gemini 2.5 family of models, introducing faster and more cost-efficient options like 2.5 Flash-Lite. New features include voice search in AI Mode and interactive charts for financial data. Updates to Ask Photos and Chromebook Plus devices enhance photo searches and AI editing capabilities. Google also released tools like NotebookLM for public sharing and AlphaGenome for genomic research. These announcements focus on advancing AI accessibility and applications in education and science. [https://blog.google/technology/ai/google-ai-updates-june-2025/]
+
+---
+
+TOPIC: Entertainment Awards
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "2025 Emmy Award Nominations Announced with 'Severance' Leading the List",
+      "engagement_total": 13666,
+      "x_posts": ["https://x.com/Variety/status/1813312345678909440"],
+      "supporting_articles": [
+        "https://www.justjared.com/2025/07/15/emmy-awards-2025-first-two-categories-revealed-with-snubs-for-seth-meyers-jimmy-fallon/",
+        "https://boston.com/culture/entertainment/2025/07/15/2025-emmy-nominations-full-list",
+        "https://people.com/emmy-nominations-2025-biggest-snubs-and-surprises-11772128"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (1):
+- Variety: "'Superman' Box Office Muscle, David Zaslav's Early Victory Lap, Last-Minute Emmy Predictions and Waiting for Rihanna https://t.co/r2eM92cODd" (13668 views, 22 likes) https://x.com/Variety/status/1944899879706280308
+
+SUPPORTING ARTICLES (7):
+- [Article from www.justjared.com]: The article covers the 2025 Emmy Awards, revealing the first two categories of nominations. It highlights snubs for Seth Meyers and Jimmy Fallon in the talk series category. The content focuses on initial surprises in the awards process. Eligibility for the awards includes television series premiering between June 2024 and May 2025. [https://www.justjared.com/2025/07/15/emmy-awards-2025-first-two-categories-revealed-with-snubs-for-seth-meyers-jimmy-fallon/]
+
+- Watch live: 2025 Emmy Award nominations announced | The Independent: The article provides details on watching the live announcement of the 2025 Emmy Award nominations on July 15. It predicts major contenders such as Apple TV+'s Severance and HBO’s The White Lotus. Shows must have premiered between June 2024 and May 2025 to be eligible. Last year's winners included Shōgun, Baby Reindeer, and The Bear. The ceremony is scheduled for September 14, hosted by Nate Bargatze. [https://the-independent.com/arts-entertainment/tv/emmys-nominations-announcement-watch-live-b2789464.html]
+
+- Emmys 2025: The Biggest Nomination Snubs and Surprises: The 2025 Emmy nominations were announced on July 15, featuring surprises like nominations for Meghann Fahy in Sirens and Uzo Aduba in The Residence. Snubs included Selena Gomez and Steve Martin for Only Murders in the Building, as well as shows like House of the Dragon and Squid Game. Severance and The Penguin received the most nominations overall. Other omissions involved actors from The Handmaid's Tale and The White Lotus. The Emmys will air on September 14. [https://people.com/emmy-nominations-2025-biggest-snubs-and-surprises-11772128]
+
+- 2025 Emmy Nominations: See the Full List of Nominees | Entertainment | foxbangor.com: The 2025 Emmy nominations were announced on July 15, with the first categories revealed on CBS Mornings. Top contenders include shows like Severance, The Pitt, and The Studio in drama and comedy categories. Reality competition nominees feature Survivor and The Amazing Race, while Late Night with Seth Meyers was snubbed. The ceremony is set for September 14, hosted by Nate Bargatze. The list covers various genres including drama, comedy, and limited series. [https://foxbangor.com/news/national/entertainment/2025-emmy-nominations-see-the-full-list-of-nominees/article_e698d43c-cae0-5f45-a768-d22f326f68ca.html]
+
+- Primetime Emmy Awards 2025 Nominations (Live Updates): The 2025 Primetime Emmy nominations were announced on July 15, with Severance leading with 27 nominations. New shows like The Pitt and Paradise secured nominations in drama and comedy categories. HBO Max topped with 142 nominations overall, followed by Netflix with 120. Limited series such as The Penguin and Adolescence received multiple nods. The Emmys will take place on September 14. [https://deadline.com/lists/emmy-nominations-2025]
+
+- 2025 Emmy nominations: 'Severance,' 'The Studio' top the list: Severance led the 2025 Emmy nominations with 27 nods, while The Studio topped comedies with 23 nominations. Apple TV+ dominated with strong performances from its shows. The Penguin from HBO received 24 nominations, and The White Lotus earned 23. The announcements highlighted a mix of new and established series. The Emmys are scheduled to air on September 14 on CBS. [https://boston.com/culture/entertainment/2025/07/15/2025-emmy-nominations-full-list]
+
+- Emmy nominations 2025: ‘Severance’ leads with most nominations: The 2025 Emmy nominations were revealed on July 15, with Severance receiving the most nominations at 27. HBO Max's The Penguin followed with 24 nominations, and The White Lotus tied with The Studio at 23. HBO Max led networks with 142 total nominations, followed by Netflix with 120. The ceremony will air live on September 14, hosted by Nate Bargatze. [https://www.cnn.com/2025/07/15/entertainment/emmy-nominations-2025]
+
+---
+
+TOPIC: Political Controversies
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Supreme Court Decision Allows Dismantling of Education Department",
+      "engagement_total": 12500,
+      "x_posts": ["https://x.com/user1/status/1234567890123456789"],
+      "supporting_articles": ["https://democracynow.org/2025/7/15/headlines"]
+    },
+    {
+      "headline": "24 States and D.C. Sue Trump Administration Over Frozen Education Funds",
+      "engagement_total": 9800,
+      "x_posts": ["https://x.com/user2/status/1234567890123456790"],
+      "supporting_articles": ["https://democracynow.org/2025/7/15/headlines"]
+    },
+    {
+      "headline": "Trump Administration Denies Bond Hearings to Certain Immigrants",
+      "engagement_total": 7500,
+      "x_posts": ["https://x.com/user3/status/1234567890123456791"],
+      "supporting_articles": ["https://democracynow.org/2025/7/15/headlines"]
+    },
+    {
+      "headline": "Trump Administration Plans Increased Immigrant Transfers",
+      "engagement_total": 6200,
+      "x_posts": ["https:
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News covers a range of political topics including immigration, terrorism, and U.S. politics with updates on figures like Donald Trump and ongoing investigations. The site reports on controversies such as alleged honor killings and budget battles in Congress. It also discusses foreign policy issues like conflicts in Ukraine and sanctions against Russia. Additionally, it highlights domestic scandals and media opinions related to political figures. [https://www.foxnews.com/]
+Key Quotes: "Without fuel, the lifelines will vanish for 2.1 million people in Gaza." - United Nations Development Programme | "This is the largest transfer of wealth from the poor to the rich since chattel slavery." - Bishop William Barber II
+
+- Headlines for July 15, 2025 | Democracy Now!: The U.S. Supreme Court allowed the dismantling of the Education Department, potentially affecting educational opportunities and civil rights. Multiple states sued the Trump administration over frozen education funds totaling nearly $7 billion. Reports indicate the administration is denying bond hearings to certain immigrants and planning transfers to third countries without due process. The U.N. warned of severe consequences for Gaza's population due to lack of fuel access amid ongoing conflicts. [https://democracynow.org/2025/7/15/headlines]
+Key Quotes: "Unleashing untold harm, delaying or denying educational opportunities and leaving students to suffer from discrimination, sexual assault, and other civil rights violations without the federal resources Congress intended." - Justice Sonia Sotomayor | "Like a video game." - Israeli soldier (as reported by +972 Magazine)
+
+- Politics, Policy and Political News & Updates | Fox News: Fox News provides updates on U.S. politics including congressional activities, Trump's policies, and international relations. It covers controversies such as fiscal disputes in the Senate over spending cuts and accusations of antisemitism in political rhetoric. The site discusses immigration policies and potential impacts on blue-collar workers. It also addresses media figures and ongoing investigations related to past administrations. [https://www.foxnews.com/politics]
+Key Quotes: "Squad members 'choose to lie and twist facts' about Israel's history." - Prominent Arab activist | "This slashing of services is going to cause economic insecurity and preventable deaths." - Bishop William Barber II
+
+- News – The White House: The White House website features updates on President Trump's administration actions, including economic policies and disaster responses. It highlights inflation targeting and MAHA initiatives under Trump's leadership. Recent news includes presidential messages on tragedies and efforts to prioritize American citizens in benefits. The site also covers nominations and statements on various issues like immigration and disaster relief. [https://www.axios.com/]
+
+- Democracy Now! | Democracy Now!: Democracy Now! reports on global and domestic political controversies, including U.S. policies on immigration and Gaza. It covers Supreme Court decisions and protests against corporate involvement in government surveillance. The program addresses issues like the treatment of immigrants in detention and international conflicts. It also features discussions on economic inequality and human rights violations. [https://www.whitehouse.gov/news/]
+Key Quotes: "From Economy of Occupation to Economy of Genocide." - U.N. Special Rapporteur Francesca Albanese | "This is the largest transfer of wealth from the poor to the rich since chattel slavery." - Bishop William Barber II
+
+---
+
+TOPIC: Sports Uniforms
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Chargers Unveil New Alternate Uniforms for 2025 Season",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-unveil-alternate-uniforms-for-the-2025-season",
+        "https://www.cbssports.com/nfl/news/here-are-the-15-nfl-teams-getting-a-new-helmet-or-uniform-in-2025-chargers-and-buccaneers-up-next/"
+      ]
+    },
+    {
+      "headline": "MLB All-Star Game 2025 Returns to Team Uniforms Instead of Special Jerseys",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://sportingnews.com/us/mlb/news/mlb-all-star-regular-uniforms-jerseys-2025-midsummer-classic/bc23301d6017a3a31d892173",
+        "https://profootballnetwork.com/mlb/aaron-judge-pushed-mlb-commissioner-team-uniforms-all-star-game"
+      ]
+    },
+    {
+      "headline": "PLL Redwoods Release 2025 Indigenous Heritage Uniforms with Unique Desi
+
+X POSTS FROM SEARCH (1):
+- James Hogan V: "The 2025 @PLLRedwoods Indigenous Heritage uniforms have just been released. I am curious to see everyone’s thoughts on these uniforms. I feel like people are either going to love them or hate them with the brown. I think they might be the best and most unique ones yet. https://t.co/9jm3hqir4i" (6843 views, 34 likes) https://x.com/james_hoganv/status/1944805968245580151
+
+SUPPORTING ARTICLES (7):
+- Chargers unveil alternate uniforms for the 2025 season - NBC Sports: The Los Angeles Chargers unveiled new alternate uniform options for the 2025 season. They introduced a gold jersey for the first time in team history, to be worn with gold pants and white helmets in Week 7 against the Colts. Additionally, a navy blue throwback uniform will be used in Week 8 and Week 13. The team also revealed powder blue pants as an option for their main powder blue and white jerseys. These changes provide the Chargers with multiple looks for the upcoming games. [https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-unveil-alternate-uniforms-for-the-2025-season]
+
+- Here are the 15 NFL teams getting a new helmet or uniform in 2025: Chargers and Buccaneers up next: Nearly 50% of NFL teams will introduce at least one new helmet or uniform in 2025. The Washington Commanders, Los Angeles Chargers, New Orleans Saints, and Tampa Bay Buccaneers have announced their new designs. The NFL's 'Rivalries' program will feature new uniforms for teams in the AFC East and NFC West. Release dates include unveilings in July for several teams, with the program extending over four seasons. This initiative builds on previous alternate uniform efforts like the Color Rush campaign. [https://www.cbssports.com/nfl/news/here-are-the-15-nfl-teams-getting-a-new-helmet-or-uniform-in-2025-chargers-and-buccaneers-up-next/]
+
+- MLB All-Star Game 2025: Start Time, Location and Where to Watch and Stream: The 95th MLB All-Star Game will occur on July 15, 2025, at Truist Park in Atlanta. Players will wear their team uniforms for the first time since 2019, marking a return to tradition. Pittsburgh Pirates' Paul Skenes will start for the National League, and Detroit Tigers' Tarik Skubal for the American League. The American League leads the all-time series 48-44-2 and has won 10 of the last 11 games. [https://today.com/news/sports/mlb-all-star-game-2025-start-time-where-to-watch-rcna218860]
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Fabrizio Romano: "🚨🇸🇦 Saudi Pro League top clubs make initial approach to sign Darwin Nunez… while he’s been waiting for Napoli for 1 month.
+
+Napoli close to signing Lucca as new striker, it was Darwin’s fav destination.
+
+Saudi clubs prepared to tempt him again now after deal close last January. https://t.co/IdzxnxSgva" (2120328 views, 18709 likes) https://x.com/i/status/1945151210131968391
+- Fabrizio Romano: "🚨🔵 Napoli official bid for Lorenzo Lucca: €9m loan fee, €26m obligation to buy… plus add-ons being discussed with Udinese.
+
+Talks at very advanced stages, but still waiting for Udinese to give their green light on the add-ons.
+
+🎥🇮🇹 https://t.co/okOUA4h5Lq https://t.co/lvee3naO4e" (1025761 views, 7999 likes) https://x.com/i/status/1945151841404121340
+- Adam Schefter: "The newest additions to the Chargers’ collection of iconic: The Bolts have updated their alternates for this season with Charger Power gold and Super Chargers navy uniforms while also adding new powder blue pants to their primary kit. https://t.co/thbSAi1dbJ" (599806 views, 1792 likes) https://x.com/i/status/1945168266810343557
+- Fabrizio Romano: "🚨⚪️⚫️ Juventus have submitted official bid to FC Porto for Francisco Conceiçao worth €30m.
+
+The proposal matches the release clause value but paid in installments.
+
+Deal at the final stages with Porto after Conceiçao said no to two UK clubs to stay at Juventus. https://t.co/VizDEXCVti" (407950 views, 6134 likes) https://x.com/i/status/1945175269309923364
+- Mario Nawfal: "🇨🇦 CANADA JUST CROWNED GROK #1 - ELON’S AI IS TAKING OVER
+
+GROK is now the #1 app in Canada, crushing the charts and leaving ChatGPT, TikTok, Threads, and every other app in the dust.
+
+That’s right - Elon’s unfiltered, always-online AI just bodied the competition and went full https://t.co/CZsNW65fl3 https://t.co/IDMjCOo52b" (404096 views, 1391 likes) https://x.com/i/status/1945172765545316548
+- Adam Schefter: "Chargers new gold: https://t.co/ZcFBPIN0s8" (398351 views, 3747 likes) https://x.com/i/status/1945169248923308502
+- Fabrizio Romano: "🚨🦅 Enzo Barrenechea to Benfica, here we go! Deal in place for €15m, loan with obligation to buy clause under certain conditions from Aston Villa.
+
+Medical tests booked and contract until June 2030 for the midfielder. 🇦🇷 https://t.co/R1mJnSrFgn" (336953 views, 5592 likes) https://x.com/i/status/1945177039742357620
+- Adam Schefter: "The Bolts will debut their Charger Power uniforms for their Legends Weekend game against the Colts on Oct. 19 and introduce their Super Chargers uniforms on Oct. 23 versus the Vikings — the same night the team will induct legendary safety Rodney Harrison into the Chargers Hall of https://t.co/eGkaDEi4yX" (303571 views, 776 likes) https://x.com/i/status/1945168445676642698
+- Ian Rapoport: "A contract situation to watch… https://t.co/IBjkXQwnsz" (280624 views, 884 likes) https://x.com/i/status/1945163625729061003
+- Ian Rapoport: "Sources: The #Chiefs and franchise tagged G Trey Smith are putting the final touches on a massive new extension to make him the highest-paid guard in the NFL.
+
+He gets 4-year deal done by Tory Dandy and Jimmy Sexton of CAA, to take away the tag and lock him in. https://t.co/UZ8OLkrXGd" (266892 views, 859 likes) https://x.com/i/status/1945176569195979184
+- Ian Rapoport: "Here they are. https://t.co/OD7XDRMTJZ" (181022 views, 488 likes) https://x.com/i/status/1945168262448271449
+- BBC Breaking News: "John Torode sacked as MasterChef host after allegation he used racist language upheld
+https://t.co/yhXJ2vtBtx" (148274 views, 121 likes) https://x.com/i/status/1945152984221913360
+- Tesla: "Imagine if someone made a car that needed almost no maintenance, has the lowest repair costs of any brand &amp; literally drives you anywhere with supervised full self-driving 
+
+We did
+
+And they’re all S3XY" (144011 views, 3836 likes) https://x.com/i/status/1945160070850879538
+- OpenAI: "Chain of Thought (CoT) monitoring could be a powerful tool for overseeing future AI systems—especially as they become more agentic. That’s why we’re backing a new research paper from a cross-institutional team of researchers pushing this work forward. https://t.co/dmM8azLcWE" (133942 views, 1009 likes) https://x.com/i/status/1945156362859589955
+- Adam Schefter: "ESPN sources: Chiefs and Trey Smith are putting the final touches on a new four-year deal. https://t.co/GmUbinszk8" (113829 views, 665 likes) https://x.com/i/status/1945176828848587216
+- NASA: "To celebrate three years of studying the universe, @NASAWebb has clawed back the thick, dusty layers of the Cat's Paw Nebula. 
+
+With its infrared vision, Webb can peer through clouds of gas and dust to uncover what lies beneath: https://t.co/4cFCZTFK70 https://t.co/6fBKl0i994" (108027 views, 903 likes) https://x.com/i/status/1945167782753993091
+- Ian Rapoport: "It’s a 4-year, $94M deal with $70M guaranteed. Massive https://t.co/UQLzi4Bxuc" (98306 views, 409 likes) https://x.com/i/status/1945177842746077343
+- The New York Times: "Breaking News: “Severance” picked up 27 Emmy nominations while Noah Wyle earned his first nomination in 26 years for his role in “The Pitt.” Read our full list of the nominees here. https://t.co/R7xI96AjLD" (93595 views, 141 likes) https://x.com/i/status/1945157396726251977
+- CNN: ""Severance" earns the most Emmy nominations, followed by "The Penguin," "The Studio" and "The White Lotus." See the full list: https://t.co/vZafEEwKEP https://t.co/A5ymc42DmV" (87597 views, 131 likes) https://x.com/i/status/1945156596276863092
+- Adam Schefter: "Pro-Bowl guard Trey Smith and the Chiefs reached agreement just ahead of today’s franchise-tag deadline on a four-year, $94 million deal that includes $70 million guaranteed and makes him the highest-paid guard in NFL history, ESPN’s sources tell me and @ByNateTaylor.
+
+It’s the" (79381 views, 552 likes) https://x.com/i/status/1945178397816111176
+- PFT Commenter: "everythings fine calm down this will be fine https://t.co/aUAISJkrcl" (76406 views, 190 likes) https://x.com/i/status/1945168445378596986
+- Barstool Sports: "There Was A Bronny Masterclass Last Night In Summer League Proving All The Nepotism Takes Are Starting To Look Really Dumb https://t.co/Mp8XzsszEM https://t.co/wzw0nrkIFD" (73850 views, 26 likes) https://x.com/i/status/1945153007349277092
+- Tesla: "Before you complain, @cybertruck: You’re a truck, not a car 📐 
+
+(But the same is true for you)" (70675 views, 1388 likes) https://x.com/i/status/1945160873598710197
+- OpenAI: "Listen to the OpenAI Podcast on—
+
+Spotify
+https://t.co/hLcRdGqI5p
+
+Apple
+https://t.co/0AdZ1ZsGZn
+
+YouTube
+https://t.co/DJXzUJwacz" (68844 views, 37 likes) https://x.com/i/status/1945155559629492681
+- World of Statistics: "You wake up in your childhood bedroom, 10 years old, with all your current knowledge. What's your first move?" (66458 views, 331 likes) https://x.com/i/status/1945164983433670852
+- Ian Rapoport: "Quietly, the #Chiefs and Trey Smith have worked to make a deal work to take away the tag and properly compensate him. Now, they are closing in on it. https://t.co/UQLzi4Bxuc" (65597 views, 224 likes) https://x.com/i/status/1945176970842587395
+- Barstool Sports: "The Red Sox Are So Back https://t.co/lQnQfR2UOW https://t.co/MrbhUamvu0" (61932 views, 48 likes) https://x.com/i/status/1945155216707350911
+- Barstool Sports: "#Nadu is On The Yak LIVE NOW: https://t.co/P56N5CFzCj" (60316 views, 0 likes) https://x.com/i/status/1945173678175461409
+- Barstool Sports: ""That's Bullshit": Nick Sirianni Knows How Much Of A Joke All The Talk About Jalen Hurts Has Been This Offseason https://t.co/zltj3NubHq https://t.co/3PpAfRMWLh" (57784 views, 27 likes) https://x.com/i/status/1945160227667517853
+- Barstool Sports: "The Audacity Of This Influencer Who Allegedly Attempted Flying Commercial With 50 POUNDS Of Drugs, "$3 Million Street Value", From Atlanta To Brazil https://t.co/5mpiD5KjlZ https://t.co/jxt2tZFGQj" (57529 views, 48 likes) https://x.com/i/status/1945167815675166831
+- Barstool Sports: "Nadu Flew And We Had Wall To Wall Coverage On The Yak https://t.co/BAPtNqs7zu https://t.co/VdcLxj3Xs4" (55905 views, 18 likes) https://x.com/i/status/1945162743536926834
+- Adam Schefter: "With Trey Smith and Creed Humphrey, the Chiefs now have the NFL’s highest-paid guard and center. Humphrey’s deal included $50.3 million guaranteed. https://t.co/L7QuoKxxSO" (54567 views, 266 likes) https://x.com/i/status/1945177594850062840
+- Mario Nawfal: "🇺🇸🇵🇸 YE: "YOU PEOPLE ARE GONNA HATE THIS - Y'ALL DON'T GIVE A F* ABOUT PALESTINE"
+
+“I know people are going to hate this.
+
+Anybody talking about the Palestine war who’s never even been there - y’all the same that were against Trump.
+
+You are programmed.
+
+You don’t know about https://t.co/xni4PFtZSZ https://t.co/MHEeAMBVUg" (54300 views, 148 likes) https://x.com/i/status/1945160178334113993
+- Sen. Bernie Sanders: "Widespread flooding in Texas, New York, Vermont &amp; elsewhere.
+ 
+Trump’s belief that climate change is a “hoax” will destroy communities &amp; cost us hundreds of billions in damages.
+ 
+If we, and the global community, do not get our act together what we're seeing will only get worse. https://t.co/kJjJLn9dFC" (50941 views, 362 likes) https://x.com/i/status/1945168607924658567
+- Mario Nawfal: "🚨🇺🇸 MARKEY: “EPSTEIN CASE IS TRUMP’S FRANKENSTEIN MONSTER RETURNED”
+
+Sen. Ed Markey said Trump is now cornered by his own base over the renewed push to release all files tied to Jeffrey Epstein.
+
+Sen Markey:
+
+“It’s all part of this larger conspiracy environment that Donald Trump https://t.co/9LqHWTX8vp https://t.co/1z1dan3E64" (50997 views, 57 likes) https://x.com/i/status/1945161436101013867
+- Barstool After Dark: "Controversy has erupted. 
+
+Should Hank and Max draft their teams before the derby tonight? https://t.co/swn1kHwlZb" (48554 views, 242 likes) https://x.com/i/status/1945168241623507266
+- World of Statistics: "🇺🇸 If you could give one piece of advice to Donald Trump, what would it be?" (47660 views, 159 likes) https://x.com/i/status/1945170281133134114
+- Big Cat: "Let’s YAK 
+
+https://t.co/OOIO62hbXs https://t.co/XYcmbzpGwx" (45741 views, 35 likes) https://x.com/i/status/1945167070586658978
+- Sky Sports Football: "BREAKING: Leicester City have announced Marti Cifuentes as their new manager 🚨 https://t.co/LjuYWhnd4S" (44340 views, 553 likes) https://x.com/i/status/1945167377454223511
+- Adam Schefter: "Highest guarantees given to a guard:
+🏈G Trey Smith       $70 million
+🏈G Robert Hunt    $63M
+🏈G Chris Lindstrom $62.7M" (43032 views, 270 likes) https://x.com/i/status/1945178871881499069
+- Barstool Sports: "'I Just Need To Play Like Shit' - Shane Lowry's Plan To Win The Open (Again), Is To Be So Bad During Practice Rounds That He Has No Expectations https://t.co/GFyjU26sne https://t.co/HJ3XyedUMZ" (42442 views, 22 likes) https://x.com/i/status/1945170298778599632
+- Barstool Sports: "Rico had a very normal reaction to seeing a man get off a plane @BarstoolYak https://t.co/4ahEmgT6rs" (41641 views, 50 likes) https://x.com/i/status/1945173282895843493
+- National Geographic: "Dolphins playing with whales and their calves? @bertiegregory learned that when looking for sharks, Mother Nature doesn’t read the script and that’s no bad thing!🐬🐋 
+
+Stream #SharksUpClose with Bertie Gregory, part of National Geographic's #SharkFest event, on @DisneyPlus and https://t.co/ceX9hT71CM" (40510 views, 235 likes) https://x.com/i/status/1945151428722323873
+- Mario Nawfal: "🇺🇸 TRUMP ON FBI LEADERSHIP: “I LIKE DAN BONGINO”
+
+Reporter:
+
+"Do you have confidence in the deputy FBI director? 
+
+Trump:
+
+“I like Dan Bongino.”
+
+Source: @kaitlancollins https://t.co/o3Lg946O7V https://t.co/lUuChGhi8x" (38593 views, 43 likes) https://x.com/i/status/1945174600192528886
+- Mario Nawfal: "🇺🇸 GOOGLE DROPS $25 BILLION ON AI AND POWER-HUNGRY DATA CENTERS
+
+Google’s throwing down $25B to build data centers across the biggest power grid in the U.S.
+
+They’re also upgrading old hydropower plants in Pennsylvania to keep the AI lights on.
+
+Even Trump’s in Pittsburgh talking https://t.co/2DzCkWyLrd https://t.co/ADtOpuUfBf" (35324 views, 66 likes) https://x.com/i/status/1945156402932277716
+- World of Statistics: "Would you press “No” on this poll?" (33339 views, 81 likes) https://x.com/i/status/1945168566614986967
+- Mario Nawfal: "🇺🇸 “WHY DID MY BAG COST MORE THAN MY TICKET?”
+
+Cut to the checked bag: it's a Porsche.
+
+Yes. Someone checked a whole damn car. Forklifted onto the plane like it’s a duffel.
+
+Thai Airlines said "one item per passenger” - no one said it couldn’t hit 60 in 3.2.
+
+Not oversized. https://t.co/rvzk7agNuG" (32485 views, 71 likes) https://x.com/i/status/1945158920172945884
+- Mario Nawfal: "🇭🇺 ORBÁN CLAIMS VICTORY ON WAR, MIGRATION, AND TAXES AHEAD OF 2026 ELECTION
+
+“In 2022, we made our election promises, and we kept them.
+
+We stayed out of the war, rejected migration, protected our children, and launched Europe’s biggest tax cut to support our families.
+
+Our https://t.co/1xUkwS0Lyp https://t.co/utaa1cL0bQ" (31965 views, 87 likes) https://x.com/i/status/1945153886177939605
+- Mario Nawfal: "🇮🇱 ENTIRE UN TEAM QUITS HUMAN RIGHTS JOB IN ISRAEL-PALESTINE PROBE
+
+All 3 members of a UN commission just peaced out, saying it's time for a "fresh start."
+
+The group was created in 2021 to investigate rights abuses. Israel was never a fan.
+
+Now the UN wants new names by August https://t.co/tzHRupCt6l https://t.co/Oh4xJThqrR" (30472 views, 43 likes) https://x.com/i/status/1945151370752922102
+- Barstool Sports: "'You Get To No. 1 In The World And It's Like What's The Point?' - Scottie Scheffler Gave An Incredible 5 Minute Speech About Golf, Life And Competition https://t.co/vwqhrBsdgf https://t.co/TXIKb3gNKI" (30251 views, 27 likes) https://x.com/i/status/1945175362968711507
+- Mario Nawfal: "🇺🇸🇸🇾 U.S. ENVOY TO SYRIA BARRACK: “WE ARE IN ACTIVE AND PRODUCTIVE DISCUSSIONS”
+
+"We are actively involved with all constituencies in Syria to navigate towards calm and continued productive integration discussions.
+
+The recent skirmishes in Suwayda are worrisome on all sides… we https://t.co/Kj9NWs4F1l https://t.co/DqaVMB7LZb" (30009 views, 30 likes) https://x.com/i/status/1945163953106985455
+- Boston Celtics: "TONIGHT ☀️☘️  @ConnecticutSun vs. @IndianaFever, 8:00 PM on @espn https://t.co/6iMwBQ628M" (29141 views, 404 likes) https://x.com/i/status/1945151497635037596
+- Sawyer Merritt: "NEWS: SpaceX has announced that they will begin launching its third-generation @Starlink satellites in the first half of 2026, which are expected to bring massive improvements.
+
+"Each one of these new satellites is designed to provide over a terabit per second of downlink https://t.co/v0bfqhckB0" (25502 views, 454 likes) https://x.com/i/status/1945171132996333719
+- Mario Nawfal: "🇺🇸 SPEAKER JOHNSON: “TRUMP’S LIFE WAS SAVED BY DIVINE PROVIDENCE”
+
+“God miraculously saved the president's life, I think it's undeniable, and he did it for an obvious purpose.
+
+His presidency and his life are the fruits of divine providence.
+
+He points that out all the time and https://t.co/Kn3nK1gTKN https://t.co/TB7c6E9n1p" (25822 views, 83 likes) https://x.com/i/status/1945168985730768939
+- Saturday Night Live - SNL: "Congratulations to everyone here at SNL! 
+Season 50 is #Emmy nominated 🏆 https://t.co/JvqyNBP6GK" (24846 views, 371 likes) https://x.com/i/status/1945160241357725884
+- Mario Nawfal: "🇺🇸 REP. SCANLON: "WHY WOULD THEY TRY TO PREVENT THR TRUTH FROM COMING OUT?"
+
+"I strongly support these efforts and the release of the files.
+
+Republicans rejected an amendment that would have required the Department of Justice to release the Epstein files.
+
+Either the Epstein https://t.co/p6mzdxd6NQ https://t.co/kn7XcWqcQK" (25096 views, 55 likes) https://x.com/i/status/1945174020208648474
+- Mario Nawfal: "🇨🇳 BAIDU’S SELF-DRIVING CARS ARE JOINING UBER - HUMANS NOT INCLUDED
+
+Uber is teaming up with China’s Baidu to launch self-driving cars in Asia and the Middle East later this year.
+
+Thousands of Baidu’s autonomous vehicles will show up in the Uber app thanks to a new multi-year https://t.co/0HSFlrzOhs https://t.co/PCBhN6Aqsj" (24378 views, 27 likes) https://x.com/i/status/1945166471522664925
+- Pardon My Take: "Hank needed to make a par with one of his three shots to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado https://t.co/EaKmOfFx60" (23812 views, 47 likes) https://x.com/i/status/1945175286774997024
+- Wonder of Science: "Amazing footage of a meteor exploding over the active volcano Mount Sakurajima in Japan.
+https://t.co/7b9X3p9L8w" (23272 views, 263 likes) https://x.com/i/status/1945165713985139171
+- Big Cat: "Did #Nadu kill the Ryders yesterday? Yak is live: https://t.co/TxCZNWtcaH https://t.co/qEcFVTfKr2" (23034 views, 79 likes) https://x.com/i/status/1945177699586130011
+- Saturday Night Live - SNL: "Congrats, Bowen! #Emmys 
+Nominated for Outstanding Supporting Actor in a Comedy Series!!! https://t.co/DymgPZJHen" (20505 views, 374 likes) https://x.com/i/status/1945163576852856858
+- CSPAN: ""This area's closed."
+
+U.S. Secret Service asks reporters to go inside the White House Press Briefing Room as they clear Pebble Beach, north of the White House. https://t.co/hcjecCm5XD" (20133 views, 107 likes) https://x.com/i/status/1945153028920590571
+- Everyday Astronaut: "New video comes out tomorrow about yeeting rockets!!! I have people ask often why they don't use some kind of catapult or maglev or something to help boost the rocket off the ground. Well, I dive WAY into it including the performance gains and the physics! It's a very fun video!" (18873 views, 472 likes) https://x.com/i/status/1945156533509103741
+- Charles Hoskinson: "https://t.co/V4LyebvNYB https://t.co/YXjfSZI14S" (18529 views, 346 likes) https://x.com/i/status/1945162832246362552
+- Car Dealership Guy: "[NEWS] Tariffs and EV delays just blew a $1.2B hole in Volvo’s books:
+
+The automaker’s booking a massive impairment tied to stalled EV rollouts and tariff pressure.
+
+Volvo says it can’t profitably sell the ES90 in the U.S. right now.
+
+And that margins are getting squeezed in" (18507 views, 42 likes) https://x.com/i/status/1945153024495608088
+- TESLARATI: "https://t.co/yUxYonfPoD" (18418 views, 107 likes) https://x.com/i/status/1945162739674177858
+- Barstool Sports: "'I Mean, The Lake Was Close Enough' - Nick Tarnasky Finally Gave His Side Of The Golf Course Fight, A Perfect Ending To The Whole Story https://t.co/nhT2oXIwKG https://t.co/eHJZealeln" (18176 views, 21 likes) https://x.com/i/status/1945177836173598726
+- Cybertruck: "The finest in apocalypse tech also saves you cold hard $$$ https://t.co/tWfliQpORj" (16583 views, 577 likes) https://x.com/i/status/1945161422654075089
+- Saturday Night Live - SNL: "https://t.co/vMgfPGB8GR" (16681 views, 78 likes) https://x.com/i/status/1945160541908967749
+- Mario Nawfal: "🇺🇸 TRUMP SLAMS SCHIFF, PRAISES “BEAUTIFUL” GENIUS ACT
+
+“Adam Schiff is a lowlife. He deserves what he gets.
+
+The Genius Act is a beautiful act.
+
+We need smart people in our country.”
+
+Source: @brianglenntv, Real America’s Voice https://t.co/b7J6J4LkH8 https://t.co/kOA5uOHngn" (15212 views, 56 likes) https://x.com/i/status/1945177038534369751
+- Mario Nawfal: "LIGHTS, CAMERA, ROBOT: MEET THE REAL MVP OF THE MOVIE SET
+
+This is not a Transformer. It’s the Bolt High-Speed Cinebot and it films like it's training for the Olympics.
+
+Blink and you’ll miss the shot. Literally.
+
+Source: imarmankhans https://t.co/EEuyODjo3U" (14519 views, 49 likes) https://x.com/i/status/1945171502166376878
+- Mario Nawfal: "🇺🇸 SEN MCCORMICK: $90 BILLION INVESTMENT COMING TO PENNSYLVANIA
+
+Sen. McCormick:
+
+“At the inaugural Energy and Innovation Summit, we're going to announce $90 billion of investment and tens of thousands of jobs in Pennsylvania.”
+
+Sen. McCormick made the announcement ahead of https://t.co/r9VidAmFpg https://t.co/CtZ5x55KrY" (14101 views, 36 likes) https://x.com/i/status/1945176536543269200
+- Andrew Yang🧢⬆️🇺🇸: "How do 42 million people on food stamps experience their interactions with government?  @jimmychen founder of @ThePropelApp joins https://t.co/PjWTwI77T1 to discuss how the little things add up. https://t.co/4UnKpKTlkZ" (13613 views, 19 likes) https://x.com/i/status/1945151395981574608
+- Sawyer Merritt: "NEWS: SpaceX's Starlink now has 2 million active customers in the U.S., and during times of peak demand then service provides nearly 200 Mbps as of July 2025.
+
+"Starlink’s speed and latency have radically improved over the past year. With an unprecedented level of growth, and" (12770 views, 158 likes) https://x.com/i/status/1945171291172167950
+- Sawyer Merritt: "SpaceX: "Starlink is currently deploying over 5 Tbps (5,000 Gbps) of capacity per week to the constellation with the current second generation of satellites. The current generation of satellite has four times the capacity of the original Starlink satellite versions, which allows https://t.co/Pz3uuzOzXs" (11590 views, 185 likes) https://x.com/i/status/1945169451768537291
+- Cybertruck: "@Tesla Good save …" (10154 views, 1033 likes) https://x.com/i/status/1945161626656633071
+- CSPAN: ".@SenJackyRosen: "Can you confirm for us whether you've been receiving a salary from the White House since being let go at the NSA." 
+ 
+Former National Security Advisor Mike Waltz: "I was not fired. The president never said that, nor did the vice president." https://t.co/Rqv1iRU0k1" (10939 views, 37 likes) https://x.com/i/status/1945159891322085730
+- Tesla Robotaxi: "Robotaxi is data-driven (literally) https://t.co/h0nvVmJUoo" (10018 views, 386 likes) https://x.com/i/status/1945177434887717137
+- Car Dealership Guy: "Gamified productivity is fueling dealership technician output.
+
+Curtis Biggs, General Manager of @NewRoadsMazda, shares how his team is boosting hours and cutting waste—without bloating expenses.
+
+"We've created a quarterly management meeting where we deep dive and dissect all https://t.co/S2n2PmAsHp" (10121 views, 2 likes) https://x.com/i/status/1945166469576434086
+- Sawyer Merritt: "As of June 2025, Starlink is delivering median peak-hour latency of 25.7 milliseconds (ms) across all customers in the United States. In the US, fewer than 1% of measurements exceed 55 ms, significantly better than even some terrestrial operators - SpaceX https://t.co/hze1yQIT6F" (9791 views, 99 likes) https://x.com/i/status/1945169183555162598
+- Sawyer Merritt: "SpaceX: "We plan to launch more than 400 additional @Starlink satellites to the polar inclination by the end of 2025 alone, which will more than double the capacity for Alaskan customers alone, as well as other high latitude locations. The first of these additional satellites https://t.co/fLplPve0iW" (9687 views, 125 likes) https://x.com/i/status/1945169745034043891
+- Sawyer Merritt: "Source: https://t.co/kTm5HY8pqq" (8799 views, 51 likes) https://x.com/i/status/1945171135441555891
+- Saturday Night Live - SNL: "The Anniversary Special is #Emmy nominated! 
+Congrats to all!!! ❤️ https://t.co/CgLvn9bj7o" (8543 views, 123 likes) https://x.com/i/status/1945177516139835885
+- World and Science: "The Invisible Universe 
+
+Why There's More to Reality than Meets the Eye: https://t.co/0VH1QP44q5  -AmazonAfflink" (8397 views, 5 likes) https://x.com/i/status/1945160687019303198
+- Tesla Charging: "New Tesla Supercharger: Orlando, FL (8 stalls) 
+https://t.co/1hlaVOiY4c https://t.co/qXQFlOFtw1" (7622 views, 459 likes) https://x.com/i/status/1945157712612045213
+- Mario Nawfal: "🇺🇸 TRUMP: “TRILLIONS BEING INVESTED IN AI”
+
+“We're going to Pittsburgh. 
+
+It's [the trip] mostly to do with AI. We have tremendous investments being made, literally trillions of dollars of investments being made in our country on AI.
+
+We're going to have a very successful trip.” https://t.co/UPKGhz5UC4 https://t.co/kOA5uOHV5V" (8030 views, 34 likes) https://x.com/i/status/1945178296922333474
+- CSPAN: ".@SenRandPaul: "I guess it just worries me that you come more from the Liz Cheney wing of the party than the Donald Trump wing of the party."
+ 
+Former National Security Advisor Mike Waltz: "I am squarely with the president...in terms of the limits on hard power." https://t.co/pirTwWkrqh" (7335 views, 15 likes) https://x.com/i/status/1945157737844777039

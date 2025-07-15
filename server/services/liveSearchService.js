@@ -22,7 +22,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.log(`📱 Fetching user timeline for authenticated user ${userHandle}`);
       
       // Use the official fetchUserTimeline function that stores data in database
-      const timelinePosts = await fetchUserTimeline(userId, 7);
+      const timelinePosts = await fetchUserTimeline(accessToken, userId, 7);
       
       // Transform timeline posts to the format expected by the rest of the function
       followedPosts = timelinePosts.map(post => ({
@@ -605,21 +605,22 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Compile the biggest news stories on the topic, prioritizing those breaking first on X. Find at least 4 stories with highest engagement (views, likes, retweets). If fewer than 4, note it and return what exists. Output as JSON: { 'stories': [{ 'headline': 'Factual declarative headline', 'engagement_total': number, 'x_posts': ['specific X post URLs'], 'supporting_articles': ['specific news article URLs'] }] }, sorted descending by engagement_total. Use factual, declarative statements only—no opinions. Citations must link to specific articles or X posts, never homepages or categories."
+          content: "You have live access to X posts, news publications, and the web. Output as JSON: { 'stories': [{ 'headline': 'Factual declarative headline', 'engagement_total': number, 'x_posts': ['specific X post URLs'], 'supporting_articles': ['specific news article URLs'] }] }, sorted descending by engagement_total. Use factual, declarative statements derived from X posts and supporting articles only—no opinions. Citations must link to specific articles and X posts, never homepages or categories."
         },
         {
           role: "user",
-          content: `Get latest news about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Synthesize factual headlines from X posts and back them with Google News articles.`
+          content: `Compile the biggest news stories about ${topic} from the last 24 hours (${fromDate} to ${toDate}). Calculate engagement for each X post (views + likes).`
         }
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 25,
+        max_search_results: 20,
         return_citations: true,
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 2500},
-          {"type": "news", "country": "US" }
+          {"type": "x", "post_view_count": 10000},
+          {"type": "news", "country": "US" },
+          {"type": "web", "country": "US" }
         ]
       },
       max_tokens: 50000
@@ -672,7 +673,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
 
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",
@@ -680,7 +681,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
         },
         { role: "user", content: postsSummary }
       ],
-      max_tokens: 500
+      max_tokens: 50000
     });
 
     const content = response.choices[0].message.content;
@@ -707,19 +708,10 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
       messages: [
         {
           role: "system",
-          content: `You are a world class news editor. Create headlines from the provided structured data containing X posts and articles already fetched with metadata. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source. Rank headlines by highest engagement.
-
-DATA FORMAT PROVIDED:
+          content: `DATA FORMAT PROVIDED:
 - Full compiled research data with complete topic sections
 - Each section contains X posts metadata and article citations  
 - All engagement metrics preserved for ranking
-
-INSTRUCTIONS:
-1. For EVERY topic in the provided data, create 2-6 headlines based on the volume and richness of available sources (e.g., more headlines for topics with many X posts/articles; fewer for sparse ones). Ensure headlines are justified by the data—only generate a headline if it's supported by at least 2 specific sources (X posts or articles).
-2. CRITICAL: Use X POSTS FROM SEARCH and X POSTS FROM USER'S TIMELINE POSTS as sourcePosts in your headlines
-3. Include both X posts and articles - prioritize high engagement X posts
-4. Each headline MUST have sourcePosts array with X post data
-5. Preserve exact URLs and metadata from the provided data
 
 Return ONLY a JSON array in this exact format:
 [
@@ -762,11 +754,25 @@ Return ONLY a JSON array in this exact format:
 CRITICAL: Extract exact URLs from the provided citations. Use specific article URLs, not home page URLs. Each supporting article must have a real URL from the citation list. No synthetic data.`
         },
         {
-          role: "user",
-          content: compiledData
-        }
+      role: "user",
+        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a news newsletter for the platform user's front end UI in the specified format.
+
+        NEWSLETTER GENERATION INSTRUCTIONS:
+        1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts and news articles. 
+        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post & article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post and news article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts or articles).
+        2. CRITICAL: Use X POSTS FROM SEARCH and X POSTS FROM USER'S TIMELINE POSTS as sourcePosts in your headlines
+        3. Include both X posts and articles - prioritize high engagement X posts
+        4. Each headline MUST have sourcePosts array with X post data
+        5. Preserve exact URLs and metadata from the provided data
+        6. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.
+        7. Rank headlines by highest engagement (views + likes from X posts supporting a given headline.)
+
+        Compiled raw data:
+        
+       ${compiledData}`
+      }
       ],
-      max_tokens: 15000  // Fixed high limit for full compiled data processing
+      max_tokens: 100000  // Fixed high limit for full compiled data processing
     });
     
     const content = response.choices[0].message.content;
@@ -941,7 +947,7 @@ async function generateTimelineAppendix(compiledData) {
   
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",

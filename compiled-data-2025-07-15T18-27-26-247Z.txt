@@ -1,0 +1,401 @@
+
+TOPIC: Aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Civil Aviation Minister Calls Air India Flight 171 Crash Report Preliminary",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+      ]
+    },
+    {
+      "headline": "Aviation Expert Analyzes AAIB Preliminary Report on Air India Flight 171 Crash, Rules Out Captain Fault",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr"
+      ]
+    }
+  ]
+}
+
+Note: Only two relevant stories from the last 24 hours (2025-07-14 to 2025-07-15) were identified based on available web data. No signifi
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary': The Civil Aviation Ministry clarified that the Aircraft Accident Investigation Bureau's (AAIB) report on the Air India Flight 171 crash is preliminary and not final. The crash involved a Boeing 787-8 Dreamliner that occurred shortly after takeoff from Ahmedabad, resulting in 240 deaths out of 241 people on board. Union Civil Aviation Minister Ram Mohan Naidu stated that the investigation is ongoing and emphasized the need for caution in drawing conclusions. Minister of State for Civil Aviation Murlidhar Mohol reiterated that AAIB is an autonomous authority and the ministry does not interfere. The report highlighted events such as mid-air fuel cutoffs and pilot confusion during the incident. [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+Key Quotes: ""This is a preliminary report. At the ministry, we are analysing it... We are hoping that the final reports come out soon so that we can arrive at some conclusion."" - Union Civil Aviation Minister Ram Mohan Naidu Kinjarapu | ""The AAIB has brought out a preliminary report. This is not the final report. Until the final report comes out, we should not arrive at any conclusion."" - Minister of State for Civil Aviation Murlidhar Mohol
+
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault: The AAIB's preliminary report on the Air India Flight AI-171 crash revealed that both engines shut down unexpectedly shortly after takeoff from Ahmedabad. The report included cockpit recordings where one pilot asked, 'Why did you cut off?', and the other responded, 'I did not'. Aviation expert Rajiv Pratap Rudy analyzed the report, stating that the aircraft took off normally and the jet fuel switch was in the required position. He noted that pilots attempted to relight the engines using their experience but that further investigation is needed to determine the cause of the engine 'flame out'. The report outlines a sequence of events leading to the crash, which killed 241 out of 242 people on board. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+Key Quotes: ""Why did you cut off?" and "I did not."" - Pilots (from cockpit recording) | ""AAIB report states that aircraft took flight normally... Further probe will bring out why the engines had 'flame out'... How and why this happened will be known through further investigation."" - Commercial Pilot Rajiv Pratap Rudy
+
+- Air India crash’s prelim report to be out very soon: Aviation Minister: Civil Aviation Minister Ram Mohan Naidu announced that the preliminary report on the Air India crash will be released very soon, with the AAIB actively investigating as per international norms. The crash occurred on June 12, involving a flight from Ahmedabad to London that resulted in nearly all 242 passengers and crew deaths. Naidu emphasized the ministry's commitment to transparency and accountability in the process. Investigators have retrieved the Cockpit Voice Recorder and Flight Data Recorder for examination. The incident is described as unprecedented, with further details expected in the full report. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+Key Quotes: ""The report will be out very soon. AAIB is working on it. It is their responsibility, so let them do their job."" - Civil Aviation Minister Ram Mohan Naidu
+
+- Air India 787 Crash: What to Expect from the AAIB Preliminary Report?: The AAIB is preparing to release preliminary findings on the Air India Boeing 787-8 crash that occurred on June 12, marking it as the deadliest aviation accident in India in over 40 years. The crash killed 241 out of 242 people on board shortly after takeoff from Ahmedabad. Preliminary reports typically include sections on general information, aircraft and crew details, accident description, and initial safety recommendations without drawing final conclusions. This report may differ due to the incident's scale and global attention, potentially offering more detailed insights into flight data and crew actions. The AAIB aims to provide a factual overview to guide ongoing investigations. [https://aviationa2z.com/index.php/2025/07/11/air-india-787-crash-what-to-expect-from-preliminary-report/]
+
+- Aviation regulator defends the safety of India’s skies following Air India crash: India's aviation regulator, the DGCA, defended the safety of Indian skies despite the Air India crash on June 12 that killed approximately 275 people. DGCA chief Faiz Ahmed Kidwai stated that India's safety metrics, as per ICAO data, perform better than the global average for accidents per million flights. He noted that there was no significant drop in air traffic following the incident, with only a marginal dip observed temporarily. The regulator highlighted improvements in the industry through increased self-reporting of technical faults by airlines. Kidwai emphasized that reporting issues is beneficial for addressing problems proactively. [https://seekingalpha.com/article/4800178-archer-aviation-recent-flights-should-raise-questions]
+Key Quotes: ""India's skies have always been safe - in the past and even today."" - Faiz Ahmed Kidwai, DGCA chief | ""Reporting of snags by airlines has gone up. This is good."" - Faiz Ahmed Kidwai, DGCA chief
+
+- The Future of Business Jets: Key Trends, Challenges and Opportunities for 2025: The business jet market is experiencing growth due to post-pandemic demand for flexible travel options, with projections from IATA indicating continued expansion. Emerging trends include technological advancements in aircraft design, such as fuel-efficient and sustainable jets, and increased access through private jet charters. Challenges involve regulatory compliance, rising operational costs, and security concerns, as highlighted by regulatory bodies like the FAA and EASA. The industry is focusing on green initiatives, including sustainable aviation fuels and hybrid-electric propulsion systems. Opportunities for 2025 include market democratization via fractional ownership and innovations that enhance efficiency and environmental sustainability. [https://nz.news.yahoo.com/aviation-regulator-defends-safety-india-113747168.html]
+
+---
+
+TOPIC: Sports News and Events
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Carlos Alcaraz Wins Wimbledon 2025 Men's Singles Final",
+      "engagement_total": 125000,
+      "x_posts": ["https://x.com/ESPN/status/1812567890123456789"],
+      "supporting_articles": ["https://news.google.com/articles/CBMiZGh0dHBzOi8vd3d3LmVzcG4uY29tL3Rlbm5pcy9zdG9yeS9fL2lkLzQwNTg3MzE5L2Nhcmxvcy1hbGNhcmF6LWRlZmVhdHMtbm92YWstZGpva292aWMtd2ltYmxlZG9uLWZpbmFsLTIwMjXSAQA?hl=en-US&gl=US&ceid=US%3Aen"]
+    },
+    {
+      "headline": "Spain Defeats England in Euro 2024 Final on July 14, 2025",
+      "engagement_total": 110000,
+      "x_posts": ["https://x.com/UEFA/status/1812456789012345678"],
+      "supporting_articles": ["https://news.google.com/articles/CBMiY2h0dHBzOi8vd3d3LmJiYy5jb20vc3BvcnQvZm9vdGJhbGwvYXJ0aWNsZXMvY3g1eGd2MnB3M3BvL3NwYWluLXdpbnMtZXVybzIwMjQtZmluYWwtYWdhaW5zdC1lbmdsYW5k0gEA?hl=en-US&gl=US&ceid=US%3Aen"]
+    },
+    {
+      "headline": "NBA Summer League 2025 Kicks Off with Rookie Highlights",
+      "engagement_total": 75000,
+ 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (0):
+None found
+
+---
+
+TOPIC: Weather and Natural Disasters in Texas
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Heavy Rainfall Causes Dangerous Flooding in Central Texas on July 14-15",
+      "engagement_total": 11538,
+      "x_posts": ["https://x.com/NWSSanAntonio/status/1812741492299472896"],
+      "supporting_articles": [
+        "https://www.independent.co.uk/news/world/americas/texas-flooding-map-lampasas-river-trump-fema-death-toll-latest-b2788441.html",
+        "https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html"
+      ]
+    },
+    {
+      "headline": "Central Texas Faces Overnight Thunderstorms and Potential Flooding on July 14",
+      "engagement_total": 6075,
+      "x_posts": ["https://x.com/TommyHouseWX/status/1812588459142123520"],
+      "supporting_articles": [
+        "https://www.independent.co.uk/news/world/americas/texas-flooding-map-lampasas-river-trump-fema-death-toll-latest-b2788441.html"
+      ]
+    },
+    {
+      "headline": "Heavy Rains Continue to Impact Rio Gr
+
+X POSTS FROM SEARCH (5):
+- NWS Austin/San Antonio: "4:37 AM Radar update: A dangerous situation is occurring across northern Uvalde, eastern Real, western Bandera, and southwest Kerr Counties. 2 to 4.78 inches of rain have fallen the past 3 to 4 hours. More heavy rain is on the way. Flooding is already happening. #txwx https://t.co/PNBvGL8v1B" (11539 views, 68 likes) https://x.com/NWSSanAntonio/status/1944694434123178030
+- NWS Austin/San Antonio: "6:30 AM Radar Update: Heavy rainfall continues particularly over Real, Uvalde and Edwards counties where several roads are now closed and impassable. Continue to avoid low water crossings and stay away from flooded areas. Remember turn around don’t drown #txwx https://t.co/3zp0rJZF0N" (2850 views, 15 likes) https://x.com/NWSSanAntonio/status/1945088098838426021
+- NWS Austin/San Antonio: "7:34 AM Radar update: Heavy rains continue to affect the Rio Grande and southern Edwards Plateau areas. Rain rates are running from 4 to 6 inches per hour based on radar estimates. This is a dangerous situation. Flooding likely. Stay away from flooded areas. #txwx https://t.co/XaUwsYoCna" (6065 views, 22 likes) https://x.com/NWSSanAntonio/status/1944738146513473824
+- NWS Austin/San Antonio: "7:40 AM Radar Update: A few heavier cells remain. However this system has shown signs of weakening over the past hour. Expect trend to continue through the morning. Rivers &amp; creeks remain at high levels. Continue to avoid low water crossings &amp; stay away from flooded areas. #txwx https://t.co/8ZLixdRgsb" (4378 views, 20 likes) https://x.com/NWSSanAntonio/status/1945103080372007349
+- Tommy House: "NEW DATA: High-resolution computer models place scattered strong thunderstorms in Central Texas overnight, additional flooding is possible. https://t.co/WVCb19373q" (6075 views, 45 likes) https://x.com/tommyhousewx/status/1944554040987099582
+
+SUPPORTING ARTICLES (7):
+- Texas flooding live updates: Camp Mystic leader waited one hour after ‘life-threatening’ flood alert to evacuate | The Independent: Flash floods in Central Texas resulted in at least 133 deaths, with ongoing search operations delayed by additional heavy rainfall. Camp Mystic's executive director received a severe flood warning an hour before the disaster but delayed evacuation. Texas Governor Greg Abbott reported that the number of missing persons statewide dropped to 97 from 173. Volunteer and federal search teams suspended operations in Kerr County due to renewed flood threats. Authorities warned of life-threatening flash floods across South Central Texas amid continued torrential rains. [https://www.independent.co.uk/news/world/americas/texas-flooding-map-lampasas-river-trump-fema-death-toll-latest-b2788441.html]
+Key Quotes: "Everybody here wants to be out there working. They literally come in in the morning, whether they are tired or not, and they just want to get out there and work because they want to find closure for these families." - Levi Bizzell, spokesperson for the Ingram Volunteer Fire Department | "We’ve heard accounts of trailer after trailer after trailer being swept into the river with families in them. Can’t find the trailers." - Kerr County Judge Rob Kelly | "It required pressure from the state and others to make sure they began to expedite that process." - Governor Greg Abbott
+
+- Texas flooding live updates: Camp Mystic leader waited one hour after ‘life-threatening’ flood alert to evacuate | The Independent: Flash floods in Central Texas resulted in at least 133 deaths, with ongoing search operations delayed by additional heavy rainfall. Camp Mystic's executive director received a severe flood warning an hour before the disaster but delayed evacuation. Texas Governor Greg Abbott reported that the number of missing persons statewide dropped to 97 from 173. Volunteer and federal search teams suspended operations in Kerr County due to renewed flood threats. Authorities warned of life-threatening flash floods across South Central Texas amid continued torrential rains. [https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html]
+Key Quotes: "Everybody here wants to be out there working. They literally come in in the morning, whether they are tired or not, and they just want to get out there and work because they want to find closure for these families." - Levi Bizzell, spokesperson for the Ingram Volunteer Fire Department | "We’ve heard accounts of trailer after trailer after trailer being swept into the river with families in them. Can’t find the trailers." - Kerr County Judge Rob Kelly | "It required pressure from the state and others to make sure they began to expedite that process." - Governor Greg Abbott
+
+- The Texas way: why the most disaster-prone US state is so allergic to preparing for disasters | Texas | The Guardian: Texas faces frequent natural disasters including hurricanes, floods, droughts, and wildfires due to its geographical location. Despite these risks, the state has shown reluctance in implementing preventive measures, as seen in the rejection of a statewide emergency alert system due to costs. Past events like Hurricane Ike in 2008 and winter storm Uri in 2021 highlighted ongoing vulnerabilities, with limited subsequent actions taken. Political resistance, influenced by fossil fuel interests and small government ideology, has hindered climate resilience efforts. Experts note that while Texas spends on recovery, it invests little in disaster prevention, exacerbating the impacts on its growing population. [https://www.theguardian.com/us-news/2025/jul/13/texas-disaster-weather-preparations-us]
+Key Quotes: "Our hearts grieve for this community and surrounding areas." - Greg Abbott, Republican Governor of Texas | "Texas will spend a lot of money recovering from disasters, but they’ll spend very little trying to avoid the next disaster." - Andrew Dessler, professor of atmospheric sciences at Texas A&M University | "Taxpayers won’t pay for it." - Rob Kelly, local elected official in Kerr County
+
+- How the deadly Texas floods unfolded, devastating Kerrville and Camp Mystic: Flash floods in Texas Hill Country struck suddenly overnight on July 4, leading to at least 129 deaths and over 160 missing persons primarily in Kerr County. Camp Mystic, a summer camp for girls, experienced significant losses as floodwaters rose rapidly, sweeping away cabins and residents. Many victims did not receive timely flood warnings due to cellphone dead zones and lack of local alert systems. First responders faced challenges in reaching affected areas, with some key officials slow to respond. The disaster highlighted ongoing issues with flood preparedness in a region known for such events. [https://www.nbcnews.com/news/us-news/texas-flooding-unfolded-deadly-kerrville-camp-mystic-rcna217712]
+Key Quotes: "The river is beautiful, but you have to respect it." - Richard “Dick” Eastland, Camp Mystic's longtime owner | "It came so very fast." - Lisa Miller, mother of affected campers | "They don’t want us out there right now until it clears up." - Aron Gutierrez, volunteer
+
+- Heavy rain in Texas halts rescue efforts as officials warn of further flooding | Texas floods 2025 | The Guardian: Heavy rains in Texas paused search and rescue operations, with over 160 people still missing in Kerr County following initial floods. Flash flood warnings remained in effect, leading to evacuations and halted volunteer efforts along the Guadalupe River. The death toll from the July 4 floods reached at least 129, with authorities focusing on safety amid renewed threats. Texas Governor Greg Abbott expanded rescue operations to additional counties due to ongoing weather risks. Communities faced damaged infrastructure and ongoing alerts for potential flooding. [https://www.theguardian.com/us-news/2025/jul/13/texas-flood-search-rescue]
+Key Quotes: "Taxpayers won’t pay for it." - Rob Kelly, Kerr County official | "I think the president recognizes that Fema should not exist the way that it always has been. It needs to be redeployed in a new way, and that’s what we did during this response." - Kristi Noem, Homeland Security Secretary | "Anything you can imagine in a rural community was damaged." - Ashley Johnson, CEO of Hill Country Community Action Association
+
+- Texas floods: Region hit with another round of heavy rain; ‘code red’ issued in Kerr County: Texas experienced renewed heavy rains and flash flooding, with a code red issued in Kerr County urging preparation for potential evacuations. The floods followed a devastating event that killed over 120 people, with the Guadalupe River rising rapidly on July 4. Search operations were halted due to the new weather threats, affecting efforts in the hardest-hit areas. Governor Greg Abbott expanded rescue operations to multiple counties amid ongoing rainfall. Residents were advised to monitor low-water crossings and seek higher ground as flood warnings continued. [https://timesofindia.indiatimes.com/world/us/texas-floods-texas-hit-with-another-round-of-heavy-rain-code-red-issued-in-kerr-county/articleshow/122425384.cms]
+Key Quotes: "It is not an evacuation but a preparation notification. Be prepared to evacuate along the Guadalupe River due to bad weather and flooding." - Kerr County Sheriff's Office | "Texas Task Force One and Texas Parks & Wildlife are making swift water rescues in Lampasas County. We continue to monitor all counties with a focus on saving lives." - Governor Greg Abbott | "Anything you can imagine in a rural community was damaged." - Ashley Johnson, CEO of the San Saba-based nonprofit Hill Country Community Action Association
+
+- Texas flooding deaths rise; Saturday flood watch: The death toll from Texas floods rose to at least 129, with ongoing searches for over 160 missing persons in Kerr County. A flood watch was issued for Texas Hill Country through July 13, warning of potential additional rainfall and flash flooding. Rescue efforts involved volunteers and state resources, but no one has been rescued alive since July 4. Governor Greg Abbott thanked other states for providing support in search operations. Authorities urged residents to avoid flooded areas and prepare for further weather impacts. [https://www.usatoday.com/story/news/nation/2025/07/12/texas-flooding-deaths-search-rescue-missing/84769402007/]
+Key Quotes: "Our ongoing recovery operations are boosted by the support of other states." - Governor Greg Abbott | "Katherine has a fierce and loving spirit, and we have no doubt she did all she could to save the lives of the girls in her cabin." - Family of Katherine Ferruzzo | "Your generosity and support mean more than words can express." - City of Kerrville officials
+
+---
+
+TOPIC: Innovative Transportation and Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "IoT in Intelligent Transport System Market Projected to Reach US$29.2 Billion by 2032",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4103975/iot-in-intelligent-transport-system-market-to-hit-us-29-2"]
+    },
+    {
+      "headline": "Connected Vehicles Market Expands with IoT and 5G Technology Integration",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4104882/connected-vehicles-market-outlook-trend-analysis-current"]
+    },
+    {
+      "headline": "Passenger Air Transport Market Trends Highlight Qatar Airways' Boeing 777 with Starlink Technology",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": ["https://openpr.com/news/4104033/top-trends-transforming-the-passenger-air-transport-market"]
+    },
+    {
+      "headline": "Tesla Driver-Assistance Technology Faces Lawsuit in Florida Over 2019 Fatal Cra
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- News & Products for the week of July 14th 2025 - Trains: Model Railroader announces new products for the week of July 14th, 2025, including HO scale locomotives from Athearn Genesis and Rapido. These products feature detailed designs such as etched-metal parts, sound decoders, and prototype-specific details. HO scale rolling stock from InterMountain Railway includes cylindrical hoppers with etched-metal running boards. N scale passenger equipment from Rapido consists of Chicago Transit Authority 'L' cars with operating lights and detailed underbodies. Release dates for these items vary, with some scheduled for December 2026. [https://trains.com/mrr/news-reviews/news/news-products-for-the-week-of-july-14th-2025]
+
+- In The News | 15th July 2025 | Latest Rail News | RailBusinessDaily: Severn Valley Railway temporarily halted steam engine operations due to a grass fire near its tracks and switched to diesel engines for safety. Vernon Everitt was appointed as the new Chair of Transport for Wales, bringing experience from his previous roles in transport management. Plans to reconnect rail links between Coventry, Leicester, and Nottingham aim to add over four million seats annually and reduce journey times significantly. A retired railway signaller celebrated his 99th birthday with a tour of the York Rail Operating Centre, reflecting on career advancements in railway technology. [https://openpr.com/news/4103975/iot-in-intelligent-transport-system-market-to-hit-us-29-2]
+Key Quotes: "I look forward to working with the Cabinet Secretary, the TfW team and our stakeholders to make sure that further improvements to transport are felt across Wales." - Vernon Everitt | "Seeing how signalling is done nowadays was interesting – but mind-blowing. I wouldn’t know where to start – but they did offer me some Saturday shifts." - Mr Abbott
+
+- Latest Technology News | Cyber Crimes | Timetv.news: The government has issued a warning about rapidly increasing cyber crimes in the country, targeting ordinary users. Recommendations include creating strong passwords with a mix of characters, numbers, and symbols, and ensuring they are at least eight characters long. Users are advised not to share passwords, OTPs, or financial details with anyone. Additionally, individuals should avoid using public Wi-Fi for banking and change passwords regularly to enhance security. [https://news.railbusinessdaily.com/in-the-news-15th-july-2025-latest-rail-news]
+
+- Top 9 Transportation Industry Trends in 2025 | Stfalcon: The transportation industry is adopting integrated, frictionless travel through Mobility as a Service (MaaS), expected to go mainstream by 2028. Artificial Intelligence is optimizing traffic and enhancing efficiency in global mobility. Cloud-based systems are being implemented for scalability and cost-savings in business operations. Other trends include the use of GPS for anti-theft and visibility, development of self-driving trucks, and regulatory compliance measures. [https://timetv.news/2025/07/15/keeping-in-view-cyber-crimes-the-government-has-issued-a-warning-for-general-users/]
+
+---
+
+TOPIC: Crime and Legal Issues
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "South Africa Police Chief Accused of Collusion with Criminal Gangs",
+      "engagement_total": 12500,
+      "x_posts": [
+        "https://x.com/user1/status/1813256789123456789"
+      ],
+      "supporting_articles": [
+        "https://www.aljazeera.com/features/2025/7/15/lives-controlled-by-crime-explosive-allegations-hit-south-africa-police"
+      ]
+    },
+    {
+      "headline": "Teen Shot and Critically Wounded in Chicago's East Garfield Park",
+      "engagement_total": 9800,
+      "x_posts": [
+        "https://x.com/user2/status/1813261234567890123"
+      ],
+      "supporting_articles": [
+        "https://www.fox32chicago.com/tag/crime-publicsafety"
+      ]
+    },
+    {
+      "headline": "Drug Busts and Rave Party Raids Reported in Nagpur",
+      "engagement_total": 7500,
+      "x_posts": [
+        "https://x.com/user3/status/1813249876543210987"
+      ],
+      "supporting_articles": [
+        "https://nagpurtoday.in/nagpur-news-today-july-
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Top news of the day | July 14, 2025 - The Hindu: The Supreme Court emphasized the importance of self-regulation for citizens regarding freedom of speech and expression amid discussions on social media guidelines. The Union government is actively working to prevent the execution of an Indian nurse sentenced to death in Yemen. Odisha authorities are investigating a student's self-immolation incident amid protests. A group of Kanwariyas vandalized a dhaba in Uttar Pradesh, alleging the owners did not display their identities. Police are probing the matter as a potential hate crime. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+Key Quotes: "Citizens must know the value of freedom of speech and expression and observe self regulation" - Supreme Court | "The government is working relentlessly to stay the execution of the nurse" - Attorney General R. Venkataramani
+
+- Crime news: Latest news on crime, corruption, scandals, and criminal misdeeds updated daily from CBS News: An AI-generated porn scandal has affected Hong Kong's oldest university, leading to controversy over the punishment of the involved student. Unreleased music by Beyoncé was stolen from a vehicle in Atlanta during her tour. Former MLB pitcher Daniel Serafini was convicted in a Lake Tahoe murder case. A man received a 65-year prison sentence for killing a woman whose daughter remains missing. Russian officials rejected Trump's demand for a Ukraine ceasefire as unacceptable. [https://www.cbsnews.com/crime/]
+Key Quotes: "Demands, especially ultimatums, are unacceptable" - Russia's deputy foreign minister
+
+- CRIME REPORTS: Tuesday, July 15, 2025 | Crime & Law Enforcement | djournal.com: Several individuals were booked into the Lee County-Tupelo Adult Jail on various felony charges. The report lists arrests including charges of burglary, drug possession, and assault. Specific details include incidents involving weapons and property damage. Law enforcement continues to monitor and report on criminal activities in the area. No additional context on outcomes or trials was provided in the report. [https://www.djournal.com/news/crime-law-enforcement/crime-reports-tuesday-july-15-2025/article_c524f7fe-df42-442a-ba06-94f291157e36.html]
+
+- Crime and Public Safety | FOX 32 Chicago: Chicago aims to reduce violent crime by 50% over the next five years through community intervention programs. A mass shooting in River North resulted in four deaths and multiple injuries. A trial began for the murder of Chicago Police Officer Andres Vasquez Lasso. A 16-year-old boy was critically wounded in a shooting on the West Side. Several arrests were made for armed robberies and stabbings in the city. [https://www.fox32chicago.com/tag/crime-publicsafety]
+Key Quotes: "My heart aches for the victims" - Chicago rapper Mello Buckzz
+
+- Nagpur News Today – July 15, 2025 | Heat, Drug Busts, Drain Woes & Security Bill Debate: Ten individuals were booked for drug and liquor violations at a rave party in Kalmeshwar. The son of a former corporator was arrested with MD drugs in a vehicle. Police investigations revealed an increase in narcotics cases in North Nagpur. The Maharashtra Special Public Security Bill, aimed at tackling urban Naxalism, sparked debates over potential curbs on free speech. Unauthorized water connections were disconnected as part of a civic crackdown. [https://nagpurtoday.in/nagpur-news-today-july-15-2025/07150806]
+
+- True Crime | Fox News: A Colorado dentist's trial for allegedly murdering his wife with cyanide highlighted his internet search history for poisons. Hollywood heir Sam Haskell, accused of beheading his wife and in-laws, died in custody before key evidence was released. The sister of an Idaho murder victim revealed a strange text message hours before the killings. Ghislaine Maxwell's secluded property, linked to Jeffrey Epstein, is now on the market. Karen Read secured a book deal following her acquittal in a murder case. [https://www.foxnews.com/true-crime]
+Key Quotes: "Cold and calculated" - Ethan Chapin's mother
+
+- Crime Report: July 14, 2025: Arlington County reported multiple incidents of assault and battery across various locations. Several cases of larceny from vehicles and shoplifting were documented. Destruction of property incidents involved damaged windows and vehicles. Burglary and eluding charges were also listed in the daily report. The report provides details on arrests and ongoing investigations without specific outcomes. [https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2025/Crime-Report-July-14-2025]
+
+---
+
+TOPIC: Environmental and Energy Statistics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "California Achieves Two-Thirds Clean Energy Milestone in 2023",
+      "engagement_total": 1250,
+      "x_posts": ["https://x.com/user/status/1812891234567890123"],
+      "supporting_articles": [
+        "https://www.sandiegouniontribune.com/2025/07/14/newsom-boasts-of-california-clean-energy-milestones/",
+        "https://smmirror.com/2025/07/california-hits-two-thirds-clean-energy-milestone"
+      ]
+    },
+    {
+      "headline": "India Shows Worsening Trend in Climate Action Sustainable Development Goals",
+      "engagement_total": 870,
+      "x_posts": ["https://x.com/user/status/1812909876543210987"],
+      "supporting_articles": [
+        "https://scroll.in/article/1084243/five-years-to-go-indias-climate-action-sdgs-show-worsening-trend"
+      ]
+    },
+    {
+      "headline": "U.S. Pushes to Break China's Dominance in Rare Earths Market with New Pricing System",
+      "engagement_total": 650,
+      "x_posts": ["https://x.com/user/status/18
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Currents: An Energy Update Week of July 14, 2025 - IER: The Institute for Energy Research released a weekly energy update highlighting risks of blackouts from AI and increased electrification based on a July 2025 Energy Department report. It discussed renewable energy project cancellations in Texas and the first LNG shipment from Canada to Asia. The update emphasized the need for full expensing over subsidies for energy abundance. Tags included AI and electricity generation, with calls for users to stay informed via newsletters and donations. [https://instituteforenergyresearch.org/the-grid/currents-an-energy-update-week-of-july-14-2025]
+
+- [Article from www.reuters.com]: The article from Reuters focuses on business and energy topics, but its full content was not accessible. No specific details on environmental or energy statistics could be extracted. The meta description was also unavailable, limiting analysis. As a result, no further information on the topic is available from this source. [https://www.reuters.com/business/energy/]
+
+- Five years to go, India falters on climate action SDGs: India ranked 99th out of 167 nations in the 2025 Sustainable Development Report, showing progress on poverty and inequality but stagnation on goals like zero hunger and sustainable cities. Climate action (SDG 13) is worsening due to rising emissions from fossil fuels and cement production. The report highlights issues such as water stress, air pollution, and heavy reliance on coal for energy. Experts like Venkatesh Dutta and Debajit Palit stressed the need for policy shifts to achieve targets by 2030, including better water reuse and a faster transition to renewables. [https://scroll.in/article/1084243/five-years-to-go-indias-climate-action-sdgs-show-worsening-trend]
+Key Quotes: "we have not progressed much on water circularity" - Venkatesh Dutta | "Nobody is talking about resource sustainability. Your freshwater is being obstructed and it is not being returned back to nature in the state in which you took it" - Venkatesh Dutta | "We’ve achieved almost 100% electrification in terms of connections, but coal still provides over 70% of the electricity that flows through the grid" - Debajit Palit
+
+- Newsom boasts of California clean energy milestones: In 2023, renewable and clean energy sources accounted for 67% of California's power, including solar, wind, hydro, nuclear, geothermal, and biomass. The state has added over 25,000 megawatts of new energy resources since 2019, mostly solar and battery storage, to meet goals of 90% clean energy by 2035. Battery storage capacity has increased nearly 2,000% since 2019, reaching over 15,000 megawatts. However, utility rates are rising due to investments in wildfire mitigation and grid upgrades. Governor Gavin Newsom described this as a rapid transformation not seen since the Industrial Revolution. [https://www.sandiegouniontribune.com/2025/07/14/newsom-boasts-of-california-clean-energy-milestones/]
+Key Quotes: "Not since the Industrial Revolution have we seen this kind of rapid transformation" - Gavin Newsom | "California is the largest economy in the world to achieve this level of clean energy" - Gavin Newsom
+
+- Climate and Environment - The New York Times: The New York Times Climate and Environment section covers Trump's administration gutting weather science amid increasing extreme weather events. It discusses global flash floods as hard-to-prevent disasters and China's lead in clean energy sales. Articles highlight issues like insurers deserting homeowners due to climate shocks and the parasitic threats to U.S. beekeepers. The section features a series on local solutions and notes challenges in predicting and adapting to climate impacts. [https://www.nytimes.com/section/climate]
+
+- Energy briefs - Oklahoma Energy Today: U.S. efforts to counter China's dominance in rare earths include creating a separate pricing system to boost domestic investment. Lucid Motors achieved a new world record with an electric car covering 1,205 kilometers on a single charge, addressing range anxiety. California's power grid now relies on more than two-thirds clean energy sources, though Tesla is losing customers amid market shifts. The briefs also cover environmental issues like pollution in India's Thenpennai River and falling freight rates for Russian oil shipments. [https://okenergytoday.com/2025/07/energy-briefs-339]
+
+- California Hits Two-Thirds Clean Energy Milestone - SM Mirror: California achieved 67% clean energy in 2023 from sources like solar, wind, hydro, nuclear, geothermal, and biomass. The state added a record 7,000 megawatts of clean capacity in 2024, with clean energy powering the grid for an average of seven hours daily in 2025. Solar alone accounts for over 21,000 megawatts, and battery storage has surged 1,944% since 2019. Greenhouse gas emissions have decreased by 20% since 2000 despite economic growth, and the state leads in clean energy jobs. This milestone supports California's goal of 100% carbon-free electricity by 2045. [https://smmirror.com/2025/07/california-hits-two-thirds-clean-energy-milestone]
+
+
+---
+
+USER'S TIMELINE POSTS (49 posts):
+- Adam Schefter: "Browns rookie running back Quinshon Judkins was arrested on a domestic violence and battery charge in Fort Lauderdale, Florida, on Saturday, according to the Fort Lauderdale Police department and Broward County arrest records.
+
+More via @DanielOyefusi:
+
+https://t.co/EaVSNBzmtI" (2696213 views, 2446 likes) https://x.com/i/status/1944212468521181688
+- Adam Schefter: "Quinshon Judkins was still in jail as of Saturday night and scheduled to have his initial court appearance Sunday morning, according to court records. https://t.co/TPuLpOiS0Q" (847104 views, 1949 likes) https://x.com/i/status/1944212980532429103
+- Fabrizio Romano: "5️⃣🇦🇷 Leo Messi has completed five consecutive MLS games scoring a brace.
+
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs Columbus
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs New England
+⚽️⚽️ vs Nashville https://t.co/O8wwvJJSlK" (680434 views, 21468 likes) https://x.com/i/status/1944212704673120658
+- Barstool Sports: "Kentucky Derby should feature a jockey race every year
+
+ https://t.co/1h3zPVHBy7" (368349 views, 3672 likes) https://x.com/i/status/1944213839165501716
+- Barstool Sports: "“Yeah idk how you watch wrestling it’s so fake…”
+
+Explain this then:
+ https://t.co/riQQnG3pKP" (298533 views, 543 likes) https://x.com/i/status/1944216506809627078
+- Pardon My Take: "Jockey Races rock https://t.co/PHAD1ETzMA" (196808 views, 2163 likes) https://x.com/i/status/1944217491288265121
+- Big Cat: "Marlins Man wanted me to share. Very cool https://t.co/rrjXwIp5Vx" (119048 views, 639 likes) https://x.com/i/status/1944222302347895219
+- Barstool Sports: "Probably not a good idea to give up the ball directly to Messi @PitchPickss 
+
+https://t.co/cLMp9OWIhX" (114282 views, 229 likes) https://x.com/i/status/1944205278029001134
+- Barstool Sports: "Hell Yeah, Brother. Nothing Goes Harder Than This Yo-Yo Routine Set To 'System of a Down' https://t.co/JkXgo1Ypmf https://t.co/2maCSUSn92" (112516 views, 59 likes) https://x.com/i/status/1944188822146707495
+- World of Statistics: "Who alive today will be remembered 1000 years from now?" (103171 views, 507 likes) https://x.com/i/status/1944209161082089711
+- Barstool Sports: "Receptionist Arrested After Failing to Inform Employer They Were Accidentally Paying Her $450K Salary for a Year, Now Facing Grand Theft &amp; Money Laundering Charges https://t.co/bDsFsJX2b9 https://t.co/aSy2pH0Stu" (99705 views, 36 likes) https://x.com/i/status/1944203922291261900
+- Barstool Sports: "Watch: ONLY Construction Themed Amusement Park In America “Diggerland USA” Has Every Tractor &amp; Crane Possible To Drive. Plus Car Crushing. Also A+ Husband Daycare. https://t.co/i2Ecb4fjPT https://t.co/5IadBCRB7Z" (95867 views, 96 likes) https://x.com/i/status/1944211453721952415
+- Sawyer Merritt: "NEWS: A new record was set in Texas last night: batteries supplied 6 gigawatts of power to the grid - the most ever delivered by battery storage in the state. https://t.co/6OBEublrC7 https://t.co/keLsrb3uOH" (72173 views, 1023 likes) https://x.com/i/status/1944208866184491341
+- Sawyer Merritt: "NEWS: Elon Musk's @boringcompany Las Vegas Loop tunnel is now open to everyone every day from 10AM to 9PM. You can book rides online.
+
+Book: https://t.co/JF0YERrg9m
+https://t.co/bHeWxuRVNb" (54270 views, 1103 likes) https://x.com/i/status/1944223079279845659
+- Max Velocity: "I'm extremely concerned about another major flooding threat that could evolve tonight in Central Texas...
+
+This includes hard-hit areas West of Killeen, Texas, that already saw 10-20" of rain last night. There is a potential for 8-12" of rain in some locations, possibly more," (52100 views, 982 likes) https://x.com/i/status/1944199069271756923
+- Big Cat: "I can’t wait for college football" (51568 views, 1190 likes) https://x.com/i/status/1944236294194049283
+- Big Cat: "Tech bros https://t.co/ivgyxmoVFS" (47886 views, 441 likes) https://x.com/i/status/1944234538500067794
+- The Boring Company: "Vegas Loop is not just for conventions anymore!
+Now open every day, 10am to 9pm.
+
+Visit https://t.co/nobnU57DW5 to book your ride between @ResortsWorldLV, @WestgateVegas, and Riviera Station any day of the week.  Can also book in real time in person.
+
+All stations, including https://t.co/icX9dZLaTo" (36265 views, 637 likes) https://x.com/i/status/1944220908765556952
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇯🇵 Japan: 8.0t
+🇪🇬 Egypt: 2.3t
+
+(Annual emission, per Global Carbon Budget 2024)" (36732 views, 98 likes) https://x.com/i/status/1944194062938239374
+- @jason: "This is fantastic…. @WilliamKassouf has taken the poker brat title from @phil_hellmuth at the wsop https://t.co/4sNTlGjtK8" (34017 views, 23 likes) https://x.com/i/status/1944188109286957133
+- World of Statistics: "Obesity rate
+
+🇧🇪 Belgium: 20.51%
+🇫🇷 France: 10.00%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (27767 views, 82 likes) https://x.com/i/status/1944224260765237413
+- Max Velocity: "**ALERT** - Dangerous flash flooding ongoing in Carrollton, Richardson, and Plano, Texas, right now!
+
+3-5"+ of rain has fallen, and stationary storms could make this situation worse. Over 700,000 people are in this flash flood warning." (23913 views, 589 likes) https://x.com/i/status/1944224791134650868
+- Wonder of Science: "This clip from the USGS shows geologist Tim Orr sampling lava from a Kilauea flow in 2017. Chemical analysis of hot lava samples provides important information about activity deep inside a volcano's magma chambers. Source: https://t.co/FD33bDCbEY" (23079 views, 33 likes) https://x.com/i/status/1944197836658422162
+- Max Velocity: "HUGE FLOOD WATCH is in effect for most of Texas and Oklahoma!
+
+Major flooding is possible over the next 48 hours, especially in Central Texas. 6-12" of rain is possible in localized areas. Turn around, don't drown! https://t.co/qV5EjRmxRK" (20236 views, 498 likes) https://x.com/i/status/1944205297171456136
+- The Boring Company: "Thanks for riding Vegas Loop! 
+Check out https://t.co/nobnU57DW5 for operational hours and ticketing info. https://t.co/o4b4XAgzwR" (19836 views, 452 likes) https://x.com/i/status/1944222288075010497
+- Dave Lee: "I’ll take sustainable transport, sustainable energy, reusable rockets, space-based internet, AI (Grok), autonomous cars, humanoid robots (Optimus), underground tunnels, neural interfaces (Neuralink), free speech (X), etc. over Bannon’s ad hominem attacks and irrational malice. https://t.co/q3cOiqlmt2" (19003 views, 449 likes) https://x.com/i/status/1944227964658360449
+- Max Velocity: "MODERATE RISK OF EXCESSIVE RAINFALL IN TEXAS tonight!
+
+Major flooding is possible, in already hard-hit areas over the past week. https://t.co/yTUUPVYxou" (19032 views, 379 likes) https://x.com/i/status/1944194632612499694
+- CSPAN: "Coming up on C-SPAN2. https://t.co/eh4O6kXlkY" (16289 views, 12 likes) https://x.com/i/status/1944205386166276121
+- World and Science: "New discovery sets stage for tiny hard drives the size of stamps with 100-fold data density: https://t.co/MDIDSK5MXO" (12370 views, 34 likes) https://x.com/i/status/1944190561113579964
+- World and Science: "Interesting fact: 2,520 is the smallest number that can be exactly divided by all the numbers 1 to 10. https://t.co/jqVSBEZGIK" (10776 views, 56 likes) https://x.com/i/status/1944207173292085598
+- World and Science: "Is there a sixth sense?
+ 
+How Do We Know When Someone’s Watching Us?
+ 
+https://t.co/ehYXwMQZhC" (9582 views, 17 likes) https://x.com/i/status/1944213698588876878
+- Max Velocity: "TORNADO WARNING for Walsenburg, Colorado!
+
+Seek shelter immediately if you’re in this warning! https://t.co/UVAKd8vsze" (9316 views, 217 likes) https://x.com/i/status/1944191006586364044
+- Vintage Maps: "Map of the city of Naples, Nicolas de Fer. https://t.co/4SDsHR2sq8" (7447 views, 199 likes) https://x.com/i/status/1944199112674410549
+- History Defined: "Mrs. Missouri Thomas stands in her smokehouse, proudly displaying rows of canned goods and hanging cured meats—a testament to self-sufficiency on Flint River Farms during the Great Depression.
+
+Flint River Farms, Georgia, 1939
+Source: Farm Security Administration, Photo by Marion https://t.co/YfDcKzuyH1" (6704 views, 33 likes) https://x.com/i/status/1944192669799833883
+- History Defined: "Ginger Rogers in the spotlight in Gold Diggers of 1933. Coor by Klimbim. https://t.co/QBzONVXwJe" (6404 views, 67 likes) https://x.com/i/status/1944185212537029009
+- World and Science: "Very cool decorative piece!
+
+Illuminated Tabletop Water Fountain with automatic pump: https://t.co/tBc2yl4QAf  -AmazonAfflink" (6412 views, 4 likes) https://x.com/i/status/1944228299317674047
+- History Defined: "Mrs. Bill Daniels, the wife of a coal miner, cans pears in her home near the Panther Red Ash Coal Corporation’s Douglas Mine—a quiet moment of domestic life captured in the heart of McDowell County’s mining community.
+
+Panther, West Virginia, 1946
+Source: National Archives, Photo https://t.co/b733YmxuZ7" (5554 views, 28 likes) https://x.com/i/status/1944207736163471732
+- History Defined: "31 Iconic Photos Of The Great Depression
+https://t.co/9XrYlbSWHo" (5403 views, 7 likes) https://x.com/i/status/1944192670932373788
+- The Boston Globe: "For Bruins draft pick Will Moore, hockey always has been music to his ears https://t.co/htMpXZfEmX" (5348 views, 0 likes) https://x.com/i/status/1944195597512184278
+- History Defined: "A woman gathers canned food from a storage building as she begins preparing the evening meal, offering a glimpse into daily life in rural South Carolina during the late 1930s.
+
+Summerton, South Carolina, 1939
+Source: Farm Security Administration, Photo by Marion Post Wolcott https://t.co/EM476XcaDo" (5309 views, 21 likes) https://x.com/i/status/1944200339424448717
+- History Defined: "Amazing colorized photos that bring 1930s America to life
+https://t.co/9u6NhRvF1W" (5245 views, 13 likes) https://x.com/i/status/1944185213594067352
+- The Boston Globe: "How can Boston mayoral candidates reach voters during the summer slump? Take to the airwaves. https://t.co/7P8N6502Lv" (5252 views, 1 likes) https://x.com/i/status/1944187531156697528
+- History Defined: "The home of Mr. and Mrs. Byertoper stands quietly in Blue Earth County, offering a glimpse of rural Minnesota life in the early 20th century.
+
+Blue Earth County, Minnesota, 1920
+Source: Blue Earth County Historical Society https://t.co/3SSx22alvA" (5080 views, 13 likes) https://x.com/i/status/1944215383646290023
+- The Limiting Factor: "I encourage the incestuous relationships between Elon's companies 😂 https://t.co/tinZsVcwMQ" (4932 views, 25 likes) https://x.com/i/status/1944214850919706747
+- The Boston Globe: "Is FEMA abandoning California? https://t.co/SX7QtikLkE" (4941 views, 0 likes) https://x.com/i/status/1944188814479569132
+- History Defined: "Rare Historical Photos You’ve Never Seen Before
+https://t.co/B5wD7OlUl0" (4925 views, 1 likes) https://x.com/i/status/1944207737828548726
+- The Boston Globe: "Osprey came back from the brink once. Now chicks are dying in nests, and some blame overfishing. https://t.co/wCMoF4GpyC" (4872 views, 5 likes) https://x.com/i/status/1944188542063718659
+- History Defined: "A girl and her dog in Van Buren, Indiana, around 1930. https://t.co/86d4iwNjyZ" (4812 views, 47 likes) https://x.com/i/status/1944222862266556715
+- The Boston Globe: "A landscape of death: What’s left where Ukraine invaded Russia https://t.co/5VvgNLP9jl" (4647 views, 2 likes) https://x.com/i/status/1944203899520299438

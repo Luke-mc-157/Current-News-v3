@@ -1,0 +1,337 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Liverpool transfer news includes updates on Alexander Isak and other potential deals",
+      "engagement_total": 30798,
+      "x_posts": [
+        "https://t.co/olXid2od9G"
+      ],
+      "supporting_articles": [
+        "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-rodrygo-32044404"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (2):
+- Liverpool FC News: "Liverpool transfer could still happen as intrigue grows after partnership torn up
+
+By @IanDoyleSport
+
+#LFC
+https://t.co/olXid2od9G" (11551 views, 19 likes) https://x.com/LivEchoLFC/status/1945053978066309183
+- Liverpool FC News: "Liverpool transfer could still happen as intrigue grows after partnership torn up
+
+By @IanDoyleSport 
+
+#LFC 
+
+https://t.co/olXid2od9G" (19167 views, 68 likes) https://x.com/LivEchoLFC/status/1944971434310430919
+
+SUPPORTING ARTICLES (5):
+- Liverpool transfer news LIVE: Alexander Isak latest, Luis Diaz update, Hugo Ekitike to Newcastle - Liverpool Echo: Liverpool began pre-season with a 3-1 victory over Preston North End, featuring goals from Conor Bradley, Darwin Nunez, and Cody Gakpo. The club has completed major transfers including Jeremie Frimpong, Florian Wirtz, and Milos Kerkez, with total spending exceeding £200 million. Liverpool is considering a bid for Newcastle's Alexander Isak, potentially worth up to £130 million, though no official offer has been made. They rejected a £59 million bid from Bayern Munich for Luis Diaz and are monitoring Eintracht Frankfurt's Hugo Ekitike. Additionally, players like Darwin Nunez and Luis Diaz face uncertain futures amid potential departures. [https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-rodrygo-32044404]
+Key Quotes: "Despite Newcastle’s best attempts to keep hold of their star man, Alexander Isak’s future remains uncertain ahead of the new campaign and odds on the centre-forward to join long-term admirers Liverpool have been slashed to 11/10 from 13/8." - Sam Rosbottom, Betfair spokesperson
+
+- Liverpool Starting XI vs Preston: Wirtz Debut, Confirmed Team News and Predicted Lineup - Yahoo Sports: Liverpool's pre-season opener against Preston North End is marked by emotional tributes to the late Diogo Jota and his brother. Several new signings, including Florian Wirtz and a Georgian international goalkeeper, are poised for potential debuts. The match provides insight into Liverpool's tactical evolution under new leadership. The predicted lineup includes players like Mamardashvili, Bradley, Van Dijk, and Salah. It serves as a fitness-building exercise and a platform for youth prospects. [https://sports.yahoo.com/article/liverpool-starting-xi-vs-preston-105000319.html]
+
+- Is Preston vs Liverpool on TV today? Kick-off time, channel and team news | Football | Metro News: Liverpool's pre-season friendly against Preston North End kicks off at 3pm at Deepdale Stadium. The match will be broadcast on ITV1 and streamed on ITVX, with tributes planned for Diogo Jota and his brother Andre Silva. Both teams will wear black armbands, and a minute's silence will be observed. Liverpool may feature new signings like Florian Wirtz, though some players are absent due to international duties or injuries. This game is the first of four pre-season fixtures for Liverpool. [https://metro.co.uk/2025/07/13/preston-vs-liverpool-tv-today-kick-off-time-team-news-23647040/]
+
+- Liverpool cancel planned preseason testing after Diogo Jota’s death; Salah, Henderson pay tribute - The Athletic: Liverpool cancelled pre-season testing for some players following the deaths of Diogo Jota and his brother Andre Silva in a car accident. Mohamed Salah expressed his grief, stating he is frightened to return to Liverpool without Jota. Former captain Jordan Henderson paid tribute by laying a wreath at Anfield. A funeral for Jota and Silva is scheduled in Portugal, with Liverpool players and staff expected to attend. The club is providing full support to the affected families and friends. [https://www.nytimes.com/athletic/6473336/2025/07/04/diogo-jota-liverpool-preseason-testing/]
+Key Quotes: "I am truly lost for words. Until yesterday, I never thought there would be something that would frighten me of going back to Liverpool after the break." - Mohamed Salah | "Rest in peace my friend, along with your brother Andre. We will all miss you. Love Hendo and family." - Jordan Henderson
+
+- Diogo Jota: 1996-2025 - Liverpool FC: Liverpool Football Club announced the tragic passing of Diogo Jota at age 28 due to a road traffic accident in Spain, along with his brother Andre Silva. The club is devastated and requests privacy for Jota's family, friends, and teammates. Liverpool will provide full support to those affected. No further comments will be made by the club at this time. This loss has prompted tributes from around the football community. [https://www.liverpoolfc.com/news/diogo-jota-1996-2025]
+
+---
+
+TOPIC: Sports News and Highlights
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Lamine Yamal involved in controversy in Spain",
+      "engagement_total": 10000,
+      "x_posts": [],
+      "supporting_articles": ["https://outlookindia.com/sports/world-july-15-live-blog-scores-updates-results"]
+    },
+    {
+      "headline": "Victor Wembanyama cleared for NBA return",
+      "engagement_total": 8000,
+      "x_posts": [],
+      "supporting_articles": ["https://outlookindia.com/sports/world-july-15-live-blog-scores-updates-results"]
+    },
+    {
+      "headline": "India chases win at Lord’s",
+      "engagement_total": 6000,
+      "x_posts": [],
+      "supporting_articles": ["https://outlookindia.com/sports/world-july-14-live-blog-scores-updates-results"]
+    },
+    {
+      "headline": "Chelsea celebrates Club World Cup win",
+      "engagement_total": 5000,
+      "x_posts": [],
+      "supporting_articles": ["https://outlookindia.com/sports/world-july-14-live-blog-scores-updates-results"]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (5):
+- Sports Today Highlights, July 15: Lamine Yamal Courts Controversy In Spain; Victor Wembanyama Cleared For NBA Return: Lamine Yamal faced controversy in Spain for hiring people with dwarfism for his 18th birthday party, drawing condemnation from a disability organization. England included Liam Dawson in their squad for the fourth Test against India, replacing the injured Shoaib Bashir. West Indies were bowled out for 27 in a Test match against Australia, marking the second-lowest total in Test history. San Antonio Spurs star Victor Wembanyama was cleared to return for the NBA season after recovering from deep vein thrombosis. Other updates included India U-20 women's team drawing 1-1 against Uzbekistan and various chess and golf events. [https://outlookindia.com/sports/world-july-15-live-blog-scores-updates-results]
+Key Quotes: "I’m officially cleared to return. … I’ll finally be able to play a bit of basketball again" - Victor Wembanyama | "The best figures by a bowler playing in their 100th Test" - ICC
+
+- Sports News, July 14 Highlights: MI New York Clinch MLC Title; Mohammed Siraj Penalised For Ben Duckett Send-Off: MI New York won the Major League Cricket title by defeating Washington Freedom by five runs. Jannik Sinner won his first Wimbledon title by beating Carlos Alcaraz in four sets. Chris Gotterup claimed his second PGA Tour title at the Scottish Open. India pacer Mohammed Siraj was fined 15% of his match fee for a fiery send-off to Ben Duckett during a Test match. Other events included Bangladesh leveling a T20I series against Sri Lanka and various WNBA game results. [https://outlookindia.com/sports/world-july-14-live-blog-scores-updates-results]
+Key Quotes: "This was only a dream, the dream of the dream... because it was so far away from where I'm from. I'm just living my dream" - Jannik Sinner | "I knew he was going to learn from that final and not make the same mistakes" - Carlos Alcaraz
+
+- Sports Illustrated: Sports Illustrated provides updates on various sports including the British Open, NFL, NBA, MLB, and WNBA. Scottie Scheffler suggested including LIV Golfers in world rankings. Paul George of the 76ers underwent knee surgery. The article highlights MLB's response to Georgia politics and WNBA power rankings. It also covers fantasy football and college sports news. [https://www.si.com/]
+Key Quotes: "He'd be the best pitcher in baseball" - John Smoltz | "It really is a coin flip" - Unknown
+
+- The Latest Sports News, Updates & Articles | Fox News: The MLB All-Star Game will take place at the Atlanta Braves' home park. A PGA star's father is skipping the Ryder Cup due to concerns about the atmosphere. Scottie Scheffler discussed the challenges of being the top-ranked golfer. The article covers various sports updates including NFL, MLB, and UFC events. It also mentions controversies and predictions in sports like baseball and racing. [https://www.foxnews.com/sports]
+Key Quotes: "Afraid of what's going to happen" - PGA star's dad (not specified) | "Being the No 1 golfer in the world is 'not a fulfilling life'" - Scottie Scheffler
+
+- Top news of the day | July 14, 2025: The article summarizes top national and international news, with minimal sports content. Indian astronaut Shubhanshu Shukla returned from the ISS, but no direct sports highlights are detailed. Other topics include India-China relations and Supreme Court cases. There are no prominent sports events or updates in the main content. The piece focuses on general news rather than sports highlights. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+
+---
+
+TOPIC: Texas Weather and Flooding
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Search for Texas flood victims paused due to heavy rain and ongoing flash flooding",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html"
+      ]
+    },
+    {
+      "headline": "Texas Hill Country floods result in hundreds dead or missing with ongoing response and future mitigation measures",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.texastribune.org/2025/07/11/texas-hill-country-floods-what-we-know/"
+      ]
+    },
+    {
+      "headline": "Texas flood rescue teams continue searching for missing people as death toll exceeds 130",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.cbsnews.com/news/texas-floods-missing-people-death-toll-climbs/"
+      ]
+    },
+    {
+      "headlin
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (5):
+- Texas flooding live updates: Camp Mystic leader waited one hour after ‘life-threatening’ flood alert to evacuate | The Independent: A fresh wave of floods battered Central Texas, delaying rescue efforts and raising the death toll to 133. Officials suspended volunteer search operations near the Guadalupe River in Kerr County due to further flood threats. Texas Governor Gregg Abbott reported that the number of missing persons statewide had dropped to 97. Camp Mystic's executive director received a severe flood warning an hour before the disaster but delayed evacuation. Warnings of 'life-threatening' flash floods remained in effect across South Central Texas, with ongoing challenges in identifying victims due to the area's popularity with tourists. [https://www.independent.co.uk/news/world/americas/texas-floods-death-toll-trump-fema-missing-latest-updates-b2787892.html]
+Key Quotes: "Maybe they should've had bells or something go off" - Trump | "Everybody here wants to be out there working. They literally come in in the morning, whether they are tired or not, and they just want to get out there and work because they want to find closure for these families" - Levi Bizzell | "It required pressure from the state and others to make sure they began to expedite that process" - Governor Greg Abbott
+
+- Texas Hill Country floods: What we know so far | The Texas Tribune: At least 132 people died in the Texas Hill Country floods, with over 100 still missing, primarily in Kerr County. The floods swept away residents, campers, and visitors during the Fourth of July weekend, prompting questions about local responses to flood warnings. Texas state leaders plan to address gaps in flood warning systems and mitigation during a special legislative session. Counties have limited power to regulate construction in flood-prone areas, exacerbating risks. The Hill Country's terrain, including hills and rivers, contributes to its vulnerability to catastrophic floods. [https://www.texastribune.org/2025/07/11/texas-hill-country-floods-what-we-know/]
+Key Quotes: "It was like a relieved, happy, sad, horrible, wonderful news. I mean, I can't even describe it, because you're so happy that she's still not out there somewhere" - Tanya Powell | "I always think today’s the day I’ll get a call from a DNA match" - Thad Heartfield
+
+- Texas flood rescue teams continue to search for scores of missing people as death toll tops 130 - CBS News: More than 130 people have been confirmed dead after flash floods devastated Central Texas on July 4, with over 160 still missing. Search efforts were disrupted by additional rain and flooding, particularly in Kerr County where most deaths occurred. President Trump visited the area and described the disaster as horrific, while officials noted the challenges in rescues at Camp Mystic. The floods caused the Guadalupe River to rise rapidly, raising questions about warning systems and emergency preparedness. Federal and local teams continued operations despite the risks. [https://www.cbsnews.com/news/texas-floods-missing-people-death-toll-climbs/]
+Key Quotes: "I've never seen anything like it, a little narrow river that becomes a monster, and that's what happened" - President Donald Trump | "It's very tragic whenever you see human life. But to see a child in that loss of life, is extremely tragic" - Ben Baker
+
+- How the deadly Texas floods unfolded, devastating Kerrville and Camp Mystic: The Texas floods unfolded rapidly overnight on July 4, catching campers and residents off guard in Kerrville and Camp Mystic. Heavy rain caused the Guadalupe River to surge, leading to at least 129 deaths and 166 missing, with many incidents occurring between 1 a.m. and 6 a.m. Campers at Camp Mystic were evacuated from cabins as waters rose, but some were swept away. Questions arose about the adequacy of flash flood alerts and emergency responses, given the area's history of flooding. Personal accounts highlighted the chaos and lack of timely assistance from first responders. [https://www.nbcnews.com/news/us-news/texas-flooding-unfolded-deadly-kerrville-camp-mystic-rcna217712]
+Key Quotes: "The river is beautiful. But you have to respect it" - Richard “Dick” Eastland | "It came so very fast" - Lisa Miller
+
+- Texas flooding deaths rise; Saturday flood watch: The death toll from Texas flooding rose to at least 129, with 103 deaths in Kerr County and ongoing searches for about 170 missing persons. A new flood watch was issued for Texas Hill Country through July 13, warning of potential additional rainfall and flash flooding. Governor Greg Abbott thanked other states for providing resources like helicopters and K-9 teams to aid recovery efforts. The family of a missing Camp Mystic counselor confirmed her remains were found, adding to the tragedy. Optimism for live rescues faded as crews focused on recovery amid challenging conditions. [https://www.usatoday.com/story/news/nation/2025/07/12/texas-flooding-deaths-search-rescue-missing/84769402007/]
+Key Quotes: "I've never seen anything like this, and I've seen a lot of bad ones" - President Donald Trump | "Our ongoing recovery operations are boosted by the support of other states" - Governor Greg Abbott
+
+---
+
+TOPIC: Innovative Technology and Infrastructure
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Indian astronaut returns from International Space Station",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (5):
+- Top news of the day | July 14, 2025 - The Hindu: Indian astronaut Group Captain Shubhanshu Shukla and his Axiom Mission 4 crew departed from the International Space Station after an 18-day stay, returning onboard the SpaceX Dragon spacecraft. The mission highlights advancements in space technology and international collaboration in infrastructure. External Affairs Minister S Jaishankar emphasized the need for India and China to avoid restrictive trade measures during talks in Beijing. The Supreme Court discussed the importance of self-regulation for freedom of speech on social media. Government efforts continue to save the life of an Indian nurse facing execution in Yemen. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+Key Quotes: "India and China need to avoid ‘restrictive’ trade measures" - S Jaishankar | "Citizens must know the value of freedom of speech and expression and observe self regulation" - Supreme Court
+
+- Technology - Bloomberg: Bloomberg reports on various technology developments, including AI advancements and investments in startups. Germany and France vowed to help European startups access financing amid growing AI demands. Meta faces new EU antitrust issues, and Google plans to spend $3 billion on AI-related hydropower. Companies like Uber and AMD are expanding collaborations and resuming chip sales to China. The article also covers cybersecurity threats and new AI tools for the finance industry. [https://www.npr.org/sections/news/]
+Key Quotes: "Germany and France Vow to Help Europe’s Startups Tap Financing" - Bloomberg report | "Google to Spend $3 Billion for Hydropower from Brookfield" - Bloomberg report
+
+- NYT Connections hints and answers for today (July 15, 2025): The NYT Connections puzzle for July 15 challenges players to categorize 16 words into four groups based on shared themes, promoting innovative gaming technology. Hints include categories related to gymnastics equipment, methods of removal, suspenseful titles, and words with common prefixes. The game tests cognitive skills through wordplay and thematic connections. Solutions reveal groupings such as gymnastics apparatus and thriller movie titles. This daily puzzle exemplifies advancements in digital entertainment infrastructure. [https://www.reuters.com/technology/]
+
+---
+
+TOPIC: Crime and Legal Issues
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "French court overturns defamation convictions of two women related to false claims in a YouTube video",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://inforrm.org/2025/07/14/law-and-media-round-up-14-july-2025"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (5):
+- Top news of the day | July 14, 2025 - The Hindu: The Supreme Court emphasized the need for citizens to value freedom of speech and consider self-regulation amid discussions on guidelines for offensive social media posts. The Union government assured the Supreme Court it is taking all possible steps to prevent the execution of an Indian nurse in Yemen. Odisha authorities faced protests and directives from the Governor regarding a student's self-immolation incident. A group of kanwariyas vandalized a dhaba in Uttar Pradesh, alleging the owners did not display their identities. Police in Haryana reported damage to a mazar ahead of a religious yatra, amid efforts to prevent clashes. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+Key Quotes: "Citizens must know the value of freedom of speech and expression and observe self regulation" - Supreme Court | "The government is working relentlessly to stay the execution of the nurse" - Attorney General of India R. Venkataramani
+
+- CBS News | Breaking news, top stories & today's latest headlines: The FBI released images of Iranian intelligence officers accused in the 2007 abduction of an American citizen. ICE announced that many individuals in immigration detention no longer qualify for bond hearings under new policies. Two men were sentenced to over four years in prison for cutting down an iconic tree in the U.K. Russia described Trump's demand for a Ukraine ceasefire in 50 days as unacceptable. A former MLB pitcher was convicted in a murder case in Lake Tahoe. [https://www.cbsnews.com/]
+Key Quotes: "Demands, especially ultimatums, are unacceptable" - Russia's deputy foreign minister
+
+- The New York Times - Breaking News, US News, World News and Videos: The Justice Department dismissed career officials, claiming authority to bypass civil service protections. A federal judge paused a plan for contempt charges against Trump aides. Reports highlighted conspiracy theories surrounding the Epstein files. Inflation data showed price increases partly due to Trump's tariffs. Two people died in flooding incidents in New York and New Jersey, raising questions about public safety responses. [https://www.nytimes.com/]
+
+- Law and Media Round Up – 14 July 2025 – Inforrm's Blog: A French court overturned defamation convictions against two women who falsely claimed the First Lady was born male, ruling they acted in good faith. In the U.K., a judge ordered claimants in a phone hacking case against Associated Newspapers to disclose payments to private investigators. The ICO sought input on privacy-preserving advertising alternatives under U.K. regulations. TikTok lost an appeal against a fine from the U.K. data regulator. Reports covered various media law rulings and ongoing legal consultations. [https://inforrm.org/2025/07/14/law-and-media-round-up-14-july-2025]
+Key Quotes: "The women acted in good faith, believing their claims served the public interest" - French court of appeal
+
+- [Article from www.axios.com]: Content for this article was not accessible, limiting details on crime and legal issues. No specific information was available from the provided data. The article's meta description and full content were inaccessible. As a result, no main points could be extracted. This entry serves as a placeholder based on the input. [https://www.axios.com/]
+
+
+---
+
+USER'S TIMELINE POSTS (49 posts):
+- Adam Schefter: "Browns rookie running back Quinshon Judkins was arrested on a domestic violence and battery charge in Fort Lauderdale, Florida, on Saturday, according to the Fort Lauderdale Police department and Broward County arrest records.
+
+More via @DanielOyefusi:
+
+https://t.co/EaVSNBzmtI" (2696213 views, 2446 likes) https://x.com/i/status/1944212468521181688
+- Adam Schefter: "Quinshon Judkins was still in jail as of Saturday night and scheduled to have his initial court appearance Sunday morning, according to court records. https://t.co/TPuLpOiS0Q" (847104 views, 1949 likes) https://x.com/i/status/1944212980532429103
+- Fabrizio Romano: "5️⃣🇦🇷 Leo Messi has completed five consecutive MLS games scoring a brace.
+
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs Columbus
+⚽️⚽️ vs Montréal
+⚽️⚽️ vs New England
+⚽️⚽️ vs Nashville https://t.co/O8wwvJJSlK" (680434 views, 21468 likes) https://x.com/i/status/1944212704673120658
+- Barstool Sports: "Kentucky Derby should feature a jockey race every year
+
+ https://t.co/1h3zPVHBy7" (368349 views, 3672 likes) https://x.com/i/status/1944213839165501716
+- Barstool Sports: "“Yeah idk how you watch wrestling it’s so fake…”
+
+Explain this then:
+ https://t.co/riQQnG3pKP" (298533 views, 543 likes) https://x.com/i/status/1944216506809627078
+- Pardon My Take: "Jockey Races rock https://t.co/PHAD1ETzMA" (196808 views, 2163 likes) https://x.com/i/status/1944217491288265121
+- Big Cat: "Marlins Man wanted me to share. Very cool https://t.co/rrjXwIp5Vx" (119048 views, 639 likes) https://x.com/i/status/1944222302347895219
+- Barstool Sports: "Probably not a good idea to give up the ball directly to Messi @PitchPickss 
+
+https://t.co/cLMp9OWIhX" (114282 views, 229 likes) https://x.com/i/status/1944205278029001134
+- Barstool Sports: "Hell Yeah, Brother. Nothing Goes Harder Than This Yo-Yo Routine Set To 'System of a Down' https://t.co/JkXgo1Ypmf https://t.co/2maCSUSn92" (112516 views, 59 likes) https://x.com/i/status/1944188822146707495
+- World of Statistics: "Who alive today will be remembered 1000 years from now?" (103171 views, 507 likes) https://x.com/i/status/1944209161082089711
+- Barstool Sports: "Receptionist Arrested After Failing to Inform Employer They Were Accidentally Paying Her $450K Salary for a Year, Now Facing Grand Theft &amp; Money Laundering Charges https://t.co/bDsFsJX2b9 https://t.co/aSy2pH0Stu" (99705 views, 36 likes) https://x.com/i/status/1944203922291261900
+- Barstool Sports: "Watch: ONLY Construction Themed Amusement Park In America “Diggerland USA” Has Every Tractor &amp; Crane Possible To Drive. Plus Car Crushing. Also A+ Husband Daycare. https://t.co/i2Ecb4fjPT https://t.co/5IadBCRB7Z" (95867 views, 96 likes) https://x.com/i/status/1944211453721952415
+- Sawyer Merritt: "NEWS: A new record was set in Texas last night: batteries supplied 6 gigawatts of power to the grid - the most ever delivered by battery storage in the state. https://t.co/6OBEublrC7 https://t.co/keLsrb3uOH" (72173 views, 1023 likes) https://x.com/i/status/1944208866184491341
+- Sawyer Merritt: "NEWS: Elon Musk's @boringcompany Las Vegas Loop tunnel is now open to everyone every day from 10AM to 9PM. You can book rides online.
+
+Book: https://t.co/JF0YERrg9m
+https://t.co/bHeWxuRVNb" (54270 views, 1103 likes) https://x.com/i/status/1944223079279845659
+- Max Velocity: "I'm extremely concerned about another major flooding threat that could evolve tonight in Central Texas...
+
+This includes hard-hit areas West of Killeen, Texas, that already saw 10-20" of rain last night. There is a potential for 8-12" of rain in some locations, possibly more," (52100 views, 982 likes) https://x.com/i/status/1944199069271756923
+- Big Cat: "I can’t wait for college football" (51568 views, 1190 likes) https://x.com/i/status/1944236294194049283
+- Big Cat: "Tech bros https://t.co/ivgyxmoVFS" (47886 views, 441 likes) https://x.com/i/status/1944234538500067794
+- The Boring Company: "Vegas Loop is not just for conventions anymore!
+Now open every day, 10am to 9pm.
+
+Visit https://t.co/nobnU57DW5 to book your ride between @ResortsWorldLV, @WestgateVegas, and Riviera Station any day of the week.  Can also book in real time in person.
+
+All stations, including https://t.co/icX9dZLaTo" (36265 views, 637 likes) https://x.com/i/status/1944220908765556952
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇯🇵 Japan: 8.0t
+🇪🇬 Egypt: 2.3t
+
+(Annual emission, per Global Carbon Budget 2024)" (36732 views, 98 likes) https://x.com/i/status/1944194062938239374
+- @jason: "This is fantastic…. @WilliamKassouf has taken the poker brat title from @phil_hellmuth at the wsop https://t.co/4sNTlGjtK8" (34017 views, 23 likes) https://x.com/i/status/1944188109286957133
+- World of Statistics: "Obesity rate
+
+🇧🇪 Belgium: 20.51%
+🇫🇷 France: 10.00%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (27767 views, 82 likes) https://x.com/i/status/1944224260765237413
+- Max Velocity: "**ALERT** - Dangerous flash flooding ongoing in Carrollton, Richardson, and Plano, Texas, right now!
+
+3-5"+ of rain has fallen, and stationary storms could make this situation worse. Over 700,000 people are in this flash flood warning." (23913 views, 589 likes) https://x.com/i/status/1944224791134650868
+- Wonder of Science: "This clip from the USGS shows geologist Tim Orr sampling lava from a Kilauea flow in 2017. Chemical analysis of hot lava samples provides important information about activity deep inside a volcano's magma chambers. Source: https://t.co/FD33bDCbEY" (23079 views, 33 likes) https://x.com/i/status/1944197836658422162
+- Max Velocity: "HUGE FLOOD WATCH is in effect for most of Texas and Oklahoma!
+
+Major flooding is possible over the next 48 hours, especially in Central Texas. 6-12" of rain is possible in localized areas. Turn around, don't drown! https://t.co/qV5EjRmxRK" (20236 views, 498 likes) https://x.com/i/status/1944205297171456136
+- The Boring Company: "Thanks for riding Vegas Loop! 
+Check out https://t.co/nobnU57DW5 for operational hours and ticketing info. https://t.co/o4b4XAgzwR" (19836 views, 452 likes) https://x.com/i/status/1944222288075010497
+- Dave Lee: "I’ll take sustainable transport, sustainable energy, reusable rockets, space-based internet, AI (Grok), autonomous cars, humanoid robots (Optimus), underground tunnels, neural interfaces (Neuralink), free speech (X), etc. over Bannon’s ad hominem attacks and irrational malice. https://t.co/q3cOiqlmt2" (19003 views, 449 likes) https://x.com/i/status/1944227964658360449
+- Max Velocity: "MODERATE RISK OF EXCESSIVE RAINFALL IN TEXAS tonight!
+
+Major flooding is possible, in already hard-hit areas over the past week. https://t.co/yTUUPVYxou" (19032 views, 379 likes) https://x.com/i/status/1944194632612499694
+- CSPAN: "Coming up on C-SPAN2. https://t.co/eh4O6kXlkY" (16289 views, 12 likes) https://x.com/i/status/1944205386166276121
+- World and Science: "New discovery sets stage for tiny hard drives the size of stamps with 100-fold data density: https://t.co/MDIDSK5MXO" (12370 views, 34 likes) https://x.com/i/status/1944190561113579964
+- World and Science: "Interesting fact: 2,520 is the smallest number that can be exactly divided by all the numbers 1 to 10. https://t.co/jqVSBEZGIK" (10776 views, 56 likes) https://x.com/i/status/1944207173292085598
+- World and Science: "Is there a sixth sense?
+ 
+How Do We Know When Someone’s Watching Us?
+ 
+https://t.co/ehYXwMQZhC" (9582 views, 17 likes) https://x.com/i/status/1944213698588876878
+- Max Velocity: "TORNADO WARNING for Walsenburg, Colorado!
+
+Seek shelter immediately if you’re in this warning! https://t.co/UVAKd8vsze" (9316 views, 217 likes) https://x.com/i/status/1944191006586364044
+- Vintage Maps: "Map of the city of Naples, Nicolas de Fer. https://t.co/4SDsHR2sq8" (7447 views, 199 likes) https://x.com/i/status/1944199112674410549
+- History Defined: "Mrs. Missouri Thomas stands in her smokehouse, proudly displaying rows of canned goods and hanging cured meats—a testament to self-sufficiency on Flint River Farms during the Great Depression.
+
+Flint River Farms, Georgia, 1939
+Source: Farm Security Administration, Photo by Marion https://t.co/YfDcKzuyH1" (6704 views, 33 likes) https://x.com/i/status/1944192669799833883
+- History Defined: "Ginger Rogers in the spotlight in Gold Diggers of 1933. Coor by Klimbim. https://t.co/QBzONVXwJe" (6404 views, 67 likes) https://x.com/i/status/1944185212537029009
+- World and Science: "Very cool decorative piece!
+
+Illuminated Tabletop Water Fountain with automatic pump: https://t.co/tBc2yl4QAf  -AmazonAfflink" (6412 views, 4 likes) https://x.com/i/status/1944228299317674047
+- History Defined: "Mrs. Bill Daniels, the wife of a coal miner, cans pears in her home near the Panther Red Ash Coal Corporation’s Douglas Mine—a quiet moment of domestic life captured in the heart of McDowell County’s mining community.
+
+Panther, West Virginia, 1946
+Source: National Archives, Photo https://t.co/b733YmxuZ7" (5554 views, 28 likes) https://x.com/i/status/1944207736163471732
+- History Defined: "31 Iconic Photos Of The Great Depression
+https://t.co/9XrYlbSWHo" (5403 views, 7 likes) https://x.com/i/status/1944192670932373788
+- The Boston Globe: "For Bruins draft pick Will Moore, hockey always has been music to his ears https://t.co/htMpXZfEmX" (5348 views, 0 likes) https://x.com/i/status/1944195597512184278
+- History Defined: "A woman gathers canned food from a storage building as she begins preparing the evening meal, offering a glimpse into daily life in rural South Carolina during the late 1930s.
+
+Summerton, South Carolina, 1939
+Source: Farm Security Administration, Photo by Marion Post Wolcott https://t.co/EM476XcaDo" (5309 views, 21 likes) https://x.com/i/status/1944200339424448717
+- History Defined: "Amazing colorized photos that bring 1930s America to life
+https://t.co/9u6NhRvF1W" (5245 views, 13 likes) https://x.com/i/status/1944185213594067352
+- The Boston Globe: "How can Boston mayoral candidates reach voters during the summer slump? Take to the airwaves. https://t.co/7P8N6502Lv" (5252 views, 1 likes) https://x.com/i/status/1944187531156697528
+- History Defined: "The home of Mr. and Mrs. Byertoper stands quietly in Blue Earth County, offering a glimpse of rural Minnesota life in the early 20th century.
+
+Blue Earth County, Minnesota, 1920
+Source: Blue Earth County Historical Society https://t.co/3SSx22alvA" (5080 views, 13 likes) https://x.com/i/status/1944215383646290023
+- The Limiting Factor: "I encourage the incestuous relationships between Elon's companies 😂 https://t.co/tinZsVcwMQ" (4932 views, 25 likes) https://x.com/i/status/1944214850919706747
+- The Boston Globe: "Is FEMA abandoning California? https://t.co/SX7QtikLkE" (4941 views, 0 likes) https://x.com/i/status/1944188814479569132
+- History Defined: "Rare Historical Photos You’ve Never Seen Before
+https://t.co/B5wD7OlUl0" (4925 views, 1 likes) https://x.com/i/status/1944207737828548726
+- The Boston Globe: "Osprey came back from the brink once. Now chicks are dying in nests, and some blame overfishing. https://t.co/wCMoF4GpyC" (4872 views, 5 likes) https://x.com/i/status/1944188542063718659
+- History Defined: "A girl and her dog in Van Buren, Indiana, around 1930. https://t.co/86d4iwNjyZ" (4812 views, 47 likes) https://x.com/i/status/1944222862266556715
+- The Boston Globe: "A landscape of death: What’s left where Ukraine invaded Russia https://t.co/5VvgNLP9jl" (4647 views, 2 likes) https://x.com/i/status/1944203899520299438
