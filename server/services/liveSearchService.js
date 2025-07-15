@@ -393,7 +393,7 @@ ${article.fullContent}
     {
       "source": "The publication name (e.g., 'BBC Sport')",
       "title": "The article headline", 
-      "summary": "Concise factual summary with main points in 2-4 sentences",
+      "summary": "Concise factual summary with main points in 4-6 sentences",
       "quotes": [
         {
           "quote": "Exact quoted text",
