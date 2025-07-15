@@ -7,7 +7,7 @@ import { fetchUserTimeline } from './xTimeline.js';
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
-  timeout: 120000
+  timeout: 300000  // 5 minutes
 });
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
