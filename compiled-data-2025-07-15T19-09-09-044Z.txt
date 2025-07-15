@@ -1,0 +1,550 @@
+
+TOPIC: technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Samsung Workers in India Continue Strike Over Pay and Conditions",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.reuters.com/technology/samsung-india-workers-continue-strike-demanding-higher-wages-2025-07-15/"
+      ]
+    },
+    {
+      "headline": "Apple Approves First PC Emulator for iOS App Store",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://techcrunch.com/2025/07/14/apple-approves-first-pc-emulator-for-ios/"
+      ]
+    },
+    {
+      "headline": "AI Startup Anthropic Faces Scrutiny Over Data Practices",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.reuters.com/technology/artificial-intelligence/anthropic-under-scrutiny-over-data-collection-practices-2025-07-15/"
+      ]
+    }
+  ]
+}
+
+Note: Due to the unavailability of specific X posts with engagement data (views and likes) in t
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Technology News: CNBC reports on various technology developments, including Joby Aviation doubling production of its air taxi manufacturing hub to meet demand. Commerce Secretary Lutnick stated that China is only receiving Nvidia's fourth-best AI chip due to restrictions. Crypto super PAC Fairshake has amassed a $141 million war chest for advocacy. AMD plans to resume exports of its MI308 AI chip to China, while Bitcoin has nearly doubled in value from last year amid market trends. Other highlights include Tesla's Model Y launch in India and Meta's efforts to combat spam on Facebook. [https://www.cnbc.com/technology/]
+Key Quotes: "4th best" - Commerce Secretary Lutnick
+
+- SciTechDaily - Science, Space and Technology News 2025: SciTechDaily covers advancements in science and technology, including research on creatine's cognitive benefits through focused ultrasound therapy. A study revealed a brain circuit potentially fueling chronic pain and fear responses. Scientists have combined tirzepatide with menopause hormone therapy for enhanced fat-burning effects in women over 50. MIT researchers boosted photosynthesis speed by reengineering the rubisco enzyme, which could impact food production and climate efforts. Additionally, AI tools are rewriting protein engineering rules, and a new compound challenges fundamental principles of chemistry. [https://scitechdaily.com/]
+Key Quotes: "Brain Gains: Creatine’s Surprising Cognitive Benefits" - SciTechDaily article title | "This Drug Combo Is a Fat-Burning Game-Changer for Women Over 50" - SciTechDaily article title
+
+- [Article from www.reuters.com]: Content for this article is not accessible, limiting available information to the source and title. No specific details on technology topics are provided. As a result, main points cannot be summarized based on the given data. This entry serves as a placeholder for the referenced Reuters technology article. [https://www.reuters.com/technology/]
+
+- TechCrunch | Startup and Technology News: TechCrunch reports on autonomous vehicle startup Pronto.ai acquiring rival SafeAI to expand off-road capabilities. Mira Murati's Thinking Machines Lab secured a $12 billion valuation in a seed round. Google Discover introduced AI summaries, potentially impacting traffic for publishers. Lucid Motors plans to roll out hands-free highway driving features this month. Other news includes Uber partnering with Baidu for robotaxis and Mistral releasing an open-source AI audio model. [https://techcrunch.com/]
+
+- Technology News: Latest Tech News Today, New Gadgets Features & Technology Updates | ET Tech: The Economic Times covers technology updates, including a Delhi High Court plea against unsafe delivery practices by online platforms. Tesla's entry into India with pricey models and WeWork India's IPO approval are highlighted. OpenAI's former CTO Mira Murati's startup Thinking Machines raised $2 billion in funding. Reports also discuss Instamart's path to profitability and TCS rolling out full Q1 variable pay for employees. Additionally, AI developments and startup funding in India are featured. [https://economictimes.indiatimes.com/tech]
+Key Quotes: "Very unfair criticism" - TCS CEO K Krithivasan
+
+- Latest Technology News and Reviews - Yahoo Finance: Yahoo Finance provides updates on technology news, including AV startup Pronto.ai's acquisition of SafeAI for off-road vehicles. Mira Murati’s Thinking Machines Lab achieved a $12 billion valuation in a seed round. Opendoor and Applied Digital stocks surged due to market activities. Roblox launched an IP licensing platform with partners like Netflix and Lionsgate. Other highlights include AI tools shifting to terminals and Reddit facing ad market challenges. [https://finance.yahoo.com/topic/tech/]
+
+- [Article from finance.yahoo.com]: Content for this article is not accessible, limiting available information to the source and title. No specific details on technology topics are provided. As a result, main points cannot be summarized based on the given data. This entry serves as a placeholder for the referenced Yahoo Finance article. [https://finance.yahoo.com/quote/BTC-USD/]
+
+---
+
+TOPIC: Soccer Player Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Arsenal Agrees Personal Terms with Defender Cristhian Mosquera",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.bbc.com/sport/football/articles/czey2dyr314o",
+        "https://www.bbc.com/sport/football/live/cx2gwdygg06t"
+      ]
+    },
+    {
+      "headline": "Arsenal in Advanced Talks to Sign Sporting Striker Viktor Gyokeres",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html",
+        "https://www.skysports.com/football/news/11095/13381511/viktor-gyokeres-transfer-news-arsenal-in-advanced-talks-to-sign-sporting-striker"
+      ]
+    },
+    {
+      "headline": "Liverpool Makes Approach for Newcastle Striker Alexander Isak",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.tntsports
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic: Liverpool are prioritizing the signing of a top No. 9 striker amid ongoing interest in players like Alexander Isak and Hugo Ekitike. Newcastle United are negotiating a deal worth around €75 million for Eintracht Frankfurt's Hugo Ekitike. Arsenal have agreed deals for players including Viktor Gyokeres from Sporting Lisbon and Noni Madueke from Chelsea. Several clubs, including RB Leipzig and Stuttgart, have shown interest in Chelsea's Armando Broja as a potential replacement for departing forwards. The article also covers other transfers, such as Everton's signings of young defenders and Middlesbrough's interest in Danny Ings. [https://www.nytimes.com/athletic/6492733/2025/07/15/transfer-news-latest-liverpool-manchester-united-arsenal-real-madrid-analysis/]
+Key Quotes: "Liverpool’s stance is Diaz will not leave" - David Ornstein | "Why do Liverpool need to sign a No 9? There’s still a lot of affection for Darwin Nunez among Liverpool supporters" - James Pearce
+
+- Soccer Transfer News and Rumors - ESPN: Liverpool have registered interest in Newcastle United's Alexander Isak as they seek a No. 9 striker. Manchester United are linked with Lyon midfielder Corentin Tolisso. Atlético Madrid are in advanced talks to sign Lyon's Thiago Almada. Jordan Henderson has signed a two-year contract with Brentford after leaving Ajax. The article also discusses potential lineups for Newcastle with Isak and Ekitike, and Arsenal's interest in Cristhian Mosquera. [https://www.espn.com/soccer/transfers-news-and-features/]
+Key Quotes: "Source: Liverpool make approach for striker Isak" - ESPN | "Popovic likens Watford-bound Irankunda to Zaha" - AAP
+
+- Transfer news: Arsenal agree terms with defender; Gyokeres and Gibbs-White latest - BBC Sport: Arsenal have agreed terms with Valencia centre-back Cristhian Mosquera to add competition to their defensive lineup. The club is close to completing a deal for Sporting Lisbon striker Viktor Gyokeres. Nottingham Forest midfielder Morgan Gibbs-White reported for training amid interest from Tottenham, with Forest considering legal action over the approach. Chelsea won the Club World Cup by defeating Paris Saint-Germain 3-0. Liverpool's new signings impressed in their pre-season friendly against Preston North End. [https://www.bbc.com/sport/football/live/cx2gwdygg06t]
+Key Quotes: "Chelsea beat Paris Saint-Germain 3-0 to win Club World Cup as Joao Pedro says psg ' lost their heads '" - Joao Pedro
+
+- Football transfers, rumours, market values and news | Transfermarkt: Liverpool have approached Newcastle United for Alexander Isak, potentially for a record fee. Newcastle United are pursuing Eintracht Frankfurt's Hugo Ekitike for more than €75 million. Real Madrid's contract talks with Vinicius Jr have stalled, raising questions about his future. Arsenal are close to signing defender Christhian Mosquera as a backup for William Saliba. The article lists recent transfers and market values, including deals involving players like Florian Wirtz and Matheus Cunha. [https://www.transfermarkt.us/]
+
+- Arsenal transfer news: Cristhian Mosquera agrees personal terms - BBC Sport: Valencia centre-back Cristhian Mosquera has agreed personal terms with Arsenal. The 21-year-old is set to compete with William Saliba and Gabriel Magalhaes in defense. Mosquera can play as both centre-back and right-back, filling the gap left by Takehiro Tomiyasu's departure. He made 90 appearances for Valencia, showcasing strong one-on-one defending skills. Arsenal have been active in the transfer market, also nearing a deal for Viktor Gyokeres. [https://www.bbc.com/sport/football/articles/czey2dyr314o]
+
+- Football Transfer News & Confirmed Deals - BBC Sport: West Ham signed Senegal international El Hadji Malick Diouf for £19 million. Everton acquired goalkeeper Mark Travers from Bournemouth for £4 million. Liverpool rejected a £58 million offer from Bayern Munich for Luis Diaz. Rangers signed defender Neraysho Kasanwirjo on loan from Feyenoord. Several players, including Jordan Henderson joining Brentford, have completed moves across various leagues. [https://www.bbc.com/sport/football/transfers]
+
+- Transfer news: Summer transfer window 2025 | Premier League ins, outs and confirmed deals | Transfer Centre News | Sky Sports: The Premier League transfer window is open, with clubs making significant signings and departures. Arsenal signed Kepa Arrizabalaga from Chelsea for £5 million and Martin Zubimendi from Real Sociedad for £51 million. Chelsea acquired Jamie Gittens from Borussia Dortmund for £51.5 million and Joao Pedro from Brighton for £60 million. Liverpool brought in Florian Wirtz from Bayer Leverkusen for £116 million. The article tracks ins and outs for all Premier League teams, including deals involving players like Kyle Walker and Matheus Cunha. [https://www.skysports.com/football/news/11095/13363157/transfer-news-summer-transfer-window-2025-premier-league-ins-outs-and-confirmed-deals]
+
+---
+
+TOPIC: NFL Player Contracts
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "New York Jets and Garrett Wilson Agree to 4-Year, $130 Million Contract Extension",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.nfl.com/news/jets-wr-garrett-wilson-agrees-to-four-year-130-million-contract-extension",
+        "https://www.nytimes.com/athletic/6493992/2025/07/14/garrett-wilson-jets-contract-extension-nfl/"
+      ]
+    },
+    {
+      "headline": "San Francisco 49ers Face Contract Drama with Jauan Jennings",
+      "engagement_total": 0,
+      "x_posts": [],
+      "supporting_articles": [
+        "https://sports.yahoo.com/nfl/article/jauan-jennings-ultimatum-is-just-latest-49ers-summer-contract-drama-181249675.html"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- NFL Player News: Latest Reports, Injuries, Transactions - Rotoworld - NBC Sports: The article discusses various NFL player transactions and injuries, including Russell Wilson signing a four-year, $130 million deal with the Jets. It highlights Trey Smith agreeing to a four-year, $94 million contract with the Chiefs, making him the highest-paid guard in NFL history. Sauce Gardner signed a four-year, $120.4 million extension with the Jets, tying him to the team for six seasons. Other points cover potential contract issues like Lamar Jackson's cap figure impacting the Ravens' roster and T.J. Watt's contract standoff with the Steelers. [https://www.nbcsports.com/fantasy/football/player-news]
+Key Quotes: "Wilson inks four-year, $130 million deal with Jets" - PFT PM Mailbag | "Just believe. Why not?" - Russell Wilson | "Watt in a contract standoff with Steelers" - Lawrence Jackson Jr.
+
+- NFL News | Latest NFL Football News | NFL.com: The article covers recent NFL news, including the Jets signing CB Sauce Gardner to a four-year, $120.4 million contract extension. It mentions the Chiefs finalizing a four-year, $94 million deal with guard Trey Smith, making him the highest-paid guard. Washington Commanders' WR Terry McLaurin expressed frustration over contract talks and uncertainty about reporting to training camp. Other highlights include the Buccaneers planning to wear original 1976 uniforms and various team training camp previews. [https://www.nfl.com/news/]
+Key Quotes: "Jets, CB Sauce Gardner agree to terms on four-year, $120.4 million contract extension" - NFL Network Insider Ian Rapoport | "Commanders' Terry McLaurin 'frustrated' over contract talks" - Washington Commanders' report
+
+- NFL.com | Official Site of the National Football League: The article reports on NFL news, including the Jets agreeing to a four-year, $120.4 million contract extension with CB Sauce Gardner. It details the Chiefs finalizing a four-year, $94 million extension with guard Trey Smith. Washington Commanders' WR Terry McLaurin is frustrated with his contract negotiations and unsure about attending training camp. Additionally, it covers the Buccaneers' plan to wear 1976 uniforms and various team training camp previews. [https://www.nfl.com/news/all-news]
+Key Quotes: "Jets, CB Sauce Gardner agree to terms on four-year, $120.4 million contract extension" - NFL Network Insider Ian Rapoport | "Commanders' Terry McLaurin 'frustrated' over contract talks" - John Keim
+
+- Jets, Garrett Wilson agree to 4-year, $130 million contract extension: Source - The Athletic: The article announces that the New York Jets and wide receiver Garrett Wilson agreed to a four-year, $130 million contract extension with $90 million guaranteed. Wilson, drafted 10th overall in 2022, has recorded 279 receptions for 3,249 yards and 14 touchdowns in his career. Despite past frustrations with team performance, the new regime prioritized Wilson, making him one of the top-five highest-paid wide receivers. The deal extends his contract through the 2030 season. [https://www.nytimes.com/athletic/6493992/2025/07/14/garrett-wilson-jets-contract-extension-nfl/]
+Key Quotes: "I want to be a 'Jet for life.'" - Garrett Wilson
+
+- Jauan Jennings ultimatum is just latest 49ers summer contract drama - Yahoo Sports: The article discusses Jauan Jennings seeking a new contract or trade from the San Francisco 49ers after a breakout season with 77 receptions for 975 yards and six touchdowns. Jennings, who signed a two-year extension in 2024, is pushing for a raise amid injuries to other receivers. The 49ers have faced similar contract dramas recently, including extensions for Brock Purdy and George Kittle. Past cases include Trent Williams holding out in 2024 and Nick Bosa securing a record deal in 2023. [https://sports.yahoo.com/nfl/article/jauan-jennings-ultimatum-is-just-latest-49ers-summer-contract-drama-181249675.html]
+Key Quotes: "Security. It's a volatile league." - Trent Williams | "Definitely the year that I didn't want as an individual." - Jaylen Waddle
+
+- Jets WR Garrett Wilson agrees to four-year, $130 million contract extension: The article reports that New York Jets wide receiver Garrett Wilson signed a four-year, $130 million contract extension with $90 million guaranteed. Wilson, aged 24, has achieved three straight 1,000-yard seasons since being drafted 10th overall in 2022. The deal makes him one of the highest-paid receivers, averaging $32.5 million annually. He is now signed with the Jets through the 2030 season. [https://www.nfl.com/news/jets-wr-garrett-wilson-agrees-to-four-year-130-million-contract-extension]
+Key Quotes: "Jets WR Garrett Wilson agrees to four-year, $130 million contract extension" - NFL Network Insider Ian Rapoport
+
+- Ranking the NFL's best players at every position for 2025 - ESPN: The article ranks the top NFL players at various positions based on surveys of league executives, coaches, and scouts. It highlights contract-related contexts for players like Myles Garrett, Maxx Crosby, and Danielle Hunter, who recently signed deals exceeding $35 million annually. Other players such as T.J. Watt and Micah Parsons are noted for upcoming contract negotiations. The rankings emphasize current performance and contracts in the context of the 2025 season. [https://www.espn.com/nfl/story/_/id/45441704/top-10-nfl-players-every-position-2025-jeremy-fowler-best-quarterbacks-running-backs-wide-receivers]
+
+---
+
+TOPIC: Trump Political Statements
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Trump Administration Wins Supreme Court Ruling to Dismantle Education Department",
+      "engagement_total": 10667,
+      "x_posts": [
+        "https://x.com/FirstSquawk/status/1812825561234563072"
+      ],
+      "supporting_articles": [
+        "https://www.nytimes.com/live/2025/07/14/us/trump-news",
+        "https://democracynow.org/2025/7/15/headlines"
+      ]
+    },
+    {
+      "headline": "Trump Announces Secondary Tariffs on Russia and Comments on Ukraine Equipment Losses",
+      "engagement_total": 10667,
+      "x_posts": [
+        "https://x.com/FirstSquawk/status/1812825561234563072"
+      ],
+      "supporting_articles": []
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (1):
+- First Squawk: "TRUMP: SECONDARY TARIFFS ON RUSSIA WILL BE 'BITING'
+
+TRUMP: UKRAINE IS LOSING ON EQUIPMENT
+
+TRUMP: EXCITED ABOUT GOLDEN DOME" (10636 views, 31 likes) https://x.com/FirstSquawk/status/1944780430303228009
+
+SUPPORTING ARTICLES (7):
+- [Article from www.washingtonpost.com]: The article's content is not accessible, limiting available information. It relates to Trump presidency news from July 2025. No specific details or statements are provided in the accessible metadata. The source is a major news outlet covering politics. [https://www.washingtonpost.com/politics/2025/07/15/trump-presidency-news/]
+
+- Supreme Court Clears Way for Dismantling of Education Department - The New York Times: The Supreme Court allowed the Trump administration to fire over 1,000 Education Department employees, effectively eliminating the agency that manages federal college loans and enforces civil rights in schools. Trump announced plans to sell weapons to NATO for transfer to Ukraine amid its war, though details remain unclear. The administration imposed a 17 percent tariff on Mexican tomatoes to support U.S. growers. An appeals court temporarily blocked the revocation of deportation protections for Afghans in the U.S. [https://www.nytimes.com/live/2025/07/14/us/trump-news]
+Key Quotes: "President Trump said the United States would help arm Ukraine by selling weapons to NATO to pass on to Kyiv" - President Trump | "I have to tell you, Europe has a lot of spirit for this war" - President Trump
+
+- Donald Trump | Breaking News & Latest Updates | AP News: The article covers various Trump-related updates, including Supreme Court decisions allowing layoffs at the Education Department. It discusses Trump's potential crisis from Epstein conspiracy theories and economic policies like tariffs on Mexican tomatoes. States are suing over withheld education funding, and there are mentions of immigration and foreign policy. The content aggregates news from multiple sources on Trump's administration actions. [https://apnews.com/hub/donald-trump]
+Key Quotes: "Trump administration says it won't publish major climate change reports on NASA website as promised" - Trump administration
+
+- Roll Call Factba.se - Donald J. Trump's Public Schedule: The article details Donald Trump's public schedule for July 2025, including meetings and events like a briefing with the NATO Secretary General. It covers travel and public appearances, such as participating in energy events and lunches. The schedule reflects Trump's official activities as president. No major policy statements are directly excerpted in the provided content. [https://rollcall.com/factbase/trump/topic/calendar/]
+
+- Donald Trump - Wikipedia: Donald Trump served as the 45th and 47th U.S. president, with a background in business and media. He won the 2016 election against Hillary Clinton and lost the 2020 election to Joe Biden, later attempting to overturn the results. His policies included tax cuts, immigration restrictions, and withdrawal from international agreements. Trump has been involved in numerous legal issues and controversies during and after his presidency. [https://en.wikipedia.org/wiki/Donald_Trump]
+Key Quotes: "Make America Great Again" - Donald Trump (campaign slogan)
+
+- News – The White House: The White House news page features updates on President Trump's actions, including articles on inflation, energy policies, and disaster responses. It highlights Trump's focus on putting Americans first and includes statements on economic achievements. The content promotes administration initiatives like the One Big Beautiful Bill Act. Various briefings and nominations are listed as part of ongoing activities. [https://www.whitehouse.gov/news/]
+
+- Donald Trump | The Guardian: The article aggregates news on Donald Trump, including his administration's handling of the Epstein files and Ukraine arms deals. It reports on Trump's tariffs affecting global trade and his interactions with world leaders. Critics accuse Trump of promoting conspiracy theories and facing legal challenges. The content includes analysis of his foreign policy shifts and domestic impacts. [https://www.theguardian.com/us-news/donaldtrump]
+Key Quotes: "Trump suggests first lady's role in changing his view of Putin over Ukraine" - The Guardian (reporting)
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Fabrizio Romano: "🚨💣 EXCLUSIVE: Thiago Almada to Atlético Madrid, here we go! ❤️🤍
+
+Exclusive story from Friday, confirmed as the agreement has been SIGNED with OL.
+
+Agreement also done on personal terms with Thiago.
+
+Atléti will buy a percentage of the player with total valuation of €40m. 🇦🇷 https://t.co/iLehbfwRcB" (2098642 views, 24612 likes) https://x.com/i/status/1945184824194687202
+- Fabrizio Romano: "🚨🦅 Enzo Barrenechea to Benfica, here we go! Deal in place for €15m, loan with obligation to buy clause under certain conditions from Aston Villa.
+
+Medical tests booked and contract until June 2030 for the midfielder. 🇦🇷 https://t.co/R1mJnSrFgn" (1265170 views, 15264 likes) https://x.com/i/status/1945177039742357620
+- Fabrizio Romano: "🚨⚪️⚫️ Juventus have submitted official bid to FC Porto for Francisco Conceiçao worth €30m.
+
+The proposal matches the release clause value but paid in installments.
+
+Deal at the final stages with Porto after Conceiçao said no to two UK clubs to stay at Juventus. https://t.co/VizDEXCVti" (1044515 views, 13071 likes) https://x.com/i/status/1945175269309923364
+- Fabrizio Romano: "🚨💣❤️🤍🇦🇷 #Atléti https://t.co/bA1sZIdTcE" (1045624 views, 5500 likes) https://x.com/i/status/1945184742397059326
+- Fabrizio Romano: "🚨🔵 Lorenzo Lucca to Napoli, here we go! Verbal agreement in place with Udinese.
+
+Package confirmed: €9m loan fee, €26m obligation to buy clause with add-ons.
+
+The Italian striker will sign five year deal later this week. https://t.co/34DlEAlNCF" (1016460 views, 10516 likes) https://x.com/i/status/1945185085226946641
+- Fabrizio Romano: "🚨🔵⚫️ Carlos Forbs is set to join Club Brugge from Ajax, here we go! Deal done for €8.5m fee.
+
+The player is traveling to Belgium tonight ahead of his medical tomorrow.
+
+Forbs opted for the Brugge project over offers from England, Italy and Scotland. https://t.co/oMcakFA7fT" (755920 views, 7351 likes) https://x.com/i/status/1945181763803787568
+- Ian Rapoport: "🚨 🚨 🚨 
+
+The #Jets and All-Pro CB Sauce Gardner have agreed to terms on a massive new extension, making him the highest-paid CB in NFL history, per The Insiders.
+
+It’s a 4-year, $120.4M deal — $30.1M per year — done by his team - agent @ajv and @allantegardner of @vaynersports. https://t.co/T0Hfr9Pd0P" (709638 views, 3847 likes) https://x.com/i/status/1945190385904468227
+- Ian Rapoport: "Sources: The #Chiefs and franchise tagged G Trey Smith are putting the final touches on a massive new extension to make him the highest-paid guard in the NFL.
+
+He gets 4-year deal done by Tory Dandy and Jimmy Sexton of CAA, to take away the tag and lock him in. https://t.co/UZ8OLkrXGd" (702665 views, 1329 likes) https://x.com/i/status/1945176569195979184
+- Fabrizio Romano: "🚨⚫️🔵 Atalanta and AC Milan have agreed deal for Marco Sportiello as the goalkeeper returns to the club.
+
+Pietro Terracciano will be AC Milan’s second GK. https://t.co/UeuxNmPKVE" (620827 views, 5401 likes) https://x.com/i/status/1945180103622701077
+- Adam Schefter: "Term update: Jets and CB Sauce Gardner reached the agreement on a four-year deal that ties him to the team for the next six seasons, through 2030. It’s the same structure and length as Garrett Wilson’s deal Monday. Gardner’s deal includes $60 million guaranteed. https://t.co/nEIvhG5yZu" (546577 views, 1810 likes) https://x.com/i/status/1945191422732190072
+- Adam Schefter: "Pro-Bowl guard Trey Smith and the Chiefs reached agreement just ahead of today’s franchise-tag deadline on a four-year, $94 million deal that includes $70 million guaranteed and makes him the highest-paid guard in NFL history, ESPN’s sources tell me and @ByNateTaylor.
+
+It’s the" (409208 views, 1518 likes) https://x.com/i/status/1945178397816111176
+- Ian Rapoport: "It’s a 4-year, $94M deal with $70M guaranteed. Massive https://t.co/UQLzi4Bxuc" (303602 views, 1000 likes) https://x.com/i/status/1945177842746077343
+- Ian Rapoport: "This man should be happy. https://t.co/Me6KlwyR85" (293746 views, 652 likes) https://x.com/i/status/1945186279546663039
+- Adam Schefter: "ESPN sources: Chiefs and Trey Smith are putting the final touches on a new four-year deal. https://t.co/GmUbinszk8" (242918 views, 962 likes) https://x.com/i/status/1945176828848587216
+- Adam Schefter: "Another Jets deal: https://t.co/AU1yZC9d7i" (241133 views, 643 likes) https://x.com/i/status/1945190610685583841
+- Adam Schefter: "Highest guarantees given to a guard:
+🏈G Trey Smith       $70 million
+🏈G Robert Hunt    $63M
+🏈G Chris Lindstrom $62.7M" (215233 views, 756 likes) https://x.com/i/status/1945178871881499069
+- Adam Schefter: "The highest-paid CBs in the NFL on a per-year basis are now:
+
+🏈Sauce Gardner: $30.1M
+🏈Derek Stingley Jr.: $30M
+🏈Jaycee Horn: $25M
+🏈Jalen Ramsey: $24.1M
+🏈Patrick Surtain: $24M" (206820 views, 1246 likes) https://x.com/i/status/1945192339485372817
+- Adam Schefter: "Sauce Gardner’s resume in three NFL seasons:
+
+🏈Defensive Rookie of the Year
+🏈2x First-Team All-Pro
+🏈2x Pro Bowler
+🏈And now: Highest paid CB in NFL history https://t.co/lcOrEThzva" (179230 views, 702 likes) https://x.com/i/status/1945191980096512387
+- Adam Schefter: "Jets extensions: 
+
+🏈Sauce Gardner: 4-years, $120.4M
+🏈Garrett Wilson: 4-years, $130M" (176439 views, 1265 likes) https://x.com/i/status/1945192030944031121
+- Fabrizio Romano: "🚨⚪️ Leeds United agree deal in principle to sign Sean Longstaff from Newcastle.
+
+Deal in place with final confirmation soon from #NUFC but #LUFC plan for Longstaff medical, as @David_Ornstein reports.
+
+Here we go, soon. ✅🔜 https://t.co/wybWpQp8Uc" (172774 views, 3164 likes) https://x.com/i/status/1945196501694615635
+- Ian Rapoport: "Quietly, the #Chiefs and Trey Smith have worked to make a deal work to take away the tag and properly compensate him. Now, they are closing in on it. https://t.co/UQLzi4Bxuc" (153281 views, 353 likes) https://x.com/i/status/1945176970842587395
+- Dave Portnoy: "This outta shut up all the people who say Rico never apologizes.   He owned it here https://t.co/9FGpdkjCmL" (140618 views, 1214 likes) https://x.com/i/status/1945186558216225118
+- Adam Schefter: "The four-year extension is worth an average of $30.1 million per year. https://t.co/lcOrEThzva" (132375 views, 331 likes) https://x.com/i/status/1945191914958922149
+- Ian Rapoport: "From the man himself.. https://t.co/oLkBdymLvC" (130599 views, 298 likes) https://x.com/i/status/1945190542544904351
+- Fabrizio Romano: "⚪️🔵✍🏻 Real Sociedad have signed 2007 talent Zac Shuaib from Arsebal.
+
+Good relationship between the club helped the move with Arsenal waiving training compensation. 
+
+Shuaib’s mother is from the Basque region and the boy has been a Real Sociedad fan from a young age. https://t.co/mB2avmM8OF" (125248 views, 1889 likes) https://x.com/i/status/1945197051790164042
+- Adam Schefter: "The guarantee on Sauce Gardner’s new four-year deal is $85.653 million." (119130 views, 549 likes) https://x.com/i/status/1945194173801410926
+- Ian Rapoport: "For the second time in 2 days, the #Jets lock in a key part of their team. Yesterday, it was Garrett Wilson. Today? Sauce. https://t.co/0yDbyX2yF0" (114846 views, 425 likes) https://x.com/i/status/1945190677559546250
+- Ian Rapoport: "The #Jets have spend years going into training with a variety of issues. This year? Nice and clean. Deals are done. https://t.co/0yDbyX2yF0" (113737 views, 464 likes) https://x.com/i/status/1945191047337787401
+- Ian Rapoport: "The #Jets now have Sauce Gardner under contract for 6 years. https://t.co/0yDbyX2yF0" (110437 views, 328 likes) https://x.com/i/status/1945192549083181322
+- Mario Nawfal: "🔴LIVE: BONDI ON MAJOR DRUG LAW ENFORCEMENT https://t.co/MBtyRYJGXf" (104625 views, 637 likes) https://x.com/i/status/1945188200911397245
+- Adam Schefter: "With Trey Smith and Creed Humphrey, the Chiefs now have the NFL’s highest-paid guard and center. Humphrey’s deal included $50.3 million guaranteed. https://t.co/L7QuoKxxSO" (97041 views, 370 likes) https://x.com/i/status/1945177594850062840
+- Tesla: "Engineered to be the safest cars, too
+
+Advanced active safety features come standard &amp; help prevent accidents from happening in the first place
+
+If a crash is unavoidable, every Tesla's crumple zones, structural integrity &amp; low center of gravity help reduce the risk of injury, https://t.co/M0IHAWb5nD" (79206 views, 843 likes) https://x.com/i/status/1945192788967981237
+- Fabrizio Romano: "🔴⚪️🇦🇷 More on Thiago Almada and Atlético Madrid exclusive story.
+
+Understand Atléti will pay €21m for 50% rights of the player from Textor Group.
+
+Deal signed tonight between all sides, Thiago is new Atlético player! 🔐 https://t.co/OTVRq2S1qi" (77758 views, 1377 likes) https://x.com/i/status/1945197564229222762
+- Mario Nawfal: "🇺🇸 TRUMP ON EPSTEIN FILES: “MADE UP BY COMEY, OBAMA, BIDEN”
+
+“These files were made up by Comey, they were made up by Obama, they were made up by Biden.
+
+We went through years of that, with the Russia, Russia, Russia hoax, with all of the different things that we had to go https://t.co/cWbeemuRsD https://t.co/ka4XZArl4u" (75547 views, 86 likes) https://x.com/i/status/1945183330649170259
+- Big Cat: "Did #Nadu kill the Ryders yesterday? Yak is live: https://t.co/TxCZNWtcaH https://t.co/qEcFVTfKr2" (74545 views, 262 likes) https://x.com/i/status/1945177699586130011
+- Mario Nawfal: "🇺🇸 TRUMP ON FBI LEADERSHIP: “I LIKE DAN BONGINO”
+
+Reporter:
+
+"Do you have confidence in the deputy FBI director? 
+
+Trump:
+
+“I like Dan Bongino.”
+
+Source: @kaitlancollins https://t.co/o3Lg946O7V https://t.co/lUuChGhi8x" (72633 views, 59 likes) https://x.com/i/status/1945174600192528886
+- Adam Schefter: "Sauce Gardner now will be under contract for the next six years at an average of $24.31 million — a four-year extension for a $30.1 million average per year.
+
+Now both Gardner and Garrett Wilson are under contract through 2030, with no guarantees in ‘29 or ‘30." (69650 views, 377 likes) https://x.com/i/status/1945195787438186649
+- Barstool Sports: "Curtis Jones is one of the greatest storytellers of our time
+
+https://t.co/YqVrAA4Lks" (67205 views, 212 likes) https://x.com/i/status/1945188176089206805
+- Barstool Sports: "'You Get To No. 1 In The World And It's Like What's The Point?' - Scottie Scheffler Gave An Incredible 5 Minute Speech About Golf, Life And Competition https://t.co/vwqhrBsdgf https://t.co/TXIKb3gNKI" (60343 views, 50 likes) https://x.com/i/status/1945175362968711507
+- Barstool Sports: "Rich Paul Suggests The Media Will Need To Find A New Boogeyman Once LeBron Retires And The Choices Are Obvious https://t.co/OKUxxFEA3f https://t.co/HAmjKxhgnX" (55849 views, 24 likes) https://x.com/i/status/1945182887617155167
+- Barstool Sports: "'I Mean, The Lake Was Close Enough' - Nick Tarnasky Finally Gave His Side Of The Golf Course Fight, A Perfect Ending To The Whole Story https://t.co/nhT2oXIwKG https://t.co/eHJZealeln" (54722 views, 39 likes) https://x.com/i/status/1945177836173598726
+- Mario Nawfal: "🇺🇸 TRUMP: “AOC? SHE'S NICE BUT VERY LOW IQ”
+
+"I think [AOC's] very nice, but she’s very low IQ. 
+
+And we really don’t need low IQ.
+
+Between her and Crockett, we’re gonna give them both an IQ test to see who comes out best.
+
+I took my test at Walter Reed Medical Center, and I aced https://t.co/7jek2SMVeT https://t.co/iFflJOEui3" (53710 views, 122 likes) https://x.com/i/status/1945187105791205621
+- Mario Nawfal: "🇺🇸 TRUMP: “FED SHOULD LOWER RATES IMMEDIATELY”
+
+Reporter: 
+
+“Inflation rose slightly last month.”
+
+Trump: 
+
+“Very slight. 
+
+Essentially, they were exactly as anticipated, very low inflation. 
+
+So what you should do is lower the rate, the Fed should lower the rate immediately.” https://t.co/m33P5ZHztb https://t.co/ghrdbmsSpS" (53258 views, 97 likes) https://x.com/i/status/1945179555137830994
+- Ian Rapoport: "From our breaking news segment: The #Jets locked up one of the best CBs in the NFL, agreeing to terms on a huge new contract for Sauce Gardner. https://t.co/UrqJ8oDDzo" (53101 views, 150 likes) https://x.com/i/status/1945194848362893368
+- Barstool Sports: "The Real Story Of The HR Derby Last Night Was Kid Robbing A Home Run And You're Nuts If You Don't Think It Should Be Encouraged Says @Return_Of_RB
+https://t.co/iAypuKe0vL https://t.co/TrXbehCU7c" (51537 views, 64 likes) https://x.com/i/status/1945185403645972662
+- World of Statistics: "🇰🇷 Pornography is largely illegal in South Korea, with the exception of social media, which is a common source of legal pornography there." (51346 views, 197 likes) https://x.com/i/status/1945183877435150472
+- Mario Nawfal: "🇺🇸 DOJ CLEARS POLYMARKET - CRYPTO BETTING GETS A GREEN LIGHT UNDER TRUMP
+
+2 major probes into crypto prediction market Polymarket have been officially shut down, after 8 months of investigation.
+
+Just days after the platform accurately predicted the 2024 election outcome, Biden https://t.co/g8rU7KBQZL https://t.co/mW07uL4XKv" (50475 views, 251 likes) https://x.com/i/status/1945185343772483781
+- Hank Lockwood: "So true https://t.co/TzQWYrE2RR" (50375 views, 265 likes) https://x.com/i/status/1945184023057207328
+- Mario Nawfal: "🇺🇸🇮🇩 TRUMP: FINALIZED DEAL WITH INDONESIA - “WE WILL KEEP DELIVERING FOR AMERICA”
+
+"Indonesia has committed to purchasing $15 Billion Dollars in U.S. Energy, $4.5 Billion Dollars in American Agricultural Products, and 50 Boeing Jets, many of them 777’s.
+
+Indonesia will pay the https://t.co/ikSmzcSerG https://t.co/xlFwzkpnEx" (48523 views, 128 likes) https://x.com/i/status/1945187993687302341
+- Ian Rapoport: "From our breaking news segment: The #Jets have been unusually proactive, doing two big contract extensions -- Sauce Gardner and Garrett Wilson -- prior to training camp. https://t.co/SriQjOzmiA" (47779 views, 160 likes) https://x.com/i/status/1945195350672748627
+- Mario Nawfal: "🇺🇸 TRUMP: “TAKE THE FEDERAL GOVERNMENT OUT OF EDUCATION”
+
+“We had a big win with the Supreme Court on the Department of Education.
+
+We want to bring education back to the states, take the federal government out of it.
+
+We need to do a little tiny bit of supervision, to make sure https://t.co/sBl370kEZ5 https://t.co/BYX5HBrd3X" (47718 views, 87 likes) https://x.com/i/status/1945182071963705443
+- Mario Nawfal: "🇺🇸 TRUMP SLAMS SCHIFF, PRAISES “BEAUTIFUL” GENIUS ACT
+
+“Adam Schiff is a lowlife. He deserves what he gets.
+
+The Genius Act is a beautiful act.
+
+We need smart people in our country.”
+
+Source: @brianglenntv, Real America’s Voice https://t.co/b7J6J4LkH8 https://t.co/kOA5uOHngn" (46566 views, 74 likes) https://x.com/i/status/1945177038534369751
+- Mario Nawfal: "🇺🇸 TRUMP: “TRILLIONS BEING INVESTED IN AI”
+
+“We're going to Pittsburgh. 
+
+It's [the trip] mostly to do with AI. We have tremendous investments being made, literally trillions of dollars of investments being made in our country on AI.
+
+We're going to have a very successful trip.” https://t.co/UPKGhz5UC4 https://t.co/kOA5uOHV5V" (45573 views, 59 likes) https://x.com/i/status/1945178296922333474
+- Pardon My Take: "Hank needed to make a par with one of his three shots to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado https://t.co/EaKmOfFx60" (45513 views, 73 likes) https://x.com/i/status/1945175286774997024
+- Mario Nawfal: "🇺🇸🇷🇺 TRUMP ON RUSSIA: “50 DAYS - OR THE TARIFFS AND SANCTIONS HIT”
+
+REPORTER: 
+
+“You’ve given Russia 50 days. What happens now?”
+
+Trump: 
+
+“At the end of 50 days, if we don’t have a deal, it’s going to be too bad... the tariffs are going to go on and other sanctions go on.” https://t.co/qmjbkmRJzb https://t.co/iFflJOEui3" (43150 views, 67 likes) https://x.com/i/status/1945183931944591756
+- Barstool Sports: "Jennifer Love Hewitt and Sarah Michelle Gellar Reunited For The 'I Know What You Did Last Summer' Red Carpet Premiere To Scratch Our Nostalgia Itch https://t.co/KyaJEFQ4po https://t.co/RKpLCGMpme" (42081 views, 50 likes) https://x.com/i/status/1945192932627083673
+- Tesla Robotaxi: "Robotaxi is data-driven (literally) https://t.co/h0nvVmJUoo" (40582 views, 1058 likes) https://x.com/i/status/1945177434887717137
+- Barstool Sports: "Noa Essengue May Have To Retire Before Playing a Single NBA Game After Being Put In a Body Bag By Johnny Furphy Last Night https://t.co/NouUN28m4w https://t.co/uyw86BJG2A" (40905 views, 38 likes) https://x.com/i/status/1945190428703179141
+- Tesla: "Consistently achieving top ratings around the world https://t.co/FP7Nn7kDjR" (33437 views, 204 likes) https://x.com/i/status/1945193179709317410
+- World of Engineering: "“Engineers like to solve problems. If there are no problems handily available, they will create their own problems.”
+- Scott Adams" (33218 views, 407 likes) https://x.com/i/status/1945185585066299873
+- World of Statistics: "The Best Countries for Work-Life Balance in 2025
+
+1. 🇳🇿 New Zealand
+2. 🇮🇪 Ireland
+3. 🇧🇪 Belgium
+4. 🇩🇪 Germany
+5. 🇳🇴 Norway
+6. 🇩🇰 Denmark
+7. 🇨🇦 Canada
+8. 🇦🇺 Australia
+9. 🇪🇸 Spain
+10. 🇫🇮 Finland
+11. 🇬🇧 UK
+12. 🇳🇱 Netherlands
+13. 🇵🇹 Portugal
+14. 🇦🇷 Argentina
+15. 🇦🇹 Austria
+16. 🇫🇷" (33293 views, 212 likes) https://x.com/i/status/1945193851616174429
+- Nancy Pelosi Stock Tracker ♟: "Politicians &gt; Grok https://t.co/tRBm4abtde" (33124 views, 107 likes) https://x.com/i/status/1945194761540776403
+- Mario Nawfal: "NASA JUST FLEW WITHIN 3.8 MILLION MILES OF THE SUN - AND LIVED TO TELL THE TALE
+
+NASA’s Parker Solar Probe just gave us the closest view ever of solar wind blasting out from the Sun’s outer atmosphere.
+
+Yes, we basically sent a robot into the world’s hottest hair dryer - and it https://t.co/6KDebl508S https://t.co/OSm1bbNltq" (32392 views, 183 likes) https://x.com/i/status/1945189118360571963
+- TESLARATI: "🚨 Do you think that the Tesla Supercharger Diner I. LA is a “waste of shareholders’ money?” https://t.co/i7cqJrOgv6 https://t.co/gNnbbK3DRc" (28109 views, 128 likes) https://x.com/i/status/1945175933863841864
+- Illia Ponomarenko 🇺🇦: "It was the 1,238th day of Russia's war to take Kyiv within three days, and the President of the United States was publicly dissuading the Ukrainian President from launching missile strikes on Moscow." (26417 views, 449 likes) https://x.com/i/status/1945186141549785249
+- Mario Nawfal: "🇺🇸 SEN MCCORMICK: $90 BILLION INVESTMENT COMING TO PENNSYLVANIA
+
+Sen. McCormick:
+
+“At the inaugural Energy and Innovation Summit, we're going to announce $90 billion of investment and tens of thousands of jobs in Pennsylvania.”
+
+Sen. McCormick made the announcement ahead of https://t.co/r9VidAmFpg https://t.co/CtZ5x55KrY" (26812 views, 51 likes) https://x.com/i/status/1945176536543269200
+- Mario Nawfal: "🇭🇺🇺🇦 ORBÁN: HUNGARIAN BEATEN TO DEATH IN UKRAINE, "CANNOT GO UNANSWERED"
+
+“József Sebestyén, a Hungarian, an EU citizen, was beaten to death during forced conscription in Ukraine.
+
+His case is not an exception but a clear example of the state-led brutality and lawlessness that https://t.co/wLpql4owx2 https://t.co/utaa1cL0bQ" (26077 views, 99 likes) https://x.com/i/status/1945186601858163179
+- Mario Nawfal: "🇺🇸 REP. KHANNA: “THERE IS SOMETHING ROTTEN IN WASHINGTON - RELEASE EPSTEIN FILES2
+
+"They voted to protect rich and powerful men who were abusing, assaulting, and abandoning young women.
+
+A nation that chooses impunity for the rich and the powerful at the expense of our children https://t.co/4Ra4ziEdcD https://t.co/OlasGx6HZO" (25364 views, 102 likes) https://x.com/i/status/1945179052572033523
+- Barstool Sports: ""You either win the gold, lose the gold, or win the bronze." - @MardyFish 
+
+@trulyseltzer @PardonMyTake https://t.co/kEc2jftS5J" (25188 views, 26 likes) https://x.com/i/status/1945195467299582198
+- Mario Nawfal: "🇺🇸 TRUMP: “I’M ON HUMANITY’S SIDE - I WANT TO STOP THE KILLING”
+
+REPORTER: 
+
+“Are you on Ukraine’s side?”
+
+TRUMP: 
+
+“I'm on nobody's side. 
+
+You know what side I'm on? Humanity's side.
+
+I want to stop the killing of thousands of people a week. 
+
+I want the killing to stop in the https://t.co/FAbq6ThXra https://t.co/U0EvAbkGjr" (24856 views, 176 likes) https://x.com/i/status/1945184588327731202
+- Mario Nawfal: "🇺🇸 TRUMP: “THIS IS A BIDEN WAR - I’M TRYING TO GET US OUT”
+
+“I've been very disappointed with Putin.
+
+I've solved a lot of wars in the last three months, but I haven't gotten this one yet.
+
+This is a Biden war; it's not a Trump war.
+
+I'm here to try and get us out of that mess.” https://t.co/FjdMigd3v2 https://t.co/8WStPIqi6c" (24211 views, 81 likes) https://x.com/i/status/1945185846778585557
+- Chamath Palihapitiya: "Yup. https://t.co/MQVRLKccvm" (24064 views, 78 likes) https://x.com/i/status/1945195338953822241
+- Mario Nawfal: "🇺🇸 FDA OKs GARDENIA BLUE - A NATURAL FOOD DYE SOURCE
+
+The FDA also made it crystal clear: the era of synthetic colors is ending.
+
+It’s the 4th natural color approved in 2 months, part of a major shift led by HHS Secretary Robert F. Kennedy Jr. 
+
+He's on a mission to “Make America https://t.co/ASt1IXWi4U https://t.co/Du4ca9MGVj" (22577 views, 55 likes) https://x.com/i/status/1945191634972668127
+- Saturday Night Live - SNL: "The Anniversary Special is #Emmy nominated! 
+Congrats to all!!! ❤️ https://t.co/CgLvn9bj7o" (22063 views, 283 likes) https://x.com/i/status/1945177516139835885
+- Mario Nawfal: "🇺🇸 SEC. WRIGHT ON AI INFRASTRUCTURE IN PENNSYLVANIA: “TURNING ELECTRICITY INTO INTELLIGENCE”
+
+“This is the newest energy intensive industry to arise...
+
+Taking the most sophisticated, most expensive form of energy, electricity,
+
+And turning it into intelligence, to transform our https://t.co/bJXVPVBvqZ https://t.co/CtZ5x55KrY" (22292 views, 42 likes) https://x.com/i/status/1945184085237760033
+- Mario Nawfal: "🇺🇸 REP. SHERMAN: “RIGHT, LEFT OR CENTER - WE ALL WANT TO PROTECT GIRLS IN AMERICA”
+
+"Vote no on this rule. Release the Epstein files.
+
+Don’t tell us we can’t release the Epstein files because you hate Joe Biden or because you hate leftists.
+
+People on the right, people in the https://t.co/HNWYgHRu4u https://t.co/OlasGx6HZO" (21920 views, 60 likes) https://x.com/i/status/1945181574707736699
+- Mario Nawfal: "🇺🇸 TRUMP CLAIMS VICTORY OVER “DISASTER” WIND PROJECT IN NEW JERSEY
+
+"Jeff Van Drew is fighting hard, and WINNING, to keep your Beaches BEAUTIFUL, with NO WINDMILLS.
+
+We just beat one of the biggest Windmill projects anywhere in the World. 
+
+It would have been a disaster, but they https://t.co/R3aYsr77pm https://t.co/yyE63q2j6Q" (20923 views, 77 likes) https://x.com/i/status/1945190376991527109
+- Ian Rapoport: "From our breaking news segment: The #Chiefs and star G Trey Smith beat the franchise tag deadline and agreed to terms on a deal to make him the NFL's highest-paid at his position. https://t.co/ConY9xN706" (20716 views, 103 likes) https://x.com/i/status/1945197384901746715
+- Mario Nawfal: "🇺🇸 TEXAS FLOOD SESSION OPENS... BUT IT’S THE BATHROOM BILL MAKING WAVES
+
+Texas lawmakers are heading into a flood-relief special session next week - but you wouldn’t know it from the bills being filed.
+
+Death toll from July 4 floods: 120+
+Flood-related bills filed Monday: Zero https://t.co/YrGSKxH9mM https://t.co/K5M0NOIlkE" (16797 views, 24 likes) https://x.com/i/status/1945194151382810633
+- Saturday Night Live - SNL: "https://t.co/uZNt7r8NwT" (16602 views, 36 likes) https://x.com/i/status/1945178070177960074
+- Saturday Night Live - SNL: "https://t.co/DycErlFrYJ" (15219 views, 62 likes) https://x.com/i/status/1945178331575431378
+- Car Dealership Guy: "[NEWS] This Victory Honda GM doesn’t flinch at a 450 credit score:
+
+Here’s why—
+
+GM Chase Channell builds deals himself…
+
+Desking 80–90% of them, even with low credit scores and down payments.
+
+Because in his view, structure is the unlock.
+
+"We're not the lenders. Let's let the" (14900 views, 10 likes) https://x.com/i/status/1945182279908630623
+- TESLARATI: "https://t.co/WOAI2cG9ak" (10674 views, 53 likes) https://x.com/i/status/1945184365488562261
+- TESLARATI: "🚨 It’s official: the Tesla Robotaxi fare is now $6.90 https://t.co/udTyhWHLcG https://t.co/cSh3zF9dzC" (9655 views, 50 likes) https://x.com/i/status/1945176340639973454
+- World and Science: "The spectacular globular cluster NGC 6397, situated about 7,200 light-years from Earth, has undergone a "core collapse," resulting in an extremely dense central region.
+
+(Credit: ESO) https://t.co/EKQnTEahv6" (9348 views, 38 likes) https://x.com/i/status/1945174545540771969
+- Max Velocity: "live stream appears likely today 👀" (9038 views, 270 likes) https://x.com/i/status/1945181519774933226
+- CSPAN: "Rep. @chiproytx speaks of Texas flooding and then leads the House in a Moment of Silence: "What will not be destroyed is the spirit of the people of Texas."
+
+Rep. Roy also recognizes some girls from Camp Mystic in the House Gallery. https://t.co/F4877sOhRU" (8597 views, 93 likes) https://x.com/i/status/1945188170494079246
