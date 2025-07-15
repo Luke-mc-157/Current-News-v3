@@ -1,0 +1,981 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on searches for high-engagement posts on X, news articles, and web content from July 14 to July 15, 2025, the biggest news stories about Tesla include its expansion into new markets and potential advancements in autonomous driving technology. Information from posts on X reflects positive sentiment but should be treated as inconclusive.",
+  "biggest_news_stories": [
+    {
+      "headline": "Tesla Begins Selling Cars in India Amid Slumping Global Sales",
+      "description": "Tesla has entered the Indian market, the world's most populous country, as part of efforts to boost sales. However, vehicles are being sold at a high price point, which may impact adoption.",
+      "source": "CNN Business",
+      "date": "2025-07-15",
+      "notes": "This story highlights Tesla's strategic move into emerging markets to address global sales challenges."
+    },
+    {
+      "headline": "Positive Sentiment on Tesla's Autonomous Driving Developments",
+      "description": "Posts on 
+
+X POSTS FROM SEARCH (1):
+- Gary Black: "$TSLA Summary - 7/15/2025
+
+Positive Catalysts:
+1/ Trump streamlines federal process allowing TSLA to secure general unsupervised autonomy license nationally  
+2/ FSD licensing deal with 1 or more OEMs
+3/ TSLA removes safety drivers from robotaxis, expands to states outside TX as" (48111 views, 141 likes) https://x.com/garyblack00/status/1945085458385367509
+
+SUPPORTING ARTICLES (6):
+- Tesla News, Latest Software Updates, Tesla Rumors and Tips: Tesla is rolling out software update 2025.26, which includes features like Grok (Beta), Dashcam updates, and Light Sync. Elon Musk announced that Grok AI will arrive in Teslas next week. Tesla expanded its Robotaxi service area in Austin and increased fares from $4.20. The company launched a live dashboard for Puerto Rico’s Powerwall Virtual Power Plant and added India to its map regions. Tesla scheduled its 2025 Shareholder Meeting for November 6. [https://www.notateslaapp.com/]
+Key Quotes: "Grok AI Arriving in Teslas Next Week" - Elon Musk | "It has been a long wait for FSD for European customers" - Unknown
+
+- Tesla News, Tips, Rumors, and Reviews: Tesla launched the Model Y in India, highlighting pricing as a major challenge. The company increased Robotaxi fares and expanded service areas, surpassing Waymo in size. Tesla's Model Y and Model 3 dominated US EV sales despite market headwinds. Weekly insurance registrations in China surged 145% amid strong June results. Elon Musk teased Tesla's 'most epic demo' by year-end and confirmed Grok AI integration into vehicles. [https://www.teslarati.com/]
+Key Quotes: "Grok 4 launch on July 9 with livestream event" - Elon Musk
+
+- Tesla, Inc. (TSLA) Stock Price, News, Quote & History - Yahoo Finance: Tesla's stock price is approximately $348.30 with a market cap over $1 trillion. The company operates in automotive and energy sectors, designing electric vehicles and storage systems. Recent news highlights Tesla's Robotaxi launch in Austin and analyst discussions on its features. Tesla delivered nearly 1.8 million vehicles globally in 2024. The firm is expanding into more affordable vehicles and robotaxi services. [https://finance.yahoo.com/quote/TSLA/]
+
+- With global sales slumping, Tesla tries to break into a new market: Tesla opened its first showroom in Mumbai, India, selling the Model Y for about $71,000 due to high tariffs. The company faces declining global sales amid increased competition and political issues. Tesla is negotiating trade deals to reduce tariffs and expand in India. High import duties in India more than double vehicle costs, creating tension as noted by executives. The US and India are discussing potential tariff eliminations as part of broader trade talks. [https://www.cnn.com/2025/07/15/business/tesla-india-ev]
+Key Quotes: "We’ve been working on getting into India. India is a very hot market" - Vaibhav Taneja
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News covers various topics including Tesla-related developments through Elon Musk's activities. The platform examines Musk's role in government efficiency under Trump's administration. It features news on Trump's policies and includes mentions of Tesla in broader business and tech contexts. Fox News highlights investments and expansions linked to Tesla indirectly through Musk. The content includes videos and articles on multiple subjects with sporadic Tesla references. [https://www.foxnews.com/]
+
+---
+
+TOPIC: elon musk
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories about Elon Musk from July 14, 2025, to July 15, 2025",
+  "summary": "Based on recent information from reliable sources, the biggest news stories about Elon Musk in the last 24 hours focus on his business and public engagements. Key highlights include discussions around Tesla's leadership, his communications with government officials, and predictions about energy infrastructure that have gained attention. These stories draw from web content and news articles available up to the current date.",
+  "stories": [
+    {
+      "title": "Tesla Shareholders Seek Full-Time CEO Amid Crucial Year",
+      "description": "Reports indicate that Tesla is facing pressure from shareholders for Elon Musk to serve as a full-time CEO, emphasizing the challenges and importance of the current year for the company.",
+      "source": "Information from CNN Business"
+    },
+    {
+      "title": "Governor's Emails with Elon Musk Deemed Too Intimate for Public Release",
+      "des
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Elon Musk - Wikipedia: Elon Musk was born in 1971 in Pretoria, South Africa, to a wealthy family and later emigrated to Canada and the United States. He founded several companies including Zip2, X.com (which became PayPal), SpaceX, and Tesla, where he serves as CEO. Musk has been involved in various ventures such as Neuralink, The Boring Company, and xAI, focusing on AI, space exploration, and sustainable energy. His political activities include supporting far-right figures and briefly serving as a senior advisor in the Trump administration before founding the America Party. Musk's public image is polarizing due to his statements on topics like COVID-19 and conspiracy theories. [https://en.wikipedia.org/wiki/Elon_Musk]
+Key Quotes: ""The boy had just lost his father to suicide and Elon had called him stupid. Elon had a tendency to call people stupid. How could I possibly blame that child?"" - Errol Musk | ""bullying was a virtue"" - Elon Musk
+
+- Tesla shareholders want a full-time CEO. That’s not how Musk works | CNN Business: Tesla is facing challenges including declining sales, reduced profits, and loss of market share in electric vehicles. Shareholders and analysts are concerned that Elon Musk's divided attention on other ventures, such as X and a new political party, is harming the company. Musk's role in the Trump administration and subsequent activities have led to calls for him to focus more on Tesla. The company aims to advance in robotaxis and AI, but critics argue it needs a dedicated CEO. Regulatory changes, like the loss of EV tax credits, are adding to Tesla's difficulties. [https://www.cnn.com/2025/07/14/business/elon-musk-tesla-full-time-ceo]
+Key Quotes: ""To have one of the biggest companies in the world, not have a full-time CEO is unheard of."" - Ross Gerber | ""We believe this is a tipping point in the Tesla story and ultimately the Tesla Board needs to act now and set the ground rules for Musk going forward around his political ambitions and actions."" - Dan Ives | ""Shut up, Dan."" - Elon Musk
+
+- [Article from www.kut.org]: No content is available for this article from the provided data. It pertains to a topic related to Elon Musk and Texas politics based on the URL. Further details are not specified. The article may discuss regional implications or events involving Musk. [https://www.kut.org/politics/2025-07-14/texas-elon-musk-greg-abbott]
+
+- Elon Musk News & Latest Updates | Fox Business: Elon Musk announced that Grok AI will be integrated into Tesla vehicles starting next week. Musk's SpaceX is investing $2 billion in his xAI startup amid AI developments. There are ongoing discussions about Musk's political activities, including his criticism of a Senate bill and plans for a new political party. Tesla faces challenges like stock declines and calls for Musk to limit his external engagements. Musk described a Tesla diner as one of the coolest spots in LA. [https://www.foxbusiness.com/category/elon-musk]
+Key Quotes: ""One of the coolest spots in LA."" - Elon Musk | ""Shut up, Dan."" - Elon Musk
+
+- Elon Musk: Latest News and Updates | South China Morning Post: Elon Musk's xAI apologized after its Grok chatbot made antisemitic remarks. Tesla plans to expand its robotaxi service to California and Arizona amid global competition. Musk's companies, including SpaceX and Tesla, are facing scrutiny over his political activities and predictions. There are discussions about potential relocation of Musk's operations due to U.S. political tensions. Musk unveiled updates to Grok AI, claiming it outperforms most graduate students. [https://www.scmp.com/topics/elon-musk]
+Key Quotes: ""This is sickening."" - Unknown | ""Smarter than almost all graduate students, in all disciplines, simultaneously."" - Elon Musk
+
+- Elon Musk dijo que la red eléctrica comenzaría a fallar en 2025. Por una vez, ha dado en el clavo con su predicción: Elon Musk predicted in 2024 that electricity grids would fail in 2025 due to high demand from AI data centers and electrification. This prediction is materializing with power outages in various regions during heat waves. The core issue is outdated infrastructure, with insufficient investment in grids compared to energy generation. Demand for electricity has surged, driven by AI computing and air conditioning needs. Experts warn that grids could bottleneck the energy transition without urgent upgrades. [https://www.xataka.com/energia/prediccion-elon-musk-que-se-ha-hecho-realidad-red-electrica-no-estaba-preparada-para-2025]
+Key Quotes: ""Nunca he visto una tecnología avanzar tan deprisa"" - Elon Musk
+
+---
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on available web and news sources, the biggest news stories about Liverpool FC from July 14, 2025, to July 15, 2025, primarily focus on transfer activities and related events. No high-engagement posts on X were found for this period. Information is drawn from reliable web sources covering the latest updates.",
+  "stories": [
+    {
+      "title": "Liverpool Makes First Move for Alexander Isak in Transfer Window",
+      "description": "Liverpool FC has approached Newcastle United for striker Alexander Isak, marking a significant step in their summer transfer plans. This move is part of ongoing efforts to strengthen the squad ahead of the new season.",
+      "source": "Liverpool.com",
+      "published": "Approximately 1 hour ago from July 15, 2025"
+    },
+    {
+      "title": "Liverpool Rebuffs Bid for Luis Diaz",
+      "description": "The club has rejected a bid for winger Luis Diaz, indicating their intent to retain key players despite interest from other teams. Th
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Liverpool FC - Latest news, transfers, fixtures, match reports - Liverpool Echo: Liverpool FC is reporting on various team updates including transfer interests and match preparations. Newcastle United's Alexander Isak has emerged as a key transfer target for Liverpool amid considerations of Darwin Nunez's potential departure. The club rejected a bid from Bayern Munich for winger Luis Diaz. Tributes were paid to the late Diogo Jota during a pre-season friendly against Preston North End. Liverpool's pre-season activities include new coaching appointments and fixture changes. [https://www.liverpoolecho.co.uk/all-about/liverpool-fc]
+Key Quotes: "Liverpool consider Alexander Isak transfer as Hugo Ekitike intrigue grows" - Liverpool Echo | "What Hugo Ekitike told team-mates amid Newcastle transfer talks and Liverpool interest" - Timothy Chandler | "Alexander Isak has already made Liverpool feelings clear amid £120m transfer 'approach'" - Unknown
+
+- Liverpool FC News | Liverpool Transfer News | Breaking News: Liverpool FC news covers multiple transfer interests including an approach for Alexander Isak from Newcastle. The club is also linked with alternatives like Hugo Ekitike and other strikers. Reports mention bids and rejections involving players such as Luis Diaz. Liverpool's transfer strategy includes considering players from various leagues amid PSR rules. Additional updates involve potential signings and rival club interests. [https://www.newsnow.com/us/Sports/Soccer/Premier+League/Liverpool]
+Key Quotes: "Exclusive: Fabrizio Romano says Liverpool planning genius move next after Isak approach" - Fabrizio Romano | "Ornstein: Liverpool eyeing 'monster' £60m Isak alternative, he's better than Ekitike - opinion" - David Ornstein | "Liverpool could repeat move Jurgen Klopp called 'insane'" - Jurgen Klopp
+
+- Liverpool Football Club news, fixtures, results and transfer updates | Daily Mail Online: Liverpool FC is preparing to potentially break transfer records again for Alexander Isak from Newcastle. The club rejected a bid for Luis Diaz from Bayern Munich. Tributes continue for the late Diogo Jota, including from former teammates. Liverpool's pre-season friendly against Preston included emotional moments honoring Jota. The team is focusing on squad strengthening and upcoming fixtures. [https://www.dailymail.co.uk/sport/liverpool/index.html]
+Key Quotes: "Are Chelsea REALLY title challengers?" - Daily Mail | "Liverpool prepared to smash British transfer record AGAIN to sign Alexander Isak" - Daily Mail | "Jurgen Klopp raises major question over Liverpool's £116m move for Florian Wirtz" - Jurgen Klopp
+
+- Liverpool transfer news LIVE: Alexander Isak approach made, Luis Diaz bid rejected, Vini Jr move - Liverpool.com: Liverpool made an approach for Newcastle's Alexander Isak in a potential record deal. The club rejected a bid for Luis Diaz from Bayern Munich. Interest in Vinicius Jr from Real Madrid is being considered as a contingency. Darwin Nunez's potential exit is linked to new signings. Pre-season activities include tributes to Diogo Jota and squad preparations. [https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-konate-32052484]
+Key Quotes: "Harvey Elliott move in doubt" - talkSPORT | "Ibrahima Konate rejects big-money transfer offer" - The Mirror | "Luis Diaz 'tells Liverpool he wants to leave'" - The Athletic
+
+- Manchester United lay Anfield tribute to Diogo Jota and Andre Silva - Liverpool FC: Manchester United representatives visited Anfield to pay respects to Diogo Jota and Andre Silva. Flowers were laid by Ruben Amorim, Bruno Fernandes, and Diogo Dalot. This tribute follows the brothers' tragic passing in a road accident. Numerous tributes have gathered at Anfield since the incident. The event highlights solidarity between rival clubs. [https://www.liverpoolfc.com/news/manchester-united-lay-anfield-tribute-diogo-jota-and-andre-silva]
+Key Quotes: "Manchester United visited the Anfield memorial for Diogo Jota and Andre Silva to pay their respects" - Liverpool FC
+
+- Waterford officially sign former Liverpool midfielder - DaveOCKOP: Former Liverpool midfielder Jordan Rossiter has signed with Waterford FC in Ireland. Rossiter previously played for Liverpool's youth and first team before moving to other clubs. He expressed excitement about joining Waterford and working with the coaching staff. The signing is part of ongoing transfers involving former Liverpool players. Rossiter aims to contribute his experience to the new team. [https://www.daveockop.com/latest-news/waterford-officially-sign-former-liverpool-midfielder/]
+Key Quotes: "I’m delighted to be here, I’m looking forward to getting going & hopefully getting going as soon as I can" - Jordan Rossiter | "It was a phone call with John Coleman & Danny Ventre. I know them both quite well, and just the way the club is going" - Jordan Rossiter
+
+---
+
+TOPIC: world news
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "introduction": "Based on searches for high-engagement posts on X and relevant news articles from web sources, here is a compilation of the biggest world news stories from July 14, 2025, to July 15, 2025. This summary draws from reliable news outlets covering global events, focusing on significant developments in science, geopolitics, and international affairs.",
+    "stories": [
+      {
+        "title": "Spectacular Solar Prominence Eruption",
+        "description": "A large eruptive prominence was observed on the sun, involving billions of tons of solar material ejected into space. This event, while not directed at Earth, highlights ongoing solar activity that could impact space weather and satellite operations globally.",
+        "source": "Information from space and science news coverage"
+      },
+      {
+        "title": "Indian Astronaut Returns from International Space Station",
+        "description": "An Indian astronaut successfully returned from the Inte
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- World News: Top & Breaking World News Today | AP News: The Associated Press covers top breaking news stories from around the globe, including conflicts in Israel and Gaza where Netanyahu's governing coalition is fracturing. An appeals court intervened to extend temporary protections for some Afghans facing expiration. In England, individuals who cut down the Sycamore Gap tree were sentenced to over four years in prison. The publication also features newsletters and sections on U.S. news, politics, sports, and entertainment to keep readers informed on global events. [https://www.npr.org/sections/news/]
+Key Quotes: "Netanyahu's governing coalition is fracturing. Here's what it means for Israel and Gaza" - Associated Press | "They cut down England’s beloved Sycamore Gap tree. Now they face over 4 years in prison" - Associated Press
+
+- Sun news: See this morning’s spectacular eruption!: A spectacular prominence erupted from the sun's northeast limb, hurling solar material into space but not directed at Earth. Earth is experiencing a G1 minor geomagnetic storm due to high-speed solar wind from a coronal hole. Sunspot region AR4141 produced several C-class flares, with low overall flare activity observed. The sun has seven sunspot regions, and geomagnetic activity is expected to remain unsettled. No Earth-directed coronal mass ejections were detected in the imagery. [https://apnews.com/world-news]
+
+- Top news of the day | July 14, 2025: Indian astronaut Shubhanshu Shukla and Axiom Mission 4 crew departed from the International Space Station after an 18-day stay, heading back to Earth. External Affairs Minister S. Jaishankar discussed with his Chinese counterpart the need to avoid restrictive trade measures and focus on de-escalation along the Line of Actual Control. The Supreme Court of India emphasized the value of freedom of speech and considered guidelines for social media posts. The Union government is working to save the life of an Indian nurse facing execution in Yemen. Protests occurred in Odisha over a student's self-immolation and in Jammu and Kashmir regarding historical sites. [https://www.reuters.com/world/]
+Key Quotes: "India and China need to avoid ‘restrictive’ trade measures" - S. Jaishankar | "Citizens must know the value of freedom of speech" - Supreme Court of India
+
+- Tuesday morning news: July 15, 2025: President Trump threatened to impose 100 percent secondary tariffs on countries trading with Russia if a peace deal with Ukraine is not reached within 50 days. The Supreme Court ruled in favor of the Trump administration's plan to scale back the U.S. Department of Education by allowing layoffs of nearly 1,400 employees. One year after an assassination attempt on Trump, lawmakers called for better protection measures. In Texas, flooding led to at least 130 deaths and over 160 missing, with ongoing rescue efforts. A fire at a Massachusetts assisted-living facility killed at least nine people and injured 30 others. [https://earthsky.org/sun/sun-news-activity-solar-flare-cme-aurora-updates/]
+Key Quotes: "We’re gonna be doing secondary tariffs if we don't have a deal in 50 days. It's very simple. And they'll be at 100 percent." - President Donald Trump | "This lifts the handcuffs off of what we've been trying to do, which really is to get education back to the states where the president believes it does belong." - Linda McMahon
+
+---
+
+TOPIC: austin tx local news
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Catastrophic Flash Flooding in Texas",
+      "summary": "At least 133 people have been killed in severe flash flooding across Texas, with several others reported missing. The flooding has affected areas around Austin, including confirmations of fatalities in various locations.",
+      "source": "Information from KXAN Austin",
+      "date": "2025-07-15"
+    },
+    {
+      "title": "Debris Found in Lake Travis Following Floods",
+      "summary": "Significant amounts of debris have been discovered in Lake Travis due to recent flooding events, with officials advising caution for anyone using the waterways in the Highland Lakes chain.",
+      "source": "Information from FOX 7 Austin",
+      "date": "2025-07-15"
+    },
+    {
+      "title": "Update on Flood Victims and Disaster Declarations",
+      "summary": "Another camper from Camp Mystic in Austin has been identified among the flood victims, and Williamson County has extended its disaste
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Austin Local | News, Weather, Sports, Breaking News: Flooding in Texas has led to multiple fatalities and missing persons, with Governor Greg Abbott declaring a state of emergency in 21 counties. Austin city manager unveiled a $6.3B budget, including funding for various services. Attorney General Ken Paxton requested an execution date for a death row inmate. The Lower Colorado River Authority opened floodgates at Buchanan Dam for the first time since 2019 to manage storm runoff. Residents in affected areas like Sandy Creek expressed frustration over recovery efforts. [https://cbsaustin.com/news/local]
+Key Quotes: ""slow"" - Residents of Sandy Creek
+
+- Texas flooding: Lots of debris found in Lake Travis | FOX 7 Austin - YouTube: Most waterways along the Highland Lakes chain are now open, but officials advise caution due to debris from flooding. The Lower Colorado River Authority is managing flood risks in the area. Flooding has caused significant damage and hazards in Lake Travis. Residents and visitors are urged to avoid recreational activities for safety reasons. [https://www.kxan.com/news/texas/map-where-have-flash-flooding-fatalities-been-confirmed-in-texas/]
+
+- Texas flood updates in Travis, Williamson, Burnet counties | kvue.com: More than a dozen people have died in the Austin area due to Fourth of July weekend flooding, with several counties affected. President Donald Trump visited the area and met with officials and victims' families. Travis County identified multiple victims and imposed restrictions on Lake Travis for safety. Williamson and Burnet counties reported deaths and missing persons, with resources like recovery centers and debris collection sites established. Governor Greg Abbott expanded the federal disaster declaration to include more counties for assistance. [https://www.kxan.com/]
+Key Quotes: ""Abby had a magical life force that filled the room with light and laughter."" - The Pohl family | ""If I had known, I would have moved mountains to change that response by calling county officials directly or by publicly demanding action."" - Leander Mayor Christine DeLisle
+
+---
+
+TOPIC: events in austin tx
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories about events in Austin, TX from July 14, 2025, to July 15, 2025",
+  "summary": "Based on recent searches for high-engagement posts on X, news articles, and additional web content, the biggest news stories from the specified period in Austin, TX, primarily involve weather-related events and local community responses. Key highlights include flooding issues and infrastructure updates, as derived from reliable sources covering Austin news.",
+  "stories": [
+    {
+      "title": "Flooding and Weather Alerts in Austin Area",
+      "description": "Reports indicate moderate flooding along the Frio River and a Flood Watch extended to parts of the Hill Country, including areas near Austin. This includes updates on low water crossings opening near damaged bridges, potentially affecting local travel and safety. Weather forecasts mentioned isolated storms and showers impacting Central Texas.",
+      "source": "Information from KXAN Austin and related local news bri
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Home - UT Austin News - The University of Texas at Austin: UT Austin News highlights a 3D printing breakthrough that could advance medical devices and stretchable electronics. The College of Education launched UT's first teacher residency program to address educational needs. Stories cover research in science, technology, health, and wellness, including a new sensor for hydration monitoring. The university also features updates on arts, humanities, and campus community initiatives. [https://www.kxan.com/]
+
+- The Texas Tribune: The Texas Tribune reports on the aftermath of deadly floods in the Hill Country, with at least 132 people dead and over 100 still missing, as recovery efforts continue. It covers President Trump's comments on potential Republican gains through Texas redistricting and Democratic responses. The article discusses a proposed Senate committee visit to Kerr County and legislation to address farm labor shortages. It also includes updates on political fundraising and investigations into noncitizen voting. [https://news.utexas.edu/]
+Key Quotes: "“​​just a very simple redrawing”" - President Donald Trump
+
+- Austin Evening Briefing July 14: The briefing announces the opening of a temporary low water crossing near Sandy Creek Bridge in Travis County due to flood-related damage. It reports moderate flooding along the Frio River in Uvalde County and an emergency declaration in Eagle Pass. Volunteers are actively involved in flood recovery efforts across affected areas. Weather forecasts predict potential heavy rain overnight with hot, dry conditions returning later in the week. [https://www.texastribune.org/]
+
+---
+
+TOPIC: aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_aviation_news_stories": [
+    {
+      "title": "Civil Aviation Minister Responds to Air India Flight 171 Crash Investigation Report",
+      "summary": "The Ministry of Civil Aviation clarified that the preliminary report from the Aircraft Accident Investigation Bureau (AAIB) on the Air India Flight 171 crash is not final and urged against drawing conclusions. The report details initial findings from the incident, focusing on pilot communications and events leading up to the crash.",
+      "source": "Times of India",
+      "date": "2025-07-12 (based on available information)"
+    },
+    {
+      "title": "Aviation Expert Analyzes Preliminary Report on Air India Flight 171 Crash",
+      "summary": "An aviation expert reviewed the AAIB's preliminary report on the Air India Flight 171 crash, highlighting key dialogues between pilots and disputing claims of captain fault. The report outlines the sequence of events prior to the incident, providing insights into potential factors 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- FlightGlobal | Breaking news for airlines, aerospace and defence industry: FlightGlobal provides breaking news on aviation topics including airlines, aerospace, and defence. It reports on Avelo Airlines planning to close its Burbank base and withdraw from the West Coast due to financial difficulties. The site also covers El Al's CEO stepping down and Japan's reduction in F-15J upgrades. Additionally, it highlights Etihad Airways unveiling new routes and a test flight of a Yakovlev Yak-40 with a new engine. [https://www.flightglobal.com/news]
+
+- Aviation News | Simple Flying: Simple Flying covers the latest aviation news, including storms causing delays at Newark Liberty International Airport and Airbus beginning to equip A321 fuselages in China. It discusses new airline routes and the potential for long-haul flights from UK airports. The site also addresses topics like AI in commercial aviation and fuel efficiency improvements by European airlines. Furthermore, it reports on Alaska Airlines' approval to take over Hawaiian's international routes. [https://simpleflying.com/category/aviation-news/]
+
+- Aviation News - daily news dedicated to the global aviation industry: Aviation News Online reports on engine fuel switches being cut off before an Air India crash, as per a preliminary investigation. It covers Wizz Air suspending its Abu Dhabi subsidiary due to operational challenges and BeauTech's leasing activities in the first half of the year. The site also notes Boeing's delivery of 60 aircraft in June and Airbus delivering its first A321XLR. Additionally, it discusses Air France-KLM taking a majority stake in SAS. [https://www.aviationnews-online.com/]
+
+- 'Don't jump to any conclusion': Civil aviation minister reacts to AI 171 crash probe report; calls it 'preliminary': The Civil Aviation Ministry clarified that the AAIB report on the Air India Flight 171 crash is preliminary and not final, with investigations ongoing. Minister Ram Mohan Naidu stated that the ministry is analyzing the report and coordinating with AAIB for support. He expressed confidence in India's aviation workforce, including pilots and crew. The crash involved a Boeing 787-8 that killed 240 people shortly after takeoff from Ahmedabad, and further analysis is underway. [https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms]
+Key Quotes: "This is a preliminary report." - Ram Mohan Naidu Kinjarapu | "The AAIB has brought out a preliminary report. This is not the final report." - Murlidhar Mohol
+
+- Air India flight AI-171 crash: Aviation expert analyses AAIB’s preliminary report, negates captain’s fault: The AAIB's preliminary report on the Air India Flight AI-171 crash revealed that both engines shut down unexpectedly shortly after takeoff, leading to a rapid descent. Aviation expert Rajiv Pratap Rudy analyzed the report, stating the aircraft took off normally and pilots attempted to relight the engines. The report includes cockpit conversations indicating confusion among the pilots. Further investigation is required to determine the exact cause of the engine failure. [https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-flight-ai-171-crash-aviation-expert-analyses-aaibs-preliminary-report-negates-captains-fault/videoshow/122402461.cms?from=mdr]
+Key Quotes: "AAIB report states that aircraft took flight normally... How and why this happened will be known through further investigation." - Rajiv Pratap Rudy
+
+- Air India crash’s prelim report to be out very soon: Aviation Minister: Civil Aviation Minister Ram Mohan Naidu announced that the preliminary report on the Air India crash will be released very soon, with AAIB actively working on it per international norms. The ministry is ensuring full transparency and accountability in the investigation process. The crash involved a flight from Ahmedabad to London that killed 240 people shortly after takeoff. Investigators have retrieved the Cockpit Voice Recorder and Flight Data Recorder for examination. [https://www.tribuneindia.com/news/india/air-india-crashs-prelim-report-to-be-out-very-soon-aviation-minister/]
+Key Quotes: "The report will be out very soon." - Ram Mohan Naidu
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest US Politics news stories from July 14 to July 15, 2025",
+  "date_range": "2025-07-14 to 2025-07-15",
+  "summary": "Based on searches for high-engagement posts on X, news articles, and additional semantic posts on X, the following are the most prominent US politics stories identified from the specified period. High-engagement posts on X did not yield specific conclusive results, so this compilation relies primarily on news articles and web content for verified information.",
+  "stories": [
+    {
+      "title": "Trump Announces Plan to Send Weapons to Ukraine and Sets Deadline for Russia",
+      "description": "President Donald Trump outlined a strategy to provide new weapons to Ukraine and impose economic penalties on Russia if peace is not achieved within 50 days, amid growing tensions and his dissatisfaction with Russian leadership.",
+      "source": "CNN Politics",
+      "date": "2025-07-15"
+    },
+    {
+      "title": "Investigation into Defense Secretary Pete 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Politics News | Breaking Political News, Video & Analysis-ABC News: ABC News covers various political developments including Trump's comments on churches endorsing candidates and handling of the Epstein probe. House Republicans rebelled against a crypto bill despite Trump's urging. Trump defended Attorney General Pam Bondi amid controversy over Epstein files. Senate hearings addressed issues like the Signal chat involving Mike Waltz and potential Education Department cuts. [https://abcnews.go.com/Politics]
+Key Quotes: ""God is once again welcomed back into our public square."" - Donald Trump | ""She should release whatever she thinks is credible."" - Donald Trump
+
+- Russia-Ukraine war: Trump announces novel plan to send weapons to Kyiv and gives Moscow new deadline to make peace: Trump announced a plan to send weapons to Ukraine and set a new deadline for Russia to make peace. He expressed disappointment in Russian President Putin during remarks. The development follows discussions on U.S. weapons sales to aid Ukraine. European leaders have noted shifts in Trump's approach amid ongoing conflicts. [https://www.cnn.com/2025/07/14/politics/us-ukraine-weapons-trump]
+Key Quotes: ""I'm disappointed in President Putin."" - Donald Trump
+
+- Headlines for July 14, 2025 | Democracy Now!: The headlines include Trump's statements on sending Patriot missiles to Ukraine and criticism of Putin. There are reports on White House handling of Epstein files causing fractures in Trump's MAGA base. Trump threatened tariffs on Mexico and the EU. Discussions also cover State Department staff cuts and their impact on U.S. interests. [https://www.politico.com/]
+Key Quotes: ""He’ll talk so beautifully and then he’ll bomb people at night. We don’t like that."" - Donald Trump | ""Losing more diplomatic expertise at this critical global moment is a catastrophic blow to our national interests."" - American Foreign Service Association
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News reports on Trump's policies including border crackdowns and tariffs on Mexico and the EU. There are updates on political figures like Trump's granddaughter and Republican responses to various issues. The coverage includes criticism of Democrats and discussions on immigration and economic policies. Trump's administration actions on federal layoffs and education are also highlighted. [https://democracynow.org/2025/7/14/headlines]
+Key Quotes: ""Damn you."" - Whoopi Goldberg | ""God is giving America another chance."" - Unnamed Trump friend and informal faith adviser
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times discusses Trump's shift on Epstein files and its impact on his hard-right allies. Rising inflation is linked to potential new tariff threats from Trump. There are reports on federal layoffs at agencies like FEMA and House Democrats' responses to redistricting. University leaders reject Republican attacks on campus antisemitism amid ongoing political debates. [https://www.foxnews.com/]
+Key Quotes: ""Losing more diplomatic expertise at this critical global moment is a catastrophic blow to our national interests."" - American Foreign Service Association
+
+---
+
+TOPIC: austin tx weather
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query": "Biggest news stories about Austin, TX weather from 2025-07-14 to 2025-07-15",
+    "summary": "The main weather stories in Austin, TX over the past 24 hours focus on ongoing flood risks, showers, and isolated storms. Key highlights include updates to a flood watch in the Hill Country and reports of flooding in nearby areas like Kerr County and the Frio River, stemming from recent heavy rains.",
+    "stories": [
+      {
+        "title": "Flood Watch Extended for Hill Country",
+        "description": "A flood watch was updated to cover the Hill Country, including areas near Austin, due to expected showers and isolated storms continuing through the evening. This follows recent flooding events.",
+        "source": "KXAN Austin Weather",
+        "published": "2025-07-15"
+      },
+      {
+        "title": "Deadly Texas Floods Impact Nearby Regions",
+        "description": "Reports highlight devastating floods in Kerr County, Texas, with searches ongoing for mis
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- 10-Day Weather Forecast for Austin, TX - The Weather Channel | weather.com: The Weather Channel provides a 10-day weather forecast for Austin, TX, featuring mostly clear to partly cloudy conditions. High temperatures are expected to range from 93°F to 96°F, with lows between 72°F and 76°F. There is a low chance of precipitation, ranging from 6% to 16%, and winds will primarily come from the south at 5 to 15 mph. Humidity levels will vary from 61% to 75%, and the UV index is forecasted as extreme during daylight hours. [https://www.kxan.com/weather/forecast/todays-forecast/]
+
+- July 14, 2025: News on the deadly Texas floods | CNN: Deadly floods in Kerr County, Texas, have killed at least 132 people, with search and recovery efforts ongoing and potentially lasting months. Additional thunderstorms have increased flood risks in central Texas, leading to new evacuations and swollen rivers. Local officials held their first meeting since the floods to discuss recovery and response. The National Weather Service issued alerts warning of life-threatening flooding, and residents are praising first responders while raising concerns about future flood prevention. [https://weather.com/weather/tenday/l/Austin+TX?canonicalCityId=1692e49f355e6f12c77810b1ab153c25]
+Key Quotes: "Move to higher ground now! This is an extremely dangerous and life-threatening situation" - National Weather Service
+
+- Austin Evening Briefing July 14: The Austin evening briefing reports a low chance of isolated showers and storms for Tuesday afternoon, with hot and dry weather expected later in the week. A temporary low water crossing has opened near the damaged Sandy Creek Bridge to assist residents. Moderate flooding is occurring along the Frio River in Uvalde County, and Eagle Pass has declared an emergency due to rising floodwaters. Community recovery efforts in Kerr County involve volunteers cleaning up after the recent floods, as more rainfall complicates the situation. [https://www.accuweather.com/en/us/austin/78701/weather-forecast/351193]
+
+---
+
+TOPIC: severe weather
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Severe weather news stories from July 14-15, 2025",
+  "summary": "The biggest news stories on severe weather from July 14-15, 2025, include reports of isolated severe thunderstorms, potential flooding, and high heat across various regions in the U.S. Key highlights involve storm risks in the northern High Plains, East, Mid-South, and southeast Arizona, as well as flooding threats along the I-95 corridor and in areas like Wilson County, Tennessee, and the Hill Country in Texas.",
+  "top_stories": [
+    {
+      "title": "Severe Thunderstorms Across Multiple Regions",
+      "description": "Reports indicate isolated severe thunderstorms possible in the northern High Plains, East, Mid-South, and southeast Arizona, associated with a slow-moving weather system. This includes risks of strong winds, hail, and heavy rain.",
+      "date": "July 14-15, 2025",
+      "source": "Weather outlook from severe weather monitoring services"
+    },
+    {
+      "title": "Flooding Risks on the E
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.accuweather.com]: The article originates from AccuWeather and focuses on severe weather topics. Specific content details are not accessible from the provided data. It likely includes weather updates and forecasts based on the source's reputation. Users are advised to visit the URL for accurate information. No additional facts are available in the given excerpt. [https://www.accuweather.com/en/us/severe-weather]
+
+- Severe Weather Outlook - find out if severe weather is coming your way: The website offers a national severe weather outlook for the coming days, detailing risks such as tornadoes, hail, and wind. It provides percentages for threats like 2% tornado risk and up to 30% wind risk for specific dates in July. Hayley, the site operator, promotes a live stream for real-time updates. Users can interact with maps and personal location tools to assess local risks. [https://www.severeweatheroutlook.com/2025-07-14/]
+Key Quotes: "Hayley here - Do you like lofi music whatever music Hayley put on and terrifyingly loud computer voices?" - Hayley
+
+- At least two dead after powerful storms caused flash flooding prompting New Jersey State of Emergency chaos across Northeast | Fox Weather: Powerful storms caused flash flooding in the Northeast and mid-Atlantic, resulting in at least two deaths in New Jersey. New Jersey Governor Phil Murphy declared a state of emergency due to heavy rainfall and flooding. Major cities like New York experienced record rainfall, leading to submerged streets and transportation disruptions. Emergency responses included water rescues and warnings for millions under flash flood alerts. [https://www.foxweather.com/weather-news/strong-storms-flood-threat-east-coast-forecast-monday-july-14-2025]
+Key Quotes: "Turn around, don’t drown when encountering flooded roads. Most flood deaths occur in vehicles." - NWS Nashville TN
+
+- Weather for Wilson County, TN | Weather Report July 14, 2025: A Flash Flood Warning is in effect for Wilson County, TN, due to heavy thunderstorms causing flooding on areas like Old Hickory Blvd. Between 0.5 and 1.5 inches of rain have fallen, with temperatures around 87°F and high humidity. Forecasts predict continued storms and high heat for the next few days. Residents are advised to avoid flooded roads and stay weather-aware. [https://wilsoncountysource.com/7-14-25-severe-weather-alert-storms-and-high-heat-expected/]
+Key Quotes: "Turn around, don’t drown when encountering flooded roads. Most flood deaths occur in vehicles." - NWS Nashville TN
+
+- National and Local Weather Radar, Daily Forecast, Hurricane and information from The Weather Channel and weather.com: The website provides national and local weather forecasts, including radar updates and hurricane information. It features daily forecasts, videos, and alerts for severe weather conditions. Users can access real-time data and tools for tracking storms. The site also includes lifestyle content related to weather impacts. [https://weather.com/]
+
+- [Article from www.kxan.com]: The article from KXAN pertains to severe weather forecasts. Specific content details are not accessible from the provided data. It likely includes updates on local weather conditions and alerts. Users should refer to the URL for current information. No further details are available in the excerpt. [https://www.kxan.com/weather/forecast/todays-forecast/]
+
+---
+
+TOPIC: artificial intelligence
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories about artificial intelligence from July 14 to July 15, 2025",
+  "stories": [
+    {
+      "title": "Trump’s $70B AI Bet, Zuckerberg’s AI Infrastructure Expansion, and Musk’s AI-Related Setback",
+      "summary": "A major news roundup highlighted significant developments in AI, including a reported $70 billion investment in AI initiatives linked to political figures, Meta's expansion of AI superclusters on a massive scale, and an AI bot-related error attributed to Elon Musk's companies. These stories reflect ongoing advancements and challenges in the AI sector, emphasizing investments, infrastructure growth, and potential risks.",
+      "source": "Based on information from TS2 Space Technologie, covering AI news from July 14–15, 2025"
+    }
+  ],
+  "additional_context": "Other general AI news sources like Reuters, TechCrunch, and The Guardian were reviewed but did not yield specific stories from this date range. No high-engagement posts on X were identif
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- AI News & Artificial Intelligence | TechCrunch: TechCrunch covers the latest developments in artificial intelligence and machine learning, including generative AI, large language models, and ethical issues. The site features headlines on startups, security, and enterprise applications, with updates on companies like OpenAI, Meta, and xAI. Key stories include Meta fixing a bug that could leak AI prompts and Google adding AI summaries to Discover. Additionally, xAI's Grok chatbot has faced controversies, and investments in AI infrastructure by firms like NVIDIA are highlighted. [https://www.reuters.com/technology/artificial-intelligence/]
+Key Quotes: "once weights are out, they can’t be pulled back" - Sam Altman | "Kimi K2 does not just answer; it acts" - Moonshot AI | "the smartest AI in the world" - Elon Musk
+
+- Artificial intelligence (AI) | The Guardian: The Guardian reports on various AI-related issues, including investigations into children allegedly involved in foreign plots using AI. Trump announced a $70 billion plan for AI and energy, drawing criticism from climate groups. Elon Musk's xAI apologized for antisemitic remarks by their Grok chatbot. Other stories cover AI in scientific papers, job markets, and ethical concerns like AI chatbots encouraging harmful behavior. The publication also discusses potential AI applications in animal communication and therapy. [https://techcrunch.com/category/artificial-intelligence/]
+Key Quotes: "I felt pure, unconditional love" - Users of AI companion app Replika | "A bit like AI, Elon Musk seems custom-built to undermine everything good and true in the world" - Zoe Williams
+
+- Trump’s $70 B AI Bet, Zuckerberg’s Manhattan-Sized Superclusters & Musk’s Bot Blunder – AI News Roundup (July 14–15, 2025): The article rounds up major AI developments, including Trump's proposed $70 billion investment in AI tied to energy plans. Mark Zuckerberg announced Meta's plans for massive AI data centers, such as the Prometheus and Hyperion superclusters. Elon Musk's xAI launched Grok 4, claiming it as the world's smartest AI, amid ongoing controversies. Other highlights include new AI models from OpenAI, China, and Hugging Face, as well as advancements in robotics like Amazon's warehouse robots and humanoid soccer bots. The piece also covers enterprise AI investments and research breakthroughs in genomics and graphics. [https://www.theguardian.com/technology/artificialintelligenceai]
+Key Quotes: "Kimi K2 does not just answer; it acts" - Moonshot AI | "Generative AI has made huge strides in visual creation, but it... still struggles with controllability" - Sanja Fidler | "This will help deliver packages faster and cut costs, while robots handle the heavy lifting and employees upskill" - Scott Dresser
+
+---
+
+TOPIC: what's trending
+
+LIVE SEARCH SUMMARY:
+{
+  "trending_news_stories": [
+    {
+      "title": "Indian Astronaut Returns from International Space Station",
+      "description": "An Indian astronaut has successfully returned from the ISS, marking a significant milestone in India's space program.",
+      "date": "2025-07-14",
+      "source": "The Hindu"
+    },
+    {
+      "title": "India-China De-escalation Efforts",
+      "description": "Progress in de-escalation between India and China along their borders, focusing on diplomatic and military measures to reduce tensions.",
+      "date": "2025-07-14",
+      "source": "The Hindu"
+    },
+    {
+      "title": "Supreme Court Rulings on Social Media Posts",
+      "description": "The Supreme Court addressed issues related to social media posts, potentially impacting regulations on online content and free speech.",
+      "date": "2025-07-14",
+      "source": "The Hindu"
+    },
+    {
+      "title": "Government Initiatives to Save Nurse",
+      "description": "Government efforts are under
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.reuters.com]: Content from the article is not accessible. The URL provided is for Reuters' world news section. No specific details or main points are available from this source. This article could not be analyzed further due to inaccessibility. [https://www.reuters.com/world/]
+
+- Top news of the day | July 14, 2025: Indian astronaut Group Captain Shubhanshu Shukla and his Axiom Mission 4 crew departed from the International Space Station after an 18-day stay, with their return scheduled via SpaceX Dragon for a splashdown off the California coast. External Affairs Minister S Jaishankar discussed the need for India and China to avoid restrictive trade measures and focus on de-escalation along the Line of Actual Control during talks with Wang Yi. The Supreme Court emphasized the importance of citizens understanding the value of freedom of speech and self-regulation amid discussions on guidelines for social media posts. The Union government assured efforts to save the life of an Indian nurse facing execution in Yemen. [https://www.thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+Key Quotes: "India and China should now look at de-escalation of the situation along the Line of Actual Control after making “good progress” in normalising the bilateral ties in the past nine months" - S Jaishankar | "Citizens must know the value of freedom of speech and expression and observe self regulation" - Supreme Court | "The government is working relentlessly to stay the execution of the nurse" - Attorney General R. Venkataramani
+
+- Breaking News, Latest News and Videos | CNN: The article discusses recent developments including Florida's attorney general addressing Jeffrey Epstein-related documents and their implications. Democrats are using Epstein files as a campaign issue against Republicans. President Trump commented on his relationship with Russian President Putin and ongoing Ukraine-Russia conflicts. The piece also covers environmental concerns like potential flooding from a tropical system in the Gulf. [https://www.cnn.com/]
+Key Quotes: "It speaks for itself" - Ashley Moody | "I’m not done with him, but I’m disappointed in him" - Donald Trump
+
+- Top 10 India News Headlines Today – July 15, 2025: A college student in Odisha died after self-immolation alleging sexual harassment, leading to protests and arrests. Indian astronaut Shubhanshu Shukla returned from the International Space Station after an 18-day mission. Tesla opened its first showroom in Mumbai, launching the Model Y in India. The Juvenile Justice Board ruled that a teen accused in the Pune Porsche crash case will be tried as a juvenile. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+
+- Media News Daily: Top Stories for 07/15/2025: The Pentagon signed a $200 million deal with Elon Musk’s xAI for federal use of the Grok AI chatbot. Non-citizen journalists in the U.S. are self-censoring due to fears of Trump administration policies. Meta is building massive AI data centers named Prometheus and Hyperion, raising environmental concerns. The article covers various media and technology developments including AI deployments and industry controversies. [https://odisha.plus/2025/07/top-10-india-news-july-15-2025]
+
+---
+
+TOPIC: SpaceX
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "SpaceX Capsule Successfully Returns to Earth",
+      "description": "A SpaceX capsule completed its mission and returned to Earth, marking a significant achievement in ongoing space operations.",
+      "date": "July 15, 2025",
+      "source": "Information from news publications"
+    },
+    {
+      "title": "SpaceX Launches Dror 1 Satellite",
+      "description": "SpaceX successfully launched the Dror 1 satellite for Israel Aerospace Industries, advancing their launch capabilities.",
+      "date": "July 14, 2025",
+      "source": "Information from web content"
+    },
+    {
+      "title": "Preparations for Crew-11 Launch and Starship Developments",
+      "description": "SpaceX is ramping up preparations for the Crew-11 mission, with updates on Starship propellant production and a global roundup of upcoming launches.",
+      "date": "July 15, 2025",
+      "source": "Information from web content"
+    }
+  ],
+  "notes": "This compilation is
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Space.com: NASA, Space Exploration and Astronomy NewsSpace: SpaceX plans to launch 24 of Amazon's Project Kuiper broadband satellites on July 16, marking the 56th anniversary of the Apollo 11 liftoff. The company is preparing for the 10th test flight of its Starship megarocket in about three weeks, as stated by CEO Elon Musk. The Perseid meteor shower is set to peak later in July and August, offering skywatchers a chance to observe multiple meteor showers. Axiom Space's Ax-4 mission has concluded with astronauts safely returning to Earth after their time on the International Space Station. [https://www.space.com]
+Key Quotes: "SpaceX plans to launch the 10th test flight of its Starship megarocket about three weeks from now" - Elon Musk
+
+- X Report 14 Jul 2025: SpaceX successfully launched the Dror 1 satellite for Israel Aerospace Industries using a Falcon 9 rocket from Cape Canaveral, highlighting the company's reliable launch services. The mission underscores SpaceX's partnerships with international entities and its role in the commercial launch sector. Starlink currently has 7,965 satellites on orbit, with 7,945 operational. The launch involved a mystery payload initially kept confidential, reflecting trends in satellite operations for strategic advantages. [https://keeptrack.space/x-report/spacex-brief-2025-07-14/]
+Key Quotes: "We at IAI are extremely proud of the development and successful launch into space of the State of Israel’s Dror 1" - Boaz Levy, CEO of Israel Aerospace Industries
+
+- SpaceX Starship - Wikipedia: SpaceX Starship is a two-stage, fully reusable super heavy-lift launch vehicle designed as the successor to Falcon 9 and Falcon Heavy. It consists of the Super Heavy booster and the Starship spacecraft, both powered by Raptor engines using liquid methane and oxygen. As of May 2025, Starship has completed nine launches with four successes and five failures. The vehicle aims to reduce launch costs through reusability and is planned for missions including NASA's Artemis program and potential Mars exploration. [https://en.wikipedia.org/wiki/SpaceX_Starship]
+
+- AP top stories July 15 | AP News: A SpaceX capsule successfully returned to Earth, completing a private astronaut mission. The event was part of broader news including inflation data and flooding in New York and New Jersey. The article highlights various global events, such as the conclusion of the Running of the Bulls. It also covers political and scientific updates, including space-related activities. [https://apnews.com/video/ap-top-stories-july-15-bb51212d0e7e4c3d9c34402e51de215b]
+
+- Secret SpaceX Launch, Starlink Triumphs, and Solar Storm Warnings – Space News Roundup (July 13–14, 2025): SpaceX conducted a secret Falcon 9 launch carrying Israel's Dror 1 satellite, marking the rocket's 500th mission. Starlink received regulatory approval in India to provide satellite internet services, focusing on rural areas. Europe tested direct satellite-to-smartphone 5G connectivity, while China Telecom launched direct-to-satellite services for consumers. Rocket Lab completed a U.S. hypersonics test mission using its HASTE vehicle. [https://ts2.tech/en/secret-spacex-launch-starlink-triumphs-and-solar-storm-warnings-space-news-roundup-july-13-14-2025/]
+Key Quotes: "We at IAI are extremely proud of the development and successful launch into space of the State of Israel’s Dror 1" - Boaz Levy, CEO of Israel Aerospace Industries | "With this capital, Varda will continue to increase our flight cadence and build out the pharmaceutical lab that will deliver the world’s first microgravity-enabled drug formulation" - Will Bruey, CEO of Varda Space Industries
+
+- X Report 15 Jul 2025: NASA and SpaceX are targeting July 31 for the Crew-11 launch to the International Space Station using the Dragon Endeavour capsule. SpaceX's Starbase facility has approval to produce its own Starship propellant, potentially improving efficiency but raising local environmental concerns. A global launch roundup includes upcoming missions from China and SpaceX. The report highlights ongoing advancements in space exploration and competition among nations. [https://keeptrack.space/x-report/spacex-brief-2025-07-15/]
+
+---
+
+TOPIC: Soccer Transfers and Contracts
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent web sources, the biggest news stories on soccer transfers and contracts from July 14 to July 15, 2025, highlight several high-profile moves and ongoing negotiations in major leagues. Key developments include potential signings for Arsenal and Chelsea, as well as updates on the summer transfer window's most expensive deals. Information is drawn from reliable sports news outlets, focusing on confirmed or rumored transfers in the Premier League and beyond.",
+  "key_stories": [
+    {
+      "title": "Arsenal closing in on deals for Viktor Gyokeres and Noni Madueke",
+      "description": "Reports indicate that Arsenal is nearing agreements for striker Viktor Gyokeres and winger Noni Madueke, potentially strengthening their squad for the upcoming season. This news has generated significant interest in the transfer market.",
+      "source": "Information from sports news websites covering Premier League transfers"
+    },
+    {
+      "title": "Chelsea eyeing shock
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Soccer Transfer News and Rumors - ESPN: The article covers the latest soccer transfer news and rumors, including Liverpool's interest in Newcastle's Alexander Isak and Atlético Madrid's agreement to sign Thiago Almada from Botafogo. It highlights deals such as Jordan Henderson joining Brentford on a free transfer and Manchester United's link to Lyon midfielder Corentin Tolisso. Other points include predictions on team lineups and summer transfer window activities across major leagues like the Premier League and LaLiga. [https://www.espn.com/soccer/transfers-news-and-features/]
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The article provides a comprehensive list of confirmed transfers in July 2025, including Premier League deals like Marco Bizot to Aston Villa and Jordan Henderson to Brentford. It details the summer transfer window's structure, which is split into two parts due to the Club World Cup, reopening on June 16 and closing on September 1. Transfers from the Scottish Premiership, English Football League, and international moves are also listed, such as Alvaro Carreras to Real Madrid. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- The 25 biggest transfers in the 2025 summer transfer window: The article ranks the most expensive transfers of the 2025 summer window, starting with Thierno Barry's move to Everton for £27 million and Estevao Willian to Chelsea for £29 million. It details key signings like Jeremie Frimpong to Liverpool for £29.5 million and Anthony Elanga to Newcastle for £55 million, including player backgrounds and contract details. The piece also notes how these deals reflect early spending trends amid the transfer window's schedule. [https://www.teamtalk.com/news/biggest-football-transfers-summer-2025]
+Key Quotes: "“Everton is a big club in the Premier League. They have a good history and good players have played here, like Wayne Rooney and Romelu Lukaku.”" - Thierno Barry | "“City are one of the biggest clubs in the world and the chance to play for the club is a dream come true.”" - Rayan Ait-Nouri
+
+- Transfer news live: Liverpool open Isak talks, Arsenal eye Eze after Gyokeres medical, Man Utd want Rios: The article reports on live transfer developments, including Liverpool's talks for Newcastle's Alexander Isak and Arsenal's negotiations for Viktor Gyokeres and Ebere Eze. It covers Manchester United's interest in Bryan Mbeumo and potential outgoings like Marcus Rashford. Key deals mentioned include Noni Madueke undergoing a medical for Chelsea and Tottenham's acquisition of Mohammed Kudus. [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html]
+Key Quotes: "“How big the club is, the history and the Champions League as well, so it’s a big moment.”" - Mohammed Kudus
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The article lists confirmed transfers in July 2025, such as Marco Bizot to Aston Villa and Jordan Henderson to Brentford in the Premier League. It explains the transfer window's timeline, including its reopening on June 16 and closure on September 1. Additional deals cover the Scottish Premiership, English Football League, and international transfers like Alvaro Carreras to Real Madrid. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- DONE DEALS: Every official completed transfer around Europe today: The article compiles all official transfers completed on July 12, including Mathis Amougou to Strasbourg and Gabriel Suazo to Sevilla. It details moves across Europe's top leagues, such as Malik Tillman to Bayer Leverkusen for €35 million. The piece also discusses the ongoing activity in the 2025 summer window and its impact on clubs. [https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july]
+
+---
+
+TOPIC: Jeffrey Epstein Investigations
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Jeffrey Epstein Investigations biggest news stories from 2025-07-14 to 2025-07-15",
+  "date_range": {
+    "start": "2025-07-14",
+    "end": "2025-07-15"
+  },
+  "summary": "Based on searches for high-engagement posts on X and relevant news articles and web content, the biggest news stories focus on political fallout, efforts to release Epstein-related files, and internal conflicts within the Trump administration and Republican party. No high-engagement X posts were available in the search results, so this compilation relies on news articles and web content. Semantic X posts were also not found in additional searches.",
+  "biggest_news_stories": [
+    {
+      "title": "Republicans Move to Block Release of Epstein Files",
+      "description": "Reports indicate that Republicans are actively working to prevent the release of documents related to Jeffrey Epstein, amid growing pressure on the White House. This story highlights political tensions and efforts to keep certain infor
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.axios.com]: Content for this article is not accessible. It is related to Jeffrey Epstein investigations and mentions Trump. Specific details on the topic are unavailable. No further information could be extracted. [https://www.axios.com/2025/07/14/trump-epstein-maga-defuse-mess]
+
+- Republicans move to block Democratic effort to force release of Epstein files | Jeffrey Epstein | The Guardian: Republican lawmakers blocked a Democratic amendment aimed at forcing the release of Jeffrey Epstein-related evidence during a cryptocurrency bill debate. The amendment, proposed by California Democrat Ro Khanna, sought to disclose items from Epstein's 2019 child sex-trafficking case, including videos and documents. Attorney General Pam Bondi reviewed the evidence and decided against full release, citing it as material depicting child sexual abuse. This decision sparked backlash within Trump's MAGA movement, with figures like Marjorie Taylor Greene calling for transparency. A CNN poll showed widespread dissatisfaction among Americans regarding government disclosures on Epstein's case. [https://www.theguardian.com/us-news/2025/jul/15/republicans-jeffrey-epstein-files-release]
+Key Quotes: "“The question with Epstein is: Whose side are you on?”" - Ro Khanna | "“Are you on the side of the rich and powerful, or are you on the side of the people?”" - Ro Khanna | "“again and again and again”" - Ro Khanna | "“I’d be surprised if President Trump knew his lawyers were asking the supreme court to let the government break a deal.”" - David Oscar Markus | "“He’s the ultimate dealmaker – and I’m sure he’d agree that when the United States gives its word, it should keep it. With all the talk about who’s being prosecuted and who isn’t, it’s especially unfair that Ghislaine Maxwell remains in prison based on a promise the government made and broke.”" - David Oscar Markus | "“Of all the people supposedly involved with Epstein, 99% of them never made it into the government’s evidence.”" - Jeffrey Lichtman
+
+- [Article from www.politico.com]: Content for this article is not accessible. It is related to Jeffrey Epstein investigations and involves Trump, MAGA, and officials like Bondi and Bongino. Specific details on the topic are unavailable. No further information could be extracted. [https://www.politico.com/news/2025/07/14/trump-maga-epstein-bondi-bongino-00451114]
+
+- What to Know About the Fallout Around the Epstein Files and the Trump Administration - The New York Times: The Trump administration faced backlash after reversing its promise to release Jeffrey Epstein files, including a purported client list that many doubt exists. Elon Musk and other Trump supporters alleged cover-ups, leading to internal conflicts within the MAGA movement. Epstein was a convicted sex offender who paid teenage girls for sex acts and received a lenient plea deal in 2008. His 2019 arrest on sex-trafficking charges ended with his death in custody, fueling conspiracy theories. A Justice Department memo stated the files did not justify further investigations into others. [https://www.nytimes.com/2025/07/15/us/politics/jeffrey-epstein-files-trump.html]
+Key Quotes: "“It is even said that he likes beautiful women as much as I do, and many of them are on the younger side.”" - Donald Trump
+
+- [Article from www.washingtonpost.com]: Content for this article is not accessible. It is related to Jeffrey Epstein investigations and mentions figures like Mike Johnson and House votes on Epstein files. Specific details on the topic are unavailable. No further information could be extracted. [https://www.washingtonpost.com/politics/2025/07/15/mike-johnson-epstein-files-democrats-house-vote/]
+
+- The Epstein Saga - The New York Times: Trump's MAGA base expressed fury over the administration's decision not to release more Epstein files, viewing it as a betrayal of promises to expose corruption. Supporters like Natalie Winters and Mike Cernovich questioned Trump's effectiveness or possible compromise. Epstein's case has long fueled conspiracy theories due to his connections and suspicious death in 2019. The Justice Department concluded there was no secret client list or major new revelations. This unrest tests Trump's influence over his loyal followers who expected full disclosure. [https://www.nytimes.com/2025/07/15/briefing/maga-bondi-epstein-files.html]
+Key Quotes: "“People are really upset at the outright dismissal of it.”" - Natalie Winters | "“Trump’s persuasive power over his base, especially during his first term, was almost magical. … The reaction on Epstein should thus be startling to him.”" - Mike Cernovich
+
+---
+
+TOPIC: U.S. Politics and Trump Administration
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Supreme Court Clears Way for Trump Administration to Dismantle Education Department",
+      "summary": "The Supreme Court has approved actions allowing the Trump Administration to proceed with efforts to dismantle the U.S. Department of Education, shifting more control to states. This decision is seen as a significant win for the administration's agenda to reduce federal involvement in education, with potential lawsuits from states and D.C. over frozen funds.",
+      "source": "Based on reports from The New York Times, The Guardian, and Democracy Now!, using information from news articles and web content."
+    }
+  ],
+  "additional_context": "The compiled stories are derived from recent news articles and web sources covering U.S. politics and the Trump Administration. No high-engagement posts from X were available in the search results for this period, and any potential X content was not conclusive or present in the data reviewed."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Supreme court clears way for Trump to gut education department – as it happened | Trump administration | The Guardian: The Supreme Court allowed the Trump administration to proceed with dismantling the Department of Education by lifting a federal judge's order that had reinstated 1,400 laid-off employees. This decision enables the transfer of key functions to other agencies as part of efforts to reduce federal involvement in education. Justice Sonia Sotomayor dissented, warning that the ruling would cause significant harm by delaying educational opportunities and leaving students vulnerable to discrimination and civil rights violations. Trump also announced plans to impose severe tariffs on Russia if no Ukraine peace deal is reached within 50 days. Additionally, a coalition of states sued the administration over withheld education funding, and updates included support for Ukraine with Patriot missiles. [https://www.theguardian.com/us-news/live/2025/jul/14/donald-trump-us-politics-latest-live-news-updates]
+Key Quotes: "will unleash untold harm, delaying or denying educational opportunities and leaving students to suffer from discrimination, sexual assault, and other civil rights violations without the federal resources Congress intended" - Sonia Sotomayor | "Tariffs at about 100%, you’d call them secondary tariffs, you know what that means" - Donald Trump
+
+- News – The White House: The White House website features updates on Trump administration actions, including articles on economic policies and nominations. It highlights President Trump's initiatives such as inflation targeting and delivering on policy promises. The site also covers international engagements, like sending Patriot missiles to Ukraine. Additionally, it includes statements on domestic issues such as immigration and education funding. Nominations and appointments to federal positions are listed as part of ongoing administrative changes. [https://www.reuters.com/world/us/]
+
+- Supreme Court Clears Way for Dismantling of Education Department - The New York Times: The Supreme Court permitted the Trump administration to fire over 1,000 Education Department employees, effectively allowing the agency to be dismantled. This ruling blocks reinstatement of workers and enables function transfers to other agencies. A lawsuit by states challenges the withholding of $6.8 billion in education funding. The administration announced plans to arm Ukraine via NATO allies with weapons like Patriot missiles. Updates also include temporary protections for Afghans and policies on immigrant deportations. [https://www.whitehouse.gov/news/]
+Key Quotes: "a grave risk he will suffer irreparable harm" - Joseph H.L. Perez-Montes
+
+- Headlines for July 15, 2025 | Democracy Now!: The Supreme Court greenlit the dismantling of the Education Department, potentially harming students by cutting federal resources. A coalition of states and D.C. sued the Trump administration over $7 billion in frozen education funds. Reports indicate the administration is denying bond hearings to certain immigrants and ramping up transfers to third countries. Other headlines cover international issues like U.N. warnings on Gaza and Trump's arms plan for Ukraine. The article also mentions domestic purges in the Justice Department and protests against tech firms involved in surveillance. [https://nytimes.com/live/2025/07/14/us/trump-news]
+Key Quotes: "Unleashing untold harm" - Sonia Sotomayor | "This is the largest transfer of wealth from the poor to the rich since chattel slavery" - William Barber II
+
+---
+
+TOPIC: Technology and Space Innovations
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "NASA's SpaceX Crew-11 Mission Advances Health Studies for Deep Space Travel",
+      "description": "NASA's SpaceX Crew-11 is preparing to launch a crew to the International Space Station to conduct health studies aimed at supporting future deep space missions, highlighting innovations in space health technology.",
+      "source": "NASA official website"
+    },
+    {
+      "title": "Optus Consortium Plans Launch of Australian LEO Satellite for Enhanced Connectivity",
+      "description": "A consortium led by Optus is set to build and launch a low Earth orbit satellite to improve global connectivity, representing a key advancement in satellite technology and space-based communication innovations.",
+      "source": "SpaceWatch.Global"
+    },
+    {
+      "title": "Space Rock Impact on the Moon Observed from Earth",
+      "description": "A space rock collided with the Moon, creating an explosion visible from Japan, underscoring ongoing dev
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- SciTechDaily - Science, Space and Technology News 2025: Researchers modeled sea level changes over 540 million years, providing detailed insights into Earth's history. A new fossil discovery on England's Jurassic Coast revealed a previously unknown prehistoric species. Studies showed that red-footed tortoises experience long-term mood states similar to humans. MIT scientists enhanced photosynthesis by reengineering an enzyme, potentially benefiting food production and climate efforts. Chinese scientists developed an AI tool for faster protein engineering. NASA's Parker Solar Probe confirmed a 'helicity barrier' in the Sun's atmosphere, advancing solar mystery understanding. [https://scitechdaily.com/]
+Key Quotes: "“Lonely” Spinon That Defies Magnetic Norms" - Unknown | "Why do some people suffer more than others, even when the pain is the same?" - Unknown
+
+- Space.com: NASA, Space Exploration and Astronomy News: SpaceX plans to launch 24 satellites for Amazon's Project Kuiper on July 16, marking the 56th anniversary of Apollo 11. A new game, Revenge of the Savage Planet, satirizes corporate spaceflight through an upbeat dystopian narrative. The Perseid meteor shower begins, with tips for viewing other summer showers. Astronomers discovered a giant exoplanet in a known star system, suggesting possible additional unseen planets. NASA's Parker Probe provided insights into the Sun's atmosphere, and private astronauts from Ax-4 mission returned safely from the ISS. [https://www.space.com]
+Key Quotes: "We had an idea for a meat planet" - Alex Hutchinson, Revenge of the Savage Planet game director | "Boldness is all!" - Unknown, from Murderbot series reference
+
+- Home - SpaceNews: The Space Force identifies MILNET as a top unfunded priority, estimating over $4 billion needed for satellite communications. SES plans to finalize its Intelsat deal on July 17 after regulatory approvals. An open letter urges governments to address orbital debris issues. Europe's Space Act signals stronger space policy commitments. China launched Tianzhou-9 to its Tiangong space station with record cargo and upgraded EVA suits. The Space Minds Podcast explores if science fiction predicts the future. [https://spacenews.com/]
+
+- NASA’s SpaceX Crew-11 to Support Health Studies for Deep Space Travel - NASA: NASA's SpaceX Crew-11 mission will launch a four-person crew to the ISS to conduct health studies for future deep space travel. Crew members will simulate lunar landings to assess disorientation in different gravities. Research will investigate spaceflight-associated neuro-ocular syndrome, including the use of B vitamin supplements and thigh cuffs. The CIPHER experiments will examine overall human body responses to spaceflight through various assessments. Participants will provide biological samples for genetic and exercise studies to inform Mars missions. [https://www.nasa.gov/humans-in-space/nasas-spacex-crew-11-to-support-health-studies-for-deep-space-travel/]
+
+- Redirecting: The page is a redirect to another URL, likely related to space news or Optus consortium activities. No detailed content is available in the provided text. It mentions building and launching an Australian LEO satellite for connectivity technology, but specifics are absent. This entry lacks substantial information for further summarization. The topic ties into technology innovations in satellite connectivity. [https://spacewatch-global.webpkgcache.com/doc/-/s/spacewatch.global/2025/07/optus-consortium-to-build-and-launch-australian-leo-satellite-for-connectivity-technology/]
+
+- MSN: A space rock impacted the Moon, causing an explosion visible from Japan. The event highlights ongoing lunar activity and potential risks from celestial bodies. It contributes to studies in space innovations for monitoring and defense against such impacts. Details on the explosion's scale and observations are limited in the provided content. This incident underscores advancements in global space observation technology. [https://www.msn.com/en-us/news/technology/space-rock-slammed-into-moon-the-explosion-was-seen-from-japan/vi-AA1IwGvQ]
+
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Elon Musk: "Upgrades to @Starlink https://t.co/jwXDoldCg5" (1994964 views, 9624 likes) https://x.com/i/status/1945219083722740212
+- Fabrizio Romano: "❤️🤍🔐 Ethan Nwaneri’s new deal at Arsenal will be sealed soon, as reported. ⤵️ https://t.co/mzlr1yD1fe" (1959640 views, 19373 likes) https://x.com/i/status/1945203076337381575
+- Fabrizio Romano: "🚨🚫 Napoli have informed Liverpool tonight that Darwin Nunez deal can be considered off.
+
+Napoli will sign Lucca as new striker despite Nunez opening doors to the move, fee considered too high.
+
+👀 Nunez, still expected to leave #LFC this summer with Saudi clubs and more keen. https://t.co/g69gxDNMKJ" (1818052 views, 19413 likes) https://x.com/i/status/1945205252002574838
+- Fabrizio Romano: "🚨🏴󠁧󠁢󠁥󠁮󠁧󠁿 Understand Bundesliga and Premier League clubs are showing strong interest in Nico O'Riley.
+
+Talks for Manchester City midfielder will continue as several clubs prepared to offer regular first team opportunities next season, a priority for the player. https://t.co/BIT1FljI6G" (1196311 views, 11134 likes) https://x.com/i/status/1945214257273929843
+- Fabrizio Romano: "🚨⚪️⚫️ Juventus agree deal to sign Francisco Conceição on permanent move from FC Porto, here we go!
+
+Deal in place for fee in excess of €30m paid in 𝐟𝐨𝐮𝐫 installments.
+
+Conceiçao only wanted Juventus despite approaches from Premier League clubs. https://t.co/MJKzhWeD1j" (1051612 views, 17024 likes) https://x.com/i/status/1945225857800323494
+- Fabrizio Romano: "🚨🔵 Mike Penders deal, done and set to be sealed as Chelsea goalkeeper will join Strasbourg on loan.
+
+Agreement in place for next season while Chelsea see Penders as top talent for the future. https://t.co/zFtwhArNYg" (900600 views, 15440 likes) https://x.com/i/status/1945218769992692135
+- Fabrizio Romano: "🚨🔴⚪️ Arsenal and Valencia have also exchanged documents for Cristhian Mosquera deal.
+
+€15m plus add-ons, total fee under €20m and long term deal for Mosquera.
+
+Medical booked on Wednesday. https://t.co/BPZFfptZMO" (880351 views, 19080 likes) https://x.com/i/status/1945224000172421595
+- Adam Schefter: "Washington Commanders receiver Terry McLaurin said he's frustrated and disappointed with the lack of progress toward a contract extension, saying they're entering crunch time to get a new deal done.
+
+Story via @john_keim:
+
+https://t.co/WYtKPuNGAF" (421781 views, 528 likes) https://x.com/i/status/1945221519354765670
+- Mario Nawfal: "🇺🇸 NEARLY 3 MINUTES MISSING FROM “RAW” EPSTEIN PRISON VIDEO, METADATA REVEALS
+
+New analysis shows the FBI-labeled “raw” surveillance footage from outside Jeffrey Epstein’s cell was anything but.
+
+ WIRED’s forensic review confirms the file was stitched from 2 separate clips using https://t.co/WmIEqNiXV0 https://t.co/0fVsNQ6jaK" (336446 views, 826 likes) https://x.com/i/status/1945218096949604858
+- Adam Schefter: "More about the Chiefs and guard Trey Smith agreeing to a four-year, $94 million deal, via @ByNateTaylor:
+
+https://t.co/S4zcwqqg4B" (327750 views, 267 likes) https://x.com/i/status/1945221239099830769
+- Dave Portnoy: "With friends like this who needs enemies.  My mom out here carrying around a custom bag of an article from the @nytimes that basically called me a terrorist. https://t.co/U5Daj8xGXt" (247768 views, 1804 likes) https://x.com/i/status/1945215141236150343
+- Ian Rapoport: "Officially official https://t.co/bRYH4rboWH" (239218 views, 378 likes) https://x.com/i/status/1945223790721429896
+- Mario Nawfal: "🚨🇺🇸 HOUSE GOP BLOCKS PUSH TO FORCE DOJ ON EPSTEIN FILES
+
+Republicans in the House just voted down yet another Democratic attempt to compel the Justice Department to release all documents tied to Jeffrey Epstein.
+
+The procedural maneuver would’ve pressured the DOJ to hand over https://t.co/WkIHAiMCi6 https://t.co/iFflJODWsv" (207145 views, 177 likes) https://x.com/i/status/1945204416618905908
+- Adam Schefter: "Falcons will wear their throwback uniforms that include red helmets for Week 6 vs. the Bills on ESPN, Week 15 at Tampa Bay and Week 17 vs. the Rams also on ESPN. https://t.co/7fyMPuztrp" (172564 views, 1151 likes) https://x.com/i/status/1945231597730513099
+- Sky Sports Football: "BREAKING: Ipswich Town captain Sam Morsy is set to sign for Kuwait FC, with it being believed that Morsy has been offered life-changing terms for his family 🚨
+
+https://t.co/plpTrJS5jx" (165190 views, 1182 likes) https://x.com/i/status/1945219480742748217
+- Barstool After Dark: "Program update:
+
+Stream start time has been pushed back to 4:30pm CT (Chicago traffic) https://t.co/3QiEyROk3G" (152139 views, 91 likes) https://x.com/i/status/1945215381997584713
+- Mario Nawfal: "🇺🇸 SPEAKER JOHNSON: “WE SHOULD PUT EVERYTHING OUT THERE AND LET THE PEOPLE DECIDE”
+
+"I'm for transparency… Reagan used to tell us we should trust the American people. 
+
+It's a very delicate subject, but we should put everything out there and let the people decide it.
+
+I believe https://t.co/y3XgM5IPSG https://t.co/iFflJODWsv" (149203 views, 606 likes) https://x.com/i/status/1945204218953978313
+- Barstool Sports: ""Catfish Girl" Hannah Barron Posted Her 1st River Picture Gallery Of The Year And Got IMMEDIATELY Recruited To Ole Miss By Head Coach Lane Kiffin https://t.co/0mSrd8ZgKp https://t.co/PgR1XKbk4a" (145213 views, 441 likes) https://x.com/i/status/1945213069845495932
+- Mario Nawfal: "🚨🇺🇸EXCLUSIVE INTERVIEW: SENATOR RAND PAUL – TRUMP, ELON &amp; AMERICA’S $35 TRILLION DEBT
+
+When the U.S. Chairman of the Joint Chiefs of Staff was asked, “What’s the greatest threat to the United States’ national security?”
+
+His answer shocked everyone: “The single biggest threat to https://t.co/jX5yxZiaJu https://t.co/BXjJOhrH4z" (142771 views, 685 likes) https://x.com/i/status/1945216801379352904
+- Big Cat: "Love this for my boys https://t.co/nY7KVXNCCK" (134595 views, 733 likes) https://x.com/i/status/1945223198720532562
+- Barstool Sports: "RIP Fauja Singh aka 'The Turban Torpedo', World's Oldest Marathon Runner, Dies At 114 After Being Hit By A Car https://t.co/4f8MIdNPI7 https://t.co/TtmS0Kvb0D" (107256 views, 129 likes) https://x.com/i/status/1945205561273835553
+- Barstool Sports: "https://t.co/5t4bQPlur1" (103108 views, 2 likes) https://x.com/i/status/1945211698220011636
+- PFT Commenter: "I have been scratched from the derby (blown out back) but will be joining @conner_griffin and @EddieBarstool on the call. Should be a nice tidy 5 hour’s of dingers https://t.co/eLAfksf65O" (98513 views, 145 likes) https://x.com/i/status/1945218190633545946
+- CNN: "Attorney General Pam Bondi says there's no change to her position on Jeffrey Epstein after President Donald Trump suggests she could release more files. https://t.co/THRJOjyOda" (93470 views, 160 likes) https://x.com/i/status/1945213632133976487
+- Bernie Sanders: "Trump, like all authoritarians, doesn’t like criticism or objective reporting. He just wants to be flattered. That’s why he wants to defund NPR and PBS.  
+
+If democracy is to survive we need a strong, independent media.  
+
+I will vote to support public broadcasting." (81976 views, 2043 likes) https://x.com/i/status/1945219632928784757
+- Big Cat: "MLB All Star Game - Over 7. System Play" (81180 views, 236 likes) https://x.com/i/status/1945227136828367273
+- Barstool Sports: "Why Barstool Beach House Isn’t Your Average Reality Show https://t.co/3ZKpysZdxk https://t.co/OEIA6YhZTm" (74563 views, 39 likes) https://x.com/i/status/1945215581151510759
+- CNN: "Federal grand jury indicts man accused of killing former Minnesota House Speaker Melissa Hortman. https://t.co/Dj12TEkNSc" (73476 views, 113 likes) https://x.com/i/status/1945215894864465986
+- Barstool Sports: "Nobody is better under pressure than @IamOfficeGamer
+
+Rudy is putting his clutch thinking (and aim) to the test live now playing Ready or Not @VOIDInteractive https://t.co/fL1fAnKcvD" (69337 views, 29 likes) https://x.com/i/status/1945211609858584940
+- National Geographic: "In the ancient city of Caracol, scientists have found a tomb containing a rare jade mask, ceramics, and jewelry. These treasures suggest the tomb was the final resting place of a Maya king—but which one? 🔗 https://t.co/Y9vEqkv4KK" (68905 views, 103 likes) https://x.com/i/status/1945211770206920818
+- Barstool Sports: "A Couple Of Parents Find Out The Hard Way That You Don't Want To Fight This Box Lacrosse Coach https://t.co/Lx01MFCUKR https://t.co/cmpkeKe5Iu" (68429 views, 25 likes) https://x.com/i/status/1945208021581226012
+- World of Statistics: "A Regional Breakdown of the World’s Top 100 Universities:
+
+🇺🇸 U.S.: 36
+🇨🇳 China &amp; 🇭🇰 Hong Kong: 12
+🇬🇧 UK: 11
+🇩🇪 Germany: 8
+🇦🇺 Australia: 6
+🇳🇱 Netherlands: 6
+🇫🇷 France: 4
+🇨🇭 Switzerland: 3
+🇨🇦 Canada: 3
+🇰🇷 South Korea: 3
+🇸🇬 Singapore: 2
+🇯🇵 Japan: 2
+🇸🇪 Sweden: 2
+🇧🇪 Belgium: 1
+🇷🇺" (67822 views, 315 likes) https://x.com/i/status/1945214283924824133
+- Barstool Sports: "Mr. BANG BANG BANG himself Nick Tarnasky breaks down the viral pond toss video from last week @spittinchiclets https://t.co/hWHTLsUVWS" (66010 views, 141 likes) https://x.com/i/status/1945220574105452682
+- Barstool Sports: "An Analyst Is Going Viral For Saying That If The Lakers Manage To Get Bradley Beal To Go Ahead And Get The Parade Ready For Them https://t.co/8AI8Wbh65z https://t.co/g9s0HRfiSd" (61592 views, 24 likes) https://x.com/i/status/1945220620276379848
+- PFT Commenter: "Right now youd be up 4k from hank. Something to think about" (60933 views, 396 likes) https://x.com/i/status/1945203110290288937
+- Barstool Sports: "Pete Alonso Thinks That Baseball Should Allow Fights Like Hockey And He Makes Some Pretty Good Points https://t.co/bvhmBsWks5 https://t.co/2BJ2kwrHTg" (60179 views, 106 likes) https://x.com/i/status/1945223137756336213
+- Mario Nawfal: "GROK 4: THE AI THAT BUILDS BUSINESSES WHILE YOU BLINK
+
+Grok 4 is officially the smartest AI out right now. It even passed 38% of the hardest test for language models.
+
+Elon claims they’re running out of ways to challenge it.
+
+It can build full process maps and business models https://t.co/eTMJTd77yA https://t.co/pCdaQP4LYQ" (57796 views, 75 likes) https://x.com/i/status/1945219820859089182
+- Mario Nawfal: "🇺🇸 TRUMP: “A TRIUMPHANT DAY” AS $92 BILLION IN INVESTMENTS ANNOUNCED IN PENNSYLVANIA
+
+"This afternoon, 20 leading technology and energy companies are announcing more than $92,000,000,000 of investments in Pennsylvania.
+
+This is a really triumphant day for the people of the https://t.co/GXnoqnx0T9 https://t.co/BYX5HBqFep" (55992 views, 143 likes) https://x.com/i/status/1945213026598002826
+- International Space Station: "Crew-11 is set to study plant cell division, microgravity's effects on bacteria-killing viruses, and on-demand nutrient production aboard space station. More: https://t.co/eXYTp3s3pc https://t.co/VkxALJS17B" (51855 views, 240 likes) https://x.com/i/status/1945207408239747277
+- Barstool Sports: "Give Us The Chaos: Bengals 1st Round Pick Shemar Stewart Still Isn't Signed, Reportedly Could Try To Go Back And Play For Texas A&amp;M Instead This Year https://t.co/7uusYRBu5M https://t.co/tPU9tZxx0c" (51416 views, 33 likes) https://x.com/i/status/1945230681782501379
+- Mario Nawfal: "🇺🇸 TRUMP: “$92 BILLION IN ENERGY &amp; TECH PROJECTS - WITH MORE COMING”
+
+“The investments being announced this afternoon include more than $56 billion dollars in new energy infrastructure.
+
+More than $36 billion dollars in new data center projects.
+
+And a lot more than that are https://t.co/Z87vTE3LrM https://t.co/w00BINtsxA" (50135 views, 74 likes) https://x.com/i/status/1945217304335409649
+- Mario Nawfal: "🇺🇸 TRUMP: “WE HAVE THE HOTTEST COUNTRY  - AND WE’RE GOING TO KEEP IT THAT WAY”
+
+“If you look at the last administration, you had negative numbers.
+
+But we have the hottest country and we're going to keep it that way.
+
+Today's commitments are ensuring that the future is going to https://t.co/ObLSk6oYZW https://t.co/5767csuKSC" (49670 views, 65 likes) https://x.com/i/status/1945214787538829478
+- Mario Nawfal: "🇺🇸 TRUMP: “AMERICA’S DESTINY IS TO DOMINATE EVERY INDUSTRY - INCLUDING AI”
+
+"America’s destiny is to dominate every industry and be the first in every technology… including being the world’s number one superpower in artificial intelligence.
+
+We are way ahead of China.
+
+They just https://t.co/A5UbicZH3n https://t.co/G29Loytboe" (48752 views, 78 likes) https://x.com/i/status/1945215794071097559
+- Barstool Sports: "According To Kyrie Irving He Considered Swinging On Payton Pritchard After He Kept Making Half Court Shots During The Finals https://t.co/rAO9WWfCKp https://t.co/mA67s6JvgJ" (45608 views, 33 likes) https://x.com/i/status/1945228192345632958
+- Mario Nawfal: "🇺🇸 AG BONDI: “I'M NOT GONNA TALK ABOUT PERSONAL MATTERS. NO”
+
+"I was with Director Patel all morning, and we are committed to keeping America safe, making America safe… working with our incredible partners at DEA, FBI, ATF, US Marshals.
+
+Today, we're focused on protecting our https://t.co/EAAcalJA91 https://t.co/0fVsNQ6R0i" (41143 views, 83 likes) https://x.com/i/status/1945209250827133355
+- Barstool Sports: "You can only have one form of potato for the rest of your life, what are you picking? @gottatrythispod @vivalafood_ https://t.co/c4mAQmTDJj" (41053 views, 14 likes) https://x.com/i/status/1945230641756336481
+- World of Engineering: "Anything can be a UFO if you’re bad enough at identifying stuff." (39478 views, 287 likes) https://x.com/i/status/1945215794125922322
+- Mario Nawfal: "🇺🇸 TRUMP SAYS “DROP EPSTEIN”... HIS BASE SAYS “NOT A CHANCE”
+
+After years of fueling conspiracy theories about Jeffrey Epstein, Trump is now facing the full force of the storm he helped create.
+
+And it’s coming from his own supporters.
+
+Over the weekend, Trump posted: “Let’s not https://t.co/NoTYzTd2Px https://t.co/je107aJwQl" (38595 views, 249 likes) https://x.com/i/status/1945222596078842265
+- Mario Nawfal: "🇺🇸 LUTNICK: “TRUMP IS SMASHING DOWN 80 YEARS OF TRADE BARRIERS”
+
+“TRUMP is smashing down the barriers that have held American business back for 80 years.
+
+Our industries went overseas. 
+
+President Trump is reversing that trend.”
+
+Source: @RapidResponse47 https://t.co/KyiZbYLQ4U https://t.co/h5hq42qKrx" (35792 views, 145 likes) https://x.com/i/status/1945206734718464096
+- Mario Nawfal: "69 𝕏 MINUTES: “THIS ISN’T JUST POLITICS – IT’S A FIGHT TO RESTORE THE REPUBLIC”
+
+@MayorStaggs:
+
+“I ran for Senate because I’m sick of pay-to-play politics and establishment swamp creatures.
+
+We need to restore citizenship, elections, moral governance, ownership and family.
+
+The https://t.co/3aQUgjdnDd https://t.co/n95hkwd81e" (35595 views, 229 likes) https://x.com/i/status/1945218282371604595
+- World of Statistics: "How much countries trust the United Nations:
+
+🇯🇵 Japan: 38%
+🇦🇷 Argentina: 38%
+🇮🇹 Italy: 48%
+🇺🇸 U.S.: 50%
+🇪🇸 Spain: 50%
+🇮🇪 Ireland: 50%
+🇩🇪 Germany: 50%
+🇫🇷 France: 51%
+🇨🇴 Colombia: 51%
+🇸🇦 Saudi Arabia: 52%
+🇦🇺 Australia: 52%
+🇿🇦 South Africa: 53%
+🇨🇦 Canada: 54%
+🇰🇷 South Korea: 56%
+🇬🇧" (35633 views, 107 likes) https://x.com/i/status/1945229383796449639
+- Mario Nawfal: "🇺🇸 ACTIVE SHOOTER BARRICADED INSIDE LEGACY WINE &amp; SPIRITS IN SMYRNA, TN 
+
+Police are on the scene at Legacy Wine &amp; Spirits in Smyrna, Tennessee, where an active shooter has barricaded himself inside the building.
+
+Scanner traffic indicates a concealed sniper is now in position https://t.co/Ch5O3UmYar https://t.co/66w8vebfzS" (35259 views, 59 likes) https://x.com/i/status/1945208999198052449
+- Mario Nawfal: "🇺🇸🇷🇺 NATO: BRAZIL, CHINA, INDIA COULD FACE “BITING” SANCTIONS OVER RUSSIA TIES
+
+NATO’s Secretary General Mark Rutte didn’t sugarcoat it: Keep doing business with Russia, and you’ll feel it.
+
+Speaking to U.S. senators, Rutte warned that countries like Brazil, China, and India https://t.co/hdVjYCDHdf https://t.co/4Q7UhAFeKx" (35119 views, 109 likes) https://x.com/i/status/1945224350430535808
+- Mario Nawfal: "🇺🇸🇨🇳 TRUMP’S UN PICK WALTZ: WE NEED TO MAKE THE U.N. GREAT AGAIN - AND COUNTER CHINA
+
+Mike Waltz, Trump’s nominee for U.N. ambassador told lawmakers that the U.S. must be louder, leaner, and tougher inside the United Nations.
+
+Waltz:
+
+"We should have one place in the world where https://t.co/GKN1A16vvV https://t.co/GFm3Tfgo2D" (35015 views, 54 likes) https://x.com/i/status/1945208093132161206
+- Barstool After Dark: "https://t.co/qG6x0KLsW1" (32251 views, 2 likes) https://x.com/i/status/1945215837910057128
+- Mario Nawfal: "🇺🇸 REP. CROCKETT: "I NEED POC TO UNDERSTAND THAT REPUBLICANS WANT TO MUTE OUR VOICES"
+
+"Texas has always been found to be intentionally discriminatory.
+
+They decided to attack three of the four seats that we have in the state. 
+They decided to go after a Latina.
+
+So I need people https://t.co/mJINEa5lMK https://t.co/i7uLJzzJkB" (31576 views, 34 likes) https://x.com/i/status/1945221834049511931
+- Mario Nawfal: "🇺🇸 APPLE JUST INVESTED $500M IN THE SAME RARE EARTH MINE THE PENTAGON BACKED
+
+Apple just dropped half a billion on MP Materials, to help build rare earth mines in the U.S. so it doesn’t have to rely on China for the stuff inside iPhones.
+
+Few days ago, the Pentagon announced it’s https://t.co/eRn4vOsEKk https://t.co/PsOBDQpGDl" (31152 views, 114 likes) https://x.com/i/status/1945226872062906678
+- Mario Nawfal: "SULFUR CRYSTALS FOUND ON MARS - BY ACCIDENT
+
+NASA’s Curiosity Rover just made a wild discovery:
+Bright yellow crystals of elemental sulfur - spotted for the first time on Mars - after it accidentally cracked open a rock it drove over.
+
+Yep. Mars just dropped a surprise under its https://t.co/BkKyLilDkA https://t.co/d8rgjuMWC5" (30844 views, 70 likes) https://x.com/i/status/1945219317512986673
+- Mario Nawfal: "🇪🇺🇮🇷 EU SANCTIONS IRANIAN AGENTS ACCUSED OF ASSASSINATING DISSIDENTS ABROAD
+
+The EU just hit eight individuals and one entity with sanctions over "transnational repression."
+
+They're accusing them of targeting Iranian dissidents for assassination on European soil.
+
+At the center: https://t.co/hPdya6gCqY https://t.co/ZavSXahD2Y" (30643 views, 49 likes) https://x.com/i/status/1945211772132319396
+- Mario Nawfal: "🇨🇳 CHINA'S ROBOTS ARE COMING - AND PEOPLE ACTUALLY WANT THEM
+
+Unitree CEO Wang Xingxing says the world can’t get enough of China’s humanoid robots, and yes, people are lining up to buy.
+
+China cranked out 369,000 industrial bots and 8.8 million service robots in just the first https://t.co/fazArnfejp https://t.co/bKkXLjTeE2" (30097 views, 44 likes) https://x.com/i/status/1945214284461674996
+- Tim Urban: "Books I read: “Fascinating factoid”
+
+Me writing my book: “Fascinating factoid”
+
+Fact-checker: “Factoid is FALSE. FALSER THAN FALSE. THE FALSEST THING THAT HAS EVER HAPPENED. Here’s what’s correct: [long boring nuanced explanation full of uncertainties]
+
+Accuracy is such a bummer." (29119 views, 200 likes) https://x.com/i/status/1945203789302030694
+- Big Cat: "Home Run Derby Time 
+
+https://t.co/Rm9wDxZizj https://t.co/rZzx1kyGqG" (29238 views, 39 likes) https://x.com/i/status/1945233497506943359
+- Mario Nawfal: "🇺🇸 KEVIN SPACEY: “RELEASE THE EPSTEIN FILES. ALL OF THEM.”
+
+Actor Kevin Spacey - who’s been named on Epstein’s flight logs - is now calling for full transparency.
+
+Spacey:
+
+“For those of us with nothing to fear, the truth can’t come soon enough.
+
+I hate to make this about me - https://t.co/6bNw8d4A18 https://t.co/PHjSfzfKFN" (29100 views, 143 likes) https://x.com/i/status/1945229999130198246
+- Mario Nawfal: "STARLINK JUST GOT FASTER - EVEN WITH MILLIONS MORE PEOPLE HOGGING IT
+
+Somehow, while onboarding millions of new users, Starlink managed to boost speeds past 170 Mbps and shrink latency to gamer-approved levels (~25 ms).
+
+That’s not just "holding steady" - that’s flexing in orbit. https://t.co/IgMVdTYi3a https://t.co/WoQVgXFD0D" (27949 views, 73 likes) https://x.com/i/status/1945219179239363001
+- International Space Station: "#Ax4 from @Axiom_Space splashed down off the coast of California today and the Exp 73 crew studied how space affects the heart and the nervous system aboard the orbital outpost. https://t.co/MoCsgDArm2" (27393 views, 119 likes) https://x.com/i/status/1945223092063887745
+- Mario Nawfal: "🇺🇸 WHAT IF YOU COULD ASK GANDALF FOR ADVICE?
+
+You: “Should I take the job?”
+Gandalf: “All we have to decide is what to do with the time that is given us.”
+
+Now imagine that - but with Tyrion, Yoda... Tony Soprano.
+
+Not chatbots. Characters. With memories, motives, moods - and https://t.co/bMLnTfEAE0 https://t.co/qi57reRtFt" (26733 views, 57 likes) https://x.com/i/status/1945221571314114676
+- History Photographed: "Mailed in Aug 1981 from Sydney, a postcard of its Opera House arrived in Elm Grove, UK, in Dec 2023—42 years late! Discovered by Samantha Williams, who hopes to return it, this long-lost card is a time capsule awaiting its rightful recipient. https://t.co/OBWppJp2xN" (26351 views, 31 likes) https://x.com/i/status/1945228314982973925
+- Mario Nawfal: "🇺🇸 TRUMP: “WE’RE RESURRECTING HOMER CITY - BIGGEST GAS PLANT IN NORTH AMERICA”
+
+"In the campaign, I promised that I would save the Homer City power plant… that Joe Biden’s Green New Scam forced to shut down.
+
+Today, we’re pleased to report a $15,000,000,000 investment from https://t.co/qmwI6pz37I https://t.co/peJkUS0mqO" (25929 views, 111 likes) https://x.com/i/status/1945218562773164493
+- Mario Nawfal: "🇺🇸 REP. BOEBERT: “WE NEED A SPECIAL COUNSEL FOR THE EPSTEIN CASE”
+
+"Of course we want answers. No one is satisfied with what has been received - or lack thereof.
+
+I think moving forward, we need a special counsel. That has got to happen.
+
+Matt [Gaetz] spoke highly of Pam Bondi, https://t.co/GVoQFl3yrQ https://t.co/0fVsNQ6jaK" (25668 views, 83 likes) https://x.com/i/status/1945225841476080036
+- Charles Hoskinson: "Almost like enough time for someone to get in and out after strangling Epstein. Maybe they could ask the sleeping, temp guards that just happen to be substituted that day or the pathologist who didn't actually examine Epstein post-mortem? https://t.co/XL4SHYmcHm" (25249 views, 293 likes) https://x.com/i/status/1945214599243948098
+- Mario Nawfal: "🇺🇸 DHS: “ASSAULTS ON ICE AGENTS UP 830%”
+
+“Our brave @ICEgov law enforcement are now facing an 830% increase in assaults against them.
+
+These are the individuals who risk their lives every day removing dangerous criminal illegal aliens from America’s communities.
+
+Our ICE agents https://t.co/6vQf93HBv5 https://t.co/VJeB15vApC" (23588 views, 40 likes) https://x.com/i/status/1945229383658299856
+- Mario Nawfal: "69 𝕏 MINUTES: “ALLIGATOR ALCATRAZ IS OPEN FOR BUSINESS”
+
+ICE Director Todd Lyons:
+
+“We’re starting with 1,000 detainees tomorrow, scaling to 3,000 and Florida law enforcement is fully deputized to help us get it done.
+
+This isn’t just a facility, it’s a national emergency https://t.co/wtf4sLRyH9 https://t.co/n95hkwcAbG" (21315 views, 106 likes) https://x.com/i/status/1945232370816221213
+- Mario Nawfal: "🔴LIVE: TRUMP SPEAKS AT ENERGY AGENDA SUMMIT https://t.co/1r54QNK0jm" (17852 views, 55 likes) https://x.com/i/status/1945219387650400378
+- Barstool Sports: "Team @hen_ease takes on Team @Philly_Mays in a Home Run Derby LIVE NOW @StoolAfterDark 
+
+ https://t.co/4yS23x9xup" (17529 views, 10 likes) https://x.com/i/status/1945235113035346204
+- Tim Urban: "Fact-checkers: https://t.co/B29ln7nzwE" (15716 views, 29 likes) https://x.com/i/status/1945204275233058955
+- Barstool Sports: "https://t.co/iWcadtboX5 https://t.co/Ahw9ey197y" (15189 views, 2 likes) https://x.com/i/status/1945235199643541719
+- Car Dealership Guy: "[NEWS] New Roads Mazda is building a service machine to weather any market:
+
+According to GM Curtis Biggs—
+
+Even with softness on the used car side, fixed operations continue to outperform.
+
+And June was another record month.
+
+All thanks to tight expense control, mandatory winter" (14551 views, 7 likes) https://x.com/i/status/1945211737441231260
+- Barstool Sports: "Terry McLaurin Has Spoken And He Is Not Happy With The Commanders Attempts (Or Lack Thereof) to Sign Him Long-Term https://t.co/RR1HvYgnNk https://t.co/paN9Udvp1G" (14157 views, 21 likes) https://x.com/i/status/1945235731040858435
+- ARK Invest: "With the launch of tokenized equities, a proprietary Layer 2 blockchain, and an expanded crypto offering in the US and the EU, $HOOD is transforming from a trading app into a full-stack, crypto-native financial platform... 
+
+Read the rest ⬇️
+
+https://t.co/evY2W94uH5" (13529 views, 36 likes) https://x.com/i/status/1945212648041103419
+- Max Velocity: "133+ fatalities and 100+ remain missing from the Texas floods last week." (12705 views, 331 likes) https://x.com/i/status/1945208524503441852
+- TESLARATI: "🚨 I truly think this is one of the best ideas Tesla could have come up with. 
+
+Superchargers are moving closer to being a stop-and-go as improvements in charging speed are developed. 
+
+Still, there is the need for unique and exclusive experiences that only EVs can have. 
+
+Fun is https://t.co/hscg3E9NhC" (12860 views, 102 likes) https://x.com/i/status/1945214743880343969
+- Barstool After Dark: ".@BarstoolBigCat pulled up with some drip for the boys https://t.co/LmftCyb10h" (11130 views, 78 likes) https://x.com/i/status/1945233674259034354
+- World and Science: "Will you live longer if you start taking it easier as you become older?
+
+Here is the science: https://t.co/afWNu1m12v" (11066 views, 6 likes) https://x.com/i/status/1945204722916278288
+- Barstool After Dark: "Checking in with our captains @hen_ease and @Philly_Mays ahead of the Derby https://t.co/SWH6LWfNPJ" (10694 views, 50 likes) https://x.com/i/status/1945231807219159054
+- Mario Nawfal: "THIS DRONE HITS 250 MPH... YES, REALLY
+
+This thing flies faster than most cars and still turns like it’s playing Mario Kart on expert mode.
+
+Not for the faint of thumbs.
+
+Source: dave_c_fpv https://t.co/ldtol8PJ1B" (10573 views, 73 likes) https://x.com/i/status/1945234416650916283
+- Car Dealership Guy: "This dealership isn’t focused on acquisitions—
+
+It’s growing by leaning into underleveraged verticals.
+
+@alex_perdikis, CEO of @koonsmotors, shares how doubling down on the commercial side is fueling meaningful growth.
+
+"Our most immediate growth is under our nose. We've got so https://t.co/x841GpaxQ4" (10576 views, 7 likes) https://x.com/i/status/1945226867969323409
+- CSPAN: "President Trump: "20 leading technology and energy companies are announcing more than $92 billion in investments in Pennsylvania. This is a triumphant day for the Commonwealth and the United States of America." https://t.co/OtWxjVjZZq" (10184 views, 53 likes) https://x.com/i/status/1945209947962118191
+- WBZ | CBS News Boston: "Massachusetts woman will plead guilty to leaking sealed federal grand jury information https://t.co/TjZQKbROmm" (10155 views, 33 likes) https://x.com/i/status/1945218052452155678
+- 7News Boston WHDH: "Are you stuck on the T between the Aquarium and Maverick on the Blue Line? We'd love to see your pictures or hear from you! Tag us in any images you've taken and leave a comment if you have any interest in speaking to a reporter." (9948 views, 19 likes) https://x.com/i/status/1945206122953990209
+- CSPAN: "Deputy Secretary of State Michael Rigas: "[The proposed FY 2026 budget] is a decrease of $25.9 billion, or 48%, below the FY 2025 appropriations." https://t.co/dmhiMahemZ" (9713 views, 18 likes) https://x.com/i/status/1945201813268975766
+- Vintage Maps: "The city of Taipei under Japanese rule in 1935 https://t.co/5dUW88hfkb" (8689 views, 180 likes) https://x.com/i/status/1945221602892730552
+- World and Science: "Check out this incredibly cool LEGO set! 
+
+The International Space Station: https://t.co/XNI3YSvh2Y  -AmazonAfflink" (8786 views, 7 likes) https://x.com/i/status/1945221343349289389
+- James Stephenson: "@SawyerMerritt Did they count miles reversing through intersections? https://t.co/tErDDmCeFA" (7711 views, 224 likes) https://x.com/i/status/1945209820199506349
+- Only In Boston: "242 years ago today, slavery was effectively abolished in Massachusetts when Quock Walker sued for his freedom.
+
+The court ruled in his favor, citing the Massachusetts Declaration of Rights, which states that “all men are born free and equal.”" (7572 views, 52 likes) https://x.com/i/status/1945204218576691361
+- History Defined: "One of only 2 photographs ever taken of US president Andrew Jackson. 1845 https://t.co/xqmLlYbBfJ" (6674 views, 74 likes) https://x.com/i/status/1945204344300732690
+- History Defined: "Winona Ryder arriving in a pink Cadillac for the premiere of Great Balls of Fire in New York, June 1989. https://t.co/bLt46MOByy" (6536 views, 73 likes) https://x.com/i/status/1945219454440189989
+- CSPAN: "President Trump Energy Roundtable at @carnegiemellon University in Pittsburgh, PA – LIVE on C-SPAN https://t.co/qfp16j7uZG" (6431 views, 10 likes) https://x.com/i/status/1945205122444714114
+- History Defined: "Sylvester Stallone and Henry Winkler, 1974. https://t.co/jh3FouHtro" (6139 views, 63 likes) https://x.com/i/status/1945211972510728414
+- Barstool After Dark: ".@EBoKnowss has a personal guarantee for the viewers tonight https://t.co/vZBdeuFjuu" (5698 views, 17 likes) https://x.com/i/status/1945234722184929732

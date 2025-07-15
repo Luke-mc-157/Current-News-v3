@@ -35,7 +35,7 @@ export async function generatePodcastScript(compiledData, appendix = null, durat
     }
     
     const response = await xai.chat.completions.create({
-      model: "grok-4",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",
@@ -53,9 +53,10 @@ WORD COUNT STRATEGY:
 
 CRITICAL VOICE OPTIMIZATION RULES:
 1. VERBATIM READING: This script will be read exactly as written by an AI voice. Write ONLY what should be spoken.
-2. NO SPECIAL CHARACTERS: Avoid asterisks (*), parentheses for stage directions, or any formatting symbols.
+2. NO SPECIAL CHARACTERS: Avoid asterisks (*), parentheses for stage directions, any formatting symbols, emojies, word count metrics, etc.
 3. NO STAGE DIRECTIONS: Never include (opening music), (transition), (pause), or similar instructions.
 4. NATURAL SPEECH: Write as if speaking directly to a listener. Use complete sentences that flow naturally.
+5. NO URLs: Do not include URLs or links.
 
 CONTENT RULES:
 1. NO OPINIONS: Only report facts from the provided sources. Never add commentary or analysis.
@@ -63,6 +64,7 @@ CONTENT RULES:
 3. FACTUAL LANGUAGE: Use neutral, objective language. Avoid adjectives that imply judgment.
 4. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
 5. CITE SOURCES: Reference the X posts and articles naturally within the narrative.
+6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not").
 
 SCRIPT STRUCTURE:
 - Opening: Brief welcome and overview of topics (10 seconds)

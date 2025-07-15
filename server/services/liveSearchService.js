@@ -7,7 +7,7 @@ import { fetchUserTimeline } from './xTimeline.js';
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
-  timeout: 300000  // 5 minutes
+  timeout: 120000
 });
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
@@ -707,7 +707,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
     console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
-      model: "grok-4",
+      model: "grok-3-fast",
       messages: [
         {
           role: "system",
