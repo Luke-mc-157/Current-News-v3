@@ -355,6 +355,69 @@ async function extractArticleData(url) {
   }
 }
 
+// Summarize articles using grok-3-mini-fast, grouped by topic
+async function summarizeArticlesByTopic(articleSources, topicName) {
+  if (!articleSources || articleSources.length === 0) {
+    return [];
+  }
+
+  console.log(`🤖 Summarizing ${articleSources.length} articles for topic: ${topicName}`);
+  
+  try {
+    // Prepare article content for analysis
+    const articlesText = articleSources.map((article, index) => 
+      `ARTICLE ${index + 1}:
+URL: ${article.url}
+SOURCE: ${article.source}
+TITLE: ${article.title}
+META DESCRIPTION: ${article.summary}
+
+FULL CONTENT:
+${article.fullContent}
+
+---`
+    ).join('\n\n');
+
+    const response = await client.chat.completions.create({
+      model: "grok-3-mini-fast",
+      messages: [
+        {
+          role: "system",
+          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
+        },
+        {
+          role: "system", 
+          content: "Analyze these articles comprehensively. Extract the following from the articles: Source (Publication), Page Title (Article Headline), article summary with main points, quotes from within the article with attributed sources for each quote (if available)."
+        },
+        {
+          role: "user",
+          content: `Analyze these ${articleSources.length} articles for topic "${topicName}":\n\n${articlesText}`
+        }
+      ],
+      max_tokens: 4000
+    });
+
+    const analysisContent = response.choices[0].message.content;
+    console.log(`✅ Article analysis complete for ${topicName}: ${analysisContent.length} chars`);
+    
+    return {
+      topic: topicName,
+      articleCount: articleSources.length,
+      analysis: analysisContent,
+      processedAt: new Date().toISOString()
+    };
+
+  } catch (error) {
+    console.error(`❌ Failed to summarize articles for ${topicName}:`, error.message);
+    return {
+      topic: topicName,
+      articleCount: articleSources.length,
+      analysis: `[Analysis failed: ${error.message}]`,
+      processedAt: new Date().toISOString()
+    };
+  }
+}
+
 // Compile all raw search data with metadata
 async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken) {
   console.log('🔄 Compiling raw search data with X API batch fetching...');
@@ -388,11 +451,18 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     console.log(`✅ Fetched ${articleSources.length} articles out of ${Math.min(articleUrls.length, 7)} attempted`);
     console.log(`📄 Total article content: ${totalContentChars.toLocaleString()} characters`);
     
+    // Generate AI analysis for articles if we have any
+    let articleAnalysis = null;
+    if (articleSources.length > 0) {
+      articleAnalysis = await summarizeArticlesByTopic(articleSources, topicData.topic);
+    }
+    
     compiledTopics.push({
       topic: topicData.topic,
       liveSearchContent: topicData.webData.substring(0, 1000),
       xPostSources: xPostSources,
       articleSources: articleSources,
+      articleAnalysis: articleAnalysis,
       originalCitationCount: topicData.citations.length
     });
   }
@@ -408,6 +478,10 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
 FULL CONTENT (${article.contentLength} chars): ${article.fullContent}`
     ).join('\n\n');
     
+    // Include AI analysis if available
+    const analysisSection = topic.articleAnalysis ? 
+      `\n\nAI ARTICLE ANALYSIS:\n${topic.articleAnalysis.analysis}` : '';
+    
     return `
 TOPIC: ${topic.topic}
 
@@ -418,7 +492,7 @@ X POSTS FROM SEARCH (${topic.xPostSources.length}):
 ${xPostsText || 'None found'}
 
 SUPPORTING ARTICLES (${topic.articleSources.length}):
-${articlesText || 'None found'}
+${articlesText || 'None found'}${analysisSection}
 `;
   }).join('\n---\n');
   
