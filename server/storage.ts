@@ -428,7 +428,21 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens> {
-    const [newToken] = await db.insert(xAuthTokens).values(token).returning();
+    // Ensure timestamp fields are proper Date objects
+    const cleanToken = {
+      ...token,
+      ...(token.expiresAt && {
+        expiresAt: token.expiresAt instanceof Date ? token.expiresAt : new Date(token.expiresAt)
+      })
+    };
+    
+    console.log('🆕 Creating token with cleaned data:', {
+      userId: cleanToken.userId,
+      hasExpiresAt: !!cleanToken.expiresAt,
+      expiresAtType: typeof cleanToken.expiresAt
+    });
+    
+    const [newToken] = await db.insert(xAuthTokens).values(cleanToken).returning();
     return newToken;
   }
 
@@ -438,7 +452,23 @@ export class DatabaseStorage implements IStorage {
   }
 
   async updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined> {
-    const [updatedToken] = await db.update(xAuthTokens).set(updates).where(eq(xAuthTokens.userId, userId)).returning();
+    // Ensure timestamp fields are proper Date objects
+    const cleanedUpdates = {
+      ...updates,
+      updatedAt: new Date(), // Always update the updatedAt timestamp
+      ...(updates.expiresAt && {
+        expiresAt: updates.expiresAt instanceof Date ? updates.expiresAt : new Date(updates.expiresAt)
+      })
+    };
+    
+    console.log('🔄 Updating tokens with cleaned data:', {
+      userId,
+      hasExpiresAt: !!cleanedUpdates.expiresAt,
+      expiresAtType: typeof cleanedUpdates.expiresAt,
+      updatedAtType: typeof cleanedUpdates.updatedAt
+    });
+    
+    const [updatedToken] = await db.update(xAuthTokens).set(cleanedUpdates).where(eq(xAuthTokens.userId, userId)).returning();
     return updatedToken || undefined;
   }
 
