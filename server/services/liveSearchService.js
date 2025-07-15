@@ -607,7 +607,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Output as JSON."
+          content: "You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X first. Then, search for news articles and web content."
         },
         {
           role: "user",
@@ -620,7 +620,7 @@ async function getTopicDataFromLiveSearch(topic) {
         return_citations: true,
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 10000},
+          {"type": "x", "post_view_count": 5000},
           {"type": "news", "country": "US" },
           {"type": "web", "country": "US" }
         ]
