@@ -136,6 +136,16 @@ export async function fetchUserTimeline(userId, days = 7) {
     }
     
     console.log(`Fetched ${posts.length} timeline posts for user ${userId} across ${pageCount} pages`);
+    
+    // Store timeline posts in database
+    if (posts.length > 0) {
+      console.log(`💾 Storing ${posts.length} timeline posts in database...`);
+      await storeUserData(storage, userId, [], posts);
+      console.log(`✅ Timeline posts successfully stored in database`);
+    } else {
+      console.log(`⚠️ No timeline posts to store`);
+    }
+    
     return posts;
 
   } catch (error) {
