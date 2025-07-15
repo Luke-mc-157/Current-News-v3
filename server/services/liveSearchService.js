@@ -406,7 +406,7 @@ Articles to analyze:
 ${articlesText}`
         }
       ],
-      max_tokens: 20000,
+      max_tokens: 50000,
       response_format: { type: "json_object" }
     });
 

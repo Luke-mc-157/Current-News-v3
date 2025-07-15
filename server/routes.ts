@@ -38,16 +38,30 @@ export function registerRoutes(app) {
       console.log("🚀 Using xAI Live Search for headlines generation");
       const startTime = Date.now();
       
-      // Check if user has authenticated with X
-      const userId = 1; // In production, get from session/JWT
+      // Check if user has authenticated with X (use session if available)
+      const userId = req.session?.userId || 1; // Get from session or default to 1
       const authToken = await storage.getXAuthTokenByUserId(userId);
       
       let userHandle = null;
       let accessToken = null;
       
       if (authToken) {
+        // Create authenticated client with token refresh capability
+        const { createAuthenticatedClient } = await import('./services/xAuth.js');
+        const authClientResult = await createAuthenticatedClient(
+          authToken.accessToken,
+          authToken.refreshToken,
+          authToken.expiresAt
+        );
+        
+        // If tokens were refreshed, update the database
+        if (authClientResult.updatedTokens) {
+          await storage.updateXAuthToken(userId, authClientResult.updatedTokens);
+          console.log(`🔄 Refreshed and updated tokens for user ${userId}`);
+        }
+        
         userHandle = authToken.xHandle;
-        accessToken = authToken.accessToken;
+        accessToken = authClientResult.updatedTokens?.accessToken || authToken.accessToken;
         console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
       }
       
@@ -460,10 +474,31 @@ export function registerRoutes(app) {
   }; // In-memory storage for demo (use database in production)
   
   // X Auth status endpoint
-  router.get("/api/auth/x/status", (req, res) => {
+  router.get("/api/auth/x/status", async (req, res) => {
     try {
       const status = getXAuthStatus();
-      res.json(status);
+      
+      // Check session and database for persistent authentication
+      const userId = req.session?.userId || 1;
+      let authToken = null;
+      
+      try {
+        authToken = await storage.getXAuthTokenByUserId(userId);
+      } catch (dbError) {
+        console.log('Database check failed:', dbError.message);
+      }
+      
+      const isAuthenticated = !!(authToken && authToken.accessToken);
+      
+      res.json({
+        ...status,
+        authenticated: isAuthenticated,
+        accessToken: authToken?.accessToken ? 'present' : null,
+        xHandle: authToken?.xHandle || req.session?.xHandle,
+        persistent: !!req.session?.xAuthenticated,
+        expiresAt: authToken?.expiresAt,
+        success: true
+      });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
@@ -541,8 +576,9 @@ export function registerRoutes(app) {
     try {
       const userId = 1; // In production, get from session/JWT
       
-      // Get user's X auth token
-      const authToken = await storage.getXAuthTokenByUserId(userId);
+      // Get user's X auth token (use session if available)
+      const sessionUserId = req.session?.userId || userId;
+      const authToken = await storage.getXAuthTokenByUserId(sessionUserId);
       if (!authToken) {
         return res.status(401).json({ 
           error: "User not authenticated with X. Please login with X first." 
@@ -554,11 +590,19 @@ export function registerRoutes(app) {
       
       // Get X user ID from token with refresh capability
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
-      const client = await createAuthenticatedClient(
+      const authClientResult = await createAuthenticatedClient(
         authToken.accessToken,
         authToken.refreshToken,
         authToken.expiresAt
       );
+      const client = authClientResult.client;
+      
+      // If tokens were refreshed, update the database
+      if (authClientResult.updatedTokens) {
+        await storage.updateXAuthToken(sessionUserId, authClientResult.updatedTokens);
+        console.log(`🔄 Refreshed and updated tokens for user ${sessionUserId}`);
+      }
+      
       const { data: xUser } = await client.v2.me();
       
       console.log(`Fetching X data for user: ${xUser.username} (${xUser.id})`);
@@ -849,7 +893,12 @@ export function registerRoutes(app) {
       
       // Get authenticated X user info using the token
       const { createAuthenticatedClient } = await import('./services/xAuth.js');
-      const client = await createAuthenticatedClient(authResult.accessToken);
+      const authClientResult = await createAuthenticatedClient(
+        authResult.accessToken,
+        authResult.refreshToken,
+        authResult.expiresAt
+      );
+      const client = authClientResult.client;
       
       if (!client) {
         throw new Error('Failed to create authenticated client');
@@ -867,6 +916,9 @@ export function registerRoutes(app) {
       // Store in database (for now use userId 1 as default)
       const userId = 1; // In production, get from session/JWT
       
+      // Calculate expires timestamp properly
+      const expiresAt = new Date(authResult.expiresAt).getTime();
+      
       // Check if token already exists for this user
       const existingToken = await storage.getXAuthTokenByUserId(userId);
       
@@ -878,8 +930,9 @@ export function registerRoutes(app) {
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
           expiresIn: authResult.expiresIn,
-          expiresAt: authResult.expiresAt
+          expiresAt: expiresAt
         });
+        console.log(`🔄 Updated existing tokens for user ${userId}`);
       } else {
         // Create new token
         await storage.createXAuthToken({
@@ -889,9 +942,17 @@ export function registerRoutes(app) {
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
           expiresIn: authResult.expiresIn,
-          expiresAt: authResult.expiresAt
+          expiresAt: expiresAt
         });
+        console.log(`🆕 Created new tokens for user ${userId}`);
       }
+      
+      // Set user session for persistence
+      req.session.userId = userId;
+      req.session.xAuthenticated = true;
+      req.session.xHandle = user.username;
+      
+      console.log(`💾 Session established for user ${user.username}`);
       
       // Store auth data temporarily for immediate use
       userAuthData.accessToken = authResult.accessToken;

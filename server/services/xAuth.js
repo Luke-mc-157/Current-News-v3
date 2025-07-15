@@ -230,13 +230,23 @@ export async function createAuthenticatedClient(accessToken, refreshToken, expir
     
     console.log('Access token near expiry, refreshing...');
     const refreshed = await refreshAccessToken(refreshToken);
+    const newExpiresAt = Date.now() + (refreshed.expiresIn * 1000);
     
-    // Note: Caller should update the stored token in database
     console.log('Token refreshed successfully');
-    return new TwitterApi(refreshed.accessToken);
+    return {
+      client: new TwitterApi(refreshed.accessToken),
+      updatedTokens: {
+        accessToken: refreshed.accessToken,
+        refreshToken: refreshed.refreshToken,
+        expiresAt: newExpiresAt,
+      }
+    };
   }
   
-  return new TwitterApi(accessToken);
+  return { 
+    client: new TwitterApi(accessToken), 
+    updatedTokens: null 
+  };
 }
 
 // Comprehensive environment validation
