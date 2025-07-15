@@ -1,0 +1,397 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query": "Biggest news stories about Liverpool FC from 2025-07-14 to 2025-07-15",
+    "summary": "Based on recent web and news sources, the biggest stories focus on transfer activities and tributes. Key highlights include Liverpool's pursuit of new players and responses to interest in current squad members, as well as a notable tribute from rivals.",
+    "top_stories": [
+      {
+        "title": "Liverpool Makes Move for Alexander Isak and Rebuffs Bid for Luis Diaz",
+        "description": "Liverpool has approached Newcastle United for striker Alexander Isak, signaling potential transfer activity. Additionally, the club has rejected a bid for winger Luis Diaz, indicating their intent to retain key players. There are also links to Real Madrid's Vinicius Jr as a possible target.",
+        "source": "News articles from sports websites"
+      },
+      {
+        "title": "Manchester United Pays Tribute at Anfield for Diogo Jota and Andre Silva",
+        "description": 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Liverpool Football Club news, fixtures, results and transfer updates | Daily Mail Online: Liverpool Football Club is one of England's most successful teams, founded in 1892 and based at Anfield, with a history of winning multiple Premier League and UEFA Champions League titles. Recent news includes tributes to Diogo Jota following his death in a car accident. Liverpool has made an approach to sign Newcastle's Alexander Isak for around £120 million, while rejecting a £58.6 million bid from Bayern Munich for Luis Diaz. The club is also exploring other striker options like Hugo Ekitike and has plans to potentially sell Darwin Nunez. Jordan Henderson has joined Brentford after leaving Ajax. [https://www.dailymail.co.uk/sport/liverpool/index.html]
+Key Quotes: "If we want to cry, we're going to cry." - Arne Slot | "One of the most influential leaders in modern Premier League years." - Thomas Frank
+
+- Liverpool FC - Transfer news, results, fixtures, video and audio: Liverpool has made genuine moves towards signing Newcastle's Alexander Isak, with a potential deal costing up to £130 million. The club rejected a £58 million bid from Bayern Munich for Luis Diaz. New goalkeeper Giorgi Mamardashvili expressed pride in joining Liverpool and aims to learn from Alisson. Tributes were paid to Diogo Jota and Andre Silva during a pre-season friendly against Preston. Liverpool's players and manager Arne Slot emphasized handling emotions authentically after the tragedy. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "I know the responsibilities that come with wearing the shirt." - Giorgi Mamardashvili | "If we want to cry, we're going to cry." - Arne Slot
+
+- Liverpool FC - Latest news, transfers, fixtures, match reports - Liverpool Echo: Liverpool approached Newcastle for Alexander Isak in a potential £120 million deal amid interest in other strikers like Hugo Ekitike. The club rejected a bid for Luis Diaz and is considering Darwin Nunez's departure. Tributes to Diogo Jota were prominent during a pre-season win over Preston, including players copying his celebrations. Liverpool's fixtures have been adjusted for TV, with matches against Newcastle and Arsenal rescheduled. Manager Arne Slot's backroom team is taking shape with new appointments. [https://www.liverpoolecho.co.uk/all-about/liverpool-fc]
+Key Quotes: "If we want to cry, we're going to cry." - Arne Slot | "We're talking." - Luis Diaz
+
+- Liverpool transfer news LIVE: Alexander Isak approach made, Luis Diaz bid rejected, Vini Jr move - Liverpool.com: Liverpool made an initial approach to sign Alexander Isak from Newcastle for around £120 million. The club rejected a bid from Bayern Munich for Luis Diaz, who has expressed a desire to leave. Interest in Vinicius Jr from Real Madrid is being considered as a contingency. Darwin Nunez's potential move to Napoli has fallen through, with Saudi clubs showing renewed interest. Ibrahima Konate turned down an offer from Saudi Arabia, preferring to stay in Europe. [https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-konate-32052484]
+Key Quotes: "If it were happening to me, I’d leave." - Faustino Asprilla | "I just want to enjoy my football." - Jordan Rossiter
+
+- Manchester United lay Anfield tribute to Diogo Jota and Andre Silva - Liverpool FC: Manchester United representatives visited Anfield to pay respects to Diogo Jota and Andre Silva following their deaths in a road accident. Flowers were laid by Ruben Amorim, Bruno Fernandes, and Diogo Dalot. This tribute is part of numerous messages gathered at the memorial. The incident has led to widespread mourning in the football community. Liverpool has not detailed further actions in this report. [https://www.liverpoolfc.com/news/manchester-united-lay-anfield-tribute-diogo-jota-and-andre-silva]
+
+- Waterford officially sign former Liverpool midfielder - DaveOCKOP: Former Liverpool midfielder Jordan Rossiter has signed with Irish club Waterford FC. Rossiter, who played five times for Liverpool's first team, left the club in 2016 and has since played for Rangers, Bury, Fleetwood Town, Bristol Rovers, Shrewsbury Town, and Oldham Athletic. He expressed excitement about working with Waterford's coaches and contributing his experience. The move marks another transfer for ex-Liverpool players this summer. Waterford FC announced the signing on their official website. [https://www.daveockop.com/latest-news/waterford-officially-sign-former-liverpool-midfielder/]
+Key Quotes: "I’m delighted to be here, I’m looking forward to getting going." - Jordan Rossiter | "I just love playing football wherever that is." - Jordan Rossiter
+
+---
+
+TOPIC: Sports Transfers and Contracts
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Premier League Clubs Address Transfer Issues as Pre-Season Starts",
+      "description": "Various Premier League teams are dealing with key squad matters, including potential player exits and new contract negotiations, as players return to training.",
+      "source": "The Athletic",
+      "date": "2025-07-14"
+    },
+    {
+      "title": "Arsenal Nearing Deals for Gyokeres and Madueke",
+      "description": "Reports indicate that Viktor Gyokeres and Noni Madueke are close to joining Arsenal, highlighting significant transfer activity in the Premier League window.",
+      "source": "The Independent",
+      "date": "2025-07-15"
+    },
+    {
+      "title": "Overview of Confirmed Transfer Deals in July",
+      "description": "A roundup of major signings and departures across the Premier League, Scottish Premiership, EFL, and Women's Super League, covering the latest completed transfers.",
+      "source": "BBC Sport",
+      "date": "2025-07
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- The biggest squad and transfer issue for your Premier League club to resolve as pre-season begins - The Athletic: Pre-season training has started for Premier League clubs, highlighting various squad and transfer issues. Arsenal needs to resolve futures for players like Oleksandr Zinchenko and loan returnees. Aston Villa is dealing with potential sales and wage compliance. Other clubs such as Bournemouth and Brentford face decisions on key players like Illia Zabarnyi and Bryan Mbeumo. Chelsea has a large group of players needing permanent moves. [https://www.nytimes.com/athletic/6489696/2025/07/14/premier-league-clubs-transfer-pre-season/]
+Key Quotes: "would not be massively surprised if Mbeumo stayed with them for the coming season" - Phil Giles, Brentford’s director of football
+
+- Football Transfer News & Confirmed Deals - BBC Sport: The article lists recent transfer news and confirmed deals across various leagues including the Premier League and Scottish Premiership. Notable signings include Marco Bizot to Aston Villa and El Hadji Malick Diouf to West Ham for £19m. Other deals involve players like Jordan Henderson joining Brentford on a free transfer. The coverage includes transfers in the EFL and Women's Super League, with updates on multiple clubs. [https://www.bbc.com/sport/football/transfers]
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, allowing signings before and after the Club World Cup. It lists confirmed deals such as Marco Bizot to Aston Villa and Anthony Elanga to Newcastle for £55m. Other notable transfers include Mohammed Kudus to Tottenham Hotspur and various loans and free transfers across leagues. The article provides a comprehensive overview of signings in the Premier League, Scottish Premiership, EFL, and Women's Super League. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- Transfer news live: Liverpool open Isak talks, Arsenal eye Eze after Gyokeres medical, Man Utd want Rios | The Independent: Liverpool has started talks with Newcastle for Alexander Isak in a potential £120m deal. Arsenal is progressing with transfers for Viktor Gyokeres and Noni Madueke, with the latter undergoing a medical. Tottenham completed a deal for Mohammed Kudus, while Manchester United focuses on Bryan Mbeumo and potential outgoings. The article covers various Premier League transfer activities and negotiations. [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html]
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, allowing signings before and after the Club World Cup. It lists confirmed deals such as Marco Bizot to Aston Villa and Anthony Elanga to Newcastle for £55m. Other notable transfers include Mohammed Kudus to Tottenham Hotspur and various loans and free transfers across leagues. The article provides a comprehensive overview of signings in the Premier League, Scottish Premiership, EFL, and Women's Super League. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- DONE DEALS: Every official completed transfer around Europe today | FootballTransfers.com: The 2025 summer transfer window has seen numerous deals, including Trent Alexander-Arnold to Real Madrid and Florian Wirtz to Liverpool. Arsenal is close to signing Noni Madueke, Viktor Gyokeres, and Cristhian Mosquera. Manchester United is negotiating for Bryan Mbeumo, and Tottenham faces a legal issue over Morgan Gibbs-White. The article lists every official transfer completed in Europe's top leagues on the specified day. [https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july]
+
+---
+
+TOPIC: AI Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent web searches for AI developments from July 14 to July 15, 2025, the biggest news stories highlight significant investments, technological advancements, and ethical discussions in artificial intelligence. Key highlights include major figures like Trump, Zuckerberg, and Musk in AI-related activities, alongside broader coverage from reputable sources.",
+  "biggest_news_stories": [
+    {
+      "title": "Trump's $70 Billion AI Investment Bet",
+      "description": "Reports indicate a substantial $70 billion investment in AI, potentially linked to strategic initiatives, as part of broader AI funding discussions.",
+      "source": "Information from web coverage on AI news"
+    },
+    {
+      "title": "Zuckerberg's Manhattan-Sized AI Superclusters",
+      "description": "Meta's efforts in building large-scale AI infrastructure, described as Manhattan-sized superclusters, represent major advancements in AI computing capabilities.",
+      "source": "Information fr
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- AI News & Artificial Intelligence | TechCrunch: TechCrunch features ongoing coverage of artificial intelligence and machine learning developments, including news on generative AI models, company investments, and ethical concerns. Key highlights include a former OpenAI engineer's insights into working conditions and Meta's fix for a bug that could leak AI prompts and generated content. Additionally, xAI's Grok 4 chatbot is valued at $12 billion following a seed round, and Google has added AI summaries to its Discover feature, potentially reducing traffic to publishers. The platform also discusses AI coding tools shifting to terminals and various AI-related investments from companies like Nvidia and xAI. [https://www.reuters.com/technology/artificial-intelligence/]
+Key Quotes: "once weights are out, they can’t be pulled back" - Sam Altman | "the world’s smartest AI" - Elon Musk
+
+- Artificial intelligence (AI) | The Guardian: The Guardian reports on various AI developments, including investigations into teenagers allegedly hired for Russian and Iranian plots, and Trump's $70 billion plan tying AI expansion to oil and gas. It covers controversies with Elon Musk's Grok chatbot, which produced antisemitic content, and discussions on AI's impact on job markets and scientific publishing. The article also addresses AI in pet communication, AI-generated music, and warnings about AI accelerating job market slowdowns. Ethical concerns are highlighted, such as AI chatbots promoting extremism and the need for better oversight. [https://techcrunch.com/category/artificial-intelligence/]
+Key Quotes: "I’ve £90k in student debt – for what?" - Graduates (anonymous) | "A bit like AI, Elon Musk seems custom-built to undermine everything good and true in the world" - Zoe Williams
+
+- Trump’s $70 B AI Bet, Zuckerberg’s Manhattan-Sized Superclusters & Musk’s Bot Blunder – AI News Roundup (July 14–15, 2025): The roundup covers major AI investments, including Trump's $70 billion commitment to AI infrastructure and Meta's plans for massive AI data centers. It highlights new AI models like OpenAI's delayed release, China's Kimi K2 outperforming GPT-4.1, and xAI's Grok 4 chatbot launch. Robotics advancements include Amazon deploying one million warehouse robots and humanoid robots playing autonomous soccer in Beijing. The article also discusses enterprise AI deals, such as Google's acquisition of Windsurf talent, and research breakthroughs like DeepMind's AlphaGenome for genomics. [https://www.theguardian.com/technology/artificialintelligenceai]
+Key Quotes: "once weights are out, they can’t be pulled back" - Sam Altman | "Kimi K2 does not just answer; it acts" - Moonshot AI | "the world’s smartest AI" - Elon Musk
+
+- Artificial Intelligence - The New York Times: The New York Times spotlight examines AI's role in transforming web browsing, with tools like Dia making AI more intuitive. It discusses EU regulations for powerful AI systems, focusing on transparency and safety obligations. The coverage highlights the surge in AI-generated content, including images of child abuse, and major investments like Amazon's data centers for AI work with Anthropic. Additionally, it explores AI's impact on industries such as weddings, education, and forecasting, while addressing ethical and economic implications. [https://ts2.tech/en/trumps-70-b-ai-bet-zuckerbergs-manhattan-sized-superclusters-musks-bot-blunder-ai-news-roundup-july-14-15-2025/]
+Key Quotes: "Generative AI has made huge strides in visual creation, but it… still struggles with controllability" - Sanja Fidler | "A.I. is poised to rewrite history. Literally" - Bill Wasik
+
+---
+
+TOPIC: Political News
+
+LIVE SEARCH SUMMARY:
+{
+  "response_type": "compiled_news_stories",
+  "query_date_range": "2025-07-14 to 2025-07-15",
+  "summary": "Based on recent searches for political news, the biggest stories from the last 24 hours focus on international conflicts, geopolitical developments, and domestic issues. Key highlights include ongoing violence in the Middle East, diplomatic efforts between India and China, and legal matters in India. Information is drawn from reliable news sources, with no high-engagement posts on X identified as conclusive.",
+  "stories": [
+    {
+      "title": "Israel's Actions in Gaza and Related Incidents",
+      "description": "Reports indicate significant violence with over 200 Palestinians killed in recent attacks, bringing the total death toll in Gaza above 58,000. Additionally, an incident involving Israeli settlers killing a 20-year-old U.S. citizen and efforts to break the Gaza siege with an international crew were noted. In the UK, related arrests by police have been reported.",
+   
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Politics News | Breaking Political News, Video & Analysis-ABC News - ABC News: Donald Trump defended his proposal to give Vladimir Putin 50 days to make peace with Ukraine, though he did not specify details. Attorney General Pam Bondi faced calls to resign amid controversy over Jeffrey Epstein files, with Trump supporting her actions. The Pentagon announced the withdrawal of 2,000 National Guard troops from ICE duty in Los Angeles, citing subsiding lawlessness. Republicans on Capitol Hill called for Ghislaine Maxwell to testify regarding Epstein-related matters. The Supreme Court allowed Trump to proceed with efforts to cut Education Department staff, potentially impacting vulnerable students. [https://abcnews.go.com/Politics]
+Key Quotes: ""God is once again welcomed back into our public square."" - Donald Trump | ""lawlessness" in L.A. is "subsiding."" - Pentagon spokesman
+
+- Politics: Latest & Breaking US Political News | AP News: Donald Trump is facing backlash from his MAGA base over conspiracy theories related to Jeffrey Epstein's case. The Supreme Court permitted Trump to lay off nearly 1,400 Education Department employees. Epstein-related controversies continue to cause unrest among Trump's supporters. Senators are pushing for severe sanctions against Russia. Netanyahu's governing coalition in Israel is fracturing amid ongoing conflicts. [https://apnews.com/politics]
+Key Quotes: "With Epstein conspiracy theories, Trump faces a crisis of his own making" - AP News headline or summary
+
+- Headlines for July 14, 2025 | Democracy Now!: Israel killed over 200 Palestinians in Gaza over the weekend, bringing the total death toll above 58,000. Israeli settlers killed a 20-year-old U.S. citizen in the West Bank, marking the seventh American death in the region since October 2023. The Handala ship set sail to break the Gaza siege, following the seizure of another aid ship. In the U.S., a federal judge blocked mass immigration raids in Los Angeles and mandated access to lawyers for detainees. Democratic lawmakers criticized inhumane conditions at a Florida immigration detention facility. [https://www.reuters.com/world/us/]
+Key Quotes: ""Today, more than 150 injuries and more than 20 martyrs around the aid distribution centers. Most of the gunshot injuries we see are in the head or the torso."" - Hassan Omran | ""We are devastated that our beloved Sayfollah Musallet... was brutally beaten to death..."" - Diana Musallet | ""Caught in the middle of this unending horror story are the Haitian people..."" - Ravina Shamdasani
+
+- Top news of the day | July 14, 2025 - The Hindu: Indian astronaut Shubhanshu Shukla and Axiom Mission 4 crew departed from the International Space Station after an 18-day stay. External Affairs Minister S. Jaishankar urged India and China to avoid restrictive trade measures during talks in Beijing. The Supreme Court emphasized the value of freedom of speech and considered guidelines for social media posts. The Indian government is working to save a nurse facing execution in Yemen. Odisha's Governor sought a report on a student's self-immolation incident amid protests. [https://democracynow.org/2025/7/14/headlines]
+Key Quotes: ""Citizens must know the value of freedom of speech and expression and observe self regulation..."" - Supreme Court of India | ""India and China need to avoid ‘restrictive’ trade measures..."" - S. Jaishankar
+
+- Top 10 India News Headlines Today – July 15, 2025: A student in Odisha died after self-immolation amid allegations of sexual harassment, leading to protests and arrests. Indian astronaut Shubhanshu Shukla returned from the International Space Station after a successful mission. Tesla opened its first showroom in Mumbai, marking its entry into the Indian market. The Juvenile Justice Board ruled that a teen accused in the Pune Porsche case will be tried as a juvenile. Political conflicts within the Nationalist Congress Party escalated in Kerala with demands for resignations. [https://thehindu.com/news/national/top-news-of-the-day-july-14-2025/article69811019.ece]
+Key Quotes: ""We are all Americans here. We will not allow this to happen. We follow the Constitution."" - Brian Gavidia
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Fabrizio Romano: "🚨🇸🇮 Benjamin Šeško stance after new Saudi Pro League links remains the same as in June: total focus on European football.
+
+Šeško wants to play in Europe at this stage of his career, despite approaches from Saudi clubs in the last two months. https://t.co/8TahbJMMgv" (633728 views, 7914 likes) https://x.com/i/status/1945241225398833653
+- Fabrizio Romano: "🔴⚪️ Kiliann Sildillia has signed his contract as new PSV Eindhoven player on five year deal.
+
+All done with Freiburg as revealed as here’s Sildillia with his agent Bembi Vungbote from CAA Stellar in Eindhoven. https://t.co/cNg0r7Hu5G" (447398 views, 3758 likes) https://x.com/i/status/1945239597320978478
+- Fabrizio Romano: "🚨🔴⚪️ Arsenal and Valencia have also exchanged documents for Cristhian Mosquera deal.
+
+€15m plus add-ons, total fee under €20m and long term deal for Mosquera.
+
+Medical booked on Wednesday. https://t.co/BPZFfptZMO" (219987 views, 6710 likes) https://x.com/i/status/1945224000172421595
+- Adam Schefter: "Washington Commanders receiver Terry McLaurin said he's frustrated and disappointed with the lack of progress toward a contract extension, saying they're entering crunch time to get a new deal done.
+
+Story via @john_keim:
+
+https://t.co/WYtKPuNGAF" (225015 views, 382 likes) https://x.com/i/status/1945221519354765670
+- Adam Schefter: "Falcons will wear their throwback uniforms that include red helmets for Week 6 vs. the Bills on ESPN, Week 15 at Tampa Bay and Week 17 vs. the Rams also on ESPN. https://t.co/7fyMPuztrp" (172564 views, 1151 likes) https://x.com/i/status/1945231597730513099
+- Adam Schefter: "More about the Chiefs and guard Trey Smith agreeing to a four-year, $94 million deal, via @ByNateTaylor:
+
+https://t.co/S4zcwqqg4B" (167815 views, 184 likes) https://x.com/i/status/1945221239099830769
+- Barstool Sports: "https://t.co/voRBGNhIvB" (93133 views, 2 likes) https://x.com/i/status/1945237453570224596
+- Ian Rapoport: "Officially official https://t.co/bRYH4rboWH" (90171 views, 196 likes) https://x.com/i/status/1945223790721429896
+- Sky Sports Football: "BREAKING: Ipswich Town captain Sam Morsy is set to sign for Kuwait FC, with it being believed that Morsy has been offered life-changing terms for his family 🚨
+
+https://t.co/plpTrJS5jx" (81798 views, 578 likes) https://x.com/i/status/1945219480742748217
+- Dave Portnoy: "Barstool Pizza Review - Caloroso Eatery &amp; Bar (Shelton, CT) https://t.co/S3Kbh8Qbe8" (68083 views, 202 likes) https://x.com/i/status/1945241981493579898
+- Mario Nawfal: "https://t.co/C25RAwdV2D" (64696 views, 581 likes) https://x.com/i/status/1945242054377742613
+- Barstool Sports: "https://t.co/Yho1jsY1dv" (57339 views, 1 likes) https://x.com/i/status/1945244052028317940
+- Chamath Palihapitiya: "We’re looking for a GM to run Learn With Me, the research program I started to stay on top of what’s happening in the world.
+
+You will lead this in partnership with my Head of Research. 
+
+You'll be the person who keeps the trains running while supporting the energy and" (53227 views, 185 likes) https://x.com/i/status/1945238403320275417
+- Barstool Sports: "The only way to start off the @StoolAfterDark Home Run Derby: 
+
+The national anthem. 
+
+ https://t.co/fAwJfGgaHg" (53157 views, 47 likes) https://x.com/i/status/1945237451166961876
+- Barstool Sports: "Give Us The Chaos: Bengals 1st Round Pick Shemar Stewart Still Isn't Signed, Reportedly Could Try To Go Back And Play For Texas A&amp;M Instead This Year https://t.co/7uusYRBu5M https://t.co/tPU9tZxx0c" (51416 views, 33 likes) https://x.com/i/status/1945230681782501379
+- Big Cat: "Love this for my boys https://t.co/nY7KVXNCCK" (50366 views, 327 likes) https://x.com/i/status/1945223198720532562
+- Barstool Sports: "Michael "The Grinder" Mizrachi Has A Shot at Poker Immortality at WSOP Main Final Table https://t.co/RbPhnqd5t6 https://t.co/OHXCiFld43" (49247 views, 17 likes) https://x.com/i/status/1945238268208914707
+- xAI: "We’re thrilled by the overwhelming demand for Grok 4 through the xAI API.
+
+To support our API customers, we’ve increased the default rate limits for Grok 4. Happy building!" (48054 views, 783 likes) https://x.com/i/status/1945242190864699825
+- Big Cat: "Needed a round up there https://t.co/SMs8bdV2au" (48604 views, 22 likes) https://x.com/i/status/1945246034055074075
+- Bernie Sanders: "Trump, like all authoritarians, doesn’t like criticism or objective reporting. He just wants to be flattered. That’s why he wants to defund NPR and PBS.  
+
+If democracy is to survive we need a strong, independent media.  
+
+I will vote to support public broadcasting." (45196 views, 1058 likes) https://x.com/i/status/1945219632928784757
+- Big Cat: "MLB All Star Game - Over 7. System Play" (41740 views, 158 likes) https://x.com/i/status/1945227136828367273
+- Barstool Sports: "Jazz Chisholm in the Home Run Derby @StoolAfterDark 
+
+https://t.co/oHsGGtxPzY" (41661 views, 118 likes) https://x.com/i/status/1945243985800274117
+- Big Cat: "I needed that round. Was staring retirement in the face" (40987 views, 100 likes) https://x.com/i/status/1945245395027628107
+- Barstool Sports: "You can only have one form of potato for the rest of your life, what are you picking? @gottatrythispod @vivalafood_ https://t.co/c4mAQmTDJj" (41053 views, 14 likes) https://x.com/i/status/1945230641756336481
+- Barstool Sports: "Barstool Pizza Review - Caloroso Eatery &amp; Bar (Shelton, CT) https://t.co/VjZpCq4gxy" (39549 views, 41 likes) https://x.com/i/status/1945241979320983624
+- Barstool Sports: "Mr. BANG BANG BANG himself Nick Tarnasky breaks down the viral pond toss video from last week @spittinchiclets https://t.co/hWHTLsUVWS" (38684 views, 89 likes) https://x.com/i/status/1945220574105452682
+- Mario Nawfal: "GROK 4: THE AI THAT BUILDS BUSINESSES WHILE YOU BLINK
+
+Grok 4 is officially the smartest AI out right now. It even passed 38% of the hardest test for language models.
+
+Elon claims they’re running out of ways to challenge it.
+
+It can build full process maps and business models https://t.co/eTMJTd77yA https://t.co/pCdaQP4LYQ" (36224 views, 55 likes) https://x.com/i/status/1945219820859089182
+- Barstool Sports: "An Analyst Is Going Viral For Saying That If The Lakers Manage To Get Bradley Beal To Go Ahead And Get The Parade Ready For Them https://t.co/8AI8Wbh65z https://t.co/g9s0HRfiSd" (35902 views, 18 likes) https://x.com/i/status/1945220620276379848
+- Mario Nawfal: "🇬🇧 CHURCH OF ENGLAND DROPS 1991 SEXUALITY RULE FOR CLERGY
+
+After 3 decades, the Church of England just voted to scrap a document that called gay sex “especially dishonourable.”  
+
+“Issues in Human Sexuality” is no longer required reading in the ordination process, with Synod https://t.co/WgK4GhBaPA https://t.co/KeN7MNPdpK" (33769 views, 31 likes) https://x.com/i/status/1945241969334305051
+- World of Statistics: "What's that rich thing you do, even though you aren't that rich?" (33681 views, 90 likes) https://x.com/i/status/1945244734613606470
+- Barstool Sports: "Important Travel Tip: If You Find a Unicorn Skull and Trade it for Beers, You Could Be Facing Jail Time https://t.co/4An2rKTWTV https://t.co/Dql0ARvIPM" (32791 views, 11 likes) https://x.com/i/status/1945243274697945293
+- Barstool Sports: "Caitlin Clark Made WNBA History Once Again With A WILD Stat And That's Not Counting The Greatness Of Her Custom Kobe "Cookie Monster" Sneakers https://t.co/EnrdRECZcy https://t.co/8OVfHfnrQ1" (30467 views, 40 likes) https://x.com/i/status/1945245798767186399
+- Big Cat: "Home Run Derby Time 
+
+https://t.co/Rm9wDxZizj https://t.co/rZzx1kyGqG" (29238 views, 39 likes) https://x.com/i/status/1945233497506943359
+- Mario Nawfal: "🇺🇸 THIRD BIDEN AIDE SUBPOENAED OVER AUTOPEN AND COGNITIVE COVER-UP
+
+Annie Tomasini - longtime Biden aide and deputy chief of staff - will testify Friday after refusing to appear voluntarily.
+
+She’s the 3rd top insider called to explain who really ran the White House as Biden’s https://t.co/mz5ivuGdqw https://t.co/yZGclPDxa5" (28503 views, 88 likes) https://x.com/i/status/1945239450310860877
+- Mario Nawfal: "🚨🇺🇸 UPDATE: SMYRNA SHOOTING SUSPECT BARRICADED, NO LONGER ACTIVE THREAT
+
+The tense situation in Smyrna, Tennessee has de-escalated.
+
+Police confirm the suspect is now barricaded inside the business.
+
+Not an active shooter situation anymore, but law enforcement remains on scene. https://t.co/dIIhLeC8Oj https://t.co/TPkTNOuRXT" (26430 views, 32 likes) https://x.com/i/status/1945238120099623145
+- Charles Hoskinson: "Just received one of the strangest cold calls in my life from someone named John Ashley who found me off of Perplexity and told me he had a protocol better than PoW that wasn't proof of stake. I told him to write it down and send it to me over email. He said I'd steal it from" (25163 views, 474 likes) https://x.com/i/status/1945241259435811095
+- Everyday Astronaut: "Looks like it's a two for one tomorrow! @FelixSchlang has a video about the top 5 craziest ways to get to space, and mine is about the math, the physics and the challenges of yeeting rockets, so it's a perfect crossover! Hope you learn lots! https://t.co/1X1Qa4qk5S" (23477 views, 233 likes) https://x.com/i/status/1945239007618617599
+- Barstool Sports: "Pete Alonso Thinks That Baseball Should Allow Fights Like Hockey And He Makes Some Pretty Good Points https://t.co/bvhmBsWks5 https://t.co/2BJ2kwrHTg" (22240 views, 50 likes) https://x.com/i/status/1945223137756336213
+- Mario Nawfal: "69 𝕏 MINUTES: “ALLIGATOR ALCATRAZ IS OPEN FOR BUSINESS”
+
+ICE Director Todd Lyons:
+
+“We’re starting with 1,000 detainees tomorrow, scaling to 3,000 and Florida law enforcement is fully deputized to help us get it done.
+
+This isn’t just a facility, it’s a national emergency https://t.co/wtf4sLRyH9 https://t.co/n95hkwcAbG" (21315 views, 106 likes) https://x.com/i/status/1945232370816221213
+- Mario Nawfal: "CASSINI GOT FRONT-ROW SEATS TO DIONE VS. SATURN - AND DELIVERED
+
+NASA’s Cassini spacecraft snapped this unreal shot of Dione, Saturn’s icy, crater-pummeled moon, from just 24,200 miles away — basically a cosmic courtside seat.
+
+In the background? Saturn doing its usual thing: https://t.co/rEBEdw8gY5 https://t.co/uALOKkmWj5" (18323 views, 44 likes) https://x.com/i/status/1945244483349627033
+- Barstool Sports: "According To Kyrie Irving He Considered Swinging On Payton Pritchard After He Kept Making Half Court Shots During The Finals https://t.co/rAO9WWfCKp https://t.co/mA67s6JvgJ" (17810 views, 26 likes) https://x.com/i/status/1945228192345632958
+- Mario Nawfal: "🚨🇺🇸 MINNESOTA SHOOTER'S DISTURBING LETTER RELEASED: "WALZ ASKED ME TO TAKE OUT CERTAIN PEOPLE"
+
+Federal authorities released Vance Boelter's handwritten manifesto claiming Gov. Tim Walz instructed him to assassinate Senators Klobuchar and Smith.
+
+Key excerpts from letter: 
+
+"Tim https://t.co/C2XstAuRSt https://t.co/fDSJ6ORSxX" (17729 views, 49 likes) https://x.com/i/status/1945245031591256151
+- Barstool Sports: "Team @hen_ease takes on Team @Philly_Mays in a Home Run Derby LIVE NOW @StoolAfterDark 
+
+ https://t.co/4yS23x9xup" (17529 views, 10 likes) https://x.com/i/status/1945235113035346204
+- Mario Nawfal: "🇺🇸 TRUMP SAYS “DROP EPSTEIN”... HIS BASE SAYS “NOT A CHANCE”
+
+After years of fueling conspiracy theories about Jeffrey Epstein, Trump is now facing the full force of the storm he helped create.
+
+And it’s coming from his own supporters.
+
+Over the weekend, Trump posted: “Let’s not https://t.co/NoTYzTd2Px https://t.co/je107aJwQl" (17365 views, 124 likes) https://x.com/i/status/1945222596078842265
+- xAI: "Create an xAI API Key: https://t.co/4DR0iniFqm" (17305 views, 106 likes) https://x.com/i/status/1945242192781480320
+- Mario Nawfal: "🇺🇸 REP. CROCKETT: "I NEED POC TO UNDERSTAND THAT REPUBLICANS WANT TO MUTE OUR VOICES"
+
+"Texas has always been found to be intentionally discriminatory.
+
+They decided to attack three of the four seats that we have in the state. 
+They decided to go after a Latina.
+
+So I need people https://t.co/mJINEa5lMK https://t.co/i7uLJzzJkB" (17005 views, 18 likes) https://x.com/i/status/1945221834049511931
+- Mario Nawfal: "🇺🇸 APPLE JUST INVESTED $500M IN THE SAME RARE EARTH MINE THE PENTAGON BACKED
+
+Apple just dropped half a billion on MP Materials, to help build rare earth mines in the U.S. so it doesn’t have to rely on China for the stuff inside iPhones.
+
+Few days ago, the Pentagon announced it’s https://t.co/eRn4vOsEKk https://t.co/PsOBDQpGDl" (16870 views, 77 likes) https://x.com/i/status/1945226872062906678
+- Barstool Sports: "https://t.co/iWcadtboX5 https://t.co/Ahw9ey197y" (15189 views, 2 likes) https://x.com/i/status/1945235199643541719
+- Mario Nawfal: "🇺🇸 WHAT IF YOU COULD ASK GANDALF FOR ADVICE?
+
+You: “Should I take the job?”
+Gandalf: “All we have to decide is what to do with the time that is given us.”
+
+Now imagine that - but with Tyrion, Yoda... Tony Soprano.
+
+Not chatbots. Characters. With memories, motives, moods - and https://t.co/bMLnTfEAE0 https://t.co/qi57reRtFt" (15116 views, 36 likes) https://x.com/i/status/1945221571314114676
+- World and Science: "Fun fact: Pluto won’t finish its first complete orbit around the Sun since its discovery until March 23, 2178!
+
+(Credit: NASA/JHUAPL/SwRI) https://t.co/NOiS14z7WJ" (14472 views, 109 likes) https://x.com/i/status/1945237450357387289
+- Barstool Sports: "Terry McLaurin Has Spoken And He Is Not Happy With The Commanders Attempts (Or Lack Thereof) to Sign Him Long-Term https://t.co/RR1HvYgnNk https://t.co/paN9Udvp1G" (14157 views, 21 likes) https://x.com/i/status/1945235731040858435
+- Charles Hoskinson: "We in DC. Let's get it done https://t.co/Exf9xYU8xk" (12677 views, 597 likes) https://x.com/i/status/1945242361396638152
+- World of Engineering: "When she knows the differences between cement, concrete, and mortar: https://t.co/FoiHbqCWWH" (12817 views, 79 likes) https://x.com/i/status/1945246244856848805
+- Mario Nawfal: "🇮🇹 EROTIC ROMAN MOSAIC LOOTED BY NAZI OFFICER RETURNED TO POMPEII AFTER 80 YEARS
+
+An ancient Roman mosaic depicting a semi-nude couple mid-intimacy is finally back where it belongs - Pompeii, nearly a century after it was looted by a Nazi officer during WWII.
+
+The artifact, https://t.co/TQYPJsGJ4i https://t.co/gWmZL9uwmZ" (12669 views, 39 likes) https://x.com/i/status/1945246999705522630
+- Mario Nawfal: "🔴LIVE: TRUMP SPEAKS AT ENERGY AGENDA SUMMIT https://t.co/1r54QNK0jm" (12546 views, 37 likes) https://x.com/i/status/1945219387650400378
+- Barstool After Dark: ".@BarstoolBigCat pulled up with some drip for the boys https://t.co/LmftCyb10h" (11130 views, 78 likes) https://x.com/i/status/1945233674259034354
+- Barstool After Dark: "Checking in with our captains @hen_ease and @Philly_Mays ahead of the Derby https://t.co/SWH6LWfNPJ" (10694 views, 50 likes) https://x.com/i/status/1945231807219159054
+- Mario Nawfal: "THIS DRONE HITS 250 MPH... YES, REALLY
+
+This thing flies faster than most cars and still turns like it’s playing Mario Kart on expert mode.
+
+Not for the faint of thumbs.
+
+Source: dave_c_fpv https://t.co/ldtol8PJ1B" (10573 views, 73 likes) https://x.com/i/status/1945234416650916283
+- Mario Nawfal: "🇺🇸🇷🇺 NATO: BRAZIL, CHINA, INDIA COULD FACE “BITING” SANCTIONS OVER RUSSIA TIES
+
+NATO’s Secretary General Mark Rutte didn’t sugarcoat it: Keep doing business with Russia, and you’ll feel it.
+
+Speaking to U.S. senators, Rutte warned that countries like Brazil, China, and India https://t.co/hdVjYCDHdf https://t.co/4Q7UhAFeKx" (10222 views, 44 likes) https://x.com/i/status/1945224350430535808
+- International Space Station: "#Ax4 from @Axiom_Space splashed down off the coast of California today and the Exp 73 crew studied how space affects the heart and the nervous system aboard the orbital outpost. https://t.co/MoCsgDArm2" (9921 views, 54 likes) https://x.com/i/status/1945223092063887745
+- History Photographed: "Mailed in Aug 1981 from Sydney, a postcard of its Opera House arrived in Elm Grove, UK, in Dec 2023—42 years late! Discovered by Samantha Williams, who hopes to return it, this long-lost card is a time capsule awaiting its rightful recipient. https://t.co/OBWppJp2xN" (9530 views, 13 likes) https://x.com/i/status/1945228314982973925
+- NBC Sports Boston: "The Connecticut Sun are taking on Caitlin Clark and the Indiana Fever at a sold-out TD Garden at 8 p.m. ET.
+
+Coverage begins on NBC Sports Boston at 6 p.m. ET. Follow our live blog for updates:
+https://t.co/YQRCztBnKM" (8731 views, 6 likes) https://x.com/i/status/1945238048750387277
+- Barstool After Dark: ".@Philly_Mays hits nukes. https://t.co/Hp45zJhxBd" (8628 views, 60 likes) https://x.com/i/status/1945243430633734344
+- Lower Colorado River Authority: "Coordinated floodgate operations across the Highland Lakes system. This drone footage, shot over the past few days, shows floodgates at Buchanan Dam, Wirtz Dam and Starcke Dam, as LCRA manages water from recent flooding in Central Texas. https://t.co/nHMvCSaIBV" (7456 views, 70 likes) https://x.com/i/status/1945237581303632254
+- Fabrizio Romano: "🚨⚪️⚫️ Juventus agree deal to sign Francisco Conceição on permanent move from FC Porto, here we go!
+
+Deal in place for fee in excess of €30m paid in 𝐟𝐨𝐮𝐫 installments.
+
+Conceiçao only wanted Juventus despite approaches from Premier League clubs. https://t.co/MJKzhWeD1j" (6159 views, 408 likes) https://x.com/i/status/1945225857800323494
+- Max Velocity: "WHAT https://t.co/XYkpipKnAO" (6163 views, 250 likes) https://x.com/i/status/1945246325060079715
+- Barstool After Dark: "https://t.co/CWKsxiXXJ0" (5982 views, 2 likes) https://x.com/i/status/1945246244911087687
+- Barstool After Dark: "Don’t let Tate get hot! https://t.co/RYLIijPEvw" (5724 views, 17 likes) https://x.com/i/status/1945246121107853513
+- Barstool After Dark: ".@EBoKnowss has a personal guarantee for the viewers tonight https://t.co/vZBdeuFjuu" (5698 views, 17 likes) https://x.com/i/status/1945234722184929732
+- Mario Nawfal: "🇺🇸 DHS: “ASSAULTS ON ICE AGENTS UP 830%”
+
+“Our brave @ICEgov law enforcement are now facing an 830% increase in assaults against them.
+
+These are the individuals who risk their lives every day removing dangerous criminal illegal aliens from America’s communities.
+
+Our ICE agents https://t.co/6vQf93HBv5 https://t.co/VJeB15vApC" (5656 views, 19 likes) https://x.com/i/status/1945229383658299856
+- Car Dealership Guy: "This dealership isn’t focused on acquisitions—
+
+It’s growing by leaning into underleveraged verticals.
+
+@alex_perdikis, CEO of @koonsmotors, shares how doubling down on the commercial side is fueling meaningful growth.
+
+"Our most immediate growth is under our nose. We've got so https://t.co/x841GpaxQ4" (5557 views, 5 likes) https://x.com/i/status/1945226867969323409
+- Vintage Maps: "Map of Ancient Piracy and Barbary Corsairs in Mediterranean Sea. North African coast, and southern European coast https://t.co/JHGlpm4isZ" (5004 views, 56 likes) https://x.com/i/status/1945238207567638699
+- World of Statistics: "How much countries trust the United Nations:
+
+🇯🇵 Japan: 38%
+🇦🇷 Argentina: 38%
+🇮🇹 Italy: 48%
+🇺🇸 U.S.: 50%
+🇪🇸 Spain: 50%
+🇮🇪 Ireland: 50%
+🇩🇪 Germany: 50%
+🇫🇷 France: 51%
+🇨🇴 Colombia: 51%
+🇸🇦 Saudi Arabia: 52%
+🇦🇺 Australia: 52%
+🇿🇦 South Africa: 53%
+🇨🇦 Canada: 54%
+🇰🇷 South Korea: 56%
+🇬🇧" (4976 views, 28 likes) https://x.com/i/status/1945229383796449639
+- World and Science: "Check out this incredibly cool LEGO set! 
+
+The International Space Station: https://t.co/XNI3YSvh2Y  -AmazonAfflink" (4837 views, 5 likes) https://x.com/i/status/1945221343349289389
+- Mario Nawfal: "🚨🇺🇸 BREAKING: 2,000 NATIONAL GUARD TROOPS PULLED FROM LOS ANGELES
+
+Defense Secretary Hegseth has ordered 2,000 National Guard troops to withdraw from Los Angeles, according to the Pentagon. 
+
+The troops had been deployed last month to protect federal sites and personnel during a https://t.co/LtRtBVnrJM https://t.co/gu4X9jCSvn" (4521 views, 17 likes) https://x.com/i/status/1945248474028761306
+- Vintage Maps: "The city of Taipei under Japanese rule in 1935 https://t.co/5dUW88hfkb" (4346 views, 85 likes) https://x.com/i/status/1945221602892730552
+- History Defined: "Jennifer Lopez (Grammys 1999) and Trey Parker (Oscars 1999) https://t.co/EPxYrd3Xhx" (4338 views, 31 likes) https://x.com/i/status/1945242479726318056
+- Barstool After Dark: "WE ARE LIVE. https://t.co/JPlwSgEsNh" (4345 views, 19 likes) https://x.com/i/status/1945235300092965098
+- PFT Commenter: "@AdamSchefter @john_keim Phew at least its not Terry McLaurin" (3994 views, 148 likes) https://x.com/i/status/1945221338202857703
+- History Defined: "Winona Ryder arriving in a pink Cadillac for the premiere of Great Balls of Fire in New York, June 1989. https://t.co/bLt46MOByy" (3788 views, 33 likes) https://x.com/i/status/1945219454440189989
+- Only In Boston: "Somerville became the first city in the United States to pass an ordinance officially recognizing polyamorous relationships — allowing multiple consenting partners to be acknowledged under the law." (3598 views, 24 likes) https://x.com/i/status/1945234417829732608
+- Barstool After Dark: "https://t.co/CWKsxiXXJ0" (3286 views, 1 likes) https://x.com/i/status/1945235542443987054
+- Max Velocity: "CONFIRMED TORNADO in Nebraska, we are LIVE covering this and more!
+
+Stream Link: https://t.co/WCYba3H2Aq https://t.co/7KYEnBgb7T" (3144 views, 79 likes) https://x.com/i/status/1945231878434250869
+- History Defined: "Winona Ryder: Fabulous photos of the beloved star
+https://t.co/yueCIha8Wv" (3174 views, 3 likes) https://x.com/i/status/1945219455845294245
+- History Defined: "Old School Cool: Some of the greatest photos ever taken
+https://t.co/9gMrCDCWja" (2990 views, 1 likes) https://x.com/i/status/1945242482133897590
+- The Boston Globe: "Ice cream makers representing about 90 percent of US supply have pledged to remove artificial dyes from their products by 2028, as the Trump administration pressures manufactures to remove synthetic dyes over concerns about potential health effects. https://t.co/4G7LUTIIWp" (2546 views, 3 likes) https://x.com/i/status/1945239520485552313
+- History Defined: "Jennifer Lopez at her a birthday party in New York, 1999 https://t.co/MmCMahpeDl" (2470 views, 10 likes) https://x.com/i/status/1945227047162294544

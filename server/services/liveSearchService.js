@@ -625,16 +625,6 @@ async function getTopicDataFromLiveSearch(topic) {
     const citations = response.citations || [];
     
     console.log(`📊 Live Search returned ${content.length} chars, ${citations.length} citations`);
-    console.log(`🔍 Content preview: ${content.substring(0, 200)}...`);
-    if (citations.length > 0) {
-      console.log(`🔗 Citations: ${citations.slice(0, 3).join(', ')}`);
-    }
-    
-    // Debug: Log raw response data for user analysis
-    console.log(`\n🔍 RAW xAI RESPONSE FOR ${topic}:`);
-    console.log(`📄 Full Content: ${content}`);
-    console.log(`📋 All Citations: ${JSON.stringify(citations, null, 2)}`);
-    console.log(`🔚 END RAW RESPONSE FOR ${topic}\n`);
     
     return {
       content: content,
