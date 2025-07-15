@@ -151,8 +151,9 @@ export async function handleXCallback(code, state) {
     console.log('- Refresh token length:', refreshToken?.length);
     console.log('- Expires in seconds:', expiresIn);
     
-    // Calculate expiration timestamp
+    // Calculate expiration timestamp as Date object for PostgreSQL
     const expiresAt = new Date(Date.now() + (expiresIn * 1000));
+    console.log(`📅 Token will expire at: ${expiresAt.toISOString()}`);
     
     // Clean up the session
     sessions.delete(state);

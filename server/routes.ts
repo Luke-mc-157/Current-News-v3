@@ -916,8 +916,18 @@ export function registerRoutes(app) {
       // Store in database (for now use userId 1 as default)
       const userId = 1; // In production, get from session/JWT
       
-      // Calculate expires timestamp properly
-      const expiresAt = new Date(authResult.expiresAt).getTime();
+      // Convert expires timestamp to proper Date object for PostgreSQL
+      let expiresAtDate;
+      if (authResult.expiresAt instanceof Date) {
+        expiresAtDate = authResult.expiresAt;
+      } else if (typeof authResult.expiresAt === 'number') {
+        expiresAtDate = new Date(authResult.expiresAt);
+      } else {
+        // Calculate from expiresIn if expiresAt is not available
+        expiresAtDate = new Date(Date.now() + (authResult.expiresIn * 1000));
+      }
+      
+      console.log(`📅 Token expires at: ${expiresAtDate.toISOString()}`);
       
       // Check if token already exists for this user
       const existingToken = await storage.getXAuthTokenByUserId(userId);
@@ -930,7 +940,7 @@ export function registerRoutes(app) {
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
           expiresIn: authResult.expiresIn,
-          expiresAt: expiresAt
+          expiresAt: expiresAtDate
         });
         console.log(`🔄 Updated existing tokens for user ${userId}`);
       } else {
@@ -942,7 +952,7 @@ export function registerRoutes(app) {
           accessToken: authResult.accessToken,
           refreshToken: authResult.refreshToken,
           expiresIn: authResult.expiresIn,
-          expiresAt: expiresAt
+          expiresAt: expiresAtDate
         });
         console.log(`🆕 Created new tokens for user ${userId}`);
       }
