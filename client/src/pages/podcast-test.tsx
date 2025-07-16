@@ -9,73 +9,105 @@ export default function PodcastTest() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Load cached headlines on component mount
+  // Load latest compiled data from server on component mount
   useEffect(() => {
-    const cachedHeadlines = localStorage.getItem('cached_headlines');
-    const cachedTopics = localStorage.getItem('cached_topics');
-    const cachedCompiledData = localStorage.getItem('cached_compiled_data');
-    const cachedAppendix = localStorage.getItem('cached_appendix');
-    
-    if (cachedHeadlines) {
+    const loadLatestData = async () => {
       try {
-        const parsedHeadlines = JSON.parse(cachedHeadlines);
-        setHeadlines(parsedHeadlines);
-        console.log(`Loaded ${parsedHeadlines.length} cached headlines for podcast testing`);
+        setIsLoading(true);
         
-        // Load all cached data to match regular generator behavior
-        let parsedCompiledData = null;
-        let parsedAppendix = null;
+        // First check if there's latest compiled data on the server
+        const response = await fetch('/api/latest-compiled-data');
         
-        if (cachedCompiledData) {
-          try {
-            parsedCompiledData = JSON.parse(cachedCompiledData);
-            console.log(`Loaded cached compiled data (${parsedCompiledData.length} chars) for testing`);
-          } catch (error) {
-            console.warn('Error parsing cached compiled data:', error);
+        if (response.ok) {
+          const data = await response.json();
+          
+          if (data.success && data.headlines) {
+            setHeadlines(data.headlines);
+            console.log(`Loaded ${data.headlines.length} headlines from latest compiled data`);
+            
+            if (data.compiledData) {
+              console.log(`Using latest compiled data (${data.compiledData.length} chars) for testing`);
+            }
+            
+            // The server already has the latest data, no need to load cached data
+            return;
           }
         }
         
-        if (cachedAppendix) {
+        // Fallback to cached data from localStorage if server has no latest data
+        console.log('No latest data on server, falling back to cached data');
+        const cachedHeadlines = localStorage.getItem('cached_headlines');
+        const cachedTopics = localStorage.getItem('cached_topics');
+        const cachedCompiledData = localStorage.getItem('cached_compiled_data');
+        const cachedAppendix = localStorage.getItem('cached_appendix');
+        
+        if (cachedHeadlines) {
           try {
-            parsedAppendix = JSON.parse(cachedAppendix);
-            console.log('Loaded cached appendix data for testing');
+            const parsedHeadlines = JSON.parse(cachedHeadlines);
+            setHeadlines(parsedHeadlines);
+            console.log(`Loaded ${parsedHeadlines.length} cached headlines for podcast testing`);
+            
+            // Load all cached data to match regular generator behavior
+            let parsedCompiledData = null;
+            let parsedAppendix = null;
+            
+            if (cachedCompiledData) {
+              try {
+                parsedCompiledData = JSON.parse(cachedCompiledData);
+                console.log(`Loaded cached compiled data (${parsedCompiledData.length} chars) for testing`);
+              } catch (error) {
+                console.warn('Error parsing cached compiled data:', error);
+              }
+            }
+            
+            if (cachedAppendix) {
+              try {
+                parsedAppendix = JSON.parse(cachedAppendix);
+                console.log('Loaded cached appendix data for testing');
+              } catch (error) {
+                console.warn('Error parsing cached appendix:', error);
+              }
+            }
+            
+            // Send all cached data to backend so podcast generation operates identically
+            const loadResponse = await fetch('/api/load-cached-headlines', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ 
+                headlines: parsedHeadlines,
+                compiledData: parsedCompiledData,
+                appendix: parsedAppendix
+              })
+            });
+            
+            if (loadResponse.ok) {
+              console.log('Successfully loaded all cached data into backend');
+            } else {
+              console.error('Failed to load cached data into backend');
+            }
+            
           } catch (error) {
-            console.warn('Error parsing cached appendix:', error);
+            console.error('Error parsing cached headlines:', error);
           }
         }
         
-        // Send all cached data to backend so podcast generation operates identically
-        fetch('/api/load-cached-headlines', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ 
-            headlines: parsedHeadlines,
-            compiledData: parsedCompiledData,
-            appendix: parsedAppendix
-          })
-        }).then(response => {
-          if (response.ok) {
-            console.log('Successfully loaded all cached data into backend');
-          } else {
-            console.error('Failed to load cached data into backend');
+        if (cachedTopics) {
+          try {
+            const parsedTopics = JSON.parse(cachedTopics);
+            setSubmittedTopics(parsedTopics);
+          } catch (error) {
+            console.error('Error parsing cached topics:', error);
           }
-        }).catch(error => {
-          console.error('Error loading cached data into backend:', error);
-        });
+        }
         
       } catch (error) {
-        console.error('Error parsing cached headlines:', error);
+        console.error('Error loading latest data:', error);
+      } finally {
+        setIsLoading(false);
       }
-    }
+    };
     
-    if (cachedTopics) {
-      try {
-        const parsedTopics = JSON.parse(cachedTopics);
-        setSubmittedTopics(parsedTopics);
-      } catch (error) {
-        console.error('Error parsing cached topics:', error);
-      }
-    }
+    loadLatestData();
   }, []);
 
   // Handle topic submission (simulated - doesn't call X API)

@@ -297,6 +297,26 @@ export function registerRoutes(app) {
     }
   });
 
+  // Get latest compiled data for podcast testing
+  router.get("/api/latest-compiled-data", (req, res) => {
+    if (!headlinesStore.length) {
+      return res.status(404).json({ 
+        error: "No headlines available. Generate headlines first to get compiled data.",
+        success: false 
+      });
+    }
+    
+    res.json({ 
+      success: true, 
+      headlines: headlinesStore,
+      compiledData: compiledDataStore,
+      appendix: appendixStore,
+      hasCompiledData: !!compiledDataStore,
+      hasAppendix: !!appendixStore,
+      message: `Latest data available: ${headlinesStore.length} headlines, ${compiledDataStore?.length || 0} chars compiled data`
+    });
+  });
+
   // Load cached headlines for testing (used by podcast test page)
   router.post("/api/load-cached-headlines", (req, res) => {
     const { headlines, compiledData, appendix } = req.body;
