@@ -28,6 +28,18 @@ export default function Home() {
     }
   }, [headlines, submittedTopics]);
 
+  // Handle caching of compiled data and appendix when headlines are generated
+  const handleHeadlinesGenerated = (data: any) => {
+    if (data.compiledData) {
+      localStorage.setItem('cached_compiled_data', JSON.stringify(data.compiledData));
+      console.log(`Cached compiled data (${data.compiledData.length} chars) for podcast testing`);
+    }
+    if (data.appendix) {
+      localStorage.setItem('cached_appendix', JSON.stringify(data.appendix));
+      console.log('Cached appendix data for podcast testing');
+    }
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Header */}
@@ -80,6 +92,7 @@ export default function Home() {
           <div className="space-y-4">
             <TopicInput 
               onTopicsSubmitted={setSubmittedTopics}
+              onHeadlinesGenerated={handleHeadlinesGenerated}
             />
           </div>
 

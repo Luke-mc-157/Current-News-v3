@@ -13,6 +13,8 @@ export default function PodcastTest() {
   useEffect(() => {
     const cachedHeadlines = localStorage.getItem('cached_headlines');
     const cachedTopics = localStorage.getItem('cached_topics');
+    const cachedCompiledData = localStorage.getItem('cached_compiled_data');
+    const cachedAppendix = localStorage.getItem('cached_appendix');
     
     if (cachedHeadlines) {
       try {
@@ -20,19 +22,45 @@ export default function PodcastTest() {
         setHeadlines(parsedHeadlines);
         console.log(`Loaded ${parsedHeadlines.length} cached headlines for podcast testing`);
         
-        // Send cached headlines to backend so podcast generation works
+        // Load all cached data to match regular generator behavior
+        let parsedCompiledData = null;
+        let parsedAppendix = null;
+        
+        if (cachedCompiledData) {
+          try {
+            parsedCompiledData = JSON.parse(cachedCompiledData);
+            console.log(`Loaded cached compiled data (${parsedCompiledData.length} chars) for testing`);
+          } catch (error) {
+            console.warn('Error parsing cached compiled data:', error);
+          }
+        }
+        
+        if (cachedAppendix) {
+          try {
+            parsedAppendix = JSON.parse(cachedAppendix);
+            console.log('Loaded cached appendix data for testing');
+          } catch (error) {
+            console.warn('Error parsing cached appendix:', error);
+          }
+        }
+        
+        // Send all cached data to backend so podcast generation operates identically
         fetch('/api/load-cached-headlines', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ headlines: parsedHeadlines })
+          body: JSON.stringify({ 
+            headlines: parsedHeadlines,
+            compiledData: parsedCompiledData,
+            appendix: parsedAppendix
+          })
         }).then(response => {
           if (response.ok) {
-            console.log('Successfully loaded cached headlines into backend');
+            console.log('Successfully loaded all cached data into backend');
           } else {
-            console.error('Failed to load cached headlines into backend');
+            console.error('Failed to load cached data into backend');
           }
         }).catch(error => {
-          console.error('Error loading cached headlines into backend:', error);
+          console.error('Error loading cached data into backend:', error);
         });
         
       } catch (error) {

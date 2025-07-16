@@ -83,6 +83,8 @@ export function registerRoutes(app) {
       res.json({ 
         success: true, 
         headlines,
+        compiledData: result.compiledData,
+        appendix: appendix,
         performance: {
           responseTime: `${responseTime}ms`,
           method: "xAI Live Search",
@@ -195,7 +197,11 @@ export function registerRoutes(app) {
     if (!headlinesStore.length) {
       return res.status(404).json({ headlines: [], message: "No headlines available" });
     }
-    res.json({ headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement) });
+    res.json({ 
+      headlines: headlinesStore.sort((a, b) => b.engagement - a.engagement),
+      compiledData: compiledDataStore,
+      appendix: appendixStore
+    });
   });
 
   // Debug endpoint to test axios/cheerio article scraping
@@ -293,19 +299,31 @@ export function registerRoutes(app) {
 
   // Load cached headlines for testing (used by podcast test page)
   router.post("/api/load-cached-headlines", (req, res) => {
-    const { headlines } = req.body;
+    const { headlines, compiledData, appendix } = req.body;
     
     if (!Array.isArray(headlines)) {
       return res.status(400).json({ error: "Headlines must be an array" });
     }
     
+    // Load all data stores to match regular generator behavior
     headlinesStore = headlines;
+    compiledDataStore = compiledData || null;
+    appendixStore = appendix || null;
+    
     console.log(`Loaded ${headlines.length} cached headlines into backend store for testing`);
+    if (compiledDataStore) {
+      console.log(`Loaded compiled data (${compiledDataStore.length} chars) for testing`);
+    }
+    if (appendixStore) {
+      console.log(`Loaded appendix data for testing`);
+    }
     
     res.json({ 
       success: true, 
       message: `Loaded ${headlines.length} cached headlines for testing`,
-      headlines: headlinesStore
+      headlines: headlinesStore,
+      hasCompiledData: !!compiledDataStore,
+      hasAppendix: !!appendixStore
     });
   });
 
@@ -358,6 +376,7 @@ export function registerRoutes(app) {
           message: "Podcast script generated successfully (database save failed)",
           warning: "Script could not be saved to database due to connectivity issues"
         });
+      }
       
     } catch (error) {
       console.error("Error generating podcast:", error);

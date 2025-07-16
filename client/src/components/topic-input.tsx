@@ -9,9 +9,10 @@ import { apiRequest, queryClient } from "@/lib/queryClient";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
+  onHeadlinesGenerated?: (data: any) => void;
 }
 
-export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
+export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: TopicInputProps) {
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
@@ -32,6 +33,11 @@ export default function TopicInput({ onTopicsSubmitted }: TopicInputProps) {
       // Invalidate and refetch headlines query
       queryClient.invalidateQueries({ queryKey: ["/api/headlines"] });
       onTopicsSubmitted(topics);
+      
+      // Pass full data to parent for caching
+      if (onHeadlinesGenerated) {
+        onHeadlinesGenerated(data);
+      }
     },
     onError: (error: any) => {
       toast({
