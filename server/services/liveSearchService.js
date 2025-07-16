@@ -660,7 +660,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
       messages: [
         {
           role: "system",
-          content: `Analyze these high-engagement X posts from the user's timeline. Infer 2-6 emergent topics (e.g., "AI Ethics", "Local Elections"). Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+          content: `Analyze these high-engagement X posts from the user's timeline. Infer 2-3 emergent topics (e.g., "AI Ethics", "Local Elections"). Then add 2-3 semantic topics based on the emergent topics. Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
         },
         { role: "user", content: postsSummary }
       ],
@@ -749,6 +749,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         5. Preserve exact URLs and metadata from the provided data
         6. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.
         7. Rank headlines by highest engagement (views + likes from X posts supporting a given headline.)
+        8. CRITICAL: At a minimum, ensure that ALL headlines in the raw data are included in the final output. You may edit headlines and add headlines, but the total number of headlines in the final result must, at a minimum, match the amount given in the compiled raw data. 
 
         Compiled raw data:
         
