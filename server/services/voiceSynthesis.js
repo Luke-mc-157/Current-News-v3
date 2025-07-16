@@ -12,6 +12,7 @@ const ELEVENLABS_API_URL = 'https://api.elevenlabs.io/v1';
 
 // Curated voice options based on ElevenLabs premium voices
 export const VOICE_OPTIONS = [
+  { id: 'Xb7hH8MSUJpSbSDYk0k2', name: 'Alice', description: 'ElevenLabs Alice voice' },
   { id: 'nPczCjzI2devNBz1zQrb', name: 'Bryan - Professional Narrator', description: 'Warm and confident American male voice, perfect for news and educational content' },
   { id: '9BWtsMINqrJLrRacOk9x', name: 'Aria', description: 'Clear American female voice' },
   { id: 'pqHfZKP75CvOlQylNhV4', name: 'Bill', description: 'Friendly American male voice' },
@@ -53,7 +54,7 @@ export async function getAvailableVoices() {
 }
 
 // Generate audio from text  
-export async function generateAudio(text, voiceId = 'nPczCjzI2devNBz1zQrb', episodeId) {
+export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', episodeId) {
   if (!ELEVENLABS_API_KEY) {
     throw new Error("ElevenLabs API key not set. Please add ELEVENLABS_API_KEY to your secrets.");
   }
@@ -70,7 +71,7 @@ export async function generateAudio(text, voiceId = 'nPczCjzI2devNBz1zQrb', epis
       },
       body: JSON.stringify({
         text: text,
-        model_id: 'eleven_monolingual_v1',
+        model_id: 'eleven_turbo_v2',
         voice_settings: {
           stability: 0.5,
           similarity_boost: 0.5

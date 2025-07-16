@@ -17,7 +17,7 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
   const [script, setScript] = useState<string | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [selectedDuration, setSelectedDuration] = useState('10');
-  const [selectedVoice, setSelectedVoice] = useState('nPczCjzI2devNBz1zQrb');
+  const [selectedVoice, setSelectedVoice] = useState('Xb7hH8MSUJpSbSDYk0k2');
   const { toast } = useToast();
 
   const handleGeneratePodcast = async () => {
@@ -226,6 +226,7 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="Xb7hH8MSUJpSbSDYk0k2">Alice</SelectItem>
                   <SelectItem value="nPczCjzI2devNBz1zQrb">Bryan - Professional Narrator (Warm American Male)</SelectItem>
                   <SelectItem value="9BWtsMINqrJLrRacOk9x">Aria (Clear American Female)</SelectItem>
                   <SelectItem value="pqHfZKP75CvOlQylNhV4">Bill (Friendly American Male)</SelectItem>
