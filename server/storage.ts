@@ -1,4 +1,6 @@
 import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts } from "@shared/schema";
+import { db, retryDatabaseOperation } from "./db";
+import { eq, desc } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -408,8 +410,13 @@ export class DatabaseStorage implements IStorage {
       ...episode,
       headlineIds: Array.isArray(episode.headlineIds) ? episode.headlineIds as string[] : Array.from(episode.headlineIds || []) as string[]
     };
-    const [newEpisode] = await db.insert(podcastEpisodes).values([cleanEpisode]).returning();
-    return newEpisode;
+    
+    return await retryDatabaseOperation(async () => {
+      console.log('💾 Attempting to save podcast episode to database...');
+      const [newEpisode] = await db.insert(podcastEpisodes).values([cleanEpisode]).returning();
+      console.log('✅ Podcast episode saved successfully');
+      return newEpisode;
+    }, 3, 1500); // 3 retries with 1.5 second base delay
   }
 
   async getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined> {
@@ -442,8 +449,10 @@ export class DatabaseStorage implements IStorage {
       expiresAtType: typeof cleanToken.expiresAt
     });
     
-    const [newToken] = await db.insert(xAuthTokens).values(cleanToken).returning();
-    return newToken;
+    return await retryDatabaseOperation(async () => {
+      const [newToken] = await db.insert(xAuthTokens).values(cleanToken).returning();
+      return newToken;
+    });
   }
 
   async getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined> {
