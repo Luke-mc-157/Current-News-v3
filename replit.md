@@ -124,16 +124,16 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 17, 2025 - 5:40 PM)
-- **✅ FIXED OAUTH URL DOUBLE SLASH ISSUE**: Resolved critical OAuth authentication failure when users are already logged into X
-  - **Root Cause**: twitter-api-v2 library generates URLs with double slash (`x.com//oauth2/authorize`) causing X to reject authentication
-  - **Browser Session Interference**: X authentication fails when user already logged into X in same browser due to session conflicts
+### Latest Updates (January 17, 2025 - 5:50 PM)
+- **✅ FIXED OAUTH URL DOMAIN ISSUE**: Resolved critical OAuth authentication failure - wrong domain being used for authorization
+  - **Root Cause**: twitter-api-v2 library v1.24.0 generates OAuth URLs with `x.com` domain, but X still requires `twitter.com` for authorization endpoints
+  - **Domain Mismatch**: Library generates `https://x.com/i/oauth2/authorize` but X expects `https://twitter.com/i/oauth2/authorize`
   - **Solution Implemented**: 
-    - Added URL correction in getXLoginUrl function to replace `//oauth2` with `/oauth2`
-    - Enhanced logging to track when double slash issue occurs
+    - Added domain correction in getXLoginUrl function to replace `x.com` with `twitter.com` for OAuth authorization
+    - Enhanced logging to track when domain correction occurs
     - Maintained existing S256 code challenge method fix
-  - **Authentication Status**: X authentication now works correctly regardless of existing browser X sessions
-  - **Results**: OAuth flow completes successfully with proper URL formatting, eliminating "Something went wrong" errors
+  - **Standards Compliance**: Authorization URLs use `twitter.com` (user-facing), API calls use `api.x.com` (backend)
+  - **Results**: OAuth flow now uses correct domain, eliminating "Something went wrong" authentication errors
 
 ### Previous Updates (January 17, 2025 - 4:15 PM)
 - **✅ FIXED X AUTHENTICATION FALSE POSITIVE**: Resolved issue where X button showed green (authenticated) but timeline fetch failed
