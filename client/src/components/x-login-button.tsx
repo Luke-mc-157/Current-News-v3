@@ -146,7 +146,7 @@ export default function XLoginButton({
         className={`gap-2 ${className}`}
       >
         <XIcon className="w-4 h-4" />
-        {isLoading ? 'Connecting...' : 'Login with X'}
+        {isLoading ? 'Connecting...' : 'Enhance with'}
       </Button>
 
       <Dialog open={showDialog} onOpenChange={setShowDialog}>
