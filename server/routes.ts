@@ -20,6 +20,8 @@ import {
 } from "./services/auth.js";
 import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, validateXAuthEnvironment } from "./services/xAuth.js";
 import { fetchUserTimeline } from "./services/xTimeline.js";
+import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
+import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -58,6 +60,11 @@ async function requireAuth(req, res, next) {
 
 export function registerRoutes(app) {
   const router = express.Router();
+  
+  // Add development middleware
+  app.use(addDevHeaders);
+  app.use(devAutoLogin);
+  
   let headlinesStore = [];
   let appendixStore = null;
   let compiledDataStore = null; // Store raw compiled data for podcast generation
@@ -1254,6 +1261,90 @@ export function registerRoutes(app) {
       console.error("Error resetting X auth:", error);
       res.status(500).json({ success: false, message: 'Failed to reset X authentication' });
     }
+  });
+
+  // Development-only routes
+  router.post("/api/dev/seed-database", devOnly, async (req, res) => {
+    try {
+      const result = await seedDatabase();
+      res.json(result);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.post("/api/dev/clear-data", devOnly, async (req, res) => {
+    try {
+      const result = await clearTestData();
+      res.json(result);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.get("/api/dev/users", devOnly, (req, res) => {
+    const testUsers = getTestUsers();
+    res.json({ 
+      users: testUsers,
+      currentUser: req.user ? {
+        id: req.user.id,
+        username: req.user.username,
+        email: req.user.email
+      } : null
+    });
+  });
+  
+  router.post("/api/dev/switch-user/:userId", devOnly, async (req, res) => {
+    try {
+      const userId = parseInt(req.params.userId);
+      const user = await storage.getUser(userId);
+      
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      
+      // Update session
+      req.session.userId = user.id;
+      req.session.username = user.username;
+      
+      // Check X auth status
+      const xAuth = await storage.getXAuthTokenByUserId(user.id);
+      if (xAuth) {
+        req.session.xAuthenticated = true;
+        req.session.xHandle = xAuth.xHandle;
+      } else {
+        req.session.xAuthenticated = false;
+        req.session.xHandle = null;
+      }
+      
+      res.json({ 
+        success: true, 
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        xAuth: xAuth ? {
+          xHandle: xAuth.xHandle,
+          authenticated: true
+        } : { authenticated: false }
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.get("/api/dev/environment", devOnly, (req, res) => {
+    res.json({
+      environment: 'development',
+      nodeEnv: process.env.NODE_ENV,
+      replitDomains: process.env.REPLIT_DOMAINS,
+      currentUser: req.user ? {
+        id: req.user.id,
+        username: req.user.username
+      } : null,
+      autoLoginEnabled: true
+    });
   });
 
   // Authentication routes

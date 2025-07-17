@@ -4,6 +4,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { DevBanner } from "@/components/DevBanner";
+import { EnvironmentIndicator } from "@/components/EnvironmentIndicator";
 import Home from "@/pages/home";
 import PodcastTest from "@/pages/podcast-test";
 import ScraperTest from "@/pages/scraper-test";
@@ -27,8 +29,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <TooltipProvider>
+          <DevBanner />
           <Toaster />
           <Router />
+          <EnvironmentIndicator />
         </TooltipProvider>
       </AuthProvider>
     </QueryClientProvider>
