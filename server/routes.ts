@@ -26,6 +26,36 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Authentication middleware
+async function requireAuth(req, res, next) {
+  try {
+    // Check authorization header
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      const user = await getUserFromToken(token);
+      if (user) {
+        req.user = user;
+        return next();
+      }
+    }
+    
+    // Check session
+    if (req.session?.userId) {
+      const user = await storage.getUser(req.session.userId);
+      if (user) {
+        req.user = user;
+        return next();
+      }
+    }
+    
+    return res.status(401).json({ message: "Authentication required" });
+  } catch (error) {
+    console.error("Auth middleware error:", error);
+    return res.status(401).json({ message: "Authentication required" });
+  }
+}
+
 export function registerRoutes(app) {
   const router = express.Router();
   let headlinesStore = [];
@@ -45,9 +75,13 @@ export function registerRoutes(app) {
       console.log("🚀 Using xAI Live Search for headlines generation");
       const startTime = Date.now();
       
-      // Check if user has authenticated with X (use session if available)
-      const userId = req.session?.userId || 1; // Get from session or default to 1
-      const authToken = await storage.getXAuthTokenByUserId(userId);
+      // Check if user has authenticated with X
+      const userId = req.session?.userId || req.user?.id;
+      let authToken = null;
+      
+      if (userId) {
+        authToken = await storage.getXAuthTokenByUserId(userId);
+      }
       
       let userHandle = null;
       let accessToken = null;
@@ -522,14 +556,7 @@ export function registerRoutes(app) {
   // Serve static podcast audio files
   app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
 
-  // X OAuth authentication routes
-  let userAuthData = { 
-    authenticated: false,
-    accessToken: null,
-    refreshToken: null,
-    timestamp: null,
-    xHandle: null
-  }; // In-memory storage for demo (use database in production)
+  // X OAuth authentication routes (now using database-stored tokens)
   
   // X Auth status endpoint
   router.get("/api/auth/x/status", async (req, res) => {
@@ -537,13 +564,15 @@ export function registerRoutes(app) {
       const status = getXAuthStatus();
       
       // Check session and database for persistent authentication
-      const userId = req.session?.userId || 1;
+      const userId = req.session?.userId;
       let authToken = null;
       
-      try {
-        authToken = await storage.getXAuthTokenByUserId(userId);
-      } catch (dbError) {
-        console.log('Database check failed:', dbError.message);
+      if (userId) {
+        try {
+          authToken = await storage.getXAuthTokenByUserId(userId);
+        } catch (dbError) {
+          console.log('Database check failed:', dbError.message);
+        }
       }
       
       const isAuthenticated = !!(authToken && authToken.accessToken);
@@ -589,8 +618,8 @@ export function registerRoutes(app) {
     }
   });
   
-  // Generate X login URL
-  router.post("/api/auth/x/login", async (req, res) => {
+  // Generate X login URL (requires authentication)
+  router.post("/api/auth/x/login", requireAuth, async (req, res) => {
     try {
       // Enhanced validation before attempting to generate URL
       const validation = validateXAuthEnvironment();
@@ -630,12 +659,12 @@ export function registerRoutes(app) {
   });
   
   // Fetch and store user's X data (timeline working, follows needs Project attachment)
-  router.post("/api/x/fetch-user-data", async (req, res) => {
+  router.post("/api/x/fetch-user-data", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       
-      // Get user's X auth token (use session if available)
-      const sessionUserId = req.session?.userId || userId;
+      // Use the authenticated user ID directly
+      const sessionUserId = userId;
       const authToken = await storage.getXAuthTokenByUserId(sessionUserId);
       if (!authToken) {
         return res.status(401).json({ 
@@ -686,7 +715,7 @@ export function registerRoutes(app) {
       }
 
       // Store whatever data we got
-      const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
+      const storeResult = await storeUserData(storage, sessionUserId, follows, timelinePosts);
 
       const hasAnyData = follows.length > 0 || timelinePosts.length > 0;
 
@@ -722,10 +751,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Get stored user follows
-  router.get("/api/x/follows", async (req, res) => {
+  // Get stored user follows (requires authentication)
+  router.get("/api/x/follows", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       const follows = await storage.getUserFollows(userId);
       
       res.json({
@@ -739,10 +768,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Get stored user timeline posts
-  router.get("/api/x/timeline", async (req, res) => {
+  // Get stored user timeline posts (requires authentication)
+  router.get("/api/x/timeline", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       const days = parseInt(req.query.days) || 7;
       const posts = await storage.getUserTimelinePosts(userId, days);
       
@@ -758,10 +787,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Quick test endpoint to verify Project attachment fix
-  router.post("/api/x/test-project-attachment", async (req, res) => {
+  // Quick test endpoint to verify Project attachment fix (requires authentication)
+  router.post("/api/x/test-project-attachment", requireAuth, async (req, res) => {
     try {
-      const userId = 1;
+      const userId = req.user.id;
       
       // Get user's X auth token
       const authToken = await storage.getXAuthTokenByUserId(userId);
@@ -970,8 +999,11 @@ export function registerRoutes(app) {
         throw new Error('Failed to fetch user info with access token');
       }
       
-      // Store in database (for now use userId 1 as default)
-      const userId = 1; // In production, get from session/JWT
+      // Get user ID from session (require authentication)
+      const userId = req.session?.userId;
+      if (!userId) {
+        throw new Error('User must be logged in to connect X account');
+      }
       
       // Convert expires timestamp to proper Date object for PostgreSQL
       let expiresAtDate;
@@ -1019,20 +1051,7 @@ export function registerRoutes(app) {
       req.session.xAuthenticated = true;
       req.session.xHandle = user.username;
       
-      console.log(`💾 Session established for user ${user.username}`);
-      
-      // Store auth data temporarily for immediate use
-      userAuthData.accessToken = authResult.accessToken;
-      userAuthData.refreshToken = authResult.refreshToken;
-      userAuthData.authenticated = true;
-      userAuthData.timestamp = Date.now();
-      userAuthData.xHandle = user.username;
-      
-      console.log('X Authentication successful:', {
-        xHandle: user.username,
-        authenticated: userAuthData.authenticated,
-        timestamp: userAuthData.timestamp
-      });
+      console.log(`💾 Session and database tokens stored for user ${user.username}`);
       
       // Return success page that closes popup
       res.send(`
@@ -1165,38 +1184,76 @@ export function registerRoutes(app) {
     });
   });
 
-  // Check auth status for frontend polling
-  router.get("/api/auth/x/check", (req, res) => {
-    const isAuthenticated = userAuthData.authenticated && 
-                           userAuthData.timestamp && 
-                           (Date.now() - userAuthData.timestamp < 3600000); // 1 hour expiry
-    
-    console.log('X Auth Check:', {
-      authenticated: userAuthData.authenticated,
-      timestamp: userAuthData.timestamp,
-      isAuthenticated,
-      timeSinceAuth: userAuthData.timestamp ? Date.now() - userAuthData.timestamp : null
-    });
-    
-    res.json({ 
-      authenticated: isAuthenticated,
-      accessToken: isAuthenticated ? userAuthData.accessToken : null,
-      xHandle: isAuthenticated ? userAuthData.xHandle : null
-    });
+  // Check auth status for frontend polling (requires authentication)
+  router.get("/api/auth/x/check", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      
+      if (!authToken) {
+        return res.json({ 
+          authenticated: false,
+          accessToken: null,
+          xHandle: null
+        });
+      }
+      
+      // Check if token is still valid (not expired)
+      const isExpired = authToken.expiresAt && new Date() > authToken.expiresAt;
+      
+      console.log('X Auth Check:', {
+        userId,
+        hasToken: !!authToken,
+        xHandle: authToken.xHandle,
+        isExpired,
+        expiresAt: authToken.expiresAt
+      });
+      
+      res.json({ 
+        authenticated: !isExpired,
+        accessToken: !isExpired ? authToken.accessToken : null,
+        xHandle: !isExpired ? authToken.xHandle : null
+      });
+    } catch (error) {
+      console.error("Error checking X auth status:", error);
+      res.json({ 
+        authenticated: false,
+        accessToken: null,
+        xHandle: null
+      });
+    }
   });
 
-  // Reset auth state (for testing or logout)
-  router.post("/api/auth/x/reset", (req, res) => {
-    userAuthData = {
-      authenticated: false,
-      accessToken: null,
-      refreshToken: null,
-      timestamp: null,
-      xHandle: null
-    };
-    
-    console.log('X Auth state reset');
-    res.json({ success: true, message: 'Authentication state reset' });
+  // Reset auth state (for testing or logout) - requires authentication
+  router.post("/api/auth/x/reset", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      
+      // Delete X auth tokens from database
+      const existingToken = await storage.getXAuthTokenByUserId(userId);
+      if (existingToken) {
+        await storage.updateXAuthToken(userId, {
+          accessToken: null,
+          refreshToken: null,
+          expiresAt: null,
+          xUserId: null,
+          xHandle: null
+        });
+        console.log(`🗑️ Cleared X auth tokens for user ${userId}`);
+      }
+      
+      // Clear session X auth data
+      if (req.session) {
+        req.session.xAuthenticated = false;
+        req.session.xHandle = null;
+      }
+      
+      console.log('X Auth state reset');
+      res.json({ success: true, message: 'X authentication reset successfully' });
+    } catch (error) {
+      console.error("Error resetting X auth:", error);
+      res.status(500).json({ success: false, message: 'Failed to reset X authentication' });
+    }
   });
 
   // Authentication routes
