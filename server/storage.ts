@@ -1,6 +1,6 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, and, gte, lt } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -46,6 +46,25 @@ export interface IStorage {
   createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken>;
   getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined>;
   markPasswordResetTokenUsed(token: string): Promise<void>;
+  
+  // Podcast preferences methods
+  createPodcastPreferences(prefs: InsertPodcastPreferences): Promise<PodcastPreferences>;
+  getPodcastPreferences(userId: number): Promise<PodcastPreferences | undefined>;
+  updatePodcastPreferences(userId: number, updates: Partial<PodcastPreferences>): Promise<PodcastPreferences | undefined>;
+  
+  // Scheduled podcasts methods
+  createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts>;
+  getScheduledPodcast(id: number): Promise<ScheduledPodcasts | undefined>;
+  getPendingPodcastsDue(): Promise<ScheduledPodcasts[]>;
+  getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]>;
+  updateScheduledPodcast(id: number, updates: Partial<ScheduledPodcasts>): Promise<ScheduledPodcasts | undefined>;
+  
+  // User last search methods
+  upsertUserLastSearch(search: InsertUserLastSearch): Promise<UserLastSearch>;
+  getUserLastSearch(userId: number): Promise<UserLastSearch | undefined>;
+  
+  // Recent podcasts methods
+  getRecentPodcastEpisodes(userId: number, limit?: number): Promise<PodcastEpisode[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -621,6 +640,100 @@ export class DatabaseStorage implements IStorage {
         eq(userTimelinePosts.userId, userId),
         lt(userTimelinePosts.createdAt, cutoffDate)
       ));
+  }
+
+  // Podcast preferences methods
+  async createPodcastPreferences(prefs: InsertPodcastPreferences): Promise<PodcastPreferences> {
+    const [newPrefs] = await db.insert(podcastPreferences).values(prefs).returning();
+    return newPrefs;
+  }
+
+  async getPodcastPreferences(userId: number): Promise<PodcastPreferences | undefined> {
+    const [prefs] = await db.select().from(podcastPreferences).where(eq(podcastPreferences.userId, userId));
+    return prefs || undefined;
+  }
+
+  async updatePodcastPreferences(userId: number, updates: Partial<PodcastPreferences>): Promise<PodcastPreferences | undefined> {
+    const cleanedUpdates = {
+      ...updates,
+      updatedAt: new Date()
+    };
+    const [updatedPrefs] = await db.update(podcastPreferences)
+      .set(cleanedUpdates)
+      .where(eq(podcastPreferences.userId, userId))
+      .returning();
+    return updatedPrefs || undefined;
+  }
+
+  // Scheduled podcasts methods
+  async createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts> {
+    const [newScheduled] = await db.insert(scheduledPodcasts).values(scheduled).returning();
+    return newScheduled;
+  }
+
+  async getScheduledPodcast(id: number): Promise<ScheduledPodcasts | undefined> {
+    const [scheduled] = await db.select().from(scheduledPodcasts).where(eq(scheduledPodcasts.id, id));
+    return scheduled || undefined;
+  }
+
+  async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
+    const now = new Date();
+    return await db.select().from(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.status, 'pending'),
+        lt(scheduledPodcasts.scheduledFor, now)
+      ))
+      .orderBy(scheduledPodcasts.scheduledFor);
+  }
+
+  async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {
+    return await db.select().from(scheduledPodcasts)
+      .where(eq(scheduledPodcasts.userId, userId))
+      .orderBy(desc(scheduledPodcasts.scheduledFor));
+  }
+
+  async updateScheduledPodcast(id: number, updates: Partial<ScheduledPodcasts>): Promise<ScheduledPodcasts | undefined> {
+    const [updated] = await db.update(scheduledPodcasts)
+      .set(updates)
+      .where(eq(scheduledPodcasts.id, id))
+      .returning();
+    return updated || undefined;
+  }
+
+  // User last search methods
+  async upsertUserLastSearch(search: InsertUserLastSearch): Promise<UserLastSearch> {
+    const existing = await db.select().from(userLastSearch)
+      .where(eq(userLastSearch.userId, search.userId));
+    
+    if (existing.length > 0) {
+      const [updated] = await db.update(userLastSearch)
+        .set({
+          topics: search.topics,
+          searchedAt: new Date()
+        })
+        .where(eq(userLastSearch.userId, search.userId))
+        .returning();
+      return updated;
+    } else {
+      const [created] = await db.insert(userLastSearch)
+        .values(search)
+        .returning();
+      return created;
+    }
+  }
+
+  async getUserLastSearch(userId: number): Promise<UserLastSearch | undefined> {
+    const [search] = await db.select().from(userLastSearch)
+      .where(eq(userLastSearch.userId, userId));
+    return search || undefined;
+  }
+
+  // Recent podcasts methods
+  async getRecentPodcastEpisodes(userId: number, limit: number = 5): Promise<PodcastEpisode[]> {
+    return await db.select().from(podcastEpisodes)
+      .where(eq(podcastEpisodes.userId, userId))
+      .orderBy(desc(podcastEpisodes.createdAt))
+      .limit(limit);
   }
 }
 

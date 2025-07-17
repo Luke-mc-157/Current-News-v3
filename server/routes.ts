@@ -113,6 +113,14 @@ export function registerRoutes(app) {
         console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
       }
       
+      // Save user's last search topics
+      if (userId) {
+        await storage.upsertUserLastSearch({
+          userId,
+          topics
+        });
+      }
+      
       // Use Live Search to generate headlines with optional timeline posts
       const result = await generateHeadlinesWithLiveSearch(topics, userId, userHandle, accessToken);
       const { headlines, appendix } = result;
@@ -1303,6 +1311,108 @@ export function registerRoutes(app) {
     } catch (error) {
       console.error("Error resetting X auth:", error);
       res.status(500).json({ success: false, message: 'Failed to reset X authentication' });
+    }
+  });
+
+  // Podcast preferences routes
+  router.get("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const preferences = await storage.getPodcastPreferences(userId);
+      res.json(preferences || null);
+    } catch (error) {
+      console.error("Error fetching podcast preferences:", error);
+      res.status(500).json({ error: "Failed to fetch podcast preferences" });
+    }
+  });
+
+  router.post("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const { enabled, cadence, customDays, times, topics, duration, voiceId, enhanceWithX } = req.body;
+      
+      // Validate input
+      if (!cadence || !times || !times.length || !topics || !topics.length || !duration || !voiceId) {
+        return res.status(400).json({ error: "Missing required fields" });
+      }
+      
+      // Check if preferences already exist
+      const existing = await storage.getPodcastPreferences(userId);
+      
+      if (existing) {
+        // Update existing preferences
+        const updated = await storage.updatePodcastPreferences(userId, {
+          enabled,
+          cadence,
+          customDays,
+          times,
+          topics,
+          duration,
+          voiceId,
+          enhanceWithX
+        });
+        res.json(updated);
+      } else {
+        // Create new preferences
+        const created = await storage.createPodcastPreferences({
+          userId,
+          enabled,
+          cadence,
+          customDays,
+          times,
+          topics,
+          duration,
+          voiceId,
+          enhanceWithX
+        });
+        res.json(created);
+      }
+    } catch (error) {
+      console.error("Error saving podcast preferences:", error);
+      res.status(500).json({ error: "Failed to save podcast preferences" });
+    }
+  });
+
+  router.patch("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const updates = req.body;
+      
+      const updated = await storage.updatePodcastPreferences(userId, updates);
+      if (!updated) {
+        return res.status(404).json({ error: "Podcast preferences not found" });
+      }
+      
+      res.json(updated);
+    } catch (error) {
+      console.error("Error updating podcast preferences:", error);
+      res.status(500).json({ error: "Failed to update podcast preferences" });
+    }
+  });
+
+  // Get recent podcast episodes
+  router.get("/api/podcast-episodes/recent", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const limit = parseInt(req.query.limit as string) || 5;
+      
+      const episodes = await storage.getRecentPodcastEpisodes(userId, limit);
+      res.json(episodes);
+    } catch (error) {
+      console.error("Error fetching recent podcast episodes:", error);
+      res.status(500).json({ error: "Failed to fetch recent podcast episodes" });
+    }
+  });
+
+  // Get user's last search topics
+  router.get("/api/user/last-topics", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const lastSearch = await storage.getUserLastSearch(userId);
+      res.json(lastSearch?.topics || []);
+    } catch (error) {
+      console.error("Error fetching last topics:", error);
+      res.status(500).json({ error: "Failed to fetch last topics" });
     }
   });
 

@@ -64,7 +64,7 @@ export default function Home() {
               <a href="/scraper-test" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Scraper Test
               </a>
-              <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+              <a href="/podcasts" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Podcasts
               </a>
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
