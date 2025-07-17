@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { DevBanner } from "@/components/DevBanner";
 import { EnvironmentIndicator } from "@/components/EnvironmentIndicator";
 import Home from "@/pages/home";
+import Settings from "@/pages/settings";
 import PodcastTest from "@/pages/podcast-test";
 import ScraperTest from "@/pages/scraper-test";
 import ResetPassword from "@/pages/reset-password";

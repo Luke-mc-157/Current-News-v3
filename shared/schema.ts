@@ -65,6 +65,22 @@ export const podcastSettings = pgTable("podcast_settings", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+export const podcastSchedule = pgTable("podcast_schedule", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  frequency: integer("frequency").notNull(), // 1=daily, 2=weekly, 3=monthly
+  times: jsonb("times").$type<string[]>().notNull(), // Array of times like ["09:00", "17:00"]
+  timezone: text("timezone").notNull().default("UTC"),
+  durationMinutes: integer("duration_minutes").notNull().default(10),
+  voiceId: text("voice_id").notNull(),
+  email: text("email").notNull(),
+  isActive: boolean("is_active").default(true),
+  lastSent: timestamp("last_sent"),
+  nextSend: timestamp("next_send"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
 export const podcastContent = pgTable("podcast_content", {
   id: serial("id").primaryKey(),
   headlineId: text("headline_id").notNull(),
@@ -163,6 +179,15 @@ export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
 export type InsertPodcastContent = z.infer<typeof insertPodcastContentSchema>;
 export type InsertPodcastEpisode = z.infer<typeof insertPodcastEpisodeSchema>;
+
+export type PodcastSchedule = typeof podcastSchedule.$inferSelect;
+export type InsertPodcastSchedule = typeof podcastSchedule.$inferInsert;
+
+export const insertPodcastScheduleSchema = createInsertSchema(podcastSchedule).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
 export type InsertXAuthTokens = z.infer<typeof insertXAuthTokensSchema>;
 export type InsertUserFollows = z.infer<typeof insertUserFollowsSchema>;
 export type InsertUserTimelinePosts = z.infer<typeof insertUserTimelinePostsSchema>;

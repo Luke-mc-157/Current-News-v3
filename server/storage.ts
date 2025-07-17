@@ -1,6 +1,6 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, podcastSchedule, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type PodcastSchedule, type InsertPodcastSchedule, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, lte } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -26,6 +26,13 @@ export interface IStorage {
   getPodcastEpisode(id: number): Promise<PodcastEpisode | undefined>;
   getLatestPodcastEpisode(userId: number): Promise<PodcastEpisode | undefined>;
   updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined>;
+  
+  // Podcast schedule methods
+  createPodcastSchedule(schedule: InsertPodcastSchedule): Promise<PodcastSchedule>;
+  getPodcastSchedule(userId: number): Promise<PodcastSchedule | undefined>;
+  getPodcastSchedulesDue(currentTime: Date): Promise<PodcastSchedule[]>;
+  updatePodcastSchedule(id: number, updates: Partial<PodcastSchedule>): Promise<PodcastSchedule | undefined>;
+  deletePodcastSchedule(id: number): Promise<void>;
   
   // X Auth token methods
   createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens>;
@@ -55,6 +62,7 @@ export class MemStorage implements IStorage {
   private podcastSettings: Map<number, PodcastSettings>;
   private podcastContent: Map<number, PodcastContent>;
   private podcastEpisodes: Map<number, PodcastEpisode>;
+  private podcastSchedules: Map<number, PodcastSchedule>;
   private xAuthTokens: Map<number, XAuthTokens>;
   private userFollows: Map<number, UserFollows>;
   private userTimelinePosts: Map<number, UserTimelinePosts>;
@@ -64,6 +72,7 @@ export class MemStorage implements IStorage {
   private currentPodcastId: number;
   private currentContentId: number;
   private currentEpisodeId: number;
+  private currentScheduleId: number;
   private currentTokenId: number;
   private currentFollowId: number;
   private currentPostId: number;
@@ -75,6 +84,7 @@ export class MemStorage implements IStorage {
     this.podcastSettings = new Map();
     this.podcastContent = new Map();
     this.podcastEpisodes = new Map();
+    this.podcastSchedules = new Map();
     this.xAuthTokens = new Map();
     this.userFollows = new Map();
     this.userTimelinePosts = new Map();
@@ -84,6 +94,7 @@ export class MemStorage implements IStorage {
     this.currentPodcastId = 1;
     this.currentContentId = 1;
     this.currentEpisodeId = 1;
+    this.currentScheduleId = 1;
     this.currentTokenId = 1;
     this.currentFollowId = 1;
     this.currentPostId = 1;
@@ -360,6 +371,53 @@ export class MemStorage implements IStorage {
     return updatedEpisode;
   }
 
+  // Podcast schedule methods
+  async createPodcastSchedule(schedule: InsertPodcastSchedule): Promise<PodcastSchedule> {
+    const id = this.currentScheduleId++;
+    const newSchedule: PodcastSchedule = {
+      id,
+      userId: schedule.userId,
+      frequency: schedule.frequency,
+      times: Array.isArray(schedule.times) ? schedule.times as string[] : [],
+      timezone: schedule.timezone || 'UTC',
+      durationMinutes: schedule.durationMinutes || 10,
+      voiceId: schedule.voiceId,
+      email: schedule.email,
+      isActive: schedule.isActive !== undefined ? schedule.isActive : true,
+      lastSent: schedule.lastSent || null,
+      nextSend: schedule.nextSend || null,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
+    this.podcastSchedules.set(id, newSchedule);
+    return newSchedule;
+  }
+
+  async getPodcastSchedule(userId: number): Promise<PodcastSchedule | undefined> {
+    return Array.from(this.podcastSchedules.values()).find(
+      schedule => schedule.userId === userId
+    );
+  }
+
+  async getPodcastSchedulesDue(currentTime: Date): Promise<PodcastSchedule[]> {
+    return Array.from(this.podcastSchedules.values()).filter(
+      schedule => schedule.isActive && schedule.nextSend && schedule.nextSend <= currentTime
+    );
+  }
+
+  async updatePodcastSchedule(id: number, updates: Partial<PodcastSchedule>): Promise<PodcastSchedule | undefined> {
+    const schedule = this.podcastSchedules.get(id);
+    if (!schedule) return undefined;
+    
+    const updatedSchedule = { ...schedule, ...updates, updatedAt: new Date() };
+    this.podcastSchedules.set(id, updatedSchedule);
+    return updatedSchedule;
+  }
+
+  async deletePodcastSchedule(id: number): Promise<void> {
+    this.podcastSchedules.delete(id);
+  }
+
   async createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens> {
     const id = this.currentTokenId++;
     const newToken: XAuthTokens = {
@@ -538,6 +596,42 @@ export class DatabaseStorage implements IStorage {
   async updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined> {
     const [updatedEpisode] = await db.update(podcastEpisodes).set(updates).where(eq(podcastEpisodes.id, id)).returning();
     return updatedEpisode || undefined;
+  }
+
+  // Podcast schedule methods
+  async createPodcastSchedule(schedule: InsertPodcastSchedule): Promise<PodcastSchedule> {
+    const cleanSchedule = {
+      ...schedule,
+      times: Array.isArray(schedule.times) ? schedule.times as string[] : Array.from(schedule.times || []) as string[]
+    };
+    const [newSchedule] = await db.insert(podcastSchedule).values([cleanSchedule]).returning();
+    return newSchedule;
+  }
+
+  async getPodcastSchedule(userId: number): Promise<PodcastSchedule | undefined> {
+    const [schedule] = await db.select().from(podcastSchedule).where(eq(podcastSchedule.userId, userId));
+    return schedule || undefined;
+  }
+
+  async getPodcastSchedulesDue(currentTime: Date): Promise<PodcastSchedule[]> {
+    const schedules = await db.select().from(podcastSchedule);
+    return schedules.filter(schedule => 
+      schedule.isActive && 
+      schedule.nextSend && 
+      schedule.nextSend <= currentTime
+    );
+  }
+
+  async updatePodcastSchedule(id: number, updates: Partial<PodcastSchedule>): Promise<PodcastSchedule | undefined> {
+    const [updatedSchedule] = await db.update(podcastSchedule)
+      .set({ ...updates, updatedAt: new Date() })
+      .where(eq(podcastSchedule.id, id))
+      .returning();
+    return updatedSchedule || undefined;
+  }
+
+  async deletePodcastSchedule(id: number): Promise<void> {
+    await db.delete(podcastSchedule).where(eq(podcastSchedule.id, id));
   }
 
   async createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens> {

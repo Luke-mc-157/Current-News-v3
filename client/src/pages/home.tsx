@@ -65,7 +65,7 @@ export default function Home() {
                 Scraper Test
               </a>
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
-                My Podcasts
+                Podcasts
               </a>
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Settings
