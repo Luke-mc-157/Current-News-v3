@@ -610,17 +610,28 @@ export function registerRoutes(app) {
       const status = getXAuthStatus();
       const websiteUrl = status.callbackUrl.replace('/auth/twitter/callback', '');
       
-      // Detect potential production domains
-      const productionDomains = [];
+      // Calculate ALL possible production domains
+      const allPossibleDomains = [];
+      
+      // Current domain from REPLIT_DOMAINS
       if (process.env.REPLIT_DOMAINS) {
         process.env.REPLIT_DOMAINS.split(',').forEach(domain => {
-          productionDomains.push(`https://${domain}/auth/twitter/callback`);
+          allPossibleDomains.push(`https://${domain}/auth/twitter/callback`);
         });
       }
       
-      // Check if current domain looks like production
+      // Production deployment domain (.replit.app)
+      if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
+        allPossibleDomains.push(`https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app/auth/twitter/callback`);
+        allPossibleDomains.push(`https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`);
+      }
+      
+      // Remove duplicates
+      const uniqueDomains = [...new Set(allPossibleDomains)];
+      
+      // Detect environment
       const isProduction = websiteUrl.includes('.replit.app') || 
-                          websiteUrl.includes('replit.dev') === false;
+                          !websiteUrl.includes('.replit.dev');
       
       res.json({
         configured: status.configured,
@@ -629,20 +640,27 @@ export function registerRoutes(app) {
           websiteUrl,
           callbackUrl: status.callbackUrl
         },
-        allDomains: productionDomains.length > 0 ? productionDomains : [status.callbackUrl],
+        allPossibleDomains: uniqueDomains,
+        singleWebsiteUrl: websiteUrl.includes('.replit.app') ? 
+          websiteUrl : 
+          `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app`,
         criticalFix: {
-          issue: 'OAuth fails in production due to callback URL mismatch',
-          solution: 'Add ALL domains below to X Developer Portal',
-          urgency: 'REQUIRED for production OAuth to work'
+          issue: 'OAuth fails because callback URL not in X Developer Portal',
+          solution: 'Only ONE Website URL allowed in X Developer Portal',
+          action: 'Set Website URL to production domain, add callback URLs'
         },
-        xDeveloperPortalInstructions: {
-          step1: 'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
-          step2: 'Navigate to: Projects & Apps → Your App → Settings',
-          step3: 'Under "Authentication Settings" → "Callback URLs", add ALL these URLs:',
-          callbackUrls: productionDomains.length > 0 ? productionDomains : [status.callbackUrl],
-          step4: 'Save changes and test authentication in production',
-          note: 'CRITICAL: You can add up to 10 callback URLs. Add both development and production domains.',
-          warning: 'OAuth will fail if production domain is not in X Developer Portal'
+        xDeveloperPortalConfig: {
+          websiteUrl: websiteUrl.includes('.replit.app') ? 
+            websiteUrl : 
+            `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app`,
+          callbackUrls: uniqueDomains,
+          instructions: [
+            'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
+            'Navigate to: Projects & Apps → Your App → Settings',
+            'Set ONE Website URL (use production domain)',
+            'Add ALL callback URLs above (up to 10 allowed)',
+            'Save and test in production'
+          ]
         }
       });
     } catch (error) {

@@ -7,20 +7,39 @@ const clientSecret = process.env.X_CLIENT_SECRET;
 
 // Determine the correct callback URL based on environment
 function getCallbackUrl() {
+  console.log('🔍 getCallbackUrl() - Environment analysis:');
+  console.log('- NODE_ENV:', process.env.NODE_ENV);
+  console.log('- REPLIT_DOMAINS:', process.env.REPLIT_DOMAINS);
+  console.log('- REPL_SLUG:', process.env.REPL_SLUG);
+  console.log('- REPL_OWNER:', process.env.REPL_OWNER);
+  
   // Check for Replit domains first
   if (process.env.REPLIT_DOMAINS) {
     const domains = process.env.REPLIT_DOMAINS.split(',');
     const primaryDomain = domains[0]; // Use the first domain
-    return `https://${primaryDomain}/auth/twitter/callback`;
+    const callbackUrl = `https://${primaryDomain}/auth/twitter/callback`;
+    console.log('✅ Using REPLIT_DOMAINS callback:', callbackUrl);
+    return callbackUrl;
   }
   
-  // Fallback to old format
+  // Fallback to old format for production deployment
   if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
-    return `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
+    // Try both .replit.app and .repl.co formats
+    const productionUrl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app/auth/twitter/callback`;
+    const legacyUrl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
+    
+    console.log('⚠️ Using fallback production URLs:');
+    console.log('- Primary (replit.app):', productionUrl);
+    console.log('- Legacy (repl.co):', legacyUrl);
+    
+    // Use .replit.app for production
+    return productionUrl;
   }
   
   // Local development fallback
-  return 'http://127.0.0.1:5000/auth/twitter/callback';
+  const localUrl = 'http://127.0.0.1:5000/auth/twitter/callback';
+  console.log('⚠️ Using local development fallback:', localUrl);
+  return localUrl;
 }
 
 const callbackUrl = getCallbackUrl();
