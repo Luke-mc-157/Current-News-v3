@@ -146,13 +146,14 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
                   className={`w-full sm:w-auto ${!user ? 'opacity-50 cursor-not-allowed' : ''}`}
                   disabled={!user}
                   onAuthSuccess={(accessToken) => {
-                    console.log('X authentication successful');
+                    console.log('X authentication successful:', accessToken);
+                    // You can add logic here to refresh the page or update state
                   }}
                 />
               </div>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Login or create and account to access X Timeline personalization</p>
+              <p>{!user ? 'Login or create and account to access X Timeline personalization' : 'Click to enhance with X Timeline data'}</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

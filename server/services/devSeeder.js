@@ -122,22 +122,55 @@ export async function seedDatabase() {
       
       // Add X authentication if specified
       if (userData.hasXAuth) {
-        // Create fake but realistic X auth token
+        // For dev_user, use actual X credentials if available, otherwise use dev tokens
+        const isDev = userData.username === 'dev_user';
+        
         const xAuthData = {
           userId: user.id,
-          xUserId: `x_${user.id}_${Date.now()}`,
+          xUserId: isDev ? process.env.X_DEV_USER_ID || "1222191403427680259" : `x_${user.id}_${Date.now()}`,
           xHandle: userData.xHandle,
-          accessToken: `fake_access_token_${user.id}_${Date.now()}`,
-          refreshToken: `fake_refresh_token_${user.id}_${Date.now()}`,
+          accessToken: isDev ? process.env.X_DEV_ACCESS_TOKEN || "dev_access_token" : `fake_access_token_${user.id}_${Date.now()}`,
+          refreshToken: isDev ? process.env.X_DEV_REFRESH_TOKEN || "dev_refresh_token" : `fake_refresh_token_${user.id}_${Date.now()}`,
           expiresIn: 7200, // 2 hours
-          expiresAt: new Date(Date.now() + 2 * 60 * 60 * 1000) // 2 hours from now
+          expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours from now for dev
         };
         
         await storage.createXAuthToken(xAuthData);
-        console.log(`✓ Added X auth for: ${userData.xHandle}`);
+        console.log(`✓ Added X auth for: ${userData.xHandle} (${isDev ? 'with dev credentials' : 'with test credentials'})`);
         
-        // TODO: Add sample timeline posts and follows later
-        // For now, just create basic auth data
+        // Add sample timeline posts and follows for dev user
+        if (isDev) {
+          // Add sample timeline posts
+          for (const post of SAMPLE_TIMELINE_POSTS) {
+            await storage.createUserTimelinePost({
+              userId: user.id,
+              postId: post.postId,
+              authorId: post.authorId,
+              authorHandle: post.authorHandle,
+              authorName: post.authorName,
+              text: post.text,
+              createdAt: post.createdAt,
+              retweetCount: post.retweetCount,
+              replyCount: post.replyCount,
+              likeCount: post.likeCount,
+              viewCount: post.viewCount,
+              postUrl: post.postUrl,
+            });
+          }
+          
+          // Add sample follows
+          for (const follow of SAMPLE_FOLLOWS) {
+            await storage.createUserFollow({
+              userId: user.id,
+              followedUserId: follow.followedUserId,
+              followedHandle: follow.followedHandle,
+              followedName: follow.followedName,
+              followedVerified: follow.followedVerified,
+            });
+          }
+          
+          console.log(`✓ Added sample timeline posts and follows for dev user`);
+        }
       }
     }
     

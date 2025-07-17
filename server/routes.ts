@@ -584,6 +584,10 @@ export function registerRoutes(app) {
       
       const isAuthenticated = !!(authToken && authToken.accessToken);
       
+      // In development mode, if user is dev_user (ID: 1), ensure they appear authenticated
+      const isDevelopment = process.env.NODE_ENV === 'development';
+      const isDevUser = userId === 1;
+      
       res.json({
         ...status,
         authenticated: isAuthenticated,
@@ -591,6 +595,8 @@ export function registerRoutes(app) {
         xHandle: authToken?.xHandle || req.session?.xHandle,
         persistent: !!req.session?.xAuthenticated,
         expiresAt: authToken?.expiresAt,
+        developmentMode: isDevelopment,
+        autoAuthenticated: isDevelopment && isDevUser && isAuthenticated,
         success: true
       });
     } catch (error) {

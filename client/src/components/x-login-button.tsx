@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ExternalLink } from 'lucide-react';
@@ -34,10 +34,44 @@ export default function XLoginButton({
   const [isLoading, setIsLoading] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
   const [authStatus, setAuthStatus] = useState<string>('');
+  const [isXAuthenticated, setIsXAuthenticated] = useState(false);
+  const [xHandle, setXHandle] = useState<string>('');
   const { toast } = useToast();
+
+  // Check X authentication status on component mount
+  useEffect(() => {
+    checkXAuthStatus();
+  }, []);
+
+  const checkXAuthStatus = async () => {
+    try {
+      const response = await fetch('/api/auth/x/status');
+      const status = await response.json();
+      
+      if (status.authenticated) {
+        setIsXAuthenticated(true);
+        setXHandle(status.xHandle || '');
+        
+        // In development mode, automatically trigger onAuthSuccess
+        if (import.meta.env.DEV && onAuthSuccess) {
+          onAuthSuccess(status.accessToken || 'dev_token');
+        }
+      }
+    } catch (error) {
+      console.error('Error checking X auth status:', error);
+    }
+  };
 
   const handleLogin = async () => {
     if (disabled) return;
+    
+    // If already authenticated, just call success callback
+    if (isXAuthenticated) {
+      if (onAuthSuccess) {
+        onAuthSuccess('authenticated');
+      }
+      return;
+    }
     
     setIsLoading(true);
     try {
@@ -147,9 +181,10 @@ export default function XLoginButton({
         disabled={isLoading || disabled}
         variant={variant}
         size={size}
-        className={`gap-2 ${className}`}
+        className={`gap-2 ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
       >
-        {isLoading ? 'Connecting...' : 'Enhance with'}
+        {isLoading ? 'Connecting...' : 
+         isXAuthenticated ? `Enhanced with ${xHandle}` : 'Enhance with'}
         <XIcon className="w-4 h-4" />
       </Button>
 
