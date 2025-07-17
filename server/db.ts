@@ -79,6 +79,12 @@ async function initializeDatabase() {
     const isHealthy = await checkDatabaseHealth();
     if (isHealthy) {
       console.log('✅ Database connection established successfully');
+      
+      // Notify dev middleware that database is ready
+      if (process.env.NODE_ENV === 'development') {
+        const { setDatabaseReady } = await import('./middleware/devMiddleware.js');
+        setDatabaseReady(true);
+      }
     } else {
       console.warn('⚠️ Database connection established but health check failed');
     }

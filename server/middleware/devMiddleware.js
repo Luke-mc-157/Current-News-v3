@@ -1,5 +1,16 @@
 // server/middleware/devMiddleware.js
 
+// Keep track of database readiness
+let isDatabaseReady = false;
+
+// Set database ready flag (called from db.ts)
+export function setDatabaseReady(ready) {
+  isDatabaseReady = ready;
+  if (ready) {
+    console.log('✅ Database ready for dev auto-login');
+  }
+}
+
 // Middleware to auto-authenticate in development mode
 export async function devAutoLogin(req, res, next) {
   // Only apply in development
@@ -7,22 +18,33 @@ export async function devAutoLogin(req, res, next) {
     return next();
   }
   
-  // Skip if already authenticated
-  if (req.user || req.session?.userId) {
+  // Skip non-API routes to avoid unnecessary database calls
+  if (!req.path.startsWith('/api/')) {
     return next();
   }
   
-  // Auto-login as default dev user (ID: 1)
-  const DEV_USER_ID = 1;
+  // Skip if database isn't ready yet
+  if (!isDatabaseReady) {
+    return next();
+  }
+  
+  // Skip if already authenticated
+  if (req.session?.userId) {
+    return next();
+  }
+  
+  // Auto-login as default dev user - find by username instead of ID
+  const DEV_USERNAME = 'dev_user';
   
   try {
     const { storage } = await import('../storage.js');
-    const user = await storage.getUser(DEV_USER_ID);
+    const user = await storage.getUserByUsername(DEV_USERNAME);
     
     if (user) {
-      req.user = user;
+      // Set session values
       req.session.userId = user.id;
       req.session.username = user.username;
+      req.user = user;
       
       // Check if user has X auth
       const xAuth = await storage.getXAuthTokenByUserId(user.id);
@@ -31,17 +53,24 @@ export async function devAutoLogin(req, res, next) {
         req.session.xHandle = xAuth.xHandle;
       }
       
-      // Save session to ensure it persists
-      req.session.save((err) => {
-        if (err) {
-          console.log('Failed to save session:', err);
-        }
-      });
+      console.log(`🔧 Dev auto-login successful: ${user.username} (userId: ${user.id})`);
       
-      console.log(`🔧 Dev auto-login: ${user.username} (userId: ${user.id}, sessionId: ${req.sessionID})`);
+      // Save session and wait for it to complete
+      await new Promise((resolve, reject) => {
+        req.session.save((err) => {
+          if (err) {
+            console.error('Failed to save session:', err);
+            reject(err);
+          } else {
+            resolve();
+          }
+        });
+      });
+    } else {
+      console.log('❌ Dev user not found in database');
     }
   } catch (error) {
-    console.log('Dev auto-login failed:', error.message);
+    console.error('❌ Dev auto-login failed:', error.message);
   }
   
   next();
