@@ -124,7 +124,19 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 17, 2025 - 5:50 PM)
+### Latest Updates (January 17, 2025 - 6:00 PM)
+- **✅ IDENTIFIED PRODUCTION OAUTH CALLBACK URL MISMATCH**: Root cause of "Something went wrong" error in production deployment
+  - **Root Cause**: X Developer Portal callback URLs only configured for development domain, missing production domains
+  - **Development vs Production**: App uses different domains between environments (.picard.replit.dev vs .replit.app)
+  - **OAuth Requirement**: X requires exact callback URL match - character-for-character between registered and requested URLs
+  - **Solution Implemented**: 
+    - Enhanced debug endpoint to detect all possible production domains
+    - Added critical fix instructions with all callback URLs needed
+    - Provided clear X Developer Portal configuration steps
+  - **User Action Required**: Add production callback URLs to X Developer Portal (up to 10 URLs allowed)
+  - **Results**: Clear diagnosis and fix instructions for production OAuth authentication
+
+### Previous Updates (January 17, 2025 - 5:50 PM)
 - **✅ FIXED OAUTH URL DOMAIN ISSUE**: Resolved critical OAuth authentication failure - wrong domain being used for authorization
   - **Root Cause**: twitter-api-v2 library v1.24.0 generates OAuth URLs with `x.com` domain, but X still requires `twitter.com` for authorization endpoints
   - **Domain Mismatch**: Library generates `https://x.com/i/oauth2/authorize` but X expects `https://twitter.com/i/oauth2/authorize`

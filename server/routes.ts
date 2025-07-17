@@ -610,20 +610,39 @@ export function registerRoutes(app) {
       const status = getXAuthStatus();
       const websiteUrl = status.callbackUrl.replace('/auth/twitter/callback', '');
       
+      // Detect potential production domains
+      const productionDomains = [];
+      if (process.env.REPLIT_DOMAINS) {
+        process.env.REPLIT_DOMAINS.split(',').forEach(domain => {
+          productionDomains.push(`https://${domain}/auth/twitter/callback`);
+        });
+      }
+      
+      // Check if current domain looks like production
+      const isProduction = websiteUrl.includes('.replit.app') || 
+                          websiteUrl.includes('replit.dev') === false;
+      
       res.json({
         configured: status.configured,
+        environment: isProduction ? 'production' : 'development',
         currentUrls: {
           websiteUrl,
           callbackUrl: status.callbackUrl
         },
+        allDomains: productionDomains.length > 0 ? productionDomains : [status.callbackUrl],
+        criticalFix: {
+          issue: 'OAuth fails in production due to callback URL mismatch',
+          solution: 'Add ALL domains below to X Developer Portal',
+          urgency: 'REQUIRED for production OAuth to work'
+        },
         xDeveloperPortalInstructions: {
           step1: 'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
           step2: 'Navigate to: Projects & Apps → Your App → Settings',
-          step3: 'Under "Authentication Settings", add these EXACT URLs:',
-          websiteUrl: `Website URL: ${websiteUrl}`,
-          callbackUrl: `Callback URL: ${status.callbackUrl}`,
-          step4: 'Save changes and test authentication',
-          note: 'URLs must be exact matches (case-sensitive, no trailing slashes)'
+          step3: 'Under "Authentication Settings" → "Callback URLs", add ALL these URLs:',
+          callbackUrls: productionDomains.length > 0 ? productionDomains : [status.callbackUrl],
+          step4: 'Save changes and test authentication in production',
+          note: 'CRITICAL: You can add up to 10 callback URLs. Add both development and production domains.',
+          warning: 'OAuth will fail if production domain is not in X Developer Portal'
         }
       });
     } catch (error) {
