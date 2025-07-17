@@ -21,13 +21,15 @@ interface XLoginButtonProps {
   variant?: "default" | "outline" | "secondary" | "ghost" | "link" | "destructive";
   size?: "default" | "sm" | "lg" | "icon";
   className?: string;
+  disabled?: boolean;
 }
 
 export default function XLoginButton({ 
   onAuthSuccess, 
   variant = "outline", 
   size = "default",
-  className = ""
+  className = "",
+  disabled = false
 }: XLoginButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
@@ -35,6 +37,8 @@ export default function XLoginButton({
   const { toast } = useToast();
 
   const handleLogin = async () => {
+    if (disabled) return;
+    
     setIsLoading(true);
     try {
       // Check if X auth is configured
@@ -140,7 +144,7 @@ export default function XLoginButton({
     <>
       <Button
         onClick={handleLogin}
-        disabled={isLoading}
+        disabled={isLoading || disabled}
         variant={variant}
         size={size}
         className={`gap-2 ${className}`}

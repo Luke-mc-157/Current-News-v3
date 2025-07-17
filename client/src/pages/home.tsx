@@ -4,7 +4,7 @@ import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
 import PodcastGenerator from "@/components/podcast-generator";
 // Live search toggle removed - using only xAI Live Search
-import XLoginButton from "@/components/x-login-button";
+
 import { Button } from "@/components/ui/button";
 import { AuthModal } from "@/components/AuthModal";
 import { useAuth } from "@/contexts/AuthContext";
@@ -70,13 +70,6 @@ export default function Home() {
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Settings
               </a>
-              <XLoginButton 
-                variant="outline" 
-                size="sm"
-                onAuthSuccess={(accessToken) => {
-                  console.log('X authentication successful');
-                }}
-              />
               {user ? (
                 <div className="flex items-center space-x-3">
                   <div className="flex items-center space-x-2 text-sm text-slate-600">

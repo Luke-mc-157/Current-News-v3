@@ -3,9 +3,12 @@ import { useMutation } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { X, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
+import XLoginButton from "@/components/x-login-button";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface TopicInputProps {
   onTopicsSubmitted: (topics: string[]) => void;
@@ -16,6 +19,7 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
   const [topicInput, setTopicInput] = useState("");
   const [topics, setTopics] = useState<string[]>([]);
   const { toast } = useToast();
+  const { user } = useAuth();
 
   const generateHeadlinesMutation = useMutation({
     mutationFn: async (topics: string[]) => {
@@ -113,23 +117,46 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
         </p>
       </div>
 
-      <Button
-        type="submit"
-        disabled={!isValid || generateHeadlinesMutation.isPending}
-        className="w-full sm:w-auto"
-      >
-        {generateHeadlinesMutation.isPending ? (
-          <>
-            <span className="animate-spin mr-2">⏳</span> 
-            Using Live Search...
-          </>
-        ) : (
-          <>
-            <Search className="w-4 h-4 mr-2" />
-            Generate Headlines for {topics.length} Topic{topics.length !== 1 ? 's' : ''}
-          </>
-        )}
-      </Button>
+      <div className="flex flex-col sm:flex-row gap-3">
+        <Button
+          type="submit"
+          disabled={!isValid || generateHeadlinesMutation.isPending}
+          className="w-full sm:w-auto"
+        >
+          {generateHeadlinesMutation.isPending ? (
+            <>
+              <span className="animate-spin mr-2">⏳</span> 
+              Using Live Search...
+            </>
+          ) : (
+            <>
+              <Search className="w-4 h-4 mr-2" />
+              Generate Headlines for {topics.length} Topic{topics.length !== 1 ? 's' : ''}
+            </>
+          )}
+        </Button>
+        
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div>
+                <XLoginButton 
+                  variant="secondary" 
+                  size="default"
+                  className={`w-full sm:w-auto ${!user ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  disabled={!user}
+                  onAuthSuccess={(accessToken) => {
+                    console.log('X authentication successful');
+                  }}
+                />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Login or create and account to access X Timeline personalization</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
     </form>
   );
 }
