@@ -8,9 +8,10 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings } from "lucide-react";
+import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut } from "lucide-react";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useAuth } from "@/contexts/AuthContext";
 import { TopicInput } from "@/components/TopicInputSimple";
 import type { PodcastPreferences, PodcastEpisode } from "@shared/schema";
 
@@ -31,6 +32,7 @@ const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
 export default function Podcasts() {
   const { toast } = useToast();
+  const { user, logout } = useAuth();
   const [hasChanges, setHasChanges] = useState(false);
   const [localPreferences, setLocalPreferences] = useState<Partial<PodcastPreferences>>({
     enabled: false,
@@ -129,20 +131,125 @@ export default function Podcasts() {
 
   if (isLoadingPrefs) {
     return (
-      <div className="container mx-auto py-8 flex items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin" />
+      <div className="bg-slate-50 min-h-screen">
+        {/* Header */}
+        <header className="bg-white shadow-sm border-b border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <a href="/" className="flex items-center">
+                  <h1 className="text-2xl font-bold text-slate-900">Current</h1>
+                  <span className="ml-2 text-sm text-slate-500 hidden sm:block">
+                    News That Matters to You
+                  </span>
+                </a>
+              </div>
+              <nav className="hidden md:flex items-center space-x-8">
+                <a href="/" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                  Home
+                </a>
+                <a href="/podcasts" className="text-slate-900 font-semibold px-3 py-2 text-sm">
+                  Podcasts
+                </a>
+                <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                  Settings
+                </a>
+                {user ? (
+                  <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-2 text-sm text-slate-600">
+                      <User className="h-4 w-4" />
+                      <span>{user.username}</span>
+                    </div>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={logout}
+                    >
+                      <LogOut className="h-4 w-4 mr-2" />
+                      Logout
+                    </Button>
+                  </div>
+                ) : (
+                  <Button
+                    variant="default"
+                    size="sm"
+                    onClick={() => window.location.href = '/'}
+                  >
+                    Login
+                  </Button>
+                )}
+              </nav>
+            </div>
+          </div>
+        </header>
+        
+        <div className="container mx-auto py-8 flex items-center justify-center">
+          <Loader2 className="h-8 w-8 animate-spin" />
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-4xl">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">Podcast Preferences</h1>
-        <p className="text-muted-foreground">
-          Configure automatic podcast delivery to your email
-        </p>
-      </div>
+    <div className="bg-slate-50 min-h-screen">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <a href="/" className="flex items-center">
+                <h1 className="text-2xl font-bold text-slate-900">Current</h1>
+                <span className="ml-2 text-sm text-slate-500 hidden sm:block">
+                  News That Matters to You
+                </span>
+              </a>
+            </div>
+            <nav className="hidden md:flex items-center space-x-8">
+              <a href="/" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Home
+              </a>
+              <a href="/podcasts" className="text-slate-900 font-semibold px-3 py-2 text-sm">
+                Podcasts
+              </a>
+              <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Settings
+              </a>
+              {user ? (
+                <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-2 text-sm text-slate-600">
+                    <User className="h-4 w-4" />
+                    <span>{user.username}</span>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={logout}
+                  >
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Logout
+                  </Button>
+                </div>
+              ) : (
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={() => window.location.href = '/'}
+                >
+                  Login
+                </Button>
+              )}
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div className="container mx-auto py-8 px-4 max-w-4xl">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold mb-2">Podcast Preferences</h1>
+          <p className="text-muted-foreground">
+            Configure automatic podcast delivery to your email
+          </p>
+        </div>
 
       <Tabs defaultValue="settings" className="space-y-4">
         <TabsList className="grid w-full grid-cols-2">
@@ -450,6 +557,7 @@ export default function Podcasts() {
           </Card>
         </TabsContent>
       </Tabs>
+    </div>
     </div>
   );
 }
