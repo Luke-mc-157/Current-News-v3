@@ -124,7 +124,18 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 17, 2025 - 4:15 PM)
+### Latest Updates (January 17, 2025 - 5:40 PM)
+- **✅ FIXED OAUTH URL DOUBLE SLASH ISSUE**: Resolved critical OAuth authentication failure when users are already logged into X
+  - **Root Cause**: twitter-api-v2 library generates URLs with double slash (`x.com//oauth2/authorize`) causing X to reject authentication
+  - **Browser Session Interference**: X authentication fails when user already logged into X in same browser due to session conflicts
+  - **Solution Implemented**: 
+    - Added URL correction in getXLoginUrl function to replace `//oauth2` with `/oauth2`
+    - Enhanced logging to track when double slash issue occurs
+    - Maintained existing S256 code challenge method fix
+  - **Authentication Status**: X authentication now works correctly regardless of existing browser X sessions
+  - **Results**: OAuth flow completes successfully with proper URL formatting, eliminating "Something went wrong" errors
+
+### Previous Updates (January 17, 2025 - 4:15 PM)
 - **✅ FIXED X AUTHENTICATION FALSE POSITIVE**: Resolved issue where X button showed green (authenticated) but timeline fetch failed
   - **Root Cause**: Development seeder was creating fake X auth tokens that passed UI checks but failed API calls
   - **Error Fixed**: "OAuth 2.0 Application-Only is forbidden" - fake tokens were not valid OAuth 2.0 User Context tokens

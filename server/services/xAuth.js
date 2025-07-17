@@ -74,6 +74,16 @@ export function getXLoginUrl(state) {
     // Fix the lowercase s256 issue - X API requires uppercase S256
     authLink.url = authLink.url.replace('code_challenge_method=s256', 'code_challenge_method=S256');
     
+    // Fix double slash issue that causes OAuth errors when users are logged into X
+    const originalUrl = authLink.url;
+    authLink.url = authLink.url.replace('//oauth2', '/oauth2');
+    
+    if (originalUrl !== authLink.url) {
+      console.log('🔧 Fixed OAuth URL double slash issue:');
+      console.log('- Original:', originalUrl.substring(0, 50) + '...');
+      console.log('- Fixed:', authLink.url.substring(0, 50) + '...');
+    }
+    
     console.log('✅ OAuth link generated successfully');
     console.log('- Generated URL length:', authLink.url.length);
     console.log('- Code verifier length:', authLink.codeVerifier.length);
