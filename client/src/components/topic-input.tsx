@@ -147,7 +147,8 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
                   disabled={false}
                   onAuthSuccess={(accessToken) => {
                     console.log('X authentication successful:', accessToken);
-                    // You can add logic here to refresh the page or update state
+                    // Just log the success, don't trigger any automatic actions
+                    // User will need to manually use the feature after authentication
                   }}
                 />
               </div>

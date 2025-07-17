@@ -29,6 +29,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const checkAuth = async () => {
       try {
         const storedToken = localStorage.getItem('authToken');
+        
+        // First try token-based authentication
         if (storedToken) {
           const response = await fetch('/api/auth/me', {
             headers: {
@@ -40,10 +42,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             const data = await response.json();
             setUser(data.user);
             setToken(storedToken);
+            setLoading(false);
+            return;
           } else {
             // Token is invalid, remove it
             localStorage.removeItem('authToken');
           }
+        }
+        
+        // If no token or token failed, try session-based authentication (for development)
+        const sessionResponse = await fetch('/api/auth/me', {
+          credentials: 'include' // Include cookies for session-based auth
+        });
+        
+        if (sessionResponse.ok) {
+          const data = await sessionResponse.json();
+          setUser(data.user);
+          // Don't set token for session-based auth
         }
       } catch (error) {
         console.error('Auth check error:', error);

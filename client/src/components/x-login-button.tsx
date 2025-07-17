@@ -54,10 +54,8 @@ export default function XLoginButton({
         setIsXAuthenticated(true);
         setXHandle(status.xHandle || '');
         
-        // In development mode, automatically trigger onAuthSuccess
-        if (import.meta.env.DEV && onAuthSuccess) {
-          onAuthSuccess(status.accessToken || 'dev_token');
-        }
+        // In development mode, don't automatically trigger onAuthSuccess
+        // The onAuthSuccess should only be called when user explicitly clicks the button
       }
     } catch (error) {
       console.error('Error checking X auth status:', error);
@@ -82,6 +80,10 @@ export default function XLoginButton({
       if (onAuthSuccess) {
         onAuthSuccess('authenticated');
       }
+      toast({
+        title: "X Authentication Active",
+        description: "Your X Timeline is already connected and ready to use.",
+      });
       return;
     }
     
