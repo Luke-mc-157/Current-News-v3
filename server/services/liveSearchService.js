@@ -613,7 +613,7 @@ async function getTopicDataFromLiveSearch(topic) {
         sources: [
           {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
           {"type": "news", "country": "US" },
-          {"type": "web", "country": "US" }
+          {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com",], "country": "US" }
         ]
       },
       max_tokens: 50000
