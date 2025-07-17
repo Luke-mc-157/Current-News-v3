@@ -6,10 +6,15 @@ import PodcastGenerator from "@/components/podcast-generator";
 // Live search toggle removed - using only xAI Live Search
 import XLoginButton from "@/components/x-login-button";
 import { Button } from "@/components/ui/button";
+import { AuthModal } from "@/components/AuthModal";
+import { useAuth } from "@/contexts/AuthContext";
+import { LogOut, User } from "lucide-react";
 import type { Headline } from "@shared/schema";
 
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const { user, logout } = useAuth();
   // Always use Live Search - removed toggle functionality
 
   const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
@@ -72,6 +77,30 @@ export default function Home() {
                   console.log('X authentication successful');
                 }}
               />
+              {user ? (
+                <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-2 text-sm text-slate-600">
+                    <User className="h-4 w-4" />
+                    <span>{user.username}</span>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={logout}
+                  >
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Logout
+                  </Button>
+                </div>
+              ) : (
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={() => setShowAuthModal(true)}
+                >
+                  Login
+                </Button>
+              )}
             </nav>
           </div>
         </div>
@@ -142,6 +171,9 @@ export default function Home() {
           </section>
         )}
       </main>
+      
+      {/* Auth Modal */}
+      <AuthModal open={showAuthModal} onOpenChange={setShowAuthModal} />
     </div>
   );
 }

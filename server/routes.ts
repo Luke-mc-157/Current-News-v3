@@ -8,9 +8,16 @@ import { compileContentForPodcast } from "./services/contentFetcher.js";
 import axios from 'axios';
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
 import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } from "./services/voiceSynthesis.js";
-import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
+import { sendPodcastEmail, isEmailServiceConfigured, sendWelcomeEmail } from "./services/emailService.js";
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
+import { 
+  registerUser, 
+  loginUser, 
+  requestPasswordReset, 
+  resetPasswordWithToken,
+  getUserFromToken 
+} from "./services/auth.js";
 import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, validateXAuthEnvironment } from "./services/xAuth.js";
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import path from 'path';
@@ -1190,6 +1197,165 @@ export function registerRoutes(app) {
     
     console.log('X Auth state reset');
     res.json({ success: true, message: 'Authentication state reset' });
+  });
+
+  // Authentication routes
+  router.post("/api/auth/register", async (req, res) => {
+    try {
+      const { username, email, password } = req.body;
+      
+      if (!username || !email || !password) {
+        return res.status(400).json({ message: "Username, email and password are required" });
+      }
+      
+      if (password.length < 6) {
+        return res.status(400).json({ message: "Password must be at least 6 characters long" });
+      }
+      
+      const { user, token } = await registerUser(username, email, password);
+      
+      // Set session if available
+      if (req.session) {
+        req.session.userId = user.id;
+        req.session.username = user.username;
+      }
+      
+      // Send welcome email
+      await sendWelcomeEmail(user.email, user.username);
+      
+      res.json({
+        success: true,
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        token
+      });
+    } catch (error) {
+      console.error("Registration error:", error);
+      res.status(400).json({ message: error.message });
+    }
+  });
+
+  router.post("/api/auth/login", async (req, res) => {
+    try {
+      const { username, password } = req.body;
+      
+      if (!username || !password) {
+        return res.status(400).json({ message: "Username and password are required" });
+      }
+      
+      const { user, token } = await loginUser(username, password);
+      
+      // Set session if available
+      if (req.session) {
+        req.session.userId = user.id;
+        req.session.username = user.username;
+      }
+      
+      res.json({
+        success: true,
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        token
+      });
+    } catch (error) {
+      console.error("Login error:", error);
+      res.status(401).json({ message: error.message });
+    }
+  });
+
+  router.post("/api/auth/logout", (req, res) => {
+    if (req.session) {
+      req.session.destroy((err) => {
+        if (err) {
+          console.error("Logout error:", err);
+          return res.status(500).json({ message: "Error logging out" });
+        }
+        res.json({ success: true, message: "Logged out successfully" });
+      });
+    } else {
+      res.json({ success: true, message: "Logged out successfully" });
+    }
+  });
+
+  router.get("/api/auth/me", async (req, res) => {
+    try {
+      // Check authorization header
+      const authHeader = req.headers.authorization;
+      if (authHeader && authHeader.startsWith('Bearer ')) {
+        const token = authHeader.substring(7);
+        const user = await getUserFromToken(token);
+        if (user) {
+          return res.json({
+            user: {
+              id: user.id,
+              username: user.username,
+              email: user.email
+            }
+          });
+        }
+      }
+      
+      // Check session
+      if (req.session?.userId) {
+        const user = await storage.getUser(req.session.userId);
+        if (user) {
+          return res.json({
+            user: {
+              id: user.id,
+              username: user.username,
+              email: user.email
+            }
+          });
+        }
+      }
+      
+      res.status(401).json({ message: "Not authenticated" });
+    } catch (error) {
+      console.error("Auth check error:", error);
+      res.status(401).json({ message: "Not authenticated" });
+    }
+  });
+
+  router.post("/api/auth/forgot-password", async (req, res) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email) {
+        return res.status(400).json({ message: "Email is required" });
+      }
+      
+      const result = await requestPasswordReset(email);
+      res.json(result);
+    } catch (error) {
+      console.error("Password reset request error:", error);
+      res.status(500).json({ message: "Error processing password reset request" });
+    }
+  });
+
+  router.post("/api/auth/reset-password", async (req, res) => {
+    try {
+      const { token, password } = req.body;
+      
+      if (!token || !password) {
+        return res.status(400).json({ message: "Token and password are required" });
+      }
+      
+      if (password.length < 6) {
+        return res.status(400).json({ message: "Password must be at least 6 characters long" });
+      }
+      
+      const result = await resetPasswordWithToken(token, password);
+      res.json(result);
+    } catch (error) {
+      console.error("Password reset error:", error);
+      res.status(400).json({ message: error.message });
+    }
   });
   
   app.use(router);

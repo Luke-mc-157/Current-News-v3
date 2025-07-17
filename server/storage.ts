@@ -1,11 +1,14 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
 import { eq, desc } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
+  getUserByEmail(email: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  updateUserLastLogin(userId: number): Promise<void>;
+  updateUserPassword(userId: number, password: string): Promise<void>;
   
   createUserTopics(topics: InsertUserTopics): Promise<UserTopics>;
   getUserTopics(userId: number): Promise<UserTopics[]>;
@@ -38,6 +41,11 @@ export interface IStorage {
   createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts>;
   getUserTimelinePosts(userId: number, days?: number): Promise<UserTimelinePosts[]>;
   deleteOldTimelinePosts(userId: number, hours: number): Promise<void>;
+  
+  // Password reset token methods
+  createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken>;
+  getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined>;
+  markPasswordResetTokenUsed(token: string): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -162,9 +170,66 @@ export class MemStorage implements IStorage {
     );
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    return Array.from(this.users.values()).find(
+      (user) => user.email === email,
+    );
+  }
+  
+  async updateUserLastLogin(userId: number): Promise<void> {
+    const user = this.users.get(userId);
+    if (user) {
+      user.lastLogin = new Date();
+      user.updatedAt = new Date();
+    }
+  }
+  
+  async updateUserPassword(userId: number, password: string): Promise<void> {
+    const user = this.users.get(userId);
+    if (user) {
+      user.password = password;
+      user.updatedAt = new Date();
+    }
+  }
+  
+  async createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken> {
+    const id = this.currentTokenId++;
+    const resetToken: PasswordResetToken = {
+      id,
+      userId: token.userId,
+      token: token.token,
+      expiresAt: token.expiresAt,
+      usedAt: token.usedAt || null,
+      createdAt: new Date()
+    };
+    // Store using token as key for easy lookup
+    this.xAuthTokens.set(id, resetToken as any);
+    return resetToken;
+  }
+  
+  async getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined> {
+    return Array.from(this.xAuthTokens.values()).find(
+      (t: any) => t.token === token
+    ) as PasswordResetToken | undefined;
+  }
+  
+  async markPasswordResetTokenUsed(token: string): Promise<void> {
+    const resetToken = await this.getPasswordResetToken(token);
+    if (resetToken) {
+      resetToken.usedAt = new Date();
+    }
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
     const id = this.currentId++;
-    const user: User = { ...insertUser, id };
+    const user: User = { 
+      ...insertUser, 
+      id,
+      emailVerified: false,
+      lastLogin: null,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
     this.users.set(id, user);
     return user;
   }
@@ -300,6 +365,7 @@ export class MemStorage implements IStorage {
     const newToken: XAuthTokens = {
       id,
       userId: token.userId,
+      xUserId: token.xUserId || null,
       xHandle: token.xHandle || null,
       accessToken: token.accessToken,
       refreshToken: token.refreshToken || null,
@@ -329,8 +395,7 @@ export class MemStorage implements IStorage {
 }
 
 // Use DatabaseStorage instead of MemStorage
-import { db } from "./db";
-import { eq, and, gte, lt, desc } from "drizzle-orm";
+import { and, gte, lt } from "drizzle-orm";
 
 export class DatabaseStorage implements IStorage {
   async getUser(id: number): Promise<User | undefined> {
@@ -343,9 +408,43 @@ export class DatabaseStorage implements IStorage {
     return user || undefined;
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.email, email));
+    return user || undefined;
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
     const [user] = await db.insert(users).values(insertUser).returning();
     return user;
+  }
+  
+  async updateUserLastLogin(userId: number): Promise<void> {
+    await db.update(users)
+      .set({ lastLogin: new Date(), updatedAt: new Date() })
+      .where(eq(users.id, userId));
+  }
+  
+  async updateUserPassword(userId: number, password: string): Promise<void> {
+    await db.update(users)
+      .set({ password, updatedAt: new Date() })
+      .where(eq(users.id, userId));
+  }
+  
+  async createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken> {
+    const [resetToken] = await db.insert(passwordResetTokens).values(token).returning();
+    return resetToken;
+  }
+  
+  async getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined> {
+    const [resetToken] = await db.select().from(passwordResetTokens)
+      .where(eq(passwordResetTokens.token, token));
+    return resetToken || undefined;
+  }
+  
+  async markPasswordResetTokenUsed(token: string): Promise<void> {
+    await db.update(passwordResetTokens)
+      .set({ usedAt: new Date() })
+      .where(eq(passwordResetTokens.token, token));
   }
 
   async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
