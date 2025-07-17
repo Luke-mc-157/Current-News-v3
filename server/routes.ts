@@ -22,6 +22,7 @@ import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, valid
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
 import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
+import { runPodcastScheduler, createScheduledPodcasts, processPendingPodcasts } from "./services/podcastScheduler.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -1656,6 +1657,64 @@ export function registerRoutes(app) {
     } catch (error) {
       console.error("Password reset error:", error);
       res.status(400).json({ message: error.message });
+    }
+  });
+
+  // Podcast scheduler routes
+  router.post("/api/scheduler/run", requireAuth, async (req, res) => {
+    try {
+      console.log('🔄 Manual scheduler run triggered by user:', req.user.username);
+      await runPodcastScheduler();
+      res.json({ success: true, message: "Scheduler run completed" });
+    } catch (error) {
+      console.error("Error running scheduler:", error);
+      res.status(500).json({ error: "Failed to run scheduler", message: error.message });
+    }
+  });
+
+  router.post("/api/scheduler/create-scheduled", requireAuth, async (req, res) => {
+    try {
+      console.log('📅 Creating scheduled podcasts triggered by user:', req.user.username);
+      await createScheduledPodcasts();
+      res.json({ success: true, message: "Scheduled podcasts created" });
+    } catch (error) {
+      console.error("Error creating scheduled podcasts:", error);
+      res.status(500).json({ error: "Failed to create scheduled podcasts", message: error.message });
+    }
+  });
+
+  router.post("/api/scheduler/process-pending", requireAuth, async (req, res) => {
+    try {
+      console.log('⚡ Processing pending podcasts triggered by user:', req.user.username);
+      await processPendingPodcasts();
+      res.json({ success: true, message: "Pending podcasts processed" });
+    } catch (error) {
+      console.error("Error processing pending podcasts:", error);
+      res.status(500).json({ error: "Failed to process pending podcasts", message: error.message });
+    }
+  });
+
+  router.get("/api/scheduler/status", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const preferences = await storage.getPodcastPreferences(userId);
+      const scheduledPodcasts = await storage.getScheduledPodcastsForUser(userId);
+      const pendingPodcasts = await storage.getPendingPodcastsDue();
+      
+      res.json({
+        user: {
+          id: userId,
+          username: req.user.username,
+          email: req.user.email
+        },
+        preferences,
+        scheduledPodcasts,
+        pendingPodcasts: pendingPodcasts.filter(p => p.userId === userId),
+        totalPendingSystemWide: pendingPodcasts.length
+      });
+    } catch (error) {
+      console.error("Error getting scheduler status:", error);
+      res.status(500).json({ error: "Failed to get scheduler status", message: error.message });
     }
   });
   

@@ -124,7 +124,16 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 17, 2025 - 6:00 PM)
+### Latest Updates (January 17, 2025 - 10:56 PM)
+- **✅ SCHEDULED PODCAST SYSTEM FULLY OPERATIONAL**: Fixed database constraint issue preventing scheduled podcast creation
+  - **Database Fix**: Added proper `deliveryTime` field mapping to scheduled_podcasts table structure
+  - **Scheduler Logic**: Enhanced to provide both `scheduledFor` (processing start time) and `deliveryTime` (actual delivery time)
+  - **Processing Timeline**: `scheduledFor` is set 10 minutes before `deliveryTime` for proper podcast generation timing
+  - **Database Validation**: Confirmed scheduled podcast entries now store correctly with all required fields
+  - **System Integration**: Podcast scheduler runs every 5 minutes and successfully creates scheduled entries
+  - **Results**: Complete podcast automation system now functional - preferences save, schedules create, and podcasts will be delivered automatically
+
+### Previous Updates (January 17, 2025 - 6:00 PM)
 - **✅ IDENTIFIED PRODUCTION OAUTH CALLBACK URL MISMATCH**: Root cause of "Something went wrong" error in production deployment
   - **Root Cause**: X Developer Portal callback URLs only configured for development domain, missing production domains
   - **Development vs Production**: App uses different domains between environments (.picard.replit.dev vs .replit.app)

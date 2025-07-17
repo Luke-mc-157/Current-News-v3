@@ -4,6 +4,7 @@ import { eq, desc, and, gte, lt } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
+  getAllUsers(): Promise<User[]>;
   getUserByUsername(username: string): Promise<User | undefined>;
   getUserByEmail(email: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
@@ -432,6 +433,10 @@ export class DatabaseStorage implements IStorage {
     return user || undefined;
   }
 
+  async getAllUsers(): Promise<User[]> {
+    return await db.select().from(users);
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
     console.log('DatabaseStorage.createUser - received insertUser:', {
       username: insertUser.username,
@@ -667,6 +672,17 @@ export class DatabaseStorage implements IStorage {
 
   // Scheduled podcasts methods
   async createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts> {
+    console.log('📅 Storage - createScheduledPodcast received data:', {
+      userId: scheduled.userId,
+      scheduledFor: scheduled.scheduledFor,
+      deliveryTime: scheduled.deliveryTime,
+      topics: scheduled.topics,
+      duration: scheduled.duration,
+      voiceId: scheduled.voiceId,
+      enhanceWithX: scheduled.enhanceWithX,
+      status: scheduled.status
+    });
+    
     const [newScheduled] = await db.insert(scheduledPodcasts).values(scheduled).returning();
     return newScheduled;
   }
