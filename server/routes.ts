@@ -22,8 +22,6 @@ import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, valid
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
 import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
-import { insertUserTopicsSchema, insertPodcastSettingsSchema, insertPodcastScheduleSchema } from "@shared/schema";
-import { FREQUENCY, calculateNextSendTime } from "./services/podcastScheduler.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -1551,96 +1549,6 @@ export function registerRoutes(app) {
     }
   });
   
-  // Podcast Schedule endpoints
-  router.post("/api/podcast-schedule", requireAuth, async (req, res) => {
-    try {
-      const userId = req.user.id;
-      const scheduleData = insertPodcastScheduleSchema.parse({
-        ...req.body,
-        userId
-      });
-      
-      // Calculate next send time
-      const nextSend = calculateNextSendTime(
-        scheduleData.frequency,
-        scheduleData.times,
-        scheduleData.timezone
-      );
-      
-      const scheduleWithNextSend = {
-        ...scheduleData,
-        nextSend
-      };
-      
-      const schedule = await storage.createPodcastSchedule(scheduleWithNextSend);
-      res.json(schedule);
-    } catch (error) {
-      console.error("Error creating podcast schedule:", error);
-      res.status(500).json({ error: error.message });
-    }
-  });
-
-  router.get("/api/podcast-schedule", requireAuth, async (req, res) => {
-    try {
-      const userId = req.user.id;
-      const schedule = await storage.getPodcastSchedule(userId);
-      res.json(schedule);
-    } catch (error) {
-      console.error("Error getting podcast schedule:", error);
-      res.status(500).json({ error: error.message });
-    }
-  });
-
-  router.put("/api/podcast-schedule/:id", requireAuth, async (req, res) => {
-    try {
-      const scheduleId = parseInt(req.params.id);
-      const userId = req.user.id;
-      
-      // Verify the schedule belongs to the user
-      const existingSchedule = await storage.getPodcastSchedule(userId);
-      if (!existingSchedule || existingSchedule.id !== scheduleId) {
-        return res.status(403).json({ error: "Unauthorized" });
-      }
-      
-      const updates = req.body;
-      
-      // Recalculate next send time if frequency or times changed
-      if (updates.frequency || updates.times || updates.timezone) {
-        const nextSend = calculateNextSendTime(
-          updates.frequency || existingSchedule.frequency,
-          updates.times || existingSchedule.times,
-          updates.timezone || existingSchedule.timezone
-        );
-        updates.nextSend = nextSend;
-      }
-      
-      const updatedSchedule = await storage.updatePodcastSchedule(scheduleId, updates);
-      res.json(updatedSchedule);
-    } catch (error) {
-      console.error("Error updating podcast schedule:", error);
-      res.status(500).json({ error: error.message });
-    }
-  });
-
-  router.delete("/api/podcast-schedule/:id", requireAuth, async (req, res) => {
-    try {
-      const scheduleId = parseInt(req.params.id);
-      const userId = req.user.id;
-      
-      // Verify the schedule belongs to the user
-      const existingSchedule = await storage.getPodcastSchedule(userId);
-      if (!existingSchedule || existingSchedule.id !== scheduleId) {
-        return res.status(403).json({ error: "Unauthorized" });
-      }
-      
-      await storage.deletePodcastSchedule(scheduleId);
-      res.json({ success: true });
-    } catch (error) {
-      console.error("Error deleting podcast schedule:", error);
-      res.status(500).json({ error: error.message });
-    }
-  });
-
   app.use(router);
   
   return http.createServer(app);
