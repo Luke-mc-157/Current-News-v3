@@ -74,8 +74,8 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
         model_id: 'eleven_turbo_v2',
         voice_settings: {
           stability: 0.4,
-          similarity_boost: 0.7,
-          speed: 1.2
+          similarity_boost: 0.7, 
+          speed: 1.1
         }
       })
     });
