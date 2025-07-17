@@ -6,7 +6,7 @@ import bcrypt from "bcryptjs";
 const TEST_USERS = [
   {
     username: "dev_user",
-    email: "dev@example.com",
+    email: "lmclaughlin157@gmail.com",
     password: "password123",
     hasXAuth: true,
     xHandle: "dev_user_x"
