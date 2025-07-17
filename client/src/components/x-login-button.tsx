@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useAuth } from '@/contexts/AuthContext';
 
 // X.com logo component
 const XIcon = ({ className }: { className?: string }) => (
@@ -37,6 +38,7 @@ export default function XLoginButton({
   const [isXAuthenticated, setIsXAuthenticated] = useState(false);
   const [xHandle, setXHandle] = useState<string>('');
   const { toast } = useToast();
+  const { user } = useAuth();
 
   // Check X authentication status on component mount
   useEffect(() => {
@@ -64,6 +66,16 @@ export default function XLoginButton({
 
   const handleLogin = async () => {
     if (disabled) return;
+    
+    // Check if user is authenticated with the app first
+    if (!user) {
+      toast({
+        variant: "destructive",
+        title: "Authentication Required",
+        description: "Please log in to access X Timeline features.",
+      });
+      return;
+    }
     
     // If already authenticated, just call success callback
     if (isXAuthenticated) {
@@ -181,11 +193,14 @@ export default function XLoginButton({
         disabled={isLoading || disabled}
         variant={variant}
         size={size}
-        className={`gap-2 ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
+        className={`gap-2 relative ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
       >
         {isLoading ? 'Connecting...' : 
          isXAuthenticated ? `Enhanced with ${xHandle}` : 'Enhance with'}
         <XIcon className="w-4 h-4" />
+        {isXAuthenticated && (
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>
+        )}
       </Button>
 
       <Dialog open={showDialog} onOpenChange={setShowDialog}>

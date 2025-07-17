@@ -143,8 +143,8 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
                 <XLoginButton 
                   variant="secondary" 
                   size="default"
-                  className={`w-full sm:w-auto ${!user ? 'opacity-50 cursor-not-allowed' : ''}`}
-                  disabled={!user}
+                  className="w-full sm:w-auto"
+                  disabled={false}
                   onAuthSuccess={(accessToken) => {
                     console.log('X authentication successful:', accessToken);
                     // You can add logic here to refresh the page or update state
