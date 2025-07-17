@@ -12,9 +12,10 @@ app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 app.use(session({
   secret: process.env.SESSION_SECRET || 'dev-secret-key-change-in-production',
   resave: false,
-  saveUninitialized: false,
+  saveUninitialized: true, // Changed to true for development auto-login
   cookie: {
     secure: false, // Set to true in production with HTTPS
+    httpOnly: true,
     maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
   }
 }));

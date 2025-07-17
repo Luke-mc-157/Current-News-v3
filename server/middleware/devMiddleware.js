@@ -31,7 +31,14 @@ export async function devAutoLogin(req, res, next) {
         req.session.xHandle = xAuth.xHandle;
       }
       
-      console.log(`🔧 Dev auto-login: ${user.username}`);
+      // Save session to ensure it persists
+      req.session.save((err) => {
+        if (err) {
+          console.log('Failed to save session:', err);
+        }
+      });
+      
+      console.log(`🔧 Dev auto-login: ${user.username} (userId: ${user.id}, sessionId: ${req.sessionID})`);
     }
   } catch (error) {
     console.log('Dev auto-login failed:', error.message);
