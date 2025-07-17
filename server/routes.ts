@@ -684,7 +684,7 @@ export function registerRoutes(app) {
       }
       
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
-      const authLink = getXLoginUrl(state);
+      const authLink = getXLoginUrl(state, req);
       
       // Extract the URL from the auth link object
       const loginUrl = authLink.url;
@@ -1021,7 +1021,7 @@ export function registerRoutes(app) {
     }
     
     try {
-      const authResult = await handleXCallback(code, state);
+      const authResult = await handleXCallback(code, state, req);
       
       if (!authResult || !authResult.success) {
         throw new Error('Token exchange failed');
