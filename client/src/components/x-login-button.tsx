@@ -154,6 +154,10 @@ export default function XLoginButton({
             setShowDialog(false);
             setIsLoading(false);
             
+            // Update authentication state to show green circle
+            setIsXAuthenticated(true);
+            setXHandle(authResult.xHandle || '');
+            
             toast({
               title: "Login Successful!",
               description: `Welcome ${authResult.xHandle}! You can now access premium features.`,
@@ -162,6 +166,9 @@ export default function XLoginButton({
             if (onAuthSuccess) {
               onAuthSuccess(authResult.accessToken);
             }
+            
+            // Refresh auth status to ensure consistency
+            checkXAuthStatus();
           }
         } catch (error) {
           console.error('Auth check error:', error);
@@ -198,7 +205,7 @@ export default function XLoginButton({
         className={`gap-2 relative ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
       >
         {isLoading ? 'Connecting...' : 
-         isXAuthenticated ? `Enhanced with ${xHandle}` : 'Enhance with'}
+         isXAuthenticated ? 'Enhanced with' : 'Enhance with'}
         <XIcon className="w-4 h-4" />
         {isXAuthenticated && (
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>
