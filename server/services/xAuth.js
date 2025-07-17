@@ -244,6 +244,7 @@ export async function createAuthenticatedClient(accessToken, refreshToken, expir
     };
   }
   
+  // Create TwitterApi client with OAuth 2.0 User Context token
   return { 
     client: new TwitterApi(accessToken), 
     updatedTokens: null 

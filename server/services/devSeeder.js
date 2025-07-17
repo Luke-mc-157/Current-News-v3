@@ -120,57 +120,12 @@ export async function seedDatabase() {
       
       console.log(`✓ Created user: ${userData.username} (ID: ${user.id})`);
       
-      // Add X authentication if specified
-      if (userData.hasXAuth) {
-        // For dev_user, use actual X credentials if available, otherwise use dev tokens
-        const isDev = userData.username === 'dev_user';
-        
-        const xAuthData = {
-          userId: user.id,
-          xUserId: isDev ? process.env.X_DEV_USER_ID || "1222191403427680259" : `x_${user.id}_${Date.now()}`,
-          xHandle: userData.xHandle,
-          accessToken: isDev ? process.env.X_DEV_ACCESS_TOKEN || "dev_access_token" : `fake_access_token_${user.id}_${Date.now()}`,
-          refreshToken: isDev ? process.env.X_DEV_REFRESH_TOKEN || "dev_refresh_token" : `fake_refresh_token_${user.id}_${Date.now()}`,
-          expiresIn: 7200, // 2 hours
-          expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours from now for dev
-        };
-        
-        await storage.createXAuthToken(xAuthData);
-        console.log(`✓ Added X auth for: ${userData.xHandle} (${isDev ? 'with dev credentials' : 'with test credentials'})`);
-        
-        // Add sample timeline posts and follows for dev user
-        if (isDev) {
-          // Add sample timeline posts
-          for (const post of SAMPLE_TIMELINE_POSTS) {
-            await storage.createUserTimelinePost({
-              userId: user.id,
-              postId: post.postId,
-              authorId: post.authorId,
-              authorHandle: post.authorHandle,
-              authorName: post.authorName,
-              text: post.text,
-              createdAt: post.createdAt,
-              retweetCount: post.retweetCount,
-              replyCount: post.replyCount,
-              likeCount: post.likeCount,
-              viewCount: post.viewCount,
-              postUrl: post.postUrl,
-            });
-          }
-          
-          // Add sample follows
-          for (const follow of SAMPLE_FOLLOWS) {
-            await storage.createUserFollow({
-              userId: user.id,
-              followedUserId: follow.followedUserId,
-              followedHandle: follow.followedHandle,
-              followedName: follow.followedName,
-              followedVerified: follow.followedVerified,
-            });
-          }
-          
-          console.log(`✓ Added sample timeline posts and follows for dev user`);
-        }
+      // IMPORTANT: Do not create fake X auth tokens in development
+      // Users must authenticate with real X OAuth to get valid tokens
+      // This prevents "OAuth 2.0 Application-Only is forbidden" errors
+      if (userData.hasXAuth && false) { // Disabled - users must use real X OAuth
+        // This code is intentionally disabled to force real X authentication
+        console.log(`⚠️ X auth creation disabled for ${userData.username} - user must authenticate with real X OAuth`);
       }
     }
     
