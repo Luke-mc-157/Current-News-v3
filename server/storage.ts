@@ -560,7 +560,17 @@ export class DatabaseStorage implements IStorage {
   }
 
   async updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined> {
-    const [updatedEpisode] = await db.update(podcastEpisodes).set(updates).where(eq(podcastEpisodes.id, id)).returning();
+    // Filter out undefined values to avoid "No values to set" error
+    const cleanUpdates = Object.fromEntries(
+      Object.entries(updates).filter(([_, value]) => value !== undefined)
+    );
+    
+    if (Object.keys(cleanUpdates).length === 0) {
+      console.warn('No valid updates provided for podcast episode', id);
+      return await this.getPodcastEpisode(id);
+    }
+    
+    const [updatedEpisode] = await db.update(podcastEpisodes).set(cleanUpdates).where(eq(podcastEpisodes.id, id)).returning();
     return updatedEpisode || undefined;
   }
 
