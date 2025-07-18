@@ -390,9 +390,9 @@ export default function Podcasts() {
                       <SelectContent>
                         {US_TIMEZONES.map((tz) => (
                           <SelectItem key={tz.value} value={tz.value}>
-                            <div className="flex flex-col">
+                            <div className="flex justify-between items-center w-full">
                               <span>{tz.label}</span>
-                              <span className="text-xs text-muted-foreground">{tz.currentOffset}</span>
+                              <span className="text-xs text-muted-foreground ml-4">{tz.currentOffset}</span>
                             </div>
                           </SelectItem>
                         ))}
