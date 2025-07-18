@@ -731,6 +731,17 @@ export class DatabaseStorage implements IStorage {
     return updated || undefined;
   }
 
+  async deletePendingScheduledPodcastsForUser(userId: number): Promise<void> {
+    console.log(`🗑️ Deleting pending scheduled podcasts for user ${userId}`);
+    const deleted = await db.delete(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        eq(scheduledPodcasts.status, 'pending')
+      ))
+      .returning();
+    console.log(`✅ Deleted ${deleted.length} pending scheduled podcasts for user ${userId}`);
+  }
+
   // User last search methods
   async upsertUserLastSearch(search: InsertUserLastSearch): Promise<UserLastSearch> {
     const existing = await db.select().from(userLastSearch)

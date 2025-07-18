@@ -1338,6 +1338,10 @@ export function registerRoutes(app) {
         return res.status(400).json({ error: "Missing required fields" });
       }
       
+      // Delete any existing pending scheduled podcasts for this user
+      // This ensures old schedules don't interfere with new preferences
+      await storage.deletePendingScheduledPodcastsForUser(userId);
+      
       // Check if preferences already exist
       const existing = await storage.getPodcastPreferences(userId);
       
@@ -1379,6 +1383,10 @@ export function registerRoutes(app) {
     try {
       const userId = req.user.id;
       const updates = req.body;
+      
+      // Delete any existing pending scheduled podcasts for this user
+      // This ensures old schedules don't interfere with updated preferences
+      await storage.deletePendingScheduledPodcastsForUser(userId);
       
       const updated = await storage.updatePodcastPreferences(userId, updates);
       if (!updated) {
