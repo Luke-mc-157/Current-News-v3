@@ -660,13 +660,12 @@ export default function Podcasts() {
                   <Button
                     variant="secondary"
                     onClick={() => {
-                      apiRequest('/api/dev/test-podcast-delivery', {
-                        method: 'POST',
-                      })
-                        .then((response) => {
+                      apiRequest('POST', '/api/dev/test-podcast-delivery')
+                        .then(async (response) => {
+                          const data = await response.json();
                           toast({
                             title: "Test Podcast Scheduled",
-                            description: response.message || "Test podcast scheduled for delivery in 5 minutes",
+                            description: data.message || "Test podcast scheduled for delivery in 5 minutes",
                           });
                         })
                         .catch((error) => {
