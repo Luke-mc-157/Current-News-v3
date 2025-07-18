@@ -10,17 +10,24 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Convert cadence to cron-like schedule with timezone support
-function getNextScheduledTime(preferences) {
+// Convert cadence to cron-like schedule with timezone support for a specific time
+function getNextScheduledTime(preferences, timeIndex = 0) {
   const now = new Date();
   const nextSchedule = new Date(now);
   
-  // Get the scheduled time (first time in the array) - this is already in UTC from frontend conversion
-  const scheduledTime = preferences.times[0]; // Format: "08:00" (UTC)
+  // Get the scheduled time at the specified index
+  const scheduledTime = preferences.times[timeIndex]; // Format: "08:00" (local time)
   const [hours, minutes] = scheduledTime.split(':').map(Number);
   
+  // Convert local time to UTC for scheduling
+  // CST is UTC-6, so 1:00 AM CST = 7:00 AM UTC
+  const cstOffsetMinutes = 360; // CST is UTC-6 (6 * 60 = 360 minutes)
+  const totalMinutes = (hours * 60) + minutes + cstOffsetMinutes;
+  const utcHours = Math.floor(totalMinutes / 60) % 24;
+  const utcMinutes = totalMinutes % 60;
+  
   // Set the time for today (UTC time)
-  nextSchedule.setUTCHours(hours, minutes, 0, 0);
+  nextSchedule.setUTCHours(utcHours, utcMinutes, 0, 0);
   
   // Check if we need to schedule for today or tomorrow
   // In development, allow scheduling for times that are coming up soon (within next hour)
@@ -85,38 +92,44 @@ export async function createScheduledPodcasts() {
         const hasPending = existingScheduled.some(p => p.status === 'pending');
         
         if (!hasPending) {
-          const deliveryTime = getNextScheduledTime(preferences);
-          const scheduledFor = new Date(deliveryTime.getTime() - 10 * 60 * 1000); // 10 minutes before delivery
+          // Create scheduled podcasts for each delivery time
+          const times = preferences.times || ["08:00"];
           
-          const scheduledPodcastData = {
-            userId: user.id,
-            scheduledFor,
-            deliveryTime,
-            status: 'pending',
-            preferenceSnapshot: {
-              topics: preferences.topics,
-              duration: preferences.duration,
-              voiceId: preferences.voiceId,
-              enhanceWithX: preferences.enhanceWithX,
-              cadence: preferences.cadence,
-              times: preferences.times
-            }
-          };
-          
-          console.log('Creating scheduled podcast with data:', {
-            userId: scheduledPodcastData.userId,
-            scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
-            deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
-            topics: scheduledPodcastData.preferenceSnapshot.topics,
-            duration: scheduledPodcastData.preferenceSnapshot.duration,
-            voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
-            enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
-            status: scheduledPodcastData.status
-          });
-          
-          await storage.createScheduledPodcast(scheduledPodcastData);
-          
-          console.log(`✅ Scheduled podcast for ${user.username} at ${deliveryTime.toLocaleString()}`);
+          for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
+            const deliveryTime = getNextScheduledTime(preferences, timeIndex);
+            const scheduledFor = new Date(deliveryTime.getTime() - 10 * 60 * 1000); // 10 minutes before delivery
+            
+            const scheduledPodcastData = {
+              userId: user.id,
+              scheduledFor,
+              deliveryTime,
+              status: 'pending',
+              preferenceSnapshot: {
+                topics: preferences.topics,
+                duration: preferences.duration,
+                voiceId: preferences.voiceId,
+                enhanceWithX: preferences.enhanceWithX,
+                cadence: preferences.cadence,
+                times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
+              }
+            };
+            
+            console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length} with data:`, {
+              userId: scheduledPodcastData.userId,
+              scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
+              deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
+              time: times[timeIndex],
+              topics: scheduledPodcastData.preferenceSnapshot.topics,
+              duration: scheduledPodcastData.preferenceSnapshot.duration,
+              voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
+              enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
+              status: scheduledPodcastData.status
+            });
+            
+            await storage.createScheduledPodcast(scheduledPodcastData);
+            
+            console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${deliveryTime.toLocaleString()}`);
+          }
         }
       }
     }

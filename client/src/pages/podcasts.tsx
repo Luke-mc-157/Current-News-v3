@@ -405,42 +405,128 @@ export default function Podcasts() {
 
                   {/* Time Selection */}
                   <div>
-                    <Label htmlFor="time">Delivery Time</Label>
-                    <Select
-                      value={localPreferences.times?.[0] || "08:00"}
-                      onValueChange={(value) => handlePreferenceChange("times", [value])}
-                    >
-                      <SelectTrigger id="time">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {import.meta.env.DEV ? (
-                          // Development mode: 10-minute intervals
-                          Array.from({ length: 144 }, (_, i) => {
-                            const totalMinutes = i * 10;
-                            const hours = Math.floor(totalMinutes / 60);
-                            const minutes = totalMinutes % 60;
-                            const time = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
-                            return (
-                              <SelectItem key={time} value={time}>
-                                {formatTime(time)}
-                              </SelectItem>
-                            );
-                          })
-                        ) : (
-                          // Production mode: hourly intervals
-                          Array.from({ length: 24 }, (_, i) => {
-                            const hour = i.toString().padStart(2, '0');
-                            const time = `${hour}:00`;
-                            return (
-                              <SelectItem key={time} value={time}>
-                                {formatTime(time)}
-                              </SelectItem>
-                            );
-                          })
+                    <Label>Delivery Time{localPreferences.times?.length > 1 ? 's' : ''}</Label>
+                    <div className="space-y-3">
+                      {/* First time selector */}
+                      <div className="flex items-center gap-2">
+                        <Select
+                          value={localPreferences.times?.[0] || "08:00"}
+                          onValueChange={(value) => {
+                            const currentTimes = localPreferences.times || ["08:00"];
+                            const newTimes = [value, ...currentTimes.slice(1)];
+                            handlePreferenceChange("times", newTimes);
+                          }}
+                        >
+                          <SelectTrigger>
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {import.meta.env.DEV ? (
+                              // Development mode: 10-minute intervals
+                              Array.from({ length: 144 }, (_, i) => {
+                                const totalMinutes = i * 10;
+                                const hours = Math.floor(totalMinutes / 60);
+                                const minutes = totalMinutes % 60;
+                                const time = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+                                return (
+                                  <SelectItem key={time} value={time}>
+                                    {formatTime(time)}
+                                  </SelectItem>
+                                );
+                              })
+                            ) : (
+                              // Production mode: hourly intervals
+                              Array.from({ length: 24 }, (_, i) => {
+                                const hour = i.toString().padStart(2, '0');
+                                const time = `${hour}:00`;
+                                return (
+                                  <SelectItem key={time} value={time}>
+                                    {formatTime(time)}
+                                  </SelectItem>
+                                );
+                              })
+                            )}
+                          </SelectContent>
+                        </Select>
+                        
+                        {/* Add second time button */}
+                        {(!localPreferences.times || localPreferences.times.length < 2) && (
+                          <Button
+                            type="button"
+                            variant="outline"
+                            size="sm"
+                            className="px-3"
+                            onClick={() => {
+                              const currentTimes = localPreferences.times || ["08:00"];
+                              const secondTime = currentTimes[0] === "08:00" ? "18:00" : "08:00";
+                              handlePreferenceChange("times", [...currentTimes, secondTime]);
+                            }}
+                          >
+                            +
+                          </Button>
                         )}
-                      </SelectContent>
-                    </Select>
+                      </div>
+
+                      {/* Second time selector */}
+                      {localPreferences.times && localPreferences.times.length > 1 && (
+                        <div className="flex items-center gap-2">
+                          <Select
+                            value={localPreferences.times[1]}
+                            onValueChange={(value) => {
+                              const currentTimes = localPreferences.times || ["08:00"];
+                              const newTimes = [currentTimes[0], value];
+                              handlePreferenceChange("times", newTimes);
+                            }}
+                          >
+                            <SelectTrigger>
+                              <SelectValue />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {import.meta.env.DEV ? (
+                                // Development mode: 10-minute intervals
+                                Array.from({ length: 144 }, (_, i) => {
+                                  const totalMinutes = i * 10;
+                                  const hours = Math.floor(totalMinutes / 60);
+                                  const minutes = totalMinutes % 60;
+                                  const time = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+                                  return (
+                                    <SelectItem key={time} value={time}>
+                                      {formatTime(time)}
+                                    </SelectItem>
+                                  );
+                                })
+                              ) : (
+                                // Production mode: hourly intervals
+                                Array.from({ length: 24 }, (_, i) => {
+                                  const hour = i.toString().padStart(2, '0');
+                                  const time = `${hour}:00`;
+                                  return (
+                                    <SelectItem key={time} value={time}>
+                                      {formatTime(time)}
+                                    </SelectItem>
+                                  );
+                                })
+                              )}
+                            </SelectContent>
+                          </Select>
+                          
+                          {/* Remove second time button */}
+                          <Button
+                            type="button"
+                            variant="outline"
+                            size="sm"
+                            className="px-3"
+                            onClick={() => {
+                              const currentTimes = localPreferences.times || ["08:00"];
+                              handlePreferenceChange("times", [currentTimes[0]]);
+                            }}
+                          >
+                            ×
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+                    
                     {import.meta.env.DEV && (
                       <p className="text-xs text-slate-500 mt-1">
                         Development mode: 10-minute intervals available for testing
