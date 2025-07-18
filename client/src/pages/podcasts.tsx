@@ -659,22 +659,23 @@ export default function Podcasts() {
                 {import.meta.env.DEV && (
                   <Button
                     variant="secondary"
-                    onClick={async () => {
-                      try {
-                        const response = await apiRequest('/api/dev/test-podcast-delivery', {
-                          method: 'POST',
+                    onClick={() => {
+                      apiRequest('/api/dev/test-podcast-delivery', {
+                        method: 'POST',
+                      })
+                        .then((response) => {
+                          toast({
+                            title: "Test Podcast Scheduled",
+                            description: response.message || "Test podcast scheduled for delivery in 5 minutes",
+                          });
+                        })
+                        .catch((error) => {
+                          toast({
+                            title: "Error",
+                            description: error.message || "Failed to schedule test podcast",
+                            variant: "destructive",
+                          });
                         });
-                        toast({
-                          title: "Test Podcast Scheduled",
-                          description: response.message,
-                        });
-                      } catch (error) {
-                        toast({
-                          title: "Error",
-                          description: error.message || "Failed to schedule test podcast",
-                          variant: "destructive",
-                        });
-                      }
                     }}
                   >
                     🧪 Test Delivery (5 min)
