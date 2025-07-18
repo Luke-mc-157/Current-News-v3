@@ -214,12 +214,22 @@ export async function processPendingPodcasts() {
         
         // Update episode with audio URL
         await storage.updatePodcastEpisode(episode.id, {
-          audioUrl: audioResult.audioUrl
+          audioUrl: audioResult.filePath || audioResult
         });
         
         // Send email
         console.log(`📧 Sending podcast to ${user.email}`);
-        const audioPath = path.join(__dirname, '..', '..', audioResult.audioUrl);
+        // Handle both object return and string return from generateAudio
+        const audioFilePath = typeof audioResult === 'string' 
+          ? audioResult 
+          : (audioResult.filePath || audioResult.audioUrl);
+        
+        // If path is relative, convert to absolute
+        const audioPath = audioFilePath.startsWith('/') 
+          ? audioFilePath 
+          : path.join(__dirname, '..', '..', audioFilePath);
+          
+        console.log(`📧 Audio file path: ${audioPath}`);
         await sendPodcastEmail(user.email, audioPath, "Current News");
         
         // Update episode with email sent timestamp
