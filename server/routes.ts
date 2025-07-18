@@ -1784,7 +1784,7 @@ export function registerRoutes(app) {
         const userId = req.user.id;
         
         // Get all pending podcasts for this user
-        const pendingPodcasts = await storage.getScheduledPodcasts(userId);
+        const pendingPodcasts = await storage.getScheduledPodcastsForUser(userId);
         const pending = pendingPodcasts.filter(p => p.status === 'pending');
         
         console.log(`🧹 Found ${pending.length} pending podcasts to clean up for user ${userId}`);

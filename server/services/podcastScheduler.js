@@ -100,14 +100,14 @@ export async function createScheduledPodcasts() {
           
           for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
             const deliveryTime = getNextScheduledTime(preferences, timeIndex);
-            const scheduledFor = new Date(deliveryTime.getTime() - 10 * 60 * 1000); // 10 minutes before delivery
+            const scheduledFor = new Date(deliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
             
             // Check if we already have a pending podcast for this specific time
             const timeStr = times[timeIndex];
             const hasPendingForThisTime = existingScheduled.some(p => 
               p.status === 'pending' && 
-              p.preferenceSnapshot?.times?.[0] === timeStr &&
-              p.deliveryTime.getTime() > Date.now()
+              p.preferenceSnapshot?.times?.includes(timeStr) &&
+              Math.abs(p.deliveryTime.getTime() - deliveryTime.getTime()) < 60 * 1000 // Within 1 minute
             );
             
             if (!hasPendingForThisTime) {
@@ -159,6 +159,19 @@ export async function processPendingPodcasts() {
     console.log('🔄 Processing pending scheduled podcasts...');
     
     const pendingPodcasts = await storage.getPendingPodcastsDue();
+    
+    // Also check for any stuck pending podcasts
+    const allPending = await storage.getScheduledPodcastsForUser(4); // dev_user id is 4
+    const stuckPending = allPending.filter(p => p.status === 'pending');
+    if (stuckPending.length > 0) {
+      console.log(`⚠️ Found ${stuckPending.length} pending podcast(s), checking details:`);
+      stuckPending.forEach(p => {
+        const scheduledFor = new Date(p.scheduledFor);
+        const deliveryTime = new Date(p.deliveryTime);
+        const now = new Date();
+        console.log(`   - ID: ${p.id}, ScheduledFor: ${scheduledFor.toISOString()} (${scheduledFor < now ? 'PAST DUE' : 'future'}), DeliveryTime: ${deliveryTime.toISOString()}`);
+      });
+    }
     
     if (pendingPodcasts.length === 0) {
       console.log('✅ No pending podcasts due');
@@ -277,7 +290,7 @@ export async function processPendingPodcasts() {
         const currentPreferences = await storage.getPodcastPreferences(scheduled.userId);
         if (currentPreferences && currentPreferences.enabled) {
           const nextDeliveryTime = getNextScheduledTime(currentPreferences);
-          const nextScheduledFor = new Date(nextDeliveryTime.getTime() - 10 * 60 * 1000); // 10 minutes before delivery
+          const nextScheduledFor = new Date(nextDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
           
           await storage.createScheduledPodcast({
             userId: scheduled.userId,
