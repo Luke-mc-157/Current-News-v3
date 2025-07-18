@@ -703,9 +703,18 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
-    // Temporarily disabled to prevent automatic processing
-    console.log('⚠️ Automatic podcast processing temporarily disabled');
-    return [];
+    const now = new Date();
+    // Only get podcasts scheduled within the next 5 minutes (scheduler runs every 5 minutes)
+    // This prevents processing past-due podcasts from previous runs
+    const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+    
+    return await db.select().from(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.status, 'pending'),
+        gte(scheduledPodcasts.scheduledFor, now), // Must be scheduled for now or future
+        lt(scheduledPodcasts.scheduledFor, fiveMinutesFromNow) // But within next 5 minutes
+      ))
+      .orderBy(scheduledPodcasts.scheduledFor);
   }
 
   async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {

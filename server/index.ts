@@ -85,7 +85,7 @@ app.use((req, res, next) => {
   }, () => {
     log(`serving on port ${port}`);
     
-    // DISABLED: Automatic podcast scheduler to prevent unwanted API credit consumption
-    // startPodcastScheduler();
+    // Start podcast scheduler after server is running
+    startPodcastScheduler();
   });
 })();
