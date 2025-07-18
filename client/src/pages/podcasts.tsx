@@ -73,7 +73,7 @@ export default function Podcasts() {
   // Save preferences mutation
   const saveMutation = useMutation({
     mutationFn: async (prefs: Partial<PodcastPreferences>) => {
-      return apiRequest("/api/podcast-preferences", "POST", prefs);
+      return apiRequest("POST", "/api/podcast-preferences", prefs);
     },
     onSuccess: () => {
       toast({
