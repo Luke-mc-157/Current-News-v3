@@ -22,8 +22,15 @@ function getNextScheduledTime(preferences) {
   // Set the time for today (UTC time)
   nextSchedule.setUTCHours(hours, minutes, 0, 0);
   
-  // If the time has already passed today, schedule for tomorrow (or next valid day)
-  if (nextSchedule <= now) {
+  // Check if we need to schedule for today or tomorrow
+  // In development, allow scheduling for times that are coming up soon (within next hour)
+  const isDevMode = process.env.NODE_ENV === 'development';
+  const bufferMinutes = isDevMode ? 60 : 10; // 1 hour buffer in dev, 10 min in prod
+  
+  const timeUntilScheduled = (nextSchedule.getTime() - now.getTime()) / (1000 * 60); // minutes
+  
+  if (timeUntilScheduled < -bufferMinutes) {
+    // Time has passed, schedule for tomorrow (or next valid day)
     nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
   }
   

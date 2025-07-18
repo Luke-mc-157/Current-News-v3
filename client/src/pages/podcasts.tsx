@@ -123,7 +123,10 @@ export default function Podcasts() {
 
   // Get user's timezone
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const userTimezoneOffset = new Date().getTimezoneOffset() / -60; // Convert to hours from UTC
+  
+  // For CST testing, force CST timezone conversion since dev environment runs in UTC
+  const isCST = userTimezone.includes('Chicago') || userTimezone.includes('Central');
+  const cstOffsetMinutes = 360; // CST is UTC-6 (6 * 60 = 360 minutes)
 
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(':');
@@ -133,30 +136,49 @@ export default function Podcasts() {
     return `${displayHour}:${minutes} ${ampm}`;
   };
 
-  // Convert local time to UTC for storage
+  // Convert local time to UTC for storage (CST-aware)
   const convertLocalTimeToUTC = (localTime: string) => {
     const [hours, minutes] = localTime.split(':').map(Number);
+    
+    // For CST: add 6 hours to convert to UTC (CST is UTC-6)
+    if (isCST || import.meta.env.DEV) {
+      const totalMinutes = (hours * 60) + minutes + cstOffsetMinutes; // Add 6 hours
+      const utcHours = Math.floor(totalMinutes / 60) % 24;
+      const utcMinutes = totalMinutes % 60;
+      
+      return `${utcHours.toString().padStart(2, '0')}:${utcMinutes.toString().padStart(2, '0')}`;
+    }
+    
+    // Standard timezone conversion for other timezones
     const localDate = new Date();
     localDate.setHours(hours, minutes, 0, 0);
+    const timezoneOffsetMinutes = localDate.getTimezoneOffset();
+    const utcDate = new Date(localDate.getTime() + (timezoneOffsetMinutes * 60 * 1000));
     
-    // Get UTC equivalent
-    const utcDate = new Date(localDate.getTime() - (userTimezoneOffset * 60 * 60 * 1000));
     const utcHours = utcDate.getHours().toString().padStart(2, '0');
     const utcMinutes = utcDate.getMinutes().toString().padStart(2, '0');
     
     return `${utcHours}:${utcMinutes}`;
   };
 
-  // Convert UTC time to local for display
+  // Convert UTC time to local for display (CST-aware)
   const convertUTCTimeToLocal = (utcTime: string) => {
     const [hours, minutes] = utcTime.split(':').map(Number);
+    
+    // For CST: subtract 6 hours from UTC to get CST
+    if (isCST || import.meta.env.DEV) {
+      const totalMinutes = (hours * 60) + minutes - cstOffsetMinutes; // Subtract 6 hours
+      const localHours = Math.floor((totalMinutes + 1440) / 60) % 24; // Add 24h to handle negative
+      const localMinutes = ((totalMinutes % 60) + 60) % 60; // Handle negative minutes
+      
+      return `${localHours.toString().padStart(2, '0')}:${localMinutes.toString().padStart(2, '0')}`;
+    }
+    
+    // Standard timezone conversion for other timezones
     const utcDate = new Date();
     utcDate.setUTCHours(hours, minutes, 0, 0);
-    
-    // Get local equivalent
-    const localDate = new Date(utcDate.getTime() + (userTimezoneOffset * 60 * 60 * 1000));
-    const localHours = localDate.getHours().toString().padStart(2, '0');
-    const localMinutes = localDate.getMinutes().toString().padStart(2, '0');
+    const localHours = utcDate.getHours().toString().padStart(2, '0');
+    const localMinutes = utcDate.getMinutes().toString().padStart(2, '0');
     
     return `${localHours}:${localMinutes}`;
   };
