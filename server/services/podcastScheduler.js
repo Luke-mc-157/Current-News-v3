@@ -85,21 +85,25 @@ export async function createScheduledPodcasts() {
             userId: user.id,
             scheduledFor,
             deliveryTime,
-            topics: preferences.topics,
-            duration: preferences.duration,
-            voiceId: preferences.voiceId,
-            enhanceWithX: preferences.enhanceWithX,
-            status: 'pending'
+            status: 'pending',
+            preferenceSnapshot: {
+              topics: preferences.topics,
+              duration: preferences.duration,
+              voiceId: preferences.voiceId,
+              enhanceWithX: preferences.enhanceWithX,
+              cadence: preferences.cadence,
+              times: preferences.times
+            }
           };
           
           console.log('Creating scheduled podcast with data:', {
             userId: scheduledPodcastData.userId,
             scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
             deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
-            topics: scheduledPodcastData.topics,
-            duration: scheduledPodcastData.duration,
-            voiceId: scheduledPodcastData.voiceId,
-            enhanceWithX: scheduledPodcastData.enhanceWithX,
+            topics: scheduledPodcastData.preferenceSnapshot.topics,
+            duration: scheduledPodcastData.preferenceSnapshot.duration,
+            voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
+            enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
             status: scheduledPodcastData.status
           });
           
@@ -143,11 +147,18 @@ export async function processPendingPodcasts() {
           continue;
         }
         
+        // Extract data from preference snapshot
+        const prefs = scheduled.preferenceSnapshot || {};
+        const topics = prefs.topics || [];
+        const duration = prefs.duration || 10;
+        const voiceId = prefs.voiceId || 'ErXwobaYiN019PkySvjV';
+        const enhanceWithX = prefs.enhanceWithX || false;
+        
         // Get X auth if enhanceWithX is enabled
         let userHandle = null;
         let accessToken = null;
         
-        if (scheduled.enhanceWithX) {
+        if (enhanceWithX) {
           const xAuth = await storage.getXAuthTokenByUserId(scheduled.userId);
           if (xAuth) {
             userHandle = xAuth.xHandle;
@@ -156,9 +167,9 @@ export async function processPendingPodcasts() {
         }
         
         // Generate headlines using live search
-        console.log(`📰 Generating headlines for topics: ${scheduled.topics.join(', ')}`);
+        console.log(`📰 Generating headlines for topics: ${topics.join(', ')}`);
         const headlinesResult = await generateHeadlinesWithLiveSearch(
-          scheduled.topics,
+          topics,
           scheduled.userId,
           userHandle,
           accessToken
@@ -171,28 +182,28 @@ export async function processPendingPodcasts() {
         }
         
         // Generate podcast script
-        console.log(`📝 Generating ${scheduled.duration}-minute podcast script`);
+        console.log(`📝 Generating ${duration}-minute podcast script`);
         const script = await generatePodcastScript(
           headlinesResult.compiledData,
           headlinesResult.appendix,
-          scheduled.duration,
+          duration,
           "Current News"
         );
         
         // Create podcast episode record
         const episode = await storage.createPodcastEpisode({
           userId: scheduled.userId,
-          topics: scheduled.topics,
-          durationMinutes: scheduled.duration,
-          voiceId: scheduled.voiceId,
+          topics: topics,
+          durationMinutes: duration,
+          voiceId: voiceId,
           script,
           headlineIds: headlinesResult.headlines.map(h => h.id),
           wasScheduled: true
         });
         
         // Generate audio
-        console.log(`🎵 Generating audio with voice ${scheduled.voiceId}`);
-        const audioResult = await generateAudio(script, scheduled.voiceId);
+        console.log(`🎵 Generating audio with voice ${voiceId}`);
+        const audioResult = await generateAudio(script, voiceId);
         
         // Update episode with audio URL
         await storage.updatePodcastEpisode(episode.id, {
@@ -227,11 +238,15 @@ export async function processPendingPodcasts() {
             userId: scheduled.userId,
             scheduledFor: nextScheduledFor,
             deliveryTime: nextDeliveryTime,
-            topics: currentPreferences.topics,
-            duration: currentPreferences.duration,
-            voiceId: currentPreferences.voiceId,
-            enhanceWithX: currentPreferences.enhanceWithX,
-            status: 'pending'
+            status: 'pending',
+            preferenceSnapshot: {
+              topics: currentPreferences.topics,
+              duration: currentPreferences.duration,
+              voiceId: currentPreferences.voiceId,
+              enhanceWithX: currentPreferences.enhanceWithX,
+              cadence: currentPreferences.cadence,
+              times: currentPreferences.times
+            }
           });
           console.log(`📅 Next podcast scheduled for ${nextDeliveryTime.toLocaleString()}`);
         }

@@ -349,19 +349,38 @@ export default function Podcasts() {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {Array.from({ length: 24 }, (_, i) => {
-                          const hour = i.toString().padStart(2, '0');
-                          const time = `${hour}:00`;
-                          return (
-                            <SelectItem key={time} value={time}>
-                              {formatTime(time)}
-                            </SelectItem>
-                          );
-                        })}
+                        {import.meta.env.DEV ? (
+                          // Development mode: 10-minute intervals
+                          Array.from({ length: 144 }, (_, i) => {
+                            const totalMinutes = i * 10;
+                            const hours = Math.floor(totalMinutes / 60);
+                            const minutes = totalMinutes % 60;
+                            const time = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+                            return (
+                              <SelectItem key={time} value={time}>
+                                {formatTime(time)}
+                              </SelectItem>
+                            );
+                          })
+                        ) : (
+                          // Production mode: hourly intervals
+                          Array.from({ length: 24 }, (_, i) => {
+                            const hour = i.toString().padStart(2, '0');
+                            const time = `${hour}:00`;
+                            return (
+                              <SelectItem key={time} value={time}>
+                                {formatTime(time)}
+                              </SelectItem>
+                            );
+                          })
+                        )}
                       </SelectContent>
                     </Select>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Time is in your local timezone
+                      {import.meta.env.DEV ? 
+                        "Development mode: 10-minute intervals available for testing" : 
+                        "Time is in your local timezone"
+                      }
                     </p>
                   </div>
                 </div>
