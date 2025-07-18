@@ -25,6 +25,7 @@ import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware
 import { runPodcastScheduler, createScheduledPodcasts, processPendingPodcasts } from "./services/podcastScheduler.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { format } from 'date-fns';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -1659,6 +1660,54 @@ export function registerRoutes(app) {
       res.status(400).json({ message: error.message });
     }
   });
+
+  // Development-only podcast test endpoint
+  if (process.env.NODE_ENV === 'development') {
+    router.post("/api/dev/test-podcast-delivery", requireAuth, async (req, res) => {
+      try {
+        const userId = req.user.id;
+        
+        // Get user's podcast preferences
+        const preferences = await storage.getPodcastPreferences(userId);
+        if (!preferences || !preferences.enabled) {
+          return res.status(400).json({ error: "Podcast preferences not enabled" });
+        }
+
+        // Calculate delivery time 5 minutes from now
+        const now = new Date();
+        const scheduledFor = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes from now
+        const deliveryTime = new Date(scheduledFor.getTime() + 10 * 60 * 1000); // 10 minutes after scheduledFor
+
+        // Create a scheduled podcast entry
+        const scheduledPodcast = await storage.createScheduledPodcast({
+          userId,
+          scheduledFor,
+          deliveryTime,
+          status: 'pending' as const,
+          preferences: preferences.preferenceSnapshot || {
+            topics: preferences.topics || [],
+            duration: preferences.duration || '5',
+            voiceId: preferences.voiceId || 'ErXwobaYiN019PkySvjV',
+            enhanceWithX: preferences.enhanceWithX || false,
+            customEmail: preferences.customEmail,
+            cadence: preferences.cadence || 'daily',
+            times: [format(scheduledFor, 'HH:mm')] // Use the test time
+          }
+        });
+
+        console.log(`🧪 Test podcast scheduled for user ${userId} at ${scheduledFor.toISOString()}`);
+        
+        res.json({ 
+          success: true, 
+          scheduledPodcast,
+          message: `Test podcast scheduled for delivery in 5 minutes (${format(scheduledFor, 'h:mm a')})`
+        });
+      } catch (error) {
+        console.error("Error scheduling test podcast:", error);
+        res.status(500).json({ error: "Failed to schedule test podcast" });
+      }
+    });
+  }
 
   // Podcast scheduler routes
   router.post("/api/scheduler/run", requireAuth, async (req, res) => {

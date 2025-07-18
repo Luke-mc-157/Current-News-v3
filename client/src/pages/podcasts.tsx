@@ -656,6 +656,30 @@ export default function Podcasts() {
                   )}
                   Save Preferences
                 </Button>
+                {import.meta.env.DEV && (
+                  <Button
+                    variant="secondary"
+                    onClick={async () => {
+                      try {
+                        const response = await apiRequest('/api/dev/test-podcast-delivery', {
+                          method: 'POST',
+                        });
+                        toast({
+                          title: "Test Podcast Scheduled",
+                          description: response.message,
+                        });
+                      } catch (error) {
+                        toast({
+                          title: "Error",
+                          description: error.message || "Failed to schedule test podcast",
+                          variant: "destructive",
+                        });
+                      }
+                    }}
+                  >
+                    🧪 Test Delivery (5 min)
+                  </Button>
+                )}
               </div>
             </CardContent>
           </Card>
