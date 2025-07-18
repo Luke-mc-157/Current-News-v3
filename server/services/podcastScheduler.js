@@ -91,26 +91,19 @@ export async function createScheduledPodcasts() {
         const userTimezone = preferences.timezone || 'America/Chicago';
         console.log(`📅 Creating scheduled podcast for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
         
-        // Check if there's already a pending scheduled podcast for this user at each time
-        const existingScheduled = await storage.getScheduledPodcastsForUser(user.id);
+        // CRITICAL: First delete ALL pending scheduled podcasts for this user
+        // This ensures only the current preferences are scheduled
+        await storage.deletePendingScheduledPodcastsForUser(user.id);
+        console.log(`🧹 Cleaned up old pending podcasts for user ${user.username}`);
         
-        // Always proceed to check each time slot
-          // Create scheduled podcasts for each delivery time
-          const times = preferences.times || ["08:00"];
+        // Create scheduled podcasts for each delivery time
+        const times = preferences.times || ["08:00"];
           
           for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
             const deliveryTime = getNextScheduledTime(preferences, timeIndex);
             const scheduledFor = new Date(deliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
             
-            // Check if we already have a pending podcast for this specific time
-            const timeStr = times[timeIndex];
-            const hasPendingForThisTime = existingScheduled.some(p => 
-              p.status === 'pending' && 
-              p.preferenceSnapshot?.times?.includes(timeStr) &&
-              Math.abs(p.deliveryTime.getTime() - deliveryTime.getTime()) < 60 * 1000 // Within 1 minute
-            );
-            
-            if (!hasPendingForThisTime) {
+            // Always create fresh scheduled podcasts since we cleaned up all pending ones above
               const scheduledPodcastData = {
                 userId: user.id,
                 scheduledFor,
@@ -142,9 +135,6 @@ export async function createScheduledPodcasts() {
               await storage.createScheduledPodcast(scheduledPodcastData);
               
               console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${formattedDeliveryTime}`);
-            } else {
-              console.log(`⏭️ Skipping time ${times[timeIndex]} - already has pending podcast`);
-            }
           }
       }
     }
