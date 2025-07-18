@@ -703,13 +703,9 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
-    const now = new Date();
-    return await db.select().from(scheduledPodcasts)
-      .where(and(
-        eq(scheduledPodcasts.status, 'pending'),
-        lt(scheduledPodcasts.scheduledFor, now)
-      ))
-      .orderBy(scheduledPodcasts.scheduledFor);
+    // Temporarily disabled to prevent automatic processing
+    console.log('⚠️ Automatic podcast processing temporarily disabled');
+    return [];
   }
 
   async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {
