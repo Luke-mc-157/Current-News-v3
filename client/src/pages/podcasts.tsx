@@ -63,10 +63,14 @@ export default function Podcasts() {
     retry: false
   });
 
-  // Update local preferences when fetched
+  // Update local preferences when fetched - convert UTC times to local for display
   useEffect(() => {
     if (preferences) {
-      setLocalPreferences(preferences);
+      const prefsWithLocalTimes = {
+        ...preferences,
+        times: preferences.times?.map(convertUTCTimeToLocal) || ["08:00"]
+      };
+      setLocalPreferences(prefsWithLocalTimes);
     }
   }, [preferences]);
 
@@ -107,8 +111,19 @@ export default function Podcasts() {
       return;
     }
 
-    saveMutation.mutate(localPreferences);
+    // Convert local times to UTC before saving
+    const prefsForSaving = {
+      ...localPreferences,
+      times: localPreferences.times?.map(convertLocalTimeToUTC) || ["08:00"],
+      timezone: userTimezone // Store user's timezone for reference
+    };
+
+    saveMutation.mutate(prefsForSaving);
   };
+
+  // Get user's timezone
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const userTimezoneOffset = new Date().getTimezoneOffset() / -60; // Convert to hours from UTC
 
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(':');
@@ -116,6 +131,34 @@ export default function Podcasts() {
     const ampm = hour >= 12 ? 'PM' : 'AM';
     const displayHour = hour % 12 || 12;
     return `${displayHour}:${minutes} ${ampm}`;
+  };
+
+  // Convert local time to UTC for storage
+  const convertLocalTimeToUTC = (localTime: string) => {
+    const [hours, minutes] = localTime.split(':').map(Number);
+    const localDate = new Date();
+    localDate.setHours(hours, minutes, 0, 0);
+    
+    // Get UTC equivalent
+    const utcDate = new Date(localDate.getTime() - (userTimezoneOffset * 60 * 60 * 1000));
+    const utcHours = utcDate.getHours().toString().padStart(2, '0');
+    const utcMinutes = utcDate.getMinutes().toString().padStart(2, '0');
+    
+    return `${utcHours}:${utcMinutes}`;
+  };
+
+  // Convert UTC time to local for display
+  const convertUTCTimeToLocal = (utcTime: string) => {
+    const [hours, minutes] = utcTime.split(':').map(Number);
+    const utcDate = new Date();
+    utcDate.setUTCHours(hours, minutes, 0, 0);
+    
+    // Get local equivalent
+    const localDate = new Date(utcDate.getTime() + (userTimezoneOffset * 60 * 60 * 1000));
+    const localHours = localDate.getHours().toString().padStart(2, '0');
+    const localMinutes = localDate.getMinutes().toString().padStart(2, '0');
+    
+    return `${localHours}:${localMinutes}`;
   };
 
   const formatDate = (date: string | Date) => {
@@ -376,6 +419,14 @@ export default function Podcasts() {
                         )}
                       </SelectContent>
                     </Select>
+                    {import.meta.env.DEV && (
+                      <p className="text-xs text-slate-500 mt-1">
+                        Development mode: 10-minute intervals available for testing
+                      </p>
+                    )}
+                    <p className="text-xs text-slate-500 mt-1">
+                      Times shown in your local timezone ({userTimezone})
+                    </p>
                     <p className="text-sm text-muted-foreground mt-1">
                       {import.meta.env.DEV ? 
                         "Development mode: 10-minute intervals available for testing" : 

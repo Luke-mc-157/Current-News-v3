@@ -10,48 +10,48 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Convert cadence to cron-like schedule
+// Convert cadence to cron-like schedule with timezone support
 function getNextScheduledTime(preferences) {
   const now = new Date();
   const nextSchedule = new Date(now);
   
-  // Get the scheduled time (first time in the array)
-  const scheduledTime = preferences.times[0]; // Format: "08:00"
+  // Get the scheduled time (first time in the array) - this is already in UTC from frontend conversion
+  const scheduledTime = preferences.times[0]; // Format: "08:00" (UTC)
   const [hours, minutes] = scheduledTime.split(':').map(Number);
   
-  // Set the time for today
-  nextSchedule.setHours(hours, minutes, 0, 0);
+  // Set the time for today (UTC time)
+  nextSchedule.setUTCHours(hours, minutes, 0, 0);
   
   // If the time has already passed today, schedule for tomorrow (or next valid day)
   if (nextSchedule <= now) {
-    nextSchedule.setDate(nextSchedule.getDate() + 1);
+    nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
   }
   
-  // Handle cadence-specific logic
+  // Handle cadence-specific logic (using UTC day calculations)
   switch (preferences.cadence) {
     case 'daily':
       // Already set for next day if needed
       break;
       
     case 'weekdays':
-      // Skip weekends (Saturday = 6, Sunday = 0)
-      while (nextSchedule.getDay() === 0 || nextSchedule.getDay() === 6) {
-        nextSchedule.setDate(nextSchedule.getDate() + 1);
+      // Skip weekends (Saturday = 6, Sunday = 0) - using UTC day
+      while (nextSchedule.getUTCDay() === 0 || nextSchedule.getUTCDay() === 6) {
+        nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
       }
       break;
       
     case 'weekends':
-      // Only Saturday and Sunday
-      while (nextSchedule.getDay() !== 0 && nextSchedule.getDay() !== 6) {
-        nextSchedule.setDate(nextSchedule.getDate() + 1);
+      // Only Saturday and Sunday - using UTC day
+      while (nextSchedule.getUTCDay() !== 0 && nextSchedule.getUTCDay() !== 6) {
+        nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
       }
       break;
       
     case 'custom':
-      // Check custom days (array of day names)
+      // Check custom days (array of day names) - using UTC day
       const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      while (!preferences.customDays.includes(dayNames[nextSchedule.getDay()])) {
-        nextSchedule.setDate(nextSchedule.getDate() + 1);
+      while (!preferences.customDays.includes(dayNames[nextSchedule.getUTCDay()])) {
+        nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
       }
       break;
   }
