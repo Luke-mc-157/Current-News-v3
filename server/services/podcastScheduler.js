@@ -87,11 +87,10 @@ export async function createScheduledPodcasts() {
       if (preferences && preferences.enabled) {
         console.log(`📅 Creating scheduled podcast for user ${user.username} (${user.email})`);
         
-        // Check if there's already a pending scheduled podcast for this user
+        // Check if there's already a pending scheduled podcast for this user at each time
         const existingScheduled = await storage.getScheduledPodcastsForUser(user.id);
-        const hasPending = existingScheduled.some(p => p.status === 'pending');
         
-        if (!hasPending) {
+        // Always proceed to check each time slot
           // Create scheduled podcasts for each delivery time
           const times = preferences.times || ["08:00"];
           
@@ -99,38 +98,49 @@ export async function createScheduledPodcasts() {
             const deliveryTime = getNextScheduledTime(preferences, timeIndex);
             const scheduledFor = new Date(deliveryTime.getTime() - 10 * 60 * 1000); // 10 minutes before delivery
             
-            const scheduledPodcastData = {
-              userId: user.id,
-              scheduledFor,
-              deliveryTime,
-              status: 'pending',
-              preferenceSnapshot: {
-                topics: preferences.topics,
-                duration: preferences.duration,
-                voiceId: preferences.voiceId,
-                enhanceWithX: preferences.enhanceWithX,
-                cadence: preferences.cadence,
-                times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
-              }
-            };
+            // Check if we already have a pending podcast for this specific time
+            const timeStr = times[timeIndex];
+            const hasPendingForThisTime = existingScheduled.some(p => 
+              p.status === 'pending' && 
+              p.preferenceSnapshot?.times?.[0] === timeStr &&
+              p.deliveryTime.getTime() > Date.now()
+            );
             
-            console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length} with data:`, {
-              userId: scheduledPodcastData.userId,
-              scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
-              deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
-              time: times[timeIndex],
-              topics: scheduledPodcastData.preferenceSnapshot.topics,
-              duration: scheduledPodcastData.preferenceSnapshot.duration,
-              voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
-              enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
-              status: scheduledPodcastData.status
-            });
-            
-            await storage.createScheduledPodcast(scheduledPodcastData);
-            
-            console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${deliveryTime.toLocaleString()}`);
+            if (!hasPendingForThisTime) {
+              const scheduledPodcastData = {
+                userId: user.id,
+                scheduledFor,
+                deliveryTime,
+                status: 'pending',
+                preferenceSnapshot: {
+                  topics: preferences.topics,
+                  duration: preferences.duration,
+                  voiceId: preferences.voiceId,
+                  enhanceWithX: preferences.enhanceWithX,
+                  cadence: preferences.cadence,
+                  times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
+                }
+              };
+              
+              console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length} with data:`, {
+                userId: scheduledPodcastData.userId,
+                scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
+                deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
+                time: times[timeIndex],
+                topics: scheduledPodcastData.preferenceSnapshot.topics,
+                duration: scheduledPodcastData.preferenceSnapshot.duration,
+                voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
+                enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
+                status: scheduledPodcastData.status
+              });
+              
+              await storage.createScheduledPodcast(scheduledPodcastData);
+              
+              console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${deliveryTime.toLocaleString()}`);
+            } else {
+              console.log(`⏭️ Skipping time ${times[timeIndex]} - already has pending podcast`);
+            }
           }
-        }
       }
     }
   } catch (error) {
