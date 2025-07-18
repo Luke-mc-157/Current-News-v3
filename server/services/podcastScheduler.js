@@ -252,10 +252,10 @@ export async function processPendingPodcasts() {
           ? audioResult 
           : (audioResult.filePath || audioResult.audioUrl);
         
-        // If path is relative, convert to absolute
-        const audioPath = audioFilePath.startsWith('/') 
-          ? audioFilePath 
-          : path.join(__dirname, '..', '..', audioFilePath);
+        // Convert web path to absolute file path
+        const audioPath = audioFilePath.startsWith('/podcast-audio/') 
+          ? path.join(process.cwd(), audioFilePath.substring(1)) // Remove leading / and join with cwd
+          : path.join(process.cwd(), audioFilePath);
           
         console.log(`📧 Audio file path: ${audioPath}`);
         await sendPodcastEmail(user.email, audioPath, "Current News");

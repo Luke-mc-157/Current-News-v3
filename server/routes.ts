@@ -1675,8 +1675,9 @@ export function registerRoutes(app) {
 
         // Calculate delivery time 5 minutes from now
         const now = new Date();
-        const scheduledFor = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes from now
-        const deliveryTime = new Date(scheduledFor.getTime() + 10 * 60 * 1000); // 10 minutes after scheduledFor
+        // For immediate processing, schedule 1 minute before delivery
+        const deliveryTime = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes from now
+        const scheduledFor = new Date(deliveryTime.getTime() - 1 * 60 * 1000); // 1 minute before delivery
 
         // Create a scheduled podcast entry
         const scheduledPodcast = await storage.createScheduledPodcast({
@@ -1684,9 +1685,9 @@ export function registerRoutes(app) {
           scheduledFor,
           deliveryTime,
           status: 'pending' as const,
-          preferences: preferences.preferenceSnapshot || {
+          preferenceSnapshot: {
             topics: preferences.topics || [],
-            duration: preferences.duration || '5',
+            duration: preferences.duration || 5, // Pass as number, not string
             voiceId: preferences.voiceId || 'ErXwobaYiN019PkySvjV',
             enhanceWithX: preferences.enhanceWithX || false,
             customEmail: preferences.customEmail,
