@@ -129,7 +129,8 @@ export const podcastPreferences = pgTable("podcast_preferences", {
   enabled: boolean("enabled").default(false).notNull(),
   cadence: text("cadence").notNull(), // 'daily' | 'weekday' | 'custom'
   customDays: integer("custom_days").array(), // 0-6 (Sunday-Saturday)
-  times: jsonb("times").$type<Array<{ time: string; timezone: string }>>().notNull(), // [{time: "8:00 AM", timezone: "CST"}]
+  times: jsonb("times").$type<string[]>().notNull(), // ["08:00", "18:00"] - times in user's local timezone
+  timezone: text("timezone").notNull().default("America/Chicago"), // User's selected timezone (IANA format)
   topics: text("topics").array().notNull(),
   duration: integer("duration").notNull(), // minutes (5, 10, 15, 30)
   voiceId: text("voice_id").notNull(),

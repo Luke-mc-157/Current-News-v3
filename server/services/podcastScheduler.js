@@ -6,6 +6,7 @@ import { generateAudio } from "./voiceSynthesis.js";
 import { sendPodcastEmail } from "./emailService.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { fromZonedTime, toZonedTime, format } from 'date-fns-tz';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,24 +14,25 @@ const __dirname = path.dirname(__filename);
 // Convert cadence to cron-like schedule with timezone support for a specific time
 function getNextScheduledTime(preferences, timeIndex = 0) {
   const now = new Date();
-  const nextSchedule = new Date(now);
+  const userTimezone = preferences.timezone || 'America/Chicago';
   
   // Get the scheduled time at the specified index
-  const scheduledTime = preferences.times[timeIndex]; // Format: "08:00" (local time)
+  const scheduledTime = preferences.times[timeIndex]; // Format: "08:00" (local time in user's timezone)
   const [hours, minutes] = scheduledTime.split(':').map(Number);
   
-  // Convert local time to UTC for scheduling
-  // CST is UTC-6, so 1:00 AM CST = 7:00 AM UTC
-  const cstOffsetMinutes = 360; // CST is UTC-6 (6 * 60 = 360 minutes)
-  const totalMinutes = (hours * 60) + minutes + cstOffsetMinutes;
-  const utcHours = Math.floor(totalMinutes / 60) % 24;
-  const utcMinutes = totalMinutes % 60;
+  // Get current date in user's timezone
+  const nowInUserTz = toZonedTime(now, userTimezone);
+  const year = nowInUserTz.getFullYear();
+  const month = nowInUserTz.getMonth();
+  const date = nowInUserTz.getDate();
   
-  // Set the time for today (UTC time)
-  nextSchedule.setUTCHours(utcHours, utcMinutes, 0, 0);
+  // Create a date for the scheduled time today in user's timezone
+  const scheduledDateInTz = new Date(year, month, date, hours, minutes, 0);
+  
+  // Convert to UTC
+  const nextSchedule = fromZonedTime(scheduledDateInTz, userTimezone);
   
   // Check if we need to schedule for today or tomorrow
-  // In development, allow scheduling for times that are coming up soon (within next hour)
   const isDevMode = process.env.NODE_ENV === 'development';
   const bufferMinutes = isDevMode ? 60 : 10; // 1 hour buffer in dev, 10 min in prod
   
@@ -38,7 +40,8 @@ function getNextScheduledTime(preferences, timeIndex = 0) {
   
   if (timeUntilScheduled < -bufferMinutes) {
     // Time has passed, schedule for tomorrow (or next valid day)
-    nextSchedule.setUTCDate(nextSchedule.getUTCDate() + 1);
+    const tomorrowInTz = new Date(year, month, date + 1, hours, minutes, 0);
+    return fromZonedTime(tomorrowInTz, userTimezone);
   }
   
   // Handle cadence-specific logic (using UTC day calculations)
@@ -85,7 +88,8 @@ export async function createScheduledPodcasts() {
       const preferences = await storage.getPodcastPreferences(user.id);
       
       if (preferences && preferences.enabled) {
-        console.log(`📅 Creating scheduled podcast for user ${user.username} (${user.email})`);
+        const userTimezone = preferences.timezone || 'America/Chicago';
+        console.log(`📅 Creating scheduled podcast for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
         
         // Check if there's already a pending scheduled podcast for this user at each time
         const existingScheduled = await storage.getScheduledPodcastsForUser(user.id);
@@ -122,21 +126,22 @@ export async function createScheduledPodcasts() {
                 }
               };
               
-              console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length} with data:`, {
-                userId: scheduledPodcastData.userId,
-                scheduledFor: scheduledPodcastData.scheduledFor.toISOString(),
-                deliveryTime: scheduledPodcastData.deliveryTime.toISOString(),
-                time: times[timeIndex],
-                topics: scheduledPodcastData.preferenceSnapshot.topics,
-                duration: scheduledPodcastData.preferenceSnapshot.duration,
-                voiceId: scheduledPodcastData.preferenceSnapshot.voiceId,
-                enhanceWithX: scheduledPodcastData.preferenceSnapshot.enhanceWithX,
-                status: scheduledPodcastData.status
-              });
+              const userTimezone = preferences.timezone || 'America/Chicago';
+              const scheduledForUserTz = toZonedTime(scheduledFor, userTimezone);
+              const deliveryTimeUserTz = toZonedTime(deliveryTime, userTimezone);
+              const formattedScheduledTime = format(scheduledForUserTz, 'h:mm a zzz', { timeZone: userTimezone });
+              const formattedDeliveryTime = format(deliveryTimeUserTz, 'h:mm a zzz', { timeZone: userTimezone });
+              
+              console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length}:`);
+              console.log(`   User: ${user.username} (${user.email})`);
+              console.log(`   Scheduled for: ${formattedScheduledTime} (${scheduledFor.toISOString()})`);
+              console.log(`   Delivery at: ${formattedDeliveryTime} (${deliveryTime.toISOString()})`);
+              console.log(`   Topics: ${preferences.topics.join(', ')}`);
+              console.log(`   Duration: ${preferences.duration} minutes`);
               
               await storage.createScheduledPodcast(scheduledPodcastData);
               
-              console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${deliveryTime.toLocaleString()}`);
+              console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${formattedDeliveryTime}`);
             } else {
               console.log(`⏭️ Skipping time ${times[timeIndex]} - already has pending podcast`);
             }

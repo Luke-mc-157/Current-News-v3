@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut } from "lucide-react";
+import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin } from "lucide-react";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
@@ -30,6 +30,17 @@ const VOICE_OPTIONS = [
 // Days of week for custom schedule
 const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
+// US Timezones with proper daylight savings support
+const US_TIMEZONES = [
+  { value: "America/New_York", label: "Eastern Time (EST/EDT)", currentOffset: "UTC-5/UTC-4" },
+  { value: "America/Chicago", label: "Central Time (CST/CDT)", currentOffset: "UTC-6/UTC-5" },
+  { value: "America/Denver", label: "Mountain Time (MST/MDT)", currentOffset: "UTC-7/UTC-6" },
+  { value: "America/Phoenix", label: "Arizona Time (MST)", currentOffset: "UTC-7 (no DST)" },
+  { value: "America/Los_Angeles", label: "Pacific Time (PST/PDT)", currentOffset: "UTC-8/UTC-7" },
+  { value: "America/Anchorage", label: "Alaska Time (AKST/AKDT)", currentOffset: "UTC-9/UTC-8" },
+  { value: "Pacific/Honolulu", label: "Hawaii Time (HST)", currentOffset: "UTC-10 (no DST)" }
+];
+
 export default function Podcasts() {
   const { toast } = useToast();
   const { user, logout } = useAuth();
@@ -39,6 +50,7 @@ export default function Podcasts() {
     cadence: "daily",
     customDays: [],
     times: ["08:00"],
+    timezone: "America/Chicago",
     topics: [],
     duration: 10,
     voiceId: "EpgcYKEHSAySST8Yg2vf",
@@ -63,14 +75,10 @@ export default function Podcasts() {
     retry: false
   });
 
-  // Update local preferences when fetched - convert UTC times to local for display
+  // Update local preferences when fetched
   useEffect(() => {
     if (preferences) {
-      const prefsWithLocalTimes = {
-        ...preferences,
-        times: preferences.times?.map(convertUTCTimeToLocal) || ["08:00"]
-      };
-      setLocalPreferences(prefsWithLocalTimes);
+      setLocalPreferences(preferences);
     }
   }, [preferences]);
 
@@ -111,22 +119,9 @@ export default function Podcasts() {
       return;
     }
 
-    // Convert local times to UTC before saving
-    const prefsForSaving = {
-      ...localPreferences,
-      times: localPreferences.times?.map(convertLocalTimeToUTC) || ["08:00"],
-      timezone: userTimezone // Store user's timezone for reference
-    };
-
-    saveMutation.mutate(prefsForSaving);
+    // Times are already stored in user's local timezone
+    saveMutation.mutate(localPreferences);
   };
-
-  // Get user's timezone
-  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  
-  // For CST testing, force CST timezone conversion since dev environment runs in UTC
-  const isCST = userTimezone.includes('Chicago') || userTimezone.includes('Central');
-  const cstOffsetMinutes = 360; // CST is UTC-6 (6 * 60 = 360 minutes)
 
   const formatTime = (time: string) => {
     const [hours, minutes] = time.split(':');
@@ -136,51 +131,27 @@ export default function Podcasts() {
     return `${displayHour}:${minutes} ${ampm}`;
   };
 
-  // Convert local time to UTC for storage (CST-aware)
-  const convertLocalTimeToUTC = (localTime: string) => {
-    const [hours, minutes] = localTime.split(':').map(Number);
+  // Get the current timezone display name
+  const getTimezoneDisplay = (timezone: string) => {
+    const tz = US_TIMEZONES.find(t => t.value === timezone);
+    if (!tz) return timezone;
     
-    // For CST: add 6 hours to convert to UTC (CST is UTC-6)
-    if (isCST || import.meta.env.DEV) {
-      const totalMinutes = (hours * 60) + minutes + cstOffsetMinutes; // Add 6 hours
-      const utcHours = Math.floor(totalMinutes / 60) % 24;
-      const utcMinutes = totalMinutes % 60;
-      
-      return `${utcHours.toString().padStart(2, '0')}:${utcMinutes.toString().padStart(2, '0')}`;
+    // Check if we're in daylight savings time
+    const now = new Date();
+    const isDST = () => {
+      const jan = new Date(now.getFullYear(), 0, 1);
+      const jul = new Date(now.getFullYear(), 6, 1);
+      const janOffset = jan.getTimezoneOffset();
+      const julOffset = jul.getTimezoneOffset();
+      return Math.max(janOffset, julOffset) !== now.getTimezoneOffset();
+    };
+    
+    // Return the appropriate abbreviation based on DST
+    const parts = tz.label.match(/\(([^/]+)\/([^)]+)\)/);
+    if (parts && parts[1] && parts[2]) {
+      return isDST() ? parts[2] : parts[1];
     }
-    
-    // Standard timezone conversion for other timezones
-    const localDate = new Date();
-    localDate.setHours(hours, minutes, 0, 0);
-    const timezoneOffsetMinutes = localDate.getTimezoneOffset();
-    const utcDate = new Date(localDate.getTime() + (timezoneOffsetMinutes * 60 * 1000));
-    
-    const utcHours = utcDate.getHours().toString().padStart(2, '0');
-    const utcMinutes = utcDate.getMinutes().toString().padStart(2, '0');
-    
-    return `${utcHours}:${utcMinutes}`;
-  };
-
-  // Convert UTC time to local for display (CST-aware)
-  const convertUTCTimeToLocal = (utcTime: string) => {
-    const [hours, minutes] = utcTime.split(':').map(Number);
-    
-    // For CST: subtract 6 hours from UTC to get CST
-    if (isCST || import.meta.env.DEV) {
-      const totalMinutes = (hours * 60) + minutes - cstOffsetMinutes; // Subtract 6 hours
-      const localHours = Math.floor((totalMinutes + 1440) / 60) % 24; // Add 24h to handle negative
-      const localMinutes = ((totalMinutes % 60) + 60) % 60; // Handle negative minutes
-      
-      return `${localHours.toString().padStart(2, '0')}:${localMinutes.toString().padStart(2, '0')}`;
-    }
-    
-    // Standard timezone conversion for other timezones
-    const utcDate = new Date();
-    utcDate.setUTCHours(hours, minutes, 0, 0);
-    const localHours = utcDate.getHours().toString().padStart(2, '0');
-    const localMinutes = utcDate.getMinutes().toString().padStart(2, '0');
-    
-    return `${localHours}:${localMinutes}`;
+    return tz.label;
   };
 
   const formatDate = (date: string | Date) => {
@@ -403,6 +374,32 @@ export default function Podcasts() {
                     </div>
                   )}
 
+                  {/* Timezone Selection */}
+                  <div>
+                    <Label htmlFor="timezone" className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4" />
+                      Time Zone
+                    </Label>
+                    <Select
+                      value={localPreferences.timezone || "America/Chicago"}
+                      onValueChange={(value) => handlePreferenceChange("timezone", value)}
+                    >
+                      <SelectTrigger id="timezone">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {US_TIMEZONES.map((tz) => (
+                          <SelectItem key={tz.value} value={tz.value}>
+                            <div className="flex flex-col">
+                              <span>{tz.label}</span>
+                              <span className="text-xs text-muted-foreground">{tz.currentOffset}</span>
+                            </div>
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
                   {/* Time Selection */}
                   <div>
                     <Label>Delivery Time{localPreferences.times?.length > 1 ? 's' : ''}</Label>
@@ -533,13 +530,7 @@ export default function Podcasts() {
                       </p>
                     )}
                     <p className="text-xs text-slate-500 mt-1">
-                      Times shown in your local timezone ({userTimezone})
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {import.meta.env.DEV ? 
-                        "Development mode: 10-minute intervals available for testing" : 
-                        "Time is in your local timezone"
-                      }
+                      Times shown in {getTimezoneDisplay(localPreferences.timezone || "America/Chicago")}
                     </p>
                   </div>
                 </div>
