@@ -664,8 +664,8 @@ export default function Podcasts() {
                         .then(async (response) => {
                           const data = await response.json();
                           toast({
-                            title: "Test Podcast Scheduled",
-                            description: data.message || "Test podcast scheduled for delivery in 5 minutes",
+                            title: "Test Podcast Generating",
+                            description: data.message || "Generating and sending test podcast now...",
                           });
                         })
                         .catch((error) => {
@@ -677,7 +677,31 @@ export default function Podcasts() {
                         });
                     }}
                   >
-                    🧪 Test Delivery (5 min)
+                    🧪 Test Delivery Now
+                  </Button>
+                )}
+                {import.meta.env.DEV && (
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      apiRequest('POST', '/api/dev/cleanup-pending-podcasts')
+                        .then(async (response) => {
+                          const data = await response.json();
+                          toast({
+                            title: "Cleanup Complete",
+                            description: data.message || "Pending podcasts cleaned up",
+                          });
+                        })
+                        .catch((error) => {
+                          toast({
+                            title: "Error",
+                            description: error.message || "Failed to cleanup",
+                            variant: "destructive",
+                          });
+                        });
+                    }}
+                  >
+                    🧹 Clean Pending
                   </Button>
                 )}
               </div>

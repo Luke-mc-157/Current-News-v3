@@ -53,6 +53,8 @@ export async function sendPodcastEmail(email, audioPath, podcastName) {
 
     const response = await sgMail.send(msg);
     console.log(`📧 Podcast email sent successfully to ${email}`);
+    console.log(`📧 SendGrid Response Status: ${response[0].statusCode}`);
+    console.log(`📧 SendGrid Message ID: ${response[0].headers['x-message-id']}`);
     return response;
   } catch (error) {
     console.error('Error sending podcast email:', error);

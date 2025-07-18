@@ -1667,45 +1667,144 @@ export function registerRoutes(app) {
       try {
         const userId = req.user.id;
         
-        // Get user's podcast preferences
+        // Get user's podcast preferences and info
         const preferences = await storage.getPodcastPreferences(userId);
         if (!preferences || !preferences.enabled) {
           return res.status(400).json({ error: "Podcast preferences not enabled" });
         }
 
-        // Calculate delivery time 5 minutes from now
-        const now = new Date();
-        // For immediate processing, schedule 1 minute before delivery
-        const deliveryTime = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes from now
-        const scheduledFor = new Date(deliveryTime.getTime() - 1 * 60 * 1000); // 1 minute before delivery
+        const user = await storage.getUser(userId);
+        if (!user) {
+          return res.status(404).json({ error: "User not found" });
+        }
 
-        // Create a scheduled podcast entry
-        const scheduledPodcast = await storage.createScheduledPodcast({
-          userId,
-          scheduledFor,
-          deliveryTime,
-          status: 'pending' as const,
-          preferenceSnapshot: {
-            topics: preferences.topics || [],
-            duration: preferences.duration || 5, // Pass as number, not string
-            voiceId: preferences.voiceId || 'ErXwobaYiN019PkySvjV',
-            enhanceWithX: preferences.enhanceWithX || false,
-            customEmail: preferences.customEmail,
-            cadence: preferences.cadence || 'daily',
-            times: [format(scheduledFor, 'HH:mm')] // Use the test time
+        console.log(`🧪 Test podcast delivery triggered for user ${user.username} (${user.email})`);
+
+        // Extract preferences
+        const topics = preferences.topics || [];
+        const duration = preferences.duration || 5;
+        const voiceId = preferences.voiceId || 'ErXwobaYiN019PkySvjV';
+        const enhanceWithX = preferences.enhanceWithX || false;
+
+        // Get X auth if enabled
+        let userHandle = null;
+        let accessToken = null;
+        
+        if (enhanceWithX) {
+          const xAuth = await storage.getXAuthTokenByUserId(userId);
+          if (xAuth) {
+            userHandle = xAuth.xHandle;
+            accessToken = xAuth.accessToken;
           }
+        }
+
+        // Import required functions
+        const { generateHeadlinesWithLiveSearch } = await import('./services/liveSearchService.js');
+        const { generatePodcastScript } = await import('./services/podcastGenerator.js');
+        const { generateAudio } = await import('./services/voiceSynthesis.js');
+        const { sendPodcastEmail } = await import('./services/emailService.js');
+
+        // Generate headlines
+        console.log(`📰 Generating headlines for topics: ${topics.join(', ')}`);
+        const headlinesResult = await generateHeadlinesWithLiveSearch(
+          topics,
+          userId,
+          userHandle,
+          accessToken
+        );
+
+        if (!headlinesResult.headlines || headlinesResult.headlines.length === 0) {
+          return res.status(400).json({ error: "No headlines generated" });
+        }
+
+        // Generate podcast script
+        console.log(`📝 Generating ${duration}-minute podcast script`);
+        const script = await generatePodcastScript(
+          headlinesResult.compiledData,
+          headlinesResult.appendix,
+          duration,
+          "Current News"
+        );
+
+        // Create podcast episode record
+        const episode = await storage.createPodcastEpisode({
+          userId,
+          topics,
+          durationMinutes: duration,
+          voiceId,
+          script,
+          headlineIds: headlinesResult.headlines.map(h => h.id),
+          wasScheduled: false
         });
 
-        console.log(`🧪 Test podcast scheduled for user ${userId} at ${scheduledFor.toISOString()}`);
+        // Generate audio
+        console.log(`🎵 Generating audio with voice ${voiceId}`);
+        const audioResult = await generateAudio(script, voiceId);
+        
+        // Update episode with audio URL
+        await storage.updatePodcastEpisode(episode.id, {
+          audioUrl: audioResult.filePath || audioResult
+        });
+
+        // Send email
+        const audioFilePath = typeof audioResult === 'string' 
+          ? audioResult 
+          : (audioResult.filePath || audioResult.audioUrl);
+        
+        const audioPath = audioFilePath.startsWith('/podcast-audio/') 
+          ? path.join(process.cwd(), audioFilePath.substring(1))
+          : path.join(process.cwd(), audioFilePath);
+
+        console.log(`📧 Sending test podcast to ${user.email}`);
+        console.log(`📧 Audio file path: ${audioPath}`);
+        
+        await sendPodcastEmail(user.email, audioPath, "Current News Test");
+
+        // Update episode with email sent timestamp
+        await storage.updatePodcastEpisode(episode.id, {
+          emailSentAt: new Date()
+        });
+
+        console.log(`✅ Test podcast successfully generated and sent to ${user.email}`);
         
         res.json({ 
           success: true, 
-          scheduledPodcast,
-          message: `Test podcast scheduled for delivery in 5 minutes (${format(scheduledFor, 'h:mm a')})`
+          episode,
+          message: `Test podcast generated and sent to ${user.email}`
         });
       } catch (error) {
-        console.error("Error scheduling test podcast:", error);
-        res.status(500).json({ error: "Failed to schedule test podcast" });
+        console.error("Error generating test podcast:", error);
+        res.status(500).json({ error: error.message || "Failed to generate test podcast" });
+      }
+    });
+
+    // Clean up pending podcasts for development testing
+    router.post("/api/dev/cleanup-pending-podcasts", requireAuth, async (req, res) => {
+      try {
+        const userId = req.user.id;
+        
+        // Get all pending podcasts for this user
+        const pendingPodcasts = await storage.getScheduledPodcasts(userId);
+        const pending = pendingPodcasts.filter(p => p.status === 'pending');
+        
+        console.log(`🧹 Found ${pending.length} pending podcasts to clean up for user ${userId}`);
+        
+        // Mark all as cancelled
+        for (const podcast of pending) {
+          await storage.updateScheduledPodcast(podcast.id, { 
+            status: 'cancelled' as const,
+            completedAt: new Date()
+          });
+        }
+        
+        res.json({ 
+          success: true, 
+          message: `Cleaned up ${pending.length} pending podcasts`,
+          cleaned: pending.length
+        });
+      } catch (error) {
+        console.error("Error cleaning up podcasts:", error);
+        res.status(500).json({ error: "Failed to clean up podcasts" });
       }
     });
   }
