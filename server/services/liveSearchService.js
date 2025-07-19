@@ -220,15 +220,27 @@ function categorizeCitations(citations) {
   const xPostIds = [];
   const articleUrls = [];
   
-  citations.forEach(url => {
+  console.log(`🔍 DEBUG categorizeCitations: Processing ${citations.length} citations`);
+  
+  citations.forEach((url, index) => {
+    console.log(`🔍 DEBUG citation ${index}: ${url}`);
+    
     if (url.includes('x.com') || url.includes('twitter.com')) {
+      console.log(`🐦 DEBUG: Found X/Twitter URL: ${url}`);
       const postId = extractPostIdFromXURL(url);
-      if (postId) xPostIds.push(postId);
+      if (postId) {
+        console.log(`🐦 DEBUG: Extracted post ID: ${postId}`);
+        xPostIds.push(postId);
+      } else {
+        console.log(`⚠️ DEBUG: Could not extract post ID from: ${url}`);
+      }
     } else {
+      console.log(`📰 DEBUG: Found article URL: ${url}`);
       articleUrls.push(url);
     }
   });
   
+  console.log(`📊 DEBUG categorizeCitations result: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
   return { xPostIds, articleUrls };
 }
 
@@ -469,6 +481,20 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
     totalXAIPosts += xPostSources.length;
     
+    // DEBUG: Log detailed info about fetched posts
+    console.log(`🔍 DEBUG ${topicData.topic}: Expected ${xPostIds.length} posts, got ${xPostSources.length} posts`);
+    if (xPostSources.length > 0) {
+      console.log(`🔍 DEBUG ${topicData.topic}: First post structure:`, {
+        id: xPostSources[0].id,
+        author_name: xPostSources[0].author_name,
+        text: xPostSources[0].text?.substring(0, 50) + '...',
+        url: xPostSources[0].url,
+        hasPublicMetrics: !!xPostSources[0].public_metrics
+      });
+    } else {
+      console.log(`⚠️ DEBUG ${topicData.topic}: No posts returned from fetchXPostsBatch despite ${xPostIds.length} IDs`);
+    }
+    
     // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
     const articlePromises = articleUrls.slice(0, 7).map(async (url, index) => {
       // Stagger requests slightly to avoid overwhelming servers
@@ -599,7 +625,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types "news" and "RSS". Use source type "web" to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types "news" and "RSS"."
+          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'."
         },
         {
           role: "user",
@@ -628,6 +654,23 @@ async function getTopicDataFromLiveSearch(topic) {
     const citations = response.citations || [];
     
     console.log(`📊 Live Search returned ${content.length} chars, ${citations.length} citations`);
+    
+    // DEBUG: Log first few citations to see format
+    if (citations.length > 0) {
+      console.log(`🔍 DEBUG: First 3 citations for ${topic}:`);
+      citations.slice(0, 3).forEach((citation, i) => {
+        console.log(`  [${i}]: ${citation}`);
+      });
+      
+      // Check for X/Twitter URLs specifically
+      const xUrls = citations.filter(url => url.includes('x.com') || url.includes('twitter.com'));
+      console.log(`🐦 DEBUG: Found ${xUrls.length} X/Twitter URLs in citations`);
+      if (xUrls.length > 0) {
+        console.log(`🐦 DEBUG: X URLs:`, xUrls.slice(0, 3));
+      }
+    } else {
+      console.log(`⚠️ DEBUG: No citations returned for ${topic}`);
+    }
     
     return {
       content: content,
