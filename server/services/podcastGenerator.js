@@ -67,7 +67,7 @@ CONTENT RULES:
 6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not").
 
 SCRIPT STRUCTURE:
-- OPENING: "Welcome to current news, your daily dose of current events and breaking news - that matter to you. Here's what's happening right now."
+- OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
 - Main segments: One for each major story, with smooth transitions
 - For each story: Present facts from articles and posts, quote key sources.
 - From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply."
