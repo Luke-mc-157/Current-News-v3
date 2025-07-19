@@ -124,7 +124,20 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 19, 2025 - 12:40 AM UTC)
+### Latest Updates (January 19, 2025 - 11:47 PM UTC)
+- **✅ ORGANIZED DATA STORAGE STRUCTURE IMPLEMENTED**: Renamed and reorganized file storage for better data management
+  - **Main Folder Renamed**: "podcast-audio" → "Search-Data_&_Podcast-Storage"
+  - **New Subfolder Structure**:
+    - `xAI-search-results/`: Raw Live Search API responses saved as JSON (xai-search-{topic}-{timestamp}.json)
+    - `compiled-data/`: Full compiled data for debugging (compiled-data-{timestamp}.txt)
+    - `podcast-audio/`: Generated podcast audio files (podcast-{episodeId}-{timestamp}.mp3)
+  - **Code Changes**:
+    - Updated liveSearchService.js to save raw xAI responses after each topic search
+    - Modified voiceSynthesis.js to save audio files to new location
+    - Updated Express routes to serve static files from new paths
+  - **Results**: All data now organized in dedicated subfolders for easy access and debugging
+
+### Previous Updates (January 19, 2025 - 12:40 AM UTC)
 - **✅ SYNCHRONIZED VOICE OPTIONS ACROSS SYSTEM**: Fixed voice ID mismatches preventing podcast generation
   - **Root Cause**: Podcast preferences page used invalid voice IDs (e.g., "aD9m5Rzr0Ge7JO4K1hM1" for "British Lady") not in ElevenLabs
   - **Voice List Standardized**: All components now use same 9 voices from voiceSynthesis.js: Alice, Bryan, Aria, Bill, Sarah, Arnold, Cowboy Bob VF, Dr. Von Fusion VF, Mark - ConvoAI

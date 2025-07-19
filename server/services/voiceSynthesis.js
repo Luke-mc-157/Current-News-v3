@@ -87,7 +87,7 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
     
     // Save audio file
     const audioBuffer = await response.arrayBuffer();
-    const audioDir = path.join(__dirname, '..', '..', 'podcast-audio');
+    const audioDir = path.join(__dirname, '..', '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio');
     
     // Create directory if it doesn't exist
     if (!fs.existsSync(audioDir)) {
@@ -101,7 +101,7 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
     console.log(`Audio saved to ${filepath}`);
     
     // Return relative path for web access
-    return `/podcast-audio/${filename}`;
+    return `/Search-Data_&_Podcast-Storage/podcast-audio/${filename}`;
   } catch (error) {
     console.error("Error generating audio:", error.message);
     throw error;
@@ -122,7 +122,7 @@ export async function combineAudioSegments(segmentPaths, episodeId) {
   try {
     console.log(`🔧 Combining ${segmentPaths.length} audio segments for episode ${episodeId}`);
     
-    const audioDir = path.join(__dirname, '..', '..', 'podcast-audio');
+    const audioDir = path.join(__dirname, '..', '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio');
     const combinedFilename = `podcast-${episodeId}-combined-${Date.now()}.mp3`;
     const combinedPath = path.join(audioDir, combinedFilename);
     
@@ -178,7 +178,7 @@ export async function combineAudioSegments(segmentPaths, episodeId) {
     }
     
     // Return relative path for web access
-    return `/podcast-audio/${combinedFilename}`;
+    return `/Search-Data_&_Podcast-Storage/podcast-audio/${combinedFilename}`;
     
   } catch (error) {
     console.error("Error combining audio segments:", error.message);

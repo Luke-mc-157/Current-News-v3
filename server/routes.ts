@@ -570,11 +570,8 @@ export function registerRoutes(app) {
     }
   });
 
-  // Serve podcast audio files
-  app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
-
-  // Serve static podcast audio files
-  app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
+  // Serve podcast audio files from new location
+  app.use('/Search-Data_&_Podcast-Storage/podcast-audio', express.static(path.join(__dirname, '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio')));
 
   // X OAuth authentication routes (now using database-stored tokens)
   

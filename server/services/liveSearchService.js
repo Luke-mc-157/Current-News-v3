@@ -129,6 +129,18 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       console.log(`🌐 xAI Live Search for ${topic}...`);
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
       console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
+      
+      // Save raw xAI search results
+      try {
+        const fs = await import('fs');
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const filename = `Search-Data_&_Podcast-Storage/xAI-search-results/xai-search-${topic.replace(/[^a-zA-Z0-9]/g, '-')}-${timestamp}.json`;
+        await fs.promises.writeFile(filename, JSON.stringify(liveSearchData, null, 2));
+        console.log(`📁 Raw xAI search results saved to: ${filename}`);
+      } catch (error) {
+        console.error(`❌ Could not save xAI search results: ${error.message}`);
+      }
+      
       allTopicData.push({
         topic: topic,
         webData: liveSearchData.content,
@@ -188,7 +200,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   try {
     const fs = await import('fs');
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const filename = `compiled-data-${timestamp}.txt`;
+    const filename = `Search-Data_&_Podcast-Storage/compiled-data/compiled-data-${timestamp}.txt`;
     await fs.promises.writeFile(filename, compiledResult.compiledData);
     console.log(`📄 Full compiled data written to: ${filename}`);
   } catch (error) {
