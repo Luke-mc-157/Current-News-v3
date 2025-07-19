@@ -118,30 +118,31 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`📭 No timeline posts available for emergent topics discovery`);
   }
   
-  // Step 1: Call xAI Live Search API in parallel for all topics
-  console.log('📡 Step 1: xAI Live Search API calls for all topics (in parallel)...');
-  const topicPromises = topics.map(async (topic, index) => {
+  // Step 1: Call xAI Live Search API sequentially for all topics
+  console.log('📡 Step 1: xAI Live Search API calls for all topics (sequential)...');
+  const allTopicData = [];
+  
+  for (let index = 0; index < topics.length; index++) {
+    const topic = topics[index];
     console.log(`📝 Processing topic ${index + 1}/${topics.length}: ${topic}`);
     try {
       console.log(`🌐 xAI Live Search for ${topic}...`);
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
       console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
-      return {
+      allTopicData.push({
         topic: topic,
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
-      };
+      });
     } catch (error) {
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
-      return {
+      allTopicData.push({
         topic: topic,
         webData: '',
         citations: []
-      };
+      });
     }
-  });
-
-  const allTopicData = await Promise.all(topicPromises);
+  }
   
   // Step 1.5: Format timeline posts for Grok to categorize
   const formattedTimelinePosts = [];
