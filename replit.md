@@ -124,7 +124,17 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 18, 2025 - 5:47 AM UTC)
+### Latest Updates (January 19, 2025 - 12:40 AM UTC)
+- **✅ SYNCHRONIZED VOICE OPTIONS ACROSS SYSTEM**: Fixed voice ID mismatches preventing podcast generation
+  - **Root Cause**: Podcast preferences page used invalid voice IDs (e.g., "aD9m5Rzr0Ge7JO4K1hM1" for "British Lady") not in ElevenLabs
+  - **Voice List Standardized**: All components now use same 9 voices from voiceSynthesis.js: Alice, Bryan, Aria, Bill, Sarah, Arnold, Cowboy Bob VF, Dr. Von Fusion VF, Mark - ConvoAI
+  - **Updated Components**:
+    - Podcast preferences page (podcasts.tsx) - now matches voiceSynthesis.js exactly
+    - Main podcast generator (podcast-generator.tsx) - simplified voice names
+    - Default voice changed to "Bryan - Professional Narrator" (nPczCjzI2devNBz1zQrb)
+  - **Results**: Voice selection consistent everywhere, eliminating "voice_not_found" errors during podcast generation
+
+### Previous Updates (January 18, 2025 - 5:47 AM UTC)
 - **✅ CRITICAL TIMEZONE BUGS FIXED**: Resolved timezone conversion and scheduling delivery failures
   - **Root Cause 1**: Development environment in UTC caused incorrect CST timezone detection and conversion
   - **Root Cause 2**: Overly strict scheduling logic pushed deliveries to next day instead of same day

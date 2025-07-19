@@ -15,16 +15,17 @@ import { useAuth } from "@/contexts/AuthContext";
 import { TopicInput } from "@/components/TopicInputSimple";
 import type { PodcastPreferences, PodcastEpisode } from "@shared/schema";
 
-// Voice options from the system
+// Voice options from the system - must match voiceSynthesis.js EXACTLY
 const VOICE_OPTIONS = [
-  { id: "iKCaleb42XcJJjE7suDep", name: "Caleb - American Narrative", type: "professional" },
-  { id: "aD9m5Rzr0Ge7JO4K1hM1", name: "British Lady", type: "professional" },
-  { id: "ErXwobaYiN019PkySvjV", name: "Antoni - Well-Rounded", type: "standard" },
-  { id: "K7Ve8cEGzXDOqBJdIp8Q", name: "Brian - American Deep", type: "professional" },
-  { id: "1SM7GgM6IMuvQlz2BwM3", name: "Mark - ConvoAI", type: "standard" },
+  { id: "Xb7hH8MSUJpSbSDYk0k2", name: "Alice", type: "standard" },
+  { id: "nPczCjzI2devNBz1zQrb", name: "Bryan - Professional Narrator", type: "professional" },
+  { id: "9BWtsMINqrJLrRacOk9x", name: "Aria", type: "standard" },
+  { id: "pqHfZKP75CvOlQylNhV4", name: "Bill", type: "standard" },
+  { id: "EXAVITQu4vr4xnSDxMaL", name: "Sarah", type: "professional" },
+  { id: "VR6AewLTigWG4xSOukaG", name: "Arnold", type: "standard" },
   { id: "KTPVrSVAEUSJRClDzBw7", name: "Cowboy Bob VF", type: "character" },
   { id: "yjJ45q8TVCrtMhEKurxY", name: "Dr. Von Fusion VF", type: "character" },
-  { id: "EpgcYKEHSAySST8Yg2vf", name: "Bryan - Professional Narrator", type: "professional" }
+  { id: "1SM7GgM6IMuvQlz2BwM3", name: "Mark - ConvoAI", type: "standard" }
 ];
 
 // Days of week for custom schedule
@@ -53,7 +54,7 @@ export default function Podcasts() {
     timezone: "America/Chicago",
     topics: [],
     duration: 10,
-    voiceId: "EpgcYKEHSAySST8Yg2vf",
+    voiceId: "nPczCjzI2devNBz1zQrb", // Bryan - Professional Narrator
     enhanceWithX: true
   });
 
@@ -639,7 +640,7 @@ export default function Podcasts() {
                       times: ["08:00"],
                       topics: [],
                       duration: 10,
-                      voiceId: "EpgcYKEHSAySST8Yg2vf",
+                      voiceId: "nPczCjzI2devNBz1zQrb", // Bryan - Professional Narrator
                       enhanceWithX: true
                     });
                     setHasChanges(false);
