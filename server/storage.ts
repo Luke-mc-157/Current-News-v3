@@ -682,16 +682,25 @@ export class DatabaseStorage implements IStorage {
 
   // Scheduled podcasts methods
   async createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts> {
-    console.log('📅 Storage - createScheduledPodcast received data:', {
+    console.log('📅 Storage - createScheduledPodcast received data:', JSON.stringify({
       userId: scheduled.userId,
       scheduledFor: scheduled.scheduledFor,
       deliveryTime: scheduled.deliveryTime,
-      topics: scheduled.topics,
-      duration: scheduled.duration,
-      voiceId: scheduled.voiceId,
-      enhanceWithX: scheduled.enhanceWithX,
+      preferenceSnapshot: scheduled.preferenceSnapshot,
       status: scheduled.status
-    });
+    }, null, 2));
+    
+    // Log the actual preference snapshot data
+    if (scheduled.preferenceSnapshot) {
+      console.log('📅 preferenceSnapshot contains:', {
+        topics: scheduled.preferenceSnapshot.topics,
+        duration: scheduled.preferenceSnapshot.duration,
+        voiceId: scheduled.preferenceSnapshot.voiceId,
+        enhanceWithX: scheduled.preferenceSnapshot.enhanceWithX,
+        cadence: scheduled.preferenceSnapshot.cadence,
+        times: scheduled.preferenceSnapshot.times
+      });
+    }
     
     const [newScheduled] = await db.insert(scheduledPodcasts).values(scheduled).returning();
     return newScheduled;
@@ -704,14 +713,15 @@ export class DatabaseStorage implements IStorage {
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
     const now = new Date();
-    // Only get podcasts scheduled within the next 5 minutes (scheduler runs every 5 minutes)
-    // This prevents processing past-due podcasts from previous runs
+    // Get podcasts scheduled within the next 5 minutes OR up to 30 minutes past due
+    // This handles cases where the scheduler was down or a podcast was missed
     const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+    const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
     
     return await db.select().from(scheduledPodcasts)
       .where(and(
         eq(scheduledPodcasts.status, 'pending'),
-        gte(scheduledPodcasts.scheduledFor, now), // Must be scheduled for now or future
+        gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo), // Include up to 30 minutes past due
         lt(scheduledPodcasts.scheduledFor, fiveMinutesFromNow) // But within next 5 minutes
       ))
       .orderBy(scheduledPodcasts.scheduledFor);

@@ -847,6 +847,24 @@ export function registerRoutes(app) {
     }
   });
 
+  // Get pending scheduled podcasts (requires authentication)
+  router.get("/api/scheduled-podcasts/pending", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const pending = await storage.getScheduledPodcastsForUser(userId);
+      const pendingOnly = pending.filter(p => p.status === 'pending');
+      
+      res.json({
+        success: true,
+        count: pendingOnly.length,
+        podcasts: pendingOnly
+      });
+    } catch (error) {
+      console.error("Error getting pending podcasts:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   // Quick test endpoint to verify Project attachment fix (requires authentication)
   router.post("/api/x/test-project-attachment", requireAuth, async (req, res) => {
     try {
