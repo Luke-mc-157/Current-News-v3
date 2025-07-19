@@ -8,13 +8,14 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin } from "lucide-react";
+import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin, Play } from "lucide-react";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { TopicInput } from "@/components/TopicInputSimple";
 import { UpcomingPodcasts } from "@/components/upcoming-podcasts";
 import type { PodcastPreferences, PodcastEpisode } from "@shared/schema";
+import { toZonedTime } from "date-fns-tz";
 
 // Voice options from the system - must match voiceSynthesis.js EXACTLY
 const VOICE_OPTIONS = [
@@ -42,6 +43,32 @@ const US_TIMEZONES = [
   { value: "America/Anchorage", label: "Alaska Time (AKST/AKDT)", currentOffset: "UTC-9/UTC-8" },
   { value: "Pacific/Honolulu", label: "Hawaii Time (HST)", currentOffset: "UTC-10 (no DST)" }
 ];
+
+// Helper function to format podcast name
+function formatPodcastName(createdAt: string, durationMinutes: number, timezone?: string): string {
+  // Parse the UTC date
+  const date = new Date(createdAt);
+  
+  // Convert to user's timezone if provided
+  let displayDate = date;
+  if (timezone) {
+    try {
+      // This will show the date in the user's timezone
+      const zonedDate = toZonedTime(date, timezone);
+      displayDate = zonedDate;
+    } catch (e) {
+      // Fallback to UTC if timezone conversion fails
+      console.error('Timezone conversion error:', e);
+    }
+  }
+  
+  const month = displayDate.toLocaleDateString('en-US', { month: 'long' });
+  const day = displayDate.getDate();
+  const hour = displayDate.getHours();
+  const period = hour < 12 ? "Morning" : "Afternoon";
+  
+  return `${month} ${day} - ${period} - ${durationMinutes} Min`;
+}
 
 export default function Podcasts() {
   const { toast } = useToast();
@@ -753,13 +780,30 @@ export default function Podcasts() {
                             <div className="flex items-start justify-between">
                               <div className="space-y-1">
                                 <p className="text-sm font-medium">
-                                  {episode.durationMinutes} minute podcast
+                                  {formatPodcastName(episode.createdAt, episode.durationMinutes, localPreferences.timezone)}
                                 </p>
                                 <p className="text-xs text-muted-foreground">
                                   {formatDate(episode.createdAt)}
                                 </p>
                               </div>
                               <div className="flex items-center gap-2">
+                                {episode.audioLocalPath && (
+                                  <Button
+                                    variant="outline"
+                                    size="sm"
+                                    onClick={() => {
+                                      // Extract filename from local path
+                                      const filename = episode.audioLocalPath?.split('/').pop();
+                                      if (filename) {
+                                        // Open audio in new window for playing
+                                        window.open(`/podcast-audio/${filename}`, '_blank');
+                                      }
+                                    }}
+                                  >
+                                    <Play className="h-4 w-4 mr-1" />
+                                    Play
+                                  </Button>
+                                )}
                                 {episode.wasScheduled && (
                                   <Badge variant="secondary">Auto</Badge>
                                 )}

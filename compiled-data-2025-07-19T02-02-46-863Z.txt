@@ -1,0 +1,551 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "response_type": "news_compilation",
+  "date_range": "2025-07-18 to 2025-07-19",
+  "summary": "The biggest news stories about Liverpool FC from the last 24 hours primarily focus on transfer activities, including potential deals for players like Hugo Ekitike and discussions around Alexander Isak. Additionally, there are updates on the club's pre-season tour.",
+  "news_stories": [
+    {
+      "title": "Liverpool Expected to Reach Agreement for Hugo Ekitike",
+      "description": "Reports indicate positive negotiations between Liverpool and Eintracht Frankfurt for the forward Hugo Ekitike, with sources expressing confidence in a deal.",
+      "source": "Sky Sports",
+      "published": "Approximately 11 hours ago"
+    },
+    {
+      "title": "Liverpool Transfer News: Ekitike Deal and Alexander Isak Updates",
+      "description": "Liverpool is involved in ongoing transfer battles, including pursuits of Hugo Ekitike and discussions about Alexander Isak, amid a busy summer window.",
+     
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Liverpool - News, Schedule, Scores, Roster, and Stats - The Athletic: Liverpool FC is preparing for the upcoming season with a pre-season tour to Hong Kong and Japan, including matches against Milan and Yokohama F Marinos. The club is advancing in transfer talks for players like Hugo Ekitike from Eintracht Frankfurt. Newcastle United is exploring deals for other forwards such as Yoane Wissa from Brentford. Liverpool faces accusations of double standards in transfers but has a history of significant spending. The tour also highlights commercial opportunities through sponsorships and fan engagement in Asia. [https://www.nytimes.com/athletic/football/team/liverpool/]
+Key Quotes: "We’re buzzing with excitement for Liverpool’s visit." - Minotti, Liverpool supporters’ club chairperson for Hong Kong | "The holiday is over. Now it's time to run." - Stuart James
+
+- Liverpool | Latest News & Updates | BBC News: Two boys were arrested in Liverpool for shining a laser at a helicopter and planes. The trial of former Liverpool mayor Joe Anderson has been delayed. A firearms officer was sacked for unauthorized visits to a lover. Liverpool signed Scotland midfielder Sam Kerr from Bayern Munich. Various local incidents include a man charged with murder and calls for measles vaccinations following a death. [https://www.bbc.com/news/england/merseyside]
+Key Quotes: "an all-round great kid" - Unknown
+
+- Liverpool’s pre-season tour to the Far East explained - The Athletic: Liverpool's pre-season tour includes matches in Hong Kong against Milan and in Japan against Yokohama F Marinos. The tour aims to prepare the squad under head coach Arne Slot in high temperatures. New signings like Florian Wirtz are expected to feature. The trip holds commercial significance due to sponsorship deals and a large fanbase in the region. Local fans in Hong Kong and Japan are excited, with tributes planned for the late Diogo Jota. [https://www.nytimes.com/athletic/6497196/2025/07/18/liverpool-pre-season-tour-far-east-explained/]
+Key Quotes: "We’re buzzing with excitement for Liverpool’s visit." - Minotti, Liverpool supporters’ club chairperson for Hong Kong | "It feels incredible for us Japanese Reds that the captain of the Japan national team plays for Liverpool." - Yumiko Tamaru, secretary of Liverpool supporters’ club in Japan
+
+- Transfer news LIVE: Arsenal FC get Gyokeres boost, Eze latest; Ekitike to Liverpool; Man Utd agree Mbeumo deal: Liverpool is pursuing a transfer for Hugo Ekitike from Eintracht Frankfurt amid ongoing negotiations. Newcastle United has agreed to a deal for Bryan Mbeumo from Brentford, potentially affecting other transfers. Arsenal is making progress on deals for Viktor Gyokeres and has interest in Eberechi Eze. Tottenham Hotspur is negotiating for Morgan Gibbs-White from Nottingham Forest. Multiple clubs are active in the transfer market as the Premier League season approaches. [https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-mbeumo-b1235099.html]
+Key Quotes: "Right now he’s here, that’s what I’m focusing on." - Thomas Frank, Tottenham Hotspur head coach
+
+- Liverpool transfer news LIVE: Hugo Ekitike deal, Alexander Isak admission, Rodrygo talks: Liverpool is negotiating a deal for Hugo Ekitike from Eintracht Frankfurt after approaching Newcastle for Alexander Isak. Luis Diaz has expressed a desire to leave, with Bayern Munich as his preferred destination. Interest in Darwin Nunez persists from Saudi clubs and others. Liverpool held preliminary talks with Real Madrid about Rodrygo. The club is also monitoring other targets like Anthony Gordon amid transfer window developments. [https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32084502]
+Key Quotes: "Yeah, it’s genuine. Liverpool have already held talks with his camp." - Eduardo Burgos, Brazilian journalist | "To pay €70M or €80M for that, while the sale value is zero because he would be 32 at the end of his contract." - Dietmar Hamann, former player
+
+- Liverpool-Hugo Ekitike transfer news: Liverpool expected to reach 'agreement' for Eintracht Frankfurt forward - Sky Germany: Liverpool is in positive negotiations with Eintracht Frankfurt for the transfer of Hugo Ekitike. Sky Germany's Florian Plettenberg is confident the deal will proceed. The update comes amid broader transfer activity involving Liverpool and other clubs. Ekitike's potential move is part of Liverpool's efforts to strengthen their squad. Details on the agreement's terms were not specified in the report. [https://www.skysports.com/football/video/12606/13398452/florian-plettenberg-totally-convinced-hugo-ekitike-will-join-liverpool]
+Key Quotes: "Sky Germany's Florian Plettenberg is very confident Hugo Ekitike will end up at Anfield after positive negotiations." - Sky Sports report
+
+---
+
+TOPIC: technology
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query": "Biggest technology news stories from July 18 to July 19, 2025",
+    "summary": "Based on available searches, the biggest technology news stories from July 18 to July 19, 2025, include updates on cybersecurity threats and general technology developments. Key highlights draw from news sources covering global tech trends, with a focus on security issues from recent reports. No high-engagement posts were identified on X for this specific period, and any social media sentiment is treated as inconclusive.",
+    "top_stories": [
+      {
+        "title": "Security News Weekly Round-Up",
+        "description": "A summary of top cyber threats reported between July 11 and July 18, 2025, highlighting ongoing risks in the technology sector. This includes details on emerging attacks and defensive strategies, emphasizing the need for enhanced digital security measures.",
+        "source": "DEV Community",
+        "date": "Published around July 18, 2025"
+      },
+      
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- US tech CEO suspended after Coldplay concert embrace goes viral: A US tech CEO was suspended following a viral video of an embrace at a Coldplay concert. The footage showed the CEO and another individual, with reports indicating they were colleagues and at least one was married to someone else. The incident gained widespread attention on social media. The suspension was announced by the company involved. This event highlights issues of professional conduct in the tech industry. [https://www.bbc.com/news/world]
+Key Quotes: "Big screen footage of the two people went viral after reports they were colleagues and at least one was married to another person." - Unknown
+
+- Exclusive | Jeffrey Epstein’s Friends Sent Him Bawdy Letters for a 50th Birthday Album. One Was From Donald Trump.: The Wall Street Journal reported on letters sent to Jeffrey Epstein for his 50th birthday, including one from Donald Trump. This story involves allegations of connections between Trump and Epstein. The article is part of broader coverage on legal and business matters. It has led to a libel lawsuit filed by Trump against the publication. The content aggregates news from various sources including technology and business perspectives. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- This Video Studio Embraced A.I. and Stormed the Internet: The Dor Brothers are indie filmmakers who use artificial intelligence to generate viral videos. Their approach involves creating content entirely with AI tools. The New York Times highlighted how this method has helped them gain popularity online. This reflects the growing role of AI in creative industries. The article discusses the implications of AI in video production and its impact on internet culture. [https://www.nytimes.com/]
+
+- This Video Studio Embraced A.I. and Stormed the Internet: The Dor Brothers use artificial intelligence to produce viral videos as indie filmmakers. Their AI-generated content has achieved significant online success. The article explores how AI tools are transforming video creation. This development underscores the integration of technology in entertainment. It raises questions about the future of creative work in the digital age. [https://www.nytimes.com/]
+
+- Security news weekly round-up - 18th July 2025: The round-up covers top cyber threats from July 11 to July 18, 2025, focusing on vulnerabilities in AI and other technologies. It discusses a zero-day vulnerability in Cursor and Windsurf that could have compromised users. Researchers also detailed how Grok-4 was jailbroken using methods like Echo Chamber and Crescendo. The article warns about potential loss of AI transparency as noted by companies like OpenAI. It highlights various malware threats exploiting tech platforms. [https://dev.to/ziizium/security-news-weekly-round-up-18th-july-2025-5d8a]
+Key Quotes: "The vulnerability allowed any attacker, not only to gain control over a single extension, but an supply chain armageddon, gaining full control over the entire marketplace." - Article excerpt | "The researchers tested the combined Echo Chamber and Crescendo jailbreak method against other ‘forbidden’ outputs from Grok-4." - Article excerpt
+
+---
+
+TOPIC: Sports
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest sports news stories from July 18, 2025, to July 19, 2025",
+  "summary": "Based on available information from recent web sources, the biggest sports news stories from July 18 to July 19, 2025, focus on topics like sports betting in major leagues, social media's role in fan engagement for cricket, and the psychological aspects of sports fandom. No high-engagement posts on X were identified in the searches, so this summary relies on news articles and web content.",
+  "top_stories": [
+    {
+      "title": "MLB All-Stars Address Sports Betting and Social Media Threats",
+      "description": "Discussions at the MLB All-Star Game highlighted concerns over the 'gray area' of sports betting and the impact of social media threats on players, reflecting ongoing debates in professional sports.",
+      "source": "Information from a sports news publication covering major league events"
+    },
+    {
+      "title": "Sky Sports Boosts Social Media Engagement for Cricket Fans",
+   
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: Scottie Scheffler leads the Open Championship by one shot after battling through heavy rain. Spain defeated Switzerland 2-0 to advance to the semi-finals of Euro 2025. Arsenal signed England winger Noni Madueke from Chelsea for an initial £48.5 million. Bryan Mbeumo joined Manchester United to bolster their forward options, though questions remain about their striker needs. The British and Irish Lions are favored to win their Test series, with discussions on whether Joe Schmidt can counter their strengths. France's young defenders are making an impact in the Euros under coach Laurent Bonadei. [https://www.reuters.com/]
+Key Quotes: "Every one of these issues, I think without exception in recent years, has arisen as a result of the monitoring that we have in place and the transparency that legalization has produced." - Rob Manfred | "I firmly believe that the transparency and monitoring that we have in place now, as a result of the legalization and the partnerships that we’ve made, puts us in a better position to protect baseball than we were in before." - Rob Manfred
+
+- MLB All-Stars speak on the ‘gray area’ of sports betting, social media threats - The Athletic: MLB players discussed the impact of sports betting during All-Star Game media sessions, with Byron Buxton stating he disregards gamblers' expectations. Concerns were raised about gambling-related content in venues and its potential influence on players. Players like Casey Mize highlighted the proximity of betting advertisements as a risk factor. Death threats on social media have increased, affecting players such as Liam Hendriks and Lance McCullers Jr. MLB Commissioner Rob Manfred emphasized that monitoring from legalized betting helps identify issues, suggesting a review of micro-bets like individual pitches. [https://www.bbc.com/news]
+Key Quotes: "I’m not your dad. I’ve got my own family to take care of and it’s not my decision for me to go out and hit a home run because you made a bet." - Byron Buxton | "Every one of these issues, I think without exception in recent years, has arisen as a result of the monitoring that we have in place and the transparency that legalization has produced." - Rob Manfred | "There are certain types of bets that strike me as unnecessary and particularly vulnerable." - Rob Manfred
+
+- Social media frenzy: Sky Sports on getting more fans hooked on and engaged with cricket: Sky Sports added a dedicated social media journalist for England and Wales Cricket Board events to boost engagement. This role provides access to commentators and behind-the-scenes content to attract younger audiences. The initiative includes creating vertical and instantaneous content for platforms like TikTok. It aims to make cricket more accessible, especially during long events like test matches. The approach has helped increase younger and female viewers, particularly through formats like The Hundred, which are seen as entry points to more traditional cricket. [https://www.reuters.com/sports/]
+Key Quotes: "[A digital journalist] would always have come on onsite with us." - Liz Thorne | "We had a really long sit-down meeting where the social media digital journalists came and spoke to the content team and the production team as a whole about what they were trying to achieve." - Liz Thorne | "It’s such a great way in [to cricket] and I love watching those clips as well." - Liz Thorne
+
+- What Drives Our Devotion to Sports?: Sports fandom is a global phenomenon driven by psychological needs for meaning, identity, and belonging, with over two-thirds of Americans identifying as fans. Cognitive biases like the sunk cost fallacy and confirmation bias keep fans loyal despite setbacks. Fandom provides structure, shared rituals, and a sense of community similar to religion. It satisfies core needs by offering emotional highs, personal identity through team allegiance, and narrative patterns in sports data. Researchers like Aaron C.T. Smith argue that belief in sports teams yields social and personal rewards. [https://www.nytimes.com/athletic/6494316/2025/07/14/mlb-all-star-game-2025-sports-betting/]
+Key Quotes: "Our minds possess an incredible ability to believe; an ability that has been crucial for survival throughout human history." - Aaron C.T. Smith | "Fans don’t just support a team; they believe in it." - Aaron C.T. Smith
+
+---
+
+TOPIC: Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_politics_news_stories": [
+    {
+      "title": "Senate Approves President Trump's Rescission Package",
+      "description": "The U.S. Senate has approved a rescission package proposed by President Trump, which involves cutting certain federal spending. This development highlights ongoing debates in U.S. politics regarding budget and fiscal policy.",
+      "source": "NPR",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "President Trump Admonishes MAGA Base Over Jeffrey Epstein Information",
+      "description": "President Trump has publicly addressed and criticized members of his MAGA base for raising concerns about his administration's handling of information related to Jeffrey Epstein, amid broader discussions on transparency and accountability in U.S. politics.",
+      "source": "NPR",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Tragedy at Gaza Humanitarian Aid Site Results in Deaths",
+      "description": "At least 20 people were crushed to death dur
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- U.S. Politics - The New York Times: The article features breaking news and analysis on U.S. politics, including coverage of the White House, Congress, and the Supreme Court. It highlights President Trump's disputes over reporting related to Jeffrey Epstein, such as his denial of drawing pictures. Other topics include the administration's efforts to discredit Federal Reserve Chair Jerome H. Powell and changes in federal programs like Title X. The piece also covers reactions from Trump's supporters and issues with federal worker layoffs. [https://www.reuters.com/world/us/]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures.’ But Many of His Sketches Sold at Auction." - Donald Trump | "Their actions range from pressuring the administration to release more information to spinning additional conspiracy theories about the case of Jeffrey Epstein." - Unknown
+
+- World | Latest News & Updates | BBC News: The article provides updates on global news, including political developments involving the Trump administration's request to release some Jeffrey Epstein documents. It covers U.S. political stories such as a CEO suspension related to a viral incident and clashes in Syria. Other topics include prisoner swaps between the U.S. and Venezuela, and statements from German officials on U.S. relations. The piece also discusses international conflicts and domestic U.S. events with political implications. [https://www.nytimes.com/section/politics]
+Key Quotes: "decide whether we should live or die" - Druze resident in Suweida | "There were bodies everywhere" - Druze residents
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: The article reports on various news topics including U.S. politics, with coverage of President Trump's actions on issues like Gaza hostages and border policies. It discusses potential changes in the Trump administration, such as cuts to federal agencies and responses to the Epstein case. Other highlights include political polls, congressional activities, and international relations. The piece also touches on domestic crime and economic matters with political undertones. [https://www.bbc.com/news/world]
+Key Quotes: "very shortly" - Donald Trump | "Treasonous conspiracy" - Tulsi Gabbard
+
+- The New York Times - Breaking News, US News, World News and Videos: The article covers U.S. and international news, focusing on political stories such as the Justice Department's request to unseal Jeffrey Epstein grand jury testimony amid pressure on President Trump. It reports on a prisoner swap involving Americans detained in Venezuela and changes in U.S. foreign policy under the Trump administration. Other topics include restrictions on criticizing foreign elections and shifts in domestic programs like education and environmental policies. The piece also features analysis of Trump's approval ratings and related political maneuvers. [https://npr.org/2025/07/18/1255880080/1a-07-18-2025]
+Key Quotes: "Trump Asked a Court to Unseal Jeffrey Epstein Grand Jury Testimony" - Analysis in the article | "A New Focus for a Birth Control Program: Helping Women Get Pregnant" - Unknown
+
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Barstool Sports: "You will not believe this throw Ronald Acuña Jr just made  https://t.co/xJ6vtIeiPA" (593241 views, 7705 likes) https://x.com/i/status/1946362256859521120
+- Department of Government Efficiency: "Great partnership and collaboration with the @CMSGov team to help eliminate $14B in duplicative Medicaid and ACA enrollment. After identifying the correct databases and validating datasets, the CMS and DOGE teams were able to uncover 2.8 million Americans improperly enrolled in https://t.co/J8OCYOYNAl" (359880 views, 6342 likes) https://x.com/i/status/1946345134724886702
+- Big Cat: "Shawshank  
+Godfather 1
+Godfather 2 
+Best of the Best 2 
+Moana https://t.co/QaQkRSFVUI" (287540 views, 440 likes) https://x.com/i/status/1946349196258222479
+- The New York Times: "Breaking News: The EPA said it would eliminate its scientific research arm and begin firing hundreds of scientists, after denying that it intended to do so. https://t.co/FPcqIndfvs" (236661 views, 921 likes) https://x.com/i/status/1946344275014230168
+- Big Cat: "What a throw  https://t.co/rNjPXsm8sc" (188438 views, 2468 likes) https://x.com/i/status/1946363675243073555
+- Mario Nawfal: "🚨🇺🇸 TRUMP FILES $10 BILLION SUIT OVER WSJ EPSTEIN REPORT
+
+Trump has filed a $10 billion libel lawsuit targeting the Wall Street Journal, Rupert Murdoch, and Dow Jones, calling the paper’s Epstein letter story false, defamatory, and unsubstantiated. 
+
+The suit claims the letter https://t.co/HeVTZ5YilP https://t.co/ciIj8RN0Ly" (190228 views, 282 likes) https://x.com/i/status/1946353039356592133
+- Mario Nawfal: "🚨🇺🇸BREAKING: TRUMP ORDERS RELEASE OF EPSTEIN GRAND JURY RECORDS - HERE'S WHAT HAPPENS NEXT 
+
+🧵👇 https://t.co/lXEuwmbZVe https://t.co/6PgxN5V6YC" (181942 views, 782 likes) https://x.com/i/status/1946362471817625720
+- Big Cat: "Didn’t like the Martian and the Big Short was ok, the book was better (which I read) https://t.co/VTt6lMKyHt" (167646 views, 95 likes) https://x.com/i/status/1946350076177027151
+- Big Cat: "Sounds like a guy who didn’t read the book https://t.co/PuiyE4W4jA" (154231 views, 201 likes) https://x.com/i/status/1946356357826785769
+- SpaceX: "Targeting Monday, July 21 for a Falcon 9 launch of our fifth @SES_Satellites O3b mPOWER mission from Space Launch Complex 40 in Florida → https://t.co/bJFjLCiTbK" (152300 views, 1185 likes) https://x.com/i/status/1946357272504045964
+- Big Cat: "Big reader. Last 3 books I read
+
+Big Short 
+Moneyball
+Blind Side 
+
+Book was better than all the movies https://t.co/BYNhJLKX3u" (153072 views, 171 likes) https://x.com/i/status/1946351131833016775
+- Barstool Sports: "They busted out the Coldplay Kiss Cam in Philly 
+
+ https://t.co/Ik0X7XT01A" (125434 views, 1293 likes) https://x.com/i/status/1946374592005640312
+- Barstool Sports: "https://t.co/ulngiYJz4o" (126441 views, 23 likes) https://x.com/i/status/1946353087150448757
+- Barstool Sports: "https://t.co/hc9mWXgKRe" (125381 views, 14 likes) https://x.com/i/status/1946355618584858994
+- Barstool Sports: "HOLY SHIT: CBS Just Straight Up Canceled "The Late Show Stephen Colbert" Despite Being Number One In The Ratings, Claiming The Decision Was "Purely Financial" https://t.co/oSmQ3QaEF6 https://t.co/t2HHgGDR0R" (123360 views, 324 likes) https://x.com/i/status/1946348078308417832
+- Pardon My Take: "Zac was in charge of cooking for everyone in Tahoe and made a massive mistake
+
+@DrinkBODYARMOR https://t.co/v5XTy7FjKd" (114853 views, 432 likes) https://x.com/i/status/1946354172330160603
+- Jaylen Brown: "If you need time, create space" (105329 views, 3412 likes) https://x.com/i/status/1946367865478603031
+- Barstool Sports: "Johnny Manziel Says He Hated Cleveland, It Aided To His Depression, And He Wishes He Could've Gone Anywhere Else https://t.co/4bhiG0ouJv" (98784 views, 142 likes) https://x.com/i/status/1946353083866292414
+- NASA: ".@SecDuffyNASA has launched! 🚀 Follow for updates from our new acting NASA Administrator. https://t.co/5nByH61qfM" (94928 views, 239 likes) https://x.com/i/status/1946383588179472460
+- Pardon My Take: "Ronald Acuna QB1 https://t.co/ggZ4iG26H1" (88323 views, 593 likes) https://x.com/i/status/1946368215396864124
+- Pardon My Take: "https://t.co/WsgkHHF96G" (87018 views, 1090 likes) https://x.com/i/status/1946357571817963968
+- Mario Nawfal: "🇺🇸 FBI TOLD TO FLAG EPSTEIN FILES THAT NAME TRUMP, SENATOR SAYS
+
+Senator Dick Durbin says around 1,000 FBI agents were instructed to flag every Epstein-related record that mentioned Trump. 
+
+The agents, many without training on child protection laws, were rushed to scan 100,000 https://t.co/3CKlGQ9DWv https://t.co/yjRL3mfCEu" (76386 views, 102 likes) https://x.com/i/status/1946368324998189125
+- Barstool Sports: "One Of Us: Superman Is A Simp For Natalie Portman! https://t.co/inbPVyV0gA https://t.co/oMLWzW24yf" (74157 views, 48 likes) https://x.com/i/status/1946345570915725358
+- The New York Times: "Can you place 8 notable events in chronological order? Test your knowledge with Flashback, our weekly history quiz. https://t.co/VX2DaCJDL0" (73330 views, 46 likes) https://x.com/i/status/1946361880273957132
+- Barstool Sports: "A Sports Memorabilia Dealer Appeared To Confess To One Of The Largest Sports Memorabilia And Autograph Fraud Operations In History, Claiming Over $350 Million In Fraud https://t.co/tgJtoEgkO7" (72595 views, 25 likes) https://x.com/i/status/1946355616995270937
+- Barstool Sports: "The Pelicans Are Clearly Dealing With An Injury Curse As Rookie Derik Queen Is Out 12 Weeks After Tearing A Ligament In His Wrist https://t.co/ZpjKTAOlXD https://t.co/KV434KYz8A" (71871 views, 21 likes) https://x.com/i/status/1946340503177363846
+- Mario Nawfal: "🚨🇺🇸 TRUMP: FILED LAWSUIT AGAINST WSJ FOR DEFAMATION AND FAKE NEWS!
+
+"We have just filed a powerhouse lawsuit against everyone involved in publishing the false, malicious, defamatory, fake news article in The Wall Street Journal. 
+
+This legal action targets WSJ, its owners, and https://t.co/vdgMQJ3cb3 https://t.co/UeZ8n4LJnI" (70761 views, 114 likes) https://x.com/i/status/1946347292501381267
+- Mario Nawfal: "🇺🇸 MIAMI HERALD: IF THE PUBLIC KNEW EVERYTHING THAT EPSTEIN KNEW ABOUT TRUMP, THEY CANCEL THE ELECTION
+
+“Let me just set the record straight. 
+
+I know what he said that Epstein told him when he was in prison, but Epstein told his own brother, and his brother has been public about https://t.co/vbjXr5d6J6 https://t.co/IadRA9fa20" (69775 views, 43 likes) https://x.com/i/status/1946341514201698657
+- The New York Times: "Whey was once considered waste by the dairy industry. Now it’s a key ingredient in the protein powder that Americans love. https://t.co/xBtZnCOgHt" (68025 views, 54 likes) https://x.com/i/status/1946376961669914906
+- Barstool Sports: "Tyrrell Hatton's Key To Staying Calm, Playing Well At The Open Is Simple - Drink Exactly 3 Pints Of Guinness Today After His Round https://t.co/Hy6Uc5akZI https://t.co/hnJX8IdmU1" (67316 views, 45 likes) https://x.com/i/status/1946360656321532280
+- Mario Nawfal: "🇺🇸 EPSTEIN'S EX-GIRLFRIEND: TRUMP AND EPSTEIN WERE VERY, VERY CLOSE
+
+“I met Jeffrey the second time, and we started dating based on the introduction, the reintroduction that happened at the Plaza Hotel at a Christmas party in 1992 that Donald Trump threw.”
+
+They were, very, very https://t.co/iMRqvCO3b8 https://t.co/Y4fefUfIyy" (64985 views, 64 likes) https://x.com/i/status/1946371912298348858
+- Barstool Sports: "Donald Trump Is Reportedly Concerned About Justin Herbert's Weapons This Season https://t.co/TpRjIYQGw2 https://t.co/Zzyl7w8K43" (64402 views, 51 likes) https://x.com/i/status/1946368169548890603
+- Pardon My Take: "The boys got together for home cooked meal by Zac in Tahoe
+
+Presented by @ChevyTrucks #chevy #ad #silverado https://t.co/LLekX9l744" (62503 views, 112 likes) https://x.com/i/status/1946363181871345797
+- Barstool Sports: "FAMILY: Vin Diesel Pushing Around Michael Caine In A Wheelchair Is A Beautiful Friendship That Should Bring A Tear To Your Eye https://t.co/TY9sZwt3e7 https://t.co/Wot68PmQmK" (61555 views, 111 likes) https://x.com/i/status/1946375726657069260
+- Barstool Sports: "Surprises, Disappointments, And Outlook For Every MLB Team At The All Star Break: AL Edition https://t.co/TVr81RuZGL https://t.co/4WlY6RJosE" (61105 views, 24 likes) https://x.com/i/status/1946363169158353009
+- Barstool Sports: "Captain America: Keegan Bradley Shoots A 67 Today At The Open, Starts Talking More Like A Guy Who Is Going To Be A Playing Captain At The Ryder Cup https://t.co/GRO6ug6Qvl https://t.co/2k9iGp2ygk" (59709 views, 60 likes) https://x.com/i/status/1946370705668395476
+- Mario Nawfal: "ARE WE LIVING INSIDE A BLACK HOLE? WELL... MAYBE
+
+The James Webb Telescope just dropped a space-time plot twist so wild it sounds like sci-fi.
+
+It found that 2/3 of early galaxies are spinning in the same direction, in a universe that should be totally random.
+
+That’s like https://t.co/8MgKvjZTqN https://t.co/G0ALm3ZClv" (55445 views, 201 likes) https://x.com/i/status/1946341713280459085
+- Mario Nawfal: "🇺🇸 TRUMP: REP. MARK HARRIS HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+"Congressman Mark Harris is a terrific representative for the incredible people of North Carolina’s 8th Congressional District.
+
+Mark has a strong record of success and compelling support from his community. 
+
+In https://t.co/vZbFbFpfFl https://t.co/DmfmHr5wxu" (55360 views, 60 likes) https://x.com/i/status/1946347761114226700
+- Pardon My Take: "Innocent person of the year: Jeffrey Epstein https://t.co/qWvlf6N37u" (54257 views, 135 likes) https://x.com/i/status/1946361692591419544
+- Barstool Sports: "Ronald Acuna Jr. Just Made One Of The Most Absurd Throws You'll Ever See https://t.co/LTu4TXUELe https://t.co/9os6NBFkWO" (53713 views, 72 likes) https://x.com/i/status/1946378226269397075
+- Pardon My Take: "Heisman of the year: Ashton Jeanty https://t.co/K3l6sejgNk" (48080 views, 77 likes) https://x.com/i/status/1946361686744551684
+- Andrew Yang🧢⬆️🇺🇸: "Independents are not feeling it. https://t.co/zNAq3Ljfae" (47651 views, 148 likes) https://x.com/i/status/1946343192066146745
+- Mario Nawfal: "🇺🇸 TRUMP: TRACEY MANN HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Tracey Mann is an incredible representative for the wonderful people of Kansas’ “Big First” Congressional District.
+
+A fifth-generation farmer, Tracey is a strong and effective voice for American https://t.co/zCjUdEj9lN https://t.co/Ml0h9234cv" (47619 views, 51 likes) https://x.com/i/status/1946347624866496919
+- Mario Nawfal: "🇺🇸 TRUMP: REP. BRANDON GILL HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Brandon Gill is a “MAGA” warrior for the wonderful people of Texas’ 26th Congressional District. 
+
+I have known Brandon’s family for many years. 
+
+He has an incredible wife, Danielle, two beautiful https://t.co/rQ9SHWpTQf https://t.co/8Rb7EqGkJO" (47209 views, 99 likes) https://x.com/i/status/1946344025138803175
+- Hank Lockwood: "America https://t.co/bXN8tLCbQu" (45782 views, 1319 likes) https://x.com/i/status/1946343018056888645
+- Mario Nawfal: "🇺🇸 🇧🇷 SEC. RUBIO REVOKES VISA OF BRAZIL'S MORAES OVER BOLSONARO WITCH HUNT
+
+Secretary of State Rubio just revoked the visa of Brazilian Supreme Court Justice Alexandre de Moraes who is pushing a political  hunt against @JairBolsonaro. 
+
+They created a persecution and censorship https://t.co/pJFJqHXHUb https://t.co/rNxvkh923Q" (44868 views, 2113 likes) https://x.com/i/status/1946366833126445442
+- Mario Nawfal: "🇺🇸 TRUMP: MAX MILLER HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Max Miller is a fantastic champion for the great people of Ohio’s 1st Congressional District.
+
+Max bravely served our country in the U.S. Marine Corps and, during my first administration, worked hard to https://t.co/A3cTW2Ih2p https://t.co/pZ2EpEGTrd" (46549 views, 59 likes) https://x.com/i/status/1946344429662416994
+- Mario Nawfal: "🇺🇸 TRUMP: KEVIN HERN HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Kevin Hern is a tremendous champion for Oklahoma’s 1st Congressional District.
+
+As the Chair of the House Republican Policy Committee, Kevin is doing a fantastic job advancing our America First agenda. 
+
+He https://t.co/rSjNIowgju https://t.co/2QB0lyCUuS" (46341 views, 49 likes) https://x.com/i/status/1946346885343846572
+- Pardon My Take: "Your 2025 Takies Mega thread(Spoilers)
+
+Take Of the Year @colincowherd https://t.co/DfAWPSeCNi" (46140 views, 132 likes) https://x.com/i/status/1946361626996650020
+- Mario Nawfal: "🇺🇸 TRUMP: REP. MARK MESSMER HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Mark Messmer is a fantastic representative for the great people of Indiana’s 8th Congressional District.
+
+Mark has an incredible record of success and strong support from his community. 
+
+In Congress, https://t.co/41hTiI5F2C https://t.co/grkFVBQi73" (45478 views, 33 likes) https://x.com/i/status/1946347491328233911
+- Mario Nawfal: "🇺🇸 TRUMP: LAUREN BOEBERT HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congresswoman Lauren Boebert is an America First patriot who is doing an incredible job representing Colorado’s 4th Congressional District.
+
+A MAGA warrior who has been with us from the very beginning, Lauren is https://t.co/9whr1WUPsF https://t.co/U1eopoyJjG" (45174 views, 82 likes) https://x.com/i/status/1946343117755408488
+- Pardon My Take: "Zac breaks down his thought process when buying costumes at the store
+
+@HeyDudeShoes https://t.co/XSVEz4lCQY" (44347 views, 105 likes) https://x.com/i/status/1946358378734948831
+- Mario Nawfal: "🇺🇸 TRUMP: REP. ANN WAGNER HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congresswoman Ann Wagner is doing an incredible job representing the amazing people of Missouri’s 2nd Congressional District.
+
+"As the Chair of the Financial Services Subcommittee on Capital Markets, Ann knows the https://t.co/twcRb1whwI https://t.co/mUtpHN5Tzq" (44367 views, 36 likes) https://x.com/i/status/1946346731420995795
+- Barstool Sports: "A Woman Has Been Arrested In Thailand For Having Sex With Buddhist Monks And Blackmailing Them With Sex Tapes https://t.co/BfRW9dXOi0 https://t.co/x0lrCCjxTN" (44309 views, 49 likes) https://x.com/i/status/1946383269462675562
+- Mario Nawfal: "EYE-POPPING POV: WATCH A DRONE SHOW FROM THE PILOT’S EYE
+
+Ever wondered what it looks like when hundreds of drones blast off in perfect sync?
+
+Lumasky, the sky-sculpting legend behind shows for Nike, Formula 1, and FIFA, just shared the ultimate behind-the-scenes moment.
+
+From https://t.co/0DPbcqaBDZ https://t.co/cDEaFELlnh" (42883 views, 71 likes) https://x.com/i/status/1946356812846088391
+- Mario Nawfal: "🇺🇸 TRUMP: STEPHANIE BICE HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congresswoman Stephanie Bice is doing a truly fantastic job representing the incredible people of Oklahoma’s 5th Congressional District.
+
+Stephanie has a strong record of success and resounding support from her https://t.co/NOdf584ciH https://t.co/W1lt6kZkHS" (42546 views, 35 likes) https://x.com/i/status/1946346627716780084
+- OpenAI: "The Advanced Voice upgrades are now rolling out to ChatGPT free users too. With the same improvements available to paid users, ChatGPT sounds more natural and expressive, and can translate more effectively.
+
+Rate limits for free users stay the same." (41082 views, 131 likes) https://x.com/i/status/1946362700768166272
+- Mario Nawfal: "🚨🇺🇸 TRUMP: BARRY LOUDERMILK HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congressman Barry Loudermilk is a tremendous advocate for the great people of Georgia’s 11th Congressional District.
+
+A brave U.S. Air Force veteran, Barry knows what is required to defend our country, support https://t.co/Krbq6KKS7Z" (37197 views, 55 likes) https://x.com/i/status/1946342911882277284
+- Mario Nawfal: "🇨🇦SMALL PLANE STOLEN, BIG AIRPORT SHUT DOWN
+
+A 39-year-old dude jacked a tiny plane and flew it into Vancouver’s airspace, forcing the airport to freeze all traffic.
+
+Air traffic control told pilots to stay put while the Cessna circled like a confused bird with zero vibes.
+
+Cops https://t.co/z7nfH85DvX https://t.co/pBOUd20gmI" (36041 views, 51 likes) https://x.com/i/status/1946354296175591690
+- @jason: "At some point a @Snowden will arrive and dump the Epstein and JFK files — surprised it hasn’t happened yet." (35186 views, 332 likes) https://x.com/i/status/1946354397463851073
+- Mario Nawfal: "🚨🇺🇸 460K STUDENT LOAN BORROWERS JUST GOT DENIED
+
+Nearly half a million people who picked the lowest payment plan are getting rejection letters.
+
+They unknowingly signed up for the SAVE Plan, a Biden-era option that was blocked by courts in June.
+
+Trump’s new law is replacing it https://t.co/ptUdfPcVGK https://t.co/4EqLHoQJEe" (35248 views, 89 likes) https://x.com/i/status/1946355554584006783
+- Mario Nawfal: "🇺🇸 ICE TO CRITICS: OUR CENTERS ARE DORMS, NOT JAILS
+
+According to ICE, forget what you’ve seen on TV,  their detention centers aren’t jail cells, they’re “dorms.”
+
+Beds? Yup.
+
+Warm showers? Daily.
+
+Mental health care? Actually offered.
+
+Tablets? In every room, it’s detention https://t.co/VTvG2H9rr2 https://t.co/5ROr3J6mng" (34970 views, 92 likes) https://x.com/i/status/1946349263191204137
+- Mario Nawfal: "🚨🇺🇸 EPA AXES ENTIRE SCIENTIFIC RESEARCH DIVISION, 1,155 SCIENTISTS OUT
+
+The Office of Research and Development is dead. 
+
+Lee Zeldin (EPA Administrator):
+
+"This reduction in force will ensure we can better fulfill that mission while being responsible stewards of your hard-earned https://t.co/byiUNPmJsf https://t.co/DLBdic9Pp5" (34921 views, 125 likes) https://x.com/i/status/1946367540067770697
+- Mario Nawfal: "🇺🇸🇸🇾 AMB. BARRACK: ISRAEL AND SYRIA JUST AGREED TO A CEASEFIRE
+
+"Breakthrough, Netanyahu and Syrian President Ahmed al-Sharaa, supported by the U.S.A., have agreed to a ceasefire embraced by Türkiye, Jordan, and their neighbors.
+
+We call upon Druze, Bedouins, and Sunnis to put https://t.co/FoIQoxols6 https://t.co/9bWak4hiGt" (33149 views, 86 likes) https://x.com/i/status/1946340712548556969
+- World of Statistics: "🇮🇳 India GDP 2000: $468 billion
+
+🇮🇳 India GDP 2025: $4.19 trillion" (32803 views, 378 likes) https://x.com/i/status/1946370402386874387
+- World of Statistics: "Population yearly change:
+
+🇱🇻 Latvia: -18,312
+🇨🇲 Cameroon: +755,593
+
+(Worldometers)" (32731 views, 87 likes) https://x.com/i/status/1946354799483498545
+- Mario Nawfal: "🚨🇺🇸DAVID SACKS: COLBERT IS THE MILLIONTH CASE OF 'GO WOKE, GO BROKE'
+
+"This is the millionth case of go woke, go broke. Colbert's ratings have declined by a third because people are tired of the pontificating. 
+
+When comics think of themselves as important voices instead of joke https://t.co/9Q4yJDSFeg https://t.co/xb7Io2tGj1" (32645 views, 155 likes) https://x.com/i/status/1946364705401974886
+- Mario Nawfal: "🇺🇸  U.S. REP. SLAMS OBAMA &amp; DOJ: THEY TRIED TO BREAK DEMOCRACY
+
+Rep. Mike Lawler:
+
+"It's extremely disturbing at every level, and the fact is, President Obama needs to answer for this immediately.
+
+Why exactly was his administration, in concert with the intelligence community, https://t.co/jGG5VGnAfG https://t.co/39nuJ3Qxkx" (32335 views, 132 likes) https://x.com/i/status/1946346746805617101
+- Mario Nawfal: "🇺🇸 FOX'S MAURO: HOW MAMDANI CAN BECOME STALIN
+
+"He[Zohran Mamdani] is saying, look:
+
+'I'll take care of your food.
+
+Of your housing, your transport, your safety.
+
+In other words, give me all the power, everything, and just trust me.'
+
+And that's why these sorts of regimes, https://t.co/gDs8gceQpS https://t.co/wkP8syP8Hn" (31920 views, 67 likes) https://x.com/i/status/1946351779664310595
+- Pardon My Take: "Ratio of the year: Kd https://t.co/cDCRp34QLI" (31750 views, 33 likes) https://x.com/i/status/1946361753534607404
+- Mario Nawfal: "🇪🇺META TELLS EU “NO THANKS” TO AI RULES
+
+Meta just said nope to Europe’s plan to control powerful AI like ChatGPT and Grok.
+
+They claim the rules are too confusing and could crush innovation in Europe before it even starts.
+
+Other tech giants are warning the same, while French https://t.co/wYjHYqlHan https://t.co/ADq5JPo3Zs" (31684 views, 62 likes) https://x.com/i/status/1946374437562884269
+- Pardon My Take: "Just chill out man of the year:Mel Kiper https://t.co/0y6ZPOeHD1" (31485 views, 36 likes) https://x.com/i/status/1946361747092144401
+- Mario Nawfal: "🚨🇺🇸SEC. HEGSETH: NO MORE CHINESE INVOLVEMENT IN DOD SYSTEMS
+
+Defense Secretary announces immediate ban on Chinese involvement in Pentagon systems. 
+
+Cites vulnerability from tech companies using "cheap Chinese labor" for cloud services.
+
+https://t.co/QkCfh3Zzpb https://t.co/U1LlbeZwp3" (31307 views, 201 likes) https://x.com/i/status/1946361846220435670
+- Mario Nawfal: "🇺🇸🇮🇱 TRUMP: 10 MORE HOSTAGES FROM GAZA COMING SOON
+
+Trump:
+
+“We got most of the hostages back. We’re going to have another 10 coming very shortly, and we hope to have that finished quickly,” [during a White House dinner with lawmakers].
+
+Talks in Doha between Israel and Hamas are https://t.co/fHxLzZEwDu https://t.co/BWzYgColjy" (31403 views, 88 likes) https://x.com/i/status/1946360711703044125
+- Mario Nawfal: "🇺🇸 🇮🇱 HOUSE PASSES DEFENSE BILL WITH $500M FOR ISRAEL’S MISSILE DEFENSE
+
+Congress just approved an $832 billion defense bill and Israel’s getting a $500 million slice of it.
+
+The money goes to missile systems like Iron Dome and Arrow to stop rocket and drone attacks.
+
+Rep. https://t.co/1dJHLezxfT https://t.co/JB2OJZb7U5" (31417 views, 60 likes) https://x.com/i/status/1946360588424409364
+- Mario Nawfal: "🇺🇸 TRUMP: WE ACTUALLY FULFILLED MORE PROMISES THAN WE PROMISED
+
+“We've fulfilled so many of our promises. 
+
+In fact, somebody said today, a person that's not particularly good for us, said that we actually fulfilled more promises than we promised, which is a pretty nice https://t.co/kdHt39EdgT https://t.co/kd4A0pr63L" (30980 views, 135 likes) https://x.com/i/status/1946359335292223563
+- Mario Nawfal: "🚨🇺🇸 SPECIAL PRESIDENTIAL ENVOY FOR HOSTAGE AFFAIRS: TEN AMERICANS ARE FREED FROM VENEZUELA DETENTION
+
+“Ten Americans are on their way home from detention in Venezuela! 
+
+Thanks to @POTUS, @SecRubio, @usembassyve, @aboehler and many others for your support bringing Americans https://t.co/Qn2pgEcE0E https://t.co/4HhhbPTISS" (30752 views, 117 likes) https://x.com/i/status/1946344232853332430
+- Sawyer Merritt: "NEWS: The U.S. EPA has just announced that it is eliminating its scientific research arm and is firing hundreds of chemists, biologists, toxicologists and other scientists. 
+
+The E.P.A.’s science office provides the independent research that underpins nearly all of the agency’s https://t.co/uOeTYiOhkG" (30615 views, 196 likes) https://x.com/i/status/1946340598744482021
+- Mario Nawfal: "🇺🇸 SEN. KENNEDY: DEMS NEED TO HEAR THIS, THE VOICES IN THEIR HEADS AREN’T REAL
+
+“It's bad policy, it's bad politics. And for the life of me, I don't understand why my Democratic colleagues embrace it. 
+
+Do they think it's immoral to vet people at the border? 
+
+Every country does https://t.co/9mC3VQH9UX https://t.co/E2fToY37Na" (30700 views, 101 likes) https://x.com/i/status/1946364362551177539
+- Mario Nawfal: "🇺🇸 TRUMP: REP. MONICA DE LA CRUZ HAS MY COMPLETE AND TOTAL ENDORSEMENT
+
+“Congresswoman Monica De La Cruz is doing an incredible job representing the wonderful people of Texas’ 15th Congressional District.
+
+A very successful small businesswoman, Monica knows the America First https://t.co/25zUHbU2Hu https://t.co/bBdZwo3NVR" (30444 views, 79 likes) https://x.com/i/status/1946348670313701639
+- Mario Nawfal: "🇺🇸AG PAM BONDI: WE FILED THE EPSTEIN MOTION
+
+“Our motion has been filed.”
+
+Source: @AGPamBondi https://t.co/n1g1h5Y8HQ https://t.co/KpsNHjansJ" (30421 views, 92 likes) https://x.com/i/status/1946359058065424824
+- Mario Nawfal: "🚨🇺🇸 EXCLUSIVE: SEN. RAND PAUL – “THE DEFICIT CUT WAS A ROUNDING ERROR”
+
+@RandPaul:
+
+“The administration sent us a $9 billion rescission package.
+
+That brings the deficit from $2.2 trillion to $2.191 trillion.
+
+It’s a rounding error.
+
+You can’t fix the deficit unless you look at https://t.co/wH8myQ1wSM https://t.co/heGqh7ikLC" (30373 views, 77 likes) https://x.com/i/status/1946364362760785988
+- Barstool Sports: "Now It Feels Like The Open: We Got Shane Lowry Telling The Course To Fuck Off And Jon Rahm Kicking His Club Down The Fairway https://t.co/KUIdcz92IY https://t.co/foNh4igF2N" (30351 views, 31 likes) https://x.com/i/status/1946385811663905193
+- Mario Nawfal: "🚨🇺🇸 REP. LUNA: CONGRESS HAS MOVED TO SEIZE NEVILLE SINGHAM’S ASSETS OVER CCP TIES
+
+"Neville Singham, the billionaire funding political propaganda, is not responding to Congress. 
+
+Chairman Jamie Comer is writing to the Treasury to seize his assets. 
+
+'Jews for Mamdani' is also https://t.co/0xvHbrd43N https://t.co/y5TlpNNndH" (30238 views, 91 likes) https://x.com/i/status/1946371668638568686
+- Mario Nawfal: "🇺🇸🇺🇦 UKRAINE’S DRONE FACTORIES COULD UPGRADE U.S. MILITARY TECH
+
+Why spend $1 million shooting down a $50,000 drone when Ukraine can do it with a $3,000 one?
+
+Ukraine is cranking out cheap interceptor drones and missiles that blast Russian gear for a fraction of the cost.
+
+Now https://t.co/ZQvC1XWzfi https://t.co/x3r7zjawqF" (29584 views, 71 likes) https://x.com/i/status/1946376945949880473
+- Wonder of Science: "Blowing bubbles within bubbles.
+https://t.co/q1oM2y0TKu" (27148 views, 172 likes) https://x.com/i/status/1946361055355281577
+- Mario Nawfal: "🇺🇸 GUY ACCIDENTALLY BUYS 2 LOTTO TICKETS... WINS $2 MILLION
+
+Paul Corcoran thought his Powerball ticket was expired so he bought another one for the same drawing.
+
+Plot twist: both tickets hit for $1 million each.
+
+Same numbers. Same drawing. Total chaos. Total cash.
+
+He’s not https://t.co/ZT2Hx1eGZz https://t.co/RAP012jDxn" (27205 views, 93 likes) https://x.com/i/status/1946379462515290228
+- @jason: "OK, 72 meme processing window is closing —- let’s wrap it up folks   https://t.co/7a2GYTkVek" (24958 views, 223 likes) https://x.com/i/status/1946374790903910771
+- Mario Nawfal: "🇺🇸KEVIN MCCARTHY SAYS DEMS STAYED QUIET ON EPSTEIN FILES WHEN HE LED HOUSE
+
+Kevin McCarthy says not one Democrat ever asked him about the Epstein files while he was Speaker. 
+
+With calls now piling up to release more documents, McCarthy’s pushing back, saying the sudden interest https://t.co/p8H0VOZccv https://t.co/hKuBIsNcna" (23731 views, 68 likes) https://x.com/i/status/1946380787344949494
+- Mario Nawfal: "🇺🇸PASSENGER ARRESTED AFTER HE TRIES TO OPEN THE EXIT DOOR MID-AIR
+
+Flight 3612 was cruising from Omaha to Detroit when a passenger lunged for the emergency exit. 
+
+The man got into a fight with a flight attendant as others jumped in to stop him. 
+
+The pilot radioed a distress https://t.co/gsPPC79UGG" (22896 views, 90 likes) https://x.com/i/status/1946369395904938265
+- Mario Nawfal: "7/ THE HARD TRUTH:
+
+Grand jury testimony only covers what prosecutors NEEDED for charges - paying minors for sex and Maxwell's role.
+
+It won't explain:
+
+-How a teacher became a billionaire
+
+-His intelligence connections
+
+-Why he got that sweetheart deal in 2008
+
+-Who else was https://t.co/sPYF4xSXHZ" (21478 views, 63 likes) https://x.com/i/status/1946362492244132068
+- Mario Nawfal: "8/ BOTTOM LINE:
+
+Trump's pushing for transparency, which beats the DOJ's "nothing to see here" stance. 
+
+But don't expect bombshells.
+
+The real Epstein secrets aren't in grand jury transcripts - they're in the evidence FBI won't release and questions nobody will answer.
+
+This is https://t.co/ToSHNdmBzX" (20940 views, 68 likes) https://x.com/i/status/1946362495221797128
+- Sawyer Merritt: "Source: https://t.co/M1dz8UdwGp" (20737 views, 34 likes) https://x.com/i/status/1946340603299541428
+- Mario Nawfal: "🇷🇴🇧🇷 ROMANIAN MP: CONSERVATIVE LEADERS PERSECUTED AROUND THE WORLD!
+
+George Simion:
+
+"Another conservative leader, Brazilian former president @jairbolsonaro, is the target of an atrocious campaign to annihilate him from public life.
+
+He was even banned from using social networks https://t.co/comD9dsQVh https://t.co/ksF3Y7cGSV" (19967 views, 205 likes) https://x.com/i/status/1946384495395193111
+- Fermat's Library: "A short proof that ln(n) is irrational for every integer n&gt;1 https://t.co/a0hx39bjvl" (17343 views, 203 likes) https://x.com/i/status/1946355075720368207
+- Wonder of Science: "Product page (paid link): https://t.co/ejeqIuPDxe" (16682 views, 13 likes) https://x.com/i/status/1946363859251716477
+- Car Dealership Guy: "Daily structure is quietly becoming a differentiator in dealership performance—
+
+@Glenn800Lundy, President of 800% Elite Automotive Club, shares how he’s using it to sharpen team focus.
+
+"We've gotta change the way we start our day in our dealerships."
+
+"By starting the day and https://t.co/AGJZivRahY" (16633 views, 8 likes) https://x.com/i/status/1946344237202850151
+- Wonder of Science: "Spectacular eruption filmed by drone on the Raykjanes Peninsula, Iceland.
+
+📽: Hörður Kristleifsson
+https://t.co/3tHNBGTLOI" (16396 views, 107 likes) https://x.com/i/status/1946371906149687725
+- Mario Nawfal: "CAN’T STOP WATCHING THIS WOODEN SPIRAL THING
+
+This hand-carved track sends marbles spiraling like they’re late for drama class.
+
+It’s slow, smooth, and weirdly relaxing even if you have zero patience.
+
+No music, no talking, just vibes and gravity.
+
+Source: MARBLEBROS-asmr https://t.co/zFxsxJXxLN" (15364 views, 99 likes) https://x.com/i/status/1946381980335014112
