@@ -1,6 +1,6 @@
 import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
-import { eq, desc, and, gte, lt } from "drizzle-orm";
+import { eq, desc, and, gte, lt, lte, gt } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -750,6 +750,30 @@ export class DatabaseStorage implements IStorage {
       ))
       .returning();
     console.log(`✅ Deleted ${deleted.length} pending scheduled podcasts for user ${userId}`);
+  }
+
+  async getScheduledPodcastsForUserInRange(userId: number, startDate: Date, endDate: Date): Promise<ScheduledPodcasts[]> {
+    return await db.select().from(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        gte(scheduledPodcasts.deliveryTime, startDate),
+        lte(scheduledPodcasts.deliveryTime, endDate)
+      ))
+      .orderBy(scheduledPodcasts.deliveryTime);
+  }
+
+  async deleteScheduledPodcastsAfterDate(userId: number, date: Date): Promise<void> {
+    await db.delete(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        eq(scheduledPodcasts.status, 'pending'),
+        gt(scheduledPodcasts.deliveryTime, date)
+      ));
+  }
+
+  async getUsersWithEnabledPodcasts(): Promise<PodcastPreferences[]> {
+    return await db.select().from(podcastPreferences)
+      .where(eq(podcastPreferences.enabled, true));
   }
 
   // User last search methods

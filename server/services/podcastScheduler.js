@@ -11,6 +11,119 @@ import { fromZonedTime, toZonedTime, format } from 'date-fns-tz';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Helper function to generate all delivery times for the next N days
+function getNextDeliveryTimes(preferences, daysAhead = 7) {
+  const deliveryTimes = [];
+  const timezone = preferences.timezone || 'America/Chicago';
+  
+  // Start from today in user's timezone
+  const nowInUserTz = toZonedTime(new Date(), timezone);
+  const startOfTodayInUserTz = new Date(nowInUserTz);
+  startOfTodayInUserTz.setHours(0, 0, 0, 0);
+  
+  for (let dayOffset = 0; dayOffset < daysAhead; dayOffset++) {
+    const targetDate = new Date(startOfTodayInUserTz);
+    targetDate.setDate(targetDate.getDate() + dayOffset);
+    
+    // Check if this day should have deliveries based on cadence
+    if (shouldDeliverOnDay(preferences, targetDate)) {
+      // Generate delivery times for each time slot on this day
+      for (const timeStr of preferences.times) {
+        const [hours, minutes] = timeStr.split(':').map(Number);
+        const deliveryTimeInUserTz = new Date(targetDate);
+        deliveryTimeInUserTz.setHours(hours, minutes, 0, 0);
+        
+        // Convert to UTC for storage
+        const utcDeliveryTime = fromZonedTime(deliveryTimeInUserTz, timezone);
+        const utcScheduledFor = new Date(utcDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before
+        
+        // Only include future times
+        if (utcDeliveryTime > new Date()) {
+          deliveryTimes.push({
+            scheduledFor: utcScheduledFor,
+            deliveryTime: utcDeliveryTime,
+            localDeliveryTime: deliveryTimeInUserTz
+          });
+        }
+      }
+    }
+  }
+  
+  return deliveryTimes;
+}
+
+// Helper function to check if delivery should happen on a given day
+function shouldDeliverOnDay(preferences, date) {
+  const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+  
+  switch (preferences.cadence) {
+    case 'daily':
+      return true;
+    case 'weekly':
+      return preferences.customDays?.includes(dayOfWeek) || false;
+    case 'weekdays':
+      const day = date.getDay();
+      return day >= 1 && day <= 5; // Monday to Friday
+    default:
+      return false;
+  }
+}
+
+// Helper function to check if a scheduled podcast already exists for a delivery time
+function shouldCreateScheduledPodcast(existingPodcasts, deliveryTime) {
+  // Check if any existing podcast has the same delivery time (within 1 minute tolerance)
+  const tolerance = 60 * 1000; // 1 minute
+  
+  return !existingPodcasts.some(podcast => {
+    const existingTime = new Date(podcast.deliveryTime).getTime();
+    const newTime = deliveryTime.getTime();
+    return Math.abs(existingTime - newTime) < tolerance;
+  });
+}
+
+// Maintain a 7-day scheduling horizon for a user
+async function maintainScheduleHorizon(userId, preferences) {
+  console.log(`🔄 Maintaining 7-day schedule horizon for user ${userId}`);
+  
+  // Get all delivery times for the next 7 days
+  const upcomingDeliveries = getNextDeliveryTimes(preferences, 7);
+  
+  // Get existing scheduled podcasts for this user in the next 7 days
+  const sevenDaysFromNow = new Date();
+  sevenDaysFromNow.setDate(sevenDaysFromNow.getDate() + 7);
+  
+  const existingPodcasts = await storage.getScheduledPodcastsForUserInRange(
+    userId,
+    new Date(),
+    sevenDaysFromNow
+  );
+  
+  // Create any missing scheduled podcasts
+  let created = 0;
+  for (const delivery of upcomingDeliveries) {
+    if (shouldCreateScheduledPodcast(existingPodcasts, delivery.deliveryTime)) {
+      await storage.createScheduledPodcast({
+        userId,
+        scheduledFor: delivery.scheduledFor,
+        deliveryTime: delivery.deliveryTime,
+        preferenceSnapshot: {
+          topics: preferences.topics,
+          duration: preferences.duration,
+          voiceId: preferences.voiceId,
+          enhanceWithX: preferences.enhanceWithX,
+          cadence: preferences.cadence,
+          times: preferences.times
+        },
+        status: 'pending'
+      });
+      created++;
+    }
+  }
+  
+  console.log(`✅ Created ${created} new scheduled podcasts for user ${userId}`);
+  return created;
+}
+
 // Convert cadence to cron-like schedule with timezone support for a specific time
 function getNextScheduledTime(preferences, timeIndex = 0) {
   const now = new Date();
@@ -76,7 +189,7 @@ function getNextScheduledTime(preferences, timeIndex = 0) {
   return nextSchedule;
 }
 
-// Create scheduled podcast entries for a specific user
+// Create scheduled podcast entries for a specific user (now creates 7 days worth)
 export async function createScheduledPodcastsForUser(userId, preferences) {
   try {
     if (!preferences || !preferences.enabled) {
@@ -91,46 +204,12 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
     }
     
     const userTimezone = preferences.timezone || 'America/Chicago';
-    console.log(`📅 Creating scheduled podcasts for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
+    console.log(`📅 Creating 7-day schedule for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
     
-    // Create scheduled podcasts for each delivery time
-    const times = preferences.times || ["08:00"];
+    // Use the new maintainScheduleHorizon function
+    const created = await maintainScheduleHorizon(userId, preferences);
+    console.log(`✅ Schedule maintenance complete - ${created} new podcasts scheduled`);
     
-    for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
-      const deliveryTime = getNextScheduledTime(preferences, timeIndex);
-      const scheduledFor = new Date(deliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
-      
-      const scheduledPodcastData = {
-        userId: user.id,
-        scheduledFor,
-        deliveryTime,
-        status: 'pending',
-        preferenceSnapshot: {
-          topics: preferences.topics,
-          duration: preferences.duration,
-          voiceId: preferences.voiceId,
-          enhanceWithX: preferences.enhanceWithX,
-          cadence: preferences.cadence,
-          times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
-        }
-      };
-      
-      const scheduledForUserTz = toZonedTime(scheduledFor, userTimezone);
-      const deliveryTimeUserTz = toZonedTime(deliveryTime, userTimezone);
-      const formattedScheduledTime = format(scheduledForUserTz, 'h:mm a zzz', { timeZone: userTimezone });
-      const formattedDeliveryTime = format(deliveryTimeUserTz, 'h:mm a zzz', { timeZone: userTimezone });
-      
-      console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length}:`);
-      console.log(`   User: ${user.username} (${user.email})`);
-      console.log(`   Scheduled for: ${formattedScheduledTime} (${scheduledFor.toISOString()})`);
-      console.log(`   Delivery at: ${formattedDeliveryTime} (${deliveryTime.toISOString()})`);
-      console.log(`   Topics: ${preferences.topics.join(', ')}`);
-      console.log(`   Duration: ${preferences.duration} minutes`);
-      
-      await storage.createScheduledPodcast(scheduledPodcastData);
-      
-      console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${formattedDeliveryTime}`);
-    }
   } catch (error) {
     console.error('❌ Error creating scheduled podcasts for user:', error);
   }
@@ -269,36 +348,7 @@ export async function processPendingPodcasts() {
         
         console.log(`✅ Successfully processed and sent podcast to ${user.email}`);
         
-        // Schedule next podcast for this specific time slot
-        const currentPreferences = await storage.getPodcastPreferences(scheduled.userId);
-        if (currentPreferences && currentPreferences.enabled) {
-          // Extract the specific time from this scheduled podcast
-          const timeStr = scheduled.preferenceSnapshot?.times?.[0];
-          if (timeStr) {
-            // Find the index of this time in the current preferences
-            const timeIndex = currentPreferences.times.indexOf(timeStr);
-            if (timeIndex !== -1) {
-              const nextDeliveryTime = getNextScheduledTime(currentPreferences, timeIndex);
-              const nextScheduledFor = new Date(nextDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
-              
-              await storage.createScheduledPodcast({
-                userId: scheduled.userId,
-                scheduledFor: nextScheduledFor,
-                deliveryTime: nextDeliveryTime,
-                status: 'pending',
-                preferenceSnapshot: {
-                  topics: currentPreferences.topics,
-                  duration: currentPreferences.duration,
-                  voiceId: currentPreferences.voiceId,
-                  enhanceWithX: currentPreferences.enhanceWithX,
-                  cadence: currentPreferences.cadence,
-                  times: [timeStr] // Store only the specific time for this scheduled podcast
-                }
-              });
-              console.log(`📅 Next podcast scheduled for ${nextDeliveryTime.toLocaleString()}`);
-            }
-          }
-        }
+        // No need to schedule next podcast - daily maintenance will handle it
         
       } catch (error) {
         console.error(`❌ Error processing scheduled podcast ${scheduled.id}:`, error);
@@ -321,6 +371,39 @@ export async function runPodcastScheduler() {
   console.log('✅ Podcast scheduler completed');
 }
 
+// Daily maintenance task to ensure all users have podcasts scheduled for next 7 days
+async function runDailyMaintenance() {
+  console.log('🔧 Running daily podcast maintenance...');
+  
+  try {
+    // Get all users with enabled podcast preferences
+    const enabledPreferences = await storage.getUsersWithEnabledPodcasts();
+    
+    for (const prefs of enabledPreferences) {
+      try {
+        // Get user details for logging
+        const user = await storage.getUser(prefs.userId);
+        console.log(`📅 Checking schedule for user ${user?.username || prefs.userId}`);
+        
+        // Maintain 7-day horizon for this user
+        await maintainScheduleHorizon(prefs.userId, prefs);
+        
+      } catch (error) {
+        console.error(`❌ Error maintaining schedule for user ${prefs.userId}:`, error);
+      }
+    }
+    
+    // Clean up old completed/failed podcasts (older than 30 days)
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    // Note: Would need to add cleanupOldPodcasts method to storage if we want this feature
+    
+    console.log('✅ Daily maintenance completed');
+  } catch (error) {
+    console.error('❌ Error in daily maintenance:', error);
+  }
+}
+
 // Start the scheduler (runs every 5 minutes)
 export function startPodcastScheduler() {
   console.log('🚀 Starting podcast scheduler (checking every 5 minutes)');
@@ -330,4 +413,23 @@ export function startPodcastScheduler() {
   
   // Run every 5 minutes
   setInterval(runPodcastScheduler, 5 * 60 * 1000);
+  
+  // Run daily maintenance immediately
+  runDailyMaintenance();
+  
+  // Run daily maintenance every 24 hours at midnight UTC
+  const now = new Date();
+  const tomorrow = new Date(now);
+  tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
+  tomorrow.setUTCHours(0, 0, 0, 0);
+  const msUntilMidnight = tomorrow.getTime() - now.getTime();
+  
+  // Schedule first run at next midnight UTC
+  setTimeout(() => {
+    runDailyMaintenance();
+    // Then run every 24 hours
+    setInterval(runDailyMaintenance, 24 * 60 * 60 * 1000);
+  }, msUntilMidnight);
+  
+  console.log(`📅 Daily maintenance scheduled to run at midnight UTC (in ${Math.floor(msUntilMidnight / 1000 / 60)} minutes)`);
 }

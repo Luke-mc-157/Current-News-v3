@@ -13,6 +13,7 @@ import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { TopicInput } from "@/components/TopicInputSimple";
+import { UpcomingPodcasts } from "@/components/upcoming-podcasts";
 import type { PodcastPreferences, PodcastEpisode } from "@shared/schema";
 
 // Voice options from the system - must match voiceSynthesis.js EXACTLY
@@ -708,6 +709,21 @@ export default function Podcasts() {
               </div>
             </CardContent>
           </Card>
+
+          {/* Upcoming Scheduled Podcasts */}
+          {localPreferences.enabled && (
+            <Card className="mt-4">
+              <CardHeader>
+                <CardTitle>Upcoming Deliveries</CardTitle>
+                <CardDescription>
+                  Your podcasts scheduled for the next 7 days
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <UpcomingPodcasts timezone={localPreferences.timezone || "America/Chicago"} />
+              </CardContent>
+            </Card>
+          )}
         </TabsContent>
 
         <TabsContent value="history" className="space-y-4">
