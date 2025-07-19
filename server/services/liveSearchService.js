@@ -478,6 +478,11 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     
     console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
     
+    // DEBUG: Log the actual post IDs being fetched for this topic
+    if (xPostIds.length > 0) {
+      console.log(`🔍 DEBUG ${topicData.topic} post IDs:`, xPostIds);
+    }
+    
     // Batch fetch X posts with authentic metadata (use user token for better data)
     const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
     totalXAIPosts += xPostSources.length;
