@@ -7,7 +7,7 @@ import { fetchUserTimeline } from './xTimeline.js';
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
-  timeout: 120000
+  timeout: 360000
 });
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
@@ -599,7 +599,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles and web content. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles on web and news."
+          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types "news" and "RSS". Use source type "web" to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types "news" and "RSS"."
         },
         {
           role: "user",
@@ -614,6 +614,7 @@ async function getTopicDataFromLiveSearch(topic) {
         from_date: fromDate,
         sources: [
           {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
+          { "type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] },
           {"type": "news", "country": "US" },
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com",], "country": "US" }
         ]
@@ -682,7 +683,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
 
 
 async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
-  console.log('🤖 Phase 2: Enhanced newsletter compilation with grok-4...');
+  console.log('🤖 Phase 2: Enhanced newsletter compilation with grok...');
   console.log(`📊 Processing ${sourceBreakdown.xaiPosts + sourceBreakdown.articles + sourceBreakdown.timelinePosts} total sources`);
   console.log(`📏 Data length: ${compiledData.length} chars`);
   
@@ -690,7 +691,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
     console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",
@@ -759,13 +760,14 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
        ${compiledData}`
       }
       ],
-      max_tokens: 100000  // Fixed high limit for full compiled data processing
+      max_tokens: 100000,  // Fixed high limit for full compiled data processing
+      reasoning_effort: "high"
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
     console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
-    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${15000})`);
+    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${50000})`);
     
     // Parse JSON response with improved error handling
     try {
