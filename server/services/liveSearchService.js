@@ -738,7 +738,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
       role: "user",
-        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a news newsletter for the platform user's front end UI in the specified format.
+        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a newsletter for the platform user's front end UI in the specified format.
 
         NEWSLETTER GENERATION INSTRUCTIONS:
         1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts and news articles. 

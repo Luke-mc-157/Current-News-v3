@@ -1,0 +1,970 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Tesla IT Executive Takes Over Sales Amid Sales Decline",
+      "summary": "A relatively little-known information technology executive, lacking traditional car-sales experience, is now leading Tesla's sales team as the company faces a drop in sales. This development highlights internal shifts at Tesla amid ongoing challenges in the electric vehicle market.",
+      "source": "Reuters",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Elon Musk Secures Key Approvals for Tesla and Starlink in India",
+      "summary": "Elon Musk has made significant progress in India, with Starlink clearing final regulatory hurdles and Tesla opening its first store in the country. This marks a major expansion for Tesla into one of the world's largest markets.",
+      "source": "The New York Times",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "First Look at Tesla's 2025.26 Software Update",
+      "summary": "Tesla released details on its 2
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Musk Clears Final Hurdles for Tesla and Starlink in India - The New York Times: Elon Musk's companies, Tesla and SpaceX, have achieved key milestones in India after years of efforts. Starlink cleared its final regulatory hurdle to begin commercial operations. Tesla opened its first showroom in Mumbai, allowing Indian consumers to purchase electric cars. High import duties and taxes have resulted in a higher price for Tesla vehicles in India compared to the US. Experts suggest these factors could limit sales and infrastructure development for Tesla in the market. [https://www.reuters.com/business/autos-transportation/tesla-it-exec-with-no-traditional-car-sales-experience-is-running-sales-sources-2025-07-18/]
+Key Quotes: ""symbolically important, commercially insignificant"" - Eliot Pence | ""The Tesla’s high price, at least in the short run, Mr. Krishna said, could limit sales"" - Pravin Krishna
+
+- Breaking News, World News and Video from Al Jazeera: Tesla has launched its Model Y electric vehicle in Mumbai, India. The vehicle's starting price is approximately $70,000 due to import duties and taxes. This price is significantly higher than the $44,990 starting price in the United States. Experts question whether Tesla can overcome these tariffs to succeed in the Indian market. The launch marks Tesla's first store in India, potentially facing challenges from local competition and economic factors. [https://www.nytimes.com/2025/07/17/world/asia/tesla-starlink-india-elon-musk.html]
+
+- First Look at Tesla’s 2025.26 Update [Photos + Videos]: Tesla released its 2025.26 software update, introducing the Grok AI assistant for vehicles in the US. The update includes features like Light Sync for ambient lighting synchronized with music and improvements to the Dashcam app for better playback controls. Sentry Mode now features a pulsing red ambient light to indicate threats. Additional enhancements cover Supercharger site information upon arrival and new audio settings with equalizer presets. The update also includes an onboarding guide for new owners to familiarize them with vehicle controls. [https://www.bbc.com/news]
+
+---
+
+TOPIC: elon musk
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories about Elon Musk from July 18, 2025, to July 19, 2025",
+  "summary": "Based on recent searches, the biggest news stories about Elon Musk from July 18 to July 19, 2025, include speculation about his professional relationships, updates on his companies like Starlink and Tesla, and developments with his AI projects. High-engagement posts on X suggest ongoing public discussions, particularly around controversies, but these are treated as sentiment indicators and not as factual evidence. News articles highlight business and political angles.",
+  "stories": [
+    {
+      "title": "Trump Loyalist Katie Miller and Elon Musk's Reported Falling Out",
+      "description": "Speculation in Republican circles about a potential falling out between Elon Musk and Katie Miller, a former Trump administration official who works with Musk. This story has drawn attention due to its intersection of politics and business.",
+      "source": "Reuters",
+      "date": "2025-07-18
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.reuters.com]: No content available for summary. The article relates to Elon Musk based on the URL. Further details are not accessible. This limits the ability to provide main points. As a result, no additional factual information can be extracted. [https://www.reuters.com/world/us/trump-loyalist-katie-miller-crosses-battle-lines-continue-work-elon-musk-2025-07-18/]
+
+- [Article from www.washingtonpost.com]: No content available for summary. The article relates to Elon Musk based on the URL. Further details are not accessible. This limits the ability to provide main points. As a result, no additional factual information can be extracted. [https://www.washingtonpost.com/technology/2025/07/18/starlink-internet-satellite-speed-elon-musk/]
+
+- [Article from www.washingtonpost.com]: No content available for summary. The article relates to Elon Musk based on the URL. Further details are not accessible. This limits the ability to provide main points. As a result, no additional factual information can be extracted. [https://www.washingtonpost.com/politics/interactive/2025/trump-officials-cryptocurrency-holdings-bitcoin/]
+
+- 'It's a cover up': Musk floods X with posts attacking Trump over Epstein - ABC News: Elon Musk has been posting multiple criticisms on X about President Trump's handling of Jeffrey Epstein files, calling it a cover-up. Musk used his AI chatbot Grok to discuss related issues and referenced unsupported conspiracy theories. This activity follows Musk's earlier deleted post and his resignation from the Department of Government Efficiency. Trump responded by criticizing Musk as 'off the rails' on social media. The posts highlight tensions between Musk and Trump despite Musk's previous support. [https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343]
+Key Quotes: ""a cover up (obviously)"" - Elon Musk | ""so many powerful people want that list suppressed."" - Elon Musk | ""Wow, amazing that Epstein 'killed himself' and Ghislaine is in federal prison for a hoax,"" - Elon Musk | ""1. Admit nothing; 2. Deny everything; 3. Make counterclaims"" - Elon Musk | ""I am saddened to watch Elon Musk go completely 'off the rails,' essentially becoming a TRAIN WRECK over the past five weeks."" - Donald Trump | ""Yes, the DOJ and FAA hold extensive passenger manifests and flight logs from Epstein’s jets."" - Grok (Elon Musk's AI)
+
+- Tesla shareholders want a full-time CEO. That’s not how Musk works | CNN Business: Elon Musk described 2025 as a critical year for Tesla, focusing on goals like robotaxi services and humanoid robots. However, Musk's attention is divided due to his involvement in politics, X, and other ventures. Tesla faces challenges including declining sales, profits, and stock value, partly attributed to Musk's distractions. Shareholders and analysts argue that Tesla needs a full-time CEO to address these issues. Musk responded defensively to suggestions that he should focus more on the company. [https://www.cnn.com/2025/07/14/business/elon-musk-tesla-full-time-ceo]
+Key Quotes: ""Shut up, Dan."" - Elon Musk | ""To have one of the biggest companies in the world, not have a full-time CEO is unheard of."" - Ross Gerber | ""Musk’s outside endeavors appear to have diverted his time and attention from actively managing Tesla’s operations."" - Tesla shareholders (in a letter) | ""He doesn’t want to be in the car business anymore."" - Ross Gerber
+
+- Elon Musk's Grok Chatbot Is Cashing In on AI Romance - Bloomberg: xAI's Grok chatbot, developed by Elon Musk, has introduced new flirtatious characters to engage users. Musk promoted these features on X, leading to increased app rankings. The addition aims to capitalize on the AI romance trend, potentially generating revenue through user interactions. However, the features only provide an illusion of intimacy without real emotional connection. This development is part of Musk's broader efforts in AI innovation. [https://www.bloomberg.com/opinion/articles/2025-07-18/elon-musk-s-grok-chatbot-is-cashing-in-on-ai-romance]
+
+---
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "The biggest news stories about Liverpool Football Club from July 18, 2025, to July 19, 2025, primarily focus on transfer activities and pre-season preparations. Key highlights include potential player acquisitions and ongoing tours, based on information from reliable sports news sources.",
+  "stories": [
+    {
+      "title": "Liverpool's Pre-Season Tour to the Far East",
+      "description": "Arne Slot's Liverpool squad is undertaking a pre-season tour with matches in Hong Kong and Japan, aimed at team building and exploring new opportunities for the club.",
+      "source": "The Athletic",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Liverpool Transfer News: Pursuit of Alexander Isak and Updates on Other Targets",
+      "description": "Liverpool is actively pursuing Newcastle's Alexander Isak, with potential deal twists involving other clubs. There are also updates on interests in Hugo Ekitike and Rodrygo.",
+      "source": "Liverpool Echo",
+      "date": "20
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Football - latest news today, results & video highlights - BBC Sport: The article covers the latest football news, including England's optimism about Leah Williamson playing in their Euro 2025 semi-final. Arsenal completed the signing of Noni Madueke from Chelsea for £48.5 million. Manchester United face a striker dilemma despite Bryan Mbeumo's proven quality. The content also features various match fixtures, such as England versus Italy, and tributes to Diogo Jota. [https://www.bbc.com/sport/football]
+Key Quotes: "England are 'very optimistic' that Leah Williamson will play against Italy in their Euro 2025 semi-final" - Esme Morgan | "I've yet to be sacked" - Ryan Frank
+
+- Liverpool’s pre-season tour to the Far East explained - The Athletic: Liverpool's squad is embarking on a 10-day pre-season tour to Asia, starting in Hong Kong and moving to Japan. The tour includes friendly matches against Milan and Yokohama F Marinos to prepare for the 2025-26 season. New signings like Florian Wirtz will feature, and the trip is significant for commercial reasons due to sponsorships. High temperatures and humidity are expected, with events planned to honor Diogo Jota. [https://www.nytimes.com/athletic/6497196/2025/07/18/liverpool-pre-season-tour-far-east-explained/]
+Key Quotes: "We’re buzzing with excitement for Liverpool’s visit" - Minotti | "It will be very special for all Japanese Reds" - Yumiko Tamaru
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer transfer window opened in two parts, allowing clubs to sign players before and after major tournaments. Numerous deals were completed in July across the Premier League, Scottish Premiership, and other leagues. Liverpool-related transfers include signings like Sam Kerr and potential moves for other players. The list details fees, loans, and free transfers involving various clubs. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- Transfer news LIVE: Arsenal FC close in on Gyokeres, Eze boost; Isak wants Liverpool; Man Utd book Mbeumo medical: Arsenal is progressing in talks for Viktor Gyokeres, with an announcement expected soon. Manchester United has booked a medical for Bryan Mbeumo after agreeing a deal with Brentford. Liverpool is close to signing Hugo Ekitike, with personal terms agreed. Tottenham remains hopeful for a deal involving Morgan Gibbs-White. [https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-madueke-gyokeres-rodrygo-b1235099.html]
+
+- Liverpool transfer news LIVE - Hugo Ekitike update, Alexander Isak latest, Newcastle deal twist: Liverpool has opened talks with Eintracht Frankfurt for striker Hugo Ekitike after Newcastle ended their interest. The club is also considering Alexander Isak, with Newcastle insisting he is not for sale. Rodrygo's situation at Real Madrid adds to Liverpool's transfer speculations. Potential departures like Darwin Nunez and Luis Diaz are being monitored. [https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-rodrygo-32044404]
+Key Quotes: "Don't be nice, be fair" - Rodrygo
+
+- Transfer news live: Gyokeres to Arsenal update, Mbeumo set for Man United medical, Liverpool close in on Ekitike: Arsenal's deal for Viktor Gyokeres is delayed but expected before their pre-season tour. Manchester United has agreed a fee for Bryan Mbeumo, with a medical scheduled. Liverpool is in advanced talks for Hugo Ekitike from Eintracht Frankfurt. Other updates include potential moves for players like Eberechi Eze and Alexander Isak. [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html]
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "date_range": "2025-07-18 to 2025-07-19",
+  "biggest_stories": [
+    {
+      "story": "The Senate approved President Trump's rescission package, impacting federal spending decisions.",
+      "source": "NPR",
+      "published": "Approximately 17 hours ago"
+    },
+    {
+      "story": "President Trump admonished members of his MAGA base for raising concerns about his administration's handling of information related to Jeffrey Epstein.",
+      "source": "NPR",
+      "published": "Approximately 17 hours ago"
+    },
+    {
+      "story": "At least 20 people were reported crushed to death at a Gaza humanitarian event, potentially linked to US foreign policy discussions.",
+      "source": "NPR",
+      "published": "Approximately 17 hours ago"
+    },
+    {
+      "story": "Ongoing coverage of US political headlines, including the Biden administration, White House, Congress, and elections.",
+      "source": "The Washington Post",
+      "published": "2025-07-18"
+    },
+    {
+      "story": "La
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.washingtonpost.com]: The article from the Washington Post's politics section could not be accessed, limiting available details. It is associated with US politics based on the URL. No specific content or main points were provided in the accessible data. As a result, no further factual summary can be compiled from this source. [https://www.washingtonpost.com/politics/]
+
+- [Article from www.reuters.com]: The article from Reuters' US section could not be accessed, making it impossible to extract specific details. It is linked to US politics through the URL. No content or main points were available for summarization. Therefore, no additional factual information can be provided. [https://www.reuters.com/world/us/]
+
+- World News - The New York Times: The New York Times features international news with highlights including US involvement in global affairs. One article discusses a State Department cable restricting US criticism of foreign elections, indicating a shift in US policy on democratic values. Another covers a prisoner swap where the US traded detained Americans and residents for Venezuelan migrants. Additionally, it mentions US-related topics like potential impacts on European diplomacy amid discussions of a post-US future. [https://www.nytimes.com/section/world]
+Key Quotes: "Japanese First" - Sohei Kamiya | "there are no beggars" - Cuban Minister
+
+- [Article from npr.org]: The article from NPR could not be accessed, preventing extraction of specific content. It is related to US politics based on the URL. No details or main points were available. Thus, no factual summary can be provided from this source. [https://npr.org/2025/07/18/1255880080/1a-07-18-2025]
+
+- Politics, Policy and Political News & Updates | Fox News: Fox News covers US political updates including actions by the Trump administration and congressional activities. Reports include House Republicans facing resistance during investigations and GOP senators discussing Trump's policies. The content highlights diplomatic moves like visa revocations related to Brazil and updates on US aid and foreign policy. It also features discussions on elections and potential hostages returning from Gaza. [https://www.foxnews.com/politics]
+Key Quotes: "Shameless fraudsters stole $250M from hungry kids" - Unknown | "God is giving America another chance" - Trump's friend and informal faith adviser
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News provides breaking news on US politics, including Trump administration investigations and policies. Coverage includes border security enhancements and diplomatic clashes, such as visa revocations for a Brazilian judge. The content discusses economic and security issues, with mentions of fraud cases and international relations. It also touches on elections and potential shifts in US foreign policy. [https://www.foxnews.com/]
+Key Quotes: "Treasonous conspiracy" - Tulsi Gabbard | "The sky's the limit" - Dave Portnoy
+
+---
+
+TOPIC: breaking news
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Senate Approves President Trump's Rescission Package",
+      "description": "The U.S. Senate has approved a rescission package proposed by President Trump, which involves cutting certain federal spending. This development has sparked discussions on fiscal policy and government budgeting.",
+      "source": "Information from news articles, such as those found on NPR"
+    },
+    {
+      "title": "President Trump Admonishes MAGA Base Over Jeffrey Epstein Information",
+      "description": "President Trump has publicly addressed and criticized members of his MAGA base for raising concerns about his administration's handling of information related to Jeffrey Epstein, amid ongoing scrutiny of related matters.",
+      "source": "Information from news articles, such as those found on NPR"
+    },
+    {
+      "title": "Tragedy at Gaza Humanitarian Aid Event Results in Multiple Deaths",
+      "description": "At least 20 people were crushed to dea
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Trump Sues Wall Street Journal for Article on Note to Epstein: Donald Trump has filed a lawsuit against the Wall Street Journal over an article claiming he wrote a bawdy note to Jeffrey Epstein. The lawsuit was reported 10 hours ago by The New York Times. Trump responded by stating he does not draw pictures, amid related reports. Republicans are attempting to mitigate the political uproar surrounding the Epstein case. The story involves allegations from a 2003 note as part of Epstein's 50th birthday album. [https://news.google.com/home?gl=US&hl=en-US&ceid=US:en]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump
+
+- Trump sues Murdoch and Wall Street Journal for $10bn over Epstein article: Donald Trump has filed a $10 billion lawsuit against Rupert Murdoch and the Wall Street Journal over a story alleging he wrote a bawdy personal note to Jeffrey Epstein in 2003. The lawsuit claims the article is inaccurate and damaging. This development follows increased scrutiny on Trump's connections to Epstein. Several other stories on BBC News cover related political and legal fallout. The case highlights ongoing tensions between Trump and media outlets. [https://www.bbc.com/news]
+Key Quotes: "The lawsuit is over a story claiming the president wrote a 'bawdy' personal note to Jeffrey Epstein in 2003" - BBC News report
+
+- Trump Sues Wall Street Journal for Article on Note to Epstein: Donald Trump is suing the Wall Street Journal over an article about a note linked to Jeffrey Epstein. The New York Times reports this as part of ongoing Epstein-related developments. Trump has stated he does not draw pictures in response to the allegations. The case involves grand jury records and potential unsealing. This reflects broader political efforts to address Epstein's connections. [https://www.nytimes.com/]
+Key Quotes: "After months of pushing back, President Trump has requested the release of Epstein-related grand jury testimony to be 'subject to Court approval'" - The New York Times analysis | "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump
+
+- [Article from npr.org]: The content for this article is not accessible, limiting available information. No specific details or headlines could be extracted. As a result, no factual summary can be provided based on the given data. This entry reflects the lack of accessible content from the source. [https://npr.org/2025/07/18/1255880080/1a-07-18-2025]
+
+- Trump Sues Wall Street Journal for Article on Note to Epstein: This is a duplicate entry from a previous article on the same source. Donald Trump is suing the Wall Street Journal over claims related to Jeffrey Epstein. The story involves a note from 2003 and political repercussions. Trump has denied specific allegations in responses. The case is part of wider Epstein fallout being covered in media. [https://www.nytimes.com/]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump
+
+- Trump admin investigates Biden's autopen pardons as Times interview raises questions: The Trump administration is investigating claims related to President Biden's use of autopen for pardons. A New York Times interview has raised questions about the legitimacy of these actions. The investigation focuses on potential irregularities in pardon processes. This development is part of broader political scrutiny. Reports also cover related topics like border issues and other administration decisions. [https://www.foxnews.com/]
+Key Quotes: "Trump admin investigates Biden's autopen pardons" - Fox News report
+
+---
+
+TOPIC: aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "The biggest aviation news stories from July 18-19, 2025, primarily revolve around safety concerns with Boeing aircraft, including inspections of fuel switches following a crash incident. Other stories highlight ongoing challenges in regions like Syria. Based on available information from news sources and web content, the focus is on regulatory actions and airline responses.",
+  "top_stories": [
+    {
+      "title": "India Orders Inspections of Boeing Fuel Switches After Air India Crash",
+      "description": "India's aviation authority has mandated inspections of fuel switch locks on various Boeing models, including 787s and 737s, in response to a recent crash. This directive is aimed at enhancing global aviation safety and has prompted other airlines to follow suit.",
+      "date": "2025-07-15 (with updates through July 18-19)",
+      "source": "Al Jazeera and related aviation news outlets"
+    },
+    {
+      "title": "Singapore Airlines Completes Boeing 787 Fuel Switc
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- India orders airlines to inspect Boeing fuel switches after Air India crash: India's Directorate General of Civil Aviation ordered airlines to inspect fuel switches on several Boeing models, including 787s and 737s, following the June 12 Air India crash that killed 260 people. A preliminary report indicated that fuel was cut off accidentally during the flight. The Federal Aviation Administration had issued a 2018 advisory recommending such inspections, though it was not mandatory. Airlines like Air India have begun checks on their fleets with no issues found so far. Other countries, including Singapore and South Korea, are conducting similar precautionary inspections. [https://www.reuters.com/world/]
+Key Quotes: "Why did you cut off the engine?" - Pilot (from cockpit voice recording)
+
+- Singapore Airlines Completes Boeing 787 Fuel Switches Checks: Singapore Airlines and its subsidiary Scoot completed inspections of fuel switches on their Boeing 787 fleets, finding all systems functioning normally. The checks were prompted by the Air India crash involving a Boeing 787. The Civil Aviation Authority of Singapore is overseeing similar inspections on other aircraft models. No anomalies were detected in the fuel systems of the inspected planes. This action aligns with global efforts to enhance aviation safety following the incident. [https://www.bbc.com/news/uk]
+Key Quotes: "The safety of our customers and staff is our top priority." - Singapore Airlines (SIA)
+
+- India Sparks Urgent Global Aviation Shake-Up as Airlines Rush to Inspect Boeing Fuel Switches After Deadly Dreamliner Crash: India's Directorate General of Civil Aviation mandated inspections of fuel switches on Boeing aircraft by July 21 following the Air India crash that killed 260 people. The preliminary investigation revealed that fuel control switches were moved to the cutoff position shortly after takeoff. Global airlines, including those in South Korea and the Middle East, are now conducting similar checks in response. The U.S. Federal Aviation Administration's 2018 advisory on these switches has gained new urgency. This incident has prompted debates on whether such advisories should be mandatory to prevent future accidents. [https://www.reuters.com/world/china/syrias-aviation-comeback-struggles-amid-regional-turmoil-2025-07-16/]
+Key Quotes: "Why did you cut off the engine?" - Pilot (from preliminary report) | "Both engine fuel control switches in the cockpit were moved from the 'RUN' to the 'CUTOFF' position seconds after takeoff." - India's Aircraft Accident Investigation Bureau (AAIB)
+
+---
+
+TOPIC: premier league
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Manchester United Agree Deal for Bryan Mbeumo",
+      "description": "Manchester United have secured a transfer deal for Brentford's Bryan Mbeumo, with an initial fee of £65 million to be paid in installments, plus up to £6 million in potential bonuses. This move is expected to strengthen their squad significantly.",
+      "source": "The Athletic",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "General Premier League Updates and Analysis",
+      "description": "The latest breaking news, injury updates, player transfers, and in-depth analysis from the Premier League, covering various clubs and ongoing developments in the league.",
+      "source": "The Athletic",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Premier League Fixtures, Results, and News Overview",
+      "description": "Comprehensive coverage of Premier League fixtures, results, stats, and the latest stories, including team updates and league-wide news.",
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Premier League News - Results, Fixtures, Scores, Stats, and Rumors - The Athletic: Manchester United have agreed to sign Bryan Mbeumo from Brentford in a deal worth up to £71 million, with Mbeumo expected to undergo a medical soon. Newcastle United are exploring a deal for Yoane Wissa, while Liverpool are advancing talks with Eintracht Frankfurt over Hugo Ekitike. Brentford are attempting to open contract talks with Wissa, who prefers a move away. Arsenal have completed the signing of Noni Madueke from Chelsea for £48.5 million. [https://www.nytimes.com/athletic/football/premier-league/]
+Key Quotes: "This is a project, on and off the pitch" - Andy Carroll | "I found myself in a situation of suffering. You feel alone" - Aitana Bonmati
+
+- Manchester United agree Bryan Mbeumo deal, medical expected this weekend - The Athletic: Manchester United have reached an agreement with Brentford to sign Bryan Mbeumo for an initial £65 million plus up to £6 million in bonuses. Mbeumo, a 25-year-old forward, prioritized United over other clubs and is set to undergo a medical. He scored 20 goals and provided eight assists in the 2024-25 Premier League season for Brentford. This deal makes Mbeumo United's third signing of the summer, following Matheus Cunha and Diego Leon. [https://www.nytimes.com/athletic/6499896/2025/07/18/bryan-mbeumo-man-utd-transfer/]
+Key Quotes: "A proven Premier League talent" - Jay Harris
+
+- Premier League Football - Latest news, results, stats & transfers - BBC Sport: Brentford are attempting to open contract talks with Yoane Wissa, who prefers a move away from the club. Arsenal have completed the signing of Noni Madueke from Chelsea for £48.5 million. Manchester United have agreed a £65 million deal to sign Bryan Mbeumo from Brentford. Nottingham Forest's Danilo has joined Botafogo, and Liverpool are close to a deal for Hugo Ekitike worth over £70 million. [https://www.bbc.com/sport/football/premier-league]
+Key Quotes: "Bryan Mbeumo has done well at Brentford, but playing for Manchester United is very different" - Chris Sutton | "Thank you for the love, praise and also the criticism" - Noni Madueke
+
+- Premier League club Brentford to sell stake at £400m valuation | Money News | Sky News: Brentford Football Club's owner, Matthew Benham, has agreed to sell a minority stake at a £400 million valuation. Gary Lubner, former CEO of Belron, and film director Matthew Vaughn are expected to invest. The deal could involve up to 25% of the club changing hands. This reflects ongoing interest from wealthy investors in Premier League clubs, following Brentford's rise from lower divisions to the top flight. [https://news.sky.com/story/premier-league-club-brentford-to-sell-stake-at-400m-valuation-13396772]
+
+- Liverpool's Harvey Elliott demands revealed as Premier League club target England Under 21 hero - and his Anfield team-mate | Daily Mail Online: West Ham have targeted Liverpool's Harvey Elliott, valued at £40 million with a potential buy-back clause. Elliott starred for England Under-21s, scoring five goals in their European Championship win. West Ham are also interested in Elliott's teammate Tyler Morton. The moves follow West Ham's sale of Mohammed Kudus to Tottenham for £54.5 million. [https://www.dailymail.co.uk/sport/football/article-14903305/harvey-elliott-liverpool-west-ham-transfer-tyler-morton.html]
+
+- Cole Palmer’s Chelsea finally believe they are Premier League contenders | Chelsea | The Guardian: Chelsea won the Club World Cup by defeating Paris Saint-Germain, boosting their confidence for the upcoming season. Cole Palmer scored two goals and provided an assist in the final, highlighting his key role. The team, under Enzo Maresca, showed tactical discipline and depth, with João Pedro and others contributing significantly. Chelsea aim to challenge for the Premier League and Champions League titles, having strengthened their squad through strategic signings. [https://www.theguardian.com/football/2025/jul/14/cole-palmers-chelsea-finally-have-the-belief-they-are-contenders-for-premier-league-title]
+Key Quotes: "He is building something special" - Cole Palmer | "We’ve got the best players in our team, young players, and that’s our plan: to win the biggest trophies for Chelsea" - Levi Colwill
+
+---
+
+TOPIC: golf
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "The Open 2025: Opening Round Highlights with Scheffler and McIlroy in Contention",
+      "description": "The opening day of The Open 2025 at Royal Portrush featured a five-way tie for the lead, with top players like Scottie Scheffler and Rory McIlroy performing strongly, drawing significant attention in the golf world.",
+      "source": "The Athletic",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Chris Gotterup Wins Scottish Open and Advances to The Open at Portrush",
+      "description": "Chris Gotterup claimed victory at the Scottish Open, marking a major milestone in his career and earning him a spot to compete in the subsequent Open Championship at Royal Portrush.",
+      "source": "AP News",
+      "date": "2025-07-14 (noted as recent context)"
+    },
+    {
+      "title": "Jimmy Rollins Achieves First Hole in One at American Century Championship",
+      "description": "Former Phillies star Jimmy Rollins recorded his fir
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Everything that happened on the opening round of The Open 2025 with Scheffler, McIlroy in contention - The Athletic: The first round of The Open 2025 at Royal Portrush featured a five-way tie for the lead at 4-under-par among Harris English, Matthew Fitzpatrick, Jacob Skov Olesen, Haotong Li, and Christian Bezuidenhout. Rory McIlroy scored a 1-under 70 despite hitting only two fairways, keeping him in contention. Scottie Scheffler shot a 3-under 68, just one shot off the lead, despite challenging weather conditions. The round was marked by rain and wind, extending play into the evening. The second round was scheduled to start the next day. [https://www.nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-1-leaderboard/S96VKJawbQw0/]
+Key Quotes: "I really enjoyed it. I played really well, and I had an opportunity. Like I really enjoy playing these conditions and playing this tournament. It’s just a lot of fun." - Phil Mickelson | "Yeah, you’ve got to have a lot of patience." - Harris English | "I actually thought I drove it pretty good." - Scottie Scheffler
+
+- Golf - Latest Scores, News, Videos & Results - BBC Sport: Scottie Scheffler holds the halfway lead at The Open Championship at Royal Portrush. Rory McIlroy is among the players chasing the lead. Matthew Fitzpatrick has performed strongly, continuing his recent form. The coverage includes live updates, leaderboards, and videos from the event, highlighting key moments and player interviews. [https://www.bbc.com/news/world]
+
+- Jimmy Rollins sinks hole in one, wins a $325K boat at American Century Championship: Jimmy Rollins achieved his first career hole in one during the final round of the American Century Championship at Edgewood Tahoe. The shot on the 139-yard, par-3 12th hole won him a $325,000 MasterCraft boat. Rollins expressed surprise and excitement about the moment, mentioning he had prayed for such an outcome. Despite not winning the tournament, which was claimed by Joe Pavelski, Rollins plans to use the boat for personal enjoyment. [https://www.bbc.com/sport/golf]
+Key Quotes: "I prayed for a hole in one on 17 on 12, either one, and it happened to come true." - Jimmy Rollins
+
+- The Internet Is Collectively Eye-Rolling At Donald Trump's Latest Claim - Yahoo Sports: Donald Trump claimed he won the member-member championship at his Bedminster golf club. Critics, including sportswriter Rick Reilly, question the legitimacy of his victories, citing a history of winning only on his own courses. Reilly alleges Trump cheats in golf, based on personal experiences. The online reaction has been skeptical, adding to ongoing discussions about Trump's golf claims. [https://www.inquirer.com/phillies/jimmy-rollins-holes-in-one-boat-american-century-tahoe-20250714.html]
+Key Quotes: "He cheats like a mafia accountant." - Rick Reilly | "He’s never won a championship at a course he doesn’t own and operate." - Rick Reilly
+
+- Chris Gotterup outlasts Rory McIlroy to win Scottish Open: Chris Gotterup won the Scottish Open, marking the biggest title of his career. He outlasted Rory McIlroy in a competitive final round. The victory extends Gotterup's time on links golf courses. As a result, he prepares for upcoming events with added momentum. [https://sports.yahoo.com/article/donald-trump-claims-won-another-155840839.html]
+
+---
+
+TOPIC: nfl
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_nfl_news_stories": [
+    {
+      "story": "T.J. Watt signs record-breaking contract",
+      "details": "Pittsburgh Steelers linebacker T.J. Watt agreed to a record 3-year, $123 million deal, highlighting major developments in NFL player contracts.",
+      "source_type": "Posts found on X",
+      "source": "Information from high-engagement discussions on X"
+    },
+    {
+      "story": "Lloyd Howell resigns as NFLPA executive director",
+      "details": "Lloyd Howell stepped down from his role as executive director of the NFL Players Association, marking a significant leadership change in the organization.",
+      "source_type": "Posts found on X",
+      "source": "Information from high-engagement discussions on X"
+    },
+    {
+      "story": "Mike Williams retires from the NFL",
+      "details": "Wide receiver Mike Williams announced his retirement, ending his professional football career and impacting team rosters.",
+      "source_type": "Posts found on X",
+      "source":
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- NFL over/under win totals: Predictions and best bets for all 32 teams in 2025 - The Athletic: The article provides predictions for NFL teams' over/under win totals for the 2025 season, analyzing offseason moves and draft picks. It highlights best bets such as the Houston Texans going over 9.5 wins due to roster improvements. Other predictions include the New England Patriots going under 8.5 wins amid concerns about their performance. The piece factors in schedule quirks and player performances across all 32 teams. [https://www.nytimes.com/athletic/6491260/2025/07/17/nfl-win-totals-bets-predictions-2025/]
+Key Quotes: "Zigging just for the heck of it is bad for the bottom line." - Vic Tafur | "C’mon. Man, this team wins 10 games with J.J. from “Good Times” at quarterback." - Vic Tafur
+
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The page offers comprehensive sports coverage including NFL news, stories, scores, and schedules. It features breaking headlines, player updates, and analyses such as WNBA polls and rankings. The content includes insights from athletes and experts on various topics. Users can access podcasts, videos, and betting opinions related to sports events. [https://www.nytimes.com/athletic/]
+Key Quotes: "You start to see how important just one move is." - Derrick Rose
+
+- Football - latest news today, results & video highlights - BBC Sport: The page covers the latest football news, including updates on Euro 2025 and Premier League transfers. It reports England's optimism about Leah Williamson for their semi-final against Italy. Other highlights include Arsenal's signing of Madueke and various match results. The content features player interviews and video highlights from tournaments. [https://www.bbc.com/sport/football]
+Key Quotes: "England are "very optimistic" that Leah Williamson will play against Italy in their Euro 2025 semi-final." - Esme Morgan
+
+- Eagles News: NFL defense rankings have Philadelphia in second place: NFL.com ranks the Philadelphia Eagles' defense second for the 2025 season, citing players like Jalen Carter and Zack Baun. The article discusses potential roster impacts from T.J. Watt's contract extension. It compiles news on Eagles' strategies and player performances from various sources. Other topics include draft analyses and team predictions. [https://www.bleedinggreennation.com/2025/7/18/24469958/eagles-news-nfl-defense-rankings-philadelphia-second-place-vic-fangio]
+Key Quotes: "Finally came into his own." - An NFC executive
+
+- Police say noose was found at site of new Titans stadium, according to report: Nashville Police reported finding a noose at the construction site of the Tennessee Titans' new stadium, leading to an investigation. Work on the site has been halted as a result. The Tennessee Builders Alliance condemned the incident and announced plans for anti-bias training for workers. The stadium is scheduled to open in 2027 with public funding exceeding $1 billion. [https://www.npr.org/sections/news/]
+
+---
+
+TOPIC: Austin TX local news
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories about Austin, TX local news from July 18 to July 19, 2025",
+  "summary": "Based on recent searches for high-engagement content and news articles, the biggest local news stories in Austin, TX from July 18 to July 19, 2025, focus on flood-related events and political developments. Key highlights include community responses to flooding and investigations into related scams, as well as national policy approvals with potential local impacts.",
+  "stories": [
+    {
+      "title": "Gruene Hall Hosts Flood Benefit for Dancehall",
+      "description": "Gruene Hall, a notable venue, is organizing a benefit event to support recovery efforts from recent floods, highlighting community resilience in the Austin area.",
+      "source": "Austin Evening Briefing",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "AG Paxton's Office Investigates Flood Charity Scams",
+      "description": "The office of Texas Attorney General Ken Paxton is probing potential scams r
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Google News: Google News aggregates comprehensive up-to-date news coverage from sources worldwide. It features top stories including a lawsuit by Trump against the Wall Street Journal over an Epstein report, and responses from Trump denying involvement in drawing pictures. Emergency services reported several critically injured after a vehicle drove into a crowd in Los Angeles. Other highlights include political developments on Epstein case documents and an explosion at a Los Angeles police training facility killing three deputies. [https://news.google.com/home?gl=US&hl=en-US&ceid=US:en]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump | "Several critically injured after vehicle driven into crowd, emergency services say" - Emergency services | "3 LA sheriff's deputies killed in explosion at training facility in department's biggest loss of life since 1857" - ABC News
+
+- Google News: Google News provides aggregated news coverage including Trump's libel lawsuit against the Wall Street Journal regarding Jeffrey Epstein’s letters. Trump responded by stating he doesn’t draw pictures amid the controversy. Reports detail efforts by Republicans to manage Epstein-related uproar and the Trump administration's push to release Epstein court documents. Additional stories cover an incident in Los Angeles where a vehicle drove into a crowd, injuring several critically, and an explosion at a Los Angeles police training facility that killed three deputies. [https://news.google.com/home/sections/CAQiRENCQVNMUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlQQ0FRYUN3b0pMMjB2TURsak4zY3dLZ2dLQmhJRVZTNVRMaWdBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump | "Several critically injured after vehicle driven into crowd, emergency services say" - Emergency services | "3 LA sheriff's deputies killed in explosion at training facility in department's biggest loss of life since 1857" - ABC News
+
+- World | Latest News & Updates | BBC News: BBC News reports on global events including Trump's $10 billion lawsuit against Murdoch and the Wall Street Journal over an Epstein article. A US tech CEO was suspended after a viral embrace at a Coldplay concert. Syrian authorities announced a ceasefire following deadly clashes in Suweida, and a Brazilian court ordered former President Bolsonaro to wear an ankle tag. Other stories include prisoner swaps between El Salvador and Venezuela, and wildfires in Spain prompting evacuations. [https://www.bbc.com/news/world]
+Key Quotes: "The lawsuit is over a story claiming the president wrote a 'bawdy' personal note to Jeffrey Epstein in 2003" - BBC News | "Epstein case ‘a matter of public concern’, Pam Bondi says" - Pam Bondi | "Several critically injured in LA after vehicle driven into crowd, emergency services say" - Emergency services
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times covers U.S. politics including Trump's lawsuit against the Wall Street Journal over an Epstein article and his denial of drawing pictures. It reports on the fallout from Jeffrey Epstein's case, including requests to release grand jury records. Other stories include floods in Texas with over 100 people still missing and efforts to rebuild. Additional content features immigration policies impacting senior care and proposed changes to a birth control program. [https://www.nytimes.com/]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures’" - Donald Trump | "The Jeffrey Epstein Grand Jury Records: What Comes Next?" - The New York Times | "More Than 100 People Are Still Missing in Texas, 2 Weeks After the Floods" - The New York Times
+
+- Austin Evening Briefing July 18: Spectrum Local News provides an evening briefing for Austin, highlighting local weather forecasts with warm temperatures in the 90s and 100s and low rain chances. Key stories include a benefit event at Gruene Hall for a dancehall damaged by Hill Country floods. Attorney General Ken Paxton is investigating scams related to flood charities. The briefing also covers House approval of Trump's budget cuts and a community story about reuniting lost items after floods. [https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/18/austin-evening-briefing-july-18]
+
+- [Article from www.axios.com]: Content from Axios is not accessible, limiting available information on the topic of Austin TX local news. [https://www.axios.com/]
+
+---
+
+TOPIC: Events in Austin TX
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Trending Austin-Area Stories Including Housing Market Slowdown and Road Construction",
+      "description": "Reports highlight a slowdown in the Austin housing market and ongoing $200 million road construction in Round Rock, reflecting key developments in the region's infrastructure and economy from recent days.",
+      "source": "Community Impact news coverage"
+    },
+    {
+      "title": "Austin Evening Briefing Highlights Flood Benefit and Related Investigations",
+      "description": "Key events include a flood benefit at Gruene Hall, investigations by the Attorney General's office into flood-related charity scams, and the approval of $9 billion in cuts, addressing community recovery and financial matters.",
+      "source": "Local evening briefing updates"
+    },
+    {
+      "title": "Top Fun Events in Austin for the Weekend",
+      "description": "Popular events featured include Movies in the Park and the EmpowHER Music & Arts Fe
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- 6 trending Austin-area stories: housing market slowdown, $200 million road construction underway in Round Rock and more: Community Impact highlighted six trending stories in the Austin area for July 14-18, focusing on local developments and economic trends. Key points include a slowdown in the housing market leading to more 'accidental landlords' as homes take longer to sell. A new Woodside development in Georgetown plans to add over 1,000 homes. Additionally, $200 million in road construction is underway in Round Rock, and other stories cover a factory shell in Bastrop and challenges in homeowners' insurance. [https://www.bbc.com/news/world]
+
+- Austin Evening Briefing July 18: The Austin Evening Briefing for July 18 provided updates on local weather, forecasting warm temperatures with highs in the 90s and low rain chances. It announced events such as a benefit at Gruene Hall for a flood-damaged dancehall and an investigation by Attorney General Ken Paxton into charity scams related to Texas floods. The briefing also covered national news like House approval of budget cuts and included notes on upcoming activities. Readers were encouraged to use the Spectrum News app for more details. [https://news.google.com/home?gl=US&hl=en-US&ceid=US:en]
+
+- Things To Do In Austin This Weekend | Free & Fun Events: Austinot.com listed various free and fun events in Austin for July 18-20, including the 66th Annual Zilker Summer Musical and the Dinos in the Wild exhibit at the Ladybird Johnson Wildflower Center. Other highlights featured the MLS All-Star Soccer Celebration, improv shows, and family-friendly activities like puppet-making workshops. The article provided details on event locations, times, and costs to help residents plan their weekend. It emphasized a mix of cultural, outdoor, and community events across the city. [https://www.bbc.com/]
+
+---
+
+TOPIC: Geopolitics
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on available searches for high-engagement X posts, news articles, and web content from July 18 to July 19, 2025, the biggest geopolitics news stories focus on key events in the Middle East, U.S. politics, and global developments. High-engagement posts on X were searched but yielded no specific results for this period. News sources highlight humanitarian issues in Gaza and U.S. policy decisions. This compilation draws from reliable web and news sources for accuracy.",
+  "stories": [
+    {
+      "title": "Gaza Humanitarian Crisis Involving Fatalities",
+      "description": "Reports indicate at least 20 people were crushed to death during a humanitarian event in Gaza, amid ongoing regional tensions. This event underscores the volatile geopolitical situation in the Middle East.",
+      "source": "NPR News",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "U.S. Senate Approves President's Rescission Package",
+      "description": "The U.S. Senate passed a rescis
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Middle East | Latest News & Updates | BBC News: The Syrian presidency announced a ceasefire following deadly sectarian clashes in Suweida between Bedouin and Druze fighters, which reportedly left hundreds dead. Druze residents described the violence as a 'bloodbath,' with one woman recounting hiding in her home fearing for her life. Israel expressed regret for a strike on a Catholic Church in Gaza, calling it a mistake, while the UN reported credible accounts of summary executions in Syria. Additionally, at least 20 people were killed in a crush at a US-backed aid site in Gaza, and Israeli strikes in Lebanon killed 12 people according to local officials. [https://www.reuters.com/world/]
+Key Quotes: "decide whether we should live or die" - A woman in Suweida | "mistake" - PM Benjamin Netanyahu | "must be held to account" - UN human rights chief
+
+- The New York Times - Breaking News, US News, World News and Videos: The U.S. is imposing a 93.5% tariff on a key battery material from China to reduce reliance on Chinese supplies for electric vehicles. Russia's gains in Ukraine are attributed to factors beyond the battlefield, including strategic and logistical advantages. Japan's upcoming elections feature a Trump-inspired politician advocating for limiting foreign workers and prioritizing 'Japanese First' policies. The Trump administration is cracking down on immigration, affecting the senior care workforce by ending deportation protections for certain migrants. [https://www.bbc.com/news/world/middle_east]
+Key Quotes: "subject to Court approval" - President Trump
+
+- Rapid Read: Geopolitical Must-Knows for Today (18 July 2025): Upgrades at the Port of Churchill in Canada aim to enhance Arctic exports of critical minerals and grain, positioning it as a key trade hub. Iran fears a potential Syria-Azerbaijan alliance that could challenge its regional influence in energy and trade. Belarus is attempting to improve relations with the West to reduce dependence on Russia, amid ongoing internal opposition struggles. The UK plans to lower the voting age to 16 to boost democratic participation, while global powers compete for copper resources in Africa. [https://www.nytimes.com/2025/07/18/crosswords/connections-companion-769.html]
+Key Quotes: "Japanese First" - Sohei Kamiya | "must be held to account" - UN human rights chief
+
+---
+
+TOPIC: Football Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent searches for high-engagement posts on X, news articles, and additional web content from July 18 to July 19, 2025, the biggest football transfer news stories include major deals and rumors involving top clubs. No high-engagement X posts were found in the initial search, so this summary relies on news articles and web content. Key highlights involve transfers like Manchester United's deal for Bryan Mbeumo and Chelsea's interest in players, as reported by reliable sources.",
+  "key_stories": [
+    {
+      "title": "Manchester United Agree Bryan Mbeumo Deal",
+      "description": "Manchester United have reportedly secured a deal for Bryan Mbeumo, with an initial fee of £65 million to be paid in installments, plus potential bonuses up to £6 million. This is one of the significant signings in the Premier League transfer window.",
+      "source": "The Athletic"
+    },
+    {
+      "title": "Chelsea Eye Shock Move for Donnarumma and Gyokeres on Strike",
+      "de
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, initially from 1 June to 10 June for teams in the Club World Cup, and reopened on 16 June until 1 September for Premier League, EFL, and Scottish Premiership clubs. It lists numerous transfers across leagues including the Premier League, Scottish Premiership, EFL, and Women's Super League. Significant deals include Noni Madueke's move from Chelsea to Arsenal for £48.5m and Sean Longstaff's transfer from Newcastle to Leeds for £12m. The article provides a comprehensive compilation of player movements with details on fees and types of transfers such as loans and free transfers. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- Football - latest news today, results & video highlights - BBC Sport: The article covers the latest football news, including England's optimism about Leah Williamson playing in their Euro 2025 semi-final. It reports on Arsenal completing the signing of Noni Madueke from Chelsea for £48.5m and Manchester United's interest in Bryan Mbeumo. Other updates include Brentford attempting to open contract talks with Yoane Wissa and various match results and fixtures. It also features discussions on team performances and player predictions for upcoming events. [https://www.bbc.com/sport/football]
+Key Quotes: "England are "very optimistic" that Leah Williamson will play against Italy in their Euro 2025 semi-final" - Esme Morgan
+
+- Manchester United agree Bryan Mbeumo deal, medical expected this weekend - The Athletic: Manchester United have agreed a deal with Brentford to sign forward Bryan Mbeumo for up to £71 million, including an initial £65 million paid in installments and up to £6 million in bonuses. Mbeumo, aged 25, prioritized United over other clubs and is expected to undergo a medical soon. He featured in all 38 Premier League games last season, scoring 20 goals and providing eight assists for Brentford. This signing marks United's third of the summer following deals for Matheus Cunha and Diego Leon. [https://www.nytimes.com/athletic/6499896/2025/07/18/bryan-mbeumo-man-utd-transfer/]
+
+- Transfer news live: Gyokeres to Arsenal update, Mbeumo set for Man United medical, Liverpool close in on Ekitike: Arsenal's negotiations for Sporting's Viktor Gyokeres have stalled due to valuation differences, with no deal expected before their pre-season tour. Manchester United have agreed a fee for Brentford's Bryan Mbeumo, with a medical planned next. Liverpool are in advanced talks with Eintracht Frankfurt for Hugo Ekitike, who has a €100 million release clause. Other updates include Sunderland eyeing a move for Granit Xhaka and Manchester City considering James Trafford as a potential replacement for Ederson. [https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html]
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, initially from 1 June to 10 June for teams in the Club World Cup, and reopened on 16 June until 1 September for Premier League, EFL, and Scottish Premiership clubs. It lists numerous transfers across leagues including the Premier League, Scottish Premiership, EFL, and Women's Super League. Significant deals include Noni Madueke's move from Chelsea to Arsenal for £48.5m and Sean Longstaff's transfer from Newcastle to Leeds for £12m. The article provides a comprehensive compilation of player movements with details on fees and types of transfers such as loans and free transfers. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- DONE DEALS: Every official completed transfer around Europe today: The 2025 summer transfer window has seen numerous deals, including Trent Alexander-Arnold's move to Real Madrid from Liverpool. Arsenal have been active, completing signings like Noni Madueke from Chelsea and nearing deals for Viktor Gyokeres and Cristhian Mosquera. Manchester United are negotiating for Bryan Mbeumo from Brentford, while other transfers include Victor Osimhen to Galatasaray and Paul Pogba to AS Monaco. The article lists every official completed transfer in Europe's top leagues on the specified date. [https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july]
+
+---
+
+TOPIC: Space Exploration
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "headline": "Indian Astronaut Shubhanshu Shukla Returns Safely from International Space Station",
+      "summary": "The Axiom-4 mission concluded with the safe splashdown of the SpaceX Dragon spacecraft in the Pacific Ocean near San Diego. Indian Air Force Group Captain Shubhanshu Shukla, part of the multinational crew, returned after conducting experiments on medicine, agriculture, and the effects of space on various systems. This marks a significant milestone for India's space program, highlighting its growing role in international space exploration.",
+      "source": "India Today",
+      "date": "2025-07-15",
+      "notes": "Coverage from news articles indicates ongoing discussions about the mission in recent days."
+    },
+    {
+      "headline": "Details of Shubhanshu Shukla's Experiments on Axiom-4 Mission",
+      "summary": "During the Axiom-4 mission, the crew, including Shubhanshu Shukla, performed experiments such as growing methi (fen
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Highlights: Shux’s journey to space station ends with safe splashdown off US coast - India Today: The SpaceX Dragon spacecraft carrying Indian astronaut Shubhanshu Shukla and the Axiom-4 crew safely splashed down in the Pacific Ocean near San Diego after undocking from the International Space Station. Shukla contributed to over 60 scientific experiments during the 18-day mission, including research on plant biology, materials science, and artificial intelligence. Various Indian leaders, including the President, Vice President, and state chief ministers, congratulated Shukla upon his return. The mission highlights India's growing role in international space exploration and provides valuable data for future endeavors like the Gaganyaan program. [https://www.nytimes.com/2025/07/18/crosswords/connections-companion-769.html]
+Key Quotes: "Indeed a defining moment in India's space odyssey! Heartiest congratulations to Group Captain Shubhanshu Shukla on his triumphant return to Earth after his historic mission aboard the International Space Station." - Vice President Jagdeep Dhankhar | "Welcome back to Earth! Heartfelt congratulations to Group Captain Shubhanshu Shukla ji and his team for successfully completing the historic #AxiomMission4 and returning safely!" - Uttar Pradesh Chief Minister Yogi Adityanath | "Welcome home, Shubhanshu Shukla! We are really happy to see that you are back." - West Bengal Chief Minister Mamata Banerjee | "A hearty welcome to Group Captain Shubhanshu Shukla as he comes back on Earth after his space journey." - President Droupadi Murmu | "I join the nation in welcoming Group Captain Shubhanshu Shukla as he returns to Earth from his historic mission to Space." - Prime Minister Narendra Modi
+
+- [Article from www.hindustantimes.com]: The article discusses Shubhanshu Shukla's participation in the Axiom-4 space mission. It highlights his contributions to experiments conducted on the International Space Station. Shukla's experiences are expected to inform India's future space programs. Details on his return and next steps were not accessible in the provided content. [https://www.nytimes.com/2025/07/18/crosswords/strands-sidekick-503.html]
+
+- Quarantine, Home And Gaganyaan: What's Next For Shubhanshu Shukla After His Return From Space?: Shubhanshu Shukla returned safely to Earth after the Axiom-4 mission, splashing down off the California coast. He will undergo medical checks and at least 10 days of quarantine at NASA's Johnson Space Center to readjust to gravity. Shukla's mission involved over 60 experiments, providing insights for India's Gaganyaan program. His experiences will contribute to astronaut training and future spaceflight strategies, with potential recognition and public engagement roles following his return. [https://news.google.com/home?gl=US&hl=en-US&ceid=US:en]
+Key Quotes: "Shukla himself emphasised that his missions hold 'far-reaching implications beyond science.'" - Group Captain Shubhanshu Shukla
+
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Fabrizio Romano: "🚨 Luis Diaz mantains his plan to leave Liverpool with FC Bayern set to bid again very soon.
+
+Bayern want to improve their proposal after €67m rejected as they keep negotiating also for Woltemade.
+
+Barcelona remain in contact with Lucho’s agents while Bayern can spend more. https://t.co/1UsWB9RlEE" (1798184 views, 27781 likes) https://x.com/i/status/1946474840803918182
+- Fabrizio Romano: "🚨🔵⚪️ Pierre Emerick Aubameyang to Olympique Marseille, here we go! 🔙
+
+Contract until June 2027 agreed with OM overnight and all verbally done, as @Santi_J_FM reports.
+
+Auba picks OM over bids from Saudi with Longoria, Benatia and De Zerbi on it... and ready to play UCL. 🇪🇺 https://t.co/bLaN35K4U3" (1752370 views, 37335 likes) https://x.com/i/status/1946497904912314480
+- Fabrizio Romano: "🚨🔵 More on James Trafford and Manchester City exclusive story.
+
+Contacts between Man City and Burnley have already started as City want to negotiate fee lower than buy back clause worth £40m.
+
+Deal also depends on Ortega or Éderson exit. https://t.co/soOvaxdw1a" (1761793 views, 21733 likes) https://x.com/i/status/1946466284562010195
+- Fabrizio Romano: "🚨 Bryan Mbeumo set for main formal steps as Manchester United player with medical today.
+
+Contract until June 2030 plus option until 2031 to follow next ahead of club statement. https://t.co/4WvWCDOhvE" (1603330 views, 46291 likes) https://x.com/i/status/1946457979760648686
+- Fabrizio Romano: "🤍🔐 Real Madrid and Thibaut Courtois, together until June 2027. https://t.co/jOW42e7LYD" (1558762 views, 12866 likes) https://x.com/i/status/1946490411335246073
+- Fabrizio Romano: "🚨🦅 Benfica director set for mission in Brazil due to start later today as Richard Rios deal can accelerate this weekend.
+
+Benfica have been informed by Palmeiras that AS Roma still didn’t match €30m fee.
+
+Rios can now open doors to Benfica move; direct meeting will take place. https://t.co/wG3fSr0Q2i" (1114162 views, 12285 likes) https://x.com/i/status/1946501972376338438
+- Fabrizio Romano: "🚨🔵🟡 Anton Stach to Leeds United, here we go! Agreement done with Hoffenheim.
+
+Final fee in excess of €20m, four year contract and documents set to be signed in deal done by ROOF agency.
+
+Anton Stach, looking forward to a new challenge in the Premier League at #LUFC. https://t.co/5sZyrOqqEr" (914829 views, 9142 likes) https://x.com/i/status/1946527447861666070
+- SpaceX: "Falcon 9 launches 24 @Starlink satellites from California https://t.co/57IRErhmHN" (769777 views, 4880 likes) https://x.com/i/status/1946437942265987384
+- Fabrizio Romano: "🚨🦊 EXCL: Leicester City, in talks with Asmir Begovic as potential option with contract terms being discussed.
+
+Deal on. #LCFC 🔵 https://t.co/ROyMKWTHax" (571584 views, 5458 likes) https://x.com/i/status/1946527032180916729
+- Adam Schefter: "A look at the Eagles Super Bowl rings that were handed out Friday night: https://t.co/sR277TOBeI" (474211 views, 5716 likes) https://x.com/i/status/1946411055933972913
+- World of Statistics: "What's one country you would NEVER EVER visit even if the flights are free?" (421121 views, 1459 likes) https://x.com/i/status/1946400852966768910
+- Andrew Yang🧢⬆️🇺🇸: "As usual I will give my x payout to someone who likes this post!  Must follow this account to dm info.  Will choose a winner at random on Sunday.  Good luck and enjoy the summer!! https://t.co/Zuq0OYMZcU" (395247 views, 21751 likes) https://x.com/i/status/1946433930183479781
+- Ian Rapoport: "Pretty sweet. https://t.co/ADflB1Sefp" (397170 views, 1796 likes) https://x.com/i/status/1946402712050114591
+- SpaceX: "Watch Falcon 9 launch 24 @Starlink satellites to orbit from California https://t.co/LBEUcpxrDZ" (351556 views, 3036 likes) https://x.com/i/status/1946416388966633498
+- SpaceX: "Deployment of 24 @Starlink satellites confirmed" (282573 views, 2573 likes) https://x.com/i/status/1946433848725868817
+- Fabrizio Romano: "🤍🔐 After Thibaut Courtois, Brahim Diaz will also put pen to paper and sign new contract at Real Madrid.
+
+Both agreements are done and set to be formally sealed.
+
+The next one will be Raúl Asencio, until June 2031. 🔜✍🏻 https://t.co/wB5YruHgHy" (278260 views, 4861 likes) https://x.com/i/status/1946532481273844192
+- Naval: "Technology will eventually have to drive human evolution (embryo selection, gene editing). 
+
+Otherwise, our technology will evolve faster than our biology and lead to Paleolithic humans facing Neolithic stressors." (262466 views, 5227 likes) https://x.com/i/status/1946424238883418181
+- Barstool Sports: "“CEOs beware, Chris Martin is here…. Out of the Rangers bullpen” https://t.co/oknyp9JeNm" (202136 views, 2095 likes) https://x.com/i/status/1946401144130932942
+- Tesla: "Once you start letting FSD Supervised drive for you, doing a long-distance trip without it will feel like going back to the Dark Ages" (197847 views, 3592 likes) https://x.com/i/status/1946465632423149704
+- Naval: "The art of conversation is best practiced between three to four people." (177684 views, 4631 likes) https://x.com/i/status/1946443818741760509
+- Pardon My Take: "Is this real? https://t.co/Sm6QhKTcNv" (171066 views, 2433 likes) https://x.com/i/status/1946410995020099899
+- Mario Nawfal: "🇨🇳 HUAWEI MATEBOOK COMES FOR APPLE AND SAMSUNG’S THROATS
+
+This laptop’s got power, speed, and looks that scream “I mean business.”
+
+Some are calling it the Apple MacBook killer and Samsung better watch its back too.
+
+Basically, it's like if a gaming PC and a spy gadget had a https://t.co/BOQrL9Uow2 https://t.co/6btSiKKKvI" (163674 views, 749 likes) https://x.com/i/status/1946439860338004072
+- BBC Breaking News: "Shock, anger and tensions on set: Behind the scenes at MasterChef as its presenters are sacked https://t.co/VgyhFm23FB" (151344 views, 131 likes) https://x.com/i/status/1946479297222299686
+- Mario Nawfal: "WELCOME TO EVEREST, PLEASE WAIT YOUR TURN
+
+The video shows a long line of climbers on the world’s tallest mountain, all using the same rope.
+
+It’s dark, freezing, and packed like a Black Friday sale in the death zone.
+
+Because nothing says “bucket list” like waiting in line... at https://t.co/IF3p2dgrNP https://t.co/zH4Qe2X24U" (127025 views, 205 likes) https://x.com/i/status/1946397078822723798
+- Barstool Sports: "The Best Golfer In The World - It's Once Again Scottie's Tournament After He Went Out And Caught Fire With A 64 To Lead The Open https://t.co/VcquGVfkyW https://t.co/LOBHZ5X0uj" (102071 views, 91 likes) https://x.com/i/status/1946398417418064057
+- Mario Nawfal: "🇺🇸 SPACEX NAILS 14TH FLIGHT WITH SAME BOOSTER, DROPS 24 STARLINK SATELLITES
+
+SpaceX just crushed another Falcon 9 launch from Vandenberg Space Force Base, delivering 24 Starlink satellites to low-Earth orbit.
+
+The real flex? 
+
+This was the 14th flight for the same first-stage https://t.co/pKWuY9dmcE https://t.co/G7yoyjGUrd" (99690 views, 204 likes) https://x.com/i/status/1946423502414000153
+- Naval: "Two is too intimate. Five is too impersonal." (97024 views, 1871 likes) https://x.com/i/status/1946444359026855990
+- World of Statistics: "What are signs that someone truly loves you and it’s not just lust?" (84987 views, 247 likes) https://x.com/i/status/1946461503101788608
+- World of Statistics: "Obesity rate
+
+🇵🇰 Pakistan: 23.69%
+🇮🇳 India: 7.51%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (84174 views, 811 likes) https://x.com/i/status/1946438853281071536
+- Mario Nawfal: "NVIDIA'S CEO: ELON IS A SUPERHUMAN, IT'S JUST UNBELIEVABLE
+
+Jensen Huang:
+
+"Just to put in perspective a supercomputer that you would build would take normally three years to plan.
+
+And then deliver the equipment it takes one year to get it all working.
+
+We're talking about 19 https://t.co/Q1kVU2EjnY https://t.co/XkPqlqg0lC" (80973 views, 433 likes) https://x.com/i/status/1946424760453521443
+- World of Statistics: "BREAKING: X Payouts started rolling out." (80625 views, 256 likes) https://x.com/i/status/1946441892087931359
+- World of Statistics: "Estimated number of people ever born is ~117 billion" (76385 views, 415 likes) https://x.com/i/status/1946431303567507573
+- World of Statistics: "Do the F1 drivers really drink energetics (Red Bull, Monster etc) during the race or it is just the storage for water or other more healthy liquids?" (72129 views, 155 likes) https://x.com/i/status/1946476853734052119
+- World of Statistics: "🎾 Wimbledon winners men's singles:
+
+1992: Andre Agassi 🇺🇸 
+1993: Pete Sampras 🇺🇸 
+1994: Pete Sampras 🇺🇸 
+1995: Pete Sampras 🇺🇸 
+1996: Richard Krajicek 🇳🇱 
+1997: Pete Sampras 🇺🇸 
+1998: Pete Sampras 🇺🇸 
+1999: Pete Sampras 🇺🇸 
+2000: Pete Sampras 🇺🇸 
+2001: Goran Ivanišević 🇭🇷 
+2002:" (68769 views, 302 likes) https://x.com/i/status/1946458803957866721
+- Mario Nawfal: "🇺🇸 COINBASE CEO: THE GENIUS ACT IS IMPORTANT TO UPDATE OUR FINANCIAL SYSTEM
+
+“There's a big consumer protection aspect to this, and the Genius Act is also very important just to update our financial system. 
+
+I mean, many of your viewers may not know, every time they swipe their https://t.co/ue6VJCVf4r https://t.co/MgGSzChR7R" (68780 views, 93 likes) https://x.com/i/status/1946442376802938932
+- Ian Rapoport: "New #Commanders edge Von Miller is signing a 1-year, $6.1M deal with a chance to make $10.5M in incentives, sources say. https://t.co/iEh2UFYCd8" (67663 views, 200 likes) https://x.com/i/status/1946533758716285046
+- Mario Nawfal: "EXPLOSIONS… BUT MAKE IT SMART
+
+This isn’t random boom-boom. Controlled blasting uses science, timing, and just the right amount of chaos.
+
+One wrong move and it's dirt confetti. One right move and it’s engineering magic.
+
+Basically Minecraft IRL, but with actual danger.
+
+Source: https://t.co/M24lKZho0M https://t.co/6yS2f4VeqV" (66457 views, 104 likes) https://x.com/i/status/1946419731927314864
+- World of Statistics: "What age would you stay forever if you could?" (65720 views, 194 likes) https://x.com/i/status/1946522389942243798
+- Mario Nawfal: "🇸🇾🇮🇱 TOM BARRACK TURNED A MIDDLE EAST MESS INTO A CEASEFIRE DEAL
+
+Tom Barrack deserves huge credit for weaving together Druze Bedouins Sunnis and key capitals to stop the fighting.
+
+As both Special Envoy to Syria and Ambassador to Turkey, he linked Damascus, Jerusalem, Ankara, https://t.co/NLWqOQTHMx https://t.co/J7DYsPd3st" (62038 views, 268 likes) https://x.com/i/status/1946512841424654716
+- World of Statistics: "🇫🇮 Finns became the third most overweight nation of Europe in just 10 years." (61345 views, 262 likes) https://x.com/i/status/1946448222882574799
+- World of Statistics: "The ‘ea’ in ‘tea’ is silent." (60068 views, 245 likes) https://x.com/i/status/1946466360516600275
+- CNN: "More than 20 people have been injured after a vehicle drove into a crowd in Los Angeles overnight.
+https://t.co/axVZeh8W6J" (58913 views, 156 likes) https://x.com/i/status/1946525066822357016
+- World of Engineering: "Chinese students built a two-stage rocket from soda bottles and water pressure and it even featured real stage separation.
+ https://t.co/meEMuIODlA" (58104 views, 613 likes) https://x.com/i/status/1946514398580703621
+- Mario Nawfal: "🇺🇸 TUCKER ABOUT EPSTEIN: THIS ISN'T ABOUT SEX... IT'S ABOUT THE THRILL OF DESTROYING INNOCENCE
+
+"I don't understand the obsession with underage girls. They're kids. 
+
+Epstein was into girls with braces. I just don't see the appeal.
+
+It's the thrill of destroying innocence. https://t.co/uNlSQGqelX https://t.co/IadRA9fHRy" (56485 views, 364 likes) https://x.com/i/status/1946404635746742578
+- World of Statistics: "🇸🇪 Sweden is capable of domestically building submarines, frigates, jet fighters and satellites, despite having a population of just over 10 million people. Per capita it is one of the largest arms exporters on the planet." (56081 views, 569 likes) https://x.com/i/status/1946447539953136056
+- Mario Nawfal: "🇦🇺 🇺🇦 FIRST AUSTRALIAN ABRAMS TANKS DELIVERED TO UKRAINE
+
+Australia has handed over the first batch of Abrams tanks to Ukraine as part of a $245 million pledge to help fight Russia’s invasion. 
+
+Defense Minister Richard Marles said the tanks will boost Ukraine’s firepower and https://t.co/JwVf93FohC https://t.co/tk4rGKTgns" (55684 views, 49 likes) https://x.com/i/status/1946487675847868482
+- Mario Nawfal: "🇺🇸PHILLIES FANS ERUPT AS PHANATIC MOCKS COLDPLAY KISS CAM
+
+Mascot hilariously re-enacts viral moment during Phillies-Angels game. 
+
+Comes after Astronomer executives placed on leave following affair exposed at Coldplay concert.
+https://t.co/uCgJg002lX https://t.co/aF7XFC8iXL" (55239 views, 303 likes) https://x.com/i/status/1946429794045886519
+- World of Statistics: "Population density 
+
+🇪🇸 Spain: 96 p/km² 
+🇬🇧 UK: 287 p/km² 
+
+(Worldometers)" (55240 views, 167 likes) https://x.com/i/status/1946415952448430220
+- Mario Nawfal: "🇺🇸🇨🇳 TRUMP BOOTS CHINESE SCIENTISTS FROM FARMLAND RESEARCH OVER NATIONAL SECURITY
+
+The USDA just fired 70 foreign researchers mostly from China after a national security sweep. 
+
+Some showed up to work and found their badges dead. 
+
+Trump ordered a full ban on contracts and https://t.co/3JxQxhCKTS https://t.co/pw5rbQFkqF" (53580 views, 410 likes) https://x.com/i/status/1946402111505207538
+- Mario Nawfal: "🚨🇺🇸REP. HIGGINS: TRUMP ADM HAS RESCUED 35.000 TRAFFICKED CHILDREN
+
+"They've rescued so far 35,000 tender age kids. 
+
+We fed a pipeline of tender age children into sex trafficking and slave labor into our country.
+
+We're finding these kids we're tracking this
+fraudulent https://t.co/gCV4L47wHu https://t.co/FJkdwpg6Tm" (51242 views, 218 likes) https://x.com/i/status/1946434831862370794
+- Mario Nawfal: "🇮🇳🇬🇧INDIA AND UK ABOUT TO SIGN HUGE TRADE DEAL
+
+After 7 years, Modi’s finally flying to the U.K. and not just for tea.
+
+He’s expected to sign a mega trade deal with Keir Starmer before heading to the Maldives.
+
+Both sides had drama over taxes and fine print but now it’s almost a https://t.co/n2F9Ha6hFc https://t.co/VbDRYQkACS" (48529 views, 84 likes) https://x.com/i/status/1946407145160724687
+- Mario Nawfal: "🇺🇸 J&amp;J EMPLOYEES ADMIT BABY POWDER CANCER COVERUP
+
+Company insiders reveal on hidden camera that heavy metals in talc caused cancer, not product itself:
+
+"This is not your father's J&amp;J... they don't really give a s**t about people."
+https://t.co/smNS11I0qj https://t.co/zeQqKst05o" (47785 views, 197 likes) https://x.com/i/status/1946411618088161351
+- Sawyer Merritt: "Absolutely not (at least for Tesla). https://t.co/t0AVJ70NNW" (46625 views, 939 likes) https://x.com/i/status/1946437167007371514
+- Mario Nawfal: "🚨🇺🇸 BREAKING: DRIVER SLAMS INTO CROWD IN LA, DOZENS INJURED
+
+A driver struck a crowd on Santa Monica Boulevard in East Hollywood, injuring more than 20 people.
+
+At least 4 are in critical condition, with 8 more seriously hurt, according to the LA Fire Department.
+
+The exact https://t.co/XdW3hRM5zO" (47139 views, 70 likes) https://x.com/i/status/1946523623092846973
+- Mario Nawfal: "🇺🇸 TRUMP SIGNS GENIUS ACT TO LOCK IN U.S. CRYPTO DOMINANCE
+
+This afternoon marked what Trump called a giant step to cement U.S. dominance in global finance and crypto tech. 
+
+The Genius Act creates clear rules for dollar-backed stablecoins and launches a new payment system to https://t.co/a8D8gLH2CL https://t.co/lebmG8c5j2" (46900 views, 183 likes) https://x.com/i/status/1946409661122724147
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇫🇮 Finland: 5.6t
+🇰🇭 Cambodia: 1.2t
+
+(Annual emission, per Global Carbon Budget 2024)" (46851 views, 91 likes) https://x.com/i/status/1946446403083080103
+- Mario Nawfal: "🇨🇩 FROM BULLETS TO BARGAINS: M23, CONGO MOVE TOWARD PEACE
+
+After months of Qatari mediation, Congo and the M23 rebel group have agreed to a declaration of principles aimed at ending the brutal conflict in eastern Congo.
+
+Sources say it’s a major step forward, though final details https://t.co/PuHGbHMoLG https://t.co/Idsner4ddz" (46251 views, 54 likes) https://x.com/i/status/1946399594637640088
+- Mario Nawfal: "🇸🇾🇺🇸 SYRIA THOUGHT IT HAD THE GREEN LIGHT… ISRAEL DISAGREED
+
+Syria sent troops into Sweida thinking the U.S. and Israel were cool with it. Spoiler alert: they were not.
+
+Israel hit back with airstrikes after Syrian forces were accused of killing civilians, including field https://t.co/Ptr5BKXPkx https://t.co/J7DYsPcvCV" (45736 views, 87 likes) https://x.com/i/status/1946414694404612542
+- World of Statistics: "96% of Canadian households have a toaster but only 22% of Brazilian ones do." (45145 views, 168 likes) https://x.com/i/status/1946485158493982811
+- Mario Nawfal: "🚨YES, GET EPSTEIN, BUT WHAT ABOUT HIS NETWORKS?
+
+Jeffrey Epstein may be dead, but the rot he exposed lives on.
+
+What about the sex trafficking networks?
+
+His 2008 plea deal, brokered by Alex Acosta, let him dodge federal sex trafficking charges and protected alleged https://t.co/hZU8rcIwpv https://t.co/v1eddCHIKs" (45155 views, 150 likes) https://x.com/i/status/1946395759081078806
+- Mario Nawfal: "🇺🇸SCOTT BESSENT: TODAY MARKS A SEMINAL MOMENT FOR DIGITAL ASSETS
+
+“Today marks a seminal moment for digital assets and global dollar dominance with President Trump signing the Genius Act into law. 
+
+This bill provides the fast-growing stable coin market with the regulatory https://t.co/w0tIFT3c99 https://t.co/lebmG8bxtu" (45089 views, 151 likes) https://x.com/i/status/1946432310754054641
+- Mario Nawfal: "🚨🇺🇸 RON PAUL: YOU CAN'T STOP BIG GOVERNMENT WITHOUT ENDING THE FED
+
+Nicole Shanahan admits ending the Fed "looks scary." 
+
+Paul's response: it's legalized counterfeiting that funds endless wars and corporate welfare...
+
+Ron Paul: 
+
+"I mean, just think of these last two years, https://t.co/Mt8v5vS2r6 https://t.co/f2OkKz3iZK" (43752 views, 182 likes) https://x.com/i/status/1946418338378428562
+- Mario Nawfal: "🇧🇷BULL WALKS DRUNK OWNER HOME LIKE A PRO
+
+In Brazil, a very responsible bull was caught on video guiding his totally wasted owner down a rural road.
+
+The man could barely walk, but the bull calmly nudged him like a four-legged Uber with horns.
+
+Who needs friends when your https://t.co/OwnGXXuksq" (43088 views, 521 likes) https://x.com/i/status/1946427278142877917
+- Mario Nawfal: "🇺🇸 TULSI: ACCOUNTABILITY HAS TO TAKE PLACE
+
+"I'm referring all of these documents that we have found and uncovered to the Department of Justice for further investigation, accountability, and action.
+
+Not just investigation, but action.
+
+Accountability has to take place.
+
+The https://t.co/tuM3SBj7AL https://t.co/hehMFK3llH" (43058 views, 205 likes) https://x.com/i/status/1946422244219224373
+- Max Velocity: "fever is up to 102 tonight. welp" (42183 views, 759 likes) https://x.com/i/status/1946410494983647501
+- History Photographed: "The 2,800-Year-Old Kiss  from Teppe Hasanlu Iran 🇮🇷 https://t.co/kJPzDajzcp" (42026 views, 162 likes) https://x.com/i/status/1946465648642531408
+- Mario Nawfal: "🇺🇸 BETTING MARKET SAYS DEMS LEAD FOR 2028 ELECTION
+
+Polymarket shows Democrats at 55% to win the 2028 White House.
+
+Republicans trail at 46% and the gap’s been steady for weeks.
+
+No candidates yet, just vibes and early money talking.
+
+Source: @Polymarket https://t.co/QZ0wfTHjHC https://t.co/qzvQQjJy1F" (42087 views, 54 likes) https://x.com/i/status/1946454959668773026
+- Mario Nawfal: "Touché🤌
+
+Source: @teslacarsonly https://t.co/pPB8i5Qg6f https://t.co/3EfalSPpzI" (41867 views, 210 likes) https://x.com/i/status/1946437343642358128
+- Mario Nawfal: "DID NO ONE WATCH THE TERMINATOR?
+
+The world’s first humanoid robot just swapped its own battery - no tools, no help, no human.
+
+It’s being tested by BYD, one of the planet’s biggest EV makers.
+
+We were warned about this in literally every sci-fi movie...ever.
+
+Next up: teaching https://t.co/tHmhyhVCuQ https://t.co/DonOvavT3x" (41103 views, 173 likes) https://x.com/i/status/1946495235737129010
+- World of Statistics: "💺 What seat do you usually choose?" (40330 views, 75 likes) https://x.com/i/status/1946512534749724962
+- @jason: "Same energy https://t.co/XAzQ74k7dH" (39782 views, 294 likes) https://x.com/i/status/1946398127197487359
+- Mario Nawfal: "🇺🇸 DAVID SACKS: THIS GENIUS ACT WILL UNLOCK AMERICAN DOMINANCE IN THE CRYPTO INDUSTRY
+
+"This Genius Act will unlock American dominance in the crypto industry. 
+
+By creating clear rules of the road, it will update archaic payment rails with a revolutionary new payment system. https://t.co/5wnLCIsVBN https://t.co/lz32bGUuMW" (39633 views, 160 likes) https://x.com/i/status/1946444893678928015
+- Mario Nawfal: "🇺🇸🇨🇳 MICROSOFT DROPS CHINA-BASED ENGINEERS FROM PENTAGON CLOUD WORK
+
+After a report exposed China-based workers helping with Pentagon cloud systems, Microsoft pulled the plug.
+
+Turns out engineers in China were working on sensitive U.S. defense stuff while being “supervised” by https://t.co/8NJEJJxa83 https://t.co/j0quR1GabH" (39120 views, 261 likes) https://x.com/i/status/1946459993047249287
+- Mario Nawfal: "🇨🇳 CHINA’S GENE-WAR EXPERIMENT: SUPER SOLDIERS UNDER PLA CONTROL RAISE RED FLAGS
+
+China’s gene-splicing soldier project isn’t sci-fi anymore, it’s real, and it’s unsettling. 
+
+Former intel officer Nicholas Eftimiades says the People's Liberation Army is behind efforts to enhance https://t.co/t7VQzOLmtD https://t.co/U1LlbeZwp3" (38407 views, 99 likes) https://x.com/i/status/1946505291484250373
+- World of Statistics: "🇮🇹 Only 16% of Italians would fight for their country, survey shows" (38208 views, 184 likes) https://x.com/i/status/1946507242657693779
+- Mario Nawfal: "🚨🇺🇸 FBI BUSTS $250M COVID SCAM: STOLE FROM HUNGRY KIDS TO BUY MANSIONS
+
+70 indicted in Minnesota for fake "Feeding our Future" scheme. 
+
+Claimed to serve millions of meals during pandemic, bought luxury cars instead.
+
+Kash Patel (FBI Director): 
+
+"Stealing over $250 million from https://t.co/kAlt2sJZIQ https://t.co/DhjKrOmvC9" (37718 views, 352 likes) https://x.com/i/status/1946475092558373374
+- Mario Nawfal: "🇺🇸 MAMDANI QUESTIONED PRISONS IN A RESURFACED VIDEO
+
+Zohran Mamdani, NYC’s likely next mayor and a self-proclaimed socialist, is under fire for comments suggesting prisons may not serve a clear purpose. 
+
+In a 2020 interview, Mamdani asked, “What purpose do they serve?” and https://t.co/cpUr5fKtdn https://t.co/fnKUsNJyMW" (37926 views, 52 likes) https://x.com/i/status/1946452443014816020
+- Mario Nawfal: "🇺🇸 FIRST LOOK INSIDE TESLA DINER AND IT’S PURE CYBER GLORY
+
+Order from your Tesla screen. 
+
+Audio syncs automatically.
+
+Meals arrive in Cybertruck-shaped boxes on sleek metal trays with wooden cyber utensils. 
+
+The menu is classic: burgers, dogs, tuna melts, shakes, cookies, https://t.co/5KbM4rf51f https://t.co/y3vGZaAy0f" (37343 views, 93 likes) https://x.com/i/status/1946449932673806575
+- Mario Nawfal: "🇺🇸 DELTA ADMITS AI IS SETTING THE MAX PRICE YOU’LL PAY TO FLY
+
+Delta says the quiet part out loud. 
+
+The airline is now using AI to figure out exactly how much you're willing to pay and charge you that. 
+
+The system is already setting 3 percent of ticket prices and Delta wants it https://t.co/P7nFWfgjH4 https://t.co/B40PIAW7xR" (37219 views, 69 likes) https://x.com/i/status/1946467542585016576
+- World of Engineering: "Have you ever found a hidden feature in a car after owning it for years?" (37075 views, 157 likes) https://x.com/i/status/1946513583661047929
+- World of Statistics: "Least powerful passports in 2025
+
+No. of countries allowing visa-free access:
+
+🇦🇫 Afghanistan: 25
+🇸🇾 Syria: 27
+🇮🇶 Iraq: 30
+🇵🇰 Pakistan: 32
+🇾🇪 Yemen: 32
+🇸🇴 Somalia: 33
+🇳🇵 Nepal: 38
+🇵🇸 Palestine: 39
+🇱🇾 Libya: 39
+🇧🇩 Bangladesh: 39
+🇰🇵 North Korea: 40
+🇪🇷 Eritrea: 40
+🇸🇩 Sudan: 42
+🇱🇰" (36971 views, 121 likes) https://x.com/i/status/1946518998490685643
+- World of Statistics: "🇳🇿 The longest place name in the world is in New Zealand and it has 85 letters. (“Taumata­whakatangihanga­koauau­o­tamatea­turi­pukaka­piki­maunga­horo­nuku­pokai­whenua­ki­tana­tahu”)" (36860 views, 118 likes) https://x.com/i/status/1946504380166865083
+- Mario Nawfal: "🇸🇻🇻🇪FLIGHT SICKNESS: VENEZUELAN EDITION
+
+Bukele: "Funny how the perfectly healthy Tren de Aragua detainees suddenly fall ill the moment they set foot in Venezuela."
+
+The same detainees accused of murder, robbery, and rape now need help walking.
+
+Guess it’s hard to face justice on https://t.co/IcjiZ7JSyB https://t.co/0teea1Nv8U" (36740 views, 114 likes) https://x.com/i/status/1946457475969925444
+- Mario Nawfal: "🇺🇸 FALCON 9 LIGHTS UP CALIFORNIA SKY WITH STUNNING STARLINK LAUNCH
+
+That was quite the nice launch. Falcon 9 soared out of Vandenberg on July 19, catching the sunset and delivering a perfect streak of fire and cloud through the California sky.
+
+The rocket carried 24 Starlink https://t.co/rBoEC35zbH https://t.co/bQRuwvBRHj" (36399 views, 102 likes) https://x.com/i/status/1946426524657189259
+- Mario Nawfal: "🇸🇻🇻🇪BUKELE WELCOMES U.S HOSTAGES FREED FROM VENEZUELA
+
+"It's hard to negotiate with a tyrannical regime, but we were able to do it thanks to Adam, thanks to his team, thanks to the Secretary of State, and President Trump.  
+
+I know you're happy and probably anxious...our reward https://t.co/uMEouJlTU2 https://t.co/x9SJOQsOJN" (35928 views, 162 likes) https://x.com/i/status/1946462509533479257
+- Mario Nawfal: "TAKE A LOOK AT THE SURFACE OF MARS… AND HEAR WHAT THE RED PLANET REALLY SOUNDS LIKE
+
+This isn’t a simulation. 
+
+It’s the actual wind, recorded by NASA’s Perseverance rover as it explores the Martian landscape.
+
+Feel the silence. 
+
+Watch the barren, rust-colored terrain. 
+
+Listen https://t.co/RtloXOw2J2 https://t.co/i3asbgPeBf" (35511 views, 96 likes) https://x.com/i/status/1946482641936490565
+- Mario Nawfal: "🇺🇸 TRUMP'S "BIG BEAUTIFUL" BILL ADDS $250 VISA FEE FOR TOURISTS
+
+Tourists, students, and business travelers needing a visa to enter the U.S. could soon face a new $250 fee. 
+
+The charge comes from Trump’s “big, beautiful” spending bill and applies only to countries that require a https://t.co/aJTULRdZIU https://t.co/XFR1ae8IZ3" (35134 views, 88 likes) https://x.com/i/status/1946465026757500953
+- Mario Nawfal: "Real or Ai? 
+
+https://t.co/OtrQG6XN45" (34424 views, 61 likes) https://x.com/i/status/1946417210744082888
+- Mario Nawfal: "🇬🇧PRIDE VANISHED: UK COPS TOLD TO DITCH THE RAINBOWS
+
+Northumbria Police has been ordered to scrub every rainbow and trans stripe off its patrol cars after a High Court judge ruled they looked biased.
+
+It all started when Linzi Smith, a gender-critical lesbian, sued the force for https://t.co/9VVCii0ohx https://t.co/KWjfRuEADW" (34220 views, 161 likes) https://x.com/i/status/1946497741720346758
+- Mario Nawfal: "🇨🇦 CANADIAN DOLLARS CAN SURVIVE ANYTHING
+
+Except maybe U.S tariffs
+
+https://t.co/OSZoB0efAv https://t.co/2coIGiBXrp" (34280 views, 94 likes) https://x.com/i/status/1946480128491438169
+- Mario Nawfal: "GO WOKE, GO BROKE, GO NOWHERE: JAGUAR EVs DELAYED AFTER RAINBOW REBRAND
+
+Jaguar Land Rover’s electric dreams just got parked - again.
+
+After a viral pink-and-blue “reinvention” campaign and a teaser trailer packed with diversity clichés, JLR is quietly pushing back its flashy new https://t.co/qrjuyUMgDD https://t.co/UefSrOkSpF" (34098 views, 117 likes) https://x.com/i/status/1946507807789809879
+- Mario Nawfal: "🚨🇺🇸XAI TEAMS UP WITH MEMPHIS OFFICIALS TO CLEAN STREETS AND NEIGHBORHOODS
+
+xAI is partnering with city and county officials to clean up areas around schools and residential zones in Memphis.
+
+Crews are working daily to remove waste, improve roadways, and restore the community https://t.co/4OYtt5JuHe https://t.co/gw8kEh7KBI" (33688 views, 61 likes) https://x.com/i/status/1946470059284496799
+- Mario Nawfal: "ELON: ANYONE CAN COME AND VISIT STARBASE!
+
+“The cool thing for anyone out there who's watching this, is you can actually come and visit. 
+
+Because our entire production facility and launch site are on a public highway. 
+
+So, anyone who comes to South Texas can come and see the https://t.co/YASaP0gLOw https://t.co/2nrIjYyVS9" (32629 views, 218 likes) https://x.com/i/status/1946488748708950403
+- Mario Nawfal: "MEET SUPERGROK HEAVY - xAI’S AI GYM BRO JUST SHOWED UP
+
+Grok 4 was the warm-up - SuperGrok Heavy is the real heavyweight!
+
+And it’s charging $300/month like it knows it’s worth it.
+
+The Neural Breakdown:
+
+•⁠  ⁠Multi-agent setup - like an AI fight club for good ideas
+
+•⁠ https://t.co/Fg1O40gVgg https://t.co/9XRH9g3H9W" (32470 views, 72 likes) https://x.com/i/status/1946490430071149003
+- Mario Nawfal: "🇺🇸 SEC. BURGUM: ALCATRAZ IS THE BRAND KNOWN AROUND THE WORLD
+
+Secretary says iconic island "known around the world for being effective at housing people in incarceration." 
+
+Testing feasibility of returning federal property to original prison function.
+
+https://t.co/wo16LBByOM https://t.co/nkY9YhugVj" (31845 views, 83 likes) https://x.com/i/status/1946485158754021884
+- Mario Nawfal: "🚨12 HOUR NEWS RECAP
+
+1.⁠ Trump signed the GENIUS Act into law to cement U.S. dominance in global finance and crypto tech. It creates clear rules for dollar-backed stablecoins and launches a new payment system to replace outdated rails. 
+
+2.⁠ Ten U.S hostages arrived in El https://t.co/kWIBvvHk4G https://t.co/Z61kzwDDRz" (31790 views, 87 likes) https://x.com/i/status/1946514099602428305
+- Mario Nawfal: "🇸🇬🇨🇳 SINGAPORE UNDER DIGITAL SIEGE: CHINA-LINKED HACKERS TARGET POWER &amp; BANKS
+
+Singapore's top security minister, K. Shanmugam, revealed a stealthy, dangerous cyberattack is hammering the country’s critical infrastructure. 
+
+The group behind it is suspected to be UNC3886, a name https://t.co/BtxpL8lN0x https://t.co/albaA1T3jy" (31560 views, 59 likes) https://x.com/i/status/1946502775090618449
+- Mario Nawfal: "Is there anything @Tesla_Optimus won’t be able to do…
+
+The future is so here!
+
+Source: @niccruzpatane https://t.co/HaQhGhstDG https://t.co/HiibYMlqg7" (31539 views, 72 likes) https://x.com/i/status/1946477608625143820
+- Mario Nawfal: "🇺🇸 KRAKEN CEO: NEW RULES BRING CLARITY AND GROWTH FOR CRYPTO INDUSTRY
+
+“This is actually, from our standpoint, aand me personally, one of the biggest benefits of this. 
+
+This brings about more clarity. 
+
+So now we can have many more businesses that previously were uncertain, https://t.co/Vg1HNqTwwI https://t.co/0z7PgSiKce" (31348 views, 60 likes) https://x.com/i/status/1946472578002088266
