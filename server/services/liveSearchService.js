@@ -375,7 +375,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
+          content: "You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
@@ -401,8 +401,9 @@ Articles to analyze:
 ${articlesText}`
         }
       ],
-      max_tokens: 60000,
-      response_format: { type: "json_object" }
+      max_tokens: 80000,
+      response_format: { type: "json_object" },
+      reasoning_effort: "high",
     });
 
     const analysisContent = response.choices[0].message.content;
@@ -598,7 +599,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X first. Then, search for news articles and web content. Then, search for semantic posts on X that are not included in the previous searches."
+          content: "You are a world class AI news aggregator. You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles and web content. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles on web and news."
         },
         {
           role: "user",
@@ -607,8 +608,9 @@ async function getTopicDataFromLiveSearch(topic) {
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 8,
+        max_search_results: 10,
         return_citations: true,
+        reasoning_effort: "high",
         from_date: fromDate,
         sources: [
           {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
@@ -616,7 +618,7 @@ async function getTopicDataFromLiveSearch(topic) {
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com",], "country": "US" }
         ]
       },
-      max_tokens: 50000
+      max_tokens: 90000
     });
 
         console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
@@ -664,7 +666,8 @@ async function inferEmergentTopicsFromTimeline(posts) {
         },
         { role: "user", content: postsSummary }
       ],
-      max_tokens: 50000
+      reasoning_effort: "high",
+      max_tokens: 60000
     });
 
     const content = response.choices[0].message.content;
@@ -942,7 +945,8 @@ async function generateTimelineAppendix(compiledData) {
           content: timelineMatch[0]
         }
       ],
-      max_tokens: 1000
+      reasoning_effort: "high",
+      max_tokens: 20000
     });
     
     const parsed = JSON.parse(response.choices[0].message.content);
