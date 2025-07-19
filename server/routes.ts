@@ -503,8 +503,11 @@ export function registerRoutes(app) {
       console.log(`🔄 Combining ${audioUrls.length} segments into final podcast...`);
       const mainAudioUrl = await combineAudioSegments(audioUrls, episodeId);
       
-      // Update episode with audio URL
-      await storage.updatePodcastEpisode(parseInt(episodeId), { audioUrl: mainAudioUrl });
+      // Update episode with audio URL and local path
+      await storage.updatePodcastEpisode(parseInt(episodeId), { 
+        audioUrl: mainAudioUrl,
+        audioLocalPath: mainAudioUrl 
+      });
       
       console.log(`Audio generation completed for episode ${episodeId}: ${mainAudioUrl}`);
       res.json({ 
