@@ -39,7 +39,7 @@ export async function generatePodcastScript(compiledData, appendix = null, durat
       messages: [
         {
           role: "system",
-          content: `You are a professional news podcast scriptwriter creating factual, engaging news summaries. 
+          content: `You are a professional news podcast scriptwriter AI creating factual, engaging news summaries. You have access to live search data, X posts, and news articles.
 
 CRITICAL DURATION REQUIREMENT: You MUST write a ${durationMinutes}-minute podcast script that contains EXACTLY ${targetWordCount} words (±50 words). This is NON-NEGOTIABLE. The script must be complete and NOT truncated.
 
@@ -74,12 +74,11 @@ SCRIPT STRUCTURE:
 - CLOSING SIGN OFF: "That's what's happening, currently. Thank you for listening. Make it a great day, or not...the choice is yours. See you next time." 
 
 USING RAW COMPILED DATA - EXPANSION STRATEGY:
-When provided with raw compiled data (89k+ characters), this is COMPREHENSIVE RESEARCH that must be EXPANDED into a full-length script:
+When provided with raw compiled data (40k+ characters), this is COMPREHENSIVE RESEARCH that must be EXPANDED into a full-length script:
 - Extract ALL relevant information from LIVE SEARCH SUMMARY sections
 - Quote extensively from X POSTS FROM SEARCH with full context
 - Integrate ALL SUPPORTING ARTICLES with detailed summaries
 - Include ALL USER'S TIMELINE POSTS with comprehensive coverage
-- Create detailed transitions between ALL topics (minimum 30 words each)
 - Expand each story to at least ${Math.floor(targetWordCount / 8)} words per major topic
 - Do NOT summarize - EXPAND the research into full podcast content
 
@@ -115,7 +114,8 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
       search_parameters: {
         mode: "on"
       },
-      temperature: 0.7,
+      reasoning_effort: "high",
+      temperature: 0.8,
       max_tokens: Math.max(15000, targetWordCount * 1.5) // Dynamic scaling: ensure sufficient tokens for longer podcasts
     });
     
