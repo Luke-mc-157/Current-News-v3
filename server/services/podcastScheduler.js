@@ -76,70 +76,63 @@ function getNextScheduledTime(preferences, timeIndex = 0) {
   return nextSchedule;
 }
 
-// Create scheduled podcast entries for users with enabled preferences
-export async function createScheduledPodcasts() {
+// Create scheduled podcast entries for a specific user
+export async function createScheduledPodcastsForUser(userId, preferences) {
   try {
-    console.log('🔄 Checking for users with enabled podcast preferences...');
+    if (!preferences || !preferences.enabled) {
+      console.log(`⏭️ Skipping scheduled podcast creation - preferences disabled for user ${userId}`);
+      return;
+    }
     
-    // Get all users with enabled podcast preferences
-    const allUsers = await storage.getAllUsers();
+    const user = await storage.getUser(userId);
+    if (!user) {
+      console.error(`❌ User ${userId} not found`);
+      return;
+    }
     
-    for (const user of allUsers) {
-      const preferences = await storage.getPodcastPreferences(user.id);
+    const userTimezone = preferences.timezone || 'America/Chicago';
+    console.log(`📅 Creating scheduled podcasts for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
+    
+    // Create scheduled podcasts for each delivery time
+    const times = preferences.times || ["08:00"];
+    
+    for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
+      const deliveryTime = getNextScheduledTime(preferences, timeIndex);
+      const scheduledFor = new Date(deliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
       
-      if (preferences && preferences.enabled) {
-        const userTimezone = preferences.timezone || 'America/Chicago';
-        console.log(`📅 Creating scheduled podcast for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
-        
-        // CRITICAL: First delete ALL pending scheduled podcasts for this user
-        // This ensures only the current preferences are scheduled
-        await storage.deletePendingScheduledPodcastsForUser(user.id);
-        console.log(`🧹 Cleaned up old pending podcasts for user ${user.username}`);
-        
-        // Create scheduled podcasts for each delivery time
-        const times = preferences.times || ["08:00"];
-          
-          for (let timeIndex = 0; timeIndex < times.length; timeIndex++) {
-            const deliveryTime = getNextScheduledTime(preferences, timeIndex);
-            const scheduledFor = new Date(deliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
-            
-            // Always create fresh scheduled podcasts since we cleaned up all pending ones above
-              const scheduledPodcastData = {
-                userId: user.id,
-                scheduledFor,
-                deliveryTime,
-                status: 'pending',
-                preferenceSnapshot: {
-                  topics: preferences.topics,
-                  duration: preferences.duration,
-                  voiceId: preferences.voiceId,
-                  enhanceWithX: preferences.enhanceWithX,
-                  cadence: preferences.cadence,
-                  times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
-                }
-              };
-              
-              const userTimezone = preferences.timezone || 'America/Chicago';
-              const scheduledForUserTz = toZonedTime(scheduledFor, userTimezone);
-              const deliveryTimeUserTz = toZonedTime(deliveryTime, userTimezone);
-              const formattedScheduledTime = format(scheduledForUserTz, 'h:mm a zzz', { timeZone: userTimezone });
-              const formattedDeliveryTime = format(deliveryTimeUserTz, 'h:mm a zzz', { timeZone: userTimezone });
-              
-              console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length}:`);
-              console.log(`   User: ${user.username} (${user.email})`);
-              console.log(`   Scheduled for: ${formattedScheduledTime} (${scheduledFor.toISOString()})`);
-              console.log(`   Delivery at: ${formattedDeliveryTime} (${deliveryTime.toISOString()})`);
-              console.log(`   Topics: ${preferences.topics.join(', ')}`);
-              console.log(`   Duration: ${preferences.duration} minutes`);
-              
-              await storage.createScheduledPodcast(scheduledPodcastData);
-              
-              console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${formattedDeliveryTime}`);
-          }
-      }
+      const scheduledPodcastData = {
+        userId: user.id,
+        scheduledFor,
+        deliveryTime,
+        status: 'pending',
+        preferenceSnapshot: {
+          topics: preferences.topics,
+          duration: preferences.duration,
+          voiceId: preferences.voiceId,
+          enhanceWithX: preferences.enhanceWithX,
+          cadence: preferences.cadence,
+          times: [times[timeIndex]] // Store only the specific time for this scheduled podcast
+        }
+      };
+      
+      const scheduledForUserTz = toZonedTime(scheduledFor, userTimezone);
+      const deliveryTimeUserTz = toZonedTime(deliveryTime, userTimezone);
+      const formattedScheduledTime = format(scheduledForUserTz, 'h:mm a zzz', { timeZone: userTimezone });
+      const formattedDeliveryTime = format(deliveryTimeUserTz, 'h:mm a zzz', { timeZone: userTimezone });
+      
+      console.log(`Creating scheduled podcast ${timeIndex + 1}/${times.length}:`);
+      console.log(`   User: ${user.username} (${user.email})`);
+      console.log(`   Scheduled for: ${formattedScheduledTime} (${scheduledFor.toISOString()})`);
+      console.log(`   Delivery at: ${formattedDeliveryTime} (${deliveryTime.toISOString()})`);
+      console.log(`   Topics: ${preferences.topics.join(', ')}`);
+      console.log(`   Duration: ${preferences.duration} minutes`);
+      
+      await storage.createScheduledPodcast(scheduledPodcastData);
+      
+      console.log(`✅ Scheduled podcast ${timeIndex + 1}/${times.length} for ${user.username} at ${formattedDeliveryTime}`);
     }
   } catch (error) {
-    console.error('❌ Error creating scheduled podcasts:', error);
+    console.error('❌ Error creating scheduled podcasts for user:', error);
   }
 }
 
@@ -276,27 +269,35 @@ export async function processPendingPodcasts() {
         
         console.log(`✅ Successfully processed and sent podcast to ${user.email}`);
         
-        // Schedule next podcast if preferences are still enabled
+        // Schedule next podcast for this specific time slot
         const currentPreferences = await storage.getPodcastPreferences(scheduled.userId);
         if (currentPreferences && currentPreferences.enabled) {
-          const nextDeliveryTime = getNextScheduledTime(currentPreferences);
-          const nextScheduledFor = new Date(nextDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
-          
-          await storage.createScheduledPodcast({
-            userId: scheduled.userId,
-            scheduledFor: nextScheduledFor,
-            deliveryTime: nextDeliveryTime,
-            status: 'pending',
-            preferenceSnapshot: {
-              topics: currentPreferences.topics,
-              duration: currentPreferences.duration,
-              voiceId: currentPreferences.voiceId,
-              enhanceWithX: currentPreferences.enhanceWithX,
-              cadence: currentPreferences.cadence,
-              times: currentPreferences.times
+          // Extract the specific time from this scheduled podcast
+          const timeStr = scheduled.preferenceSnapshot?.times?.[0];
+          if (timeStr) {
+            // Find the index of this time in the current preferences
+            const timeIndex = currentPreferences.times.indexOf(timeStr);
+            if (timeIndex !== -1) {
+              const nextDeliveryTime = getNextScheduledTime(currentPreferences, timeIndex);
+              const nextScheduledFor = new Date(nextDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before delivery
+              
+              await storage.createScheduledPodcast({
+                userId: scheduled.userId,
+                scheduledFor: nextScheduledFor,
+                deliveryTime: nextDeliveryTime,
+                status: 'pending',
+                preferenceSnapshot: {
+                  topics: currentPreferences.topics,
+                  duration: currentPreferences.duration,
+                  voiceId: currentPreferences.voiceId,
+                  enhanceWithX: currentPreferences.enhanceWithX,
+                  cadence: currentPreferences.cadence,
+                  times: [timeStr] // Store only the specific time for this scheduled podcast
+                }
+              });
+              console.log(`📅 Next podcast scheduled for ${nextDeliveryTime.toLocaleString()}`);
             }
-          });
-          console.log(`📅 Next podcast scheduled for ${nextDeliveryTime.toLocaleString()}`);
+          }
         }
         
       } catch (error) {
@@ -313,10 +314,8 @@ export async function processPendingPodcasts() {
 export async function runPodcastScheduler() {
   console.log('🎧 Running podcast scheduler...');
   
-  // Create scheduled podcasts for enabled users
-  await createScheduledPodcasts();
-  
-  // Process pending podcasts that are due
+  // Only process existing pending podcasts, don't create new ones
+  // New scheduled podcasts are created when preferences are saved
   await processPendingPodcasts();
   
   console.log('✅ Podcast scheduler completed');

@@ -22,7 +22,7 @@ import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, valid
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
 import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
-import { runPodcastScheduler, createScheduledPodcasts, processPendingPodcasts } from "./services/podcastScheduler.js";
+import { runPodcastScheduler, createScheduledPodcastsForUser, processPendingPodcasts } from "./services/podcastScheduler.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { format } from 'date-fns';
@@ -1345,9 +1345,10 @@ export function registerRoutes(app) {
       // Check if preferences already exist
       const existing = await storage.getPodcastPreferences(userId);
       
+      let savedPreferences;
       if (existing) {
         // Update existing preferences
-        const updated = await storage.updatePodcastPreferences(userId, {
+        savedPreferences = await storage.updatePodcastPreferences(userId, {
           enabled,
           cadence,
           customDays,
@@ -1357,10 +1358,9 @@ export function registerRoutes(app) {
           voiceId,
           enhanceWithX
         });
-        res.json(updated);
       } else {
         // Create new preferences
-        const created = await storage.createPodcastPreferences({
+        savedPreferences = await storage.createPodcastPreferences({
           userId,
           enabled,
           cadence,
@@ -1371,8 +1371,15 @@ export function registerRoutes(app) {
           voiceId,
           enhanceWithX
         });
-        res.json(created);
       }
+      
+      // Create scheduled podcasts for each delivery time if enabled
+      if (savedPreferences && enabled) {
+        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        await createScheduledPodcastsForUser(userId, savedPreferences);
+      }
+      
+      res.json(savedPreferences);
     } catch (error) {
       console.error("Error saving podcast preferences:", error);
       res.status(500).json({ error: "Failed to save podcast preferences" });
@@ -1391,6 +1398,12 @@ export function registerRoutes(app) {
       const updated = await storage.updatePodcastPreferences(userId, updates);
       if (!updated) {
         return res.status(404).json({ error: "Podcast preferences not found" });
+      }
+      
+      // Re-create scheduled podcasts if enabled
+      if (updated.enabled) {
+        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        await createScheduledPodcastsForUser(userId, updated);
       }
       
       res.json(updated);
