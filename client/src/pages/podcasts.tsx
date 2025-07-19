@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin, Play } from "lucide-react";
+import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin, Play, ChevronDown, ChevronUp } from "lucide-react";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
@@ -74,6 +74,7 @@ export default function Podcasts() {
   const { toast } = useToast();
   const { user, logout } = useAuth();
   const [hasChanges, setHasChanges] = useState(false);
+  const [isUpcomingExpanded, setIsUpcomingExpanded] = useState(false);
   const [localPreferences, setLocalPreferences] = useState<Partial<PodcastPreferences>>({
     enabled: false,
     cadence: "daily",
@@ -740,15 +741,33 @@ export default function Podcasts() {
           {/* Upcoming Scheduled Podcasts */}
           {localPreferences.enabled && (
             <Card className="mt-4">
-              <CardHeader>
-                <CardTitle>Upcoming Deliveries</CardTitle>
-                <CardDescription>
-                  Your podcasts scheduled for the next 7 days
-                </CardDescription>
+              <CardHeader className="pb-3">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Upcoming Deliveries</CardTitle>
+                    <CardDescription>
+                      Your podcasts scheduled for the next 7 days
+                    </CardDescription>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setIsUpcomingExpanded(!isUpcomingExpanded)}
+                    className="h-8 w-8 p-0"
+                  >
+                    {isUpcomingExpanded ? (
+                      <ChevronUp className="h-4 w-4" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4" />
+                    )}
+                  </Button>
+                </div>
               </CardHeader>
-              <CardContent>
-                <UpcomingPodcasts timezone={localPreferences.timezone || "America/Chicago"} />
-              </CardContent>
+              {isUpcomingExpanded && (
+                <CardContent>
+                  <UpcomingPodcasts timezone={localPreferences.timezone || "America/Chicago"} />
+                </CardContent>
+              )}
             </Card>
           )}
         </TabsContent>
