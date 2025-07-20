@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; only three potentially related stories were identified from high-engagement X posts and correlating news articles in the last 24 hours. No direct matches for 'quick test happening' were found, so interpretations are based on general news recaps involving public health or current affairs.\",\n  \"stories\": [\n    {\n      \"headline\": \"Summaries of stories challenging climate emergency and public health crises reported in the last 24 hours\",\n      \"citations\": [\n        \"https://t.co/oPPi4jAPxW\",\n        \"https://www.washingtonpost.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"24 major news stories summarized from Indian sources in the last 24 hours\",\n      \"citations\": [\n        \"https://t.co/0kaJrrnWTR\",\n        \"https://www.bbc.com/\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"Top highlights of current affairs and global news from the past 24 hours\",\n      \"citations\": [\n        \"https://t.co/Wx0xq9t37e\",\n        \"https://www.nytimes.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/world/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.reuters.com/world/",
+    "https://x.com/toadmeister/status/1946720778017178089",
+    "https://x.com/Bharat24Liv/status/1946453153949294610",
+    "https://x.com/TruthNo_7/status/1946593092175544584",
+    "https://x.com/VajiramRavi/status/1946508843116011841",
+    "https://x.com/Bharat24Liv/status/1946477913882386723"
+  ]
+}

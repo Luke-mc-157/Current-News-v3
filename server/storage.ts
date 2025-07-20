@@ -32,6 +32,7 @@ export interface IStorage {
   createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens>;
   getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined>;
   updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined>;
+  deleteXAuthToken(userId: number): Promise<void>;
   
   // User follows methods
   createUserFollow(follow: InsertUserFollows): Promise<UserFollows>;
@@ -418,6 +419,13 @@ export class MemStorage implements IStorage {
     this.xAuthTokens.set(token.id, updatedToken);
     return updatedToken;
   }
+
+  async deleteXAuthToken(userId: number): Promise<void> {
+    const token = await this.getXAuthTokenByUserId(userId);
+    if (token) {
+      this.xAuthTokens.delete(token.id);
+    }
+  }
 }
 
 // Use DatabaseStorage instead of MemStorage
@@ -630,6 +638,10 @@ export class DatabaseStorage implements IStorage {
     
     const [updatedToken] = await db.update(xAuthTokens).set(cleanedUpdates).where(eq(xAuthTokens.userId, userId)).returning();
     return updatedToken || undefined;
+  }
+
+  async deleteXAuthToken(userId: number): Promise<void> {
+    await db.delete(xAuthTokens).where(eq(xAuthTokens.userId, userId));
   }
 
   async createUserFollow(follow: InsertUserFollows): Promise<UserFollows> {

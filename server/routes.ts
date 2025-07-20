@@ -611,7 +611,10 @@ export function registerRoutes(app) {
         }
       }
       
-      const isAuthenticated = !!(authToken && authToken.accessToken);
+      // Check if token exists and is not expired
+      const isAuthenticated = !!(authToken && authToken.accessToken && 
+                                 authToken.expiresAt && 
+                                 new Date(authToken.expiresAt) > new Date());
       
       // In development mode, if user is dev_user (ID: 1), ensure they appear authenticated
       const isDevelopment = process.env.NODE_ENV === 'development';
