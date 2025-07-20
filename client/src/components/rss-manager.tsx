@@ -46,10 +46,10 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
     },
   });
 
-  // Fetch user's RSS feeds
+  // Fetch user's RSS feeds (always enabled to show button status)
   const { data: rssFeeds = [], isLoading: feedsLoading } = useQuery<RssFeed[]>({
     queryKey: [`/api/rss-feeds/${userId}`],
-    enabled: isOpen,
+    enabled: true, // Always fetch to show button indicators
   });
 
   // Auto-fill form with existing feed data when dialog opens
@@ -95,6 +95,8 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
         description: "Your RSS feed has been removed",
       });
       queryClient.invalidateQueries({ queryKey: [`/api/rss-feeds/${userId}`] });
+      // Reset form when feed is deleted
+      form.reset({ feedUrl: "", feedName: "" });
     },
     onError: (error: Error) => {
       toast({
