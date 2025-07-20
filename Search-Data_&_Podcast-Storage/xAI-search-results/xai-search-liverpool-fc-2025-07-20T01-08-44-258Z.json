@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"notes\": \"Data on X posts was sparse in the provided context, with no direct high-engagement posts about Liverpool FC available from the searches. Engagement metrics are estimated as unavailable (set to 0) based on the lack of specific data. Only two distinct stories could be reliably clustered from the available news and web results, so only those are included.\",\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"Liverpool FC reportedly agrees to sign player Ekitike as part of summer transfer activity.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours\"\n      ],\n      \"total_engagement\": 0\n    },\n    {\n      \"rank\": 2,\n      \"headline\": \"Liverpool FC features in latest transfer rumours and updates from sports news sources.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\",\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\"\n      ],\n      \"total_engagement\": 0\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/news/uk",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012",
+    "https://x.com/elonmusk/status/1946731968567410695"
+  ]
+}

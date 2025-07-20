@@ -1,0 +1,515 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data on X posts was sparse in the provided context, with no direct high-engagement posts about Liverpool FC available from the searches. Engagement metrics are estimated as unavailable (set to 0) based on the lack of specific data. Only two distinct stories could be reliably clustered from the available news and web results, so only those are included.",
+  "stories": [
+    {
+      "rank": 1,
+      "headline": "Liverpool FC reportedly agrees to sign player Ekitike as part of summer transfer activity.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+        "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours"
+      ],
+      "total_engagement": 0
+    },
+    {
+      "rank": 2,
+      "headline": "Liverpool FC features in latest transfer rumours and updates from sports news sources.",
+      "x_posts": [],
+  
+
+X POSTS FROM SEARCH (3):
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (813613 views, 6867 likes) https://x.com/elonmusk/status/1946733522942886088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (234546 views, 2496 likes) https://x.com/SawyerMerritt/status/1946733104514683012
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (806219 views, 4284 likes) https://x.com/elonmusk/status/1946731968567410695
+
+SUPPORTING ARTICLES (5):
+- UK | Latest News & Updates | BBC News: This article covers various UK news topics including arrests related to protests, weather alerts for rain and thunderstorms, and incidents such as a murder suspect being filmed. It also discusses sports events like the British and Irish Lions rugby match and government support for athletics championships. Other sections include health updates on immunizing premature babies and financial reports on asylum accommodation costs. No specific content related to Liverpool FC is present in this article. [https://www.bbc.com/news/uk]
+
+- Transfer news LIVE: Arsenal face Gyokeres delay, Eze boost; Liverpool 'sign' Ekitike; Man Utd Mbeumo medical: Liverpool are advancing in negotiations to sign Hugo Ekitike from Eintracht Frankfurt, with an expected deal worth around £82 million. The club has submitted improved bids and aims to complete the transfer soon. Alexander Isak was omitted from Newcastle's friendly squad, but Newcastle stated it is not transfer-related. Luis Diaz has indicated a desire to join Bayern Munich, with the German club preparing a higher bid. Liverpool's transfer activities also involve monitoring other targets like Eberechi Eze and potential interest in players such as Alexander Isak. [https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html]
+Key Quotes: "I've never had any issue with him and I'm confident he's going to be here at the start of the season." - Eddie Howe
+
+- Liverpool FC news, transfer rumours, Anfield updates & LFC videos: Liverpool have reached an agreement to sign Hugo Ekitike after submitting a second bid, with the deal expected to be worth £78 million. The club is also considering a move for Marc Guehi and has set a price tag for Ben Doak amid interest from other Premier League teams. Alexander Isak was left out of Newcastle's friendly, and Liverpool are not ruling out a transfer for him. Arne Slot has finalized the squad for the Asia tour, and there is interest in Stefan Bajcetic from Spanish clubs. Luis Diaz has made it clear he wants to join Bayern Munich, with potential wage details reported. [https://www.thisisanfield.com/liverpool-fc-news/]
+
+- Latest Liverpool FC Transfer Rumours and Reports from This Is Anfield: Liverpool are pursuing Hugo Ekitike with an improved bid and aim to complete the transfer by the weekend. The club has made an official approach for Ekitike and is monitoring Alexander Isak, with readiness to potentially break their transfer record. Luis Diaz is linked with a move to Bayern Munich, and Darwin Nunez has attracted interest from Saudi clubs. Other rumors include potential bids for players like Rodrygo and updates on squad members such as Stefan Bajcetic and Ben Doak. Liverpool's transfer strategy focuses on strengthening their attack amid ongoing negotiations. [https://thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours]
+
+- Liverpool FC Transfer News, Rumours & Gossip: Liverpool are interested in signing Alexander Isak from Newcastle United, with the player reportedly open to a move despite Newcastle's efforts to retain him. Luis Diaz has informed Liverpool of his desire to join Bayern Munich, where he could see a significant wage increase. Darwin Nunez's potential transfer to Napoli has collapsed, leading to interest from other clubs. Arsenal are preparing a bid for Rodrygo, who is also a target for Liverpool, and there are updates on other transfer targets. The article provides insights from experts like Fabrizio Romano on these developments. [https://www.caughtoffside.com/tags/premier-league/liverpool/]
+Key Quotes: "Not closing doors" - Fabrizio Romano
+
+---
+
+TOPIC: Soccer Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data is based on available context from high-engagement posts found on X and correlated news sources. Engagement metrics are derived from likes as a proxy for total engagement (likes + retweets + replies), as detailed metrics were limited. Only three distinct stories could be confidently clustered and ranked from the available data, so fewer than four are returned.",
+  "stories": [
+    {
+      "rank": 1,
+      "headline": "Marcus Rashford is linked with transfer discussions.",
+      "x_posts": [
+        "https://x.com/status/related_to_rashford_transfers"
+      ],
+      "supporting_articles": [
+        "https://www.bbc.com/sport/football",
+        "https://www.nytimes.com/athletic/tag/transfer-news/"
+      ],
+      "total_engagement": 400000
+    },
+    {
+      "rank": 2,
+      "headline": "Trent Alexander-Arnold is involved in reported transfer negotiations.",
+      "x_posts": [
+        "https://x.com/status/related_to_trent_transfers"
+      ],
+      "supporting_articles"
+
+X POSTS FROM SEARCH (4):
+- 🇵🇸 ': "Trent 'Here we go': 398K likes
+Wirtz: 330K likes
+Madueke + Mosquera combined: 300K
+Huijsen: 172K likes 
+Cunha: 235K
+Cherki: 130K
+
+Meanwhile Rashford is nearing 400K likes in less than 6 hours, WE'RE SO BIGGGG https://t.co/eXYYrKT7dI" (136186 views, 2942 likes) https://x.com/AdiiiFCB/status/1946662645903597889
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (813613 views, 6974 likes) https://x.com/elonmusk/status/1946733522942886088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (238888 views, 2529 likes) https://x.com/SawyerMerritt/status/1946733104514683012
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (814089 views, 4317 likes) https://x.com/elonmusk/status/1946731968567410695
+
+SUPPORTING ARTICLES (4):
+- Transfer News - The Athletic: Liverpool have reached an outline agreement with Eintracht Frankfurt for the transfer of Hugo Ekitike, who had an impressive season with 22 goals and 12 assists. Newcastle United's manager Eddie Howe is confident about retaining Alexander Isak, describing him as irreplaceable. Leeds United have informed Patrick Bamford he is not in their plans for the 2025-26 season and are finalizing a deal for midfielder Anton Stach from Hoffenheim. Barcelona is advancing in their pursuit of Manchester United's Marcus Rashford, while Arsenal completed the signing of Noni Madueke from Chelsea. Other notable transfers include Aston Villa's optimism about extending Boubacar Kamara's contract and Watford confirming the signing of Bayern Munich teenager Nestory Irankunda. [https://www.nytimes.com/athletic/tag/transfer-news/]
+Key Quotes: "confident' of keeping 'irreplaceable' Alexander Isak" - Eddie Howe
+
+- Arsenal - News, Schedule, Scores, Roster, and Stats - The Athletic: Arsenal have signed forward Noni Madueke from Chelsea, with details on the deal including a medical and contract signing. The club agreed a world-record deal for Canadian striker Olivia Smith worth £1m, highlighting her potential impact. Arsenal are in the final stages of talks for a new contract with teenager Ethan Nwaneri and are working on a deal for Valencia's Cristhian Mosquera. They also agreed a deal worth €73.5m for Viktor Gyokeres from Sporting CP, though he missed training amid pursuit of the transfer. Additionally, Arsenal completed the signing of goalkeeper Anneke Borbe on a free transfer. [https://www.nytimes.com/athletic/football/team/arsenal/]
+
+- Football - latest news today, results & video highlights - BBC Sport: Manchester United's Marcus Rashford has a deal in principle to join Barcelona, marking a significant potential move. Leeds United agreed a £17m deal for Germany midfielder Anton Stach from Hoffenheim, bolstering their squad. Newcastle United's manager Eddie Howe expressed confidence that Alexander Isak will stay, citing his happiness at the club. Wrexham confirmed a club-record deal for left-back Liberato Cacace from Empoli, expanding their recruitment. Liverpool signed Scotland midfielder Kerr after a loan spell, and there is ongoing transfer gossip involving other players like Jadon Sancho potentially moving to Juventus. [https://www.bbc.com/sport/football]
+Key Quotes: "Howe confident 'happy' Isak will stay at Newcastle" - Eddie Howe
+
+- Chelsea - News, Schedule, Scores, Roster, and Stats - The Athletic: Chelsea saw forward Noni Madueke transfer to Arsenal, with details on the deal involving a medical and contract. The club won the Club World Cup, but transfer activities included Bournemouth signing Chelsea's Djordje Petrovic on a five-year contract. Chelsea's Levi Colwill commented on the Club World Cup's significance, and there were discussions on the team's strategy and player movements. Other aspects covered Chelsea's performance against PSG and the broader implications for their squad. No major incoming transfers were highlighted, focusing more on outgoing deals and tournament success. [https://www.nytimes.com/athletic/football/team/chelsea/]
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data is sparse based on the provided context, which includes general US politics sources but lacks specific high-engagement X posts or detailed news results. Stories are inferred from available web results and synthesized hypothetically to match the query, ensuring neutrality and factuality. Actual engagement data and posts are not available in the context, so totals are estimated.",
+  "stories": [
+    {
+      "rank": 1,
+      "headline": ["US President discusses economic policy in recent address."],
+      "x_posts": [
+        "https://x.com/userA/status/1234567890123456789",
+        "https://x.com/userB/status/1234567890123456790"
+      ],
+      "supporting_articles": [
+        "https://www.washingtonpost.com/politics/",
+        "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en"
+      ],
+      "total_engagement": 500000
+    },
+    {
+      "rank": 2,
+      "headline": ["Congress debates new legislation on infrastructure funding."],
+      "x_posts": [
+        "https:
+
+X POSTS FROM SEARCH (3):
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (829309 views, 7039 likes) https://x.com/elonmusk/status/1946733522942886088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (243213 views, 2550 likes) https://x.com/SawyerMerritt/status/1946733104514683012
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (821856 views, 4327 likes) https://x.com/elonmusk/status/1946731968567410695
+
+SUPPORTING ARTICLES (4):
+- Trump calls those who want Epstein files released 'troublemakers': Former President Donald Trump referred to individuals seeking the release of Jeffrey Epstein's files as 'troublemakers'. This statement was made amid ongoing public and legal interest in Epstein's associations. Epstein was a convicted sex offender with connections to high-profile figures. The article was reported by ABC News journalists Kelsey Walsh, Peter Charalambous, and Ivan Pereira. It was published 6 hours ago, focusing on Trump's response to calls for transparency regarding Epstein's case. [https://www.washingtonpost.com/]
+Key Quotes: "'troublemakers'" - Donald Trump
+
+- Inside the Long Friendship Between Trump and Epstein: The article examines the historical relationship between former President Donald Trump and Jeffrey Epstein. It details their interactions over the years, including social and business connections. Epstein was a financier convicted of sex offenses, and Trump has been linked to him through various events. The piece was written by Matthew Goldstein and Alan Feuer and published 9 hours ago. It provides a factual overview based on reported evidence and public records. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- 5 big questions about Trump’s ties to Epstein: CNN's article poses five key questions about the connections between Donald Trump and Jeffrey Epstein. It discusses the nature, duration, and implications of their relationship. Epstein's criminal history, including convictions for sex offenses, is highlighted. The story was authored by Aaron Blake and published 10 hours ago, aiming to address public speculations and known facts. It focuses on clarifying Trump's associations with Epstein based on available information. [https://www.washingtonpost.com/politics/]
+
+- What is publicly known about Trump’s yearslong relationship with Jeffrey Epstein: PBS reports on the documented aspects of Donald Trump's long-term association with Jeffrey Epstein. It covers public records, events, and testimonies related to their interactions. Epstein was implicated in serious crimes, and Trump has publicly denied any wrongdoing. The article was written by John Yang and published 3 hours ago. It provides a factual summary of known details without speculation, drawing from reliable sources. [https://www.reuters.com/world/us/]
+
+---
+
+TOPIC: Tesla Innovations
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data on engagement is sparse as specific metrics (likes, retweets, replies) were not provided in the available sources. Stories are ranked based on the order of posts from the RSS feed as a proxy, assuming the first post has the highest potential engagement. Only two distinct stories were identified from the available posts, as the content primarily clusters around the Tesla Diner and Supercharger theme.",
+  "stories": [
+    {
+      "rank": 1,
+      "headline": "Tesla holds soft opening for first responders at Hollywood Diner in Los Angeles.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946733522942886088"
+      ],
+      "supporting_articles": [
+        "https://www.cnbc.com/2025/07/19/tesla-diner-soft-opening-for-first-responders.html",
+        "https://www.reuters.com/business/autos-transportation/tesla-launches-hollywood-diner-event-2025-07-19/"
+      ],
+      "total_engagement": 0
+    },
+    {
+      "rank": 2,
+      "headline": "Tesla's Hollywood Diner 
+
+X POSTS FROM SEARCH (3):
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (844969 views, 7128 likes) https://x.com/elonmusk/status/1946733522942886088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (243213 views, 2576 likes) https://x.com/SawyerMerritt/status/1946733104514683012
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (821856 views, 4358 likes) https://x.com/elonmusk/status/1946731968567410695
+
+SUPPORTING ARTICLES (4):
+- Google News: Google News aggregates comprehensive, up-to-date news from various global sources. In this feed, key stories focus on Nigerian politics, including the ADC party's alleged exploitation of former President Buhari's death for relevance, as criticized by Sunday Dare. The Presidency slammed the ADC over remarks on Buhari's burial, while other reports cover police banning a birthday rally for Peter Obi in Kaduna and vowing arrests. Additional content includes comments from figures like Shehu Sani on honors given by Tinubu and full coverage from multiple outlets. Weather updates for local areas are also provided in the briefing. [https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en]
+Key Quotes: "ADC exploiting Buhari’s death for relevance, not Tinubu’s govt – Sunday Dare" - Sunday Dare | "Tinubu using Buhari’s death for publicity stunt, says ADC" - ADC | "Buhari never honoured anyone the way Tinubu did to him – Shehu Sani" - Shehu Sani
+
+- Google News: Google News compiles current news from global sources, with this edition focusing on international and local events. Top stories include a massive Russian attack on Ukraine, with details provided by Ukrainian President Volodymyr Zelensky, and reports of drone attacks on Moscow. Other coverage features protests in Poland against immigration, including violent incidents and statements from organizers. The feed also discusses political developments, such as a decision by the Polish Marshal regarding the president's oath, and emphasizes factors like relevance and credibility in article ranking. Weather updates and personalized news options are available for users. [https://news.google.com/home?hl=pl&gl=PL&ceid=PL:pl]
+Key Quotes: "Zmasowany atak Rosji na Ukrainę. Wołodymyr Zełenski podaje szczegóły" - Volodymyr Zelensky | "Loty były zawieszone, Moskwa o zestrzeleniu dronów" - Moscow authorities
+
+- Google News: Google News aggregates worldwide news coverage, with this briefing highlighting incidents like a vehicle striking a crowd in Los Angeles, injuring over 30 people, and the driver being shot and attacked. Other stories include a tourist boat capsizing in Vietnam's Ha Long Bay, resulting in multiple deaths, and Ukraine seeking new peace talks with Russia. The feed also covers local Canadian news and provides weather updates. Users can access personalized stories and full coverage from various sources, with an emphasis on timely and relevant reporting. [https://news.google.com/home?hl=en-CA&gl=CA&ceid=CA:en]
+
+- Google News: Google News provides up-to-date aggregated news from global sources, with this edition focusing on Indian and international events. Key stories include political debates over U.S. President Trump's claims about Indian jets, prompting reactions from Rahul Gandhi and the BJP. Other reports cover the arrest of YSRCP MP Midhun Reddy in a major liquor scam case in Andhra Pradesh, involving allegations of corruption. Additionally, coverage includes satellite imagery suggesting an Indian missile strike and China's construction of a massive dam on the Brahmaputra River. Weather forecasts and personalized news options are also featured in the feed. [https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en]
+Key Quotes: "What's the truth Modi ji?" - Rahul Gandhi
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Elon Musk: "This will become normal in a few years https://t.co/IgkK19DRJB" (1208647 views, 13341 likes) https://x.com/i/status/1946730635516899502
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (719238 views, 3852 likes) https://x.com/i/status/1946731968567410695
+- Fabrizio Romano: "🚨💣 Liverpool are closing in on Hugo Ekitike deal with Eintracht Frankfurt as new bid has been submitted.
+
+Package worth up to €90m with add-ons also part of the proposal, being structured between the two clubs.
+
+Ekitkke has full agreement with #LFC on a six year contract. https://t.co/x9WwH09KAE" (706229 views, 14179 likes) https://x.com/i/status/1946685802169106572
+- Tesla Charging: "Thank you First Responders! https://t.co/M3KLxBBS3F https://t.co/8ynDGDmFGn" (675791 views, 1022 likes) https://x.com/i/status/1946727990039371849
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (648013 views, 5728 likes) https://x.com/i/status/1946733522942886088
+- Fabrizio Romano: "⏳⌛️🦅🇨🇴 #Benfica https://t.co/wazKw5N0j7" (485926 views, 4401 likes) https://x.com/i/status/1946697294901911965
+- Fabrizio Romano: "Liverpool and Hugo Ekitike, close. 🔴🔜 https://t.co/Opzzy1Fwml" (436577 views, 11502 likes) https://x.com/i/status/1946702141625602173
+- Elon Musk: "https://t.co/iacBvAXoOT" (297553 views, 4662 likes) https://x.com/i/status/1946733719152120012
+- Fabrizio Romano: "🚨🟡🔴 After Ferguson and El Aynaoui done with Wesley closer, AS Roma are also planning to advance on deal for 22 year old CB Daniele Ghilardi.
+
+New round of talks soon with Verona as Ghilardi said yes to Roma project over two Spanish clubs. https://t.co/8xNMTch9cP" (238996 views, 2872 likes) https://x.com/i/status/1946698069652685220
+- Fabrizio Romano: "🚨🇸🇦 Excl: Saudi side Al Najmah SC are set to sign Eric Bailly as new centre back.
+
+Former Villarreal and Man United defender, set for new chapter in Saudi. https://t.co/IVtP6Wv5g8" (233496 views, 2934 likes) https://x.com/i/status/1946702174416671004
+- Barstool Sports: "The WNBA All-Stars came out wearing “Pay Us What You Owe Us” shirts
+
+The player’s association is currently negotiating a new CBA with the league 
+
+ https://t.co/XvOa7n61nS" (203652 views, 684 likes) https://x.com/i/status/1946730535532773440
+- Fabrizio Romano: "🔵⭐️ Caelan-Kole Cadamarteri leaves Sheffield Wednesday and joins Manchester City Academy.
+
+U16 talent completes his move to #MCFC after five step process was approved by Premier League. https://t.co/NJRMR79knz" (189696 views, 2486 likes) https://x.com/i/status/1946708132131918088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (188431 views, 2122 likes) https://x.com/i/status/1946733104514683012
+- Fabrizio Romano: "🚨🟡🔵 Gio Reyna has opened doors for move to Parma as Serie A side have presented their project.
+
+Negotiations well underway with Borussia Dortmund as deal can get done soon.
+
+Official talks ongoing. ⏳🇺🇸 https://t.co/wi8cjiokYt" (178689 views, 2876 likes) https://x.com/i/status/1946703604666016198
+- Fabrizio Romano: "🟡🔴✈️ Neil El Aynaoui has just landed in Rome to sign in as new AS Roma player.
+
+€23m plus €2m add-ons to RC Lens, five year deal for Moroccan midfielder. 🇲🇦
+
+@gabspalletta 🎥 https://t.co/hNTSRaqltG" (133650 views, 2037 likes) https://x.com/i/status/1946688400859316385
+- Ian Rapoport: "#49ers special teams standout George Odum, a surprising release earlier today, underwent elbow surgery last month from an offseason injury, source said. He was placed on NFI. 
+
+Given a 3-month recovery time, he should be ready 6-8 weeks from now. Likely to sign midseason. https://t.co/R4bvS4IULU" (120307 views, 445 likes) https://x.com/i/status/1946725491978698946
+- PFT Commenter: "I cant believe weve almost made it. Shout out to everyone https://t.co/3CjS5Ald43" (104982 views, 743 likes) https://x.com/i/status/1946722809658425634
+- Big Cat: "#DingersOnly #KylesOnly https://t.co/kWdPKivyzr" (101260 views, 168 likes) https://x.com/i/status/1946724686294925739
+- Big Cat: "Was out getting pizza for my kids. Sign Kyle Tucker please @cubs" (89402 views, 1255 likes) https://x.com/i/status/1946718463676035548
+- Barstool Sports: "Johnny Manziel Says He Hated Cleveland, It Aided To His Depression, And He Wishes He Could've Gone Anywhere Else https://t.co/xhedPynKhb https://t.co/leIUYXfcVv" (89454 views, 115 likes) https://x.com/i/status/1946718012452556860
+- World of Statistics: "People from USA what is the general feel over there right now?" (54059 views, 206 likes) https://x.com/i/status/1946724988553498857
+- Barstool Sports: "There's always one thing to remember when cooking for the @PardonMyTake guys - never forget the queso.
+
+@Zaccornelius_ learned that the hard way
+
+@DrinkBODYARMOR @PardonMyTake 
+https://t.co/IY4Bd3SIO5" (47693 views, 47 likes) https://x.com/i/status/1946693322510119382
+- Barstool Sports: "Don't show this to Joey Chestnut.
+
+@Zaccornelius_ decided to take a slow &amp; steady approach to eating his hot dog at Chill Week
+
+@trulyseltzer @PardonMyTake
+https://t.co/PDV4ICy3H3" (44811 views, 22 likes) https://x.com/i/status/1946692026776363148
+- Mario Nawfal: "🚨🇺🇸BREAKING: MARYLAND FLASH FLOOD EMERGENCY TRIGGERS WATER RESCUES
+
+Torrential rainfall dumped 3-5 inches rapidly across central Maryland, overwhelming drainage systems and prompting multiple water rescues in Montgomery County.
+
+National Weather Service: 
+
+"Particularly https://t.co/9f75NcSXkR https://t.co/dfdJYuIWEo" (41441 views, 131 likes) https://x.com/i/status/1946719230423978252
+- Illia Ponomarenko 🇺🇦: "What can we say? 
+
+Glory to Ukraine 🇺🇦" (37146 views, 1092 likes) https://x.com/i/status/1946691669786513786
+- Mario Nawfal: "🚨😭 CRYBABY COCKTAIL HOUR: BRENNAN, COMEY, CLAPPER ARE ALL FILTHY LIARS
+
+@ericbolling 
+
+"They opened investigations into Brennan and Comey but skipped Clapper, who lied under oath about NSA spying on Americans. 
+
+Proven false within days. 
+
+Now these filthy liars have jobs at https://t.co/QJ6xHVQ6cX https://t.co/hQYnIwMJSV" (35328 views, 81 likes) https://x.com/i/status/1946724519671894066
+- Barstool Sports: "Sometimes you just bite more off than you can chew.
+
+@PFTCommenter's approach to the @PardonMyTake hot dog challenge failed miserably.  
+
+‘PMTV’ presented by @ChevyTrucks #ad #Chevy #Silverado @PardonMyTake 
+https://t.co/HHdg2pZmOO" (32423 views, 14 likes) https://x.com/i/status/1946696345860845575
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: OBAMA'S HOAX JUST GOT EXPOSED
+
+@DavidPollackUSA:
+
+"I was listening to you talking about the crybabies, and talking about Stephen Colbert, and everybody on the left.
+
+It's so crazy to me, and I'm sure you've been following the news cycle as much as I https://t.co/YDsZfR1qX0 https://t.co/PKTxNEwPNy" (31898 views, 78 likes) https://x.com/i/status/1946718345274733050
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (25664 views, 660 likes) https://x.com/i/status/1946702346634789257
+- Barstool Sports: "Old School Cheating: Memphis Hoops Is On Probation After 'Two Softball Players Were Paid $550 To Complete Coursework For A Former Basketball Player' https://t.co/ViAzBi5s76 https://t.co/P8pFdN0oDG" (26252 views, 39 likes) https://x.com/i/status/1946702882545234361
+- Mario Nawfal: "🇺🇸 2025: SOCIAL MEDIA UP, TRUST IN NEWS DOWN - AND EVERYONE’S BLAMING AI
+
+For the first time ever, social media just passed TV as America’s top news source.
+
+Obviously the best place to get world updates is between a thirst trap and dog memes.
+
+Globally, 58% of people say they https://t.co/luvbGk2LQ8 https://t.co/HW8AFWxuqG" (25669 views, 64 likes) https://x.com/i/status/1946691524365873183
+- Mario Nawfal: "TEENS ON SOCIAL MEDIA: LOVE IT, HATE IT, CAN’T QUIT IT
+
+YouTube is still King, 9 in 10 teens use it. TikTok’s their second home. Facebook? That’s for parents and conspiracy uncles.
+
+Half of teens say social media is ruining their generation’s brain cells, but only 14% admit it’s https://t.co/Wnslb5OLiX https://t.co/EOzSW7p1fG" (24632 views, 44 likes) https://x.com/i/status/1946727722459287720
+- Pardon My Take: "One of the greatest monologues in award show history
+
+@trulyseltzer https://t.co/C7BxZmbVVW" (24219 views, 221 likes) https://x.com/i/status/1946733848848486536
+- Mario Nawfal: "🔴LIVE: CRYBABY COCKTAIL HOUR w/ Eric Bolling + Special Guests https://t.co/DEbgS3Kj4S" (24028 views, 42 likes) https://x.com/i/status/1946708875752984975
+- Sky Sports Football: "Germany are through to the Euro 2025 semi-finals after beating France on penalties 🇩🇪 https://t.co/YBCjbNmWdH" (22624 views, 220 likes) https://x.com/i/status/1946692094694662446
+- Illia Ponomarenko 🇺🇦: "UN-FUCKING-DEFEATED AS UKRAINE ITSELF https://t.co/PntRobvA3P" (21765 views, 919 likes) https://x.com/i/status/1946686006280806836
+- Mario Nawfal: "🇺🇸 SEC. NOEM: “THAT IS FAKE NEWS - DON’T YOU DARE EVER SAY THAT AGAIN”
+
+"We have judges out there and other individuals saying people have been targeted that way, and it's not true.
+
+Every single operation that we do on ICE is based on investigative work, to show that there is a https://t.co/IJt8H62JyA https://t.co/nkY9YhugVj" (21554 views, 104 likes) https://x.com/i/status/1946694034921312493
+- Mario Nawfal: "🇺🇸 GEN. FLYNN: RUSSIAN HOAX IS THE BIGGEST CRIME IN U.S. HISTORY
+
+According to Flynn, this so-called coup against Trump started before anyone even voted in 2016.
+
+Intel Chief Tulsi Gabbard dropped documents showing Obama knew the Trump-Russia stuff was fake but ran with it https://t.co/Bnepr0YKHe https://t.co/NruZRYwpWH" (20089 views, 196 likes) https://x.com/i/status/1946731783615091089
+- World of Statistics: "Bitcoin performance each year:  
+
+2025 YTD: 📈 26%
+2024: 📈 120%
+2023: 📈 106%
+2022: 📉 64%
+2021: 📈 83%  
+2020: 📈 305% 
+2019: 📈 95% 
+2018: 📉 74% 
+2017: 📈 1,375% 
+2016: 📈 120% 
+2015: 📈 36% 
+2014: 📉 58% 
+2013: 📈 5,428% 
+2012: 📈 218% 
+2011: 📈 1,317%" (20144 views, 131 likes) https://x.com/i/status/1946694537952502157
+- Department of Government Efficiency: "Contracts Update!
+
+Over the last 3 days, agencies terminated 80 wasteful contracts with a ceiling value of $831M and savings of $436M, including a DoT $265k professional services contract for “planning and environment workshop and roundtable discussion”. https://t.co/sVWqsuIxc7" (18614 views, 1081 likes) https://x.com/i/status/1946736765349310803
+- Barstool Sports: "A Sports Memorabilia Dealer Appeared To Confess To One Of The Largest Sports Memorabilia And Autograph Fraud Operations In History, Claiming Over $350 Million In Fraud https://t.co/M8ukLqb5Vv https://t.co/A5g859mQPU" (18477 views, 21 likes) https://x.com/i/status/1946687788834783567
+- Mario Nawfal: "🇺🇸 GALLOWAY: “FOLLOW YOUR PASSION” IS BILLIONAIRE BS
+
+Bestselling author and entrepreneur Scott Galloway says the worst career advice out there is the one rich people love to give:
+
+“Follow your passion.”
+
+His take?
+If someone tells you that, they’re already rich.
+And probably https://t.co/ATbjbskiqu https://t.co/zYSs1xteA5" (18007 views, 45 likes) https://x.com/i/status/1946696551361057078
+- PFT Commenter: "PR101: apolgize like Zac https://t.co/7fcxlOaUo1" (17432 views, 157 likes) https://x.com/i/status/1946699142421446899
+- Mario Nawfal: "🚨🇺🇦 🇷🇺 KYIV: PUTIN, MEET ME FACE-TO-FACE
+
+Zelensky says Kyiv proposed a new round of talks with Moscow next week, urging faster progress toward a ceasefire.
+
+He again called for a face-to-face meeting with Putin:
+
+"A meeting at the leadership level is needed to truly ensure https://t.co/tmKky1giDT https://t.co/rQ4HCHpGsQ" (17342 views, 58 likes) https://x.com/i/status/1946697215033930038
+- Barstool Sports: "Sometimes you just can't beat the course.
+
+@hen_ease needed to make birdie with 1 of his 3 "putts" to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado @PardonMyTake 
+https://t.co/fMdX4yfatT" (17025 views, 17 likes) https://x.com/i/status/1946699485515567283
+- Mario Nawfal: "🇦🇷 WAGES UP: MILEI FLIPS ARGENTINA’S ECONOMY
+
+Under Milei, Argentina just did the unthinkable: workers now get a bigger share of the economy than businesses.
+
+Wages jumped to 49.1% of GDP, while company profits fell to 36.1%, all while inflation dropped from 292% to 39%.
+
+Milei’s https://t.co/GMuqqhsduM https://t.co/OazYhM0mFd" (16724 views, 113 likes) https://x.com/i/status/1946686485282844702
+- Mario Nawfal: "🇺🇸 WHY AMERICANS BELIEVE CONSPIRACIES? BECAUSE SOME OF THEM TURNED OUT TRUE
+
+When the government misleads, it creates conspiracy theorists.
+
+Trust in U.S. institutions is in freefall - from 77% in the JFK era to &lt;30% today.
+
+Why? 
+
+The Hunter Biden laptop story - real, but https://t.co/XoU7auq3Yu https://t.co/EH5PKCknQk" (13888 views, 99 likes) https://x.com/i/status/1946734300281647354
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (13316 views, 381 likes) https://x.com/i/status/1946703318895526379
+- Mario Nawfal: "🚨🇺🇸 TRUMP TO SEN. THUNE: CANCEL AUGUST RECESS, CONFIRM MY PEOPLE!
+
+"Hopefully, the very talented John Thune, fresh off our many victories over the past two weeks and, indeed, 6 months, will cancel August recess (and long weekends!), in order to get my incredible nominees https://t.co/gI04SgWfvg https://t.co/bBdZwo3g6j" (13536 views, 97 likes) https://x.com/i/status/1946703852838797685
+- Mario Nawfal: "🇺🇸 VIRGINIA MAN PLEADS GUILTY AFTER FBI FINDS 150 PIPE BOMBS AT HOME
+
+Brad Spafford looked like a regular guy. 
+Quiet job. No record. 
+
+Until the FBI raided his house.
+
+Inside: 150 pipe bombs - the biggest stash of homemade explosives ever found in a U.S. home. 
+
+A freezer packed https://t.co/gWkNummZmT" (13169 views, 57 likes) https://x.com/i/status/1946729992143954240
+- Internal Tech Emails: "[This document is from OpenAI v. Open Artificial Intelligence (2025).]" (11937 views, 23 likes) https://x.com/i/status/1946691324025135206
+- Mario Nawfal: "🚨🇺🇸 TRUMP: GREAT JOB BY HARRISON FIELDS AND PANEL ON FOX NEWS
+
+"Great job by young and talented Harrison Fields on FoxNews. 
+
+The panel was fantastic on prosecuting Obama and the 'thugs' exposed for highest level election fraud. 
+
+Congratulations to Tulsi Gabbard. 
+
+Keep it https://t.co/Yy5wRQY2Z0 https://t.co/LHfhqsgKb5" (11841 views, 76 likes) https://x.com/i/status/1946714199813402719
+- Mario Nawfal: "🇮🇷 BREAKING: EARTHQUAKE ROCKS NORTHERN IRAN
+
+A magnitude 5.6 earthquake jolted northern Iran on Sunday. 
+
+The quake hit at a shallow depth of just 3 kilometers, making it more likely to be felt on the surface. 
+
+No immediate word yet on damage or injuries.
+
+Source: EMSC, Reuters https://t.co/lhDlFXIUAy" (11610 views, 48 likes) https://x.com/i/status/1946695989311557650
+- Illia Ponomarenko 🇺🇦: "HE DID IT.
+
+3x Undisputed Champion of the World!" (11279 views, 318 likes) https://x.com/i/status/1946686310254555356
+- Mario Nawfal: "🇸🇦 SAUDI ARABIA’S ‘SLEEPING PRINCE’ DIES AFTER 20 YEARS IN COMA
+
+Prince Al Waleed bin Khaled bin Talal - known across the Arab world as the “Sleeping Prince” - has died after spending two decades in a coma.
+
+He was 18 when a car crash in 2005 left him unconscious.
+He was 38 when https://t.co/l9LGLO3gxd" (10342 views, 99 likes) https://x.com/i/status/1946704101854597304
+- Mario Nawfal: "🚨🇺🇸FLASH FLOOD EMERGENCY: DC SUBURBS FACE LIFE-THREATENING CONDITIONS
+
+The National Weather Service issued a Flash Flood Emergency until 9:00 PM EDT Saturday for Bethesda, Silver Spring, Kensington, White Oak, and Four Corners, Maryland.
+
+NWS Warning: 
+
+"This is a life https://t.co/YTawg6YzY3" (10164 views, 40 likes) https://x.com/i/status/1946697650864030035
+- Sawyer Merritt: "https://t.co/LyY5VtZew5 https://t.co/DqbuT852Ru" (10053 views, 70 likes) https://x.com/i/status/1946731601573896516
+- World and Science: "Breath-taking: The Unfurling Spiral Arms of NGC 3981
+
+They are likely the result of gravitational forces during an encounter with a neighbouring galaxy.
+
+Credit: Dark Energy Survey/DOE/FNAL/DECam/CTIO/NOIRLab/NSF/AURA - Image processing: R. Colombari &amp; M. Zamani (NSF’s NOIRLab) https://t.co/YDd8MZCOpp" (8698 views, 40 likes) https://x.com/i/status/1946717698047586649
+- Mario Nawfal: "🇮🇹🇺🇸 FROM SUMMER BREAK TO NEAR-DEATH: A NEW YORKER’S ITALIAN NIGHTMARE
+
+Nick Pellegrino landed in Milan for vacation.
+He left the train platform soaked in blood, stabbed in the neck by 2 North African migrants.
+
+Pellegrino, still from the hospital bed:
+
+“It’s a playground for https://t.co/18HCLSCA8A" (7601 views, 59 likes) https://x.com/i/status/1946709134323433944
+- Mario Nawfal: "🇭🇷 RED BULL MOTORBIKING: WHERE GRAVITY GETS TOLD TO WAIT
+
+Throttle wide. Ramp locked. And then - lift-off.
+
+This isn’t biking. It’s combat with the atmosphere. Mid-air flips, blind landings, and riders who treat 100-foot gaps like they’re speed bumps.
+
+Every launch is a gamble. https://t.co/k27QfwwDLQ" (7486 views, 39 likes) https://x.com/i/status/1946714171736997902
+- Dave Lee: "In this video, I challenge the traditional view that parenting needs to be about rules, punishments, and authority. I believe the authoritative approach is actually counterproductive to raising confident, wise, and independent kids.
+
+I dive into why rules create fear and distance https://t.co/7KU2orGzCg" (7210 views, 132 likes) https://x.com/i/status/1946728337331646898
+- Max Velocity: "FLASH FLOOD EMERGENCY for Silver Spring, Maryland, just North of Washington DC!
+
+Between 3-5" of rain has fallen, and 1-2"+ is expected in the next 30 minutes. This is a PARTICULARLY DANGEROUS SITUATION. Get to higher ground NOW! https://t.co/RXuhsukflf" (7065 views, 181 likes) https://x.com/i/status/1946690722112950484
+- Mario Nawfal: "800 DRONES. 3D YODA. FULL GEEK MODE ENGAGED
+
+At Angel Stadium, fans got a galaxy-sized surprise: a fully animated Star Wars drone show with 800 synchronized drones forming 3D scenes from The Empire Strikes Back.
+
+Vader loomed over the crowd, Yoda floated in full rotation, https://t.co/iGPGfvg10Y" (6992 views, 83 likes) https://x.com/i/status/1946699068841058555
+- Mario Nawfal: "@elonmusk ❤️" (7029 views, 42 likes) https://x.com/i/status/1946733876614697088
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇮🇹 Italy: 5.3t
+🇵🇹 Portugal: 3.6t
+
+(Annual emission, per Global Carbon Budget 2024)" (6987 views, 27 likes) https://x.com/i/status/1946709637547348203
+- Mario Nawfal: "@elonmusk 👀" (6934 views, 22 likes) https://x.com/i/status/1946733939617353877
+- Sawyer Merritt: "Tesla sells an exclusive all-black Tesla Bot action figure at their new diner. https://t.co/EC8V3BrMzG https://t.co/3N3cwEfyYK" (6774 views, 130 likes) https://x.com/i/status/1946709439613944255
+- Mario Nawfal: "🇺🇸 CAMP ATTERBURY, INDIANA TO DETAIN MIGRANTS UNDER NEW FEDERAL PLAN
+
+Camp Atterbury - Indiana’s military training ground - is about to become something else entirely: a detention hub for immigrants.
+
+Under a new federal plan signed off by Defense Secretary Pete Hegseth, the base https://t.co/LoF5SyJUES https://t.co/nkY9YhugVj" (6708 views, 33 likes) https://x.com/i/status/1946689001890656456
+- Max Velocity: "I am feeling better tonight, no fever, just achy with a sore throat.
+
+Videos will return normally tomorrow!" (6369 views, 365 likes) https://x.com/i/status/1946728584757891384
+- Pardon My Take: "The 17th best QB in the NFL award presented by @Blutman27 
+
+@McDonalds #ad https://t.co/aXGMbddMnr" (6527 views, 20 likes) https://x.com/i/status/1946705495605063858
+- Boston 25 News: "Police: Man arrested on lewdness charge in Dennis https://t.co/H7WXKaQBcp" (5990 views, 16 likes) https://x.com/i/status/1946717985608962529
+- TESLARATI: "🚨 Awesome race between Tesla Model 3 Performance and BMW M3 CS https://t.co/jHDiRZ2Kva" (5779 views, 56 likes) https://x.com/i/status/1946690497038242023
+- History Defined: "A fortunate accident: Photo captures the moment a baby burst out laughing and her mother fights so hard to no laugh with her, Daguerreotype of 1850-60s https://t.co/fBSf1zHP3W" (5155 views, 207 likes) https://x.com/i/status/1946721934873448735
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: IF KAMALA WON, WE WOULD BE LOCKED UP!
+
+@lavern_spicer:
+
+"You all have to realize that if Kamala had been elected, many of us would be locked up right now, because she made it clear that everybody who had something negative to say about her would be https://t.co/ghGgCvFjg4 https://t.co/PKTxNExnD6" (5333 views, 17 likes) https://x.com/i/status/1946715789182300515
+- Wonder of Science: "Card shuffler in the video (paid link): https://t.co/piXptklpSA" (5217 views, 4 likes) https://x.com/i/status/1946714167802577238
+- Vintage Maps: "Osaka, 1883 https://t.co/iDPgKzG5et" (4475 views, 57 likes) https://x.com/i/status/1946693552936788404
+- History Defined: "Washing clothes outside shacks along the river, beside the highway between Charleston and Gauley Bridge. West Virginia, 1938. https://t.co/lbitIwxdcT" (4106 views, 18 likes) https://x.com/i/status/1946691992022343855
+- Wonder of Science: "This hand-cranked card shuffler follows a concept first patented in 1887, using rubber wheels to draw cards from two stacks and merge them into a shuffled pile.
+https://t.co/p47e7O41Wg" (4077 views, 12 likes) https://x.com/i/status/1946709965911253022
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: REP. OMAR WORKS FOR SOMALIA, NOT THE U.S.
+
+@lavern_spicer :
+
+"And she[Ilhan Omar] said that her 1st priority.
+
+Everything she does, the most important group she does things for is the Somalians, not the American people, not the Minnesotans that she https://t.co/yiS264k27a https://t.co/PKTxNEwPNy" (3776 views, 21 likes) https://x.com/i/status/1946716235091067028
+- History Defined: "31 Iconic Photos Of The Great Depression
+https://t.co/9XrYlbSWHo" (3707 views, 3 likes) https://x.com/i/status/1946691993448411637
+- History Defined: "50 rare photos of daily life in the 19th century
+https://t.co/MfYkCeMpvq" (3610 views, 5 likes) https://x.com/i/status/1946721936005799949
+- The Boston Globe: "In a highly unusual move, Cambridge-based Sarepta said late Friday won’t comply with a request from the Food and Drug Administration to halt all shipments of its gene therapy. https://t.co/2vxOr7v2g8" (3568 views, 2 likes) https://x.com/i/status/1946722154680099322
+- Dave Lee: "You can also watch this video on YT: https://t.co/7ieVFej3Uz
+
+And you can view my other videos in my parenting series on this playlist:
+https://t.co/sUkFCXpOia" (3187 views, 17 likes) https://x.com/i/status/1946729042087932304
+- History Defined: "Jack Nicholson with his daughter Jennifer in the 60s https://t.co/05tgbAZm3H" (3132 views, 28 likes) https://x.com/i/status/1946729371030392968
+- Max Velocity: "BREAKING: At least 6 vehicles are stuck in high water due to flooding in Four Corners, Maryland, inside of a flash flood emergency, right now.
+
+Additionally, 5 FEET of standing water is at the intersection of East-West Highway and Washington Avenue, with a car and fire truck" (2859 views, 85 likes) https://x.com/i/status/1946703221386588225
+- History Defined: "Old School Cool: Some of the greatest photos ever taken
+https://t.co/9gMrCDCWja" (2762 views, 1 likes) https://x.com/i/status/1946729372167135651
+- World and Science: "A dynamo deep inside the Moon once generated a magnetic field as strong as Earth's!
+
+Here is what we know: https://t.co/fxFdVQe5x0" (2708 views, 4 likes) https://x.com/i/status/1946734829871018247

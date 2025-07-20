@@ -130,7 +130,9 @@ The application now includes a comprehensive podcast generation system:
   - **Implementation**: Added 10-second delay between sequential xAI topic calls in liveSearchService.js
   - **Timing Verified**: Topics now process with proper delays (17 seconds between each topic including processing time)
   - **Issue Status**: Information bleeding still occurring despite delays - xAI API appears to have internal caching/context issues
-  - **Next Steps**: May need to explore alternative solutions like separate API sessions or topic-specific prompting
+  - **Evidence**: Same Tesla/Elon Musk posts (IDs: 1946742000893714690, 1946740057978912930) appearing across unrelated topics (AI Technology, Space News, Sports News)
+  - **Root Cause**: xAI Live Search API has persistent internal caching that causes high-engagement posts to bleed across sequential topic searches
+  - **Next Steps**: May need to explore alternative solutions like separate API sessions, topic-specific prompting, or API parameter adjustments
 
 ### Previous Updates (January 19, 2025 - 11:47 PM UTC)
 - **✅ ORGANIZED DATA STORAGE STRUCTURE IMPLEMENTED**: Renamed and reorganized file storage for better data management

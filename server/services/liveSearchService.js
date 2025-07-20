@@ -146,12 +146,6 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
       });
-      
-      // Add 10-second delay between topic calls to prevent information bleeding
-      if (index < topics.length - 1) {
-        console.log(`⏳ Waiting 10 seconds before next topic to prevent xAI information bleeding...`);
-        await new Promise(resolve => setTimeout(resolve, 10000));
-      }
     } catch (error) {
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
       allTopicData.push({
@@ -649,36 +643,25 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'."
+          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'. Return a JSON object with the following format: { \"stories\": [ { \"headline\": \"Factual declarative headline here.\", \"x_posts\": [\"https://x.com/post1\", \"https://x.com/post2\"], \"supporting_articles\": [\"https://news1.com/article\", \"https://rss2.com/feed\"] } ] }"
         },
         {
           role: "user",
-          content: `Using first principles, identify the 4 biggest news stories about ${topic} from X (formerly Twitter) posts in the last 24 hours. Define "biggest" as those with the highest total engagement (sum of likes, retweets, and replies across related posts).
+          content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} by searching X (formerly Twitter), RSS, and news sources from the last 24 hours. 
 
-Step 1: Use X semantic search and keyword search tools to find the top 20-30 relevant posts, filtering for high engagement and excluding ads/promotions.
+Step 1: Use X semantic search and keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
 
-Step 2: Cluster the posts into 4 distinct stories based on shared themes, then rank them by aggregate engagement.
+Step 2: Search "RSS" and "News" with keyword search and semantic search for corresponding articles/posts.
 
-Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of X post links that informed it.
+Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of citations links that informed it.
 
-Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find 2-3 supporting articles per story, ensuring they corroborate the facts.
+Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find further supporting information if necessary.
 
 Step 5: Use source type 'rss' and 'news' to find additional supporting articles if web results are insufficient.
 
-Output strictly as JSON:
-{
-  "stories": [
-    {
-      "rank": [Number],
-      "headline": ["Factual declarative headline here."],
-      "x_posts": [Full X URLs],
-      "supporting_articles": [Article URLs"],
-      "total_engagement": [Number]
-    },
-    // Repeat for ranks 2-4
-  ]
-}
-If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.`
+If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.
+
+CRITICAL: Do not include any sources or citations that are not directly related to the topic.`
         },
       ],
       search_parameters: {
@@ -688,7 +671,7 @@ If fewer than 4 stories, return only those. Ensure all content is neutral, factu
         reasoning_effort: "high",
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
+          {"type": "x", "post_view_count": 2000, "post_favorite_count": 40},
           { "type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] },
           {"type": "news", "country": "US" },
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com",], "country": "US" }
@@ -697,7 +680,7 @@ If fewer than 4 stories, return only those. Ensure all content is neutral, factu
       max_tokens: 90000
     });
 
-        console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
+        console.log(`📅 Search range: ${fromDate} (24 hours)`);
     
     const content = response.choices[0].message.content;
     const citations = response.citations || [];

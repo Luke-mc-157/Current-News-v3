@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"notes\": \"Data on engagement is sparse as specific metrics (likes, retweets, replies) were not provided in the available sources. Stories are ranked based on the order of posts from the RSS feed as a proxy, assuming the first post has the highest potential engagement. Only two distinct stories were identified from the available posts, as the content primarily clusters around the Tesla Diner and Supercharger theme.\",\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"Tesla holds soft opening for first responders at Hollywood Diner in Los Angeles.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946733522942886088\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.cnbc.com/2025/07/19/tesla-diner-soft-opening-for-first-responders.html\",\n        \"https://www.reuters.com/business/autos-transportation/tesla-launches-hollywood-diner-event-2025-07-19/\"\n      ],\n      \"total_engagement\": 0\n    },\n    {\n      \"rank\": 2,\n      \"headline\": \"Tesla's Hollywood Diner and Supercharger station scheduled to open to the public on July 21 with 80 charging stalls and drive-in theater features.\",\n      \"x_posts\": [\n        \"https://x.com/SawyerMerritt/status/1946733104514683012\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bloomberg.com/news/articles/2025-07-19/tesla-hollywood-diner-public-opening-details\",\n        \"https://www.techcrunch.com/2025/07/19/tesla-supercharger-diner-launches-in-hollywood\"\n      ],\n      \"total_engagement\": 0\n    }\n  ]\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en",
+    "https://news.google.com/home?hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/home?hl=en-CA&gl=CA&ceid=CA:en",
+    "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012",
+    "https://x.com/elonmusk/status/1946731968567410695"
+  ]
+}

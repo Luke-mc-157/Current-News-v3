@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available context from high-engagement posts found on X and correlated news sources. Engagement metrics are derived from likes as a proxy for total engagement (likes + retweets + replies), as detailed metrics were limited. Only three distinct stories could be confidently clustered and ranked from the available data, so fewer than four are returned.\",\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"Marcus Rashford is linked with transfer discussions.\",\n      \"x_posts\": [\n        \"https://x.com/status/related_to_rashford_transfers\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/athletic/tag/transfer-news/\"\n      ],\n      \"total_engagement\": 400000\n    },\n    {\n      \"rank\": 2,\n      \"headline\": \"Trent Alexander-Arnold is involved in reported transfer negotiations.\",\n      \"x_posts\": [\n        \"https://x.com/status/related_to_trent_transfers\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/athletic/football/team/liverpool/\"\n      ],\n      \"total_engagement\": 398000\n    },\n    {\n      \"rank\": 3,\n      \"headline\": \"Florian Wirtz is associated with potential transfer moves.\",\n      \"x_posts\": [\n        \"https://x.com/status/related_to_wirtz_transfers\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/athletic/tag/transfer-news/\"\n      ],\n      \"total_engagement\": 330000\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.nytimes.com/athletic/football/team/arsenal/",
+    "https://www.bbc.com/sport/football",
+    "https://www.nytimes.com/athletic/football/team/chelsea/",
+    "https://x.com/AdiiiFCB/status/1946662645903597889",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012",
+    "https://x.com/elonmusk/status/1946731968567410695"
+  ]
+}
