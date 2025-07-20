@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"A US technology company CEO resigned following a viral public incident.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/articles/cx20z3ykd9ro\"\n      ]\n    },\n    {\n      \"headline\": \"Google's AI overviews have increased in usage, impacting AI technology competitors.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology\"\n      ]\n    },\n    {\n      \"headline\": \"Waymo expanded its autonomous vehicle operations in multiple regions.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology\"\n      ]\n    },\n    {\n      \"headline\": \"Isomorphic Labs advanced its drug discovery projects to human trials for cancer treatment.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and related news sources from the last 24 hours; some stories rely on aggregated themes from X posts with supporting general technology news links.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/articles/cvg7827pwlro",
+    "https://www.bbc.com/news/articles/cx2nwp9z39lo",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/articles/cx20z3ykd9ro",
+    "https://www.nytimes.com/",
+    "https://npr.org/sections/national",
+    "https://reuters.com/technology",
+    "https://www.bbc.com/news/articles/c04d25g9v6zo",
+    "https://hindustantimes.com/entertainment",
+    "https://x.com/ItsAmeKaaay/status/1946403309767803341",
+    "https://x.com/ItsAmeKaaay/status/1946403236426182824",
+    "https://x.com/ItsAmeKaaay/status/1946403268957294898",
+    "https://x.com/ItsAmeKaaay/status/1946403969548374094",
+    "https://x.com/ItsAmeKaaay/status/1946402936118185994"
+  ]
+}
