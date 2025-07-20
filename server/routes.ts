@@ -100,23 +100,38 @@ export function registerRoutes(app) {
       let accessToken = null;
       
       if (authToken) {
-        // Create authenticated client with token refresh capability
-        const { createAuthenticatedClient } = await import('./services/xAuth.js');
-        const authClientResult = await createAuthenticatedClient(
-          authToken.accessToken,
-          authToken.refreshToken,
-          authToken.expiresAt
-        );
-        
-        // If tokens were refreshed, update the database
-        if (authClientResult.updatedTokens) {
-          await storage.updateXAuthToken(userId, authClientResult.updatedTokens);
-          console.log(`🔄 Refreshed and updated tokens for user ${userId}`);
+        try {
+          // Create authenticated client with token refresh capability
+          const { createAuthenticatedClient } = await import('./services/xAuth.js');
+          const authClientResult = await createAuthenticatedClient(
+            authToken.accessToken,
+            authToken.refreshToken,
+            authToken.expiresAt
+          );
+          
+          // If tokens were refreshed, update the database
+          if (authClientResult.updatedTokens) {
+            await storage.updateXAuthToken(userId, authClientResult.updatedTokens);
+            console.log(`🔄 Refreshed and updated tokens for user ${userId}`);
+          }
+          
+          userHandle = authToken.xHandle;
+          accessToken = authClientResult.updatedTokens?.accessToken || authToken.accessToken;
+          console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
+        } catch (authError) {
+          console.log(`❌ X authentication failed: ${authError.message}`);
+          console.log(`🔄 Continuing search without X timeline enhancement`);
+          // Clear invalid tokens to prevent future attempts
+          try {
+            await storage.deleteXAuthToken(userId);
+            console.log(`🧹 Cleared invalid X tokens for user ${userId}`);
+          } catch (deleteError) {
+            console.log(`⚠️ Failed to clear invalid tokens: ${deleteError.message}`);
+          }
+          // Continue without X authentication
+          userHandle = null;
+          accessToken = null;
         }
-        
-        userHandle = authToken.xHandle;
-        accessToken = authClientResult.updatedTokens?.accessToken || authToken.accessToken;
-        console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
       }
       
       // Save user's last search topics
