@@ -276,5 +276,5 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
 
 // Export a simplified button component for easy integration
 export function RssButton({ userId, ...props }: { userId: number } & React.ComponentProps<typeof Button>) {
-  return <RssManager userId={userId} />;
+  return <RssManager userId={userId} showButton={true} />;
 }
