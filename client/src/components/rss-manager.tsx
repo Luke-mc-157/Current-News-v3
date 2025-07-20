@@ -109,15 +109,20 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
     addFeedMutation.mutate(data);
   };
 
+  const hasActiveRss = rssFeeds.length > 0 && rssFeeds[0].isActive;
+  
   const triggerButton = showButton ? (
     <Button
       variant="outline"
       size="sm"
       onClick={() => setIsOpen(true)}
-      className="flex items-center gap-2"
+      className={`flex items-center gap-2 relative ${hasActiveRss ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
     >
       <Rss className="h-4 w-4" />
-      Add RSS Feed
+      {hasActiveRss ? "RSS Added" : "Add RSS Feed"}
+      {hasActiveRss && (
+        <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>
+      )}
     </Button>
   ) : null;
 
