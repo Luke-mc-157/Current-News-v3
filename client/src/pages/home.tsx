@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
 import PodcastGenerator from "@/components/podcast-generator";
+import { RssButton } from "@/components/rss-manager";
 // Live search toggle removed - using only xAI Live Search
 
 import { Button } from "@/components/ui/button";

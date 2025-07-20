@@ -14,6 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { TopicInput } from "@/components/TopicInputSimple";
 import { UpcomingPodcasts } from "@/components/upcoming-podcasts";
+import { RssButton } from "@/components/rss-manager";
 import type { PodcastPreferences, PodcastEpisode } from "@shared/schema";
 import { toZonedTime } from "date-fns-tz";
 
@@ -603,6 +604,16 @@ export default function Podcasts() {
                     onCheckedChange={(checked) => handlePreferenceChange("enhanceWithX", checked)}
                   />
                 </div>
+                
+                {user && (
+                  <div>
+                    <Label className="text-base mb-3 block">RSS Feeds</Label>
+                    <RssButton userId={user.id} className="w-full" />
+                    <p className="text-xs text-slate-500 mt-2">
+                      Add RSS feeds to enhance your podcasts with additional news sources
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Audio Section */}

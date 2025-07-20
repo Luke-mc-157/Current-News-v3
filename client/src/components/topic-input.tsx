@@ -8,6 +8,7 @@ import { X, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import XLoginButton from "@/components/x-login-button";
+import { RssButton } from "@/components/rss-manager";
 import { useAuth } from "@/contexts/AuthContext";
 
 interface TopicInputProps {
@@ -158,6 +159,21 @@ export default function TopicInput({ onTopicsSubmitted, onHeadlinesGenerated }: 
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+        
+        {user && (
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div>
+                  <RssButton userId={user.id} />
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Add RSS feeds to enhance your news search with additional sources</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        )}
       </div>
     </form>
   );

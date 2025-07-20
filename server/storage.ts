@@ -1,4 +1,4 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, userRssFeeds, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch, type UserRssFeeds, type InsertUserRssFeeds } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
 import { eq, desc, and, gte, lt, lte, gt } from "drizzle-orm";
 
@@ -66,6 +66,12 @@ export interface IStorage {
   
   // Recent podcasts methods
   getRecentPodcastEpisodes(userId: number, limit?: number): Promise<PodcastEpisode[]>;
+  
+  // RSS feed methods
+  createUserRssFeed(feed: InsertUserRssFeeds): Promise<UserRssFeeds>;
+  getUserRssFeeds(userId: number): Promise<UserRssFeeds[]>;
+  updateUserRssFeed(id: number, updates: Partial<UserRssFeeds>): Promise<UserRssFeeds | undefined>;
+  deleteUserRssFeed(id: number): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -815,6 +821,30 @@ export class DatabaseStorage implements IStorage {
       .where(eq(podcastEpisodes.userId, userId))
       .orderBy(desc(podcastEpisodes.createdAt))
       .limit(limit);
+  }
+
+  // RSS feed methods
+  async createUserRssFeed(feed: InsertUserRssFeeds): Promise<UserRssFeeds> {
+    const [newFeed] = await db.insert(userRssFeeds).values(feed).returning();
+    return newFeed;
+  }
+
+  async getUserRssFeeds(userId: number): Promise<UserRssFeeds[]> {
+    return await db.select().from(userRssFeeds)
+      .where(eq(userRssFeeds.userId, userId))
+      .orderBy(desc(userRssFeeds.createdAt));
+  }
+
+  async updateUserRssFeed(id: number, updates: Partial<UserRssFeeds>): Promise<UserRssFeeds | undefined> {
+    const [updatedFeed] = await db.update(userRssFeeds)
+      .set({ ...updates, updatedAt: new Date() })
+      .where(eq(userRssFeeds.id, id))
+      .returning();
+    return updatedFeed || undefined;
+  }
+
+  async deleteUserRssFeed(id: number): Promise<void> {
+    await db.delete(userRssFeeds).where(eq(userRssFeeds.id, id));
   }
 }
 

@@ -14,6 +14,18 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   console.log('🚀 Using xAI Live Search for headlines generation');
   const startTime = Date.now();
   
+  // Step -1: Fetch RSS articles if available
+  let rssArticles = [];
+  try {
+    console.log(`📰 Fetching RSS articles for user ${userId}...`);
+    const { fetchUserRssArticles } = await import('./rssService.js');
+    rssArticles = await fetchUserRssArticles(userId, 24);
+    console.log(`✅ Retrieved ${rssArticles.length} RSS articles from user feeds`);
+  } catch (error) {
+    console.error(`❌ RSS fetch error: ${error.message}`);
+    rssArticles = [];
+  }
+  
   // Step 0: Fetch user's timeline posts if authenticated
   let followedPosts = [];
   
@@ -104,18 +116,36 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`✅ Filtered from ${originalCount} to ${followedPosts.length} high-engagement posts (above median: ${median})`);
   }
   
-  // Infer emergent topics from timeline if available
+  // Infer emergent topics from timeline AND RSS articles if available
+  let allContentForEmergentTopics = [];
+  
+  // Add timeline posts for emergent topic analysis
   if (followedPosts.length > 0) {
-    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts...`);
+    allContentForEmergentTopics.push(...followedPosts.map(post => ({
+      text: post.text,
+      source: 'timeline'
+    })));
+  }
+  
+  // Add RSS articles for emergent topic analysis  
+  if (rssArticles.length > 0) {
+    allContentForEmergentTopics.push(...rssArticles.map(article => ({
+      text: `${article.title} - ${article.content.substring(0, 500)}`,
+      source: 'rss'
+    })));
+  }
+  
+  if (allContentForEmergentTopics.length > 0) {
+    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts + ${rssArticles.length} RSS articles...`);
     const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts);
     if (emergentTopics.length > 0) {
       topics = [...new Set([...topics, ...emergentTopics])]; // Dedupe and append
       console.log(`➕ Added emergent topics: ${emergentTopics.join(', ')}`);
     } else {
-      console.log(`📭 No emergent topics discovered from timeline posts`);
+      console.log(`📭 No emergent topics discovered from timeline + RSS content`);
     }
   } else {
-    console.log(`📭 No timeline posts available for emergent topics discovery`);
+    console.log(`📭 No timeline posts or RSS articles available for emergent topics discovery`);
   }
   
   // Step 1: Call xAI Live Search API sequentially for all topics
@@ -156,8 +186,10 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
-  // Step 1.5: Format timeline posts for Grok to categorize
+  // Step 1.5: Format timeline posts AND RSS articles for Grok to categorize
   const formattedTimelinePosts = [];
+  const formattedRssArticles = [];
+  
   if (followedPosts.length > 0 && userHandle) {
     console.log(`📱 Formatting ${followedPosts.length} timeline posts for Grok categorization...`);
     
@@ -184,9 +216,27 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log('✅ Timeline posts formatted and ready for Grok categorization');
   }
   
+  if (rssArticles.length > 0) {
+    console.log(`📰 Formatting ${rssArticles.length} RSS articles for Grok categorization...`);
+    
+    // Format RSS articles for Grok to analyze
+    rssArticles.forEach(article => {
+      formattedRssArticles.push({
+        title: article.title,
+        content: article.content.substring(0, 1000), // Limit content for analysis
+        url: article.url,
+        published_date: article.published_date,
+        feed_name: article.feedName,
+        source: 'rss'
+      });
+    });
+    
+    console.log('✅ RSS articles formatted and ready for Grok categorization');
+  }
+  
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
-  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken);
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles);
   
   // Step 3: Generate newsletter with compiled data
   console.log('📝 Step 3: Generating newsletter with compiled data...');

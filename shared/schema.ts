@@ -74,6 +74,17 @@ export const podcastContent = pgTable("podcast_content", {
   fetchedAt: timestamp("fetched_at").defaultNow().notNull(),
 });
 
+export const userRssFeeds = pgTable("user_rss_feeds", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  feedUrl: text("feed_url").notNull(),
+  feedName: text("feed_name"),
+  isActive: boolean("is_active").default(true).notNull(),
+  lastFetched: timestamp("last_fetched"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
 export const podcastEpisodes = pgTable("podcast_episodes", {
   id: serial("id").primaryKey(),
   userId: integer("user_id"),
@@ -219,6 +230,12 @@ export const insertUserLastSearchSchema = createInsertSchema(userLastSearch).omi
   searchedAt: true,
 });
 
+export const insertUserRssFeedsSchema = createInsertSchema(userRssFeeds).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
 export type InsertUserTopics = z.infer<typeof insertUserTopicsSchema>;
 export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
@@ -230,6 +247,7 @@ export type InsertUserTimelinePosts = z.infer<typeof insertUserTimelinePostsSche
 export type InsertPodcastPreferences = z.infer<typeof insertPodcastPreferencesSchema>;
 export type InsertScheduledPodcasts = z.infer<typeof insertScheduledPodcastsSchema>;
 export type InsertUserLastSearch = z.infer<typeof insertUserLastSearchSchema>;
+export type InsertUserRssFeeds = z.infer<typeof insertUserRssFeedsSchema>;
 
 export type UserTopics = typeof userTopics.$inferSelect;
 export type PodcastSettings = typeof podcastSettings.$inferSelect;
@@ -243,6 +261,7 @@ export type InsertPasswordResetToken = z.infer<typeof insertPasswordResetTokenSc
 export type PodcastPreferences = typeof podcastPreferences.$inferSelect;
 export type ScheduledPodcasts = typeof scheduledPodcasts.$inferSelect;
 export type UserLastSearch = typeof userLastSearch.$inferSelect;
+export type UserRssFeeds = typeof userRssFeeds.$inferSelect;
 
 // Headline type for application use
 export type Headline = {

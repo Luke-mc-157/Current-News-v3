@@ -23,6 +23,7 @@ import { fetchUserTimeline } from "./services/xTimeline.js";
 import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
 import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
 import { runPodcastScheduler, createScheduledPodcastsForUser, processPendingPodcasts } from "./services/podcastScheduler.js";
+import rssRoutes from "./routes/rssRoutes.ts";
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { format } from 'date-fns';
@@ -66,6 +67,9 @@ export function registerRoutes(app) {
   // Add development middleware
   app.use(addDevHeaders);
   app.use(devAutoLogin);
+  
+  // Add RSS routes
+  app.use(rssRoutes);
   
   let headlinesStore = [];
   let appendixStore = null;
