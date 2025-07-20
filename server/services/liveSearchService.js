@@ -740,7 +740,7 @@ async function inferEmergentTopicsFromTimeline(posts) {
         { role: "user", content: postsSummary }
       ],
       reasoning_effort: "high",
-      max_tokens: 60000
+      max_tokens: 80000
     });
 
     const content = response.choices[0].message.content;
