@@ -48,7 +48,7 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
 
   // Fetch user's RSS feeds
   const { data: rssFeeds = [], isLoading: feedsLoading } = useQuery<RssFeed[]>({
-    queryKey: ["/api/rss-feeds", userId],
+    queryKey: [`/api/rss-feeds/${userId}`],
     enabled: isOpen,
   });
 
@@ -63,7 +63,7 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
         title: "RSS Feed Added",
         description: "Your RSS feed has been added successfully",
       });
-      queryClient.invalidateQueries({ queryKey: ["/api/rss-feeds", userId] });
+      queryClient.invalidateQueries({ queryKey: [`/api/rss-feeds/${userId}`] });
       form.reset();
     },
     onError: (error: Error) => {
@@ -86,7 +86,7 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
         title: "RSS Feed Removed",
         description: "Your RSS feed has been removed",
       });
-      queryClient.invalidateQueries({ queryKey: ["/api/rss-feeds", userId] });
+      queryClient.invalidateQueries({ queryKey: [`/api/rss-feeds/${userId}`] });
     },
     onError: (error: Error) => {
       toast({
