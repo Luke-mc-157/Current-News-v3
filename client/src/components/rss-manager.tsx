@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -52,6 +52,14 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
     enabled: isOpen,
   });
 
+  // Auto-fill form with existing feed data when dialog opens
+  useEffect(() => {
+    if (isOpen && rssFeeds.length > 0 && !form.getValues().feedUrl) {
+      form.setValue("feedUrl", rssFeeds[0].feedUrl);
+      form.setValue("feedName", rssFeeds[0].feedName || "");
+    }
+  }, [isOpen, rssFeeds, form]);
+
   // Add RSS feed mutation
   const addFeedMutation = useMutation({
     mutationFn: async (data: AddRssFeedForm) => {
@@ -60,11 +68,11 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
     },
     onSuccess: () => {
       toast({
-        title: "RSS Feed Added",
-        description: "Your RSS feed has been added successfully",
+        title: "RSS Feed Saved",
+        description: "Your RSS feed has been saved successfully",
       });
       queryClient.invalidateQueries({ queryKey: [`/api/rss-feeds/${userId}`] });
-      form.reset();
+      // Don't reset form to show current values
     },
     onError: (error: Error) => {
       toast({
@@ -128,7 +136,7 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
         </DialogHeader>
 
         <div className="space-y-6">
-          {/* Add Feed Form */}
+          {/* RSS Feed Form */}
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
               <FormField
@@ -141,6 +149,14 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
                       <Input
                         placeholder="https://example.com/rss.xml"
                         {...field}
+                        value={field.value || (rssFeeds.length > 0 ? rssFeeds[0].feedUrl : "")}
+                        onChange={(e) => {
+                          field.onChange(e);
+                          // Auto-fill form if user has existing feed
+                          if (rssFeeds.length > 0 && !form.getValues().feedName) {
+                            form.setValue("feedName", rssFeeds[0].feedName || "");
+                          }
+                        }}
                       />
                     </FormControl>
                     <FormMessage />
@@ -158,6 +174,7 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
                       <Input
                         placeholder="My News Source"
                         {...field}
+                        value={field.value || (rssFeeds.length > 0 ? rssFeeds[0].feedName || "" : "")}
                       />
                     </FormControl>
                     <FormMessage />
@@ -173,79 +190,79 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
                 {addFeedMutation.isPending ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Adding Feed...
+                    {rssFeeds.length > 0 ? "Updating Feed..." : "Adding Feed..."}
                   </>
                 ) : (
                   <>
                     <Plus className="mr-2 h-4 w-4" />
-                    Add RSS Feed
+                    {rssFeeds.length > 0 ? "Update RSS Feed" : "Add RSS Feed"}
                   </>
                 )}
               </Button>
             </form>
           </Form>
 
-          {/* Existing Feeds List */}
-          <div className="space-y-3">
-            <h4 className="font-medium">Your RSS Feeds</h4>
-            
-            {feedsLoading ? (
-              <div className="flex items-center justify-center py-8">
-                <Loader2 className="h-6 w-6 animate-spin" />
-              </div>
-            ) : rssFeeds.length === 0 ? (
-              <p className="text-sm text-muted-foreground py-4 text-center">
-                No RSS feeds added yet. Add one above to get started.
-              </p>
-            ) : (
-              <div className="space-y-2 max-h-60 overflow-y-auto">
-                {rssFeeds.map((feed) => (
-                  <div
-                    key={feed.id}
-                    className="flex items-center justify-between p-3 border rounded-lg"
-                  >
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
-                        <h5 className="font-medium truncate">
-                          {feed.feedName || "Unnamed Feed"}
-                        </h5>
-                        {feed.isActive && (
-                          <Badge variant="secondary" className="text-xs">
-                            Active
-                          </Badge>
-                        )}
-                      </div>
-                      <p className="text-sm text-muted-foreground truncate">
-                        {feed.feedUrl}
-                      </p>
-                      {feed.lastFetched && (
-                        <p className="text-xs text-muted-foreground">
-                          Last fetched: {new Date(feed.lastFetched).toLocaleDateString()}
-                        </p>
+          {/* Current RSS Feed */}
+          {rssFeeds.length > 0 && (
+            <div className="space-y-3">
+              <h4 className="font-medium">Your Current RSS Feed</h4>
+              
+              <div className="p-3 border rounded-lg bg-muted/50">
+                <div className="flex items-center justify-between">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <h5 className="font-medium truncate">
+                        {rssFeeds[0].feedName || "Unnamed Feed"}
+                      </h5>
+                      {rssFeeds[0].isActive && (
+                        <Badge variant="secondary" className="text-xs">
+                          Active
+                        </Badge>
                       )}
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => window.open(feed.feedUrl, '_blank')}
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                      </Button>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => deleteFeedMutation.mutate(feed.id)}
-                        disabled={deleteFeedMutation.isPending}
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
-                    </div>
+                    <p className="text-sm text-muted-foreground truncate">
+                      {rssFeeds[0].feedUrl}
+                    </p>
+                    {rssFeeds[0].lastFetched && (
+                      <p className="text-xs text-muted-foreground">
+                        Last fetched: {new Date(rssFeeds[0].lastFetched).toLocaleDateString()}
+                      </p>
+                    )}
                   </div>
-                ))}
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => window.open(rssFeeds[0].feedUrl, '_blank')}
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => {
+                        form.reset({ feedUrl: "", feedName: "" });
+                        deleteFeedMutation.mutate(rssFeeds[0].id);
+                      }}
+                      disabled={deleteFeedMutation.isPending}
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
               </div>
-            )}
-          </div>
+              
+              <p className="text-xs text-muted-foreground">
+                You can have one RSS feed. Update the URL above to change your feed source.
+              </p>
+            </div>
+          )}
+          
+          {rssFeeds.length === 0 && !feedsLoading && (
+            <p className="text-sm text-muted-foreground py-4 text-center">
+              No RSS feed configured yet. Add one above to enhance your search results.
+            </p>
+          )}
         </div>
       </DialogContent>
     </Dialog>

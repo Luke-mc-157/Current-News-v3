@@ -22,7 +22,7 @@ router.get("/api/rss-feeds/:userId", async (req: Request, res: Response) => {
   }
 });
 
-// Add new RSS feed
+// Upsert RSS feed (only one feed per user)
 router.post("/api/rss-feeds", async (req: Request, res: Response) => {
   try {
     const validatedData = insertUserRssFeedsSchema.parse(req.body);
@@ -43,20 +43,34 @@ router.post("/api/rss-feeds", async (req: Request, res: Response) => {
       feedName: validatedData.feedName || validation.title || "Unnamed Feed"
     };
 
-    const newFeed = await storage.createUserRssFeed(feedData);
+    // Check if user already has an RSS feed
+    const existingFeeds = await storage.getUserRssFeeds(validatedData.userId);
     
-    // Update last fetched timestamp
-    await storage.updateUserRssFeed(newFeed.id, { 
-      lastFetched: new Date() 
-    });
+    let resultFeed;
+    if (existingFeeds.length > 0) {
+      // Update existing feed
+      const existingFeed = existingFeeds[0];
+      resultFeed = await storage.updateUserRssFeed(existingFeed.id, {
+        feedUrl: feedData.feedUrl,
+        feedName: feedData.feedName,
+        lastFetched: new Date(),
+        isActive: true
+      });
+    } else {
+      // Create new feed
+      resultFeed = await storage.createUserRssFeed(feedData);
+      await storage.updateUserRssFeed(resultFeed.id, { 
+        lastFetched: new Date() 
+      });
+    }
 
-    res.json(newFeed);
+    res.json(resultFeed);
   } catch (error) {
-    console.error("Error adding RSS feed:", error);
+    console.error("Error upserting RSS feed:", error);
     if (error.name === "ZodError") {
       return res.status(400).json({ error: "Invalid feed data", details: error.errors });
     }
-    res.status(500).json({ error: "Failed to add RSS feed" });
+    res.status(500).json({ error: "Failed to save RSS feed" });
   }
 });
 
