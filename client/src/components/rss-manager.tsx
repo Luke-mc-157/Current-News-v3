@@ -55,10 +55,8 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
   // Add RSS feed mutation
   const addFeedMutation = useMutation({
     mutationFn: async (data: AddRssFeedForm) => {
-      return await apiRequest(`/api/rss-feeds`, {
-        method: "POST",
-        body: JSON.stringify({ ...data, userId }),
-      });
+      const response = await apiRequest("POST", `/api/rss-feeds`, { ...data, userId });
+      return response.json();
     },
     onSuccess: () => {
       toast({
@@ -80,9 +78,8 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
   // Delete RSS feed mutation
   const deleteFeedMutation = useMutation({
     mutationFn: async (feedId: number) => {
-      return await apiRequest(`/api/rss-feeds/${feedId}`, {
-        method: "DELETE",
-      });
+      const response = await apiRequest("DELETE", `/api/rss-feeds/${feedId}`);
+      return response.json();
     },
     onSuccess: () => {
       toast({
@@ -257,19 +254,5 @@ export default function RssManager({ userId, showButton = true }: RssManagerProp
 
 // Export a simplified button component for easy integration
 export function RssButton({ userId, ...props }: { userId: number } & React.ComponentProps<typeof Button>) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger asChild>
-        <Button variant="outline" size="sm" {...props}>
-          <Rss className="h-4 w-4 mr-2" />
-          Add RSS Feed
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="max-w-2xl">
-        <RssManager userId={userId} showButton={false} />
-      </DialogContent>
-    </Dialog>
-  );
+  return <RssManager userId={userId} />;
 }
