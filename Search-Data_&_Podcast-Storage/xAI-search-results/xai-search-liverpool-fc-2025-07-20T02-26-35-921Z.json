@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool FC contacts Eintracht Frankfurt regarding Hugo Ekitike transfer.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/\"\n      ]\n    },\n    {\n      \"headline\": \"This Is Anfield publishes updates on Liverpool FC news.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    },\n    {\n      \"headline\": \"This Is Anfield reports on Liverpool FC transfer rumors.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/\"\n      ]\n    },\n    {\n      \"headline\": \"CaughtOffside features Liverpool FC transfer news.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on available sources from the last 24 hours. No high-engagement X posts were found related to Liverpool FC. Only directly relevant articles from news sources were included, resulting in four stories from the identified context.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://bbc.com/sport/football/articles/c4g802089gpo",
+    "https://x.com/xAIMemphis/status/1946750229295858089",
+    "https://x.com/elonmusk/status/1946748366144307403",
+    "https://x.com/SawyerMerritt/status/1946743553197056439"
+  ]
+}

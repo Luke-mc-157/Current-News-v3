@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Athletic teams reported recent updates in various leagues.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\"https://www.nytimes.com/athletic/\"]\n    },\n    {\n      \"headline\": \"Fox News covered latest sports events and updates.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\"https://foxnews.com/sports\"]\n    }\n  ],\n  \"notes\": \"Data is sparse for viral sports news stories from the last 24 hours in the provided search results. Only general sports sources were available, and no high-engagement X posts or specific RSS items directly related to sports were found. As a result, only two stories could be synthesized based on relevant sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/athletic/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://foxnews.com/sports",
+    "https://foxnews.com/media",
+    "https://www.npr.org/sections/national/",
+    "https://www.reuters.com/",
+    "https://x.com/xAIMemphis/status/1946750229295858089",
+    "https://x.com/elonmusk/status/1946748366144307403",
+    "https://x.com/SawyerMerritt/status/1946743553197056439"
+  ]
+}

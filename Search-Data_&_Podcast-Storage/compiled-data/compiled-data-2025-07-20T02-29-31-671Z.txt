@@ -1,0 +1,541 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Liverpool FC contacts Eintracht Frankfurt regarding Hugo Ekitike transfer.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/"
+      ]
+    },
+    {
+      "headline": "This Is Anfield publishes updates on Liverpool FC news.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.thisisanfield.com/liverpool-fc-news/"
+      ]
+    },
+    {
+      "headline": "This Is Anfield reports on Liverpool FC transfer rumors.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/"
+      ]
+    },
+    {
+      "headline": "CaughtOffside features Liverpool FC transfer news.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.caughtoffside.com/tags/premier-league/liverpool/"
+      ]
+    }
+  ],
+  "notes": "Data for stories i
+
+X POSTS FROM SEARCH (3):
+- xAI Memphis: "xAI spent the day cleaning debris and trash at Westwood High School and John P. Freeman today. We employ local businesses to help us do the work 🦾. https://t.co/1I1APexdBf" (137963 views, 1127 likes) https://x.com/xAIMemphis/status/1946750229295858089
+- Elon Musk: "Wow https://t.co/gJnS1yC7Px" (833925 views, 5109 likes) https://x.com/elonmusk/status/1946748366144307403
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (41035 views, 1281 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+
+SUPPORTING ARTICLES (5):
+- Liverpool make contact with Eintracht Frankfurt over Hugo Ekitike - The Athletic: Liverpool have made contact with Eintracht Frankfurt regarding a potential transfer for striker Hugo Ekitike. Newcastle United also expressed interest with a rejected €75m bid. Liverpool are seeking to strengthen their attack, including pursuing Newcastle's Alexander Isak. Ekitike had a strong season with 22 goals and 12 assists for Frankfurt. He is considered a fitting profile for Liverpool's needs due to his physical and technical attributes. [https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/]
+Key Quotes: "Ekitike exactly the profile that Liverpool look to target" - Andy Jones
+
+- Liverpool FC news, transfer rumours, Anfield updates & LFC videos: This Is Anfield reports on Liverpool FC's latest news, including transfer rumors such as an agreement for Hugo Ekitike after a second bid and an improved bid expected. It covers interest in players like Marc Guehi and Alexander Isak, with updates on potential departures such as Luis Diaz. The site also includes information on pre-season training, youth contracts, and squad decisions for the Asia tour. Various other updates on players and club activities are provided. [https://www.thisisanfield.com/liverpool-fc-news/]
+
+- Latest Liverpool FC Transfer Rumours and Reports from This Is Anfield: This article focuses on Liverpool's transfer rumors, detailing an agreement and bids for Hugo Ekitike, interest in Alexander Isak, and potential moves for players like Rodrygo. It discusses possible departures of Luis Diaz and Darwin Nunez, with the club prioritizing a new striker. The content compiles unconfirmed reports from various sources on ins and outs at Liverpool FC. [https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/]
+
+- Liverpool FC Transfer News, Rumours & Gossip | CaughtOffside: CaughtOffside covers Liverpool's transfer activities, including interest in Hugo Ekitike and Alexander Isak, with insights from experts like Fabrizio Romano. It reports on potential wage offers for Luis Diaz from other clubs and Liverpool's search for a new striker. The article discusses competition from other teams for targets and the likelihood of certain transfers based on current rumors. [https://www.caughtoffside.com/tags/premier-league/liverpool/]
+
+- Football gossip: Eze, Mateta, Felix, Mbeumo, Hutchinson, Garnacho, Elliott, Morton - BBC Sport: BBC Sport's gossip column states that Liverpool held talks with Crystal Palace striker Jean-Philippe Mateta. It also mentions West Ham's interest in Liverpool youngsters Harvey Elliott and Tyler Morton. The column covers various transfer rumors across multiple clubs, with Liverpool-specific items focusing on potential incomings and outgoings. All information is based on unconfirmed reports from sources like Talksport and Footmercato. [https://bbc.com/sport/football/articles/c4g802089gpo]
+
+---
+
+TOPIC: Artificial Intelligence
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "xAI company participated in cleanup activities at educational institutions.",
+      "x_posts": [
+        "https://x.com/xAIMemphis/status/1946750229295858089"
+      ],
+      "supporting_articles": [
+        "https://techcrunch.com/category/artificial-intelligence/"
+      ]
+    },
+    {
+      "headline": "Elon Musk posted a reaction to an unspecified development.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946748366144307403"
+      ],
+      "supporting_articles": [
+        "https://www.bbc.com/news"
+      ]
+    },
+    {
+      "headline": "A post on X generated high engagement related to technology topics.",
+      "x_posts": [
+        "https://x.com/SawyerMerritt/status/1946743553197056439"
+      ],
+      "supporting_articles": [
+        "https://indianexpress.com/section/technology/artificial-intelligence"
+      ]
+    },
+    {
+      "headline": "Media outlets reported on ongoing developments in artificial intelligence technology
+
+X POSTS FROM SEARCH (3):
+- xAI Memphis: "xAI spent the day cleaning debris and trash at Westwood High School and John P. Freeman today. We employ local businesses to help us do the work 🦾. https://t.co/1I1APexdBf" (142487 views, 1140 likes) https://x.com/xAIMemphis/status/1946750229295858089
+- Elon Musk: "Wow https://t.co/gJnS1yC7Px" (842154 views, 5150 likes) https://x.com/elonmusk/status/1946748366144307403
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (41300 views, 1287 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+
+SUPPORTING ARTICLES (7):
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News provides comprehensive coverage of global events, including sections dedicated to technology and artificial intelligence. A prominent story involves a U.S. tech CEO resigning after a viral incident at a Coldplay concert, where the company cited failure to meet conduct standards. The site highlights AI in innovation and health contexts, such as discussions on AI-driven advancements. Additionally, BBC News covers politics, sports, and climate, with AI integrated into broader technology reporting. [https://www.reuters.com/]
+Key Quotes: "The company said its leader had not met the expected standard of conduct and accountability." - Company
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News reports on a range of topics including U.S. crime, politics, and technology, with sections covering AI and innovation. A key story features an Astronomer CEO resigning after an embarrassing incident at a Coldplay concert, potentially related to tech leadership. The site includes categories on AI but lacks specific AI-focused content in the provided excerpt. Other coverage involves immigration, entertainment, and sports, with minimal direct emphasis on artificial intelligence. [https://www.bbc.com]
+
+- AI News & Artificial Intelligence | TechCrunch: TechCrunch's AI category focuses on news about artificial intelligence and machine learning, covering companies like OpenAI, Anthropic, and Mistral AI. Recent stories include OpenAI launching a general-purpose AI agent and Anthropic tightening usage limits for their tools without user notification. The site addresses ethical issues, funding rounds, and innovations in generative AI and predictive analytics. It also features analysis on AI startups, acquisitions, and the broader impact of AI technology. [https://www.bbc.com/news/videos/c4gdgl3e404o]
+
+---
+
+TOPIC: Sports News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Athletic teams reported recent updates in various leagues.",
+      "x_posts": [],
+      "supporting_articles": ["https://www.nytimes.com/athletic/"]
+    },
+    {
+      "headline": "Fox News covered latest sports events and updates.",
+      "x_posts": [],
+      "supporting_articles": ["https://foxnews.com/sports"]
+    }
+  ],
+  "notes": "Data is sparse for viral sports news stories from the last 24 hours in the provided search results. Only general sports sources were available, and no high-engagement X posts or specific RSS items directly related to sports were found. As a result, only two stories could be synthesized based on relevant sources."
+}
+
+X POSTS FROM SEARCH (3):
+- xAI Memphis: "xAI spent the day cleaning debris and trash at Westwood High School and John P. Freeman today. We employ local businesses to help us do the work 🦾. https://t.co/1I1APexdBf" (147011 views, 1164 likes) https://x.com/xAIMemphis/status/1946750229295858089
+- Elon Musk: "Wow https://t.co/gJnS1yC7Px" (850307 views, 5201 likes) https://x.com/elonmusk/status/1946748366144307403
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (41785 views, 1299 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+
+SUPPORTING ARTICLES (7):
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic provides live updates on the WNBA All-Star Game, with Team Collier holding a significant lead over Team Clark. Scottie Scheffler is close to winning the Open Championship after a strong performance. Oleksandr Usyk reclaimed the undisputed heavyweight boxing crown by stopping Daniel Dubois in the fifth round. Mookie Betts discussed his ongoing batting slump with the Dodgers, stating he has never experienced such a poor stretch. The Tour de France featured Remco Evenepoel's abandonment and Thymen Arensman claiming his first stage win. [https://www.reuters.com/]
+Key Quotes: "I've never done this. It's all new. I've never been this bad for this long." - Mookie Betts
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News covers Oleksandr Usyk's dominant victory over Daniel Dubois in boxing, making him a two-time undisputed heavyweight champion. Germany defeated France in a penalty shootout at Euro 2025 despite being reduced to ten players. Remco Evenepoel abandoned the Tour de France, while Thymen Arensman secured a stage win. The British and Irish Lions started their series with a win over Australia in rugby, and Scottie Scheffler maintains the lead at the Open Championship. England overcame weather delays to beat the United States in rugby. [https://www.nytimes.com/athletic/]
+Key Quotes: "'Plenty of brilliant stuff' but Lions win leaves 'surreal' feeling" - Unknown
+
+- The Latest Sports News, Updates & Articles | Fox News: Fox News Sports reports on WNBA All-Star Game preparations, with Caitlin Clark sharing her goals despite an injury sidelining her. Angel Reese opened up about facing cyberbullying from fans. Rory McIlroy experienced a bizarre incident during The Open Championship, unearthing a hidden golf ball. The coverage includes pro wrestling news, such as Buff Bagwell's leg amputation, and various other sports updates like UFC and MLB. Analysis features opinions on sports figures and events, including the World Cup. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "'HARD FOR ME'" - Angel Reese
+
+---
+
+TOPIC: Tesla Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla opens its first store in India and Starlink receives regulatory approval.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946748366144307403",
+        "https://x.com/SawyerMerritt/status/1946743553197056439"
+      ],
+      "supporting_articles": [
+        "https://www.nytimes.com/2025/07/17/world/asia/tesla-starlink-india-elon-musk.html"
+      ]
+    },
+    {
+      "headline": "xAI, led by Elon Musk, conducts community cleanup activities involving local businesses.",
+      "x_posts": [
+        "https://x.com/xAIMemphis/status/1946750229295858089"
+      ],
+      "supporting_articles": [
+        "https://x.com/xAIMemphis/status/1946750229295858089"  // Using RSS feed as it provides the content link
+      ]
+    }
+  ],
+  "notes": "Only two stories were identified with sufficient evidence from the last 24 hours based on available searches for Tesla developments. Data for additional stories was sparse or not directly related."
+}
+
+X POSTS FROM SEARCH (3):
+- xAI Memphis: "xAI spent the day cleaning debris and trash at Westwood High School and John P. Freeman today. We employ local businesses to help us do the work 🦾. https://t.co/1I1APexdBf" (155702 views, 1182 likes) https://x.com/xAIMemphis/status/1946750229295858089
+- Elon Musk: "Wow https://t.co/gJnS1yC7Px" (857857 views, 5249 likes) https://x.com/elonmusk/status/1946748366144307403
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (41991 views, 1307 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+
+SUPPORTING ARTICLES (6):
+- Tesla shareholders want a full-time CEO. That’s not how Musk works | CNN Business: Tesla is facing significant challenges in 2025, including the largest drops in sales and profits in its history, attributed partly to Elon Musk's divided attention on external activities. Shareholders and analysts are calling for Musk to dedicate more time to Tesla, with concerns that his political engagements and focus on projects like robotaxis are harming the company's core electric vehicle business. The Tesla board has not imposed restrictions on Musk, despite warnings that his absence is unusual for a company of its size. Musk's responses to criticism, such as telling analyst Dan Ives to 'shut up,' highlight tensions, while experts question whether he remains the right leader for Tesla's future amid declining stock value and regulatory changes impacting revenue. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Shut up, Dan." - Elon Musk | "To have one of the biggest companies in the world, not have a full-time CEO is unheard of." - Ross Gerber | "He doesn’t want to be in the car business anymore." - Ross Gerber
+
+- TSLA: Tesla Inc Latest Stock Price, Analysis, News and Trading Ideas: Tesla Inc.'s stock is currently trading at $329.65 with a 3.21% increase, and the company has a market capitalization of $1.06 trillion and a PE ratio of 181.29. The platform provides real-time data, community sentiments, and a poll on upcoming earnings reports for Tesla and other companies. Fundamentals include an EPS of $2.04 and average trading volume of 121.7 million shares. Users can access news, analysis, and trading ideas related to Tesla's stock performance and market trends. [https://www.reuters.com/video/]
+
+- Musk Clears Final Hurdles for Tesla and Starlink in India - The New York Times: Elon Musk's companies achieved key milestones in India, with Starlink receiving final regulatory approval to operate commercially after a three-year process. Tesla opened its first showroom in Mumbai, marking the initial step for Indian consumers to purchase electric vehicles. Despite these advancements, high import duties in India make Tesla cars expensive, starting at around $70,000 compared to $44,990 in the US. Experts suggest Starlink may target semi-urban areas for rollout due to better market potential, while challenges like data localization and infrastructure development remain. Musk's efforts to enter India have been longstanding, amid a complex relationship with the Indian government involving business and regulatory issues. [https://www.npr.org/sections/national/]
+Key Quotes: "symbolically important, commercially insignificant." - Eliot Pence | "The Tesla’s high price, at least in the short run, could limit sales." - Pravin Krishna
+
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Elon Musk: "This will become normal in a few years https://t.co/IgkK19DRJB" (5153300 views, 45050 likes) https://x.com/i/status/1946730635516899502
+- Tesla Charging: "Thank you First Responders! https://t.co/M3KLxBBS3F https://t.co/8ynDGDmFGn" (2361876 views, 2123 likes) https://x.com/i/status/1946727990039371849
+- Elon Musk: "At times, AI existential dread is overwhelming" (2331574 views, 18581 likes) https://x.com/i/status/1946740057978912930
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (2279238 views, 17756 likes) https://x.com/i/status/1946733522942886088
+- Fabrizio Romano: "⏳⌛️🦅🇨🇴 #Benfica https://t.co/wazKw5N0j7" (1850288 views, 13897 likes) https://x.com/i/status/1946697294901911965
+- Fabrizio Romano: "Liverpool and Hugo Ekitike, close. 🔴🔜 https://t.co/Opzzy1Fwml" (1677129 views, 33922 likes) https://x.com/i/status/1946702141625602173
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (1646909 views, 7842 likes) https://x.com/i/status/1946731968567410695
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (1468150 views, 12137 likes) https://x.com/i/status/1946742000893714690
+- Elon Musk: "https://t.co/iacBvAXoOT" (1023378 views, 15099 likes) https://x.com/i/status/1946733719152120012
+- Fabrizio Romano: "🚨🇸🇦 Excl: Saudi side Al Najmah SC are set to sign Eric Bailly as new centre back.
+
+Former Villarreal and Man United defender, set for new chapter in Saudi. https://t.co/IVtP6Wv5g8" (989900 views, 7472 likes) https://x.com/i/status/1946702174416671004
+- Fabrizio Romano: "🚨🟡🔴 After Ferguson and El Aynaoui done with Wesley closer, AS Roma are also planning to advance on deal for 22 year old CB Daniele Ghilardi.
+
+New round of talks soon with Verona as Ghilardi said yes to Roma project over two Spanish clubs. https://t.co/8xNMTch9cP" (978727 views, 7098 likes) https://x.com/i/status/1946698069652685220
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (919525 views, 4521 likes) https://x.com/i/status/1946703318895526379
+- Mario Nawfal: "NVIDIA IS NOW WORTH MORE THAN... WELL, BASICALLY EVERYONE ELSE
+
+Nvidia’s $4T valuation isn’t just historic, it’s comically massive.
+
+It’s now worth more than Meta and Alphabet combined.
+
+More than Microsoft. More than Apple and Amazon together.
+
+At this point, Nvidia could https://t.co/GzaPVSLZAD https://t.co/thvmG1iSsw" (916881 views, 696 likes) https://x.com/i/status/1946746882941759882
+- Fabrizio Romano: "🚨🟡🔵 Gio Reyna has opened doors for move to Parma as Serie A side have presented their project.
+
+Negotiations well underway with Borussia Dortmund as deal can get done soon.
+
+Official talks ongoing. ⏳🇺🇸 https://t.co/wi8cjiokYt" (878562 views, 8512 likes) https://x.com/i/status/1946703604666016198
+- Elon Musk: "Wow https://t.co/gJnS1yC7Px" (809909 views, 5004 likes) https://x.com/i/status/1946748366144307403
+- Barstool Sports: "The WNBA All-Stars came out wearing “Pay Us What You Owe Us” shirts
+
+The player’s association is currently negotiating a new CBA with the league 
+
+ https://t.co/XvOa7n61nS" (751272 views, 2708 likes) https://x.com/i/status/1946730535532773440
+- Fabrizio Romano: "🔵⭐️ Caelan-Kole Cadamarteri leaves Sheffield Wednesday and joins Manchester City Academy.
+
+U16 talent completes his move to #MCFC after five step process was approved by Premier League. https://t.co/NJRMR79knz" (736345 views, 6496 likes) https://x.com/i/status/1946708132131918088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (645593 views, 5752 likes) https://x.com/i/status/1946733104514683012
+- Mario Nawfal: "🔴LIVE: CRYBABY COCKTAIL HOUR w/ Eric Bolling + Special Guests https://t.co/DEbgS3Kj4S" (318587 views, 161 likes) https://x.com/i/status/1946708875752984975
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (286792 views, 4231 likes) https://x.com/i/status/1946702346634789257
+- Adam Schefter: "Panthers reached agreement tonight with second-round pick, LB Nic Scourton. Panthers executives Dan Morgan and Brandt Tillis finished the four-year deal tonight with Scourton’s agents Jeff Nalley and Graylan Crain." (267616 views, 1140 likes) https://x.com/i/status/1946739892886569373
+- Big Cat: "This probably should’ve been Take of the Year. That’s on me https://t.co/qBFqM9SK3Q" (235673 views, 2852 likes) https://x.com/i/status/1946743585178837123
+- Ian Rapoport: "#49ers special teams standout George Odum, a surprising release earlier today, underwent elbow surgery last month from an offseason injury, source said. He was placed on NFI. 
+
+Given a 3-month recovery time, he should be ready 6-8 weeks from now. Likely to sign midseason. https://t.co/R4bvS4IULU" (174355 views, 557 likes) https://x.com/i/status/1946725491978698946
+- Department of Government Efficiency: "Contracts Update!
+
+Over the last 3 days, agencies terminated 80 wasteful contracts with a ceiling value of $831M and savings of $436M, including a DoT $265k professional services contract for “planning and environment workshop and roundtable discussion”. https://t.co/sVWqsuIxc7" (164294 views, 7682 likes) https://x.com/i/status/1946736765349310803
+- Big Cat: "#DingersOnly #KylesOnly https://t.co/kWdPKivyzr" (148994 views, 211 likes) https://x.com/i/status/1946724686294925739
+- PFT Commenter: "I cant believe weve almost made it. Shout out to everyone https://t.co/3CjS5Ald43" (144421 views, 1028 likes) https://x.com/i/status/1946722809658425634
+- PFT Commenter: "PR101: apolgize like Zac https://t.co/7fcxlOaUo1" (140630 views, 1635 likes) https://x.com/i/status/1946699142421446899
+- Barstool Sports: "Johnny Manziel Says He Hated Cleveland, It Aided To His Depression, And He Wishes He Could've Gone Anywhere Else https://t.co/xhedPynKhb https://t.co/leIUYXfcVv" (129606 views, 171 likes) https://x.com/i/status/1946718012452556860
+- Big Cat: "Was out getting pizza for my kids. Sign Kyle Tucker please @cubs" (111698 views, 1540 likes) https://x.com/i/status/1946718463676035548
+- World of Statistics: "People from USA what is the general feel over there right now?" (101181 views, 381 likes) https://x.com/i/status/1946724988553498857
+- Barstool Sports: "Sometimes you just can't beat the course.
+
+@hen_ease needed to make birdie with 1 of his 3 "putts" to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado @PardonMyTake 
+https://t.co/fMdX4yfatT" (100956 views, 59 likes) https://x.com/i/status/1946699485515567283
+- Barstool Sports: "Old School Cheating: Memphis Hoops Is On Probation After 'Two Softball Players Were Paid $550 To Complete Coursework For A Former Basketball Player' https://t.co/ViAzBi5s76 https://t.co/P8pFdN0oDG" (96900 views, 87 likes) https://x.com/i/status/1946702882545234361
+- Naval: "Never make a promise after you’ve had a drink." (86600 views, 2213 likes) https://x.com/i/status/1946740783459316189
+- Barstool Sports: "Sometimes you just bite more off than you can chew.
+
+@PFTCommenter's approach to the @PardonMyTake hot dog challenge failed miserably.  
+
+‘PMTV’ presented by @ChevyTrucks #ad #Chevy #Silverado @PardonMyTake 
+https://t.co/HHdg2pZmOO" (87290 views, 30 likes) https://x.com/i/status/1946696345860845575
+- Pardon My Take: "One of the greatest monologues in award show history
+
+@trulyseltzer https://t.co/C7BxZmbVVW" (84978 views, 820 likes) https://x.com/i/status/1946733848848486536
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: WHO’S THIS WEEK’S BIGGEST LIBERAL CRYBABY?
+
+@ericbolling:
+
+"So here's the deal, you guys.
+
+We had Stephen Colbert.
+
+We had Joyless Joy Reid.
+
+We had Jazzy Jasmine Crockett.
+
+We had the liberal protesters outside the ICE facility because Trump’s voice https://t.co/sznXHwGE5e https://t.co/hQYnIwMJSV" (82367 views, 65 likes) https://x.com/i/status/1946738983204986888
+- Sawyer Merritt: "Tesla sells an exclusive all-black Tesla Bot action figure at their new diner. https://t.co/EC8V3BrMzG https://t.co/3N3cwEfyYK" (81707 views, 677 likes) https://x.com/i/status/1946709439613944255
+- Sawyer Merritt: "Tesla is offering 0% APR financing to customers in the U.S. who take delivery of a new Model 3 by September 30th and transfer FSD (for free) from their current Tesla to the new one. https://t.co/uVJIVbVs1H" (80137 views, 875 likes) https://x.com/i/status/1946700910249267688
+- Mario Nawfal: "🚨🇺🇸FLASH FLOOD EMERGENCY: DC SUBURBS FACE LIFE-THREATENING CONDITIONS
+
+The National Weather Service issued a Flash Flood Emergency until 9:00 PM EDT Saturday for Bethesda, Silver Spring, Kensington, White Oak, and Four Corners, Maryland.
+
+NWS Warning: 
+
+"This is a life https://t.co/YTawg6YzY3" (79651 views, 70 likes) https://x.com/i/status/1946697650864030035
+- Barstool Sports: "Nikola Jokic Could Barely Contain His Excitement After Being Gifted A Horse Head Made Out Of His Shoes https://t.co/PSwZh1QPaX https://t.co/j8idKPdqsS" (74816 views, 48 likes) https://x.com/i/status/1946740661794840615
+- Big Cat: "PCA" (72396 views, 511 likes) https://x.com/i/status/1946743334976024945
+- CNN: "Texas officials revise the number of people missing in the catastrophic floods in Kerr County down to 3. https://t.co/nWV6RaShAH" (71269 views, 89 likes) https://x.com/i/status/1946739287627583851
+- Pardon My Take: "The 17th best QB in the NFL award presented by @Blutman27 
+
+@McDonalds #ad https://t.co/aXGMbddMnr" (69635 views, 159 likes) https://x.com/i/status/1946705495605063858
+- Naval: "Republicans can live next to Democrats but Democrats can’t live next to Republicans." (64820 views, 1404 likes) https://x.com/i/status/1946750227618423204
+- Barstool Sports: "Dustin Poirier’s retirement fight video will bring a grown man to tears #UFC318 
+ https://t.co/sGNIwoD9Ej" (64416 views, 265 likes) https://x.com/i/status/1946747137871556727
+- Mario Nawfal: "🇸🇦 SAUDI ARABIA’S ‘SLEEPING PRINCE’ DIES AFTER 20 YEARS IN COMA
+
+Prince Al Waleed bin Khaled bin Talal - known across the Arab world as the “Sleeping Prince” - has died after spending two decades in a coma.
+
+He was 18 when a car crash in 2005 left him unconscious.
+He was 38 when https://t.co/l9LGLO3gxd" (61920 views, 409 likes) https://x.com/i/status/1946704101854597304
+- Barstool Sports: "UFC 318 Got Off To An Insane Start With Six Straight Finishes (Five In The First Round!) https://t.co/IGKbQ2Qiwx https://t.co/XMFovrnrSq" (60601 views, 55 likes) https://x.com/i/status/1946748175773024594
+- Mario Nawfal: "🚨🇺🇸BREAKING: MARYLAND FLASH FLOOD EMERGENCY TRIGGERS WATER RESCUES
+
+Torrential rainfall dumped 3-5 inches rapidly across central Maryland, overwhelming drainage systems and prompting multiple water rescues in Montgomery County.
+
+National Weather Service: 
+
+"Particularly https://t.co/9f75NcSXkR https://t.co/dfdJYuIWEo" (52686 views, 163 likes) https://x.com/i/status/1946719230423978252
+- Naval: "My immigration policy: anyone who agrees with me is welcome into the country. Anyone who does not, is not." (50540 views, 694 likes) https://x.com/i/status/1946751284239097965
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: OBAMA'S HOAX JUST GOT EXPOSED
+
+@DavidPollackUSA:
+
+"I was listening to you talking about the crybabies, and talking about Stephen Colbert, and everybody on the left.
+
+It's so crazy to me, and I'm sure you've been following the news cycle as much as I https://t.co/YDsZfR1qX0 https://t.co/PKTxNEwPNy" (46674 views, 105 likes) https://x.com/i/status/1946718345274733050
+- Mario Nawfal: "🚨😭 CRYBABY COCKTAIL HOUR: BRENNAN, COMEY, CLAPPER ARE ALL FILTHY LIARS
+
+@ericbolling 
+
+"They opened investigations into Brennan and Comey but skipped Clapper, who lied under oath about NSA spying on Americans. 
+
+Proven false within days. 
+
+Now these filthy liars have jobs at https://t.co/QJ6xHVQ6cX https://t.co/hQYnIwMJSV" (46292 views, 97 likes) https://x.com/i/status/1946724519671894066
+- Mario Nawfal: "🚨🇺🇦 🇷🇺 KYIV: PUTIN, MEET ME FACE-TO-FACE
+
+Zelensky says Kyiv proposed a new round of talks with Moscow next week, urging faster progress toward a ceasefire.
+
+He again called for a face-to-face meeting with Putin:
+
+"A meeting at the leadership level is needed to truly ensure https://t.co/tmKky1giDT https://t.co/rQ4HCHpGsQ" (44957 views, 88 likes) https://x.com/i/status/1946697215033930038
+- Naval: "Most companies fail at product and distribution but it’s easier to blame distribution. 
+
+I’d you’re failing at distribution, check the product." (43038 views, 726 likes) https://x.com/i/status/1946748531114648062
+- Mario Nawfal: "🚨🇺🇸 TRUMP TO SEN. THUNE: CANCEL AUGUST RECESS, CONFIRM MY PEOPLE!
+
+"Hopefully, the very talented John Thune, fresh off our many victories over the past two weeks and, indeed, 6 months, will cancel August recess (and long weekends!), in order to get my incredible nominees https://t.co/gI04SgWfvg https://t.co/bBdZwo3g6j" (43454 views, 237 likes) https://x.com/i/status/1946703852838797685
+- Mario Nawfal: "🇺🇸🇲🇽 DUFFY TO MEXICO: FIX THE FLIGHT MESS OR LOSE ACCESS
+
+Transportation Secretary Sean Duffy just drew a hard line: if Mexico doesn’t play fair on airspace, the U.S. could start denying flights.
+
+This follows Mexico’s 2022 move to yank U.S. cargo carriers from Mexico City’s main https://t.co/1WB1SZv5pm https://t.co/9u0Stmp4yf" (42621 views, 160 likes) https://x.com/i/status/1946711651203559756
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (40583 views, 1259 likes) https://x.com/i/status/1946743553197056439
+- Mario Nawfal: "🇺🇸 GALLOWAY: “FOLLOW YOUR PASSION” IS BILLIONAIRE BS
+
+Bestselling author and entrepreneur Scott Galloway says the worst career advice out there is the one rich people love to give:
+
+“Follow your passion.”
+
+His take?
+If someone tells you that, they’re already rich.
+And probably https://t.co/ATbjbskiqu https://t.co/zYSs1xteA5" (41441 views, 76 likes) https://x.com/i/status/1946696551361057078
+- Mario Nawfal: "🇧🇭 🇺🇸 HEGSETH HOSTS BAHRAIN CROWN PRINCE AT PENTAGON
+
+Defense Secretary meets with Crown Prince Salman to discuss deepening defense cooperation and Middle East security. 
+
+Bahrain praised as "gracious host to U.S. warfighters."
+https://t.co/wG5mEYMg27 https://t.co/x0fBaNhVYv" (40501 views, 122 likes) https://x.com/i/status/1946706625496330541
+- Mario Nawfal: "🇺🇸 GEN. FLYNN: RUSSIAN HOAX IS THE BIGGEST CRIME IN U.S. HISTORY
+
+According to Flynn, this so-called coup against Trump started before anyone even voted in 2016.
+
+Intel Chief Tulsi Gabbard dropped documents showing Obama knew the Trump-Russia stuff was fake but ran with it https://t.co/Bnepr0YKHe https://t.co/NruZRYwpWH" (40009 views, 469 likes) https://x.com/i/status/1946731783615091089
+- Wonder of Science: "This hand-cranked card shuffler follows a concept first patented in 1887, using rubber wheels to draw cards from two stacks and merge them into a shuffled pile.
+https://t.co/p47e7O41Wg" (40215 views, 101 likes) https://x.com/i/status/1946709965911253022
+- Mario Nawfal: "🚨🇺🇸 TRUMP: GREAT JOB BY HARRISON FIELDS AND PANEL ON FOX NEWS
+
+"Great job by young and talented Harrison Fields on FoxNews. 
+
+The panel was fantastic on prosecuting Obama and the 'thugs' exposed for highest level election fraud. 
+
+Congratulations to Tulsi Gabbard. 
+
+Keep it https://t.co/Yy5wRQY2Z0 https://t.co/LHfhqsgKb5" (39171 views, 161 likes) https://x.com/i/status/1946714199813402719
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇮🇹 Italy: 5.3t
+🇵🇹 Portugal: 3.6t
+
+(Annual emission, per Global Carbon Budget 2024)" (36530 views, 57 likes) https://x.com/i/status/1946709637547348203
+- TESLARATI: "🚨 Some highlights of the Tesla Diner First Responders Soft Launch in LA:
+
+🍔 Cybertruck-themed burger boxes
+🍔 Supercharger stamped drink cups
+🍔 Optimus serving popcorn
+🍔 Servers on roller skates https://t.co/6DCID5eQoQ https://t.co/26xG4wn3nK" (36211 views, 335 likes) https://x.com/i/status/1946703741748490522
+- Andrej Karpathy: "Hi @gmail does the "report phishing" button do anything https://t.co/asIRKdxJyd" (35319 views, 436 likes) https://x.com/i/status/1946745524033593739
+- Mario Nawfal: "TEENS ON SOCIAL MEDIA: LOVE IT, HATE IT, CAN’T QUIT IT
+
+YouTube is still King, 9 in 10 teens use it. TikTok’s their second home. Facebook? That’s for parents and conspiracy uncles.
+
+Half of teens say social media is ruining their generation’s brain cells, but only 14% admit it’s https://t.co/Wnslb5OLiX https://t.co/EOzSW7p1fG" (34936 views, 58 likes) https://x.com/i/status/1946727722459287720
+- Naval: "It’s the people who most want to be seen as selfless that you have to worry about." (33759 views, 910 likes) https://x.com/i/status/1946753837119017041
+- Mario Nawfal: "🇺🇸 WHY AMERICANS BELIEVE CONSPIRACIES? BECAUSE SOME OF THEM TURNED OUT TRUE
+
+When the government misleads, it creates conspiracy theorists.
+
+Trust in U.S. institutions is in freefall - from 77% in the JFK era to &lt;30% today.
+
+Why? 
+
+The Hunter Biden laptop story - real, but https://t.co/XoU7auq3Yu https://t.co/EH5PKCknQk" (34437 views, 176 likes) https://x.com/i/status/1946734300281647354
+- Mario Nawfal: "800 DRONES. 3D YODA. FULL GEEK MODE ENGAGED
+
+At Angel Stadium, fans got a galaxy-sized surprise: a fully animated Star Wars drone show with 800 synchronized drones forming 3D scenes from The Empire Strikes Back.
+
+Vader loomed over the crowd, Yoda floated in full rotation, https://t.co/iGPGfvg10Y" (33810 views, 293 likes) https://x.com/i/status/1946699068841058555
+- Mario Nawfal: "🇭🇷 RED BULL MOTORBIKING: WHERE GRAVITY GETS TOLD TO WAIT
+
+Throttle wide. Ramp locked. And then - lift-off.
+
+This isn’t biking. It’s combat with the atmosphere. Mid-air flips, blind landings, and riders who treat 100-foot gaps like they’re speed bumps.
+
+Every launch is a gamble. https://t.co/k27QfwwDLQ" (33253 views, 84 likes) https://x.com/i/status/1946714171736997902
+- Mario Nawfal: "🇺🇸 AMERICANS TO CELL PHONES IN CLASS: PLEASE, JUST STOP
+
+Support for banning phones during class? 74%. That’s nearly 3 out of 4 adults, and it’s rising fast.
+
+Even 57% of young adults (yes, the ones glued to their screens) are now on board.
+
+Support for all-day bans is also https://t.co/C5ZRcWLPUf" (32933 views, 166 likes) https://x.com/i/status/1946701585247269273
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: REP. OMAR WORKS FOR SOMALIA, NOT THE U.S.
+
+@lavern_spicer:  
+
+"And she[Ilhan Omar] said that her 1st priority. Everything she does, the most important group she does things for is the Somalians, not the American people, not the Minnesotans that she https://t.co/Up16YiXJw5 https://t.co/hQYnIwMJSV" (31451 views, 105 likes) https://x.com/i/status/1946741850032795836
+- Mario Nawfal: "🇺🇸 ELON HOSTS SOFT OPENING OF TESLA DINER IN LA
+
+1st  Responders got the VIP treatment at Elon’s new Tesla Diner in Los Angeles.
+
+Meanwhile, Tesla says it has over 7,100 Supercharger stations and more than 67,300 plugs worldwide.
+
+So yeah, burgers, charging stations, and humanoid https://t.co/zQ2j5fAPtS https://t.co/UVfDQCIoav" (29667 views, 104 likes) https://x.com/i/status/1946742139662074083
+- Mario Nawfal: "🇰🇷 SOUTH KOREA FLOODS: DEATH TOLL RISES TO 9 AS LANDSLIDES HIT VILLAGES
+
+Five more deaths were reported Saturday as torrential rains continue devastating South Korea, with two people still missing after authorities evacuated 7,029 residents.
+
+Four fatalities occurred in Sancheong https://t.co/V4RmpSTvVK https://t.co/wJKwtIrYqh" (29605 views, 40 likes) https://x.com/i/status/1946744367655403649
+- Mario Nawfal: "🇮🇹🇺🇸 FROM SUMMER BREAK TO NEAR-DEATH: A NEW YORKER’S ITALIAN NIGHTMARE
+
+Nick Pellegrino landed in Milan for vacation.
+He left the train platform soaked in blood, stabbed in the neck by 2 North African migrants.
+
+Pellegrino, still from the hospital bed:
+
+“It’s a playground for https://t.co/18HCLSCA8A" (29443 views, 199 likes) https://x.com/i/status/1946709134323433944
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: IF KAMALA WON, WE WOULD BE LOCKED UP!
+
+@lavern_spicer:
+
+"You all have to realize that if Kamala had been elected, many of us would be locked up right now, because she made it clear that everybody who had something negative to say about her would be https://t.co/ghGgCvFjg4 https://t.co/PKTxNExnD6" (28646 views, 40 likes) https://x.com/i/status/1946715789182300515
+- Mario Nawfal: "ELON: ROBOTS AND AI WILL CREATE A FUTURE WHERE NOBODY’S IN NEED
+
+"Robotics and AI, like self-driving cars and personal robot buddies, will enable limitless production of goods and services. 
+
+Combined with sustainable energy, we can preserve nature and have what we want—and don't https://t.co/Fvh90CXDdy https://t.co/Puo0KbKa7T" (28157 views, 115 likes) https://x.com/i/status/1946747059899388035
+- World of Statistics: "Obesity rate
+
+🇦🇺 Australia: 31.02%
+🇯🇵 Japan: 5.57%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (25724 views, 106 likes) https://x.com/i/status/1946740088198836650
+- Mario Nawfal: "🇮🇳 MUMBAI HOSPITAL GOES FULL IRON MAN ON HEART DISEASE
+
+Jaslok Hospital just teamed up with AnginaX, India’s first AI-powered cardiology sidekick, and it’s basically Tony Stark for your heart.
+
+Instead of waiting around for symptoms to hit like a pop quiz, this system scans your https://t.co/spH6PJK4yA https://t.co/ei46Uvl9ai" (25533 views, 65 likes) https://x.com/i/status/1946749400551964687
+- Sawyer Merritt: "https://t.co/LyY5VtZew5 https://t.co/DqbuT852Ru" (22024 views, 119 likes) https://x.com/i/status/1946731601573896516
+- Rohan Patel: "Trump + Epstein = creepy besties https://t.co/TMpYhjr8Rs" (21984 views, 142 likes) https://x.com/i/status/1946707556585325006
+- Franz von Holzhausen: "Thank you first responders! Tesla Diner and Superchargers opening soon! https://t.co/mWH4aJpdju" (20798 views, 1023 likes) https://x.com/i/status/1946745486469124134
+- Charles Hoskinson: "I just received the first copy of the audit report. I requested a lot more detail and context in several areas, but it's shaping up quickly. I believe we are on schedule for a mid-August release, assuming the work continues at this pace and there are no delays. 
+
+I will read the" (20496 views, 599 likes) https://x.com/i/status/1946738026488443002
+- Mario Nawfal: "🇺🇸 VIRGINIA MAN PLEADS GUILTY AFTER FBI FINDS 150 PIPE BOMBS AT HOME
+
+Brad Spafford looked like a regular guy. 
+Quiet job. No record. 
+
+Until the FBI raided his house.
+
+Inside: 150 pipe bombs - the biggest stash of homemade explosives ever found in a U.S. home. 
+
+A freezer packed https://t.co/gWkNummZmT" (20962 views, 80 likes) https://x.com/i/status/1946729992143954240
+- Wonder of Science: "Card shuffler in the video (paid link): https://t.co/piXptklpSA" (20952 views, 11 likes) https://x.com/i/status/1946714167802577238
+- Mario Nawfal: "DRIVER NODS OFF, TESLA STAYS AWAKE
+
+Your Tesla can step in just in time, as you appear distracted or on the verge of falling asleep.
+
+The car’s Autopilot system takes over, reacting faster than any human could, correcting the vehicle's path and avoiding any potential disaster. https://t.co/vNNErKNmWt https://t.co/XzsNJQgwXq" (20508 views, 79 likes) https://x.com/i/status/1946751923480334470
+- Mario Nawfal: "🇺🇸 LA MAYOR BLAMES EMPTY RESTAURANTS ON "ICE FEAR"
+
+Karen Bass says East LA eateries were ghost towns on Father's Day due to immigration enforcement anxiety. 
+
+City is paying cash cards to residents "too anxious to clock in."
+
+https://t.co/KXNwpboCM0" (19238 views, 60 likes) https://x.com/i/status/1946736820575735853
+- Dave Lee: "In this video, I challenge the traditional view that parenting needs to be about rules, punishments, and authority. I believe the authoritative approach is actually counterproductive to raising confident, wise, and independent kids.
+
+I dive into why rules create fear and distance https://t.co/7KU2orGzCg" (18357 views, 291 likes) https://x.com/i/status/1946728337331646898
+- Mario Nawfal: "THE FUTURE WILL LOOK LIKE THE FUTURE: ON IMAGINATION AS BLUEPRINT
+
+Elon's response to the Cybercab reveals a profound truth: we don't discover the future—we manifest it from collective dreams.
+
+Every autonomous vehicle gliding through rain-slicked streets represents something https://t.co/ifhzUYmHud https://t.co/Puo0KbKa7T" (17371 views, 62 likes) https://x.com/i/status/1946753083611959344
+- Mario Nawfal: "🚨😭VOTE NOW: WHO'S THIS WEEK'S BIGGEST LIBERAL CRYBABY?" (16902 views, 16 likes) https://x.com/i/status/1946740068393038169
+- Max Velocity: "BREAKING: At least 6 vehicles are stuck in high water due to flooding in Four Corners, Maryland, inside of a flash flood emergency, right now.
+
+Additionally, 5 FEET of standing water is at the intersection of East-West Highway and Washington Avenue, with a car and fire truck" (15399 views, 280 likes) https://x.com/i/status/1946703221386588225
+- Mario Nawfal: "@elonmusk 👀" (15174 views, 36 likes) https://x.com/i/status/1946733939617353877
+- Mario Nawfal: "@elonmusk ❤️" (14638 views, 67 likes) https://x.com/i/status/1946733876614697088
+- Max Velocity: "I am feeling better tonight, no fever, just achy with a sore throat.
+
+Videos will return normally tomorrow!" (13447 views, 637 likes) https://x.com/i/status/1946728584757891384
+- Max Velocity: "WOW! Crazy flooding at Rock Run Creek in Potomac, Maryland, moments ago!
+
+Flash flood emergency is still ongoing for this area.
+
+📷 Peter Asser https://t.co/5UNkaxyAvj" (12777 views, 347 likes) https://x.com/i/status/1946715424751505695
+- Max Velocity: "UPDATE: 145+ fatalities confirmed from the Texas Floods this month, with 3 people missing." (12518 views, 290 likes) https://x.com/i/status/1946739354694492511
+- World and Science: "Is it a comet? Is it a spaceship? The object in this picture might be difficult to recognize
+
+In fact, it's a young star. Its surrounding disc of gas and dust is being eroded by massive nearby stars, creating an ionized protoplanetary disc
+
+(Credit: ESO/M. L. Aru et al.) https://t.co/B6rN37XoWG" (11690 views, 63 likes) https://x.com/i/status/1946700095233110439
+- World and Science: "Breath-taking: The Unfurling Spiral Arms of NGC 3981
+
+They are likely the result of gravitational forces during an encounter with a neighbouring galaxy.
+
+Credit: Dark Energy Survey/DOE/FNAL/DECam/CTIO/NOIRLab/NSF/AURA - Image processing: R. Colombari &amp; M. Zamani (NSF’s NOIRLab) https://t.co/YDd8MZCOpp" (10939 views, 72 likes) https://x.com/i/status/1946717698047586649
+- Barstool After Dark: "Day 12 https://t.co/cGR1v7Gq55" (10034 views, 13 likes) https://x.com/i/status/1946706622123765923
+- Boston 25 News: "Police: Man arrested on lewdness charge in Dennis https://t.co/H7WXKaQBcp" (9844 views, 25 likes) https://x.com/i/status/1946717985608962529

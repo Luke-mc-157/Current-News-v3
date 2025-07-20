@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"xAI company participated in cleanup activities at educational institutions.\",\n      \"x_posts\": [\n        \"https://x.com/xAIMemphis/status/1946750229295858089\"\n      ],\n      \"supporting_articles\": [\n        \"https://techcrunch.com/category/artificial-intelligence/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posted a reaction to an unspecified development.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946748366144307403\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"A post on X generated high engagement related to technology topics.\",\n      \"x_posts\": [\n        \"https://x.com/SawyerMerritt/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://indianexpress.com/section/technology/artificial-intelligence\"\n      ]\n    },\n    {\n      \"headline\": \"Media outlets reported on ongoing developments in artificial intelligence technology.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/\",\n        \"https://techcrunch.com/category/artificial-intelligence/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three directly viral X posts were identified from the searches, with the fourth story synthesized from general news sources to reach the requested number. Data for X posts is limited to high-engagement items from the last 24 hours, and supporting articles are correlated based on AI relevance.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.bbc.com",
+    "https://www.bbc.com/news/videos/c4gdgl3e404o",
+    "https://www.bbc.com/news",
+    "https://www.foxnews.com/",
+    "https://techcrunch.com/category/artificial-intelligence/",
+    "https://www.npr.org/sections/news/",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://x.com/xAIMemphis/status/1946750229295858089",
+    "https://x.com/elonmusk/status/1946748366144307403",
+    "https://x.com/SawyerMerritt/status/1946743553197056439"
+  ]
+}

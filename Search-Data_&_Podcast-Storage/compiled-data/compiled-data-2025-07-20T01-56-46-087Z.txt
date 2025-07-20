@@ -1,0 +1,523 @@
+
+TOPIC: Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Elon Musk announces commitment to AI development across his companies.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946742000893714690",
+        "https://x.com/elonmusk/status/1946743553197056439"
+      ],
+      "supporting_articles": [
+        "https://www.reuters.com/technology/",
+        "https://singularityhub.com/2025/07/19/this-weeks-awesome-tech-stories-from-around-the-web-through-july-19"
+      ]
+    },
+    {
+      "headline": "Elon Musk discusses concerns regarding AI existential risks.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946740057978912930"
+      ],
+      "supporting_articles": [
+        "https://www.reuters.com/technology/",
+        "https://npr.org/sections/national"
+      ]
+    },
+    {
+      "headline": "Sawyer Merritt shares technology-related update on social media.",
+      "x_posts": [
+        "https://x.com/SawyerMerritt/status/1946743553197056439"
+      ],
+      "supporting_articles": 
+
+X POSTS FROM SEARCH (3):
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (23577 views, 809 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (862185 views, 7798 likes) https://x.com/elonmusk/status/1946742000893714690
+- Elon Musk: "At times, AI existential dread is overwhelming" (1490197 views, 13026 likes) https://x.com/elonmusk/status/1946740057978912930
+
+SUPPORTING ARTICLES (7):
+- US tech CEO resigns after Coldplay concert embrace goes viral: A US technology company CEO resigned following a viral video showing him embracing an HR executive during a Coldplay concert kiss cam. The company cited failure to meet expected standards of conduct and accountability as the reason for the resignation. The incident sparked widespread online discussion about professional boundaries and social media impact. No specific details about the company or individuals were disclosed in the report. The event highlighted issues of public scrutiny in the digital age. [https://www.reuters.com/world/]
+Key Quotes: "The company said its leader had not met the expected standard of conduct and accountability." - The company
+
+- Meta apologises after auto-translated post declares India minister 'dead': Meta issued an apology for an error in its auto-translation feature that mistakenly translated a Kannada post into English, falsely indicating an Indian minister was dead. The original post was from Karnataka Chief Minister Siddaramaiah paying tribute to a deceased actress. The mistranslation caused confusion and potential misinformation online. Meta acknowledged the issue and stated it is working to improve translation accuracy. This incident underscores challenges in AI-driven language processing technologies. [https://www.reuters.com/world/us/]
+
+- UK's most powerful supercomputer comes online: The United Kingdom has launched its most powerful supercomputer, marking a significant advancement in national computing infrastructure. The supercomputer is designed to support advanced scientific research, including areas like climate modeling and artificial intelligence. It represents a key investment in technology to enhance data analysis capabilities. Details on specific projects or full operational capacity were not provided in the announcement. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- Woman Who Exposed Astronomer CEO's Affair With HR Head Has 6-word Response: A viral kiss cam incident at a Coldplay concert involving Astronomer CEO Andy Byron and HR head Kristin Cabot led to public exposure of their alleged affair. The event gained massive attention on social media, overshadowing other news. A woman who brought the affair to light responded with a brief 6-word statement. The story raised discussions on professional ethics and personal conduct in corporate settings. No further details on the response or consequences were specified in the report. [https://www.bbc.com]
+
+---
+
+TOPIC: Artificial Intelligence
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Only two primary viral stories about Artificial Intelligence were identified from available data within the last 24 hours, based on high-engagement posts on X and correlating articles from news and RSS sources. Additional stories were not sufficiently supported.",
+  "stories": [
+    {
+      "headline": "Elon Musk states commitment to advancing AI projects at xAI, Tesla, and SpaceX.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946742000893714690"
+      ],
+      "supporting_articles": [
+        "https://www.stocktitan.net/news/ai.html"
+      ]
+    },
+    {
+      "headline": "Elon Musk discusses concerns regarding existential risks posed by AI.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946740057978912930"
+      ],
+      "supporting_articles": [
+        "https://www.stocktitan.net/news/ai.html"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (3):
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (23960 views, 825 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (873401 views, 7876 likes) https://x.com/elonmusk/status/1946742000893714690
+- Elon Musk: "At times, AI existential dread is overwhelming" (1505117 views, 13123 likes) https://x.com/elonmusk/status/1946740057978912930
+
+SUPPORTING ARTICLES (7):
+- Artificial Intelligence: AI v the Mind: BBC News includes a section on artificial intelligence under science and health, focusing on topics like AI versus the human mind. The publication provides factual coverage of AI's impact on society, including its role in business and technology innovation. Users can access videos, audio, and in-depth analysis on AI developments from around the world. BBC News emphasizes trusted reporting on AI advancements and ethical considerations. [https://www.reuters.com/world/]
+
+---
+
+TOPIC: Sports News
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data on specific viral sports stories from the last 24 hours is sparse in the provided results. Only general sports-related sources were identified, and no high-engagement X posts or RSS items directly related to sports news were found. Therefore, only two potential stories are included based on available news sources.",
+  "stories": [
+    {
+      "headline": "The Athletic provides coverage of sports teams and leagues.",
+      "x_posts": [],
+      "supporting_articles": ["https://www.nytimes.com/athletic/"]
+    },
+    {
+      "headline": "Fox News reports on the latest sports news and updates.",
+      "x_posts": [],
+      "supporting_articles": ["https://foxnews.com/sports"]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (3):
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (24354 views, 836 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (873401 views, 7941 likes) https://x.com/elonmusk/status/1946742000893714690
+- Elon Musk: "At times, AI existential dread is overwhelming" (1519588 views, 13202 likes) https://x.com/elonmusk/status/1946740057978912930
+
+SUPPORTING ARTICLES (7):
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic provides comprehensive sports coverage across various leagues including NFL, NBA, MLB, and more. It offers live updates on events like the WNBA All-Star Game and the Open Championship. Mookie Betts discussed his ongoing batting slump, noting he's never experienced such a prolonged poor performance. Other stories include NFL players advocating for a strong union leader and boxing updates with Oleksandr Usyk reclaiming his title. The site also features podcasts, fantasy sports, and betting information. [https://www.nytimes.com/athletic/]
+Key Quotes: "I've never done this." - Mookie Betts | "It's all new. I've never been this bad for this long." - Mookie Betts
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/sports/]
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/]
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/world/]
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News covers sports news including WNBA events with Caitlin Clark sidelined due to injury and updates on the Open Championship in golf. Rory McIlroy described an unusual incident during a golf shot, calling it bizarre. Other sports stories include MLB updates and pro wrestling news. The site integrates sports coverage with general news but provides dedicated sections for sports enthusiasts. Viewers can access videos and live updates on various athletic events. [https://www.foxnews.com/]
+Key Quotes: "most weird, ridiculous thing" - Rory McIlroy
+
+- The Latest Sports News, Updates & Articles | Fox News: Fox News sports section reports on WNBA All-Star Game updates involving players like Caitlin Clark and Angel Reese. Coverage includes golf's Open Championship with Rory McIlroy experiencing a strange shot incident. Former athletes share insights, such as challenges of playing with LeBron James. The section features news on NFL, MLB, and other sports with accompanying videos and analyses. It provides timely updates and fan engagements for various athletic events. [https://foxnews.com/sports]
+Key Quotes: "most weird, ridiculous thing" - Rory McIlroy
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/world/]
+
+---
+
+TOPIC: Political Commentary
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Elon Musk comments on AI risks and development on social media platform.",
+      "x_posts": [
+        "https://x.com/elonmusk/status/1946742000893714690",
+        "https://x.com/elonmusk/status/1946740057978912930"
+      ],
+      "supporting_articles": [
+        "https://www.reuters.com/"
+      ]
+    },
+    {
+      "headline": "User shares content on social media perceived as critical of political figures.",
+      "x_posts": [
+        "https://x.com/DiligentDenizen/status/unknown_id"  // Based on available context; exact ID not specified
+      ],
+      "supporting_articles": []
+    },
+    {
+      "headline": "Reuters reports on ongoing developments related to Donald Trump.",
+      "x_posts": [],
+      "supporting_articles": [
+        "https://www.reuters.com/world/us/donald-trump/"
+      ]
+    },
+    {
+      "headline": "Washington Post covers general political news and events.",
+      "x_posts": [],
+      "supporting_articles": [
+        "http
+
+X POSTS FROM SEARCH (4):
+- Diligent Denizen 🇺🇸: "This should TRIGGER the shills 🫡
+Enjoy! 👀🇺🇸 🍿
+https://t.co/LWfXJaKCAu" (7612 views, 144 likes) https://x.com/DiligentDenizen/status/1946606550996406449
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (24749 views, 846 likes) https://x.com/SawyerMerritt/status/1946743553197056439
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (884406 views, 8013 likes) https://x.com/elonmusk/status/1946742000893714690
+- Elon Musk: "At times, AI existential dread is overwhelming" (1534213 views, 13254 likes) https://x.com/elonmusk/status/1946740057978912930
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Content not accessible, no summary available. [https://www.reuters.com/world/]
+
+- [Article from www.reuters.com]: Content not accessible, no summary available. [https://www.reuters.com/]
+
+- [Article from www.washingtonpost.com]: Content not accessible, no summary available. [https://www.washingtonpost.com/politics/]
+
+- [Article from www.reuters.com]: Content not accessible, no summary available. [https://www.reuters.com/world/us/donald-trump/]
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: The Fox News website provides extensive coverage of U.S. political events, including stories on Donald Trump, Joe Biden, and various controversies. It features opinion pieces that offer commentary on issues like alleged intelligence politicization during the Obama administration and criticisms of current policies. The site also reports on crime, immigration, and elections, blending news with conservative perspectives. Specific highlights include DNI Tulsi Gabbard's referral of documents to the DOJ and warnings from figures like Andrew Cuomo about political candidates. [https://www.foxnews.com/]
+Key Quotes: "Absolutely repulsive" - Unknown | "hate-spewing" - Cuomo
+
+- Breaking News, World News and Video from Al Jazeera: Al Jazeera focuses on global news with emphasis on conflicts in the Middle East, such as the War on Gaza and Syrian unrest, providing detailed reports and analyses. Opinion pieces offer commentary on humanitarian crises, including the impact of Israeli actions on civilians in Gaza. The site covers international politics, human rights, and peace talks, such as Ukraine's offers to Russia. It also includes features on disasters and environmental issues, aiming for balanced perspectives on world events. [https://www.aljazeera.com/]
+Key Quotes: "Starvation is killing my nieces and I cannot do anything to save them" - Alaa Arafat
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times reports on a wide array of topics, including U.S. politics with stories on figures like Donald Trump and Jeffrey Epstein based on historical accounts. It covers domestic events such as shootings and international issues like prisoner swaps with Venezuela. Opinion sections provide critiques of political developments and figures, emphasizing factual analysis. The site also includes sections on arts, sports, and social issues, delivering comprehensive news coverage. [https://www.nytimes.com/]
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Elon Musk: "This will become normal in a few years https://t.co/IgkK19DRJB" (1208647 views, 13341 likes) https://x.com/i/status/1946730635516899502
+- Elon Musk: "At times, AI existential dread is overwhelming" (1120645 views, 10328 likes) https://x.com/i/status/1946740057978912930
+- Elon Musk: "Probably looks something like this https://t.co/rvf47gFT6M" (719238 views, 3852 likes) https://x.com/i/status/1946731968567410695
+- Tesla Charging: "Thank you First Responders! https://t.co/M3KLxBBS3F https://t.co/8ynDGDmFGn" (675791 views, 1022 likes) https://x.com/i/status/1946727990039371849
+- Elon Musk: "Held a soft opening for First Responders at the Tesla Diner in LA https://t.co/rSlB93T0no" (648013 views, 5728 likes) https://x.com/i/status/1946733522942886088
+- Elon Musk: "I resisted AI for too long 
+
+Living in denial 
+
+Now it is game on
+
+@xAI @Tesla @SpaceX https://t.co/AVlNkblUCl" (552358 views, 5539 likes) https://x.com/i/status/1946742000893714690
+- Fabrizio Romano: "⏳⌛️🦅🇨🇴 #Benfica https://t.co/wazKw5N0j7" (485926 views, 4401 likes) https://x.com/i/status/1946697294901911965
+- Fabrizio Romano: "Liverpool and Hugo Ekitike, close. 🔴🔜 https://t.co/Opzzy1Fwml" (436577 views, 11502 likes) https://x.com/i/status/1946702141625602173
+- Elon Musk: "https://t.co/iacBvAXoOT" (297553 views, 4662 likes) https://x.com/i/status/1946733719152120012
+- Fabrizio Romano: "🚨🟡🔴 After Ferguson and El Aynaoui done with Wesley closer, AS Roma are also planning to advance on deal for 22 year old CB Daniele Ghilardi.
+
+New round of talks soon with Verona as Ghilardi said yes to Roma project over two Spanish clubs. https://t.co/8xNMTch9cP" (238996 views, 2872 likes) https://x.com/i/status/1946698069652685220
+- Fabrizio Romano: "🚨🇸🇦 Excl: Saudi side Al Najmah SC are set to sign Eric Bailly as new centre back.
+
+Former Villarreal and Man United defender, set for new chapter in Saudi. https://t.co/IVtP6Wv5g8" (233496 views, 2934 likes) https://x.com/i/status/1946702174416671004
+- Barstool Sports: "The WNBA All-Stars came out wearing “Pay Us What You Owe Us” shirts
+
+The player’s association is currently negotiating a new CBA with the league 
+
+ https://t.co/XvOa7n61nS" (203652 views, 684 likes) https://x.com/i/status/1946730535532773440
+- Fabrizio Romano: "🔵⭐️ Caelan-Kole Cadamarteri leaves Sheffield Wednesday and joins Manchester City Academy.
+
+U16 talent completes his move to #MCFC after five step process was approved by Premier League. https://t.co/NJRMR79knz" (189696 views, 2486 likes) https://x.com/i/status/1946708132131918088
+- Sawyer Merritt: "NEWS: Tesla's Hollywood Diner and Supercharger officially opens to the public this Monday, July 21st!
+
+• 80 V4 Supercharger stalls
+• Drive-in movie theater with two 45-foot LED movie screens. Audio of movies/videos playing on both screens will sync &amp; play from the speakers https://t.co/iyAY05OdHi" (188431 views, 2122 likes) https://x.com/i/status/1946733104514683012
+- Fabrizio Romano: "🚨🟡🔵 Gio Reyna has opened doors for move to Parma as Serie A side have presented their project.
+
+Negotiations well underway with Borussia Dortmund as deal can get done soon.
+
+Official talks ongoing. ⏳🇺🇸 https://t.co/wi8cjiokYt" (178689 views, 2876 likes) https://x.com/i/status/1946703604666016198
+- Adam Schefter: "Panthers reached agreement tonight with second-round pick, LB Nic Scourton. Panthers executives Dan Morgan and Brandt Tillis finished the four-year deal tonight with Scourton’s agents Jeff Nalley and Graylan Crain." (178614 views, 862 likes) https://x.com/i/status/1946739892886569373
+- Ian Rapoport: "#49ers special teams standout George Odum, a surprising release earlier today, underwent elbow surgery last month from an offseason injury, source said. He was placed on NFI. 
+
+Given a 3-month recovery time, he should be ready 6-8 weeks from now. Likely to sign midseason. https://t.co/R4bvS4IULU" (120307 views, 445 likes) https://x.com/i/status/1946725491978698946
+- PFT Commenter: "I cant believe weve almost made it. Shout out to everyone https://t.co/3CjS5Ald43" (104982 views, 743 likes) https://x.com/i/status/1946722809658425634
+- Big Cat: "#DingersOnly #KylesOnly https://t.co/kWdPKivyzr" (101260 views, 168 likes) https://x.com/i/status/1946724686294925739
+- Big Cat: "Was out getting pizza for my kids. Sign Kyle Tucker please @cubs" (89402 views, 1255 likes) https://x.com/i/status/1946718463676035548
+- Barstool Sports: "Johnny Manziel Says He Hated Cleveland, It Aided To His Depression, And He Wishes He Could've Gone Anywhere Else https://t.co/xhedPynKhb https://t.co/leIUYXfcVv" (89454 views, 115 likes) https://x.com/i/status/1946718012452556860
+- Big Cat: "This probably should’ve been Take of the Year. That’s on me https://t.co/qBFqM9SK3Q" (88090 views, 1058 likes) https://x.com/i/status/1946743585178837123
+- World of Statistics: "People from USA what is the general feel over there right now?" (54059 views, 206 likes) https://x.com/i/status/1946724988553498857
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: WHO’S THIS WEEK’S BIGGEST LIBERAL CRYBABY?
+
+@ericbolling:
+
+"So here's the deal, you guys.
+
+We had Stephen Colbert.
+
+We had Joyless Joy Reid.
+
+We had Jazzy Jasmine Crockett.
+
+We had the liberal protesters outside the ICE facility because Trump’s voice https://t.co/sznXHwGE5e https://t.co/hQYnIwMJSV" (53335 views, 57 likes) https://x.com/i/status/1946738983204986888
+- Naval: "Never make a promise after you’ve had a drink." (47034 views, 1350 likes) https://x.com/i/status/1946740783459316189
+- Barstool Sports: "Nikola Jokic Could Barely Contain His Excitement After Being Gifted A Horse Head Made Out Of His Shoes https://t.co/PSwZh1QPaX https://t.co/j8idKPdqsS" (46936 views, 39 likes) https://x.com/i/status/1946740661794840615
+- CNN: "Texas officials revise the number of people missing in the catastrophic floods in Kerr County down to 3. https://t.co/nWV6RaShAH" (44578 views, 65 likes) https://x.com/i/status/1946739287627583851
+- Mario Nawfal: "🚨🇺🇸BREAKING: MARYLAND FLASH FLOOD EMERGENCY TRIGGERS WATER RESCUES
+
+Torrential rainfall dumped 3-5 inches rapidly across central Maryland, overwhelming drainage systems and prompting multiple water rescues in Montgomery County.
+
+National Weather Service: 
+
+"Particularly https://t.co/9f75NcSXkR https://t.co/dfdJYuIWEo" (41441 views, 131 likes) https://x.com/i/status/1946719230423978252
+- Big Cat: "PCA" (37044 views, 268 likes) https://x.com/i/status/1946743334976024945
+- Mario Nawfal: "🚨😭 CRYBABY COCKTAIL HOUR: BRENNAN, COMEY, CLAPPER ARE ALL FILTHY LIARS
+
+@ericbolling 
+
+"They opened investigations into Brennan and Comey but skipped Clapper, who lied under oath about NSA spying on Americans. 
+
+Proven false within days. 
+
+Now these filthy liars have jobs at https://t.co/QJ6xHVQ6cX https://t.co/hQYnIwMJSV" (35328 views, 81 likes) https://x.com/i/status/1946724519671894066
+- Barstool Sports: "Sometimes you just bite more off than you can chew.
+
+@PFTCommenter's approach to the @PardonMyTake hot dog challenge failed miserably.  
+
+‘PMTV’ presented by @ChevyTrucks #ad #Chevy #Silverado @PardonMyTake 
+https://t.co/HHdg2pZmOO" (32423 views, 14 likes) https://x.com/i/status/1946696345860845575
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: OBAMA'S HOAX JUST GOT EXPOSED
+
+@DavidPollackUSA:
+
+"I was listening to you talking about the crybabies, and talking about Stephen Colbert, and everybody on the left.
+
+It's so crazy to me, and I'm sure you've been following the news cycle as much as I https://t.co/YDsZfR1qX0 https://t.co/PKTxNEwPNy" (31898 views, 78 likes) https://x.com/i/status/1946718345274733050
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (25664 views, 660 likes) https://x.com/i/status/1946702346634789257
+- Barstool Sports: "Old School Cheating: Memphis Hoops Is On Probation After 'Two Softball Players Were Paid $550 To Complete Coursework For A Former Basketball Player' https://t.co/ViAzBi5s76 https://t.co/P8pFdN0oDG" (26252 views, 39 likes) https://x.com/i/status/1946702882545234361
+- Mario Nawfal: "TEENS ON SOCIAL MEDIA: LOVE IT, HATE IT, CAN’T QUIT IT
+
+YouTube is still King, 9 in 10 teens use it. TikTok’s their second home. Facebook? That’s for parents and conspiracy uncles.
+
+Half of teens say social media is ruining their generation’s brain cells, but only 14% admit it’s https://t.co/Wnslb5OLiX https://t.co/EOzSW7p1fG" (24632 views, 44 likes) https://x.com/i/status/1946727722459287720
+- Pardon My Take: "One of the greatest monologues in award show history
+
+@trulyseltzer https://t.co/C7BxZmbVVW" (24219 views, 221 likes) https://x.com/i/status/1946733848848486536
+- Mario Nawfal: "🔴LIVE: CRYBABY COCKTAIL HOUR w/ Eric Bolling + Special Guests https://t.co/DEbgS3Kj4S" (24028 views, 42 likes) https://x.com/i/status/1946708875752984975
+- Mario Nawfal: "🇺🇸 GEN. FLYNN: RUSSIAN HOAX IS THE BIGGEST CRIME IN U.S. HISTORY
+
+According to Flynn, this so-called coup against Trump started before anyone even voted in 2016.
+
+Intel Chief Tulsi Gabbard dropped documents showing Obama knew the Trump-Russia stuff was fake but ran with it https://t.co/Bnepr0YKHe https://t.co/NruZRYwpWH" (20089 views, 196 likes) https://x.com/i/status/1946731783615091089
+- Department of Government Efficiency: "Contracts Update!
+
+Over the last 3 days, agencies terminated 80 wasteful contracts with a ceiling value of $831M and savings of $436M, including a DoT $265k professional services contract for “planning and environment workshop and roundtable discussion”. https://t.co/sVWqsuIxc7" (18614 views, 1081 likes) https://x.com/i/status/1946736765349310803
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: REP. OMAR WORKS FOR SOMALIA, NOT THE U.S.
+
+@lavern_spicer:  
+
+"And she[Ilhan Omar] said that her 1st priority. Everything she does, the most important group she does things for is the Somalians, not the American people, not the Minnesotans that she https://t.co/Up16YiXJw5 https://t.co/hQYnIwMJSV" (18259 views, 74 likes) https://x.com/i/status/1946741850032795836
+- Mario Nawfal: "🇺🇸 GALLOWAY: “FOLLOW YOUR PASSION” IS BILLIONAIRE BS
+
+Bestselling author and entrepreneur Scott Galloway says the worst career advice out there is the one rich people love to give:
+
+“Follow your passion.”
+
+His take?
+If someone tells you that, they’re already rich.
+And probably https://t.co/ATbjbskiqu https://t.co/zYSs1xteA5" (18007 views, 45 likes) https://x.com/i/status/1946696551361057078
+- PFT Commenter: "PR101: apolgize like Zac https://t.co/7fcxlOaUo1" (17432 views, 157 likes) https://x.com/i/status/1946699142421446899
+- Mario Nawfal: "🚨🇺🇦 🇷🇺 KYIV: PUTIN, MEET ME FACE-TO-FACE
+
+Zelensky says Kyiv proposed a new round of talks with Moscow next week, urging faster progress toward a ceasefire.
+
+He again called for a face-to-face meeting with Putin:
+
+"A meeting at the leadership level is needed to truly ensure https://t.co/tmKky1giDT https://t.co/rQ4HCHpGsQ" (17342 views, 58 likes) https://x.com/i/status/1946697215033930038
+- Barstool Sports: "Sometimes you just can't beat the course.
+
+@hen_ease needed to make birdie with 1 of his 3 "putts" to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado @PardonMyTake 
+https://t.co/fMdX4yfatT" (17025 views, 17 likes) https://x.com/i/status/1946699485515567283
+- Mario Nawfal: "🇺🇸 ELON HOSTS SOFT OPENING OF TESLA DINER IN LA
+
+1st  Responders got the VIP treatment at Elon’s new Tesla Diner in Los Angeles.
+
+Meanwhile, Tesla says it has over 7,100 Supercharger stations and more than 67,300 plugs worldwide.
+
+So yeah, burgers, charging stations, and humanoid https://t.co/zQ2j5fAPtS https://t.co/UVfDQCIoav" (16427 views, 73 likes) https://x.com/i/status/1946742139662074083
+- World of Statistics: "Obesity rate
+
+🇦🇺 Australia: 31.02%
+🇯🇵 Japan: 5.57%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (14902 views, 72 likes) https://x.com/i/status/1946740088198836650
+- Mario Nawfal: "🇺🇸 WHY AMERICANS BELIEVE CONSPIRACIES? BECAUSE SOME OF THEM TURNED OUT TRUE
+
+When the government misleads, it creates conspiracy theorists.
+
+Trust in U.S. institutions is in freefall - from 77% in the JFK era to &lt;30% today.
+
+Why? 
+
+The Hunter Biden laptop story - real, but https://t.co/XoU7auq3Yu https://t.co/EH5PKCknQk" (13888 views, 99 likes) https://x.com/i/status/1946734300281647354
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (13316 views, 381 likes) https://x.com/i/status/1946703318895526379
+- Mario Nawfal: "🚨🇺🇸 TRUMP TO SEN. THUNE: CANCEL AUGUST RECESS, CONFIRM MY PEOPLE!
+
+"Hopefully, the very talented John Thune, fresh off our many victories over the past two weeks and, indeed, 6 months, will cancel August recess (and long weekends!), in order to get my incredible nominees https://t.co/gI04SgWfvg https://t.co/bBdZwo3g6j" (13536 views, 97 likes) https://x.com/i/status/1946703852838797685
+- Mario Nawfal: "🇺🇸 VIRGINIA MAN PLEADS GUILTY AFTER FBI FINDS 150 PIPE BOMBS AT HOME
+
+Brad Spafford looked like a regular guy. 
+Quiet job. No record. 
+
+Until the FBI raided his house.
+
+Inside: 150 pipe bombs - the biggest stash of homemade explosives ever found in a U.S. home. 
+
+A freezer packed https://t.co/gWkNummZmT" (13169 views, 57 likes) https://x.com/i/status/1946729992143954240
+- Charles Hoskinson: "I just received the first copy of the audit report. I requested a lot more detail and context in several areas, but it's shaping up quickly. I believe we are on schedule for a mid-August release, assuming the work continues at this pace and there are no delays. 
+
+I will read the" (12756 views, 412 likes) https://x.com/i/status/1946738026488443002
+- Sawyer Merritt: "🔥🔥 https://t.co/w9w9U6XLtG" (12176 views, 513 likes) https://x.com/i/status/1946743553197056439
+- Mario Nawfal: "🚨🇺🇸 TRUMP: GREAT JOB BY HARRISON FIELDS AND PANEL ON FOX NEWS
+
+"Great job by young and talented Harrison Fields on FoxNews. 
+
+The panel was fantastic on prosecuting Obama and the 'thugs' exposed for highest level election fraud. 
+
+Congratulations to Tulsi Gabbard. 
+
+Keep it https://t.co/Yy5wRQY2Z0 https://t.co/LHfhqsgKb5" (11841 views, 76 likes) https://x.com/i/status/1946714199813402719
+- Mario Nawfal: "🇮🇷 BREAKING: EARTHQUAKE ROCKS NORTHERN IRAN
+
+A magnitude 5.6 earthquake jolted northern Iran on Sunday. 
+
+The quake hit at a shallow depth of just 3 kilometers, making it more likely to be felt on the surface. 
+
+No immediate word yet on damage or injuries.
+
+Source: EMSC, Reuters https://t.co/lhDlFXIUAy" (11610 views, 48 likes) https://x.com/i/status/1946695989311557650
+- Mario Nawfal: "🇰🇷 SOUTH KOREA FLOODS: DEATH TOLL RISES TO 9 AS LANDSLIDES HIT VILLAGES
+
+Five more deaths were reported Saturday as torrential rains continue devastating South Korea, with two people still missing after authorities evacuated 7,029 residents.
+
+Four fatalities occurred in Sancheong https://t.co/V4RmpSTvVK https://t.co/wJKwtIrYqh" (11441 views, 24 likes) https://x.com/i/status/1946744367655403649
+- Mario Nawfal: "🚨😭VOTE NOW: WHO'S THIS WEEK'S BIGGEST LIBERAL CRYBABY?" (10997 views, 12 likes) https://x.com/i/status/1946740068393038169
+- Mario Nawfal: "🇸🇦 SAUDI ARABIA’S ‘SLEEPING PRINCE’ DIES AFTER 20 YEARS IN COMA
+
+Prince Al Waleed bin Khaled bin Talal - known across the Arab world as the “Sleeping Prince” - has died after spending two decades in a coma.
+
+He was 18 when a car crash in 2005 left him unconscious.
+He was 38 when https://t.co/l9LGLO3gxd" (10342 views, 99 likes) https://x.com/i/status/1946704101854597304
+- Mario Nawfal: "🚨🇺🇸FLASH FLOOD EMERGENCY: DC SUBURBS FACE LIFE-THREATENING CONDITIONS
+
+The National Weather Service issued a Flash Flood Emergency until 9:00 PM EDT Saturday for Bethesda, Silver Spring, Kensington, White Oak, and Four Corners, Maryland.
+
+NWS Warning: 
+
+"This is a life https://t.co/YTawg6YzY3" (10164 views, 40 likes) https://x.com/i/status/1946697650864030035
+- Sawyer Merritt: "https://t.co/LyY5VtZew5 https://t.co/DqbuT852Ru" (10053 views, 70 likes) https://x.com/i/status/1946731601573896516
+- World and Science: "Breath-taking: The Unfurling Spiral Arms of NGC 3981
+
+They are likely the result of gravitational forces during an encounter with a neighbouring galaxy.
+
+Credit: Dark Energy Survey/DOE/FNAL/DECam/CTIO/NOIRLab/NSF/AURA - Image processing: R. Colombari &amp; M. Zamani (NSF’s NOIRLab) https://t.co/YDd8MZCOpp" (8698 views, 40 likes) https://x.com/i/status/1946717698047586649
+- Mario Nawfal: "🇮🇹🇺🇸 FROM SUMMER BREAK TO NEAR-DEATH: A NEW YORKER’S ITALIAN NIGHTMARE
+
+Nick Pellegrino landed in Milan for vacation.
+He left the train platform soaked in blood, stabbed in the neck by 2 North African migrants.
+
+Pellegrino, still from the hospital bed:
+
+“It’s a playground for https://t.co/18HCLSCA8A" (7601 views, 59 likes) https://x.com/i/status/1946709134323433944
+- Mario Nawfal: "🇭🇷 RED BULL MOTORBIKING: WHERE GRAVITY GETS TOLD TO WAIT
+
+Throttle wide. Ramp locked. And then - lift-off.
+
+This isn’t biking. It’s combat with the atmosphere. Mid-air flips, blind landings, and riders who treat 100-foot gaps like they’re speed bumps.
+
+Every launch is a gamble. https://t.co/k27QfwwDLQ" (7486 views, 39 likes) https://x.com/i/status/1946714171736997902
+- Dave Lee: "In this video, I challenge the traditional view that parenting needs to be about rules, punishments, and authority. I believe the authoritative approach is actually counterproductive to raising confident, wise, and independent kids.
+
+I dive into why rules create fear and distance https://t.co/7KU2orGzCg" (7210 views, 132 likes) https://x.com/i/status/1946728337331646898
+- Mario Nawfal: "800 DRONES. 3D YODA. FULL GEEK MODE ENGAGED
+
+At Angel Stadium, fans got a galaxy-sized surprise: a fully animated Star Wars drone show with 800 synchronized drones forming 3D scenes from The Empire Strikes Back.
+
+Vader loomed over the crowd, Yoda floated in full rotation, https://t.co/iGPGfvg10Y" (6992 views, 83 likes) https://x.com/i/status/1946699068841058555
+- Mario Nawfal: "@elonmusk ❤️" (7029 views, 42 likes) https://x.com/i/status/1946733876614697088
+- World of Statistics: "Per capita CO₂ emissions 
+
+🇮🇹 Italy: 5.3t
+🇵🇹 Portugal: 3.6t
+
+(Annual emission, per Global Carbon Budget 2024)" (6987 views, 27 likes) https://x.com/i/status/1946709637547348203
+- Andrej Karpathy: "Hi @gmail does the "report phishing" button do anything https://t.co/asIRKdxJyd" (6843 views, 140 likes) https://x.com/i/status/1946745524033593739
+- Mario Nawfal: "@elonmusk 👀" (6934 views, 22 likes) https://x.com/i/status/1946733939617353877
+- Sawyer Merritt: "Tesla sells an exclusive all-black Tesla Bot action figure at their new diner. https://t.co/EC8V3BrMzG https://t.co/3N3cwEfyYK" (6774 views, 130 likes) https://x.com/i/status/1946709439613944255
+- Max Velocity: "I am feeling better tonight, no fever, just achy with a sore throat.
+
+Videos will return normally tomorrow!" (6369 views, 365 likes) https://x.com/i/status/1946728584757891384
+- Pardon My Take: "The 17th best QB in the NFL award presented by @Blutman27 
+
+@McDonalds #ad https://t.co/aXGMbddMnr" (6527 views, 20 likes) https://x.com/i/status/1946705495605063858
+- Max Velocity: "UPDATE: 145+ fatalities confirmed from the Texas Floods this month, with 3 people missing." (6268 views, 195 likes) https://x.com/i/status/1946739354694492511
+- Boston 25 News: "Police: Man arrested on lewdness charge in Dennis https://t.co/H7WXKaQBcp" (5990 views, 16 likes) https://x.com/i/status/1946717985608962529
+- History Defined: "A fortunate accident: Photo captures the moment a baby burst out laughing and her mother fights so hard to no laugh with her, Daguerreotype of 1850-60s https://t.co/fBSf1zHP3W" (5155 views, 207 likes) https://x.com/i/status/1946721934873448735
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: IF KAMALA WON, WE WOULD BE LOCKED UP!
+
+@lavern_spicer:
+
+"You all have to realize that if Kamala had been elected, many of us would be locked up right now, because she made it clear that everybody who had something negative to say about her would be https://t.co/ghGgCvFjg4 https://t.co/PKTxNExnD6" (5333 views, 17 likes) https://x.com/i/status/1946715789182300515
+- Wonder of Science: "Card shuffler in the video (paid link): https://t.co/piXptklpSA" (5217 views, 4 likes) https://x.com/i/status/1946714167802577238
+- TESLARATI: "🚨 Wow — Take a look at the glow from the wildfires in LA as Tesla was in the process of having the Supercharger Diner built. 
+
+You might remember Tesla deployed Cybertrucks equipped with Starlink to assist with rescue efforts. https://t.co/QmlaFDPy3I https://t.co/tiwNrJS7UB" (4229 views, 27 likes) https://x.com/i/status/1946741501083394294
+- Wonder of Science: "This hand-cranked card shuffler follows a concept first patented in 1887, using rubber wheels to draw cards from two stacks and merge them into a shuffled pile.
+https://t.co/p47e7O41Wg" (4077 views, 12 likes) https://x.com/i/status/1946709965911253022
+- Mario Nawfal: "🚨😭CRYBABY COCKTAIL HOUR: REP. OMAR WORKS FOR SOMALIA, NOT THE U.S.
+
+@lavern_spicer :
+
+"And she[Ilhan Omar] said that her 1st priority.
+
+Everything she does, the most important group she does things for is the Somalians, not the American people, not the Minnesotans that she https://t.co/yiS264k27a https://t.co/PKTxNEwPNy" (3776 views, 21 likes) https://x.com/i/status/1946716235091067028
+- History Defined: "50 rare photos of daily life in the 19th century
+https://t.co/MfYkCeMpvq" (3610 views, 5 likes) https://x.com/i/status/1946721936005799949
+- The Boston Globe: "In a highly unusual move, Cambridge-based Sarepta said late Friday won’t comply with a request from the Food and Drug Administration to halt all shipments of its gene therapy. https://t.co/2vxOr7v2g8" (3568 views, 2 likes) https://x.com/i/status/1946722154680099322
+- Franz von Holzhausen: "Thank you first responders! Tesla Diner and Superchargers opening soon! https://t.co/mWH4aJpdju" (3216 views, 232 likes) https://x.com/i/status/1946745486469124134
+- Dave Lee: "You can also watch this video on YT: https://t.co/7ieVFej3Uz
+
+And you can view my other videos in my parenting series on this playlist:
+https://t.co/sUkFCXpOia" (3187 views, 17 likes) https://x.com/i/status/1946729042087932304
+- History Defined: "Jack Nicholson with his daughter Jennifer in the 60s https://t.co/05tgbAZm3H" (3132 views, 28 likes) https://x.com/i/status/1946729371030392968
+- Max Velocity: "BREAKING: At least 6 vehicles are stuck in high water due to flooding in Four Corners, Maryland, inside of a flash flood emergency, right now.
+
+Additionally, 5 FEET of standing water is at the intersection of East-West Highway and Washington Avenue, with a car and fire truck" (2859 views, 85 likes) https://x.com/i/status/1946703221386588225
+- History Defined: "Old School Cool: Some of the greatest photos ever taken
+https://t.co/9gMrCDCWja" (2762 views, 1 likes) https://x.com/i/status/1946729372167135651
+- World and Science: "A dynamo deep inside the Moon once generated a magnetic field as strong as Earth's!
+
+Here is what we know: https://t.co/fxFdVQe5x0" (2708 views, 4 likes) https://x.com/i/status/1946734829871018247

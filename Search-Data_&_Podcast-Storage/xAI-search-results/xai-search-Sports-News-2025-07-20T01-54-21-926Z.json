@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Data on specific viral sports stories from the last 24 hours is sparse in the provided results. Only general sports-related sources were identified, and no high-engagement X posts or RSS items directly related to sports news were found. Therefore, only two potential stories are included based on available news sources.\",\n  \"stories\": [\n    {\n      \"headline\": \"The Athletic provides coverage of sports teams and leagues.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\"https://www.nytimes.com/athletic/\"]\n    },\n    {\n      \"headline\": \"Fox News reports on the latest sports news and updates.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\"https://foxnews.com/sports\"]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/sports/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.foxnews.com/",
+    "https://foxnews.com/sports",
+    "https://www.reuters.com/world/",
+    "https://foxnews.com/media",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

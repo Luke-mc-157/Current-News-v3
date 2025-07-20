@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk comments on AI risks and development on social media platform.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946742000893714690\",\n        \"https://x.com/elonmusk/status/1946740057978912930\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"User shares content on social media perceived as critical of political figures.\",\n      \"x_posts\": [\n        \"https://x.com/DiligentDenizen/status/unknown_id\"  // Based on available context; exact ID not specified\n      ],\n      \"supporting_articles\": []\n    },\n    {\n      \"headline\": \"Reuters reports on ongoing developments related to Donald Trump.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/world/us/donald-trump/\"\n      ]\n    },\n    {\n      \"headline\": \"Washington Post covers general political news and events.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories were identified based on available data from searches. Some entries have limited X posts due to sparse direct correlations in the results.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/world/us/donald-trump/",
+    "https://www.foxnews.com/",
+    "https://www.aljazeera.com/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/world/",
+    "https://x.com/DiligentDenizen/status/1946606550996406449",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

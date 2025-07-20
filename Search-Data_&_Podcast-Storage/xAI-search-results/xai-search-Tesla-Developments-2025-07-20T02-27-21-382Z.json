@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla opens its first store in India and Starlink receives regulatory approval.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946748366144307403\",\n        \"https://x.com/SawyerMerritt/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.nytimes.com/2025/07/17/world/asia/tesla-starlink-india-elon-musk.html\"\n      ]\n    },\n    {\n      \"headline\": \"xAI, led by Elon Musk, conducts community cleanup activities involving local businesses.\",\n      \"x_posts\": [\n        \"https://x.com/xAIMemphis/status/1946750229295858089\"\n      ],\n      \"supporting_articles\": [\n        \"https://x.com/xAIMemphis/status/1946750229295858089\"  // Using RSS feed as it provides the content link\n      ]\n    }\n  ],\n  \"notes\": \"Only two stories were identified with sufficient evidence from the last 24 hours based on available searches for Tesla developments. Data for additional stories was sparse or not directly related.\"\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/video/",
+    "https://www.npr.org/sections/national/",
+    "https://www.cnn.com/2025/07/14/business/elon-musk-tesla-full-time-ceo",
+    "https://stocktwits.com/symbol/TSLA/",
+    "https://www.nytimes.com/2025/07/17/world/asia/tesla-starlink-india-elon-musk.html",
+    "https://x.com/xAIMemphis/status/1946750229295858089",
+    "https://x.com/elonmusk/status/1946748366144307403",
+    "https://x.com/SawyerMerritt/status/1946743553197056439"
+  ]
+}

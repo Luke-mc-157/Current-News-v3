@@ -643,7 +643,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'. Return a JSON object with the following format: { \"stories\": [ { \"headline\": \"Factual declarative headline here.\", \"x_posts\": [\"https://x.com/post1\", \"https://x.com/post2\"], \"supporting_articles\": [\"https://news1.com/article\", \"https://rss2.com/feed\"] } ] }"
+          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'. Return a JSON object. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
@@ -671,7 +671,7 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         reasoning_effort: "high",
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 2000, "post_favorite_count": 40},
+          {"type": "x",},
           { "type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] },
           {"type": "news", "country": "US" },
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
