@@ -146,6 +146,12 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
       });
+      
+      // Add 10-second delay between topic calls to prevent information bleeding
+      if (index < topics.length - 1) {
+        console.log(`⏳ Waiting 10 seconds before next topic to prevent xAI information bleeding...`);
+        await new Promise(resolve => setTimeout(resolve, 10000));
+      }
     } catch (error) {
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
       allTopicData.push({
@@ -647,12 +653,37 @@ async function getTopicDataFromLiveSearch(topic) {
         },
         {
           role: "user",
-          content: `Compile the biggest news stories about ${topic} from the last 24 hours (${fromDate} to ${toDate}).`
+          content: `Using first principles, identify the 4 biggest news stories about ${topic} from X (formerly Twitter) posts in the last 24 hours. Define "biggest" as those with the highest total engagement (sum of likes, retweets, and replies across related posts).
+
+Step 1: Use X semantic search and keyword search tools to find the top 20-30 relevant posts, filtering for high engagement and excluding ads/promotions.
+
+Step 2: Cluster the posts into 4 distinct stories based on shared themes, then rank them by aggregate engagement.
+
+Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of X post links that informed it.
+
+Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find 2-3 supporting articles per story, ensuring they corroborate the facts.
+
+Step 5: Use source type 'rss' and 'news' to find additional supporting articles if web results are insufficient.
+
+Output strictly as JSON:
+{
+  "stories": [
+    {
+      "rank": [Number],
+      "headline": ["Factual declarative headline here."],
+      "x_posts": [Full X URLs],
+      "supporting_articles": [Article URLs"],
+      "total_engagement": [Number]
+    },
+    // Repeat for ranks 2-4
+  ]
+}
+If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.`
         },
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 10,
+        max_search_results: 15,
         return_citations: true,
         reasoning_effort: "high",
         from_date: fromDate,

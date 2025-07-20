@@ -124,7 +124,15 @@ The application now includes a comprehensive podcast generation system:
     - Phase 3 fallback ensures X posts are added even if Grok misses them
   - **Results**: X posts now properly included in headlines with full metadata (handle, text, likes, URL)
 
-### Latest Updates (January 19, 2025 - 11:47 PM UTC)
+### Latest Updates (January 20, 2025 - 1:10 AM UTC)
+- **✅ IMPLEMENTED 10-SECOND DELAY BETWEEN xAI CALLS**: Added delay to prevent information bleeding between topics
+  - **Issue Identified**: xAI Live Search returns same high-engagement posts (Tesla/Elon Musk) across unrelated topics (NFL, Football Transfers)
+  - **Implementation**: Added 10-second delay between sequential xAI topic calls in liveSearchService.js
+  - **Timing Verified**: Topics now process with proper delays (17 seconds between each topic including processing time)
+  - **Issue Status**: Information bleeding still occurring despite delays - xAI API appears to have internal caching/context issues
+  - **Next Steps**: May need to explore alternative solutions like separate API sessions or topic-specific prompting
+
+### Previous Updates (January 19, 2025 - 11:47 PM UTC)
 - **✅ ORGANIZED DATA STORAGE STRUCTURE IMPLEMENTED**: Renamed and reorganized file storage for better data management
   - **Main Folder Renamed**: "podcast-audio" → "Search-Data_&_Podcast-Storage"
   - **New Subfolder Structure**:

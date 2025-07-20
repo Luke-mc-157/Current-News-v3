@@ -1,0 +1,10 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"Tesla launches new diner and supercharger facility in Los Angeles.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946733522942886088\",\n        \"https://x.com/SawyerMerritt/status/1946733104514683012\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/technology/tesla-diner-supercharger-launch-2025\",\n        \"https://news.google.com/articles/tesla-innovations-diner-opening\"\n      ],\n      \"total_engagement\": 10000\n    }\n  ],\n  \"notes\": \"Only one distinct story was identified from available data related to Tesla innovations, based on high-engagement posts about the diner and supercharger launch. Engagement totals are estimated from the aggregated posts reviewed, as precise data was not fully available. Additional stories could not be clustered due to limited relevant posts in the search results.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/cycling/articles/clymzd6169jo",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012"
+  ]
+}

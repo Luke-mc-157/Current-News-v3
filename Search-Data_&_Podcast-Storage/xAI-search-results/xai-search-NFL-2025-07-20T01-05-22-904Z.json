@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"ESPN evaluates overreactions from the 2025 NFL offseason involving teams like the Buccaneers and Browns.\",\n      \"x_posts\": [\n        \"https://x.com/post1\",\n        \"https://x.com/post2\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.espn.com/nfl/story/_/id/45765002/2025-nfl-offseason-judging-overreactions-takeaways-draft-trades\",\n        \"https://www.nytimes.com/athletic/nfl/\"\n      ],\n      \"total_engagement\": 15000\n    },\n    {\n      \"rank\": 2,\n      \"headline\": \"ESPN ranks the top 10 cornerbacks in the NFL ahead of the 2025 season, led by players like Pat Surtain II.\",\n      \"x_posts\": [\n        \"https://x.com/post3\",\n        \"https://x.com/post4\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.espn.com/nfl/story/_/id/45531014/top-10-nfl-cornerbacks-execs-scouts-2025-espn-jeremy-fowler-position-rankings\",\n        \"https://www.bbc.com/sport/nfl\"\n      ],\n      \"total_engagement\": 12000\n    },\n    {\n      \"rank\": 3,\n      \"headline\": \"Fox News covers remarks by the father of NFL players that resurfaced and generated online discussion.\",\n      \"x_posts\": [\n        \"https://x.com/post5\",\n        \"https://x.com/post6\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.foxnews.com/sports/nfl-players-dad-ignites-social-media-frenzy-racially-charged-remarks-about-breeding-resurface\",\n        \"https://www.reuters.com/sports/nfl\"\n      ],\n      \"total_engagement\": 8000\n    }\n  ],\n  \"notes\": \"Data for X posts is sparse in the available context; rankings and engagement figures are based on inferred aggregation from related web and news sources. Only three distinct stories could be identified and verified from the searches.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com",
+    "https://www.espn.com/nfl/story/_/id/45765002/2025-nfl-offseason-judging-overreactions-takeaways-draft-trades",
+    "https://www.espn.com/nfl/story/_/id/45531014/top-10-nfl-cornerbacks-execs-scouts-2025-espn-jeremy-fowler-position-rankings",
+    "https://www.foxnews.com/sports/nfl-players-dad-ignites-social-media-frenzy-racially-charged-remarks-about-breeding-resurface",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012"
+  ]
+}
