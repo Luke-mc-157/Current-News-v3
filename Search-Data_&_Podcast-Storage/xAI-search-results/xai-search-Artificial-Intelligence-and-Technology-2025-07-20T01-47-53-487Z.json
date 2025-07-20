@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk announces increased focus on artificial intelligence development at xAI, Tesla, and SpaceX.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946742000893714690\"\n      ],\n      \"supporting_articles\": [\n        \"https://techcrunch.com/category/artificial-intelligence/\",\n        \"https://www.reuters.com/technology/artificial-intelligence/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk describes artificial intelligence as causing overwhelming existential concerns.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946740057978912930\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.washingtonpost.com/opinions/2025/07/18/artificial-intelligence-tulsi-gabbard-writing/\",\n        \"https://www.bbc.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Sawyer Merritt shares content related to technology developments on X.\",\n      \"x_posts\": [\n        \"https://x.com/SawyerMerritt/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://indianexpress.com/section/technology/artificial-intelligence\",\n        \"https://techcrunch.com/category/artificial-intelligence/\"\n      ]\n    },\n    {\n      \"headline\": \"Media outlets discuss advancements and ethical considerations in artificial intelligence technology.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Based on available data from the last 24 hours, four stories were identified. The third story relies on a post with limited details, and the fourth aggregates general discussions as specific high-engagement X posts were not available beyond the provided context.\"\n}",
+  "citations": [
+    "https://www.bbc.com",
+    "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
+    "https://www.washingtonpost.com/opinions/2025/07/18/artificial-intelligence-tulsi-gabbard-writing/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://techcrunch.com/category/artificial-intelligence/",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

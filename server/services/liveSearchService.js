@@ -674,7 +674,7 @@ CRITICAL: Do not include any sources or citations that are not directly related 
           {"type": "x", "post_view_count": 2000, "post_favorite_count": 40},
           { "type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] },
           {"type": "news", "country": "US" },
-          {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com",], "country": "US" }
+          {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
         ]
       },
       max_tokens: 90000
