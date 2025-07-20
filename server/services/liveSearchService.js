@@ -647,17 +647,15 @@ async function getTopicDataFromLiveSearch(topic) {
         },
         {
           role: "user",
-          content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} by searching X (formerly Twitter), RSS, and news sources from the last 24 hours. 
+          content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Search X (formerly Twitter) and news sources for specific supporting articles from the last 24 hours. 
 
 Step 1: Use X semantic search and keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
 
-Step 2: Search "RSS" and "News" with keyword search and semantic search for corresponding articles/posts.
+Step 2: Search "News" with keyword search and semantic search for corresponding articles/posts.
 
 Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of citations links that informed it.
 
 Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find further supporting information if necessary.
-
-Step 5: Use source type 'rss' and 'news' to find additional supporting articles if web results are insufficient.
 
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.
 
@@ -672,7 +670,6 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         from_date: fromDate,
         sources: [
           {"type": "x",},
-          { "type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"] },
           {"type": "news", "country": "US" },
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
         ]
