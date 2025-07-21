@@ -59,12 +59,6 @@ export default function Home() {
               </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="/podcast-test" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
-                Podcast Test
-              </a>
-              <a href="/scraper-test" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
-                Scraper Test
-              </a>
               <a href="/podcasts" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Podcasts
               </a>

@@ -7,8 +7,6 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { DevBanner } from "@/components/DevBanner";
 import { EnvironmentIndicator } from "@/components/EnvironmentIndicator";
 import Home from "@/pages/home";
-import PodcastTest from "@/pages/podcast-test";
-import ScraperTest from "@/pages/scraper-test";
 import ResetPassword from "@/pages/reset-password";
 import Podcasts from "@/pages/podcasts";
 import NotFound from "@/pages/not-found";
@@ -17,8 +15,6 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/podcast-test" component={PodcastTest} />
-      <Route path="/scraper-test" component={ScraperTest} />
       <Route path="/reset-password" component={ResetPassword} />
       <Route path="/podcasts" component={Podcasts} />
       <Route component={NotFound} />
