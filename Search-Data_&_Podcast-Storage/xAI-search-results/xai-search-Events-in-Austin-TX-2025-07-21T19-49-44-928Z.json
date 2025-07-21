@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"A teenager was arrested in connection with a stabbing incident in Austin, Texas, resulting in a woman being hospitalized.\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://www.kxan.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Texas lawmakers returned to Austin for a special session to address legislative matters.\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla and Waymo are expanding robotaxi operations in Austin, Texas.\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://www.axios.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Communities in the Austin area are commemorating victims of recent flooding events.\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://www.cbsnews.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/latest-headlines/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://axios.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.cbsnews.com/",
+    "https://www.npr.org/sections/national/",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/houstoncitybeat/status/1947316366819594723",
+    "https://x.com/UndercodeNews/status/1946964478198759644",
+    "https://x.com/moizesufally/status/1947318240667124012",
+    "https://x.com/GrooganFox26/status/1946885661614649394"
+  ]
+}

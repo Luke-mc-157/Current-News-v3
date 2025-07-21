@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Neuralink has implanted its Telepathy brain chip in nine people, including two procedures in a single day.\",\n      \"citations\": [\n        \"https://t.co/JDHR6eOlkt\",\n        \"https://www.wired.com/story/synchron-neuralink-competitor-brain-computer-interfaces/\"\n      ]\n    },\n    {\n      \"headline\": \"Neuralink labeled itself as a small disadvantaged business in a federal filing.\",\n      \"citations\": [\n        \"https://www.cnbc.com/2025/07/17/elon-musks-neuralink-says-owned-by-disadvantaged-persons-in-filing.html\",\n        \"https://www.nbcnews.com/business/business-news/elon-musk-neuralink-small-business-filing-rcna219549\"\n      ]\n    },\n    {\n      \"headline\": \"China is advancing in brain-computer interface technology, potentially rivaling companies like Neuralink.\",\n      \"citations\": [\n        \"https://www.cnn.com/2025/07/20/china/china-brain-tech-hnk-intl-dst\"\n      ]\n    },\n    {\n      \"headline\": \"Synchron's brain-computer interface technology does not require open-skull surgery and includes an AI chatbot.\",\n      \"citations\": [\n        \"https://www.wired.com/story/synchron-neuralink-competitor-brain-computer-interfaces/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for the first story relies primarily on posts found on X, which may not be fully verifiable; other stories are supported by news articles from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news/uk",
+    "https://www.nytimes.com/",
+    "https://www.wired.com/story/synchron-neuralink-competitor-brain-computer-interfaces/",
+    "https://www.reuters.com/",
+    "https://www.cnn.com/2025/07/20/china/china-brain-tech-hnk-intl-dst",
+    "https://www.cnbc.com/2025/07/17/elon-musks-neuralink-says-owned-by-disadvantaged-persons-in-filing.html",
+    "https://www.nbcnews.com/business/business-news/elon-musk-neuralink-small-business-filing-rcna219549",
+    "https://x.com/thegeo_sync/status/1947346506346074356",
+    "https://x.com/cb_doge/status/1947344786270335206",
+    "https://x.com/S0pranoSol/status/1947373764456362191",
+    "https://x.com/joinearlybird/status/1947297833717006708",
+    "https://x.com/alesizneias/status/1947368300716925156"
+  ]
+}

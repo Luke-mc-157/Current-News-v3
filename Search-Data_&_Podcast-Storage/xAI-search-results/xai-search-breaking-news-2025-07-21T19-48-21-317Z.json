@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Vehicle incident involving a crowd reported in Los Angeles\",\n      \"sources\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Plane crash incident occurs amid breaking news events\",\n      \"sources\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Opposition parties address security and political issues in meeting\",\n      \"sources\": [\n        \"https://indianexpress.com/\",\n        \"https://www.npr.org/sections/national/\"\n      ]\n    },\n    {\n      \"headline\": \"Fake news reports circulate widely on social media\",\n      \"sources\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and correlating articles; if topics are controversial, treat as inconclusive without direct verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.axios.com/",
+    "https://indianexpress.com/",
+    "https://www.npr.org/sections/national/",
+    "https://x.com/VajiramRavi/status/1947259023625011690",
+    "https://x.com/InstaBharat/status/1947130880364892340",
+    "https://x.com/InstaBharat/status/1946885911972610213",
+    "https://x.com/ASSiteFeed/status/1946802619424330129",
+    "https://x.com/saidul_dev/status/1947256191811493982"
+  ]
+}

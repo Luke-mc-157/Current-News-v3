@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Teen arrested in connection with Austin stabbing incident, resulting in woman's hospitalization\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\",\n        \"X post about Austin stabbing\"\n      ]\n    },\n    {\n      \"headline\": \"Austin experiences multiple homicides this year, including cases linked to a suspected serial killer\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\",\n        \"X post about Austin homicides\"\n      ]\n    },\n    {\n      \"headline\": \"Texas lawmakers reconvene in Austin for special legislative session\",\n      \"citations\": [\n        \"https://www.ctvnews.ca/\",\n        \"X post about lawmakers in Austin\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla and Waymo advance robotaxi developments in Austin\",\n      \"citations\": [\n        \"https://news.google.com/\",\n        \"X post about Tesla vs Waymo in Austin\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Austin faces extreme heat and humidity during the current weather period\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\",\n        \"Information from news sources on Austin weather\"\n      ]\n    },\n    {\n      \"headline\": \"Community incident in Austin involves law enforcement and public safety concerns\",\n      \"citations\": [\n        \"https://axios.com/\",\n        \"X post about Austin law enforcement\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement and semantic posts from the last 24 hours; only directly related sources were included, and some topics may have limited verification.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/international/section/world/middleeast?page=2",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home/sections/CAQiSENCQVNNQW9JTDIwdk1ETm5aRFVTQldWdUxVZENHZ0pKVGlJT0NBUWFDZ29JTDIwdk1ETnlhekFxQ1FvSEVnVkpibVJwWVNnQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRE5uWkRVU0JXVnVMVWRDR2dKSlRpZ0FQAVAB?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/home?hl=en-IL&gl=IL&ceid=IL:en",
+    "https://news.google.com/home?hl=en-PK&gl=PK&ceid=PK:en",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://www.ctvnews.ca/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://cbsaustin.com/news/local",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/Girl64Saved/status/1947082255727284512",
+    "https://x.com/houstoncitybeat/status/1947316366819594723",
+    "https://x.com/UndercodeNews/status/1946964478198759644",
+    "https://x.com/nunez_anna/status/1946914614391734772"
+  ]
+}

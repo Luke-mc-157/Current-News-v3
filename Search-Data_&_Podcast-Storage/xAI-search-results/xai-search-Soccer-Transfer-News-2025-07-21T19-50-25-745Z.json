@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agree transfer fee with Eintracht Frankfurt for Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\",\n        \"https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32084502\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal negotiations for Viktor Gyokeres from Sporting CP face delays\",\n      \"citations\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\",\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United in talks with Barcelona over Marcus Rashford transfer\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45763858/transfer-window-weekly-sancho-rashford-headed-juventus\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United negotiate with Juventus for Jadon Sancho transfer\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45763858/transfer-window-weekly-sancho-rashford-headed-juventus\",\n        \"https://www.espn.com/soccer/story/_/id/45774061/transfer-rumors-news-nottingham-forest-manchester-united-jadon-sancho\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/sport/football/teams/manchester-united",
+    "https://www.bbc.com/",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html",
+    "https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32084502",
+    "https://www.espn.com/soccer/story/_/id/45774061/transfer-rumors-news-nottingham-forest-manchester-united-jadon-sancho",
+    "https://www.espn.com/soccer/story/_/id/45763858/transfer-window-weekly-sancho-rashford-headed-juventus",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html",
+    "https://x.com/DuncanCastles/status/1947286345547714576",
+    "https://x.com/OneFunTom/status/1946810725759893666",
+    "https://x.com/JWokabi/status/1946830931014082743",
+    "https://x.com/Gyaanovercric/status/1946953601319932022",
+    "https://x.com/CybarBall/status/1947055693984583770"
+  ]
+}

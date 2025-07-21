@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Minnesota Vikings have a plan to address J.J. McCarthy's rookie season challenges\",\n      \"citations\": [\n        \"https://t.co/xxUKEPZoaq\"\n      ]\n    },\n    {\n      \"headline\": \"Tennessee Titans quarterback Will Levis undergoes season-ending surgery\",\n      \"citations\": [\n        \"https://t.co/WCLGCKZpvh\"\n      ]\n    },\n    {\n      \"headline\": \"Cincinnati Bengals defensive end Trey Hendrickson is expected to sign an extension\",\n      \"citations\": [\n        \"https://t.co/WCLGCKZpvh\"\n      ]\n    },\n    {\n      \"headline\": \"Detroit Lions secure a win, leaving observers with a notable reaction\",\n      \"citations\": [\n        \"https://t.co/kI1zvwgF6q\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"U.S. President Donald Trump threatens to block Washington Commanders' stadium deal unless team changes name\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for semantic stories is based on available context and may be limited; only one additional story identified beyond high-engagement posts.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.bbc.com/sport/football",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/",
+    "https://foxnews.com/",
+    "https://npr.org/sections/national",
+    "https://www.espn.com/nfl/story/_/id/45621153/top-10-nfl-players-dropped-every-position-2025-jeremy-fowler-best-quarterbacks-running-backs-wide-receivers",
+    "https://heavy.com/",
+    "https://www.espn.com/nfl/story/_/id/45531014/top-10-nfl-cornerbacks-execs-scouts-2025-espn-jeremy-fowler-position-rankings",
+    "https://x.com/InstaBharat/status/1946970555678085143",
+    "https://x.com/HGrahamNFL/status/1947346211121287647",
+    "https://x.com/InstaBharat/status/1946892185577693367",
+    "https://x.com/InstaBharat/status/1946833111569834430",
+    "https://x.com/InstaBharat/status/1946908543333876089"
+  ]
+}

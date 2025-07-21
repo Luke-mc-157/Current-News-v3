@@ -1,0 +1,18 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool FC agrees to a transfer fee for striker Hugo Ekitike from Eintracht Frankfurt.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-hugo-32078531\",\n        \"https://www.liverpool.com/liverpool-fc-news/features/hugo-ekitike-makes-major-transfer-32083827\"\n      ]\n    },\n    {\n      \"headline\": \"Darwin Nunez scores a hat-trick in Liverpool FC's pre-season friendly match against Stoke.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/\"\n      ]\n    },\n    {\n      \"headline\": \"Florian Wirtz decides to join Liverpool FC instead of Bayern Munich.\",\n      \"citations\": [\n        \"https://www.mirror.co.uk/sport/football/transfer-news/florian-wirtz-liverpool-bayern-munich-35576102\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC is involved in ongoing transfer discussions regarding forward Luis Diaz.\",\n      \"citations\": [\n        \"https://liverpooloffside.sbnation.com/liverpool-fc-transfer-news/2025/7/18/24469818/liverpool-fc-transfer-rumour-mongering-bayern-munich-make-progress-in-luis-diaz-chase\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on available data from the last 24 hours; citations are limited to directly related sources from news and web results.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-hugo-32078531",
+    "https://www.nytimes.com/athletic/6497196/2025/07/18/liverpool-pre-season-tour-far-east-explained/",
+    "https://www.mirror.co.uk/sport/football/transfer-news/florian-wirtz-liverpool-bayern-munich-35576102",
+    "https://liverpooloffside.sbnation.com/liverpool-fc-transfer-news/2025/7/18/24469818/liverpool-fc-transfer-rumour-mongering-bayern-munich-make-progress-in-luis-diaz-chase",
+    "https://www.liverpool.com/liverpool-fc-news/features/hugo-ekitike-makes-major-transfer-32083827",
+    "https://x.com/Top_T40/status/1946878489426030705",
+    "https://x.com/RousingTheKop/status/1946994046406418804",
+    "https://x.com/salman_sarwar18/status/1947080613317734482"
+  ]
+}
