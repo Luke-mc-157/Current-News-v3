@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Kansas City Chiefs edge rusher George Karlaftis signs contract extension.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"Posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Detroit Lions defensive end Levi Onwuzurike suffers ACL tear.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"Posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Former U.S. President Donald Trump threatens to block Washington-area stadium deal unless NFL team reverts to previous name.\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/\"\n      ]\n    },\n    {\n      \"headline\": \"Heisman Trophy-winning quarterback criticizes NFL scouts for evaluation of Cam Ward's draft prospects.\",\n      \"citations\": [\n        \"Posts found on X\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for some stories is based on high-engagement posts and may require additional verification; only directly related sources from the last 24 hours were used.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.nytimes.com/athletic/6499843/2025/07/21/nfl-training-camp-players-sanders-kelce/",
+    "https://www.nytimes.com/athletic/6483632/2025/07/21/nfl-training-camp-storylines-2025/",
+    "https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/",
+    "https://foxnews.com/",
+    "https://si.com/",
+    "https://npr.org/sections/national",
+    "https://foxnews.com/sports",
+    "https://www.bleachernation.com/bears/",
+    "https://x.com/HGrahamNFL/status/1947346211121287647",
+    "https://x.com/JLSports24/status/1947270983951196571",
+    "https://x.com/JWhat29/status/1946974164092350509",
+    "https://x.com/NewsSportGlobe/status/1947300933261840486",
+    "https://x.com/RapSheet/status/1947251421264404593"
+  ]
+}

@@ -527,12 +527,13 @@ ${articlesText}`
 }
 
 // Compile all raw search data with metadata
-async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken) {
+async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles = []) {
   console.log('🔄 Compiling raw search data with X API batch fetching...');
   
   const compiledTopics = [];
   let totalXAIPosts = 0;
   let totalArticles = 0;
+  let totalRssArticles = formattedRssArticles.length;
   
   // Process each topic's citations
   for (const topicData of allTopicData) {
@@ -642,6 +643,22 @@ ${articlesText || 'None found'}
 `;
   }).join('\n---\n');
   
+  // Add RSS articles section if available
+  let rssSection = '';
+  if (formattedRssArticles.length > 0) {
+    console.log(`📰 Adding ${formattedRssArticles.length} RSS articles to compiled data...`);
+    const rssText = formattedRssArticles.map(article => 
+      `- [${article.feed_name}]: "${article.title}" - ${article.content.substring(0, 200)}... [${article.url}]`
+    ).join('\n');
+    
+    rssSection = `
+
+---
+
+RSS ARTICLES (${formattedRssArticles.length} articles):
+${rssText}`;
+  }
+
   // Add timeline posts section
   let timelineSection = '';
   if (formattedTimelinePosts.length > 0) {
@@ -657,21 +674,23 @@ USER'S TIMELINE POSTS (${formattedTimelinePosts.length} posts):
 ${timelineText}`;
   }
   
-  const compiledData = topicsSection + timelineSection;
+  const compiledData = topicsSection + rssSection + timelineSection;
   
   console.log(`✅ Data compilation complete:`);
   console.log(`📊 Topics: ${compiledTopics.length}`);
   console.log(`🐦 xAI X Posts: ${totalXAIPosts}`);
   console.log(`📰 Articles: ${totalArticles}`);
+  console.log(`📰 RSS Articles: ${totalRssArticles}`);
   console.log(`📱 Timeline Posts: ${formattedTimelinePosts.length}`);
   console.log(`📏 Total data length: ${compiledData.length} chars`);
   
   return {
     compiledData: compiledData,
-    totalSources: totalXAIPosts + totalArticles + formattedTimelinePosts.length,
+    totalSources: totalXAIPosts + totalArticles + totalRssArticles + formattedTimelinePosts.length,
     breakdown: {
       xaiPosts: totalXAIPosts,
       articles: totalArticles,
+      rssArticles: totalRssArticles,
       timelinePosts: formattedTimelinePosts.length
     }
   };
@@ -806,7 +825,8 @@ async function inferEmergentTopicsFromTimeline(posts) {
 
 async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
   console.log('🤖 Phase 2: Enhanced newsletter compilation with grok...');
-  console.log(`📊 Processing ${sourceBreakdown.xaiPosts + sourceBreakdown.articles + sourceBreakdown.timelinePosts} total sources`);
+  const totalSources = sourceBreakdown.xaiPosts + sourceBreakdown.articles + (sourceBreakdown.rssArticles || 0) + sourceBreakdown.timelinePosts;
+  console.log(`📊 Processing ${totalSources} total sources (${sourceBreakdown.xaiPosts} X posts, ${sourceBreakdown.articles} articles, ${sourceBreakdown.rssArticles || 0} RSS articles, ${sourceBreakdown.timelinePosts} timeline posts)`);
   console.log(`📏 Data length: ${compiledData.length} chars`);
   
   try {
@@ -819,7 +839,8 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
           role: "system",
           content: `DATA FORMAT PROVIDED:
 - Full compiled research data with complete topic sections
-- Each section contains X posts metadata and article citations  
+- Each section contains X posts metadata, article citations, and RSS articles
+- RSS ARTICLES section contains supplementary content from user's RSS feeds
 - All engagement metrics preserved for ranking
 
 Return ONLY a JSON array in this exact format:
@@ -867,10 +888,10 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a newsletter for the platform user's front end UI in the specified format.
 
         NEWSLETTER GENERATION INSTRUCTIONS:
-        1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts and news articles. 
-        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post & article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post and news article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts or articles).
-        2. CRITICAL: Use X POSTS FROM SEARCH and X POSTS FROM USER'S TIMELINE POSTS as sourcePosts in your headlines
-        3. Include both X posts and articles - prioritize high engagement X posts
+        1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts, news articles, and RSS articles. 
+        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post, article, and RSS article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post, news article, and RSS article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts, articles, or RSS articles).
+        2. CRITICAL: Use X POSTS FROM SEARCH, X POSTS FROM USER'S TIMELINE POSTS, and RSS ARTICLES as sources in your headlines
+        3. Include X posts, articles, and RSS articles - prioritize high engagement X posts and relevant RSS content
         4. Each headline MUST have sourcePosts array with X post data
         5. Preserve exact URLs and metadata from the provided data
         6. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.

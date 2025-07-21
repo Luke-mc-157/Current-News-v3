@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. President Donald Trump threatens to block Washington Commanders' stadium deal unless the team reverts to its former name.\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/\"\n      ]\n    },\n    {\n      \"headline\": \"Kansas City Chiefs defensive end George Karlaftis signs a contract extension.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/nfl/\"\n      ]\n    },\n    {\n      \"headline\": \"Detroit Lions defensive end Levi Onwuzurike suffers a torn ACL.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/nfl/\"\n      ]\n    },\n    {\n      \"headline\": \"Tennessee Titans quarterback Will Levis undergoes season-ending surgery.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/nfl/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://foxnews.com/",
+    "https://foxnews.com/sports",
+    "https://masslive.com/patriots",
+    "https://www.foxnews.com/sports/nfl-players-dad-ignites-social-media-frenzy-racially-charged-remarks-about-breeding-resurface",
+    "https://heavy.com/sports/nfl",
+    "https://x.com/HGrahamNFL/status/1947346211121287647",
+    "https://x.com/RapSheet/status/1947251421264404593",
+    "https://x.com/iamtylertnt/status/1947082157416919399",
+    "https://x.com/riyabanerjee23/status/1947354373690208684",
+    "https://x.com/InstaBharat/status/1947348061044269477"
+  ]
+}

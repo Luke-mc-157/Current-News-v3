@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Lawmakers reconvene in Austin for a special legislative session\",\n      \"citations\": [\n        \"https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en\",\n        \"https://cbsaustin.com/news/local\"\n      ]\n    },\n    {\n      \"headline\": \"Teenager arrested in connection with a stabbing incident in Austin\",\n      \"citations\": [\n        \"https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en\",\n        \"https://foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla and Waymo continue competition in Austin's robotaxi market\",\n      \"citations\": [\n        \"https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en\",\n        \"https://axios.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Austin faces hottest week of the summer with high heat and humidity\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\",\n        \"https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and correlating news articles from the last 24 hours; four stories identified as the most relevant.\"\n}",
+  "citations": [
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home/sections/CAQiSENCQVNNQW9JTDIwdk1ETm5aRFVTQldWdUxVZENHZ0pKVGlJT0NBUWFDZ29JTDIwdk1ETnlhekFxQ1FvSEVnVkpibVJwWVNnQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRE5uWkRVU0JXVnVMVWRDR2dKSlRpZ0FQAVAB?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.fox26houston.com/",
+    "https://cbsaustin.com/news/local",
+    "https://x.com/houstoncitybeat/status/1947316366819594723",
+    "https://x.com/UndercodeNews/status/1946964478198759644",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/WrightorWrongAL/status/1947277980255850627",
+    "https://x.com/nunez_anna/status/1946914614391734772"
+  ]
+}

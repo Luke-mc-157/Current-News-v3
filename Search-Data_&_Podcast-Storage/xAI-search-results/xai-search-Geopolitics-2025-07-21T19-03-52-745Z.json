@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"US urges Ukraine to restart talks as military situation escalates in eastern Ukraine\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.npr.org/sections/world\"\n      ]\n    },\n    {\n      \"headline\": \"Russia and Iran strengthen alliance with advancements in Iran's nuclear program\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"United States and India face unresolved issues in ongoing trade negotiations\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"China increases purchases of Russian oil amid global geopolitical shifts\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news/world/asia/china\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world/asia/china",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/national/",
+    "https://npr.org/sections/world",
+    "https://economist.com/the-world-in-brief",
+    "https://x.com/delhi919/status/1947358301756313817",
+    "https://x.com/OccupySchagen/status/1947000770055832028",
+    "https://x.com/GodarmyofAngel/status/1947160051917222397",
+    "https://x.com/Left_Indy/status/1947103675672879583",
+    "https://x.com/IndiaToday/status/1947362802181804076"
+  ]
+}
