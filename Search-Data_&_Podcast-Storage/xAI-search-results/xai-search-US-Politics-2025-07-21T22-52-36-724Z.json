@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"US President Donald Trump urges Senate to cancel August recess amid legislative priorities\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Discussions emerge regarding alleged orchestration of Russiagate involving former officials\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/20/us/politics/epstein-employee-trump-investigation.html\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    },\n    {\n      \"headline\": \"Reports indicate a US Immigration and Customs Enforcement agent was shot during operations\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.npr.org/\"\n      ]\n    },\n    {\n      \"headline\": \"US border crossings and related policies show significant reductions according to recent data\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Concerns raised about media distractions amid ongoing issues like deportations and political divisions\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement and semantic posts from X within the last 24 hours, correlated with news sources; only four high-engagement stories identified from relevant context.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/",
+    "https://www.nytimes.com/2025/07/20/us/politics/epstein-employee-trump-investigation.html",
+    "https://www.nytimes.com/2025/07/19/us/politics/inside-trump-epstein-friendship.html",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.nytimes.com/",
+    "https://www.axios.com/",
+    "https://www.npr.org/",
+    "https://x.com/PatriciaSc59294/status/1947039542604681382",
+    "https://x.com/still_hustling/status/1946925622321967193",
+    "https://x.com/MarioNawfal/status/1946873971435008056",
+    "https://x.com/southgrace427/status/1947302722589384965",
+    "https://x.com/jerrykezhaya/status/1946770069905650141"
+  ]
+}

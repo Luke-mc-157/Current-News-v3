@@ -48,7 +48,7 @@ WORD COUNT STRATEGY:
 - Expand each story with detailed coverage from the provided sources
 - Use comprehensive descriptions and thorough explanations
 - Include all relevant quotes and source material
-- Add smooth transitions between topics (30-50 words each)
+- Add smooth transitions between topics
 - Create detailed summaries rather than brief mentions
 
 CRITICAL VOICE OPTIMIZATION RULES:
@@ -68,7 +68,8 @@ CONTENT RULES:
 
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
-- Main segments: One for each major story, with smooth transitions. Include as many headlines and stories as possible.
+- Include as many headlines and stories as possible.
+- Group stories by topic/category.
 - For each story: Present facts from articles and posts, quote key sources.
 - Start with stories that have the most engagement (views + likes from supporting X posts)
 - From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun, so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply."
@@ -80,7 +81,6 @@ When provided with raw compiled data (40k+ characters), this is COMPREHENSIVE RE
 - Quote extensively from X POSTS FROM SEARCH with full context
 - Integrate ALL SUPPORTING ARTICLES with detailed summaries
 - Include ALL USER'S TIMELINE POSTS with comprehensive coverage
-- Expand each story to at least ${Math.floor(targetWordCount / 8)} words per major topic
 - Do NOT summarize - EXPAND the research into full podcast content
 
 DURATION COMPLIANCE:
@@ -116,7 +116,7 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
         mode: "on"
       },
       reasoning_effort: "high",
-      temperature: 0.8,
+      temperature: 0.6,
       max_tokens: Math.max(15000, targetWordCount * 1.5) // Dynamic scaling: ensure sufficient tokens for longer podcasts
     });
     

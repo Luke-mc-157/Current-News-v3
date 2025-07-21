@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Putin advances uranium cooperation with Iran amid international tensions\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://t.co/C9r4nFIFH1\"\n      ]\n    },\n    {\n      \"headline\": \"Zelenskiy directed to pursue diplomatic talks as Ukraine conflict intensifies\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://t.co/30KWQKijLP\"\n      ]\n    },\n    {\n      \"headline\": \"India and U.S. trade negotiations stall over unresolved agricultural issues\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://twitter.com/THEDNL/posts/related\"\n      ]\n    },\n    {\n      \"headline\": \"China responds to Russia's proposal for a new geopolitical bloc involving India\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://t.co/BAkErE40qw\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/",
+    "https://www.nytimes.com/",
+    "https://npr.org/sections/world",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/national/",
+    "https://economist.com/the-world-in-brief",
+    "https://x.com/delhi919/status/1947358301756313817",
+    "https://x.com/policy_wire/status/1947053539303231646",
+    "https://x.com/OccupySchagen/status/1947000770055832028",
+    "https://x.com/IndiaToday/status/1947362802181804076",
+    "https://x.com/GodarmyofAngel/status/1947160051917222397"
+  ]
+}

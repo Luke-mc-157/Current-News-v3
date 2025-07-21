@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"India launches AI-powered digital library for traditional medicine\",\n      \"citations\": [\n        \"https://t.co/G1WHwtFT5J\"\n      ]\n    },\n    {\n      \"headline\": \"CoinDCX cryptocurrency exchange experiences a cyberattack\",\n      \"citations\": [\n        \"https://www.foxnews.com/tech\"\n      ]\n    },\n    {\n      \"headline\": \"ServiceNow acquires Moveworks to enhance enterprise AI solutions\",\n      \"citations\": [\n        \"https://www.foxnews.com/tech\"\n      ]\n    },\n    {\n      \"headline\": \"Y Combinator startup develops AI agents for Windows operating system\",\n      \"citations\": [\n        \"https://www.foxnews.com/tech\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for some stories is based on high-engagement X posts and general news sources; specific article links were limited in searches.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/business/",
+    "https://www.foxnews.com/tech",
+    "https://www.sciencedaily.com/",
+    "https://indianexpress.com/section/trending/",
+    "https://foxnews.com/entertainment",
+    "https://ndtv.com/latest",
+    "https://x.com/ETtech/status/1947123753391161480",
+    "https://x.com/kdpisda/status/1947028352772243708",
+    "https://x.com/InstaBharat/status/1946834935303577727",
+    "https://x.com/dasilvakareem/status/1946842634506399871"
+  ]
+}

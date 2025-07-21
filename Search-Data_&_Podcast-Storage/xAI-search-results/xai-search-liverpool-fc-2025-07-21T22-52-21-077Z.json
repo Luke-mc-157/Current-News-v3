@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Liverpool agrees to fee for striker Hugo Ekitike from Eintracht Frankfurt\",\n      \"x_posts\": \"Posts on X discussing Liverpool's transfer activities and fan reactions, with high engagement on transfer rumors.\",\n      \"articles\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/\"\n      ]\n    },\n    {\n      \"headline\": \"Darwin Nunez scores hat-trick in Liverpool's pre-season friendly win against Stoke\",\n      \"x_posts\": \"Posts on X highlighting player performances in pre-season matches, with engagement on recent game results.\",\n      \"articles\": [\n        \"https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Liverpool involved in transfer discussions amid reports of player interests\",\n      \"x_posts\": \"Posts on X mentioning Liverpool's transfer strategies and responses to external claims, identified through semantic search.\",\n      \"articles\": [\n        \"https://www.bbc.com/sport/football/articles/c3en2g514jqo\",\n        \"https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool's pre-season activities include matches and squad updates\",\n      \"x_posts\": \"Posts on X semantically related to team preparations and fan sentiments, not covered in high-engagement searches.\",\n      \"articles\": [\n        \"https://www.bbc.com/sport/football/teams/liverpool\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories identified based on available data from the last 24 hours; data is based on high-engagement and semantic searches, with citations limited to directly related sources.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://bbc.com/sport/football/articles/c3en2g514jqo",
+    "https://www.nytimes.com/athletic/6495165/2025/07/16/liverpool-alexander-isak-signing-dream/",
+    "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://x.com/ShotCaller1984/status/1947365973536788947",
+    "https://x.com/RousingTheKop/status/1946994046406418804",
+    "https://x.com/MpeseProud/status/1946975422056427649",
+    "https://x.com/MpeseProud/status/1946975168032620674",
+    "https://x.com/MpeseProud/status/1946975134268510310"
+  ]
+}

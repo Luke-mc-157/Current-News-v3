@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Scottie Scheffler is featured in discussions about his golf performance\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/golf\",\n        \"https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/\",\n        \"https://essentiallysports.com/golf-news-amanda-balionis-breaks-golf-hiatus-as-nike-s-scottie-scheffler-ad-pushes-her-to-respond-pga-tour\"\n      ]\n    },\n    {\n      \"headline\": \"Amanda Balionis returns to golf-related commentary\",\n      \"citations\": [\n        \"https://essentiallysports.com/golf-news-amanda-balionis-breaks-golf-hiatus-as-nike-s-scottie-scheffler-ad-pushes-her-to-respond-pga-tour\"\n      ]\n    },\n    {\n      \"headline\": \"A bench is referenced in golf stories\",\n      \"citations\": [\n        \"https://t.co/0dj9dHM0bS\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified from the last 24 hours based on available high-engagement posts and correlating articles; data is limited to relevant sources.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/golf",
+    "https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/",
+    "https://www.bbc.com/news/uk",
+    "https://www.bbc.com/news/northern_ireland",
+    "https://www.nytimes.com/athletic/6360453/2025/05/15/pga-championship-2025-mud-ball-golf/",
+    "https://essentiallysports.com/golf-news-amanda-balionis-breaks-golf-hiatus-as-nike-s-scottie-scheffler-ad-pushes-her-to-respond-pga-tour",
+    "https://foxnews.com/sports/youtube-golf-influencer-grant-horvat-explains-why-he-boldly-rejected-pga-tour-event-invitation",
+    "https://www.huffpost.com/entry/trump-golf-claim_n_68746d46e4b00af0c5f21e7f",
+    "https://sports.yahoo.com/article/paige-spiranacs-golf-score-wednesday-023508919.html",
+    "https://golf.com/news/grant-horvat-pga-tour-denial-nbc-open-championship-shift",
+    "https://x.com/GolfDigest/status/1946872716625133992",
+    "https://x.com/InstaBharat/status/1946893506347254067",
+    "https://x.com/InstaBharat/status/1946885938681966688",
+    "https://x.com/InstaBharat/status/1946908549092704378"
+  ]
+}

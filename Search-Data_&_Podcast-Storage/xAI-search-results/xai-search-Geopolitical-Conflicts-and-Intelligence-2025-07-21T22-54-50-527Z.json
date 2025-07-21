@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Russian forces advance in Ukraine, impacting key frontlines\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/middle_east\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Iran-backed proxies continue attacks in Middle East regions\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/israel-hamas-war/\",\n        \"https://www.aljazeera.com/\"\n      ]\n    },\n    {\n      \"headline\": \"China increases oil imports from Russia amid global tensions\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Intelligence reports highlight multi-theater conflicts involving Africa and Asia\",\n      \"citations\": [\n        \"https://www.bbc.com/news/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Zelenskiy administration faces pressure for negotiations in Ukraine conflict\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Ukraine strikes Russian infrastructure targets in ongoing hostilities\",\n      \"citations\": [\n        \"https://www.aljazeera.com/\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement and semantic posts from X, correlated with news sources; only directly related sources were used; fewer than 4 semantic stories identified based on relevance.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/israel-hamas-war/",
+    "https://www.aljazeera.com/",
+    "https://www.npr.org/sections/news/",
+    "https://npr.org/sections/world",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://x.com/MRDNJ/status/1947025827993985365",
+    "https://x.com/404WORLD404/status/1946996767993573885",
+    "https://x.com/being_Obhan/status/1947214688825266373",
+    "https://x.com/OccupySchagen/status/1947000770055832028",
+    "https://x.com/TWMCLtd/status/1947116973113987522"
+  ]
+}

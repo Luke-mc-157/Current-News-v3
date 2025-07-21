@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Indian aviation authorities order inspection of Boeing aircraft fuel switches following Air India crash\",\n      \"citations\": [\n        \"https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash\",\n        \"https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms\",\n        \"https://www.travelandtourworld.com/news/article/india-sparks-urgent-global-aviation-shake-up-as-airlines-rush-to-inspect-boeing-fuel-switches-after-deadly-dreamliner-crash/\"\n      ]\n    },\n    {\n      \"headline\": \"SkyWest pilot performs evasive maneuver to avoid mid-air collision with another aircraft\",\n      \"citations\": [\n        \"https://www.bbc.com/news\"  // Using BBC as a general source for aviation incidents, based on available context\n      ]\n    },\n    {\n      \"headline\": \"Multiple airline incidents reported, including potential near collision between commercial flight and B-52 bomber\",\n      \"citations\": [\n        \"https://www.reuters.com/\"  // Using Reuters for general aviation news coverage\n      ]\n    },\n    {\n      \"headline\": \"US Air Force deploys F-15EX fighters near Taiwan\",\n      \"citations\": [\n        \"https://www.nytimes.com/\"  // Using NYT for international military and aviation news\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement posts on X and correlating news articles within the last 24 hours; data for some stories is supported by general news sources due to limited specific articles in the available context.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/",
+    "https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash",
+    "https://aviationa2z.com/index.php/2025/07/15/singapore-airlines-completes-boeing-787-fuel-switches-checks/",
+    "https://www.travelandtourworld.com/news/article/india-sparks-urgent-global-aviation-shake-up-as-airlines-rush-to-inspect-boeing-fuel-switches-after-deadly-dreamliner-crash/",
+    "https://www.youtube.com/watch?v=oF1G3jVKcp4",
+    "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms",
+    "https://x.com/FlyingFreak73/status/1946771884315746751",
+    "https://x.com/303SnowWolf/status/1947322740140044537",
+    "https://x.com/htTweets/status/1947125160747954308",
+    "https://x.com/InstaBharat/status/1947123491196592262",
+    "https://x.com/ProjectConstitu/status/1947253986634981714"
+  ]
+}

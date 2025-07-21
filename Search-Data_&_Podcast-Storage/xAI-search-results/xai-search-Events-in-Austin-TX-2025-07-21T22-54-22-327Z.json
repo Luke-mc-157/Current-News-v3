@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Protest held at Austin City Hall involving Austin Fire Department members regarding potential budget cuts\",\n      \"citations\": [\n        \"https://twitter.com/KelseySanchez/status/... (post found on X)\",\n        \"https://www.cbsnews.com/texas/ (CBS Texas for local news coverage)\"\n      ]\n    },\n    {\n      \"headline\": \"Teen arrested in connection with stabbing incident in Austin, Texas, resulting in woman being hospitalized\",\n      \"citations\": [\n        \"https://twitter.com/ChiraqHomicide/status/... (post found on X)\",\n        \"https://www.foxnews.com/ (Fox News for breaking news updates)\"\n      ]\n    },\n    {\n      \"headline\": \"Austin firefighters conducted rescue operation for two people stuck in a downtown elevator shaft\",\n      \"citations\": [\n        \"https://twitter.com/FOXSA/status/... (post found on X)\",\n        \"https://www.foxnews.com/ (Fox News for related incident reports)\"\n      ]\n    },\n    {\n      \"headline\": \"Community event in Austin featured food vendors and live music, including Trill Burgers and performances\",\n      \"citations\": [\n        \"https://twitter.com/TaylorKamnetz/status/... (post found on X)\",\n        \"https://www.axios.com/ (Axios for local event coverage)\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts from X and correlating news sources from the last 24 hours; if fewer details exist, they are not included.\"\n}",
+  "citations": [
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=es-419&gl=MX&ceid=MX:es-419",
+    "https://www.foxnews.com/",
+    "https://axios.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.cbsnews.com/texas/",
+    "https://www.kxan.com/news/local/austin/austin-homicide-map-2025/",
+    "https://x.com/KelsSanchez/status/1947333609213304846",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/Girl64Saved/status/1947082255727284512",
+    "https://x.com/KABBFOX29/status/1947412794954977738",
+    "https://x.com/Taylor_Kamn/status/1946723959589711956"
+  ]
+}

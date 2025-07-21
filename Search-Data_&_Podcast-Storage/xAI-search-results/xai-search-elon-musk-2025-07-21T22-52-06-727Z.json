@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk posts criticism of Donald Trump related to Epstein documents on X\",\n      \"citations\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\",\n        \"https://www.yahoo.com/news/musk-goes-nuclear-trump-epstein-125613357.html\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk faces reported tensions with Donald Trump affecting Tesla and SpaceX\",\n      \"citations\": [\n        \"https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128\"\n      ]\n    },\n    {\n      \"headline\": \"X, owned by Elon Musk, declines to cooperate with French investigation citing political motivations\",\n      \"citations\": [\n        \"https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla expands Robotaxi services and introduces new app features in Austin\",\n      \"citations\": [\n        \"https://ndtv.com/topic/elon-musk\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://ndtv.com/topic/elon-musk",
+    "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://www.yahoo.com/news/musk-goes-nuclear-trump-epstein-125613357.html",
+    "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124",
+    "https://x.com/Angel_Trades5/status/1946748742452797523",
+    "https://x.com/aapkadilipgupta/status/1947246676558651488",
+    "https://x.com/RENEEGREEN25552/status/1947394410104471614",
+    "https://x.com/RENEEGREEN25552/status/1947385958162211226",
+    "https://x.com/DigitalWarfare1/status/1947315756292866356"
+  ]
+}
