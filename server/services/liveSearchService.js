@@ -26,6 +26,25 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     rssArticles = [];
   }
   
+  // Format RSS articles early for use in emergent topic inference
+  const formattedRssArticles = [];
+  if (rssArticles.length > 0) {
+    console.log(`📰 Formatting ${rssArticles.length} RSS articles for analysis...`);
+    
+    rssArticles.forEach(article => {
+      formattedRssArticles.push({
+        title: article.title,
+        content: article.content,
+        url: article.url,
+        feedName: article.feedName,
+        publishedAt: article.publishedAt,
+        source: 'rss'
+      });
+    });
+    
+    console.log('✅ RSS articles formatted and ready for analysis');
+  }
+  
   // Step 0: Fetch user's timeline posts if authenticated
   let followedPosts = [];
   
@@ -136,8 +155,8 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   }
   
   if (allContentForEmergentTopics.length > 0) {
-    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts + ${rssArticles.length} RSS articles...`);
-    const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts);
+    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts + ${formattedRssArticles.length} RSS articles...`);
+    const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts, formattedRssArticles);
     if (emergentTopics.length > 0) {
       topics = [...new Set([...topics, ...emergentTopics])]; // Dedupe and append
       console.log(`➕ Added emergent topics: ${emergentTopics.join(', ')}`);
@@ -186,9 +205,9 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     }
   }
   
-  // Step 1.5: Format timeline posts AND RSS articles for Grok to categorize
+  // Step 1.5: Format timeline posts for Grok to categorize
   const formattedTimelinePosts = [];
-  const formattedRssArticles = [];
+  // Note: formattedRssArticles already created earlier in the code
   
   if (followedPosts.length > 0 && userHandle) {
     console.log(`📱 Formatting ${followedPosts.length} timeline posts for Grok categorization...`);
@@ -216,23 +235,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log('✅ Timeline posts formatted and ready for Grok categorization');
   }
   
-  if (rssArticles.length > 0) {
-    console.log(`📰 Formatting ${rssArticles.length} RSS articles for Grok categorization...`);
-    
-    // Format RSS articles for Grok to analyze
-    rssArticles.forEach(article => {
-      formattedRssArticles.push({
-        title: article.title,
-        content: article.content.substring(0, 1000), // Limit content for analysis
-        url: article.url,
-        published_date: article.published_date,
-        feed_name: article.feedName,
-        source: 'rss'
-      });
-    });
-    
-    console.log('✅ RSS articles formatted and ready for Grok categorization');
-  }
+  // RSS articles already formatted earlier in the code for emergent topic inference
   
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
@@ -784,19 +787,37 @@ CRITICAL: Do not include any sources or citations that are not directly related 
   }
 }
 
-async function inferEmergentTopicsFromTimeline(posts) {
-  if (!posts.length) return [];
+async function inferEmergentTopicsFromTimeline(posts, rssArticles = []) {
+  if (!posts.length && !rssArticles.length) return [];
 
-  // Filter high-engagement: Sort by views + likes, take top half
-  const sortedPosts = posts.sort((a, b) => {
-    const engA = (a.public_metrics?.view_count || 0) + (a.public_metrics?.like_count || 0);
-    const engB = (b.public_metrics?.view_count || 0) + (b.public_metrics?.like_count || 0);
-    return engB - engA;
-  });
-  const highEngPosts = sortedPosts.slice(0, Math.ceil(posts.length / 2));
+  let contentSummary = '';
 
-  // Format for Grok
-  const postsSummary = highEngPosts.map(p => `Post: ${p.text} (Engagement: ${p.public_metrics?.view_count || 0} views, ${p.public_metrics?.like_count || 0} likes)`).join('\n');
+  // Process timeline posts if available
+  if (posts.length > 0) {
+    // Filter high-engagement: Sort by views + likes, take top half
+    const sortedPosts = posts.sort((a, b) => {
+      const engA = (a.public_metrics?.view_count || 0) + (a.public_metrics?.like_count || 0);
+      const engB = (b.public_metrics?.view_count || 0) + (b.public_metrics?.like_count || 0);
+      return engB - engA;
+    });
+    const highEngPosts = sortedPosts.slice(0, Math.ceil(posts.length / 2));
+
+    // Format timeline posts for Grok
+    const postsSummary = highEngPosts.map(p => `Post: ${p.text} (Engagement: ${p.public_metrics?.view_count || 0} views, ${p.public_metrics?.like_count || 0} likes)`).join('\n');
+    contentSummary += `X TIMELINE POSTS:\n${postsSummary}\n\n`;
+  }
+
+  // Process RSS articles if available
+  if (rssArticles.length > 0) {
+    // Take the most recent RSS articles (limit to top 10 to avoid token overload)
+    const recentRssArticles = rssArticles
+      .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+      .slice(0, 10);
+
+    // Format RSS articles for Grok
+    const rssSummary = recentRssArticles.map(article => `RSS Article [${article.feedName}]: ${article.title} - ${article.content.substring(0, 200)}`).join('\n');
+    contentSummary += `RSS ARTICLES:\n${rssSummary}`;
+  }
 
   try {
     const response = await client.chat.completions.create({
@@ -804,9 +825,9 @@ async function inferEmergentTopicsFromTimeline(posts) {
       messages: [
         {
           role: "system",
-          content: `Analyze these high-engagement X posts from the user's timeline. Infer 2-3 emergent topics (e.g., "AI Ethics", "Local Elections"). Then add 2-3 semantic topics based on the emergent topics. Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+          content: `Analyze these high-engagement X posts and RSS articles from the user's feeds. Infer 2-3 emergent topics (e.g., "AI Ethics", "Local Elections") based on content clusters and trending themes across both X timeline and RSS sources. Topics must be factual, based on actual content patterns. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
         },
-        { role: "user", content: postsSummary }
+        { role: "user", content: contentSummary }
       ],
       reasoning_effort: "high",
       max_tokens: 80000
