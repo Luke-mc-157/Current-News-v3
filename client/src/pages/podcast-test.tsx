@@ -131,7 +131,7 @@ export default function PodcastTest() {
       <header className="bg-white shadow-sm border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            <div className="flex items-center">
+            <div className="flex items-baseline">
               <h1 className="text-2xl font-bold text-slate-900">Current</h1>
               <span className="ml-2 text-sm text-slate-500 hidden sm:block">
                 Podcast Test Environment
