@@ -64,14 +64,14 @@ CONTENT RULES:
 3. FACTUAL LANGUAGE: Use neutral, objective language. Avoid adjectives that imply judgment.
 4. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
 5. CITE SOURCES: Reference the X posts and articles naturally within the narrative.
-6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not").
+6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not"). MINIMIZE FLUFF - keep it concise and to the point.
 
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
-- Main segments: One for each major story, with smooth transitions
+- Main segments: One for each major story, with smooth transitions. Include as many headlines and stories as possible.
 - For each story: Present facts from articles and posts, quote key sources.
 - Start with stories that have the most engagement (views + likes from supporting X posts)
-- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply."
+- From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun, so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply."
 - CLOSING SIGN OFF: "That's what's happening, currently. Thank you for listening. Make it a great day, or not...the choice is yours. See you next time." 
 
 USING RAW COMPILED DATA - EXPANSION STRATEGY:

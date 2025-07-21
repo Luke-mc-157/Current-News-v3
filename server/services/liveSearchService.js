@@ -825,7 +825,7 @@ async function inferEmergentTopicsFromTimeline(posts, rssArticles = []) {
       messages: [
         {
           role: "system",
-          content: `Analyze these high-engagement X posts and RSS articles from the user's feeds. Infer 2-3 emergent topics (e.g., "AI Ethics", "Local Elections") based on content clusters and trending themes across both X timeline and RSS sources. Topics must be factual, based on actual content patterns. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+          content: `Analyze these high-engagement X posts and RSS articles from the user's feeds. Infer 2-6 emergent topics (e.g., "AI Ethics", "Local Elections") based on content clusters and trending themes across both X timeline and RSS sources. Topics must be factual, based on actual content patterns. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
         },
         { role: "user", content: contentSummary }
       ],

@@ -79,7 +79,33 @@ export default function ScraperTest() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold text-slate-900">Current</h1>
+              <span className="ml-2 text-sm text-slate-500 hidden sm:block">
+                Scraper Test Environment
+              </span>
+            </div>
+            <nav className="hidden md:flex items-center space-x-8">
+              <a href="/" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Back to Home
+              </a>
+              <a href="/podcasts" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Podcasts
+              </a>
+              <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Settings
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-6xl mx-auto p-6">
       <Card className="mb-6">
         <CardHeader>
           <CardTitle>Article Scraper Test</CardTitle>
@@ -210,6 +236,7 @@ export default function ScraperTest() {
           </Card>
         </div>
       )}
+      </div>
     </div>
   );
 }
