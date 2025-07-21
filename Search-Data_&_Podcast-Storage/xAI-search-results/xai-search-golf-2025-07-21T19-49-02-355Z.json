@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Scottie Scheffler demonstrates strong performance in the Open Championship 2025\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/\"\n      ]\n    },\n    {\n      \"headline\": \"Paige Spiranac records a golf score that gains widespread attention\",\n      \"citations\": [\n        \"https://sports.yahoo.com/article/paige-spiranacs-golf-score-wednesday-023508919.html\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Former NHL player participates in a physical altercation at a golf course\",\n      \"citations\": [\n        \"https://people.com/former-nhl-player-slams-another-golfer-into-golf-course-pond-viral-fight-11769105\"\n      ]\n    },\n    {\n      \"headline\": \"A video showcases an unbelievable moment in golf\",\n      \"citations\": [\n        \"https://t.co/ov6NyRoqs7\"\n      ]\n    }\n  ],\n  \"notes\": \"Only stories with direct, verifiable evidence from the last 24 hours were included; data for additional stories was sparse.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/golf",
+    "https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/",
+    "https://www.nytimes.com/athletic/6360453/2025/05/15/pga-championship-2025-mud-ball-golf/",
+    "https://www.bbc.com/news/northern_ireland",
+    "https://www.bbc.com/news/uk",
+    "https://wktv.com/news/local/todays-trending-topics-headline-highlights-for-july-21/article_9c59b87f-1e78-56d6-9c79-573a1b5bf19b.html",
+    "https://reuters.com/sports/golf",
+    "https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-3-latest-including-tee-times-predictions-how-to-watch/Uq05IHuulZ0w/0cbAgxSBvWAu",
+    "https://sports.yahoo.com/article/paige-spiranacs-golf-score-wednesday-023508919.html",
+    "https://people.com/former-nhl-player-slams-another-golfer-into-golf-course-pond-viral-fight-11769105",
+    "https://x.com/GolfDigest/status/1946812319478223219",
+    "https://x.com/InstaBharat/status/1946908549092704378",
+    "https://x.com/InstaBharat/status/1946893506347254067",
+    "https://x.com/InstaBharat/status/1946885938681966688",
+    "https://x.com/InstaBharat/status/1946991699382726761"
+  ]
+}

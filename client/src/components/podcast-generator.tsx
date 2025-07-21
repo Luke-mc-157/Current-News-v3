@@ -227,13 +227,13 @@ export default function PodcastGenerator({ headlinesAvailable }: PodcastGenerato
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="Xb7hH8MSUJpSbSDYk0k2">Alice</SelectItem>
-                  <SelectItem value="nPczCjzI2devNBz1zQrb">Bryan - Professional Narrator (Warm American Male)</SelectItem>
-                  <SelectItem value="9BWtsMINqrJLrRacOk9x">Aria (Clear American Female)</SelectItem>
-                  <SelectItem value="pqHfZKP75CvOlQylNhV4">Bill (Friendly American Male)</SelectItem>
-                  <SelectItem value="EXAVITQu4vr4xnSDxMaL">Sarah (Professional Female)</SelectItem>
-                  <SelectItem value="VR6AewLTigWG4xSOukaG">Arnold (Crisp American Male)</SelectItem>
-                  <SelectItem value="KTPVrSVAEUSJRClDzBw7">Cowboy Bob VF (Aged American Storyteller)</SelectItem>
-                  <SelectItem value="yjJ45q8TVCrtMhEKurxY">Dr. Von Fusion VF (Quirky Mad Scientist)</SelectItem>
+                  <SelectItem value="nPczCjzI2devNBz1zQrb">Bryan - Professional Narrator</SelectItem>
+                  <SelectItem value="9BWtsMINqrJLrRacOk9x">Aria</SelectItem>
+                  <SelectItem value="pqHfZKP75CvOlQylNhV4">Bill</SelectItem>
+                  <SelectItem value="EXAVITQu4vr4xnSDxMaL">Sarah</SelectItem>
+                  <SelectItem value="VR6AewLTigWG4xSOukaG">Arnold</SelectItem>
+                  <SelectItem value="KTPVrSVAEUSJRClDzBw7">Cowboy Bob VF</SelectItem>
+                  <SelectItem value="yjJ45q8TVCrtMhEKurxY">Dr. Von Fusion VF</SelectItem>
                   <SelectItem value="1SM7GgM6IMuvQlz2BwM3">Mark - ConvoAI</SelectItem>
                 </SelectContent>
               </Select>

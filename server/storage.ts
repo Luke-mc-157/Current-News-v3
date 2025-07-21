@@ -1,11 +1,15 @@
-import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts } from "@shared/schema";
+import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, userRssFeeds, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch, type UserRssFeeds, type InsertUserRssFeeds } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, and, gte, lt, lte, gt } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
+  getAllUsers(): Promise<User[]>;
   getUserByUsername(username: string): Promise<User | undefined>;
+  getUserByEmail(email: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  updateUserLastLogin(userId: number): Promise<void>;
+  updateUserPassword(userId: number, password: string): Promise<void>;
   
   createUserTopics(topics: InsertUserTopics): Promise<UserTopics>;
   getUserTopics(userId: number): Promise<UserTopics[]>;
@@ -28,6 +32,7 @@ export interface IStorage {
   createXAuthToken(token: InsertXAuthTokens): Promise<XAuthTokens>;
   getXAuthTokenByUserId(userId: number): Promise<XAuthTokens | undefined>;
   updateXAuthToken(userId: number, updates: Partial<XAuthTokens>): Promise<XAuthTokens | undefined>;
+  deleteXAuthToken(userId: number): Promise<void>;
   
   // User follows methods
   createUserFollow(follow: InsertUserFollows): Promise<UserFollows>;
@@ -38,6 +43,36 @@ export interface IStorage {
   createUserTimelinePost(post: InsertUserTimelinePosts): Promise<UserTimelinePosts>;
   getUserTimelinePosts(userId: number, days?: number): Promise<UserTimelinePosts[]>;
   deleteOldTimelinePosts(userId: number, hours: number): Promise<void>;
+  
+  // Password reset token methods
+  createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken>;
+  getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined>;
+  markPasswordResetTokenUsed(token: string): Promise<void>;
+  
+  // Podcast preferences methods
+  createPodcastPreferences(prefs: InsertPodcastPreferences): Promise<PodcastPreferences>;
+  getPodcastPreferences(userId: number): Promise<PodcastPreferences | undefined>;
+  updatePodcastPreferences(userId: number, updates: Partial<PodcastPreferences>): Promise<PodcastPreferences | undefined>;
+  
+  // Scheduled podcasts methods
+  createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts>;
+  getScheduledPodcast(id: number): Promise<ScheduledPodcasts | undefined>;
+  getPendingPodcastsDue(): Promise<ScheduledPodcasts[]>;
+  getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]>;
+  updateScheduledPodcast(id: number, updates: Partial<ScheduledPodcasts>): Promise<ScheduledPodcasts | undefined>;
+  
+  // User last search methods
+  upsertUserLastSearch(search: InsertUserLastSearch): Promise<UserLastSearch>;
+  getUserLastSearch(userId: number): Promise<UserLastSearch | undefined>;
+  
+  // Recent podcasts methods
+  getRecentPodcastEpisodes(userId: number, limit?: number): Promise<PodcastEpisode[]>;
+  
+  // RSS feed methods
+  createUserRssFeed(feed: InsertUserRssFeeds): Promise<UserRssFeeds>;
+  getUserRssFeeds(userId: number): Promise<UserRssFeeds[]>;
+  updateUserRssFeed(id: number, updates: Partial<UserRssFeeds>): Promise<UserRssFeeds | undefined>;
+  deleteUserRssFeed(id: number): Promise<void>;
 }
 
 export class MemStorage implements IStorage {
@@ -162,9 +197,66 @@ export class MemStorage implements IStorage {
     );
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    return Array.from(this.users.values()).find(
+      (user) => user.email === email,
+    );
+  }
+  
+  async updateUserLastLogin(userId: number): Promise<void> {
+    const user = this.users.get(userId);
+    if (user) {
+      user.lastLogin = new Date();
+      user.updatedAt = new Date();
+    }
+  }
+  
+  async updateUserPassword(userId: number, password: string): Promise<void> {
+    const user = this.users.get(userId);
+    if (user) {
+      user.password = password;
+      user.updatedAt = new Date();
+    }
+  }
+  
+  async createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken> {
+    const id = this.currentTokenId++;
+    const resetToken: PasswordResetToken = {
+      id,
+      userId: token.userId,
+      token: token.token,
+      expiresAt: token.expiresAt,
+      usedAt: token.usedAt || null,
+      createdAt: new Date()
+    };
+    // Store using token as key for easy lookup
+    this.xAuthTokens.set(id, resetToken as any);
+    return resetToken;
+  }
+  
+  async getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined> {
+    return Array.from(this.xAuthTokens.values()).find(
+      (t: any) => t.token === token
+    ) as PasswordResetToken | undefined;
+  }
+  
+  async markPasswordResetTokenUsed(token: string): Promise<void> {
+    const resetToken = await this.getPasswordResetToken(token);
+    if (resetToken) {
+      resetToken.usedAt = new Date();
+    }
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
     const id = this.currentId++;
-    const user: User = { ...insertUser, id };
+    const user: User = { 
+      ...insertUser, 
+      id,
+      emailVerified: false,
+      lastLogin: null,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
     this.users.set(id, user);
     return user;
   }
@@ -300,6 +392,7 @@ export class MemStorage implements IStorage {
     const newToken: XAuthTokens = {
       id,
       userId: token.userId,
+      xUserId: token.xUserId || null,
       xHandle: token.xHandle || null,
       accessToken: token.accessToken,
       refreshToken: token.refreshToken || null,
@@ -326,11 +419,17 @@ export class MemStorage implements IStorage {
     this.xAuthTokens.set(token.id, updatedToken);
     return updatedToken;
   }
+
+  async deleteXAuthToken(userId: number): Promise<void> {
+    const token = await this.getXAuthTokenByUserId(userId);
+    if (token) {
+      this.xAuthTokens.delete(token.id);
+    }
+  }
 }
 
 // Use DatabaseStorage instead of MemStorage
-import { db } from "./db";
-import { eq, and, gte, lt, desc } from "drizzle-orm";
+import { and, gte, lt } from "drizzle-orm";
 
 export class DatabaseStorage implements IStorage {
   async getUser(id: number): Promise<User | undefined> {
@@ -343,9 +442,54 @@ export class DatabaseStorage implements IStorage {
     return user || undefined;
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.email, email));
+    return user || undefined;
+  }
+
+  async getAllUsers(): Promise<User[]> {
+    return await db.select().from(users);
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
+    console.log('DatabaseStorage.createUser - received insertUser:', {
+      username: insertUser.username,
+      email: insertUser.email,
+      hasPassword: !!insertUser.password,
+      passwordLength: insertUser.password?.length,
+      passwordType: typeof insertUser.password
+    });
     const [user] = await db.insert(users).values(insertUser).returning();
     return user;
+  }
+  
+  async updateUserLastLogin(userId: number): Promise<void> {
+    await db.update(users)
+      .set({ lastLogin: new Date(), updatedAt: new Date() })
+      .where(eq(users.id, userId));
+  }
+  
+  async updateUserPassword(userId: number, password: string): Promise<void> {
+    await db.update(users)
+      .set({ password, updatedAt: new Date() })
+      .where(eq(users.id, userId));
+  }
+  
+  async createPasswordResetToken(token: InsertPasswordResetToken): Promise<PasswordResetToken> {
+    const [resetToken] = await db.insert(passwordResetTokens).values(token).returning();
+    return resetToken;
+  }
+  
+  async getPasswordResetToken(token: string): Promise<PasswordResetToken | undefined> {
+    const [resetToken] = await db.select().from(passwordResetTokens)
+      .where(eq(passwordResetTokens.token, token));
+    return resetToken || undefined;
+  }
+  
+  async markPasswordResetTokenUsed(token: string): Promise<void> {
+    await db.update(passwordResetTokens)
+      .set({ usedAt: new Date() })
+      .where(eq(passwordResetTokens.token, token));
   }
 
   async createUserTopics(topics: InsertUserTopics): Promise<UserTopics> {
@@ -430,7 +574,22 @@ export class DatabaseStorage implements IStorage {
   }
 
   async updatePodcastEpisode(id: number, updates: Partial<PodcastEpisode>): Promise<PodcastEpisode | undefined> {
-    const [updatedEpisode] = await db.update(podcastEpisodes).set(updates).where(eq(podcastEpisodes.id, id)).returning();
+    console.log('📝 updatePodcastEpisode called with:', { id, updates });
+    
+    // Filter out undefined values to avoid "No values to set" error
+    const cleanUpdates = Object.fromEntries(
+      Object.entries(updates).filter(([_, value]) => value !== undefined)
+    );
+    
+    console.log('📝 cleanUpdates after filtering:', cleanUpdates);
+    
+    if (Object.keys(cleanUpdates).length === 0) {
+      console.warn('No valid updates provided for podcast episode', id);
+      return await this.getPodcastEpisode(id);
+    }
+    
+    const [updatedEpisode] = await db.update(podcastEpisodes).set(cleanUpdates).where(eq(podcastEpisodes.id, id)).returning();
+    console.log('📝 Updated episode result:', updatedEpisode?.id, { audioUrl: updatedEpisode?.audioUrl, audioLocalPath: updatedEpisode?.audioLocalPath });
     return updatedEpisode || undefined;
   }
 
@@ -481,6 +640,10 @@ export class DatabaseStorage implements IStorage {
     return updatedToken || undefined;
   }
 
+  async deleteXAuthToken(userId: number): Promise<void> {
+    await db.delete(xAuthTokens).where(eq(xAuthTokens.userId, userId));
+  }
+
   async createUserFollow(follow: InsertUserFollows): Promise<UserFollows> {
     const [newFollow] = await db.insert(userFollows).values(follow).returning();
     return newFollow;
@@ -515,6 +678,185 @@ export class DatabaseStorage implements IStorage {
         eq(userTimelinePosts.userId, userId),
         lt(userTimelinePosts.createdAt, cutoffDate)
       ));
+  }
+
+  // Podcast preferences methods
+  async createPodcastPreferences(prefs: InsertPodcastPreferences): Promise<PodcastPreferences> {
+    const [newPrefs] = await db.insert(podcastPreferences).values(prefs).returning();
+    return newPrefs;
+  }
+
+  async getPodcastPreferences(userId: number): Promise<PodcastPreferences | undefined> {
+    const [prefs] = await db.select().from(podcastPreferences).where(eq(podcastPreferences.userId, userId));
+    return prefs || undefined;
+  }
+
+  async updatePodcastPreferences(userId: number, updates: Partial<PodcastPreferences>): Promise<PodcastPreferences | undefined> {
+    const cleanedUpdates = {
+      ...updates,
+      updatedAt: new Date()
+    };
+    const [updatedPrefs] = await db.update(podcastPreferences)
+      .set(cleanedUpdates)
+      .where(eq(podcastPreferences.userId, userId))
+      .returning();
+    return updatedPrefs || undefined;
+  }
+
+  // Scheduled podcasts methods
+  async createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts> {
+    console.log('📅 Storage - createScheduledPodcast received data:', JSON.stringify({
+      userId: scheduled.userId,
+      scheduledFor: scheduled.scheduledFor,
+      deliveryTime: scheduled.deliveryTime,
+      preferenceSnapshot: scheduled.preferenceSnapshot,
+      status: scheduled.status
+    }, null, 2));
+    
+    // Log the actual preference snapshot data
+    if (scheduled.preferenceSnapshot) {
+      console.log('📅 preferenceSnapshot contains:', {
+        topics: scheduled.preferenceSnapshot.topics,
+        duration: scheduled.preferenceSnapshot.duration,
+        voiceId: scheduled.preferenceSnapshot.voiceId,
+        enhanceWithX: scheduled.preferenceSnapshot.enhanceWithX,
+        cadence: scheduled.preferenceSnapshot.cadence,
+        times: scheduled.preferenceSnapshot.times
+      });
+    }
+    
+    const [newScheduled] = await db.insert(scheduledPodcasts).values(scheduled).returning();
+    return newScheduled;
+  }
+
+  async getScheduledPodcast(id: number): Promise<ScheduledPodcasts | undefined> {
+    const [scheduled] = await db.select().from(scheduledPodcasts).where(eq(scheduledPodcasts.id, id));
+    return scheduled || undefined;
+  }
+
+  async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
+    const now = new Date();
+    // Get podcasts scheduled within the next 5 minutes OR up to 30 minutes past due
+    // This handles cases where the scheduler was down or a podcast was missed
+    const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+    const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
+    
+    return await db.select().from(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.status, 'pending'),
+        gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo), // Include up to 30 minutes past due
+        lt(scheduledPodcasts.scheduledFor, fiveMinutesFromNow) // But within next 5 minutes
+      ))
+      .orderBy(scheduledPodcasts.scheduledFor);
+  }
+
+  async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {
+    return await db.select().from(scheduledPodcasts)
+      .where(eq(scheduledPodcasts.userId, userId))
+      .orderBy(desc(scheduledPodcasts.scheduledFor));
+  }
+
+  async updateScheduledPodcast(id: number, updates: Partial<ScheduledPodcasts>): Promise<ScheduledPodcasts | undefined> {
+    const [updated] = await db.update(scheduledPodcasts)
+      .set(updates)
+      .where(eq(scheduledPodcasts.id, id))
+      .returning();
+    return updated || undefined;
+  }
+
+  async deletePendingScheduledPodcastsForUser(userId: number): Promise<void> {
+    console.log(`🗑️ Deleting pending scheduled podcasts for user ${userId}`);
+    const deleted = await db.delete(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        eq(scheduledPodcasts.status, 'pending')
+      ))
+      .returning();
+    console.log(`✅ Deleted ${deleted.length} pending scheduled podcasts for user ${userId}`);
+  }
+
+  async getScheduledPodcastsForUserInRange(userId: number, startDate: Date, endDate: Date): Promise<ScheduledPodcasts[]> {
+    return await db.select().from(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        gte(scheduledPodcasts.deliveryTime, startDate),
+        lte(scheduledPodcasts.deliveryTime, endDate)
+      ))
+      .orderBy(scheduledPodcasts.deliveryTime);
+  }
+
+  async deleteScheduledPodcastsAfterDate(userId: number, date: Date): Promise<void> {
+    await db.delete(scheduledPodcasts)
+      .where(and(
+        eq(scheduledPodcasts.userId, userId),
+        eq(scheduledPodcasts.status, 'pending'),
+        gt(scheduledPodcasts.deliveryTime, date)
+      ));
+  }
+
+  async getUsersWithEnabledPodcasts(): Promise<PodcastPreferences[]> {
+    return await db.select().from(podcastPreferences)
+      .where(eq(podcastPreferences.enabled, true));
+  }
+
+  // User last search methods
+  async upsertUserLastSearch(search: InsertUserLastSearch): Promise<UserLastSearch> {
+    const existing = await db.select().from(userLastSearch)
+      .where(eq(userLastSearch.userId, search.userId));
+    
+    if (existing.length > 0) {
+      const [updated] = await db.update(userLastSearch)
+        .set({
+          topics: search.topics,
+          searchedAt: new Date()
+        })
+        .where(eq(userLastSearch.userId, search.userId))
+        .returning();
+      return updated;
+    } else {
+      const [created] = await db.insert(userLastSearch)
+        .values(search)
+        .returning();
+      return created;
+    }
+  }
+
+  async getUserLastSearch(userId: number): Promise<UserLastSearch | undefined> {
+    const [search] = await db.select().from(userLastSearch)
+      .where(eq(userLastSearch.userId, userId));
+    return search || undefined;
+  }
+
+  // Recent podcasts methods
+  async getRecentPodcastEpisodes(userId: number, limit: number = 5): Promise<PodcastEpisode[]> {
+    return await db.select().from(podcastEpisodes)
+      .where(eq(podcastEpisodes.userId, userId))
+      .orderBy(desc(podcastEpisodes.createdAt))
+      .limit(limit);
+  }
+
+  // RSS feed methods
+  async createUserRssFeed(feed: InsertUserRssFeeds): Promise<UserRssFeeds> {
+    const [newFeed] = await db.insert(userRssFeeds).values(feed).returning();
+    return newFeed;
+  }
+
+  async getUserRssFeeds(userId: number): Promise<UserRssFeeds[]> {
+    return await db.select().from(userRssFeeds)
+      .where(eq(userRssFeeds.userId, userId))
+      .orderBy(desc(userRssFeeds.createdAt));
+  }
+
+  async updateUserRssFeed(id: number, updates: Partial<UserRssFeeds>): Promise<UserRssFeeds | undefined> {
+    const [updatedFeed] = await db.update(userRssFeeds)
+      .set({ ...updates, updatedAt: new Date() })
+      .where(eq(userRssFeeds.id, id))
+      .returning();
+    return updatedFeed || undefined;
+  }
+
+  async deleteUserRssFeed(id: number): Promise<void> {
+    await db.delete(userRssFeeds).where(eq(userRssFeeds.id, id));
   }
 }
 

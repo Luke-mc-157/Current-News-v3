@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Donald Trump claims increased support from his base\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\",\n        \"https://www.foxnews.com/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Republicans continue to discuss Joe Biden in political discourse\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Media outlets face criticism for coverage of political distractions\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Public engagement with US political news remains varied across platforms\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.npr.org/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/us/",
+    "https://www.foxnews.com/",
+    "https://www.axios.com/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.foxnews.com/politics",
+    "https://www.npr.org/",
+    "https://x.com/PatriciaSc59294/status/1947039542604681382",
+    "https://x.com/InstaBharat/status/1947059657605833079",
+    "https://x.com/PacosTacos916/status/1947257859257012235",
+    "https://x.com/ConeyIsland74/status/1946726799754358851",
+    "https://x.com/mirror7news/status/1947332908122791939"
+  ]
+}

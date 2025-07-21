@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Zelensky Ordered to Restart Peace Talks as Pokrovsk Siege Intensifies\",\n      \"citations\": [\n        \"https://www.reuters.com/world\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"China Increases Purchases of Russian Oil Amid Ongoing Geopolitical Conflicts\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Trump Warns of Potential Tariffs on BRICS Nations Following Recent Meeting\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.nytimes.com/\"\n      ]\n    },\n    {\n      \"headline\": \"India-US Trade Negotiations Stall Over Agriculture and Energy Issues\",\n      \"citations\": [\n        \"https://www.reuters.com/world\",\n        \"https://www.bbc.com/news/politics\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"NATO Considers Expansion Amid Discussions of Global Security Pacts\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"China Supplies Dual-Use Goods to Russia, Raising International Concerns\",\n      \"citations\": [\n        \"https://www.reuters.com/world\",\n        \"https://npr.org/sections/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement and semantic posts from X, correlated with news sources; only four primary stories identified from high-engagement searches, with additional semantic stories where relevant; all information treated as inconclusive without direct verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news/politics",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/national/",
+    "https://npr.org/sections/world",
+    "https://economist.com/the-world-in-brief",
+    "https://x.com/delhi919/status/1947358301756313817",
+    "https://x.com/OccupySchagen/status/1947000770055832028",
+    "https://x.com/GodarmyofAngel/status/1947160051917222397",
+    "https://x.com/Left_Indy/status/1947103675672879583",
+    "https://x.com/lula_leftist/status/1947083721154437300"
+  ]
+}

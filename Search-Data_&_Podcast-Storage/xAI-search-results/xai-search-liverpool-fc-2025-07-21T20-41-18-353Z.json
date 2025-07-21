@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Liverpool FC reaches outline agreement with Eintracht Frankfurt for Hugo Ekitike transfer\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/\",\n        \"https://www.express.co.uk/sport/football/2084261/transfer-news-live-man-utd-liverpool-arsenal-ekitike-gyokeres-isak\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    },\n    {\n      \"headline\": \"Darwin Nunez scores hat-trick in Liverpool FC's pre-season friendly win against Stoke City\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Liverpool FC engages in transfer discussions amid reports of player rejections and club responses\",\n      \"citations\": [\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\",\n        \"https://www.express.co.uk/sport/football/2084261/transfer-news-live-man-utd-liverpool-arsenal-ekitike-gyokeres-isak\",\n        \"https://www.bbc.com/news/england/merseyside\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC features in latest Premier League transfer rumors involving multiple players\",\n      \"citations\": [\n        \"https://www.football365.com/news/summer-transfer-rumours-power-ranking-arsenal-liverpool-man-utd\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available searches; only four stories identified as sufficiently viral and supported within the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/",
+    "https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://www.express.co.uk/sport/football/2084261/transfer-news-live-man-utd-liverpool-arsenal-ekitike-gyokeres-isak",
+    "https://www.football365.com/news/summer-transfer-rumours-power-ranking-arsenal-liverpool-man-utd",
+    "https://bbc.com/sport/football/articles/c4g802089gpo",
+    "https://x.com/ShotCaller1984/status/1947365973536788947",
+    "https://x.com/RousingTheKop/status/1946994046406418804",
+    "https://x.com/MpeseProud/status/1946975422056427649",
+    "https://x.com/MpeseProud/status/1946975168032620674",
+    "https://x.com/MpeseProud/status/1946975134268510310"
+  ]
+}

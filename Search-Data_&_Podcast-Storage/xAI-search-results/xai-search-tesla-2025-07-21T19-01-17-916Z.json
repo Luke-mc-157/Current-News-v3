@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla's stock price rose by 3.21 percent to $329.65 amid updates on production and testing.\",\n      \"citations\": [\n        \"https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364\",\n        \"https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla announced a new vehicle model and expansion into a new market.\",\n      \"citations\": [\n        \"https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla reported a decline in sales in a key market.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html\"\n      ]\n    },\n    {\n      \"headline\": \"A Tesla owner encountered unexpected limitations on software upgrades.\",\n      \"citations\": [\n        \"https://stocktwits.com/symbol/TSLA\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-",
+    "https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html",
+    "https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html",
+    "https://stocktwits.com/symbol/TSLA",
+    "https://x.com/MalachiGreb/status/1947063595537428771",
+    "https://x.com/TeslaBest/status/1946903163166187628",
+    "https://x.com/supersportsmg/status/1946962568657920139",
+    "https://x.com/Mrsmmtbeauty/status/1947360572023898522",
+    "https://x.com/Arby0ne/status/1946944583755034888"
+  ]
+}

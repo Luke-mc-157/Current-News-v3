@@ -1,0 +1,83 @@
+
+TOPIC: news update
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Heavy rains lead to 18 deaths and flooding in Uttar Pradesh and Rajasthan, India",
+      "citations": [
+        "https://t.co/Wx0xq9t37e",
+        "https://www.bbc.com/news/world"
+      ]
+    },
+    {
+      "headline": "Attempt to set a minor on fire reported in Puri, Odisha, India",
+      "citations": [
+        "https://t.co/0kaJrrouJp",
+        "https://www.reuters.com/world"
+      ]
+    },
+    {
+      "headline": "Wild elephants cause destruction in Ramgarh, Jharkhand, India",
+      "citations": [
+        "https://t.co/0kaJrrouJp",
+        "https://www.bbc.com/news/world"
+      ]
+    },
+    {
+      "headline": "15-foot crocodile sighted in Triveni canal in Ramnagar, Bihar, India",
+      "citations": [
+        "https://t.co/0kaJrrouJp",
+        "https://www.reuters.com/world"
+      ]
+    }
+  ],
+  "notes": "Data is based on high-engagement posts from X and correlated news sources from the last 24 hours; all stories are synthesized from availab
+
+X POSTS FROM SEARCH (5):
+- Vajiram & Ravi: "Catch a quick glimpse of the top highlights from the past 24 hours.
+
+#24HourRecap #CurrentAffairs #DailyNews  #IndiaNews #GlobalNews #Geopolitics #InternationalRelations #DailyCurrentAffairs #GovernmentExams #EverydayCurrentAffairs https://t.co/Wx0xq9t37e" (209 views, 3 likes) https://x.com/VajiramRavi/status/1946508843116011841
+- VocalForLocal: "Here are the top 10 news stories from India in the past 24 hours, each with a link for more details:
+
+Monsoon mayhem in India: 18 killed in UP, floods in Rajasthan – Heavy rains claimed 18 lives in Uttar Pradesh, and floods disrupted normal life in Rajasthan’s Ajmer, Pushkar," (48 views, 1 likes) https://x.com/GoVocalForLocal/status/1946635118908727641
+- Bharat 24 - Vision Of New India: "ओडिशा के पुरी में नाबालिग को जलाने की कोशिश
+
+झारखंड के रामगढ़ में जंगली हाथियों का उत्पात
+
+बिहार- रामनगर की त्रिवेणी नहर में दिखा 15 फीट का घड़ियाल
+
+पंजाब में AAP विधायक का इस्तीफा
+
+बिहार- सीतामढ़ी में चावल कारोबारी पर फायरिंग
+
+Watch : https://t.co/0kaJrrouJp
+
+#Odisha #Puri https://t.co/VEw7plnkBG" (122 views, 0 likes) https://x.com/Bharat24Liv/status/1946787762478428630
+- Bharat 24 - Vision Of New India: "फटाफट अंदाज में देखिए 4 मिनट में 24 बड़ी खबरें  
+
+Watch : https://t.co/0kaJrrnWTR
+
+#4Minute24News #BreakingNews #LatestNews #Bharat24Digital
+
+@palakprakash20 https://t.co/atehuvYnvF" (109 views, 0 likes) https://x.com/Bharat24Liv/status/1946453153949294610
+- Bharat 24 - Vision Of New India: "फटाफट अंदाज में देखिए 4 मिनट में 24 बड़ी खबरें  
+
+Watch : https://t.co/0kaJrrouJp
+
+#4Minute24News #BreakingNews #LatestNews #Bharat24Digital
+
+@poornima_mishra https://t.co/Sc56DpCkN6" (87 views, 0 likes) https://x.com/Bharat24Liv/status/1946477913882386723
+
+SUPPORTING ARTICLES (7):
+- An Accuser’s Story Suggests How Trump Might Appear in the Epstein Files: A former Jeffrey Epstein employee reported to the FBI in 1996 and 2006 about a troubling encounter involving President Trump, as detailed in the article. Republicans and Democrats are pushing for the release of additional Epstein-related files, fueling discussions on conspiracy theories. Other key news includes risks associated with rushed organ transplants in the U.S., where patients have shown signs of life during procedures. Israeli forces killed dozens of Palestinians seeking aid near the Gaza border, with the IDF disputing the death toll. Efforts to reindustrialize and rearm America were highlighted at a conference involving Trump administration officials and industry leaders. [https://www.nytimes.com/]
+Key Quotes: "fired warning shots" - Israel Defense Forces (IDF)
+
+- Israeli forces kill 67 Palestinians seeking aid in northern Gaza, Hamas-run ministry says: Israeli forces killed 67 Palestinians who were gathered to receive aid from U.N. trucks near the Gaza border, according to a Hamas-run ministry. The IDF stated they fired warning shots and contested the casualty figures. Japan's Prime Minister vowed to remain in office despite potential election losses that could destabilize the government. Moscow airports were temporarily closed following Ukrainian drone attacks, with over 230 drones reported downed. A British woman died in a rafting incident in the French Alps, and at least 17 people were killed in floods and landslides in South Korea. [https://www.washingtonpost.com/]
+Key Quotes: "fired warning shots" - Israel Defense Forces (IDF)
+
+- Israeli forces kill 67 Palestinians seeking aid in northern Gaza, Hamas-run ministry says: Israeli forces killed 67 Palestinians seeking aid near the Gaza border, as reported by a Hamas-run ministry, with the IDF claiming they fired warning shots and disputing the numbers. Bedouin fighters in Syria indicated they might resume conflicts with Druze groups amid ongoing violence. A ferry fire in Indonesia resulted in at least five deaths and the rescue of over 280 passengers. Moscow faced temporary airport closures due to Ukrainian drone attacks, and a British woman died in a rafting accident in France. At least 17 people were killed in South Korea from floods and landslides, highlighting multiple global incidents. [https://www.reuters.com/]
+Key Quotes: "fired warning shots" - Israel Defense Forces (IDF)
+
+- BORDER BLOWBACK Illegal alien with long rap sheet allegedly shoots CBP officer in face in NYC: An illegal alien with a extensive criminal history allegedly shot a Customs and Border Protection officer in the face in New York City. Police issued an Amber Alert for a 9-year-old girl believed to be in imminent danger after an abduction. President Trump threatened to block the Washington Commanders' new stadium deal unless the team reverts its nickname. Scottie Scheffler's son went viral for a moment during the golfer's British Open victory. Other news covered a tech CEO's resignation following a public incident and updates on missing persons in Texas floods. [https://www.bbc.com/news]

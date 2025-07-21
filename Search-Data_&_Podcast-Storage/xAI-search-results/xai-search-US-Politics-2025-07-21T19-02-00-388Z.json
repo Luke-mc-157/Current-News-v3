@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"U.S. Senate considers canceling August recess amid calls from political figures\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/world/us/\"\n      ]\n    },\n    {\n      \"headline\": \"Tulsi Gabbard references investigation into origins of Russiagate allegations\",\n      \"sources\": [\n        \"https://www.nytimes.com/section/politics\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. authorities report incident involving an ICE agent\",\n      \"sources\": [\n        \"https://www.axios.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Political discourse highlights challenges for Democrats on various policy issues\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/section/us\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and correlating articles from the last 24 hours; if sparse, only verified elements are included.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/us/",
+    "https://www.nytimes.com/section/us",
+    "https://www.foxnews.com/",
+    "https://www.axios.com/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.npr.org/",
+    "https://x.com/PatriciaSc59294/status/1947039542604681382",
+    "https://x.com/still_hustling/status/1946925622321967193",
+    "https://x.com/MarioNawfal/status/1946873971435008056",
+    "https://x.com/southgrace427/status/1947302722589384965",
+    "https://x.com/jerrykezhaya/status/1946770069905650141"
+  ]
+}

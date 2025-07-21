@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk announces commitment to AI development across his companies.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946742000893714690\",\n        \"https://x.com/elonmusk/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://singularityhub.com/2025/07/19/this-weeks-awesome-tech-stories-from-around-the-web-through-july-19\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk discusses concerns regarding AI existential risks.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946740057978912930\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://npr.org/sections/national\"\n      ]\n    },\n    {\n      \"headline\": \"Sawyer Merritt shares technology-related update on social media.\",\n      \"x_posts\": [\n        \"https://x.com/SawyerMerritt/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.ndtv.com/trends\",\n        \"https://singularityhub.com/2025/07/19/this-weeks-awesome-tech-stories-from-around-the-web-through-july-19\"\n      ]\n    },\n    {\n      \"headline\": \"Weekly roundup of technology stories published by a tech news hub.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://singularityhub.com/2025/07/19/this-weeks-awesome-tech-stories-from-around-the-web-through-july-19\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com",
+    "https://npr.org/sections/national",
+    "https://www.ndtv.com/trends",
+    "https://www.reuters.com/technology/",
+    "https://singularityhub.com/2025/07/19/this-weeks-awesome-tech-stories-from-around-the-web-through-july-19",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

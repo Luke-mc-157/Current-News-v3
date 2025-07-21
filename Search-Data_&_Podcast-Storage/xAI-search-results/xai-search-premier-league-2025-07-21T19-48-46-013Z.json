@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agree fee with Eintracht Frankfurt for striker Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://www.bbc.co.uk/sport/football/live/c8xvnwgevqqt\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal close to completing deal for striker Viktor Gyokeres\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://bbc.com/sport/football/articles/c9w10kwgjk5o\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United agree deal for winger Bryan Mbeumo\",\n      \"citations\": [\n        \"https://bbc.com/sport/football/articles/c4g802089gpo\",\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Marcus Rashford expected to transfer to Barcelona\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://www.bbc.com/sport/football/articles/c9w10kwgjk5o\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on high-engagement posts from X and correlating news articles from the last 24 hours; data is sufficient for four stories but treated as inconclusive for verification.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport",
+    "https://www.bbc.com/sport/football/articles/cd6g9l8wdqlo",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.nytimes.com/athletic/football/team/manchester-united/",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://express.co.uk/sport/football",
+    "https://bbc.com/sport/football/articles/c9w10kwgjk5o",
+    "https://bbc.com/sport/football/articles/c4g802089gpo",
+    "https://www.bbc.co.uk/sport/football/live/c8xvnwgevqqt",
+    "https://x.com/NationFmKE/status/1946841818038939909",
+    "https://x.com/JWokabi/status/1946830931014082743",
+    "https://x.com/CuriousCatsAI/status/1947311719572742542",
+    "https://x.com/CybarBall/status/1947055693984583770",
+    "https://x.com/surebet247ng/status/1947250370712834277"
+  ]
+}

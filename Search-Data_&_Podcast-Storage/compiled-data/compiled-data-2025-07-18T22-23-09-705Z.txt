@@ -1,0 +1,426 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query": "Biggest news stories about Liverpool FC from July 17, 2025, to July 18, 2025",
+    "date_range": "2025-07-17 to 2025-07-18",
+    "summary": "Based on available information from web sources, the biggest news stories about Liverpool FC in the specified period focus on transfer activities and general updates. High-engagement posts on X were searched but yielded no relevant results. News articles highlighted transfer negotiations and club news. Semantic posts on X were also checked but did not provide additional relevant content.",
+    "news_stories": [
+      {
+        "title": "Liverpool Advancing in Talks with Frankfurt Over Hugo Ekitike Transfer",
+        "description": "Liverpool is making progress in negotiations to sign striker Hugo Ekitike from Frankfurt, with the proposed deal exceeding €80 million. This story underscores ongoing transfer efforts as the club prepares for the upcoming season.",
+        "source": "The Athletic",
+        "date": "2025-0
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Liverpool - News, Schedule, Scores, Roster, and Stats - The Athletic: Liverpool FC is preparing for its pre-season tour in the Far East, including matches in Hong Kong and Japan, aimed at benefiting the team. The club is advancing in transfer talks for players like Hugo Ekitike from Eintracht Frankfurt. Liverpool has shown interest in Newcastle's Alexander Isak, though Newcastle maintains he is not for sale. The article also covers player updates, such as potential exits like Luis Diaz, and includes details on collectibles and merchandise related to the team. [https://www.nytimes.com/athletic/football/team/liverpool/]
+Key Quotes: "The holiday is over. Now it's time to run." - Stuart James | "Liverpool are right to test Newcastle's resolve - Alexander Isak would be a dream signing." - James Pearce
+
+- Liverpool FC - Transfer news, results, fixtures, video and audio: Liverpool has genuine interest in Newcastle's Alexander Isak, though Newcastle insists he is not for sale. The club is in advanced talks to sign Eintracht Frankfurt's Hugo Ekitike for over £70 million. Upcoming fixtures include matches against Crystal Palace and Bournemouth. Tributes to former player Diogo Jota include fan comments and analyses on his potential fit in the team. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "The emotions you feel are pretty obvious." - James Milner | "He can be a great signing for Liverpool FC." - Edu Rubio
+
+- Liverpool advancing in talks with Frankfurt over Hugo Ekitike transfer - The Athletic: Liverpool is advancing in negotiations to sign Hugo Ekitike from Eintracht Frankfurt for over €80 million. Personal terms with Ekitike are not expected to be an issue. The club has also pursued Newcastle's Alexander Isak, with potential squad exits like Darwin Nunez. Ekitike's performance last season included 22 goals and 12 assists across all competitions. [https://www.nytimes.com/athletic/6498763/2025/07/17/ekitike-liverpool-transfer/]
+Key Quotes: "Isak has been Liverpool supporters’ ideal No 9 target all summer." - Andy Jones
+
+- Liverpool and Newcastle could see another transfer swap saga like last summer - Liverpool.com: Liverpool is eyeing Alexander Isak from Newcastle, potentially leading to a transfer tussle similar to last year's involving Anthony Gordon and Joe Gomez. Newcastle has interest in Liverpool's Harvey Elliott, who may leave due to limited playing time. The article discusses financial aspects, including Newcastle's PSR constraints. Factors like player valuations and contract situations could influence any deals. [https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-newcastle-could-see-another-32045554]
+Key Quotes: "I knew what was coming in terms of me leaving, but the fans and PIF deserved every focus of mine." - Amanda Staveley
+
+- Liverpool transfer news: Reds target willing to 'run down' deal as Rodyrgo meeting planned - The Mirror: Liverpool has completed transfers for players like Florian Wirtz and Jeremie Frimpong, exceeding £200 million in spending. Speculation continues over potential exits like Luis Diaz and Darwin Nunez, with interest in new targets such as Marc Guehi and Rodrygo. Crystal Palace's Marc Guehi is willing to run down his contract to facilitate a move. The club is also planning meetings to discuss Rodrygo's future amid interest from multiple teams. [https://www.mirror.co.uk/sport/football/transfer-news/liverpool-transfer-news-rodrygo-meeting-35541857]
+Key Quotes: "But it’s true that Rodrygo has Premier League qualities." - Fernando Morientes
+
+- Liverpool retires Diogo Jota’s jersey number to ensure he’s never forgotten - The Hindu: Liverpool has retired the No. 20 shirt in honor of Diogo Jota following his death in a car crash. The decision was made after consulting Jota's family and applies across all club levels. Jota played 182 games for Liverpool, scoring 65 goals and helping win major titles like the Premier League. This marks the first time in the club's history for such a tribute. [https://www.thehindu.com/sport/football/liverpool-retires-diogo-jotas-jersey-number-to-ensure-hes-never-forgotten/article69803322.ece]
+Key Quotes: "I believe this is the first time in Liverpool Football Club’s history that such an honour has been bestowed upon an individual." - Michael Edwards
+
+---
+
+TOPIC: Football Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent searches for football transfer news from July 17 to July 18, 2025, the biggest stories include major deals and interests from top clubs like Manchester United, Liverpool, and Barcelona. These are drawn from reliable news sources covering the latest developments.",
+  "stories": [
+    {
+      "title": "Manchester United Agree Deal for Bryan Mbeumo",
+      "description": "Manchester United have finalized a transfer deal for Brentford's Bryan Mbeumo, with an initial fee of £65 million to be paid in installments, plus up to £6 million in potential bonuses. The player is expected to undergo a medical soon.",
+      "source": "The Athletic",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Liverpool in Advanced Talks for Hugo Ekitike",
+      "description": "Liverpool are progressing in negotiations to sign Eintracht Frankfurt striker Hugo Ekitike, with the deal potentially worth more than £70 million. This move is aimed at bolstering their attacking optio
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, allowing clubs to sign players before the Club World Cup and reopening later for major leagues. Numerous deals were completed in July across the Premier League, English Football League, Scottish Premiership, Women's Super League, and international transfers. Notable transfers include Noni Madueke moving from Chelsea to Arsenal for £48.5m and Sean Longstaff from Newcastle to Leeds for £12m. The article lists detailed transactions such as loans, free transfers, and undisclosed fees for various players. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- Manchester United agree Bryan Mbeumo deal, medical expected this weekend - The Athletic: Manchester United have agreed to sign Bryan Mbeumo from Brentford for up to £71m, including an initial £65m fee paid in installments and up to £6m in bonuses. The 25-year-old winger prioritized United over other clubs and is set to undergo a medical soon. Mbeumo featured in all 38 Premier League games last season, scoring 20 goals and providing eight assists for Brentford. This deal marks United's third signing of the summer, following acquisitions of Matheus Cunha and Diego Leon. [https://www.nytimes.com/athletic/6499896/2025/07/18/bryan-mbeumo-man-utd-transfer/]
+
+- Hugo Ekitike: Liverpool close in on Eintracht Frankfurt striker in £70m-plus - BBC Sport: Liverpool are in advanced talks to sign Eintracht Frankfurt striker Hugo Ekitike for more than £70m. The 23-year-old scored 15 goals and provided eight assists in 31 starts last season, helping Frankfurt finish third in the Bundesliga. Newcastle's £70m offer was rejected, and Liverpool aim to finalize the deal soon. Ekitike is versatile, capable of playing as a lone striker or in a partnership, and has a strong record in creating chances. [https://www.bbc.com/sport/football/articles/c1lj15rg412o]
+Key Quotes: "Hugo Ekitike is the latest success story of Eintracht Frankfurt's recruitment." - Constantin Eckner
+
+- Barcelona Transfer News Roundup: Manchester City want Catalans ace, Liverpool eyeing Marcus Rashford, and more - July 17, 2025: Manchester City are considering a move for Barcelona goalkeeper Marc-Andre ter Stegen as a potential replacement for Ederson Moraes. Liverpool have shown interest in Manchester United's Marcus Rashford as an alternative to Alexander Isak. Barcelona have handed Lamine Yamal the No. 10 shirt previously worn by Ansu Fati. Yamal scored 18 goals and provided 25 assists last season, contributing to Barcelona's domestic treble. [https://sportskeeda.com/football/rumor-barcelona-transfer-news-roundup-manchester-city-want-catalans-ace-liverpool-eyeing-marcus-rashford-july-17-2025]
+Key Quotes: "What this renewal means is that I will continue to play for the club of my life, I will continue to enjoy it." - Lamine Yamal | "Messi has made his own path, I’m going to make mine, and the number 10 comes from Ansu now." - Lamine Yamal
+
+- Transfer news live: Milan move forward for Estupiñán, Lucca to Napoli official: AC Milan are advancing negotiations for Brighton defender Pervis Estupiñán. Napoli have officially signed Lorenzo Lucca from Udinese. Juventus are pursuing Sporting CP's Morten Hjulmand, who has a reported price tag of €80m. Inter Milan are working on deals involving players like Ademola Lookman and are in talks for other targets. [https://football-italia.net/transfer-news-live-rumours-and-done-deals-napoli-done-deal-leeds-inquiry]
+Key Quotes: "Forest are now pushing to sign Dan Ndoye and have already reached a verbal agreement." - Fabrizio Romano
+
+- Manchester United agree Bryan Mbeumo deal, medical expected this weekend - The Athletic: Manchester United have agreed to sign Bryan Mbeumo from Brentford for up to £71m, including an initial £65m fee paid in installments and up to £6m in bonuses. The 25-year-old winger prioritized United over other clubs and is set to undergo a medical soon. Mbeumo featured in all 38 Premier League games last season, scoring 20 goals and providing eight assists for Brentford. This deal marks United's third signing of the summer, following acquisitions of Matheus Cunha and Diego Leon. [https://www.nytimes.com/athletic/6499896/2025/07/18/bryan-mbeumo-man-utd-transfer/]
+
+---
+
+TOPIC: US Politics and Legal Issues
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest news stories on US Politics and Legal Issues from July 17, 2025, to July 18, 2025",
+  "summary": "Based on available information from high-engagement sources, the biggest news stories in US Politics and Legal Issues from July 17 to July 18, 2025, include developments related to President Trump's administration and related controversies. Key highlights involve legislative actions and discussions on transparency issues, drawing from reliable news outlets covering US politics and government.",
+  "stories": [
+    {
+      "title": "Senate Approves President Trump's Rescission Package",
+      "description": "The US Senate has approved a rescission package proposed by President Trump, which involves cutting certain federal spending. This development highlights ongoing debates in US politics regarding budget management and executive authority.",
+      "source": "Information drawn from news coverage on platforms like NPR"
+    },
+    {
+      "title": "President Trump Addres
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- U.S. Politics - The New York Times: The article discusses Donald Trump's disputes with Federal Reserve Chair Jerome H. Powell, including scrutiny of the National Capital Planning Commission. It covers Trump's denials of drawing pictures amid reports of his connections to Jeffrey Epstein, and examines supporter reactions to Epstein-related issues. The Justice Department is seeking to unseal Epstein grand jury testimony under political pressure. Additionally, it addresses the release of frozen funds for after-school programs and questions about CBS canceling a show potentially for political reasons. [https://www.reuters.com/world/us/]
+Key Quotes: "Trump Says He Doesn’t ‘Draw Pictures.’ But Many of His Sketches Sold at Auction." - The New York Times (reporting Trump's statement) | "After months of pushing back against federal judges and the courts, the president has requested the release of Epstein-related grand jury testimony to be 'subject to Court approval.'" - Mattathias Schwartz (The New York Times)
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: The article features breaking news on U.S. politics and legal issues, including coverage of Donald Trump and his administration's actions. It highlights Trump's responses to calls for releasing Jeffrey Epstein files and potential policy shifts. Topics include immigration enforcement, congressional matters, and legal challenges related to voting and crime. Additionally, it touches on economic and international implications of Trump's policies. [https://www.reuters.com/legal/government/]
+Key Quotes: "'I don’t want their support any more!'" - Donald Trump | "'Treasonous conspiracy': Gabbard claims Obama team plot against Trump–Russia" - Tulsi Gabbard
+
+- Headlines for July 17, 2025 | Democracy Now!: The headlines cover U.S. political and legal developments, including Trump's push for Texas to gerrymander congressional maps ahead of the 2026 midterms. It reports on the Senate's approval of a bill to claw back $9 billion in foreign aid and public broadcasting funds. The article addresses the Trump administration's firing of a prosecutor involved in the Jeffrey Epstein case and demands for investigations into ICE detentions of U.S. citizens. Additionally, it discusses efforts to exclude non-citizens from the census and potential federal interference in state voting processes. [https://www.nytimes.com/section/politics]
+Key Quotes: "I Don’t Want Their Support Any More!" - Donald Trump | "They didn’t allow me to shower. They didn’t give me a phone call. They didn’t let me speak to an attorney. They never told me what I was arrested for." - George Retes
+
+---
+
+TOPIC: AI and Technology Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "response_type": "summary_of_news_stories",
+  "date_range": "2025-07-17 to 2025-07-18",
+  "top_stories": [
+    {
+      "title": "OpenAI Announces ChatGPT Agent and New Tools",
+      "description": "OpenAI held a live event announcing advancements in ChatGPT Agent, including new agent tools, browser integration plans, and potential developments related to GPT-5. This event generated significant buzz in the AI community.",
+      "source": "Information from tech news websites like Tom's Guide and TechRadar",
+      "date": "2025-07-17 (event occurred, with updates on July 18)"
+    },
+    {
+      "title": "China's Massive Investments in AI to Challenge Global Leaders",
+      "description": "China is pursuing an aggressive industrial policy to bolster its AI sector, aiming to close the gap with U.S. companies by investing billions in AI development and infrastructure.",
+      "source": "The New York Times",
+      "date": "2025-07-18"
+    },
+    {
+      "title": "Federal Reserve Discusses
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- China Is Spending Billions to Become an A.I. Superpower - The New York Times: China is investing heavily in AI through government-backed industrial policies to narrow the gap with the United States. Local governments are funding AI start-ups and infrastructure, including data centers and semiconductors. Chinese companies like DeepSeek and Alibaba are developing open-source AI systems that rank among the world's top performers. Despite U.S. restrictions on chip sales, China is creating alternatives to technologies from companies like Nvidia. This approach mirrors China's strategies in electric vehicles and solar panels, aiming to build domestic capabilities in high-tech industries. [https://www.nytimes.com/2025/07/16/technology/china-ai.html]
+Key Quotes: "China is applying state support across the entire A.I. tech stack, from chips and data centers down to energy." - Kyle Chan, RAND Corporation researcher | "For the government to help us cover even 13 or 15 percent of our early-stage research costs, that’s a huge benefit." - Jia Haojun, founder of Deep Principle | "Open-source is a source of technological soft power." - Kevin Xu, founder of Interconnected Capital | "I want to make sure democratic A.I. wins over authoritarian A.I." - Sam Altman, CEO of OpenAI
+
+- OpenAI ChatGPT Agent announcement LIVE — all the big news as it happens | Tom's Guide: OpenAI announced the ChatGPT Agent feature, which allows the AI to perform autonomous tasks using a virtual computer. The agent integrates tools like a browser and code interpreter to handle multi-step workflows such as research and file analysis. It is powered by GPT-4o and includes safety measures like user approval for sensitive actions. The feature is available to ChatGPT Plus, Pro, and Team users with query limits. OpenAI emphasized the agent's ability to enhance productivity while prioritizing security and oversight. [https://www.reuters.com/world/us/]
+Key Quotes: "Agent Mode will likely be a mix of Operator and Deep Research, which can use the browser and connectors at once." - Unknown | "OpenAI claims the new ChatGPT agent can run your errands, build your slides, and make you look like you have your life together." - Article author or analyst
+
+- OpenAI just announced ChatGPT Agent – here's everything you need to know as it happened | TechRadar: OpenAI launched ChatGPT Agent, a tool that enables autonomous task execution like web navigation and file management. The agent uses a virtual environment to perform actions such as planning trips or creating presentations. It incorporates features from previous tools like Operator and Deep Research for enhanced capabilities. Safety protocols ensure users approve high-risk actions, and the system is designed to be collaborative. The feature is rolling out to Pro, Plus, and Team users with specified query limits. [https://www.nytimes.com/2025/07/16/crosswords/daily-puzzle-2025-07-17.html]
+Key Quotes: "We have a banger today." - Sam Altman, CEO of OpenAI | "A new level of attacks would come towards it." - Sam Altman, CEO of OpenAI
+
+- Speech by Governor Cook on artificial intelligence and innovation - Federal Reserve Board: Governor Lisa D. Cook described AI as a potential general-purpose technology that could transform the economy by accelerating innovation and improving productivity. She highlighted AI's implications for the Federal Reserve's dual mandate of maximum employment and price stability. The speech noted that AI is being used in Fed research to enhance tasks like economic analysis and forecasting. Cook emphasized responsible AI adoption principles, including strong governance and human oversight. She cautioned about challenges in AI implementation while expressing optimism about its benefits. [https://www.tomsguide.com/news/live/openai-july-17-announcement]
+Key Quotes: "I see AI as the next general-purpose technology." - Governor Lisa D. Cook | "Humans are in the loop, because it ensures that people guide AI rather than allow AI to guide us." - Governor Lisa D. Cook
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Elon Musk: "Viva la Vida 😂 https://t.co/CO21hwKI4n" (2075800 views, 19542 likes) https://x.com/i/status/1946321191834091808
+- Fabrizio Romano: "🚨🟡🔴 Galatasaray and Napoli are finalising details of Victor Osimhen deal.
+
+€40m paid now.
+€35m paid in one year.
+Penalty clause to avoid sale to Italian clubs in the next two years.
+
+Final detail to get the deal done: sell-on clause yet to be agreed. ⏳🇳🇬 https://t.co/HFlWt0eyyz" (1504992 views, 21469 likes) https://x.com/i/status/1946315549505397171
+- Elon Musk: "But @Grok from @xAI remains #1
+
+And it is improving fast https://t.co/kh7f7hEgI6" (1004959 views, 4052 likes) https://x.com/i/status/1946320742049546715
+- Fabrizio Romano: "🚨🟡🔴 Wesley, very close… and AS Roma also closing in on Evan Ferguson deal after progress made on Thursday.
+
+Agreement almost done with Brighton for loan move with salary fully covered.
+
+Final details to be sorted. ⏳🇮🇪 https://t.co/6zuxQregvX" (952730 views, 10211 likes) https://x.com/i/status/1946311446129709529
+- Fabrizio Romano: "🚨🇶🇦 Jordan Veretout leaves Olympique Lyon to join Al Arabi. Deal agreed tonight with Qatari side. https://t.co/bbBYyA0F0C" (800537 views, 6573 likes) https://x.com/i/status/1946306597380104384
+- Adam Schefter: "49ers placed WRs Brandon Aiyuk and Ricky Pearsall on the Active/Physically Unable to Perform list." (723006 views, 3108 likes) https://x.com/i/status/1946305256926691544
+- Fabrizio Romano: "🚨🔴⚫️ AC Milan are set to discuss terms with Almeria and Marc Pubill’s camp over potential transfer for the Spanish right back.
+
+Wolves want Pubill, ready to close deal… but Marc keeps waiting for AC Milan.
+
+Decision up to Milan after positive initial medical check done today. https://t.co/PeKRun6Vu1" (714877 views, 7586 likes) https://x.com/i/status/1946312953570963529
+- Adam Schefter: "Chicago Bears reached agreement today with  second-round pick WR Luther Burden III on a fully-guaranteed, $10.965 million contract, marking the first time in NFL history that the 39th pick has secured a fully-guaranteed deal, per the @WINSportsGroup. https://t.co/NuMzmRo0IL" (671708 views, 4894 likes) https://x.com/i/status/1946310209091068272
+- Fabrizio Romano: "🚨🔴⚫️ AC Milan and Brighton remain in talks for Pervis Estupinan after first bid rejected today by #BHAFC.
+
+The agent Jorge Mendes, on it as Pervis wants the move… and Milan hope to get deal done under €20m. https://t.co/qxTllqraNl" (652026 views, 7835 likes) https://x.com/i/status/1946317870276755459
+- Fabrizio Romano: "🟡🔴❌ Inter director Ausilio: “Yann Sommer was not close to Galatasaray. Nothing concrete happened, he’s our goalkeeper and I expect him to stay”. https://t.co/upxJSzVCAD" (621359 views, 6376 likes) https://x.com/i/status/1946296344458523020
+- Fabrizio Romano: "🚨⚪️ Spurs manager Thomas Frank has confirmed Cuti Romero expected to stay: “He’s definitely here and very committed”.
+
+“I know he’s looking forward to the season”. https://t.co/5fYjC6kwKr" (507958 views, 7878 likes) https://x.com/i/status/1946324689036444109
+- Fabrizio Romano: "🚨🫂 Thomas Frank: “Bryan Mbeumo is a fantastic player, he deserved the move, no matter where he goes”.
+
+🎥 @BeanymanSports https://t.co/YVnSoF2qvj" (436312 views, 6580 likes) https://x.com/i/status/1946324185988354213
+- Elon Musk: "Hi @Grok, you rock! 😀 https://t.co/tdZGvjelpV" (382532 views, 2173 likes) https://x.com/i/status/1946330434444652682
+- Fabrizio Romano: "🚨🇳🇱 Inter director Ausilio: “We have not received any formal approach from Barça for Denzel Dumfries”.
+
+“There’s a release clause, it’s true… but it will expire soon and we will keep going”. https://t.co/OwNQwfKOzQ" (379837 views, 4585 likes) https://x.com/i/status/1946296661535338669
+- Ian Rapoport: "Another second-rounder in the books. https://t.co/7bcoq7QVGU" (225080 views, 294 likes) https://x.com/i/status/1946309057448460413
+- Ian Rapoport: "The #49ers placed WR Brandon Aiyuk, DL​ Yetur Gross-Matos, and WR Ricky Pearsall, among others, on the PUP list to begin training camp." (188673 views, 512 likes) https://x.com/i/status/1946307683704885757
+- Ian Rapoport: "The #Colts have agreed to terms with their second-round pick J.T. Tuimoloau, the defensive end from Ohio State, per me and @MikeGarafolo. Another second-rounder in the books in a deal done by @RyanWilliamsA1 of @AthletesFirst. https://t.co/LZbBNtMjXx" (182326 views, 744 likes) https://x.com/i/status/1946312408923803927
+- Adam Schefter: "Patriots reached agreement on a fully-guaranteed deal with second-round pick TreVeyon Henderson, per source." (157465 views, 1483 likes) https://x.com/i/status/1946329358961893862
+- Fabrizio Romano: "🚨🟡🔴 Understand AS Roma have sent new proposal to Flamengo worth €25m plus add-ons, agreement now close.
+
+Wesley only wants Roma, no chance for Zenit.
+
+Flamengo will now only sell Wesley when they find his replacement, a Brazilian RB as all extra-Br spots are full. https://t.co/HamEteAUnJ" (135484 views, 2836 likes) https://x.com/i/status/1946302566448418975
+- Fabrizio Romano: "🚨✍🏻 Official: Leeds United confirm Sean Longstaff's transfer from Newcastle.
+
+He's signed a four-year contract after £12m plus £3m add-ons.
+
+Deal done by Pini Zahavi’s Gol International. https://t.co/oVAzNUJi8V" (114962 views, 2255 likes) https://x.com/i/status/1946302555534839923
+- The New York Times: "Breaking News: A prisoner swap freed 10 U.S. citizens and permanent residents in Venezuela for more than 200 Venezuelan migrants sent by the U.S. to a prison in El Salvador. https://t.co/lBotEasIUT" (103797 views, 102 likes) https://x.com/i/status/1946307258528268385
+- CNN: "The Trump administration sent about 250 Venezuelan deportees back to their home country in exchange for remaining Americans held in Venezuela, sources say. https://t.co/kKKe10ijia" (75191 views, 146 likes) https://x.com/i/status/1946306773587026197
+- World of Statistics: "🇨🇺 Last UN vote to end US embargo against Cuba:
+
+🇺🇸 USA: against ❌
+🇮🇱 Israel: against ❌
+🇺🇦 Ukraine: abstention ⚠️
+🇦🇫 Afghanistan: in favor ✅
+🇦🇱 Albania: in favor ✅
+🇩🇿 Algeria: in favor ✅
+🇦🇷 Argentina: in favor ✅
+🇦🇲 Armenia: in favor ✅
+🇦🇺 Australia: in favor ✅
+🇦🇹 Austria:" (73500 views, 301 likes) https://x.com/i/status/1946309619631956084
+- Tim Urban: "I have many times seen Neil deGrasse Tyson saying something I knew was patently false or misleading. But when he pops up on YouTube shorts, I am always delighted. I find his careless overconfidence extremely comforting and ASMRy." (71996 views, 981 likes) https://x.com/i/status/1946309246733205768
+- CNN: "President Trump files libel lawsuit over Wall Street Journal report on Jeffrey Epstein's birthday letters. https://t.co/KdC0okHzop" (71740 views, 212 likes) https://x.com/i/status/1946319006748545206
+- Chamath Palihapitiya: "Let the stablecoins rip!
+
+More dollar hegemony is net good for the world, not just the US. https://t.co/n86Wn1Ehwu" (71238 views, 359 likes) https://x.com/i/status/1946315735447310532
+- Mario Nawfal: "🚨🇺🇸 BREAKING: TRUMP SUES WSJ OVER EPSTEIN “FAKE LETTER” CLAIM
+
+Trump has officially filed a lawsuit against Dow Jones, News Corp, Rupert Murdoch, and WSJ reporters for libel and slander.
+
+This comes just hours after a WSJ story revealed he allegedly contributed a “bawdy letter” https://t.co/qQCP652MI3 https://t.co/xorHGT6xXN" (67329 views, 184 likes) https://x.com/i/status/1946315742561071615
+- Barstool Sports: "Ain't No Hobby: Kevin Kisner Was In A Fight For His Life Against A Goddamn Bat In The Announcers Booth At The Open https://t.co/xhuloLrBMn https://t.co/WbyQtdo3qU" (65425 views, 37 likes) https://x.com/i/status/1946307832329994285
+- Barstool Sports: "The Best Golfer In The World - It's Once Again Scottie's Tournament After He Went Out And Caught Fire With A 64 To Lead The Open https://t.co/PB4zVUHkkP https://t.co/mVmaSvIBxt" (63459 views, 62 likes) https://x.com/i/status/1946310301558751656
+- Bernie Sanders: "This is what the march toward authoritarianism looks like: https://t.co/zi0b706zeC" (60768 views, 1008 likes) https://x.com/i/status/1946318111390507281
+- Mario Nawfal: "🇺🇸 DURBIN: FBI ORDERED TO FLAG “EVERY” EPSTEIN RECORD NAMING TRUMP
+
+According to a letter from Sen. Dick Durbin, nearly 1,000 FBI personnel were put on 24-hour shifts in March to review over 100,000 Epstein-related documents.
+
+Durbin’s office says these agents were explicitly https://t.co/ffb1CRYdOv https://t.co/imsFctMFZd" (59594 views, 208 likes) https://x.com/i/status/1946310266008019381
+- CNN: "DOJ asks judge to make public years-old grand jury testimony in Jeffrey Epstein case. https://t.co/NQYZvcW8Mq" (56045 views, 114 likes) https://x.com/i/status/1946322371108892830
+- Barstool Sports: "Ain't No Hobby: Kevin Kisner Was In A Fight For His Life Against A Goddamn Bat In The Announcers Booth At The Open https://t.co/BFrGMTWUyj https://t.co/LVQ9kPrdkz" (55818 views, 22 likes) https://x.com/i/status/1946315319783379093
+- Linda Yaccarino: "Thank-you @C__Herridge for delivering the truth! 🇺🇸 https://t.co/s6aQmDbYAo" (47676 views, 1011 likes) https://x.com/i/status/1946312855118094834
+- Sen. Bernie Sanders: "Today we forced Trump to release $1.3 billion for more than 10,000 summer &amp; afterschool programs helping 1.4 million students.
+
+It's not enough. He's still illegally withholding $5.5 billion more from schools. 
+
+Congress passed it. The president signed it. Trump must release it. https://t.co/j6g1myuS3r" (45905 views, 802 likes) https://x.com/i/status/1946307690013090230
+- Barstool Sports: "Steven Cheah is trusting the data and backing Elly De La Cruz at the plate vs Sean Manaea tonight
+
+@DraftKings #DKPartner @quickpicksshow 
+https://t.co/R54tBsNzfV" (44618 views, 7 likes) https://x.com/i/status/1946323655111176297
+- Big Cat: "Congrats to now 5X Blake of the Year @blakegriffin23. Absolute dominance in terms of Blakes https://t.co/KGthoPBmB4" (43005 views, 327 likes) https://x.com/i/status/1946327239424946299
+- World of Statistics: "🇯🇵 Japanese trains are on average only 18 seconds late. If a train is delayed by more than a minute, passengers often receive an official delay certificate to show their employer why they are late" (42818 views, 286 likes) https://x.com/i/status/1946312469040754994
+- Mario Nawfal: "🚨🇺🇸PASSENGER TRIES TO OPEN PLANE DOOR MID-FLIGHT... FORCES EMERGENCY LANDING
+
+A 23-year-old Mario Nikprelaj decided it was a good idea to fight a crew member and go for the emergency exit… while in the air.
+
+He didn’t get the door open - physics makes that nearly impossible at https://t.co/8i60EwAEem https://t.co/bM7lgsxJ7K" (38671 views, 60 likes) https://x.com/i/status/1946306482326356136
+- Mario Nawfal: "🇺🇸 🇨🇳 TESLA: U.S. BATTERY GAME IS WEAK
+
+So Tesla told the government it tried to buy American graphite, but... U.S. can’t make it right.
+
+Now the U.S. is smashing Chinese graphite with a monster 93.5% import tax because they say it’s too cheap.
+
+Even though graphite is just 8% of https://t.co/dNmLtnPqVH https://t.co/EkYjkzmHaX" (37637 views, 83 likes) https://x.com/i/status/1946308998040281518
+- History Photographed: "Nose shaping tool for people who hate their nose, 1944 https://t.co/tmYlrwKcvZ" (35689 views, 44 likes) https://x.com/i/status/1946314856304722264
+- Mario Nawfal: "🇺🇸 SENATORS DEMAND FULL AUDIT OF FEDERAL RESERVE
+
+Legislation was just introduced to force a complete audit of the Federal Reserve Board of Governors and all regional banks.
+
+Sen. Rand Paul:
+
+“It’s long past time for Congress to stop shirking its duty.”
+
+Sen. Rick Scott:
+
+“If https://t.co/57bztV71pK https://t.co/HCUxVIceHs" (34302 views, 177 likes) https://x.com/i/status/1946311514496913767
+- Mario Nawfal: "DNI GABBARD: OBAMA ADMIN “CONSPIRED TO SUBVERT” TRUMP’S 2016 WIN
+
+“Their goal was to usurp President Trump and subvert the will of the American people.
+
+No matter how powerful, every person involved in this conspiracy must be investigated and prosecuted to the fullest extent of https://t.co/JBi8osnvyQ https://t.co/39nuJ3R5a5" (33704 views, 241 likes) https://x.com/i/status/1946320322372022618
+- Mario Nawfal: "🇺🇸 HAUNTED HOUSES ON SALE: THE CITY WHERE HOMEOWNERS DROWN IN DEBT
+
+Once hyped as “the Venice of Florida,” Cape Coral is now the Detroit of beach towns, flooded with for-sale signs, empty open houses, and crumbling investments.
+
+Prices are falling faster than crypto in a https://t.co/w0iwSQT9z6 https://t.co/SxLMhUa0Da" (32869 views, 50 likes) https://x.com/i/status/1946319064285990976
+- International Space Station: "Heart scans and hearing tests wrapped up the week as doctors on the ground reviewed the Exp 73 crew's health data. Meanwhile, @NASA's @SpaceX #Crew10 mission preps for return to Earth next month. https://t.co/hx1kmeOeKu" (31296 views, 196 likes) https://x.com/i/status/1946306164389802241
+- Mario Nawfal: "🇨🇳 🇺🇸 CHINA’S HACKER LEGACY: FROM TEEN TROLLS TO CYBER SPIES
+
+Before being government agents, they were just geeky kids hacking websites for fun and “patriotism.”
+
+They called themselves “Honkers” and saw themselves as red-hot keyboard warriors. 
+
+The government noticed, gave https://t.co/B7cMboXMGR https://t.co/wldNzjSFnu" (31135 views, 38 likes) https://x.com/i/status/1946314032476230108
+- Andrej Karpathy: ""Using a better model for analysis" 🤨
+I didn't realize I was using haiku all this time, no idea when claude code snuck this one in rofl. https://t.co/If0qQ4svQh" (28775 views, 357 likes) https://x.com/i/status/1946325810618700033
+- World of Statistics: "Most consumed meat (including seafood):
+ 
+🇦🇫 Afghanistan: Mutton &amp; Goat 🐏🐐
+🇦🇱 Albania: Poultry 🐓 
+🇩🇿 Algeria: Mutton &amp; Goat 🐏🐐
+🇦🇷 Argentina: Bovine 🐄 
+🇦🇲 Armenia: Bovine 🐄
+🇦🇺 Australia: Poultry 🐓
+🇦🇹 Austria: Pork 🐖 
+🇦🇿 Azerbaijan: Poultry 🐓
+🇧🇩 Bangladesh: Fish &amp; Seafood" (28235 views, 103 likes) https://x.com/i/status/1946324466813821169
+- Mario Nawfal: "🇺🇸 NARRATIVE COLLAPSE: TRUMP POLLING SKYROCKETS ABOVE OBAMA &amp; BUSH
+
+Trump's 2nd term is now more popular than Obama during the NSA scandal and Bush during the Iraq quagmire.
+
+While legacy media pushes the “Trump is collapsing” narrative, polls say otherwise: he's outperforming 2 https://t.co/z2tb1s0BhJ https://t.co/T7D5BYJvKf" (27958 views, 203 likes) https://x.com/i/status/1946324097471750314
+- Mario Nawfal: "🇺🇸 GOODBYE RAINBOWS: FLORIDA WIPES OUT PRIDE ART
+
+West Palm Beach is scrubbing its Pride crosswalk off the street like it's cleaning up after a glitter explosion. 
+
+Why? Because Florida’s transportation department says rainbow roads are dangerous.
+
+Boynton Beach already painted https://t.co/UQxS7yFWE3 https://t.co/MdseU8Xlma" (27402 views, 123 likes) https://x.com/i/status/1946321580579283070
+- Mario Nawfal: "GROK JUST WENT FULL GANGSTA
+
+Elon’s new Grok AI is out here looking like it runs both code and the streets.
+
+Chain iced out. Cigar lit. CRT face glowing.
+
+If ChatGPT is the nerd… Grok’s the one skipping class and building rockets.
+
+Source: @elonmusk https://t.co/pglJqORFxj https://t.co/2HL1msVXmA" (26619 views, 92 likes) https://x.com/i/status/1946325355335401708
+- Barstool Sports: "For the 4th Consecutive Year, Vanderbilt Has Received Votes To Win the SEC Championship https://t.co/8Df1DXhoBC https://t.co/iO0QRLjD4L" (25410 views, 22 likes) https://x.com/i/status/1946300241633743303
+- @jason: "You finally live your dream of flying — then realize the destination 
+
+[ give me your best one liner / retweet not a paid sub and i will see it ] https://t.co/merFSxhtcu" (24069 views, 100 likes) https://x.com/i/status/1946310150555664400
+- Pardon My Take: "Zac got out in charge of finding costumes for the hot dog race 
+
+@FruitOfTheLoom https://t.co/Secv78RRnt" (23616 views, 32 likes) https://x.com/i/status/1946323029027406122
+- Dave Portnoy: "I hate these Red Sox/Cubs uniforms in which should be a classic uniform game." (22575 views, 129 likes) https://x.com/i/status/1946303201407275179
+- Mario Nawfal: "🚨🇺🇸 BREAKING: DOJ FILES TO UNSEAL EPSTEIN GRAND JURY TRANSCRIPTS
+
+Attorney General Pam Bondi and Deputy AG Todd Blanche have officially filed a motion in the Southern District of New York to unseal Jeffrey Epstein’s grand jury testimony.
+
+The DOJ cites overwhelming public https://t.co/HI8MAgUUpz https://t.co/nr0UTPVMyw" (21982 views, 113 likes) https://x.com/i/status/1946326813073891448
+- Mario Nawfal: "🇦🇺 YOU CAN NOW WALK THROUGH A REAL-LIFE LIGHT PORTAL
+
+Imagine if Pink Floyd's Dark Side of the Moon cover came to life and swallowed you whole.
+
+Lachlan Turczan just made that happen.
+
+His new piece, Lucida, is like stepping into a Stargate, getting hugged by a rainbow, and https://t.co/NOny9bOJkR" (21552 views, 69 likes) https://x.com/i/status/1946316548152414681
+- Mario Nawfal: "RED PILL OR BLUE PILL? WATCH THE MATRIX,  INSIDE THE MATRIX
+
+Cosm’s “Matrix in Shared Reality” is like if IMAX, Disneyland, and a hacker rave had a baby and fed it red pills. 
+
+Picture The Matrix playing on an 87-foot LED dome that surrounds you with ricocheting bullets, https://t.co/dd02XSK0vt https://t.co/fW7YmX7ggY" (21569 views, 32 likes) https://x.com/i/status/1946326614050267142
+- World and Science: "Name a thing from your childhood that no longer exists.." (21522 views, 49 likes) https://x.com/i/status/1946315326964040020
+- Mario Nawfal: "🇺🇸 GENIUS ACT SIGNED INTO LAW: U.S. TO LEAD DIGITAL CURRENCY REVOLUTION
+
+Trump signs the GENIUS Act, a landmark bill set to supercharge America’s dominance in blockchain and digital currency tech.
+
+The law clears the path for innovation, regulation, and infrastructure to make the https://t.co/zYNcjiwrMP https://t.co/tHNJiLP0nX" (19493 views, 106 likes) https://x.com/i/status/1946297673289810399
+- Mario Nawfal: "🇺🇸 TRUMP: U.S. WILL NEVER HAVE A CENTRAL BANK DIGITAL CURRENCY
+
+"I remain fully committed to my pledge never to allow the creation of a central bank digital currency in America.
+
+It's amazing the knowledge that people have gained all of a sudden.
+
+My first week in office, I https://t.co/7dtC4lkByO https://t.co/Z8HXSO9GKt" (18389 views, 129 likes) https://x.com/i/status/1946300190224515565
+- Mario Nawfal: "🇧🇷 BOLSONARO: THEY RAIDED ME, USED MY BATHROOM... THEN MAGICALLY FOUND A FLASH DRIVE?!
+
+Former President of Brazil, @jairbolsonaro:
+
+"Someone asked to use the bathroom, I pointed it out, and they came back with the flash drive in hand.
+
+I’ve never opened a flash drive in my life, https://t.co/mgiAYvqp8g https://t.co/LlZOYpwh8z" (18061 views, 192 likes) https://x.com/i/status/1946298931685523904
+- Mario Nawfal: "🇺🇸 🇸🇻 HOSTAGE BREAKTHROUGH: TRUMP AND PRES. BUKELE GET IT DONE
+
+State Sec. Rubio confirmed the release of 10 U.S. citizens detained in Venezuela, crediting President Trump and El Salvador’s Nayib Bukele for sealing the deal.
+
+Bukele's government helped broker the swap by agreeing https://t.co/PD1emGQFmJ https://t.co/bKplgw5hbK" (15667 views, 90 likes) https://x.com/i/status/1946329134847951320
+- Ian Rapoport: "Congrats to NFL veteran and media personality Kirk Morrison on fulfilling a childhood dream and taking over as the new #Raiders radio color analyst. Morrison, an Oakland native, will now work closely with the team he grew up rooting for, the same team that drafted him in 2005. https://t.co/gwppndo9jg" (15046 views, 245 likes) https://x.com/i/status/1946303622821589264
+- Mario Nawfal: "🚨AI’S DIRTY SECRET: CONCRETE IS FUELING THE FUTURE
+
+OpenAI’s massive new data center in Abu Dhabi will be bigger than Monaco... and it’s made of concrete, not just code.
+
+Every AI model runs on electricity, but the buildings they live in run on cement... and cement means carbon. https://t.co/5V993xVnDi" (15118 views, 35 likes) https://x.com/i/status/1946296415203766380
+- Only In Boston: "The Boston Beanstalks Tall Club is a social group for tall individuals with an annual membership fee.
+
+To join, men must be at least 6'2" and women at least 5'10" — measured in stocking feet." (14029 views, 24 likes) https://x.com/i/status/1946306481617240281
+- Mario Nawfal: "🇨🇳 🇺🇸 WHAT’S CHINA DOING NEXT TO U.S. WATER SUPPLY?
+
+A giant Chinese drink company rolled up to a sleepy New Hampshire town and dropped $67M on an abandoned factory, which is 4X what it’s worth!
+
+Now the company wants to tap into the town’s drinking water to make their products. https://t.co/PfXnCsuhBY https://t.co/GZWm69Nzo8" (13822 views, 52 likes) https://x.com/i/status/1946301448641249435
+- Pardon My Take: "Biz and Oldie were trying to figure out if they should accept the award on Canadas behalf for best exhibition win
+
+@rhoback https://t.co/wsOmfcnol6" (13708 views, 47 likes) https://x.com/i/status/1946301759938314340
+- @jason: "👀 https://t.co/zof3tRlX0r" (13062 views, 83 likes) https://x.com/i/status/1946300816899625101
+- Only In Boston: "A note left at the Beverly Depot Commuter Rail Station this evening... https://t.co/iYhGBRWsuB" (12189 views, 66 likes) https://x.com/i/status/1946314032211783842
+- Barstool Sports: ""The Consensus? Fuck You And The Consensus Zach Lowe" - Cam Thomas Decided To Go After Zach Lowe For Suggesting He's Perceived Around The NBA As A Ball Hog https://t.co/Qsh8duGXcW https://t.co/ewJQ2qAwuc" (12159 views, 11 likes) https://x.com/i/status/1946302757326954580
+- Boston Celtics: "Putting the league on notice 📢
+
+#BeatLA https://t.co/avQQKt5rXr" (10405 views, 127 likes) https://x.com/i/status/1946298936613875714
+- @jason: "You finally live you’re dream of flying — then realize the destination 
+
+[ give me your best one liner / retweet not a paid sub and i will see it ] https://t.co/sQMvQXevuP" (9892 views, 63 likes) https://x.com/i/status/1946300661270016233
+- Max Velocity: "BREAKING: Evacuations and water rescues are ongoing due to major flooding and mudslides in Dante, Virginia, right now." (9506 views, 292 likes) https://x.com/i/status/1946318856210764176
+- Barstool After Dark: "Top 10 highlights from the Barstool After Dark Derby
+
+What was your favorite moment? https://t.co/Nb5g3HuHkB" (9501 views, 16 likes) https://x.com/i/status/1946321378992324943
+- Only In Boston: "Portuguese is the most widely spoken language in Massachusetts after English and Spanish." (9330 views, 88 likes) https://x.com/i/status/1946321581158125926
+- PFT Commenter: "I put the blame squarley on the strip club for not making their name on the billing reciept ambiguous enough. That line item should read “Payment Services Corporation”, not “Tootsies Cabaret” https://t.co/zzvuRTEU82" (8962 views, 50 likes) https://x.com/i/status/1946332645660529133
+- Mario Nawfal: "🇺🇸 NYC MAYORAL FRONTRUNNER: WHAT PURPOSE DO PRISONS SERVE?
+
+Socialist candidate Zohran Mamdani once questioned whether jails and prisons should even exist, and the backlash is explosive.
+
+Law enforcement is calling his 2020 comments “scary,” “unhinged,” and “out of touch,” https://t.co/Tm85MPIRpT" (8789 views, 16 likes) https://x.com/i/status/1946331647294493055
+- Tesla Charging: "New Tesla Supercharger: Southern Pines, NC (8 stalls) 
+https://t.co/NH2sJUZphL https://t.co/RoPUzoFxhn" (8283 views, 377 likes) https://x.com/i/status/1946309272612253859
+- U.S. Department of Energy: "With President Trump’s bold leadership and @SecretaryWright’s decisive action, we are UNLEASHING AMERICAN ENERGY DOMINANCE like you have never seen before." (8138 views, 382 likes) https://x.com/i/status/1946314092160954410
+- Vintage Maps: "Panama Canal, 1912 https://t.co/fGZx5SVsic" (8261 views, 120 likes) https://x.com/i/status/1946306998712066331
+- Andrew Yang🧢⬆️🇺🇸: "So what is in Project 2025?  https://t.co/sot2rjQUEV" (8159 views, 21 likes) https://x.com/i/status/1946299871297999037
+- Tim Urban: "Now this is just cocky https://t.co/dh9G8vGpjM" (7816 views, 101 likes) https://x.com/i/status/1946302460340973900
+- World of Statistics: "🇬🇷 Greece braces for extreme heatwave with up to 44° C" (7740 views, 45 likes) https://x.com/i/status/1946331772305682546
+- Car Dealership Guy: "[NEWS] Uber’s latest bet on autonomy comes with a $300M Lucid-sized twist:
+
+Announced yesterday, Uber is partnering with Lucid and robotics company Nuro to deploy 20K self-driving robotaxis over the next six years.
+
+The first wave hits a major U.S. city in 2026—
+
+With a $300M" (6894 views, 6 likes) https://x.com/i/status/1946299362914811934
+- Tim Urban: "Really need someone to do a slow zoom-in on this with the Curb music https://t.co/pR3iUV5e4F" (6364 views, 25 likes) https://x.com/i/status/1946302346977333682
+- History Defined: "Women washing clothes at the Crabtree Recreational Project. Photographed near Raleigh, North Carolina, 1936. https://t.co/w5g7MfoswA" (5359 views, 36 likes) https://x.com/i/status/1946306643395854539

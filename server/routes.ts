@@ -8,19 +8,69 @@ import { compileContentForPodcast } from "./services/contentFetcher.js";
 import axios from 'axios';
 import { generatePodcastScript, parseScriptSegments } from "./services/podcastGenerator.js";
 import { getAvailableVoices, generateAudio, checkQuota, combineAudioSegments } from "./services/voiceSynthesis.js";
-import { sendPodcastEmail, isEmailServiceConfigured } from "./services/emailService.js";
+import { sendPodcastEmail, isEmailServiceConfigured, sendWelcomeEmail } from "./services/emailService.js";
 import { storage } from "./storage.js";
 import { generateHeadlinesWithLiveSearch } from "./services/liveSearchService.js";
+import { 
+  registerUser, 
+  loginUser, 
+  requestPasswordReset, 
+  resetPasswordWithToken,
+  getUserFromToken 
+} from "./services/auth.js";
 import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, validateXAuthEnvironment } from "./services/xAuth.js";
 import { fetchUserTimeline } from "./services/xTimeline.js";
+import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
+import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
+import { runPodcastScheduler, createScheduledPodcastsForUser, processPendingPodcasts } from "./services/podcastScheduler.js";
+import rssRoutes from "./routes/rssRoutes.ts";
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { format } from 'date-fns';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Authentication middleware
+async function requireAuth(req, res, next) {
+  try {
+    // Check authorization header
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      const user = await getUserFromToken(token);
+      if (user) {
+        req.user = user;
+        return next();
+      }
+    }
+    
+    // Check session
+    if (req.session?.userId) {
+      const user = await storage.getUser(req.session.userId);
+      if (user) {
+        req.user = user;
+        return next();
+      }
+    }
+    
+    return res.status(401).json({ message: "Authentication required" });
+  } catch (error) {
+    console.error("Auth middleware error:", error);
+    return res.status(401).json({ message: "Authentication required" });
+  }
+}
+
 export function registerRoutes(app) {
   const router = express.Router();
+  
+  // Add development middleware
+  app.use(addDevHeaders);
+  app.use(devAutoLogin);
+  
+  // Add RSS routes
+  app.use(rssRoutes);
+  
   let headlinesStore = [];
   let appendixStore = null;
   let compiledDataStore = null; // Store raw compiled data for podcast generation
@@ -38,31 +88,58 @@ export function registerRoutes(app) {
       console.log("🚀 Using xAI Live Search for headlines generation");
       const startTime = Date.now();
       
-      // Check if user has authenticated with X (use session if available)
-      const userId = req.session?.userId || 1; // Get from session or default to 1
-      const authToken = await storage.getXAuthTokenByUserId(userId);
+      // Check if user has authenticated with X
+      const userId = req.session?.userId || req.user?.id;
+      let authToken = null;
+      
+      if (userId) {
+        authToken = await storage.getXAuthTokenByUserId(userId);
+      }
       
       let userHandle = null;
       let accessToken = null;
       
       if (authToken) {
-        // Create authenticated client with token refresh capability
-        const { createAuthenticatedClient } = await import('./services/xAuth.js');
-        const authClientResult = await createAuthenticatedClient(
-          authToken.accessToken,
-          authToken.refreshToken,
-          authToken.expiresAt
-        );
-        
-        // If tokens were refreshed, update the database
-        if (authClientResult.updatedTokens) {
-          await storage.updateXAuthToken(userId, authClientResult.updatedTokens);
-          console.log(`🔄 Refreshed and updated tokens for user ${userId}`);
+        try {
+          // Create authenticated client with token refresh capability
+          const { createAuthenticatedClient } = await import('./services/xAuth.js');
+          const authClientResult = await createAuthenticatedClient(
+            authToken.accessToken,
+            authToken.refreshToken,
+            authToken.expiresAt
+          );
+          
+          // If tokens were refreshed, update the database
+          if (authClientResult.updatedTokens) {
+            await storage.updateXAuthToken(userId, authClientResult.updatedTokens);
+            console.log(`🔄 Refreshed and updated tokens for user ${userId}`);
+          }
+          
+          userHandle = authToken.xHandle;
+          accessToken = authClientResult.updatedTokens?.accessToken || authToken.accessToken;
+          console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
+        } catch (authError) {
+          console.log(`❌ X authentication failed: ${authError.message}`);
+          console.log(`🔄 Continuing search without X timeline enhancement`);
+          // Clear invalid tokens to prevent future attempts
+          try {
+            await storage.deleteXAuthToken(userId);
+            console.log(`🧹 Cleared invalid X tokens for user ${userId}`);
+          } catch (deleteError) {
+            console.log(`⚠️ Failed to clear invalid tokens: ${deleteError.message}`);
+          }
+          // Continue without X authentication
+          userHandle = null;
+          accessToken = null;
         }
-        
-        userHandle = authToken.xHandle;
-        accessToken = authClientResult.updatedTokens?.accessToken || authToken.accessToken;
-        console.log(`📱 User ${userHandle} authenticated - will include timeline posts`);
+      }
+      
+      // Save user's last search topics
+      if (userId) {
+        await storage.upsertUserLastSearch({
+          userId,
+          topics
+        });
       }
       
       // Use Live Search to generate headlines with optional timeline posts
@@ -445,8 +522,11 @@ export function registerRoutes(app) {
       console.log(`🔄 Combining ${audioUrls.length} segments into final podcast...`);
       const mainAudioUrl = await combineAudioSegments(audioUrls, episodeId);
       
-      // Update episode with audio URL
-      await storage.updatePodcastEpisode(parseInt(episodeId), { audioUrl: mainAudioUrl });
+      // Update episode with audio URL and local path
+      await storage.updatePodcastEpisode(parseInt(episodeId), { 
+        audioUrl: mainAudioUrl,
+        audioLocalPath: mainAudioUrl 
+      });
       
       console.log(`Audio generation completed for episode ${episodeId}: ${mainAudioUrl}`);
       res.json({ 
@@ -509,20 +589,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Serve podcast audio files
-  app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
+  // Serve podcast audio files from new location
+  app.use('/Search-Data_&_Podcast-Storage/podcast-audio', express.static(path.join(__dirname, '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio')));
 
-  // Serve static podcast audio files
-  app.use('/podcast-audio', express.static(path.join(__dirname, '..', 'podcast-audio')));
-
-  // X OAuth authentication routes
-  let userAuthData = { 
-    authenticated: false,
-    accessToken: null,
-    refreshToken: null,
-    timestamp: null,
-    xHandle: null
-  }; // In-memory storage for demo (use database in production)
+  // X OAuth authentication routes (now using database-stored tokens)
   
   // X Auth status endpoint
   router.get("/api/auth/x/status", async (req, res) => {
@@ -530,16 +600,25 @@ export function registerRoutes(app) {
       const status = getXAuthStatus();
       
       // Check session and database for persistent authentication
-      const userId = req.session?.userId || 1;
+      const userId = req.session?.userId;
       let authToken = null;
       
-      try {
-        authToken = await storage.getXAuthTokenByUserId(userId);
-      } catch (dbError) {
-        console.log('Database check failed:', dbError.message);
+      if (userId) {
+        try {
+          authToken = await storage.getXAuthTokenByUserId(userId);
+        } catch (dbError) {
+          console.log('Database check failed:', dbError.message);
+        }
       }
       
-      const isAuthenticated = !!(authToken && authToken.accessToken);
+      // Check if token exists and is not expired
+      const isAuthenticated = !!(authToken && authToken.accessToken && 
+                                 authToken.expiresAt && 
+                                 new Date(authToken.expiresAt) > new Date());
+      
+      // In development mode, if user is dev_user (ID: 1), ensure they appear authenticated
+      const isDevelopment = process.env.NODE_ENV === 'development';
+      const isDevUser = userId === 1;
       
       res.json({
         ...status,
@@ -548,6 +627,8 @@ export function registerRoutes(app) {
         xHandle: authToken?.xHandle || req.session?.xHandle,
         persistent: !!req.session?.xAuthenticated,
         expiresAt: authToken?.expiresAt,
+        developmentMode: isDevelopment,
+        autoAuthenticated: isDevelopment && isDevUser && isAuthenticated,
         success: true
       });
     } catch (error) {
@@ -561,20 +642,57 @@ export function registerRoutes(app) {
       const status = getXAuthStatus();
       const websiteUrl = status.callbackUrl.replace('/auth/twitter/callback', '');
       
+      // Calculate ALL possible production domains
+      const allPossibleDomains = [];
+      
+      // Current domain from REPLIT_DOMAINS
+      if (process.env.REPLIT_DOMAINS) {
+        process.env.REPLIT_DOMAINS.split(',').forEach(domain => {
+          allPossibleDomains.push(`https://${domain}/auth/twitter/callback`);
+        });
+      }
+      
+      // Production deployment domain (.replit.app)
+      if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
+        allPossibleDomains.push(`https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app/auth/twitter/callback`);
+        allPossibleDomains.push(`https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`);
+      }
+      
+      // Remove duplicates
+      const uniqueDomains = [...new Set(allPossibleDomains)];
+      
+      // Detect environment
+      const isProduction = websiteUrl.includes('.replit.app') || 
+                          !websiteUrl.includes('.replit.dev');
+      
       res.json({
         configured: status.configured,
+        environment: isProduction ? 'production' : 'development',
         currentUrls: {
           websiteUrl,
           callbackUrl: status.callbackUrl
         },
-        xDeveloperPortalInstructions: {
-          step1: 'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
-          step2: 'Navigate to: Projects & Apps → Your App → Settings',
-          step3: 'Under "Authentication Settings", add these EXACT URLs:',
-          websiteUrl: `Website URL: ${websiteUrl}`,
-          callbackUrl: `Callback URL: ${status.callbackUrl}`,
-          step4: 'Save changes and test authentication',
-          note: 'URLs must be exact matches (case-sensitive, no trailing slashes)'
+        allPossibleDomains: uniqueDomains,
+        singleWebsiteUrl: websiteUrl.includes('.replit.app') ? 
+          websiteUrl : 
+          `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app`,
+        criticalFix: {
+          issue: 'OAuth fails because callback URL not in X Developer Portal',
+          solution: 'Only ONE Website URL allowed in X Developer Portal',
+          action: 'Set Website URL to production domain, add callback URLs'
+        },
+        xDeveloperPortalConfig: {
+          websiteUrl: websiteUrl.includes('.replit.app') ? 
+            websiteUrl : 
+            `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app`,
+          callbackUrls: uniqueDomains,
+          instructions: [
+            'Go to X Developer Portal: https://developer.x.com/en/portal/dashboard',
+            'Navigate to: Projects & Apps → Your App → Settings',
+            'Set ONE Website URL (use production domain)',
+            'Add ALL callback URLs above (up to 10 allowed)',
+            'Save and test in production'
+          ]
         }
       });
     } catch (error) {
@@ -582,8 +700,8 @@ export function registerRoutes(app) {
     }
   });
   
-  // Generate X login URL
-  router.post("/api/auth/x/login", async (req, res) => {
+  // Generate X login URL (requires authentication)
+  router.post("/api/auth/x/login", requireAuth, async (req, res) => {
     try {
       // Enhanced validation before attempting to generate URL
       const validation = validateXAuthEnvironment();
@@ -598,7 +716,7 @@ export function registerRoutes(app) {
       }
       
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
-      const authLink = getXLoginUrl(state);
+      const authLink = getXLoginUrl(state, req);
       
       // Extract the URL from the auth link object
       const loginUrl = authLink.url;
@@ -623,12 +741,12 @@ export function registerRoutes(app) {
   });
   
   // Fetch and store user's X data (timeline working, follows needs Project attachment)
-  router.post("/api/x/fetch-user-data", async (req, res) => {
+  router.post("/api/x/fetch-user-data", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       
-      // Get user's X auth token (use session if available)
-      const sessionUserId = req.session?.userId || userId;
+      // Use the authenticated user ID directly
+      const sessionUserId = userId;
       const authToken = await storage.getXAuthTokenByUserId(sessionUserId);
       if (!authToken) {
         return res.status(401).json({ 
@@ -679,7 +797,7 @@ export function registerRoutes(app) {
       }
 
       // Store whatever data we got
-      const storeResult = await storeUserData(storage, userId, follows, timelinePosts);
+      const storeResult = await storeUserData(storage, sessionUserId, follows, timelinePosts);
 
       const hasAnyData = follows.length > 0 || timelinePosts.length > 0;
 
@@ -715,10 +833,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Get stored user follows
-  router.get("/api/x/follows", async (req, res) => {
+  // Get stored user follows (requires authentication)
+  router.get("/api/x/follows", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       const follows = await storage.getUserFollows(userId);
       
       res.json({
@@ -732,10 +850,10 @@ export function registerRoutes(app) {
     }
   });
 
-  // Get stored user timeline posts
-  router.get("/api/x/timeline", async (req, res) => {
+  // Get stored user timeline posts (requires authentication)
+  router.get("/api/x/timeline", requireAuth, async (req, res) => {
     try {
-      const userId = 1; // In production, get from session/JWT
+      const userId = req.user.id;
       const days = parseInt(req.query.days) || 7;
       const posts = await storage.getUserTimelinePosts(userId, days);
       
@@ -751,10 +869,28 @@ export function registerRoutes(app) {
     }
   });
 
-  // Quick test endpoint to verify Project attachment fix
-  router.post("/api/x/test-project-attachment", async (req, res) => {
+  // Get pending scheduled podcasts (requires authentication)
+  router.get("/api/scheduled-podcasts/pending", requireAuth, async (req, res) => {
     try {
-      const userId = 1;
+      const userId = req.user.id;
+      const pending = await storage.getScheduledPodcastsForUser(userId);
+      const pendingOnly = pending.filter(p => p.status === 'pending');
+      
+      res.json({
+        success: true,
+        count: pendingOnly.length,
+        podcasts: pendingOnly
+      });
+    } catch (error) {
+      console.error("Error getting pending podcasts:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Quick test endpoint to verify Project attachment fix (requires authentication)
+  router.post("/api/x/test-project-attachment", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
       
       // Get user's X auth token
       const authToken = await storage.getXAuthTokenByUserId(userId);
@@ -935,7 +1071,7 @@ export function registerRoutes(app) {
     }
     
     try {
-      const authResult = await handleXCallback(code, state);
+      const authResult = await handleXCallback(code, state, req);
       
       if (!authResult || !authResult.success) {
         throw new Error('Token exchange failed');
@@ -963,8 +1099,11 @@ export function registerRoutes(app) {
         throw new Error('Failed to fetch user info with access token');
       }
       
-      // Store in database (for now use userId 1 as default)
-      const userId = 1; // In production, get from session/JWT
+      // Get user ID from session (require authentication)
+      const userId = req.session?.userId;
+      if (!userId) {
+        throw new Error('User must be logged in to connect X account');
+      }
       
       // Convert expires timestamp to proper Date object for PostgreSQL
       let expiresAtDate;
@@ -1012,20 +1151,7 @@ export function registerRoutes(app) {
       req.session.xAuthenticated = true;
       req.session.xHandle = user.username;
       
-      console.log(`💾 Session established for user ${user.username}`);
-      
-      // Store auth data temporarily for immediate use
-      userAuthData.accessToken = authResult.accessToken;
-      userAuthData.refreshToken = authResult.refreshToken;
-      userAuthData.authenticated = true;
-      userAuthData.timestamp = Date.now();
-      userAuthData.xHandle = user.username;
-      
-      console.log('X Authentication successful:', {
-        xHandle: user.username,
-        authenticated: userAuthData.authenticated,
-        timestamp: userAuthData.timestamp
-      });
+      console.log(`💾 Session and database tokens stored for user ${user.username}`);
       
       // Return success page that closes popup
       res.send(`
@@ -1158,38 +1284,648 @@ export function registerRoutes(app) {
     });
   });
 
-  // Check auth status for frontend polling
-  router.get("/api/auth/x/check", (req, res) => {
-    const isAuthenticated = userAuthData.authenticated && 
-                           userAuthData.timestamp && 
-                           (Date.now() - userAuthData.timestamp < 3600000); // 1 hour expiry
-    
-    console.log('X Auth Check:', {
-      authenticated: userAuthData.authenticated,
-      timestamp: userAuthData.timestamp,
-      isAuthenticated,
-      timeSinceAuth: userAuthData.timestamp ? Date.now() - userAuthData.timestamp : null
-    });
-    
+  // Check auth status for frontend polling (requires authentication)
+  router.get("/api/auth/x/check", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const authToken = await storage.getXAuthTokenByUserId(userId);
+      
+      if (!authToken) {
+        return res.json({ 
+          authenticated: false,
+          accessToken: null,
+          xHandle: null
+        });
+      }
+      
+      // Check if token is still valid (not expired)
+      const isExpired = authToken.expiresAt && new Date() > authToken.expiresAt;
+      
+      console.log('X Auth Check:', {
+        userId,
+        hasToken: !!authToken,
+        xHandle: authToken.xHandle,
+        isExpired,
+        expiresAt: authToken.expiresAt
+      });
+      
+      res.json({ 
+        authenticated: !isExpired,
+        accessToken: !isExpired ? authToken.accessToken : null,
+        xHandle: !isExpired ? authToken.xHandle : null
+      });
+    } catch (error) {
+      console.error("Error checking X auth status:", error);
+      res.json({ 
+        authenticated: false,
+        accessToken: null,
+        xHandle: null
+      });
+    }
+  });
+
+  // Reset auth state (for testing or logout) - requires authentication
+  router.post("/api/auth/x/reset", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      
+      // Delete X auth tokens from database
+      const existingToken = await storage.getXAuthTokenByUserId(userId);
+      if (existingToken) {
+        await storage.updateXAuthToken(userId, {
+          accessToken: null,
+          refreshToken: null,
+          expiresAt: null,
+          xUserId: null,
+          xHandle: null
+        });
+        console.log(`🗑️ Cleared X auth tokens for user ${userId}`);
+      }
+      
+      // Clear session X auth data
+      if (req.session) {
+        req.session.xAuthenticated = false;
+        req.session.xHandle = null;
+      }
+      
+      console.log('X Auth state reset');
+      res.json({ success: true, message: 'X authentication reset successfully' });
+    } catch (error) {
+      console.error("Error resetting X auth:", error);
+      res.status(500).json({ success: false, message: 'Failed to reset X authentication' });
+    }
+  });
+
+  // Podcast preferences routes
+  router.get("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const preferences = await storage.getPodcastPreferences(userId);
+      res.json(preferences || null);
+    } catch (error) {
+      console.error("Error fetching podcast preferences:", error);
+      res.status(500).json({ error: "Failed to fetch podcast preferences" });
+    }
+  });
+
+  router.post("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const { enabled, cadence, customDays, times, topics, duration, voiceId, enhanceWithX } = req.body;
+      
+      // Validate input
+      if (!cadence || !times || !times.length || !topics || !topics.length || !duration || !voiceId) {
+        return res.status(400).json({ error: "Missing required fields" });
+      }
+      
+      // Delete any existing pending scheduled podcasts for this user
+      // This ensures old schedules don't interfere with new preferences
+      await storage.deletePendingScheduledPodcastsForUser(userId);
+      
+      // Check if preferences already exist
+      const existing = await storage.getPodcastPreferences(userId);
+      
+      let savedPreferences;
+      if (existing) {
+        // Update existing preferences
+        savedPreferences = await storage.updatePodcastPreferences(userId, {
+          enabled,
+          cadence,
+          customDays,
+          times,
+          topics,
+          duration,
+          voiceId,
+          enhanceWithX
+        });
+      } else {
+        // Create new preferences
+        savedPreferences = await storage.createPodcastPreferences({
+          userId,
+          enabled,
+          cadence,
+          customDays,
+          times,
+          topics,
+          duration,
+          voiceId,
+          enhanceWithX
+        });
+      }
+      
+      // Create scheduled podcasts for each delivery time if enabled
+      if (savedPreferences && enabled) {
+        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        await createScheduledPodcastsForUser(userId, savedPreferences);
+      }
+      
+      res.json(savedPreferences);
+    } catch (error) {
+      console.error("Error saving podcast preferences:", error);
+      res.status(500).json({ error: "Failed to save podcast preferences" });
+    }
+  });
+
+  router.patch("/api/podcast-preferences", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const updates = req.body;
+      
+      // Delete any existing pending scheduled podcasts for this user
+      // This ensures old schedules don't interfere with updated preferences
+      await storage.deletePendingScheduledPodcastsForUser(userId);
+      
+      const updated = await storage.updatePodcastPreferences(userId, updates);
+      if (!updated) {
+        return res.status(404).json({ error: "Podcast preferences not found" });
+      }
+      
+      // Re-create scheduled podcasts if enabled
+      if (updated.enabled) {
+        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        await createScheduledPodcastsForUser(userId, updated);
+      }
+      
+      res.json(updated);
+    } catch (error) {
+      console.error("Error updating podcast preferences:", error);
+      res.status(500).json({ error: "Failed to update podcast preferences" });
+    }
+  });
+
+  // Get recent podcast episodes
+  router.get("/api/podcast-episodes/recent", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const limit = parseInt(req.query.limit as string) || 5;
+      
+      const episodes = await storage.getRecentPodcastEpisodes(userId, limit);
+      res.json(episodes);
+    } catch (error) {
+      console.error("Error fetching recent podcast episodes:", error);
+      res.status(500).json({ error: "Failed to fetch recent podcast episodes" });
+    }
+  });
+
+  // Get user's last search topics
+  router.get("/api/user/last-topics", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const lastSearch = await storage.getUserLastSearch(userId);
+      res.json(lastSearch?.topics || []);
+    } catch (error) {
+      console.error("Error fetching last topics:", error);
+      res.status(500).json({ error: "Failed to fetch last topics" });
+    }
+  });
+
+  // Development-only routes
+  router.post("/api/dev/seed-database", devOnly, async (req, res) => {
+    try {
+      const result = await seedDatabase();
+      res.json(result);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.post("/api/dev/clear-data", devOnly, async (req, res) => {
+    try {
+      const result = await clearTestData();
+      res.json(result);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.get("/api/dev/users", devOnly, (req, res) => {
+    const testUsers = getTestUsers();
     res.json({ 
-      authenticated: isAuthenticated,
-      accessToken: isAuthenticated ? userAuthData.accessToken : null,
-      xHandle: isAuthenticated ? userAuthData.xHandle : null
+      users: testUsers,
+      currentUser: req.user ? {
+        id: req.user.id,
+        username: req.user.username,
+        email: req.user.email
+      } : null
+    });
+  });
+  
+  router.post("/api/dev/switch-user/:userId", devOnly, async (req, res) => {
+    try {
+      const userId = parseInt(req.params.userId);
+      const user = await storage.getUser(userId);
+      
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      
+      // Update session
+      req.session.userId = user.id;
+      req.session.username = user.username;
+      
+      // Check X auth status
+      const xAuth = await storage.getXAuthTokenByUserId(user.id);
+      if (xAuth) {
+        req.session.xAuthenticated = true;
+        req.session.xHandle = xAuth.xHandle;
+      } else {
+        req.session.xAuthenticated = false;
+        req.session.xHandle = null;
+      }
+      
+      res.json({ 
+        success: true, 
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        xAuth: xAuth ? {
+          xHandle: xAuth.xHandle,
+          authenticated: true
+        } : { authenticated: false }
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  router.get("/api/dev/environment", devOnly, (req, res) => {
+    res.json({
+      environment: 'development',
+      nodeEnv: process.env.NODE_ENV,
+      replitDomains: process.env.REPLIT_DOMAINS,
+      currentUser: req.user ? {
+        id: req.user.id,
+        username: req.user.username
+      } : null,
+      autoLoginEnabled: true
     });
   });
 
-  // Reset auth state (for testing or logout)
-  router.post("/api/auth/x/reset", (req, res) => {
-    userAuthData = {
-      authenticated: false,
-      accessToken: null,
-      refreshToken: null,
-      timestamp: null,
-      xHandle: null
-    };
-    
-    console.log('X Auth state reset');
-    res.json({ success: true, message: 'Authentication state reset' });
+  // Authentication routes
+  router.post("/api/auth/register", async (req, res) => {
+    try {
+      const { username, email, password } = req.body;
+      
+      if (!username || !email || !password) {
+        return res.status(400).json({ message: "Username, email and password are required" });
+      }
+      
+      if (password.length < 6) {
+        return res.status(400).json({ message: "Password must be at least 6 characters long" });
+      }
+      
+      const { user, token } = await registerUser(username, email, password);
+      
+      // Set session if available
+      if (req.session) {
+        req.session.userId = user.id;
+        req.session.username = user.username;
+      }
+      
+      // Send welcome email
+      await sendWelcomeEmail(user.email, user.username);
+      
+      res.json({
+        success: true,
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        token
+      });
+    } catch (error) {
+      console.error("Registration error:", error);
+      res.status(400).json({ message: error.message });
+    }
+  });
+
+  router.post("/api/auth/login", async (req, res) => {
+    try {
+      const { username, password } = req.body;
+      
+      if (!username || !password) {
+        return res.status(400).json({ message: "Username and password are required" });
+      }
+      
+      const { user, token } = await loginUser(username, password);
+      
+      // Set session if available
+      if (req.session) {
+        req.session.userId = user.id;
+        req.session.username = user.username;
+      }
+      
+      res.json({
+        success: true,
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        },
+        token
+      });
+    } catch (error) {
+      console.error("Login error:", error);
+      res.status(401).json({ message: error.message });
+    }
+  });
+
+  router.post("/api/auth/logout", (req, res) => {
+    if (req.session) {
+      req.session.destroy((err) => {
+        if (err) {
+          console.error("Logout error:", err);
+          return res.status(500).json({ message: "Error logging out" });
+        }
+        res.json({ success: true, message: "Logged out successfully" });
+      });
+    } else {
+      res.json({ success: true, message: "Logged out successfully" });
+    }
+  });
+
+  router.get("/api/auth/me", async (req, res) => {
+    try {
+      // Check authorization header
+      const authHeader = req.headers.authorization;
+      if (authHeader && authHeader.startsWith('Bearer ')) {
+        const token = authHeader.substring(7);
+        const user = await getUserFromToken(token);
+        if (user) {
+          return res.json({
+            user: {
+              id: user.id,
+              username: user.username,
+              email: user.email
+            }
+          });
+        }
+      }
+      
+      // Check session
+      if (req.session?.userId) {
+        const user = await storage.getUser(req.session.userId);
+        if (user) {
+          return res.json({
+            user: {
+              id: user.id,
+              username: user.username,
+              email: user.email
+            }
+          });
+        }
+      }
+      
+      res.status(401).json({ message: "Not authenticated" });
+    } catch (error) {
+      console.error("Auth check error:", error);
+      res.status(401).json({ message: "Not authenticated" });
+    }
+  });
+
+  router.post("/api/auth/forgot-password", async (req, res) => {
+    try {
+      const { email } = req.body;
+      
+      if (!email) {
+        return res.status(400).json({ message: "Email is required" });
+      }
+      
+      const result = await requestPasswordReset(email);
+      res.json(result);
+    } catch (error) {
+      console.error("Password reset request error:", error);
+      res.status(500).json({ message: "Error processing password reset request" });
+    }
+  });
+
+  router.post("/api/auth/reset-password", async (req, res) => {
+    try {
+      const { token, password } = req.body;
+      
+      if (!token || !password) {
+        return res.status(400).json({ message: "Token and password are required" });
+      }
+      
+      if (password.length < 6) {
+        return res.status(400).json({ message: "Password must be at least 6 characters long" });
+      }
+      
+      const result = await resetPasswordWithToken(token, password);
+      res.json(result);
+    } catch (error) {
+      console.error("Password reset error:", error);
+      res.status(400).json({ message: error.message });
+    }
+  });
+
+  // Development-only podcast test endpoint
+  if (process.env.NODE_ENV === 'development') {
+    router.post("/api/dev/test-podcast-delivery", requireAuth, async (req, res) => {
+      try {
+        const userId = req.user.id;
+        
+        // Get user's podcast preferences and info
+        const preferences = await storage.getPodcastPreferences(userId);
+        if (!preferences || !preferences.enabled) {
+          return res.status(400).json({ error: "Podcast preferences not enabled" });
+        }
+
+        const user = await storage.getUser(userId);
+        if (!user) {
+          return res.status(404).json({ error: "User not found" });
+        }
+
+        console.log(`🧪 Test podcast delivery triggered for user ${user.username} (${user.email})`);
+
+        // Extract preferences
+        const topics = preferences.topics || [];
+        const duration = preferences.duration || 5;
+        const voiceId = preferences.voiceId || 'ErXwobaYiN019PkySvjV';
+        const enhanceWithX = preferences.enhanceWithX || false;
+
+        // Get X auth if enabled
+        let userHandle = null;
+        let accessToken = null;
+        
+        if (enhanceWithX) {
+          const xAuth = await storage.getXAuthTokenByUserId(userId);
+          if (xAuth) {
+            userHandle = xAuth.xHandle;
+            accessToken = xAuth.accessToken;
+          }
+        }
+
+        // Import required functions
+        const { generateHeadlinesWithLiveSearch } = await import('./services/liveSearchService.js');
+        const { generatePodcastScript } = await import('./services/podcastGenerator.js');
+        const { generateAudio } = await import('./services/voiceSynthesis.js');
+        const { sendPodcastEmail } = await import('./services/emailService.js');
+
+        // Generate headlines
+        console.log(`📰 Generating headlines for topics: ${topics.join(', ')}`);
+        const headlinesResult = await generateHeadlinesWithLiveSearch(
+          topics,
+          userId,
+          userHandle,
+          accessToken
+        );
+
+        if (!headlinesResult.headlines || headlinesResult.headlines.length === 0) {
+          return res.status(400).json({ error: "No headlines generated" });
+        }
+
+        // Generate podcast script
+        console.log(`📝 Generating ${duration}-minute podcast script`);
+        const script = await generatePodcastScript(
+          headlinesResult.compiledData,
+          headlinesResult.appendix,
+          duration,
+          "Current News"
+        );
+
+        // Create podcast episode record
+        const episode = await storage.createPodcastEpisode({
+          userId,
+          topics,
+          durationMinutes: duration,
+          voiceId,
+          script,
+          headlineIds: headlinesResult.headlines.map(h => h.id),
+          wasScheduled: false
+        });
+
+        // Generate audio
+        console.log(`🎵 Generating audio with voice ${voiceId}`);
+        const audioResult = await generateAudio(script, voiceId);
+        
+        // Update episode with audio URL
+        await storage.updatePodcastEpisode(episode.id, {
+          audioUrl: audioResult.filePath || audioResult
+        });
+
+        // Send email
+        const audioFilePath = typeof audioResult === 'string' 
+          ? audioResult 
+          : (audioResult.filePath || audioResult.audioUrl);
+        
+        const audioPath = audioFilePath.startsWith('/podcast-audio/') 
+          ? path.join(process.cwd(), audioFilePath.substring(1))
+          : path.join(process.cwd(), audioFilePath);
+
+        console.log(`📧 Sending test podcast to ${user.email}`);
+        console.log(`📧 Audio file path: ${audioPath}`);
+        
+        await sendPodcastEmail(user.email, audioPath, "Current News Test");
+
+        // Update episode with email sent timestamp
+        await storage.updatePodcastEpisode(episode.id, {
+          emailSentAt: new Date()
+        });
+
+        console.log(`✅ Test podcast successfully generated and sent to ${user.email}`);
+        
+        res.json({ 
+          success: true, 
+          episode,
+          message: `Test podcast generated and sent to ${user.email}`
+        });
+      } catch (error) {
+        console.error("Error generating test podcast:", error);
+        res.status(500).json({ error: error.message || "Failed to generate test podcast" });
+      }
+    });
+
+    // Clean up pending podcasts for development testing
+    router.post("/api/dev/cleanup-pending-podcasts", requireAuth, async (req, res) => {
+      try {
+        const userId = req.user.id;
+        
+        // Get all pending podcasts for this user
+        const pendingPodcasts = await storage.getScheduledPodcastsForUser(userId);
+        const pending = pendingPodcasts.filter(p => p.status === 'pending');
+        
+        console.log(`🧹 Found ${pending.length} pending podcasts to clean up for user ${userId}`);
+        
+        // Mark all as cancelled
+        for (const podcast of pending) {
+          await storage.updateScheduledPodcast(podcast.id, { 
+            status: 'cancelled' as const,
+            completedAt: new Date()
+          });
+        }
+        
+        res.json({ 
+          success: true, 
+          message: `Cleaned up ${pending.length} pending podcasts`,
+          cleaned: pending.length
+        });
+      } catch (error) {
+        console.error("Error cleaning up podcasts:", error);
+        res.status(500).json({ error: "Failed to clean up podcasts" });
+      }
+    });
+  }
+
+  // Podcast scheduler routes
+  router.post("/api/scheduler/run", requireAuth, async (req, res) => {
+    try {
+      console.log('🔄 Manual scheduler run triggered by user:', req.user.username);
+      await runPodcastScheduler();
+      res.json({ success: true, message: "Scheduler run completed" });
+    } catch (error) {
+      console.error("Error running scheduler:", error);
+      res.status(500).json({ error: "Failed to run scheduler", message: error.message });
+    }
+  });
+
+  router.post("/api/scheduler/create-scheduled", requireAuth, async (req, res) => {
+    try {
+      console.log('📅 Creating scheduled podcasts triggered by user:', req.user.username);
+      await createScheduledPodcasts();
+      res.json({ success: true, message: "Scheduled podcasts created" });
+    } catch (error) {
+      console.error("Error creating scheduled podcasts:", error);
+      res.status(500).json({ error: "Failed to create scheduled podcasts", message: error.message });
+    }
+  });
+
+  router.post("/api/scheduler/process-pending", requireAuth, async (req, res) => {
+    try {
+      console.log('⚡ Processing pending podcasts triggered by user:', req.user.username);
+      await processPendingPodcasts();
+      res.json({ success: true, message: "Pending podcasts processed" });
+    } catch (error) {
+      console.error("Error processing pending podcasts:", error);
+      res.status(500).json({ error: "Failed to process pending podcasts", message: error.message });
+    }
+  });
+
+  router.get("/api/scheduler/status", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const preferences = await storage.getPodcastPreferences(userId);
+      const scheduledPodcasts = await storage.getScheduledPodcastsForUser(userId);
+      const pendingPodcasts = await storage.getPendingPodcastsDue();
+      
+      res.json({
+        user: {
+          id: userId,
+          username: req.user.username,
+          email: req.user.email
+        },
+        preferences,
+        scheduledPodcasts,
+        pendingPodcasts: pendingPodcasts.filter(p => p.userId === userId),
+        totalPendingSystemWide: pendingPodcasts.length
+      });
+    } catch (error) {
+      console.error("Error getting scheduler status:", error);
+      res.status(500).json({ error: "Failed to get scheduler status", message: error.message });
+    }
   });
   
   app.use(router);

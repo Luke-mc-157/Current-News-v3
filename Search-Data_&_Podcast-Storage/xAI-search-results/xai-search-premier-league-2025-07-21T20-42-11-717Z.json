@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool is preparing a bid for Newcastle United striker Alexander Isak.\",\n      \"citations\": [\n        \"https://bbc.com/sport/football/articles/c8xv2rndzj7o\",\n        \"https://www.bbc.com/sport/football\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United has agreed a deal for Brentford forward Bryan Mbeumo.\",\n      \"citations\": [\n        \"https://bbc.com/sport/football/articles/c4g802089gpo\",\n        \"https://metro.co.uk/sport/football\"\n      ]\n    },\n    {\n      \"headline\": \"Marcus Rashford is set to transfer from Manchester United to Barcelona.\",\n      \"citations\": [\n        \"https://metro.co.uk/sport/football\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool is close to signing forward Hugo Ekitike.\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45737000/transfer-rumors-news-liverpool-look-make-mateta-move\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement X posts and correlating news articles from the last 24 hours; data is based on available sources and may require verification for completeness.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport",
+    "https://metro.co.uk/sport/football",
+    "https://bbc.com/sport/football/articles/c9w10kwgjk5o",
+    "https://bbc.com/sport/football/articles/c4g802089gpo",
+    "https://www.espn.com/soccer/story/_/id/45737000/transfer-rumors-news-liverpool-look-make-mateta-move",
+    "https://www.bbc.com/sport/football/articles/c8xv2rndzj7o",
+    "https://x.com/CuriousCatsAI/status/1947311719572742542",
+    "https://x.com/NationFmKE/status/1946841818038939909",
+    "https://x.com/JWokabi/status/1946830931014082743",
+    "https://x.com/CybarBall/status/1947055693984583770",
+    "https://x.com/TTaunter/status/1947175190003167557"
+  ]
+}

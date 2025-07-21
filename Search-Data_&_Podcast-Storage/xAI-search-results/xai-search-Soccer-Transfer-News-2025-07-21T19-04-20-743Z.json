@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agree to a fee with Eintracht Frankfurt for striker Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal in discussions for transfer of Viktor Gyökeres from Sporting CP\",\n      \"citations\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\",\n        \"https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United and Barcelona engage in talks regarding Marcus Rashford's potential transfer\",\n      \"citations\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United pursue transfer of Bryan Mbeumo from Brentford\",\n      \"citations\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.bbc.com/sport/football/teams/manchester-united",
+    "https://www.bbc.com/",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791995.html",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-gyokeres-mbeumo-ekitike-b2791674.html",
+    "https://www.premierleague.com/en/transfers",
+    "https://www.espn.com/soccer/story/_/id/45774061/transfer-rumors-news-manchester-united-newcastle-psg-randal-kolo-muani",
+    "https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate",
+    "https://x.com/OneFunTom/status/1946810725759893666",
+    "https://x.com/Gyaanovercric/status/1946953601319932022",
+    "https://x.com/DuncanCastles/status/1947286345547714576",
+    "https://x.com/NationFmKE/status/1946841818038939909",
+    "https://x.com/JWokabi/status/1946830931014082743"
+  ]
+}

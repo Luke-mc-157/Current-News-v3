@@ -7,12 +7,43 @@ import { fetchUserTimeline } from './xTimeline.js';
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
-  timeout: 120000
+  timeout: 360000
 });
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
   console.log('🚀 Using xAI Live Search for headlines generation');
   const startTime = Date.now();
+  
+  // Step -1: Fetch RSS articles if available
+  let rssArticles = [];
+  try {
+    console.log(`📰 Fetching RSS articles for user ${userId}...`);
+    const { fetchUserRssArticles } = await import('./rssService.js');
+    rssArticles = await fetchUserRssArticles(userId, 24);
+    console.log(`✅ Retrieved ${rssArticles.length} RSS articles from user feeds`);
+  } catch (error) {
+    console.error(`❌ RSS fetch error: ${error.message}`);
+    rssArticles = [];
+  }
+  
+  // Format RSS articles early for use in emergent topic inference
+  const formattedRssArticles = [];
+  if (rssArticles.length > 0) {
+    console.log(`📰 Formatting ${rssArticles.length} RSS articles for analysis...`);
+    
+    rssArticles.forEach(article => {
+      formattedRssArticles.push({
+        title: article.title,
+        content: article.content,
+        url: article.url,
+        feedName: article.feedName,
+        publishedAt: article.publishedAt,
+        source: 'rss'
+      });
+    });
+    
+    console.log('✅ RSS articles formatted and ready for analysis');
+  }
   
   // Step 0: Fetch user's timeline posts if authenticated
   let followedPosts = [];
@@ -104,47 +135,80 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`✅ Filtered from ${originalCount} to ${followedPosts.length} high-engagement posts (above median: ${median})`);
   }
   
-  // Infer emergent topics from timeline if available
+  // Infer emergent topics from timeline AND RSS articles if available
+  let allContentForEmergentTopics = [];
+  
+  // Add timeline posts for emergent topic analysis
   if (followedPosts.length > 0) {
-    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts...`);
-    const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts);
+    allContentForEmergentTopics.push(...followedPosts.map(post => ({
+      text: post.text,
+      source: 'timeline'
+    })));
+  }
+  
+  // Add RSS articles for emergent topic analysis  
+  if (rssArticles.length > 0) {
+    allContentForEmergentTopics.push(...rssArticles.map(article => ({
+      text: `${article.title} - ${article.content.substring(0, 500)}`,
+      source: 'rss'
+    })));
+  }
+  
+  if (allContentForEmergentTopics.length > 0) {
+    console.log(`🔍 Inferring emergent topics from ${followedPosts.length} timeline posts + ${formattedRssArticles.length} RSS articles...`);
+    const emergentTopics = await inferEmergentTopicsFromTimeline(followedPosts, formattedRssArticles);
     if (emergentTopics.length > 0) {
       topics = [...new Set([...topics, ...emergentTopics])]; // Dedupe and append
       console.log(`➕ Added emergent topics: ${emergentTopics.join(', ')}`);
     } else {
-      console.log(`📭 No emergent topics discovered from timeline posts`);
+      console.log(`📭 No emergent topics discovered from timeline + RSS content`);
     }
   } else {
-    console.log(`📭 No timeline posts available for emergent topics discovery`);
+    console.log(`📭 No timeline posts or RSS articles available for emergent topics discovery`);
   }
   
-  // Step 1: Call xAI Live Search API in parallel for all topics
-  console.log('📡 Step 1: xAI Live Search API calls for all topics (in parallel)...');
-  const topicPromises = topics.map(async (topic, index) => {
+  // Step 1: Call xAI Live Search API sequentially for all topics
+  console.log('📡 Step 1: xAI Live Search API calls for all topics (sequential)...');
+  const allTopicData = [];
+  
+  for (let index = 0; index < topics.length; index++) {
+    const topic = topics[index];
     console.log(`📝 Processing topic ${index + 1}/${topics.length}: ${topic}`);
     try {
       console.log(`🌐 xAI Live Search for ${topic}...`);
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
       console.log(`📰 xAI returned ${liveSearchData.citations?.length || 0} citations for ${topic}`);
-      return {
+      
+      // Save raw xAI search results
+      try {
+        const fs = await import('fs');
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const filename = `Search-Data_&_Podcast-Storage/xAI-search-results/xai-search-${topic.replace(/[^a-zA-Z0-9]/g, '-')}-${timestamp}.json`;
+        await fs.promises.writeFile(filename, JSON.stringify(liveSearchData, null, 2));
+        console.log(`📁 Raw xAI search results saved to: ${filename}`);
+      } catch (error) {
+        console.error(`❌ Could not save xAI search results: ${error.message}`);
+      }
+      
+      allTopicData.push({
         topic: topic,
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
-      };
+      });
     } catch (error) {
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
-      return {
+      allTopicData.push({
         topic: topic,
         webData: '',
         citations: []
-      };
+      });
     }
-  });
-
-  const allTopicData = await Promise.all(topicPromises);
+  }
   
   // Step 1.5: Format timeline posts for Grok to categorize
   const formattedTimelinePosts = [];
+  // Note: formattedRssArticles already created earlier in the code
+  
   if (followedPosts.length > 0 && userHandle) {
     console.log(`📱 Formatting ${followedPosts.length} timeline posts for Grok categorization...`);
     
@@ -171,9 +235,11 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log('✅ Timeline posts formatted and ready for Grok categorization');
   }
   
+  // RSS articles already formatted earlier in the code for emergent topic inference
+  
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
-  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken);
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles);
   
   // Step 3: Generate newsletter with compiled data
   console.log('📝 Step 3: Generating newsletter with compiled data...');
@@ -187,7 +253,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   try {
     const fs = await import('fs');
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const filename = `compiled-data-${timestamp}.txt`;
+    const filename = `Search-Data_&_Podcast-Storage/compiled-data/compiled-data-${timestamp}.txt`;
     await fs.promises.writeFile(filename, compiledResult.compiledData);
     console.log(`📄 Full compiled data written to: ${filename}`);
   } catch (error) {
@@ -220,15 +286,27 @@ function categorizeCitations(citations) {
   const xPostIds = [];
   const articleUrls = [];
   
-  citations.forEach(url => {
+  console.log(`🔍 DEBUG categorizeCitations: Processing ${citations.length} citations`);
+  
+  citations.forEach((url, index) => {
+    console.log(`🔍 DEBUG citation ${index}: ${url}`);
+    
     if (url.includes('x.com') || url.includes('twitter.com')) {
+      console.log(`🐦 DEBUG: Found X/Twitter URL: ${url}`);
       const postId = extractPostIdFromXURL(url);
-      if (postId) xPostIds.push(postId);
+      if (postId) {
+        console.log(`🐦 DEBUG: Extracted post ID: ${postId}`);
+        xPostIds.push(postId);
+      } else {
+        console.log(`⚠️ DEBUG: Could not extract post ID from: ${url}`);
+      }
     } else {
+      console.log(`📰 DEBUG: Found article URL: ${url}`);
       articleUrls.push(url);
     }
   });
   
+  console.log(`📊 DEBUG categorizeCitations result: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
   return { xPostIds, articleUrls };
 }
 
@@ -375,7 +453,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an expert news compiler for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
+          content: "You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
@@ -401,8 +479,9 @@ Articles to analyze:
 ${articlesText}`
         }
       ],
-      max_tokens: 60000,
-      response_format: { type: "json_object" }
+      max_tokens: 80000,
+      response_format: { type: "json_object" },
+      reasoning_effort: "high",
     });
 
     const analysisContent = response.choices[0].message.content;
@@ -451,12 +530,13 @@ ${articlesText}`
 }
 
 // Compile all raw search data with metadata
-async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken) {
+async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles = []) {
   console.log('🔄 Compiling raw search data with X API batch fetching...');
   
   const compiledTopics = [];
   let totalXAIPosts = 0;
   let totalArticles = 0;
+  let totalRssArticles = formattedRssArticles.length;
   
   // Process each topic's citations
   for (const topicData of allTopicData) {
@@ -464,9 +544,28 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     
     console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
     
+    // DEBUG: Log the actual post IDs being fetched for this topic
+    if (xPostIds.length > 0) {
+      console.log(`🔍 DEBUG ${topicData.topic} post IDs:`, xPostIds);
+    }
+    
     // Batch fetch X posts with authentic metadata (use user token for better data)
     const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
     totalXAIPosts += xPostSources.length;
+    
+    // DEBUG: Log detailed info about fetched posts
+    console.log(`🔍 DEBUG ${topicData.topic}: Expected ${xPostIds.length} posts, got ${xPostSources.length} posts`);
+    if (xPostSources.length > 0) {
+      console.log(`🔍 DEBUG ${topicData.topic}: First post structure:`, {
+        id: xPostSources[0].id,
+        author_name: xPostSources[0].author_name,
+        text: xPostSources[0].text?.substring(0, 50) + '...',
+        url: xPostSources[0].url,
+        hasPublicMetrics: !!xPostSources[0].public_metrics
+      });
+    } else {
+      console.log(`⚠️ DEBUG ${topicData.topic}: No posts returned from fetchXPostsBatch despite ${xPostIds.length} IDs`);
+    }
     
     // Process articles in parallel (limit to 15 per topic) - Phase 1 improvement
     const articlePromises = articleUrls.slice(0, 7).map(async (url, index) => {
@@ -547,6 +646,22 @@ ${articlesText || 'None found'}
 `;
   }).join('\n---\n');
   
+  // Add RSS articles section if available
+  let rssSection = '';
+  if (formattedRssArticles.length > 0) {
+    console.log(`📰 Adding ${formattedRssArticles.length} RSS articles to compiled data...`);
+    const rssText = formattedRssArticles.map(article => 
+      `- [${article.feed_name}]: "${article.title}" - ${article.content.substring(0, 200)}... [${article.url}]`
+    ).join('\n');
+    
+    rssSection = `
+
+---
+
+RSS ARTICLES (${formattedRssArticles.length} articles):
+${rssText}`;
+  }
+
   // Add timeline posts section
   let timelineSection = '';
   if (formattedTimelinePosts.length > 0) {
@@ -562,21 +677,23 @@ USER'S TIMELINE POSTS (${formattedTimelinePosts.length} posts):
 ${timelineText}`;
   }
   
-  const compiledData = topicsSection + timelineSection;
+  const compiledData = topicsSection + rssSection + timelineSection;
   
   console.log(`✅ Data compilation complete:`);
   console.log(`📊 Topics: ${compiledTopics.length}`);
   console.log(`🐦 xAI X Posts: ${totalXAIPosts}`);
   console.log(`📰 Articles: ${totalArticles}`);
+  console.log(`📰 RSS Articles: ${totalRssArticles}`);
   console.log(`📱 Timeline Posts: ${formattedTimelinePosts.length}`);
   console.log(`📏 Total data length: ${compiledData.length} chars`);
   
   return {
     compiledData: compiledData,
-    totalSources: totalXAIPosts + totalArticles + formattedTimelinePosts.length,
+    totalSources: totalXAIPosts + totalArticles + totalRssArticles + formattedTimelinePosts.length,
     breakdown: {
       xaiPosts: totalXAIPosts,
       articles: totalArticles,
+      rssArticles: totalRssArticles,
       timelinePosts: formattedTimelinePosts.length
     }
   };
@@ -598,33 +715,63 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X first. Then, search for news articles and web content. Then, search for semantic posts on X that are not included in the previous searches."
+          content: "You are a world class AI news aggregator. You have live access to X posts, RSS feeds, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'. Return a JSON object. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
-          content: `Compile the biggest news stories about ${topic} from the last 24 hours (${fromDate} to ${toDate}).`
+          content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Search X (formerly Twitter) and news sources for specific supporting articles from the last 24 hours. 
+
+Step 1: Use X semantic search and keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
+
+Step 2: Search "News" with keyword search and semantic search for corresponding articles/posts.
+
+Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of citations links that informed it.
+
+Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find further supporting information if necessary.
+
+If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.
+
+CRITICAL: Do not include any sources or citations that are not directly related to the topic.`
         },
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 8,
+        max_search_results: 15,
         return_citations: true,
+        reasoning_effort: "high",
         from_date: fromDate,
         sources: [
-          {"type": "x", "post_view_count": 5000, "post_favorite_count": 50},
+          {"type": "x",},
           {"type": "news", "country": "US" },
-          {"type": "web", "country": "US" }
+          {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
         ]
       },
-      max_tokens: 50000
+      max_tokens: 90000
     });
 
-        console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
+        console.log(`📅 Search range: ${fromDate} (24 hours)`);
     
     const content = response.choices[0].message.content;
     const citations = response.citations || [];
     
     console.log(`📊 Live Search returned ${content.length} chars, ${citations.length} citations`);
+    
+    // DEBUG: Log first few citations to see format
+    if (citations.length > 0) {
+      console.log(`🔍 DEBUG: First 3 citations for ${topic}:`);
+      citations.slice(0, 3).forEach((citation, i) => {
+        console.log(`  [${i}]: ${citation}`);
+      });
+      
+      // Check for X/Twitter URLs specifically
+      const xUrls = citations.filter(url => url.includes('x.com') || url.includes('twitter.com'));
+      console.log(`🐦 DEBUG: Found ${xUrls.length} X/Twitter URLs in citations`);
+      if (xUrls.length > 0) {
+        console.log(`🐦 DEBUG: X URLs:`, xUrls.slice(0, 3));
+      }
+    } else {
+      console.log(`⚠️ DEBUG: No citations returned for ${topic}`);
+    }
     
     return {
       content: content,
@@ -640,19 +787,37 @@ async function getTopicDataFromLiveSearch(topic) {
   }
 }
 
-async function inferEmergentTopicsFromTimeline(posts) {
-  if (!posts.length) return [];
+async function inferEmergentTopicsFromTimeline(posts, rssArticles = []) {
+  if (!posts.length && !rssArticles.length) return [];
 
-  // Filter high-engagement: Sort by views + likes, take top half
-  const sortedPosts = posts.sort((a, b) => {
-    const engA = (a.public_metrics?.view_count || 0) + (a.public_metrics?.like_count || 0);
-    const engB = (b.public_metrics?.view_count || 0) + (b.public_metrics?.like_count || 0);
-    return engB - engA;
-  });
-  const highEngPosts = sortedPosts.slice(0, Math.ceil(posts.length / 2));
+  let contentSummary = '';
 
-  // Format for Grok
-  const postsSummary = highEngPosts.map(p => `Post: ${p.text} (Engagement: ${p.public_metrics?.view_count || 0} views, ${p.public_metrics?.like_count || 0} likes)`).join('\n');
+  // Process timeline posts if available
+  if (posts.length > 0) {
+    // Filter high-engagement: Sort by views + likes, take top half
+    const sortedPosts = posts.sort((a, b) => {
+      const engA = (a.public_metrics?.view_count || 0) + (a.public_metrics?.like_count || 0);
+      const engB = (b.public_metrics?.view_count || 0) + (b.public_metrics?.like_count || 0);
+      return engB - engA;
+    });
+    const highEngPosts = sortedPosts.slice(0, Math.ceil(posts.length / 2));
+
+    // Format timeline posts for Grok
+    const postsSummary = highEngPosts.map(p => `Post: ${p.text} (Engagement: ${p.public_metrics?.view_count || 0} views, ${p.public_metrics?.like_count || 0} likes)`).join('\n');
+    contentSummary += `X TIMELINE POSTS:\n${postsSummary}\n\n`;
+  }
+
+  // Process RSS articles if available
+  if (rssArticles.length > 0) {
+    // Take the most recent RSS articles (limit to top 10 to avoid token overload)
+    const recentRssArticles = rssArticles
+      .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+      .slice(0, 10);
+
+    // Format RSS articles for Grok
+    const rssSummary = recentRssArticles.map(article => `RSS Article [${article.feedName}]: ${article.title} - ${article.content.substring(0, 200)}`).join('\n');
+    contentSummary += `RSS ARTICLES:\n${rssSummary}`;
+  }
 
   try {
     const response = await client.chat.completions.create({
@@ -660,11 +825,12 @@ async function inferEmergentTopicsFromTimeline(posts) {
       messages: [
         {
           role: "system",
-          content: `Analyze these high-engagement X posts from the user's timeline. Infer 2-3 emergent topics (e.g., "AI Ethics", "Local Elections"). Then add 2-3 semantic topics based on the emergent topics. Topics must be factual, based on content clusters. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
+          content: `Analyze these high-engagement X posts and RSS articles from the user's feeds. Infer 2-6 emergent topics (e.g., "AI Ethics", "Local Elections") based on content clusters and trending themes across both X timeline and RSS sources. Topics must be factual, based on actual content patterns. Return ONLY JSON: {"emergentTopics": ["topic1", "topic2"]}`
         },
-        { role: "user", content: postsSummary }
+        { role: "user", content: contentSummary }
       ],
-      max_tokens: 50000
+      reasoning_effort: "high",
+      max_tokens: 80000
     });
 
     const content = response.choices[0].message.content;
@@ -679,21 +845,23 @@ async function inferEmergentTopicsFromTimeline(posts) {
 
 
 async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
-  console.log('🤖 Phase 2: Enhanced newsletter compilation with grok-4...');
-  console.log(`📊 Processing ${sourceBreakdown.xaiPosts + sourceBreakdown.articles + sourceBreakdown.timelinePosts} total sources`);
+  console.log('🤖 Phase 2: Enhanced newsletter compilation with grok...');
+  const totalSources = sourceBreakdown.xaiPosts + sourceBreakdown.articles + (sourceBreakdown.rssArticles || 0) + sourceBreakdown.timelinePosts;
+  console.log(`📊 Processing ${totalSources} total sources (${sourceBreakdown.xaiPosts} X posts, ${sourceBreakdown.articles} articles, ${sourceBreakdown.rssArticles || 0} RSS articles, ${sourceBreakdown.timelinePosts} timeline posts)`);
   console.log(`📏 Data length: ${compiledData.length} chars`);
   
   try {
     console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
-      model: "grok-3-fast",
+      model: "grok-3-mini-fast",
       messages: [
         {
           role: "system",
           content: `DATA FORMAT PROVIDED:
 - Full compiled research data with complete topic sections
-- Each section contains X posts metadata and article citations  
+- Each section contains X posts metadata, article citations, and RSS articles
+- RSS ARTICLES section contains supplementary content from user's RSS feeds
 - All engagement metrics preserved for ranking
 
 Return ONLY a JSON array in this exact format:
@@ -738,13 +906,13 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
       role: "user",
-        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a news newsletter for the platform user's front end UI in the specified format.
+        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a newsletter for the platform user's front end UI in the specified format.
 
         NEWSLETTER GENERATION INSTRUCTIONS:
-        1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts and news articles. 
-        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post & article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post and news article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts or articles).
-        2. CRITICAL: Use X POSTS FROM SEARCH and X POSTS FROM USER'S TIMELINE POSTS as sourcePosts in your headlines
-        3. Include both X posts and articles - prioritize high engagement X posts
+        1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts, news articles, and RSS articles. 
+        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post, article, and RSS article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post, news article, and RSS article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts, articles, or RSS articles).
+        2. CRITICAL: Use X POSTS FROM SEARCH, X POSTS FROM USER'S TIMELINE POSTS, and RSS ARTICLES as sources in your headlines
+        3. Include X posts, articles, and RSS articles - prioritize high engagement X posts and relevant RSS content
         4. Each headline MUST have sourcePosts array with X post data
         5. Preserve exact URLs and metadata from the provided data
         6. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.
@@ -756,13 +924,14 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
        ${compiledData}`
       }
       ],
-      max_tokens: 100000  // Fixed high limit for full compiled data processing
+      max_tokens: 100000,  // Fixed high limit for full compiled data processing
+      reasoning_effort: "high"
     });
     
     const content = response.choices[0].message.content;
     console.log('📄 Newsletter compilation response received');
     console.log(`🔍 Raw newsletter response: ${content.substring(0, 500)}...`);
-    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${15000})`);
+    console.log(`📏 Response length: ${content.length} chars (max_tokens: ${50000})`);
     
     // Parse JSON response with improved error handling
     try {
@@ -942,7 +1111,8 @@ async function generateTimelineAppendix(compiledData) {
           content: timelineMatch[0]
         }
       ],
-      max_tokens: 1000
+      reasoning_effort: "high",
+      max_tokens: 20000
     });
     
     const parsed = JSON.parse(response.choices[0].message.content);

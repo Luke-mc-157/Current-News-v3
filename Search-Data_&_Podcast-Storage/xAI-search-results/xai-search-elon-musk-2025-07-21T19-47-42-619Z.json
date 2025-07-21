@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk announces recovery of SpaceX Starship booster.\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk states Tesla is integrating upgrades for self-driving capabilities into production.\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.ndtv.com/topic/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's X platform refuses to cooperate with French investigation.\",\n      \"citations\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\",\n        \"https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk announces soft opening of Tesla diner for first responders.\",\n      \"citations\": [\n        \"https://www.foxbusiness.com/category/elon-musk\",\n        \"https://www.ndtv.com/topic/elon-musk\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/news",
+    "https://www.foxnews.com/",
+    "https://www.ndtv.com/topic/elon-musk",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124",
+    "https://www.foxbusiness.com/category/elon-musk",
+    "https://x.com/elonmusk/status/1947053722808230379",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/elonmusk/status/1946839030177632475",
+    "https://x.com/elonmusk/status/1946836455919394935",
+    "https://x.com/elonmusk/status/1946742000893714690"
+  ]
+}

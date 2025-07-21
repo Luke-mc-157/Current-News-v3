@@ -1,0 +1,122 @@
+
+TOPIC: tech news
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "ChatGPT was the most downloaded app globally in June.",
+      "citations": [
+        "https://www.reuters.com/technology/",
+        "https://foxnews.com/tech"
+      ]
+    },
+    {
+      "headline": "Elon Musk announced plans to launch Baby Grok for kids-friendly content.",
+      "citations": [
+        "https://www.reuters.com/technology/",
+        "https://foxnews.com/tech"
+      ]
+    },
+    {
+      "headline": "Facebook is limiting reach for accounts reposting unoriginal content.",
+      "citations": [
+        "https://www.reuters.com/technology/",
+        "https://foxnews.com/tech"
+      ]
+    },
+    {
+      "headline": "LinkedIn's algorithm now favors relevance over recency.",
+      "citations": [
+        "https://www.reuters.com/technology/",
+        "https://foxnews.com/tech"
+      ]
+    }
+  ],
+  "notes": "All stories derived from high-engagement posts on X within the last 24 hours, correlated with general tech news sources; data is based
+
+X POSTS FROM SEARCH (4):
+- Egline Samoei: "📱 ChatGPT was the most downloaded app globally in June—again
+
+💬Elon Musk announced plans to launch Baby Grok for kids friendly content
+
+ 📉 Facebook is limiting reach for accounts reposting unoriginal content
+
+ 🔍 LinkedIn’s algorithm now favors relevance over recency. Seen https://t.co/hDojYNmaed" (919 views, 10 likes) https://x.com/Egline_Samoei/status/1947303003368685954
+- Instant News ™: "🚨 🚨 #BreakingNews  Bengaluru techie's viral X post on grocery store sparks debate on survival in quick-commerce era https://t.co/wsSUQjqmmn
+
+Click here for best #amazon deals: https://t.co/WH6io9nrWX
+
+#TrendingNews #BigBreaking" (12 views, 0 likes) https://x.com/InstaBharat/status/1946839209270026255
+- Sam Salhi-سامر الصالحي: "#BrainUp daily tech news, new post 👉🏻https://t.co/RqmMrJegkh
+Daily curated link digest with AI-powered summaries for 2025/07/21, featuring 28 news articles.
+Discover the latest in tech trends with our curated insights—Microsoft's swift response to SharePoint vulnerabilities," (44 views, 0 likes) https://x.com/5alhi/status/1947266094802296845
+- Kuldeep Pisda: "🧵 1/ Latest in Tech (Past 24 Hours) — Quick Thread 🚀
+
+Let's dive into what's moving the global tech scene right now:" (39 views, 2 likes) https://x.com/kdpisda/status/1947028352772243708
+
+SUPPORTING ARTICLES (7):
+- Weak password allowed hackers to sink a 158-year-old company: A weak password enabled hackers to compromise the systems of KNP, a 158-year-old transport company in the UK, leading to its shutdown. The attack was part of a broader campaign targeting thousands of UK businesses by international hacker gangs. KNP was forced to close due to the cyber incident, highlighting vulnerabilities in cybersecurity practices. The event underscores the risks associated with poor password management and outdated security measures. No specific individuals or organizations were blamed in the report, emphasizing the need for stronger digital defenses. [https://www.reuters.com/world/]
+Key Quotes: "Transport company KNP forced to shut down after international hacker gangs target thousands of UK businesses." - BBC News
+
+- A.I. vs. A.I.: The New York Times examines how artificial intelligence technologies are being used to counter each other in various applications. This includes AI systems detecting and mitigating threats from other AI, such as in cybersecurity and content moderation. The article discusses the implications of AI competing with AI, including benefits in efficiency and risks in reliability. It is part of a newsletter providing daily insights into technological developments. The piece highlights the rapid evolution of AI without specifying particular events or outcomes. [https://www.reuters.com/]
+
+- Meta builds world’s largest AI superclusters for the future: Meta has constructed the world's largest AI superclusters to advance artificial intelligence capabilities and handle massive data processing. These superclusters are designed to support future innovations in technology and business applications. The initiative aims to enhance AI research and development efficiency. Details on the scale and purpose of the superclusters were provided, emphasizing their role in training advanced AI models. No specific launch dates or additional impacts were mentioned in the report. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed]: "As AI agents go mainstream, companies lean into confidential computing for data security" - If agentic AI is to be successful, companies will have to figure out how to protect data. With that in mind, several big tech players now offer their own flavor of confidential computing.... [undefined]
+- [Updated RSS Feed]: "Number of students using AI for schoolwork surges by double-digits" - Artificial intelligence has surged in popularity across the United States and worldwide.... [undefined]
+- [Updated RSS Feed]: "S&P 500 and Nasdaq notch record high closes, lifted by Alphabet" - The S&P 500 and the Nasdaq notched record high closes on Monday, lifted by Alphabet and other megacaps ahead of several earnings reports this week, while investors bet on potential trade deals to blun... [undefined]
+- [Updated RSS Feed]: "@SawyerMerritt: Piper Sandler analyst Alex Potter on the impact to @Tesla's regulatory credit revenue due to Trump's recent bill: "It's not as bad as you think; We frequently receive questions about Tesla's regulatory credits, and for good reason: the company received ~$3.5B in 'free money'…" - Piper Sandler analyst Alex Potter on the impact to @Tesla's regulatory credit revenue due to Trump's recent bill:
+"It's not as bad as you think; We frequently receive questions about Tesla's regulator... [undefined]
+- [Updated RSS Feed]: "Tariff fearmongering caused stock market chaos: Charles Payne " - 'Making Money' host Charles Payne discusses the stock market's record trading revenue by major Wall Street banks amid tariff 'doom and gloom.'... [undefined]
+- [Updated RSS Feed]: "Merz says Berlin still considering stake in TenneT's German business" - German Chancellor Friedrich Merz said on Monday the government had not yet decided whether it would take a stake in the German division of state-owned Dutch power grid operator TenneT and was still in... [undefined]
+- [Updated RSS Feed]: "Genealogy and artificial intelligence to be focus of Aug. 24, Jewish Genealogical Society of Illinois hybrid event in Northbrook" - Scott Meyer will share some of the latest artificial intelligence tools in the Jewish genealogical tool belt and the ethical concerns they raise when he presents “AI and Jewish Genealogy: New Tools,..... [undefined]
+- [Updated RSS Feed]: "Houston Business Journal reveals 2025 Best Places to Work finalists" - Is your company on the list?... [undefined]
+- [Updated RSS Feed]: "Hunter Biden suggests Ambien contributed to father's infamous debate" - "He gets up on the stage, and he looks like he's a deer in the headlights," the president's son said.... [undefined]
+- [Updated RSS Feed]: "Verizon CEO on What Drove the Company's Solid Quarter " - Get a jump start on the US trading day with Matt Miller, Katie Greifeld and Sonali Basak on "Bloomberg Open Interest." Big tech on deck as investors brace for a busy earnings week that includes result... [undefined]
+- [Updated RSS Feed]: "Tesla Q2 earnings: Wall Street expects weak results and more hype" - Margins are shrinking, sales are sliding, and Q2 could be Tesla’s worst in years — but Elon Musk is still selling a high-tech future.... [undefined]
+- [Updated RSS Feed]: "Armed robbery at business under investigation" - An armed robbery at a Cape Girardeau business is under investigation.... [undefined]
+- [Updated RSS Feed]: "Liverpool's Rodrygo transfer stance emerges amid Arsenal links" - Arsenal transfer news as Real Madrid attacker Rodrygo is attracting interest from across the Premier League... [undefined]
+- [Updated RSS Feed]: "Manchester United confirm signing of forward Bryan Mbeumo from Brentford" - Mbeumo has signed a five-year deal to June 2030 at Old Trafford, with the option of a further 12 months.... [undefined]
+- [Updated RSS Feed]: "PA Sen. aims to limit artificial intelligence via ‘AI Task Force’" - PENNSYLVANIA (WTAJ) — A Pennsylvania Senator announced a bill that aims to establish an Artificial Intelligence (AI) Task Force within the Department of Community and Economic Development (DC…... [undefined]
+- [Updated RSS Feed]: "Marines ending Los Angeles deployment, Pentagon says" - The Pentagon announced on Monday it was ending its deployment of some 700 active-duty Marines sent to Los Angeles last month to protect federal property and personnel during a spate of protests tied t... [undefined]
+- [Updated RSS Feed]: "@SawyerMerritt: Bookmarked." - Bookmarked. pic.twitter.com/X6ZVdG5sRo
+— Sawyer Merritt (@SawyerMerritt) July 21, 2025... [undefined]
+- [Updated RSS Feed]: "S&P 500 and Nasdaq hit record highs, lifted by Alphabet" - The S&P 500 and the Nasdaq hit record highs on Monday, lifted by Alphabet and other megacaps ahead of several earnings reports this week, while investors bet on potential trade deals to blunt economic... [undefined]
+- [Updated RSS Feed]: "Hemlock Business Association announces 2025 award recpients" - The Hemlock Business Association (HBA) announced the recipients of this year’s annual community awards.... [undefined]
+- [Updated RSS Feed]: "IT Companies Adapt to Industry Changes, Stress Cybersecurity" - Long gone are the days when one computer would take up a whole room. Now smartphones allow people to carry a... [undefined]
+- [Updated RSS Feed]: "Ukraine's Zelenskiy says new peace talks in Turkey on Wednesday" - The next set of peace talks between Ukraine and Russia - the first meeting in seven weeks - is planned for Wednesday in Turkey, Ukrainian President Volodymyr Zelenskiy quoted the head of Ukraine's Nat... [undefined]
+- [Updated RSS Feed]: "Stocks rise to a new record, and Linde's space business lands in the spotlight" - Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.... [undefined]
+- [Updated RSS Feed]: "'Cosby Show' star Malcolm-Jamal Warner dies by drowning at 54" - Actor Malcolm-Jamal Warner, who played Bill Cosby's son Theo on the 1980s television hit "The Cosby Show," died at age 54 on Monday by drowning, a law enforcement source confirmed to Reuters.... [undefined]
+- [Updated RSS Feed]: "Liverpool transfer news: Two more signings after Ekitike in £400m summer spending spree" - Liverpool have already been hugely active in the summer transfer window and, as they close in on a deal for Eintracht Frankfurt striker Hugo Ekitike, a fresh report states they want to complete two mo... [undefined]
+- [Updated RSS Feed]: "Italian officials to face trial over deadly Cutro migrant shipwreck" - An Italian judge on Monday ordered six police and coastguard officers to stand trial for mishandling operations during a migrant shipwreck that killed more than 90 people near the town of Cutro in 202... [undefined]
+- [Updated RSS Feed]: "US News ranks best companies to work for in 2025. See which Illinois businesses made the list" - Media company U.S. News & World Report compiled a list of the best companies to work for across the country – and 22 Illinois businesses made it.... [undefined]
+- [Updated RSS Feed]: "Tesla catches on fire in Lewisville garage, home severely damaged" - Firefighters say the homeowner reported their Tesla caught on fire while in the garage.... [undefined]
+- [Updated RSS Feed]: "Liverpool can get what they want out of Luis Diaz Bayern Munich saga with £26m sacrifice " - Liverpool have told Bayern Munich repeatedly Luis Diaz is not for sale in the summer transfer window... [undefined]
+- [Updated RSS Feed]: "'Cosby Show' star Malcolm-Jamal Warner dies at 54, media reports say" - Actor Malcolm-Jamal Warner, who played Bill Cosby's son Theo on the 1980s television hit "The Cosby Show," has died at age 54, according to media reports on Monday.... [undefined]
+- [Updated RSS Feed]: "Liverpool ‘Offered’ £120,000-a-Week Star Plus £8.6m for ‘World-Class' Star" - The Reds could be offered a good deal in the face of adversity 🔴... [undefined]
+- [Updated RSS Feed]: "@elonmusk: Kek Softmax Diablo Hardcore World #1" - Kek Softmax Diablo Hardcore World #1 pic.twitter.com/njwGPFrAjZ
+— Elon Musk (@elonmusk) July 21, 2025... [undefined]
+- [Updated RSS Feed]: "Capital Allocation Trends At Manitowoc Company (NYSE:MTW) Aren't Ideal" - When researching a stock for investment, what can tell us that the company is in decline? More often than not, we'll...... [undefined]
+- [Updated RSS Feed]: "Venezuela to investigate Bukele, other officials for alleged detainee abuse" - Venezuela Attorney General Tarek Saab said on Monday that his office will investigate El Salvador's President Nayib Bukele and two other officials for the alleged abuse of Venezuelans who were detaine... [undefined]
+- [Updated RSS Feed]: "Astronomer's new interim CEO breaks his silence after the tech company’s viral scandal shook the internet" - "The spotlight has been unusual and surreal for our team and, while I would never have wished for it to happen like this, Astronomer is now a household name,” said cofounder Pete DeJoy.... [undefined]
+- [Updated RSS Feed]: "Its not just bitcoin. Companies are now adding ethereum to their balance sheets." - Companies are increasingly looking at ethereum as an asset to own as the financial services industry and crypto world converge.... [undefined]
+- [Updated RSS Feed]: "Spain's BBVA says expects acceptance period for Sabadell bid to start in September" - Spain's BBVA expects the acceptance period for its takeover bid for smaller rival Sabadell to start in early September, rather than at the end of July as initially planned, a spokesperson for BBVA sai... [undefined]
+- [Updated RSS Feed]: "Lawmakers want US tech CEOs to address concerns about submarine cables" - Three Republican House lawmakers on Monday asked the CEOs of Alphabet , Facebook-parent Meta , Amazon.com and Microsoft if the tech firms have adopted adequate safeguards to address growing concerns a... [undefined]
+- [Updated RSS Feed]: "Jess Carter’s statement is a reminder that Black footballers should not have to solve racism" - England enter their semi-final against Italy with a heightened sense of purpose and, as is often the way in women’s sport, a dual mission... [undefined]
+- [Updated RSS Feed]: "Morgan Stanley hires Shahsingh from UBS to head North American industrial services IB" - Morgan Stanley has hired Aftab Shahsingh from UBS to lead industrial services coverage in its investment bank in North America, according to a source familiar with the situation.... [undefined]
+- [Updated RSS Feed]: "US Marines mobilized to Los Angeles are being sent home, Pentagon says " - Roughly 700 active-duty US Marines who were mobilized last month to respond to protests in Los Angeles are being sent home from the mission, the Pentagon confirmed on Monday.... [undefined]
+- [Updated RSS Feed]: "NASA cuts endanger safety, employees warn in open letter to Trump admin" - Recent policies compromise human safety, the current and former NASA employees wrote.... [undefined]
+- [Updated RSS Feed]: "BitGo joins crypto IPO rush as sector hits $4 trillion in market value" - Crypto custody startup BitGo said on Monday it has confidentially filed for a U.S. listing, joining a wave of companies looking to capitalize on strong market momentum.... [undefined]
+- [Updated RSS Feed]: "Belhaven University launches first-of-its-kind AI master's degree program. See course details" - The flexible program at Belhaven University was designed with working professionals in mind.... [undefined]
+- [Updated RSS Feed]: "Stock market today: Dow, S&P 500, Nasdaq rise to start busy week of Big Tech-dominated earnings" - Earnings season dominates market focus this week with tariffs still on the table.... [undefined]
+- [Updated RSS Feed]: "Stock market today: Dow, S&P 500, Nasdaq rise to start busy week of Big Tech-dominated earnings" - Earnings season dominates market focus this week with tariffs still on the table.... [undefined]
+- [Updated RSS Feed]: "Figma seeks $16bn value in test of US tech IPO market" - Design software maker’s offering being followed in Silicon Valley for signs the market is ready for more tech listings... [undefined]
+- [Updated RSS Feed]: "NY Fed survey finds easier access to auto loans, mortgage refinancing" - U.S. households fared far better when applying for credit for mortgage refinancing or auto loans in June, new figures on credit access from the Federal Reserve Bank of New York show.... [undefined]
+- [Updated RSS Feed]: "UK, France and 23 other nations condemn Israel over 'inhumane killing' of civilians" - A group of 25 Western countries including Britain, France, and Canada said on Monday Israel must immediately end its war in Gaza and criticised what they called the "inhumane killing" of Palestinians,... [undefined]
+- [Updated RSS Feed]: "Venezuela attorney general will investigate El Salvador officials for alleged detainee abuse" - Venezuela Attorney General Tarek Saab said on Monday that his office will investigate El Salvador President Nayib Bukele, as well as the country's justice minister and head of prisons, for the alleged... [undefined]
+- [Updated RSS Feed]: "Kyruus builds a generative AI provider matching solution on AWS " - In this post, we demonstrate how Kyruus Health uses AWS services to build Guide. We show how Amazon Bedrock, a fully managed service that provides access to foundation models (FMs) from leading AI com... [undefined]

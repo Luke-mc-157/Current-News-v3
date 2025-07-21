@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useAuth } from '@/contexts/AuthContext';
 
 // X.com logo component
 const XIcon = ({ className }: { className?: string }) => (
@@ -21,20 +22,71 @@ interface XLoginButtonProps {
   variant?: "default" | "outline" | "secondary" | "ghost" | "link" | "destructive";
   size?: "default" | "sm" | "lg" | "icon";
   className?: string;
+  disabled?: boolean;
 }
 
 export default function XLoginButton({ 
   onAuthSuccess, 
   variant = "outline", 
   size = "default",
-  className = ""
+  className = "",
+  disabled = false
 }: XLoginButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
   const [authStatus, setAuthStatus] = useState<string>('');
+  const [isXAuthenticated, setIsXAuthenticated] = useState(false);
+  const [xHandle, setXHandle] = useState<string>('');
   const { toast } = useToast();
+  const { user } = useAuth();
+
+  // Check X authentication status on component mount
+  useEffect(() => {
+    checkXAuthStatus();
+  }, []);
+
+  const checkXAuthStatus = async () => {
+    try {
+      const response = await fetch('/api/auth/x/status');
+      const status = await response.json();
+      
+      if (status.authenticated) {
+        setIsXAuthenticated(true);
+        setXHandle(status.xHandle || '');
+        
+        // In development mode, don't automatically trigger onAuthSuccess
+        // The onAuthSuccess should only be called when user explicitly clicks the button
+      }
+    } catch (error) {
+      console.error('Error checking X auth status:', error);
+    }
+  };
 
   const handleLogin = async () => {
+    if (disabled) return;
+    
+    // Check if user is authenticated with the app first
+    if (!user) {
+      toast({
+        variant: "destructive",
+        title: "Authentication Required",
+        description: "Please log in to access X Timeline features.",
+      });
+      return;
+    }
+    
+    // If already authenticated, just call success callback
+    if (isXAuthenticated) {
+      if (onAuthSuccess) {
+        onAuthSuccess('authenticated');
+      }
+      toast({
+        title: "X Authentication Active",
+        description: "Your X Timeline is already connected and ready to use.",
+      });
+      return;
+    }
+    
     setIsLoading(true);
     try {
       // Check if X auth is configured
@@ -102,6 +154,10 @@ export default function XLoginButton({
             setShowDialog(false);
             setIsLoading(false);
             
+            // Update authentication state to show green circle
+            setIsXAuthenticated(true);
+            setXHandle(authResult.xHandle || '');
+            
             toast({
               title: "Login Successful!",
               description: `Welcome ${authResult.xHandle}! You can now access premium features.`,
@@ -110,6 +166,9 @@ export default function XLoginButton({
             if (onAuthSuccess) {
               onAuthSuccess(authResult.accessToken);
             }
+            
+            // Refresh auth status to ensure consistency
+            checkXAuthStatus();
           }
         } catch (error) {
           console.error('Auth check error:', error);
@@ -140,13 +199,17 @@ export default function XLoginButton({
     <>
       <Button
         onClick={handleLogin}
-        disabled={isLoading}
+        disabled={isLoading || disabled}
         variant={variant}
         size={size}
-        className={`gap-2 ${className}`}
+        className={`gap-2 relative ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
       >
+        {isLoading ? 'Connecting...' : 
+         isXAuthenticated ? 'Enhanced with' : 'Enhance with'}
         <XIcon className="w-4 h-4" />
-        {isLoading ? 'Connecting...' : 'Login with X'}
+        {isXAuthenticated && (
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>
+        )}
       </Button>
 
       <Dialog open={showDialog} onOpenChange={setShowDialog}>

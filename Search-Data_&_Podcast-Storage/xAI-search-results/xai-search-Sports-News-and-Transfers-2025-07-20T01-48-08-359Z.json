@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Limited sports-related posts found on X from the provided search results; relying primarily on news sources for stories. Only two relevant stories could be synthesized based on available data from the last 24 hours.\",\n  \"stories\": [\n    {\n      \"headline\": \"BBC Sport reports on recent football news and transfers in the Premier League.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.bbc.com/sport/football/teams/manchester-united\"\n      ]\n    },\n    {\n      \"headline\": \"Fox News highlights trending sports updates and player activities from major leagues.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.foxnews.com/sports\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.reuters.com/",
+    "https://www.bbc.com",
+    "https://www.bbc.com/sport/football/teams/manchester-united",
+    "https://www.foxnews.com/sports",
+    "https://www.si.com/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/national/",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

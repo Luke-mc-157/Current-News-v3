@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"A commercial flight nearly collides with a B-52 Bomber.\",\n      \"citations\": [\n        \"https://t.co/H0yBWAHgDj\"\n      ]\n    },\n    {\n      \"headline\": \"Alaska Airlines grounds flights due to an IT outage.\",\n      \"citations\": [\n        \"https://t.co/H0yBWAHgDj\"\n      ]\n    },\n    {\n      \"headline\": \"SkyWest pilot performs evasive maneuver to avoid mid-air collision.\",\n      \"citations\": [\n        \"https://t.co/VH1Yz6ImmD\"\n      ]\n    },\n    {\n      \"headline\": \"Plane crash reported in Oakey, Queensland.\",\n      \"citations\": []\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/international/",
+    "https://www.washingtonpost.com/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.aljazeera.com/",
+    "https://forbes.com/sites/conormurray/2025/07/21/the-nothing-beats-a-jet2-holiday-tiktok-trend-explained-and-how-the-airline-capitalized-on-viral-ad",
+    "https://www.aerotime.aero/",
+    "https://x.com/FlyingFreak73/status/1946771884315746751",
+    "https://x.com/htTweets/status/1947125160747954308",
+    "https://x.com/joveg8/status/1947268115961987461",
+    "https://x.com/ProjectConstitu/status/1947253986634981714",
+    "https://x.com/jayystanlee/status/1946848297978896886"
+  ]
+}

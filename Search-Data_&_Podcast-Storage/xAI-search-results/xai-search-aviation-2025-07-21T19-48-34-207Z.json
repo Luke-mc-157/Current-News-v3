@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Indian aviation authority orders inspection of fuel switches on Boeing aircraft following Air India flight incident.\",\n      \"sources\": [\n        \"https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash\",\n        \"https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms\"\n      ]\n    },\n    {\n      \"headline\": \"SkyWest pilot performs evasive maneuver to avoid mid-air collision with another aircraft.\",\n      \"sources\": [\n        \"https://www.travelandtourworld.com/news/article/india-sparks-urgent-global-aviation-shake-up-as-airlines-rush-to-inspect-boeing-fuel-switches-after-deadly-dreamliner-crash/\",\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Wizz Air ceases operations in Abu Dhabi due to regional instability affecting profitability.\",\n      \"sources\": [\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"US Air Force deploys F-15EX fighter jets near Taiwan.\",\n      \"sources\": [\n        \"posts found on X\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/international/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/business/finance/",
+    "https://www.bbc.com/news",
+    "https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash",
+    "https://aviationa2z.com/index.php/2025/07/15/singapore-airlines-completes-boeing-787-fuel-switches-checks/",
+    "https://www.travelandtourworld.com/news/article/india-sparks-urgent-global-aviation-shake-up-as-airlines-rush-to-inspect-boeing-fuel-switches-after-deadly-dreamliner-crash/",
+    "https://www.youtube.com/watch?v=oF1G3jVKcp4",
+    "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms",
+    "https://x.com/FlyingFreak73/status/1946771884315746751",
+    "https://x.com/InstaBharat/status/1947123491196592262",
+    "https://x.com/303SnowWolf/status/1947322740140044537",
+    "https://x.com/htTweets/status/1947125160747954308",
+    "https://x.com/InstaBharat/status/1946990471571554666"
+  ]
+}

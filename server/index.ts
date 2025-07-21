@@ -2,6 +2,8 @@ import express, { type Request, Response, NextFunction } from "express";
 import session from "express-session";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { devAutoLogin } from "./middleware/devMiddleware.js";
+import { startPodcastScheduler } from "./services/podcastScheduler.js";
 
 const app = express();
 app.use(express.json({ limit: '10mb' })); // Increased from default 100kb to handle large compiled data
@@ -11,12 +13,16 @@ app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 app.use(session({
   secret: process.env.SESSION_SECRET || 'dev-secret-key-change-in-production',
   resave: false,
-  saveUninitialized: false,
+  saveUninitialized: true, // Changed to true for development auto-login
   cookie: {
     secure: false, // Set to true in production with HTTPS
+    httpOnly: true,
     maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
   }
 }));
+
+// Add development auto-login middleware
+app.use(devAutoLogin);
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -78,5 +84,8 @@ app.use((req, res, next) => {
     reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
+    
+    // Start podcast scheduler after server is running
+    startPodcastScheduler();
   });
 })();

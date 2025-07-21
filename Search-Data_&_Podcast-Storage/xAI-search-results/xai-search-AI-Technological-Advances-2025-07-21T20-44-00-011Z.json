@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"OpenAI launches ChatGPT Agent for autonomous tasks including planning and online interactions\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"OpenAI releases GPT-4.5 with enhancements in emotional intelligence and conversational capabilities\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://indianexpress.com/section/technology/artificial-intelligence\"\n      ]\n    },\n    {\n      \"headline\": \"Amazon introduces agentic AI tools to automate complex enterprise workflows\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    },\n    {\n      \"headline\": \"OpenAI achieves breakthrough in large language model reasoning for complex math problems\",\n      \"citations\": [\n        \"https://tvnewscheck.com/ai/article/ai-to-produce-90-of-news-by-2026-separating-viral-predictions-from-reality\",\n        \"https://www.reuters.com/world/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://tvnewscheck.com/ai/article/ai-to-produce-90-of-news-by-2026-separating-viral-predictions-from-reality",
+    "https://x.com/AvaneesaBee/status/1946749026193510724",
+    "https://x.com/lukeNukemAI/status/1946721795513487596",
+    "https://x.com/sanasana0707/status/1946768447175622837",
+    "https://x.com/snubeaver/status/1947314751320825906",
+    "https://x.com/AGI_FromWalmart/status/1946853662137151815"
+  ]
+}

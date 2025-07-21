@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Allegations of misconduct involving former President Donald Trump are discussed in political circles.\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"Obama administration actions are scrutinized in relation to U.S. political events.\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/politics\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Democrats encounter challenges in ongoing U.S. political landscape.\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. political developments include updates on border policies and criminal penalties.\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://www.nytimes.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and correlating news sources; specific details may be limited to the provided context.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.nytimes.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.axios.com/",
+    "https://x.com/fritzinmo/status/1947076003919978626",
+    "https://x.com/MAGACult2/status/1947346717126324295",
+    "https://x.com/pokeeffejr/status/1947271011683971227",
+    "https://x.com/still_hustling/status/1946925622321967193"
+  ]
+}

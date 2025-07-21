@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"ChatGPT was the most downloaded app globally in June.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://foxnews.com/tech\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk announced plans to launch Baby Grok for kids-friendly content.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://foxnews.com/tech\"\n      ]\n    },\n    {\n      \"headline\": \"Facebook is limiting reach for accounts reposting unoriginal content.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://foxnews.com/tech\"\n      ]\n    },\n    {\n      \"headline\": \"LinkedIn's algorithm now favors relevance over recency.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://foxnews.com/tech\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement posts on X within the last 24 hours, correlated with general tech news sources; data is based on available context and may require verification for completeness.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/",
+    "https://www.foxnews.com/",
+    "https://foxnews.com/tech",
+    "https://www.reuters.com/technology/",
+    "https://www.bloomberg.com/technology",
+    "https://techcrunch.com/2025/07/10/as-x-loses-its-ceo-daily-usage-is-down-and-competition-is-growing",
+    "https://x.com/Egline_Samoei/status/1947303003368685954",
+    "https://x.com/InstaBharat/status/1946839209270026255",
+    "https://x.com/5alhi/status/1947266094802296845",
+    "https://x.com/kdpisda/status/1947028352772243708"
+  ]
+}

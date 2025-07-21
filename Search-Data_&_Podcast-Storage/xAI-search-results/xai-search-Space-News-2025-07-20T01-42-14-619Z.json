@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk announces renewed focus on AI integration at SpaceX.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946742000893714690\"\n      ],\n      \"supporting_articles\": [\n        \"https://spacenews.com/section/news-archive\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk expresses concerns about AI risks in relation to technology companies including SpaceX.\",\n      \"x_posts\": [\n        \"https://x.com/elonmusk/status/1946740057978912930\"\n      ],\n      \"supporting_articles\": [\n        \"https://cbsnews.com/space\"\n      ]\n    },\n    {\n      \"headline\": \"Sawyer Merritt shares update related to SpaceX activities.\",\n      \"x_posts\": [\n        \"https://x.com/SawyerMerritt/status/1946743553197056439\"\n      ],\n      \"supporting_articles\": [\n        \"https://spacenews.com/section/news-archive\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three distinct stories were identified from the available data on X, RSS feeds, and news sources within the last 24 hours. Data for a fourth story was sparse, as searches yielded limited directly related content beyond these items.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://spacenews.com/section/news-archive",
+    "https://hindustantimes.com/trending",
+    "https://cbsnews.com/space",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

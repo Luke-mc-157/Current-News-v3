@@ -5,25 +5,57 @@ import crypto from 'crypto';
 const clientId = process.env.X_CLIENT_ID;
 const clientSecret = process.env.X_CLIENT_SECRET;
 
-// Determine the correct callback URL based on environment
-function getCallbackUrl() {
+// Global variable to store the callback URL, will be set per request
+let callbackUrl = null;
+
+// Determine the correct callback URL based on request or environment
+export function getCallbackUrl(req = null) {
+  // If we have a request object, use the actual host from the request
+  if (req) {
+    const protocol = req.get('x-forwarded-proto') || req.protocol || 'https';
+    const host = req.get('x-forwarded-host') || req.get('host');
+    const requestCallbackUrl = `${protocol}://${host}/auth/twitter/callback`;
+    
+    console.log('🔍 getCallbackUrl() from request:');
+    console.log('- Protocol:', protocol);
+    console.log('- Host:', host);
+    console.log('- Callback URL:', requestCallbackUrl);
+    
+    return requestCallbackUrl;
+  }
+  
+  // Fallback to environment-based calculation for initialization
+  console.log('🔍 getCallbackUrl() - Environment fallback:');
+  console.log('- NODE_ENV:', process.env.NODE_ENV);
+  console.log('- REPLIT_DOMAINS:', process.env.REPLIT_DOMAINS);
+  console.log('- REPL_SLUG:', process.env.REPL_SLUG);
+  console.log('- REPL_OWNER:', process.env.REPL_OWNER);
+  
   // Check for Replit domains first
   if (process.env.REPLIT_DOMAINS) {
     const domains = process.env.REPLIT_DOMAINS.split(',');
     const primaryDomain = domains[0]; // Use the first domain
-    return `https://${primaryDomain}/auth/twitter/callback`;
+    const envCallbackUrl = `https://${primaryDomain}/auth/twitter/callback`;
+    console.log('✅ Using REPLIT_DOMAINS callback:', envCallbackUrl);
+    return envCallbackUrl;
   }
   
-  // Fallback to old format
+  // Fallback to old format for production deployment
   if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
-    return `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth/twitter/callback`;
+    // Try both .replit.app and .repl.co formats
+    const productionUrl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app/auth/twitter/callback`;
+    console.log('⚠️ Using fallback production URL:', productionUrl);
+    return productionUrl;
   }
   
   // Local development fallback
-  return 'http://127.0.0.1:5000/auth/twitter/callback';
+  const localUrl = 'http://127.0.0.1:5000/auth/twitter/callback';
+  console.log('⚠️ Using local development fallback:', localUrl);
+  return localUrl;
 }
 
-const callbackUrl = getCallbackUrl();
+// Initialize with environment-based URL for status checks
+callbackUrl = getCallbackUrl();
 
 // In-memory session store for demo (use Redis/DB in production)
 const sessions = new Map();
@@ -47,17 +79,20 @@ function generateCodeChallenge(verifier) {
 }
 
 // Step 1: Generate login URL for user
-export function getXLoginUrl(state) {
+export function getXLoginUrl(state, req = null) {
   // Enhanced validation
   if (!clientId || !clientSecret) {
     throw new Error('X OAuth credentials not configured. Missing X_CLIENT_ID or X_CLIENT_SECRET environment variables.');
   }
   
+  // Get the callback URL based on the actual request
+  const requestCallbackUrl = getCallbackUrl(req);
+  
   console.log('🔍 OAuth URL generation debug:');
   console.log('- State:', state);
   console.log('- Client ID:', clientId);
   console.log('- Client Secret present:', !!clientSecret);
-  console.log('- Callback URL:', callbackUrl);
+  console.log('- Callback URL:', requestCallbackUrl);
   
   const client = new TwitterApi({ 
     clientId,
@@ -66,7 +101,7 @@ export function getXLoginUrl(state) {
   
   try {
     // Let twitter-api-v2 handle PKCE generation internally
-    const authLink = client.generateOAuth2AuthLink(callbackUrl, {
+    const authLink = client.generateOAuth2AuthLink(requestCallbackUrl, {
       scope: 'users.read tweet.read follows.read offline.access', // Space-separated scopes
       state
     });
@@ -74,10 +109,20 @@ export function getXLoginUrl(state) {
     // Fix the lowercase s256 issue - X API requires uppercase S256
     authLink.url = authLink.url.replace('code_challenge_method=s256', 'code_challenge_method=S256');
     
+    // Fix domain issue - OAuth authorization must use twitter.com, not x.com
+    const originalUrl = authLink.url;
+    if (authLink.url.includes('x.com')) {
+      authLink.url = authLink.url.replace('x.com', 'twitter.com');
+      console.log('🔧 Fixed OAuth URL domain issue:');
+      console.log('- Original:', originalUrl.substring(0, 60) + '...');
+      console.log('- Fixed:', authLink.url.substring(0, 60) + '...');
+    }
+    
     console.log('✅ OAuth link generated successfully');
     console.log('- Generated URL length:', authLink.url.length);
     console.log('- Code verifier length:', authLink.codeVerifier.length);
     console.log('- URL preview:', authLink.url.substring(0, 100) + '...');
+    console.log('- Redirect URI in URL:', requestCallbackUrl);
     
     // Store the codeVerifier generated by the library
     sessions.set(state, { 
@@ -93,7 +138,7 @@ export function getXLoginUrl(state) {
 }
 
 // Step 2: Handle OAuth callback
-export async function handleXCallback(code, state) {
+export async function handleXCallback(code, state, req = null) {
   console.log('OAuth callback received for state:', state);
 
   const sessionData = sessions.get(state);
@@ -112,6 +157,9 @@ export async function handleXCallback(code, state) {
     }
   }
   
+  // Get the callback URL based on the actual request
+  const requestCallbackUrl = getCallbackUrl(req);
+  
   // Create client with explicit credentials for OAuth token exchange
   const client = new TwitterApi({ 
     clientId,
@@ -122,7 +170,7 @@ export async function handleXCallback(code, state) {
     console.log('Token exchange details:');
     console.log('- Code:', code?.substring(0, 20) + '...');
     console.log('- Code Verifier:', sessionData.codeVerifier?.substring(0, 20) + '...');
-    console.log('- Redirect URI:', callbackUrl);
+    console.log('- Redirect URI:', requestCallbackUrl);
     console.log('- Client ID:', clientId);
     console.log('- Client Secret present:', !!clientSecret);
 
@@ -130,12 +178,12 @@ export async function handleXCallback(code, state) {
     console.log('Attempting token exchange with:');
     console.log('- Code length:', code?.length);
     console.log('- Code verifier length:', sessionData.codeVerifier?.length);
-    console.log('- Redirect URI:', callbackUrl);
+    console.log('- Redirect URI:', requestCallbackUrl);
     
     const tokenResponse = await client.loginWithOAuth2({
       code: code,
       codeVerifier: sessionData.codeVerifier,
-      redirectUri: callbackUrl,
+      redirectUri: requestCallbackUrl,
     });
 
     console.log('Token response received:', {
@@ -244,6 +292,7 @@ export async function createAuthenticatedClient(accessToken, refreshToken, expir
     };
   }
   
+  // Create TwitterApi client with OAuth 2.0 User Context token
   return { 
     client: new TwitterApi(accessToken), 
     updatedTokens: null 

@@ -1,0 +1,504 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_news_stories": [
+    {
+      "title": "Tesla Stock Plummets 21.3% in the First Half of 2025",
+      "description": "Tesla's stock experienced a significant decline due to challenges in vehicle deliveries and political headwinds, impacting its valuation amid broader market pressures.",
+      "source": "The Motley Fool",
+      "date": "July 17, 2025"
+    },
+    {
+      "title": "First Look at Tesla’s 2025.26 Software Update",
+      "description": "Tesla released details on its latest software update, featuring new elements like Grok integration, Light Sync, and enhancements to Sentry Mode, highlighting ongoing innovations in vehicle technology.",
+      "source": "Not A Tesla App",
+      "date": "July 18, 2025"
+    }
+  ],
+  "additional_notes": "These stories were identified from recent news articles and web content. High-engagement posts on X were searched but did not yield relevant results for this period. Semantic posts on X were also checked and found to be inconclusive or
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Why Tesla Stock Plummeted 21.3% in the First Half of 2025 -- and What Comes Next: Tesla's stock price declined by 21.3% in the first half of 2025, contrasting with gains in the broader market. The drop was driven by lower vehicle deliveries, with Q1 deliveries at 336,681 units, a 13% year-over-year decrease, and Q2 deliveries at approximately 384,122 units, down 14% from the previous year. Political factors and competition from Chinese manufacturers contributed to the stock's pressure. Tesla launched a robotaxi service in Austin, Texas, in late June, but it has not yet stabilized the stock. The company's market valuation remains high at around 10.8 times this year's expected sales, relying on future growth from projects like robotaxis. [https://www.nytimes.com/2025/07/16/crosswords/daily-puzzle-2025-07-17.html]
+
+- First Look at Tesla’s 2025.26 Update [Photos + Videos]: Tesla released software update 2025.26, introducing features like the Grok AI assistant for vehicles with AMD processors. Grok allows users to interact via voice commands without controlling the vehicle directly and includes options for personalization and privacy settings. Other updates include Light Sync for synchronizing ambient lighting with music and enhancements to Dashcam for better video playback. Sentry Mode now features pulsing red ambient lighting for added visibility, and new tools provide Supercharger site information upon arrival. The update also adds equalizer presets and an onboarding guide for new owners. [https://news.google.com/home?hl=en-ID&gl=ID&ceid=ID:en]
+Key Quotes: "Coming" - Elon Musk
+
+---
+
+TOPIC: AI
+
+LIVE SEARCH SUMMARY:
+{
+  "response_type": "news_compilation",
+  "query_date_range": "2025-07-17 to 2025-07-18",
+  "biggest_ai_news_stories": [
+    {
+      "title": "Key AI Developments Including Automation Anywhere's AWS Achievement",
+      "description": "A major update highlighted advancements in AI, such as Automation Anywhere being recognized for its expertise in deploying generative AI solutions on AWS. This includes their Agentic Process Automation (APA) platform, which integrates with AWS to enhance AI capabilities.",
+      "source": "Information from a technology update article",
+      "date": "2025-07-17"
+    },
+    {
+      "title": "General AI News Coverage",
+      "description": "Ongoing coverage of artificial intelligence topics, including various global developments and updates in the field, as part of broader news reporting.",
+      "source": "BBC News",
+      "date": "2025-07-18"
+    }
+  ],
+  "notes": "This compilation is based on relevant web and news content available up to the current dat
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Artificial intelligence - BBC News: The BBC article covers recent developments in AI, including the WasteShark robot for collecting marine rubbish. It highlights Netflix's first use of AI effects to reduce production costs for a film sequence. Other points include a healthcare provider in Guernsey adopting AI to minimize paperwork and allow more doctor-patient time. The article also mentions a university team competing in a global AI robot football contest and the launch of the UK's most powerful supercomputer, Isambard-AI. Additionally, it discusses Nvidia resuming AI chip sales to China amid regulatory changes. [https://www.reuters.com/]
+Key Quotes: "AI allowed The Eternaut to complete a sequence faster and cheaper." - Netflix
+
+- AI UPDATES : The key developments in AI news for July 17, 2025: Automation Anywhere was recognized for its generative AI solutions on AWS, launching new AI agents for tasks like financial analysis and sentiment detection. The U.S. announced a $92 billion investment in energy infrastructure to support AI demands, including commitments from Google and Blackstone. Policies reversed export curbs on AI chips to China to counter competition from Huawei. Global efforts focus on criminalizing AI-generated child abuse material and using AI for disaster preparedness through initiatives like the UN's Early Warnings for All. AWS introduced new technology for efficient AI chip cooling to address environmental concerns. [https://www.nytimes.com/2025/07/16/crosswords/daily-puzzle-2025-07-17.html]
+Key Quotes: "AI must be people-centered, with human oversight ensuring trust and local relevance." - AI for Good Global Summit participants
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times article features a story on independent filmmakers using AI to generate viral videos, highlighting how AI technology has helped them gain internet popularity. It discusses the broader implications of AI in creative industries. Other sections cover U.S. politics and economy, but the AI-specific content focuses on innovation in video production. The piece also touches on AI's role in various global news topics indirectly. Overall, it exemplifies how AI is transforming content creation. [https://www.bbc.com/news/topics/ce1qrvleleqt]
+
+---
+
+TOPIC: news
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query": "Biggest news stories from 2025-07-17 to 2025-07-18",
+    "summary": "Based on available information from news sources, the biggest news stories from the specified period include international conflicts and domestic legal developments. High-engagement posts on X were searched but yielded no relevant results. News articles and web content provided the following key stories.",
+    "biggest_news_stories": [
+      {
+        "title": "Supreme Court Leaves Yemen Negotiation Decision to Centre in Nimisha Priya Case",
+        "description": "The Supreme Court has deferred the decision on negotiations related to the Nimisha Priya case in Yemen to the Indian government, as part of ongoing developments.",
+        "source": "The Hindu",
+        "date": "2025-07-18"
+      },
+      {
+        "title": "Government Not Involved in Justice Yashwant Varma Removal",
+        "description": "The Union Law Minister stated that the government was not involved in the removal of J
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.reuters.com]: The content of this article is not accessible. No specific details or main points can be extracted from the provided information. It is listed under the world section on the Reuters website. Further analysis is not possible due to the lack of available content. [https://www.reuters.com/world/]
+
+- [Article from www.reuters.com]: The content of this article is not accessible. No specific details or main points can be extracted from the provided information. It is listed under the US section on the Reuters website. Further analysis is not possible due to the lack of available content. [https://www.reuters.com/world/us/]
+
+- NYT Crossword Answers for July 17, 2025 - The New York Times: Sam Brody designed a Thursday crossword puzzle with a theme based on Matryoshka dolls, featuring phrases that nest within each other. The clues use parentheses to indicate layers, requiring solvers to unravel interconnected answers. Deb Amlen explains the theme and provides insights into tricky clues and entries. The puzzle includes constructor notes from Brody and highlights like the revealer 'MATRYOSHKA DOLLS'. [https://www.nytimes.com/2025/07/16/crosswords/daily-puzzle-2025-07-17.html]
+Key Quotes: "It’s great to be back for my second New York Times Crossword!" - Sam Brody | "Those were my initial reactions to Mr. Brody’s theme, but take heart, I was able to figure it out — and so will you." - Deb Amlen
+
+- Top news of the day: July 18, 2025 - The Hindu: The Supreme Court asked the Centre to consider representations for negotiations in the Nimisha Priya case in Yemen. Union Law Minister Arjun Ram Meghwal stated that the government is not involved in any impeachment motion against Justice Yashwant Varma. India's first indigenously built Diving Support Vessel, Nistar, was commissioned, highlighting a maritime achievement. Taiwan's Vice-President Hsiao Bi-khim emphasized that Taiwan does not seek conflict with China. [https://thehindu.com/news/top-news-from-the-hindu-18-07-2025/article69827665.ece]
+Key Quotes: "Israel, which has been targeting our stability and creating discord among us since the fall of the former regime, is now seeking to once again transform our pure land into an arena of endless chaos." - President Ahmed al-Sharaa | "Bringing an impeachment motion in Parliament against Allahabad High Court judge Yashwant Varma is entirely a matter of the MPs and the government is nowhere in the picture." - Arjun Ram Meghwal
+
+- Weekly Top Ten News Stories - 18 July 2025 - FNArena.com: FNArena compiled a list of the top ten news stories from July 10 to 17, 2025, covering topics like gold stocks, AI in healthcare, and mining updates. The report includes analyses from Rudi Filapek-Vandyck and broker calls on companies such as Pro Medicus and Aurelia Metals. It discusses global market impacts, including tariffs and commodity prices. The weekly report also features stock recommendations and market overviews. [https://fnarena.com/index.php/2025/07/18/weekly-top-ten-news-stories-18-july-2025/]
+Key Quotes: "Our top ten news from 10 July 2025 to 17 July 2025." - FNArena
+
+- Headlines for July 17, 2025 | Democracy Now!: Israeli forces killed at least 93 Palestinians in Gaza, including strikes on schools and a church. A crowd crush at a Gaza aid site killed 21 people, blamed on guards by survivors. Syrian President Ahmed al-Sharaa condemned Israeli attacks on Syria, calling them an attempt to create endless chaos. The U.S. Senate approved a bill to claw back $9 billion in foreign aid and public broadcasting funds. [https://www.democracynow.org/2025/7/17/headlines]
+Key Quotes: "This aid, I swear to God, is a trap. This is not aid." - Abdallah Alyan | "Israel is seeking endless chaos." - President Ahmed al-Sharaa
+
+---
+
+TOPIC: Sports (Football)
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent searches for top football (primarily soccer) news stories from July 17-18, 2025, the biggest stories include major transfer activities and general sports updates. High-engagement posts on X were searched but yielded no specific relevant content. News articles from reliable sources like BBC Sport highlight key developments.",
+  "top_stories": [
+    {
+      "title": "Manchester United Bid for Brentford Forward Bryan Mbeumo",
+      "description": "Manchester United have made an offer for Brentford's Bryan Mbeumo, potentially worth up to £70m. This transfer news has generated significant interest in the football community.",
+      "source": "BBC Sport",
+      "date": "2025-07-17"
+    },
+    {
+      "title": "General Football News and Highlights",
+      "description": "Latest scores, results, fixtures, and videos from the Premier League, Championship, and international football, covering ongoing matches and updates from the football world.",
+      "source": "
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Football - latest news today, results & video highlights - BBC Sport: The BBC Sport page covers the latest football news, including upcoming Euro 2025 matches such as Spain versus Switzerland and France versus Germany. Arsenal completed a £48.5m signing of Noni Madueke from Chelsea, while Manchester United made a £65m bid for Brentford's Bryan Mbeumo. England advanced to the Euro 2025 semi-finals after defeating Sweden on penalties. Other highlights include Nigeria thrashing Zambia 5-0 in the Wafcon semi-finals and various transfer updates across Premier League teams. [https://www.bbc.com/sport/football]
+Key Quotes: "I've yet to be sacked" - Thomas Frank | "I will give everything for England" - Lucy Bronze
+
+- Bryan Mbeumo: Manchester United make £70m bid for Brentford forward - BBC Sport: Manchester United submitted a third bid for Brentford forward Bryan Mbeumo, valued at up to £70m including add-ons. The 25-year-old scored 20 Premier League goals last season and prefers a move to United over other interested clubs like Tottenham. If the transfer succeeds, Mbeumo would join Ruben Amorim's squad before their pre-season trip to the US. This deal could impact United's striker lineup and reduce roles for players like Marcus Rashford and Jadon Sancho. [https://www.bbc.com/sport/football/articles/cg4rdlz6wxxo]
+
+- BBC Sport - Scores, Fixtures, News - Live Sport: The BBC Sport page provides live updates on various sports, focusing on football with Euro 2025 fixtures like Spain versus Switzerland. Arsenal signed Noni Madueke from Chelsea for £48.5m, and Manchester United agreed a £65m deal for Brentford's Bryan Mbeumo. England women reached the Euro 2025 semi-finals after a penalty shootout win against Sweden. Other news includes Nigeria's 5-0 victory over Zambia in the Wafcon and discussions on Premier League transfers. [https://www.bbc.com/sport]
+Key Quotes: "I'm unstoppable" - Daniel Dubois
+
+- Chargers training camp report, Day 1: Mike Williams retired, what now?: Los Angeles Chargers receiver Mike Williams retired after eight NFL seasons, impacting the team's depth at the position. The Chargers quickly agreed to terms with second-round pick Tre Harris on his rookie contract to fill the gap. Justin Herbert praised Williams for his reliability in crucial moments during his tenure. With Williams gone, Harris is now expected to compete for starting snaps at the X receiver position alongside players like Quentin Johnston. [https://www.nytimes.com/athletic/6501015/2025/07/17/chargers-training-camp-mike-williams-retires/]
+Key Quotes: "When everything mattered the most, he was going to show up" - Justin Herbert
+
+- Saquon Barkley and the Eagles received some ESPY Award wins: The Philadelphia Eagles won the ESPY Award for Best Team following their 14-3 regular season and Super Bowl LIX victory. Saquon Barkley received ESPY Awards for Best NFL Player and Best Play for his reverse hurdle. Host Shane Gillis, an Eagles fan, highlighted the team's success during the ceremony. The awards ceremony also referenced the Eagles' Super Bowl ring event scheduled shortly after. [https://www.bleedinggreennation.com/2025/7/17/24469691/saquon-barkley-eagles-espy-award-wins-best-play-best-team-nfl-player-philadelphia-nick-sirianni]
+
+- A trio of top programs moved up 2027 4-star QB Teddy Jarrard's list this summer: Four-star quarterback prospect Teddy Jarrard in the class of 2027 saw three top programs rise on his recruitment list during the summer. The article discusses how elite college football programs are pursuing Jarrard, though specific schools are not detailed in the provided content. Jarrard is noted as a top QB talent with ongoing recruitment interest. The focus remains on his recruitment progress and potential commitments. [https://www.on3.com/rivals/news/a-trio-of-top-programs-moved-up-2027-4-star-qb-teddy-jarrards-list-this-summer/]
+
+---
+
+TOPIC: Space and Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on searches for high-engagement posts on X, news articles, and additional semantic posts on X, the biggest news stories in Space and Technology from July 17, 2025, to July 18, 2025, include advancements in space missions and technology contracts. No high-engagement posts on X were found in the initial search. The following stories are compiled from news articles and web content.",
+  "news_stories": [
+    {
+      "title": "NASA’s SpaceX Crew-11 Mission Gears Up for Space Station Research",
+      "description": "A host of scientific investigations await the crew of NASA’s SpaceX Crew-11 mission during their long-duration expedition aboard the International Space Station.",
+      "source": "NASA",
+      "date": "Published approximately 2 days ago, aligning with the specified timeframe"
+    },
+    {
+      "title": "Ascent Solar Wins Space Tech Contract and Delivers 8X Faster Than Competitors",
+      "description": "Ascent Solar Technologies has been selected for space
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- NASA’s SpaceX Crew-11 Mission Gears Up for Space Station Research - NASA: NASA’s SpaceX Crew-11 mission involves astronauts Zena Cardman, Mike Fincke, and JAXA astronaut Kimiya Yui conducting research on the International Space Station. The crew will study the effects of microgravity on plant cell division and interactions between bacteria and bacteriophages. They will also evaluate methods to produce a higher volume of induced pluripotent stem cells for potential medical applications. Additionally, the mission includes experiments on generating on-demand nutrients using genetically engineered organisms. This research aims to support future deep space missions and improve health technologies on Earth. [https://www.reuters.com/technology/]
+Key Quotes: "This type of stem cell research is a chance to find treatments and maybe even cures for diseases that currently have none." - Tobias Niederwieser | "Boeing and miniPCR bio co-founded this competition to bring real-world scientific experiences to the classroom and promote molecular biology investigations on the space station." - Scott Copeland | "Previous studies indicate that bacteria may display increased growth rates and virulence in space, while the antibiotics used to combat them may be less effective." - Dr. Ally Huang | "Working with another Colorado-based solar technology provider will give us greater control over the supply chain." - Paul Warley
+
+- Ascent Solar Wins Space Tech Contract, Delivers 8X Faster Than Competitors | ASTI Stock News: Ascent Solar Technologies has secured an agreement to supply its thin-film photovoltaic technology to a Colorado-based power systems provider for evaluation and potential integration. The delivery is scheduled for completion by the end of July 2025. The company's CIGS PV products are manufactured at their 5 MW facility in Thornton, Colorado, with a delivery time of 6-8 weeks, compared to the industry standard of 9-12 months. This technology is targeted for space applications, including defense and space-based solar power. The agreement highlights Ascent's competitive advantage in rapid fulfillment for mission-optimized solar arrays. [https://www.reuters.com/world/us/]
+Key Quotes: "Working with another Colorado-based solar technology provider will give us greater control over the supply chain, making it much easier for our team to efficiently support customers in the Department of Defense, space industry, and more." - Paul Warley
+
+- Fourth NASA-Enabled Private Flight to Space Station Completes Safely - NASA: The Axiom Mission 4, a NASA-supported private astronaut mission, successfully completed its flight to the International Space Station with the crew splashing down off the coast of California. The mission involved four astronauts, including former NASA astronaut Peggy Whitson, ISRO astronaut Shubhanshu Shukla, ESA astronaut Sławosz Uznański-Wiśniewski, and Hungarian astronaut Tibor Kapu. They launched on June 25, 2025, from NASA’s Kennedy Space Center and docked with the station approximately 28 hours later. During their stay, the crew conducted about 60 science experiments and facilitated collaborations between NASA and ISRO. The mission supports NASA’s strategy to build a low Earth orbit economy and prepare for future commercial space stations. [https://www.reuters.com/world/]
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on available searches for high-engagement posts on X, news articles, and web content related to the biggest US politics news stories from July 17 to July 18, 2025, the most prominent story identified involves developments in the Trump administration. No high-engagement X posts were found in the initial search. News sources like CNN provided specific details on political events, while other sources offered general coverage. Information from X is treated as inconclusive and not used as primary evidence.",
+  "stories": [
+    {
+      "title": "Trump Administration News and Budget Cuts",
+      "details": "House Republican leaders were working on passing President Donald Trump's $9 billion package of federal funding cuts, amid discussions on a Jeffrey Epstein-related measure. This story highlights ongoing political negotiations and controversies in the US Congress.",
+      "source": "CNN Politics",
+      "date": "July 17, 2025"
+    },
+    {
+      "title": "General US Po
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.washingtonpost.com]: Content for this article is not accessible. No specific details are available. The URL points to a politics section. Further information could not be extracted. This limits the ability to provide a detailed summary. [https://www.washingtonpost.com/politics/]
+
+- U.S. Politics - The New York Times: The article covers breaking news and analysis on U.S. politics, including topics like Donald Trump and Jeffrey Epstein. It discusses Trump's insistence that the Epstein case is a hoax and his supporters' reactions. The Justice Department requested a one-day sentence for a former officer in the Breonna Taylor case. Border Patrol agents conducted a raid in Northern California, indicating a new strategy. Lawmakers questioned CBS's decision to cancel a show, potentially for political reasons. [https://www.nytimes.com/section/politics]
+Key Quotes: "Trump Insists the Epstein Case Is a Hoax." - Donald Trump | "Their actions range from pressuring the administration to release more information to spinning additional conspiracy theories about the case of Jeffrey Epstein." - Karen Yourish and Lily Boyce
+
+- [Article from www.reuters.com]: Content for this article is not accessible. No specific details are available. The URL points to U.S. world news. Further information could not be extracted. This limits the ability to provide a detailed summary. [https://www.reuters.com/world/us/]
+
+- Top news of the day: July 18, 2025 - The Hindu: The article summarizes top news including the Supreme Court's decision on Yemen negotiations in the Nimisha Priya case. It reports on the Indian government's stance on Justice Yashwant Varma's removal. Other points cover the commissioning of an indigenous diving support vessel in India. It mentions Taiwan's Vice-President stating that Taiwan will not provoke confrontation with China. Additionally, it notes Trump's threat to sue the Wall Street Journal over a story about a letter to Epstein. [https://thehindu.com/news/top-news-from-the-hindu-18-07-2025/article69827665.ece]
+Key Quotes: "Taiwan does not seek conflict with China and will not provoke confrontation and Beijing’s 'aggressive' military posturing was counterproductive." - Vice-President Hsiao Bi-khim | "India needs to be 'very careful and clever' while negotiating trade agreements with the U.S." - Raghuram Rajan
+
+- July 17, 2025: Donald Trump presidency news | CNN Politics: The article reports on President Donald Trump's diagnosis of chronic venous insufficiency after a medical examination. It covers Trump's denial of writing a letter to Jeffrey Epstein and his threat to sue the Wall Street Journal. House Republican leaders advanced a package of federal funding cuts proposed by Trump. There are discussions on releasing Jeffrey Epstein-related materials, with calls from Trump's supporters. The piece also mentions conservative hardliners' demands for transparency on the Epstein case. [https://edition.cnn.com/politics/live-news/trump-administration-epstein-files-news-07-17-25]
+Key Quotes: "This is not me. This is a fake thing. It’s a fake Wall Street Journal story." - Donald Trump | "President Trump—we are ready to move the court tomorrow to unseal the grand jury transcripts." - Pam Bondi
+
+- US News & Breaking News in the US | Fox News: The article aggregates U.S. news including crime stories like the Murdaugh case and immigration raids. It reports on political topics such as Trump's news and Senate activities. Other sections cover world news, entertainment, and sports. Key events include a Home Depot raid in California and updates on Luigi Mangione's case. The content focuses on breaking news with various U.S.-related headlines. [https://www.foxnews.com/us]
+Key Quotes: "Murdaugh lead attorney says jury fix and hidden texts could blow up conviction, force new trial." - Murdaugh lead attorney
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Elon Musk: "A future where we are out there among the planets and the stars is so inspiring! https://t.co/nAjpi1IeP9" (2942860 views, 12628 likes) https://x.com/i/status/1946262082632200650
+- Fabrizio Romano: "🚨🔵 EXCL: Manchester City considering move for James Trafford to return to the club this summer…
+
+…but only if one of their two main GKs leaves.
+
+Contacts took place in the recent days as Man City have buy back clause, this is why Newcastle deal is not sealed yet. https://t.co/YrBbdqLGVf" (2409927 views, 19511 likes) https://x.com/i/status/1946248644509757645
+- Fabrizio Romano: "❤️🤍🏆 Noni Madueke: “To win all the competitions we're in… I feel like we're definitely capable of doing that”. https://t.co/Ke5xfQp6Ib" (1547364 views, 36358 likes) https://x.com/i/status/1946240800376910205
+- Fabrizio Romano: "❤️🤍🔐 Ethan Nwaneri and Arsenal will be together until June 2030, as planned. ⤵️ https://t.co/VnrSFj7zRs" (1356472 views, 14727 likes) https://x.com/i/status/1946244366957150229
+- Fabrizio Romano: "❤️🤍 Noni Madueke: “I've spoken to Declan Rice, Myles, Bukayo, even Jurrien as well and they all  say amazing things about the club and the culture here, how warm it is and how much of a family it is”. https://t.co/KSNYgjicdP" (1178120 views, 23502 likes) https://x.com/i/status/1946240525507441141
+- Fabrizio Romano: "🚨🇸🇦 Sabri Lamouchi agrees to sign two year deal as new Al Deriyah SC Club.
+
+Lamouchi  leaves Al Riyadh for one of big project PIF clubs in Saudi Arabia, prefers Al Deriyah over Qatar clubs and UAE clubs. 
+
+Deal done by his agent Mitch Bakkovens 
+from Select Sports Management. https://t.co/QOdajvF5Bt" (835164 views, 5450 likes) https://x.com/i/status/1946248017142489146
+- TESLARATI: "🚨 Tesla Diner food can be ordered from inside your vehicle!
+
+Additionally, audio from the movies playing on the two giant screens will come through your car! https://t.co/MLS6X58m9D https://t.co/CxXcLKVZP5" (703451 views, 2267 likes) https://x.com/i/status/1946251258257362958
+- Elon Musk: "Valentine’s Day https://t.co/C4v4Ce6mRU" (522703 views, 7145 likes) https://x.com/i/status/1946270660486963582
+- PFT Commenter: "Congrat’s to our dear friend @Jerrythekid21 on winning back to back PMT Lib of the Year awards- w a very special message from Secretary Mayor Pete Buttigieg https://t.co/s3mGjxsaT6" (462106 views, 5451 likes) https://x.com/i/status/1946258766661300673
+- Fabrizio Romano: "🚨❤️🤍 All documents have been signed between Ethan Nwaneri’s camp and Arsenal for new deal.
+
+Progress made last week, agreement in place earlier this week, deal sealed now.
+
+Ethan and #AFC, together until June 2030. https://t.co/n61fYy9Tbv" (374527 views, 9128 likes) https://x.com/i/status/1946269344868049142
+- Adam Schefter: "Seahawks signed second-round pick, TE Elijah Arroyo, to a four-year, $8.813 million deal, including $6.872 million fully guaranteed, per his agents Drew Rosenhaus and Shawn O’Dare." (370693 views, 1270 likes) https://x.com/i/status/1946252465499767002
+- Elon Musk: "Cool https://t.co/woFZwxdjWt" (319661 views, 1938 likes) https://x.com/i/status/1946272579255521307
+- NASA: "NASA's @SpaceX Crew-11 mission is just a few weeks away from blasting off to the @Space_Station.
+
+The crew recently sat down to talk about their background, their mission, and their favorite astronauts. Get the full story on Houston, We Have A Podcast: https://t.co/HthpXG9o2n https://t.co/jE1zNpldDC" (162836 views, 877 likes) https://x.com/i/status/1946248532630839769
+- Big Cat: "Congrats to @Jerrythekid21 on his back to back Lib of the Year Titles. Dynasty Loading @PardonMyTake https://t.co/1u7qdWH27O" (161591 views, 1908 likes) https://x.com/i/status/1946255264136519912
+- Elon Musk: "@Teslarati True" (146055 views, 952 likes) https://x.com/i/status/1946257364262527041
+- Mario Nawfal: "🚨TRUMP TO SUE WSJ OVER ALLEGED EPSTEIN LETTER https://t.co/6UaVUX942O" (137915 views, 281 likes) https://x.com/i/status/1946269098213818619
+- Sawyer Merritt: "Elon confirms that you will be able to order food at @Tesla’s new Hollywood Diner directly from the screen inside your Tesla. The audio of movies/videos playing on both 45-foot LED screens will also sync and play from the speakers inside your vehicle https://t.co/6rm2nAHLjo https://t.co/e76B5eAFvJ" (109248 views, 1635 likes) https://x.com/i/status/1946259015396212744
+- BBC Breaking News: "At least three people reported killed after explosion at police training base in Los Angeles - follow live https://t.co/k9o0y2oTFK" (109929 views, 90 likes) https://x.com/i/status/1946247357512753368
+- Mario Nawfal: "🇭🇷 CROATIAN BRIDGE FAILS... THEN NAILED IT
+
+Two teams built a bridge from opposite cliffs and totally missed each other in the middle.
+
+The ends didn’t match in height, position, or direction like a real-life group project gone wrong.
+
+Turns out steel bends, temps shift, and https://t.co/VdxFGd2HGh" (99956 views, 474 likes) https://x.com/i/status/1946246085959193040
+- Marques Brownlee: "🚨 New YouTube Feature Alert 🚨 
+
+Title AND Thumbnail A/B testing is starting to roll out 🙌🏾 https://t.co/FHrXj126AD" (96781 views, 1649 likes) https://x.com/i/status/1946252770685653300
+- PFT Commenter: "Killed this bitch last nite #RIPbozo https://t.co/WcYu6LBCBa https://t.co/TXIkxhkm8o" (88878 views, 261 likes) https://x.com/i/status/1946259661260300386
+- EA SPORTS FC: "Get special rewards in #FC25 and #FC26 when you Pre-Order the Ultimate Edition by 26 August: https://t.co/W3LdjnUGEj
+
+- 1 of 15 untradeable ICONs in FC26 from Launch.
+
+- 1 of 5 93+ OVR untradeable ICON Player Pick and an exclusive EVO in FC 25. https://t.co/FGaKcQriU4" (82470 views, 530 likes) https://x.com/i/status/1946265018330222905
+- Barstool Sports: "https://t.co/D0Y1gtPK6j" (79786 views, 1 likes) https://x.com/i/status/1946262110075277320
+- The New York Times: "Breaking News: At least three Los Angeles County sheriff’s deputies were killed in an explosion at a training center, officials said. The cause is under investigation.
+ https://t.co/8G60bORw8K" (74898 views, 81 likes) https://x.com/i/status/1946251448544583767
+- Barstool Sports: "Just an outrageous double date happening tonight @BarstoolYak 
+
+ https://t.co/KRGs5kuLdm" (69293 views, 81 likes) https://x.com/i/status/1946260563354329144
+- The New York Times: "From @TheAthletic: When Billye Aaron, the 88-year-old widow of Henry “Hank” Aaron, rose from her seat, she stood as a solitary figure as the Atlanta Braves played a tribute to her legendary husband. This is the story behind the photo seen around the world. https://t.co/5jAyselzsJ https://t.co/mLeiaMEymH" (67588 views, 187 likes) https://x.com/i/status/1946257440946672022
+- Mario Nawfal: "🚨🇧🇷 MORAES SLAPS BOLSONARO WITH STRICT RESTRICTIONS
+
+After Jair’s video to Trump, Justice Moraes hits back:
+
+Electronic ankle monitor.
+
+No leaving home after 7 p.m.
+
+No social media.
+
+No talking to diplomats or ambassadors.
+
+No embassy visits.
+
+No contact with others under https://t.co/lJAnRHoGor https://t.co/LlZOYpwOY7" (54109 views, 1411 likes) https://x.com/i/status/1946256149797609568
+- Mario Nawfal: "🇺🇸🇮🇱 HOUSE REJECTS MOVE TO CUT $500M IN ISRAEL AID BY OVERWHELMING MARGIN
+
+The House voted 422–6 against MTG’s amendment to slash $500M in military aid to Israel from the 2026 defense budget.
+
+Only 6 members, 2 Republicans, 4 Democrats, backed the proposal.
+
+MTG: 
+
+“Israel is a https://t.co/c3BmWcWowP https://t.co/cmA5f4yu3a" (49558 views, 240 likes) https://x.com/i/status/1946251117085536624
+- Big Cat: "I love when golfers act like badasses. Take that club! https://t.co/pHIgCSnXPy" (49299 views, 319 likes) https://x.com/i/status/1946267692018573341
+- Barstool Sports: "Every Person In This Parking Lot Is A Coward For Not Fighting This Man Who Was Seen Chugging Tobasco Sauce And Allegedly Challenging Random Strangers To Fight https://t.co/FsaJKWRDbm https://t.co/OtU6qPrOGd" (44959 views, 20 likes) https://x.com/i/status/1946262488221127096
+- Big Cat: "Jerry O’Connell with the prestigious Bonk of the year Win!  https://t.co/ewSwYX4twx" (44065 views, 335 likes) https://x.com/i/status/1946269615455179188
+- OpenAI: "Pro rollout update: we are still working on enabling access for the European Economic Area and Switzerland but hope to get it to you soon." (42783 views, 130 likes) https://x.com/i/status/1946248271208513699
+- Mario Nawfal: "🚨🇺🇸 TRUMP &amp; EPSTEIN: WHAT WE KNOW - TIMELINE
+
+1992
+Trump and Epstein are seen socializing at a Mar-a-Lago party with NFL cheerleaders. NBC later airs footage.
+
+2000
+Trump, Melania, Epstein, and Ghislaine Maxwell are photographed together at Mar-a-Lago.
+
+2002
+Trump tells New York https://t.co/7j4ZIlcdJu https://t.co/AK3cBrGCih" (42443 views, 125 likes) https://x.com/i/status/1946256243024097782
+- Mario Nawfal: "🇺🇸 TRUMP’S NEW ALCATRAZ: $2B TO LOCK UP AMERICA’S WORST
+
+The famous island prison from the movies. 
+
+Trump wants to rebuild it into a real-life supermax fortress.
+
+Plans are flying around: demolish the whole thing and start fresh for $2B, or go cheaper and only use part of the https://t.co/liYHp7xfbj https://t.co/0n6WK9DksG" (36490 views, 95 likes) https://x.com/i/status/1946241050927874423
+- Mario Nawfal: "🇺🇸 NEWSOM: "SOMEONE IS GOING TO GET HURT" IF ICE KEEPS OPERATING THIS WAY
+
+"If I'm walking down the street with my kids and someone grabs me with a mask on and tries to throw me in an unmarked van... 
+
+I'm surprised someone hasn't gotten hurt. 
+
+Someone is going to get hurt.” https://t.co/xvesfB63C4 https://t.co/kOt4c1p4HU" (34685 views, 61 likes) https://x.com/i/status/1946248600020979749
+- Mario Nawfal: "🇺🇸 KILLERS, RAPISTS, GANG MEMBERS: TRUMP ROUNDS THEM UP
+
+MS-13 murderers, rapists, and child predators with Interpol red notices are being hunted down and deported.
+
+Brazilian armed robbers. Salvadoran gang leaders. 
+
+Guatemalan traffickers. 
+
+No more hiding in sanctuary cities. https://t.co/RCRAGNlwap https://t.co/2IqHckmUGj" (34419 views, 114 likes) https://x.com/i/status/1946243567921529180
+- Mario Nawfal: "🚨🇺🇸 UH, SAM… ABOUT THAT IPO: OPENAI BOARD WANTS NONPROFIT BACK IN CHARGE
+
+OpenAI’s advisory board just threw cold water on any dreams of taking the company fully corporate.
+
+In a new report, they say AI is “too consequential” to be left to profit-hungry execs and want stronger https://t.co/W89vuA1352 https://t.co/zFIyeFa19D" (34364 views, 73 likes) https://x.com/i/status/1946257599587872802
+- Sawyer Merritt: "NEWS: New Model Y L spotted on the road for the first time. Definitely looks bigger.
+
+Tesla China says this larger Model Y will be released this Fall. https://t.co/Kbm0E8Wcuk" (32564 views, 424 likes) https://x.com/i/status/1946262521607868834
+- Mario Nawfal: "PARTNERSHIP: The mining industry is broken. There are trillions in untapped mine waste.
+
+But one company cracked the code to profit and clean it up, turning mine waste into cash flow, clean and scalable.
+
+This is why clean gold mining initiatives are on my radar, especially those https://t.co/DTZK578jb0" (32567 views, 175 likes) https://x.com/i/status/1946265699627974955
+- World of Statistics: "monday 
+tuesday 
+wednesday 
+thursday 
+PAYDAY
+saturday 
+sunday" (32504 views, 165 likes) https://x.com/i/status/1946261184287809562
+- Bernie Sanders: "Solidarity with the nurses at McLaren Macomb Hospital in Clinton Township, Michigan who are striking for fair wages and staffing levels.
+
+In the face of massive Medicaid cuts, it is more important than ever that we support our health care workers. https://t.co/xUkZLwi6ed" (31651 views, 280 likes) https://x.com/i/status/1946265092204433771
+- Mario Nawfal: "🚨🇺🇸 BREAKING: TRUMP SLASHES USAID ONCE AND FOR ALL
+
+Over 22,000 federal jobs in Washington are gone. 
+
+Entire agencies like the USAID are being dismantled.
+
+Trump promised to cut the waste, and he's swinging the axe.
+
+Source: @MAGAVoice https://t.co/7st53Xdfkw https://t.co/0acVg4QaUx" (31029 views, 267 likes) https://x.com/i/status/1946253298807312701
+- Pardon My Take: "One of the greatest acceptance speeches in award show history https://t.co/qip7SvMj9U" (30867 views, 420 likes) https://x.com/i/status/1946268824497525127
+- Mario Nawfal: "🇺🇸 VP VANCE SLAMS WSJ’S TRUMP-EPSTEIN REPORT AS “UTTER BULLSHIT”
+
+The VP is torching the Wall Street Journal over its claim that Trump sent a sexually suggestive letter to Epstein.
+
+Trump has denied the story, threatened to sue, and is now pushing to unseal grand jury testimony. https://t.co/bXPi8syzDD https://t.co/vjI3h2Y6pR" (28449 views, 81 likes) https://x.com/i/status/1946253638063497332
+- Mario Nawfal: "🇺🇸 DEP TREASURY SEC.: “STABLECOINS WILL CEMENT THE DOLLAR’S GLOBAL DOMINANCE”
+
+Michael Faulkender:
+
+"We are gonna provide regulatory and legislative clarity to the use of stablecoins for modernizing the payment system.
+
+This is going to further cement the dollar as the world’s https://t.co/2AnaYGISfD https://t.co/dEhARrp5qA" (28357 views, 55 likes) https://x.com/i/status/1946258666694582584
+- Barstool Sports: "Captain America: Keegan Bradley Shoots A 67 Today At The Open, Starts Talking More Like A Guy Who Is Going To Be A Playing Captain At The Ryder Cup https://t.co/vxVPaaVep3 https://t.co/yhR6yY2PRB" (27440 views, 33 likes) https://x.com/i/status/1946270082306314361
+- Wonder of Science: "An incredible sunset on the top of Mount Hekla in Iceland captured by photographer Hörður Kristleifsson. 
+https://t.co/KeS8QGTVMg" (25341 views, 391 likes) https://x.com/i/status/1946248851662442564
+- Mario Nawfal: "🇺🇸 BORDER WALL RISING FAST: 1 DAY, 100 FEET
+
+New wall going up fast in Texas: 100+ feet of steel installed on day 1.
+
+Border Patrol Chief Michael Banks says 7 miles of new barrier are planned, with 30-foot panels being added swiftly.
+
+This is part of a joint push by Texas and the https://t.co/6bDHtnvAZM https://t.co/3OkNiA7TC1" (23988 views, 82 likes) https://x.com/i/status/1946263700450443372
+- International Space Station: "The International Space Station hosts commercial and private crews expanding space research and the space economy advancing society. https://t.co/1zhNn7JJ6q" (23520 views, 143 likes) https://x.com/i/status/1946251794738504161
+- Sawyer Merritt: "NEWS: @Tesla’s new Hollywood Diner and Supercharger is now officially showing up in the Tesla app.
+
+Tesla lists 80 Supercharger stalls with 325kW max charging speeds. It should be opening pretty soon!m. https://t.co/Gq60koWp9l" (22670 views, 539 likes) https://x.com/i/status/1946254893557145616
+- World of Statistics: "Day of the year: 199" (22852 views, 123 likes) https://x.com/i/status/1946268644851298695
+- Mario Nawfal: "TESLA'S HOLLYWOOD DINER IS A DRIVE-IN FEVER DREAM
+
+You pull up. Tap the screen inside your Tesla. Boom. Milkshake inbound.
+
+Then two 45-foot LED screens light up like Times Square had a baby with Blade Runner.
+
+The diner’s speakers sync with your car’s audio system. So yes, your https://t.co/Rlntbp54z5 https://t.co/jJVdNVmgUb" (22670 views, 79 likes) https://x.com/i/status/1946266302714175822
+- Tesla Optimus: "@elonmusk @Teslaconomics I’m fun to be around too" (18201 views, 1764 likes) https://x.com/i/status/1946262095353241865
+- Mario Nawfal: "🇺🇸 FALCON 9 KISSES THE CLOUDS, LANDS ON LOVE
+
+SpaceX just stuck another poetic landing - Falcon 9 sliced through cloud cover like butter and gently touched down on its drone barge “Of Course I Still Love You.”
+
+No pilots. No drama. 
+Nothing but AI-guided elegance, in the middle https://t.co/hNnB0EKouF https://t.co/SX7Fa4qHtd" (19909 views, 50 likes) https://x.com/i/status/1946266216688955578
+- Mario Nawfal: "MERCEDES LETS YOU ZOOM INTO WORK CALLS WHILE DRIVING
+
+Because nothing screams "safe driving" like livestreaming your face from a moving car.
+
+Mercedes-Benz is adding Microsoft Teams video calls to its new cars so you can pretend to work while cruising.
+
+You can't see slides or https://t.co/zf21Vep6tx" (19114 views, 47 likes) https://x.com/i/status/1946261185164444145
+- Mario Nawfal: "🇬🇧 KING CHARLES: ISLAMIC SCHOLARSHIP NOW “MORE IMPERATIVE THAN EVER”
+
+King Charles marked the 40th anniversary of the Oxford Centre for Islamic Studies by opening a new wing and launching an education programme in his name.
+
+He called the centre a “beacon of Islamic scholarship” https://t.co/edpWLMfc87 https://t.co/c5s45qUAV2" (17881 views, 26 likes) https://x.com/i/status/1946268734269644907
+- ARK Invest: "Research Trading Analyst and Associate Portfolio Manager for Digital Assets @dpuellARK details the challenges bitcoin has to overcome to become a global asset. ⬇️ https://t.co/AUIaxHPHft" (17350 views, 16 likes) https://x.com/i/status/1946257715233185848
+- Barstool Sports: "A Woman Has Been Arrested In Thailand For Having Sex With Buddhist Monks And Blackmailing Them With Sex Tapes https://t.co/BfRW9dXOi0 https://t.co/H1N5JtmDB6" (15957 views, 32 likes) https://x.com/i/status/1946272597982777635
+- Sawyer Merritt: "🤦‍♂️ https://t.co/dxf6J8VtIM" (14387 views, 172 likes) https://x.com/i/status/1946269250269638851
+- Car Dealership Guy: "Amazing show planned for today’s Daily Dealer Live:
+
+- Jeff Swickard, CEO of Swickard Group
+
+- Glenn Lundy, President of 800% Elite Automotive Club
+
+See you all soon!" (13922 views, 10 likes) https://x.com/i/status/1946245187186925971
+- Mario Nawfal: "🚨AI CAN “CODE”  -  BUT IT STILL SUCKS AT BEING A REAL ENGINEER
+
+Apparently the hype around AI replacing programmers is way ahead of reality.
+
+Sure, models can crank out LeetCode-style snippets, but ask them to refactor a legacy system or debug a race condition and they fall https://t.co/datnNePiMS https://t.co/g9lLa501ZW" (13805 views, 18 likes) https://x.com/i/status/1946271250042478948
+- Mario Nawfal: "🚨🇺🇸 TRUMP TO WSJ: “SEE YOU IN COURT” - ORDERS RELEASE OF EPSTEIN GRAND JURY FILES
+
+Trump says he’s suing The Wall Street Journal and News Corp after the paper reported he sent a lewd birthday note to Jeffrey Epstein. 
+
+Trump called the story “fake,” “defamatory,” and said he https://t.co/OXYgfxjd0R https://t.co/bwNRyxVHf0" (12549 views, 60 likes) https://x.com/i/status/1946272156683288750
+- Car Dealership Guy: "Glenn Lundy on Scaling Pitfalls, Swickard Auto’s Big Real Estate Move | Daily Dealer Live https://t.co/nzH5Hxs9iJ" (12449 views, 7 likes) https://x.com/i/status/1946254427503128674
+- Vintage Maps: ""The Flags of a Free Empire" showing the different flags of the British Empire on a map from 1910. https://t.co/Q6FF8yZxed" (11530 views, 212 likes) https://x.com/i/status/1946246856910016671
+- TESLARATI: "@elonmusk Give us one more cool tidbit, please!" (10744 views, 44 likes) https://x.com/i/status/1946257683104911404
+- @jason: "TWiST Live: Uber’s Robotaxi Push, ChatGPT Agent, Substack’s $100M https://t.co/o4sIevGUPG" (10395 views, 29 likes) https://x.com/i/status/1946255915428290816
+- Tesla Charging: "New Tesla Supercharger: Cankaya Ankara, Türkiye (12 stalls) 
+https://t.co/ejRBdlN3yC https://t.co/CPf86yx54q" (9137 views, 404 likes) https://x.com/i/status/1946241744569602407
+- World and Science: "Fascinating book! 
+
+Learn from sharks older than the U.S., trees that don't age, and even a backward-aging jellyfish: https://t.co/gWKaErfb9N  -AmazonAfflink" (9274 views, 10 likes) https://x.com/i/status/1946244357662646284
+- Tesla Charging: "New Tesla Supercharger: Aydin, Türkiye (8 stalls) 
+https://t.co/rZ98MuRqis https://t.co/CTAUo2dLLJ" (8904 views, 348 likes) https://x.com/i/status/1946246042728767727
+- Mario Nawfal: "@elonmusk 😂" (9039 views, 45 likes) https://x.com/i/status/1946270931355107666
+- Vintage Maps: "Canal of Panama, 1881 https://t.co/sF3aojdFoT" (8269 views, 186 likes) https://x.com/i/status/1946261699587145832
+- TESLARATI: "🚨 Elon confirms you will be able to order food from your car at the Tesla Diner!
+
+Additionally, audio from the movies will play in your car!! https://t.co/yCkh8SblGf" (8068 views, 58 likes) https://x.com/i/status/1946257647004483712
+- TESLARATI: "🚨 The Tesla Diner is now showing up on the phone app. 
+
+80 Superchargers!!! https://t.co/fdN2MzyZCg" (7853 views, 115 likes) https://x.com/i/status/1946252927187779718
+- Charles Hoskinson: "I was walking to the office and apparently there is a bear in the tree just hanging out https://t.co/y8Ow93ofTY" (7371 views, 307 likes) https://x.com/i/status/1946271434378019214
+- Max Velocity: "this is the most random HRRR supercell printer model run i've ever seen
+
+this will almost certainly not happen. in fact, tornado risk is near zero in Iowa tomorrow night. https://t.co/3SbfYrbKEP" (7270 views, 138 likes) https://x.com/i/status/1946264540758327625
+- World and Science: "Amazingly beautiful: The Black Eye Galaxy
+
+Credit: NASA and the Hubble Heritage Team (AURA/STScI); Acknowledgment: S. Smartt (Institute of Astronomy) and D. Richstone (U. Michigan) https://t.co/A7zAxhUDQK" (7204 views, 46 likes) https://x.com/i/status/1946264232799945040
+- CSPAN: "Conversation with Sens. @ChrisCoons &amp; @MarkWarner at @AspenSecurity #AspenSecurity – LIVE on C-SPAN https://t.co/9eYJrd8yY1 https://t.co/Hh8ddjmcM5" (6891 views, 8 likes) https://x.com/i/status/1946240832199143657
+- Only In Boston: "The Edward M. Kennedy Institute will present President Joe Biden with a Lifetime Achievement Award at its 10th Anniversary Celebration this fall, an event that the former president will attend." (6443 views, 36 likes) https://x.com/i/status/1946261183847408005
+- Only In Boston: "Massachusetts’ sales tax holiday is set for August 9–10!
+
+Most retail items under 2,500 are tax-free — but keep in mind these exclusions:
+• Meals
+• Motor vehicles &amp; boats
+• Gas &amp; electricity
+• Tobacco &amp; marijuana
+• Alcohol
+• Any item over $2,500" (6116 views, 16 likes) https://x.com/i/status/1946246084289843493
+- CSPAN: "Discussion on Security Implications of AI @AspenSecurity #AspenSecurity – LIVE on C-SPAN https://t.co/URJ904McaO" (6024 views, 6 likes) https://x.com/i/status/1946256060399989113
+- Car Dealership Guy: "[NEWS] The disconnect between dealer strategy and shopper sentiment is growing:
+
+Per a new Urban Science x Harris Poll survey—
+
+Dealers are bullish on emerging tech. Consumers, not so much.
+
+Similarly, optimism around AI is up on the dealer side, but buyer sentiment is cooling," (5524 views, 4 likes) https://x.com/i/status/1946270972274983206
+- CSPAN: "National Urban League Awards Women in Leadership (@naturbanleague #NULConf25) – LIVE on C-SPAN2 https://t.co/lO9s1Vpkiu https://t.co/pLo3gRAHbA" (5069 views, 5 likes) https://x.com/i/status/1946255901884616861
+- History Defined: "A farm wife washes clothes at the Lake Dick Project. Arkansas, 1938.
+
+Source: Farm Security Administration, photo by Russell Lee. https://t.co/symSXSBCIP" (4940 views, 11 likes) https://x.com/i/status/1946246327475511744
+- Mario Nawfal: "🇧🇷 🇺🇸  EDUARDO BOLSONARO: SILENCING MY FATHER WON’T SILENCE BRAZIL
+
+Eduardo Bolsonaro accused Justice Alexandre de Moraes of weaponizing Brazil’s Supreme Court to silence his father, calling him a political gangster in robes.
+
+The raid on Jair Bolsonaro’s home was authorized https://t.co/0bIWjkbfZH https://t.co/LlZOYpwh8z" (4592 views, 50 likes) https://x.com/i/status/1946274018195108332
+- History Defined: ""Group of boys, ages 13 to 15, working at American Woolen Mills in Winooski. Most had been employed for over a year and were illiterate. At one gate, 27 children appearing under age 15 were counted. Vermont, 1910.
+
+Source: National Child Labor Committee, photo by Lewis Hine." https://t.co/4J4gzNFlWh" (4594 views, 11 likes) https://x.com/i/status/1946254391071178772
+- The Limiting Factor: "There's still great stuff happening with the Trump administration 
+
+But I find myself unable to get excited about it anymore with the backdrop of their position on the Epstein files. 
+
+The magic is gone, lol https://t.co/PZ1JASDxgu" (4304 views, 69 likes) https://x.com/i/status/1946240615282299379
+- History Defined: "31 Iconic Photos Of The Great Depression
+https://t.co/9XrYlbSWHo" (4328 views, 3 likes) https://x.com/i/status/1946246328855437659

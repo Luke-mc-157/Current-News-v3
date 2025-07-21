@@ -3,13 +3,19 @@ import { useQuery } from "@tanstack/react-query";
 import TopicInput from "@/components/topic-input";
 import HeadlineCard from "@/components/headline-card";
 import PodcastGenerator from "@/components/podcast-generator";
+import { RssButton } from "@/components/rss-manager";
 // Live search toggle removed - using only xAI Live Search
-import XLoginButton from "@/components/x-login-button";
+
 import { Button } from "@/components/ui/button";
+import { AuthModal } from "@/components/AuthModal";
+import { useAuth } from "@/contexts/AuthContext";
+import { LogOut, User } from "lucide-react";
 import type { Headline } from "@shared/schema";
 
 export default function Home() {
   const [submittedTopics, setSubmittedTopics] = useState<string[]>([]);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const { user, logout } = useAuth();
   // Always use Live Search - removed toggle functionality
 
   const { data: headlinesData, isLoading: headlinesLoading } = useQuery({
@@ -46,7 +52,7 @@ export default function Home() {
       <header className="bg-white shadow-sm border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
+            <div className="flex items-baseline">
               <h1 className="text-2xl font-bold text-slate-900">Current</h1>
               <span className="ml-2 text-sm text-slate-500 hidden sm:block">
                 News That Matters to You
@@ -59,19 +65,36 @@ export default function Home() {
               <a href="/scraper-test" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Scraper Test
               </a>
-              <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
-                My Podcasts
+              <a href="/podcasts" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
+                Podcasts
               </a>
               <a href="#" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Settings
               </a>
-              <XLoginButton 
-                variant="outline" 
-                size="sm"
-                onAuthSuccess={(accessToken) => {
-                  console.log('X authentication successful');
-                }}
-              />
+              {user ? (
+                <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-2 text-sm text-slate-600">
+                    <User className="h-4 w-4" />
+                    <span>{user.username}</span>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={logout}
+                  >
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Logout
+                  </Button>
+                </div>
+              ) : (
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={() => setShowAuthModal(true)}
+                >
+                  Login
+                </Button>
+              )}
             </nav>
           </div>
         </div>
@@ -142,6 +165,9 @@ export default function Home() {
           </section>
         )}
       </main>
+      
+      {/* Auth Modal */}
+      <AuthModal open={showAuthModal} onOpenChange={setShowAuthModal} />
     </div>
   );
 }

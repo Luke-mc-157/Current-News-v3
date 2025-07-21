@@ -5,7 +5,21 @@ import { z } from "zod";
 export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   username: text("username").notNull().unique(),
+  email: text("email").notNull().unique(),
   password: text("password").notNull(),
+  emailVerified: boolean("email_verified").default(false),
+  lastLogin: timestamp("last_login"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const passwordResetTokens = pgTable("password_reset_tokens", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  token: text("token").notNull().unique(),
+  expiresAt: timestamp("expires_at").notNull(),
+  usedAt: timestamp("used_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
 export const xAuthTokens = pgTable("x_auth_tokens", {
@@ -60,14 +74,30 @@ export const podcastContent = pgTable("podcast_content", {
   fetchedAt: timestamp("fetched_at").defaultNow().notNull(),
 });
 
+export const userRssFeeds = pgTable("user_rss_feeds", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  feedUrl: text("feed_url").notNull(),
+  feedName: text("feed_name"),
+  isActive: boolean("is_active").default(true).notNull(),
+  lastFetched: timestamp("last_fetched"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
 export const podcastEpisodes = pgTable("podcast_episodes", {
   id: serial("id").primaryKey(),
   userId: integer("user_id"),
   headlineIds: jsonb("headline_ids").$type<string[]>().notNull(),
   script: text("script").notNull(),
   audioUrl: text("audio_url"),
+  audioLocalPath: text("audio_local_path"), // Local file path
+  audioSizeBytes: integer("audio_size_bytes"), // File size
+  audioDurationSeconds: integer("audio_duration_seconds"), // Actual duration
   voiceId: text("voice_id"),
   durationMinutes: integer("duration_minutes"),
+  topics: text("topics").array(), // Topics used for generation
+  wasScheduled: boolean("was_scheduled").default(false), // Whether this was auto-generated
   createdAt: timestamp("created_at").defaultNow().notNull(),
   emailSentAt: timestamp("email_sent_at"),
 });
@@ -101,6 +131,46 @@ export const userTimelinePosts = pgTable("user_timeline_posts", {
   viewCount: integer("view_count").default(0),
   postUrl: text("post_url"),
   fetchedAt: timestamp("fetched_at").defaultNow().notNull(),
+});
+
+// Automatic podcast preferences
+export const podcastPreferences = pgTable("podcast_preferences", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().unique(),
+  enabled: boolean("enabled").default(false).notNull(),
+  cadence: text("cadence").notNull(), // 'daily' | 'weekday' | 'custom'
+  customDays: integer("custom_days").array(), // 0-6 (Sunday-Saturday)
+  times: jsonb("times").$type<string[]>().notNull(), // ["08:00", "18:00"] - times in user's local timezone
+  timezone: text("timezone").notNull().default("America/Chicago"), // User's selected timezone (IANA format)
+  topics: text("topics").array().notNull(),
+  duration: integer("duration").notNull(), // minutes (5, 10, 15, 30)
+  voiceId: text("voice_id").notNull(),
+  enhanceWithX: boolean("enhance_with_x").default(false).notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+// Scheduled podcast jobs
+export const scheduledPodcasts = pgTable("scheduled_podcasts", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  scheduledFor: timestamp("scheduled_for").notNull(), // When to start processing (10 min before delivery)
+  deliveryTime: timestamp("delivery_time").notNull(), // When to send email
+  status: text("status").notNull(), // 'pending' | 'processing' | 'completed' | 'failed'
+  preferenceSnapshot: jsonb("preference_snapshot"), // Snapshot of preferences at schedule time
+  episodeId: integer("episode_id"), // Link to generated podcast episode
+  errorMessage: text("error_message"),
+  processStarted: timestamp("process_started"),
+  processCompleted: timestamp("process_completed"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// Track user's last search topics
+export const userLastSearch = pgTable("user_last_search", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().unique(),
+  topics: text("topics").array().notNull(),
+  searchedAt: timestamp("searched_at").defaultNow().notNull(),
 });
 
 export const insertUserTopicsSchema = createInsertSchema(userTopics).omit({
@@ -144,6 +214,28 @@ export const insertUserTimelinePostsSchema = createInsertSchema(userTimelinePost
   fetchedAt: true,
 });
 
+export const insertPodcastPreferencesSchema = createInsertSchema(podcastPreferences).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
+export const insertScheduledPodcastsSchema = createInsertSchema(scheduledPodcasts).omit({
+  id: true,
+  createdAt: true,
+});
+
+export const insertUserLastSearchSchema = createInsertSchema(userLastSearch).omit({
+  id: true,
+  searchedAt: true,
+});
+
+export const insertUserRssFeedsSchema = createInsertSchema(userRssFeeds).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
 export type InsertUserTopics = z.infer<typeof insertUserTopicsSchema>;
 export type InsertHeadline = z.infer<typeof insertHeadlineSchema>;
 export type InsertPodcastSettings = z.infer<typeof insertPodcastSettingsSchema>;
@@ -152,6 +244,10 @@ export type InsertPodcastEpisode = z.infer<typeof insertPodcastEpisodeSchema>;
 export type InsertXAuthTokens = z.infer<typeof insertXAuthTokensSchema>;
 export type InsertUserFollows = z.infer<typeof insertUserFollowsSchema>;
 export type InsertUserTimelinePosts = z.infer<typeof insertUserTimelinePostsSchema>;
+export type InsertPodcastPreferences = z.infer<typeof insertPodcastPreferencesSchema>;
+export type InsertScheduledPodcasts = z.infer<typeof insertScheduledPodcastsSchema>;
+export type InsertUserLastSearch = z.infer<typeof insertUserLastSearchSchema>;
+export type InsertUserRssFeeds = z.infer<typeof insertUserRssFeedsSchema>;
 
 export type UserTopics = typeof userTopics.$inferSelect;
 export type PodcastSettings = typeof podcastSettings.$inferSelect;
@@ -160,6 +256,12 @@ export type PodcastEpisode = typeof podcastEpisodes.$inferSelect;
 export type XAuthTokens = typeof xAuthTokens.$inferSelect;
 export type UserFollows = typeof userFollows.$inferSelect;
 export type UserTimelinePosts = typeof userTimelinePosts.$inferSelect;
+export type PasswordResetToken = typeof passwordResetTokens.$inferSelect;
+export type InsertPasswordResetToken = z.infer<typeof insertPasswordResetTokenSchema>;
+export type PodcastPreferences = typeof podcastPreferences.$inferSelect;
+export type ScheduledPodcasts = typeof scheduledPodcasts.$inferSelect;
+export type UserLastSearch = typeof userLastSearch.$inferSelect;
+export type UserRssFeeds = typeof userRssFeeds.$inferSelect;
 
 // Headline type for application use
 export type Headline = {
@@ -186,5 +288,11 @@ export type InsertUser = z.infer<typeof insertUserSchema>;
 
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
+  email: true,
   password: true,
+});
+
+export const insertPasswordResetTokenSchema = createInsertSchema(passwordResetTokens).omit({
+  id: true,
+  createdAt: true,
 });

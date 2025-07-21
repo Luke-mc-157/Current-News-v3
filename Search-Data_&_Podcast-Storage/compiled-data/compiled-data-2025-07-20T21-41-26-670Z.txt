@@ -1,0 +1,44 @@
+
+TOPIC: test topic
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Anoma testnet launch attracts significant user participation on social media.",
+      "citations": [
+        "https://www.reuters.com/"
+      ]
+    },
+    {
+      "headline": "Online campaign demands early STET exam in Bihar before TRE 4.0.",
+      "citations": [
+        "https://www.bbc.com/news/world/asia/india"
+      ]
+    }
+  ],
+  "notes": "Only two distinct stories identified from available data; additional stories could not be verified within the last 24 hours."
+}
+
+X POSTS FROM SEARCH (4):
+- Paipai: "In Monday ‌, a lot of user started test @anoma testnet from their referred code. After succinct, anoma testnet  is most hype testnet now , website is pretty clean , especially love their leverage trading features. Love to see new interesting things happening in ecosystem🫡" (85 views, 1 likes) https://x.com/sukikiki69/status/1946886513016680471
+- Ismi_Yusuf 🦅𝔽rAI: "@AdrianFts70 @anoma @Anoma rolled out its gamified Testnet, it has attracted a massive wave of interest, and the buzz continues to grow" (16 views, 1 likes) https://x.com/yusbaba11/status/1946496175596572810
+- Khabar Seemanchal | ख़बर सीमांचल: "बिहार में TRE 4.0  से पहले STET  परीक्षा के आयोजन की मांग को लेकर ऑनलाइन कैंपेन का धमाल, 2.5 लाख से ज्यादा पोस्ट के साथ टॉप ट्रेंडिंग पर घंटों से बरकरार #ReleaseSTET #ReleaseSTET2025 https://t.co/py4sAT6bJY" (243 views, 6 likes) https://x.com/khabarsemanchal/status/1946581892125327405
+- Hasan Jawed: "@khabarsemanchal बिहार में TRE 4.0  से पहले STET  परीक्षा के आयोजन की मांग को लेकर ऑनलाइन कैंपेन का धमाल, 2.5 लाख से ज्यादा पोस्ट के साथ टॉप ट्रेंडिंग पर घंटों से बरकरार #ReleaseSTET #ReleaseSTET2025" (36 views, 1 likes) https://x.com/RoohaniHasan/status/1946582414903394404
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Content not accessible; no factual summary available. [https://www.reuters.com/world/]
+
+- [Article from www.reuters.com]: Content not accessible; no factual summary available. [https://www.reuters.com/]
+
+- Google News: Google News aggregates real-time news from multiple sources worldwide. Top stories include reports of 67 people killed in Gaza by Israeli fire while seeking aid, as stated by medics. In Japan, Prime Minister Shigeru Ishiba's coalition lost control of the upper house in recent elections. Other highlights cover a US Border Patrol agent shot in New York City and a prisoner swap involving a kite surfer between the US and Venezuela. The platform also features local weather updates and various global news perspectives. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- [Article from www.washingtonpost.com]: Content not accessible; no factual summary available. [https://www.washingtonpost.com/]
+
+- India | Latest News & Updates | BBC News: BBC News provides comprehensive coverage of India-related topics, including a shift among the wealthy to exclusive private clubs driven by new wealth creators. Sports updates highlight England hosting the next three World Test Championship finals as awarded by the International Cricket Council. Economic and political stories detail ongoing trade negotiations between India and the US, with statements on nearing a deal, and issues involving a US trading firm banned in India for alleged market manipulation. Additional reports cover a hit-and-run incident involving a marathon runner and Meta's apology for a faulty auto-translation that incorrectly declared an Indian minister dead. The content also features India's rise as a major exporter of french fries and discussions on environmental and historical issues. [https://www.bbc.com/news/world/asia/india]
+Key Quotes: "India and US very close to finalising trade deal" - Donald Trump
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News delivers breaking news across various categories, including a report on a US Border Patrol agent shot in the face in New York City by an individual with a criminal history. Political coverage features Donald Trump's threats to block a stadium deal if a sports team does not change its nickname. Entertainment and sports sections highlight viral moments, such as a celebrity's child at a golf event and WNBA All-Star game updates. The site also covers health and technology topics, including warnings about cybersecurity threats and dietary advice. Additional stories address world events, crime, and opinion pieces on current affairs. [https://www.foxnews.com/]
+Key Quotes: "Put a restriction on Commanders' new stadium if they don't get rid of nickname" - Donald Trump
+
+- [Article from www.reuters.com]: Content not accessible; no factual summary available. [https://www.reuters.com/world/]

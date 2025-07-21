@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool FC initiates contact with Eintracht Frankfurt regarding forward Hugo Ekitike.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/\"\n      ]\n    },\n    {\n      \"headline\": \"This Is Anfield publishes updates on latest Liverpool FC news and reports.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    },\n    {\n      \"headline\": \"This Is Anfield provides details on Liverpool FC transfer rumors and speculation.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/\"\n      ]\n    },\n    {\n      \"headline\": \"CaughtOffside features news on Liverpool FC transfer activities.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for high-engagement X posts related to Liverpool FC from the last 24 hours was sparse in the searches conducted. Only relevant news and RSS sources were used to compile the stories, ensuring all content is based on available factual information from reputable outlets.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6493702/2025/07/16/hugo-ekitike-liverpool-transfer-eintracht-frankfurt/",
+    "https://www.bbc.com/news/uk",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/",
+    "https://lfpress.com/news/local-news/top-clicks-the-week-that-was-in-viral-stories-187",
+    "https://x.com/SawyerMerritt/status/1946743553197056439",
+    "https://x.com/elonmusk/status/1946742000893714690",
+    "https://x.com/elonmusk/status/1946740057978912930"
+  ]
+}

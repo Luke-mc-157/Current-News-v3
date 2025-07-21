@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"notes\": \"Data from X posts shows low engagement overall; stories are inferred from available posts and correlated with general news sources. Only directly related sources are included.\",\n  \"stories\": [\n    {\n      \"headline\": \"Plane crash reported in Oakey, Regional Queensland\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"20-year-old bike rider killed in police pursuit in Newcastle\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Supreme Court reprimands Enforcement Directorate in case involving Karnataka CM's wife\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Event or rally associated with 21 July 2025 reported\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/world/",
+    "https://www.axios.com/",
+    "https://www.cbsnews.com/",
+    "https://www.reuters.com/",
+    "https://x.com/jayystanlee/status/1946848297978896886",
+    "https://x.com/Zee24Ghanta/status/1947187876531466321",
+    "https://x.com/InstaBharat/status/1947185965316890948",
+    "https://x.com/kensbookinfo/status/1946998754034196529",
+    "https://x.com/InstaBharat/status/1947200717338362096"
+  ]
+}

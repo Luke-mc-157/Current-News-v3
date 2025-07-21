@@ -1,0 +1,464 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_posts": [
+    {
+      "description": "Posts on X about Tesla's new Diner, including details on sandwiches and burgers served in a Cybertruck-themed box, and an Optimus robot serving popcorn. These posts have generated significant interest due to their focus on innovative Tesla features.",
+      "engagement_metrics": "High, based on user interactions and shares observed on X"
+    }
+  ],
+  "correlating_news_articles": [
+    {
+      "title": "Tesla IT exec with no traditional car-sales experience is running sales",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/tesla-it-exec-with-no-traditional-car-sales-experience-is-running-sales-sources-2025-07-18",
+      "summary": "A Tesla information technology executive is now leading the sales team amid challenges like declining sales, highlighting internal shifts in operations."
+    },
+    {
+      "title": "Musk Clears Final Hurdles for Tesla and Starlink in India",
+      "sourc
+
+X POSTS FROM SEARCH (2):
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (14792 views, 413 likes) https://x.com/SawyerMerritt/status/1946703318895526379
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (33662 views, 799 likes) https://x.com/SawyerMerritt/status/1946702346634789257
+
+SUPPORTING ARTICLES (6):
+- Musk Clears Final Hurdles for Tesla and Starlink in India: Elon Musk's Starlink received final regulatory approval in India to begin commercial satellite broadband operations after a three-year process. Tesla opened its first showroom in Mumbai, allowing Indian consumers to purchase electric vehicles for the first time. High import duties and taxes in India make Tesla cars expensive, with the Model Y starting at around $70,000 compared to $44,990 in the US. Experts noted that Starlink may focus on semi-urban areas for better market penetration due to rural challenges, and Tesla faces potential sales limitations from premium pricing. The developments highlight Musk's ongoing efforts to expand in India despite a complicated relationship with Prime Minister Narendra Modi. [https://www.reuters.com/business/autos-transportation/tesla-it-exec-with-no-traditional-car-sales-experience-is-running-sales-sources-2025-07-18/]
+Key Quotes: "symbolically important, commercially insignificant." - Eliot Pence | "Starlink will have to store the data it collects in India, so the Indian government will have access to it for national security reasons, and allow the Indian government and law enforcement agencies to suspend or shut down internet services when requested." - Varun Gupta | "The premium price may limit Tesla’s future in the country." - Pravin Krishna
+
+- First Look at Tesla’s 2025.26 Update [Photos + Videos]: Tesla's 2025.26 software update introduces Grok AI assistant for conversational interactions in vehicles with AMD processors, available in the US. New features include Light Sync for ambient lighting synchronized with music, enhancements to the Dashcam app for better playback controls, and a Sentry Mode glow using red pulsing lights for threat detection. The update also adds an Onboarding Guide for new owners covering vehicle setup and controls, along with audio settings improvements like equalizer presets. Grok does not yet control vehicle functions but is context-aware and free with Premium Connectivity, with Elon Musk confirming a future 'Hey, Grok' wake word. Other additions enhance user experience, such as Supercharger site information and various quality-of-life changes. [https://www.bbc.com/news/world]
+Key Quotes: "Coming" - Elon Musk
+
+---
+
+TOPIC: Sports Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "query": "Biggest sports transfer news stories from July 18 to July 19, 2025",
+  "date_range": "2025-07-18 to 2025-07-19",
+  "high_engagement_stories": [
+    {
+      "summary": "Based on analysis of posts found on X and correlated news sources, the biggest story involves potential major transfers at Real Madrid, including discussions around selling players like Rodrygo, Ceballos, Rudiger, and Carvajal to fund new signings. This story gained traction due to high engagement around transfer rumors.",
+      "correlating_articles": [
+        {
+          "source_type": "news",
+          "source": "Yardbarker",
+          "title": "Real Madrid Transfer News: Rodrygo, Ceballos, Rudiger, Carvajal & More - July 19, 2025",
+          "description": "Real Madrid is considering selling several experienced players this summer to finance a big splash signing, highlighting the club's strategy amid ongoing transfer speculation."
+        },
+        {
+          "source_type": "news",
+          "source"
+
+X POSTS FROM SEARCH (2):
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (15132 views, 414 likes) https://x.com/SawyerMerritt/status/1946703318895526379
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (35496 views, 821 likes) https://x.com/SawyerMerritt/status/1946702346634789257
+
+SUPPORTING ARTICLES (6):
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic provides comprehensive sports coverage including breaking news and analysis across various leagues. A key highlight is Damian Lillard rejoining the Portland Trail Blazers on a three-year deal, marking a significant NBA player movement. The article also covers other sports updates such as WNBA All-Star events and golf tournaments, but transfer-related content is limited. It includes mentions of potential transfers and team changes in contexts like the NFL and MLB. Overall, it aggregates sports news with some focus on player movements. [https://www.nytimes.com/athletic/]
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The summer 2025 transfer window opened in two parts, allowing clubs to sign players before and after the Club World Cup. It details numerous completed transfers in July across the Premier League, English Football League, Scottish Premiership, Women's Super League, and international deals. Notable moves include Noni Madueke's transfer from Chelsea to Arsenal for £48.5m and Sean Longstaff's move from Newcastle to Leeds for £12m. The article lists loan deals, free transfers, and undisclosed fees, providing a comprehensive overview of player movements. It also specifies window closing dates for various leagues to keep fans informed. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- BBC Sport - Scores, Fixtures, News - Live Sport: BBC Sport offers live updates, scores, and news across multiple sports including football, cricket, and boxing. In the football section, it covers transfer gossip such as a potential deal for Marcus Rashford to join Barcelona and Jadon Sancho moving to Juventus. Other highlights include updates on the Women's Euros and golf events, but transfer news is interspersed with general sports coverage. The article emphasizes key player movements and includes sections on team news and fixtures. It serves as a hub for real-time sports information with some focus on ongoing transfer activities. [https://www.bbc.com/sport]
+Key Quotes: ""I've got to do a real demolition job on Usyk - Dubois."" - Daniel Dubois
+
+- Real Madrid Transfer News: Rodrygo, Ceballos, Rudiger, Carvajal & More - July 19, 2025: The article focuses on Real Madrid's transfer activities, discussing potential sales of players like Rodrygo, Ceballos, Rudiger, and Carvajal to fund new signings. It reports Arsenal's interest in Rodrygo with a possible $93 million offer, though below Real Madrid's valuation. Real Betis has contacted about Dani Ceballos, but he prefers to stay, and the club values him highly. Real Madrid extended Thibaut Courtois' contract and is open to offers for Rudiger from Saudi clubs. It also mentions interest in younger players like Jacobo Ramon by Como, highlighting the club's strategy in the transfer market. [https://www.yardbarker.com/soccer/articles/real_madrid_transfer_news_rodrygo_ceballos_rudiger_carvajal_more_july_19_2025/s1_17679_42473914]
+
+- Real Madrid Transfer News: Rodri, Vinicius Jr, Vazquez, Konate & More - July 18, 2025: Real Madrid is linked with several transfer targets and potential outgoing players. The article reports rekindled interest in Manchester City's Rodri, with Xabi Alonso seeking a new midfielder, valued at around $116 million. It discusses a massive offer from a Saudi club for Vinicius Jr worth $407 million, amid stalled contract talks. Juventus shows interest in Lucas Vazquez on a free transfer, and Real Madrid is willing to bid up to $29 million for Liverpool's Ibrahima Konate. AC Milan has opened talks for Fran Garcia, indicating possible defensive changes. [https://www.si.com/onsi/soccer/real-madrid/transfers-and-rumors/real-madrid-transfer-news-rodri-vinicius-jr-vazquez-konate-more-july-18-2025]
+
+- Football Transfer News Highlights July 18: Big Signing For Manchester United. Bryan Mbuemo Joins For...: The article highlights major football transfer news, with Manchester United agreeing to sign Bryan Mbuemo from Brentford for an initial £65 million plus add-ons. Arsenal secured the signing of Chelsea winger Noni Madueke for £48.5 million, beating other clubs. Napoli completed the signing of Lorenzo Lucca from Udinese, and there are updates on potential moves involving players like Vinicius Jr and Hugo Ekitike. Liverpool and Newcastle United are competing for strikers, with bids and personal terms agreed in some cases. It covers a range of transfer activities across Europe's top leagues during the summer window. [https://sports.ndtv.com/football/football-transfer-news-live-july-18-latest-transfer-news-fabrizio-romano-alexander-isak-luis-dias-benjamin-sesko-viktor-gyokeres-bryan-mbuemo-8898540]
+
+---
+
+TOPIC: Technology News
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on searches for high-engagement posts on X and correlating articles from news and RSS sources, the biggest technology news stories from July 18 to July 19, 2025, include advancements in AI, China's AI initiatives, and innovations in robotics and electric vehicles. This compilation draws from high-engagement content and supporting articles, with additional semantic posts for broader context.",
+  "high_engagement_stories": [
+    {
+      "title": "Tesla's Innovations in Robotics and Dining Experiences",
+      "description": "Posts found on X highlight Tesla's Optimus robot serving at their new Diner and Supercharger, along with new food offerings, indicating growing interest in AI-driven consumer applications.",
+      "source_type": "X and RSS",
+      "source_name": "Posts from technology enthusiasts on X, correlated with RSS feeds",
+      "publication_date": "July 19, 2025",
+      "supporting_articles": [
+        {
+          "title": "How Artificial Intelligence is 
+
+X POSTS FROM SEARCH (2):
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (15434 views, 418 likes) https://x.com/SawyerMerritt/status/1946703318895526379
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (35496 views, 830 likes) https://x.com/SawyerMerritt/status/1946702346634789257
+
+SUPPORTING ARTICLES (6):
+- China Is Spending Billions to Become an A.I. Superpower: China is investing billions of dollars in artificial intelligence to close the gap with the United States, using state-backed industrial policies similar to those in electric vehicles and solar power. This includes funding for AI infrastructure, chips, data centers, and start-ups, with local governments providing subsidies and incentives to attract talent. Despite U.S. restrictions on technology exports, Chinese companies like DeepSeek and Alibaba have developed competitive open-source AI systems. The approach has helped concentrate engineering talent and resources, but it faces inefficiencies and challenges in adapting to rapid technological changes. Chinese AI advancements may lag in performance compared to U.S. counterparts in some areas. [https://www.reuters.com/technology/artificial-intelligence/]
+Key Quotes: "China is applying state support across the entire A.I. tech stack, from chips and data centers down to energy." - Kyle Chan, RAND Corporation | "For the government to help us cover even 13 or 15 percent of our early-stage research costs, that’s a huge benefit." - Jia Haojun, founder of Deep Principle | "make sure democratic A.I. wins over authoritarian A.I." - Sam Altman, OpenAI CEO
+
+- Security news weekly round-up - 18th July 2025: The article summarizes key cybersecurity threats and vulnerabilities reported between July 11 and 18, 2025, including a zero-day flaw that could have compromised multiple users and marketplaces. It highlights successful jailbreaks on AI model Grok-4 using methods like Echo Chamber and Crescendo, and warnings from companies such as OpenAI, Google DeepMind, and Anthropic about potentially losing the ability to understand AI systems. Other topics include malware techniques such as hiding in DNS records, exploiting end-of-life devices like SonicWall, and using AI for real-time data theft commands. The round-up also covers the abuse of platforms like GitHub for malware distribution, emphasizing the evolving nature of cyber risks. [https://www.reuters.com/world/us/]
+Key Quotes: "The vulnerability allowed any attacker to gain full control over the entire marketplace." - Unknown | "We may be losing the ability to understand AI." - OpenAI, Google DeepMind, and Anthropic
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Fabrizio Romano: "🚨🔴⚪️ EXCL: Athletic Club made first verbal proposal to Al Nassr today for Aymeric Laporte.
+
+Laporte, out of Al Nassr project at this stage with Athletic Club pushing to make it happen. https://t.co/peJKMX4C7s" (1456403 views, 21788 likes) https://x.com/i/status/1946652910198104492
+- Fabrizio Romano: "🚨🟡🔴 Manchester City expect Galatasaray to approach with opening bid for Éderson soon.
+
+Talks already ongoing with the Brazilian goalkeeper while club to club negotiations are yet to start.
+
+Man City, working on James Trafford as new goalkeeper. https://t.co/DkPDBEULvd" (939843 views, 15201 likes) https://x.com/i/status/1946665110480568370
+- Fabrizio Romano: "🚨⚒️ Kyle Walker-Peters has just completed his medical at West Ham.
+
+Three year deal confirmed, deal done since Friday. https://t.co/X4IVEJMPGh" (905400 views, 14061 likes) https://x.com/i/status/1946651418951397876
+- Fabrizio Romano: "🚨💣 Liverpool are closing in on Hugo Ekitike deal with Eintracht Frankfurt as new bid has been submitted.
+
+Package worth up to €90m with add-ons also part of the proposal, being structured between the two clubs.
+
+Ekitkke has full agreement with #LFC on a six year contract. https://t.co/x9WwH09KAE" (706229 views, 14179 likes) https://x.com/i/status/1946685802169106572
+- Fabrizio Romano: "🚨🇦🇷 Nothing advanced or concrete into reports of Gio Simeone joining Serie A side Pisa.
+
+Cholito’s priority this summer is a move out of Italy with La Liga clubs keen and Premier League also an option. https://t.co/PFGGJVFMaY" (634888 views, 7199 likes) https://x.com/i/status/1946658218169545019
+- Fabrizio Romano: "⏳⌛️🦅🇨🇴 #Benfica https://t.co/wazKw5N0j7" (485926 views, 4401 likes) https://x.com/i/status/1946697294901911965
+- Fabrizio Romano: "Liverpool and Hugo Ekitike, close. 🔴🔜 https://t.co/Opzzy1Fwml" (436577 views, 11502 likes) https://x.com/i/status/1946702141625602173
+- Fabrizio Romano: "🚨🟡🔴 After Ferguson and El Aynaoui done with Wesley closer, AS Roma are also planning to advance on deal for 22 year old CB Daniele Ghilardi.
+
+New round of talks soon with Verona as Ghilardi said yes to Roma project over two Spanish clubs. https://t.co/8xNMTch9cP" (238996 views, 2872 likes) https://x.com/i/status/1946698069652685220
+- Fabrizio Romano: "🚨🇸🇦 Excl: Saudi side Al Najmah SC are set to sign Eric Bailly as new centre back.
+
+Former Villarreal and Man United defender, set for new chapter in Saudi. https://t.co/IVtP6Wv5g8" (233496 views, 2934 likes) https://x.com/i/status/1946702174416671004
+- Adam Schefter: "49ers have released S George Odum, who played in 40 games over three seasons with the team, registering 14 tackles, five passes defensed and one interception, while adding 36 tackles on special teams." (197048 views, 479 likes) https://x.com/i/status/1946674759565021410
+- CNN: "Astronomer CEO resigns from his role after he was caught embracing an employee in viral Coldplay concert video. https://t.co/y82UnqhSrv" (186048 views, 590 likes) https://x.com/i/status/1946655446460190730
+- Fabrizio Romano: "🚨🟡🔵 Gio Reyna has opened doors for move to Parma as Serie A side have presented their project.
+
+Negotiations well underway with Borussia Dortmund as deal can get done soon.
+
+Official talks ongoing. ⏳🇺🇸 https://t.co/wi8cjiokYt" (178689 views, 2876 likes) https://x.com/i/status/1946703604666016198
+- Dave Portnoy: "I’ve never downloaded Twitch or any streaming platform in my life.  That was until today.  Studbudz has done more marketing for the @WNBA with their 72 hour stream than the bozos running the league have done since its inception. They are hilarious and humanize everybody" (176227 views, 1039 likes) https://x.com/i/status/1946657453825040815
+- Adam Schefter: "Bears now have signed all three of their second-round picks from the 2025 NFL Draft: wide receiver Luther Burden III, offensive lineman Ozzy Trapilo and defensive lineman Shemar Turner." (147712 views, 856 likes) https://x.com/i/status/1946661719457071254
+- Fabrizio Romano: "🟡🔴✈️ Neil El Aynaoui has just landed in Rome to sign in as new AS Roma player.
+
+€23m plus €2m add-ons to RC Lens, five year deal for Moroccan midfielder. 🇲🇦
+
+@gabspalletta 🎥 https://t.co/hNTSRaqltG" (133650 views, 2037 likes) https://x.com/i/status/1946688400859316385
+- Ian Rapoport: "The #Chiefs have agreed to terms with second-round pick DT Omarr Norman-Lott, sources say, their 63rd overall selection. Deal was done by @IanGrutman of @GSEworldwide. https://t.co/zYT3B06ZXj" (102593 views, 624 likes) https://x.com/i/status/1946662777927368709
+- Big Cat: "What if it was all a marketing stunt to bring awareness to Coldplay’s summer tour?" (79829 views, 814 likes) https://x.com/i/status/1946674595085344857
+- Adam Schefter: "Bears placed CB Jaylon Johnson, QB Case Keenum, WR Jahdae Walker and RB Ian Wheeler on the Active/Non-Football Injury list." (75197 views, 288 likes) https://x.com/i/status/1946668681053819261
+- Naval: "IBM couldn’t build an OS so they were forced to partner with Microsoft. 
+
+Apple can’t build an AI so they’ll be forced to partner with the next Microsoft. 
+
+The only way out is to collaboratively fund a competitive open source model." (72569 views, 1581 likes) https://x.com/i/status/1946673730526023730
+- Barstool Sports: ""Welp Now Everyone Knows We Had Sex" -Actress/Model Elsie Hewitt Revealing She's Pregnant With Pete Davidson's Child https://t.co/KIPqEmIe0g https://t.co/mQ87Ew9ozY https://t.co/guUE0xSeX7" (66243 views, 42 likes) https://x.com/i/status/1946657589070037335
+- World of Engineering: "Japanese design firm Kenji Abe has designed a glass beer bottle that you can stick into the sand on the beach https://t.co/irXvvYdTO9" (50626 views, 421 likes) https://x.com/i/status/1946653536554754464
+- Barstool Sports: "There's always one thing to remember when cooking for the @PardonMyTake guys - never forget the queso.
+
+@Zaccornelius_ learned that the hard way
+
+@DrinkBODYARMOR @PardonMyTake 
+https://t.co/IY4Bd3SIO5" (47693 views, 47 likes) https://x.com/i/status/1946693322510119382
+- Barstool Sports: "Don't show this to Joey Chestnut.
+
+@Zaccornelius_ decided to take a slow &amp; steady approach to eating his hot dog at Chill Week
+
+@trulyseltzer @PardonMyTake
+https://t.co/PDV4ICy3H3" (44811 views, 22 likes) https://x.com/i/status/1946692026776363148
+- World of Statistics: "🇨🇳 China on Saturday formally started the construction of the $167.8 billion dam over the Brahmaputra river in Tibet, closer to the Indian border." (42877 views, 165 likes) https://x.com/i/status/1946649180518175040
+- Mario Nawfal: "🇺🇸 ASTRONOMER CEO ANDY BYRON RESIGNS AFTER COLDPLAY "KISS CAM" MELTDOWN
+
+That awkward viral moment at a Coldplay concert just ended Andy Byron’s run as CEO.
+
+After getting caught on the stadium kiss cam in a cozy moment with his head of HR - both reportedly married - the backlash https://t.co/T0rwOkbs2u https://t.co/v6tYHd0uDT" (40749 views, 98 likes) https://x.com/i/status/1946660061012533572
+- Illia Ponomarenko 🇺🇦: "Will someone please explain to this 'Pulitzer veteran' --who has discredited himself with his phantom ‘anonymous sources’ conveniently appearing in every country’s every department in all walks of life -- that Ukraine is not his beloved Putinist KGB dictatorship, nor is it the https://t.co/ZSqYzlKX3X" (39162 views, 505 likes) https://x.com/i/status/1946657934345228570
+- Illia Ponomarenko 🇺🇦: "What can we say? 
+
+Glory to Ukraine 🇺🇦" (37146 views, 1092 likes) https://x.com/i/status/1946691669786513786
+- World of Statistics: "🇺🇸 32 US States have a State Beverage, and 20 of them are milk." (37845 views, 93 likes) https://x.com/i/status/1946651349103395158
+- Mario Nawfal: "🇺🇸 TULSI: “OBAMA DIRECTED A MANUFACTURED PIECE OF INTELLIGENCE”
+
+"Russia doesn't have the tools, the capability, or the intent to try to change the outcome of the U.S. presidential election.
+
+Obama directed a manufactured piece of intelligence that detailed not if, but how Russia https://t.co/jGIUOsfPwM https://t.co/aqPMGtulDa" (37300 views, 252 likes) https://x.com/i/status/1946648736236707998
+- Mario Nawfal: "🇪🇺 EU MEMBERSHIP: THE BALKANS WANT IN - BUT BRUSSELS WANTS RECEIPTS
+
+Albania, Bosnia and Herzegovina, and North Macedonia just got a polite-but-pointed EU check-in: 
+
+Nice enthusiasm, now show results.
+
+Albania is being called the “accession front-runner” - but Brussels wants https://t.co/CtJLYYrrIC https://t.co/eJWT4ogxZK" (34333 views, 30 likes) https://x.com/i/status/1946651252747887076
+- Mario Nawfal: "WELCOME TO THE AIRSPACE AD ECONOMY - FLYING BILLBOARDS ARE HERE
+
+Drones are no longer just delivering packages - they’re selling you stuff midair. 
+
+Giant LED ads, floating above cityscapes like rejected scenes from The Fifth Element, are already in the works.
+
+Forget pop-ups. https://t.co/sPkMTOFOlR" (33828 views, 170 likes) https://x.com/i/status/1946653770068468102
+- Mario Nawfal: "🇺🇸 RECESSION WHO? ODDS DROP FROM 70% TO 19% - LOWEST EVER ON POLYMARKET
+
+The doomsday crowd just got quiet real fast.
+
+After months of panic, Polymarket’s recession odds just collapsed - from a grim 70% to a historic low of 19%. 
+
+That’s not a correction. That’s a wipeout. https://t.co/5pDXtt0hLA https://t.co/TeMpuO66fe" (33853 views, 107 likes) https://x.com/i/status/1946656286759604308
+- Barstool Sports: "Sometimes you just bite more off than you can chew.
+
+@PFTCommenter's approach to the @PardonMyTake hot dog challenge failed miserably.  
+
+‘PMTV’ presented by @ChevyTrucks #ad #Chevy #Silverado @PardonMyTake 
+https://t.co/HHdg2pZmOO" (32423 views, 14 likes) https://x.com/i/status/1946696345860845575
+- Mario Nawfal: "🇺🇸 NVIDIA CEO CASHES OUT - HUANG SELLS ANOTHER $12.9M IN STOCK
+
+Jensen Huang just offloaded 75,000 shares of Nvidia - worth $12.94 million - as part of a pre-approved plan to sell up to 6 million shares this year.
+
+That’s after dumping $37M worth earlier this week.
+
+This comes as https://t.co/wbUPsXM1k2 https://t.co/thvmG1iSsw" (31598 views, 65 likes) https://x.com/i/status/1946673903251632550
+- World of Statistics: "Should the minimum age to run for United States presidency be reduced?
+
+Currently, it's 35." (29990 views, 61 likes) https://x.com/i/status/1946660002099306534
+- Mario Nawfal: "🇦🇶 STARLINK JUST SHRUGS OFF AN ANTARCTIC BLIZZARD
+
+30-knot winds. Sub-zero chaos. No cell towers in sight.
+And yet - high-speed internet.
+
+Somewhere in the Allan Hills, Antarctica, scientists are surfing the web in real time thanks to Starlink’s low-orbit satellite swarm.
+
+No https://t.co/5pZoKs37w6 https://t.co/bictfdPbcp" (28372 views, 119 likes) https://x.com/i/status/1946658900192756121
+- Mario Nawfal: "🇬🇧🇩🇪 UK PM HAILS UK-GERMANY ALLIANCE WITH MERZ
+
+“This is a partnership of the campus. 
+
+I think it illustrates what our work on the international stage is all about.
+
+Building the foundations of stability across our country to make us safer, boost our economy, and deliver change https://t.co/tUN7TajWcS https://t.co/shtJyPxnO6" (27855 views, 26 likes) https://x.com/i/status/1946658803132326356
+- World of Statistics: "🏏 Cricket teams ranking:
+
+1. India 🇮🇳 
+2. New Zealand 🇳🇿
+3. Australia 🇦🇺
+4. Pakistan 🇵🇰
+5. Sri Lanka 🇱🇰
+6. South Africa 🇿🇦
+7. Afghanistan 🇦🇫 
+8. England 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+9. Bangladesh 🇧🇩
+10. West Indies 
+11. Zimbabwe 🇿🇼 
+12. Ireland 🇮🇪 
+13. Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+14. USA 🇺🇸 
+15. Netherlands 🇳🇱
+16. Oman" (27400 views, 106 likes) https://x.com/i/status/1946663247525847514
+- Mario Nawfal: "TESLA FSD: FROM AIRPORT TO HOTEL - NO HANDS, NO STRESS
+
+Alexander hit one button, and the car did the rest, weaving through highway traffic like it was born in code.
+
+First time using Tesla’s Full Self-Driving and he’s already declaring he’s “not selling any $TSLA shares.” https://t.co/9ueAZRk6PM https://t.co/jEneSMQ7d2" (26533 views, 66 likes) https://x.com/i/status/1946662578505056367
+- World of Statistics: "What are huge secrets that opposite genders hide about each other?" (26453 views, 69 likes) https://x.com/i/status/1946678432055902325
+- Sawyer Merritt: "Tesla's Optimus robot serving popcorn at the company's new Diner and Supercharger 🔥 https://t.co/McNuvPwExA https://t.co/3N3cwEfyYK" (25664 views, 660 likes) https://x.com/i/status/1946702346634789257
+- Barstool Sports: "Old School Cheating: Memphis Hoops Is On Probation After 'Two Softball Players Were Paid $550 To Complete Coursework For A Former Basketball Player' https://t.co/ViAzBi5s76 https://t.co/P8pFdN0oDG" (26252 views, 39 likes) https://x.com/i/status/1946702882545234361
+- Mario Nawfal: "🇺🇸 NASA’S “SON OF CONCORDE” JUST TAXIED INTO THE FUTURE
+
+Quiet. Fast. And coming for your London brunch plans.
+
+NASA’s X-59 supersonic jet - aka the “Son of Concorde” - just completed its first major ground test, inching closer to cutting your New York–London flight time in half. https://t.co/XNtuuaZb8X https://t.co/ZwH7J4N2fe" (25906 views, 81 likes) https://x.com/i/status/1946663836154560817
+- Mario Nawfal: "🇺🇸 2025: SOCIAL MEDIA UP, TRUST IN NEWS DOWN - AND EVERYONE’S BLAMING AI
+
+For the first time ever, social media just passed TV as America’s top news source.
+
+Obviously the best place to get world updates is between a thirst trap and dog memes.
+
+Globally, 58% of people say they https://t.co/luvbGk2LQ8 https://t.co/HW8AFWxuqG" (25669 views, 64 likes) https://x.com/i/status/1946691524365873183
+- Mario Nawfal: "🇮🇩 WOULD YOU TRUST A SELF-DRIVING SCOOTER IN YOUR BIKE LANE?
+
+Meet the Omo X - a $3,800, AI-powered scooter that parks itself, balances on its own, and drives to the charger when it’s tired. 
+
+It just debuted in Jakarta, Indonesia, by rolling on stage - no human hands required. https://t.co/2iklg8q69u https://t.co/u0jwgCNSPS" (24990 views, 39 likes) https://x.com/i/status/1946661325410803912
+- Sky Sports Football: "Germany are through to the Euro 2025 semi-finals after beating France on penalties 🇩🇪 https://t.co/YBCjbNmWdH" (22624 views, 220 likes) https://x.com/i/status/1946692094694662446
+- Illia Ponomarenko 🇺🇦: "UN-FUCKING-DEFEATED AS UKRAINE ITSELF https://t.co/PntRobvA3P" (21765 views, 919 likes) https://x.com/i/status/1946686006280806836
+- Mario Nawfal: "🇵🇱 POLISH HOOLIGANS DROP CLUB COLORS - UNITE AGAINST IMMIGRATION
+
+In a twist no one saw coming, rival football hooligans across Poland are marching together.
+
+Not for a derby, but against immigration.
+
+From Katowice to Warsaw, diehard enemies are linking arms in protests over EU https://t.co/xET0lKawQH https://t.co/s4jY5jwhi4" (22446 views, 149 likes) https://x.com/i/status/1946678935473078397
+- Mario Nawfal: "🇺🇸 SEC. NOEM: “THAT IS FAKE NEWS - DON’T YOU DARE EVER SAY THAT AGAIN”
+
+"We have judges out there and other individuals saying people have been targeted that way, and it's not true.
+
+Every single operation that we do on ICE is based on investigative work, to show that there is a https://t.co/IJt8H62JyA https://t.co/nkY9YhugVj" (21554 views, 104 likes) https://x.com/i/status/1946694034921312493
+- Mario Nawfal: "🇻🇳 TRAGEDY IN VIETNAM: TOURIST BOAT CAPSIZES IN STORM - 34 DEAD, 8 MISSING
+
+A sightseeing boat flipped during a sudden thunderstorm today in Vietnam’s Ha Long Bay - killing 34 people and leaving 8 still missing.
+
+The Wonder Sea was carrying 53 people, including 20 children, when https://t.co/FiFAX9nlah" (20661 views, 57 likes) https://x.com/i/status/1946676422548082840
+- World of Statistics: "Bitcoin performance each year:  
+
+2025 YTD: 📈 26%
+2024: 📈 120%
+2023: 📈 106%
+2022: 📉 64%
+2021: 📈 83%  
+2020: 📈 305% 
+2019: 📈 95% 
+2018: 📉 74% 
+2017: 📈 1,375% 
+2016: 📈 120% 
+2015: 📈 36% 
+2014: 📉 58% 
+2013: 📈 5,428% 
+2012: 📈 218% 
+2011: 📈 1,317%" (20144 views, 131 likes) https://x.com/i/status/1946694537952502157
+- Mario Nawfal: "🚨🇺🇸 EXCLUSIVE: SEN. RAND PAUL – “WE BORROW EVERY DOLLAR WE VOTE ON”
+
+@RandPaul:
+
+“We bring in $5 trillion, but spend $7 trillion.
+
+Entitlements eat up all $5 trillion before Congress even votes.
+
+Every dollar I vote on – military, nonmilitary – it’s all borrowed.
+
+There is room https://t.co/oqJhXLxMzs https://t.co/heGqh7iSBa" (20091 views, 140 likes) https://x.com/i/status/1946666352410087643
+- Mario Nawfal: "ELON: “AI IS PROBABLY THE SINGLE BIGGEST ITEM AFFECTING HUMANITY”
+
+“AI is probably the single biggest item in the near term. 
+
+I would say it’s getting 10 times better every year.
+
+If we can merge with AI by improving the neural link, we solve the control problem.
+
+We must build https://t.co/QBnZKRh1SN" (19548 views, 95 likes) https://x.com/i/status/1946657754447311237
+- Illia Ponomarenko 🇺🇦: "*Ambassador to the U.K., of course, sorry for the typo 😁" (18603 views, 59 likes) https://x.com/i/status/1946661095759855720
+- Boston Celtics: "All smiles 😁 https://t.co/38zJTJn9f0" (18375 views, 220 likes) https://x.com/i/status/1946679779228524583
+- Barstool Sports: "A Sports Memorabilia Dealer Appeared To Confess To One Of The Largest Sports Memorabilia And Autograph Fraud Operations In History, Claiming Over $350 Million In Fraud https://t.co/M8ukLqb5Vv https://t.co/A5g859mQPU" (18477 views, 21 likes) https://x.com/i/status/1946687788834783567
+- Mario Nawfal: "🇺🇸 GALLOWAY: “FOLLOW YOUR PASSION” IS BILLIONAIRE BS
+
+Bestselling author and entrepreneur Scott Galloway says the worst career advice out there is the one rich people love to give:
+
+“Follow your passion.”
+
+His take?
+If someone tells you that, they’re already rich.
+And probably https://t.co/ATbjbskiqu https://t.co/zYSs1xteA5" (18007 views, 45 likes) https://x.com/i/status/1946696551361057078
+- PFT Commenter: "PR101: apolgize like Zac https://t.co/7fcxlOaUo1" (17432 views, 157 likes) https://x.com/i/status/1946699142421446899
+- Mario Nawfal: "🇺🇸🇮🇱 SEN SANDERS: “NO MORE MILITARY AID TO ISRAEL”
+
+"Netanyahu’s atrocities are not limited to Gaza. 
+
+He has also unleashed terrorist settlers in the West Bank who attack civilians and recently beat a young American to death.
+
+Even Trump’s ambassador, Mike Huckabee, called this https://t.co/Sd8Cqv07WI https://t.co/4vHfBQmd4d" (17409 views, 49 likes) https://x.com/i/status/1946667610717802547
+- Mario Nawfal: "🚨🇺🇦 🇷🇺 KYIV: PUTIN, MEET ME FACE-TO-FACE
+
+Zelensky says Kyiv proposed a new round of talks with Moscow next week, urging faster progress toward a ceasefire.
+
+He again called for a face-to-face meeting with Putin:
+
+"A meeting at the leadership level is needed to truly ensure https://t.co/tmKky1giDT https://t.co/rQ4HCHpGsQ" (17342 views, 58 likes) https://x.com/i/status/1946697215033930038
+- @jason: "Stop! https://t.co/rwX2BlML4x" (17274 views, 104 likes) https://x.com/i/status/1946650986501603778
+- Barstool Sports: "Sometimes you just can't beat the course.
+
+@hen_ease needed to make birdie with 1 of his 3 "putts" to make his money back
+
+Presented by @ChevyTrucks #chevy #ad #silverado @PardonMyTake 
+https://t.co/fMdX4yfatT" (17025 views, 17 likes) https://x.com/i/status/1946699485515567283
+- Mario Nawfal: "🇦🇷 WAGES UP: MILEI FLIPS ARGENTINA’S ECONOMY
+
+Under Milei, Argentina just did the unthinkable: workers now get a bigger share of the economy than businesses.
+
+Wages jumped to 49.1% of GDP, while company profits fell to 36.1%, all while inflation dropped from 292% to 39%.
+
+Milei’s https://t.co/GMuqqhsduM https://t.co/OazYhM0mFd" (16724 views, 113 likes) https://x.com/i/status/1946686485282844702
+- Mario Nawfal: "🇸🇾 SUWAYDA: LOOTING IN BROAD DAYLIGHT - TRUCKS HAUL AWAY LIVES, NOT JUST GOODS
+
+Trucks roll out of Suwayda, piled with everything from fridges and farm tools to livestock and bicycles - all looted from abandoned Druze homes.
+
+A slow, methodical clearing-out of lives that were https://t.co/iJr9rpx0sZ https://t.co/voQLpxBwjT" (14530 views, 48 likes) https://x.com/i/status/1946681452428734907
+- WCVB-TV Boston: "Tech company CEO resigns after Coldplay concert video fallout | Click on the image to read the full story https://t.co/PxFQ9mVxRT" (13969 views, 28 likes) https://x.com/i/status/1946648246417318102
+- Sawyer Merritt: "Tesla's new Diner serves their sandwiches and burgers in a little paper Cybertruck box lol.
+
+Also, that chicken, bacon and waffle sandwich looks 🔥 https://t.co/aiDyhYBvYw https://t.co/3N3cwEfyYK" (13316 views, 381 likes) https://x.com/i/status/1946703318895526379
+- Mario Nawfal: "🚨🇺🇸 TRUMP TO SEN. THUNE: CANCEL AUGUST RECESS, CONFIRM MY PEOPLE!
+
+"Hopefully, the very talented John Thune, fresh off our many victories over the past two weeks and, indeed, 6 months, will cancel August recess (and long weekends!), in order to get my incredible nominees https://t.co/gI04SgWfvg https://t.co/bBdZwo3g6j" (13536 views, 97 likes) https://x.com/i/status/1946703852838797685
+- Hank Lockwood: "So so gross https://t.co/twaCjdxJfV" (12969 views, 91 likes) https://x.com/i/status/1946682533401227531
+- Internal Tech Emails: "[This document is from OpenAI v. Open Artificial Intelligence (2025).]" (11937 views, 23 likes) https://x.com/i/status/1946691324025135206
+- Mario Nawfal: "🇮🇷 BREAKING: EARTHQUAKE ROCKS NORTHERN IRAN
+
+A magnitude 5.6 earthquake jolted northern Iran on Sunday. 
+
+The quake hit at a shallow depth of just 3 kilometers, making it more likely to be felt on the surface. 
+
+No immediate word yet on damage or injuries.
+
+Source: EMSC, Reuters https://t.co/lhDlFXIUAy" (11610 views, 48 likes) https://x.com/i/status/1946695989311557650
+- Illia Ponomarenko 🇺🇦: "HE DID IT.
+
+3x Undisputed Champion of the World!" (11279 views, 318 likes) https://x.com/i/status/1946686310254555356
+- CSPAN: "Coming up on C-SPAN2. https://t.co/uQ3mHHr46Q" (11333 views, 8 likes) https://x.com/i/status/1946657292671426614
+- Dave Lee: "Grok is the first AI truly integrated into social discourse. This is a big deal. It's literally history unfolding before our eyes.
+
+Grok is training millions of people to pause, question, verify - and to explore views/angles beyond their own. This is behavioral change at massive" (10349 views, 311 likes) https://x.com/i/status/1946673662830264715
+- Mario Nawfal: "🇸🇦 SAUDI ARABIA’S ‘SLEEPING PRINCE’ DIES AFTER 20 YEARS IN COMA
+
+Prince Al Waleed bin Khaled bin Talal - known across the Arab world as the “Sleeping Prince” - has died after spending two decades in a coma.
+
+He was 18 when a car crash in 2005 left him unconscious.
+He was 38 when https://t.co/l9LGLO3gxd" (10342 views, 99 likes) https://x.com/i/status/1946704101854597304
+- @jason: "Wild https://t.co/K1FxCXEdN4" (10355 views, 20 likes) https://x.com/i/status/1946680308004172167
+- Mario Nawfal: "🚨🇺🇸FLASH FLOOD EMERGENCY: DC SUBURBS FACE LIFE-THREATENING CONDITIONS
+
+The National Weather Service issued a Flash Flood Emergency until 9:00 PM EDT Saturday for Bethesda, Silver Spring, Kensington, White Oak, and Four Corners, Maryland.
+
+NWS Warning: 
+
+"This is a life https://t.co/YTawg6YzY3" (10164 views, 40 likes) https://x.com/i/status/1946697650864030035
+- World of Statistics: "Driver with most P1 finishes in F1 history: Lewis Hamilton (105)
+
+Driver with most P2 finishes in F1 history: Lewis Hamilton (57)
+
+Driver with most P4 finishes in F1 history: Lewis Hamilton (35)" (10152 views, 46 likes) https://x.com/i/status/1946669382220038279
+- Illia Ponomarenko 🇺🇦: ""Zaluzhnyi is now seen as the most credible successor to Zelensky. I have been told by knowledgeable officials in Washington that that job could be his within a few months. Zelensky is on a short list for exile, if President Donald Trump decides to make the call. If Zelensky" (9701 views, 129 likes) https://x.com/i/status/1946659045424726514
+- TESLARATI: "🚨 We could see Tesla’s response to Waymo’s expansion in Austin very soon
+
+Based on Tesla’s expansion last time, it’s safe to assume they can go to any area of Austin whenever they choose 
+
+It’s not a coincidence they chose, well, you know, the shape they did 🤣 https://t.co/xB92SQ1ntC" (8692 views, 61 likes) https://x.com/i/status/1946658001554747793
+- Car Dealership Guy: "Some stores are treating yesterday’s sales as today’s inventory roadmap.
+
+@Glenn800Lundy, President of 800% Elite Automotive Club, breaks down how consistent inventory replenishment helps re-engage leads.
+
+"One of the things that we teach right out the gate for all of our clients https://t.co/XzaXl4XUgq" (8481 views, 5 likes) https://x.com/i/status/1946676419313959103
+- TESLARATI: "https://t.co/q7w0J7T5AR" (8005 views, 47 likes) https://x.com/i/status/1946676691440738715
+- Mario Nawfal: "THIS TINY GADGET IS A GAME-CHANGER FOR YOUR CANS
+
+Forget breaking nails or spilling half your drink, this tool lifts the tab, twists the lid, and lets you pour with zero mess.
+
+It pops your can clean, then spins to lock the opening like a spout. Flip it upside down? Not a drop https://t.co/z3Y3v6SB7d" (7718 views, 57 likes) https://x.com/i/status/1946668869503832304
+- Max Velocity: "FLASH FLOOD EMERGENCY for Silver Spring, Maryland, just North of Washington DC!
+
+Between 3-5" of rain has fallen, and 1-2"+ is expected in the next 30 minutes. This is a PARTICULARLY DANGEROUS SITUATION. Get to higher ground NOW! https://t.co/RXuhsukflf" (7065 views, 181 likes) https://x.com/i/status/1946690722112950484
+- Mario Nawfal: "800 DRONES. 3D YODA. FULL GEEK MODE ENGAGED
+
+At Angel Stadium, fans got a galaxy-sized surprise: a fully animated Star Wars drone show with 800 synchronized drones forming 3D scenes from The Empire Strikes Back.
+
+Vader loomed over the crowd, Yoda floated in full rotation, https://t.co/iGPGfvg10Y" (6992 views, 83 likes) https://x.com/i/status/1946699068841058555
+- Vintage Maps: "Tianjin, 1899 https://t.co/HuvnQMCnFV" (6976 views, 91 likes) https://x.com/i/status/1946648250867470467
+- Mario Nawfal: "🇺🇸 CAMP ATTERBURY, INDIANA TO DETAIN MIGRANTS UNDER NEW FEDERAL PLAN
+
+Camp Atterbury - Indiana’s military training ground - is about to become something else entirely: a detention hub for immigrants.
+
+Under a new federal plan signed off by Defense Secretary Pete Hegseth, the base https://t.co/LoF5SyJUES https://t.co/nkY9YhugVj" (6708 views, 33 likes) https://x.com/i/status/1946689001890656456
+- Illia Ponomarenko 🇺🇦: "What's even more laughable here is that all these regular "anonymous sources" are so absolutely sure that General Zaluzhny, of all people, "getting the job" will somehow help "de-escalate" the war and "make a settlement" (i.o. Ukrainian surrender) with Russia "while there’s still" (6628 views, 92 likes) https://x.com/i/status/1946660218953429163

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Heavy rains lead to 18 deaths and flooding in Uttar Pradesh and Rajasthan, India\",\n      \"citations\": [\n        \"https://t.co/Wx0xq9t37e\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Attempt to set a minor on fire reported in Puri, Odisha, India\",\n      \"citations\": [\n        \"https://t.co/0kaJrrouJp\",\n        \"https://www.reuters.com/world\"\n      ]\n    },\n    {\n      \"headline\": \"Wild elephants cause destruction in Ramgarh, Jharkhand, India\",\n      \"citations\": [\n        \"https://t.co/0kaJrrouJp\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"15-foot crocodile sighted in Triveni canal in Ramnagar, Bihar, India\",\n      \"citations\": [\n        \"https://t.co/0kaJrrouJp\",\n        \"https://www.reuters.com/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on high-engagement posts from X and correlated news sources from the last 24 hours; all stories are synthesized from available context and may require verification for completeness.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://www.foxnews.com/",
+    "https://npr.org/sections/news",
+    "https://www.reuters.com/world/",
+    "https://indianexpress.com/",
+    "https://hindustantimes.com/india-news",
+    "https://x.com/VajiramRavi/status/1946508843116011841",
+    "https://x.com/GoVocalForLocal/status/1946635118908727641",
+    "https://x.com/Bharat24Liv/status/1946787762478428630",
+    "https://x.com/Bharat24Liv/status/1946453153949294610",
+    "https://x.com/Bharat24Liv/status/1946477913882386723"
+  ]
+}

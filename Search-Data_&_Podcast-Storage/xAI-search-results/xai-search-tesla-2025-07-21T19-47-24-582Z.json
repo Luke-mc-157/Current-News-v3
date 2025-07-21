@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla stock price increased by 3.21 percent to $329.65 in the last 24 hours.\",\n      \"citations\": [\n        \"https://stocktwits.com/symbol/TSLA\",\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla received a high volume of orders for a new model, leading to website traffic issues.\",\n      \"citations\": [\n        \"posts found on X\",\n        \"https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk discussed his work schedule in relation to Tesla operations.\",\n      \"citations\": [\n        \"https://news.abplive.com/business/elon-musk-tesla-work-life-balance-sleeping-in-office-1789434\",\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla is expanding robotaxi testing beyond initial areas.\",\n      \"citations\": [\n        \"posts found on X\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://stocktwits.com/symbol/TSLA",
+    "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364",
+    "https://news.abplive.com/business/elon-musk-tesla-work-life-balance-sleeping-in-office-1789434",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://x.com/MalachiGreb/status/1947063595537428771",
+    "https://x.com/TL_branding/status/1946948551222956538",
+    "https://x.com/TeslaBest/status/1946903163166187628",
+    "https://x.com/cztslinvinkor/status/1947050954706297090",
+    "https://x.com/supersportsmg/status/1946962568657920139"
+  ]
+}

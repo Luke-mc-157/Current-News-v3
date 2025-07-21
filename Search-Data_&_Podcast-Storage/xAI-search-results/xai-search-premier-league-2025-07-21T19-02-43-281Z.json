@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool reach outline agreement with Eintracht Frankfurt for Hugo Ekitike transfer\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/\",\n        \"https://bbc.com/sport/football/articles/c3en2g514jqo\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal defender Gabriel signs new contract extension\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6499580/2025/07/20/gabriel-interview-as-arteta-said-arsenal-are-ready-to-reach-new-heights-this-season/\"\n      ]\n    },\n    {\n      \"headline\": \"Everton submit bid to sign Aston Villa midfielder Douglas Luiz\",\n      \"citations\": [\n        \"https://bbc.com/sport/football/articles/c9w10kwgjk5o\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United reach agreement to sign Brentford forward Bryan Mbeumo\",\n      \"citations\": [\n        \"https://bbc.com/sport/football/articles/c4g802089gpo\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/",
+    "https://www.nytimes.com/athletic/6499580/2025/07/20/gabriel-interview-as-arteta-said-arsenal-are-ready-to-reach-new-heights-this-season/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport",
+    "https://bbc.com/sport/football/articles/c9w10kwgjk5o",
+    "https://bbc.com/sport/football/articles/c4g802089gpo",
+    "https://bbc.com/sport/football/articles/c3en2g514jqo",
+    "https://www.espn.com/soccer/story/_/id/45737000/transfer-rumors-news-liverpool-look-make-mateta-move",
+    "https://www.nytimes.com/athletic/6489696/2025/07/14/premier-league-clubs-transfer-pre-season/",
+    "https://x.com/CuriousCatsAI/status/1947311719572742542",
+    "https://x.com/TTaunter/status/1947175190003167557",
+    "https://x.com/NationFmKE/status/1946841818038939909",
+    "https://x.com/PackmanScouse/status/1947011013963837476",
+    "https://x.com/Reignsone45/status/1946992482006581563"
+  ]
+}

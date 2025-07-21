@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Scottie Scheffler wins The Open Championship and becomes the champion golfer of the year.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/\",\n        \"https://www.bbc.com/sport\"\n      ]\n    },\n    {\n      \"headline\": \"Rory McIlroy hits two golf balls with one shot during the third round of The Open Championship.\",\n      \"citations\": [\n        \"https://www.foxnews.com/sports/rory-mcilroy-unbelievably-unearths-hidden-golf-ball-shot-bizarre-scene-open\"\n      ]\n    },\n    {\n      \"headline\": \"Wyndham Clark declines media interviews at The Open Championship following a suspension from Oakmont Country Club.\",\n      \"citations\": [\n        \"https://newsweek.com/sports/golf/pga-tour-wyndham-clark-media-snub-open-championship-oakmont-ban-2101261\"\n      ]\n    },\n    {\n      \"headline\": \"Chris Gotterup wins a golf tournament, with his post-victory comments receiving attention.\",\n      \"citations\": [\n        \"https://t.co/tkd6Tb1Y3S\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/news/northern_ireland",
+    "https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/",
+    "https://www.bbc.com/sport",
+    "https://www.nytimes.com/athletic/6360453/2025/05/15/pga-championship-2025-mud-ball-golf/",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/sports/rory-mcilroy-unbelievably-unearths-hidden-golf-ball-shot-bizarre-scene-open",
+    "https://www.cbsnews.com/",
+    "https://newsweek.com/sports/golf/pga-tour-wyndham-clark-media-snub-open-championship-oakmont-ban-2101261",
+    "https://espn.com/golf/story/_/id/45745697/scottie-scheffler-take-success-golf-point",
+    "https://x.com/responsiblerob/status/1946991220489847142",
+    "https://x.com/mirror7news/status/1946967071570702405",
+    "https://x.com/DailyProgress/status/1946995285537771761",
+    "https://x.com/newsadvance/status/1946995535799349655",
+    "https://x.com/GolfDigest/status/1946812319478223219"
+  ]
+}

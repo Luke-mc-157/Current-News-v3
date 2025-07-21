@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Scottie Scheffler performs strongly at The Open Championship.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/golf\",\n        \"https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/VAECUbqFEQ78\",\n        \"https://reuters.com/sports/golf\"\n      ]\n    },\n    {\n      \"headline\": \"Rory McIlroy competes at Portrush following recent events in golf tournaments.\",\n      \"citations\": [\n        \"https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/K1NtvqcxssDm\",\n        \"https://reuters.com/sports/golf\"\n      ]\n    },\n    {\n      \"headline\": \"Scottie Scheffler demonstrates improved putting in recent golf competitions.\",\n      \"citations\": [\n        \"https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/S9QX1VLG93gD\",\n        \"https://www.bbc.com/sport/golf\"\n      ]\n    },\n    {\n      \"headline\": \"The Open Championship features ongoing competition among top golfers.\",\n      \"citations\": [\n        \"https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/VAECUbqFEQ78\",\n        \"https://reuters.com/sports/golf\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; data is derived from high-engagement posts on X and correlating news articles, with no additional web searches required for verification.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/golf",
+    "https://www.bbc.com/news/northern_ireland",
+    "https://www.nytimes.com/athletic/6504059/2025/07/19/scottie-scheffler-open-championship-links-golf/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/athletic/6360453/2025/05/15/pga-championship-2025-mud-ball-golf/",
+    "https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/VAECUbqFEQ78",
+    "https://reuters.com/sports/golf",
+    "https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/K1NtvqcxssDm",
+    "https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/S9QX1VLG93gD",
+    "https://www.huffpost.com/entry/trump-golf-claim_n_68746d46e4b00af0c5f21e7f",
+    "https://x.com/GolfDigest/status/1946872716625133992",
+    "https://x.com/GolfDigest/status/1946812319478223219",
+    "https://x.com/InstaBharat/status/1947031800527614000",
+    "https://x.com/TheRGMedia/status/1947316440870072734",
+    "https://x.com/GolfDigest/status/1946842514670973073"
+  ]
+}

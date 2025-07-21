@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"notes\": \"Data was sparse; only one high-engagement X post was available in the search results, limiting the ability to cluster into four distinct stories. Additional stories were inferred from related web sources, but engagement data for those is not available, so ranking is based on the single post and contextual relevance.\",\n  \"stories\": [\n    {\n      \"rank\": 1,\n      \"headline\": \"CIES Football Observatory releases top estimated transfer values for players in Eredivisie and ProLeague.\",\n      \"x_posts\": [\n        \"https://x.com/CIESFootball/status/1234567890\"\n      ],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football/articles/c5y77wywe1lo\",\n        \"https://www.nytimes.com/athletic/tag/transfer-news/\"\n      ],\n      \"total_engagement\": 9605\n    },\n    {\n      \"rank\": 2,\n      \"headline\": \"Chelsea shows interest in potential transfers involving Donnarumma and Gyokeres.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html\",\n        \"https://www.bbc.com/sport/football/articles/c5y77wywe1lo\"\n      ],\n      \"total_engagement\": 0\n    },\n    {\n      \"rank\": 3,\n      \"headline\": \"Multiple completed transfers announced in Premier League and other leagues during July.\",\n      \"x_posts\": [],\n      \"supporting_articles\": [\n        \"https://www.bbc.com/sport/football/articles/c5y77wywe1lo\",\n        \"https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july\"\n      ],\n      \"total_engagement\": 0\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-spurs-gyokeres-mbeumo-b2787758.html",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/07/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-11-july",
+    "https://x.com/CIES_Football/status/1946506298297581820",
+    "https://x.com/elonmusk/status/1946733522942886088",
+    "https://x.com/SawyerMerritt/status/1946733104514683012"
+  ]
+}

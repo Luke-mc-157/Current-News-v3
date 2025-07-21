@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Neuralink has implanted its brain chip in nine people, with two surgeries completed in a single day.\",\n      \"citations\": [\n        \"https://t.co/JDHR6eOlkt\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Synchron's brain-computer interface does not require open-skull surgery and includes an integrated AI chatbot.\",\n      \"citations\": [\n        \"https://www.wired.com/story/synchron-neuralink-competitor-brain-computer-interfaces/\"\n      ]\n    },\n    {\n      \"headline\": \"Neuralink identified itself as owned by 'disadvantaged' persons in a U.S. federal filing.\",\n      \"citations\": [\n        \"https://www.cnbc.com/2025/07/17/elon-musks-neuralink-says-owned-by-disadvantaged-persons-in-filing.html\"\n      ]\n    },\n    {\n      \"headline\": \"China is advancing in brain technology, with developments including mind-reading interfaces for individuals with conditions like ALS.\",\n      \"citations\": [\n        \"https://www.cnn.com/2025/07/20/china/china-brain-tech-hnk-intl-dst\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en",
+    "https://www.cbsnews.com/",
+    "https://www.wired.com/story/synchron-neuralink-competitor-brain-computer-interfaces/",
+    "https://www.ndtv.com/",
+    "https://www.cnbc.com/2025/07/17/elon-musks-neuralink-says-owned-by-disadvantaged-persons-in-filing.html",
+    "https://www.cnn.com/2025/07/20/china/china-brain-tech-hnk-intl-dst",
+    "https://x.com/thegeo_sync/status/1947346506346074356",
+    "https://x.com/cb_doge/status/1947344786270335206",
+    "https://x.com/joinearlybird/status/1947297833717006708",
+    "https://x.com/SoLA_LB/status/1947346171007025322",
+    "https://x.com/rohanpaul_ai/status/1947359017703014785"
+  ]
+}

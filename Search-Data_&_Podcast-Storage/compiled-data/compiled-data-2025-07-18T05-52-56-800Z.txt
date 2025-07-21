@@ -1,0 +1,594 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "response": {
+    "query_date_range": "2025-07-17 to 2025-07-18",
+    "summary": "Based on available information from news sources and web content, the biggest news stories about Tesla in the last 24 hours include discussions around its leadership, Autopilot safety concerns, and integration of AI features. These stories highlight ongoing scrutiny and innovations at Tesla.",
+    "news_stories": [
+      {
+        "title": "Tesla Shareholders Push for Full-Time CEO",
+        "description": "Reports indicate that Tesla is facing pressure from shareholders who want Elon Musk to focus solely on his role as CEO, amid a crucial year for the company involving strategic decisions and performance challenges.",
+        "source": "Information from CNN Business articles"
+      },
+      {
+        "title": "Tesla Under Scrutiny for Autopilot in Past Crash",
+        "description": "Tesla is dealing with renewed questions regarding the safety of its Autopilot system, linked to a 2019 crash that resu
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Tesla news - Today’s latest updates - CBS News: Tesla is facing a wrongful death trial related to its Autopilot system in a 2019 crash. Elon Musk announced that his AI chatbot Grok will be integrated into Tesla vehicles by next week. Musk publicly told analyst Dan Ives to 'shut up' after Ives suggested changes to Tesla's board. Tesla shares experienced fluctuations due to political tensions, including disputes between Musk and President Trump over subsidies. The company is also dealing with investigations into erratic driving by its robotaxis. [https://www.reuters.com/technology/]
+Key Quotes: "Shut up, Dan." - Elon Musk | "The easiest way to save money in our Budget … is to terminate Elon's Governmental Subsidies and Contracts." - President Trump | "Musk’s outside endeavors appear to have diverted his time and attention from actively managing Tesla’s operations." - Shareholders (Democrats overseeing public sector pension funds)
+
+- Tesla shareholders want a full-time CEO. That’s not how Musk works: Some Tesla shareholders are calling for Elon Musk to serve as a full-time CEO amid the company's challenges. Musk's involvement in politics and other ventures is seen as diverting his attention from Tesla's operations. The company is facing plunging sales, stock value drops, and issues like the loss of EV tax credits. Analysts suggest Tesla's board should impose rules on Musk's time to focus on critical areas like robotaxis and AI. Tesla's board and shareholders are unlikely to replace Musk despite these concerns. [https://www.bbc.com/news/world]
+Key Quotes: "Shut up, Dan." - Elon Musk | "Musk’s outside endeavors appear to have diverted his time and attention from actively managing Tesla’s operations." - Tesla shareholders | "We believe this is a tipping point in the Tesla story and ultimately the Tesla Board needs to act now." - Dan Ives (Wedbush Securities analyst)
+
+---
+
+TOPIC: AI
+
+LIVE SEARCH SUMMARY:
+{
+  "biggest_ai_news_stories": [
+    {
+      "title": "Automation Anywhere Achieves AWS Generative AI Competency",
+      "description": "Automation Anywhere was recognized for its expertise in deploying generative AI solutions on AWS, with its Agentic Process Automation (APA) platform integrating advanced AI capabilities.",
+      "source": "Medium article on AI updates",
+      "date": "2025-07-17"
+    },
+    {
+      "title": "Key AI Developments Including X.AI’s Grok and Others",
+      "description": "Major advancements in AI were highlighted, covering trends like federal contract changes, innovations from Mistral, Microsoft Copilot, and Quizlet, emphasizing AI's shift from research to everyday use.",
+      "source": "AI Dispatch article",
+      "date": "2025-07-17"
+    },
+    {
+      "title": "Weekly Top AI-Related News Overview",
+      "description": "A roundup of top news stories from early July, potentially including AI developments, synthesized from various sources up to July 17."
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News provides comprehensive coverage of global events, including sections on technology and innovation where AI is discussed. The site features stories on AI's role in business and science, such as advancements in artificial intelligence applications. It also includes in-depth reporting on international conflicts and politics that intersect with tech developments. Users can access videos, audio, and verified analysis on topics like AI in healthcare and data breaches. [https://www.bbc.com/news]
+
+- Artificial intelligence - BBC News: BBC News covers various AI developments, including a healthcare provider in Guernsey using AI to reduce paperwork and allow more doctor-patient time. A university team participates in a global AI robot football competition, highlighting AI in robotics. Netflix has incorporated AI effects in a show for the first time, marking a milestone in entertainment tech. The UK's Isambard-AI supercomputer has become operational, supporting government AI plans, while WeTransfer addressed user concerns about using files for AI training. [https://www.bbc.com/news/topics/ce1qrvleleqt]
+Key Quotes: "Netflix boss says AI effects used in show for first time" - Netflix boss
+
+- [Article from www.reuters.com]: The content for this article is not accessible, limiting details on AI-related topics. No specific information on AI developments or news is available from this source in the provided data. As a result, key points cannot be summarized based on the given input. [https://www.reuters.com/world/]
+
+- Weekly Top Ten News Stories - 18 July 2025: FNArena.com highlights top news stories, including AI advancements in healthcare with Pro Medicus securing major contracts through AI technologies. The site discusses Aurelia Metals' shift towards copper, which indirectly relates to AI in mining operations. It covers global impacts of tariffs on commodities that could affect AI hardware supply chains. Other stories include financial market updates and investments in AI-driven sectors like digital infrastructure. [https://fnarena.com/index.php/2025/07/18/weekly-top-ten-news-stories-18-july-2025/]
+
+- AI UPDATES: The key developments in AI news for July 17, 2025, synthesized from the latest…: The article outlines major AI developments, including Automation Anywhere achieving AWS Generative AI Competency for business process automation. The U.S. announced a $92B investment in AI-energy infrastructure to meet growing demands. There are efforts to reverse export curbs on AI chips to China and initiatives to criminalize AI-generated child abuse material globally. AI is being used in disaster preparedness and for efficient chip cooling technologies. [https://medium.com/@vishalsachdeva_82400/ai-updates-the-key-developments-in-ai-news-for-july-17-2025-synthesized-from-the-latest-6eb0b6a55fa4]
+Key Quotes: "President Trump unveiled $92B in energy and tech deals" - President Trump
+
+- AI Dispatch: Daily Trends and Innovations – July 17, 2025 (X.AI’s Grok, Mistral, Microsoft Copilot, Quizlet): The dispatch covers X.AI's decision to end a $200M Department of Defense contract for its Grok AI to focus on core products. China is proposing stricter AI regulations to enhance oversight and support domestic firms. Mistral launched an open-source AI audio model called VoxTral for audio generation tasks. Microsoft expanded Copilot features for Windows desktops, and Quizlet released a report on AI's role in education. [https://hipther.com/latest-news/2025/07/16/95749/ai-dispatch-daily-trends-and-innovations-july-17-2025-x-ais-grok-mistral-microsoft-copilot-quizlet]
+Key Quotes: "Elon Musk Cuts Grok’s Federal Contracts as X.AI Refocuses on Core Products" - Elon Musk
+
+---
+
+TOPIC: news
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on searches for high-engagement posts on X, news articles, and additional web content from July 17-18, 2025, the biggest news stories include legal actions against the Trump administration, executive resignations, and gubernatorial appointments. This compilation draws from reliable news sources for accuracy.",
+  "top_stories": [
+    {
+      "title": "24 States Sue Trump Administration Over $6 Billion in Education Grants",
+      "description": "Twenty-four states have filed a lawsuit against the Trump administration to secure $6 billion in promised grants from the Department of Education, highlighting ongoing disputes over federal funding.",
+      "source": "Georgia Public Broadcasting (GPB) news article"
+    },
+    {
+      "title": "MARTA CEO Resigns Due to Immigration Status",
+      "description": "The Canadian-born general manager and CEO of MARTA has resigned amid issues related to his immigration status, with limited details available on the circumstances.",
+ 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- [Article from www.reuters.com]: Content for this article is not accessible, limiting available information. No specific details on topics or events could be extracted. The source is a major news outlet covering U.S. and world news. Users are advised to check the original URL for updates. [https://www.reuters.com/world/us/]
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: Satellite images reviewed by BBC Verify show Israel has leveled thousands of civilian buildings in Gaza through controlled demolitions. Trump has ordered officials to release more documents related to Jeffrey Epstein amid pressure from supporters and opponents. A data breach exposed personal details of British spies, Special Forces, and 19,000 Afghans. Ukraine's new drone scheme allows troops to earn points for confirmed kills, raising questions about gamifying war. Germany's Merz accused Europe of free-riding on U.S. defense during a UK visit. [https://www.bbc.com/news]
+Key Quotes: "produce more Epstein documents" - Trump | "Europe was free-riding on US" - Merz | "Reserved in the womb and sold for £500" - Police sources
+
+- Google News: Trump has requested the release of Jeffrey Epstein grand jury transcripts following reports of a 'bawdy' birthday note. The House passed a $9 billion spending cuts package targeting foreign aid, PBS, and NPR, which is now headed to Trump's desk. A timeline details known connections between Trump and Epstein based on various disclosures. Democrats walked out as Republicans advanced a judicial nomination for Emil Bove. Local news highlights include weather updates and personalized story picks for users. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "produce pertinent records from Epstein grand jury" - Trump
+
+- GPB evening headlines for July 17, 2025 | Georgia Public Broadcasting: Twenty-four states are suing the Trump administration to release $6 billion in promised education grants. The Canadian-born general manager and CEO of MARTA resigned due to immigration status issues. Georgia Governor Brian Kemp appointed Benjamin Land to fill a vacant seat on the state Supreme Court. The article covers various Georgia-related news including federal funding updates and local appointments. No additional details on broader national or international events were provided in the content. [https://www.gpb.org/news/2025/07/17/gpb-evening-headlines-for-july-17-2025]
+
+- Eyewitness News at 10am - July 17, 2025: The newscast covered breaking news and live streaming video from New York City and surrounding areas. Topics included local weather, traffic, and public safety updates. A segment featured a delivery man narrowly avoiding a lightning strike. Another story reported on a 61-year-old man pulled into an MRI machine due to a metal chain. The broadcast emphasized regional news with minimal national details. [https://abc7ny.com/videoClip/17164075/]
+
+- Top U.S. & World Headlines — July 17, 2025: The video from Democracy Now! provides an independent global news hour covering top U.S. and world headlines. It airs on over 1,500 TV and radio stations worldwide. The content focuses on real-time news without specific details provided in the excerpt. Viewers are directed to support the work through donations. No additional context or summaries of headlines were included in the available content. [https://www.youtube.com/watch?v=ly70X1ZlA7c]
+
+---
+
+TOPIC: NFLPA Resignation
+
+LIVE SEARCH SUMMARY:
+{
+  "status": "success",
+  "summary": "Based on recent searches, the most notable story from July 17, 2025, to July 18, 2025, involves reports of the NFLPA Executive Director's resignation. This information primarily stems from high-engagement posts on X, indicating significant discussion around the topic. Other web and news content searched did not yield directly related results, so this is the key focus. As with social media, this should be treated as preliminary and not fully verified.",
+  "key_stories": [
+    {
+      "headline": "NFLPA Executive Director Lloyd Howell Resigns",
+      "description": "Posts on X highlight the announcement of Lloyd Howell's resignation as the Executive Director of the National Football League Players Association, generating considerable attention.",
+      "source": "X (social media posts)",
+      "date": "2025-07-18"
+    }
+  ],
+  "disclaimer": "All information, especially from social media, is inconclusive and may not reflect verified facts. No additio
+
+X POSTS FROM SEARCH (1):
+- JosinaAnderson: "Breaking: NFLPA Executive Director Lloyd Howell announces his resignation. https://t.co/fQ1VzH4D2v" (28261 views, 64 likes) https://x.com/JosinaAnderson/status/1946037864363356312
+
+SUPPORTING ARTICLES (6):
+- Premier League Football - Latest news, results, stats & transfers - BBC Sport: Liverpool are in advanced talks to sign Eintracht Frankfurt striker Hugo Ekitike in a deal worth over £70m. Wolves inducted Diogo Jota into their Hall of Fame. Manchester City completed a deal for a midfielder described as one of the best upcoming talents. Newcastle ended their pursuit of Ekitike and turned to other targets like Wissa. Bournemouth signed a player for £25m, and Ipswich rejected a £35m bid for one of their players. Several Premier League clubs are actively involved in the transfer market for strikers amid financial regulations. [https://www.bbc.com/sport/football/premier-league]
+Key Quotes: "I'm feeling good to be fair." - James Milner | "He can be a great signing for Liverpool FC." - Edu Rubio | "He is one of the best young strikers in the world." - Alfie (fan comment)
+
+- Football - latest news today, results & video highlights - BBC Sport: England women's team advanced to the Euro 2025 semi-finals after a dramatic penalty shootout win over Sweden. Liverpool are close to signing Hugo Ekitike for over £70m. Wolves inducted Diogo Jota into their Hall of Fame. Manchester City completed a deal for a midfielder. Arsenal made a record £1m signing in women's football for Olivia Smith. Various transfer activities and match analyses were highlighted across European and Premier League football. [https://www.bbc.com/sport/football]
+Key Quotes: "One goalkeeper saved four penalties, the other kept out two." - BBC Sport report | "We've waited so long." - Middleton-Patel
+
+- BBC Sport - Scores, Fixtures, News - Live Sport: England women's team reached the Euro 2025 semi-finals via a penalty shootout against Sweden. Rory McIlroy performed well in the first round of The Open golf tournament. Liverpool are pursuing a deal for Hugo Ekitike, while Alexander Isak is expected to stay at Newcastle. Snoop Dogg became a co-owner of Swansea football club. Tadej Pogacar regained the lead in the Tour de France after a stage win. Various sports updates included injuries, transfers, and event previews across golf, rugby, and cycling. [https://www.bbc.com/sport]
+Key Quotes: "Felt like 12 hours." - Rory McIlroy | "I'm unstoppable." - Daniel Dubois
+
+- 2025 Vikings Training Camp Preview: Quarterbacks: The Minnesota Vikings are preparing for the 2025 training camp with J.J. McCarthy as the expected starting quarterback. Sam Howell was acquired from the Seattle Seahawks, while Brett Rypien returns from the previous season. The team lost Sam Darnold, Nick Mullens, and Daniel Jones to other teams. McCarthy, a second-year pro, is focusing on development after recovering from an injury. The Vikings aim to build depth at the position with new and returning players for the upcoming NFL season. [https://www.vikings.com/news/quarterbacks-jj-mccarthy-sam-howell-brett-rypien-max-brosmer]
+Key Quotes: "We've got to do a real demolition job on Usyk." - Daniel Dubois
+
+- NFL Flag debuts 'Chase Something' campaign spotlighting rise of flag football & its next generation: Content not accessible, so summary based on title: The NFL Flag program launched a campaign called 'Chase Something' to highlight the growth of flag football and its emerging participants. The initiative aims to promote the sport among the next generation of athletes. It emphasizes the accessibility and popularity of flag football as an alternative to traditional tackle football. The campaign likely includes promotional efforts to engage youth and families. [https://www.wnypapers.com/news/article/current/2025/07/14/163596/nfl-flag-debuts-chase-something-campaign-spotlighting-rise-of-flag-football-its-next-generation]
+
+- NFL partners with Sony and Hawk-Eye for advanced tech integration by July 2025: Content not accessible, so summary based on title: The NFL is partnering with Sony and Hawk-Eye Innovations to implement new technology by July 2025. This collaboration aims to enhance game officiating and player tracking. The technologies will likely improve accuracy in decisions and fan experiences. Details on specific implementations were not provided in accessible content. [https://www.sportspro.com/news/nfl-sony-headset-hawk-eye-tech-july-2025/]
+
+---
+
+TOPIC: Epstein Scandal
+
+LIVE SEARCH SUMMARY:
+{
+  "summary": "Based on recent searches for high-engagement posts on X, news articles, and additional web content related to the Epstein Scandal from 2025-07-17 to 2025-07-18, the biggest stories focus on the White House's defense of handling Epstein-related files, efforts to unseal records, and how the controversy is impacting the Trump administration. No high-engagement posts on X were found from the specified period. The following compiles key stories from news articles and web sources, emphasizing their political implications.",
+  "biggest_news_stories": [
+    {
+      "title": "White House Defends Handling of Epstein Files and Reveals Trump Diagnosis",
+      "source": "The Washington Post",
+      "summary": "The White House is addressing criticism over the management of Jeffrey Epstein-related documents, while also disclosing a Trump diagnosis amid his second term. This story highlights ongoing political scrutiny and its intersection with administration priorities.",
+      "date":
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Opinion | The Epstein Story Is Both Conspiracy Theory and Genuine Scandal - The New York Times: The article discusses how Jeffrey Epstein's associations with powerful figures, including former and future presidents, have fueled conspiracy theories. It highlights the release of Epstein's flight logs and other documents, which have not satisfied public demands for more meaning. The piece explores how the Epstein case fits into broader paranoid traditions, such as QAnon and Pizzagate, while noting the real evidence of his crimes. It examines how both sides of the political spectrum use the story to express outrage at elite impunity, with Donald Trump dismissing suspicions as obsessive. [https://www.washingtonpost.com/politics/2025/07/17/trump-presidency-news/]
+Key Quotes: "It is even said that he likes beautiful women as much as I do, and many of them are on the younger side." - Donald Trump | "In one clip released just before the election, Epstein calls himself Trump’s 'closest friend.'" - Jeffrey Epstein | "The Epstein story expresses a flexible, fit-for-all-purposes outrage at the perversity of the wealthy and the impunity of elites." - David Wallace-Wells
+
+- What to Know About the Fallout Around the Epstein Files and the Trump Administration - The New York Times: The article outlines the origins of Jeffrey Epstein's case, including his 2006 indictment and 2019 arrest for sex trafficking. It details how Epstein's connections to figures like Bill Clinton and Donald Trump have sparked conspiracy theories. The piece covers the Trump administration's handling of Epstein-related files, including promises to release documents and subsequent backlash. It explains that no evidence of a 'client list' or blackmail was found in investigations, and discusses Trump's urging supporters to move on from the issue. [https://www.nytimes.com/2025/07/16/opinion/epstein-trump-scandal.html]
+Key Quotes: "Over the weekend, Mr. Trump urged his supporters to move on, imploring them on social media not to 'waste Time and Energy on Jeffrey Epstein, somebody that nobody cares about.'" - Donald Trump | "The files, administration officials had long suggested, included a 'client list' that many involved in the case insist never existed." - Unknown
+
+- Bondi says she'll try to unseal Epstein grand jury records - ABC News: The article reports on President Donald Trump's response to uproar from his MAGA base over the Jeffrey Epstein files. Attorney General Pam Bondi announced plans to seek unsealing of grand jury transcripts related to Epstein's case. Trump alleged without evidence that former Biden officials doctored the files, while defending his administration's actions. The piece notes the Justice Department's memo stating no investigation into uncharged third parties was warranted, and Trump's call for releasing credible information. [https://www.nytimes.com/article/jeffrey-epstein-files-trump.html]
+Key Quotes: "We are ready to move the court tomorrow to unseal the grand jury transcripts." - Pam Bondi | "Well, I think it’s in the case of Epstein, they’ve already looked at it, and they are looking at it, and I think all they have to do is put out anything credible." - Donald Trump | "But you know, that was run by the Biden administration for four years. I can imagine what they put into files, just like they did with the others." - Donald Trump
+
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Adam Schefter: "Lloyd Howell announced his resignation as the NFLPA executive director. https://t.co/T89ysy127p" (663641 views, 560 likes) https://x.com/i/status/1946037760004923576
+- Elon Musk: "Same 😂 https://t.co/JiYqkEKgFq" (610753 views, 5128 likes) https://x.com/i/status/1946063062211199202
+- Adam Schefter: "And now the Bills have reached agreement with their second-round pick, defensive tackle TJ Sanders, on a four-year, $10.645 million deal that has $10.073 million of it guaranteed, per agents Robert Bailey and Drew Rosenhaus. https://t.co/RWiDT9J0eA" (393899 views, 2261 likes) https://x.com/i/status/1946037024865100159
+- Adam Schefter: "More about the sudden resignation of Lloyd Howell as Executive Director of the NFLPA:
+
+https://t.co/qi7Krhu1Pc" (346984 views, 233 likes) https://x.com/i/status/1946048040474734829
+- Adam Schefter: "Lloyd Howell brought his resignation as the Executive Director to the NFLPA Executive Committee this evening, per source. He was not asked to do this; it was his choice. https://t.co/o3SkNFUWfp" (315658 views, 249 likes) https://x.com/i/status/1946039688361345101
+- Adam Schefter: "The NFLPA Executive Committee is in touch with its membership, and the board is expected to meet as soon as possible to figure out the next steps that could include an interim executive director." (272912 views, 452 likes) https://x.com/i/status/1946040295306453245
+- Big Cat: "I missed this. What a fart https://t.co/jUgEnnxquX" (268293 views, 3755 likes) https://x.com/i/status/1946038367885385994
+- Adam Schefter: "Lloyd Howell served a mere 749 days as the Executive Director of the NFLPA; he was elected June 28, 2023 and announced his resignation July 17, 2025." (245527 views, 474 likes) https://x.com/i/status/1946043183739122159
+- Ian Rapoport: "#NFLPA executive director Lloyd Howell has now stepped down. https://t.co/H2x1NDaHWT" (238043 views, 418 likes) https://x.com/i/status/1946039271841746984
+- Naval: "The job of a startup is to find undiscovered talent and distill it into a product." (127312 views, 3404 likes) https://x.com/i/status/1946035289761448427
+- The New York Times: "Breaking News: President Trump said Pam Bondi could seek to release grand jury testimony from the Epstein case, falling short of critics’ demands for all files. https://t.co/EHxBQpOAWu" (109482 views, 195 likes) https://x.com/i/status/1946030939726909710
+- Barstool Sports: ""Welp Now Everyone Knows We Had Sex" -Actress/Model Elsie Hewitt Revealing She's Pregnant With Pete Davidson's Child https://t.co/mQ87Ew9ozY https://t.co/owQbSND8PL" (102876 views, 92 likes) https://x.com/i/status/1946038497996870027
+- Barstool Sports: "More Bad News For Indiana: Caitlin Clark's Injury Has Forced Her Out Of The All-Star 3 Point Contest https://t.co/iYO2UgNEEL https://t.co/DD1slSFsf4" (92777 views, 39 likes) https://x.com/i/status/1946028442308251782
+- Barstool Sports: "Miss Peaches Was A Guest On Jimmy Fallon's "Tonight Show" Last Night, With Her Handler Dave, And Won Everybody Over As Usual https://t.co/3ktltAO83W https://t.co/qxcJ8sdygc" (92352 views, 173 likes) https://x.com/i/status/1946030988963852579
+- The New York Times: "In @nytopinion
+
+“The tragedy of the contemporary academy is that even when traditional liberal learning clearly wins with students and donors, it loses with those in power,” writes Jennifer Frey, a professor of philosophy at the University of Tulsa. https://t.co/3Wk1IwqRT5" (88682 views, 48 likes) https://x.com/i/status/1946044780321907086
+- Mario Nawfal: "🇪🇺🇮🇷 IRAN TOLD: MAKE A DEAL OR FACE UN SANCTIONS
+
+France, Britain, and Germany just gave Iran a summer deadline to restart nuclear talks.
+
+If nothing happens by the end of August, they’ll hit the “snapback” button and bring back UN sanctions.
+
+Iran says it's open to talk, but so https://t.co/e2sz8istIE https://t.co/cFy29MdzrU" (83176 views, 50 likes) https://x.com/i/status/1946029656924422304
+- Mario Nawfal: "🚨🇺🇸 BREAKING: HOUSE COMMITTEE ADVANCES EPSTEIN FILES RESOLUTION DEMANDING BONDI RELEASE DOCUMENTS
+
+The House Rules Committee approved along party lines a resolution calling for Attorney General Pam Bondi to release Jeffrey Epstein investigation documents.
+
+The committee also https://t.co/JeMGGkLdWc https://t.co/Hvqh20WOGg" (79601 views, 187 likes) https://x.com/i/status/1946048774284956121
+- Barstool Sports: "Maurene Comey, The Prosecutor Who Handled The Diddy AND Ghislaine Maxwell Trials, Has Been Fired https://t.co/ggQhUtxUTP https://t.co/JQ7PxOjMWI" (79384 views, 101 likes) https://x.com/i/status/1946035976393896033
+- Barstool Sports: "'On The Course For About 12 Hours' - Marc Leishman Was Speaking For Every Single One Of Us When He Complained About Slow Play At The Open https://t.co/coQJYJKHdW https://t.co/WrwwO1eS7K" (76476 views, 44 likes) https://x.com/i/status/1946043552359747992
+- Mario Nawfal: "🇺🇸 REMEMBER WHEN TRUMP'S MANHATTAN SKYLINE SKETCH SOLD FOR $30K?
+
+That simple 2005 drawing of NYC with Trump Tower front and center fetched $29,184 at charity auction in 2017.
+
+Eleven bidders fought over it.
+
+Meanwhile WSJ claims Trump was also drawing naked stick figures for https://t.co/8r44VayPFn https://t.co/OPshiAtia3" (75696 views, 73 likes) https://x.com/i/status/1946033702330421536
+- Mario Nawfal: "🚨🇺🇸 SCOTT JENNINGS: TRUMP KICKED EPSTEIN OUT OF MAR A LAGO IN 2003, THIS BOMBSHELL LOOKS LIKE A DUD
+
+“I mean, 2003 before anything had happened, we know Donald Trump knew the guy. 
+
+We also know he disowned him and kicked him out of his club. 
+
+I was waiting all day long for https://t.co/wLTRWkTdqv https://t.co/dnQyDv7dIh" (73020 views, 127 likes) https://x.com/i/status/1946035948560507076
+- Mario Nawfal: "🚨🇺🇸 TRUMP: THE WALL STREET JOURNAL PRINTED A FAKE LETTER FROM EPSTEIN
+
+“The Wall Street Journal printed a FAKE letter, supposedly to Epstein. 
+
+These are not my words, not the way I talk. 
+
+Also, I don’t draw pictures. 
+
+I told Rupert Murdoch it was a Scam, that he shouldn’t https://t.co/GAA6vXc28g https://t.co/hg4QtQzpJk" (72012 views, 155 likes) https://x.com/i/status/1946028310636515817
+- Mario Nawfal: "🇺🇸 REP. RO KHANNA: THE GRAND JURY SHIELDS POWERFUL MEN, NOT VICTIMS OF EPSTEIN
+
+"Here's the problem.
+
+The grand jury testimony is largely about Epstein and Maxwell, not about all the rich and powerful men who abused, assaulted, and abandoned young women.
+
+Those people are still https://t.co/uzTT9E1VBp https://t.co/9B9CtDPBPX" (71042 views, 95 likes) https://x.com/i/status/1946045519828291726
+- Pardon My Take: "Zac was enjoying the dog during the race
+
+@HeyDudeShoes https://t.co/ew2TIftMM5" (67499 views, 297 likes) https://x.com/i/status/1946040597497712849
+- Mario Nawfal: "🚨🇺🇸 REP. MASSIE: CONGRESS THINKS YOU’RE STUPID, THE EPSTEIN VOTE RELEASES NOTHING
+
+“The rules committee passed a NON-BINDING Epstein resolution, hoping folks will accept it as real. 
+
+It forces the release of NOTHING. 
+
+But that resolution isn’t commingled with the Rescissions https://t.co/s46edozKx2 https://t.co/OhDDMFSyEN" (64378 views, 85 likes) https://x.com/i/status/1946036581250609276
+- World of Statistics: "Top 10 Country By Road Network In The World:
+
+1. USA 🇺🇲: 6,803,479 km
+2. India 🇮🇳: 6,700,000 km
+3. China 🇨🇳: 5,200,000 km
+4. Brazil 🇧🇷: 2,000,000 km
+5. Russia 🇷🇺: 1,538,875 km
+6. Japan 🇯🇵: 1,218,772 km
+7. France 🇫🇷: 1,053,215 km
+8. Canada 🇨🇦: 1,042,300 km
+9. Australia 🇦🇺: 873,573" (54494 views, 695 likes) https://x.com/i/status/1946034186818818212
+- World of Statistics: "Mean age of women at birth of first child:
+
+🇮🇹 Italy: 31.7
+🇪🇸 Spain: 31.6
+🇮🇪 Ireland: 31.5
+🇱🇮 Liechtenstein: 31.3
+🇱🇺 Luxembourg: 31.2
+🇨🇭 Switzerland: 31.2
+🇬🇷 Greece: 31.0
+🇵🇹 Portugal: 30.4
+🇳🇱 Netherlands: 30.3
+🇳🇴 Norway: 30.1
+🇩🇰 Denmark: 30.0
+🇸🇪 Sweden: 30.0
+🇩🇪 Germany: 29.9
+🇦🇹" (48459 views, 297 likes) https://x.com/i/status/1946049538051158073
+- Mario Nawfal: "SUBMARINE LETS YOU DIVE DEEP WITHOUT A SUPER YACHT
+
+You don’t need a billionaire’s yacht to own this sub.
+
+Meet NEMO, a sleek two-seater that dives 100 meters deep and stays underwater for eight hours. It’s small, it’s nimble, and it handles like a dream.
+
+Weighing just 2,500 https://t.co/8YbVk8WiQb https://t.co/Qdt7NZiJns" (47837 views, 70 likes) https://x.com/i/status/1946042248183029848
+- Sawyer Merritt: "Here are the top 7 voted for questions by investors so far for @Tesla's Q2 earnings call next week:
+
+1) Can you give us some insight how robotaxis have been performing so far and what rate you expect to expand in terms of vehicles, geofence, cities, and supervisors?
+
+2) What are https://t.co/JLDGTQSPSQ" (47214 views, 505 likes) https://x.com/i/status/1946041214769225889
+- Boston Celtics: "Let 'em know 😤 https://t.co/xH8NHWjo3T" (45710 views, 1571 likes) https://x.com/i/status/1946040620730007639
+- Mario Nawfal: "🚨🇮🇷 IRAN’S PRESIDENT WAS INJURED IN AN ISRAELI STRIKE AND NOW U.S. INTEL CONFIRMS IT
+
+Masoud Pezeshkian was in a meeting when the bombs hit. 
+
+That’s the story coming out of Iran, and now two U.S. intelligence sources are backing it. 
+
+The Iranian president reportedly crawled https://t.co/57m2HB0CXj https://t.co/8V9OiitjJx" (46482 views, 143 likes) https://x.com/i/status/1946038399472705568
+- Mario Nawfal: "🚨🇺🇸 HOUSE PASSES 3 SWEEPING CRYPTO BILLS — A THREAD
+
+The House has just passed 3 major crypto bills: the GENIUS Act, the CLARITY Act, and the Anti-CBDC Act.
+
+Trump’s all in, and he can't stop winning.
+
+Here’s what each bill would do👇 https://t.co/Ul6dj0zn1b https://t.co/mdTk5sSGNm" (44266 views, 149 likes) https://x.com/i/status/1946027744124641597
+- Mario Nawfal: "SATELLITES ARE TAKING OVER OUR SKY: HERE’S HOW FAST IT’S HAPPENING
+
+A new cinematic animation tracks every satellite launched since 1957, from lonely Sputnik to today’s orbital swarm.
+
+Each dot is real. 
+
+Each launch, logged. https://t.co/UWaABnV5NI https://t.co/dsRXcG4UM4" (40987 views, 144 likes) https://x.com/i/status/1946034691598901594
+- Mario Nawfal: "🇧🇷🇺🇸BOLSONARO TO TRUMP: THANK YOU VERY MUCH FOR THE LETTER
+
+"I received your personal letter with great joy interested in my person in its concern for freedom of expression.
+
+I'm on trial for a coup d'état given on a Sunday without troop, no weapons, with my presence in the https://t.co/weHyXEN1hN https://t.co/JF1ipJmaY5" (38882 views, 192 likes) https://x.com/i/status/1946028709435121932
+- Mario Nawfal: "THIS SPOON DOESN’T CARE IF YOUR HANDS SHAKE
+
+No matter how much you move, the tech keeps the spoon steady and your food in place.
+
+Built for people with Parkinson’s, but honestly feels like future Jedi tech.
+
+Spill-proof superpowers, unlocked.
+
+Source: @techwhizzzzz https://t.co/tUe1IVRAze https://t.co/0NLStoN9R6" (38206 views, 89 likes) https://x.com/i/status/1946044756951175504
+- Mario Nawfal: "🇺🇸 WHO NEEDS CYBERSECURITY? NOT THE STATE DEPARTMENT
+
+Over 1,300 staff got cut, including top experts in AI, quantum, and cyber defense.
+
+Whole offices were shut down or “abolished” like it’s a season finale plot twist.
+
+Even the team fighting digital dictatorships got axed. https://t.co/xrqTA3PBXW https://t.co/MNs2EX0Fcl" (36221 views, 50 likes) https://x.com/i/status/1946037206822293769
+- Mario Nawfal: "🚨🇺🇸 EXCLUSIVE: SEN. RAND PAUL – “BOTH PARTIES ARE DRIVING US INTO DEBT”
+
+@RandPaul:
+
+“The hawks wanna fund war.
+
+The left wants to fund welfare.
+
+And we end up with a $500,000,000,000 spending bill that fuels both the warfare-welfare state.” https://t.co/2GQ43aUMED https://t.co/heGqh7iSBa" (35929 views, 95 likes) https://x.com/i/status/1946032173762625932
+- Mario Nawfal: "🚨🇺🇸🇺🇦 NATO COMMANDER SAYS PATRIOTS MUST MOVE TO KYIV “AS QUICKLY AS POSSIBLE”
+
+NATO’s top general, U.S. Air Force Gen. Alexus Grynkewich, says more Patriot missile systems need to get to Ukraine fast. 
+
+Speaking in Germany, he confirmed efforts with Berlin to shift units already https://t.co/4NnZXrgdxA https://t.co/HUxpRywV2Y" (35327 views, 61 likes) https://x.com/i/status/1946043891913789473
+- Mario Nawfal: "🇺🇸 SEC. DUFFY: YOU SHOULDN’T BE GROPED OR LIT ON FIRE ON A SUBWAY
+
+“So even if you want to drive your car, a lot of people can't afford it.
+
+So they force those people into the subway, and the subway's not safe.
+
+And again, if you're a liberal and you want people to ride the https://t.co/IlZypBSFSO https://t.co/A46rzlg5ab" (31865 views, 107 likes) https://x.com/i/status/1946047273206518168
+- Mario Nawfal: "🇨🇳 CHINA’S FLYING ROBOT TAXI JUST TOOK OFF
+
+No driver. No pilot. Just vibes and altitude.
+
+This thing flew 130 feet up with reporters inside like it was no big deal.
+
+China’s flexing hard and basically saying, “We’ll fly forward with or without the U.S.”
+
+Source: CBS Evening News https://t.co/80DTyRqVuT https://t.co/t4dTTzDCyo" (31334 views, 70 likes) https://x.com/i/status/1946052306320883811
+- Boston Celtics: "Back in the W column 😌 https://t.co/S82WfALYU6" (30154 views, 739 likes) https://x.com/i/status/1946043711223455877
+- Mario Nawfal: "🚨🇺🇸CNN PANELIST QUESTIONS IF TRUMP WAS ACTUALLY SHOT
+
+Touré suggests Trump "supposedly got shot" at Butler rally, asking where are doctor reports. 
+
+Scott Jennings: 
+
+"WHOA, did you say supposedly?!" 
+
+Even CNN host confirms the shooting.
+
+https://t.co/Fq0pHCfuB9 https://t.co/GQVo09C5YA" (30763 views, 120 likes) https://x.com/i/status/1946055171550691404
+- CNN: "House Republicans pass Trump's $9 billion DOGE cuts package. The bill next goes to the president to sign into law. https://t.co/g5UEjyw3QE" (29560 views, 62 likes) https://x.com/i/status/1946069421262303517
+- Boston Celtics: "Hugo in the first half:
+
+10 PTS
+4 REB
+1 AST
+1 BLK https://t.co/OBKh0OCZSV" (28596 views, 429 likes) https://x.com/i/status/1946029495485604305
+- Mario Nawfal: "🇵🇸 737,000 MORE DISPLACED IN GAZA SINCE MARCH
+
+The UN says nearly everyone in Gaza has been forced to flee, most more than once.
+
+Strikes are hitting shelters, churches, and places people go to feel safe.
+
+Only a trickle of aid is getting in, and fuel just arrived for the first https://t.co/lc1EQTB8Gl https://t.co/l6GrF2VNhL" (25476 views, 40 likes) https://x.com/i/status/1946054822966501727
+- Boston Celtics: "END Q3: BOS 65 LAL 55" (25354 views, 153 likes) https://x.com/i/status/1946037086337040385
+- Mario Nawfal: "🇺🇸 CEOs BEWARE: HIRE ILLEGALLY, GO TO JAIL
+
+New GOP bill says if your company hires undocumented workers, the boss could go to prison.
+
+Like, up to 20 years and $5 million in fines prison.
+
+Executives now have to sign off that all workers are legal or face the heat.
+
+Safe Hire https://t.co/96Bcp2kqQH https://t.co/AwwbGEVWqj" (25105 views, 208 likes) https://x.com/i/status/1946057340408435031
+- Mario Nawfal: "3D PRINTED SHOES JUST DROPPED... LITERALLY
+
+Made with a Bambu Lab A1 and TPU filament, these Croc-style kicks look cool but probably feel like walking on a cheese grater.
+
+Just imagining the blisters makes my feet cry.
+
+But hey, fashion hurts right?
+
+Source: gcodelab https://t.co/97ClYZ6oVq" (24965 views, 81 likes) https://x.com/i/status/1946049790003036437
+- Mario Nawfal: "HOW MUCH DOES A BALD EAGLE ACTUALLY WEIGH?
+
+They may look massive, but most bald eagles only weigh around 10 to 14 pounds.
+
+That’s less than a bowling ball with wings and attitude.
+
+Still wouldn’t want to fight one.
+
+Source: @gunsnrosesgirl3 https://t.co/e6xYEIm0hy" (24042 views, 174 likes) https://x.com/i/status/1946039723216323033
+- Mario Nawfal: "🇺🇸REP. RASKIN: I DON’T KNOW WHY DEMS DID NOTHING WITH THE EPSTEIN FILES
+
+MSNBC:
+
+“It was a crisis then. It's a crisis now. 
+
+Why didn't Democrats call for it from 21 to 25?”
+
+Rep. Raskin: 
+
+“I mean, you'd have to go back and look specifically at particular prosecutorial decisions https://t.co/DIJLIo05TV https://t.co/GFr4VToL9F" (24124 views, 86 likes) https://x.com/i/status/1946053619398095097
+- Boston Celtics: "Throw it down Jordan 😤 https://t.co/sc2Pq3gSom" (23803 views, 320 likes) https://x.com/i/status/1946034948458049859
+- Sawyer Merritt: "Anyone else with an AMD chip still waiting for the Grok update in your Tesla? I haven't gotten it yet." (23771 views, 339 likes) https://x.com/i/status/1946070023178428432
+- Boston Celtics: "Clear the lane 🫡 https://t.co/kbxFY0iNWu" (22911 views, 286 likes) https://x.com/i/status/1946038524853231808
+- @jason: "Be a world builder" (22123 views, 271 likes) https://x.com/i/status/1946043338605686799
+- @jason: "Release it all https://t.co/qUOdokkqHF" (20933 views, 276 likes) https://x.com/i/status/1946055507695042613
+- Mario Nawfal: "THE CLARITY ACT (H.R.3633)
+
+This one finally draws lines in crypto law.
+
+It splits oversight between the SEC and CFTC, aiming to define what’s a security vs. what’s a commodity, like Bitcoin.
+
+Translation: less turf war, more legal clarity. https://t.co/gyIX67VkZO" (20964 views, 47 likes) https://x.com/i/status/1946027749300109781
+- Mario Nawfal: "THE ANTI-CBDC ACT (H.R.1919)
+
+This bill bans the Fed from creating a central bank digital currency.
+
+Supporters say it protects privacy and stops surveillance creep.
+
+It now locks in Bitcoin’s role as the top decentralized alternative to government-backed digital money. https://t.co/9T0aXE1UPz" (20901 views, 82 likes) https://x.com/i/status/1946027751305060824
+- Pardon My Take: "The fastest eater of the group @Philly_Mays 
+
+PMTV presented by @trulyseltzer https://t.co/dPUJ5Sck2S" (20690 views, 32 likes) https://x.com/i/status/1946057196401315893
+- Mario Nawfal: "🇺🇸 U.S. BORDER CHIEF BOVINO: NO SUCH THING AS A SANCTUARY CITY
+
+“Folks, there is no such thing as a sanctuary city. 
+
+There's no such thing as a sanctuary state. 
+
+We are here conducting this Title Eight mission.
+
+We've already arrested at least eight individuals for being in https://t.co/MewTooLv2q https://t.co/XkcNLiKNJM" (19578 views, 81 likes) https://x.com/i/status/1946059855933886881
+- Mario Nawfal: "🇬🇧 TESLA LAUNCHES VPP IN THE UK
+
+Tesla has rolled out its Virtual Power Plant (VPP) in the UK, allowing Powerwall owners to sell stored energy back to the grid.
+
+Participants earn money by storing solar power and supplying it when demand is high — helping balance the grid with https://t.co/cffbNo940h https://t.co/jEneSMQF2A" (19434 views, 49 likes) https://x.com/i/status/1946060069004865777
+- The New York Times: "Breaking News: The House approved a White House request to claw back $9 billion for foreign aid and public broadcasting, sending the measure to President Trump. https://t.co/ZkxXbWD9Ms https://t.co/b8gObx8js1" (19200 views, 39 likes) https://x.com/i/status/1946065992947257418
+- Mario Nawfal: "🇺🇸 TRUMP SAYS CANE SUGAR, FARMERS SAY “BAD IDEA”
+
+Trump wants real cane sugar in Coca-Cola instead of corn syrup.
+
+Corn lobby says that could kill thousands of U.S. jobs and flood the market with foreign sugar.
+
+They say it’s all pain, no health gain.
+
+Iowa’s mad, Florida’s https://t.co/MifWPjcaF6 https://t.co/bOL6bhnzoW" (18611 views, 63 likes) https://x.com/i/status/1946062372604641320
+- CSPAN: "U.S. House PASSES $9B foreign aid and public broadcasting spending cuts bill, 216-213. 
+
+Goes now to the president." (18241 views, 310 likes) https://x.com/i/status/1946059462344634581
+- Mario Nawfal: "🇺🇸 LA: ICE NEAR CAMPUS? OUR SCHOOL WILL GO VIRTUAL
+
+Los Angeles just moved classes online and let professors work remotely. 
+
+No natural disaster. No pandemic. 
+
+Just federal agents doing their job.
+
+This isn’t the 1st time LA pulled a stunt like this. 
+
+Mayor Karen Bass recently https://t.co/qn1rBrxPoY https://t.co/9lKCYGRrTL" (17520 views, 75 likes) https://x.com/i/status/1946077472380100798
+- Mario Nawfal: "🇺🇸  PROTESTERS IN SHAMBLES AS FEDS GO FULL MAGA VOICE
+
+In Portland, anti-ICE protesters were told to leave by federal officers… using a full-on Donald Trump impersonation.
+
+Real federal orders, fake Trump voice, result?
+
+Agitators melting down like their unresolved daddy issues https://t.co/sVtKLqQe10 https://t.co/zn8QH5eLvA" (16212 views, 69 likes) https://x.com/i/status/1946069922481852536
+- Mario Nawfal: "🚨🇺🇸 TRUMP: HOUSE APPROVES $9 BILLION CUTS, INCLUDING NPR AND PUBLIC BROADCASTING... THIS IS BIG!
+
+"House approves nine billion dollar cuts package, including atrocious NPR and public broadcasting, where billions a year were wasted. 
+
+Republicans have tried doing this for 40 https://t.co/lulPGTaGko https://t.co/VsswEHAnwQ" (15902 views, 131 likes) https://x.com/i/status/1946069429193753066
+- Sawyer Merritt: "NEWS: A "vision expert" at a rival autonomous vehicle startup said "annoyingly...Elon is right" about the pros and cons of using sensor fusion (camera + Radar + LiDAR) vs. @Tesla's vision only camera based approach for its robotaxi fleet, according to Morgan Stanley's Adam Jonas." (15112 views, 291 likes) https://x.com/i/status/1946071480376467667
+- World of Statistics: "🌍 Top 50 Most Peaceful Countries :
+
+1 🇮🇸 Iceland
+2 🇮🇪 Ireland
+3 🇦🇹 Austria
+4 🇳🇿 New Zealand
+5 🇸🇬 Singapore
+6 🇨🇭 Switzerland
+7 🇵🇹 Portugal
+8 🇩🇰 Denmark
+9 🇸🇮 Slovenia
+10 🇲🇾 Malaysia
+11 🇨🇦 Canada
+12 🇨🇿 Czechia
+13 🇫🇮 Finland
+14 🇭🇺 Hungary
+15 🇭🇷 Croatia
+16 🇧🇪 Belgium
+17 🇯🇵 Japan
+18" (14597 views, 87 likes) https://x.com/i/status/1946064892852932970
+- Sawyer Merritt: "bruh.... https://t.co/NDQedCiv9b https://t.co/BUmRmXMrwJ" (14365 views, 89 likes) https://x.com/i/status/1946078019883298932
+- Mario Nawfal: "NASA CATCHES JUPITER’S ALIEN SOUNDTRACK
+
+NASA’s Juno spacecraft picked up creepy sounds while cruising into Jupiter’s magnetic field. 
+
+The biggest planet in our solar system literally screams when you get too close, like a cosmic version of your little sibling when you enter https://t.co/2UpBgrwqEU https://t.co/GCGOAvXKZe" (13817 views, 67 likes) https://x.com/i/status/1946079989146820854
+- Mario Nawfal: "🚨🇺🇸 TRUMP SET TO SIGN $9B DOGE SPENDING CUTS AFTER LATE-NIGHT HOUSE VICTORY
+
+Congress sends rescissions package to Trump's desk - first time this tool's been used since 1999. Cuts $8B from USAID foreign aid and $1B from PBS/NPR.
+
+Mike Johnson delivers win for fiscal https://t.co/aArEtoVozJ https://t.co/piTgbfdJNP" (12869 views, 134 likes) https://x.com/i/status/1946065474204409989
+- Mario Nawfal: "🇺🇸 ELON: YOU HAVE TO WIN ON AUTONOMY AND ELECTRIFICATION
+
+“You have to win on autonomy and you have to win on electrification, and you have to make the product so compelling that it is worth paying the premium relative to the incumbent competitors. 
+
+This is a very big deal.” https://t.co/vGDrcXHz0b" (11722 views, 65 likes) https://x.com/i/status/1946060380461060245
+- World of Statistics: "2025 Press Freedom Index (Top 50):
+
+1. Norway 🇳🇴
+2. Estonia 🇪🇪
+3. Netherlands 🇳🇱
+4. Sweden 🇸🇪
+5. Finland 🇫🇮
+6. Denmark 🇩🇰
+7. Ireland 🇮🇪
+8. Portugal 🇵🇹
+9. Switzerland 🇨🇭
+10. Czechia 🇨🇿
+11. Germany 🇩🇪
+12. Liechtenstein 🇱🇮
+13. Luxembourg 🇱🇺
+14. Lithuania 🇱🇹
+15. Latvia 🇱🇻
+16. New" (10997 views, 57 likes) https://x.com/i/status/1946080743970451855
+- Mario Nawfal: "🇺🇸 MORE ‘ALLIGATOR ALCATRAZ’ CAMPS COMING SOON
+
+Kristi Noem says DHS is working with GOP governors to build more mega detention centers like Florida’s swamp-surrounded Alligator Alcatraz.
+
+The goal? Double deportation capacity and make escape basically impossible.
+
+Texas, https://t.co/2ogABXfFP1 https://t.co/Js2E8eyXoL" (10066 views, 50 likes) https://x.com/i/status/1946072444697256237
+- World and Science: "What Processed Red Meats May Be Doing to Your Brain Health: https://t.co/LnZGYtobNy" (10066 views, 19 likes) https://x.com/i/status/1946034216891814040
+- Tesla North America: "This is now also available to all used vehicles (provided your Used or Basic Vehicle Warranty is still valid)" (9574 views, 132 likes) https://x.com/i/status/1946031842835996923
+- Max Velocity: "93 MPH WIND GUST measured in Schurz, Nevada, an hour ago!
+
+This might’ve been from a microburst!" (9080 views, 266 likes) https://x.com/i/status/1946042389102997789
+- Mario Nawfal: "WALK IN VR. NEVER HIT A WALL. DISNEY MADE IT REAL
+
+Disney just introduced a wild new "Holotile" floor that lets users walk in any direction without ever stepping off.
+
+It adjusts in real time to keep you centered, and multiple people can use it at once, all moving freely in VR. https://t.co/JYtbGiWczX" (8974 views, 64 likes) https://x.com/i/status/1946064890944504048
+- World and Science: "Fascinating: A gravitational encounter has warped UGC 3912’s spiral structure, yet the stars themselves remain unchanged.
+
+Credit: NASA, ESA, and C. Kilpatrick (Northwestern University); Processing: Gladys Kober (NASA/Catholic University of America) https://t.co/7iogPHkABB" (8352 views, 32 likes) https://x.com/i/status/1946050321739808816
+- Sawyer Merritt: "BREAKING: Tesla has just introduced a bunch of new promos for new orders of the Model 3, Model Y and Cybertruck in the US. Here's everything that's new:
+
+Model 3:
+• 18 months of free Supercharging. For cash purchases only.
+• One free upgrade on eligible new inventory. Only for https://t.co/dMOw6oaPGL" (7674 views, 189 likes) https://x.com/i/status/1946066730109079698
+- Max Velocity: "WHO DID THIS https://t.co/n0rr3KY6tY" (7557 views, 231 likes) https://x.com/i/status/1946057915506291196
+- Mario Nawfal: "🚨🇺🇸 SCHIFF AND WARREN QUESTION COLBERT CANCELLATION AFTER TRUMP SETTLEMENT
+
+Stephen Colbert had just called out CBS’s parent company for its $16 million settlement with Trump, then three days later, his show was canceled. 
+
+Now Senators Adam Schiff and Elizabeth Warren are https://t.co/0EY0l0ZUd3 https://t.co/c5j3WVhVIJ" (7620 views, 20 likes) https://x.com/i/status/1946073513636364615
+- Charles Hoskinson: "Welcome Cardano to https://t.co/KiGCZuoVVE's 37 million users. Congratulations to the @midnightfdn for the great negotiations https://t.co/NwXdJQ1Urp" (7182 views, 307 likes) https://x.com/i/status/1946073116695822643
+- CSPAN: "Happening now: U.S. House vote on final passage of $9B foreign aid and public broadcasting spending cuts bill - LIVE on C-SPAN https://t.co/6A6bTociYr" (7343 views, 30 likes) https://x.com/i/status/1946057639638491421
+- Mario Nawfal: "🇮🇳🇺🇸 INDIA TAKES THE LEAD IN U.S. BILLIONAIRE IMMIGRANTS
+
+India just passed China and Israel as the top source of billionaire immigrants in the U.S.
+
+Jay Chaudhry, the $17.9 billion cybersecurity king, is now the richest Indian-American.
+
+Forbes says immigrant billionaires hold https://t.co/REyykbnZhB https://t.co/7VrOgySlVl" (6614 views, 40 likes) https://x.com/i/status/1946067405790396527
+- Cybertruck: "Personally most interested in free shoes so you better go for the inventory lease https://t.co/biYjQiOry2 https://t.co/qRPbvxtArT" (6454 views, 184 likes) https://x.com/i/status/1946078884807541089
+- Vintage Maps: "Territorial Claims of the USSR against Turkey (1945-1953) https://t.co/owJggBBxPO" (6484 views, 100 likes) https://x.com/i/status/1946050309924499751

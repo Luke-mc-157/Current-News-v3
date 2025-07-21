@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"A woman was hospitalized and a teen was arrested following a stabbing incident in Austin.\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    },\n    {\n      \"headline\": \"Austin has reported more than 33 homicides this year, with investigations ongoing into bodies found in Lady Bird Lake.\",\n      \"citations\": [\n        \"https://www.kxan.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla and Waymo are expanding robotaxi operations in Austin amid competition.\",\n      \"citations\": [\n        \"https://foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Several individuals have been banned from Austin's Municipal Pool due to reports of fights and disturbances.\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/watch-live-news",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/international/section/world/middleeast?page=2",
+    "https://www.bbc.com/news",
+    "https://foxnews.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://cbsaustin.com/news/local",
+    "https://www.fox26houston.com/",
+    "https://wktv.com/news/local/todays-trending-topics-headline-highlights-for-july-21/article_9c59b87f-1e78-56d6-9c79-573a1b5bf19b.html",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/Girl64Saved/status/1947082255727284512",
+    "https://x.com/houstoncitybeat/status/1947316366819594723",
+    "https://x.com/UndercodeNews/status/1946964478198759644",
+    "https://x.com/ABC6NEWS/status/1947376042420629699"
+  ]
+}
