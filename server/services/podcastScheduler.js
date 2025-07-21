@@ -313,7 +313,7 @@ export async function processPendingPodcasts() {
         
         // Generate audio
         console.log(`🎵 Generating audio with voice ${voiceId}`);
-        const audioResult = await generateAudio(script, voiceId);
+        const audioResult = await generateAudio(script, voiceId, episode.id);
         
         // Update episode with audio URL and local path
         const audioPath = audioResult.filePath || audioResult;
@@ -329,8 +329,8 @@ export async function processPendingPodcasts() {
           ? audioResult 
           : (audioResult.filePath || audioResult.audioUrl);
         
-        // Convert web path to absolute file path
-        const absoluteAudioPath = audioFilePath.startsWith('/podcast-audio/') 
+        // Convert web path to absolute file path - FIXED for new folder structure
+        const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
           ? path.join(process.cwd(), audioFilePath.substring(1)) // Remove leading / and join with cwd
           : path.join(process.cwd(), audioFilePath);
           
@@ -354,7 +354,10 @@ export async function processPendingPodcasts() {
         
       } catch (error) {
         console.error(`❌ Error processing scheduled podcast ${scheduled.id}:`, error);
-        await storage.updateScheduledPodcast(scheduled.id, { status: 'failed' });
+        await storage.updateScheduledPodcast(scheduled.id, { 
+          status: 'failed',
+          error_message: error.message || error.toString()
+        });
       }
     }
   } catch (error) {
