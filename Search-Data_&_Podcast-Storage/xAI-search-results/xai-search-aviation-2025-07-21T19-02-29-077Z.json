@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Alaska Airlines flights grounded due to IT outage\",\n      \"citations\": [\n        \"https://t.co/H0yBWAHgDj\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Near collision reported between commercial flight and B-52 Bomber\",\n      \"citations\": [\n        \"https://t.co/H0yBWAHgDj\"\n      ]\n    },\n    {\n      \"headline\": \"SkyWest jet makes emergency landing after in-flight passenger incident\",\n      \"citations\": [\n        \"https://t.co/dF2rRhz1Ia\"\n      ]\n    },\n    {\n      \"headline\": \"Jet2 Holidays advertisement becomes viral trend on TikTok\",\n      \"citations\": [\n        \"https://forbes.com/sites/conormurray/2025/07/21/the-nothing-beats-a-jet2-holiday-tiktok-trend-explained-and-how-the-airline-capitalized-on-viral-ad\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Reports of multiple aviation near misses and emergency landings increase\",\n      \"citations\": []\n    },\n    {\n      \"headline\": \"Aircraft engine experiences metal fatigue leading to system damage\",\n      \"citations\": [\n        \"https://t.co/gj3chWbHy0\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on available data from the last 24 hours; citations are limited to directly related sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/india/",
+    "https://www.bbc.com/news/topics/c2n5vpdv320t",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home/sections/CAQiSENCQVNNQW9JTDIwdk1ETm5aRFVTQldWdUxVZENHZ0pKVGlJT0NBUWFDZ29JTDIwdk1ETnlhekFxQ1FvSEVnVkpibVJwWVNnQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRE5uWkRVU0JXVnVMVWRDR2dKSlRpZ0FQAVAB?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.aljazeera.com/",
+    "https://www.scmp.com/news/china",
+    "https://forbes.com/sites/conormurray/2025/07/21/the-nothing-beats-a-jet2-holiday-tiktok-trend-explained-and-how-the-airline-capitalized-on-viral-ad",
+    "https://x.com/ProjectConstitu/status/1947253986634981714",
+    "https://x.com/joveg8/status/1947268115961987461",
+    "https://x.com/OnDisasters/status/1946924196337999892",
+    "https://x.com/MarieMyungOkLee/status/1947055509787615248",
+    "https://x.com/RoxysMilitary/status/1947117136771756373"
+  ]
+}

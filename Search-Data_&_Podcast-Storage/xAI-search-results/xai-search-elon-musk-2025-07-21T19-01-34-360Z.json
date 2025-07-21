@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"French authorities launch criminal investigation into X for suspected algorithm manipulation and data collection.\",\n      \"citations\": [\n        \"https://news-pravda.com/world/2025/07/21/1532296.html\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's relationship with Donald Trump worsens, leading to reported impacts on Tesla stock and SpaceX contracts.\",\n      \"citations\": [\n        \"Posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla expands Robotaxi operations, including geofence extensions and new app features in multiple regions.\",\n      \"citations\": [\n        \"Posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX begins unreported tunneling project near its facilities.\",\n      \"citations\": [\n        \"Posts found on X\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories 2, 3, and 4 relies primarily on posts found on X, which may not be fully verifiable; only one story has direct news article support.\"\n}",
+  "citations": [
+    "https://www.foxnews.com/",
+    "https://www.ndtv.com/topic/elon-musk",
+    "https://www.foxbusiness.com/category/elon-musk",
+    "https://news-pravda.com/world/2025/07/21/1532296.html",
+    "https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html",
+    "https://x.com/Angel_Trades5/status/1946748742452797523",
+    "https://x.com/aapkadilipgupta/status/1947246676558651488",
+    "https://x.com/MrBlueBit3/status/1947342365687222439",
+    "https://x.com/ThoughtleadrX/status/1946949197237985513",
+    "https://x.com/cybergigafacto1/status/1947201759748727107"
+  ]
+}
