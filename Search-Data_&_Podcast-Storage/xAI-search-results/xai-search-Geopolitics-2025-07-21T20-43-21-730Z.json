@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Russian President Vladimir Putin supports Iran's uranium enrichment amid ongoing international tensions.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Ukrainian President Zelenskiy is directed to participate in diplomatic talks as military situations develop.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Former U.S. President Donald Trump comments on BRICS nations' economic influence and potential trade policies.\",\n      \"citations\": [\n        \"https://www.npr.org/sections/news/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Russia proposes a new geopolitical alliance involving India, prompting reactions from China.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on available high-engagement posts and correlated news sources from the last 24 hours; some topics may have limited direct verification due to sparse details in posts.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.axios.com/",
+    "https://npr.org/sections/world",
+    "https://x.com/delhi919/status/1947358301756313817",
+    "https://x.com/policy_wire/status/1947053539303231646",
+    "https://x.com/OccupySchagen/status/1947000770055832028",
+    "https://x.com/IndiaToday/status/1947362802181804076",
+    "https://x.com/GodarmyofAngel/status/1947160051917222397"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"U.S. President Donald Trump threatens to interfere with a Washington, D.C., stadium deal for the NFL team unless it reverts to its former name.\",\n      \"sources\": [\n        \"https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/\"\n      ]\n    },\n    {\n      \"headline\": \"Former NFL Players Association executive Lloyd Howell resigned after documents revealed charges for visits to strip clubs.\",\n      \"sources\": [\n        \"https://www.espn.com/nfl/story/_/id/45769802/ex-nflpa-boss-lloyd-howell-strip-club-expenses-sent-investigator\"\n      ]\n    },\n    {\n      \"headline\": \"Former NFL player Terrell Owens criticizes another former player's ranking of current NFL quarterbacks.\",\n      \"sources\": [\n        \"https://t.co/RJL9ohVMjF\"\n      ]\n    },\n    {\n      \"headline\": \"A Heisman Trophy-winning quarterback criticizes NFL scouts for their evaluation of a player's draft position.\",\n      \"sources\": [\n        \"https://t.co/03QvjPMZxq\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data is based on available high-engagement posts and correlating articles from the last 24 hours; no additional stories identified from semantic searches.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.nytimes.com/athletic/nfl/team/lions/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/",
+    "https://www.nytimes.com/athletic/6503441/2025/07/19/how-a-new-money-battle-emerged-in-the-nfl-plus-scottie-chases-history/",
+    "https://foxnews.com/",
+    "https://www.espn.com/nfl/story/_/id/45769802/ex-nflpa-boss-lloyd-howell-strip-club-expenses-sent-investigator",
+    "https://heavy.com/sports/nfl/",
+    "https://www.espn.com/nfl/story/_/id/45703132/nflpa-nfl-agreed-keep-collusion-findings-secret",
+    "https://www.espn.com/nfl/story/_/id/45531014/top-10-nfl-cornerbacks-execs-scouts-2025-espn-jeremy-fowler-position-rankings",
+    "https://x.com/HGrahamNFL/status/1947346211121287647",
+    "https://x.com/InstaBharat/status/1946970555678085143",
+    "https://x.com/ChiefsOutWest/status/1947024838776025366",
+    "https://x.com/NewsSportGlobe/status/1947053037782290774",
+    "https://x.com/NewsSportGlobe/status/1947300933261840486"
+  ]
+}

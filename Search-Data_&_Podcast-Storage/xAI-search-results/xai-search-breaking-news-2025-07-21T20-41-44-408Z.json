@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Plane crash occurs in Oakey, regional Queensland\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"COVID-19 cases increase in multiple states\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.cbsnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"20-year-old bike rider killed in police pursuit in Newcastle\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.axios.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Event takes place on 21 July in Kolkata\",\n      \"citations\": [\n        \"https://news.google.com/\",\n        \"https://www.npr.org/sections/national/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement X posts and correlated news sources from the last 24 hours; data based on available context and may require verification for completeness.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/world/us/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.axios.com/",
+    "https://www.npr.org/sections/national/",
+    "https://www.cbsnews.com/",
+    "https://x.com/jayystanlee/status/1946848297978896886",
+    "https://x.com/Zee24Ghanta/status/1947187876531466321",
+    "https://x.com/InstaBharat/status/1947374878283190406",
+    "https://x.com/InstaBharat/status/1947185965316890948",
+    "https://x.com/kensbookinfo/status/1946998754034196529"
+  ]
+}

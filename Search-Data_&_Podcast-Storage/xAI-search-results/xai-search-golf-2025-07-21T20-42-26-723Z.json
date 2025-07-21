@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Scottie Scheffler wins the 2025 Open Championship\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6505116/2025/07/20/scottie-scheffler-wins-open-championship-2025/\",\n        \"https://www.bbc.com/sport/golf\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Rory McIlroy competes at Portrush without winning the Claret Jug\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/golf/\"\n      ]\n    },\n    {\n      \"headline\": \"A notable bench in golf history is discussed\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/golf/articles/cvg6zgeypego\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified based on available data; no additional stories found in searches within the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/golf",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/athletic/6505116/2025/07/20/scottie-scheffler-wins-open-championship-2025/",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/",
+    "https://www.cbsnews.com/",
+    "https://www.reuters.com/sports/golf/",
+    "https://nytimes.com/athletic/live-blogs/the-open-2025-live-updates-round-4-leaderboard/P1MLJzPF1O97/VAECUbqFEQ78",
+    "https://www.bbc.com/sport/golf/articles/cvg6zgeypego",
+    "https://x.com/GolfDigest/status/1946872716625133992",
+    "https://x.com/InstaBharat/status/1947031800527614000",
+    "https://x.com/InstaBharat/status/1946893506347254067",
+    "https://x.com/InstaBharat/status/1946885938681966688",
+    "https://x.com/InstaBharat/status/1946908549092704378"
+  ]
+}

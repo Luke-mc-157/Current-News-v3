@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Tesla expands Robotaxi testing area in Austin\",\n      \"citations\": [\n        \"https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7\",\n        \"https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla stock price rises by 3.21 percent\",\n      \"citations\": [\n        \"https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364\",\n        \"https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla reports high demand overwhelming order systems\",\n      \"citations\": [\n        \"https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-views\",\n        \"https://finance.yahoo.com/news/tesla-ev-buyers-need-to-act-now-if-they-want-7500-tax-credit-142028030.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla EV buyers face deadline for federal tax credit\",\n      \"citations\": [\n        \"https://finance.yahoo.com/news/tesla-ev-buyers-need-to-act-now-if-they-want-7500-tax-credit-142028030.html\",\n        \"https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Tesla prepares for Semi truck mass production\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement and semantic posts from X and correlating news articles; if sources were sparse, only directly related ones were included.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364",
+    "https://uk.finance.yahoo.com/news/tesla-opendoor-block-bp-ryanair-trending-tickers-091616750.html",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-views",
+    "https://finance.yahoo.com/news/tesla-ev-buyers-need-to-act-now-if-they-want-7500-tax-credit-142028030.html",
+    "https://x.com/MalachiGreb/status/1947063595537428771",
+    "https://x.com/gaming1networks/status/1947216450558808463",
+    "https://x.com/Angel_Trades5/status/1946748742452797523",
+    "https://x.com/cztslinvinkor/status/1947050954706297090",
+    "https://x.com/TL_branding/status/1946948551222956538"
+  ]
+}
