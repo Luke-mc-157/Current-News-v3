@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Liverpool FC receives transfer bid for Luis Diaz\",\n      \"citations\": [\n        \"https://www.skysports.com/football/live-blog/11095/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\",\n        \"https://www.bbc.com/sport/football/articles/c3en2g514jqo\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC monitoring Real Madrid forward Rodrygo\",\n      \"citations\": [\n        \"https://www.skysports.com/football/live-blog/11095/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\",\n        \"https://www.nytimes.com/athletic/football/team/liverpool/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC agrees transfer fee for Eintracht Frankfurt striker Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC involved in ongoing transfer discussions across Europe\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\",\n        \"https://www.bbc.com/sport/football/articles/c9w10kwgjk5o\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Burnley FC announces partnership with social media platform X\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6499568/2025/07/18/burnley-x-partnership-controversy\"\n      ]\n    }\n  ],\n  \"notes\": \"Only stories with sufficient verifiable data from the last 24 hours are included; no additional stories identified due to limited relevant high-engagement or semantic posts beyond those referenced.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://express.co.uk/",
+    "https://bbc.com/sport/football/articles/c9w10kwgjk5o",
+    "https://nytimes.com/athletic/6499568/2025/07/18/burnley-x-partnership-controversy",
+    "https://www.skysports.com/football/live-blog/11095/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://bbc.com/sport/football/articles/c3en2g514jqo",
+    "https://x.com/AnfieldIndex/status/1947568075215126558",
+    "https://x.com/thisisanfield/status/1947689734492590442"
+  ]
+}

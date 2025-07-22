@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Motorsports events include updates on injured drivers, racing plans, and a driver facing a ban.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Sports news features coverage of NFL, NBA, and MLB teams with player statistics and analysis.\",\n      \"citations\": [\n        \"https://heavy.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Cricket, football, tennis, and other sports have ongoing events with scores and highlights reported.\",\n      \"citations\": [\n        \"https://indianexpress.com/section/sports\"\n      ]\n    },\n    {\n      \"headline\": \"Global sports updates include breaking news from various leagues and international events.\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is partially sparse; not all stories have direct high-engagement X posts within the last 24 hours, relying on available news sources for verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://heavy.com/",
+    "https://indianexpress.com/section/sports",
+    "https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html",
+    "https://www.foxnews.com/tech/elmo-hack-exposes-serious-social-media-cybersecurity-threats",
+    "https://x.com/dirtrackr/status/1947652460299907115"
+  ]
+}

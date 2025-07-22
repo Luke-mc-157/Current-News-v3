@@ -1,0 +1,11 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk opens Tesla Diner restaurant and drive-in movie theater in Los Angeles\",\n      \"citations\": [\n        \"https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla reports 9,900 new vehicle registrations in China during the third week of July\",\n      \"citations\": [\n        \"https://www.teslarati.com/tesla-sees-9900-new-vehicle-registrations-in-china-in-julys-third-week/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla stock price and related market information updated on financial platforms\",\n      \"citations\": [\n        \"https://markets.businessinsider.com/stocks/tsla-stock/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla owner discusses expectations regarding vehicle upgrades\",\n      \"citations\": [\n        \"https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/video/",
+    "https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-",
+    "https://markets.businessinsider.com/stocks/tsla-stock/",
+    "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364",
+    "https://www.teslarati.com/tesla-sees-9900-new-vehicle-registrations-in-china-in-julys-third-week/"
+  ]
+}

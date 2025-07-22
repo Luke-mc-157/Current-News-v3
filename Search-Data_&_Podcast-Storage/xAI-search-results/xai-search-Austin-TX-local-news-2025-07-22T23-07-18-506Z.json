@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Governor Greg Abbott Declines to Release Emails with Elon Musk\",\n      \"citations\": [\n        \"https://www.kut.org/politics/2025-07-14/texas-elon-musk-greg-abbott\"\n      ]\n    },\n    {\n      \"headline\": \"Mexican Volunteers Provide Flood Relief Assistance in Texas\",\n      \"citations\": [\n        \"https://www.kut.org/texas/2025-07-13/mexican-firefighters-volunteers-search-rescue-texas-kerr-county-flooding-border-visas-permits\"\n      ]\n    },\n    {\n      \"headline\": \"Austin Café Partners with Keith Lee for Flood Relief Efforts\",\n      \"citations\": [\n        \"https://spectrumlocalnews.com/tx/austin/news/2025/07/15/la-la-land-cafe-keith-lee-flood-relief-collaboration-matcha-latte\"\n      ]\n    },\n    {\n      \"headline\": \"Central Texas Records Highest July Rainfall in History\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/weather-blog/how-july-rains-change-the-rest-of-summer/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; if additional high-engagement posts on X exist, they may not be fully represented here.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-CA&gl=CA&ceid=CA:en",
+    "https://www.kut.org/politics/2025-07-14/texas-elon-musk-greg-abbott",
+    "https://www.kut.org/texas/2025-07-13/mexican-firefighters-volunteers-search-rescue-texas-kerr-county-flooding-border-visas-permits",
+    "https://spectrumlocalnews.com/tx/austin/news/2025/07/15/la-la-land-cafe-keith-lee-flood-relief-collaboration-matcha-latte",
+    "https://www.kxan.com/weather/weather-blog/how-july-rains-change-the-rest-of-summer/",
+    "https://www.youtube.com/watch?v=X-EOCJET77Y"
+  ]
+}

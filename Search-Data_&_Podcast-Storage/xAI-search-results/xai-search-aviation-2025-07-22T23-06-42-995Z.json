@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Jet2 airline advertisement becomes a viral trend on TikTok\",\n      \"sources\": [\n        \"https://people.com/what-is-jet-2-holiday-viral-tiktok-trend-11776904\",\n        \"https://forbes.com/sites/conormurray/2025/07/21/the-nothing-beats-a-jet2-holiday-tiktok-trend-explained-and-how-the-airline-capitalized-on-viral-ad\"\n      ]\n    },\n    {\n      \"headline\": \"Survey indicates 76% of Indian airline passengers believe airlines prioritize publicity over safety\",\n      \"sources\": [\n        \"https://businesstoday.in/india/story/publicity-over-safety-76-indian-flyers-think-airlines-focus-more-on-ads-485786-2025-07-22\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only two relevant stories identified from the last 24 hours based on available data.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.bbc.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU",
+    "https://www.aljazeera.com/",
+    "https://www.reuters.com/",
+    "https://people.com/what-is-jet-2-holiday-viral-tiktok-trend-11776904",
+    "https://forbes.com/sites/conormurray/2025/07/21/the-nothing-beats-a-jet2-holiday-tiktok-trend-explained-and-how-the-airline-capitalized-on-viral-ad",
+    "https://businesstoday.in/india/story/publicity-over-safety-76-indian-flyers-think-airlines-focus-more-on-ads-485786-2025-07-22"
+  ]
+}

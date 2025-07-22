@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"NDTV publishes updates on Elon Musk's recent activities\",\n      \"citations\": [\n        \"https://ndtv.com/topic/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"BBC News covers general breaking stories including technology figures\",\n      \"citations\": [\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters provides video content on global news events\",\n      \"citations\": [\n        \"https://www.reuters.com/video/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only three high-engagement stories identified from the last 24 hours based on available data; no additional semantic posts on X found.\"\n}",
+  "citations": [
+    "https://www.reuters.com/video/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/2025/07/08/technology/grok-antisemitism-ai-x.html",
+    "https://ndtv.com/topic/elon-musk",
+    "https://www.cnn.com/2025/06/30/media/elon-musk-bill-primary-threat",
+    "https://www.npr.org/2025/07/09/nx-s1-5462609/grok-elon-musk-antisemitic-racist-content",
+    "https://www.huffpost.com/entry/x-ceo-resigns_n_686e80f5e4b041f69cfe16d6"
+  ]
+}

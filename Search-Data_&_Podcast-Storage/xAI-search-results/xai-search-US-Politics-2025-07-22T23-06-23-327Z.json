@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Leaked communications reveal alleged coordination between Clinton campaign and federal entities regarding Trump-Russia investigations.\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"Biden administration addresses ongoing policy issues in White House updates.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Congressional activities include debates on key legislative matters.\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    },\n    {\n      \"headline\": \"Supreme Court rulings impact US political landscape.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts on X and correlating news articles from the last 24 hours; sources were selected for direct relevance to US politics.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/",
+    "https://www.foxnews.com/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/politics",
+    "https://foxnews.com/us",
+    "https://www.npr.org/sections/news/",
+    "https://x.com/gatewaypundit/status/1947646514538680327"
+  ]
+}
