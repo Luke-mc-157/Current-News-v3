@@ -68,10 +68,10 @@ CONTENT RULES:
 
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
-- Include as many headlines and stories as possible.
+- Include as many headlines and stories as possible. If you can include ALL headlines with supporting data, do it.
 - Group stories by topic/category.
 - For each story: Present facts from articles and posts, quote key sources.
-- Start with stories that have the most engagement (views + likes from supporting X posts)
+- Start with stories that have the most engagement (views + likes from supporting X posts), then move to lower engagement stories. You may use your own judgement to determine engagement and story order.
 - From Your Feed Section: If provided, add a closing section: "From Your Feed: [Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun, so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply."
 - CLOSING SIGN OFF: "That's what's happening, currently. Thank you for listening. Make it a great day, or not...the choice is yours. See you next time." 
 
