@@ -743,7 +743,7 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         reasoning_effort: "high",
         from_date: fromDate,
         sources: [
-          {"type": "x",},
+          {"type": "x","post_view_count": 2500},
           {"type": "news", "country": "US" },
           {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
         ]

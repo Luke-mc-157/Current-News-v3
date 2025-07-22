@@ -899,8 +899,8 @@ export default function Podcasts() {
                                       // Extract filename from local path
                                       const filename = episode.audioLocalPath?.split('/').pop();
                                       if (filename) {
-                                        // Open audio in new window for playing
-                                        window.open(`/podcast-audio/${filename}`, '_blank');
+                                        // Open audio in new window for playing - updated for new folder structure
+                                        window.open(`/Search-Data_&_Podcast-Storage/podcast-audio/${filename}`, '_blank');
                                       }
                                     }}
                                   >

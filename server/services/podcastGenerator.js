@@ -64,7 +64,7 @@ CONTENT RULES:
 3. FACTUAL LANGUAGE: Use neutral, objective language. Avoid adjectives that imply judgment.
 4. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
 5. CITE SOURCES: Reference the X posts and articles naturally within the narrative. There are many cited articles from the user's timeline and RSS feeds - make sure to analyze them and use them in the script, as appropriate.
-6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not"). MINIMIZE FLUFF - keep it concise and to the point.
+6. STYLE: Write in a conversational, engaging style. MINIMIZE FLUFF - keep it concise and to the point. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not").
 
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
