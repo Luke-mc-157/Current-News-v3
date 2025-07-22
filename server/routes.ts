@@ -588,8 +588,7 @@ export function registerRoutes(app) {
     }
   });
 
-  // Serve podcast audio files from new location
-  app.use('/Search-Data_&_Podcast-Storage/podcast-audio', express.static(path.join(__dirname, '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio')));
+  // Podcast audio files are now served from server/index.ts before Vite middleware
 
   // X OAuth authentication routes (now using database-stored tokens)
   

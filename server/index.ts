@@ -1,5 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import session from "express-session";
+import path from "path";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { devAutoLogin } from "./middleware/devMiddleware.js";
@@ -23,6 +24,9 @@ app.use(session({
 
 // Add development auto-login middleware
 app.use(devAutoLogin);
+
+// Serve podcast audio files BEFORE Vite middleware to prevent conflicts
+app.use('/Search-Data_&_Podcast-Storage/podcast-audio', express.static(path.join(process.cwd(), 'Search-Data_&_Podcast-Storage', 'podcast-audio')));
 
 app.use((req, res, next) => {
   const start = Date.now();
