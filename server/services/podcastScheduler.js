@@ -1,6 +1,6 @@
 // server/services/podcastScheduler.js
 import { storage } from "../storage.js";
-import { generateHeadlinesWithLiveSearch } from "./liveSearchService.js";
+import { generateHeadlinesWithLiveSearch, getCompiledDataForPodcast } from "./liveSearchService.js";
 import { generatePodcastScript } from "./podcastGenerator.js";
 import { generateAudio } from "./voiceSynthesis.js";
 import { sendPodcastEmail } from "./emailService.js";
@@ -276,26 +276,31 @@ export async function processPendingPodcasts() {
           }
         }
         
-        // Generate headlines using live search
-        console.log(`📰 Generating headlines for topics: ${topics.join(', ')}`);
-        const headlinesResult = await generateHeadlinesWithLiveSearch(
+        // Get compiled data directly for podcast generation (bypassing headline generation)
+        console.log(`📰 Fetching compiled data for topics: ${topics.join(', ')}`);
+        const compiledDataResult = await getCompiledDataForPodcast(
           topics,
           scheduled.userId,
           userHandle,
           accessToken
         );
         
-        if (!headlinesResult.headlines || headlinesResult.headlines.length === 0) {
-          console.error('❌ No headlines generated');
-          await storage.updateScheduledPodcast(scheduled.id, { status: 'failed' });
+        if (!compiledDataResult.compiledData || compiledDataResult.compiledData.length === 0) {
+          console.error('❌ No compiled data generated');
+          await storage.updateScheduledPodcast(scheduled.id, { 
+            status: 'failed',
+            errorMessage: 'Failed to generate compiled data for podcast'
+          });
           continue;
         }
         
-        // Generate podcast script
-        console.log(`📝 Generating ${duration}-minute podcast script`);
+        console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters from ${compiledDataResult.totalSources} sources`);
+        
+        // Generate podcast script directly from compiled data
+        console.log(`📝 Generating ${duration}-minute podcast script from compiled data`);
         const script = await generatePodcastScript(
-          headlinesResult.compiledData,
-          headlinesResult.appendix,
+          compiledDataResult.compiledData,
+          null, // No appendix from headline generation
           duration,
           "Current News"
         );
@@ -307,7 +312,7 @@ export async function processPendingPodcasts() {
           durationMinutes: duration,
           voiceId: voiceId,
           script,
-          headlineIds: headlinesResult.headlines.map(h => h.id),
+          headlineIds: [], // No headlines generated, using compiled data directly
           wasScheduled: true
         });
         

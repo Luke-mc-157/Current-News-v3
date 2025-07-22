@@ -277,6 +277,128 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   return { headlines, appendix, compiledData };
 }
 
+// New function for podcast delivery - bypasses headline generation and returns compiled data directly
+export async function getCompiledDataForPodcast(topics, userId = null, userHandle = null, accessToken = null) {
+  const startTime = Date.now();
+  console.log(`🎯 Starting compiled data generation for podcast delivery...`);
+  console.log(`📋 Topics: ${topics.join(', ')}`);
+  
+  // Step 1: Fetch all topic data from Live Search
+  console.log('📝 Step 1: Fetching Live Search data for all topics...');
+  const allTopicData = [];
+  
+  for (const topic of topics) {
+    try {
+      const topicData = await getTopicDataFromLiveSearch(topic);
+      allTopicData.push(topicData);
+    } catch (error) {
+      console.error(`❌ Error fetching data for topic "${topic}":`, error.message);
+      // Continue with other topics even if one fails
+    }
+  }
+  
+  console.log(`✅ Live Search completed for ${allTopicData.length}/${topics.length} topics`);
+  
+  // Step 1.5: Get user timeline posts and RSS feeds if available
+  const followedPosts = [];
+  const formattedRssArticles = [];
+  
+  if (userId) {
+    // Get user's RSS feeds
+    try {
+      const userRssFeeds = await storage.getRssFeedsByUserId(userId);
+      if (userRssFeeds.length > 0) {
+        console.log(`📰 Found ${userRssFeeds.length} RSS feeds for user`);
+        
+        // Fetch and format RSS articles
+        for (const feed of userRssFeeds) {
+          try {
+            const articles = await fetchRSSArticles(feed.feedUrl);
+            console.log(`📰 Fetched ${articles.length} articles from ${feed.feedName}`);
+            
+            articles.forEach(article => {
+              formattedRssArticles.push({
+                ...article,
+                feedName: feed.feedName,
+                source: 'rss'
+              });
+            });
+          } catch (rssError) {
+            console.error(`❌ Error fetching RSS feed ${feed.feedName}:`, rssError.message);
+          }
+        }
+        console.log(`📰 Total RSS articles: ${formattedRssArticles.length}`);
+      }
+    } catch (error) {
+      console.error(`❌ Error fetching RSS feeds for user ${userId}:`, error.message);
+    }
+    
+    // Get timeline posts if X auth available
+    if (userHandle && accessToken) {
+      try {
+        const timelinePosts = await fetchUserTimeline(accessToken);
+        followedPosts.push(...timelinePosts);
+        console.log(`📱 Fetched ${timelinePosts.length} timeline posts for @${userHandle}`);
+      } catch (error) {
+        console.error(`❌ Error fetching timeline for @${userHandle}:`, error.message);
+      }
+    }
+  }
+  
+  // Format timeline posts
+  const formattedTimelinePosts = [];
+  if (followedPosts.length > 0 && userHandle) {
+    console.log(`📱 Formatting ${followedPosts.length} timeline posts...`);
+    
+    followedPosts.forEach(post => {
+      formattedTimelinePosts.push({
+        id: post.id,
+        text: post.text,
+        author_id: post.author_id,
+        author_name: post.author_name,
+        created_at: post.created_at,
+        public_metrics: post.public_metrics || {
+          retweet_count: 0,
+          reply_count: 0,
+          like_count: 0,
+          quote_count: 0,
+          view_count: 0
+        },
+        url: `https://x.com/i/status/${post.id}`,
+        source: 'timeline'
+      });
+    });
+    
+    console.log('✅ Timeline posts formatted');
+  }
+  
+  // Step 2: Compile raw search data with metadata
+  console.log('📝 Step 2: Compiling raw search data...');
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles);
+  
+  // Write compiled data to file for inspection
+  try {
+    const fs = await import('fs');
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const filename = `Search-Data_&_Podcast-Storage/compiled-data/compiled-data-${timestamp}.txt`;
+    await fs.promises.writeFile(filename, compiledResult.compiledData);
+    console.log(`📄 Full compiled data written to: ${filename}`);
+  } catch (error) {
+    console.error(`❌ Could not write compiled data file: ${error.message}`);
+  }
+  
+  const responseTime = Date.now() - startTime;
+  console.log(`✅ Compiled data generation completed in ${responseTime}ms`);
+  console.log(`📊 Data length: ${compiledResult.compiledData.length} characters`);
+  console.log(`📊 Sources breakdown: ${JSON.stringify(compiledResult.breakdown)}`);
+  
+  return {
+    compiledData: compiledResult.compiledData,
+    breakdown: compiledResult.breakdown,
+    totalSources: compiledResult.totalSources
+  };
+}
+
 // Extract post ID from X URL
 function extractPostIdFromXURL(url) {
   const match = url.match(/(?:x\.com|twitter\.com)\/[^\/]+\/status\/(\d+)/);
