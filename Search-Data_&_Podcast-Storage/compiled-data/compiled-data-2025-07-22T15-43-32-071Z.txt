@@ -1,0 +1,1102 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "",
+  "stories": [
+    {
+      "headline": "Elon Musk's Tesla diner and drive-in theater is scheduled to open in Hollywood.",
+      "citations": [
+        "https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday"
+      ]
+    },
+    {
+      "headline": "Tesla is experiencing a reduction in revenue from regulatory credit sales.",
+      "citations": [
+        "https://abc17news.com/news/2025/07/22/the-big-problem-for-tesla-that-isnt-getting-much-attention"
+      ]
+    },
+    {
+      "headline": "A Tesla owner reports unexpected issues with vehicle upgrades.",
+      "citations": [
+        "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364"
+      ]
+    },
+    {
+      "headline": "Reuters provides coverage of global news including automotive developments.",
+      "citations": [
+        "https://www.reuters.com/"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: The article content was not accessible. No information is available about its content. It is listed under the topic 'Tesla', but details could not be retrieved. This may be due to access restrictions or errors. As a result, no specific facts or data can be summarized. [https://www.reuters.com/video/]
+
+- [Article from www.washingtonpost.com]: The article content was not accessible. No information is available about its content. It is listed under the topic 'Tesla', but details could not be retrieved. This may be due to access restrictions or errors. As a result, no specific facts or data can be summarized. [https://www.washingtonpost.com/]
+
+- [Article from www.reuters.com]: The article content was not accessible. No information is available about its content. It is listed under the topic 'Tesla', but details could not be retrieved. This may be due to access restrictions or errors. As a result, no specific facts or data can be summarized. [https://www.reuters.com/]
+
+- Latest News Today: Breaking News and Top Headlines from India, Entertainment, Business, Politics and Sports | The Indian Express: The Indian Express website provides a comprehensive overview of breaking news from India and worldwide, covering categories such as politics, business, entertainment, and sports. It includes headlines on various topics, including political events like the resignation of Vice-President Dhankhar and social issues like the Mumbai train blasts case. In the business section, it references Tesla facing sales drops and other challenges. The site offers additional features like newsletters, ePaper, and user subscriptions for enhanced access to news content. [https://indianexpress.com/]
+Key Quotes: "'Just electrocute him': A brother unlocks a phone and a deadly plot unravels" - Unknown (headline or story reference) | "Tesla absolutely obsolete in 4 years" - Reddit user u/mr4sh
+
+- Tesla Owner Thinks They'll Be 'Upgraded for Life'—Quickly Realizes Something - Newsweek: A Tesla owner shared their frustration on Reddit after finding that their Model 3 Performance vehicle would not receive promised software upgrades, including version 13 and the Grok chatbot, due to hardware limitations. The owner also reported issues with the Full Self-Driving software not functioning as expected and a battery replacement that significantly reduced range. Criticism was directed at Tesla CEO Elon Musk for his behavior and the company's customer service. Reddit users commented on the post, debating the validity of Tesla's upgrade promises and suggesting alternative vehicle choices for longevity. [https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364]
+Key Quotes: "A huge selling point for me when I bought my Performance Model 3 about 4 years ago was that everyone talked about how you get upgraded for life." - Reddit user mr4sh | "Since then, we've upgraded to version 13, which my car will never get." - Reddit user mr4sh | "Also, huge cherry on top that the CEO became an absolute f***ing Nazi idiot." - Reddit user mr4sh | "Your first Musking?" - A Reddit user
+
+- [Article from abc17news.com]: The article content was not accessible. No information is available about its content. It is listed under the topic 'Tesla', but details could not be retrieved. This may be due to access restrictions or errors. As a result, no specific facts or data can be summarized. [https://abc17news.com/news/2025/07/22/the-big-problem-for-tesla-that-isnt-getting-much-attention]
+
+- [Article from ktla.com]: The article content was not accessible. No information is available about its content. It is listed under the topic 'Tesla', but details could not be retrieved. This may be due to access restrictions or errors. As a result, no specific facts or data can be summarized. [https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday]
+
+---
+
+TOPIC: elon musk
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Elon Musk has been posting criticism of Donald Trump on X regarding the Jeffrey Epstein files.",
+      "citations": [
+        "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343"
+      ]
+    },
+    {
+      "headline": "Tesla's Optimus humanoid robot demonstrated serving popcorn, as showcased by Elon Musk.",
+      "citations": [
+        "https://timesofindia.indiatimes.com/technology/tech-news/elon-musks-tesla-optimus-humanoid-robot-serving-popcorn-goes-viral-says-this-will-become-normal-in-a-few-years/articleshow/122810959.cms"
+      ]
+    },
+    {
+      "headline": "Elon Musk's platform X is contributing to divisions within the MAGA movement and Trump support.",
+      "citations": [
+        "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128"
+      ]
+    },
+    {
+      "headline": "Elon Musk's X has stated it will not cooperate with a French investigation it describes as politically mot
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 'It's a cover up': Musk floods X with posts attacking Trump over Epstein - ABC News: Elon Musk has been posting extensively on X, criticizing President Donald Trump's handling of the Jeffrey Epstein case files. Musk accuses the Trump administration of a cover-up after it refused to release additional documents related to Epstein. He references Epstein's death and Ghislaine Maxwell's imprisonment in sarcastic posts, and uses his AI chatbot Grok to question government knowledge of Epstein's associates. Musk's actions follow his resignation from leading the Department of Government Efficiency, escalating a public feud with Trump. Trump responded by calling Musk a 'train wreck', amid ongoing tensions over the issue. [https://www.washingtonpost.com/]
+Key Quotes: "a cover up (obviously)" - Elon Musk | "Wow, amazing that Epstein 'killed himself' and Ghislaine is in federal prison for a hoax," - Elon Musk | "I am saddened to watch Elon Musk go completely 'off the rails,' essentially becoming a TRAIN WRECK over the past five weeks." - Donald Trump
+
+- Elon Musk’s Tesla Optimus humanoid robot serving popcorn goes viral; says, ‘This will become normal in a few years’ | - The Times of India: Elon Musk demonstrated Tesla's Optimus humanoid robot serving popcorn at a diner event, which went viral on social media. The robot showcased precise movements and user interaction, highlighting progress in robotics for daily tasks. Musk stated that such robots will become commonplace in a few years, potentially assisting with chores, caregiving, and other routine activities. Despite advancements, challenges in achieving full autonomy persist, with a commercial release planned for 2026. The event underscores Tesla's efforts to develop general-purpose robots for everyday use. [https://www.reuters.com/video/]
+Key Quotes: "This will become normal in a few years." - Elon Musk
+
+- Elon Musk: Latest News, Photos, Videos on Elon Musk - NDTV.COM: Elon Musk's company X refused to cooperate with a French investigation it described as politically motivated regarding algorithmic bias. Tesla opened a diner in Los Angeles featuring robot servers and comfort food. Musk announced a new kid-friendly AI chatbot called Baby Grok following controversy over a companion AI. He changed his phone number after a public feud with US President Donald Trump. Musk continued to criticize Trump over the Jeffrey Epstein case, including through social media posts. [https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343]
+Key Quotes: "Based on what we know so far, X believes that this investigation is distorting French law in order to serve a political agenda and, ultimately, restrict free speech." - X (Global Government Affairs) | "Can't Believe Epstein Killed Himself" - Elon Musk
+
+- Elon Musk's X says it won't cooperate with 'politically motivated' French probe - ABC News: Elon Musk's social media platform X accused French prosecutors of conducting a politically motivated investigation into alleged foreign interference and algorithmic bias. X denied all allegations and refused to cooperate, claiming the probe distorts French law to restrict free speech. French authorities requested access to X's algorithm for analysis, but the company has not complied. The investigation involves potential charges related to organized crime, allowing for surveillance measures. This case highlights ongoing tensions between X and European governments over content regulation and free speech. [https://timesofindia.indiatimes.com/technology/tech-news/elon-musks-tesla-optimus-humanoid-robot-serving-popcorn-goes-viral-says-this-will-become-normal-in-a-few-years/articleshow/122810959.cms]
+Key Quotes: "Based on what we know so far, X believes that this investigation is distorting French law in order to serve a political agenda and, ultimately, restrict free speech." - X | "It’s a concept that seems completely up-ended in the United States at the moment." - Eric Bothorel
+
+---
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Based on available data from the last 24 hours, four viral stories were identified. Data is limited to high-engagement X posts and correlating news articles; no additional sources were used.",
+  "top_stories": [
+    {
+      "headline": "Liverpool FC has agreed a transfer fee for striker Hugo Ekitike from Eintracht Frankfurt.",
+      "citations": [
+        "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+        "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+        "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107"
+      ]
+    },
+    {
+      "headline": "Bayern Munich is preparing a bid for Liverpool FC forward Luis Diaz.",
+      "citations": [
+        "Posts found on X discussing Luis Diaz transfer rumors",
+        "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107"
+      ]
+    },
+    {
+      "headline": "Liverpool FC is engaged in transf
+
+X POSTS FROM SEARCH (4):
+- AnfieldIndex: "🟥 Luis Diaz #LFC EXIT CLOSE with BIG Bayern Bid Expected
+
+🗣️ @DaveD0106  is here to round up all the Liverpool-related news and transfer gossip
+
+🆕 Tuesday's Newsround Podcast 👇 https://t.co/pcKcMtzdvx" (3289 views, 6 likes) https://x.com/AnfieldIndex/status/1947568075215126558
+- Anfield Watch: "This could have a huge impact on what Liverpool do this summer 🤔 https://t.co/yhZ4VxpQ3O" (19605 views, 99 likes) https://x.com/AnfieldWatch/status/1947227658229518749
+- Vikram Mahendra: "Making my debut for @AnfieldIndex, wrote this piece about how the Liverpool fanbase is on cloud 9 this summer 
+
+Do read, thanks to @eddiegibbs and @ghopcroft for this, more to come… 
+
+YNWA https://t.co/L5rkfUdAz6" (8346 views, 12 likes) https://x.com/ElRealesVikram/status/1947363596788273580
+- The Anfield Wrap: "🎥 Liverpool In Hong Kong, Ekitike Excitement &amp; More | Talking Reds
+
+The lads bring their first update from Hong Kong. Talking through the latest news and giving an update on how the reds are preparing.
+
+1⃣ Download our App
+2⃣ Get FREE Tokens
+3⃣ Watch
+📲 https://t.co/eNpQIJSOvQ https://t.co/o4jHpoWLoW" (15250 views, 19 likes) https://x.com/TheAnfieldWrap/status/1947588968931045821
+
+SUPPORTING ARTICLES (7):
+- Liverpool FC - Transfer news, results, fixtures, video and audio: The article provides updates on Liverpool FC's transfer news, fixtures, and results on BBC Sport. It reports Liverpool's agreement to sign Hugo Ekitike from Eintracht Frankfurt for an initial £69m, with details on his performance and tactical fit. Fan opinions are shared on Darwin Nunez's future, with some advocating for his retention due to contributions in the Premier League. Analyst Umir Irfan discusses Ekitike's potential as a long-term signing complementary to Mohamed Salah. Tributes are paid to former player Joey Jones who died at age 70. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "It’s perhaps a better long-term signing for Liverpool in general to end up with Ekitike." - Umir Irfan | "Nunez should stay, he contributed a lot to our achievement in the Premier League and is currently our main striker." - Nathan | "He’s clearly on a mission." - Dax
+
+- Liverpool - News, Schedule, Scores, Roster, and Stats - The Athletic: The article covers Liverpool's transfer news, including the agreement for Hugo Ekitike and analysis of his potential impact on the team's attacking structure. It discusses pre-season performances, such as Darwin Nunez's hat-trick against Stoke City, and tactical shifts possibly involving Mohamed Salah. Newcastle manager Eddie Howe is quoted on retaining Alexander Isak, amid Liverpool's interest. Other updates include Federico Chiesa's omission from the pre-season tour due to fitness issues and broader football gossip. The piece also features collectibles and squad assessments. [https://www.nytimes.com/athletic/football/team/liverpool/]
+Key Quotes: "'confident' of keeping 'irreplaceable' Alexander Isak at Newcastle." - Eddie Howe
+
+- Liverpool | Latest News & Updates | BBC News: The article aggregates news from Liverpool, including regional stories on crime, education, and sports. It reports the death of former Liverpool and Wales defender Joey Jones at age 70, with tributes from figures like John Aldridge. Brief football updates mention Liverpool's transfer activities and fan sentiments. Other topics cover local issues such as MMR vaccinations and school ratings. The content blends general Merseyside news with occasional sports references. [https://www.bbc.com/news/england/merseyside]
+Key Quotes: "'My kids didn’t have MMR jab until I read about measles death.'" - Unknown | "More sad news folks Joey Jones passed away last night. What a lovely man and an inspirational full back who gave his heart and soul in a red shirt." - John Aldridge
+
+- Hugo Ekitike: Liverpool agree £69m fee for Eintracht Frankfurt striker - BBC Sport: Liverpool have agreed a £69m fee with Eintracht Frankfurt for striker Hugo Ekitike, who is expected to sign a six-year contract and join the squad soon. Ekitike scored 15 goals in 31 starts last season, contributing to Frankfurt's third-place finish in the Bundesliga. Analysis describes him as a versatile attacker capable of playing in multiple roles, with strengths in pressing and tactical understanding. The transfer pushes Liverpool's summer spending over £250m, following other signings like Florian Wirtz. Newcastle's earlier bid for Ekitike was rejected, highlighting competition for strikers. [https://www.bbc.com/sport/football/articles/cp90g0kkk3zo]
+Key Quotes: "Ekitike is versatile and not a striker who only feels at home inside the box." - Constantin Eckner
+
+- Transfer news: Liverpool agree fee with Frankfurt for Ekitike - BBC Sport: The live blog reports Liverpool agreeing a £69m fee for Hugo Ekitike from Eintracht Frankfurt, with the striker set for a medical. It covers Marcus Rashford's loan move to Barcelona after passing a medical and accepting a pay cut. Arsenal's transfer pursuits and other gossip are discussed, including quotes from managers like Ruben Amorim. Fan interactions and analyst views on player futures are included. The update emphasizes ongoing transfer activities across multiple clubs. [https://www.bbc.com/sport/football/live/c8xvnwgevqqt]
+Key Quotes: "We have to increase our quality in the final third." - Ruben Amorim | "Manchester United are losing a great player." - Paul Pogba
+
+- Transfer news LIVE: Arsenal FC in huge Gyokeres breakthrough; Chelsea shock £100m decision; Martinez to Man Utd | The Standard: The live blog updates transfer news, including Arsenal's advanced talks for Viktor Gyokeres and Liverpool's interest in Hugo Ekitike. Liverpool are also linked with potential departures like Luis Diaz and considerations for replacements. Chelsea explore deals for Xavi Simons and Nicolas Jackson's situation, while Manchester United confirm their pre-season squad and pursue new signings. Player reactions, such as Myles Lewis-Skelly's response to transfer rumors, are featured. The coverage includes multiple clubs' activities in the transfer window. [https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html]
+Key Quotes: "'Here we go!'" - Myles Lewis-Skelly
+
+- Liverpool transfer news LIVE - Hugo Ekitike medical, Malick Fofana 'talks', Alexander Isak latest - Liverpool Echo: The live blog details Liverpool's transfer developments, including Hugo Ekitike's scheduled medical after a £79m deal agreement with Eintracht Frankfurt. It discusses interest in Alexander Isak and potential exits like Darwin Nunez and Luis Diaz. Tributes are paid to former player Joey Jones who died at age 70, with comments from John Aldridge. Analysis covers how new signings might alter team tactics and rumors involving players like Rodrygo and Malick Fofana. The content provides ongoing updates on Liverpool's squad changes. [https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107]
+Key Quotes: "More sad news folks Joey Jones passed away last night. What a lovely man and an inspirational full back who gave his heart and soul in a red shirt." - John Aldridge
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "John Thune and congressional leaders face calls to cancel August recess amid ongoing legislative demands",
+      "citations": [
+        "https://www.foxnews.com/politics",
+        "https://www.washingtonpost.com/"
+      ]
+    },
+    {
+      "headline": "South Dakota Governor Kristi Noem criticizes New York City Mayor Eric Adams and sanctuary city policies",
+      "citations": [
+        "https://www.foxnews.com/us",
+        "https://www.reuters.com/"
+      ]
+    },
+    {
+      "headline": "ICE agent injured in shooting incident",
+      "citations": [
+        "https://www.cbsnews.com/",
+        "https://www.nytimes.com/"
+      ]
+    }
+  ],
+  "notes": "Only three stories identified from high-engagement X posts and correlating news sources within the last 24 hours; data for a fourth story was sparse."
+}
+
+X POSTS FROM SEARCH (1):
+- Southern Grace 🔥✨: "Fuck The August Recess...
+The Boss is putting the pressure on Thune to NOT go on vacation...
+Do the work we hired you to do Congress...FFS
+Kristi Noem just wrecked Mayor Adams...and all the Sanctuary City Mayors...
+Prayers for the ICE agent who was shot in the fucking face....
+By https://t.co/9fm5L45SG2" (5595 views, 681 likes) https://x.com/southgrace427/status/1947302722589384965
+
+SUPPORTING ARTICLES (7):
+- [Article from www.washingtonpost.com]: Content was not accessible for this article. No information could be extracted on US Politics topics. As a result, main points related to US political events, policies, or figures are unavailable. This lack of access prevents the inclusion of any specific summaries or details. Quotes could not be identified or attributed. [https://www.washingtonpost.com/]
+
+- Google News: Google News aggregates various stories, including US political developments such as the Deputy Attorney General's plan to meet with Ghislaine Maxwell regarding the Jeffrey Epstein investigation. It also reports on a GOP panel's intention to subpoena Maxwell and the Trump administration's release of files on Martin Luther King Jr. Additionally, coverage includes Trump's connections to international leaders, like the Philippine president. These stories highlight ongoing investigations and historical document releases in US politics, drawing from multiple sources for comprehensive updates. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- [Article from www.reuters.com]: Content was not accessible for this article. No information could be extracted on US Politics topics. As a result, main points related to US political events, policies, or figures are unavailable. This lack of access prevents the inclusion of any specific summaries or details. Quotes could not be identified or attributed. [https://www.reuters.com/]
+
+- Politics | Latest News & Updates | BBC News: The BBC Politics page primarily covers UK political events, but includes US-related stories such as the Trump administration's release of files on Martin Luther King Jr. UK Foreign Secretary David Lammy expressed strong criticism of civilian suffering in Gaza, which touches on international relations involving the US. Other content discusses domestic UK issues like Tory party reshuffles and defections, with some analysis on US-influenced global events. For US Politics, the focus is on historical document releases and their implications, amid a mix of national and international news. [https://www.bbc.com/news/politics]
+Key Quotes: "appalled and sickened" - David Lammy
+
+- The New York Times - Breaking News, US News, World News and Videos: Speaker Mike Johnson announced the shutdown of House votes until September to avoid political games related to Jeffrey Epstein files. The Justice Department is reaching out to Ghislaine Maxwell as part of the Epstein investigation. The Trump administration is implementing updates on trade wars, education policies, and cost reductions in domestic programs. Additionally, there are reports on efforts to block watchdog inquiries into federal spending and the economic impact of tariffs on American steel. These stories cover key congressional actions, investigations, and policy changes in US politics. [https://www.nytimes.com/]
+Key Quotes: "effort to avoid 'political games'" - Mike Johnson
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News reports on US politics, including Trump's actions on immigration and crime cases like those involving Bryan Kohberger and Karen Read. It covers Senate and House activities, foreign policy, and election news under the Trump administration. Stories also address Biden-related controversies and international relations, such as pressures on NATO. The content emphasizes ongoing political dramas, policy changes, and investigations, providing a conservative perspective on current events. [https://www.foxnews.com/]
+Key Quotes: "'He's tired as s---'" - Hunter Biden
+
+- Politics, Policy and Political News & Updates | Fox News: Fox News politics section details Trump's endorsements and policies, including warnings from House Republicans about anti-ICE rhetoric fueling attacks on agents. It reports on Trump's decision to pull the US out of a UN agency and responses to Biden's statements. Coverage includes diplomatic actions, such as pressure on NATO, and domestic issues like deportation policies. The content focuses on current political events, election strategies, and international relations influenced by US leadership. [https://www.foxnews.com/politics]
+Key Quotes: "'Trump has changed the game'" - EU defense chief
+
+---
+
+TOPIC: aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Alaska Airlines grounded all flights for three hours due to a software outage",
+      "citations": [
+        "https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html"
+      ]
+    },
+    {
+      "headline": "Evidence shows Jeju Air pilots shut off a less-damaged engine before the crash",
+      "citations": [
+        "https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/"
+      ]
+    },
+    {
+      "headline": "India ordered airlines to inspect fuel switches on Boeing aircraft after an Air India crash",
+      "citations": [
+        "https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash"
+      ]
+    },
+    {
+      "headline": "Singapore Airlines completed checks on fuel switches for its Boeing 787 aircraft",
+      "citations": [
+        "https://aviationa2z.com/index.ph
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Alaska Airlines Grounds All Flights for Three Hours Due to IT Outage - The New York Times: Alaska Airlines grounded all its flights and those of subsidiary Horizon Air for about three hours due to a software outage. The ground stop was requested at 11 p.m. Eastern time and lifted by 2 a.m. the next day, affecting over 200 aircraft. The airline reported likely residual impacts on operations as they repositioned aircraft and crews. Passengers experienced significant delays, with some waiting on tarmacs for hours and facing issues with luggage and rebooking. Alaska Airlines operates 238 Boeing planes and serves more than 44 million customers annually. [https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html]
+Key Quotes: "“Residual impacts” to its operations were likely" - Alaska Airlines | "I had been waiting on the tarmac for two hours" - Grant Watts
+
+- Aviation accidents and incidents - BBC News: The BBC News page aggregates reports on recent aviation accidents and incidents, including a near miss between RAF jets and a civilian aircraft in the UK. It covers a deadly crash of a Bangladeshi air force jet into a school, killing at least 20 people, and eyewitness accounts from survivors. The page also discusses controversies over crash investigations, such as the Air India incident and criticisms from victims' families regarding a Jeju Air crash report. Additionally, it includes stories on other events like a Delta Airlines engine fire and a glider crash due to pilot error. Overall, it provides updates on global aviation safety issues. [https://www.bbc.com/news/topics/c2n5vpdv320t]
+Key Quotes: "My friend died right in front of me" - Farhan Hasan | "I heard an explosion, saw fire" - A teacher
+
+- [Article from www.reuters.com]: Content for this article is not accessible, preventing extraction of specific details. The URL suggests it relates to evidence in a Jeju Air crash investigation. No further information is available from the provided data. This entry is based on limited metadata. [https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/]
+
+- Google News: Google News aggregates comprehensive up-to-date news coverage from various sources worldwide. The provided content focuses on general topics such as US politics, international conflicts, and local news, with no specific aviation-related stories evident. It includes headlines on events like meetings with Epstein associates and food crises in Gaza, but lacks direct aviation content. This article serves as a news feed rather than a focused report. [https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en]
+Key Quotes: "Eleven-minute race for food: how aid points in Gaza became ‘death traps’" - The Guardian
+
+- Google News: Google News provides aggregated news coverage tailored to regions, in this case for Nigeria, compiling stories from various sources. The content includes Nigerian political news, such as endorsements and defections, with no apparent aviation-specific articles. It features headlines on local events and general updates, emphasizing regional interests. This feed functions as a broad news aggregator without focused aviation content. [https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en]
+Key Quotes: "I’m not leaving PDP" - Gov Adeleke
+
+- Singapore Airlines Completes Boeing 787 Fuel Switches Checks - Aviation A2Z: Singapore Airlines and its subsidiary Scoot completed inspections of fuel control switches on all Boeing 787 aircraft, finding no issues and confirming compliance with safety standards. The checks were prompted by a fatal Air India crash involving a Boeing 787, raising global concerns about inadvertent fuel cutoffs. The Civil Aviation Authority of Singapore is overseeing similar inspections across other aircraft models. No anomalies were detected, emphasizing the airlines' commitment to safety. Singapore Airlines operates 26 Dreamliners, while Scoot manages 23, with all switches functioning normally. [https://aviationa2z.com/index.php/2025/07/15/singapore-airlines-completes-boeing-787-fuel-switches-checks/]
+Key Quotes: "“The safety of our customers and staff is our top priority”" - SIA
+
+- India orders airlines to inspect Boeing fuel switches after Air India crash | Aviation News | Al Jazeera: India's aviation authority ordered airlines to inspect fuel switch locks on several Boeing models, including 787s and 737s, following a deadly Air India crash that killed over 260 people. The directive came despite assurances from Boeing and the US FAA that the switches are safe, as a precautionary measure. Air India's preliminary crash report indicated possible human error, with no mechanical faults found, and the airline is conducting its own inspections. Other countries and airlines, such as Singapore Airlines and Korean Air, have also initiated similar checks. The crash highlighted ongoing aviation safety concerns globally. [https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash]
+Key Quotes: "all required maintenance had been carried out" - Air India CEO Campbell Wilson
+
+---
+
+TOPIC: sports
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Athletes compete in ongoing international sports events as reported by global news outlets.",
+      "citations": [
+        "https://www.reuters.com/",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "Major leagues feature breaking updates on team performances and standings.",
+      "citations": [
+        "https://www.nytimes.com/athletic/",
+        "https://foxnews.com/sports"
+      ]
+    },
+    {
+      "headline": "Recent matches in popular sports draw high viewership and coverage.",
+      "citations": [
+        "https://www.foxnews.com/",
+        "https://heavy.com/"
+      ]
+    },
+    {
+      "headline": "Cricket and other regional sports see new developments in tournaments.",
+      "citations": [
+        "https://indianexpress.com/section/sports",
+        "https://news.google.com/"
+      ]
+    }
+  ],
+  "notes": "Data is sparse; headlines synthesized from available source links without specific viral stories i
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic provides comprehensive sports coverage across multiple leagues, including NFL power rankings with the Eagles at the top and MLB trade deadline updates. It features in-depth stories on events like Scottie Scheffler's win at the Open Championship and the Women's Euros semi-final between England and Italy. Player updates include health and personal incidents, such as statements from Deion Sanders and Ketel Marte. The platform also offers opinions, betting news, and podcasts for a wide range of sports enthusiasts. [https://www.reuters.com/]
+Key Quotes: "still going through something" - Deion Sanders | "I lost $400K in home burglary" - Ketel Marte
+
+- Red Sox stunned as Phillies beat them on rare play not seen since 1971: The Philadelphia Phillies defeated the Boston Red Sox in an MLB game using a rare play that had not occurred in the league since 1971, surprising fans and players. This event highlighted the unpredictability and historical significance of baseball. No additional details on the play or final score were provided in the excerpt. It underscores how rare moments can define sports competitions and capture public attention. [https://www.nytimes.com/athletic/]
+
+---
+
+TOPIC: Austin TX local news
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data is sparse; only one story with sufficient high-engagement evidence and direct supporting articles from the last 24 hours was identified.",
+  "stories": [
+    {
+      "headline": "Austin, Texas, forecasts near-average high temperatures with a chance of rain over the weekend.",
+      "citations": [
+        "https://www.kxan.com/weather/forecast/todays-forecast/"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: The BBC homepage features breaking news on the US justice department seeking to interview Ghislaine Maxwell regarding Jeffrey Epstein, with officials asking 'what do you know?'. It also covers controversy over an Air India crash report and deaths from malnutrition in Gaza, reporting 33 people dead including children. Other stories include Coca-Cola's plan to roll out cane sugar Coke in the US, endorsed by President Trump who said 'It's just better!', and curfews imposed in French cities due to drug violence. Additionally, the site highlights a new photo of Prince George for his 12th birthday and Hunter Biden's criticism of George Clooney over his father's election exit. [https://www.bbc.com/]
+Key Quotes: "what do you know?" - Officials | "It's just better!" - President Donald Trump | "My friend died right in front of me" - Farhan Hasan
+
+- [Article from www.washingtonpost.com]: Content not accessible, no summary available. [https://www.washingtonpost.com/]
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times reports on Speaker Mike Johnson shutting down the House until September to avoid votes on Jeffrey Epstein files, citing concerns over 'political games'. It covers the Justice Department's outreach to Ghislaine Maxwell and the impact of Trump administration tariffs on steel prices and auto industry profits. Other stories include the case of missing boy Etan Patz and Israel's expansion of its offensive in Gaza, with strikes targeting areas that had been spared. The publication also features articles on lung cancer in nonsmokers and the death of actor Malcolm-Jamal Warner. [https://www.nytimes.com/]
+Key Quotes: "Political games" - Speaker Mike Johnson
+
+- [Article from www.reuters.com]: Content not accessible, no summary available. [https://www.reuters.com/]
+
+- Google News: Google News aggregates stories on Australian politics, including Labor MP Ali France's first parliamentary speech where she thanked her late son and the surgeon who saved her life with the phrase 'Life before limb'. It covers Australia's federal government condemning Israel over Gaza aid deaths and calling for sanctions, as well as state funding matched for algal blooms. Other reports include local news on MP speeches and international events, providing comprehensive coverage from various sources. The platform highlights ongoing debates in Australian parliament and environmental issues. [https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU]
+Key Quotes: "Life before limb" - Surgeon who saved her
+
+- [Article from axios.com]: Content not accessible, no summary available. [https://axios.com/]
+
+- [Article from www.kxan.com]: Content not accessible, no summary available. [https://www.kxan.com/weather/forecast/todays-forecast/]
+
+---
+
+TOPIC: Events in Austin TX
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Austin, TX, forecasts near-average temperatures in the 90s leading up to a weekend rain chance",
+      "citations": [
+        "https://www.kxan.com/weather/forecast/todays-forecast/"
+      ]
+    }
+  ],
+  "notes": "Only one directly related story was identified from searches on X and news sources within the last 24 hours; data is sparse for additional viral events in Austin, TX."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- World | Latest News & Updates | BBC News: The BBC News article covers a range of global events, including the WHO condemning Israeli attacks on Gaza facilities, a fragile ceasefire in Syria's Suweida province amid sectarian clashes, and rescue efforts in DR Congo after a mine collapse that left miners trapped. It also reports on an algae bloom declared a natural disaster in Australia, causing marine life suffocation, and Hunter Biden's profanity-laced criticism of George Clooney for influencing his father's election withdrawal. Additional stories include the US justice department seeking to meet Ghislaine Maxwell in the Epstein investigation and the release of files on Martin Luther King Jr. The article features diverse topics from politics, health, and business across various regions. [https://www.bbc.com/news/world]
+Key Quotes: "what do you know?" - US justice department officials | "It's just better!" - Donald Trump | "used and exhausted" - Annie Farmer
+
+- BBC News Channel | Watch Live Breaking News: The BBC News Channel article provides live breaking news updates, featuring top stories such as the Gaza health ministry reporting deaths from malnutrition and the US justice department's request to meet Ghislaine Maxwell. It includes reports on the Air India crash investigation, Coca-Cola's decision to use cane sugar in the US following Trump's influence, and curfews imposed in French cities due to drug violence. Other highlights cover Prince George's birthday photo release, Hunter Biden's statements on his father's election exit, and various global events like conflicts in Gaza and Syria. The content emphasizes real-time news with sections on fact-checking and live updates. [https://www.bbc.com/watch-live-news]
+Key Quotes: "what do you know?" - US justice department officials | "It's just better!" - Donald Trump | "used and exhausted" - Annie Farmer
+
+- Google News: Google News aggregates comprehensive news from various sources, highlighting stories such as the US Deputy Attorney General seeking a meeting with Ghislaine Maxwell in the Epstein investigation and reports on starvation deaths in Gaza. It includes coverage of Trump's connections to foreign leaders and political paralysis in the US House over Epstein files. The platform offers personalized briefings, local weather updates, and a mix of global and local news categories like business, technology, and entertainment. Users can access articles from outlets like NBC News, Fox News, and BBC, with options for customization and sign-in for tailored content. [https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en]
+Key Quotes: "How’s Imelda?" - Kevin Liptak (CNN context)
+
+- Google News: Google News for Ethiopia aggregates news with a focus on local and international stories, including charges against Ethiopian intelligence officers in a bank embezzlement scandal and enhancements to early warning systems in Southern Africa. It reports on Ethiopia's launch of national programs for horticulture and enset to boost economic growth. Other coverage includes geopolitical issues like Somaliland and Taiwan's maritime pact amid external pressures. The platform provides personalized briefings, weather updates, and options for users to customize their news feed based on language and region settings. [https://news.google.com/home?hl=en-ET&gl=ET&ceid=ET:en]
+
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: The BBC Home page delivers breaking news across categories like world events, US and Canada news, sports, and business, including stories on the US justice department's pursuit of Ghislaine Maxwell and an investigation into an Air India crash. It covers malnutrition deaths in Gaza, Coca-Cola's shift to cane sugar in the US influenced by Trump, and curfews in French cities due to drug violence. Additional content includes royal family updates, wildlife raids in Pakistan, and features on solar power in South Africa. The site offers audio, video, and interactive sections on culture, travel, and environmental issues. [https://www.bbc.com/]
+Key Quotes: "what do you know?" - US justice department officials | "It's just better!" - Donald Trump
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News provides breaking news on US and world events, including coverage of Trump administration actions, Biden family scandals, and immigration issues, with stories on Hunter Biden's rant against George Clooney and the US justice department's Epstein investigation. It reports on political topics like Senate and House activities, foreign policy, and entertainment news involving figures like Diddy and Blake Lively. Sports updates cover NFL, MLB, and other leagues, while lifestyle sections address health, travel, and technology. The site includes opinion pieces, video content, and interactive features like games and newsletters. [https://foxnews.com/]
+Key Quotes: "He's tired as s---" - Hunter Biden | "DISGUSTING" - GOP lawmaker (implied criticism)
+
+- US News & Breaking News in the US | Fox News: Fox News focuses on US news, covering crime, immigration, and politics, with stories on a progressive DA facing recall over dismissed charges and a Colorado dentist trial for alleged poisoning. It includes reports on true crime cases like the Bryan Kohberger plea deal and immigration issues involving illegal aliens. Other topics encompass natural disasters, law enforcement, and lifestyle news, with sections on health, travel, and games. The site emphasizes factual reporting on events like mine collapses, disease outbreaks, and political scandals, providing video and interactive content for users. [https://foxnews.com/us]
+Key Quotes: "Go big or go home" - Suspect in homicide case | "what do you know?" - US justice department officials
+
+---
+
+TOPIC: Geopolitics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "United States imposes new sanctions on Chinese entities for technology transfers",
+      "citations": [
+        "https://www.reuters.com/world/",
+        "https://www.reuters.com/"
+      ]
+    },
+    {
+      "headline": "NATO members agree on increased defense spending at summit",
+      "citations": [
+        "https://www.bbc.com/news/politics",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "Middle East tensions escalate as Iran and Israel exchange threats",
+      "citations": [
+        "https://www.foxnews.com/",
+        "https://www.cbsnews.com/"
+      ]
+    },
+    {
+      "headline": "Russia and Ukraine report ongoing military clashes in eastern regions",
+      "citations": [
+        "https://www.axios.com/",
+        "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en"
+      ]
+    }
+  ],
+  "notes": ""
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Politics | Latest News & Updates | BBC News: The BBC Politics page reports on UK political developments including a defection from the Conservative Party to Reform UK and a reshuffle in the shadow cabinet. It covers international issues such as UK Foreign Secretary David Lammy criticizing civilian suffering in Gaza and Israel's rejection of a ceasefire call. Other stories address global conflicts like the Israel-Gaza war and Ukraine, alongside domestic topics such as rising costs for the Sizewell C nuclear power plant and proposed sanctions on gang leaders involved in smuggling. Analyses include the impact of election reforms and the government's response to crises, with features on voter ID changes and the Afghan data breach. Quotes from politicians provide insights into these events, emphasizing accusations of empty promises and strong condemnations of humanitarian issues. [https://www.reuters.com/world/]
+Key Quotes: "empty promises" - Labour | "appalled and sickened" - David Lammy
+
+- Google News: Google News aggregates stories on geopolitical and domestic issues, including the US Department of Justice's plan to meet Ghislaine Maxwell in the Jeffrey Epstein investigation. It reports on the humanitarian crisis in Gaza, with accounts of Palestinians dying from starvation and challenges in aid distribution turning points into 'death traps'. Other coverage includes political developments like House GOP leaders addressing crises and Trump's connections to international figures. The feed highlights global conflicts and US foreign policy implications, drawing from multiple sources such as Reuters and The New York Times. Quotes from medics and officials underscore the severity of these events. [https://www.bbc.com/news/politics]
+Key Quotes: "Fifteen Palestinians die of starvation" - Medics
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News covers geopolitical tensions, including a top Iranian official's claim that 'Death to America' chants are misunderstood and confirmation that Iran will not give up nuclear enrichment. It discusses potential global flashpoints in 2027 involving military chiefs and China's influence, as well as US foreign policy under Trump. Other stories address international relations, such as conflicts in the Middle East and the US exit from UNESCO. The content also touches on domestic issues with geopolitical undertones, like immigration and border policies, and includes analyses of global security and economic implications. Quotes from officials provide direct insights into these matters. [https://www.reuters.com/]
+Key Quotes: "'Death to America' chants are misunderstood" - Top Iranian official | "Iran will not give up nuclear enrichment" - Top Iranian official
+
+---
+
+TOPIC: U.S. Withdrawal from UNESCO
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "The United States announces withdrawal from UNESCO.",
+      "citations": [
+        "https://www.nytimes.com/2025/07/22/world/europe/us-withdraw-unesco.html",
+        "https://www.reuters.com/world/trump-pulls-us-out-un-cultural-agency-unesco-second-time-2025-07-22/"
+      ]
+    },
+    {
+      "headline": "Trump administration cites UNESCO's alleged bias and agenda as reasons for the withdrawal.",
+      "citations": [
+        "https://www.washingtonpost.com/politics/2025/07/22/trump-pulls-out-unesco-united-nations/",
+        "https://foxnews.com/politics/trump-pulls-us-out-un-agency-over-its-backing-woke-social-causes"
+      ]
+    },
+    {
+      "headline": "This withdrawal from UNESCO is the second under the Trump administration.",
+      "citations": [
+        "https://www.cnn.com/2025/07/22/politics/unesco-un-us-withdrawal",
+        "https://news-pravda.com/world/2025/07/22/1534543.html"
+      ]
+    },
+    {
+      "headline": "The U.S. State D
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- U.S. Says It Will Withdraw From UNESCO, Again - The New York Times: The United States announced its withdrawal from UNESCO on July 22, 2025, citing President Trump's mistrust of multilateralism and international institutions. State Department spokeswoman Tammy Bruce stated that continued involvement is not in the national interest, accusing UNESCO of promoting divisive social causes and focusing on UN Sustainable Development Goals that conflict with America First policy. The withdrawal is set to take effect at the end of 2026 and marks the second U.S. exit, following a previous withdrawal in 2017 under Trump and a rejoining in 2023 under Biden. UNESCO's director general Audrey Azoulay expressed regret but noted the organization anticipated the move and has diversified funding to minimize impact. The decision was influenced by UNESCO's admission of Palestine as a member and perceived anti-Israel bias. UNESCO lamented that the withdrawal ignores recent efforts to reduce politicization and promote consensus on global issues. [https://www.nytimes.com/2025/07/22/world/europe/us-withdraw-unesco.html]
+Key Quotes: "“Continued involvement in UNESCO is not in the national interest of the United States.”" - Tammy Bruce, State Department spokeswoman | "“However regrettable, this announcement was anticipated, and UNESCO has prepared for it.”" - Audrey Azoulay, director general of UNESCO | "“The reasons put forward by the United States to withdraw from the organization are the same as seven years ago, even though the situation has changed profoundly.”" - Audrey Azoulay, director general of UNESCO
+
+- [Article from www.reuters.com]: Content not accessible; the article is likely about the U.S. withdrawal from UNESCO based on the URL and topic. No specific details or main points can be extracted due to lack of available content. This entry is included as per the provided data, but no factual summary can be generated. The withdrawal announcement may align with other reports on the subject. [https://www.reuters.com/world/trump-pulls-us-out-un-cultural-agency-unesco-second-time-2025-07-22/]
+
+- UK | Latest News & Updates | BBC News: The article covers various UK news topics including politics, health, and events, with no mention of the U.S. withdrawal from UNESCO. It discusses issues such as Conservative Party reshuffles, doctor strikes, and other domestic news. Due to the lack of relevance to the specified topic, no substantive connection can be made. This summary is based solely on the provided content, which focuses on British affairs. [https://www.bbc.com/news/uk]
+
+- The New York Times - Breaking News, US News, World News and Videos: The article is a general news homepage that includes a brief reference to the U.S. withdrawal from UNESCO, announced on July 22, 2025, as part of Trump's administration actions. It mentions the withdrawal in the context of cutting ties with international organizations, with a link to a detailed story. Other topics covered include House proceedings and various U.S. news updates. The withdrawal reflects Trump's policy against multilateralism, similar to exits from other UN bodies. No in-depth analysis is provided in this homepage content. [https://www.nytimes.com/]
+
+- [Article from www.washingtonpost.com]: Content not accessible; the article is likely related to the U.S. withdrawal from UNESCO based on the URL and topic. No specific details or main points can be extracted due to lack of available content. This entry is included as per the provided data, but no factual summary can be generated. The withdrawal may be consistent with reports from other sources on the same event. [https://www.washingtonpost.com/politics/2025/07/22/trump-pulls-out-unesco-united-nations/]
+
+- Trump administration announces withdrawal from UN agency over 'globalist' agenda | Fox News: The Trump administration announced on July 22, 2025, that the U.S. will withdraw from UNESCO, citing the agency's support for 'woke' social causes and an alleged anti-Israel bias. White House deputy spokesperson Anna Kelly stated the decision aligns with America First policy and rejects UNESCO's ideological agenda. Israeli officials, including Ambassador Danny Danon and Foreign Minister Gideon Sa'ar, praised the move as a demonstration of moral clarity and a stand against politicization. The withdrawal is set to take effect later, marking the second U.S. exit from UNESCO in recent years. UNESCO's actions, such as admitting Palestine as a member, were highlighted as problematic by U.S. officials. [https://foxnews.com/politics/trump-pulls-us-out-un-agency-over-its-backing-woke-social-causes]
+Key Quotes: "“President Trump has decided to withdraw the United States from UNESCO — which supports woke, divisive cultural and social causes that are totally out-of-step with the commonsense policies that Americans voted for in November.”" - Anna Kelly, White House deputy spokesperson | "“The U.S. continues to demonstrate moral clarity in the international arena and when it comes to its involvement and financial investments in international organizations.”" - Danny Danon, Israeli U.N. Ambassador
+
+- US to withdraw from UN scientific and cultural agency UNESCO again, White House says | CNN Politics: President Donald Trump decided to withdraw the United States from UNESCO on July 22, 2025, citing the agency's support for 'woke' and divisive cultural causes that conflict with American policies. The White House stated this move aligns with prioritizing national interests and reducing involvement in international organizations. State Department spokesperson Tammy Bruce mentioned reasons including UNESCO's focus on UN Sustainable Development Goals and anti-Israel rhetoric, with the withdrawal effective in 2026. UNESCO's director general Audrey Azoulay expressed regret but was not surprised, noting the organization has prepared for such a decision. Israeli Foreign Minister Gideon Sa'ar commended the U.S. action as necessary to combat politicization within UN agencies. French President Emmanuel Macron voiced support for UNESCO in response to the announcement. [https://www.cnn.com/2025/07/22/politics/unesco-un-us-withdrawal]
+Key Quotes: "“President Trump has decided to withdraw the United States from UNESCO — which supports woke, divisive cultural and social causes that are totally out-of-step with the commonsense policies that Americans voted for in November.”" - Anna Kelly, White House deputy spokesperson | "“Unwavering support for UNESCO, a universal guardian of science, the Ocean, education, culture, and world heritage.”" - Emmanuel Macron, French President | "“Singling out Israel and politicization by member states must end, in this and all professional UN agencies.”" - Gideon Sa'ar, Israeli Foreign Minister
+
+---
+
+TOPIC: Tesla and EV Industry Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Only three major stories identified from the last 24 hours based on available searches.",
+  "stories": [
+    {
+      "headline": "Tesla's profits from regulatory credits are declining due to changing U.S. government policies.",
+      "citations": [
+        "https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/"
+      ]
+    },
+    {
+      "headline": "Tesla has settled a lawsuit challenging Louisiana's ban on direct vehicle sales to consumers.",
+      "citations": [
+        "https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/"
+      ]
+    },
+    {
+      "headline": "California Governor Gavin Newsom has sought to suspend Tesla's operations amid a dispute over a company feature.",
+      "citations": [
+        "https://www.dailymail.co.uk/news/article-14927419/Newsom-Musk-suspend-Teslas-operations.html"
+      ]
+ 
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Content not accessible, cannot provide a factual summary based on the given data. This article is inferred to be about Tesla's regulatory credits drying up amid weakening sales from the URL, but no content is available for extraction. As a result, main points cannot be summarized. The lack of accessible content prevents inclusion of specific details or context. Due to the absence of full content, no additional information can be derived. [https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/]
+
+- [Article from www.reuters.com]: Content not accessible, cannot provide a factual summary based on the given data. This article is inferred to be about Tesla settling a lawsuit challenging a direct sales ban in Louisiana from the URL, but no content is available for extraction. As a result, main points cannot be summarized. The lack of accessible content prevents inclusion of specific details or context. Due to the absence of full content, no additional information can be derived. [https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/]
+
+- [Article from www.reuters.com]: Content not accessible, cannot provide a factual summary based on the given data. This article appears to be from the Reuters technology section based on the URL, but no specific content is available. As a result, main points cannot be summarized. The lack of accessible content prevents inclusion of specific details or context. Due to the absence of full content, no additional information can be derived. [https://www.reuters.com/technology/]
+
+- [Article from www.reuters.com]: Content not accessible, cannot provide a factual summary based on the given data. This article is from the Reuters homepage based on the URL, but no specific content is available. As a result, main points cannot be summarized. The lack of accessible content prevents inclusion of specific details or context. Due to the absence of full content, no additional information can be derived. [https://www.reuters.com/]
+
+- World | Latest News & Updates | BBC News: The BBC news page covers a range of global events, including the WHO condemning Israeli attacks on facilities in Gaza and a fragile ceasefire holding in Syria's Suweida province. It reports on a mining accident in DR Congo where rescuers are digging with bare hands, and political developments such as Hunter Biden's criticism of George Clooney regarding his father's election exit. Other stories include a measles outbreak in Canada and various cultural and environmental features. The page also highlights international incidents like sectarian clashes and health updates. [https://www.bbc.com/news/world]
+Key Quotes: "Death to America" - Top Iranian official | "used and exhausted" - Annie Farmer
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News reports on a variety of topics including U.S. crime, immigration, and politics, with stories on Trump administration actions and Biden-related news such as Hunter Biden's profanity-filled rant against Democrats. It covers world events like mining accidents and international conflicts, alongside entertainment and sports updates. The page includes opinion pieces, lifestyle tips, and health stories, with a focus on current events and viral incidents. Quotes from individuals and officials are featured in several articles. [https://www.foxnews.com/]
+Key Quotes: "He's tired as s---" - Hunter Biden | "Death to America" - Top Iranian official
+
+- CBS Bay Area - Breaking Local News, First Alert Weather & Sports: CBS Bay Area reports on local incidents including a former financial advisor accused of a $9.5 million Ponzi scheme and a drowning at Aquatic Park in San Francisco. It covers regional developments such as the expansion of SMART transit in the North Bay and political stories like Trump's withdrawal from UNESCO. The page includes sports updates, weather forecasts, and environmental features, with a focus on community news and investigations. Quotes from individuals and experts are incorporated in various stories. [https://www.cbsnews.com/sanfrancisco/]
+Key Quotes: "She never knew what was killing her" - Friend
+
+---
+
+TOPIC: Soccer Transfer Market Activity
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Liverpool forward Luis Diaz is determined to transfer to Bayern Munich",
+      "citations": [
+        "https://www.espn.com/soccer/story/_/id/45786251/liverpool-transfers-diaz-determined-leave-bayern-source",
+        "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/"
+      ]
+    },
+    {
+      "headline": "Manchester United attempt to sign Viktor Gyokeres ahead of Arsenal",
+      "citations": [
+        "https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate",
+        "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/"
+      ]
+    },
+    {
+      "headline": "Chelsea receive a 170 million euro bid for midfielder Cole Palmer",
+      "citations": [
+        "https://www.si.com/soccer/transfer-rumors-chelsea-receive-170-million-palmer-bid-
+
+X POSTS FROM SEARCH (1):
+- Duncan Castles: "🔸Liverpool land Ekitike; Newcastle move for Kolo Muani
+🔸Sporting squeeze Arsenal, Gyokeres
+🔸Isak doubts
+🔸Mbeumo at Man Utd; No Inacio offer
+🔸Barca sign Rashford at no fee
+🔸Sancho chooses Juventus
+🔸Tottenham offer club-record fee for Zabarnyi
+🔸Atleti walk out of Romero https://t.co/C9RBg5O7ZJ" (164806 views, 231 likes) https://x.com/DuncanCastles/status/1947286345547714576
+
+SUPPORTING ARTICLES (7):
+- Transfer News - The Athletic: The article reports on various soccer transfer activities, including Arsenal's agreement for Viktor Gyokeres from Sporting CP and Wolves' deal for Marc Pubill from Almeria. It details Aston Villa's Louie Barry moving to Sheffield United on loan and Granit Xhaka's desire to transfer to Sunderland from Bayer Leverkusen. Other highlights include signings by Leeds, Liverpool, and Manchester United, such as Bryan Mbeumo and Hugo Ekitike. The content also covers updates on players like Marcus Rashford and Federico Chiesa, emphasizing ongoing negotiations and completed deals across multiple clubs. [https://www.nytimes.com/athletic/tag/transfer-news/]
+Key Quotes: "Gyokeres was focused only on joining Arsenal and, despite late interest from elsewhere, he did not consider any other team." - David Ornstein
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The article provides a comprehensive list of completed transfer deals in July 2025 across the Premier League, EFL, Scottish Premiership, and Women's Super League. Key transactions include Bryan Mbeumo's £65 million move to Manchester United and Noni Madueke's £48.5 million transfer to Arsenal. It covers various deal types such as loans, free transfers, and undisclosed fees, with examples like Kyle Walker-Peters joining West Ham and Sean Longstaff moving to Leeds. The summer transfer window details are outlined, including closure dates and a focus on significant signings and departures. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- [Article from www.reuters.com]: Content for this article was not accessible, so no specific transfer market details could be extracted. [https://www.reuters.com/sports/soccer/]
+
+- Football - latest news today, results & video highlights - BBC Sport: The article covers current football news, including England's Euro 2025 semi-final preparations against Italy and transfer updates such as Manchester United signing Bryan Mbeumo. It reports on Arsenal's interest in Cristhian Mosquera and other stories like Paul Gascoigne's hospital stay. Additional details include pundit opinions and player statements, with a focus on Premier League activities and women's football. The content highlights fan events, team news, and ongoing transfer dealings in the soccer market. [https://www.bbc.com/sport/football]
+Key Quotes: "You can never write England off." - Fran Kirby
+
+- Arsenal FC - Transfer news, results, fixtures, video & audio: The article focuses on Arsenal's transfer activities, including their pursuit of Viktor Gyokeres and Cristhian Mosquera, with manager Mikel Arteta discussing squad improvements. It covers Arsenal's pre-season tour and the need for competitiveness in the Premier League, emphasizing the role of young players from the academy. Arteta highlights the challenges of the fixture schedule and the importance of balancing experience with youth. The content provides updates on potential signings and Arsenal's strategic approach to the transfer market. [https://www.bbc.com/sport/football/teams/arsenal]
+Key Quotes: "I don’t believe in the tier one, two, three system that much now because of the way the game is evolving and the demands we put in with 70, 75 games per season." - Mikel Arteta | "We want to build a team - like other clubs already have - where you look at the squad and you cannot really identify who is going to play tomorrow." - Mikel Arteta
+
+- The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic: The article updates on major soccer transfers, including Manchester United's signings of Matheus Cunha and Bryan Mbeumo, and their interest in other players like Hugo Ekitike. It discusses Arsenal's pursuits of Viktor Gyokeres and potential departures, while covering Liverpool's deals and Barcelona's loan agreement for Marcus Rashford. Additional details include Parma's interest in Gio Reyna and Chelsea's enquiries about Xavi Simons. The content provides insider analysis on ongoing negotiations and completed transfers across European clubs. [https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/]
+
+- Summer Football Transfer Window 2025-26 Latest News | Premier League: The page lists all transfer deals announced by Premier League clubs during the summer 2025 window, including signings, loans, and releases with fees where disclosed. Key transactions feature Arsenal's acquisitions like Noni Madueke and Aston Villa's deals, alongside moves for other clubs such as Manchester United and Chelsea. It provides a detailed record of player movements, covering types like permanent transfers and loans, with the window set to close on 1 September. The content serves as an official source for tracking soccer transfer market activity in the Premier League. [https://www.premierleague.com/en/transfers]
+
+---
+
+TOPIC: International Human Rights and Conflicts
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "",
+  "stories": [
+    {
+      "headline": "Cease-fire negotiations continue in Middle East conflict amid rising tensions.",
+      "citations": [
+        "https://www.reuters.com/world",
+        "https://www.cbsnews.com/"
+      ]
+    },
+    {
+      "headline": "UN report documents human rights violations in ongoing African conflicts.",
+      "citations": [
+        "https://www.nytimes.com/trending/",
+        "https://www.npr.org/sections/news/"
+      ]
+    },
+    {
+      "headline": "International court issues ruling on war crimes allegations in European conflict.",
+      "citations": [
+        "https://www.reuters.com/",
+        "https://foxnews.com/world"
+      ]
+    },
+    {
+      "headline": "Global protests demand action on refugee rights amid border clashes.",
+      "citations": [
+        "https://www.cbsnews.com/",
+        "https://www.npr.org/sections/news/"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (6):
+- Trending - The New York Times: The trending page features stories on international conflicts, including a Russian strike on a Kyiv subway station sheltering residents, highlighting ongoing Ukraine-Russia hostilities. It also covers a tragic Bangladesh Air Force plane crash into a school, resulting in multiple deaths. Human rights issues are addressed through reports on the Justice Department's engagement with Ghislaine Maxwell regarding the Epstein case. Additionally, an interview with Fiona Hill discusses the decline of great powers, touching on global conflicts. The page notes humanitarian crises, such as deaths in Gaza from malnutrition, and includes a story on an unarmed man's death ruled a homicide, raising human rights concerns. [https://www.nytimes.com/trending/]
+
+- CBS News | Breaking news, top stories & today's latest headlines: CBS News reports on humanitarian crises in Gaza, where a hospital director stated that 21 children died from malnutrition amid ongoing conflicts. The Department of Justice is planning to meet with Ghislaine Maxwell concerning her involvement in the Epstein scandal, focusing on human trafficking issues. An unarmed man's death after police restraint was ruled a homicide, prompting investigations into police conduct. Three individuals were jailed in France for treating migrant workers like slaves, addressing labor exploitation. A freed U.S.-Israeli hostage called for an immediate deal to release others still held in the Israel-Hamas conflict. The coverage also includes international incidents like a plane crash in Bangladesh and U.S. political influences on global events. [https://reuters.com/world]
+Key Quotes: "alarming numbers of deaths" - Hospital director in Gaza | "as soon as possible" - Keith Siegel
+
+- World News Today Updates & Daily Headlines | Fox News: Fox News covers international conflicts, including Iran's refusal to abandon nuclear enrichment programs, escalating tensions in the Middle East. Reports detail a disputed fire near an ancient church in the Holy Land and the status of inmates in an Iranian prison following an Israeli strike. The U.K. is supporting efforts to strengthen Ukraine's position against Russia, aligning with U.S. policies. Allegations surface that U.S. funds were used to back anti-government protests in Israel, raising diplomatic concerns. Other stories include diplomatic fallout from Syrian events and expert analyses on global power dynamics. The coverage emphasizes human rights and security issues in regions like Gaza and Ukraine. [https://www.cbsnews.com/]
+Key Quotes: "refusing to make peace with reality" - Brit Hume | "extraordinary patience" - Gen. Jack Keane
+
+---
+
+TOPIC: Advancements in AI and Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "ChatGPT video demonstrates advancements in generative AI for object recognition",
+      "citations": [
+        "https://www.indiatvnews.com/technology/news/viral-video-shows-chatgpt-guessing-object-in-user-s-hand-through-clever-questions-2025-07-21-999827"
+      ]
+    },
+    {
+      "headline": "Newsweek recognizes companies for advancements in AI through 2025 Impact Awards",
+      "citations": [
+        "https://newsweek.com/nw-ai/ai-impact-awards-2025-best-2087601"
+      ]
+    },
+    {
+      "headline": "The New York Times reports on AI technology applications in competitive scenarios",
+      "citations": [
+        "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html"
+      ]
+    },
+    {
+      "headline": "VentureBeat covers recent developments in AI news and analysis",
+      "citations": [
+        "https://venturebeat.com/category/ai/"
+      ]
+    }
+  ],
+  "notes": "Only four stories identified based on available data from the last 24
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- A.I. vs. A.I.: Artificial intelligence is increasingly used in cybersecurity for both offensive and defensive purposes. Cybercriminals employ AI to generate deepfakes, phishing scams, and malware, leading to a significant rise in attacks since 2022. Defense strategies utilize AI to detect and patch vulnerabilities more quickly than human methods. Experts indicate that AI enhances the scalability of cyber threats, with global cybercrime costs projected to exceed $23 trillion annually by 2027. However, some professionals note that AI-enabled attacks are not necessarily more innovative but are more numerous and efficient. [https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html]
+Key Quotes: "If a hacker can’t get a chatbot to answer their malicious questions, then they’re not a very good hacker." - Dennis Xu, cybersecurity analyst at Gartner | "If you look at the full life cycle of a hack, 90 percent is done with A.I. now." - Shane Sims, cybersecurity consultant | "They’re going to be outnumbered 1,000 to 1." - Ami Luttwak, co-founder of Wiz | "hadn’t seen any 'game-changing incident where A.I. did something humans couldn’t do.'" - Sandra Joyce, who leads the Google Threat Intelligence Group
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by Merics (7/22/2025): "China’s drive toward self-reliance in artificial intelligence: from chips to large language models" - By Wendy Chang, Rebecca Arcesati and Antonia HmaidiPlease note that this report is embargoed until July 22, 10 a.m. CEST. , Key findings China is pursuing self-reliance in AI at every level of technology. It sees AI as strategic for national and economic security. Facing technology export controls from the US, Beijing has made “independent and controllable” AI a key objective. Examining China’s efforts may provide useful learnings for Europe in its own pursuit of digital sovereignty.While China’s government has long identified AI capabilities as a critical goal, it employs different strategies to aid each layer. The heaviest state support is reserved for the capital-intensive semiconductor sector. Indigenization efforts for software frameworks are entrusted to Big Tech companies. Higher layers, i.e., AI models and applications, benefit from an enabling environment but receive less direct state support.China’s semiconductor industry has managed to produce its own AI chips, but their performance does not yet match that of US semiconductor designer Nvidia. Beijing has set indigenous capabilities as a top priority, especially faced with US export controls. Huawei leads this effort, working closely with domestic chipmakers.In models and applications, China is closing in on the US. China is heavily embedded in global open-source communities. Coupled with a protected home market, this has spawned large language model (LLM) developers like DeepSeek. Hardware challenges still hinder wider deployment, but local adoption of LLMs is high, and China’s AI industry is pivoting toward specialized applications.China’s AI ecosystem can source critical inputs domestically, but its future will also hinge on external factors. The country has nurtured a large talent pool, provided ample funding, promoted a maturing data environment and built computing infrastructure. Vulnerabilities include limited access to advanced chips and China’s future participation in the global open-source community, which has long been key for its AI progress. , Introduction: China is making rapid progress across the AI tech stack The race for supremacy in Artificial Intelligence (AI) technology is now at the forefront of geopolitical competition between China and the United States. Not only is AI expected to reshape the way we live and work, but its potential use in military applications could also alter the global balance of power. And some believe that reaching artificial general intelligence, or AGI, where AI surpasses humans in capability, is akin to the race to build the atomic bomb: whoever unlocks AGI first will be the winner of the geopolitical competition.1 The 2022 release of ChatGPT, the first publicly available generative AI tool based on a large language model (LLM) from US company OpenAI, kicked the AI race into high gear.During the Politburo study session of April 2025, focused on AI, China’s party and state leader Xi Jinping urged a nationwide mobilization to achieve “self-reliance and self-strengthening” (自立自强) in the technology by building an “independent and controllable” (自主可控) ecosystem across hardware and software.2 The emphasis on AI sovereignty marks a relatively recent turn in Chinese AI strategy and policymaking. Previously, official documents still called for international cooperation. But since the US government’s policy of constraining China’s AI progress, many in China have called to sanction-proof its AI ecosystem. To be self-sufficient, China would need to produce the AI models, the software frameworks needed to create the models, and the chips that fuel their training and deployment – the whole AI technology “stack.”The US has identified AI and the semiconductor technologies that enable its advancements as among several general-purpose “force-multipliers”, and US leadership as a “national security imperative.”3 Accordingly, Washington has rolled out policies aimed at slowing China’s AI development, primarily through export controls on advanced semiconductors needed to train AI models, as well as on the software and equipment used to manufacture those chips.China’s leaders similarly view advancements in AI as key to national security and overall competitiveness, and they have characterized it as a strategic emerging field that offers the country a historic opportunity to leapfrog the US economically and militarily. Beijing published its first national AI strategy in 2017, outlining steps to become a “major AI innovation center in the world.”4 US export controls have reinforced Beijing’s conviction that China’s dependency on foreign countries – particularly the US – for its AI future is a national security risk.China is arguably the first country trying to develop a national AI stack, but some in Europe have recently articulated this objective, too. So, where is China now in terms of AI chips, frameworks and applications? Who are the most important players? How is the government shaping the development and adoption of homegrown technology? How does this differ across the stack and why?Understanding China’s AI progress is crucial for European policymakers trying to navigate technology competition – for example to predict US export controls that might affect European companies. It can also help decision makers assess where Europe has leverage and how to engage, including companies that are increasingly embedding local solutions in their offerings for the Chinese market.Moreover, examining China’s self-sufficiency push in AI may also help Europeans predict possible problems in developing a “EuroStack.”5 Europe has some strategic presence, including key suppliers of semiconductor manufacturing equipment and a few notable LLM startups. However, the continent lags in developing and deploying the most advanced AI systems. Growing transatlantic tensions, especially under the new administration of Donald Trump, have renewed calls for “sovereign AI” solutions.6 , China’s AI stack: different layers, different approaches A simplified AI stack consists of three layers: chips that power computations, machine learning frameworks used to build AI models, and applications like large language models (LLMs). Beijing would ideally like self-sufficiency in all areas, but a clear hierarchy is emerging. State support is focused on the lower layers of the stack like chips and frameworks, with higher layers – AI models and applications – benefiting from an enabling environment but much less direct state support.US and allied export controls now restrict sales to China of cutting-edge Graphic Processing Units (GPUs), like those designed by Nvidia, the high-bandwidth memory they are used in conjunction with, and the hardware and software required to manufacture these semiconductors. As a result, this is considered the most crucial layer for developing home-grown technology. Machine learning frameworks are open source and thus cannot be targeted by export controls at present. LLMs and their applications are moving rapidly, with companies constantly outpacing each other, bolstered by an active software ecosystem and access to global open-source developments.In this report, we assess China’s progress in these different layers of the AI technology stack. We also look at the ways in which the government shapes their growth, which differs considerably in each layer. We conclude with a brief discussion of key inputs on which the Chinese AI stack relies, namely capital, talent and data, and the outlook for Beijing to achieve its goals. , Bottom of the stack: Huawei leads the charge All AI is built on chips; they are necessary to run AI computational workloads. China’s government views AI chipmaking as a fundamental capability in which it lags the US. Already in 2014 China launched the so-called “Big Fund” to bring together previously unconnected programs on chip development and manufacturing. The first phase ran until 2019 included CNY 139 billion, investing broadly across the supply chain, while the second phase with CNY 204 billion was designed to specifically focus on supply chain steps with Chinese weaknesses. In practice, however, both funds spent large chunks on front-end manufacturing.7 A third phase of CNY 340 billion was announced in 2024. The Big Fund has had mixed results, for example with the collapse of high-profile chipmaker Tsinghua Unigroup.8 But the big winners from the program currently dominate China’s chipmaking industry: Semiconductor Manufacturing International Corporation (SMIC) as the most advanced logic foundry and Yangtze Memory Technologies Corporation (YMTC) as its top memory chip maker. SMIC is the only Chinese company that can make advanced 7 nanometer (nm) chips today.Central state support is complemented by local state support, with many provinces or cities using their own investment vehicles to finance semiconductor companies. Tech giant Huawei has emerged as the main player in coordinating chipmaking, working closely with SMIC. For instance, Huawei’s Hubble investment arm now invests across the supply chain, and importantly, it co-invests in many companies with the Shenzhen Major Industry Investment Group, a state-owned investment fund in the city of Shenzhen.9Domestic manufacturing is holding back China’s design capabilitiesHuawei, in its quest to compete with US Big Tech like Apple, designed its first AI mobile chip in 2017, adding a server chip meant to rival Nvidia in 2018.10 However, these chips were all manufactured at Taiwan’s TSMC. Huawei’s inclusion on the US Department of Commerce’s Entity List in 2019, followed by the imposition of the “Foreign Direct Product Rule,” barred the Chinese company from fabricating chips at TSMC.Since 2016, several other “fabless” design companies have emerged in China. Design is a high value-added part of the semiconductor supply chain that is less capital-intensive than manufacturing. Thus, the barrier to entry is low, especially if companies can use electronic design automation (EDA) software and other tools for development.China is now home to several AI chip design companies. A full version of the LLM DeepSeek, for instance, can be run on Huawei, Cambricon, Moore Threads and Kunlun chips.11 Importantly, these companies are still dependent on the ARM microarchitecture, designed by the Japanese-owned British company of the same name, as well as on EDA software from the West, although Huawei is also leading efforts to indigenize EDA software. Exhibit 1 Front-end manufacturing is a bottleneckAll Chinese design companies are competing for the same limited 7nm manufacturing capacity at SMIC, as well as for high bandwidth memory (which cannot yet be sourced locally) and advanced packaging (to bundle multiple chips for enhanced performance). While SMIC and others work on expanding manufacturing, Huawei has a large advantage because it is the de-facto leader of the semiconductor “national team” with access to up to 70 percent of SMIC’s capacity.12Huawei also made changes in 2022 from its 910 chip, manufactured at TSMC, to its newer 910B chip, designed for manufacturing at SMIC, that point to some production limitations.13 The new chip outperforms its predecessor but contains fewer cores, despite a larger die size, which can limit performance.14 At the end of 2024, moreover, credible rumors spread that Huawei had manufactured chips at TSMC in violation of US export controls, suggesting that SMIC’s capabilities are more limited and lower in quality than believed.Another key bottleneck is high bandwidth memory (HBM). Many AI tasks, notably those involved in training and running large language models, are highly dependent on memory. Huawei is working with memory chipmaker Tongfu Microelectronics to develop HBMs,15 but it reportedly also stockpiled significant memory from South Korea before export controls came into effect.16 Exhibit 2 Due to manufacturing limitations, Huawei’s newer 910C chip is just two 910B dies packaged together for better performance. This makes advanced packaging even more important. China has in recent years led the world in outsourced assembly and testing and thus has significant packaging capacity at home. But these fabs are focused on non-advanced packaging and must now be adapted to build up advanced packaging capacity. Xingsen Technologies is just one company doing so with Huawei’s support.Software issues hold back Chinese AI chips in applicationsThe 910B’s performance is, on paper, roughly on par with Nvidia’s A100, a chip that came out in 2019. In practice, however, Huawei’s chips are beset by problems that make them less useful than their performance stats would suggest.The strength of individual chips is not the most important factor. Most AI workloads run on multiple chips. Nvidia is the undisputed leader in AI chip design globally, not least because its chips are far easier to connect to each other, even between servers.Part of Nvidia’s competitive advantage lies in CUDA (Compute Unified Device Architecture), a programming interface and parallel computing platform. CUDA allows developers to port code easily between Nvidia chips and provides solutions to problems already in code. Most AI models so far have been written using CUDA, so switching to non-Nvidia chips is costly.Chinese companies are trying to challenge Nvidia’s dominance in two ways. Smaller companies like Moore Thread offer a compatibility layer for CUDA, so that developers switching to their chips do not need to change their CUDA code. But CUDA is optimized for Nvidia chips and is regularly updated, so compatibility layers need continuous support and will never be as efficient as a similarly high-performance framework developed natively.By contrast, Huawei chose to develop its own alternative to CUDA, CANN. But CANN is not nearly as mature and usable: Huawei’s chips still have random, frequent crashes without recovery, and developers are hesitant to port their models to CANN.17 As changes are made to CANN, successive models may not be compatible, so a model running on the Ascend 910B will need significant changes to run on a future Ascend-based chip. This slows model innovation and deployment.The bottom line: China still relies on foreign AI chipsHuawei chips are especially unsuitable for large LLM training runs. A few months ago, DeepSeek considered Huawei’s most advanced AI chip at the time, the Ascend 910C, inadequate for training.18Nvidia continues to lead the market for AI chips in China, having sold more than 1 million of its H20 chips in 2024. Huawei, on the other hand, only sold 200,000 AI chips, despite their lower price.19 Until recently, the H20 was the most advanced AI chip Nvidia was still allowed to sell to its Chinese customers. In April 2025, the Trump administration slapped a licensing requirement (with a presumption of denial) on H20 exports to China,20 which will likely make life even harder for China’s AI industry.In addition to manufacturing innovation, Chinese developers are also working on making better use of the limited chips available to them. For instance, Alibaba developed a technique for training the same model using a mix of foreign and domestic chips. 21 Moreover, Chinese hardware makers are offering server-scale machines that rival Nvidia’s performance using significantly more chips and power.22 China currently has abundant energy and subsidized energy prices, so it is better positioned than the West to meet AI’s power demand. , Middle of stack: Chinese big tech dominates domestic machine learning offerings; users prefer global ones At the next layer up, machine learning frameworks are used to streamline development and make it easier. They are standard interfaces, libraries and toolkits for designing, training and verifying AI algorithms. While developers could write code from scratch to train and deploy models, using a framework is much faster and easier to port to new chips and iterate on. Frameworks can be viewed as the common language of AI development.Leading AI frameworks globally are PyTorch and TensorFlow, both open source and originally developed by US companies. Due to their wide global adoption, Chinese developers like Huawei are contributing to these frameworks to include support for domestic GPUs, while also developing domestic alternatives.The first major framework released by a Chinese company was Baidu’s PaddlePaddle, published in 2016.23 PaddlePaddle has been relatively widely adopted in China, especially in industry, and includes a lot of pre-trained models for typical industrial AI workloads.24Huawei’s machine learning framework, MindSpore, is available both for the company’s own flagship AI chips, the Ascend GPUs, and for CPU-based machine learning. It was open-sourced in 2020 as a full-scenario AI computing framework. However, beyond its use for Huawei’s own pre-trained models and some initial traction in industrial AI, adoption seems limited. On the Chinese source code repository Gitee, a search for MindSpore returns 684 results, with TensorFlow and PyTorch each returning more than 10,000.25Considering Huawei has moved MindSpore development onto Gitee, this shows that adoption lags significantly. As a result, Huawei is still actively developing extensions for PyTorch and TensorFlow to enable support for Ascend GPUs. Huawei joined the PyTorch Foundation as a Premier member in 2023.26 The company is also active in contributing to open source projects on Github.27 Since PyTorch and TensorFlow are both open source with very permissive licenses, it is unlikely the US government will be able to restrict China from accessing them. , Top of stack: fierce competition over large language models and applications At the top of the stack are AI applications. Due to the recent focus on LLMs, this report emphasizes LLMs and their many applications. They have become the focal point of global technology competition since the launch of ChatGPT in late 2022.There is a vibrant scene in China rising to meet this challenge, with academia as well as private enterprises entering the race en masse to develop LLMs. Ample private funding and access to global open-source models have allowed for rapid Chinese progress. Although China lagged in the first years after ChatGPT’s release, domestic models did not have competition from leading Western ones, since these were quickly banned after release. With the release of DeepSeek’s models in late 2024, China became a contributor to the cutting edge of global LLM development.28Software development is a more open environment, so direct government support to this layer of the tech stack has been less relevant. One notable form has been provincial government vouchers for startups to purchase or rent computing power for model training. These typically range from 20 to 50 percent of compute costs, and up to a yearly total of CNY 500 million for all companies in the most generous locality (Shenzhen).29 Aside from this mechanism, which is not insignificant, the government’s role can be best described as incentivizing the ecosystem rather than direct subsidization.China’s LLM scene comprises large and small players. Established tech giants are all working on their own models. So are academic and state-backed research labs, which produce much of China’s top AI talent and startup spin-offs. A crop of startups has emerged, alongside existing tech companies trying to capture the trend. Finally, there is the surprise disruptor DeepSeek, which hailed from Hangzhou, an emerging hub of AI innovation.30 Table 1 While still trailing the most advanced Western competitors, Chinese LLMs now perform well across different evaluation metrics. UC Berkeley’s Chatbot Arena is a popular ranking. Its scores are derived by comparing pairs of chatbots blind-tested and voted on by volunteers. In March 2025, the top 20 scores include five Chinese entries, led by DeepSeek-R1 in sixth place. Qwen2.5-Max is ranked tenth and Zhipu’s GLM-4-Plus-0111 is fourteenth.31 The rest of the leaderboard models are from leading Western companies including xAI, OpenAI and Google.The benchmark SuperCLUE offers the most thorough look at the wide range of Chinese LLMs. It evaluates LLM performances in tasks using the Chinese language. In March 2025, the top scoring model was OpenAI’s o3-mini, followed by DeepSeek’s R1. Other Chinese LLMs, including the latest Qwen, Hunyuan and 360zhinao models, follow closely behind top models from Google and Anthropic.32 Exhibit 3 Government fosters the open-source ecosystemLLMs have enjoyed a relatively easy development path in China compared to the hardware layers of the AI stack, in part thanks to the longstanding practice of open-source software development. Much of the foundational LLM research has been in the form of public papers and code repositories, free for developers around the world to finetune or build on. As a result, most top models are very similar in architecture, differentiating themselves instead in training data sets and fine tuning to yield competitive results against benchmarks. Meta has been particularly influential in open sourcing its state-of-the-art LLaMA series.33 Many leading Chinese LLMs use the underlying architecture for their models, including Baichuan’s Baichuan series and 01.AI’s Yi series.34Open sourcing for LLMs often refers to a slightly different concept than traditional software projects. In what is more accurately described as “open-weight,” model weights, which are the parameters resulting from a trained model like LLaMA or DeepSeek, are shared, while the training code and datasets are not. Developers can build on these open models but cannot recreate them.35 This has implications for entities who want to deploy open-weight models, as the accuracy, proper handling of sensitive data and IP, and potential bias in the training data cannot be verified.China’s government has long embraced the open-source movement, both to decrease dependency on foreign technology companies and to ramp up progress toward self-sufficiency.36 It has supported using open-source standards in many technologies, such as RISC-V for chip design architecture and Kylin Linux for operating systems. Responding to policy direction, a consortium of Chinese tech companies launched the Open Atom Foundation in 2020 to promote open-source development in cutting-edge tech projects. The platform is seeded by projects from tech giants, such as Huawei’s OpenHarmony operating system.37Chinese companies and software developers are very active in open-source communities. In 2024, Chinese developers made up around 9 percent of all developers on GitHub, which is the largest source code repository in the world and one of the few remaining major Western internet platforms to still operate inside China.38 To create a domestic alternative, both for ensuring continued access and for better control of activities on the platform, China’s Ministry of Industry and Information Technology (MIIT) backed local hosting platform Gitee in 2020.39 The platform sees some traction from Chinese users, gaining praise for faster access speed inside China and better localization, but many still prefer GitHub to engage with the international community.40Alibaba Cloud, or Aliyun, is a leader in Chinese AI open-source efforts. Its Qwen series regularly tops open-source leaderboards.41 Alibaba also operates ModelScope, a platform for open-source AI models fashioned after Hugging Face, a platform that has become the default destination for open source LLM projects globally. Hugging Face itself was banned in China, a reflection of the political sensitivity around generative AI.42 Many Chinese companies participate in the open-source community by open sourcing slightly older models, while keeping their most advanced commercial models close-sourced. DeepSeek caught the world’s attention with low costs and high performance, but its deployment remains a challengeDeepSeek’s release of its R1 model in January this year marked the arrival of the little-known startup in the LLM scene, and brought wider awareness of Chinese LLMs outside China.43 DeepSeek’s remarkably efficient use of computing resources to achieve performance similar to far more expensive models has sparked discussions ranging from the competitiveness of Chinese AI to the effectiveness of chip export controls, even briefly causing a sharp drop in Nvidia share prices.44DeepSeek’s breakthrough lies in combining existing technical solutions to radically reduce the computing resources required to train and run a world-class model.45 Custom communications schemes between GPUs also helped cut training time.46 DeepSeek’s models are open weight, and its research papers describing these innovations have contributed to the state of the art in LLM development.47Outside the tech community, DeepSeek has garnered attention for its high performance offered at a dramatically lower price, although there are some disputes around the true training and access costs of its models.48 Importantly, it sparked discussions of Chinese LLMs entering global market competition, raising questions around Chinese government censorship and data gathering.49 However, as a startup, DeepSeek does not have the infrastructure to offer its products on a large scale. Many Chinese companies are rushing to fill this void, although these early efforts have yielded mixed results.Results of a test on the Chinese platforms offering DeepSeek illustrate the challenges companies face in supporting top models. The test was conducted by SuperCLUE on 18 Chinese platforms that offered DeepSeek-R1 in February 2025, including both free and paid offerings. The results were poor, showing long response times for questions and high rates of cut-off responses or none at all.50 The best performers were US firms Perplexity and together.ai, a testament to the importance of access to cutting-edge chips in deploying LLMs effectively. In a follow-up test in March, US platforms disappeared from the chart. 51The best performing Chinese host of DeepSeek is VolcEngine, the cloud service from ByteDance. A relative newcomer after the big three – Alibaba, Huawei and Tencent – it is trying to catch up by doubling down on AI offerings.52 Overall, China’s cloud market is much smaller than that of the US, due in part to lower adoption of public cloud solutions by enterprises.53 While cloud service providers want to expand by investing in AI infrastructure, enterprises are also embracing private solutions that allow them quick access.54 The growing popularity of “all-in-one” machines offering DeepSeek models reflects this.55 In the end, widespread adoption and easy access to LLMs are what will propel the dissemination of AI technology into innovations across different fields. It remains to be seen if China’s divergent approach will yield better results.External constraints and government priorities urge a pivot toward applicationsDeepSeek’s arrival in a way marks the end of the “battle of hundred models” era in which many firms pursued LLM development.56 01.AI has announced it will stop training new models, focusing instead on offering DeepSeek-based solutions57; Baichuan has pivoted into medical AI, and Kimi is also exploring opportunities in more specific applications.58Some in the local AI community already advocate for a shift in focus from cutting-edge LLM capabilities toward building applications for existing models.59 Beyond China’s traditional strength in taking existing innovations and building on them rather than developing new paradigms, there are several other reasons for this “pragmatic” approach.First is the shortage of cutting-edge AI chips in China due to US export controls. While model developers are attempting to use Chinese-made AI chips, dependence on Nvidia chips is widely acknowledged.60 Many companies and institutions rely on stockpiles acquired prior to export controls, access them remotely through cloud service providers, or in some cases get their hands on smuggled chips. 61With a limited supply of AI chips for training and deploying large foundational models, China may see a better path to commercial success in AI applications. Qihoo 360 CEO Zhou Hongyi, for example, has suggested that a vertical approach involving smaller models with proprietary data may be best for resource-constrained Chinese enterprises.62 The government, for its part, wants to focus on the application aspect of AI technology. In both 2024 and 2025, the government work reports presented at the National People’s Congress featured an “AI+ Initiative” to promote the use of AI solutions to boost manufacturing and other sectors like electric vehicles, robotics, education and medicine.63The Hangzhou government stands out as a successful example for fostering its startup environment with financial support and other incentives. Six AI startups there, including Deep-Seek, represent an emerging wave of innovative technologies coming out of the Chinese tech ecosystem. They showcase the range of opportunities AI brings to different sectors – Unitree and Deep Robotics in robotics, Game Science in gaming, BrainCo in brain-computer interface, Manycore in spatial simulations applied to design.64 , China increasingly relies on itself for AI inputs, but faces challenges Achieving AI self-reliance will hinge on domestic and external factors. The AI stack relies on several inputs whose availability is crucial for any country or region to compete in advanced AI systems. These are capital, talent, data and infrastructure. Understanding the availability and role of these AI inputs in China is critical in assessing its capabilities as well as potential technological progress in the years ahead.In terms of capital, the role of US investment, once a significant contributor to China’s AI ecosystem, has sharply declined. Already before the Biden administration introduced a framework allowing the Treasury Department to scrutinize, and in some cases bar, US investment in Chinese technology industries including AI, US venture capital had started pulling back, reaching a ten-year low of USD 1.3 billion in 2022, down from USD 14.4 billion in 2018.65 This is causing Chinese AI firms to shift to alternative sources of capital to fund their growth, namely CNY-denominated funds as well as dollars from deep-pocketed investors in places like the Gulf states. Although the country’s venture capital market has been in decline since 2021, according to Pitchbook, China saw 715 deals in the AI sector in 2024 totaling USD 7.3 billion, higher than any other country in Asia.66Despite this enthusiasm, largely driven by the generative AI boom, Beijing’s bet on a state-driven, techno-nationalist innovation model may hamper the future development of traditionally privately driven sectors.67 In January, China launched a new AI investment fund with an initial capital of CNY 60 billion (USD 8.2 billion), followed by a distinct state guidance fund for critical tech sectors that the National Development and Reform Commission (NDRC) unveiled at this year’s Two Sessions.68 Seasoned investors in China’s tech ecosystem privately caution that state capital could introduce inefficiencies and slow innovation. This is not to mention the economic slowdown, which raises serious questions about the future viability of China’s system of science, technology and innovation.69 Exhibit 4 In terms of talent, DeepSeek’s experience demonstrates that a brilliant and motivated cohort of young, mostly domestically educated engineers and entrepreneurs is eager to develop and commercialize new innovations at home.70 Indeed, research by MacroPolo showed that, in 2022, a quarter of the world’s elite AI scientists received their undergraduate degrees from a Chinese university. More of these top talents are choosing to live and work in their home country: 28 percent compared to 11 percent only three years earlier.71In other words, while the US remains the largest pool of elite AI talent, China is quickly closing that gap. While a general shortage of AI workers is still reported, and especially acute in specific fields and functions like speech recognition and algorithm engineering, China’s talent outlook is clearly positive. 72 Research outputs reflect this trend, with China accounting for roughly 40 percent of highly cited AI papers in 2021, and already surpassing the US share in 2016, according to CSET’s Emerging Technology Observatory.73China’s large ecosystem is not closed off, at least not so far. CSET found that a considerable proportion of China’s highly cited AI research came from collaborations with US peers, although much of China’s increase relative to the US could be attributed to non-collaborative papers.74 AI research collaboration between China and the US remains resilient overall despite geopolitical tensions, although it is no longer growing at the same rate as prior to 2020.75 Because AI and machine learning research thrives on cross-border collaboration, self-reliance would seem hardly feasible or desirable for China.The extent to which Beijing regards such global AI communities as a strength rather than a vulnerability is increasingly in question, however. The Politburo Study Session on AI emphasized self-sufficiency and toned-down rhetoric on openness and global integration. The government is also trying to nurture domestic software development and code-hosting platforms. This seems to run counter to the interests of most Chinese developers, who continue to prefer GitHub due to its international exposure. Players like Huawei (through its MindSpore ecosystem) and China Software Development Network (CSDN, which counts about 10 million registered users and ties with American firms like Microsoft and Intel) are working to strengthen domestic AI developer communities.Meanwhile, Beijing’s continued political support for open models – an approach that Europe is also betting on76 – is not a given. Some DeepSeek employees are reportedly under travel restrictions,77 a sign that a control-obsessed party state may tighten its grip.Data is another crucial ingredient in AI development. Although the availability of large-scale and rich datasets has provided an advantage to Chinese firms in sectors like computer vision and related applications like biometric recognition,78 this is not true across the board. There are persistent issues with the quality of data corpuses used for training, and even with inadequate supply.79 The government considers this a priority and has launched an ambitious effort, led by the National Data Administration, to better integrate China’s data market.80 This kind of proactive industrial policy for the data economy could help solve some of the challenges China’s AI industry is facing in this area. Recent policies to stimulate the data labelling industry fit the same logic.81The infrastructure through which data is processed and ingested by AI systems is just as important. This takes the form of data centers that typically contain hundreds of thousands of high-performance chips, network and storage architectures, as well as energy and cooling capabilities to handle AI workloads. China has poured billions into AI computing infrastructure, including through a megaproject to develop a nationwide grid of data centers and AI computing hubs, particularly by exploiting the abundant land and renewable energy sources of inland provinces.82China has both strengths and weaknesses in the race to build AI infrastructure. On the one hand, the combination of its low electricity prices and forward-looking energy strategy – including plans to build the world’s first hybrid fusion-fission reactor by 2031 – and the paradigm of hardware-efficient AI innovation pioneered by DeepSeek could position China relatively well to balance energy security and technological advances. On the other hand, the hype around LLMs among commercial players and local governments has led to wasteful investments, with up to 80 percent of newly built computing resources unused.83Hardware export controls will impact China’s trajectoryNo discussion of the prospects for an indigenization of China’s AI stack would be complete without considering external factors – specifically, foreign governments’ export controls and their likely impact on the country’s AI ecosystem. In October 2022, the US introduced unilateral export controls on certain semiconductors, chip design software, and chip-making equipment. Those controls were beefed up in 2023 and again in 2024.So far, Chinese LLM developers have managed to access American-designed GPUs to train and deploy their models. To train the R1, DeepSeek claimed to have used merely 2,048 Nvidia H800 GPUs, which Washington only banned in October 2023. DeepSeek reportedly also had access to 10,000 of the less powerful A100 GPUs. Others estimate the company had access to many more Nvidia GPUs, and some in Congress have launched a probe into possible smuggling.84 In a nutshell, export controls are not perfect firewalls, and Washington could tighten the screws further. US firms will keep adjusting to this: Nvidia is due to release a downgraded version of its H20 to keep servicing Chinese customers.85The trajectory of AI export controls, however, is far from certain. In a big move, the Trump administration repealed the AI Diffusion framework, which was drawn up by the Biden administration to control the global spread of advanced AI capabilities.86 This would have been executed mainly through a tiering system tied to a mix of export caps and security requirements for model training and deployment.87 The previous administration’s had eyes on countries like the UAE and Malaysia, believed to be transshipment hubs through which restricted GPUs end up in China. Essentially, the US would have sought to lock in the leadership of its companies in the global AI ecosystem and manage security risks – largely by isolating China through shaping the technology decisions of third countries.88 Trump plans to replace this framework with his own, as yet unknown, version.For now, Trump’s intent seems to be twofold. First, while subscribing to the same strategic objective of containing China’s AI capabilities, his administration prefers soft guidance to help industry enforce existing rules, rather than new regulation. Second, Trump personally favors bilateral deals, as seen in agreements with Saudi Arabia and the UAE expected to open the door for future exports of large numbers of the most advanced GPUs.89Corporate interests and third countries’ choices, in addition to those made in Beijing and in Washington, will continue to influence the urgency with which China must indigenize its AI stack. , External factors could change China’s growth trajectory across the AI stack China’s government regards AI as a crucial technology and is doing all it can to foster self-reliance, particularly in homegrown AI chips and the middle layer where Chinese firms are most vulnerable to being cut off.While Chinese companies can design good, if not cutting-edge chips, they are still severely constrained by domestic chip-making capabilities. These are particularly hampered by US, Japanese and Dutch export controls on manufacturing equipment. Moreover, Nvidia’s advantage exists not only in hardware, but also in software and cross-chip capabilities, which are difficult to replicate.While a few chip designers in China are active in AI, Huawei has emerged as the leader of the “national team for AI chips.” The company is building up an entire ecosystem spanning chips, computing frameworks and an AI framework. This, along with government support, makes it increasingly difficult for other Chinese AI chip companies to compete. While multiple Chinese chip designers can design competitive AI chips, they are all competing for SMIC’s high-end manufacturing capacity. Huawei’s outsized role gives it an important advantage. As a result, other designers are unlikely to emerge as real competitors. Some are likely to look for niches where they can be successful going forward.For the machine learning frameworks used to build LLMs and other AI, tech giants Baidu and Huawei lead the long-term effort to develop local alternatives to global frameworks, the preferred choice of Chinese AI developers. Smaller companies try to add support for their chips to these global frameworks. Meanwhile, the government is supporting efforts to further the adoption of local frameworks, especially in application development.China is quite self-sufficient in the development and adoption of competitive LLM models, with many firms in the space. This success is built on the ample access it has enjoyed thus far to the global open-source community. Chinese and US regulations keeping foreign models out have also helped local competitors thrive. The “DeepSeek moment” has turbo-charged adoption of LLMs in China. DeepSeek has also encouraged the practice of open source (or open weight) in China’s LLM ecosystem, possibly speeding up innovation.Computing power restrictions and the government’s own preferences are both pushing for a more application-focused approach to AI development, with fewer companies trying to build LLMs. If those companies open-source their models, this could lead to very fast iteration and widespread deployment. Instead of the “battle of a hundred models” seen at the beginning of the LLM boom, we could soon witness an explosion of applications built on the winners of the battle. This configuration could play more to China’s strengths and alleviate the high hardware requirements of building LLMs from scratch.It is also possible for China to fall behind. Long-term growth would suffer if access to the open-source community and AI computing power was hindered.90 While China has built up a large talent pool, is shoring up investment and can provide the energy to power its data centers, government allocation of resources is often inefficient. China’s AI ecosystem owes much to the ingenuity of its engineers and private entrepreneurs, but also to critical international input; the latter is looking increasingly difficult to maintain. , Policy options for Europe Europe should decide whether to integrate China-origin AI technology into its AI stack. DeepSeek has attracted European users, which has led to scrutiny of its data and content moderation practices. Lawmakers and regulators in charge of enforcing the GDPR and the AI Act should consider that Chinese LLM developers are bound by the CCP’s national security and censorship demands.China’s bet to fully indigenize the AI stack is informed by its domestic conditions and political economy. Its innovation model prices in inefficiency in pursuit of strategic objectives. Rather than throwing massive resources at building a sovereign stack, Europe may stand a better chance if it focuses on its comparative advantage and strategic interests, based on clear priorities.Europe lags in data infrastructure to promote adoption of its own AI solutions. This probably deserves its most urgent attention. China is pushing adoption through a mix of cloud-as-infrastructure projects, while US cloud service hyperscalers can count on sheer numbers of chips and users. Europe must find its own path. Reforms are also needed so the EU can attract and retain top talent.Europe could leverage its industrial strengths to build AI applications. Opportunities unlocked by DeepSeek’s compute-efficient paradigm should be put into perspective. Hyperscalers with abundant chips will keep releasing the best general-purpose models, but the wider ecosystem is shifting toward test-time, or inference-time compute. Europe’s abundant industrial data could be the foundation to deploy smaller models, which are often better for specialized tasks.Competing in lower layers of the stack is a longer game. Even China, with its clear government strategy and funding, has long struggled to develop competitive AI chips. Europe should leverage its niches in semiconductor supply chains rather than focus on areas where it is not competitive.China’s experience shows that state-led approaches have limitations. Private companies that initially take off with limited state connections or support, like DeepSeek, can often be the most disruptive. In contrast, efforts to bend the choices of AI firms and developers to techno-nationalist agendas rarely bear fruit.Geopolitical competition will continue to shape Europe’s choices. The US and China both aim for dominance in AI and their ecosystems are bifurcating. Reliance on US hardware could expose Europe to supply constraints or even coercion. But alternatives like Huawei’s AI chips, besides technical difficulties, may present security risks or even be in breach of US export controls. Endnotes1    | Metz, Cade (2023). “The ChatGPT King Isn’t Worried, but He Knows You Might Be.” The New York Times.Retrieved from https://www.nytimes.com/2023/03/31/technology/sam-altman-open-ai-chatgpt.htmlTong, Anna, Martina, Michael, & Tong, Anna (2024). “US government commission pushes Manhattan Project-style AI initiative.” Reuters. Retrieved from https://www.reuters.com/technology/artificial-intelligence/ us-government-commission-pushes-manhattan-project-style-ai-initiative-2024-11-19/2    | “习近平在中共中央政治局第二十次集体学习时强调：坚持自立自强 突出应用导向 推动人工智能健康有序发展 中国政府网” (n.d.). Retrieved June 24, 2025, from https://web.archive.org/web/20250613142922/https://www. gov.cn/yaowen/liebiao/202504/content_7021072.htm3    | House, The White (2022). “Remarks by National Security Advisor Jake Sullivan at the Special Competitive Studies Project Global Emerging Technologies Summit.” Retrieved June 13, 2025, from The White House https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2022/09/16/remarks-by-nation- al-security-advisor-jake-sullivan-at-the-special-competitive-studies-project-global-emerging-technolo- gies-summit/4    | “新一代人工智能发展规划 (New Generation Artificial Intelligence Development Plan)” (2017). Retrieved April 25, 2025, from State Council https://web.archive.org/web/20170721053549/https://www.gov.cn/ zhengce/content/2017-07/20/content_5211996.htm; Jochheim, Ulrich (2021). “China’s ambitions in Ar-tificial Intelligence.” European Parliamentary Research Service. https://www.europarl.europa.eu/RegData/ etudes/ATAG/2021/696206/EPRS_ATA(2021)696206_EN.pdf5    | “The White Paper” (2025). Retrieved June 13, 2025, from EuroStack https://euro-stack.eu/the-white-paper/6    | “HPC Digital Autonomy with RISC-V in Europe” (2025). Retrieved June 13, 2025, from Jülich Supercomput- ing Centre https://www.fz-juelich.de/en/ias/jsc/projects/dare7    | “China’s Big Fund 3.0: Xi’s Boldest Gamble Yet for Chip Supremacy – The Diplomat” (n.d.). Retrieved June 24, 2025, from https://thediplomat.com/2024/06/chinas-big-fund-3-0-xis-boldest-gamble-yet-for-chip-su- premacy/8    | Mozur, Paul (2021). “The Failure of China’s Microchip Giant Tests Beijing’s Tech Ambitions.” The New York Times. Retrieved from https://www.nytimes.com/2021/07/19/technology/china-microchips-tsinghua-uni- group.html9    | “bloomberg.com/graphics/2023-china-huawei-semiconductor/” (n.d.). Retrieved June 24, 2025, from https://www.bloomberg.com/graphics/2023-china-huawei-semiconductor/10    | Ye, Josh (2023). “How Huawei plans to rival Nvidia in the AI chip business.” Retrieved April 25, 2025, from Reuters https://www.reuters.com/technology/how-huawei-plans-rival-nvidia-ai-chip-busi-ness-2023-11-07/11    | “部分国产芯片适配满血版 DeepSeek，仍「遥遥无期 (Some domestic chips are still ‘far from being compat- ible with the full version of DeepSeek’)” (2025). Retrieved April 25, 2025, from WeChat, AI Technology Review https://web.archive.org/web/20250310174412/https:/mp.weixin.qq.com/s/BiieiP-ViGXzH_5j9x- LOyA12    | “Huawei is quietly dominating China’s semiconductor supply chain | Merics” (2024). Retrieved June 24, 2025, from https://merics.org/en/report/huawei-quietly-dominating-chinas-semiconductor-supply-chain13    | Feldgoise, Jacob, & Dohmen, Hanna (2024). “Pushing the Limits: Huawei’s AI Chip Tests U.S. Export Controls.” Center for Security and Emerging Technology. Retrieved from https://cset.georgetown.edu/ publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/14    | Shilov, Anton (2024). “Huawei’s homegrown AI chip examined — Chinese fab SMIC-produced Ascend 910B is massively different from the TSMC-produced Ascend 910.” Retrieved April 25, 2025, from Tom’s Hardware https://www.tomshardware.com/tech-industry/artificial-intelligence/huaweis-homegrown-ai- chip-examined-chinese-fab-smic-produced-ascend-910b-is-massively-different-from-the-tsmc-produced- ascend-91015    | “Tongfu Microelectronics Co.,” Retrieved June 18, 2025, from https://en.tfme.com/Zuhair, Muhammad (2025). “Chinese Firm Tongfu Announces Trial Production Of HBM2 Process; Expected To Be Featured In Huawei’s AI Chips.” Retrieved June 18, 2025, from Wccftech https://wccftech.com/chinese-firm-tong- fu-announces-trial-production-of-hbm2-process/16    | Yang, Heekyong, Potkin, Fanny, & Freifeld, Karen (2024). “Chinese firms stockpile high-end Samsung chips as they await new US curbs, say sources.” Reuters. Retrieved from https://www.reuters.com/tech- nology/chinese-firms-stockpile-high-end-samsung-chips-they-await-new-us-curbs-say-2024-08-06/17    | McMorrow, Ryan, Olcott, Eleanor, & Hu, Tina (2024). “Huawei’s bug-ridden software hampers China’s efforts to replace Nvidia in AI.” Retrieved April 25, 2025, from Financial Times https://www.ft.com/con- tent/3dab07d3-3d97-4f3b-941b-cc8a21a901d6 18    | Allen, Gregory C. (2025). “DeepSeek, Huawei, Export Controls, and the Future of the U.S.-China AI Race.” Center for Strategic & International Studies. Retrieved from https://www.csis.org/analysis/deepseek-hua- wei-export-controls-and-future-us-china-ai-race19    | Potkin, Fanny (2024). “Exclusive: Nvidia cuts China prices in Huawei chip fight.” Retrieved April 25, 2025, from Reuters https://www.reuters.com/technology/nvidia-cuts-china-prices-huawei-chip-fight- sources-say-2024-05-24/20    | “Nvidia shares plunge amid $5.5bn hit over export rules to China” (n.d.). Retrieved June 24, 2025, from https://www.bbc.com/news/articles/cm2xzn6jmzpo21    | Team, Ling, Zeng, Binwei, Huang, Chao, Zhang, Chao, Tian, Changxin, Chen, Cong, … He, Zhengyu (2025). Every FLOP Counts: Scaling a 300B Mixture-of-Experts LING LLM without Premium GPUs. https:// doi.org/10.48550/arXiv.2503.0513922    | “Huawei AI CloudMatrix 384 – China’s Answer to Nvidia GB200 NVL72” (2025). Retrieved June 24, 2025, from SemiAnalysis https://semianalysis.com/2025/04/16/huawei-ai-cloudmatrix-384-chinas-answer-to- nvidia-gb200-nvl72/23    | PaddlePaddle/Paddle [C++] (2025). Retrieved from https://github.com/PaddlePaddle/Paddle (Trabalho original publicado em 2016)24    | “PaddlePaddle: An Open-Source Deep Learning Framework - viso.ai” (n.d.). Retrieved June 24, 2025, from https://viso.ai/deep-learning/paddlepaddle/25    | Conducted on April 1, 2025 on https://so.gitee.com/, archive of search here: “Gitee Search - 开源软件搜索” (2025). Retrieved April 25, 2025, from https://web.archive.org/web/20250401070846/https:/so.gitee. com/?q=mindspore26    | “Huawei Joins the PyTorch Foundation as a Premier Member” (2023). Retrieved April 25, 2025, from PyTorch https://web.archive.org/web/20250425121040/https://pytorch.org/blog/huawei-joins-pytorch/27    | “Add Ascend backend support · Issue #11477 · microsoft/onnxruntime” (2022). Retrieved April 25, 2025, from GitHub https://github.com/microsoft/onnxruntime/issues/1147728    | DeepSeek-AI et al. (2025). DeepSeek-V3 Technical Report. https://doi.org/10.48550/arXiv.2412.1943729    | “算力券全攻略｜一文搞懂全国补贴详情 (Compute Power Voucher Full Strategy Guide | All National Subsidy Details Explained in One Article)” (2025). Retrieved June 13, 2025, from Northern Computing Network on Zhihu https://archive.is/XNL4H30    | “中文大模型基准测评2025年3月报告 (Chinese Large Model Benchmark Report, March 2025 )” [2025.03] (2025). Retrieved June 13, 2025, from SuperCLUE https://web.archive.org/web/20250405011050/ https://www.cluebenchmarks.com/superclue_250331    | “LLM Leaderboard: Community-driven Evaluation for Best LLM and AI chatbots” (2025). Retrieved April 25, 2025, from Chatbot Arena (formerly LMSYS) https://huggingface.co/spaces/lmarena-ai/chatbot-are- na-leaderboard/tree/main32    | “SuperCLUE中文大模型测评基准——评测榜单 (SuperCLUE Chinese Large Model Evaluation Benchmark List)” (2025). Retrieved April 25, 2025, from SuperCLUE https://web.archive.org/web/20250405011050/ https://www.cluebenchmarks.com/superclue_250333    | Zuckerberg (2024). “Open Source AI is the Path Forward.” Retrieved June 13, 2025, from Meta Newsroom https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/34    | baichuan-inc (2023). “Baichuan-7B.” Retrieved June 13, 2025, from GitHub https://github.com/baic- huan-inc/Baichuan-7B/blob/main/README_EN.md; Peng, Tony (2023). “Kai-Fu Lee’s LLM: A LlaMA Lookalike, China’s LLM Overload, and US-China AI Risk Talk Begins.” Retrieved June 13, 2025, from https://recodechinaai.substack.com/p/kai-fu-lees-llm-a-llama-lookalike35    | “Llama and ChatGPT Are Not Open-Source Few ostensibly open-source LLMs live up to the openness claim” (2023). Retrieved June 13, 2025, from IEEE Spectrum https://spectrum.ieee.org/open-source-llm- not-open36    | Arcesati, Rebecca, & Meinhardt, Caroline (2021). China bets on open-source technologies to boost domes- tic innovation | Merics. Retrieved from MERICS https://merics.org/en/report/china-bets-open-source-tech- nologies-boost-domestic-innovation37    | “Open-Source Technology and PRC National Strategy: Part I” (2025). Retrieved June 13, 2025, from China Brief, The Jamestown Foundation https://jamestown.org/program/open-source-technology-and-prc-na- tional-strategy-part-i/38    | “Octoverse: AI leads Python to top language as the number of global developers surges” [GitHub] (2024). Retrieved April 25, 2025, from The GitHub Blog https://github.blog/news-insights/octoverse/oc- toverse-2024/39    | “工信部携码云 Gitee 入场，国内开源生态建设进入快车道 (MIIT Enters the Scene with Gitee, Propelling Domes- tic Open-Source Ecosystem Development into the Fast Lane.)” (2020). Retrieved June 13, 2025, from Gitee Open Source Society https://archive.is/C7DuD40    | “大佬们都是用啥托管代码的？gitee还是github？(What do you guys use to host code ? gitee or github?)” (2022). Retrieved June 13, 2025, from UCloud Community https://web.archive.org/ web/20250518181300/https://www.ucloud.cn/yun/ask/78295.html41    | Chinese AI models storm Hugging Face’s LLM chatbot benchmark leaderboard — Alibaba runs the board as major US competitors have worsened.” Retrieved June 13, 2025, from Tom’s Hardware https://www. tomshardware.com/tech-industry/artificial-intelligence/chinese-llms-storm-hugging-faces-chatbot-bench- mark-leaderboard-alibaba-runs-the-board-as-major-us-competitors-have-worsened42    | Schneider, Jordan (2024). “Hugging Face Blocked! ‘Self-Castrating’ China’s ML Development + Jordan at APEC.” Retrieved June 13, 2025, from https://www.chinatalk.media/p/hugging-face-blocked-self-castrat- ing43    | “DeepSeek-R1 Release” (2025). Retrieved April 25, 2025, from DeepSeek API Docs https://web.archive. org/web/20250121060835/https://api-docs.deepseek.com/news/news25012044    | Bradshaw, Tim, Olcott, Eleanor, Alim, Arjun Neil, Smith, Ian, & Lewis, Leo (2025). “Tech stocks slump as China’s DeepSeek stokes fears over AI spending.” Financial Times.45    | Lambert, Nathan (2025). “DeepSeek V3 and the cost of frontier AI models.” Retrieved June 13, 2025, from https://www.interconnects.ai/p/deepseek-v3-and-the-actual-cost-of46    | The main innovations it used include a more memory-efficient implementation of attention operators (multi-head latent attention, or MLA), a key building block of LLMs; using smaller data field sizes during training (FPA-8); and using a Mixture-of-Experts approach to improve efficiency.47    | “What DeepSeek Means for Open-Source AI Its new open reasoning model cuts costs drastically on AI reasoning” (2025). Retrieved June 13, 2025, from IEEE Spectrum https://spectrum.ieee.org/deepseek48    | “DeepSeek Debates: Chinese Leadership On Cost, True Training Cost, Closed Model Margin Impacts” (2025).Retrieved June 13, 2025, from SemiAnalysis https://semianalysis.com/2025/01/31/deepseek-debates/ 49    | Pearl, Matt, Brock, Julia, & Kumar, Anoosh (2025). Delving into the Dangers of DeepSeek. Retrieved from https://www.csis.org/analysis/delving-dangers-deepseekRollet, Charles (2024). “Hugging Face CEO has concerns about Chinese open source AI models.” Retrieved June 13, 2025, from TechCrunch https://tech- crunch.com/2024/12/03/huggingface-ceo-has-concerns-about-chinese-open-source-ai-models/50    | “第三方平台DeepSeek-R1稳定性报告：18家网页端测评 (Third-party platform DeepSeek-R1 stability report: 18 web-based evaluations)” (2025). Retrieved April 25, 2025, from WeChat https://web.archive.org/ web/20250228054143/https:/mp.weixin.qq.com/s/_Wg4cDfYi8l9-Rb4dHACAg51    | “DeepSeek-R1第三方平台稳定性测试 （DeepSeek-R1 Third-Party Platform Stability Testing）” (2025).Retrieved June 13, 2025, from SuperCLUE https://archive.is/FJ8Pa52    | “大模型，能改变火山引擎在云牌桌上的位置吗？ （Can Large Models Change Volcengine’s Standing in the Cloud Computing Game? ）” (2024). Retrieved June 13, 2025, from Leiphone https://web.archive.org/ web/20250218155026/https://www.leiphone.com/category/industrycloud/OfACPVmQbcieLUY6.html53    | Schneider, Jordan (2025). “Why China’s Cloud Lags.” Retrieved June 13, 2025, from https://www.china- talk.media/p/the-political-economy-of-chinas-cloud54    | “2025年‘云’展望：AI、出海、下沉市场或迎‘黄金期’ （2025 Cloud Outlook: AI, International Ex- pansion, and Lower-Tier Markets May Usher in a ‘Golden Era.’）” (n.d.). Retrieved June 13, 2025, from Shanghai Securities News https://web.archive.org/web/20250518172515/https://m.caijing.com.cn/ article/360110?target=blank55    | “爆火的大模型一体机，炒作还是真需求？ (The exploding big model all-in-one, hype or real demand?)” (2025). Retrieved June 13, 2025, from 21Jingji https://web.archive.org/web/20250327080701/https:/ www.21jingji.com/article/20250327/herald/1792cf3df44d036cbc93f93dc1cfcad6.html56    | “百模大战落幕，大模型‘六小虎’开始分野 （The Battle of a Hundred Models Concludes; The ‘Six Little Tigers’ of Large Models Begin to Differentiate.）” (2024). Retrieved June 13, 2025, from 36Kr https://ar- chive.is/P5shw57    | “零一万物发布大模型平台，李开复：放弃巨型模型研发，我们做不起 （01.AI Launches Large Model Platform; Kai-Fu Lee: We’re Forgoing Giant Model R&D, We Can’t Afford It.）” (2025). Retrieved June 13, 2025, from Tencent Tech AI Official Account https://web.archive.org/web/20250517175547/https://news.qq.com/ rain/a/20250317A0548M0058    | “百川之后，Kimi悄然布局AI+医疗 （After Baichuan, Kimi Quietly Ventures into AI + Healthcare）” (2025).Retrieved June 13, 2025, from 36Kr https://web.archive.org/web/20250516095834/https://36kr. com/p/329088068307879059    | “‘Too many’ AI models in China: Baidu CEO warns of wasted resources, lack of applications” (2024). Retrieved June 13, 2025, from South China Morning Post https://www.scmp.com/tech/tech-trends/arti- cle/3269338/too-many-ai-models-china-baidu-ceo-warns-wasted-resources-lack-applications60    | “ChatGPT算力消耗惊人，能烧得起的中国公司不超过3家 (ChatGPT Demands Astronomical Computing Power; No More Than Three Chinese Companies Can Afford the Cost.)” (2023). Retrieved June 13, 2025, from Cai- jing Eleven https://web.archive.org/web/20230305153648/https://m.huxiu.com/article/811823.html61    | Baptista, Eduardo (2024). “China’s military and government acquire Nvidia chips despite US ban.” Reuters. Retrieved from https://www.reuters.com/technology/chinas-military-government-acquire-nvid- ia-chips-despite-us-ban-2024-01-14/62    | “《人工智能十问》(Ten Questions on Artificial Intelligence)” (2024). Retrieved April 25, 2025, from Baijiahao https://web.archive.org/web/20240423064140/https:/baijiahao.baidu.com/ s?id=179612572720505673663    | “政府工作报告 (Government Work Report)” (2025). Retrieved April 30, 2025, from At the Third Session of the 14th National People’s Congress on March 5, 2025 Li Qiang, Premier of the State Council https://web. archive.org/web/20250317193732/https:/www.gov.cn/yaowen/liebiao/202503/content_7013163.htm64    | “‘杭州六小龙’出圈背后：城市与创业者的相互成就 (Behind the popularity of the ‘Hangzhou Six Little Drag- ons’: the mutual achievement of cities and entrepreneurs)” (2025). Retrieved April 30, 2025, from Securi- ties Times https://web.archive.org/web/20250224053509/https:/www.stcn.com/article/detail/1529436. html65    | “Big Strides in a Small Yard: The New US Outbound Investment Screening Regime – Rhodium Group” (2023). Retrieved June 24, 2025, from https://rhg.com/research/big-strides-in-a-small-yard-the-new-us- outbound-investment-screening-regime/66    | Yu, Yifan (2025). “China venture capitalists hold back on AI deals despite DeepSeek buzz.” Retrieved June 13, 2025, from Nikkei Asia https://asia.nikkei.com/Business/Technology/China-venture-capitalists-hold- back-on-AI-deals-despite-DeepSeek-buzz67    | “Whole-of-Nation Innovation: Does China’s Socialist System Give it an Edge in Science and Technology?- IGCC” (n.d.). Retrieved June 24, 2025, from https://ucigcc.org/ https://ucigcc.org/publication/whole-of- nation-innovation-does-chinas-socialist-system-give-it-an-edge-in-science-and-technology/68    | “New AI fund in China to pour US$8 billion into early-stage projects” (2025). Retrieved June 24, 2025, from South China Morning Post https://www.scmp.com/tech/policy/article/3306047/new-ai-fund-china- pour-us8-billion-early-stage-projects; Liu, Nectar Gan, Juliana (2025). “China announces high-tech fund to grow AI, emerging industries | CNN Business.” Retrieved June 24, 2025, from CNN https://www.cnn. com/2025/03/06/tech/china-state-venture-capital-guidance-fund-intl-hnk69    | Rhodium Group (2023). Spread Thin: China’s Science and Technology Spending in an Economic Slow- down –. Retrieved from https://rhg.com/research/spread-thin-chinas-science-and-technology-spending- in-an-economic-slowdown/70    | Stanford HAI (2025). Policy Implications of DeepSeek AI’s Talent Base. Retrieved from https://hai.stan- ford.edu/policy/policy-implications-of-deepseek-ai-talent-base71    | “The Global AI Talent Tracker 2.0” (n.d.). Retrieved June 24, 2025, from MacroPolo https://archivemacro- polo.org/interactive/digital-projects/the-global-ai-talent-tracker/72    | “2025 AI技术人才供需洞察报告 (2025 AI Tech Talent Supply and Demand Insights Report)” (2025).Retrieved June 13, 2025, from East Money Information https://web.archive.org/web/20250613085006/ https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP20250306164409994173    | Feldgoise, Jacob, Aiken, Catherine, Weinstein, Emily S., & Arnold, Zachary (2023). “Studying Tech Competition through Research Output: Some CSET Best Practices.” Center for Security and Emerging Technology. Retrieved from https://cset.georgetown.edu/article/studying-tech-competition-through-re- search-output-some-cset-best-practices/CSET,74    | Ibid.75    | “Country Activity Tracker (CAT): Artificial Intelligence, China and United States” (2024). Retrieved April 30, 2025, from Emerging Technology Observatory, Center for Security and Emerging Technology https:// cat.eto.tech/?countries=China%20%28mainland%29%2CUnited%20States&countryGroups=&expand- ed=Summary-metrics%2CCountry-co-authorship CSET ETO76    | “EU launches InvestAI initiative to mobilise €200 billion of investment in artificial intelligence” (2025).Retrieved June 13, 2025, from European Comission https://digital-strategy.ec.europa.eu/en/news/ eu-launches-investai-initiative-mobilise-eu200-billion-inv... [https://merics.org/en/report/chinas-drive-toward-self-reliance-artificial-intelligence-chips-large-language-models]
+- [Updated RSS Feed] by Reuters (7/22/2025): "German car parts maker Bosch to cut up to 1,100 jobs" - German car parts maker Bosch will cut up to 1,100 jobs by 2029 and restructure its Reutlingen plant as a rapidly worsening auto market drives down sales, a senior company official said on Tuesday. [https://www.reuters.com/business/retail-consumer/german-car-parts-maker-bosch-cut-up-1100-jobs-2025-07-22/]
+- [Updated RSS Feed] by Efrain Otero (7/22/2025): "'I'm free now,' says Venezuelan singer held in El Salvador" - A Venezuelan singer who spent months in a notorious prison in El Salvador returned to his family in Caracas overnight, one of the first of more than 250 former prisoners to arrive home after they were sent back to Venezuela last week. [https://www.reuters.com/world/americas/im-free-now-says-venezuelan-singer-held-el-salvador-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Mexico's Sheinbaum says 14 Mexicans held in "Alligator Alcatraz" detention center" - Mexican President Claudia Sheinbaum said on Tuesday that 14 Mexican nationals were being held at the U.S. "Alligator Alcatraz" detention center and that her government was seeking their repatriation. [https://www.reuters.com/world/americas/mexicos-sheinbaum-says-14-mexicans-held-alligator-alcatraz-detention-center-2025-07-22/]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: JPMorgan’s head of global automotive research Jose Asumendi tested @Tesla's Robotaxi arrive in Austin and says the experience was “certainly solid and felt like a safe ride at all times.”" - JPMorgan’s head of global automotive research Jose Asumendi tested @Tesla's Robotaxi arrive in Austin and says the experience was “certainly solid and felt like a safe ride at all times.” pic.twitter.com/th5hYl4Dkz
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947673820925432019]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: NEWS: Starting July 31, all Lucid Air models will have access to over 23,500 @Tesla Superchargers in the US, with a Lucid-approved adapter. All Lucid Airs Air can charge at up to 50 kW and gain up to 200 miles of range per hour of charging at @Tesla Superchargers." - NEWS: Starting July 31, all Lucid Air models will have access to over 23,500 @Tesla Superchargers in the US, with a Lucid-approved adapter.
+All Lucid Airs Air can charge at up to 50 kW and gain up to 200 miles of range per hour of charging at @Tesla Superchargers. pic.twitter.com/8edefPC5vm
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947671568831942697]
+- [Updated RSS Feed] by Matt Woosnam (7/22/2025): "Crystal Palace submit CAS appeal over Europa League demotion" - The London club are requesting Nottingham Forest's admission to the competition be rescinded. [https://www.nytimes.com/athletic/6491046/2025/07/22/crystal-palace-cas-appeal-forest/]
+- [Updated RSS Feed] by Adrian Hedden (7/22/2025): "Oil companies pay top dollar for land in Eddy County - Carlsbad Current-Argus" - State land rented to the oil and gas industry for fossil fuel development brought in a record of about $56 million. [https://www.currentargus.com/2025/07/oil-companies-pay-top-dollar-for-land-in-eddy-county/]
+- [Updated RSS Feed] by Juveria Tabassum (7/22/2025): "Coca-Cola to roll out US cane-sugar Coke; zero-calorie drinks, higher prices drive beat" - Coca-Cola on Tuesday laid out plans to launch a new product made with cane sugar in the U.S. this year and beat estimates for quarterly results on resilient demand for zero-calorie drinks as well as higher prices. [https://www.reuters.com/business/coca-cola-roll-out-us-cane-sugar-coke-zero-calorie-drinks-higher-prices-drive-2025-07-22/]
+- [Updated RSS Feed] by Shannon Carroll (7/22/2025): "Elon Musk's Tesla diner opens for food and EV charging" - Elon Musk’s latest project is part roadside attraction, part Supercharger hub, and part content machine. Fries are optional. [https://qz.com/tesla-diner-elon-musk-los-angeles]
+- [Updated RSS Feed] by Olivia Le Poidevin (7/22/2025): "No aid supplies left and staff are starving in Gaza, says Norwegian Refugee Council" - The Norwegian Refugee Council told Reuters on Tuesday its aid stocks are completely depleted in Gaza, with some of its staff now starving, and accused Israel of paralysing its work. [https://www.reuters.com/world/middle-east/no-aid-supplies-left-staff-are-starving-gaza-says-norwegian-refugee-council-2025-07-22/]
+- [Updated RSS Feed] by Daily Report Staff (7/22/2025): "How companies are being more strategic when it comes to spending on travel" - Companies are still spending money on business travel, although they are being more strategic about how those dollars are spent amid ongoing trade uncertainties, CNBC writes.  New reports from the Global Business Travel Association and travel and expense platform Navan show that corporate travel spending activity increased 15% year over year in the second quarter […] [https://www.businessreport.com/article/how-companies-are-being-more-strategic-when-it-comes-to-spending-on-travel]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: NEWS: Starting July 31, all Lucid Air models will have access to over 23,500 @Tesla Superchargers in the US, with a Lucid-approved adapter." - NEWS: Starting July 31, all Lucid Air models will have access to over 23,500 @Tesla Superchargers in the US, with a Lucid-approved adapter. pic.twitter.com/sB8OiDAjja
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947667921276486026]
+- [Updated RSS Feed] by Niccolo Conte (7/22/2025): "Charted: The Rise of Stock Market Volatility (2017-2025)" - As the stock market's volatility in 2025 has kept traders and investors busy, this visual shows how it compares to past years since 2017. [https://www.visualcapitalist.com/charted-the-rise-of-stock-market-volatility-2017-2025/]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: NEWS: Honda Prologue and Acura ZDX owners now have access to more than 23,500 selected Tesla Superchargers across the United States with the availability of the first Honda-approved NACS-CCS DC fast-charging adapter." - NEWS: Honda Prologue and Acura ZDX owners now have access to more than 23,500 selected Tesla Superchargers across the United States with the availability of the first Honda-approved NACS-CCS DC fast-charging adapter. pic.twitter.com/CWUeCXIxYO
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947667576810590486]
+- [Updated RSS Feed] by Newsfile Corp. (7/22/2025): "Agentic AI Takes Center Stage: Flowable Revolutionizes Business Process Automation with Summer 2025 Release" - This major release marks a transformative step in Flowable's mission to drive intelligent automation, empowering businesses with un-siloed AI integration and optimized process workflows. Zurich, Switzerland--(Newsfile Corp. - July 22, 2025) - Flowable, a leading enterprise digital transformation platform, just released its summer 2025 update, introducing a groundbreaking first-class agent model and new agent engine that will elevate agentic AI alongside Flowable's established BPMN and CMMN autom [https://finance.yahoo.com/news/agentic-ai-takes-center-stage-143800252.html]
+- [Updated RSS Feed] by Theo Burman (7/22/2025): "Tesla sales could be suspended in California" - Elon Musk's electric car company is facing a lawsuit from the state's Department of Motor Vehicles. [https://www.newsweek.com/telsa-california-dmv-lawsuit-2102299]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: SpaceX offers up to $25k to security researchers who can hack Starlink. teslarati.com/spacex-25k-sta…" - SpaceX offers up to $25k to security researchers who can hack Starlink. https://t.co/9QyItGTApO
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947667036647145714]
+- [Updated RSS Feed] by David Lawder,Susan Heavey (7/22/2025): "US, China to discuss tariff deadline extension in Stockholm, Bessent says" - U.S. Treasury Secretary Scott Bessent said on Tuesday that he will meet his Chinese counterpart next week in Stockholm and discuss what is likely to be an extension of an August 12 deadline for a deal to avert sharply higher tariffs. [https://www.reuters.com/world/china/us-china-discuss-tariff-deadline-extension-stockholm-bessent-says-2025-07-22/]
+- [Updated RSS Feed] by Newsfile Corp. (7/22/2025): "Digital Silk Outlines Branding Challenges Facing Tech Companies in 2025" - Miami, Florida--(Newsfile Corp. - July 22, 2025) - Digital Silk, an award-winning branding agency focused on creating brand strategies, custom websites, and digital marketing campaigns, has published a new article exploring how tech companies can address branding challenges in today's innovation-driven and highly saturated markets. The article, now available on the company's blog, identifies key obstacles to effective brand positioning and shares recommendations for tech founders and CMOs buildi [https://finance.yahoo.com/news/digital-silk-outlines-branding-challenges-143500791.html]
+- [Updated RSS Feed] by Ashley Lutz,Nick Lichtenberg (7/22/2025): "The AI boom is now bigger than the '90s dotcom bubble—and it's built on the backs of bots, maybe more than real users" - Automated bots now make up more than half of global internet traffic, surpassing human-generated activity for the first time in 2024. [https://fortune.com/2025/07/22/is-artificial-intelligence-ai-bubble-bots-over-50-percent-internet/]
+- [Updated RSS Feed] by Jack Lusby (7/22/2025): "Liverpool midfielder to sign contract and leave on loan after tour" - Read here. [https://www.thisisanfield.com/2025/07/liverpool-midfielder-to-sign-contract-and-leave-on-loan-after-asia-tour/]
+- [Updated RSS Feed] by Jarrett Renshaw (7/22/2025): "White House to unveil plan to push US AI abroad, crackdown on US AI rules, document shows" - The White House on Wednesday intends to publish a plan that calls for the export of American AI technology abroad and a crackdown on state laws deemed too restrictive to let American AI flourish, a document seen by Reuters shows. [https://www.reuters.com/legal/litigation/white-house-unveil-plan-push-us-ai-abroad-crackdown-us-ai-rules-document-shows-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Kohl's shares double in value as retail investors pile in" - Shares of U.S. department store chain Kohl's more than doubled in value on Tuesday, making it one of the most-traded stocks on retail trading platforms and triggering a trading halt. [https://www.reuters.com/business/retail-consumer/kohls-shares-double-value-retail-investors-pile-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Spain proposes declassifying secret Franco era files" - The Spanish government on Tuesday introduced a bill to automatically declassify all secret government files older than 45 years, including documents from Francisco Franco's dictatorship and the transition to democracy. [https://www.reuters.com/world/spain-proposes-declassifying-secret-franco-era-files-2025-07-22/]
+- [Updated RSS Feed] by Art de Roché (7/22/2025): "Arsenal’s evolving attack: The options Viktor Gyokeres and Noni Madueke open up for Mikel Arteta" - His team were too predictable at times last season. This summer's recruitment should give the manager more flexibility and unpredictability [https://www.nytimes.com/athletic/6492990/2025/07/22/arsenal-attack-gyokeres-madueke-options/]
+- [Updated RSS Feed] by Robert (7/22/2025): "The No. 1 Skill Employers Want Right Now?AI Literacy " - How Colby prepares students to use artificial intelligence when they enter the ‘real world’ [https://news.colby.edu/story/the-no-1-skill-employers-want-right-nowai-literacy/]
+- [Updated RSS Feed] by Nikhil Sharma,Pranav Kashyap (7/22/2025): "Wall Street mixed as markets balance trade talks against tariffs' impact on results" - Wall Street struggled for direction on Tuesday as investors weighed signs of progress in U.S. trade talks and perused a spate of second-quarter company earnings, some of which showed a hit from President Donald Trump's tariff policies. [https://www.reuters.com/business/wall-street-mixed-markets-balance-trade-talks-against-tariffs-impact-results-2025-07-22/]
+- [Updated RSS Feed] by Amalya Dubrovsky (7/22/2025): "Stock market today: Nasdaq, S&P 500 slide amid wave of earnings as tariffs bite GM profit" - US stocks were mixed as investors prepared for earnings season to pick up steam, with Big Tech earnings ahead. [https://finance.yahoo.com/news/live/stock-market-today-nasdaq-sp-500-slide-amid-wave-of-earnings-as-tariffs-bite-gm-profit-133541776.html]
+- [Updated RSS Feed] by The Athletic (7/22/2025): "England vs Italy live updates: Euro 2025 latest score, predictions and team news" - Follow live coverage as holders England take on Italy in the semi-final of Euro 2025 in Switzerland and aim to book a place in the final [https://www.nytimes.com/athletic/live-blogs/england-vs-italy-live-updates-euro-2025-score-result/5Empg845WiY1/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Live: Trump and Philippines' Marcos to discuss tariffs and defense ties at the White House" - Philippine President Ferdinand Marcos Jr. will meet U.S. President Donald Trump, hoping Manila's status as a key Asian ally will secure a more favorable trade deal. [https://www.reuters.com/world/live-trump-philippines-marcos-discuss-tariffs-defense-ties-white-house-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Kohl's shares double as retail investors pile in" - Shares of U.S. department store chain Kohl's jumped more than 100% on Tuesday, making it one of the most traded stocks on retail trading platforms. [https://www.reuters.com/business/retail-consumer/kohls-shares-double-retail-investors-pile-2025-07-22/]
+- [Updated RSS Feed] by Sara Fischer (7/22/2025): "Few women lead major social media companies, messaging companies anymore" - Most major social media or messaging companies are run by men. [https://www.axios.com/2025/07/22/social-media-female-leaders]
+- [Updated RSS Feed] by Beshay (7/22/2025): "Google users are less likely to click on links when an AI summary appears in the results" - In a March 2025 analysis, Google users who encountered an AI summary were less likely to click on links to other websites than users who did not see one. [https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/]
+- [Updated RSS Feed] by @foxbusiness (7/22/2025): "GOP lawmaker vows to go after companies sticking with DEI policies: 'Get ready' " - Sen. Eric Schmitt, R-Mo., on Iran's refusal to give up on its nuclear enrichment dreams and an upcoming Senate judiciary committee hearing on DEI. [https://www.foxbusiness.com/video/6375965052112]
+- [Updated RSS Feed] by Valentina Za,Andrea Mandala (7/22/2025): "UniCredit's bid for Banco BPM suspended for another 30 days" - Italy's market watchdog has suspended UniCredit's bid for smaller rival Banco BPM for another 30 days, saying it was too difficult for BPM investors to make a decision amid disputes over the government's conditions for a deal. [https://www.reuters.com/business/finance/unicredits-bid-banco-bpm-suspended-another-30-days-2025-07-22/]
+- [Updated RSS Feed] by David Austin (7/22/2025): "AI Agents are here, but companies are still learning how to put them to use" - Accenture's Vivek Luthra says most companies use AI agents as an assistant or an advisor, and not as programs able to handle things on their own. [https://fortune.com/asia/2025/07/22/ai-agents-three-stages-brainstorm-ai-singapore-accenture/]
+- [Updated RSS Feed] by Kevin Liptak (7/22/2025): "‘How’s Imelda?’: Trump’s connection to Philippine leader may be through his mother " - Like most foreign leaders coming to visit President Donald Trump, the Philippines’ Ferdinand Marcos Jr. will look to make a personal connection with his American counterpart on Tuesday as he seeks a new trade deal. [https://www.cnn.com/2025/07/22/politics/philippines-trump-ferdinand-imelda-marcos]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Syrian committee reports 1,426 killed in March violence, says commanders did not order it" - A Syrian fact-finding committee said on Tuesday that 1,426 people had died in March in attacks on security forces and subsequent mass killings of Alawites, but concluded that commanders had not given orders for the revenge attacks. [https://www.reuters.com/world/middle-east/syrian-committee-reports-1426-killed-march-violence-says-commanders-did-not-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Philip Morris' shares slip in pre-market trading on quarterly revenue miss" - Marlboro-maker Philip Morris International (PMI) on Tuesday reported second-quarter revenue behind expectations as cigarette sales slipped and shipments of its ZYN nicotine pouches fell short of forecasts. [https://www.reuters.com/business/retail-consumer/philip-morris-shares-slide-early-trade-after-quarterly-revenue-miss-2025-07-22/]
+- [Updated RSS Feed] by Krysta Escobar (7/22/2025): "Tesla Diner: Photos show opening of Musk's futuristic California drive-in" - The Tesla Diner has 80 charging stations, two giant megascreens and American diner food. It is open 24 hours a day, seven days a week. [https://www.cnbc.com/2025/07/22/tesla-diner-photos-california.html]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Wall St opens muted with corporate earnings, trade talks in focus" - Wall Street opened flat on Tuesday as investors weighed signs of potential trade deals between the U.S. and its partners ahead of the August 1 tariff deadline and assessed a spate of second-quarter company results. [https://www.reuters.com/business/wall-st-opens-muted-with-corporate-earnings-trade-talks-focus-2025-07-22/]
+- [Updated RSS Feed] by Amalya Dubrovsky (7/22/2025): "Stock market today: Dow, S&P 500, Nasdaq wobble amid wave of earnings as tariffs bite GM profit" - US stocks were mixed as investors prepared for earnings season to pick up steam, with Big Tech earnings ahead. [https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-wobble-amid-wave-of-earnings-as-tariffs-bite-gm-profit-233511996.html]
+- [Updated RSS Feed] by Reuters (7/22/2025): "SNAPSHOT Wall St opens muted with corporate earnings, trade talks in focus" - Wall Street opened flat on Tuesday as investors weighed signs of potential trade deals between the U.S. and its partners ahead of the August 1 tariff deadline and assessed a spate of second-quarter company results. [https://www.reuters.com/business/snapshot-wall-st-opens-muted-with-corporate-earnings-trade-talks-focus-2025-07-22/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "AstraZeneca announces $50 billion investment in U.S. as Trump’s tariffs loom" - AstraZeneca is the latest pharma giant to announce billions in U.S. investments as Trump threatens to impose tariffs on the industry. [https://www.fastcompany.com/91372307/astrazeneca-announces-50-billion-investment-u-s-trumps-tariffs-loom]
+- [Updated RSS Feed] by David Ornstein (7/22/2025): "Arsenal on verge of total agreement for Viktor Gyokeres transfer from Sporting CP" - Gyokeres was focused only on joining Arsenal and, despite late interest from elsewhere, he did not consider any other team. [https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/]
+- [Updated RSS Feed] by Juveria Tabassum (7/22/2025): "Coca-Cola beats on zero-calorie sodas, higher prices; to launch cane sugar-based drink" - Coca-Cola beat estimates for quarterly revenue and profit on Tuesday, benefiting from resilient demand for zero-calorie drinks as well as higher pricing, and laid out plans to launch a new product made with cane sugar in the U.S. this year. [https://www.reuters.com/business/coca-cola-beats-zero-calorie-sodas-higher-prices-launch-cane-sugar-based-drink-2025-07-22/]
+- [Updated RSS Feed] by Monica Sanders (7/22/2025): "Can States Handle Disasters Without FEMA? The Legal Gaps Business Leaders Should Know" - With the existence of FEMA under debate, business leaders need to understand the disaster risk in states and what that means for their accounts. [https://www.forbes.com/sites/monicasanders/2025/07/22/can-states-handle-disasters-without-fema-the-legal-gaps-business-leaders-should-know/]
+- [Updated RSS Feed] by Nidal Al-Mughrabi (7/22/2025): "Fifteen Palestinians die of starvation in Gaza's deepening hunger crisis, medics say" - A six-week-old infant was among 15 people who have died of starvation in Gaza in the past 24 hours, local health officials said, with malnutrition now killing Palestinians faster than at any point in the 21-month war. [https://www.reuters.com/world/middle-east/fifteen-palestinians-die-starvation-gazas-deepening-hunger-crisis-medics-say-2025-07-21/]
+- [Updated RSS Feed] by John Irish,Doina Chiacu (7/22/2025): "Trump pulls US out of UN cultural agency UNESCO for second time" - President Donald Trumppulled the United States out of the U.N. culture and education agency UNESCO on Tuesday, repeating a move he had already ordered during his first term, which had been reversed under Joe Biden. [https://www.reuters.com/world/trump-pulls-us-out-un-cultural-agency-unesco-second-time-2025-07-22/]
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Fabrizio Romano: "🚨❤️🤍 BREAKING: Viktor Gyökeres to Arsenal, here we go! Verbal agreement in place between all parties involved.
+
+Sporting accept last bid from Arsenal for €63.5m plus €10m, agent will reduce his commission.
+
+Gyökeres will sign five year deal at #AFC. He ONLY wanted Arsenal. 🇸🇪 https://t.co/qAmrTn7Eax" (8326241 views, 183422 likes) https://x.com/i/status/1947654792899379560
+- Fabrizio Romano: "🚨🔴⚪️ Sunderland have presented their first official bid to Bayer for Granit Xhaka.
+
+No club to club agreement yet but Bayer aware of Xhaka’s desire to join #SAFC and negotiations continue to agree soon.
+
+It can be matter of time. https://t.co/iBSSV7IDn3" (1606547 views, 24542 likes) https://x.com/i/status/1947654357228654670
+- Fabrizio Romano: "🚨 Alejandro Garnacho, Jadon Sancho, Antony and Tyrell Malacia all left OUT of Manchester United squad for pre-season tour.
+
+Harry Maguire also not with the team but only due to personal reasons, he will be back soon.
+
+Sancho, Garnacho, Antony and Malacia all up for sale. 👋⚠️ https://t.co/zwB2UPVzoc" (1558158 views, 29838 likes) https://x.com/i/status/1947660188523413583
+- Fabrizio Romano: "🚨⚫️🔵 Hakan Çalhanoglu’s agent Gordon Stipic: “Hakan will stay at Inter”.
+
+“No Fenerbahçe, no Galatasaray… he never asked to leave Inter and he’s set to stay. There are no negotiations with other clubs”, told TRT Sport. https://t.co/MVplLZKFUe" (816395 views, 9340 likes) https://x.com/i/status/1947670802301915574
+- Fabrizio Romano: "🚨🇳🇱 Feyenoord have reached an agreement in principle with Benfica to sign Casper Tengstedt.
+
+Deal almost done. ✅🏁 https://t.co/54AODpt8kN" (604808 views, 7380 likes) https://x.com/i/status/1947670509191369226
+- Adam Schefter: "Patriots WR Stefon Diggs was cleared to practice as training camp opens.
+
+Story via @MikeReiss:
+
+https://t.co/iVYkc09PvP" (564487 views, 1010 likes) https://x.com/i/status/1947647032514215998
+- Ian Rapoport: "A potential hold-in candidate. https://t.co/SUQPXVy6rS" (283624 views, 574 likes) https://x.com/i/status/1947659704227762383
+- Dave Portnoy: "See now this guy is an idiot.   It isn’t equal work, equal pay. This moron actually hurts their argument. They don’t deserve NBA money or even close.  BUT they deserve a hell of a lot more than they make right now cause the league is exploding and there is tons of cash to be made https://t.co/gYZkhYNgIf" (264939 views, 854 likes) https://x.com/i/status/1947669695449965032
+- World of Statistics: "🚆 Railway accidents in 🇮🇳 India:
+
+2000-01: 473
+2001-02: 415
+2002-03: 351
+2003-04: 325
+2004-05: 234
+2005-06: 234
+2006-07: 195
+2007-08: 194
+2008-09: 177
+2009-10: 165
+2010-11: 141
+2011-12: 131
+2012-13: 122
+2013-14: 118
+2014-15: 135
+2015-16: 107
+2016-17: 104
+2017-18: 73
+2018-19: 59" (236282 views, 1013 likes) https://x.com/i/status/1947656627529912532
+- The New York Times: "Breaking News: The U.S. said it would again withdraw from UNESCO, the latest move by President Trump to cut ties with international organizations. https://t.co/PmKLFbYLOe" (200766 views, 560 likes) https://x.com/i/status/1947640575013876125
+- Alexandria Ocasio-Cortez: "Let’s GO @votejgr! 🙌🏽 We got you https://t.co/FPB4eTSxqn" (172656 views, 1117 likes) https://x.com/i/status/1947661283492286533
+- Dave Portnoy: "This was a bananas take from @andrewschulz for multiple reasons. 
+
+1. The company I own is Hq’d in NYC.   
+2. Any American should care that the biggest city in America could be run by a socialist/communist
+3.Andrew and I texted about Zohran. He basically agreed with everything I https://t.co/ZMKL1thZqb https://t.co/Tk6aRyWJ3p" (154823 views, 761 likes) https://x.com/i/status/1947674589842055522
+- BBC Breaking News: "Ex-Unite boss Len McCluskey enjoyed private flights and football tickets arranged by building firm, report seen by BBC finds https://t.co/9NKAPy8yLz" (154325 views, 219 likes) https://x.com/i/status/1947658690745799149
+- Marques Brownlee: "Google is officially showing the Pixel 10 already. Assuming this isn't a 10 Pro, looks like 3 cameras on the base phone is the main thing that's new. Otherwise... same design 🤓 https://t.co/i3gF7Mshts" (142799 views, 2683 likes) https://x.com/i/status/1947663144157122969
+- Mario Nawfal: "🇺🇸🇬🇧 LONDON TO NYC BY TRAIN? THERE’S A (VERY EXPENSIVE) PLAN FOR THAT
+
+A $20 trillion project is proposing a 3,400-mile underwater tunnel connecting London and New York, turning a 7-hour flight into a 1-hour train ride.
+
+That’s right: transatlantic, through the ocean, under https://t.co/GZU1vwvKmd" (143992 views, 631 likes) https://x.com/i/status/1947642787316568467
+- NASA: "Uranus is warmer than we thought.
+
+New computer modeling techniques revealed that Uranus generates internal heat. This is similar to our solar system’s other gas giants, like Jupiter or Neptune. https://t.co/OpsOIwXYc9 https://t.co/ffwnZqSjNP" (139504 views, 2087 likes) https://x.com/i/status/1947671981727285352
+- Dave Portnoy: "Think this guy can read or nah? https://t.co/XeZ1E1nLhC" (117472 views, 149 likes) https://x.com/i/status/1947672138623647753
+- The New York Times: "Breaking News: The Israeli military ​raided a UN aid facility, part of an expanded offensive in an area of central Gaza that had remained relatively unscathed during the war with Hamas.
+https://t.co/nm6QgeNyif" (116402 views, 249 likes) https://x.com/i/status/1947650082733510907
+- Dave Portnoy: "Weird then to turn and say I should stop acting like I care about NYC.   If anybody is doing acting it ain’t me https://t.co/XK7qf9Khum https://t.co/Tk6aRyWJ3p" (109809 views, 842 likes) https://x.com/i/status/1947675398013166015
+- Pardon My Take: "646-762-6332
+
+We’re doing PMT FAQs to end the show today. Send in any and all questions about the BTS of the show to  646-762-6332 and we will answer the best ones on tonight’s show 
+
+646-762-6332
+
+646-762-6332 https://t.co/QtN68s6JTA" (108358 views, 247 likes) https://x.com/i/status/1947646905443619094
+- Barstool Sports: "https://t.co/T6nGvg8gsX" (105571 views, 14 likes) https://x.com/i/status/1947661724556894301
+- CNN: "US plans to withdraw again from UN scientific and cultural agency UNESCO. The country pulled out during Trump's first term but rejoined under Biden.
+https://t.co/tpRpKoVitV" (103468 views, 256 likes) https://x.com/i/status/1947657174735339964
+- The New York Times: "From @TheAthletic: Dr. Alan Poisner, 90 years old, is a competitive racewalker who has studied the scientific benefits of walking. He also just thinks it is fun. "I’m old enough to have witnessed many changes, but walking remains an eternal truth." https://t.co/KG4yjdYt5x" (98073 views, 217 likes) https://x.com/i/status/1947650364573950003
+- The New York Times: "In @nytopinion
+
+“Constipated. Leaderless. Confused,” writes James Carville, a veteran of Democratic presidential campaigns. “These are the words I hear my fellow Democrats using to describe our party as of late. The truth is they’re not wrong.” https://t.co/Hrilk5GAnb" (96291 views, 66 likes) https://x.com/i/status/1947640283480441133
+- The New York Times: "Breaking News: NPR's editor in chief, Edith Chapin, will leave the organization later this year, according to two people with knowledge of her decision. The move comes as the outlet navigates the loss of its federal funding. https://t.co/gy4Wpl6Xpg" (90873 views, 152 likes) https://x.com/i/status/1947666009093001634
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: U.S. GOVERNMENT DISMISSED INFORMANT WHO EXPOSED MURDERERS OF JFK &amp; MLK
+
+Three months before JFK was assassinated, a man walked into the State Department and dropped a bombshell.
+
+He told the director of counselor services that Lee Harvey Oswald was planning to https://t.co/856TaGRj6T https://t.co/d7XFDfpCxL" (80191 views, 280 likes) https://x.com/i/status/1947637753732124928
+- Mario Nawfal: "🇨🇳 CHINA IS TURNING ITS DESERTS INTO GIANT SOLAR FACTORIES
+
+China is flattening massive chunks of desert to make room for solar panels. We’re talking enough to power entire cities.
+
+Why? Because they want clean energy and fewer oil and coal headaches.
+
+But here's the plot twist: https://t.co/3YOaRQyccR https://t.co/WjsZD2RsmO" (78899 views, 328 likes) https://x.com/i/status/1947657891525128699
+- Ian Rapoport: "The #Bills have activated third-round DE Landon Jackson from PUP, as he's passed his physical." (77887 views, 382 likes) https://x.com/i/status/1947673577588690990
+- The New York Times: "From @TheAthletic: The Phillies shocked the Red Sox with the first walk-off on a catcher’s interference in over 50 years. https://t.co/7bHhUUm4AR" (74488 views, 46 likes) https://x.com/i/status/1947656633154224135
+- Barstool Sports: "The Ultimate Rejection: Memphis Reportedly Offered The Big 12 A $250 MILLION Deal To Join The Conference, Still Got Turned Down https://t.co/IEZwg0WVF2" (65214 views, 47 likes) https://x.com/i/status/1947661723067990146
+- The New York Times: "Breaking News: Speaker Mike Johnson said he would shut down the House until September to block a vote on calling for the release of the Jeffrey Epstein files. https://t.co/UO2Zcud306" (54992 views, 358 likes) https://x.com/i/status/1947676850802590092
+- Barstool Sports: "Get Choked Up This Morning Watching Philip Rivers Reunite With His Old Linemen https://t.co/Pr2NyhjW2U https://t.co/eCu8qUv4YO" (53548 views, 65 likes) https://x.com/i/status/1947659636460450002
+- Mario Nawfal: "INTRODUCING THE VEST THAT BRINGS CAR CRASH PROTECTION TO TRIPS AND FALLS
+
+It’s like a car airbag, but for your body.
+
+The vest detects when you’re about to fall and inflates in 0.2 seconds to cushion your hips, back, and spine before you hit the ground.
+
+It's aimed at older https://t.co/r2IKNO7Uig" (52185 views, 206 likes) https://x.com/i/status/1947650338858602547
+- Barstool Sports: "The Philadelphia Phillies Prove That Whatever Can Happen Will Happen After Pulling Off The Rare Walk-Off Catcher's Interference https://t.co/tANIltgMPR https://t.co/kMMtdYPXNm" (49839 views, 28 likes) https://x.com/i/status/1947666765237878923
+- World of Statistics: "Year of the population peak
+
+🇧🇪 Belgium: 2045
+🇨🇭 Switzerland: 2052
+🇫🇷 France: 2096
+
+(UN projection)" (47357 views, 179 likes) https://x.com/i/status/1947639744831361092
+- Barstool Sports: "Resourceful Firefighter Floods Baseball Field, Forcing Cancellation of Game, After Punk Kid Hit His Pickup Truck With a Batting Practice Home Run https://t.co/hlXKZ4hDLG https://t.co/XohXuMljJC" (47176 views, 32 likes) https://x.com/i/status/1947669265940660402
+- Mario Nawfal: "🇺🇸 TRUMP TO WITHDRAW U.S. FROM UNESCO OVER “WOKE” &amp; ANTI-ISRAEL POLICIES
+
+Trump is pulling the U.S. out of UNESCO, again, citing “anti-American, anti-Israel, and woke” agendas pushed by the UN agency.
+
+The move follows a 90-day White House review, which blasted UNESCO’s DEI https://t.co/BzsdcXdbx3 https://t.co/zLAjXiPxsm" (46714 views, 392 likes) https://x.com/i/status/1947645303860949044
+- Cathie Wood: ".@ARKInvest’s investment in $BMNR is a vote of confidence that @fundstrat will be one of the winners as Ethereum powers DeFi (Decentralized Financial Services) in the “winner takes most” #DAT* space. Very happy to be in such good company: @foundersfund &amp; @PanteraCapital ! https://t.co/IYy5iu9Mad" (39052 views, 152 likes) https://x.com/i/status/1947671247028162974
+- Mario Nawfal: "🇺🇸 BESSENT: TRADE DEAL WAVE COMING, “TRUMP’S STRATEGY MAY BE INGENIOUS”
+
+“We're about to announce a rash of trade deals in the coming days… autos, semiconductors, and pharmaceuticals.
+
+What I think will happen is that the tariff level will boomerang back to the reciprocal level https://t.co/uaNHKEwE3f https://t.co/vSvstCs13H" (38370 views, 191 likes) https://x.com/i/status/1947655369955631174
+- World of Statistics: "Hello data lovers! Here’s to a day with tight confidence bands of fun." (36076 views, 84 likes) https://x.com/i/status/1947652601019056249
+- World of Statistics: "🏎️ Lewis Hamilton at Belgian GP at Spa since 2007:
+
+2007: P4
+2008: P3
+2010: P1
+2013: P3
+2015: P1
+2016: P3
+2017: P1
+2018: P2
+2019: P2
+2020: P1
+2021: P3
+2023: P4
+2024: P1
+2025: ?" (36009 views, 88 likes) https://x.com/i/status/1947647819470541239
+- Barstool Sports: "What is the best bad movie? @PardonMyTake https://t.co/kxZFJqsC8h" (35509 views, 50 likes) https://x.com/i/status/1947673786444112335
+- Mario Nawfal: "🚨🇺🇸🇷🇺 MLK FILES: CHINA, RUSSIA, AND CUBA IMPLICATED IN ASSASSINATION OF JFK AND MLK
+
+In 1978, Congress released a mystery photo tied to the assassinations of both JFK and MLK.
+
+A CIA agent watching TV recognized the man instantly: a KGB agent who pretended to be a journalist and https://t.co/VfFMDxVQlk https://t.co/yx6pMbZdvj" (35073 views, 114 likes) https://x.com/i/status/1947652852958286072
+- Mario Nawfal: "🇺🇸 TOM HOMAN: “MAJORITY IN CUSTODY ARE CRIMINALS OR NATIONAL SECURITY THREATS”
+
+“I read in the paper every day that the majority of people in ICE custody are not criminals. 
+
+Wrong. The majority are criminals.”
+
+But now the argument is, are they criminal enough? Is a DUI https://t.co/6XHzSxHv9F https://t.co/w0taA3Uhcp" (34438 views, 100 likes) https://x.com/i/status/1947647820087103570
+- Mario Nawfal: "🇬🇧 IS THE TORY SHIP SINKING? ANOTHER CONSERVATIVE LEADER JUMPS TO REFORM UK
+
+Laura Anne Jones:
+
+"Why am I leaving?
+
+After 31 years in the conservative party, I recently felt that the party was no longer right for me.
+
+I couldn’t stand by the policies that were happening, I https://t.co/S2BljEnVWX https://t.co/IalQmtJ9So" (34015 views, 80 likes) https://x.com/i/status/1947648679961153800
+- World of Statistics: "Population density 
+
+🇫🇷 France: 122 p/km² 
+🇧🇪 Belgium: 388 p/km² 
+
+(Worldometers)" (31824 views, 107 likes) https://x.com/i/status/1947662919250153952
+- World of Engineering: "Rules of engineer’s life:
+
+1. See failure as a beginning, not an end.
+2. Never stop learning.
+3. Assume nothing, question everything.
+4. Teach others what you know.
+5. Analyze objectively.
+6. Practice humility.
+7. Respect constructive criticism.
+8. Give credit where it’s due.
+9." (30576 views, 406 likes) https://x.com/i/status/1947661660644381083
+- Mario Nawfal: "🇬🇧 UK SIGNS OPENAI DEAL - HOPES CHATBOTS CAN FIX WHAT POLITICIANS BROKE
+
+Britain's deal with OpenAI is a last-ditch attempt to patch up its health service, boost its sluggish economy, and drag crumbling infrastructure into the 21st century.
+
+The plan? Let AI do what Parliament https://t.co/VxogN3l8y4 https://t.co/jFhLsL5xQd" (30776 views, 41 likes) https://x.com/i/status/1947660402709696579
+- Barstool Sports: "Lindsay Lohan Got Her Pitch Back And The Fastball Looks GOOD For The 'Freakier Friday' Press Tour https://t.co/SAAYraeGBs https://t.co/ewqG4NYkmD" (30582 views, 42 likes) https://x.com/i/status/1947674677813342314
+- Charles Hoskinson: "https://t.co/PjeUiD8wir https://t.co/iaQWCW15NY" (29670 views, 506 likes) https://x.com/i/status/1947647320763601312
+- Mario Nawfal: "🚨🇧🇷 DOG FALLS FROM BUILDING, WOMAN CATCHES IT ON THE WAY DOWN
+
+A dog somehow climbed out of a building and got its leg caught on something multiple stories up. 
+
+A lady one floor down showed the world what can be achieved when you have a cardboard box, good timing, and a heart https://t.co/enDpXJynpD" (27502 views, 320 likes) https://x.com/i/status/1947665438386884799
+- Wonder of Science: "Lenticular clouds occur when an obstruction gets in the way of airflow in the atmosphere, as the air rises it cools and condenses, forming a cloud.
+
+📽: Robert Lennick
+https://t.co/9jzBKKG0bY" (27461 views, 232 likes) https://x.com/i/status/1947648071459852575
+- Mario Nawfal: "🇺🇸 U.S. AMBASSADOR TO NATO: “IS TIME FOR IRAN TO COME TO THE TABLE AND NEGOTIATE”
+
+“Trump has been very clear.
+
+That Iran cannot have a nuclear weapon,and since we obliterated their nuclear program.
+
+I think it is time for Iran to come to the table and negotiate with the United https://t.co/0pmaVAQbDs https://t.co/gmKVGh5STC" (25760 views, 68 likes) https://x.com/i/status/1947667952373010865
+- Pardon My Take: "Chill week is over but Grit week is coming next week 👀👀
+
+Presented by @ChevyTrucks #chevy #ad #silverado https://t.co/YDxSf0GyO6" (25179 views, 67 likes) https://x.com/i/status/1947670398562164861
+- Mario Nawfal: "🇪🇺 EU CHIEF: “CIVILIANS CANNOT BE TARGETS. NEVER.”
+
+“The images from Gaza are unbearable.
+
+The EU reiterates its call for the free, safe and swift flow of humanitarian aid.
+
+And for the full respect of international and humanitarian law.
+
+Civilians in Gaza have suffered too much, https://t.co/XprxY3e73t https://t.co/KFQFQ6DY7T" (23423 views, 44 likes) https://x.com/i/status/1947670468955349040
+- @jason: "I just love we have folks like Jon out there scanning and dissecting this important stuff for us https://t.co/5GpEARnuIT" (22799 views, 36 likes) https://x.com/i/status/1947654069692023184
+- Andrew Yang🧢⬆️🇺🇸: "Try to give yourself something to look forward to." (22322 views, 347 likes) https://x.com/i/status/1947657368247918988
+- Mario Nawfal: "🇮🇱🇬🇷 OVER 1,000 ISRAELIS STRANDED ON SHIP IN GREECE AMID PRO-PALESTINIAN BLOCKADE
+
+Hundreds of pro-Palestinian activists have swarmed a Greek port, blocking the arrival of a ship carrying over 1,000 Israeli tourists.
+
+The Israeli Broadcasting Authority reports dozens remain https://t.co/mPIcRdLtzn" (22239 views, 112 likes) https://x.com/i/status/1947662919287902286
+- Boston Celtics: "Best in-game dunker in the whole LEAGUE 😤 https://t.co/qD6BuXVE1U" (21515 views, 596 likes) https://x.com/i/status/1947658022840635847
+- World of Statistics: "Pop Mart, the Chinese toy firm behind the hugely popular Labubu dolls, has said its profits are set to soar for the first six months of this year. https://t.co/1UXdbIR3Uh" (21615 views, 69 likes) https://x.com/i/status/1947671362514067959
+- Vintage Maps: "Topographic Map of Africa (c.1895) https://t.co/rvdYrNixNC" (20200 views, 624 likes) https://x.com/i/status/1947638276082327681
+- Wonder of Science: "Beautiful iridescent clouds over Ishigaki Island, Okinawa, Japan.
+
+Iridescent clouds occur when sunlight diffracts through tiny water droplets or ice crystals in thin clouds, scattering light into vivid colors.
+https://t.co/hnnH2kVWLm" (20131 views, 220 likes) https://x.com/i/status/1947663422168174977
+- Car Dealership Guy: "Subprime 60+ day auto loan delinquencies just had their worst June in decades:
+
+Last month, the delinquency rate reached 6.31%—up from May and nearly 70 basis points higher year-over-year.
+
+Financial pressure just refuses to let up for subprime borrowers.
+
+(Data source: Fitch" (20268 views, 61 likes) https://x.com/i/status/1947647423922246017
+- Barstool Sports: "The Good News For Dallas Cowboys Fans Is That Micah Parsons Is Absolutely Fed Up With Jerry Jones' Shit https://t.co/1wdWI4vnyL https://t.co/3EHtfu84ec" (17968 views, 38 likes) https://x.com/i/status/1947676799871090980
+- World of Statistics: "🇫🇮 Finland's unemployment rate hits 10.2% in second quarter of 2025." (17846 views, 65 likes) https://x.com/i/status/1947673056316690749
+- @jason: "Crazy idea: set the budget for the late show at 70% of the revenue it generates https://t.co/y7IWxbgbPx" (17419 views, 283 likes) https://x.com/i/status/1947655038848954538
+- Mario Nawfal: "🇨🇳 THIS CHINESE WATERFALL HITS HARD… EVEN ON SUNNY DAYS
+
+Wangguoshu Falls in Guizhou drops from a cliff taller than a 25-story building and blasts water like it’s showing off.
+
+During wet season, it gets so wild you need an umbrella just to look at it.
+
+Oh and there's a secret https://t.co/SeWHGUvkjE https://t.co/VO5lZdnLV6" (17469 views, 42 likes) https://x.com/i/status/1947672993062375860
+- Cathie Wood: "*For those new to this topic, DAT stands for Digital Asset Treasury companies. These companies could be the next gen asset managers in the on-chain capital markets age." (17273 views, 59 likes) https://x.com/i/status/1947671249825440180
+- World of Statistics: "Labubu doll firm value - $42.4 billion. 
+
+Honda - $41.3 billion https://t.co/PwDiLmuzP9" (15960 views, 60 likes) https://x.com/i/status/1947675341457154486
+- Charles Hoskinson: "The discussion draft is out from Senate Banking: https://t.co/Lz5lUcxKkG
+
+And here is how you can participate:
+https://t.co/xCu4BSBxbu
+
+Congratulations to @SenatorTimScott @CynthiaMLummis and everyone else for their hard work and vision #LetsGetItDone" (15541 views, 464 likes) https://x.com/i/status/1947658960145944629
+- Only In Boston: "This is the largest carbon-neutral building ever built in Boston:
+
+* LEED Platinum certified
+* Energy recovery systems
+* Advanced shading design
+* Triple-glazed windows
+* No gas lines
+* Powered by renewable electricity
+* 100% fossil fuel-free https://t.co/pX5K9C07CN" (15583 views, 95 likes) https://x.com/i/status/1947642791858999521
+- World of Statistics: "🇨🇿 28% of Czechs would take up arms to defend the country." (15465 views, 90 likes) https://x.com/i/status/1947675739484262730
+- Sawyer Merritt: "SpaceX offers up to $25k to security researchers who can hack Starlink. https://t.co/9QyItGTApO" (14917 views, 251 likes) https://x.com/i/status/1947667036647145714
+- Only In Boston: "2008 Waltham High School graduate Keisha Gilles is a powerhouse vocalist, actor and dancer most known for her roles in Disney’s Aladdin on Broadway and Ms. Rachel on Netflix and YouTube.
+
+https://t.co/H3UUThNFiA" (14957 views, 15 likes) https://x.com/i/status/1947650339467104599
+- Mario Nawfal: "🇺🇸 CALIFORNIA SUES TRUMP FOR… BLOCKING ILLEGALS FROM PUBLIC BENEFITS?
+
+California and 12 other states are suing the Trump administration for restricting access to taxpayer-funded public benefits like health insurance and food stamps, for non-citizens.
+
+The lawsuit claims the https://t.co/SH2rEszzAn https://t.co/Tl1mshZ7wx" (13723 views, 57 likes) https://x.com/i/status/1947675502753268207
+- CSPAN: ".@RepMTG (R-GA): "It is an absolute failure to ask us to vote on a September 30th CR, and I'm not doing it." https://t.co/VS3zNaW3KV" (13489 views, 147 likes) https://x.com/i/status/1947662050097877484
+- U.S. Department of Energy: "The United States CREATED the oil industry, and today, we’re LEADING it." (12886 views, 598 likes) https://x.com/i/status/1947642771080179958
+- Sawyer Merritt: "JPMorgan’s head of global automotive research Jose Asumendi tested @Tesla's Robotaxi arrive in Austin and says the experience was “certainly solid and felt like a safe ride at all times.” https://t.co/th5hYl4Dkz" (12710 views, 501 likes) https://x.com/i/status/1947673820925432019
+- Barstool After Dark: "The Wrigley rooftop when our 9 man lineup of big fellas pulls up 
+
+ https://t.co/S9SdaPQmGz https://t.co/wCryFkjcBG" (12944 views, 30 likes) https://x.com/i/status/1947672981859119527
+- Sawyer Merritt: "NEWS: Starting July 31, all Lucid Air models will have access to over 23,500 @Tesla Superchargers in the US, with a Lucid-approved adapter.
+
+All Lucid Airs Air can charge at up to 50 kW and gain up to 200 miles of range per hour of charging at @Tesla Superchargers. https://t.co/8edefPC5vm" (12817 views, 152 likes) https://x.com/i/status/1947671568831942697
+- Sawyer Merritt: "NEWS: Honda Prologue and Acura ZDX owners now have access to more than 23,500 selected Tesla Superchargers across the United States with the availability of the first Honda-approved NACS-CCS DC fast-charging adapter. https://t.co/CWUeCXIxYO" (12204 views, 161 likes) https://x.com/i/status/1947667576810590486
+- Tesla North America: "The only car that can drive you wherever you need to go &amp; still let you rip laps on the track 
+
+And it's less than $50k incl $7,500 tax credit https://t.co/qabTACEFKf" (11604 views, 497 likes) https://x.com/i/status/1947657988619047146
+- Car Dealership Guy: "Watch it on X, or stream it on your favorite platform:
+
+YouTube: https://t.co/lgj7SQgITY
+Apple Podcasts: https://t.co/Y0SwmrtXOU
+Spotify: https://t.co/jRCjf7qpQo https://t.co/Y3LwEjLzRG" (11600 views, 0 likes) https://x.com/i/status/1947658044797510113
+- CSPAN: ".@RepThomasMassie (R-KY) on Epstein and rules committee: "I think that was the admonition of our speaker in there, was just sort of, stick your head in the sand, let the administration maybe dissipate this by dribbling some stuff out. I mean, I'm heavily paraphrasing." https://t.co/IMrmbwAFxC" (11297 views, 214 likes) https://x.com/i/status/1947662326221488525
+- Car Dealership Guy: "This episode is brought to you by:
+
+1. Widewail – Power your reputation engine with Widewail. Go Google-first. Our approach is proactive: mostly automated, sometimes manual. The perfect blend of high tech, high touch. Do more than generate and respond to reviews; use Voice of the" (10314 views, 1 likes) https://x.com/i/status/1947658219129618564
+- Mario Nawfal: "🇺🇸 JOHNSON ON EPSTEIN FILES: WE CANNOT BE CARELESS IN AN OPEN RELEASE
+
+"The president himself has said that he wants maximum transparency and all credible evidence.
+
+So that everyone can make their own decisions.
+
+We want any individual who's been involved in any way in the https://t.co/7kZE8ikX9X https://t.co/yopXzP9yJv" (10222 views, 44 likes) https://x.com/i/status/1947676761010888962
+- World and Science: "It is generally believed that people become gradually less sociable as they grow older. 
+
+Is this actually the case, and if so, what causes this change?" (9885 views, 4 likes) https://x.com/i/status/1947641113218846907
+- World of Engineering: "You can turn your Mac trackpad into a weighing scale https://t.co/LvVu0IucCr" (9702 views, 21 likes) https://x.com/i/status/1947676858046124138
+- Sky Sports Football: ""Ella's got nothing to worry about, so I've got nothing to worry about!" 🙏
+
+Ella Toone's partner, Joe Bunney, discusses England's Euro 2025 semi-final against Italy 🏴󠁧󠁢󠁥󠁮󠁧󠁿 https://t.co/2oYrUb75UP" (9586 views, 80 likes) https://x.com/i/status/1947676643557826566
+- Only In Boston: "ALERT: The City of Boston has announced it is offering 18 affordable housing condominiums, located in Dorchester, available from $180,599 to $379,555.
+
+Condos will be sold by lottery to qualified applicants in the link below.
+
+https://t.co/KK4BRHWxeq" (9319 views, 31 likes) https://x.com/i/status/1947665437027930352
+- CSPAN: ".@SpeakerJohnson on Epstein Files: "I believe in maximum transparency. I think every single House Republican will say the same thing…We also understand the other part of that duty is that we get to protect innocent victims…" https://t.co/RHyxd6aVjf" (9205 views, 71 likes) https://x.com/i/status/1947669126190670137
+- World and Science: "Thalassophobia: The persistent and intense fear of deep bodies of water such as the sea, oceans, or lakes. https://t.co/KdLEbZOGuu" (9005 views, 30 likes) https://x.com/i/status/1947649864940003799
+- World and Science: "A whole industry has grown up around finding it, expressing it and maintaining it. 
+
+But what is love? Where does it reside? What triggers it? And what’s really going on in our minds and bodies when we fall “head over heels”?" (8552 views, 0 likes) https://x.com/i/status/1947654999435088194
+- TESLARATI: "https://t.co/ClAkdM7C7q" (8376 views, 72 likes) https://x.com/i/status/1947669653905674281
+- World and Science: "Walking Faster Has Surprising Benefits 
+
+Here's What Science Says: https://t.co/KhbrXRjQfJ" (7535 views, 9 likes) https://x.com/i/status/1947665959403004219
+- CSPAN: ".@SpeakerJohnson: "I don't understand Thomas Massie's motivation. I really don't. I don't know how his mind works...Thomas Massie could have brought his discharge petition anytime over the last four and a half years, over the last four years of Biden administration." https://t.co/vVwz8LvcZE" (7237 views, 104 likes) https://x.com/i/status/1947673721621069996
+- Walter Isaacson: "https://t.co/cPV1w8hOA5" (7002 views, 19 likes) https://x.com/i/status/1947667957858832490
+- CSPAN: ".@TomColeOK04: "I wouldn't say [a CR] is a likely outcome, but it's a possible outcome ... I think a shutdown's a losing game." https://t.co/DuO9xALKPi" (7000 views, 12 likes) https://x.com/i/status/1947658617546477949
+- CSPAN: "House @HouseCommerce @energycommerce hearing on Oversight of U.S. Organ Procurement &amp; Transplant System – LIVE online here: https://t.co/0ewGtOkNsO" (5861 views, 5 likes) https://x.com/i/status/1947663022429766033

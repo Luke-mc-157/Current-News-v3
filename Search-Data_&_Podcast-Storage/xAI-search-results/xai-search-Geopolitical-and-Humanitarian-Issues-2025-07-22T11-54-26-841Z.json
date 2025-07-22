@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Protests continue in Middle East regions amid ongoing conflicts.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/middle_east\"\n      ]\n    },\n    {\n      \"headline\": \"International aid organizations respond to humanitarian crises in Africa.\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/world\",\n        \"https://www.nytimes.com/international/section/world\"\n      ]\n    },\n    {\n      \"headline\": \"Geopolitical tensions escalate between major global powers over trade policies.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Refugee movements increase due to regional instability in Asia.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.nytimes.com/international/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for X posts was sparse, relying primarily on available news sources for verification; no high-engagement X posts were identified in the search results.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/section/world",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://www.nytimes.com/international/section/world",
+    "https://www.nytimes.com/international/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.npr.org/sections/world/",
+    "https://www.foxnews.com/world"
+  ]
+}

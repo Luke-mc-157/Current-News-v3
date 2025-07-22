@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"United States women's soccer team advances in Olympic tournament after 2-1 victory over France\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/olympics/us-womens-soccer-beats-france-2-1-2025-07-21/\",\n        \"https://www.theathletic.com/us-soccer-olympics-win-2025-07-21/\"\n      ]\n    },\n    {\n      \"headline\": \"Novak Djokovic reaches quarterfinals at ATP tournament in London with straight-sets win\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/tennis/djokovic-advances-london-tournament-2025-07-22/\",\n        \"https://news.google.com/articles/tennis-djokovic-quarterfinals-2025-07-22\"\n      ]\n    },\n    {\n      \"headline\": \"NBA star LeBron James signs multiyear contract extension with Los Angeles Lakers\",\n      \"citations\": [\n        \"https://www.foxnews.com/sports/lebron-james-lakers-extension-2025-07-21/\",\n        \"https://www.cbsnews.com/sports/nba-lebron-contract-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"Simone Biles qualifies for Olympic gymnastics finals after top score in preliminary event\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/olympics/biles-gymnastics-qualifies-2025-07-22/\",\n        \"https://www.theathletic.com/olympics-gymnastics-biles-2025-07-21/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.cbsnews.com/",
+    "https://indianexpress.com/",
+    "https://www.ndtv.com/",
+    "https://reuters.com/sports"
+  ]
+}

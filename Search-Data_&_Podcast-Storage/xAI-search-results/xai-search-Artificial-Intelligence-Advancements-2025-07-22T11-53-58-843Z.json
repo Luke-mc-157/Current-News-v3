@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"AI technology is being used against itself in ongoing developments\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"Recent updates cover advancements in artificial intelligence across various sectors\",\n      \"citations\": [\n        \"https://analyticsindiamag.com/ai-news-updates\"\n      ]\n    },\n    {\n      \"headline\": \"Latest progress in AI technology includes updates on tools like Google AI and ChatGPT\",\n      \"citations\": [\n        \"https://indianexpress.com/section/technology/artificial-intelligence\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories with supporting articles from the last 24 hours were identified based on available data.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.nytimes.com/international/",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/2025/07/20/opinion/dictionary-ai-spelling-writing.html",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://analyticsindiamag.com/ai-news-updates",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://www.nytimes.com/2025/07/08/technology/grok-antisemitism-ai-x.html",
+    "https://www.reuters.com/technology/artificial-intelligence/"
+  ]
+}

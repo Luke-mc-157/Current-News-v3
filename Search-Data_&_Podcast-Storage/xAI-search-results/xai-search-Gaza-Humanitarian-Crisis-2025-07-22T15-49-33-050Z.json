@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Israeli forces fired on people seeking aid in Gaza, resulting in multiple deaths\",\n      \"sources\": [\n        \"https://www.reuters.com/world/middle-east/israeli-fire-kills-67-people-seeking-aid-gaza-medics-say-hunger-worsens-2025-07-20/\",\n        \"https://www.nytimes.com/article/israel-gaza-aid-ground-offensive.html\",\n        \"posts found on X\"\n      ]\n    },\n    {\n      \"headline\": \"Israeli tanks entered districts of Deir al-Balah in Gaza\",\n      \"sources\": [\n        \"https://www.reuters.com/world/middle-east/israel-sends-tanks-into-gazas-deir-al-balah-hostage-families-concerned-2025-07-21/\",\n        \"https://www.bbc.com/news/topics/c2vdnvdg6xxt\"\n      ]\n    },\n    {\n      \"headline\": \"WHO premises in Deir al-Balah, Gaza, were attacked, with staff and family members detained and interrogated\",\n      \"sources\": [\n        \"posts found on X\",\n        \"https://www.nytimes.com/article/israel-gaza-aid-ground-offensive.html\"\n      ]\n    },\n    {\n      \"headline\": \"Hunger conditions worsened in Gaza amid ongoing conflict and aid challenges\",\n      \"sources\": [\n        \"https://www.reuters.com/world/middle-east/israeli-fire-kills-67-people-seeking-aid-gaza-medics-say-hunger-worsens-2025-07-20/\",\n        \"https://www.bbc.com/news/topics/c2vdnvdg6xxt\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+    "https://www.reuters.com/world/middle-east/israeli-fire-kills-67-people-seeking-aid-gaza-medics-say-hunger-worsens-2025-07-20/",
+    "https://www.reuters.com/world/middle-east/israel-sends-tanks-into-gazas-deir-al-balah-hostage-families-concerned-2025-07-21/",
+    "https://www.nytimes.com/article/israel-gaza-aid-ground-offensive.html",
+    "https://www.nytimes.com/topic/destination/gaza-strip",
+    "https://www.aljazeera.com/",
+    "https://www.cbsnews.com/",
+    "https://www.aljazeera.com/middle-east/",
+    "https://nytimes.com/2025/07/21/world/middleeast/shootings-aid-gaza-analysis.html",
+    "https://hindustantimes.com/topic/gaza/news",
+    "https://x.com/skyzein/status/1947551057095377376"
+  ]
+}

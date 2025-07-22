@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Alaska Airlines grounded all flights for three hours due to a software outage\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html\"\n      ]\n    },\n    {\n      \"headline\": \"Evidence shows Jeju Air pilots shut off a less-damaged engine before the crash\",\n      \"citations\": [\n        \"https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/\"\n      ]\n    },\n    {\n      \"headline\": \"India ordered airlines to inspect fuel switches on Boeing aircraft after an Air India crash\",\n      \"citations\": [\n        \"https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash\"\n      ]\n    },\n    {\n      \"headline\": \"Singapore Airlines completed checks on fuel switches for its Boeing 787 aircraft\",\n      \"citations\": [\n        \"https://aviationa2z.com/index.php/2025/07/15/singapore-airlines-completes-boeing-787-fuel-switches-checks/\"\n      ]\n    }\n  ],\n  \"notes\": \"One story may be based on information slightly outside the last 24 hours, as per available data.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html",
+    "https://www.bbc.com/news/topics/c2n5vpdv320t",
+    "https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en",
+    "https://aviationa2z.com/index.php/2025/07/15/singapore-airlines-completes-boeing-787-fuel-switches-checks/",
+    "https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash",
+    "https://www.travelandtourworld.com/news/article/india-sparks-urgent-global-aviation-shake-up-as-airlines-rush-to-inspect-boeing-fuel-switches-after-deadly-dreamliner-crash/",
+    "https://www.youtube.com/watch?v=oF1G3jVKcp4",
+    "https://timesofindia.indiatimes.com/india/dont-jump-to-any-conclusion-civil-aviation-ministry-reacts-to-ai-171-crash-probe-report-calls-it-preliminary/articleshow/122401861.cms"
+  ]
+}

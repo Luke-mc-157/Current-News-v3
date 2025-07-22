@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Athletes compete in ongoing Olympic events\",\n      \"citations\": [\n        \"https://www.bbc.com/news\",\n        \"https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"NFL teams report training camp updates\",\n      \"citations\": [\n        \"https://heavy.com/sports\",\n        \"https://www.si.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Major league baseball games conclude with key wins\",\n      \"citations\": [\n        \"https://heavy.com/\",\n        \"https://www.nytimes.com/athletic/\"\n      ]\n    },\n    {\n      \"headline\": \"International soccer matches end in draws\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on general sports coverage from provided sources; specific high-engagement X posts and articles from the last 24 hours were sparse in search results.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/section/world",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://heavy.com/",
+    "https://www.si.com/",
+    "https://foxnews.com/entertainment",
+    "https://buzzfeed.com/dannicaramirez/shocking-celebrity-breakups",
+    "https://heavy.com/sports"
+  ]
+}

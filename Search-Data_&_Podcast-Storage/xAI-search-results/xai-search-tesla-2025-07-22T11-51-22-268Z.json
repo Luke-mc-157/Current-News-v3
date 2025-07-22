@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Tesla driver testifies in federal trial about Autopilot's role in a 2019 fatal accident\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla records 9,900 new vehicle registrations in China during the third week of July\",\n      \"citations\": [\n        \"https://www.teslarati.com/tesla-sees-9900-new-vehicle-registrations-in-china-in-julys-third-week/\"\n      ]\n    },\n    {\n      \"headline\": \"Automotive News covers updates on Tesla's electric vehicle production and future plans\",\n      \"citations\": [\n        \"https://www.autonews.com/tesla/\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters reports on latest technology news including Tesla developments\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only three stories were identified from high-engagement searches with direct correlations; the fourth is based on general coverage from reputable sources. No additional semantic posts on X were found that were not already covered.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://indianexpress.com/",
+    "https://www.teslarati.com/tesla-sees-9900-new-vehicle-registrations-in-china-in-julys-third-week/",
+    "https://www.autonews.com/tesla/"
+  ]
+}

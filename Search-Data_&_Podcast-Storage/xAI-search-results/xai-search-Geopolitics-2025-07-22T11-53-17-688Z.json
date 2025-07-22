@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"International leaders convene emergency talks on escalating Middle East tensions\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/world/middle-east/\"\n      ]\n    },\n    {\n      \"headline\": \"Global trade disputes intensify between major economies\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/section/world\"\n      ]\n    },\n    {\n      \"headline\": \"Diplomatic efforts continue in ongoing territorial disputes in the Asia-Pacific region\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world\",\n        \"https://www.npr.org/sections/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Sanctions and alliances shift amid European security concerns\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/world\",\n        \"https://www.foxnews.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; specific X posts were sparse, so reliance is primarily on news and RSS sources for verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/section/world",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/middle-east/",
+    "https://www.npr.org/sections/world/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.nytimes.com/section/world"
+  ]
+}

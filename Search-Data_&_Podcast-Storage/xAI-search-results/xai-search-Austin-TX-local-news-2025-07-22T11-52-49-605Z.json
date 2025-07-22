@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Austin, TX, is experiencing a dry week with seasonable heat and humidity.\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    },\n    {\n      \"headline\": \"Texas local news includes breaking updates from major outlets covering regional events.\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://www.cbsnews.com/texas\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Austin, TX, remains a focus in broader U.S. news coverage of weather and local developments.\",\n      \"citations\": [\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only a few directly related stories were identified from the last 24 hours, with limited high-engagement posts on X beyond general correlations.\"\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/watch-live-news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://fox26houston.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://cbsnews.com/texas"
+  ]
+}

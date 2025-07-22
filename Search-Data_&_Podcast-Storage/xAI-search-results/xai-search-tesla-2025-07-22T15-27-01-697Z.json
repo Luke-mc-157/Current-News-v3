@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk's Tesla diner and drive-in theater is scheduled to open in Hollywood.\",\n      \"citations\": [\n        \"https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla is experiencing a reduction in revenue from regulatory credit sales.\",\n      \"citations\": [\n        \"https://abc17news.com/news/2025/07/22/the-big-problem-for-tesla-that-isnt-getting-much-attention\"\n      ]\n    },\n    {\n      \"headline\": \"A Tesla owner reports unexpected issues with vehicle upgrades.\",\n      \"citations\": [\n        \"https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters provides coverage of global news including automotive developments.\",\n      \"citations\": [\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/video/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://indianexpress.com/",
+    "https://newsweek.com/tesla-owner-thinks-theyll-upgraded-lifequickly-realizes-something-2100364",
+    "https://abc17news.com/news/2025/07/22/the-big-problem-for-tesla-that-isnt-getting-much-attention",
+    "https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday"
+  ]
+}

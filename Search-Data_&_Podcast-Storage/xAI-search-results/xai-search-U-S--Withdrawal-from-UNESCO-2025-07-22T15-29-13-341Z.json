@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"The United States announces withdrawal from UNESCO.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/22/world/europe/us-withdraw-unesco.html\",\n        \"https://www.reuters.com/world/trump-pulls-us-out-un-cultural-agency-unesco-second-time-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"Trump administration cites UNESCO's alleged bias and agenda as reasons for the withdrawal.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/2025/07/22/trump-pulls-out-unesco-united-nations/\",\n        \"https://foxnews.com/politics/trump-pulls-us-out-un-agency-over-its-backing-woke-social-causes\"\n      ]\n    },\n    {\n      \"headline\": \"This withdrawal from UNESCO is the second under the Trump administration.\",\n      \"citations\": [\n        \"https://www.cnn.com/2025/07/22/politics/unesco-un-us-withdrawal\",\n        \"https://news-pravda.com/world/2025/07/22/1534543.html\"\n      ]\n    },\n    {\n      \"headline\": \"The U.S. State Department confirms the decision to withdraw from UNESCO.\",\n      \"citations\": [\n        \"https://unn.ua/en/news/the-state-department-confirmed-that-the-us-is-withdrawing-from-the-international-organization-unesco\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; no additional distinct stories identified beyond these four variations of the event.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/22/world/europe/us-withdraw-unesco.html",
+    "https://www.reuters.com/world/trump-pulls-us-out-un-cultural-agency-unesco-second-time-2025-07-22/",
+    "https://www.bbc.com/news/uk",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/politics/2025/07/22/trump-pulls-out-unesco-united-nations/",
+    "https://foxnews.com/politics/trump-pulls-us-out-un-agency-over-its-backing-woke-social-causes",
+    "https://www.cnn.com/2025/07/22/politics/unesco-un-us-withdrawal",
+    "https://www.nytimes.com/2025/07/22/world/europe/us-withdraw-unesco.html",
+    "https://news-pravda.com/world/2025/07/22/1534543.html",
+    "https://unn.ua/en/news/the-state-department-confirmed-that-the-us-is-withdrawing-from-the-international-organization-unesco"
+  ]
+}

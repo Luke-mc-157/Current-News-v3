@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Air India flight 171 crash investigation report details cockpit voices and unresolved questions\",\n      \"citations\": [\n        \"https://bbc.co.uk/news/articles/cn9yw0rljwvo\"\n      ]\n    },\n    {\n      \"headline\": \"Alaska Airlines faces flight disruptions due to IT outage\",\n      \"citations\": [\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Near collision reported between commercial flight and B-52 bomber\",\n      \"citations\": [\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified from relevant high-engagement posts and correlating news articles within the last 24 hours; data is based on available context and may be limited.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/international/",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.aljazeera.com/",
+    "https://bbc.co.uk/news/articles/cn9yw0rljwvo",
+    "https://ndtv.com/topic/plane-crash",
+    "https://x.com/ProjectConstitu/status/1947253986634981714"
+  ]
+}

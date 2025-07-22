@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"United States imposes new sanctions on Chinese entities for technology transfers\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"NATO members agree on increased defense spending at summit\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Middle East tensions escalate as Iran and Israel exchange threats\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.cbsnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Russia and Ukraine report ongoing military clashes in eastern regions\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.cbsnews.com/",
+    "https://www.axios.com/"
+  ]
+}

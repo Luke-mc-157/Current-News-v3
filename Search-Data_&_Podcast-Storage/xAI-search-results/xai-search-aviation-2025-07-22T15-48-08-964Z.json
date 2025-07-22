@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"AeroTime reports on new aviation safety protocols implemented by major airlines\",\n      \"citations\": [\n        \"https://www.aerotime.aero/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Aviation News covers ongoing expansion projects at international airports\",\n      \"citations\": [\n        \"https://www.aviationnews-online.com/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Fox News details recent advancements in aircraft technology from industry leaders\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.aljazeera.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters highlights global airline passenger traffic reaching new highs\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://news.google.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data derived from available news sources; X posts were sparse and not sufficiently conclusive for independent verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/business/finance/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.aljazeera.com/",
+    "https://www.aerotime.aero/",
+    "https://www.aviationnews-online.com/"
+  ]
+}

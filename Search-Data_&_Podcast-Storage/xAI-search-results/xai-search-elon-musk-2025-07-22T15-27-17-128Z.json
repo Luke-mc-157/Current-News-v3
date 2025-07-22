@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk has been posting criticism of Donald Trump on X regarding the Jeffrey Epstein files.\",\n      \"citations\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla's Optimus humanoid robot demonstrated serving popcorn, as showcased by Elon Musk.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/tech-news/elon-musks-tesla-optimus-humanoid-robot-serving-popcorn-goes-viral-says-this-will-become-normal-in-a-few-years/articleshow/122810959.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's platform X is contributing to divisions within the MAGA movement and Trump support.\",\n      \"citations\": [\n        \"https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's X has stated it will not cooperate with a French investigation it describes as politically motivated.\",\n      \"citations\": [\n        \"https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/video/",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://timesofindia.indiatimes.com/technology/tech-news/elon-musks-tesla-optimus-humanoid-robot-serving-popcorn-goes-viral-says-this-will-become-normal-in-a-few-years/articleshow/122810959.cms",
+    "https://ndtv.com/topic/elon-musk",
+    "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128",
+    "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124"
+  ]
+}

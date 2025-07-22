@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Major flooding reported in Central Texas affecting Austin area\",\n      \"citations\": [\n        \"https://www.cbsnews.com/texas/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Heatwave conditions prompt emergency measures in Austin\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Community events organized in Austin for summer festivals\",\n      \"citations\": [\n        \"https://www.axios.com/\",\n        \"https://news.google.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only three stories identified from available sources, as no specific high-engagement X posts or direct Austin events were found in the last 24 hours. Sources used are general and may not be conclusive.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://www.bbc.com/",
+    "https://www.foxnews.com/",
+    "https://axios.com/",
+    "https://www.npr.org/sections/national/",
+    "https://www.cbsnews.com/texas/",
+    "https://www.fox26houston.com/"
+  ]
+}

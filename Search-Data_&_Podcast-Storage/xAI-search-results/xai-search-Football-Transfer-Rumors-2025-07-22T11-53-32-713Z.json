@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agrees fee with Eintracht Frankfurt for Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://bbc.com/sport/football/articles/ckg3l3xr3gwo\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United linked with Bryan Mbeumo and Viktor Gyokeres\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c1lj3pe7584o\",\n        \"https://www.bbc.com/sport/football/teams/manchester-united\"\n      ]\n    },\n    {\n      \"headline\": \"Viktor Gyokeres offered to Manchester United amid interest from Arsenal\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://bbc.com/sport/football/articles/ckg3l3xr3gwo\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United considers move for Chelsea's Nicolas Jackson or RB Leipzig's Benjamin Sesko\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45785388/transfer-rumors-news-man-united-chelsea-jackson-leipzig-sesko\",\n        \"https://www.transfermarkt.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; data is derived from high-engagement posts and news articles, with no additional verification needed beyond provided context.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/articles/c1lj3pe7584o",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.bbc.com/sport/football/teams/manchester-united",
+    "https://www.transfermarkt.com/",
+    "https://www.espn.com/soccer/story/_/id/45785388/transfer-rumors-news-man-united-chelsea-jackson-leipzig-sesko",
+    "https://bbc.com/sport/football/articles/ckg3l3xr3gwo",
+    "https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://x.com/DuncanCastles/status/1947286345547714576"
+  ]
+}

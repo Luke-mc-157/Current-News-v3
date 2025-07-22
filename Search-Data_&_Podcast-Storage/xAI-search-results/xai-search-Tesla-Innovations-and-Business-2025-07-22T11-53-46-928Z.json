@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk opens Tesla Diner restaurant and drive-in theater in Los Angeles\",\n      \"citations\": [\n        \"https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php\",\n        \"https://www.autonews.com/tesla/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla driver testifies in federal trial regarding 2019 Autopilot-related crash\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla settles lawsuit against Louisiana and auto dealerships over direct vehicle sales ban\",\n      \"citations\": [\n        \"https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla Inc. stock information and earnings updates reported amid market highs\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/companies/TSLA.O\",\n        \"https://finance.yahoo.com/news/tesla-alphabet-highlight-earnings-rush-as-market-hovers-near-record-highs-what-to-know-this-week-113529744.html\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; data is derived from available news and web results, with no additional semantic X posts identified beyond high engagement correlations.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://www.reuters.com/markets/companies/TSLA.O",
+    "https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/",
+    "https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php",
+    "https://www.autonews.com/tesla/",
+    "https://finance.yahoo.com/news/tesla-alphabet-highlight-earnings-rush-as-market-hovers-near-record-highs-what-to-know-this-week-113529744.html",
+    "https://www.reuters.com/markets/companies/TSLA.O",
+    "https://www.cnn.com/2025/07/15/business/tesla-india-ev"
+  ]
+}

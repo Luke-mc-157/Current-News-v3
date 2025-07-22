@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Athletes compete in ongoing international sports events as reported by global news outlets.\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Major leagues feature breaking updates on team performances and standings.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"https://foxnews.com/sports\"\n      ]\n    },\n    {\n      \"headline\": \"Recent matches in popular sports draw high viewership and coverage.\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://heavy.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Cricket and other regional sports see new developments in tournaments.\",\n      \"citations\": [\n        \"https://indianexpress.com/section/sports\",\n        \"https://news.google.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; headlines synthesized from available source links without specific viral stories identified in searches.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/world/",
+    "https://news.google.com/home?hl=en-US&tab=wn&gl=US&ceid=US:en",
+    "https://www.reuters.com/world/us/",
+    "https://www.foxnews.com/",
+    "https://reuters.com/sports",
+    "https://foxnews.com/sports",
+    "https://heavy.com/",
+    "https://indianexpress.com/section/sports"
+  ]
+}

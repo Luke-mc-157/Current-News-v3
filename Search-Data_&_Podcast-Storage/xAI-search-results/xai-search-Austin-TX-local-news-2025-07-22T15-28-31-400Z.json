@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; only one story with sufficient high-engagement evidence and direct supporting articles from the last 24 hours was identified.\",\n  \"stories\": [\n    {\n      \"headline\": \"Austin, Texas, forecasts near-average high temperatures with a chance of rain over the weekend.\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU",
+    "https://axios.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.cbsnews.com/texas/",
+    "https://kwtx.com/",
+    "https://www.fox7austin.com/"
+  ]
+}

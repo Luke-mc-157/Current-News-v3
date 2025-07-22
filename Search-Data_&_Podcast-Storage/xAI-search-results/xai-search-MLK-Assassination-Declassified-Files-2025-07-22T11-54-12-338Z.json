@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. administration declassifies over 230,000 pages of documents related to Martin Luther King Jr.'s assassination.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/us/politics/mlk-jr-files-trump.html\",\n        \"https://www.bbc.com/news/articles/cy0wr5j5k8lo\",\n        \"https://www.washingtonpost.com/politics/2025/07/21/trump-presidency-news/\",\n        \"https://www.washingtonpost.com/politics/2025/07/21/mlk-jr-files-assassination-fbi-trump/\"\n      ]\n    },\n    {\n      \"headline\": \"Declassified files on Martin Luther King Jr.'s assassination include FBI investigative materials and potential leads.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/2025/07/21/mlk-jr-files-assassination-fbi-trump/\",\n        \"https://www.dimsumdaily.hk/u-s-declassifies-230000-pages-of-documents-on-martin-luther-king-jr-s-assassination/\"\n      ]\n    },\n    {\n      \"headline\": \"Martin Luther King Jr.'s family opposes the declassification of assassination-related documents.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/us/politics/mlk-jr-files-trump.html\",\n        \"https://www.bbc.com/news/articles/cy0wr5j5k8lo\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. Director of National Intelligence announces release of declassified documents on Martin Luther King Jr.'s assassination.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/2025/07/21/mlk-jr-files-assassination-fbi-trump/\",\n        \"https://news-pravda.com/world/2025/07/22/1534378.html\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on available data from the last 24 hours; no additional stories identified beyond these four.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/us/politics/mlk-jr-files-trump.html",
+    "https://www.bbc.com/news/articles/cy0wr5j5k8lo",
+    "https://www.washingtonpost.com/politics/2025/07/21/trump-presidency-news/",
+    "https://www.washingtonpost.com/politics/2025/07/21/mlk-jr-files-assassination-fbi-trump/",
+    "https://www.bbc.com/news/articles/cy0wr5j5k8lo.amp",
+    "https://www.dimsumdaily.hk/u-s-declassifies-230000-pages-of-documents-on-martin-luther-king-jr-s-assassination/",
+    "https://news-pravda.com/world/2025/07/22/1534378.html",
+    "https://unn.ua/en/news/trump-declassified-230000-pages-of-documents-on-martin-luther-kings-assassination",
+    "https://news-pravda.com/world/2025/07/21/1533528.html",
+    "https://21stcenturychronicle.com/trump-declassifies-martin-luther-king-jr-assassination-files/",
+    "https://x.com/EpochTimes/status/1947461715005768164"
+  ]
+}

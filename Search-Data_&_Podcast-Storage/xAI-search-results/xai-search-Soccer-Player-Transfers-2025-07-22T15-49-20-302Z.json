@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Chelsea receives a 170 million euro bid for player Cole Palmer\",\n      \"citations\": [\n        \"https://www.si.com/soccer/transfer-rumors-chelsea-receive-170-million-palmer-bid-european-giants-lead-antony-race\"\n      ]\n    },\n    {\n      \"headline\": \"Luis Diaz is determined to leave Liverpool for Bayern Munich\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45786251/liverpool-transfers-diaz-determined-leave-bayern-source\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United attempts to sign Viktor Gyokeres ahead of Arsenal\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate\"\n      ]\n    },\n    {\n      \"headline\": \"Latest transfer news updates for Manchester United, Arsenal, Liverpool, and Real Madrid\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.reuters.com/sports/soccer/",
+    "https://www.bbc.com/sport/football/premier-league",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.nytimes.com/athletic/football/",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.premierleague.com/en/transfers",
+    "https://www.si.com/soccer/transfer-rumors-chelsea-receive-170-million-palmer-bid-european-giants-lead-antony-race",
+    "https://www.espn.com/soccer/story/_/id/45786251/liverpool-transfers-diaz-determined-leave-bayern-source",
+    "https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate"
+  ]
+}

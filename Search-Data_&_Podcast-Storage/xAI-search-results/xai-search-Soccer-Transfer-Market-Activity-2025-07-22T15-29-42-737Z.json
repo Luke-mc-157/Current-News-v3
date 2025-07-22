@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool forward Luis Diaz is determined to transfer to Bayern Munich\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45786251/liverpool-transfers-diaz-determined-leave-bayern-source\",\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United attempt to sign Viktor Gyokeres ahead of Arsenal\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate\",\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    },\n    {\n      \"headline\": \"Chelsea receive a 170 million euro bid for midfielder Cole Palmer\",\n      \"citations\": [\n        \"https://www.si.com/soccer/transfer-rumors-chelsea-receive-170-million-palmer-bid-european-giants-lead-antony-race\",\n        \"https://www.premierleague.com/en/transfers\"\n      ]\n    },\n    {\n      \"headline\": \"Jadon Sancho decides to transfer to Juventus from Manchester United\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c5y77wywe1lo\",\n        \"https://www.reuters.com/sports/soccer/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on high-engagement posts and correlating articles from the last 24 hours; data is synthesized from available sources and may require verification for completeness.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.reuters.com/sports/soccer/",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.premierleague.com/en/transfers",
+    "https://www.si.com/soccer/transfer-rumors-chelsea-receive-170-million-palmer-bid-european-giants-lead-antony-race",
+    "https://www.espn.com/soccer/story/_/id/45786251/liverpool-transfers-diaz-determined-leave-bayern-source",
+    "https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-liverpool-real-madrid-ibrahima-konate",
+    "https://x.com/DuncanCastles/status/1947286345547714576"
+  ]
+}

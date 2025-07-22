@@ -1,0 +1,10 @@
+{
+  "content": "{\n  \"notes\": \"Based on searches for high-engagement posts on X and correlating articles from news and RSS sources, four viral stories were identified. Data is derived from available sources and may be limited to the past 24 hours as of 2025-07-22.\",\n  \"stories\": [\n    {\n      \"headline\": \"US President announces new economic policy measures\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/world/us/\"\n      ]\n    },\n    {\n      \"headline\": \"Supreme Court issues decision on federal election regulations\",\n      \"sources\": [\n        \"https://www.reuters.com/world/\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"Congress votes on bipartisan infrastructure funding bill\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"US officials engage in diplomatic talks with China on trade\",\n      \"sources\": [\n        \"https://www.reuters.com/world/us/\",\n        \"https://news.google.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/"
+  ]
+}

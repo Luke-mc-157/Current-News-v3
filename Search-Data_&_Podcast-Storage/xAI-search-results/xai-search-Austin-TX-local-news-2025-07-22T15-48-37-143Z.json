@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"notes\": \"Only one story was identified based on available data from the last 24 hours. Data for additional stories was sparse, with no other directly related high-engagement posts on X or correlating news/RSS articles found.\",\n  \"stories\": [\n    {\n      \"headline\": \"Austin, Texas, experiences near-average high temperatures in the 90s with a chance of weekend rain.\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home/sections/CAQiSENCQVNNQW9JTDIwdk1ETm5aRFVTQldWdUxVZENHZ0pKVGlJT0NBUWFDZ29JTDIwdk1ETnlhekFxQ1FvSEVnVkpibVJwWVNnQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRE5uWkRVU0JXVnVMVWRDR2dKSlRpZ0FQAVAB?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://foxnews.com/media",
+    "https://npr.org/sections/national"
+  ]
+}

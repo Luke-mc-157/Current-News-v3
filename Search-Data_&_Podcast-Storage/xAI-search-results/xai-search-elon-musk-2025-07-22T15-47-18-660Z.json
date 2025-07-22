@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk shares posts on X criticizing Donald Trump's handling of Jeffrey Epstein-related matters.\",\n      \"citations\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's companies, including Tesla and SpaceX, report new developments in business and technology.\",\n      \"citations\": [\n        \"https://foxbusiness.com/category/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk features in recent updates across various news platforms regarding his public activities.\",\n      \"citations\": [\n        \"https://ndtv.com/topic/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's platform X contributes to discussions on political divisions within the Republican Party.\",\n      \"citations\": [\n        \"https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128\"\n      ]\n    }\n  ],\n  \"notes\": \"Only stories with sources from the last 24 hours or closely related high-engagement context were included; data for additional stories may be sparse based on available searches.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/video/",
+    "https://www.bbc.com/news",
+    "https://foxbusiness.com/category/elon-musk",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://ndtv.com/topic/elon-musk",
+    "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128",
+    "https://www.nytimes.com/2025/07/08/technology/grok-antisemitism-ai-x.html"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only three major stories identified from the last 24 hours based on available searches.\",\n  \"stories\": [\n    {\n      \"headline\": \"Tesla's profits from regulatory credits are declining due to changing U.S. government policies.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla has settled a lawsuit challenging Louisiana's ban on direct vehicle sales to consumers.\",\n      \"citations\": [\n        \"https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/\"\n      ]\n    },\n    {\n      \"headline\": \"California Governor Gavin Newsom has sought to suspend Tesla's operations amid a dispute over a company feature.\",\n      \"citations\": [\n        \"https://www.dailymail.co.uk/news/article-14927419/Newsom-Musk-suspend-Teslas-operations.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/",
+    "https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/",
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.foxnews.com/",
+    "https://www.cbsnews.com/sanfrancisco/",
+    "https://www.reuters.com/",
+    "https://www.autonews.com/tesla/",
+    "https://www.dailymail.co.uk/news/article-14927419/Newsom-Musk-suspend-Teslas-operations.html"
+  ]
+}

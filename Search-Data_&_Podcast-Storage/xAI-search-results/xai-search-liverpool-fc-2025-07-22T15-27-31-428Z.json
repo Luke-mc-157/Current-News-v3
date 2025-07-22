@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"notes\": \"Based on available data from the last 24 hours, four viral stories were identified. Data is limited to high-engagement X posts and correlating news articles; no additional sources were used.\",\n  \"top_stories\": [\n    {\n      \"headline\": \"Liverpool FC has agreed a transfer fee for striker Hugo Ekitike from Eintracht Frankfurt.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\"\n      ]\n    },\n    {\n      \"headline\": \"Bayern Munich is preparing a bid for Liverpool FC forward Luis Diaz.\",\n      \"citations\": [\n        \"Posts found on X discussing Luis Diaz transfer rumors\",\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC is engaged in transfer discussions involving players such as Alexander Isak and Malick Fofana.\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\",\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC is participating in pre-season activities, including events in Hong Kong.\",\n      \"citations\": [\n        \"Posts found on X regarding Liverpool's Hong Kong preparations\",\n        \"https://metro.co.uk/tag/liverpool-fc/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107",
+    "https://metro.co.uk/tag/liverpool-fc/",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.telegraph.co.uk/liverpool-fc/",
+    "https://x.com/AnfieldIndex/status/1947568075215126558",
+    "https://x.com/AnfieldWatch/status/1947227658229518749",
+    "https://x.com/ElRealesVikram/status/1947363596788273580",
+    "https://x.com/TheAnfieldWrap/status/1947588968931045821"
+  ]
+}

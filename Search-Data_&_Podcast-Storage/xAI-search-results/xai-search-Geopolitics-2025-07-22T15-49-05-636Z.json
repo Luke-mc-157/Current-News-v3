@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"NATO leaders agreed on enhanced defense spending commitments during summit discussions.\",\n      \"sources\": [\n        \"https://www.bbc.com/news/world\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"United States imposed new sanctions on entities linked to Iran's missile program.\",\n      \"sources\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"China and European Union held talks on trade tariffs, aiming to reduce ongoing disputes.\",\n      \"sources\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.bbc.com/news/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Russia and Ukraine exchanged prisoners as part of a mediated diplomatic effort.\",\n      \"sources\": [\n        \"https://npr.org/sections/world\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://npr.org/sections/world",
+    "https://economist.com/the-world-in-brief",
+    "https://economist.com/weeklyedition/2025-07-19"
+  ]
+}

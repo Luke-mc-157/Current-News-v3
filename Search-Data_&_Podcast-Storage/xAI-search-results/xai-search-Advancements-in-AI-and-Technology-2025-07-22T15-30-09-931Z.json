@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"ChatGPT video demonstrates advancements in generative AI for object recognition\",\n      \"citations\": [\n        \"https://www.indiatvnews.com/technology/news/viral-video-shows-chatgpt-guessing-object-in-user-s-hand-through-clever-questions-2025-07-21-999827\"\n      ]\n    },\n    {\n      \"headline\": \"Newsweek recognizes companies for advancements in AI through 2025 Impact Awards\",\n      \"citations\": [\n        \"https://newsweek.com/nw-ai/ai-impact-awards-2025-best-2087601\"\n      ]\n    },\n    {\n      \"headline\": \"The New York Times reports on AI technology applications in competitive scenarios\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"VentureBeat covers recent developments in AI news and analysis\",\n      \"citations\": [\n        \"https://venturebeat.com/category/ai/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories identified based on available data from the last 24 hours; all sources are directly related to AI advancements and verified from news results.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/world/",
+    "https://www.indiatvnews.com/technology/news/viral-video-shows-chatgpt-guessing-object-in-user-s-hand-through-clever-questions-2025-07-21-999827",
+    "https://venturebeat.com/category/ai/",
+    "https://newsweek.com/nw-ai/ai-impact-awards-2025-best-2087601"
+  ]
+}

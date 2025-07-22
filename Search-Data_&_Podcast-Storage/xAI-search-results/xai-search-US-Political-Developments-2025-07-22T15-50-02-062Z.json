@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"US political figures address ongoing immigration policy debates\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/us\",\n        \"https://www.reuters.com/world/us/\"\n      ]\n    },\n    {\n      \"headline\": \"Developments in US presidential campaigns and elections reported\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    },\n    {\n      \"headline\": \"US government updates on health care and political race issues\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/us\",\n        \"https://www.cbsnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"International and domestic political news impacting US policy\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Based on available context from news sources; data is limited to provided results, and no additional X posts were specified in searches.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/us/",
+    "https://www.nytimes.com/section/us",
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/world/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/world/",
+    "https://www.foxnews.com/politics",
+    "https://www.cbsnews.com/",
+    "https://www.reuters.com/"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk's X platform announces it will not cooperate with a French investigation\",\n      \"citations\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\",\n        \"https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's ventures with Tesla and SpaceX feature in recent business updates\",\n      \"citations\": [\n        \"https://www.foxbusiness.com/category/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk is the subject of ongoing news coverage regarding his activities\",\n      \"citations\": [\n        \"https://www.ndtv.com/topic/elon-musk\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories were identified from the last 24 hours based on available high-engagement sources; data is limited to relevant and verifiable articles.\"\n}",
+  "citations": [
+    "https://www.foxbusiness.com/category/elon-musk",
+    "https://www.ndtv.com/topic/elon-musk",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128",
+    "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Axis Bank's bad loans increased in the first quarter due to regulatory actions by the Reserve Bank of India\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"India's Sensex and Nifty indices closed at their daily highs\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"India and the United States scheduled further talks on a potential trade deal\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"US Treasury Secretary stated that quality is more important than timing in economic matters\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on limited high-engagement posts and available news sources from the last 24 hours; fewer than four distinct viral stories were identified, so all available relevant ones are included.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/trending/",
+    "https://www.reuters.com/business/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.cbsnews.com/",
+    "https://www.reuters.com/",
+    "https://www.axios.com/",
+    "https://www.reuters.com/business/",
+    "https://x.com/CNBCTV18News/status/1947293017578295777"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Bayern Munich is preparing a bid for Liverpool FC's Luis Diaz\",\n      \"citations\": [\n        \"Posts on X related to transfer discussions\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    },\n    {\n      \"headline\": \"Darwin Nunez scored a hat-trick in Liverpool FC's pre-season friendly win against Stoke\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC agreed to a 69 million pound fee with Eintracht Frankfurt for striker Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC has ongoing updates on team news, fixtures, and transfers\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/teams/liverpool\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and news sources from the last 24 hours; only four stories identified as the biggest based on engagement and relevance.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.nytimes.com/athletic/6504774/2025/07/20/darwin-nunez-liverpool-pre-season/",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://metro.co.uk/tag/liverpool-fc",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/",
+    "https://telegraph.co.uk/liverpool-fc",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://x.com/AnfieldIndex/status/1947568075215126558"
+  ]
+}

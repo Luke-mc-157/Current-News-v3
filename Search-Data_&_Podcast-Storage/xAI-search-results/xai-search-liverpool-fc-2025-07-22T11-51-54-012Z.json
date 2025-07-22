@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agree deal for striker Hugo Ekitike from Eintracht Frankfurt\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.espn.com/soccer/story/_/id/45785894/liverpool-agree-79m-deal-striker-hugo-ekitike-sources\"\n      ]\n    },\n    {\n      \"headline\": \"Bayern Munich prepare bid for Liverpool forward Luis Diaz\",\n      \"citations\": [\n        \"Posts on X related to Liverpool transfer discussions\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool engage in summer transfer activities involving multiple players\",\n      \"citations\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool fans discuss club's transfer strategy amid market developments\",\n      \"citations\": [\n        \"Posts on X about Liverpool's transfer sentiment\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and articles from the last 24 hours; some citations rely on X posts which may not be fully verifiable.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-rodrygo-b1235099.html",
+    "https://www.espn.com/soccer/story/_/id/45785894/liverpool-agree-79m-deal-striker-hugo-ekitike-sources",
+    "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/",
+    "https://x.com/AnfieldIndex/status/1947568075215126558",
+    "https://x.com/ElRealesVikram/status/1947363596788273580",
+    "https://x.com/AnfieldWatch/status/1947227658229518749",
+    "https://x.com/AnfieldIndex/status/1947361195864035718"
+  ]
+}

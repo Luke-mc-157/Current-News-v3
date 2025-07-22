@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only three relevant stories were identified based on available data from searches on X and news sources within the last 24 hours.\",\n  \"stories\": [\n    {\n      \"headline\": \"AI technology is being used to detect and counter other AI systems.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"Recent advancements in AI innovations are covered in technology news updates.\",\n      \"citations\": [\n        \"https://venturebeat.com/category/ai/\",\n        \"https://www.reuters.com/technology/\"\n      ]\n    },\n    {\n      \"headline\": \"Global technology news includes reports on ongoing AI and innovation developments.\",\n      \"citations\": [\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/technology/",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/business/autos-transportation/eu-ramp-up-retaliation-plans-us-tariff-deal-prospects-dim-2025-07-21/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.reuters.com/technology/",
+    "https://venturebeat.com/category/ai/"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only one story was identified based on available data from the last 24 hours.\",\n  \"stories\": [\n    {\n      \"headline\": \"Austin, Texas, experiences near-average temperatures with an upcoming chance of weekend rain.\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://foxnews.com/us",
+    "https://foxnews.com/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://axios.com/",
+    "https://ksl.com/"
+  ]
+}
