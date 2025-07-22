@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Major professional sports transfers announced over the weekend involving key players.\",\n      \"citations\": [\n        \"https://www.goal.com/en-us/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a\",\n        \"https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\",\n        \"posts found on X discussing transfer roundups\"\n      ]\n    },\n    {\n      \"headline\": \"Significant player movements in professional football transfers reported in the last 24 hours.\",\n      \"citations\": [\n        \"https://www.si.com/\",\n        \"https://www.reuters.com/sports/\",\n        \"posts found on X with high engagement on transfer updates\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Alexander Isak considering transfer discussions with Saudi clubs amid interest from other teams.\",\n      \"citations\": [\n        \"https://www.goal.com/en-us/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a\",\n        \"https://www.transfermarkt.us/\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal FC reports new transfer activities and updates in professional football.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/teams/arsenal\",\n        \"https://www.nytimes.com/athletic/tag/transfer-news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories identified based on available data from the last 24 hours; data is based on relevant high-engagement and semantic posts on X and correlating news articles.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/",
+    "https://www.si.com/",
+    "https://www.reuters.com/sports/",
+    "https://www.transfermarkt.us/",
+    "https://www.goal.com/en-us/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a",
+    "https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://x.com/Dru4ManUTD/status/1947261917996740780",
+    "https://x.com/iamJeffCFC/status/1947240411342250237",
+    "https://x.com/PulseSportsNG/status/1947381358348931411",
+    "https://x.com/TunmiseAJ/status/1947421736028541436",
+    "https://x.com/pullout__/status/1947329897581392113"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"xAI launches new AI model for physical world understanding\",\n      \"sources\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla updates Autopilot system with AI enhancements for navigation and safety\",\n      \"sources\": [\n        \"https://www.reuters.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Oracle secures reported $30 billion deal related to AI infrastructure\",\n      \"sources\": [\n        \"https://www.reuters.com/\",\n        \"https://indianexpress.com/section/technology/artificial-intelligence\"\n      ]\n    },\n    {\n      \"headline\": \"OpenAI outlines plans for 100 million GPUs to support AI development\",\n      \"sources\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.ndtv.com/",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://x.com/Daily5MinNews/status/1947388888562950213",
+    "https://x.com/Daily5MinNews/status/1947388890202988575",
+    "https://x.com/datacenterpost/status/1947372524058169637",
+    "https://x.com/0xRajat/status/1947335896371503368",
+    "https://x.com/Privacy_Law/status/1947372893601730859"
+  ]
+}

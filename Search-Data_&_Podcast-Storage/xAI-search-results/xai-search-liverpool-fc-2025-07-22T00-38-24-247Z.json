@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Liverpool FC has extended contracts for key players and is pursuing significant transfer spending this summer.\",\n      \"sources\": [\n        \"https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\",\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC is linked to major transfer activities, including potential player sales and new signings.\",\n      \"sources\": [\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    },\n    {\n      \"headline\": \"Discussions around Liverpool FC's financial compliance with Premier League regulations have emerged in recent reports.\",\n      \"sources\": [\n        \"https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\",\n        \"https://www.bbc.com/sport/football/articles/c9w10kwgjk5o\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC has been active in the transfer market, with reports of bids and player negotiations in the last 24 hours.\",\n      \"sources\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\",\n        \"https://www.caughtoffside.com/tags/premier-league/liverpool/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and news articles from the last 24 hours; some topics may rely on inconclusive social media sentiment and should be verified through official sources.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://bbc.com/sport/football/articles/c9w10kwgjk5o",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://nytimes.com/athletic/6499568/2025/07/18/burnley-x-partnership-controversy",
+    "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://x.com/ShotCaller1984/status/1947365973536788947",
+    "https://x.com/faraondefutbol/status/1947323391393796577",
+    "https://x.com/stuaird/status/1947233028427874561",
+    "https://x.com/WillComish/status/1947326550057091396",
+    "https://x.com/BenEdward39/status/1947257902848155773"
+  ]
+}

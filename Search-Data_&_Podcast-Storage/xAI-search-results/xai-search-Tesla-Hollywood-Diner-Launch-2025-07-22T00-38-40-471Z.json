@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla opens its first diner in Hollywood featuring 1950s-style design and supercharging stations\",\n      \"citations\": [\n        \"https://www.nbclosangeles.com/news/local/teslas-diner-and-drive-in-a-retro-futuristic-pit-stop-opens-in-west-hollywood/3749971/\",\n        \"https://www.latimes.com/business/story/2025-07-21/tesla-diner-hollywood\",\n        \"https://abcnews.go.com/Business/inside-teslas-new-hollywood-diner-roller-skating-servers/story?id=123924740\",\n        \"https://timesofindia.indiatimes.com/etimes/trending/elon-musks-tesla-hollywood-diner-ai-robot-cybertruck-meals-and-other-futuristic-key-features-revealed/articleshow/122813998.cms\",\n        \"https://www.notateslaapp.com/news/2940/tesla-hollywood-diner-opens-a-look-at-the-food-merch-features-and-more-videos\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla fans line up for the opening of the Hollywood diner\",\n      \"citations\": [\n        \"https://www.latimes.com/business/story/2025-07-21/tesla-diner-hollywood\",\n        \"https://www.nbclosangeles.com/news/local/teslas-diner-and-drive-in-a-retro-futuristic-pit-stop-opens-in-west-hollywood/3749971/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla's Hollywood diner includes roller skating servers and outdoor movie screens\",\n      \"citations\": [\n        \"https://abcnews.go.com/Business/inside-teslas-new-hollywood-diner-roller-skating-servers/story?id=123924740\",\n        \"https://www.notateslaapp.com/news/2940/tesla-hollywood-diner-opens-a-look-at-the-food-merch-features-and-more-videos\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla's Hollywood diner features AI robots and themed meals\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/etimes/trending/elon-musks-tesla-hollywood-diner-ai-robot-cybertruck-meals-and-other-futuristic-key-features-revealed/articleshow/122813998.cms\",\n        \"https://www.notateslaapp.com/news/2940/tesla-hollywood-diner-opens-a-look-at-the-food-merch-features-and-more-videos\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-NG&gl=NG&ceid=NG:en",
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/home?hl=es-419&gl=US&ceid=US:es-419",
+    "https://www.nbclosangeles.com/news/local/teslas-diner-and-drive-in-a-retro-futuristic-pit-stop-opens-in-west-hollywood/3749971/",
+    "https://www.latimes.com/business/story/2025-07-21/tesla-diner-hollywood",
+    "https://abcnews.go.com/Business/inside-teslas-new-hollywood-diner-roller-skating-servers/story?id=123924740",
+    "https://timesofindia.indiatimes.com/etimes/trending/elon-musks-tesla-hollywood-diner-ai-robot-cybertruck-meals-and-other-futuristic-key-features-revealed/articleshow/122813998.cms",
+    "https://www.notateslaapp.com/news/2940/tesla-hollywood-diner-opens-a-look-at-the-food-merch-features-and-more-videos",
+    "https://x.com/RealAnthonyCamp/status/1947308508010914258",
+    "https://x.com/MondMars/status/1947401676677161471",
+    "https://x.com/romestrach/status/1947439930554372181",
+    "https://x.com/sephcadiz/status/1947283075521511695"
+  ]
+}
