@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"SpaceX Falcon 9 rocket is scheduled to launch from California on July 22, 2025, potentially causing sonic booms in Southern California.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/science/elon-musks-spacex-launch-could-trigger-sonic-booms-across-southern-california-officials-warn/articleshow/122829024.cms\",\n        \"https://www.reuters.com/technology/space/\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX Falcon 9 rocket launched 24 Starlink satellites from Vandenberg Space Force Base in California on July 18, 2025.\",\n      \"citations\": [\n        \"https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly\",\n        \"https://www.reuters.com/technology/space/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two verifiable stories were identified from searches in the last 24 hours; data is sparse for additional stories.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/technology/space/",
+    "https://news.google.com/home?hl=en-AU&ceid=AU:en&gl=AU",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://spacenews.com/section/news-archive",
+    "https://reuters.com/technology/space",
+    "https://timesofindia.indiatimes.com/science/elon-musks-spacex-launch-could-trigger-sonic-booms-across-southern-california-officials-warn/articleshow/122829024.cms",
+    "https://www.gov.uk/government/organisations/uk-space-agency",
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly"
+  ]
+}

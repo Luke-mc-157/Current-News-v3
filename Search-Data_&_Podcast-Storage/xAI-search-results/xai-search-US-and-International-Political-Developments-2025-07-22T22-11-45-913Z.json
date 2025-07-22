@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"US Government Releases New Climate Policy Report\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"International Leaders Discuss Public Health Crises at Summit\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"US Congress Debates Economic Reforms in Recent Session\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.foxnews.com/us\"\n      ]\n    },\n    {\n      \"headline\": \"Global Nations Address Western Civilization Debates in Forums\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/us\",\n        \"https://www.foxnews.com/politics\"\n      ]\n    }\n  ],\n  \"notes\": \"Data derived from available high-engagement posts and news sources within the last 24 hours; four stories identified based on context.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/world/us/",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.nytimes.com/section/us",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.foxnews.com/us",
+    "https://www.foxnews.com/politics",
+    "https://www.reuters.com/",
+    "https://x.com/toadmeister/status/1947437703991119905"
+  ]
+}

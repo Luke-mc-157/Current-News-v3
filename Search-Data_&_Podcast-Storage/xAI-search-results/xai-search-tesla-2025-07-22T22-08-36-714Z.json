@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla settles lawsuit challenging direct vehicle sales ban in Louisiana\",\n      \"citations\": [\n        \"https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's SpaceX consolidates Bitcoin holdings into a single wallet\",\n      \"citations\": [\n        \"https://decrypt.co/331270/elon-musks-spacex-moves-bitcoin-first-time-3-years\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk opens Tesla Diner restaurant and drive-in theater in Los Angeles\",\n      \"citations\": [\n        \"https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php\",\n        \"https://ca.news.yahoo.com/cybertruck-boxes-tacos-elon-musk-194816356.html\"\n      ]\n    },\n    {\n      \"headline\": \"Analysts evaluate potential effects of Elon Musk's political activities on Tesla's market performance\",\n      \"citations\": [\n        \"https://www.aol.com/musk-political-pivot-good-tesla-153614062.html\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/sustainability/boards-policy-regulation/tesla-settles-lawsuit-challenging-louisiana-direct-sales-ban-2025-07-21/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/video/",
+    "https://www.reuters.com/business/wall-street-futures-edge-higher-investors-await-irans-retaliatory-move-2025-06-23/",
+    "https://decrypt.co/331270/elon-musks-spacex-moves-bitcoin-first-time-3-years",
+    "https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php",
+    "https://ca.news.yahoo.com/cybertruck-boxes-tacos-elon-musk-194816356.html",
+    "https://www.aol.com/musk-political-pivot-good-tesla-153614062.html",
+    "https://www.autonews.com/tesla/"
+  ]
+}

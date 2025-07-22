@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agrees transfer fee with Eintracht Frankfurt for Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/\",\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\",\n        \"https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370\"\n      ]\n    },\n    {\n      \"headline\": \"Bayern Munich prepares bid for Liverpool's Luis Diaz\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\",\n        \"https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool monitors Real Madrid's Rodrygo as potential transfer target\",\n      \"citations\": [\n        \"https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool engages in talks regarding Newcastle's Alexander Isak\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; data is derived from high-engagement posts on X and correlating news articles.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.nytimes.com/athletic/6499475/2025/07/19/hugo-ekitike-liverpool-transfer/",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://metro.co.uk/tag/liverpool-fc/",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370",
+    "https://x.com/AnfieldIndex/status/1947568075215126558",
+    "https://x.com/thisisanfield/status/1947689734492590442"
+  ]
+}

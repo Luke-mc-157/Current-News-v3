@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Atlanta Braves player Austin Riley is expected to return to the team on Tuesday\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/\"\n      ]\n    },\n    {\n      \"headline\": \"Austin, Texas, weather forecast predicts near-average temperatures with a chance of rain over the weekend\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data is sparse; only two relevant stories identified from the last 24 hours based on available searches.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/watch-live-news",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://ksl.com/",
+    "https://npr.org/sections/national",
+    "https://www.kxan.com/weather/forecast/todays-forecast/"
+  ]
+}

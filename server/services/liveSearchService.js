@@ -723,9 +723,9 @@ async function getTopicDataFromLiveSearch(topic) {
           role: "user",
           content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Search X (formerly Twitter) and news sources for specific supporting articles from the last 24 hours. 
 
-Step 1: Use X semantic search and keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
+Step 1: Use X keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
 
-Step 2: Search "News" with keyword search and semantic search for corresponding articles/posts.
+Step 2: Search "News" for corresponding articles/posts.
 
 Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of citations links that informed it.
 

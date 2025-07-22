@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Donald Trump remains frontrunner for Republican presidential nomination amid ongoing legal cases.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/donald-trump/\"\n      ]\n    },\n    {\n      \"headline\": \"Biden administration addresses key issues in White House and Congress activities.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. politics coverage includes breaking news on elections and Supreme Court developments.\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Republican and Democratic political campaigns feature in recent U.S. news updates.\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\"\n      ]\n    }\n  ],\n  \"notes\": \"Data derived from available sources; reliance on high-engagement X posts was inconclusive, so focus was on correlating news articles from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/us/donald-trump/",
+    "https://www.foxnews.com/",
+    "https://www.foxnews.com/politics",
+    "https://www.npr.org/sections/news/",
+    "https://www.nytimes.com/",
+    "https://www.axios.com/"
+  ]
+}

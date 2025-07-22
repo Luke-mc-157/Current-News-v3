@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Elon Musk's latest news featured in recent coverage\",\n      \"citations\": [\n        \"https://ndtv.com/topic/elon-musk\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Limited data available from the last 24 hours; only one story identified based on recent sources.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?hl=en-IL&gl=IL&ceid=IL:en",
+    "https://www.cnn.com/2025/06/30/media/elon-musk-bill-primary-threat",
+    "https://www.bbc.com/news/articles/cx2gy3j9xq6o",
+    "https://thehill.com/policy/technology/5370666-musk-banning-hashtags-on-x-ads/",
+    "https://ndtv.com/topic/elon-musk",
+    "https://www.newsweek.com/elon-musk-announces-change-x-twitter-social-media-adverts-2091020"
+  ]
+}

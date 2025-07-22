@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agree transfer fee for Hugo Ekitike from Eintracht Frankfurt\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\",\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal pursue transfer for Viktor Gyokeres from Sporting CP\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html\",\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    },\n    {\n      \"headline\": \"Jadon Sancho agrees to join Juventus from Manchester United\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    },\n    {\n      \"headline\": \"Tottenham Hotspur offer record fee for Illia Zabarnyi from AFC Bournemouth\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/\"\n      ]\n    }\n  ],\n  \"notes\": \"No Euro 2025 events were identified in the searches; all stories relate to football transfers based on available data from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.bbc.com/sport/football",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-isak-b1235099.html",
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.transfermarkt.com/",
+    "https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer",
+    "https://www.express.co.uk/sport/football",
+    "https://x.com/DuncanCastles/status/1947286345547714576"
+  ]
+}

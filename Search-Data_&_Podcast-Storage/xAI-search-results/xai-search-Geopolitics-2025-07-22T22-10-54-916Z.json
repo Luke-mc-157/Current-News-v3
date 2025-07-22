@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; based on general news sources from the last 24 hours as no specific high-engagement X posts were available, relying on provided web and news results.\",\n  \"stories\": [\n    {\n      \"headline\": \"International leaders hold key discussions on global conflicts\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Major powers address escalating tensions in key regions\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Diplomatic efforts intensify for trade and security agreements\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Global alliances respond to emerging threats in geopolitics\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.nytimes.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/world/",
+    "https://www.foxnews.com/"
+  ]
+}

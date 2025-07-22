@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Axis Bank reports increase in bad loans during the first quarter\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"x-post-from-cnbc-tv18\"\n      ]\n    },\n    {\n      \"headline\": \"Sensex and Nifty Indian stock indices close at their daily highs\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"x-post-from-cnbc-tv18\"\n      ]\n    },\n    {\n      \"headline\": \"India and United States schedule additional talks on trade agreement\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"x-post-from-cnbc-tv18\"\n      ]\n    },\n    {\n      \"headline\": \"Bloomberg article by Citrini achieves high readership alongside company stock surge\",\n      \"citations\": [\n        \"https://www.reuters.com/business/finance/\",\n        \"x-post-from-capital-valor\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/finance/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/business/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/china/",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/world/china/",
+    "https://www.axios.com/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://x.com/CNBCTV18News/status/1947293017578295777",
+    "https://x.com/CapitalValor/status/1947664271888027948"
+  ]
+}

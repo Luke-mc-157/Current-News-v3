@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available recent reports, but most sources are from approximately 1-2 weeks ago and may not fully cover the last 24 hours. No new real-time results were available for this query.\",\n  \"stories\": [\n    {\n      \"headline\": \"Austin-area businesses donate to flood relief efforts in Central Texas\",\n      \"citations\": [\n        \"https://www.kut.org/austin/2025-07-10/austin-tx-flood-donate-how-to-help-restaurants\"\n      ]\n    },\n    {\n      \"headline\": \"Austin implements new air conditioning standards requiring units to maintain specific temperatures\",\n      \"citations\": [\n        \"https://www.kvue.com/article/news/local/austin-air-conditioning-requirements-starting-july-10-property-managers-city-council-windows/269-0a630ddf-6843-4494-925c-6b1b5a227c15\"\n      ]\n    },\n    {\n      \"headline\": \"Public figure attributes Texas flood response issues to diversity initiatives\",\n      \"citations\": [\n        \"https://www.chron.com/politics/article/texas-flood-fire-chief-charlie-kirk-20763485.php\"\n      ]\n    },\n    {\n      \"headline\": \"Texas flooding leads to reported deaths and missing persons in Central Texas\",\n      \"citations\": [\n        \"https://www.fox7austin.com/news/texas-flooding-live-updates-july-9\",\n        \"https://www.kvue.com/article/news/state/texas-news/texas-flood/central-texas-flood-lake-levels-rise/269-1c1b5ad4-a678-4cc3-b624-18d73906d560\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/watch-live-news",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://www.kut.org/austin/2025-07-10/austin-tx-flood-donate-how-to-help-restaurants",
+    "https://www.kvue.com/article/news/local/austin-air-conditioning-requirements-starting-july-10-property-managers-city-council-windows/269-0a630ddf-6843-4494-925c-6b1b5a227c15",
+    "https://www.chron.com/politics/article/texas-flood-fire-chief-charlie-kirk-20763485.php",
+    "https://www.fox7austin.com/news/texas-flooding-live-updates-july-9",
+    "https://www.kvue.com/article/news/state/texas-news/texas-flood/central-texas-flood-lake-levels-rise/269-1c1b5ad4-a678-4cc3-b624-18d73906d560"
+  ]
+}

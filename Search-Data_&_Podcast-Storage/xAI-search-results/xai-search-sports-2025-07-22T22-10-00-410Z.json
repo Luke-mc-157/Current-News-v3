@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Vernon Adams leads BC Lions in a game performance\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only one high-engagement sports story was identified from searches in the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.foxnews.com/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/sections/news/",
+    "https://indianexpress.com/",
+    "https://x.com/CFLGURU/status/1947461355533177269"
+  ]
+}
