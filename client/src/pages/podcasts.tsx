@@ -8,7 +8,8 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin, Play, ChevronDown, ChevronUp } from "lucide-react";
+import { Loader2, Clock, Calendar, Mic, Globe, Mail, Volume2, Settings, User, LogOut, MapPin, Play, ChevronDown, ChevronUp, Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
@@ -76,6 +77,7 @@ export default function Podcasts() {
   const { user, logout } = useAuth();
   const [hasChanges, setHasChanges] = useState(false);
   const [isUpcomingExpanded, setIsUpcomingExpanded] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [localPreferences, setLocalPreferences] = useState<Partial<PodcastPreferences>>({
     enabled: false,
     cadence: "daily",
@@ -264,11 +266,13 @@ export default function Podcasts() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-baseline">
-              <h1 className="text-2xl font-bold text-slate-900">Current</h1>
-              <span className="ml-2 text-sm text-slate-500 hidden sm:block">
+              <h1 className="text-xl sm:text-2xl font-bold text-slate-900">Current</h1>
+              <span className="ml-2 text-xs sm:text-sm text-slate-500 hidden sm:block">
                 News That Matters to You
               </span>
             </div>
+            
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <a href="/" className="text-slate-600 hover:text-slate-900 px-3 py-2 text-sm font-medium">
                 Home
@@ -304,26 +308,97 @@ export default function Podcasts() {
                 </Button>
               )}
             </nav>
+
+            {/* Mobile Navigation */}
+            <div className="md:hidden">
+              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" className="h-9 w-9">
+                    <Menu className="h-5 w-5" />
+                    <span className="sr-only">Open menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <nav className="flex flex-col space-y-4 mt-6">
+                    <a 
+                      href="/" 
+                      className="text-slate-600 hover:text-slate-900 py-2 text-base font-medium"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Home
+                    </a>
+                    <a 
+                      href="/podcasts" 
+                      className="text-slate-900 font-semibold py-2 text-base"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Podcasts
+                    </a>
+                    <a 
+                      href="#" 
+                      className="text-slate-600 hover:text-slate-900 py-2 text-base font-medium"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Settings
+                    </a>
+                    <div className="pt-4 border-t border-slate-200">
+                      {user ? (
+                        <div className="space-y-3">
+                          <div className="flex items-center space-x-2 text-sm text-slate-600">
+                            <User className="h-4 w-4" />
+                            <span>{user.username}</span>
+                          </div>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => {
+                              logout();
+                              setMobileMenuOpen(false);
+                            }}
+                            className="w-full"
+                          >
+                            <LogOut className="h-4 w-4 mr-2" />
+                            Logout
+                          </Button>
+                        </div>
+                      ) : (
+                        <Button
+                          variant="default"
+                          size="sm"
+                          onClick={() => {
+                            window.location.href = '/';
+                            setMobileMenuOpen(false);
+                          }}
+                          className="w-full"
+                        >
+                          Login
+                        </Button>
+                      )}
+                    </div>
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </header>
 
-      <div className="container mx-auto py-8 px-4 max-w-4xl">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Podcast Preferences</h1>
-          <p className="text-muted-foreground">
+      <div className="container mx-auto py-4 sm:py-8 px-4 max-w-4xl">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2">Podcast Preferences</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">
             Configure automatic podcast delivery to your email
           </p>
         </div>
 
       <Tabs defaultValue="settings" className="space-y-4">
         <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="settings">
-            <Settings className="h-4 w-4 mr-2" />
+          <TabsTrigger value="settings" className="text-xs sm:text-sm">
+            <Settings className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
             Settings
           </TabsTrigger>
-          <TabsTrigger value="history">
-            <Clock className="h-4 w-4 mr-2" />
+          <TabsTrigger value="history" className="text-xs sm:text-sm">
+            <Clock className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
             History
           </TabsTrigger>
         </TabsList>
@@ -339,31 +414,32 @@ export default function Podcasts() {
             <CardContent className="space-y-6">
               {/* Enable/Disable Toggle */}
               <div className="flex items-center justify-between">
-                <Label htmlFor="enabled" className="text-base">
+                <Label htmlFor="enabled" className="text-sm sm:text-base">
                   Enable Automatic Podcasts
                 </Label>
                 <Switch
                   id="enabled"
                   checked={localPreferences.enabled}
                   onCheckedChange={(checked) => handlePreferenceChange("enabled", checked)}
+                  className="data-[state=checked]:bg-primary"
                 />
               </div>
 
               {/* Schedule Section */}
               <div className="space-y-4">
-                <h3 className="text-lg font-semibold flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
+                <h3 className="text-base sm:text-lg font-semibold flex items-center gap-2">
+                  <Calendar className="h-4 w-4 sm:h-5 sm:w-5" />
                   Schedule
                 </h3>
                 
                 <div className="space-y-4">
                   <div>
-                    <Label htmlFor="cadence">Frequency</Label>
+                    <Label htmlFor="cadence" className="text-sm">Frequency</Label>
                     <Select
                       value={localPreferences.cadence}
                       onValueChange={(value) => handlePreferenceChange("cadence", value)}
                     >
-                      <SelectTrigger id="cadence">
+                      <SelectTrigger id="cadence" className="min-h-[44px]">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -378,12 +454,12 @@ export default function Podcasts() {
                   {/* Custom Days Selection */}
                   {localPreferences.cadence === "custom" && (
                     <div className="space-y-2">
-                      <Label>Select Days</Label>
-                      <div className="grid grid-cols-2 gap-2">
+                      <Label className="text-sm">Select Days</Label>
+                      <div className="grid grid-cols-2 gap-3">
                         {DAYS_OF_WEEK.map((day) => (
                           <label
                             key={day}
-                            className="flex items-center space-x-2 cursor-pointer"
+                            className="flex items-center space-x-2 cursor-pointer min-h-[44px]"
                           >
                             <input
                               type="checkbox"
@@ -394,9 +470,9 @@ export default function Podcasts() {
                                   : (localPreferences.customDays || []).filter(d => d !== day);
                                 handlePreferenceChange("customDays", days);
                               }}
-                              className="rounded border-gray-300"
+                              className="rounded border-gray-300 h-4 w-4"
                             />
-                            <span className="text-sm">{day}</span>
+                            <span className="text-xs sm:text-sm">{day}</span>
                           </label>
                         ))}
                       </div>
@@ -405,8 +481,8 @@ export default function Podcasts() {
 
                   {/* Timezone Selection */}
                   <div>
-                    <Label htmlFor="timezone" className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4" />
+                    <Label htmlFor="timezone" className="flex items-center gap-2 text-sm">
+                      <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                       Time Zone
                     </Label>
                     <Select

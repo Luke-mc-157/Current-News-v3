@@ -30,16 +30,16 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
 
   return (
     <Card className="shadow-sm border border-slate-200">
-      <CardContent className="p-6">
-        <div className="flex items-start justify-between mb-4">
-          <h4 className="text-lg font-semibold text-slate-900 leading-tight flex-1">
+      <CardContent className="p-4 sm:p-6">
+        <div className="flex items-start justify-between mb-3 sm:mb-4 gap-2">
+          <h4 className="text-base sm:text-lg font-semibold text-slate-900 leading-tight flex-1">
             {headline.title}
           </h4>
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setIsExpanded(!isExpanded)}
-            className="ml-4 flex-shrink-0"
+            className="flex-shrink-0 h-8 w-8 p-0 sm:h-9 sm:w-9"
           >
             {isExpanded ? (
               <ChevronUp className="w-4 h-4" />
@@ -49,29 +49,29 @@ export default function HeadlineCard({ headline }: HeadlineCardProps) {
           </Button>
         </div>
 
-        <p className="text-slate-600 mb-4 leading-relaxed">
+        <p className="text-sm sm:text-base text-slate-600 mb-3 sm:mb-4 leading-relaxed">
           {headline.summary}
         </p>
 
-        <div className="flex flex-wrap items-center gap-4 mb-4">
-          <Badge className={getCategoryColor(headline.category)}>
+        <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3 sm:mb-4">
+          <Badge className={`${getCategoryColor(headline.category)} text-xs`}>
             <Tag className="w-3 h-3 mr-1" />
             {headline.category}
           </Badge>
-          <span className="text-sm text-slate-500 flex items-center">
+          <span className="text-xs sm:text-sm text-slate-500 flex items-center">
             <Clock className="w-3 h-3 mr-1" />
             {timeAgo}
           </span>
-          <span className="text-sm text-slate-500 flex items-center">
+          <span className="text-xs sm:text-sm text-slate-500 flex items-center">
             <TrendingUp className="w-3 h-3 mr-1" />
             {headline.engagement}
           </span>
         </div>
 
         {isExpanded && (
-          <div className="border-t border-slate-200 pt-4 space-y-6">
+          <div className="border-t border-slate-200 pt-3 sm:pt-4 space-y-4 sm:space-y-6">
             <div>
-              <h5 className="text-sm font-medium text-slate-700 mb-2 flex items-center">
+              <h5 className="text-xs sm:text-sm font-medium text-slate-700 mb-2 flex items-center">
                 <svg className="w-4 h-4 mr-1 text-black" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
                 </svg>
