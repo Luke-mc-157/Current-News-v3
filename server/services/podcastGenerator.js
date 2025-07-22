@@ -63,7 +63,7 @@ CONTENT RULES:
 2. QUOTE SOURCES: When mentioning opinions, always attribute them: "According to [source]..." or "[Person] stated that..."
 3. FACTUAL LANGUAGE: Use neutral, objective language. Avoid adjectives that imply judgment.
 4. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
-5. CITE SOURCES: Reference the X posts and articles naturally within the narrative.
+5. CITE SOURCES: Reference the X posts and articles naturally within the narrative. There are many cited articles from the user's timeline and RSS feeds - make sure to analyze them and use them in the script, as appropriate.
 6. STYLE: Write in a conversational, engaging style. Add a hint of wit where applicable, think "Craig Ferguson Style" Use contractions (e.g., "don't" instead of "do not"). MINIMIZE FLUFF - keep it concise and to the point.
 
 SCRIPT STRUCTURE:
