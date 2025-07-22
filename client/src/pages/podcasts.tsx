@@ -97,13 +97,13 @@ export default function Podcasts() {
   });
 
   // Fetch user's last topics
-  const { data: lastTopics = [] } = useQuery({
+  const { data: lastTopics = [] } = useQuery<string[]>({
     queryKey: ["/api/user/last-topics"],
     retry: false
   });
 
   // Fetch recent podcast episodes
-  const { data: recentEpisodes = [], isLoading: isLoadingEpisodes } = useQuery({
+  const { data: recentEpisodes = [], isLoading: isLoadingEpisodes } = useQuery<PodcastEpisode[]>({
     queryKey: ["/api/podcast-episodes/recent"],
     retry: false
   });
@@ -507,7 +507,7 @@ export default function Podcasts() {
 
                   {/* Time Selection */}
                   <div>
-                    <Label>Delivery Time{localPreferences.times?.length > 1 ? 's' : ''}</Label>
+                    <Label>Delivery Time{(localPreferences.times?.length || 0) > 1 ? 's' : ''}</Label>
                     <div className="space-y-3">
                       {/* First time selector */}
                       <div className="flex items-center gap-2">
@@ -656,12 +656,12 @@ export default function Podcasts() {
                     minTopics={1}
                     placeholder="Enter topics for your podcasts..."
                   />
-                  {lastTopics.length > 0 && localPreferences.topics?.length === 0 && (
+                  {(lastTopics || []).length > 0 && (localPreferences.topics?.length || 0) === 0 && (
                     <Button
                       variant="link"
                       size="sm"
                       className="mt-1 px-0"
-                      onClick={() => handlePreferenceChange("topics", lastTopics)}
+                      onClick={() => handlePreferenceChange("topics", lastTopics || [])}
                     >
                       Use your last search topics
                     </Button>
@@ -870,21 +870,21 @@ export default function Podcasts() {
                 <div className="flex items-center justify-center py-8">
                   <Loader2 className="h-6 w-6 animate-spin" />
                 </div>
-              ) : recentEpisodes.length === 0 ? (
+              ) : (recentEpisodes || []).length === 0 ? (
                 <div className="text-center py-8 text-muted-foreground">
                   No podcasts generated yet
                 </div>
               ) : (
                 <ScrollArea className="h-[400px]">
                   <div className="space-y-4">
-                    {recentEpisodes.map((episode: PodcastEpisode) => (
+                    {(recentEpisodes || []).map((episode: PodcastEpisode) => (
                       <Card key={episode.id}>
                         <CardContent className="pt-6">
                           <div className="space-y-2">
                             <div className="flex items-start justify-between">
                               <div className="space-y-1">
                                 <p className="text-sm font-medium">
-                                  {formatPodcastName(episode.createdAt, episode.durationMinutes, localPreferences.timezone)}
+                                  {formatPodcastName(episode.createdAt.toString(), episode.durationMinutes, localPreferences.timezone)}
                                 </p>
                                 <p className="text-xs text-muted-foreground">
                                   {formatDate(episode.createdAt)}

@@ -25,7 +25,7 @@ export default function Home() {
     enabled: submittedTopics.length > 0,
   });
 
-  const headlines: Headline[] = headlinesData?.headlines || [];
+  const headlines: Headline[] = headlinesData || [];
 
   // Cache headlines when they are fetched successfully
   useEffect(() => {
