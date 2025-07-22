@@ -571,12 +571,7 @@ export function registerRoutes(app) {
       
       const audioPath = path.join(__dirname, '..', episode.audioUrl);
       
-      await sendPodcastEmail(email, {
-        podcastName: 'Current News',
-        headlines,
-        durationMinutes: episode.durationMinutes,
-        voiceName: episode.voiceId
-      }, audioPath);
+      await sendPodcastEmail(email, audioPath, 'Current News');
       
       // Update episode email sent timestamp
       await storage.updatePodcastEpisode(episodeId, { emailSentAt: new Date() });
