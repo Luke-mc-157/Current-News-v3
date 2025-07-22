@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Protesters gather at Austin City Hall to address potential fire department budget cuts\",\n      \"citations\": [\n        \"https://www.cbsnews.com/texas/\",\n        \"X post from user discussing crowd at Austin City Hall\"\n      ]\n    },\n    {\n      \"headline\": \"Waymo autonomous vehicle experiences operational failure outside HEB in Austin\",\n      \"citations\": [\n        \"X post from user reporting Waymo incident\",\n        \"https://www.axios.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Teen arrested in Austin stabbing incident, resulting in woman being hospitalized\",\n      \"citations\": [\n        \"X post from user about Austin stabbing\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Unruly visitors banned from Austin Municipal Pool following reports of fights\",\n      \"citations\": [\n        \"X post from user about Austin Parks and Recreation\",\n        \"https://www.cbsnews.com/texas/\"\n      ]\n    }\n  ],\n  \"semantic_posts_stories\": [],\n  \"notes\": \"No additional semantic posts identified from searches beyond high engagement results; all stories based on available data from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/topics/cx1m7zg01xyt",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://axios.com/",
+    "https://www.cbsnews.com/texas/",
+    "https://www.npr.org/sections/national/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/KelsSanchez/status/1947333609213304846",
+    "https://x.com/KathyAd17344699/status/1947457367022702863",
+    "https://x.com/ABC6NEWS/status/1947376042420629699",
+    "https://x.com/Cyber_Trailer/status/1947410393862967641"
+  ]
+}

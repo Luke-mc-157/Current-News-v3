@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Elon Musk engages in extensive posting on X about technical and AI topics\",\n      \"sources\": [\n        \"https://t.co/ljGJryq5Ny\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's X platform declines cooperation with French investigation citing political motivations\",\n      \"sources\": [\n        \"https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343\",\n        \"https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk shares updates on Tesla expansions in multiple regions\",\n      \"sources\": [\n        \"https://www.ndtv.com/topic/elon-musk\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posts about his work schedule and company developments on X\",\n      \"sources\": [\n        \"https://t.co/nLgmy2vAIT\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on available data from the last 24 hours; sources are limited to directly relevant high-engagement X posts and news articles.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home/sections/CAQiSENCQVNNQW9JTDIwdk1ETm5aRFVTQldWdUxVZENHZ0pKVGlJT0NBUWFDZ29JTDIwdk1ETnlhekFxQ1FvSEVnVkpibVJwWVNnQSouCAAqKggKIiRDQkFTRlFvSUwyMHZNRE5uWkRVU0JXVnVMVWRDR2dKSlRpZ0FQAVAB?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.yahoo.com/news/musk-goes-nuclear-trump-epstein-125613357.html",
+    "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+    "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124",
+    "https://www.ndtv.com/topic/elon-musk",
+    "https://www.politico.com/news/2025/07/15/elon-musk-x-maga-00455128",
+    "https://x.com/jcubhilton/status/1947109270698197011",
+    "https://x.com/cybergigafacto1/status/1947201759748727107",
+    "https://x.com/MrBlueBit3/status/1947342365687222439",
+    "https://x.com/RadGuy1000/status/1947229722934428098",
+    "https://x.com/cybergigafacto1/status/1947202393361240079"
+  ]
+}

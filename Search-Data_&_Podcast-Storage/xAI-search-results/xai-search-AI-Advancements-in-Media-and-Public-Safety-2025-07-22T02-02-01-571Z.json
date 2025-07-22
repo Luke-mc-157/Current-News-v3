@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla integrates AI for improved Autopilot navigation and safety features in vehicles\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"AI technology enables surveillance systems using cameras and drones for public monitoring\",\n      \"citations\": [\n        \"https://www.bbc.com/\",\n        \"https://www.reuters.com/video/\"\n      ]\n    },\n    {\n      \"headline\": \"AI systems are used to counter other AI in detecting and mitigating online misinformation\",\n      \"citations\": [\n        \"https://nytimes.com/2025/07/21/briefing/ai-vs-ai.html\",\n        \"https://www.nytimes.com/\"\n      ]\n    },\n    {\n      \"headline\": \"AI enhances dash cam functionality for recording and analyzing public safety incidents\",\n      \"citations\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.bbc.com/",
+    "https://www.nytimes.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/video/",
+    "https://www.foxnews.com/",
+    "https://nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.npr.org/sections/news/",
+    "https://indianexpress.com/section/technology/artificial-intelligence",
+    "https://www.ndtv.com/",
+    "https://x.com/Gab__AI/status/1947399404253569431",
+    "https://x.com/s48682982/status/1947183814628786435",
+    "https://x.com/VerhalenB/status/1947302542100303982",
+    "https://x.com/Gab__AI/status/1947088124183552131",
+    "https://x.com/Daily5MinNews/status/1947388890202988575"
+  ]
+}

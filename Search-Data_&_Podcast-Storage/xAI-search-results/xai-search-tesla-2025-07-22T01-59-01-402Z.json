@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla vehicle caught fire in a garage, causing damage to the home and another vehicle\",\n      \"citations\": [\n        \"https://t.co/jRwToSXaXx\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla faces sales challenges in a key market leading to negative reactions\",\n      \"citations\": [\n        \"https://t.co/c5Ml5IGzHA\",\n        \"https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla's Autopilot system was involved in a crash into a parked car in a driveway\",\n      \"citations\": [\n        \"https://t.co/VC4WWGJnOV\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla showroom encounters issues with customers demanding refunds for long-standing reservations\",\n      \"citations\": [\n        \"https://t.co/Y8CosZpXeM\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and related news sources from the last 24 hours; additional verification may be needed as some details are from social media sentiment.\"\n}",
+  "citations": [
+    "https://www.reuters.com/video/",
+    "https://www.washingtonpost.com/",
+    "https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php",
+    "https://www.cnn.com/2025/07/14/business/elon-musk-tesla-full-time-ceo",
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://www.cnbc.com/2025/07/08/elon-musk-lashes-out-at-dan-ives-over-tesla-board-proposals-shut-up.html",
+    "https://www.businessinsider.com/elon-musk-north-star-ai-tesla-xai-spacex-investments-2025-7",
+    "https://x.com/Mrsmmtbeauty/status/1947360572023898522",
+    "https://x.com/StonkKing4/status/1947431255945146668",
+    "https://x.com/Factschaser/status/1947316539272593896",
+    "https://x.com/rdd147/status/1947279225183994164",
+    "https://x.com/Sandy5Suzi/status/1947360516986572831"
+  ]
+}

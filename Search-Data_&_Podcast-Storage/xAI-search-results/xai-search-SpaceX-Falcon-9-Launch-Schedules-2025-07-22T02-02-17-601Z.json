@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"SpaceX schedules Falcon 9 launch for NASA's TRACERS mission from California\",\n      \"citations\": [\n        \"https://www.yahoo.com/news/spacex-falcon-9-launch-nasa-155024734.html\",\n        \"https://www.reuters.com/video/world-news/\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX targets Falcon 9 launch for SES Satellites O3b mPOWER mission from Florida\",\n      \"citations\": [\n        \"https://www.reuters.com/video/world-news/\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX launches Falcon 9 rocket carrying Starlink satellites from Vandenberg Space Force Base\",\n      \"citations\": [\n        \"https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly\",\n        \"https://www.ksby.com/news/local-news/spacex-targeting-tuesday-night-for-latest-launch-from-vandenberg-space-force-base\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX announces multiple Falcon 9 launch schedules for upcoming missions\",\n      \"citations\": [\n        \"https://www.cnbc.com/2025/07/15/amazon-teams-up-with-rival-musks-spacex-to-launch-kuiper-satellites.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/video/world-news/",
+    "https://www.yahoo.com/news/spacex-falcon-9-launch-nasa-155024734.html",
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly",
+    "https://www.cnbc.com/2025/07/15/amazon-teams-up-with-rival-musks-spacex-to-launch-kuiper-satellites.html",
+    "https://www.yahoo.com/news/spacex-launch-today-where-see-130047932.html",
+    "https://www.ksby.com/news/local-news/spacex-targeting-tuesday-night-for-latest-launch-from-vandenberg-space-force-base",
+    "https://x.com/SpaceX/status/1947450298651578767",
+    "https://x.com/SpaceX/status/1947450139611976133",
+    "https://x.com/SpaceX/status/1947450219270177120",
+    "https://x.com/SpaceX/status/1947399970778452354",
+    "https://x.com/SpaceX/status/1947413304277930319"
+  ]
+}

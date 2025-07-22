@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Russia and Iran strengthen bilateral relations with focus on energy and security cooperation.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/middle_east\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"United States urges Ukraine to resume peace negotiations amid ongoing conflict in Eastern Europe.\",\n      \"citations\": [\n        \"https://www.npr.org/sections/world\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Former U.S. President Trump criticizes BRICS summit attendance and proposes potential tariffs.\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.npr.org/sections/world\"\n      ]\n    },\n    {\n      \"headline\": \"India and United States face challenges in trade negotiations, particularly in agriculture sector.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://npr.org/sections/world",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/national/",
+    "https://economist.com/the-world-in-brief",
+    "https://x.com/delhi919/status/1947358301756313817",
+    "https://x.com/GodarmyofAngel/status/1947160051917222397",
+    "https://x.com/Left_Indy/status/1947103675672879583",
+    "https://x.com/IndiaToday/status/1947362802181804076",
+    "https://x.com/SteveSaysTruths/status/1947445197467758717"
+  ]
+}

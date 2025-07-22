@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. Congress Faces Pressure to Cancel August Recess\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.npr.org/sections/politics/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump Urges Senate to Continue Legislative Work\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\",\n        \"https://www.axios.com/\",\n        \"https://www.bbc.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Odds of U.S. Government Shutdown Increase in Fall\",\n      \"citations\": [\n        \"https://www.nytimes.com/\",\n        \"https://www.npr.org/sections/news/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"ICE Agent Injured in Shooting Incident\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.foxnews.com/\",\n        \"https://www.bbc.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/world/us/",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.axios.com/",
+    "https://www.npr.org/",
+    "https://www.npr.org/sections/politics/",
+    "https://www.npr.org/sections/news/",
+    "https://x.com/southgrace427/status/1947302722589384965",
+    "https://x.com/libertynation/status/1947451525938463210",
+    "https://x.com/AmericaRus2024/status/1947390595208482914",
+    "https://x.com/TheOutThere2016/status/1947225820935893021",
+    "https://x.com/TheWashUpdate/status/1947463103962042727"
+  ]
+}

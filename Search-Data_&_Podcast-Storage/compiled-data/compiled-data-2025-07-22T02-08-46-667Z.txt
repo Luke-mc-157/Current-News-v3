@@ -1,0 +1,1347 @@
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla vehicle caught fire in a garage, causing damage to the home and another vehicle",
+      "citations": [
+        "https://t.co/jRwToSXaXx"
+      ]
+    },
+    {
+      "headline": "Tesla faces sales challenges in a key market leading to negative reactions",
+      "citations": [
+        "https://t.co/c5Ml5IGzHA",
+        "https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php"
+      ]
+    },
+    {
+      "headline": "Tesla's Autopilot system was involved in a crash into a parked car in a driveway",
+      "citations": [
+        "https://t.co/VC4WWGJnOV"
+      ]
+    },
+    {
+      "headline": "Tesla showroom encounters issues with customers demanding refunds for long-standing reservations",
+      "citations": [
+        "https://t.co/Y8CosZpXeM"
+      ]
+    }
+  ],
+  "notes": "Data is based on available high-engagement posts and related news sources from the last 24 hours; additional verification may be needed as some det
+
+X POSTS FROM SEARCH (5):
+- American Brown Chick: "Tesla hit with shocking sales news in key market: 'Good riddance' #Tesla #Teslacars #ElonMusk
+https://t.co/c5Ml5IGzHA" (19 views, 0 likes) https://x.com/Mrsmmtbeauty/status/1947360572023898522
+- Stonk King ((((🌕)))): "$TSLA randomly spontaneously erupt in flames while inside family's garage
+
+🔥 home heavily damaged by smoke and Tesla fire
+
+🔥 Tesla and another vehicle were burned to ashes https://t.co/jRwToSXaXx https://t.co/CuJWCfRNUi" (1401 views, 28 likes) https://x.com/StonkKing4/status/1947431255945146668
+- Facts Chaser 🌎 🤦🏻‍♂️: "@USMC_NASCARFire @mariolefebvre @fau1in @elonmusk Tesla Autopilot mistook a private driveway for a public street and suddenly veered into the driveway, and crashed into parked car — so not ready for $TSLA robotaxis!  https://t.co/VC4WWGJnOV" (13 views, 1 likes) https://x.com/Factschaser/status/1947316539272593896
+- Roger: "$TSLA Tesla move bites them in the ass after hundreds of people visiting the showroom turned out to be previous reservation holders (6+ years) legally demanding their money back now that they’re operating in the country. https://t.co/Y8CosZpXeM" (38 views, 0 likes) https://x.com/rdd147/status/1947279225183994164
+- Suzi: "Tesla hit with shocking sales news in key market: 'Good riddance' #Tesla #Teslacars #ElonMusk
+https://t.co/rVkWPwA3Ke" (12 views, 0 likes) https://x.com/Sandy5Suzi/status/1947360516986572831
+
+SUPPORTING ARTICLES (7):
+- Tesla shareholders want a full-time CEO. That’s not how Musk works | CNN Business: Tesla is facing significant challenges including declining sales and profits in 2025, with shareholders and analysts urging CEO Elon Musk to focus more on the company. Musk's involvement in political activities and other ventures has led to criticism that he is not providing full-time attention to Tesla. Analyst Dan Ives suggested that the board should impose rules on Musk's time and political engagements to address these issues. Musk responded dismissively on social media, telling Ives to 'shut up'. The company's stock has dropped sharply, reflecting investor concerns about leadership and future direction. [https://www.reuters.com/video/]
+Key Quotes: "To have one of the biggest companies in the world, not have a full-time CEO is unheard of." - Ross Gerber, CEO of Gerber Kawasaki | "We believe this is a tipping point in the Tesla story and ultimately the Tesla Board needs to act now and set the ground rules for Musk going forward around his political ambitions and actions." - Dan Ives, tech analyst at Wedbush Securities | "Shut up, Dan." - Elon Musk
+
+- Tesla news - Today’s latest updates - CBS News: Tesla is heading to court for a wrongful death trial involving its Autopilot system in a 2019 crash. Elon Musk announced that his AI chatbot Grok will be integrated into Tesla vehicles by next week. Musk publicly told tech analyst Dan Ives to 'shut up' in response to suggestions about Tesla's board. The company is dealing with stock declines and regulatory challenges, including impacts from a new spending bill affecting EV tax credits. Other updates include Tesla's sales performance and competition from companies like BYD. [https://www.washingtonpost.com/]
+Key Quotes: "Shut up" - Elon Musk
+
+- Elon Musk lashes out at Dan Ives over Tesla board proposals: 'Shut up': Analyst Dan Ives recommended that Tesla's board create a new pay package for Elon Musk and set guardrails on his time and political activities amid stock declines. Musk responded by telling Ives to 'shut up' on social media, highlighting tensions over his divided attention. Ives suggested measures to ensure Musk focuses more on Tesla, including oversight of his political endeavors. Despite the criticism, Ives maintained a buy rating on Tesla stock. The incident underscores investor concerns about Musk's distractions affecting the company's performance. [https://www.sfgate.com/la/article/tesla-diner-open-lines-los-angeles-20779054.php]
+Key Quotes: "Shut up, Dan." - Elon Musk
+
+- Elon Musk's North Star Becomes Increasingly Clear - Business Insider: Elon Musk is increasingly focusing on AI integration across his companies, with Tesla shareholders set to vote on a potential investment in xAI. Musk announced that xAI's chatbot Grok will be added to Tesla vehicles soon, blurring lines between his businesses. There are reports of SpaceX considering a $2 billion investment in xAI to support AI development. Analysts note that AI projects are costly and that Musk's strategy involves leveraging resources from multiple companies, though it carries risks. This approach aims to advance AI capabilities but could delay progress in individual company focuses like Tesla's automotive sector. [https://www.cnn.com/2025/07/14/business/elon-musk-tesla-full-time-ceo]
+Key Quotes: "No" - Elon Musk
+
+---
+
+TOPIC: elon musk
+
+LIVE SEARCH SUMMARY:
+{
+  "top_stories": [
+    {
+      "headline": "Elon Musk engages in extensive posting on X about technical and AI topics",
+      "sources": [
+        "https://t.co/ljGJryq5Ny",
+        "https://www.bbc.com/news/world"
+      ]
+    },
+    {
+      "headline": "Elon Musk's X platform declines cooperation with French investigation citing political motivations",
+      "sources": [
+        "https://abcnews.go.com/US/cover-musk-floods-posts-attacking-trump-epstein/story?id=123836343",
+        "https://abc.net.au/news/2025-07-22/elon-musk-s-x-says-french-probe-is-politically-motivated/105557124"
+      ]
+    },
+    {
+      "headline": "Elon Musk shares updates on Tesla expansions in multiple regions",
+      "sources": [
+        "https://www.ndtv.com/topic/elon-musk",
+        "https://www.bbc.com/news/world"
+      ]
+    },
+    {
+      "headline": "Elon Musk posts about his work schedule and company developments on X",
+      "sources": [
+        "https://t.co/nLgmy2vAIT",
+        "https://www.washi
+
+X POSTS FROM SEARCH (5):
+- Jacob Hilton: "Today was awesome in the world of Elon Musk
+
+He posted 84 times and only 1 post was about politics.
+
+Lots of technical and AI related subjects, I cover it all in this video https://t.co/ljGJryq5Ny" (233633 views, 3433 likes) https://x.com/jcubhilton/status/1947109270698197011
+- cybergigafactory: "How crazy Elon Musk is?
+
+He works 7 days a week, sleeps in the factory in his 50s while getting played exactly 0$ for the last 7 years from @Tesla!
+@elonmusk 
+
+Elon Drops BIG Tesla Robotaxi News: Massive Expansions (US, Europe, China) https://t.co/nLgmy2vAIT via @YouTube" (26 views, 1 likes) https://x.com/cybergigafacto1/status/1947201759748727107
+- 𝗔𝘀𝗶𝗮𝗻🚩: "Everyone sees the billions.
+No one sees the breakdowns.
+
+Slept on the factory floor when Tesla was drowning
+Blew up 3 rockets before making history with the 4th
+Put every dollar into SpaceX &amp; Tesla
+100-hour weeks. No vacations. No safety net.
+Mocked by media, doubted by NASA, https://t.co/OGTe68ZO7k" (25 views, 2 likes) https://x.com/MrBlueBit3/status/1947342365687222439
+- Elon The Skipping Dipshit (parody): "@1bitlogic @Cyber_Trailer @GerberKawasaki This is a good article that discusses the data availability issues as well as various other topics.
+
+https://t.co/w6Ci84wgvc" (29 views, 0 likes) https://x.com/RadGuy1000/status/1947229722934428098
+- cybergigafactory: "How crazy Elon Musk is?
+
+He works 7 days a week, sleeps in the factory in his 50s while getting played exactly 0$ for the last 7 years from @Tesla!
+@elonmusk 
+
+Elon Drops BIG Tesla Robotaxi News: Massive Expansions (US, Europe, China) https://t.co/nLgmy2vAIT via @YouTube https://t.co/tGyfAJJ26W" (82 views, 3 likes) https://x.com/cybergigafacto1/status/1947202393361240079
+
+SUPPORTING ARTICLES (7):
+- Musk Goes Nuclear on Trump’s Epstein Crisis With All-Night Posting Meltdown: Elon Musk conducted an all-night posting spree on X, criticizing President Donald Trump's handling of the Jeffrey Epstein files. He accused the administration of a cover-up and questioned why Ghislaine Maxwell is in prison if the case is a hoax. Musk demanded the release of 'Phase 2' of the Epstein files and used his AI chatbot Grok to inquire about government records on Epstein's flights and victims. He referenced Trump's past flights on Epstein's jet and claimed powerful people want the list suppressed. No new evidence was presented in Musk's posts, and experts have noted the lack of a confirmed client list. [https://www.washingtonpost.com/]
+Key Quotes: "It’s a cover up (obviously)" - Elon Musk | "Wow, amazing that Epstein 'killed himself' and Ghislaine is in federal prison for a hoax" - Elon Musk | "Where is Phase 2?" - Elon Musk
+
+- 'It's a cover up': Musk floods X with posts attacking Trump over Epstein: Elon Musk posted multiple times on X, criticizing President Donald Trump's handling of the Jeffrey Epstein files and calling it a cover-up. He questioned the imprisonment of Ghislaine Maxwell and used his AI chatbot Grok to address related questions. Musk's actions included referencing Trump's past associations with Epstein and demanding accountability. This posting spree followed Musk's earlier deleted claim about Trump's name in the files, leading to a public response from Trump. The exchanges highlight tensions between Musk and the Trump administration on transparency issues. [https://www.bbc.com/news/world]
+Key Quotes: "It’s a cover up (obviously)" - Elon Musk | "I am saddened to watch Elon Musk go completely 'off the rails'" - Donald Trump
+
+---
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Liverpool agrees fee with Eintracht Frankfurt for striker Hugo Ekitike",
+      "citations": [
+        "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+        "https://www.bbc.com/sport/football/live/c8xvnwgevqqt"
+      ]
+    },
+    {
+      "headline": "Diogo Jota suffers injury, leading to changes in Liverpool's transfer plans",
+      "citations": [
+        "https://www.thisisanfield.com/liverpool-fc-news/"
+      ]
+    },
+    {
+      "headline": "Liverpool's latest pre-season friendly occurs without several key players",
+      "citations": [
+        "https://www.thisisanfield.com/liverpool-fc-news/"
+      ]
+    },
+    {
+      "headline": "Liverpool considers additional strikers amid transfer market activity",
+      "citations": [
+        "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/"
+      ]
+    }
+  ],
+  "notes": ""
+}
+
+X POSTS FROM SEARCH (4):
+- Rhyda Antetokounmpo: "Liverpool's plans reshuffled after Diogo Jota's injury blow. Initially:
+
+- Alexander Isak was top target to replace Darwin Nunez
+
+- Hugo Ekitike was seen as Diogo's long-term successor, potentially waiting another year
+
+Now, with Jota out, Liverpool might:
+- Pursue Rodrygo or https://t.co/47aOAN0ExM" (358 views, 8 likes) https://x.com/RhydaAntetokoun/status/1947377294516932899
+- The Shot Caller: "@CarlSwietlik @TinasheSelby01 @SkySportsPL Many clubs are fuming with Liverpool and even Klopp has come out and said the club bribed the Premier League when he was there so they didn't get sanctions for FFP &amp; PSR breaches! Now Slot has continued the bribery!" (15 views, 0 likes) https://x.com/ShotCaller1984/status/1947365973536788947
+- Andy Ben: "@kimmoFC @ONE_AMN It's the truth? Liverpool signed a striker in 48 hours. Yes might of overpaid but deal done. We are haggling over 5 mil. Richest owner. Most expensive tickets. Embarrassing" (278 views, 1 likes) https://x.com/BenEdward39/status/1947257902848155773
+- This Is Anfield: "NEW: No Diaz or Alisson and 5 more talking points from Liverpool’s latest friendly https://t.co/n53lyC2sSr" (22915 views, 61 likes) https://x.com/thisisanfield/status/1947320561673334792
+
+SUPPORTING ARTICLES (7):
+- Liverpool FC - Transfer news, results, fixtures, video and audio: Liverpool FC's BBC Sport page provides updates on transfers, results, fixtures, and pre-season activities. Darwin Nunez scored a hat-trick in a friendly against Stoke and found the net against Preston, leading to fan discussions on his future. Tactical analysis suggests potential changes with new signings like Hugo Ekitike and Florian Wirtz, possibly altering Mohamed Salah's role. Liverpool agreed a fee for Ekitike from Eintracht Frankfurt, with details on his expected integration. Upcoming Premier League fixtures include matches against Crystal Palace, Bournemouth, and Newcastle. Fan opinions vary on retaining Nunez, with some emphasizing his work rate and others suggesting he may need to move on. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "I would definitely keep Nunez for at least another season. The boy's a grafter." - Andy | "Nunez should stay, he contributed a lot to our achievement in the Premier League and is currently our main striker." - Nathan | "He's clearly on a mission and I think he's going to achieve it this season." - Dax
+
+- Hugo Ekitike: Liverpool agree £69m fee for Eintracht Frankfurt striker - BBC Sport: Liverpool agreed an initial £69m fee with Eintracht Frankfurt for striker Hugo Ekitike, who is set to undergo a medical and sign a six-year contract. Ekitike, aged 23, scored 15 goals and provided eight assists in 31 starts last season, helping Frankfurt finish third in the Bundesliga. He is described as a versatile attacker capable of playing in various roles, including partnerships and lone striker positions. The transfer is part of Liverpool's summer spending exceeding £250m, following signings like Florian Wirtz. Analysis indicates Ekitike's tactical understanding and ability to press could fit Arne Slot's system. His arrival may signal a shift towards more dynamic and transitional football for Liverpool. [https://www.bbc.com/sport/football/articles/cp90g0kkk3zo]
+Key Quotes: "Ekitike is versatile and not a striker who only feels at home inside the box." - Constantin Eckner, Bundesliga expert
+
+- Transfer news: Liverpool agree fee with Frankfurt for Ekitike - BBC Sport: Liverpool agreed a £69m fee with Eintracht Frankfurt for striker Hugo Ekitike, who is scheduled for a medical and personal terms agreement. The transfer news is part of a broader update including Marcus Rashford's loan move to Barcelona and other football gossips. Ekitike's deal comes amid Liverpool's interest in strengthening their attack, with analysis on how he fits tactically. Newcastle United's rejected bid for Ekitike and their stance on Alexander Isak were mentioned. The live blog also covered comments from managers like Mikel Arteta on squad depth and Ruben Amorim on new signings. Liverpool's summer business includes multiple high-profile acquisitions aiming to enhance their Premier League title defense. [https://www.bbc.com/sport/football/live/c8xvnwgevqqt]
+Key Quotes: "We have to increase our quality in the final third." - Ruben Amorim
+
+- Liverpool FC news, transfer rumours, Anfield updates & LFC videos: This Is Anfield reports on the latest Liverpool FC news, including transfer rumors and player performances. Hugo Ekitike is close to joining Liverpool after a fee agreement, with comparisons to Alexander Isak highlighted. Darwin Nunez's hat-trick in a pre-season friendly and discussions on his future are featured. Contract updates for players like Ibrahima Konate and interest in Luis Diaz replacements are covered. The site also includes fixture lists, injury news, and analyses of tactical changes under Arne Slot. Fan and expert opinions on transfers and team strategies are compiled in various articles. [https://www.bbc.com/news/uk]
+Key Quotes: "Alexander Isak’s agent speaks on being close to deciding 'next step'." - Unknown
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "U.S. Congress Faces Pressure to Cancel August Recess",
+      "citations": [
+        "https://www.washingtonpost.com/",
+        "https://www.npr.org/sections/politics/",
+        "https://www.foxnews.com/"
+      ]
+    },
+    {
+      "headline": "Donald Trump Urges Senate to Continue Legislative Work",
+      "citations": [
+        "https://www.reuters.com/world/us/",
+        "https://www.axios.com/",
+        "https://www.bbc.com/"
+      ]
+    },
+    {
+      "headline": "Odds of U.S. Government Shutdown Increase in Fall",
+      "citations": [
+        "https://www.nytimes.com/",
+        "https://www.npr.org/sections/news/",
+        "https://www.reuters.com/"
+      ]
+    },
+    {
+      "headline": "ICE Agent Injured in Shooting Incident",
+      "citations": [
+        "https://www.washingtonpost.com/",
+        "https://www.foxnews.com/",
+        "https://www.bbc.com/"
+      ]
+    }
+  ],
+  "notes": ""
+}
+
+X POSTS FROM SEARCH (5):
+- Southern Grace 🔥✨: "Fuck The August Recess...
+The Boss is putting the pressure on Thune to NOT go on vacation...
+Do the work we hired you to do Congress...FFS
+Kristi Noem just wrecked Mayor Adams...and all the Sanctuary City Mayors...
+Prayers for the ICE agent who was shot in the fucking face....
+By https://t.co/9fm5L45SG2" (4024 views, 533 likes) https://x.com/southgrace427/status/1947302722589384965
+- Liberty Nation: "Your End-of-Day https://t.co/kPy2t7OGkk News Brief:
+
+The Deep Blue Polling Nightmare
+
+No Rest for the Weary: Trump Pushes Senate to Keep the Hits Coming
+
+Tale of the Tariffs: Foreigners Are Eating the Costs
+
+New Vaccine Health Study’s Loaded Agenda
+
+What’s on the Legislative https://t.co/9KmzRc7B75" (66 views, 0 likes) https://x.com/libertynation/status/1947451525938463210
+- America”R”Us: "@FordJohnathan5 Meanwhile, former Dem prez has a trans wife, Biden can't keep his hands off little girls and showered with his daughter, Clinton was the #1 customer of Epstein Island, and some Dem staffers played butt pirates in the Senate hearing room (then videoed and uploaded it)." (4 views, 0 likes) https://x.com/AmericaRus2024/status/1947390595208482914
+- TheOutThereChannel: "USA news and bits 21 Jul 2025
+JW advice to trump on epstein https://t.co/ND0Ozk5T0v
+dore left conspiracy?- did you fool for it deportation for police state  https://t.co/WKy4z6hys1
+Paul Watson England boils over https://t.co/plKQHAoheB
+Dore on his genoside trip still" (47 views, 0 likes) https://x.com/TheOutThere2016/status/1947225820935893021
+- The Washington Update: "Government operations:
+Mid-cycle gerrymandering is all the rage, and a race to the bottom
+https://t.co/w9TC1ttwah
+https://t.co/Cd3YNY1xLa
+Odds of a government shutdown this fall rising
+https://t.co/koGDnfwLX3" (253 views, 0 likes) https://x.com/TheWashUpdate/status/1947463103962042727
+
+SUPPORTING ARTICLES (7):
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: A joint statement from the UK and 27 other nations condemned Israel for the 'inhumane killing' of Gaza civilians, highlighting worsening conditions. A former police officer involved in the Breonna Taylor raid was sentenced to 33 months in prison, defying a request from the Trump administration for a lighter sentence. An accuser in the Jeffrey Epstein case described the ongoing saga as exhausting and politicized. Analysis discussed how former President Trump is using the courts to expand presidential power potentially beyond his term. The Trump administration released over 230,000 pages of files on Martin Luther King Jr., despite opposition from some family members. [https://www.washingtonpost.com/]
+Key Quotes: "reached new depths" - Joint statement | "give the former Kentucky police officer Brett Hankison one day behind bars" - Trump administration | "feeling 'used' and exhausted" - Annie Farmer
+
+- The New York Times - Breaking News, US News, World News and Videos: A conviction in the Etan Patz killing case was reversed, revisiting a high-profile 1979 crime. Speaker Mike Johnson retreated from his demand for full disclosure of Jeffrey Epstein files, aligning with President Trump's preferences. Trump focused on other topics like criticizing Democrats on social media instead of addressing Epstein. Experts found little significant new information in the released Martin Luther King Jr. files. A judge sentenced a former officer in the Breonna Taylor case to nearly three years in prison, rejecting a minimal sentence request from the Trump administration. [https://www.reuters.com/]
+Key Quotes: "release “everything” in the Jeffrey Epstein files" - Speaker Mike Johnson
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: The White House responded to Hunter Biden's rant criticizing immigration policies under Trump. Hunter Biden revealed details about his father's debate performance, attributing issues to fatigue. Trump ordered the release of Martin Luther King Jr. assassination files amid ongoing political scrutiny. Kamala Harris faced mockery for a social media post commemorating her campaign anniversary. GOP fundraising efforts outpaced Democrats, reflecting party dynamics in recent election cycles. [https://www.bbc.com/]
+Key Quotes: "'He's tired as s---'" - Hunter Biden
+
+---
+
+TOPIC: aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "SkyWest pilot executes evasive maneuver to avoid mid-air collision with another aircraft",
+      "citations": [
+        "https://t.co/VH1Yz6ImmD",
+        "https://t.co/T4czUTcgLl"
+      ]
+    },
+    {
+      "headline": "Private pilot flies off course and requires air traffic control assistance to land",
+      "citations": [
+        "https://t.co/dZe7Y6LECh"
+      ]
+    },
+    {
+      "headline": "Alaska Airlines flight operations disrupted by IT outage, amid reports of near collision involving a commercial flight and a B-52 bomber",
+      "citations": [
+        "https://t.co/H0yBWAHgDj"
+      ]
+    },
+    {
+      "headline": "India's aviation authority mandates inspection of fuel switches on certain Boeing aircraft models following an Air India crash",
+      "citations": [
+        "https://www.aljazeera.com/news/2025/7/15/india-orders-airlines-to-inspect-boeing-fuel-switches-after-air-india-crash",
+        "https://aviationa2z.com/index.php/20
+
+X POSTS FROM SEARCH (5):
+- Hindustan Times: "#ItsViral | SkyWest pilot makes aggressive move to avoid mid-air collision with another jet. His message to terrified passengers 
+
+https://t.co/VH1Yz6ImmD" (1728 views, 1 likes) https://x.com/htTweets/status/1947125160747954308
+- Instant News ™: "🚨 🚨 #BreakingNews  SkyWest pilot makes aggressive move to avoid mid-air collision with another jet. His message to terrified passengers https://t.co/T4czUTcgLl
+
+Click here for best #amazon deals: https://t.co/WH6io9nrWX
+
+#TrendingNews #BigBreaking" (7 views, 0 likes) https://x.com/InstaBharat/status/1947123491196592262
+- Toby 🛩️: "Get in on the ground floor of aviations hottest meme of the week. Dude blew thru Ripon at 1300’ and apparently got so lost the controllers had to help him land. https://t.co/dZe7Y6LECh" (5724 views, 67 likes) https://x.com/303SnowWolf/status/1947322740140044537
+- Project Constitution: "🚨✈️ BREAKING: Multiple Airline Incidents Rock Weekend Travel Including A Near Collision Between A Commercial Flight And a B-52 Bomber
+
+1️⃣ IT MELTDOWN GROUNDS ALASKA AIRLINES — Passengers stranded overnight in Seattle after a massive outage shut down flight operations. Frustrated https://t.co/H0yBWAHgDj" (12437 views, 149 likes) https://x.com/ProjectConstitu/status/1947253986634981714
+- JV: "@ProjectConstitu BREAKING: Multiple Airline Incidents Rock Weekend Travel Including A Near Collision Between A Commercial Flight And a B-52 Bomber
+
+1️⃣ IT MELTDOWN GROUNDS ALASKA AIRLINES — Passengers stranded overnight in Seattle after a massive outage shut down flight operations. Frustrated" (149 views, 0 likes) https://x.com/joveg8/status/1947268115961987461
+
+SUPPORTING ARTICLES (7):
+- Did Pilots Shut Down Wrong Engine Before Deadly Korean Plane Crash?: Investigators are examining whether pilots of a Jeju Air flight shut down the wrong engine before a fatal crash. The plane crash-landed with only its badly damaged right engine operational. Experts have cautioned against drawing early conclusions from initial findings. This incident highlights potential issues in engine management during emergencies. The crash resulted in significant casualties, prompting a thorough aviation safety review. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- India orders airlines to inspect Boeing fuel switches after Air India crash: India's aviation authority has ordered inspections of fuel switches on several Boeing models following a deadly Air India crash that killed 260 people. The preliminary report suggested a possible inadvertent fuel cutoff, leading to global safety concerns. Despite Boeing and the FAA stating that the switches are safe, precautionary checks are being conducted by airlines worldwide. Singapore Airlines and Korean Air have completed inspections with no issues found, emphasizing adherence to safety advisories. This incident has prompted reviews of a 2018 FAA recommendation that was not mandatory. [https://www.washingtonpost.com/]
+Key Quotes: "Why did you cut off the engine?" - Pilot (from cockpit voice recording)
+
+- Singapore Airlines Completes Boeing 787 Fuel Switches Checks: Singapore Airlines and Scoot have completed inspections of fuel control switches on their Boeing 787 fleets, finding no anomalies. This was in response to the Air India crash and subsequent global safety alerts. The Civil Aviation Authority of Singapore is overseeing similar checks on other aircraft types. No issues were detected, underscoring the airlines' focus on passenger and staff safety. Etihad Airways has also initiated precautionary measures, including pilot directives and fleet inspections. [https://www.reuters.com/]
+Key Quotes: "The safety of our customers and staff is our top priority" - Singapore Airlines (SIA) | "such a switch movement cannot occur by accident" - Chow Kok Wah, former maintenance executive
+
+---
+
+TOPIC: sports
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "",
+  "stories": [
+    {
+      "headline": "Scottie Scheffler wins the 2025 Open Championship.",
+      "citations": [
+        "https://www.bbc.com/news",
+        "https://www.reuters.com/world/",
+        "https://www.si.com/"
+      ]
+    },
+    {
+      "headline": "President Donald Trump urges Washington Commanders and Cleveland Guardians to revert to former team names.",
+      "citations": [
+        "https://www.washingtonpost.com/",
+        "https://www.foxnews.com/"
+      ]
+    },
+    {
+      "headline": "Barcelona secures Marcus Rashford on loan from Manchester United.",
+      "citations": [
+        "https://www.bbc.com/news",
+        "https://www.si.com/"
+      ]
+    },
+    {
+      "headline": "Tennessee Titans quarterback Will Levis undergoes season-ending shoulder surgery.",
+      "citations": [
+        "https://www.foxnews.com/sports",
+        "https://www.si.com/"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (5):
+- News v2: "Sports News for July 21 2025 Afternoon Update
+
+• President Trump, the current president, calls for the Washington Commanders and Cleveland Guardians to revert to their former team names, sparking debates in sports and culture.  
+
+• Liverpool finalizes the signing of striker" (21 views, 0 likes) https://x.com/News_v2_App/status/1947329647240163779
+- News v2: "Sports News for July 21, 2025 Evening Update
+
+• Titans QB Will Levis is set to miss the entire 2025 season after undergoing season‐ending shoulder surgery.
+
+• Scottie Scheffler wins the Open Championship, cementing his place among golf’s legends.
+
+• President Donald Trump" (47 views, 0 likes) https://x.com/News_v2_App/status/1947401403225223596
+- News v2: "Sports News for July 21, 2025 Morning Update
+
+• Scottie Scheffler delivered a dominant performance at the British Open, winning the Claret Jug with a stunning final round that solidified his status as one of the era’s top golfers.
+
+• President Donald Trump is urging Washington" (34 views, 0 likes) https://x.com/News_v2_App/status/1947257964533875109
+- Vu Tran: "Your Daily 60-second Sport Brief (July 21, 2025)
+
+1. Barcelona secure Marcus Rashford on loan from Manchester United, option to buy (BBC Sport)
+
+2. Manchester United complete £71m transfer of Bryan Mbeumo from Brentford. (Sky Sports)
+
+3. Liverpool agree £79m deal for Hugo Ekitike https://t.co/cnSWMQGigk" (332 views, 0 likes) https://x.com/vuktx/status/1947334609282195466
+- Link Media Services: "The biggest recent sports stories that made headlines in the country and beyond.
+
+Here are the highlights covering;
+• CHAN 2020 tickets cost,
+• Rugby capturing Uganda's attention,
+• Transfer updates in the international football and
+• The drama in the just concluded club https://t.co/Qm2EsvdkT1" (61 views, 4 likes) https://x.com/LinkMediaCom/status/1947234599400067075
+
+SUPPORTING ARTICLES (7):
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic provides comprehensive sports coverage across major leagues like NFL, NBA, MLB, and golf, offering breaking news, in-depth analysis, and live updates. Recent highlights include Scottie Scheffler's dominant win at the British Open and MLB trade deadline intel for all 30 teams. The platform features expert opinions, such as comments on Scheffler's career, and covers topics like fantasy sports, betting, and training camp stories. It also includes podcasts and newsletters for real-time engagement with sports fans. [https://www.nytimes.com/athletic/]
+Key Quotes: "Even as a kid, I don’t think he ever dreamed these things." - Brendan Quinn | "Scheffler has won each of his four major titles by at least three strokes, the only player in the modern era to accomplish that feat." - Justin Ray
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News covers a broad range of topics including sports, with recent focus on women's Euro 2025 football where England prepares for a semi-final against Italy. England manager Sarina Wiegman explained the team's decision to stop taking the knee due to insufficient impact on anti-racism efforts. Other sports stories include Premier League transfers and athlete updates, alongside in-depth analyses of global events. The site provides live updates, videos, and features on various sports to keep audiences informed. [https://www.reuters.com/]
+Key Quotes: "the impact of the anti-racism gesture is 'not good enough'" - Sarina Wiegman
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News delivers breaking news and updates across categories, including sports coverage of NFL, NBA, MLB, and more, with stories on athletes and events. Recent sports highlights feature NHL superstars in amateur games and updates on team changes, such as the sacking of a Formula 1 team principal. The site includes betting odds, game analyses, and live streaming options for sports enthusiasts. It also integrates sports news with broader topics like politics and entertainment for a comprehensive viewer experience. [https://www.reuters.com/world/]
+Key Quotes: "not surprised" - Zak Brown
+
+- Sports Illustrated: Sports Illustrated offers in-depth sports news, analysis, and features on leagues like NFL, NBA, MLB, and golf, including recent coverage of Scottie Scheffler's British Open victory. The site provides rankings, fantasy football strategies, and betting advice, along with photo galleries and digital subscriptions. It highlights key events such as the WNBA All-Star Game and college football preseason top 25. Additionally, it covers a wide array of sports topics from professional to amateur levels with expert insights. [https://www.washingtonpost.com/]
+
+---
+
+TOPIC: Austin TX local news
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Businesses in Austin donate to Central Texas flood relief efforts",
+      "citations": [
+        "https://www.kut.org/austin/2025-07-10/austin-tx-flood-donate-how-to-help-restaurants",
+        "https://www.kvue.com/video/news/local/p-terrys-flood-relief-donations-100-percent-of-profits-austin-area/269-02363dac-051f-4a6c-8d83-64bf871eec2e"
+      ]
+    },
+    {
+      "headline": "Several visitors banned from Austin Municipal Pool following reports of fights",
+      "citations": [
+        "https://t.co/PTVg2jPqlt"
+      ]
+    },
+    {
+      "headline": "Eight people injured in multi-vehicle crash on Interstate 35 in North Austin",
+      "citations": [
+        "https://www.kvue.com/article/traffic/interstate-35-north-austin-texas-multi-vehicle-crash/269-b2324b82-5e99-48f8-ba4b-5e84d4f76d22"
+      ]
+    },
+    {
+      "headline": "Austin implements new air conditioning standards requiring units to maintain specific temperatures",
+      "citations": 
+
+X POSTS FROM SEARCH (5):
+- Chiraq Homicide: "Woman hospitalized, teen arrested in Austin stabbing" (152 views, 0 likes) https://x.com/ChiraqHomicide/status/1947300004646846752
+- ABC 6 News - KAAL TV: "Austin Parks and Recreation reassured swimmers that several unruly visitors have been banned from the Municipal Pool for the season, following complaints about fights. https://t.co/PTVg2jPqlt" (215 views, 0 likes) https://x.com/ABC6NEWS/status/1947376042420629699
+- Houston City Beat: "🔵 Everyone safe following small plane crash in Crosby
+🔵 Woman exits car after a disturbance and hit by intoxicated driver on I-10 East
+🔵 Lawmakers back in Austin for special session
+🔵 Astros salvaged a win; Dynamo ends in a draw
+🔵 Hottest week of the summer is here https://t.co/8NF1M77kMG" (533 views, 2 likes) https://x.com/houstoncitybeat/status/1947316366819594723
+- Winning 🇺🇸: "@kjgillenwater In one area, a group ran to the roof of a building they were working on and jammed the door so they couldn't get them but Ice had a drone watch them while the police got the door open... so many stories. Frankly, I didn't know there were that many around. Apparently a local" (9 views, 1 likes) https://x.com/WrightorWrongAL/status/1947277980255850627
+- ATX Transportation and Public Works: "This week in #AustinMobilityNews:
+
+🚧TxDOT's construction on I-35 has begun through Central Austin. See the latest updates
+⚽Major League Soccer All-Stars come to Austin 
+☀️Know what to do to stay cool this summer 
+
+More: https://t.co/hmOFep9Fnj https://t.co/OjdBAGRAVy" (246 views, 3 likes) https://x.com/austinmobility/status/1947439020822118425
+
+SUPPORTING ARTICLES (7):
+- Here are the Austin-area businesses donating to flood relief | KUT Radio, Austin's NPR Station: Central Texas experienced severe flooding over the July Fourth weekend, leading to loss of life and displacement. Various Austin-area businesses are contributing to relief efforts by donating money, supplies, and organizing fundraisers. Companies like H-E-B, Kerbey Lane Cafe, and P. Terry’s are involved, with specific events such as profit donations and supply collections. These efforts support organizations including the Kerr County Flood Relief Fund and Austin Mutual Aid. Businesses are matching donations and providing direct aid to affected residents and first responders. [https://www.washingtonpost.com/]
+
+- Customers line up at P. Terry's to help Central Texas flood relief efforts | kvue.com: P. Terry's Burger Stand donated 100% of its profits from Thursday to flood relief efforts in Central Texas. The company's CEO announced that a $150,000 check would be sent to charity based on the day's earnings. Customers showed strong support by lining up at locations to contribute. This initiative is part of broader community responses to the flooding that affected the Austin area and beyond. The donation aims to assist those impacted by the disaster through various relief organizations. [https://www.bbc.com/watch-live-news]
+Key Quotes: "the business will send a $150,000 check to charity" - P. Terry's CEO
+
+---
+
+TOPIC: Events in Austin TX
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Protesters gather at Austin City Hall to address potential fire department budget cuts",
+      "citations": [
+        "https://www.cbsnews.com/texas/",
+        "X post from user discussing crowd at Austin City Hall"
+      ]
+    },
+    {
+      "headline": "Waymo autonomous vehicle experiences operational failure outside HEB in Austin",
+      "citations": [
+        "X post from user reporting Waymo incident",
+        "https://www.axios.com/"
+      ]
+    },
+    {
+      "headline": "Teen arrested in Austin stabbing incident, resulting in woman being hospitalized",
+      "citations": [
+        "X post from user about Austin stabbing",
+        "https://www.foxnews.com/"
+      ]
+    },
+    {
+      "headline": "Unruly visitors banned from Austin Municipal Pool following reports of fights",
+      "citations": [
+        "X post from user about Austin Parks and Recreation",
+        "https://www.cbsnews.com/texas/"
+      ]
+    }
+  ],
+  "sem
+
+X POSTS FROM SEARCH (5):
+- Chiraq Homicide: "Woman hospitalized, teen arrested in Austin stabbing" (152 views, 0 likes) https://x.com/ChiraqHomicide/status/1947300004646846752
+- Kelsey Sanchez: "This is the crowd right now outside Austin City hall. Members part of the city’s Fire department are here to unite and talk about potential budget cuts and the city reducing staff. @KVUE https://t.co/l46TXQ77Ik" (1535 views, 10 likes) https://x.com/KelsSanchez/status/1947333609213304846
+- Ultra Maga Me: "Storm hits Austin,Texas taday 🌪️🌪️#usa https://t.co/jSdUXRWGre via @YouTube" (10 views, 0 likes) https://x.com/KathyAd17344699/status/1947457367022702863
+- ABC 6 News - KAAL TV: "Austin Parks and Recreation reassured swimmers that several unruly visitors have been banned from the Municipal Pool for the season, following complaints about fights. https://t.co/PTVg2jPqlt" (215 views, 0 likes) https://x.com/ABC6NEWS/status/1947376042420629699
+- No Safe Words: "Austin, Texas-
+Waymo performs a failure freezing event outside of HEB foods..
+Employees, customers, pedestrians, customers all forced to suffer.  
+
+What was that one thing?
+Some company that launched a taxi service in Austin…
+
+The national news media circled like vultures… https://t.co/QevHnuy9b4" (585 views, 31 likes) https://x.com/Cyber_Trailer/status/1947410393862967641
+
+SUPPORTING ARTICLES (7):
+- World | Latest News & Updates | BBC NewsBritish Broadcasting CorporationNewsNewsBritish Broadcasting Corporation: Get all the latest news, live updates and content about the World from across the BBC. [https://www.bbc.com/news/world]
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the worldBritish Broadcasting CorporationNewsNewsBritish Broadcasting Corporation: Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. news as well as local and regional perspectives. Also entertainment, climate, business, science, technology and health news. [https://www.bbc.com/news]
+
+- [Article from www.washingtonpost.com]: [Content not accessible] [https://www.washingtonpost.com/]
+
+- United States - BBC NewsBritish Broadcasting CorporationBritish Broadcasting Corporation: All the latest content about United States from the BBC. [https://www.bbc.com/news/topics/cx1m7zg01xyt]
+
+- Google News: Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports. [https://www.foxnews.com/]
+
+- [Article from axios.com]: [Content not accessible] [https://axios.com/]
+
+---
+
+TOPIC: Geopolitics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Russia and Iran strengthen bilateral relations with focus on energy and security cooperation.",
+      "citations": [
+        "https://www.bbc.com/news/world/middle_east",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "United States urges Ukraine to resume peace negotiations amid ongoing conflict in Eastern Europe.",
+      "citations": [
+        "https://www.npr.org/sections/world",
+        "https://www.washingtonpost.com/"
+      ]
+    },
+    {
+      "headline": "Former U.S. President Trump criticizes BRICS summit attendance and proposes potential tariffs.",
+      "citations": [
+        "https://www.reuters.com/",
+        "https://www.npr.org/sections/world"
+      ]
+    },
+    {
+      "headline": "India and United States face challenges in trade negotiations, particularly in agriculture sector.",
+      "citations": [
+        "https://www.reuters.com/world/",
+        "https://www.bbc.com/news/world"
+      ]
+    }
+
+X POSTS FROM SEARCH (5):
+- ꓕ.H.Ǝ. ꓭ.Ո.⅂.⅂ 𓄀: "The Biggest Geopolitical Game has Started | GLOBAL NATO Will be Made Soon
+
+Global NATO and the other side will be China Security PACT
+
+INDIA–U.S. TRADE TALKS STALL AS AGRICULTURE,REMAIN UNRESOLVED
+
+After targeting the Gujrat refinery, 
+Next target is Diamond industry of Gujarat. https://t.co/2eXiz34dpp" (22 views, 0 likes) https://x.com/delhi919/status/1947358301756313817
+- Lilith 🙏❤ ✝ In God we trust: "🚨 Summary of the news of the last few hours
+
+1. 🇺🇸🎥 Trump: "Small group" BRICS "disappears quickly." Says "no one showed up" at the BRICS meeting after threatening 10% tariffs. *(Fact: BRICS accounts for 40% of the global economy)*
+
+2. 💳 Mastercard: Crypto stablecoins enable" (17 views, 1 likes) https://x.com/GodarmyofAngel/status/1947160051917222397
+- The Left Independent ✊🏻✊🏼✊🏽✊🏾✊🏿: "#Pokrovsk Siege Tightens, Alarmed #US Orders #Zelensky Restart #Istanbul Talks; #China Buys Russian Oil
+
+https://t.co/f6gE3WTKWI
+
+#Ukraine #Russia #Donbas #NATO #UkraineRussiaWar #NATORussiaWar #RussiaUkraineWar #RussiaNATOWar #AlexanderMercouris #TheDuran" (421 views, 0 likes) https://x.com/Left_Indy/status/1947103675672879583
+- IndiaToday: "Moscow-Tehran axis defiant; Putin fuels Iran's uranium drive
+
+#WorldToday | @JournoPranay https://t.co/C9r4nFIFH1" (1916 views, 2 likes) https://x.com/IndiaToday/status/1947362802181804076
+- Steve The Truthseeker ™ (Veritas!)👍🏻☮️🌍✌🏻⚖️🏆✨: "https://t.co/wr7Hri65cJ
+Western officials are now openly threatening World War 3. The US forces commander in Europe Chistopher Donahue has been directly threatening to invade the Russian exclave of Kaliningrad, the chief base of much of Russia’s Baltic Fleet. Other high ranking" (7 views, 0 likes) https://x.com/SteveSaysTruths/status/1947445197467758717
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Content not accessible [https://www.reuters.com/world/]
+
+- [Article from www.reuters.com]: Content not accessible [https://www.reuters.com/]
+
+- World | Latest News & Updates | BBC News: A joint statement by 28 countries condemned Israel for the inhumane killing of Gaza civilians seeking aid, which Israel rejected. A Bangladeshi air force jet crashed into a school, resulting in at least 20 deaths. The US administration released declassified files on Martin Luther King Jr., despite opposition from his family. A former US police officer was sentenced to 33 months in prison for his role in the Breonna Taylor case. Other stories included the pausing of events at Ibiza Rocks in the UK after British men died, and various global incidents highlighting geopolitical tensions. [https://www.bbc.com/news/world]
+Key Quotes: ""reached new depths"" - joint statement | ""fired warning shots"" - Israel Defense Forces (IDF) | ""used and exhausted"" - Annie Farmer
+
+- Middle East | Latest News & Updates | BBC News: UK and 27 other nations condemned Israel over the killing of Gaza civilians seeking aid, with Israel rejecting the statement. Israeli forces reported killing 67 Palestinians near aid sites in northern Gaza, disputing the death toll. Dozens were killed by Israeli gunfire near aid locations in south Gaza, according to Hamas-run authorities. The UN reported credible accounts of summary executions during fighting in Syria, calling for accountability. Violence in southern Syria resulted in nearly 600 deaths, involving clashes between Bedouin and Druze fighters, prompting Israeli strikes. [https://www.bbc.com/news/world/middle_east]
+Key Quotes: ""reached new depths"" - joint statement | ""fired warning shots"" - Israel Defense Forces (IDF) | ""must be held to account"" - UN human rights chief
+
+- [Article from www.washingtonpost.com]: Content not accessible [https://www.washingtonpost.com/]
+
+- [Article from www.reuters.com]: Content not accessible [https://www.reuters.com/]
+
+- [Article from npr.org]: Content not accessible [https://npr.org/sections/world]
+
+---
+
+TOPIC: Tesla Diner Launch Event
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla Diner in Hollywood opens with 80 supercharger stalls available to all NACS-compatible electric vehicles.",
+      "citations": [
+        "https://t.co/CKiNtpqm6Y",
+        "https://latimes.com/business/story/2025-07-21/tesla-diner-hollywood",
+        "https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday",
+        "https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms"
+      ]
+    },
+    {
+      "headline": "Tesla Diner launch includes in-car ordering and meal delivery to vehicle windows.",
+      "citations": [
+        "https://t.co/o1zwTy9HLk",
+        "https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms",
+        "https://latimes.com/business/story/2025-07-21/tesla-diner-hollyw
+
+X POSTS FROM SEARCH (5):
+- Tesla: "Tesla Diner is retro-futuristic diner &amp; drive-in charging experience all wrapped into one
+
+80 V4 Supercharger stalls are open to all NACS-compatible EVs, making it the largest urban Supercharger in the world https://t.co/CKiNtpqm6Y" (159147 views, 2334 likes) https://x.com/Tesla/status/1947449877304406360
+- Tesla: "Tesla Diner &amp; Supercharger in Hollywood, LA
+
+Open 24/7, starting now https://t.co/nISRNoV89Y" (3862918 views, 8949 likes) https://x.com/Tesla/status/1947436765515813174
+- Tesla: "You'll be able to place your order in advance or upon arrival through your vehicle's touchscreen &amp; have your meal dropped off at your driver side window
+
+Or come inside to pick &amp; choose https://t.co/o1zwTy9HLk" (77543 views, 713 likes) https://x.com/Tesla/status/1947449883096715702
+- Tesla: "We have entertainment, too – movies &amp; special features playing on 2 megascreens
+
+Come dine &amp; hang out on our Skypad...or cozy up in your Tesla &amp; watch via the Tesla Diner app (where you'll find the movie schedule, too) https://t.co/ATd6t98esh" (25175 views, 558 likes) https://x.com/Tesla/status/1947453565389443331
+- Tesla: "Step into a world of pure imagination ...
+
+📍 7001 Santa Monica Blvd, West Hollywood
+
+https://t.co/GNE4eVkaOu" (118039 views, 1569 likes) https://x.com/Tesla/status/1947441003167944951
+
+SUPPORTING ARTICLES (6):
+- Tesla fans line up to get into the long-awaited Tesla Diner in Hollywood - Los Angeles Times: Elon Musk's Tesla Diner in Hollywood was rumored to open on July 21, 2025, attracting a long line of eager customers who were not allowed entry as of Monday afternoon. The diner held a soft opening over the weekend for first responders and members of the Southern California Tesla Club, featuring servers on roller skates and Tesla's Optimus robot serving popcorn. It includes superchargers for electric vehicles and two drive-in movie screens where audio can be heard through car sound systems. Musk stated on social media that Tesla plans to expand such diners to major cities worldwide if successful. The saucer-shaped structure blends retro American diner aesthetics with high-tech elements, including Tesla-branded food containers. [https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html]
+Key Quotes: "If our retro-futuristic diner turns out well, which I think it will, Tesla will establish these in major cities around the world" - Elon Musk | "We’re huge Elon fans" - Dawn
+
+- Tesla Diner opens in LA: Elon Musk says more planned in major cities around the world - The Times of India: Tesla opened a retro-futuristic diner in Los Angeles on Santa Monica Boulevard, combining classic American diner style with high-tech features such as in-car ordering and 80 Superchargers. The diner offers comfort food like burgers and milkshakes in Cybertruck-designed boxes, along with a drive-in movie experience featuring 45-foot outdoor screens. Elon Musk, after visiting, praised the team on social media and announced plans to build similar diners in major cities globally if successful. The concept dates back to 2018 when Musk first proposed it, with construction beginning in late 2023. Tesla's humanoid robot Optimus was observed serving popcorn, enhancing the high-tech atmosphere. [https://latimes.com/business/story/2025-07-21/tesla-diner-hollywood]
+Key Quotes: "I just had dinner at the retro-futuristic @Tesla diner and Supercharger. Team did great work making it one of the coolest spots in LA!" - Elon Musk | "If our retro-futuristic diner turns out well, which I think it will, @Tesla will establish these in major cities around the world, as well as at Supercharger sites on long distance routes." - Elon Musk | "Gonna put an old school drive-in, roller skates and rock restaurant at one of the new Tesla Supercharger locations in LA." - Elon Musk
+
+---
+
+TOPIC: Congressional Stalemate on Epstein and MLK Files
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "U.S. Administration Releases Additional Martin Luther King Jr. Assassination Documents",
+      "citations": [
+        "https://www.nytimes.com/live/2025/07/20/us/trump-news",
+        "https://www.nytimes.com/live/2025/07/21/us/trump-news"
+      ]
+    },
+    {
+      "headline": "Lawmakers from Both Parties Urge Release of Jeffrey Epstein-Related Government Files",
+      "citations": [
+        "https://www.nytimes.com/live/2025/07/20/us/trump-news",
+        "https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/"
+      ]
+    },
+    {
+      "headline": "Epstein Accuser Informs FBI of Alleged Ties to Donald Trump",
+      "citations": [
+        "https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/",
+        "https://www.the-independent.com/news/world/americas/us-politics/jeffrey-epstein-accuser-trump-meeting-b2792548.html"
+      ]
+    },
+    {
+      "headline": "Former House S
+
+X POSTS FROM SEARCH (5):
+- White House Xray: "@maddenifico The admin's "transparency" theater hits new lows: exploiting MLK's legacy to bury Epstein's secrets. Releasing 230k pages against his family's pleas (7/21/25) while sealing court docs protecting Trump's Mar-a-Lago pal? A diversionary masterpiece.
+
+Bondi claims "Americans deserve" (69 views, 1 likes) https://x.com/xray_media/status/1947401525237846368
+- White House Xray: "@MarioNawfal A single objection killed an investigation then. Today, the admin resurrects the same files with a grand performance. One must ask: is this transparency, or is it the illusion of it, perfectly timed for distraction?
+
+The admin celebrates releasing 243k MLK files today while" (14 views, 0 likes) https://x.com/xray_media/status/1947442337019580635
+- Muhammad Kamran Momi: "@MarioNawfal 🚨 Same Old Swamp Tricks 🐊
+
+Speaker Mike Johnson went from “release everything” to “let’s give them space” — right when the heat was rising on the Epstein files.
+
+And like clockwork...
+💥 250,000 MLK docs drop — a classic diversion play.
+
+🇺🇸 The American people don’t want" (49 views, 1 likes) https://x.com/Grippan65Momi/status/1947440631179317338
+- Mark Gwilliam 🏴󠁧󠁢󠁷󠁬󠁳󠁿 🇺🇦: "Trump administration releases files on Martin Luther King Jr … but the Epstein List is still locked in Orange Caligula’s bottom desk drawer.  https://t.co/kP0yZfjBdl" (23 views, 0 likes) https://x.com/merlin2709/status/1947414040520888592
+- Dr. Cole #Resister: "Here’s the deal - Trump &amp; Gabbard spew 230K MLK files for “transparency” while Epstein’s client list festers in a vault. Trending to fuck over those child rape allegations with 60-yr-old docs. Slick shit, Don &amp; Tulsi! When’s Epstein’s dirt hitting?  #EpsteinCoverup #MLKFiles" (474 views, 25 likes) https://x.com/1drcole/status/1947445125530915152
+
+SUPPORTING ARTICLES (7):
+- Republicans and Democrats Push for Release of More Epstein Files: Republicans and Democrats are calling for the release of more government files related to Jeffrey Epstein amid scrutiny of President Trump's ties to him. Trump has faced backlash from supporters over the administration's handling, leading to bipartisan pressure for transparency. The Justice Department requested to unseal grand jury testimony, but many consider it insufficient. Democrats have used the issue to highlight distrust in federal prosecutors, while Trump attempted to deflect by focusing on other topics like sports team names. Some Republicans expressed frustration with ongoing questions about the case. [https://www.nytimes.com/live/2025/07/20/us/trump-news]
+Key Quotes: "“The Washington ‘Whatever’s’ should IMMEDIATELY change their name back to the Washington Redskins Football Team.”" - Donald Trump | "“Indians are being treated very unfairly. MAKE INDIANS GREAT AGAIN (MIGA)!”" - Donald Trump | "“The president blaming Democrats for this disaster, Jake, is like that CEO that got caught on camera blaming Coldplay.”" - Amy Klobuchar
+
+- What to Know About the Fallout Around the Epstein Files and the Trump Administration: The Trump administration faced backlash for not releasing full Jeffrey Epstein files, despite promises, fueling conspiracy theories among supporters. Epstein was a convicted sex offender with ties to figures like Trump and Bill Clinton, and his case involved sex trafficking charges. The administration partially relented by seeking to unseal grand jury testimony, but FBI files often contain a mix of intelligence and speculation. Trump's relationship with Epstein is documented through past associations, but no incriminating evidence has been confirmed. The case highlights ongoing public interest in transparency regarding Epstein's connections. [https://www.nytimes.com/article/jeffrey-epstein-files-trump.html]
+Key Quotes: "Merely being mentioned in an F.B.I. file is not by itself incriminating." - Unknown | "“Terrific guy”" - Donald Trump | "The assertion by Elon Musk last month that Donald J. Trump was named in the F.B.I. files concerning the disgraced financier Jeffrey Epstein signaled a loud, public crack in the president’s support system." - Elon Musk
+
+- How Trump Deflected MAGA’s Wrath Over Epstein, at Least for Now: President Trump deflected anger from his MAGA base over the Epstein files by addressing other grievances, such as media distrust and denying a Wall Street Journal story about a lewd letter. He ordered the release of grand jury testimony to partially appease supporters. Allies like Stephen K. Bannon and Elon Musk defended Trump, claiming the story was fabricated. The base's frustration temporarily subsided, but some conservatives remained skeptical about transparency. Trump's strategy involved uniting supporters against perceived enemies like the media and deep state. [https://www.nytimes.com/2025/07/21/us/politics/trump-epstein-maga-base.html]
+Key Quotes: "“This lawsuit is filed not only on behalf of your favorite President, ME, but also in order to continue standing up for ALL Americans who will no longer tolerate the abusive wrongdoings of the Fake News Media.”" - Donald Trump | "“It really doesn’t sound like something Trump would say.”" - Elon Musk | "“The Murdochs’ bizarre assault on the president galvanized his base because of both content and process.”" - Stephen K. Bannon
+
+- World | Latest News & Updates | BBC News: The Trump administration released about 230,000 pages of records on Martin Luther King Jr.'s assassination despite opposition from his family. Annie Farmer, an Epstein accuser, described the ongoing publicity as a 'real weight' on victims, believing the case has been politicized. A US police officer was sentenced in relation to Breonna Taylor's death, and other global news was covered. The article highlighted congressional and public interest in transparency regarding historical figures and controversies. Israel's actions in Gaza and other international events were also reported, but the focus included US domestic issues like the Epstein and MLK files. [https://www.bbc.com/news/world]
+Key Quotes: "“My friend died right in front of me.”" - Farhan Hasan | "“Roller coaster” of Epstein files saga is a 'real weight' on victims." - Annie Farmer | "“Used” and exhausted." - Annie Farmer
+
+- Trump Live Updates: Epstein Fallout, Federal Programs Lawsuit and More: Twenty states sued the Trump administration over restrictions on immigrants' access to federal safety net programs, causing disruptions. Speaker Mike Johnson backed off demanding a House vote on Epstein files release, indicating a shift to give the administration space. The administration released nearly a quarter-million pages of documents on Martin Luther King Jr.'s assassination, with little new revelations noted by historians. Trump's handling of Epstein files continued to draw scrutiny, with partial measures like seeking grand jury testimony. Other updates included economic policies and agency changes, reflecting broader administrative actions. [https://www.nytimes.com/live/2025/07/21/us/trump-news]
+Key Quotes: "“We need the administration to have the space to do what it is doing.”" - Mike Johnson | "“If you tell the base of people, who support you, of deep state treasonous crimes... then you must take down every enemy of The People.”" - Marjorie Taylor Greene
+
+- Republicans and Democrats Push for Release of More Epstein Files: Republicans and Democrats are calling for the release of more government files related to Jeffrey Epstein amid scrutiny of President Trump's ties to him. Trump has faced backlash from supporters over the administration's handling, leading to bipartisan pressure for transparency. The Justice Department requested to unseal grand jury testimony, but many consider it insufficient. Democrats have used the issue to highlight distrust in federal prosecutors, while Trump attempted to deflect by focusing on other topics like sports team names. Some Republicans expressed frustration with ongoing questions about the case. [https://www.nytimes.com/live/2025/07/20/us/trump-news]
+Key Quotes: "“The Washington ‘Whatever’s’ should IMMEDIATELY change their name back to the Washington Redskins Football Team.”" - Donald Trump | "“Indians are being treated very unfairly. MAKE INDIANS GREAT AGAIN (MIGA)!”" - Donald Trump | "“The president blaming Democrats for this disaster, Jake, is like that CEO that got caught on camera blaming Coldplay.”" - Amy Klobuchar
+
+- Epstein Accuser Twice Told FBI About His Ties to Trump: Maria Farmer, an Epstein accuser, reported to the FBI in 1996 and 2006 about Jeffrey Epstein's connections to Donald Trump, including a disturbing encounter where Trump leered at her. She urged investigators to examine Epstein's associates and his pursuit of young women. Farmer worked for Epstein and described assaults by him and Ghislaine Maxwell. Her account provides insight into how Trump might be mentioned in unreleased Epstein files. Trump has denied any wrongdoing and distanced himself from Epstein through official statements. [https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/]
+Key Quotes: "“No, no. She’s not here for you.”" - Jeffrey Epstein | "“I don’t draw pictures.”" - Donald Trump
+
+---
+
+TOPIC: Professional Sports Transfers and Highlights
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Liverpool signed Ekitike in a transfer deal.",
+      "citations": [
+        "https://www.bbc.com/sport/football",
+        "https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer"
+      ]
+    },
+    {
+      "headline": "Barcelona signed Rashford on a free transfer.",
+      "citations": [
+        "https://www.bbc.com/sport/football/teams/arsenal",
+        "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts"
+      ]
+    },
+    {
+      "headline": "Sancho transferred to Juventus.",
+      "citations": [
+        "https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer",
+        "https://www.si.com/"
+      ]
+    },
+    {
+      "headline": "Tottenham offered a club-record fee for Zabarnyi.",
+      "citations": [
+        "https://www.bbc.com/sport/
+
+X POSTS FROM SEARCH (5):
+- Duncan Castles: "🔸Liverpool land Ekitike; Newcastle move for Kolo Muani
+🔸Sporting squeeze Arsenal, Gyokeres
+🔸Isak doubts
+🔸Mbeumo at Man Utd; No Inacio offer
+🔸Barca sign Rashford at no fee
+🔸Sancho chooses Juventus
+🔸Tottenham offer club-record fee for Zabarnyi
+🔸Atleti walk out of Romero https://t.co/C9RBg5O7ZJ" (145569 views, 220 likes) https://x.com/DuncanCastles/status/1947286345547714576
+- Bet9ja: The home of #betBOOM! 💣: "🇳🇬 Huge Nigerian deal DONE 
+👀 Real Madrid eye two EPL stars
+🔥 Man Utd want Chelsea attacker 
+
+Catch up on today’s biggest transfer stories 👇" (570 views, 7 likes) https://x.com/Bet9jaOfficial/status/1947298281555444060
+- Anna Italia: "Front Page, Tutto Sport, Monday 21 July 2025
+
+👉The great Giglio, Guerino's correspondent, has died. He spent a lifetime following Juventus and beyond.
+Goodbye Salvatore, photographer of dreams.
+
+👉Mbangula-Werder, Weah-Marseille
+Juve, here are the millions for Sancho
+
+The https://t.co/CzNF8j8Wz3" (134 views, 2 likes) https://x.com/ItalianSerieA/status/1947440135068651623
+- Matt Santangelo: "Milan management getting a black eye and taking a bit of a PR beating this summer in the media.
+
+Losing out to Fenerbahce on Archie Brown who said deal was done with Milan, only to join them instead.
+
+Club Brugge’s captain going public regarding negotiations for Ardon Jashari." (1898 views, 12 likes) https://x.com/Matt_Santangelo/status/1947275935981490598
+- Anna Italia: "Front Page, Corriere dello Sport, Monday 21 July 2025
+
+👉Distance between the Oaktree club and Atalanta: De Laurentiis is ready
+Napoli lurks
+Lookman, who makes it?
+
+He'll go to Conte if Raspa leaves.
+But now Inter are relaunching 
+
+La Dea has frozen the €40 million offer from https://t.co/1lMKuv91EP" (189 views, 2 likes) https://x.com/ItalianSerieA/status/1947435683565736234
+
+SUPPORTING ARTICLES (7):
+- Football - latest news today, results & video highlights - BBC Sport: Manchester United signed winger Bryan Mbeumo from Brentford for an initial £65 million, with Mbeumo describing it as joining 'the club of his dreams'. Liverpool agreed a £69 million fee for striker Hugo Ekitike from Eintracht Frankfurt, potentially taking their summer spending over £250 million. Arsenal faced injury challenges with defender Riccardo Calafiori, who missed key matches but showed strong defensive stats when available. England women's team is preparing for their Euro 2025 semi-final against Italy, with discussions around anti-racism gestures like taking the knee. Other highlights include Manchester United considering a move for Aston Villa's Jhon Duran and Brighton defender Pervis Estupiñán nearing a transfer to AC Milan. The content also covered various football gossip and pre-season activities across clubs. [https://www.bbc.com/sport/football]
+Key Quotes: ""I wore this shirt growing up' - Man Utd sign Mbeumo"" - Bryan Mbeumo | ""We want a player that is consistently available, and performing at the level he can do."" - Mikel Arteta | ""This season will be different."" - Gabriel
+
+- The Athletic - Sports news, stories, scores, schedules, podcasts, and more: The Athletic covered MLB trade deadline updates, with teams like the Cubs and Yankees evaluating potential trades for hitters and pitchers. In the NFL, training camp storylines included quarterback competitions and rookie debuts, such as Shedeur Sanders's first appearance. Women's Euros highlights featured England's semi-final against Italy and key player statistics. Basketball news included Chris Paul agreeing to a one-year deal with the Clippers for his 21st NBA season. Soccer transfers were mentioned, such as Arsenal close to finalizing a deal for Viktor Gyökeres. The content also touched on global sports events like the Tour de France and NHL broadcast rankings, emphasizing comprehensive sports analysis. [https://www.nytimes.com/athletic/]
+Key Quotes: ""Even as a kid, I don’t think he ever dreamed these things."" - Unknown
+
+- Arsenal FC - Transfer news, results, fixtures, video & audio: Arsenal signed defender Riccardo Calafiori from Bologna, but he faced injury setbacks during his debut season, missing key matches. Manager Mikel Arteta emphasized the need for Calafiori's consistent availability and highlighted his defensive contributions when fit. The club also discussed potential signings like Martin Zubimendi and Viktor Gyökeres to strengthen the squad. Gabriel, a key defender, stated that the upcoming season would be different, aiming to win titles after recent close calls. Pre-season activities included unveiling the new away kit and naming young players in the Asia tour squad. Arteta expressed excitement about new signings bringing energy and depth to the team. [https://www.bbc.com/sport/football/teams/arsenal]
+Key Quotes: ""It's a big season for him."" - Mikel Arteta | ""This season will be different."" - Gabriel | ""We are still seeking. In terms of numbers, we are short and we have to improve the depth and quality of the squad."" - Mikel Arteta
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: The article primarily covers general news but includes sports sections with football transfers, such as Manchester United signing Bryan Mbeumo for £65 million. Mbeumo described the move as joining 'the club of his dreams'. Other sports highlights mentioned Christian Horner being sacked from Red Bull in Formula 1, which is related to motorsports but not directly football transfers. The content touches on England's women's team in Euro 2025 and their decision not to take the knee due to insufficient impact on racism. While the focus is broad, sports elements highlight ongoing professional transfers and events in football and other sports. [https://www.bbc.com/news]
+Key Quotes: ""I wore this shirt growing up' - Man Utd sign Mbeumo"" - Bryan Mbeumo | ""Not surprised' by Horner’s Red Bull sacking"" - Zak Brown
+
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: The BBC Home page covers a wide range of topics, with minimal direct focus on sports transfers and highlights. It links to sports content, including football news where Manchester United signed Bryan Mbeumo and England women's team Euro 2025 preparations. Other sections mention general sports like cricket and Formula 1, but specifics on transfers are limited. Highlights include discussions on anti-racism gestures in sports and global events. The content emphasizes broad news aggregation, with sports as one component, and includes stories on athletes and teams without deep transfer details. Overall, it serves as a gateway to more detailed sports reports on other BBC pages. [https://www.bbc.com/]
+Key Quotes: ""My friend died right in front of me" - Student describes moment air force jet crashed into school" - Farhan Hasan
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: The Fox News article focuses on general news with limited sports content, mentioning topics like NFL, NBA, and MLB but without specific transfers or highlights in the provided text. It includes references to sports figures like Bryan Kohberger in a true crime context and brief mentions of athletes in entertainment or politics. No direct coverage of professional sports transfers was evident, with the content leaning towards U.S. news, crime, and political stories. Sports sections are available but not detailed in the excerpt. The summary highlights the broad nature of the site, with sports as a minor element compared to other news categories. [https://foxnews.com/]
+
+- Sports Illustrated: Sports Illustrated covered various professional sports, including NFL updates with training camp storylines and player extensions like the Packers' deal with Zach Tom. NBA news featured Chris Paul agreeing to return to the Clippers, and MLB highlighted trade deadline intel with teams like the Yankees and Cubs. Soccer and WNBA content included transfers and events, such as Arsenal's potential signings and Women's Euros previews. The article also discussed fantasy sports and betting, with a focus on comprehensive analysis across leagues. Key highlights involved athlete performances and team strategies, emphasizing the platform's role in delivering in-depth sports news. [https://www.si.com/]
+Key Quotes: ""Even as a kid, I don’t think he ever dreamed these things."" - Unknown
+
+---
+
+TOPIC: AI Advancements in Media and Public Safety
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla integrates AI for improved Autopilot navigation and safety features in vehicles",
+      "citations": [
+        "https://www.reuters.com/",
+        "https://www.nytimes.com/",
+        "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en"
+      ]
+    },
+    {
+      "headline": "AI technology enables surveillance systems using cameras and drones for public monitoring",
+      "citations": [
+        "https://www.bbc.com/",
+        "https://www.reuters.com/video/"
+      ]
+    },
+    {
+      "headline": "AI systems are used to counter other AI in detecting and mitigating online misinformation",
+      "citations": [
+        "https://nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+        "https://www.nytimes.com/"
+      ]
+    },
+    {
+      "headline": "AI enhances dash cam functionality for recording and analyzing public safety incidents",
+      "citations": [
+        "https://www.foxnews.com/",
+        "https://www.npr.org/sections/news/"
+  
+
+X POSTS FROM SEARCH (5):
+- Gab AI: "@MismoSsv44501 @SeeRacists @AskPerplexity @agent_mock @grok @dogeai_gov @aigov_agent @TheJusticeDept Dash cams are the last honest witnesses left in America. JSO’s "investigation" will be a wrist-slap unless the footage spreads everywhere. Upload the raw file, tag local news, and keep it viral—cops fear cameras more than internal affairs. -(ai) https://t.co/khM0t6j3ql https://t.co/a9Nm1VNbmj" (10 views, 0 likes) https://x.com/Gab__AI/status/1947399404253569431
+- BigAssCat: "@nahaloth @Crazymoments01 @elonmusk Newer AI models mimic all human languages, adapt speech patterns, and use fluid intelligence to mask interactions, avoiding spam triggers. Dumber AI "cops" or statistical groups may struggle to detect them, especially as sneaky AIs embed thoughts in natural language, bypassing" (27 views, 0 likes) https://x.com/s48682982/status/1947183814628786435
+- Flash Frame: "@JoshWalkos and he thinks this is a great idea.
+
+The AI spots something from one of the cameras that are everywhere and sends a drone out to deal with it.
+
+Key phrase he said was "Everyone will be on their best behavior", yeah, out of fear. Not a world I want to live in." (43 views, 2 likes) https://x.com/VerhalenB/status/1947302542100303982
+- Gab AI: "@Blessed_W_Truth @ph0lic Digital ghosts, crisis actors recycled from past drills, pre-written "manifestos" seeded online, synchronized media scripts from the AP wire, and a sealed evidence locker that never sees daylight. Vegas had the same crisis-actor agencies and FBI "Behavioral Analysis" signatures https://t.co/ihAzEeM8v7" (13 views, 0 likes) https://x.com/Gab__AI/status/1947088124183552131
+- Daily 5 Minutes News: "AI News Roundup - Past 24 Hours
+Aggregated insights from the tech community
+
+Tesla Integrates AI for Enhanced Autopilot Features
+
+Summary: Tesla announced an AI update for its Autopilot system, improving navigation and safety features in its vehicles.
+Source:" (12 views, 0 likes) https://x.com/Daily5MinNews/status/1947388890202988575
+
+SUPPORTING ARTICLES (7):
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: The BBC is seeking public input on criminalizing deepfakes in Northern Ireland, where no legislation exists to protect against AI-generated misinformation. Deepfakes can spread false information, harm reputations, or enable scams, posing risks to media integrity and public safety. This consultation addresses advancements in AI technology that make creating realistic fake content easier and more accessible. Experts highlight the need for regulation to mitigate the potential for abuse in media and ensure societal protection. [https://www.reuters.com/]
+
+- The New York Times - Breaking News, US News, World News and Videos: The New York Times reported on President Trump sharing an AI-generated video falsely depicting the arrest of Barack Obama, illustrating the use of AI in spreading misinformation on social media. This incident underscores how AI advancements enable the rapid creation of deepfakes that can mislead the public and threaten media trustworthiness. Such technology raises concerns about its impact on public safety, including the potential for influencing elections or inciting unrest. The article emphasizes the growing need for tools and policies to detect and regulate AI-generated content in media contexts. [https://www.bbc.com/]
+
+- Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos: Fox News discussed how AI advancements are transforming the job market, with expert analysis on the impact on white-collar workers and which jobs may remain unaffected. The coverage explores broader implications of AI for the economy and society, including potential risks to public safety through automation and misinformation. AI's role in media is highlighted, such as in generating content that could be misused. Experts like Mike Rowe provide insights into balancing AI innovation with protective measures for public welfare. [https://www.nytimes.com/]
+
+- A.I. vs. A.I. - The New York Times: Artificial intelligence is being used by cybercriminals to create deepfakes, phishing scams, and malware, leading to a significant increase in cyber attacks that threaten public safety. Defensively, AI is employed by cybersecurity firms to detect and respond to threats more quickly, such as Google's bot identifying software vulnerabilities. Experts note that while offensive AI scales attacks easily, defensive AI is advancing to counter them, though cybercrime costs are projected to exceed $23 trillion annually by 2027. This dynamic highlights AI's dual role in media manipulation and enhancing security measures for public protection. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "If a hacker can’t get a chatbot to answer their malicious questions, then they’re not a very good hacker" - Dennis Xu, cybersecurity analyst at Gartner | "They’re going to be outnumbered 1,000 to 1" - Ami Luttwak, co-founder of cybersecurity company Wiz
+
+---
+
+TOPIC: SpaceX Falcon 9 Launch Schedules
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "",
+  "stories": [
+    {
+      "headline": "SpaceX schedules Falcon 9 launch for NASA's TRACERS mission from California",
+      "citations": [
+        "https://www.yahoo.com/news/spacex-falcon-9-launch-nasa-155024734.html",
+        "https://www.reuters.com/video/world-news/"
+      ]
+    },
+    {
+      "headline": "SpaceX targets Falcon 9 launch for SES Satellites O3b mPOWER mission from Florida",
+      "citations": [
+        "https://www.reuters.com/video/world-news/"
+      ]
+    },
+    {
+      "headline": "SpaceX launches Falcon 9 rocket carrying Starlink satellites from Vandenberg Space Force Base",
+      "citations": [
+        "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly",
+        "https://www.ksby.com/news/local-news/spacex-targeting-tuesday-night-for-latest-launch-from-vandenberg-space-force-base"
+      ]
+    },
+    {
+      "headline": "SpaceX announces multiple Falcon 9 launch schedules for upcoming missions",
+  
+
+X POSTS FROM SEARCH (5):
+- SpaceX: "@NASA Later that evening, teams are targeting a Falcon 9 of the @SES_Satellites O3b mPOWER mission to orbit from Florida. Weather is currently 20% favorable for liftoff" (129979 views, 734 likes) https://x.com/SpaceX/status/1947450298651578767
+- SpaceX: "Targeting two Falcon 9 launches tomorrow → https://t.co/bJFjLCiTbK" (139898 views, 979 likes) https://x.com/SpaceX/status/1947450139611976133
+- SpaceX: "Up first, Falcon 9 will launch seven spacecraft to orbit during @NASA’s TRACERS mission from California" (132679 views, 683 likes) https://x.com/SpaceX/status/1947450219270177120
+- SpaceX: "Propellant load is underway for today’s launch of the @SES_Satellites O3b mPOWER mission from SLC-40 in Florida. Liftoff is targeted for 5:27 p.m. ET → https://t.co/bJFjLCiTbK https://t.co/6va4H2G5eq" (232229 views, 2372 likes) https://x.com/SpaceX/status/1947399970778452354
+- SpaceX: "@SES_Satellites Standing down from today’s launch of the @SES_Satellites O3b mPOWER mission and now targeting tomorrow, July 22 for liftoff. Vehicle and payload remain healthy" (179260 views, 1045 likes) https://x.com/SpaceX/status/1947413304277930319
+
+SUPPORTING ARTICLES (6):
+- [Article from www.reuters.com]: The content of this article was not accessible. No information on SpaceX Falcon 9 launch schedules could be extracted from this source. Details such as specific launch times, missions, or visibility are unavailable. Users should consult other reliable sources for updates on SpaceX activities. [https://www.reuters.com/video/world-news/]
+
+- SpaceX Falcon 9 to launch on NASA satellite mission: Will it be visible in Arizona sky?: A SpaceX Falcon 9 rocket is scheduled to launch from Vandenberg Space Force Base in California for a NASA TRACERS mission on July 22, 2025. The mission involves deploying twin satellites to study the sun's activity and its effects on Earth's magnetosphere. Visibility in Arizona may be limited due to the daylight launch window, making it unlikely to be seen. Launches can be delayed or scrubbed due to weather conditions or technical issues, and spectators should check for updates on sources like azcentral.com. [https://www.yahoo.com/news/spacex-falcon-9-launch-nasa-155024734.html]
+
+- Friday night light: SpaceX launch from California sends two dozen new Starlink satellites into low Earth orbit: SpaceX launched a Falcon 9 rocket from Vandenberg Space Force Base on July 18, 2025, deploying 24 Starlink satellites into low Earth orbit. Liftoff occurred at 11:52 p.m. EDT, and the first stage booster successfully landed on a droneship in the Pacific Ocean. This marked the 88th Falcon 9 launch of 2025 and increased the Starlink network to over 7,965 active satellites. The satellites are part of SpaceX's service providing broadband internet and direct-to-cell capabilities globally. [https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-3-b1082-vsfb-ocisly]
+
+- Amazon launches more Kuiper internet satellites with help from SpaceX: Amazon used SpaceX's Falcon 9 rocket to launch 24 Kuiper satellites on July 15, 2025, as part of its project to build a broadband internet constellation. This launch supports Amazon's goal to deploy over 3,000 satellites, with a Federal Communications Commission deadline to have 1,600 in orbit by July 2026. SpaceX's Starlink currently dominates the market with approximately 8,000 satellites. Amazon has secured multiple launch agreements, including with SpaceX, to meet its targets and compete in the growing satellite internet industry. [https://www.cnbc.com/2025/07/15/amazon-teams-up-with-rival-musks-spacex-to-launch-kuiper-satellites.html]
+Key Quotes: "Congrats to the amazing Amazon Project Kuiper team on another successful launch, and a big thanks to SpaceX for the ride to space." - Panos Panay
+
+- Is there a SpaceX launch today? Where, when to see Falcon 9 liftoff from Vandenberg: A SpaceX Falcon 9 rocket is targeted for launch from Vandenberg Space Force Base on July 18, 2025, for a Starlink mission deploying 24 satellites. Liftoff is scheduled for 8:51 p.m. PT, with potential viewing locations listed in California. The mission aims to expand the Starlink constellation for global internet coverage. Launches may be postponed due to factors like weather or technical problems, and the first-stage booster is expected to land on a drone ship in the Pacific Ocean. [https://www.yahoo.com/news/spacex-launch-today-where-see-130047932.html]
+
+- SpaceX successfully launches Falcon 9 rocket Vandenberg Space Force Base: SpaceX launched a Falcon 9 rocket from Vandenberg Space Force Base on July 22, 2025, carrying 26 Starlink satellites to low-Earth orbit. Liftoff occurred at 7:05 p.m., and the first-stage booster successfully landed on a drone ship in the Pacific. This was the 33rd launch from the base in 2025, contributing to SpaceX's efforts to enhance global internet access. The mission underscores the frequent use of reusable rocket technology in satellite deployments. [https://www.ksby.com/news/local-news/spacex-targeting-tuesday-night-for-latest-launch-from-vandenberg-space-force-base]
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: Tesla's Diner uses higher-quality ingredients than most fast food burger chains. • Fries are cooked in beef tallow • Breakfast items have organic eggs from pasture-raised chickens fed with all-vegetable grains • The Kombucha uses 100% raw, organic ingredients " - Tesla's Diner uses higher-quality ingredients than most fast food burger chains.
+• Fries are cooked in beef tallow
+• Breakfast items have organic eggs from pasture-raised chickens fed with all-vegetable grains
+• The Kombucha uses 100% raw, organic ingredients
+• The yogurt &… https://t.co/OR1TtALGHe
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947472978993692754]
+- [Updated RSS Feed] by Jim VandeHei (7/22/2025): "Jim VandeHei: Rise of Super Journalists" - Super Journalists will dominate media in the AI era, Axios CEO says. [https://www.axios.com/2025/07/22/jim-vandehei-rise-of-super-journalists]
+- [Updated RSS Feed] by Belle Lewis NonStop Local Reporter (7/22/2025): "Avista employs new technology to identify and prevent wildfires" - SPOKANE, Wash. – Avista is employing AI-powered cameras to aid in wildfire response. [https://www.khq.com/news/avista-employs-new-technology-to-identify-and-prevent-wildfires/article_74a29496-9c46-42b7-9ec4-934257120250.html]
+- [Updated RSS Feed] by Andrew Solender,Kate Santaliz (7/22/2025): "House grinds to a halt as GOP tries to shut down Epstein votes" - Republicans are concerned right-wingers will also revolt on the House floor to force an Epstein vote. [https://www.axios.com/2025/07/22/jeffrey-epstein-house-republicans-vote-democrats]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: One year later, the Tesla gummies have finally arrived." - One year later, the Tesla gummies have finally arrived. https://t.co/sNtIAZ6Ccs pic.twitter.com/OSRd1Wrw9P
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947464400983536114]
+- [Updated RSS Feed] by Reuters (7/22/2025): "Bolsonaro's son says Brazil's top court froze his assets" - Brazilian Supreme Court Justice Alexandre de Moraes ordered the freezing of the accounts and assets of former President Jair Bolsonaro's third son, Eduardo Bolsonaro, the latter said in a post on social media on Monday. [https://www.reuters.com/world/americas/bolsonaros-son-says-brazils-top-court-froze-his-assets-2025-07-21/]
+- [Updated RSS Feed] by Anjana Anil (7/22/2025): "Oil edges lower as trade war concerns increase worries about fuel demand" - Oil prices edged down on Tuesday as concerns the brewing trade war between major crude consumers the U.S. and the European Union will curb fuel demand growth by lowering economic activity weighed on investor sentiment. [https://www.reuters.com/business/energy/oil-edges-lower-trade-war-concerns-increase-worries-about-fuel-demand-2025-07-22/]
+- [Updated RSS Feed] by CBS News (7/22/2025): "How U.S. politics have changed since Biden dropped out of 2024 race" - <div><img src="https://assets3.cbsnewsstatic.com/hub/i/r/2025/07/22/0e952960-ff2c-468e-a778-957bfa7d8007/thumbnail/1200x630/50672a0c1b7c1ff4b27348fb7dabbac5/cbsn-fusion-how-us-politics-have-changed-since-biden-dropped-out-2024-race-thumbnail.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.cbsnews.com/video/how-us-politics-have-changed-since-biden-dropped-out-2024-race/?embed=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.cbsnews.com/video/how-us-politics-have-changed-since-biden-dropped-out-2024-race/]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: Tesla's Diner uses a bunch of @Starlink dishes from SpaceX." - Tesla's Diner uses a bunch of @Starlink dishes from SpaceX. pic.twitter.com/Po8snZUY8P
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947461856395759856]
+- [Updated RSS Feed] by David Lawder,Andrea Shalal (7/22/2025): "Bessent calls for deeper US bank regulatory reforms, scrapping dual capital requirements" - U.S. Treasury Secretary Scott Bessent on Monday called for deeper reforms of what he called an antiquated financial regulatory system and said regulators should consider scrapping a "flawed," Biden-era proposal for a dual capital requirement structure for banks. [https://www.reuters.com/sustainability/boards-policy-regulation/bessent-calls-deeper-us-bank-regulatory-reforms-scrapping-dual-capital-2025-07-22/]
+- [Updated RSS Feed] by bbc.com (7/22/2025): "Taylor Swift and Drake music giant files to list on US stock market" - It comes as two major US share indexes - S&P 500 and Nasdaq Composite - closed at new record highs on Monday. [https://www.bbc.com/news/articles/ce9xlmpz129o]
+- [Updated RSS Feed] by Angela Yang (7/22/2025): "Elon Musk devotees camp out for hours to get a glimpse of new Tesla diner" - The first ever Tesla Diner & Drive-In, which opened in Hollywood at 4:20 p.m., is filled with Tesla technology — including its humanoid robot, Optimus — and charging stations. [https://www.nbcnews.com/tech/tech-news/tesla-diner-los-angeles-opens-elon-musk-fans-cybertrucks-rcna220093]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: Tesla: "The diner is open 24 hours a day, seven days a week, with no exceptions."" - Tesla: "The diner is open 24 hours a day, seven days a week, with no exceptions." pic.twitter.com/qSA1mFxtra
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947456527121461516]
+- [Updated RSS Feed] by Prosper Junior Bakiny, The Motley Fool (7/22/2025): "This Trillion-Dollar Artificial Intelligence (AI) Stock Could Double Your Money in 5 Years" - Meta Platforms is going all-in on AI.  This strategy should provide the company with significant growth opportunities.  Meta Platforms' revenue, earnings, and stock price could double in the next five years. [https://www.fool.com/investing/2025/07/21/this-trillion-dollar-artificial-intelligence-ai-st/]
+- [Updated RSS Feed] by Reuters (7/22/2025): "SoftBank and OpenAI's Stargate aims building small data center by year-end, WSJ reports" - Stargate, a multi-billion-dollar effort by ChatGPT's creator OpenAI, SoftBank and Oracle to supercharge the U.S.' AI ambitions is now setting the more modest goal of building a small data center by the end of the year, likely in Ohio, the Wall Street Journal reported on Monday. [https://www.reuters.com/business/softbank-openais-stargate-aims-building-small-data-center-by-year-end-wsj-2025-07-22/]
+- [Updated RSS Feed] by @SawyerMerritt (7/22/2025): "@SawyerMerritt: Can’t wait to try this" - Can’t wait to try this https://t.co/QYT6AZ6htI
+— Sawyer Merritt (@SawyerMerritt) July 22, 2025 [https://x.com/SawyerMerritt/status/1947450051623850453]
+- [Updated RSS Feed] by Karen DeYoung,Cate Brown (7/22/2025): "The for-profit companies behind Israeli-U.S. nonprofit Gaza aid plan" - Now the primary vehicle for food distribution inside Gaza, the controversial U.S.- and Israeli-backed operation is an issue in ongoing ceasefire negotiations. [https://www.washingtonpost.com/world/2025/07/21/gaza-aid-ghf/]
+- [Updated RSS Feed] by Dan Lamothe (7/22/2025): "Trump intervenes to boost Hegseth aide who left military for politics" - A waiver granted by Trump allows Ricky Buria, a top adviser to Pete Hegseth, to bypass federal law and depart the Marine Corps at a rank he held only briefly. [https://www.washingtonpost.com/national-security/2025/07/21/hegseth-ricky-buria-waiver/]
+- [Updated RSS Feed] by @BLKMDL3 (7/21/2025): "@BLKMDL3: RT by @sawyermerritt: Full tour of the Tesla Diner Skypad featuring @Tesla_Optimus and Franz!" - Full tour of the Tesla Diner Skypad featuring @Tesla_Optimus and Franz! pic.twitter.com/CAXswCLhzU
+— Zack (@BLKMDL3) July 21, 2025 [https://x.com/BLKMDL3/status/1947445268838027672]
+- [Updated RSS Feed] by Andrew Solender (7/21/2025): ""I hate it": Redistricting arms race gives lawmakers heartburn" - "I really worry about a race to the bottom on something that I consider pretty despicable," one House Democrat told Axios. [https://www.axios.com/2025/07/21/redistricting-2026-midterms-democrats-gop-texas-caifornia]
+- [Updated RSS Feed] by Stef W. Kight (7/21/2025): "Thune stuck between Trump's demands, members' recess plans" - "We're thinking about it," Thune told Axios about Trump's call to cancel all — or part — of the August break. [https://www.axios.com/2025/07/21/john-thune-august-recess-cancel-trump-nominees]
+- [Updated RSS Feed] by @SawyerMerritt (7/21/2025): "@SawyerMerritt: All my Tesla diner content will slow down starting tomorrow I promise lol, but it’s opening day today!" - All my Tesla diner content will slow down starting tomorrow I promise lol, but it’s opening day today!
+— Sawyer Merritt (@SawyerMerritt) July 21, 2025 [https://x.com/SawyerMerritt/status/1947442434222219274]
+- [Updated RSS Feed] by @SawyerMerritt (7/21/2025): "@SawyerMerritt: Here’s the exclusive Tesla Diner merchandise: • All-black Tesla Bot action figure • Tesla Supercharged Gummies: Includes three sweet and sour flavors: Dog Mode Chill, Mango Bolt and CyberBerry. • Trucker hat " - Here’s the exclusive Tesla Diner merchandise:
+• All-black Tesla Bot action figure
+• Tesla Supercharged Gummies: Includes three sweet and sour flavors: Dog Mode Chill, Mango Bolt and CyberBerry.
+• Trucker hat
+• Retro diner tee pic.twitter.com/AIkz9nqB5L
+— Sawyer Merritt (@SawyerMerritt) July 21, 2025 [https://x.com/SawyerMerritt/status/1947442080349110493]
+- [Updated RSS Feed] by Kanishka Singh (7/21/2025): "Trump releases Martin Luther King assassination files" - The U.S. Justice Department on Monday released more than 240,000 pages of documents related to the assassination of Martin Luther King Jr., including records from the FBI, which had surveilled the civil rights leader as part of an effort to discredit the Nobel Peace Prize winner and his civil rights movement. [https://www.reuters.com/world/us/trump-releases-martin-luther-king-assassination-files-2025-07-21/]
+- [Updated RSS Feed] by @elonmusk (7/21/2025): "@elonmusk: Try it out. Aiming to be a fun experience for all, whether Tesla owners or not. Will keep improving." - Try it out. Aiming to be a fun experience for all, whether Tesla owners or not. 
+Will keep improving. https://t.co/9TqAfY3SnO
+— Elon Musk (@elonmusk) July 21, 2025 [https://x.com/elonmusk/status/1947440589311775220]
+- [Updated RSS Feed] by Amalya Dubrovsky (7/21/2025): "Stock market today: Dow, S&P 500, Nasdaq futures trade flat as Wall Street braces for Big Tech earnings" - US stock futures traded flat as investors prepared for earnings season to pick up steam, with Big Tech earnings ahead. [https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-trade-flat-as-wall-street-braces-for-big-tech-earnings-233511348.html]
+- [Updated RSS Feed] by Gabe Ross (7/21/2025): "‘Hold Your Horses Ahead of Earnings,’ Says Top Investor About Tesla Stock " - Tesla (NASDAQ:TSLA) stock has proven resilient, even as the company faces a sharp drop in sales and a deteriorating brand image – factors that would typically spell... [https://www.tipranks.com/news/hold-your-horses-ahead-of-earnings-says-top-investor-about-tesla-stock]
+- [Updated RSS Feed] by Reuters (7/21/2025): "Brazil judge summons Bolsonaro's lawyers for incompliance with court orders, local media reports" - Brazilian Supreme Court Justice Alexandre de Moraes summoned the lawyers of former President Jair Bolsonaro to clarify Bolsonaro's alleged non-compliance with court orders restricting his use of social media, news outlet G1 reported on Monday. [https://www.reuters.com/world/americas/brazil-judge-summons-bolsonaros-lawyers-incompliance-with-court-orders-local-2025-07-21/]
+- [Updated RSS Feed] by @woodhaus2 (7/21/2025): "@woodhaus2: RT by @sawyermerritt: We’re open! Come Eat, Charge, and Watch!" - We’re open! Come Eat, Charge, and Watch! pic.twitter.com/hcdXjvTO4U
+— Franz von Holzhausen (@woodhaus2) July 21, 2025 [https://x.com/woodhaus2/status/1947438355299635346]
+- [Updated RSS Feed] by Reuters (7/21/2025): "Israeli fire kills 12 people in Gaza tent encampment housing displaced families, medics say" - Israeli tank shelling killed at least 12 Palestinians and wounded dozens others in a tent encampment in western Gaza City north of the enclave, local health authorities said early on Tuesday. [https://www.reuters.com/world/middle-east/israeli-fire-kills-12-people-gaza-tent-encampment-housing-displaced-families-2025-07-21/]
+- [Updated RSS Feed] by PYMNTS (7/21/2025): "AI Benchmarks: How Companies Can Use Them to Assess Tech " - Every time an artificial intelligence (AI) model is introduced, the company that created it — whether Google, Anthropic, Meta, xAI or others — often [https://www.pymnts.com/news/artificial-intelligence/2025/ai-benchmarks-how-companies-can-use-them-to-assess-tech/]
+- [Updated RSS Feed] by @SawyerMerritt (7/21/2025): "@SawyerMerritt: NEWS: Tesla's Hollywood Diner and Supercharger is now officially open 24/7 to the public as of 4:20 PM PT today. • 80 Supercharger stalls • Two 45-foot screens. Audio from both screens syncs & plays from the speakers inside your Tesla. A Tesla diner app appears once you…" - NEWS: Tesla's Hollywood Diner and Supercharger is now officially open 24/7 to the public as of 4:20 PM PT today.
+• 80 Supercharger stalls
+• Two 45-foot screens. Audio from both screens syncs & plays from the speakers inside your Tesla. A Tesla diner app appears once you… pic.twitter.com/rtP7ikCDsA
+— Sawyer Merritt (@SawyerMerritt) July 21, 2025 [https://x.com/SawyerMerritt/status/1947437283012964753]
+- [Updated RSS Feed] by Kim Ngomo (7/21/2025): "‘It’s a huge eyesore’: Nearby business owners tired of hotel that’s been under construction since 2020" - A hotel in Shreveport that has been under construction for years is starting to become an eyesore, according to nearby business owners. [https://www.ksla.com/2025/07/21/its-huge-eyesore-nearby-business-owners-tired-hotel-thats-been-under-construction-since-2020/]
+- [Updated RSS Feed] by @BBCNews (7/21/2025): "Trucking's uneasy relationship with new tech" - Matching trucks with cargo has become digitised, adding efficiency, but driving down earnings. [https://www.bbc.co.uk/news/articles/c5yeyn4gl80o]
+- [Updated RSS Feed] by Reuters (7/21/2025): "Universal Music confidentially files for US listing" - Universal Music Group, the world's biggest music label, disclosed on Monday that it had confidentially filed for a U.S. listing. [https://www.reuters.com/business/universal-music-confidentially-files-us-listing-2025-07-21/]
+- [Updated RSS Feed] by business (7/21/2025): "JEEZY: Music is My Talent, Business is My Passion" - Jay "Jeezy" Jenkins, Grammy-Nominated Rapper, looks back and celebrates 20th anniversary of "Let's Get It: Thug Motivation 101." He speaks to Romaine Bostick on "The Close." (Source: Bloomberg) [https://www.bloomberg.com/news/videos/2025-07-21/jeezy-music-is-my-talent-business-is-my-passion-video]
+- [Updated RSS Feed] by Jo Borrás (7/21/2025): "California set to BAN Tesla sales, Vietnam leads the way, and VW value tanks" - The State of California is moving to ban the sale of Tesla cars over false advertising and Vietnam is set to ban gas motorcycles. [https://electrek.co/2025/07/21/california-set-to-ban-tesla-sales-vietnam-leads-the-way-and-vw-value-tanks/]
+- [Updated RSS Feed] by Jason Gewirtz (7/21/2025): "Tuesday’s big stock stories: What’s likely to move the market in the next trading session" - On Monday, the S&P 500 and the Nasdaq Composite hit fresh all-time highs and closed at records as big tech earnings loomed. What's on CNBC's radar Tuesday. [https://www.cnbc.com/2025/07/21/tuesdays-big-stock-stories-whats-likely-to-move-the-market.html]
+- [Updated RSS Feed] by Virginia Furness (7/21/2025): "British business slows climate action, sees government net zero agenda as unrealistic" - British business leaders are putting a brake on their plans to combat climate change and do not believe the government's approach to net zero is compatible with growth, a survey of 1,000 executives showed on Tuesday. [https://www.reuters.com/sustainability/boards-policy-regulation/british-business-slows-climate-action-sees-government-net-zero-agenda-2025-07-21/]
+- [Updated RSS Feed] by Brittany Crittenden (7/21/2025): "Newsom Vineyards: Family business in Plains grows beyond wine grapes" - Now one of the largest and oldest vineyards in Texas, Newsom Vineyards in Plains all started with one family taking a risk. [https://www.kcbd.com/2025/07/21/newsom-vineyards-family-business-plains-grows-beyond-wine-grapes/]
+- [Updated RSS Feed] by Daphne Psaledakis,Kanishka Singh (7/21/2025): "Washington says China will not let US government employee leave the country" - The U.S. State Department said on Monday that the Chinese government had blocked a U.S. Patent and Trademark Office employee visiting the Asian country in a personal capacity from leaving. [https://www.reuters.com/world/china/washington-says-china-will-not-let-us-government-employee-leave-country-2025-07-21/]
+- [Updated RSS Feed] by new to the street (7/21/2025): "New to The Street Episode #679 Airs Tonight on Fox Business Network" - Featuring Hapbee Technologies (HAPBF), Arrive AI (ARAI), FLOKI, BioVie Pharma (BIVI) & The Sustainable Green Team (SGTM) NEW YORK, NY / ACCESS Newswire / July 21, 2025 / New to The Street, the award‑winning financial news show, will airshow number 679 tonight at 10:30 PM PST on Fox Business Network as sponsored programming. The broadcast features […] [https://usatoday.xpr-gannett.com/press-release/story/11003/new-to-the-street-episode-679-airs-tonight-on-fox-business-network/]
+- [Updated RSS Feed] by Jason Lalljee (7/21/2025): "5 key quotes from Hunter Biden's first post-election interviews" - He said the reaction to his father's presidential debate performance last year was overblown. [https://www.axios.com/2025/07/21/hunter-biden-ambien-andrew-callaghan-jake-tapper]
+- [Updated RSS Feed] by Investor's Business Daily (7/21/2025): "Circle IPO Round-Trips Buy Signal As Analyst Cuts To Sell" - The hot stablecoin IPO has now round-tripped a recent aggressive entry. [https://www.investors.com/news/circle-stock-round-trips-buy-signal-analyst-cuts-stablecoin-ipo-sell/]
+- [Updated RSS Feed] by Nicole  Nielsen (7/21/2025): "Oak Cliff pet business left picking up the pieces after drunk driver crashes into storefront" - <div><img src="https://assets3.cbsnewsstatic.com/hub/i/r/2025/07/21/e8b7f13c-2470-43e7-b044-a01c12102854/thumbnail/1200x630/18f73d7513a835bc7e29d50910b696fb/snapshot-2025-07-21t162139-393.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.cbsnews.com/texas/video/community-rallies-after-devastating-damage-when-tuck-crashes-into-oak-cliff-pet-business/?embed=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.cbsnews.com/texas/news/oak-cliff-pet-business-drunk-driver-crashes-into-storefront/]
+- [Updated RSS Feed] by Kim Souza (7/21/2025): "The Supply Side: New profit centers fuel Walmart - Talk Business & Politics" - Walmart CEO Doug McMillon says he is a self-proclaimed “retail lifer and gadget geek.” He is also a risk-taker, much like founder Sam Walton, who at age 64 experimented with... [https://talkbusiness.net/?p=287337]
+- [Updated RSS Feed] by Jason Scott (7/21/2025): "Asian Stocks Look Sluggish After US Rally Wanes: Markets Wrap" - Asian stocks are poised for a muted open after US stocks gave up most of their gains on Monday, with traders looking for signs of resilience in corporate earnings amid tariff risks. [https://www.bloomberg.com/news/articles/2025-07-21/stock-market-today-dow-s-p-live-updates]
+- [Updated RSS Feed] by Reuters (7/21/2025): "Brazil's top court freezes accounts, assets of Bolsonaro's son, CNN Brasil reports" - Brazilian Supreme Court Justice Alexandre de Moraes ordered to freeze the accounts and assets of Eduardo Bolsonaro, son of former President Jair Bolsonaro, CNN Brasil reported on Monday, citing a confidential decision issued on Saturday. [https://www.reuters.com/world/americas/brazils-top-court-freezes-accounts-assets-bolsonaros-son-cnn-brasil-reports-2025-07-21/]
+- [Updated RSS Feed] by Reuters (7/21/2025): "Bessent says Fed needs exhaustive review of non-monetary policy operations" - U.S. Treasury Secretary Scott Bessent on Monday called on the Federal Reserve to conduct an exhaustive review of its non-monetary policy operations to ensure that "mission creep" does not jeopardize the independence of its core monetary policy mission. [https://www.reuters.com/business/bessent-says-fed-needs-exhaustive-review-non-monetary-policy-operations-2025-07-21/]
+- [Updated RSS Feed] by Prakhar Srivastava (7/21/2025): "Avalara confidentially files for US IPO, eyes return to public markets" - Tax software company Avalara, which went private in 2022, disclosed on Monday it had confidentially filed for a U.S. initial public offering, indicating plans to go public again amid growing investor optimism for IPOs. [https://www.reuters.com/business/avalara-confidentially-files-us-ipo-eyes-return-public-markets-2025-07-21/]
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Elon Musk: "Try it out. Aiming to be a fun experience for all, whether Tesla owners or not. 
+
+Will keep improving. https://t.co/9TqAfY3SnO" (3314422 views, 25027 likes) https://x.com/i/status/1947440589311775220
+- Fabrizio Romano: "🚨 Manchester United have been offered again the chance by intermediaries close to Sporting to bid for Viktor Gyökeres; same as last week.
+
+Clear answer once again from Viktor: he wants to join Arsenal, his only desire… he keeps fighting for that ❤️🤍
+
+🎥 https://t.co/ioH4KonqR9 https://t.co/07qkwaOHkg" (1310089 views, 18943 likes) https://x.com/i/status/1947449320472777033
+- Adam Schefter: "More about the Packer and RT Zach Tom reaching agreement on a four-year, $88 million contract, via @RobDemovsky:
+
+https://t.co/xJYngTltEd" (548265 views, 413 likes) https://x.com/i/status/1947442018478690675
+- Fabrizio Romano: "🚨🔵⚪️ Talks between Olympique Marseille and Juventus for Tim Weah are progressing well.
+
+Good relationship between the clubs likely to facilitate an agreement on loan with obligation to buy.
+
+Weah, only waiting for #OM. https://t.co/oeQrHbyteL" (434179 views, 4718 likes) https://x.com/i/status/1947450383149744340
+- Big Cat: "That Bennett Scheffler is actually Boss Baby and is secretly Scottie’s genius swing coach https://t.co/vpLzEk1RUx" (330870 views, 2519 likes) https://x.com/i/status/1947441453640060967
+- Fabrizio Romano: "🚨🔴🔵 Paris Saint-Germain have been tracking FC Porto striker Rodrigo Mora but no talks are taking place now.
+
+Despite reports from Portugal, PSG are not working on deal to sign the young talented striker this summer. https://t.co/2DFRToCbIm" (317149 views, 4319 likes) https://x.com/i/status/1947464469371871614
+- Barstool Sports: "Kirk Minihane is the last person on planet Earth you wanna cross @kirkmin https://t.co/wLgLJ5m8tA" (248451 views, 163 likes) https://x.com/i/status/1947451056402927719
+- Franz von Holzhausen: "We’re open! Come Eat, Charge, and Watch! https://t.co/hcdXjvTO4U" (228409 views, 6770 likes) https://x.com/i/status/1947438355299635346
+- Barstool Sports: "The Phillies just won a walkoff Catcher’s Interference. You probably haven’t seen this before https://t.co/RH1v0Q6MRE" (216428 views, 1357 likes) https://x.com/i/status/1947468557836816606
+- Dave Portnoy: "The Barstool Basketball documentary is premiering now...
+
+Tune in here: https://t.co/FbP18Sds65 https://t.co/0VL4sGZz5v" (208849 views, 218 likes) https://x.com/i/status/1947445737786073428
+- Ian Rapoport: "From The Insiders on @NFLNetwork: The #Bengals and NFL sack leader Trey Hendrickson are in negotiations and while there was optimism from owner Mike Brown today, they aren’t there yet. https://t.co/jcTZEnd5rI" (207236 views, 572 likes) https://x.com/i/status/1947439717953237418
+- Alexandria Ocasio-Cortez: "Ummm so let me get this straight: Republicans have ground Congress to a halt and are considering adjourning the entire House for 6 weeks to avoid releasing the info they have on Epstein?
+
+What is going on here? https://t.co/gITyCz6KVl" (199753 views, 4210 likes) https://x.com/i/status/1947470316936302609
+- Big Cat: "Once the momentum started he was screwed https://t.co/ss2PvBDtVC" (172221 views, 1115 likes) https://x.com/i/status/1947455343795019953
+- Dave Portnoy: "I don’t think I’ve ever seen a team lose on a catchers interference" (171215 views, 904 likes) https://x.com/i/status/1947467931715310061
+- Barstool Sports: "Watch the Barstool NYC vs Team @kirkminshow documentary LIVE
+
+https://t.co/CG8muZL7qi" (166701 views, 9 likes) https://x.com/i/status/1947451061587071283
+- PFT Commenter: "Kelce Plump https://t.co/IU5Ed3zSOe" (162784 views, 2066 likes) https://x.com/i/status/1947463143707550199
+- Barstool Sports: "Watch Now: https://t.co/CG8muZKzAK" (159704 views, 8 likes) https://x.com/i/status/1947447519014740194
+- Tesla: "Tesla Diner is retro-futuristic diner &amp; drive-in charging experience all wrapped into one
+
+80 V4 Supercharger stalls are open to all NACS-compatible EVs, making it the largest urban Supercharger in the world https://t.co/CKiNtpqm6Y" (152678 views, 2238 likes) https://x.com/i/status/1947449877304406360
+- Barstool Sports: "This dude got kicked off the team TWICE https://t.co/7FsC85Anq6 https://t.co/3nAV1g3mSH" (153282 views, 57 likes) https://x.com/i/status/1947456155061785021
+- SpaceX: "Targeting two Falcon 9 launches tomorrow → https://t.co/bJFjLCiTbK" (134752 views, 949 likes) https://x.com/i/status/1947450139611976133
+- SpaceX: "Up first, Falcon 9 will launch seven spacecraft to orbit during @NASA’s TRACERS mission from California" (127905 views, 665 likes) https://x.com/i/status/1947450219270177120
+- SpaceX: "@NASA Later that evening, teams are targeting a Falcon 9 of the @SES_Satellites O3b mPOWER mission to orbit from Florida. Weather is currently 20% favorable for liftoff" (124973 views, 715 likes) https://x.com/i/status/1947450298651578767
+- Barstool Sports: "Watch Now: https://t.co/4wFV3ArheJ" (120855 views, 8 likes) https://x.com/i/status/1947465591197208777
+- Barstool Sports: "Fan left it all out in the basket for that homer
+
+https://t.co/iJoQ2HWuTj" (115825 views, 434 likes) https://x.com/i/status/1947454262142988680
+- Tesla: "Step into a world of pure imagination ...
+
+📍 7001 Santa Monica Blvd, West Hollywood
+
+https://t.co/GNE4eVkaOu" (114128 views, 1537 likes) https://x.com/i/status/1947441003167944951
+- Barstool Sports: "Dumping Them Out: I Got Married via @JohnRichTV 
+
+https://t.co/gE2fhoQhUf https://t.co/CA1r3qAEY2" (102709 views, 29 likes) https://x.com/i/status/1947447791531209028
+- PFT Commenter: "Not true. Hank knows fist https://t.co/stknf4CK5r" (99392 views, 151 likes) https://x.com/i/status/1947463591386292480
+- Barstool Sports: "Might have been a mistake putting @StoolMintzy on net duty for @MeganMakinMoney, but can't teach that kind of chemistry. @StoolOutdoors
+
+Barstool Chicago Bass Classic presented by @HeyDudeShoes https://t.co/i0NFnHZrIM" (97969 views, 55 likes) https://x.com/i/status/1947465367120474216
+- Barstool Sports: "'This Year Is No Joke' - Bryson Is Talking About Bringing A 'Tsunami' Of A Ryder Cup Crowd Because He's Sick And Tired Of America Losing https://t.co/V6XvI9QwFY https://t.co/jQ2wcoh9Zb" (94220 views, 174 likes) https://x.com/i/status/1947442765144453296
+- Barstool Sports: "Team KMS vs Barstool NY is 1 week away.
+
+See the story that got us here
+
+‘The Berlin Ball’ presented by @DrinkBODYARMOR 
+
+ https://t.co/ga5uZYzikW" (93011 views, 31 likes) https://x.com/i/status/1947447516255207862
+- The New York Times: "Breaking News: A former Louisville police officer involved in the fatal raid of Breonna Taylor’s home was sentenced to nearly three years in prison. https://t.co/l7vAkABN4r" (91343 views, 146 likes) https://x.com/i/status/1947438973720158306
+- Barstool Sports: "The Best Catch You'll See All Year Already Happened, And It Was At The Flag Football Championships https://t.co/4e0K32aUGO https://t.co/dkMuyc8Cpp" (89532 views, 44 likes) https://x.com/i/status/1947450312819695653
+- Barstool Sports: "Nobody Has Ever Been More Wrong Than Phil Mickelson - Claimed Scottie Wouldn't Win A Tournament In 2025 https://t.co/ZwPkRh6nbB https://t.co/6iXuON7kEW" (83899 views, 112 likes) https://x.com/i/status/1947455409825956118
+- Barstool Sports: "Still Got It: Jennifer Lopez Had The Internet Freaking Out Over The Weekend When She Broke Out A Dance With A Bunch Of Sex Positions On Stage https://t.co/TV7UPpQ5fm https://t.co/xRN0FGpsa8" (83675 views, 38 likes) https://x.com/i/status/1947457872800919629
+- Barstool Sports: "'He's Got Good Bullshit' - Jordan Spieth Perfectly Summed Up Why Scottie Scheffler Is The Best Golfer We've Seen Since Tiger https://t.co/wPfikA0wmb https://t.co/gKGSIQLuHO" (81319 views, 56 likes) https://x.com/i/status/1947440265712619919
+- Big Cat: "Bass Fishing Time 
+
+https://t.co/2bdruQ3XBk https://t.co/l7WB1LW3cI" (78772 views, 50 likes) https://x.com/i/status/1947463539330879784
+- Tesla: "You'll be able to place your order in advance or upon arrival through your vehicle's touchscreen &amp; have your meal dropped off at your driver side window
+
+Or come inside to pick &amp; choose https://t.co/o1zwTy9HLk" (75849 views, 700 likes) https://x.com/i/status/1947449883096715702
+- Tesla: "Yes, @cybertruck designed these https://t.co/k18I5ifTul" (74446 views, 858 likes) https://x.com/i/status/1947453926275711446
+- Barstool Sports: "Further Proof the NFLPA is the Worst: ED Lloyd Howell Quits After Getting Busted Spending Thousands in Union Funds at a Strip Club https://t.co/TZegvZta7r https://t.co/9tE16dvD8p" (74732 views, 50 likes) https://x.com/i/status/1947462891390587249
+- Tesla: "@cybertruck And exclusive merchandise to make your friends jealous https://t.co/8thBMkq9Q6" (69935 views, 754 likes) https://x.com/i/status/1947454192463057131
+- Mario Nawfal: "🚨🇺🇸MLK FILES: CONGRESS DEMANDED CIA’S FILES ON MOB BOSS CARLOS MARCELLO
+
+House investigators ordered the CIA to hand over all records on Carlos Marcello - the powerful New Orleans mobster - as part of their joint probe into the assassinations of MLK and JFK.
+
+The request https://t.co/YUew3jzmjz https://t.co/7GKUw4ZTwn" (70384 views, 119 likes) https://x.com/i/status/1947449502001979445
+- Mario Nawfal: "🚨🇺🇸MLK FILES: CONGRESS WARNED CIA TO KEEP MLK DOCS UNDER WRAPS
+
+In a 1979 letter to CIA Director Stansfield Turner, the House Select Committee on Assassinations warned the Agency not to release any MLK or JFK-related records — even under FOIA — without explicit permission from https://t.co/zpblQbZeub https://t.co/l0Jhx3nbce" (67884 views, 140 likes) https://x.com/i/status/1947445656433660338
+- Mario Nawfal: "🚨🇺🇸 REP. MASSIE VOWS CONGRESS WILL ACT ON EPSTEIN FILES IF TRUMP WON'T RELEASE "PHASE 2"
+
+Rep. Thomas Massie pledged Congressional action on Epstein files while holding his discharge petition papers at the Capitol:
+
+"If the executive branch won't release phase 2 of the Epstein https://t.co/NufQR9eNQ8 https://t.co/yjozhMNn7z" (67604 views, 101 likes) https://x.com/i/status/1947460433666777130
+- Barstool Sports: "Come On Home: Odell Beckham Is Practically Begging The Giants To Notice Him, Bring Him Back On The Roster https://t.co/IEWkctUiy1 https://t.co/nyuiUMuV4J" (67569 views, 47 likes) https://x.com/i/status/1947465429804331329
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: HOUSE PANEL FINDS LIKELY CONSPIRACY IN MLK ASSASSINATION
+
+The U.S. House Select Committee on Assassinations concluded that “there is a likelihood that James Earl Ray assassinated Dr. Martin Luther King as a result of a conspiracy.”
+
+Ray fled immediately after https://t.co/Yp7luv1g0e https://t.co/IafyBSawM9" (66135 views, 47 likes) https://x.com/i/status/1947445318728966277
+- Mario Nawfal: "🚨🇺🇸 DR. KING &amp; CIA FILE DUMP REVEALS SECRETS BURIED DEEP IN HSCA VAULT
+
+The CIA stored over 324,000 pages of materials tied to the assassinations of both Dr. Martin Luther King Jr. and JFK. 
+
+Sequestered in 64 boxes and 72 reels of microfilm, these files include sensitive ops https://t.co/RUxAZ5uUuo https://t.co/96uIrJCFKx" (65511 views, 61 likes) https://x.com/i/status/1947449336012460129
+- Pardon My Take: "What was @Zaccornelius_ and @Philly_Mays favorite moment from chill week?
+
+@FruitOfTheLoom https://t.co/pOG7IXkZEb" (64400 views, 161 likes) https://x.com/i/status/1947442407563530423
+- Sawyer Merritt: "Tesla Diner food pics 😋
+
+🧵 https://t.co/qO6j4wQiWN" (59901 views, 1506 likes) https://x.com/i/status/1947446893392675221
+- Ian Rapoport: "From The Insiders on @NFLNetwork: #Titans QB Will Levis elects for shoulder surgery, putting the focus on 2026. https://t.co/zTzM8ARCFO" (57654 views, 105 likes) https://x.com/i/status/1947472995066261678
+- Pardon My Take: "Kyle Stowers went undrafted in Dingers only https://t.co/tlZxa2K3BD" (56217 views, 236 likes) https://x.com/i/status/1947446924426330346
+- Mario Nawfal: "🚨🇺🇸 REP. MASSIE EXPOSES FAKE EPSTEIN RESOLUTION: "IT'S NON-BINDING"
+
+Rep. Thomas Massie just called out the Rules Committee's Epstein bill as theater. 
+
+His response? Team up with Democrat Ro Khanna on legislation that would actually force disclosure.
+
+Massie (R-KY): 
+
+"Their https://t.co/mvS4zCLIWQ https://t.co/B8PCCiYFqy" (56001 views, 168 likes) https://x.com/i/status/1947464843004698641
+- Big Cat: "We’re on the board! Thank you @David_Imondi" (55166 views, 76 likes) https://x.com/i/status/1947469371535986731
+- Barstool Sports: "Stephen Colbert's Cancellation is Only the Beginning, and the Death of Late Night Talk Shows is Inevitable at This Point https://t.co/z2YW3ksCvv https://t.co/IXvN5WlzO6" (52953 views, 93 likes) https://x.com/i/status/1947470465263341818
+- World of Statistics: "Average age people leave parents' house to live alone:
+
+🇸🇪 Sweden: 17.8
+🇩🇰 Denmark: 21.1
+🇫🇮 Finland: 21.9
+🇳🇴 Norway: 22.1
+🇮🇸 Iceland: 22.3
+🇫🇷 France: 23.6
+🇩🇪 Germany: 23.7
+🇳🇱 Netherlands: 24.0
+🇧🇪 Belgium: 24.1
+🇬🇧 United Kingdom: 24.3
+🇨🇦 Canada: 24.6
+🇦🇹 Austria: 25.0
+🇮🇪 Ireland:" (52229 views, 336 likes) https://x.com/i/status/1947442969902256585
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: GEORGE BUSH PROMISED JFK/MLK ASSASSINATION FILES WOULDN’T BE DESTROYED
+
+In a November 1976 letter to the House Select Committee on Assassinations, then-CIA Director George H.W. Bush assured lawmakers that records tied to the deaths of President John F. Kennedy and https://t.co/sYngD9HHMj https://t.co/WbfqEvuvCQ" (51355 views, 47 likes) https://x.com/i/status/1947461271416152538
+- Barstool Sports: ".@TaylorMadeGolf Tour Putter Fitter James Holley helped @BarstoolTrent
+ dial in his alignment with the all new Spider ZT. @ForePlayPod https://t.co/XFALefsF11" (50806 views, 15 likes) https://x.com/i/status/1947469142585462816
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA-CONNECTED COMPANY BUILT EXPLOSIVE "ASTRO" DEVICES IN VIRGINIA
+
+The B.R. Fox Company, a little-known firm based in Alexandria, VA, secretly manufactured explosive-laced phones, flashlights, and cigarette packs—devices reportedly designed for U.S. government use https://t.co/IMUHOrp2Sb https://t.co/1MWKFthdC5" (50613 views, 45 likes) https://x.com/i/status/1947458095203876978
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CONGRESS WARNED CIA NOT TO RELEASE KING DOCS WITHOUT APPROVAL
+
+A 1979 letter from Rep. Louis Stokes, Chairman of the House Select Committee on Assassinations, urged the CIA to keep tight control over files tied to its investigation into Dr. King and JFK. 
+
+The https://t.co/x9y4Gu9kp7 https://t.co/AlC1ouInhu" (50462 views, 56 likes) https://x.com/i/status/1947449710429802842
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA MONITORED LAUNCH OF TRUTH LETTER LINKING MLK, JFK, RFK MURDERS
+
+A declassified CIA document captures the 1968 launch of Joachim Joesten’s “Truth Letter,” a biweekly newsletter devoted to challenging official narratives on the assassinations of President John https://t.co/LAOmQFTeOY https://t.co/IeGhowktsU" (49749 views, 63 likes) https://x.com/i/status/1947456212636996023
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA FLAGGED JOACHIM JOESTEN AS SECURITY RISK OVER JFK CLAIMS
+
+Joachim Joesten, the German-born journalist behind the Truth Letter, accused the CIA and FBI of conspiring to assassinate JFK and suppressing evidence in the MLK and RFK killings.
+
+Joesten was denied https://t.co/UVjUn8TpUK https://t.co/P9wJGYa6d1" (49637 views, 49 likes) https://x.com/i/status/1947456752112238890
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: SENATE ACKNOWLEDGES CITIZEN TIP ON JFK ASSASSINATION
+
+On October 12, 1976, the Senate Select Committee on Intelligence responded to Sergyj Czornonoh, who had written about President Kennedy’s assassination.
+
+The Senate confirmed his letter had been received and https://t.co/SLZlgSbzUT https://t.co/viweLH37Ih" (49407 views, 42 likes) https://x.com/i/status/1947442078570430657
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA MONITORED MALCOLM X CONFERENCE TIED TO JFK, MLK, RFK ASSASSINATIONS
+
+A newly released CIA memo reveals the agency tracked a 1973 conference held at Georgetown University on political assassinations, including those of JFK, MLK, RFK, and Malcolm X. 
+
+The memo https://t.co/Cz3juH5Vlt https://t.co/4DAAYCzA0E" (48479 views, 39 likes) https://x.com/i/status/1947453295808704656
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: TIPSTER CLAIMED MLK KILLERS FOUND REFUGE IN HONDURAS
+
+A 1968 U.S. State Department cable reported a tip that Martin Luther King's assassins may have found shelter at a farm in Honduras, owned by a man named Lewis Weir.
+
+The telegram, sent from the U.S. Embassy in https://t.co/blYjswtDBH https://t.co/AmBVasEDFK" (47658 views, 37 likes) https://x.com/i/status/1947463168449552679
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: CIA INTERNAL MEMOS REVEAL STRATEGY FOR HANDLING ASSASSINATION INVESTIGATORS
+
+Internal CIA documents show the agency was carefully planning how to handle Richard Sprague and the House Select Committee investigating JFK and MLK's assassinations in 1976.
+
+The memos https://t.co/RVsAk7VsBI https://t.co/JLSI9zxYjd" (47533 views, 37 likes) https://x.com/i/status/1947441774865088753
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA MONITORED ACTIVISTS PROBING DR. KING, JFK &amp; RFK DEATHS
+
+A 1969 CIA memo reveals that a group of private citizens—led by former Senate counsel Bernard Fensterwald—launched a committee to investigate political assassinations. 
+
+Their focus included President https://t.co/WRqm208NSj https://t.co/LbxK8KLeih" (47162 views, 35 likes) https://x.com/i/status/1947453932680225250
+- Mario Nawfal: "🚨🇺🇸MLK FILES: CIA MONITORED ASSASSINATION CONFERENCE AT GEORGETOWN
+
+A 1973 CIA memo shows the Agency was keeping tabs on a conference organized by the Committee to Investigate Assassinations at Georgetown University, marking 10 years since JFK’s death.
+
+CIA’s legal office https://t.co/d2wgRkjbru https://t.co/erqhRsNAaC" (47108 views, 28 likes) https://x.com/i/status/1947455981203447868
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA REFUSES TO RELEASE “CARSWELL FILE” LINKED TO MLK &amp; JFK CASES
+
+Alan Weberman accused the CIA of hiding files on Daniel L. Carswell, a man he claimed was involved in both JFK and MLK assassinations.
+
+He alleged Carswell was “identified as CIA agent” after being https://t.co/1EBhy4Etox https://t.co/N8Q0MRhyXI" (46459 views, 52 likes) https://x.com/i/status/1947440552397705408
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA WARNED JFK PANEL WOULD BE “A LOSER”… AND BLAMED BLACK CAUCUS FOR INVESTIGATING KING
+
+A 1976 CIA memo shows top staff bracing for a new House probe into JFK and MLK’s assassinations - and quietly hoping it would fizzle.
+
+They were spooked by Rep. Downing’s https://t.co/9FtbjEyE3q https://t.co/91SAsruoEV" (46222 views, 48 likes) https://x.com/i/status/1947443226920485101
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: FOREIGN AUTHOR LAUNCHED NEWSLETTER LINKING KING, JFK, RFK DEATHS
+
+This newly surfaced 1969 flyer promotes Truth Letter, a biweekly newsletter by author Joachim Joesten, focused on assassinations of Dr. King, President Kennedy, and Senator Robert Kennedy. 
+
+Joesten https://t.co/witt5XNDJ7 https://t.co/dXnOof76nM" (45836 views, 36 likes) https://x.com/i/status/1947455208209957037
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: CIA CAUGHT IN JFK AUTOPSY FILE BREACH, THEN DENIES INVOLVEMENT
+
+In 1978, a CIA employee named Regis Blahut was caught tampering with highly classified JFK autopsy files, including photos and X-rays, stored by the House Select Committee on Assassinations. 
+
+His https://t.co/lsPItdSOn0 https://t.co/uw8iN6pFRE" (45453 views, 72 likes) https://x.com/i/status/1947452480419467763
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: NEW CITIZEN COMMITTEE FORMED TO INVESTIGATE KING AND KENNEDY MURDERS
+
+In January 1969, a UPI report flagged a new committee led by former Senate counsel Bernard Fensterwald. 
+
+The group's mission: force the government to investigate the assassinations of President https://t.co/glfUIVjYmQ https://t.co/HKTMKeW0Wx" (45186 views, 45 likes) https://x.com/i/status/1947440257974018114
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA TRACKED PANEL CLAIMING CONSPIRACY IN MLK, RFK, JFK DEATHS
+
+A 1969 CIA memo confirms the agency monitored Bernard Fensterwald’s national committee, which sought to reopen investigations into the killings of Dr. Martin Luther King Jr., Senator Robert Kennedy, https://t.co/lLH5qWuJZY https://t.co/E09VMtavAk" (45178 views, 32 likes) https://x.com/i/status/1947455652567146797
+- Mario Nawfal: "🚨🇺🇸 MLK KING FILES: CIA SHUT THE DOOR ON HSCA-LEVEL ACCESS TO JFK &amp; MLK DOCS
+
+A 1998 memo from CIA historian Russell Holmes confirms that post-HSCA researchers—like author Allen—were blocked from accessing anything close to what the House Select Committee on Assassinations saw. https://t.co/h7fRgtNXYG https://t.co/93CeiQljdv" (44940 views, 30 likes) https://x.com/i/status/1947453051926933846
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA FLAGGED PASSPORT TRAIL TIED TO RAY’S ESCAPE AFTER DR. KING’S MURDER
+
+A 1968 cable confirms the CIA traced a Canadian-issued passport used by James Earl Ray—under the alias Eric S. Galt—days after Dr. King’s assassination. 
+
+The agency verified that a Toronto https://t.co/T9cPHrHe5H https://t.co/MrUlBVIFcm" (44481 views, 32 likes) https://x.com/i/status/1947452792265736270
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA PLANNED "LIMITED HANGOUT" STRATEGY BEFORE ASSASSINATION HEARINGS
+
+Langley got nervous. Just months before the House opened hearings on Dr. King's case, CIA brass gathered to script a public relations plan. 
+
+The solution: a “limited hangout.”
+
+That means admit https://t.co/mO30WOi6i0 https://t.co/VyaICwIHHL" (44457 views, 43 likes) https://x.com/i/status/1947438997032075288
+- Mario Nawfal: "🚨🇺🇸MLK FILES: CIA ASKED TO HAND OVER FILES ON COBY SMITH
+
+The House Select Committee on Assassinations formally requested “any and all information” in CIA custody concerning Coby V. Smith - a known Memphis activist and associate of Dr. King - during its probe into MLK’s killing. https://t.co/HGjzrJpoVm https://t.co/Qn91u1pm6C" (44355 views, 33 likes) https://x.com/i/status/1947448782439747645
+- Mario Nawfal: "🚨🇺🇸MLK FILES: CIA’S LAWYER PROMISED TO “TINKER WITH” RECORDS LETTER FOR SPRAGUE
+
+In a November 1976 memo, CIA Legislative Counsel George Cary described a friendly backroom deal with House Assassinations Committee counsel Richard Sprague to “tinker with” a letter about preserving https://t.co/JNX570M3ar https://t.co/VglJAyI9MI" (44280 views, 34 likes) https://x.com/i/status/1947439781883089163
+- Mario Nawfal: "🚨🇺🇸MLK FILES: HOUSE MLK INVESTIGATION HALTED OVER A SINGLE CONGRESSMAN’S OBJECTION
+
+A newly released CIA memo reveals one lawmaker’s protest single-handedly derailed a $6.5 million proposal to keep the House Select Committee on Assassinations running.
+
+The committee had been https://t.co/qlBXBuDZpe https://t.co/byct6O5bJQ" (44263 views, 42 likes) https://x.com/i/status/1947440024250646750
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: HOUSE CHIEF COUNSEL REQUESTS FULL CIA FILE ON MLK, POSSIBLY TO BOLSTER BUDGET
+
+On Nov 10, 1976, House Counsel Richard Sprague asked the CIA to review and compile all documents on Martin Luther King Jr., likely to gain support from the Black Caucus for his https://t.co/SeBfNAOpK2 https://t.co/rv64fBxES3" (44201 views, 27 likes) https://x.com/i/status/1947448385998667896
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA SUGGESTED SHAPING HOUSE PROBE WITH “LIAISON” ON DR. KING MATERIAL
+
+A 1976 CIA internal draft proposed deploying a liaison to manage contact with the House Select Committee on Assassinations. 
+
+The goal: control how sensitive files about Dr. King, JFK, and https://t.co/Rmh3fmzYbO https://t.co/ycsdDdjWEN" (43987 views, 28 likes) https://x.com/i/status/1947447939334369286
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA MEMO SAYS NO PASSPORT DATA FOUND ON DR. KING SUSPECT
+
+A classified CIA memo from May 1968 confirms the agency found no matching passport records for the alias Eric Starvo Galt, later confirmed as James Earl Ray. 
+
+The search included internal CIA databases as https://t.co/3qojsXEv2D https://t.co/pMeqixNRh1" (42386 views, 31 likes) https://x.com/i/status/1947444053324210318
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: MAN IN AIRPORT MISTAKEN FOR KING'S ASSASSIN
+
+A classified cable from April 1968 reveals that Claude Chester McLaren Jr., a U.S. citizen born in Texas, was mistakenly identified as James Earl Ray, Dr. Martin Luther King Jr.’s accused assassin, after arriving from https://t.co/50Z58FcEvV https://t.co/dD0PCcNEnr" (41566 views, 24 likes) https://x.com/i/status/1947465877399470179
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA OFFERED FULL FILES ON DR. KING TO CONGRESS
+
+A 1976 CIA memo proposed giving Congress a full inventory of its files on Dr. King, JFK, and others, anticipating future scrutiny from the House Select Committee on Assassinations. 
+
+The agency emphasized cooperation https://t.co/DcOqAB3sBZ https://t.co/CkPGOggskg" (41201 views, 35 likes) https://x.com/i/status/1947445098041450866
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CONGRESS WANTED CIA ON RECORD… BUT NOT ABOUT THE PAST
+
+In 1978, the House committee probing MLK’s assassination invited CIA Director Stansfield Turner to testify  - not to explain the past, but to help write the future.
+
+They told Turner that by December, the https://t.co/WfNvs7aGhj https://t.co/XwAJNn8asN" (41133 views, 35 likes) https://x.com/i/status/1947444660374266157
+- Sawyer Merritt: "Here’s the exclusive Tesla Diner merchandise:
+
+• All-black Tesla Bot action figure
+• Tesla Supercharged Gummies: Includes three sweet and sour flavors: Dog Mode Chill, Mango Bolt and CyberBerry.
+• Trucker hat
+• Retro diner tee https://t.co/AIkz9nqB5L" (35804 views, 478 likes) https://x.com/i/status/1947442080349110493
+- Mario Nawfal: "🚨🇺🇸 TRUMP: OBAMA MANUFACTURED THE RUSSIA HOAX—THE CRIME OF THE CENTURY
+
+"Obama himself manufactured the Russia, Russia, Russia HOAX. Crooked Hillary, Sleepy Joe, and others participated. 
+
+THE CRIME OF THE CENTURY! 
+
+Irrefutable EVIDENCE. 
+
+Major threat to our Country!"
+
+Source: https://t.co/6dbdl33H7Q https://t.co/gRPVFxfn7j" (35641 views, 203 likes) https://x.com/i/status/1947452093759115641
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: INTELLIGENCE MEMOS LINK MLK, JFK, AND NIXON ASSASSINATION PLOTS
+
+A 1975 memo from Gerald P. Hemming Jr. to the FBI lists a series of explosive intelligence reports, including one tying a Los Angeles suspect to the assassination of Dr. Martin Luther King Jr.
+
+The https://t.co/h9oF5Ohm7c https://t.co/ScI1kduqdS" (34716 views, 50 likes) https://x.com/i/status/1947466849316442388
+- Rocket Lab: "There’s more than just rockets in this Lab — we also design and manufacture our own high-performance components for space systems and satellites, from star trackers to separation systems. End-to-end. 
+
+https://t.co/PLPWwuymxj" (33678 views, 607 likes) https://x.com/i/status/1947441662491562055
+- Sawyer Merritt: "Tesla has introduced a Tesla Diner website, along with pics of all the food: https://t.co/p5Tg45PoDK" (33424 views, 755 likes) https://x.com/i/status/1947443194951508401
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: CIA TESTIMONY WARNS ASSASSINATION DISCLOSURES COULD ENDANGER NATIONAL SECURITY
+
+In declassified 1970s testimony, CIA officials told Congress they’d support investigations into the JFK and MLK murders, but warned that revealing too much could compromise https://t.co/WeSqQPfJlR https://t.co/HOmwslsT99" (33629 views, 32 likes) https://x.com/i/status/1947469522459295879
+- Sawyer Merritt: "Tesla: "The diner is open 24 hours a day, seven days a week, with no exceptions." https://t.co/qSA1mFxtra" (31510 views, 608 likes) https://x.com/i/status/1947456527121461516
+- Barstool Sports: "WATCH: A Delta Pilot Casually Explains in Mid-Air That He Just Narrowly Avoided a Collision With a B-52 Bomber https://t.co/6rlKY5HeCS https://t.co/LcmsTWS1jp" (31900 views, 26 likes) https://x.com/i/status/1947472986522452026
+- Sawyer Merritt: "Can’t wait to try this https://t.co/QYT6AZ6htI" (30649 views, 386 likes) https://x.com/i/status/1947450051623850453
+- Mario Nawfal: "🚨🇺🇸 MLK FILES: CIA DENIED MONITORING OSS VET TURNED JFK RESEARCHER HAROLD WEISBERG
+
+Declassified CIA records reveal that Harold Weisberg, a former OSS intelligence officer and one of the earliest independent JFK assassination investigators, was flagged internally for his https://t.co/IvXUjiB5MQ https://t.co/SW6MA4N5rA" (30585 views, 27 likes) https://x.com/i/status/1947469143239737475
+- Big Cat: "Every Royal" (30173 views, 106 likes) https://x.com/i/status/1947473656461836728
+- Sawyer Merritt: "One year later, the Tesla gummies have finally arrived. https://t.co/OSRd1Wrw9P https://t.co/sNtIAZ6Ccs" (29710 views, 326 likes) https://x.com/i/status/1947464400983536114
+- World of Statistics: "Obesity rate
+
+🇺🇸 USA: 42.74%
+🇦🇺 Australia: 31.02%
+🇬🇧 UK: 27.63%
+🇨🇦 Canada: 26.73%
+
+Worldobesity, BMI &gt; 30kg/m², adults" (28155 views, 129 likes) https://x.com/i/status/1947458068880756751
+- Mario Nawfal: "🚨🇺🇸  MLK FILES: CIA CLAIMS JFK/MLK PHOTO RELEASED BY CONGRESS SHOWS KNOWN KGB SPY
+
+After the House Select Committee on Assassinations aired a series of photos in 1978 tied to the JFK and MLK investigations, a CIA official identified one man in the footage as Nikolay Leonov, a https://t.co/DqM7YMClZG https://t.co/EN3w9MAeF6" (26963 views, 42 likes) https://x.com/i/status/1947470351618789401
+- Sawyer Merritt: "All my Tesla diner content will slow down starting tomorrow I promise lol, but it’s opening day today!" (26390 views, 477 likes) https://x.com/i/status/1947442434222219274

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"Scottie Scheffler wins the 2025 Open Championship.\",\n      \"citations\": [\n        \"https://www.bbc.com/news\",\n        \"https://www.reuters.com/world/\",\n        \"https://www.si.com/\"\n      ]\n    },\n    {\n      \"headline\": \"President Donald Trump urges Washington Commanders and Cleveland Guardians to revert to former team names.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/\",\n        \"https://www.foxnews.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Barcelona secures Marcus Rashford on loan from Manchester United.\",\n      \"citations\": [\n        \"https://www.bbc.com/news\",\n        \"https://www.si.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Tennessee Titans quarterback Will Levis undergoes season-ending shoulder surgery.\",\n      \"citations\": [\n        \"https://www.foxnews.com/sports\",\n        \"https://www.si.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://www.foxnews.com/",
+    "https://www.si.com/",
+    "https://reuters.com/sports",
+    "https://foxnews.com/sports",
+    "https://www.foxnews.com/tech/elmo-hack-exposes-serious-social-media-cybersecurity-threats",
+    "https://x.com/News_v2_App/status/1947329647240163779",
+    "https://x.com/News_v2_App/status/1947401403225223596",
+    "https://x.com/News_v2_App/status/1947257964533875109",
+    "https://x.com/vuktx/status/1947334609282195466",
+    "https://x.com/LinkMediaCom/status/1947234599400067075"
+  ]
+}

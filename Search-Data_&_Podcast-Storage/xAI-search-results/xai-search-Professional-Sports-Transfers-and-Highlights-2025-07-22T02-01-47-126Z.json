@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool signed Ekitike in a transfer deal.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer\"\n      ]\n    },\n    {\n      \"headline\": \"Barcelona signed Rashford on a free transfer.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/teams/arsenal\",\n        \"https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\"\n      ]\n    },\n    {\n      \"headline\": \"Sancho transferred to Juventus.\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer\",\n        \"https://www.si.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Tottenham offered a club-record fee for Zabarnyi.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.foxnews.com/sports\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football",
+    "https://www.nytimes.com/athletic/",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/",
+    "https://foxnews.com/",
+    "https://www.si.com/",
+    "https://www.espn.com/soccer/story/_/id/45342881/summer-transfer-window-grading-big-signings-mens-soccer",
+    "https://www.foxnews.com/sports",
+    "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://x.com/DuncanCastles/status/1947286345547714576",
+    "https://x.com/Bet9jaOfficial/status/1947298281555444060",
+    "https://x.com/ItalianSerieA/status/1947440135068651623",
+    "https://x.com/Matt_Santangelo/status/1947275935981490598",
+    "https://x.com/ItalianSerieA/status/1947435683565736234"
+  ]
+}

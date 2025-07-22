@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Businesses in Austin donate to Central Texas flood relief efforts\",\n      \"citations\": [\n        \"https://www.kut.org/austin/2025-07-10/austin-tx-flood-donate-how-to-help-restaurants\",\n        \"https://www.kvue.com/video/news/local/p-terrys-flood-relief-donations-100-percent-of-profits-austin-area/269-02363dac-051f-4a6c-8d83-64bf871eec2e\"\n      ]\n    },\n    {\n      \"headline\": \"Several visitors banned from Austin Municipal Pool following reports of fights\",\n      \"citations\": [\n        \"https://t.co/PTVg2jPqlt\"\n      ]\n    },\n    {\n      \"headline\": \"Eight people injured in multi-vehicle crash on Interstate 35 in North Austin\",\n      \"citations\": [\n        \"https://www.kvue.com/article/traffic/interstate-35-north-austin-texas-multi-vehicle-crash/269-b2324b82-5e99-48f8-ba4b-5e84d4f76d22\"\n      ]\n    },\n    {\n      \"headline\": \"Austin implements new air conditioning standards requiring units to maintain specific temperatures\",\n      \"citations\": [\n        \"https://www.kvue.com/article/news/local/austin-air-conditioning-requirements-starting-july-10-property-managers-city-council-windows/269-0a630ddf-6843-4494-925c-6b1b5a227c15\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/watch-live-news",
+    "https://www.bbc.com/sport",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/news",
+    "https://www.kut.org/austin/2025-07-10/austin-tx-flood-donate-how-to-help-restaurants",
+    "https://www.kvue.com/video/news/local/p-terrys-flood-relief-donations-100-percent-of-profits-austin-area/269-02363dac-051f-4a6c-8d83-64bf871eec2e",
+    "https://www.kvue.com/article/news/local/austin-air-conditioning-requirements-starting-july-10-property-managers-city-council-windows/269-0a630ddf-6843-4494-925c-6b1b5a227c15",
+    "https://www.kvue.com/article/traffic/interstate-35-north-austin-texas-multi-vehicle-crash/269-b2324b82-5e99-48f8-ba4b-5e84d4f76d22",
+    "https://www.chron.com/politics/article/texas-flood-fire-chief-charlie-kirk-20763485.php",
+    "https://x.com/ChiraqHomicide/status/1947300004646846752",
+    "https://x.com/ABC6NEWS/status/1947376042420629699",
+    "https://x.com/houstoncitybeat/status/1947316366819594723",
+    "https://x.com/WrightorWrongAL/status/1947277980255850627",
+    "https://x.com/austinmobility/status/1947439020822118425"
+  ]
+}

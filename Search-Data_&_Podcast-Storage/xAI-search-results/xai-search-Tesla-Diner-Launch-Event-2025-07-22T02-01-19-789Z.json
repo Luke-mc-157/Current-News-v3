@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla Diner in Hollywood opens with 80 supercharger stalls available to all NACS-compatible electric vehicles.\",\n      \"citations\": [\n        \"https://t.co/CKiNtpqm6Y\",\n        \"https://latimes.com/business/story/2025-07-21/tesla-diner-hollywood\",\n        \"https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday\",\n        \"https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla Diner launch includes in-car ordering and meal delivery to vehicle windows.\",\n      \"citations\": [\n        \"https://t.co/o1zwTy9HLk\",\n        \"https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms\",\n        \"https://latimes.com/business/story/2025-07-21/tesla-diner-hollywood\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla Diner in Hollywood features drive-in movie screens and entertainment options.\",\n      \"citations\": [\n        \"https://t.co/ATd6t98esh\",\n        \"https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday\",\n        \"https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk announces plans for additional Tesla Diners in major cities following Hollywood launch.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms\",\n        \"https://t.co/GNE4eVkaOu\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on high-engagement posts and news articles from the last 24 hours; data is sufficient for four stories, but verification is recommended as sources may evolve.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/business/tesla-trial-autopilot.html",
+    "https://latimes.com/business/story/2025-07-21/tesla-diner-hollywood",
+    "https://www.foxnews.com/",
+    "https://www.reuters.com/",
+    "https://timesofindia.indiatimes.com/technology/tech-news/tesla-diner-opens-in-la-elon-musk-says-more-planned-in-major-cities-around-the-world/articleshow/122817523.cms",
+    "https://ktla.com/news/local-news/elon-musks-tesla-diner-drive-in-expected-to-open-monday",
+    "https://x.com/Tesla/status/1947449877304406360",
+    "https://x.com/Tesla/status/1947436765515813174",
+    "https://x.com/Tesla/status/1947449883096715702",
+    "https://x.com/Tesla/status/1947453565389443331",
+    "https://x.com/Tesla/status/1947441003167944951"
+  ]
+}

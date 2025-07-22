@@ -1,0 +1,19 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Liverpool agrees fee with Eintracht Frankfurt for striker Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/cp90g0kkk3zo\",\n        \"https://www.bbc.com/sport/football/live/c8xvnwgevqqt\"\n      ]\n    },\n    {\n      \"headline\": \"Diogo Jota suffers injury, leading to changes in Liverpool's transfer plans\",\n      \"citations\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool's latest pre-season friendly occurs without several key players\",\n      \"citations\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool considers additional strikers amid transfer market activity\",\n      \"citations\": [\n        \"https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/sport/football/articles/cp90g0kkk3zo",
+    "https://www.bbc.com/sport/football/live/c8xvnwgevqqt",
+    "https://www.bbc.com/news/uk",
+    "https://www.bbc.com/news/world",
+    "https://www.foxnews.com/",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.thisisanfield.com/liverpool-fc-news/liverpool-fc-transfer-rumours/",
+    "https://www.caughtoffside.com/tags/premier-league/liverpool/",
+    "https://www.espn.com/soccer/story/_/id/45780892/transfer-rumors-news-man-united-arsenal-sporting-cp-viktor-gyokeres",
+    "https://x.com/RhydaAntetokoun/status/1947377294516932899",
+    "https://x.com/ShotCaller1984/status/1947365973536788947",
+    "https://x.com/BenEdward39/status/1947257902848155773",
+    "https://x.com/thisisanfield/status/1947320561673334792"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. Administration Releases Additional Martin Luther King Jr. Assassination Documents\",\n      \"citations\": [\n        \"https://www.nytimes.com/live/2025/07/20/us/trump-news\",\n        \"https://www.nytimes.com/live/2025/07/21/us/trump-news\"\n      ]\n    },\n    {\n      \"headline\": \"Lawmakers from Both Parties Urge Release of Jeffrey Epstein-Related Government Files\",\n      \"citations\": [\n        \"https://www.nytimes.com/live/2025/07/20/us/trump-news\",\n        \"https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/\"\n      ]\n    },\n    {\n      \"headline\": \"Epstein Accuser Informs FBI of Alleged Ties to Donald Trump\",\n      \"citations\": [\n        \"https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/\",\n        \"https://www.the-independent.com/news/world/americas/us-politics/jeffrey-epstein-accuser-trump-meeting-b2792548.html\"\n      ]\n    },\n    {\n      \"headline\": \"Former House Speaker Nancy Pelosi Does Not Address Biden Administration's Approach to Epstein Files\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics/watch-nancy-pelosi-silent-why-biden-did-not-release-epstein-files\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts on X and correlating news articles from the last 24 hours; no additional distinct stories identified beyond these four.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/live/2025/07/20/us/trump-news",
+    "https://www.nytimes.com/article/jeffrey-epstein-files-trump.html",
+    "https://www.nytimes.com/2025/07/21/us/politics/trump-epstein-maga-base.html",
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/live/2025/07/21/us/trump-news",
+    "https://www.nytimes.com/live/2025/07/20/us/trump-news",
+    "https://www.rollingstone.com/politics/politics-news/maria-farmer-epstein-trump-1235389698/",
+    "https://www.the-independent.com/news/world/americas/us-politics/jeffrey-epstein-accuser-trump-meeting-b2792548.html",
+    "https://www.nytimes.com/2025/07/20/us/politics/epstein-employee-trump-investigation.html",
+    "https://www.foxnews.com/politics/watch-nancy-pelosi-silent-why-biden-did-not-release-epstein-files",
+    "https://x.com/xray_media/status/1947401525237846368",
+    "https://x.com/xray_media/status/1947442337019580635",
+    "https://x.com/Grippan65Momi/status/1947440631179317338",
+    "https://x.com/merlin2709/status/1947414040520888592",
+    "https://x.com/1drcole/status/1947445125530915152"
+  ]
+}

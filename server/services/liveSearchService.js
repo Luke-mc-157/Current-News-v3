@@ -388,7 +388,7 @@ async function extractArticleData(url) {
   try {
     const response = await axios.get(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NewsBot/1.0)' },
-      timeout: 8000
+      timeout: 80000
     });
     
     const $ = (await import('cheerio')).load(response.data);
@@ -912,14 +912,17 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
 
         NEWSLETTER GENERATION INSTRUCTIONS:
         1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts, news articles, and RSS articles. 
-        2. For EVERY topic in the provided data, create 2-6 headlines. The number of headlines must be determined based on the volume and richness of available sources. Systematically associate X post, article, and RSS article metadata with provided headlines, separated by topic. Enrich existing headlines with supporting X post, news article, and RSS article data if necessary and create new headlines if necessary. Ensure ALL headlines are justified by the data — only generate a headline if it's supported by at least 2 specific sources (X posts, articles, or RSS articles).
-        2. CRITICAL: Use X POSTS FROM SEARCH, X POSTS FROM USER'S TIMELINE POSTS, and RSS ARTICLES as sources in your headlines
-        3. Include X posts, articles, and RSS articles - prioritize high engagement X posts and relevant RSS content
-        4. Each headline MUST have sourcePosts array with X post data
-        5. Preserve exact URLs and metadata from the provided data
-        6. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.
-        7. Rank headlines by highest engagement (views + likes from X posts supporting a given headline.)
-        8. CRITICAL: At a minimum, ensure that ALL headlines in the raw data are included in the final output. You may edit headlines and add headlines, but the total number of headlines in the final result must, at a minimum, match the amount given in the compiled raw data. 
+        2. For EVERY topic in the provided data, create 2-6 headlines by starting with exact or lightly edited versions of headlines from the LIVE SEARCH SUMMARY 'stories' array. Enrich or create additional headlines ONLY if supported by at least 2 sources (e.g., X posts + articles). Ensure headlines are declarative, factual statements directly paraphrased from source text. Do not add headlines beyond the data's richness to avoid fabrication.
+        3. CRITICAL: Use X POSTS FROM SEARCH, X POSTS FROM USER'S TIMELINE POSTS, and RSS ARTICLES as sources in your headlines.
+        4. Include X posts, articles, and RSS articles - prioritize high engagement X posts and relevant RSS content
+        5. Each headline MUST have sourcePosts array with X post data
+        6. Preserve exact URLs and metadata from the provided data
+        7. Only write content that is free of opinions. You may only use opinionated verbiage if it is directly quoted from a source.
+        8. Rank headlines by highest engagement: Calculate total engagement as the sum of (views + likes) across all sourcePosts for that headline. If a headline draws from USER'S TIMELINE POSTS or RSS ARTICLES, include their view_count or equivalent metrics in the sum. Sort the entire JSON array by descending total engagement.
+        9. CRITICAL: At a minimum, ensure that ALL headlines in the raw data are included in the final output. You may edit headlines and add headlines, but the total number of headlines in the final result must, at a minimum, match the amount given in the compiled raw data. 
+        10. For summaries, use only factual details or direct quotes from sources. If a source contains opinionated language, attribute it as a quote (e.g., 'Source X stated: "quote"').
+
+        Before generating JSON, internally reason step-by-step: 1. List all topics. 2. For each, extract raw headlines. 3. Assign sources. 4. Calculate engagement. 5. Rank and output.
 
         Compiled raw data:
         
