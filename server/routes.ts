@@ -569,12 +569,16 @@ export function registerRoutes(app) {
       // Get headlines for email content
       const headlines = headlinesStore.filter(h => episode.headlineIds.includes(h.id));
       
-      const audioPath = path.join(__dirname, '..', episode.audioUrl);
+      // Convert web path to absolute file path - same logic as automatic delivery
+      const absoluteAudioPath = episode.audioUrl.startsWith('/Search-Data_&_Podcast-Storage/') 
+        ? path.join(process.cwd(), episode.audioUrl.substring(1)) // Remove leading / and join with cwd
+        : path.join(process.cwd(), episode.audioUrl);
       
-      await sendPodcastEmail(email, audioPath, 'Current News');
+      console.log(`📧 Manual email - Audio file path: ${absoluteAudioPath}`);
+      await sendPodcastEmail(email, absoluteAudioPath, 'Current News');
       
       // Update episode email sent timestamp
-      await storage.updatePodcastEpisode(episodeId, { emailSentAt: new Date() });
+      await storage.updatePodcastEpisode(parseInt(episodeId), { emailSentAt: new Date() });
       
       res.json({ success: true, message: "Podcast sent to " + email });
       
