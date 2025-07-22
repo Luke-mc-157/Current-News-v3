@@ -35,10 +35,12 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
       formattedRssArticles.push({
         title: article.title,
         content: article.content,
-        url: article.url,
+        url: article.link,
+        author: article.author,
+        pubDate: article.pubDate,
         feedName: article.feedName,
-        publishedAt: article.publishedAt,
-        source: 'rss'
+        source: article.source,
+        sourceUrl: article.sourceUrl
       });
     });
     
@@ -651,7 +653,7 @@ ${articlesText || 'None found'}
   if (formattedRssArticles.length > 0) {
     console.log(`📰 Adding ${formattedRssArticles.length} RSS articles to compiled data...`);
     const rssText = formattedRssArticles.map(article => 
-      `- [${article.feed_name}]: "${article.title}" - ${article.content.substring(0, 200)}... [${article.url}]`
+      `- [${article.feedName}] by ${article.author || 'Unknown'} (${new Date(article.pubDate).toLocaleDateString()}): "${article.title}" - ${article.content} [${article.url}]`
     ).join('\n');
     
     rssSection = `
