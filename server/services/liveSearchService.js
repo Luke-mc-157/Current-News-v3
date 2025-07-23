@@ -718,13 +718,18 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
       });
     }
     
+    // Add error handling for missing webData
+    const liveSearchContent = topicData.webData 
+      ? topicData.webData.substring(0, 1000) 
+      : `No live search content available for ${topicData.topic || 'unknown topic'}`;
+    
     compiledTopics.push({
-      topic: topicData.topic,
-      liveSearchContent: topicData.webData.substring(0, 1000),
+      topic: topicData.topic || 'Unknown Topic',
+      liveSearchContent: liveSearchContent,
       xPostSources: xPostSources,
       articleSources: articleSources,
       articleAnalysis: articleAnalysis,
-      originalCitationCount: topicData.citations.length
+      originalCitationCount: (topicData.citations && topicData.citations.length) || 0
     });
   }
   

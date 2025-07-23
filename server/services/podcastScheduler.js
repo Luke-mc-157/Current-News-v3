@@ -261,7 +261,21 @@ export async function processPendingPodcasts() {
         
         // Extract data from preference snapshot
         const prefs = scheduled.preferenceSnapshot || {};
+        console.log(`📋 Preference snapshot for podcast ${scheduled.id}:`, JSON.stringify(prefs));
+        
         const topics = prefs.topics || [];
+        // Filter out any undefined or empty topics
+        const validTopics = topics.filter(topic => topic && topic.trim());
+        
+        if (validTopics.length === 0) {
+          console.error(`❌ No valid topics found in preference snapshot for podcast ${scheduled.id}`);
+          await storage.updateScheduledPodcast(scheduled.id, { 
+            status: 'failed',
+            errorMessage: 'No valid topics found in preference snapshot'
+          });
+          continue;
+        }
+        
         const duration = prefs.duration || 10;
         const voiceId = prefs.voiceId || 'ErXwobaYiN019PkySvjV';
         const enhanceWithX = prefs.enhanceWithX || false;
@@ -279,9 +293,9 @@ export async function processPendingPodcasts() {
         }
         
         // Get compiled data directly for podcast generation (bypassing headline generation)
-        console.log(`📰 Fetching compiled data for topics: ${topics.join(', ')}`);
+        console.log(`📰 Fetching compiled data for topics: ${validTopics.join(', ')}`);
         const compiledDataResult = await getCompiledDataForPodcast(
-          topics,
+          validTopics,
           scheduled.userId,
           userHandle,
           accessToken
@@ -310,7 +324,7 @@ export async function processPendingPodcasts() {
         // Create podcast episode record
         const episode = await storage.createPodcastEpisode({
           userId: scheduled.userId,
-          topics: topics,
+          topics: validTopics,
           durationMinutes: duration,
           voiceId: voiceId,
           script,

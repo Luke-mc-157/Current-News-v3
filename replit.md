@@ -106,7 +106,27 @@ Complete scheduling system for automated podcast delivery:
 - **ESBuild**: Fast JavaScript bundling for production builds
 - **PostCSS**: CSS processing with Tailwind CSS integration
 
-## Recent Updates (July 21, 2025 - 9:51 PM UTC)
+## Recent Updates (July 23, 2025 - 9:35 PM UTC)
+
+### **✅ CRITICAL PODCAST GENERATION BUG FIXED**
+- **Issue**: System crashed with "Cannot read properties of undefined (reading 'substring')" when processing scheduled podcasts
+- **Root Causes Identified**:
+  - Missing `webData` field in topic data causing substring error at line 723
+  - Invalid or undefined topics in preference snapshots
+  - No validation for empty or malformed topic arrays
+- **Fixes Applied**:
+  - **Error Handling**: Added fallback for missing `webData` with descriptive message
+  - **Topic Validation**: Filter out undefined/empty topics before processing
+  - **Enhanced Logging**: Added preference snapshot debugging for better diagnostics
+  - **Data Flow**: Ensures only valid topics pass through entire pipeline
+- **Impact**: Scheduled podcasts now process successfully even with incomplete data
+
+### **✅ PODCAST SCHEDULING BUFFER REDUCED**
+- **Changed**: Buffer time reduced from 60min (dev) / 10min (prod) to 5 minutes for both environments
+- **Reason**: Previous 60-minute development buffer was too conservative, causing same-day deliveries to be skipped
+- **Impact**: More responsive scheduling - podcasts can be scheduled with just 5 minutes notice
+
+## Earlier Updates (July 21, 2025 - 9:51 PM UTC)
 
 ### **✅ REMOVED DEVELOPMENT TEST PAGES**
 - **Clean Up Completed**: Removed "Podcast Test" and "Scraper Test" pages as no longer needed for production application
