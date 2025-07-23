@@ -25,6 +25,7 @@ import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware
 import { runPodcastScheduler, createScheduledPodcastsForUser, processPendingPodcasts } from "./services/podcastScheduler.js";
 import rssRoutes from "./routes/rssRoutes.ts";
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { format } from 'date-fns';
 
@@ -528,7 +529,17 @@ export function registerRoutes(app) {
         audioLocalPath: mainAudioUrl 
       });
       
-      console.log(`Audio generation completed for episode ${episodeId}: ${mainAudioUrl}`);
+      console.log(`✅ Audio generation completed for episode ${episodeId}: ${mainAudioUrl}`);
+      console.log(`📁 Current working directory: ${process.cwd()}`);
+      console.log(`📁 Audio file should be at: ${path.join(process.cwd(), mainAudioUrl.substring(1))}`);
+      
+      // Verify the file exists before returning success
+      const absolutePath = path.join(process.cwd(), mainAudioUrl.substring(1));
+      if (!fs.existsSync(absolutePath)) {
+        console.error(`❌ Audio file not found at expected location: ${absolutePath}`);
+        throw new Error(`Audio file was generated but not found at: ${absolutePath}`);
+      }
+      
       res.json({ 
         success: true, 
         audioUrl: mainAudioUrl,
@@ -536,7 +547,8 @@ export function registerRoutes(app) {
       });
       
     } catch (error) {
-      console.error("Error generating audio:", error);
+      console.error("❌ Error generating audio:", error);
+      console.error("Stack trace:", error.stack);
       res.status(500).json({ error: error.message });
     }
   });

@@ -87,10 +87,16 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
     
     // Save audio file
     const audioBuffer = await response.arrayBuffer();
-    const audioDir = path.join(__dirname, '..', '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio');
+    // Use process.cwd() for consistent paths in both dev and production
+    const audioDir = path.join(process.cwd(), 'Search-Data_&_Podcast-Storage', 'podcast-audio');
+    
+    console.log(`📁 Creating audio directory if needed: ${audioDir}`);
+    console.log(`📍 Current working directory: ${process.cwd()}`);
+    console.log(`📍 __dirname: ${__dirname}`);
     
     // Create directory if it doesn't exist
     if (!fs.existsSync(audioDir)) {
+      console.log(`📁 Creating directory: ${audioDir}`);
       fs.mkdirSync(audioDir, { recursive: true });
     }
     
@@ -98,7 +104,7 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
     const filepath = path.join(audioDir, filename);
     
     fs.writeFileSync(filepath, Buffer.from(audioBuffer));
-    console.log(`Audio saved to ${filepath}`);
+    console.log(`✅ Audio saved to ${filepath}`);
     
     // Return relative path for web access
     return `/Search-Data_&_Podcast-Storage/podcast-audio/${filename}`;
@@ -122,13 +128,16 @@ export async function combineAudioSegments(segmentPaths, episodeId) {
   try {
     console.log(`🔧 Combining ${segmentPaths.length} audio segments for episode ${episodeId}`);
     
-    const audioDir = path.join(__dirname, '..', '..', 'Search-Data_&_Podcast-Storage', 'podcast-audio');
+    // Use process.cwd() for consistent paths in both dev and production
+    const audioDir = path.join(process.cwd(), 'Search-Data_&_Podcast-Storage', 'podcast-audio');
     const combinedFilename = `podcast-${episodeId}-combined-${Date.now()}.mp3`;
     const combinedPath = path.join(audioDir, combinedFilename);
     
     // Convert relative paths to absolute paths for ffmpeg
     const absoluteSegmentPaths = segmentPaths.map(segPath => {
-      return path.join(__dirname, '..', '..', segPath);
+      // Remove leading slash and join with cwd
+      const cleanPath = segPath.startsWith('/') ? segPath.substring(1) : segPath;
+      return path.join(process.cwd(), cleanPath);
     });
     
     // Verify all segments exist
