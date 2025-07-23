@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Syrian general questioned in connection with the disappearance of American journalist Austin Tice\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/06/15/us/politics/syria-austin-tice-journalist.html\"\n      ]\n    },\n    {\n      \"headline\": \"Austin, TX, forecast predicts bright and dry weather with increasing rain chances over the weekend\",\n      \"citations\": [\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\",\n        \"https://weather.com/weather/today/l/Austin+TX?canonicalCityId=1692e49f355e6f12c77810b1ab153c25\"\n      ]\n    },\n    {\n      \"headline\": \"CBS Austin reports on local news, weather, and sports for the Texas Capitol Region\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    },\n    {\n      \"headline\": \"FOX 7 Austin covers breaking news, weather, traffic, and sports in Austin and surrounding areas\",\n      \"citations\": [\n        \"https://www.fox7austin.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available recent sources; not all stories may have confirmed high engagement on X due to inconclusive post data.\"\n}",
+  "citations": [
+    "https://www.bbc.com/watch-live-news",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/2025/06/15/us/politics/syria-austin-tice-journalist.html",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://cbsaustin.com/news/local",
+    "https://www.cbsnews.com/texas/",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.fox7austin.com/",
+    "https://weather.com/weather/today/l/Austin+TX?canonicalCityId=1692e49f355e6f12c77810b1ab153c25"
+  ]
+}

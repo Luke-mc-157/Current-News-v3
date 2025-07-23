@@ -626,9 +626,14 @@ export function registerRoutes(app) {
                                  authToken.expiresAt && 
                                  new Date(authToken.expiresAt) > new Date());
       
-      // In development mode, if user is dev_user (ID: 1), ensure they appear authenticated
-      const isDevelopment = process.env.NODE_ENV === 'development';
-      const isDevUser = userId === 1;
+      // Debug logging to track authentication status
+      if (userId && process.env.NODE_ENV === 'development') {
+        console.log(`🔍 X Auth Status Check for user ${userId}:`);
+        console.log(`   - Has auth token: ${!!authToken}`);
+        console.log(`   - Token expires: ${authToken?.expiresAt}`);
+        console.log(`   - Is authenticated: ${isAuthenticated}`);
+        console.log(`   - X Handle: ${authToken?.xHandle}`);
+      }
       
       res.json({
         ...status,
@@ -637,8 +642,6 @@ export function registerRoutes(app) {
         xHandle: authToken?.xHandle || req.session?.xHandle,
         persistent: !!req.session?.xAuthenticated,
         expiresAt: authToken?.expiresAt,
-        developmentMode: isDevelopment,
-        autoAuthenticated: isDevelopment && isDevUser && isAuthenticated,
         success: true
       });
     } catch (error) {

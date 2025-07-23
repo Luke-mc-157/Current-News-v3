@@ -40,25 +40,39 @@ export default function XLoginButton({
   const { toast } = useToast();
   const { user } = useAuth();
 
-  // Check X authentication status on component mount
+  // Check X authentication status on component mount and when user changes
   useEffect(() => {
     checkXAuthStatus();
-  }, []);
+  }, [user]); // Re-check when user changes (login/logout)
 
   const checkXAuthStatus = async () => {
     try {
       const response = await fetch('/api/auth/x/status');
       const status = await response.json();
       
+      console.log('Auth check polling result:', {
+        authenticated: status.authenticated,
+        accessToken: status.accessToken,
+        xHandle: status.xHandle
+      });
+      
       if (status.authenticated) {
         setIsXAuthenticated(true);
         setXHandle(status.xHandle || '');
         
-        // In development mode, don't automatically trigger onAuthSuccess
-        // The onAuthSuccess should only be called when user explicitly clicks the button
+        // Automatically trigger onAuthSuccess when authentication is detected
+        // This ensures the "Enhanced with X" indicators appear immediately
+        if (onAuthSuccess && status.accessToken) {
+          onAuthSuccess(status.accessToken);
+        }
+      } else {
+        setIsXAuthenticated(false);
+        setXHandle('');
       }
     } catch (error) {
       console.error('Error checking X auth status:', error);
+      setIsXAuthenticated(false);
+      setXHandle('');
     }
   };
 
@@ -114,6 +128,7 @@ export default function XLoginButton({
       if (confirmed) {
         await handleDisconnect();
       } else {
+        // Always trigger onAuthSuccess for existing authentication
         if (onAuthSuccess) {
           onAuthSuccess('authenticated');
         }

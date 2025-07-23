@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available search results from the provided context; specific high-engagement posts and articles were limited, so only two stories with sufficient correlation were identified.\",\n  \"stories\": [\n    {\n      \"headline\": \"International leaders discuss escalating tensions in the South China Sea amid territorial disputes.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. Supreme Court issues ruling on a key legal case involving federal regulations.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\",\n        \"https://www.foxnews.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/world/us/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/politics",
+    "https://www.foxnews.com/",
+    "https://reuters.com/world",
+    "https://www.npr.org/sections/news/",
+    "https://axios.com/",
+    "https://www.reuters.com/"
+  ]
+}

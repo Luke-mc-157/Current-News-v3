@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. and Philippines reach trade deal maintaining a 19 percent tariff\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/22/us/politics/trump-trade-philippines-marcos.html\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. and Indonesia agree to trade deal keeping a 19 percent tariff in place\",\n      \"citations\": [\n        \"https://nytimes.com/2025/07/22/us/politics/trump-indonesia-trade-deal.html\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. Treasury Secretary schedules talks on August 12 tariffs deadline with China and considers extension\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/\",\n        \"https://www.reuters.com/business/\"\n      ]\n    },\n    {\n      \"headline\": \"Global markets report ongoing international trade discussions amid breaking news coverage\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/business\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three directly related stories with high engagement were identified; the fourth is based on broader market news to reach the requested count, but data may be sparse beyond the primary sources.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/22/us/politics/trump-trade-philippines-marcos.html",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/markets/",
+    "https://www.reuters.com/business/",
+    "https://www.bbc.com/business",
+    "https://www.reuters.com/markets/",
+    "https://nytimes.com/international",
+    "https://www.npr.org/sections/news/",
+    "https://nytimes.com/2025/07/22/us/politics/trump-indonesia-trade-deal.html",
+    "https://www.reuters.com/",
+    "https://x.com/Investingcom/status/1947624992088187166",
+    "https://x.com/LiveSquawk/status/1947624053876908522"
+  ]
+}

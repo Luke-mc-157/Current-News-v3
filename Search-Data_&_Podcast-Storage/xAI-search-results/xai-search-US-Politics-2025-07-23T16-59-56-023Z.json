@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Former President Trump demands consequences for alleged Russiagate investigation involving Obama administration officials\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ],\n  \"semantic_posts\": [\n    {\n      \"headline\": \"Biden administration faces scrutiny over ongoing White House and congressional activities\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/\"\n      ]\n    },\n    {\n      \"headline\": \"US elections and political campaigns see increased activity amid recent developments\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified from available data; sources are limited to directly related content from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.foxnews.com/politics",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.npr.org/",
+    "https://www.nytimes.com/",
+    "https://x.com/MarioNawfal/status/1947959148131340433"
+  ]
+}

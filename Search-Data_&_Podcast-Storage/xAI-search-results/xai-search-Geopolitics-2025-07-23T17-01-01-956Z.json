@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Only one viral geopolitics story was identified from the searches in the last 24 hours, as data for additional stories was sparse.\",\n  \"stories\": [\n    {\n      \"headline\": \"A Chinese individual defects to Russia, reportedly carrying documents related to China-Russia geopolitical dynamics.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news/world/asia/india",
+    "https://www.bbc.com/news/politics",
+    "https://www.nytimes.com/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://www.axios.com/",
+    "https://www.reuters.com/",
+    "https://www.npr.org/",
+    "https://x.com/LeisRealTalk/status/1947483845143761253"
+  ]
+}

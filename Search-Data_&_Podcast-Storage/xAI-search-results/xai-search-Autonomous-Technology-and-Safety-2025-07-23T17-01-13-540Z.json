@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Indie filmmakers produce viral videos entirely through artificial intelligence technology\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/18/technology/dor-video-studio-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"Social media platforms facilitate misinformation about extreme weather events, posing risks to public safety\",\n      \"citations\": [\n        \"https://manilatimes.net/2025/07/24/news/national/extreme-weather-misinformation-putting-lives-at-risk-study/2154892\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two directly related stories identified from available data within the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://npr.org/sections/news",
+    "https://www.foxnews.com/tech",
+    "https://manilatimes.net/2025/07/24/news/national/extreme-weather-misinformation-putting-lives-at-risk-study/2154892",
+    "https://www.nytimes.com/2025/07/18/technology/dor-video-studio-ai.html",
+    "https://www.reuters.com/technology/"
+  ]
+}

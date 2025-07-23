@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only three stories were identified based on available data from searches.\",\n  \"stories\": [\n    {\n      \"headline\": \"Alaska Airlines grounded all flights for three hours due to a software outage.\",\n      \"sources\": [\n        \"https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Evidence indicates Jeju Air pilots shut off a less-damaged engine before the crash.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/\",\n        \"https://www.bbc.com/news/topics/c2n5vpdv320t\"\n      ]\n    },\n    {\n      \"headline\": \"Air India crash report includes details from cockpit voice recordings.\",\n      \"sources\": [\n        \"https://bbc.com/news/articles/cn9yw0rljwvo\",\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/20/business/alaska-airlines-grounds-plane-fleet.html",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/topics/c2n5vpdv320t",
+    "https://www.reuters.com/business/aerospace-defense/evidence-shows-jeju-air-pilots-shut-off-less-damaged-engine-before-crash-source-2025-07-21/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/news/",
+    "https://bbc.com/news/articles/cn9yw0rljwvo",
+    "https://www.reuters.com/",
+    "https://foxnews.com/world"
+  ]
+}

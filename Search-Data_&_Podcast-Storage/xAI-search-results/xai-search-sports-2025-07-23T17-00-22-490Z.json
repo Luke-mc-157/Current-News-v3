@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"Vernon Adams performs notably for BC Lions, raising questions about his prior replacement in the league\",\n      \"sources\": [\n        \"https://www.nytimes.com/athletic/\",\n        \"X post from user discussing CFL developments\"\n      ]\n    },\n    {\n      \"headline\": \"Recent updates in racing include plans for injured drivers, silly season changes, and a ban for a late model driver\",\n      \"sources\": [\n        \"https://www.si.com/\",\n        \"X post from DIRTRACKR.com on racing news\"\n      ]\n    },\n    {\n      \"headline\": \"Arsenal is close to finalizing a transfer agreement for Viktor Gyokeres from Sporting CP\",\n      \"sources\": [\n        \"https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/\"\n      ]\n    },\n    {\n      \"headline\": \"Ironmouse alleges that VShojo owes $500,000 to charity following her departure, amid doxxing claims in the esports community\",\n      \"sources\": [\n        \"https://timesofindia.indiatimes.com/sports/esports/news/what-did-vshojo-do-ironmouse-accuses-vshojo-of-owing-500k-to-charity-as-doxxing-allegations-surface/articleshow/122829156.cms\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/",
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/",
+    "https://www.foxnews.com/",
+    "https://www.si.com/",
+    "https://www.skysports.com/football/live-blog/31771/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+    "https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/",
+    "https://timesofindia.indiatimes.com/sports/esports/news/what-did-vshojo-do-ironmouse-accuses-vshojo-of-owing-500k-to-charity-as-doxxing-allegations-surface/articleshow/122829156.cms",
+    "https://x.com/CFLGURU/status/1947461355533177269",
+    "https://x.com/dirtrackr/status/1947652460299907115"
+  ]
+}

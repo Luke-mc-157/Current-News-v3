@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"S&P 500 and Nasdaq Close at Record Highs\",\n      \"sources\": [\n        \"https://www.reuters.com/business/sp-500-nasdaq-notch-record-high-closes-lifted-by-alphabet-2025-07-21/\",\n        \"https://www.cnn.com/2025/07/23/investing/us-stock-market\"\n      ]\n    },\n    {\n      \"headline\": \"US Stock Market Concentration Risks Highlighted as Megacaps Report Earnings\",\n      \"sources\": [\n        \"https://www.reuters.com/business/autos-transportation/us-stock-market-concentration-risks-come-fore-megacaps-report-earnings-2025-07-23/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Global Stock Market News Covers International Finance and Trends\",\n      \"sources\": [\n        \"https://www.reuters.com/markets/\"\n      ]\n    },\n    {\n      \"headline\": \"Real-Time US Stock Market Updates Available from Financial Platforms\",\n      \"sources\": [\n        \"https://www.stocktitan.net/news/live.html\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories identified based on available data; X posts were not sufficiently detailed in searches, so reliance is on news and web sources for verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/business/sp-500-nasdaq-notch-record-high-closes-lifted-by-alphabet-2025-07-21/",
+    "https://www.reuters.com/business/autos-transportation/us-stock-market-concentration-risks-come-fore-megacaps-report-earnings-2025-07-23/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/",
+    "https://www.stocktitan.net/news/live.html",
+    "https://www.cnn.com/2025/07/23/investing/us-stock-market",
+    "https://www.benzinga.com/"
+  ]
+}

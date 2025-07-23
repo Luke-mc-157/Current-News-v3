@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Liverpool FC linked with transfer interest in Real Madrid forward Rodrygo\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45801485/transfer-rumors-news-liverpool-spurs-enter-rodrygo-race\",\n        \"https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370\",\n        \"Posts found on X discussing transfer updates\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC announces changes to upcoming match fixtures\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/teams/liverpool\",\n        \"Posts found on X regarding fixture adjustments\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC involved in transfer discussions for Newcastle United forward Alexander Isak\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107\",\n        \"Posts found on X about transfer intrigue\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC engages in transfer negotiations for Paris Saint-Germain forward Hugo Ekitike\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-mbeumo-b1235099.html\",\n        \"Posts found on X about forward transfers\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Four stories identified based on available data from high-engagement searches; no additional semantic posts found beyond high-engagement results in the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6506078/2025/07/22/manchester-united-transfer-news-latest-analysis-arsenal-liverpool-real-madrid/",
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-gyokeres-eze-mbeumo-b1235099.html",
+    "https://www.npr.org/",
+    "https://www.espn.com/soccer/story/_/id/45801485/transfer-rumors-news-liverpool-spurs-enter-rodrygo-race",
+    "https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-ekitike-32100370",
+    "https://x.com/thisisanfield/status/1948053633234546744",
+    "https://x.com/LivEchoLFC/status/1947968684120748248",
+    "https://x.com/LivEchoLFC/status/1947953965716349040"
+  ]
+}

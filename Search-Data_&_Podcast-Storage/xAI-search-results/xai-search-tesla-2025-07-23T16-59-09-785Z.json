@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Tesla's profits from regulatory credits are declining due to U.S. policy changes.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla has opened orders for electric vehicles across India with deliveries prioritized in major cities.\",\n      \"citations\": [\n        \"https://www.news18.com/auto/tesla-orders-open-across-india-but-will-it-survive-the-mumbai-monsoon-watch-video-9457432.html\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only two stories were identified with sufficient evidence from high-engagement posts on X and correlating news articles within the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/autos-transportation/teslas-easy-money-regulatory-credits-set-dry-up-amid-weakening-sales-2025-07-22/",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://stocktwits.com/symbol/TSLA",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-",
+    "https://www.news18.com/auto/tesla-orders-open-across-india-but-will-it-survive-the-mumbai-monsoon-watch-video-9457432.html",
+    "https://electrek.co/2025/07/13/musk-will-ask-tesla-shareholders-to-vote-on-bailout-for-twitter-xai/",
+    "https://www.cbsnews.com/tag/tesla/"
+  ]
+}

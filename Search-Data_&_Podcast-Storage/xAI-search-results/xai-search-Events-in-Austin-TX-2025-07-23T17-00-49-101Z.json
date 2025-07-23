@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Syrian general questioned regarding the status of missing American journalist Austin Tice\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/06/15/us/politics/syria-austin-tice-journalist.html\"\n      ]\n    },\n    {\n      \"headline\": \"Atlanta Braves add catcher amid potential trade discussions, with Austin Riley expected to return\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two relevant stories were identified from the available data within the last 24 hours related to events associated with Austin, Texas.\"\n}",
+  "citations": [
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/2025/06/15/us/politics/syria-austin-tice-journalist.html",
+    "https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://www.foxnews.com/",
+    "https://axios.com/",
+    "https://dallasnews.com/",
+    "https://www.cbsnews.com/texas/",
+    "https://www.npr.org/sections/national/"
+  ]
+}
