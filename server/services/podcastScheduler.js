@@ -146,8 +146,7 @@ function getNextScheduledTime(preferences, timeIndex = 0) {
   const nextSchedule = fromZonedTime(scheduledDateInTz, userTimezone);
   
   // Check if we need to schedule for today or tomorrow
-  const isDevMode = process.env.NODE_ENV === 'development';
-  const bufferMinutes = isDevMode ? 60 : 10; // 1 hour buffer in dev, 10 min in prod
+  const bufferMinutes = 5; // 5 minute buffer for both dev and prod
   
   const timeUntilScheduled = (nextSchedule.getTime() - now.getTime()) / (1000 * 60); // minutes
   
