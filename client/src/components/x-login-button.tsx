@@ -62,6 +62,39 @@ export default function XLoginButton({
     }
   };
 
+  const handleDisconnect = async () => {
+    try {
+      const response = await fetch('/api/auth/x/disconnect', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to disconnect X account');
+      }
+      
+      const result = await response.json();
+      
+      setIsXAuthenticated(false);
+      setXHandle('');
+      
+      toast({
+        title: "X Account Disconnected",
+        description: "You can reconnect with a different X account anytime.",
+      });
+      
+      // Refresh auth status
+      checkXAuthStatus();
+    } catch (error: any) {
+      console.error('Disconnect error:', error);
+      toast({
+        variant: "destructive",
+        title: "Disconnect Failed",
+        description: error.message || "Failed to disconnect X account",
+      });
+    }
+  };
+
   const handleLogin = async () => {
     if (disabled) return;
     
@@ -75,15 +108,20 @@ export default function XLoginButton({
       return;
     }
     
-    // If already authenticated, just call success callback
+    // If already authenticated, show disconnect option
     if (isXAuthenticated) {
-      if (onAuthSuccess) {
-        onAuthSuccess('authenticated');
+      const confirmed = window.confirm("You are already connected to X. Would you like to disconnect?");
+      if (confirmed) {
+        await handleDisconnect();
+      } else {
+        if (onAuthSuccess) {
+          onAuthSuccess('authenticated');
+        }
+        toast({
+          title: "X Authentication Active",
+          description: "Your X Timeline is already connected and ready to use.",
+        });
       }
-      toast({
-        title: "X Authentication Active",
-        description: "Your X Timeline is already connected and ready to use.",
-      });
       return;
     }
     
@@ -185,7 +223,7 @@ export default function XLoginButton({
         setIsLoading(false);
       }, 300000);
 
-    } catch (error) {
+    } catch (error: any) {
       toast({
         variant: "destructive",
         title: "Login Failed",
@@ -205,7 +243,7 @@ export default function XLoginButton({
         className={`gap-2 relative ${className} ${isXAuthenticated ? 'bg-green-50 border-green-200 text-green-800' : ''}`}
       >
         {isLoading ? 'Connecting...' : 
-         isXAuthenticated ? 'Enhanced with' : 'Enhance with'}
+         isXAuthenticated ? `Connected ${xHandle ? `@${xHandle}` : ''}` : 'Enhance with'}
         <XIcon className="w-4 h-4" />
         {isXAuthenticated && (
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>

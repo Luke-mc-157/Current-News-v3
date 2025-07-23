@@ -714,6 +714,14 @@ export function registerRoutes(app) {
       }
       
       const state = 'state-' + Date.now() + '-' + Math.random().toString(36).substring(2);
+      
+      // Log full environment details for debugging
+      console.log('🔐 X OAuth Login Request:');
+      console.log('- User ID:', req.user?.id);
+      console.log('- User:', req.user?.username);
+      console.log('- Environment:', process.env.NODE_ENV);
+      console.log('- Validation:', validation);
+      
       const authLink = getXLoginUrl(state, req);
       
       // Extract the URL from the auth link object
@@ -722,6 +730,7 @@ export function registerRoutes(app) {
       console.log('✅ Generated auth URL with scopes:', authLink.scope);
       console.log('- State:', state);
       console.log('- URL length:', loginUrl.length);
+      console.log('- Full URL:', loginUrl);
       
       res.json({ 
         loginUrl, 
@@ -731,8 +740,14 @@ export function registerRoutes(app) {
       });
     } catch (error) {
       console.error("❌ Error generating X login URL:", error);
+      console.error("- Error stack:", error.stack);
+      console.error("- X_CLIENT_ID present:", !!process.env.X_CLIENT_ID);
+      console.error("- X_CLIENT_SECRET present:", !!process.env.X_CLIENT_SECRET);
+      console.error("- Request host:", req.get('host'));
+      
       res.status(500).json({ 
         error: error.message,
+        details: process.env.NODE_ENV === 'development' ? error.stack : undefined,
         success: false
       });
     }
@@ -960,6 +975,37 @@ export function registerRoutes(app) {
       res.status(500).json({ 
         error: error.message,
         message: "Authentication or Project attachment issue"
+      });
+    }
+  });
+  
+  // X De-authentication endpoint
+  router.post("/api/auth/x/disconnect", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      
+      console.log('🔓 X De-authentication request for user:', userId);
+      
+      // Remove X auth token from database
+      await storage.deleteXAuthTokenByUserId(userId);
+      
+      // Clear session X auth data
+      if (req.session) {
+        req.session.xAuthenticated = false;
+        req.session.xHandle = null;
+      }
+      
+      console.log('✅ X account disconnected successfully');
+      
+      res.json({
+        success: true,
+        message: 'X account disconnected successfully'
+      });
+    } catch (error) {
+      console.error('❌ Error disconnecting X account:', error);
+      res.status(500).json({
+        error: 'Failed to disconnect X account',
+        message: error.message
       });
     }
   });
@@ -1591,6 +1637,50 @@ export function registerRoutes(app) {
         note: "Both Website URL and Callback URL must be configured in X Developer Portal"
       }
     });
+  });
+  
+  // X OAuth test endpoint - tests actual URL generation
+  router.get("/api/auth/x/test-oauth", (req, res) => {
+    try {
+      const validation = validateXAuthEnvironment();
+      
+      // Try to generate a test OAuth URL without storing session
+      let testUrl = null;
+      let error = null;
+      
+      try {
+        const state = 'test-' + Date.now();
+        const authLink = getXLoginUrl(state, req);
+        testUrl = authLink.url ? 'Generated successfully' : 'Failed to generate';
+      } catch (err) {
+        error = err.message;
+      }
+      
+      res.json({
+        oauth_configuration: {
+          clientIdPresent: !!process.env.X_CLIENT_ID,
+          clientSecretPresent: !!process.env.X_CLIENT_SECRET,
+          clientIdLength: process.env.X_CLIENT_ID?.length || 0,
+          clientSecretLength: process.env.X_CLIENT_SECRET?.length || 0,
+          validation: validation
+        },
+        test_result: {
+          urlGeneration: testUrl,
+          error: error
+        },
+        important_notes: [
+          "Ensure your X App is attached to a Project (not standalone)",
+          "Set App environment to 'Production' in X Developer Portal",
+          "Callback URL must match exactly: https://current-news.replit.app/auth/twitter/callback",
+          "If error mentions 'client-not-enrolled', attach App to a Project"
+        ]
+      });
+    } catch (error) {
+      res.status(500).json({ 
+        error: error.message,
+        stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      });
+    }
   });
 
   // Authentication routes

@@ -97,6 +97,12 @@ export function getXLoginUrl(state, req = null) {
   console.log('- Client Secret present:', !!clientSecret);
   console.log('- Callback URL:', requestCallbackUrl);
   
+  // Log the actual values to debug production issue
+  console.log('🔐 Creating TwitterApi client with:');
+  console.log('- Client ID length:', clientId?.length);
+  console.log('- Client Secret length:', clientSecret?.length);
+  console.log('- Client ID prefix:', clientId?.substring(0, 10) + '...');
+  
   const client = new TwitterApi({ 
     clientId,
     clientSecret 
@@ -136,6 +142,15 @@ export function getXLoginUrl(state, req = null) {
     return authLink;
   } catch (error) {
     console.error('❌ Failed to generate OAuth link:', error.message);
+    console.error('- Error type:', error.constructor.name);
+    console.error('- Error stack:', error.stack);
+    console.error('- Error details:', JSON.stringify(error, null, 2));
+    
+    // Check if it's a configuration issue
+    if (error.message?.includes('clientId') || error.message?.includes('clientSecret')) {
+      throw new Error('X OAuth configuration error: Check X_CLIENT_ID and X_CLIENT_SECRET environment variables');
+    }
+    
     throw new Error(`OAuth URL generation failed: ${error.message}`);
   }
 }
