@@ -133,6 +133,13 @@ Complete scheduling system for automated podcast delivery:
 - **Added Logging**: Debug messages show when deliveries are included or skipped with reasons
 - **Impact**: Same-day podcasts now properly created when there's at least 5 minutes until scheduled time
 
+### **✅ IMPROVED SAME-DAY SCHEDULING WITH 1-MINUTE BUFFER**
+- **Enhancement**: When users update preferences, same-day podcasts now only need 1-minute buffer instead of 5
+- **Reason**: 5-minute buffer too conservative for immediate preference updates
+- **Implementation**: Added `isImmediateUpdate` flag to scheduling functions
+- **Impact**: Users can schedule podcasts as close as 6 minutes before delivery time
+- **Example**: Update at 5:24 PM can now schedule 5:30 PM delivery (was previously skipped)
+
 ## Earlier Updates (July 21, 2025 - 9:51 PM UTC)
 
 ### **✅ REMOVED DEVELOPMENT TEST PAGES**

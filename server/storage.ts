@@ -858,6 +858,19 @@ export class DatabaseStorage implements IStorage {
   async deleteUserRssFeed(id: number): Promise<void> {
     await db.delete(userRssFeeds).where(eq(userRssFeeds.id, id));
   }
+
+  async getAllScheduledPodcasts(): Promise<ScheduledPodcasts[]> {
+    return await db.select().from(scheduledPodcasts);
+  }
+
+  async updateScheduledPodcastStatus(id: number, status: string, error?: string): Promise<void> {
+    const updateData: any = { status, updatedAt: new Date() };
+    if (error) updateData.error = error;
+    
+    await db.update(scheduledPodcasts)
+      .set(updateData)
+      .where(eq(scheduledPodcasts.id, id));
+  }
 }
 
 export const storage = new DatabaseStorage();

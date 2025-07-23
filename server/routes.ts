@@ -1476,13 +1476,20 @@ export function registerRoutes(app) {
       
       // Create scheduled podcasts for each delivery time if enabled
       if (savedPreferences && enabled) {
-        console.log('🔍 savedPreferences returned from DB:', {
-          times: savedPreferences.times,
-          timezone: savedPreferences.timezone,
-          cadence: savedPreferences.cadence
+        // Re-fetch preferences to ensure we have the latest data
+        const freshPreferences = await storage.getPodcastPreferences(userId);
+        console.log('🔍 Fresh preferences from DB:', {
+          times: freshPreferences.times,
+          timezone: freshPreferences.timezone,
+          cadence: freshPreferences.cadence
         });
+        
+        // Clean up any incorrect statuses before creating new schedules
+        const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
+        await cleanupPodcastStatuses();
+        
         const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
-        await createScheduledPodcastsForUser(userId, savedPreferences);
+        await createScheduledPodcastsForUser(userId, freshPreferences);
       }
       
       res.json(savedPreferences);
@@ -1508,8 +1515,20 @@ export function registerRoutes(app) {
       
       // Re-create scheduled podcasts if enabled
       if (updated.enabled) {
+        // Re-fetch preferences to ensure we have the latest data
+        const freshPreferences = await storage.getPodcastPreferences(userId);
+        console.log('🔍 Fresh preferences from DB (PATCH):', {
+          times: freshPreferences.times,
+          timezone: freshPreferences.timezone,
+          cadence: freshPreferences.cadence
+        });
+        
+        // Clean up any incorrect statuses before creating new schedules
+        const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
+        await cleanupPodcastStatuses();
+        
         const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
-        await createScheduledPodcastsForUser(userId, updated);
+        await createScheduledPodcastsForUser(userId, freshPreferences);
       }
       
       res.json(updated);

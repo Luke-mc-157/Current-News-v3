@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Helper function to generate all delivery times for the next N days
-function getNextDeliveryTimes(preferences, daysAhead = 7) {
+function getNextDeliveryTimes(preferences, daysAhead = 7, isImmediateUpdate = false) {
   const deliveryTimes = [];
   const timezone = preferences.timezone || 'America/Chicago';
   
@@ -39,7 +39,9 @@ function getNextDeliveryTimes(preferences, daysAhead = 7) {
         
         // Only include times that have enough buffer for processing
         const now = new Date();
-        const bufferMinutes = 5; // Same buffer as used in scheduler
+        // For same-day updates when user changes preferences, allow 1 minute buffer
+        // For regular scheduling, use standard 5 minute buffer
+        const bufferMinutes = (isImmediateUpdate && dayOffset === 0) ? 1 : 5;
         const minimumScheduledTime = new Date(now.getTime() + bufferMinutes * 60 * 1000);
         
         // Check if the scheduled time (not delivery time) is far enough in the future
@@ -91,11 +93,11 @@ function shouldCreateScheduledPodcast(existingPodcasts, deliveryTime) {
 }
 
 // Maintain a 7-day scheduling horizon for a user
-async function maintainScheduleHorizon(userId, preferences) {
+async function maintainScheduleHorizon(userId, preferences, isImmediateUpdate = false) {
   console.log(`🔄 Maintaining 7-day schedule horizon for user ${userId}`);
   
   // Get all delivery times for the next 7 days
-  const upcomingDeliveries = getNextDeliveryTimes(preferences, 7);
+  const upcomingDeliveries = getNextDeliveryTimes(preferences, 7, isImmediateUpdate);
   
   // Get existing scheduled podcasts for this user in the next 7 days
   const sevenDaysFromNow = new Date();
@@ -219,8 +221,8 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
       timezone: preferences.timezone || 'America/Chicago'
     });
     
-    // Use the new maintainScheduleHorizon function
-    const created = await maintainScheduleHorizon(userId, preferences);
+    // Use the new maintainScheduleHorizon function with immediate update flag
+    const created = await maintainScheduleHorizon(userId, preferences, true);
     console.log(`✅ Schedule maintenance complete - ${created} new podcasts scheduled`);
     
   } catch (error) {
@@ -416,6 +418,10 @@ async function runDailyMaintenance() {
   console.log('🔧 Running daily podcast maintenance...');
   
   try {
+    // First clean up any incorrect statuses
+    const { cleanupPodcastStatuses } = await import('./cleanupPodcastStatuses.js');
+    await cleanupPodcastStatuses();
+    
     // Get all users with enabled podcast preferences
     const enabledPreferences = await storage.getUsersWithEnabledPodcasts();
     
