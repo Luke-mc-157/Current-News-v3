@@ -1566,6 +1566,56 @@ export function registerRoutes(app) {
     });
   });
   
+  // Test endpoint to trigger immediate podcast delivery
+  router.post("/api/dev/test-immediate-podcast", devOnly, requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      
+      // Get user's podcast preferences
+      const preferences = await storage.getUserPodcastPreferences(userId);
+      if (!preferences || !preferences.enabled) {
+        return res.status(400).json({ error: "Podcast preferences not enabled" });
+      }
+      
+      console.log(`🧪 Creating immediate test podcast for user ${userId}`);
+      
+      // Create a scheduled podcast for RIGHT NOW
+      const now = new Date();
+      const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+      
+      const scheduled = await storage.createScheduledPodcast({
+        userId: userId,
+        scheduledFor: now, // Schedule for now
+        deliveryTime: fiveMinutesFromNow, // Delivery in 5 minutes
+        preferenceSnapshot: {
+          topics: preferences.topics,
+          duration: preferences.duration,
+          voiceId: preferences.voiceId,
+          enhanceWithX: preferences.enhanceWithX,
+          cadence: preferences.cadence,
+          times: preferences.times
+        },
+        status: 'pending'
+      });
+      
+      console.log(`✅ Created test podcast with ID ${scheduled.id} for immediate processing`);
+      
+      // Immediately process this podcast
+      const { processPendingPodcasts } = await import('./services/podcastScheduler.js');
+      await processPendingPodcasts();
+      
+      res.json({ 
+        success: true, 
+        message: "Test podcast created and processing started",
+        scheduledId: scheduled.id
+      });
+      
+    } catch (error) {
+      console.error("Error creating test podcast:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
   router.post("/api/dev/switch-user/:userId", devOnly, async (req, res) => {
     try {
       const userId = parseInt(req.params.userId);

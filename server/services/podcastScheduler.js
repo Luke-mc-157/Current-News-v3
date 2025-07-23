@@ -219,8 +219,11 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
 export async function processPendingPodcasts() {
   try {
     console.log('🔄 Processing pending scheduled podcasts...');
+    const now = new Date();
+    console.log(`🕐 Current time: ${now.toISOString()} (${now.toLocaleString('en-US', { timeZone: 'America/Chicago' })} Central)`);
     
     const pendingPodcasts = await storage.getPendingPodcastsDue();
+    console.log(`📋 getPendingPodcastsDue returned ${pendingPodcasts.length} podcasts`);
     
     // Also check for any stuck pending podcasts
     const allPending = await storage.getScheduledPodcastsForUser(4); // dev_user id is 4
@@ -230,8 +233,8 @@ export async function processPendingPodcasts() {
       stuckPending.forEach(p => {
         const scheduledFor = new Date(p.scheduledFor);
         const deliveryTime = new Date(p.deliveryTime);
-        const now = new Date();
-        console.log(`   - ID: ${p.id}, ScheduledFor: ${scheduledFor.toISOString()} (${scheduledFor < now ? 'PAST DUE' : 'future'}), DeliveryTime: ${deliveryTime.toISOString()}`);
+        const minutesUntilScheduled = (scheduledFor.getTime() - now.getTime()) / (1000 * 60);
+        console.log(`   - ID: ${p.id}, ScheduledFor: ${scheduledFor.toISOString()} (${minutesUntilScheduled.toFixed(1)} min), DeliveryTime: ${deliveryTime.toISOString()}`);
       });
     }
     
