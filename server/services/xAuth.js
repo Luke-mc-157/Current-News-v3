@@ -42,8 +42,11 @@ export function getCallbackUrl(req = null) {
   
   // Fallback to old format for production deployment
   if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
-    // Try both .replit.app and .repl.co formats
-    const productionUrl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.replit.app/auth/twitter/callback`;
+    // For production, check if we're current-news specifically
+    const isCurrentNews = process.env.REPL_SLUG === 'current-news' || 
+                         process.env.REPL_SLUG === 'workspace';
+    const productionDomain = isCurrentNews ? 'current-news' : process.env.REPL_SLUG;
+    const productionUrl = `https://${productionDomain}.replit.app/auth/twitter/callback`;
     console.log('⚠️ Using fallback production URL:', productionUrl);
     return productionUrl;
   }

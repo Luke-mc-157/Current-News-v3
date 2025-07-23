@@ -1560,6 +1560,38 @@ export function registerRoutes(app) {
       autoLoginEnabled: true
     });
   });
+  
+  // Production OAuth debug endpoint - available in all environments
+  router.get("/api/auth/x/production-debug", (req, res) => {
+    const actualHost = req.get('host');
+    const forwardedHost = req.get('x-forwarded-host');
+    const forwardedProto = req.get('x-forwarded-proto');
+    const protocol = forwardedProto || req.protocol;
+    const finalHost = forwardedHost || actualHost;
+    
+    res.json({
+      currentEnvironment: {
+        NODE_ENV: process.env.NODE_ENV,
+        REPL_SLUG: process.env.REPL_SLUG,
+        REPL_OWNER: process.env.REPL_OWNER,
+        REPLIT_DOMAINS: process.env.REPLIT_DOMAINS?.split(',') || []
+      },
+      requestInfo: {
+        protocol: protocol,
+        host: finalHost,
+        originalHost: actualHost,
+        forwardedHost: forwardedHost,
+        fullUrl: `${protocol}://${finalHost}`,
+        isProduction: finalHost?.includes('.replit.app') || false
+      },
+      expectedCallbackUrl: `${protocol}://${finalHost}/auth/twitter/callback`,
+      requiredXDeveloperPortalConfig: {
+        websiteUrl: `${protocol}://${finalHost}`,
+        callbackUrl: `${protocol}://${finalHost}/auth/twitter/callback`,
+        note: "Both Website URL and Callback URL must be configured in X Developer Portal"
+      }
+    });
+  });
 
   // Authentication routes
   router.post("/api/auth/register", async (req, res) => {
