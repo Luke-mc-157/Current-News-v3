@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Based on available data, four stories were identified from high-engagement sources within the last 24 hours. X searches for high-engagement posts yielded relevant sentiment, but specific posts were inconclusive; correlations were made with news and RSS sources.\",\n  \"stories\": [\n    {\n      \"headline\": \"U.S. presidential election developments impact global geopolitics\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/elections/\",\n        \"https://www.bbc.com/news/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Ongoing events in the Middle East affect regional stability\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/middle_east\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Global news coverage highlights key international diplomatic shifts\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"World in brief reports cover major geopolitical updates\",\n      \"citations\": [\n        \"https://economist.com/the-world-in-brief\",\n        \"https://npr.org/sections/world\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.reuters.com/world/us/elections/",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.npr.org/sections/national/",
+    "https://economist.com/the-world-in-brief",
+    "https://npr.org/sections/world"
+  ]
+}

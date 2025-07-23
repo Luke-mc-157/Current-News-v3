@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Catastrophic flash flooding in Texas has resulted in at least 135 deaths and several people missing.\",\n      \"citations\": [\n        \"https://www.kxan.com/news/texas/map-where-have-flash-flooding-fatalities-been-confirmed-in-texas/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only one directly related story identified from searches.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/athletic/6507871/2025/07/22/braves-adding-3rd-catcher-makes-marcell-ozuna-trade-seem-inevitable/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/",
+    "https://www.bbc.com/news",
+    "https://foxnews.com/",
+    "https://axios.com/",
+    "https://npr.org/sections/national",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.kxan.com/news/texas/map-where-have-flash-flooding-fatalities-been-confirmed-in-texas/"
+  ]
+}

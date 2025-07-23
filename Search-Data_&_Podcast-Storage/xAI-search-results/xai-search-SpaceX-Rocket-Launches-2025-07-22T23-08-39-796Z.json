@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"SpaceX aborts planned launch of O3b mPOWER satellites 11 seconds before liftoff\",\n      \"citations\": [\n        \"https://www.space.com/space-exploration/launches-spacecraft/spacex-aborts-satellite-launch-11-seconds-before-liftoff\",\n        \"https://www.reuters.com/science/faa-says-power-outage-forced-postponement-spacex-tracers-launch-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX schedules evening launch from Cape Canaveral amid weather concerns\",\n      \"citations\": [\n        \"https://phys.org/news/2025-07-evening-spacex-cape-canaveral-weather.html\"\n      ]\n    },\n    {\n      \"headline\": \"FAA postpones SpaceX Falcon 9 TRACERS launch due to regional power outage\",\n      \"citations\": [\n        \"https://www.reuters.com/science/faa-says-power-outage-forced-postponement-spacex-tracers-launch-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"SpaceX launch from Vandenberg may cause sonic booms in Southern California\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/science/elon-musks-spacex-launch-could-trigger-sonic-booms-across-southern-california-officials-warn/articleshow/122829024.cms\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data is based on available searches; no additional semantic posts on X were identified beyond high engagement results.\"\n}",
+  "citations": [
+    "https://www.reuters.com/science/faa-says-power-outage-forced-postponement-spacex-tracers-launch-2025-07-22/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/",
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-aborts-satellite-launch-11-seconds-before-liftoff",
+    "https://phys.org/news/2025-07-evening-spacex-cape-canaveral-weather.html",
+    "https://www.nasa.gov/news-release/nasas-spacex-crew-10-to-discuss-station-mission-upcoming-return/",
+    "https://timesofindia.indiatimes.com/science/elon-musks-spacex-launch-could-trigger-sonic-booms-across-southern-california-officials-warn/articleshow/122829024.cms",
+    "https://arstechnica.com/space/2025/07/rocket-report-starbase-propellant-plant-wins-approval-vulcan-nears-key-launch/",
+    "https://x.com/OC_Scanner/status/1947722303678431376",
+    "https://x.com/SpaceflightNow/status/1947761761098318182"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"UK Labour Government Announces Orgreave Inquiry\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"UK Labour Government Scraps Failed Water Regulations\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.nytimes.com/section/us\"\n      ]\n    },\n    {\n      \"headline\": \"UK Government Brings c2c Train Services into Public Ownership\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics\",\n        \"https://www.npr.org/sections/news/\"\n      ]\n    },\n    {\n      \"headline\": \"UK Parliament Enacts Football Governance Bill\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.axios.com/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/politics",
+    "https://www.nytimes.com/section/us",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxnews.com/",
+    "https://www.foxnews.com/politics",
+    "https://www.npr.org/sections/news/",
+    "https://www.reuters.com/",
+    "https://www.axios.com/",
+    "https://x.com/BenInRushcliffe/status/1947377492723138735"
+  ]
+}

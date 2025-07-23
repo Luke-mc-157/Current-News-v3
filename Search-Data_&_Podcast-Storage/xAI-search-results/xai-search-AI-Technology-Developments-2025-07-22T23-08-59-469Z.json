@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"AI technology is being used against itself in recent developments\",\n      \"sources\": [\n        \"https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html\"\n      ]\n    },\n    {\n      \"headline\": \"Global news outlets report on ongoing AI advancements and their implications\",\n      \"sources\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Technology sectors feature updates on AI innovations from various international sources\",\n      \"sources\": [\n        \"https://www.foxnews.com/\",\n        \"https://www.aljazeera.com/\"\n      ]\n    },\n    {\n      \"headline\": \"AI developments continue to dominate discussions in world and business news\",\n      \"sources\": [\n        \"https://www.ndtv.com/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; only two stories had direct high-engagement correlations on X, with the rest derived from semantic searches and general news results, potentially limiting verification.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html",
+    "https://www.reuters.com/technology/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.bbc.com/news",
+    "https://www.foxnews.com/",
+    "https://www.aljazeera.com/",
+    "https://www.reuters.com/",
+    "https://www.ndtv.com/",
+    "https://www.nytimes.com/2025/07/21/briefing/ai-vs-ai.html"
+  ]
+}

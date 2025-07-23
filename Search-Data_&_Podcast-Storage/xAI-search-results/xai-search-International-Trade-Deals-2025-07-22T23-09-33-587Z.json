@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"US President announces new trade deal details with Indonesia and agreement with Philippines\",\n      \"citations\": [\n        \"https://finance.yahoo.com/news/live/trump-tariffs-live-updates-eu-warns-of-big-gap-as-trump-amps-up-threats-on-eu-canada-mexico-200619704.html\"\n      ]\n    },\n    {\n      \"headline\": \"Global markets react to ongoing international trade negotiations involving major economies\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\",\n        \"https://www.reuters.com/markets/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"International business updates include breaking news on global trade from various regions\",\n      \"citations\": [\n        \"https://www.reuters.com/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified due to sparse data on viral international trade deals from the last 24 hours; all citations are directly related to trade discussions based on available sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/business/",
+    "https://www.bbc.com/news/uk",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://finance.yahoo.com/news/live/trump-tariffs-live-updates-eu-warns-of-big-gap-as-trump-amps-up-threats-on-eu-canada-mexico-200619704.html",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/markets/",
+    "https://www.cbsnews.com/",
+    "https://reuters.com/business"
+  ]
+}
