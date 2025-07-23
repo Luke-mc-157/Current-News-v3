@@ -126,6 +126,13 @@ Complete scheduling system for automated podcast delivery:
 - **Reason**: Previous 60-minute development buffer was too conservative, causing same-day deliveries to be skipped
 - **Impact**: More responsive scheduling - podcasts can be scheduled with just 5 minutes notice
 
+### **✅ SAME-DAY PODCAST SCHEDULING FIXED** 
+- **Issue**: System was skipping same-day afternoon podcasts when preferences were updated
+- **Root Cause**: Code checked if delivery time was future but ignored the 5-minute processing buffer
+- **Fix Applied**: Now checks if scheduled time (5 min before delivery) has sufficient buffer
+- **Added Logging**: Debug messages show when deliveries are included or skipped with reasons
+- **Impact**: Same-day podcasts now properly created when there's at least 5 minutes until scheduled time
+
 ## Earlier Updates (July 21, 2025 - 9:51 PM UTC)
 
 ### **✅ REMOVED DEVELOPMENT TEST PAGES**

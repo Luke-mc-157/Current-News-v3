@@ -37,13 +37,22 @@ function getNextDeliveryTimes(preferences, daysAhead = 7) {
         const utcDeliveryTime = fromZonedTime(deliveryTimeInUserTz, timezone);
         const utcScheduledFor = new Date(utcDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before
         
-        // Only include future times
-        if (utcDeliveryTime > new Date()) {
+        // Only include times that have enough buffer for processing
+        const now = new Date();
+        const bufferMinutes = 5; // Same buffer as used in scheduler
+        const minimumScheduledTime = new Date(now.getTime() + bufferMinutes * 60 * 1000);
+        
+        // Check if the scheduled time (not delivery time) is far enough in the future
+        if (utcScheduledFor >= minimumScheduledTime) {
+          console.log(`✅ Including delivery: ${timeStr} on ${targetDate.toDateString()} (scheduled for ${utcScheduledFor.toISOString()})`);
           deliveryTimes.push({
             scheduledFor: utcScheduledFor,
             deliveryTime: utcDeliveryTime,
             localDeliveryTime: deliveryTimeInUserTz
           });
+        } else {
+          const minutesUntilScheduled = (utcScheduledFor.getTime() - now.getTime()) / (1000 * 60);
+          console.log(`⏭️ Skipping delivery: ${timeStr} on ${targetDate.toDateString()} (only ${minutesUntilScheduled.toFixed(1)} minutes until scheduled time, need ${bufferMinutes} min buffer)`);
         }
       }
     }
