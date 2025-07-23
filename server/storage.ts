@@ -736,16 +736,16 @@ export class DatabaseStorage implements IStorage {
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
     const now = new Date();
-    // Get podcasts scheduled within the next 5 minutes OR up to 30 minutes past due
+    // Get podcasts scheduled within the next 15 minutes OR up to 30 minutes past due
     // This handles cases where the scheduler was down or a podcast was missed
-    const fiveMinutesFromNow = new Date(now.getTime() + 5 * 60 * 1000);
+    const fifteenMinutesFromNow = new Date(now.getTime() + 15 * 60 * 1000);
     const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
     
     return await db.select().from(scheduledPodcasts)
       .where(and(
         eq(scheduledPodcasts.status, 'pending'),
         gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo), // Include up to 30 minutes past due
-        lt(scheduledPodcasts.scheduledFor, fiveMinutesFromNow) // But within next 5 minutes
+        lt(scheduledPodcasts.scheduledFor, fifteenMinutesFromNow) // But within next 15 minutes
       ))
       .orderBy(scheduledPodcasts.scheduledFor);
   }
