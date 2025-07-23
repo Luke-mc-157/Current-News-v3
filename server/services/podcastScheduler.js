@@ -213,6 +213,11 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
     
     const userTimezone = preferences.timezone || 'America/Chicago';
     console.log(`📅 Creating 7-day schedule for user ${user.username} (${user.email}) - Timezone: ${userTimezone}`);
+    console.log(`🔍 Preferences passed to scheduler:`, {
+      times: preferences.times,
+      cadence: preferences.cadence,
+      timezone: preferences.timezone || 'America/Chicago'
+    });
     
     // Use the new maintainScheduleHorizon function
     const created = await maintainScheduleHorizon(userId, preferences);

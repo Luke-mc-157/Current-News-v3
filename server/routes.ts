@@ -1430,7 +1430,7 @@ export function registerRoutes(app) {
   router.post("/api/podcast-preferences", requireAuth, async (req, res) => {
     try {
       const userId = req.user.id;
-      const { enabled, cadence, customDays, times, topics, duration, voiceId, enhanceWithX } = req.body;
+      const { enabled, cadence, customDays, times, topics, duration, voiceId, enhanceWithX, timezone } = req.body;
       
       // Validate input
       if (!cadence || !times || !times.length || !topics || !topics.length || !duration || !voiceId) {
@@ -1455,7 +1455,8 @@ export function registerRoutes(app) {
           topics,
           duration,
           voiceId,
-          enhanceWithX
+          enhanceWithX,
+          timezone
         });
       } else {
         // Create new preferences
@@ -1468,12 +1469,18 @@ export function registerRoutes(app) {
           topics,
           duration,
           voiceId,
-          enhanceWithX
+          enhanceWithX,
+          timezone
         });
       }
       
       // Create scheduled podcasts for each delivery time if enabled
       if (savedPreferences && enabled) {
+        console.log('🔍 savedPreferences returned from DB:', {
+          times: savedPreferences.times,
+          timezone: savedPreferences.timezone,
+          cadence: savedPreferences.cadence
+        });
         const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
         await createScheduledPodcastsForUser(userId, savedPreferences);
       }
