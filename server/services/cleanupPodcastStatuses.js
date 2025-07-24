@@ -36,11 +36,16 @@ export async function cleanupPodcastStatuses() {
       } else if (podcast.status !== 'processing') {
         correctStatus = 'processing';
       }
-    } else if (minutesUntilScheduled <= 0) {
-      // Past scheduled time
+    } else if (minutesUntilScheduled < -15) {
+      // More than 15 minutes past scheduled time - grace period for scheduler delays
       if (podcast.status === 'pending') {
-        // Missed podcast - mark as failed
+        // Genuinely missed podcast - mark as failed
         correctStatus = 'failed';
+      }
+    } else if (minutesUntilScheduled <= 0 && minutesUntilScheduled >= -15) {
+      // Within 15-minute grace period past scheduled time - should be processing
+      if (podcast.status === 'pending') {
+        correctStatus = 'processing';
       }
     }
     

@@ -106,7 +106,20 @@ Complete scheduling system for automated podcast delivery:
 - **ESBuild**: Fast JavaScript bundling for production builds
 - **PostCSS**: CSS processing with Tailwind CSS integration
 
-## Recent Updates (July 23, 2025 - 9:35 PM UTC)
+## Recent Updates (July 24, 2025 - 5:15 PM UTC)
+
+### **✅ CRITICAL PODCAST SCHEDULER TIMING ISSUES FIXED** (July 24, 2025 - 5:15 PM UTC)
+- **Issue Identified**: Scheduler was marking podcasts as "failed" immediately when past their scheduled time, even by just 1 minute
+- **Root Cause**: Cleanup logic was too aggressive + 5-minute scheduler interval created timing gaps
+- **Comprehensive Fixes Applied**:
+  - **15-Minute Grace Period**: Cleanup now only marks podcasts as 'failed' after 15+ minutes past scheduled time
+  - **1-Minute Scheduler Interval**: Reduced from 5 minutes to catch tight timing windows
+  - **Immediate Processing**: Added `processPendingPodcasts()` call after preference changes for instant processing
+  - **Smart Status Management**: Podcasts within grace period marked as 'processing' instead of 'failed'
+- **Impact**: Scheduled podcasts now process reliably even when preferences change close to delivery times
+- **Testing**: System should handle same-day scheduling updates without marking podcasts as failed
+
+## Earlier Updates (July 23, 2025 - 9:35 PM UTC)
 
 ### **✅ CRITICAL PODCAST GENERATION BUG FIXED**
 - **Issue**: System crashed with "Cannot read properties of undefined (reading 'substring')" when processing scheduled podcasts

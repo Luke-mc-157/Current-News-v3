@@ -457,8 +457,8 @@ export function startPodcastScheduler() {
   // Run immediately
   runPodcastScheduler();
   
-  // Run every 5 minutes
-  setInterval(runPodcastScheduler, 5 * 60 * 1000);
+  // Run every 1 minute to catch tight timing windows
+  setInterval(runPodcastScheduler, 1 * 60 * 1000);
   
   // Run daily maintenance immediately
   runDailyMaintenance();

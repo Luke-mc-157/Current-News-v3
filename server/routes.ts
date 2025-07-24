@@ -1589,8 +1589,11 @@ export function registerRoutes(app) {
         const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
         await cleanupPodcastStatuses();
         
-        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        const { createScheduledPodcastsForUser, processPendingPodcasts } = await import('./services/podcastScheduler.js');
         await createScheduledPodcastsForUser(userId, freshPreferences);
+        
+        // Immediately process any podcasts that are due now (don't wait for interval)
+        await processPendingPodcasts();
       }
       
       res.json(savedPreferences);
@@ -1628,8 +1631,11 @@ export function registerRoutes(app) {
         const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
         await cleanupPodcastStatuses();
         
-        const { createScheduledPodcastsForUser } = await import('./services/podcastScheduler.js');
+        const { createScheduledPodcastsForUser, processPendingPodcasts } = await import('./services/podcastScheduler.js');
         await createScheduledPodcastsForUser(userId, freshPreferences);
+        
+        // Immediately process any podcasts that are due now (don't wait for interval)
+        await processPendingPodcasts();
       }
       
       res.json(updated);
