@@ -7,6 +7,7 @@ import { sendPodcastEmail } from "./emailService.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { fromZonedTime, toZonedTime, format } from 'date-fns-tz';
+import { addDays, startOfDay, setHours, setMinutes } from 'date-fns';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,37 +17,36 @@ function getNextDeliveryTimes(preferences, daysAhead = 7, isImmediateUpdate = fa
   const deliveryTimes = [];
   const timezone = preferences.timezone || 'America/Chicago';
   
-  // Start from today in user's timezone
+  // Start from now in UTC (system time), convert to user's timezone
   const nowInUserTz = toZonedTime(new Date(), timezone);
-  const startOfTodayInUserTz = new Date(nowInUserTz);
-  startOfTodayInUserTz.setHours(0, 0, 0, 0);
+  
+  // Use date-fns startOfDay for the current day in user's TZ (avoids native setHours bug)
+  let currentDayInUserTz = startOfDay(nowInUserTz);
   
   for (let dayOffset = 0; dayOffset < daysAhead; dayOffset++) {
-    const targetDate = new Date(startOfTodayInUserTz);
-    targetDate.setDate(targetDate.getDate() + dayOffset);
+    // Calculate the target day by adding offset (pure function, no mutation)
+    const targetDateInUserTz = addDays(currentDayInUserTz, dayOffset);
     
-    // Check if this day should have deliveries based on cadence
-    if (shouldDeliverOnDay(preferences, targetDate)) {
-      // Generate delivery times for each time slot on this day
+    // Check if this day should have deliveries (unchanged, but now uses correct zoned date)
+    if (shouldDeliverOnDay(preferences, targetDateInUserTz, timezone)) {
       for (const timeStr of preferences.times) {
         const [hours, minutes] = timeStr.split(':').map(Number);
-        const deliveryTimeInUserTz = new Date(targetDate);
-        deliveryTimeInUserTz.setHours(hours, minutes, 0, 0);
         
-        // Convert to UTC for storage
+        // Set the delivery time using date-fns setHours/setMinutes (respects the date's timestamp)
+        let deliveryTimeInUserTz = setHours(targetDateInUserTz, hours);
+        deliveryTimeInUserTz = setMinutes(deliveryTimeInUserTz, minutes);
+        
+        // Convert to UTC for storage (correctly handles the offset)
         const utcDeliveryTime = fromZonedTime(deliveryTimeInUserTz, timezone);
         const utcScheduledFor = new Date(utcDeliveryTime.getTime() - 5 * 60 * 1000); // 5 minutes before
         
-        // Only include times that have enough buffer for processing
+        // Buffer logic (unchanged)
         const now = new Date();
-        // For same-day updates when user changes preferences, allow 1 minute buffer
-        // For regular scheduling, use standard 5 minute buffer
         const bufferMinutes = (isImmediateUpdate && dayOffset === 0) ? 1 : 5;
         const minimumScheduledTime = new Date(now.getTime() + bufferMinutes * 60 * 1000);
         
-        // Check if the scheduled time (not delivery time) is far enough in the future
         if (utcScheduledFor >= minimumScheduledTime) {
-          console.log(`✅ Including delivery: ${timeStr} on ${targetDate.toDateString()} (scheduled for ${utcScheduledFor.toISOString()})`);
+          console.log(`✅ Including delivery: ${timeStr} on ${format(targetDateInUserTz, 'yyyy-MM-dd', { timeZone: timezone })} (scheduled for ${utcScheduledFor.toISOString()})`);
           deliveryTimes.push({
             scheduledFor: utcScheduledFor,
             deliveryTime: utcDeliveryTime,
@@ -54,7 +54,7 @@ function getNextDeliveryTimes(preferences, daysAhead = 7, isImmediateUpdate = fa
           });
         } else {
           const minutesUntilScheduled = (utcScheduledFor.getTime() - now.getTime()) / (1000 * 60);
-          console.log(`⏭️ Skipping delivery: ${timeStr} on ${targetDate.toDateString()} (only ${minutesUntilScheduled.toFixed(1)} minutes until scheduled time, need ${bufferMinutes} min buffer)`);
+          console.log(`⏭️ Skipping delivery: ${timeStr} on ${format(targetDateInUserTz, 'yyyy-MM-dd', { timeZone: timezone })} (only ${minutesUntilScheduled.toFixed(1)} minutes until scheduled time, need ${bufferMinutes} min buffer)`);
         }
       }
     }
@@ -64,8 +64,8 @@ function getNextDeliveryTimes(preferences, daysAhead = 7, isImmediateUpdate = fa
 }
 
 // Helper function to check if delivery should happen on a given day
-function shouldDeliverOnDay(preferences, date) {
-  const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+function shouldDeliverOnDay(preferences, date, timezone = preferences.timezone || 'America/Chicago') {
+  const dayOfWeek = format(date, 'EEEE', { timeZone: timezone }); // 'Monday', etc.
   
   switch (preferences.cadence) {
     case 'daily':
@@ -73,8 +73,8 @@ function shouldDeliverOnDay(preferences, date) {
     case 'weekly':
       return preferences.customDays?.includes(dayOfWeek) || false;
     case 'weekdays':
-      const day = date.getDay();
-      return day >= 1 && day <= 5; // Monday to Friday
+      const dayNum = parseInt(format(date, 'i', { timeZone: timezone })); // 1=Monday to 7=Sunday
+      return dayNum >= 1 && dayNum <= 5;
     default:
       return false;
   }
@@ -479,3 +479,4 @@ export function startPodcastScheduler() {
   
   console.log(`📅 Daily maintenance scheduled to run at midnight UTC (in ${Math.floor(msUntilMidnight / 1000 / 60)} minutes)`);
 }
+

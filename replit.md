@@ -140,6 +140,18 @@ Complete scheduling system for automated podcast delivery:
 - **Impact**: Users can schedule podcasts as close as 6 minutes before delivery time
 - **Example**: Update at 5:24 PM can now schedule 5:30 PM delivery (was previously skipped)
 
+### **✅ TIMEZONE BUG COMPLETELY FIXED** (July 24, 2025 - 4:25 PM UTC)
+- **Root Cause Identified**: Mixing date-fns-tz functions with native JavaScript Date methods caused timezone offset errors
+- **Core Problem**: `toZonedTime()` adjusted timestamps, then `setHours()` applied changes in system timezone (UTC) instead of user timezone
+- **Impact**: Afternoon deliveries calculated incorrectly, appearing in wrong day or too far future
+- **Complete Fix Applied**:
+  - **Replaced native Date methods**: Now uses `startOfDay`, `addDays`, `setHours`, `setMinutes` from `date-fns`
+  - **Consistent timezone handling**: All operations now respect user timezone throughout entire pipeline
+  - **Updated day-of-week logic**: `shouldDeliverOnDay` now uses `date-fns-tz` format functions
+  - **Enhanced logging**: Date display uses timezone-aware formatting
+- **Verification**: Test confirms 5:40 PM CDT correctly converts to 22:40 UTC (scheduled 22:35 UTC)
+- **Result**: Both morning and afternoon podcasts now schedule reliably with proper timezone conversions
+
 ## Earlier Updates (July 21, 2025 - 9:51 PM UTC)
 
 ### **✅ REMOVED DEVELOPMENT TEST PAGES**
