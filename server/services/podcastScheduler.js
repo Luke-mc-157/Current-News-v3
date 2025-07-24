@@ -103,11 +103,12 @@ async function maintainScheduleHorizon(userId, preferences, isImmediateUpdate = 
   const sevenDaysFromNow = new Date();
   sevenDaysFromNow.setDate(sevenDaysFromNow.getDate() + 7);
   
-  const existingPodcasts = await storage.getScheduledPodcastsForUserInRange(
-    userId,
-    new Date(),
-    sevenDaysFromNow
-  );
+  // Use existing method and filter to get podcasts in the next 7 days
+  const allUserPodcasts = await storage.getScheduledPodcastsForUser(userId);
+  const existingPodcasts = allUserPodcasts.filter(podcast => {
+    const deliveryTime = new Date(podcast.deliveryTime);
+    return deliveryTime >= new Date() && deliveryTime <= sevenDaysFromNow;
+  });
   
   // Create any missing scheduled podcasts
   let created = 0;
