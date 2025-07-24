@@ -152,6 +152,18 @@ Complete scheduling system for automated podcast delivery:
 - **Verification**: Test confirms 5:40 PM CDT correctly converts to 22:40 UTC (scheduled 22:35 UTC)
 - **Result**: Both morning and afternoon podcasts now schedule reliably with proper timezone conversions
 
+### **✅ AUTOMATIC X TOKEN REFRESH IMPLEMENTED** (July 24, 2025 - 4:32 PM UTC)
+- **Issue Resolved**: X authentication tokens were expiring and requiring manual re-authentication
+- **Root Problem**: Auth status endpoints only checked for expired tokens without attempting refresh
+- **Solution Implemented**:
+  - **Smart Token Refresh**: Both `/api/auth/x/status` and `/api/auth/x/check` now automatically refresh expired tokens using stored refresh tokens
+  - **5-Minute Buffer**: System detects tokens within 5 minutes of expiry and refreshes proactively
+  - **Seamless Experience**: Users no longer need to manually re-authenticate when tokens expire
+  - **Database Updates**: Refreshed tokens automatically stored in database for persistence
+  - **Fallback Handling**: Only requires manual re-auth if refresh tokens are also invalid/expired
+- **Verification**: System successfully refreshed expired token and restored "Enhanced with X" indicator
+- **Impact**: Users now maintain persistent X authentication without interruption for podcast generation
+
 ## Earlier Updates (July 21, 2025 - 9:51 PM UTC)
 
 ### **✅ REMOVED DEVELOPMENT TEST PAGES**

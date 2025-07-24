@@ -604,7 +604,7 @@ export function registerRoutes(app) {
 
   // X OAuth authentication routes (now using database-stored tokens)
   
-  // X Auth status endpoint
+  // X Auth status endpoint with automatic token refresh
   router.get("/api/auth/x/status", async (req, res) => {
     try {
       const status = getXAuthStatus();
@@ -620,28 +620,85 @@ export function registerRoutes(app) {
           console.log('Database check failed:', dbError.message);
         }
       }
+
+      if (!authToken) {
+        return res.json({
+          ...status,
+          authenticated: false,
+          accessToken: null,
+          xHandle: null,
+          persistent: false,
+          success: true
+        });
+      }
       
-      // Check if token exists and is not expired
-      const isAuthenticated = !!(authToken && authToken.accessToken && 
-                                 authToken.expiresAt && 
-                                 new Date(authToken.expiresAt) > new Date());
+      // Check if token is expired or about to expire
+      const expiresAt = authToken.expiresAt ? new Date(authToken.expiresAt) : null;
+      const now = new Date();
+      const isExpired = expiresAt && now > expiresAt;
+      const isNearExpiry = expiresAt && (expiresAt.getTime() - now.getTime()) < 300000; // 5 minutes buffer
+        
+      // Attempt automatic token refresh if expired or near expiry
+      if ((isExpired || isNearExpiry) && authToken.refreshToken) {
+        try {
+          console.log(`🔄 Attempting automatic token refresh for user ${userId}...`);
+          
+          const { createAuthenticatedClient } = await import('./services/xAuth.js');
+          const authResult = await createAuthenticatedClient(
+            authToken.accessToken,
+            authToken.refreshToken,
+            expiresAt ? expiresAt.getTime() : null
+          );
+          
+          // If refresh succeeded, update stored tokens
+          if (authResult.updatedTokens) {
+            await storage.updateXAuthToken(userId, {
+              accessToken: authResult.updatedTokens.accessToken,
+              refreshToken: authResult.updatedTokens.refreshToken,
+              expiresAt: new Date(authResult.updatedTokens.expiresAt)
+            });
+            
+            console.log(`✅ Token automatically refreshed for user ${userId}`);
+            
+            return res.json({
+              ...status,
+              authenticated: true,
+              accessToken: 'present',
+              xHandle: authToken.xHandle || req.session?.xHandle,
+              persistent: !!req.session?.xAuthenticated,
+              expiresAt: new Date(authResult.updatedTokens.expiresAt),
+              refreshed: true,
+              success: true
+            });
+          }
+        } catch (refreshError) {
+          console.log(`❌ Token refresh failed for user ${userId}:`, refreshError.message);
+          // Fall through to return unauthenticated status
+        }
+      }
+      
+      // Check if token is still valid (after potential refresh attempt)
+      const finalAuthToken = await storage.getXAuthTokenByUserId(userId);
+      const finalExpiresAt = finalAuthToken?.expiresAt ? new Date(finalAuthToken.expiresAt) : null;
+      const isAuthenticated = !!(finalAuthToken && finalAuthToken.accessToken && 
+                                 finalExpiresAt && finalExpiresAt > now);
       
       // Debug logging to track authentication status
       if (userId && process.env.NODE_ENV === 'development') {
         console.log(`🔍 X Auth Status Check for user ${userId}:`);
-        console.log(`   - Has auth token: ${!!authToken}`);
-        console.log(`   - Token expires: ${authToken?.expiresAt}`);
+        console.log(`   - Has auth token: ${!!finalAuthToken}`);
+        console.log(`   - Token expires: ${finalAuthToken?.expiresAt}`);
         console.log(`   - Is authenticated: ${isAuthenticated}`);
-        console.log(`   - X Handle: ${authToken?.xHandle}`);
+        console.log(`   - X Handle: ${finalAuthToken?.xHandle}`);
       }
       
       res.json({
         ...status,
         authenticated: isAuthenticated,
-        accessToken: authToken?.accessToken ? 'present' : null,
-        xHandle: authToken?.xHandle || req.session?.xHandle,
+        accessToken: finalAuthToken?.accessToken ? 'present' : null,
+        xHandle: finalAuthToken?.xHandle || req.session?.xHandle,
         persistent: !!req.session?.xAuthenticated,
-        expiresAt: authToken?.expiresAt,
+        expiresAt: finalAuthToken?.expiresAt,
         success: true
       });
     } catch (error) {
@@ -1343,7 +1400,7 @@ export function registerRoutes(app) {
     });
   });
 
-  // Check auth status for frontend polling (requires authentication)
+  // Check auth status for frontend polling with automatic token refresh (requires authentication)
   router.get("/api/auth/x/check", requireAuth, async (req, res) => {
     try {
       const userId = req.user.id;
@@ -1357,21 +1414,65 @@ export function registerRoutes(app) {
         });
       }
       
-      // Check if token is still valid (not expired)
-      const isExpired = authToken.expiresAt && new Date() > authToken.expiresAt;
+      // Check if token is expired or about to expire
+      const expiresAt = authToken.expiresAt ? new Date(authToken.expiresAt) : null;
+      const now = new Date();
+      const isExpired = expiresAt && now > expiresAt;
+      const isNearExpiry = expiresAt && (expiresAt.getTime() - now.getTime()) < 300000; // 5 minutes buffer
+      
+      // Attempt automatic token refresh if expired or near expiry
+      if ((isExpired || isNearExpiry) && authToken.refreshToken) {
+        try {
+          console.log(`🔄 Attempting automatic token refresh for user ${userId} (check endpoint)...`);
+          
+          const { createAuthenticatedClient } = await import('./services/xAuth.js');
+          const authResult = await createAuthenticatedClient(
+            authToken.accessToken,
+            authToken.refreshToken,
+            expiresAt ? expiresAt.getTime() : null
+          );
+          
+          // If refresh succeeded, update stored tokens
+          if (authResult.updatedTokens) {
+            await storage.updateXAuthToken(userId, {
+              accessToken: authResult.updatedTokens.accessToken,
+              refreshToken: authResult.updatedTokens.refreshToken,
+              expiresAt: new Date(authResult.updatedTokens.expiresAt)
+            });
+            
+            console.log(`✅ Token automatically refreshed for user ${userId} (check endpoint)`);
+            
+            return res.json({ 
+              authenticated: true,
+              accessToken: authResult.updatedTokens.accessToken,
+              xHandle: authToken.xHandle,
+              refreshed: true
+            });
+          }
+        } catch (refreshError) {
+          console.log(`❌ Token refresh failed for user ${userId} (check endpoint):`, refreshError.message);
+          // Fall through to return unauthenticated status
+        }
+      }
+      
+      // Check final authentication status (after potential refresh attempt)
+      const finalAuthToken = await storage.getXAuthTokenByUserId(userId);
+      const finalExpiresAt = finalAuthToken?.expiresAt ? new Date(finalAuthToken.expiresAt) : null;
+      const isAuthenticated = !!(finalAuthToken && finalAuthToken.accessToken && 
+                                 finalExpiresAt && finalExpiresAt > now);
       
       console.log('X Auth Check:', {
         userId,
-        hasToken: !!authToken,
-        xHandle: authToken.xHandle,
-        isExpired,
-        expiresAt: authToken.expiresAt
+        hasToken: !!finalAuthToken,
+        xHandle: finalAuthToken?.xHandle,
+        isAuthenticated,
+        expiresAt: finalAuthToken?.expiresAt
       });
       
       res.json({ 
-        authenticated: !isExpired,
-        accessToken: !isExpired ? authToken.accessToken : null,
-        xHandle: !isExpired ? authToken.xHandle : null
+        authenticated: isAuthenticated,
+        accessToken: isAuthenticated ? finalAuthToken.accessToken : null,
+        xHandle: isAuthenticated ? finalAuthToken.xHandle : null
       });
     } catch (error) {
       console.error("Error checking X auth status:", error);
