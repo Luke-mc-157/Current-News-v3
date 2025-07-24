@@ -1,5 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import session from "express-session";
+import compression from "compression";
+import crypto from "crypto";
 import path from "path";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
@@ -7,23 +9,28 @@ import { devAutoLogin } from "./middleware/devMiddleware.js";
 import { startPodcastScheduler } from "./services/podcastScheduler.js";
 
 const app = express();
+app.use(compression()); // Add compression for large aggregations
 app.use(express.json({ limit: '10mb' })); // Increased from default 100kb to handle large compiled data
 app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 
 // Add session management for persistent authentication
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'dev-secret-key-change-in-production',
+  secret: process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex'), // Auto-generate if missing
   resave: false,
-  saveUninitialized: true, // Changed to true for development auto-login
+  saveUninitialized: process.env.NODE_ENV === 'development', // Only true in development
   cookie: {
-    secure: false, // Set to true in production with HTTPS
+    secure: process.env.NODE_ENV === 'production',
     httpOnly: true,
-    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
-  }
+    maxAge: 24 * 60 * 60 * 1000, // 1 day instead of 7
+    sameSite: 'strict'
+  },
+  rolling: true // Reset expiry on each request
 }));
 
-// Add development auto-login middleware
-app.use(devAutoLogin);
+// Add development auto-login middleware (only in development)
+if (process.env.NODE_ENV === 'development') {
+  app.use(devAutoLogin);
+}
 
 // Serve podcast audio files BEFORE Vite middleware to prevent conflicts
 app.use('/Search-Data_&_Podcast-Storage/podcast-audio', express.static(path.join(process.cwd(), 'Search-Data_&_Podcast-Storage', 'podcast-audio')));
@@ -47,8 +54,8 @@ app.use((req, res, next) => {
         logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
       }
 
-      if (logLine.length > 80) {
-        logLine = logLine.slice(0, 79) + "…";
+      if (logLine.length > 200) {
+        logLine = logLine.slice(0, 199) + "…";
       }
 
       log(logLine);
@@ -66,7 +73,7 @@ app.use((req, res, next) => {
     const message = err.message || "Internal Server Error";
 
     res.status(status).json({ message });
-    throw err;
+    // Don't throw err after responding - prevents response loop issues
   });
 
   // importantly only setup vite in development and after

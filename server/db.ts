@@ -73,6 +73,38 @@ export async function retryDatabaseOperation<T>(
 }
 
 // Initialize database connection with health check
+(async () => {
+  const isHealthy = await checkDatabaseHealth();
+  if (!isHealthy && process.env.NODE_ENV === 'production') {
+    console.error('💥 Database connection failed - exiting...');
+    process.exit(1);
+  }
+})();
+
+// Graceful shutdown handling
+process.on('SIGTERM', async () => {
+  console.log('🛑 Shutting down database pool...');
+  await pool.end();
+  process.exit(0);
+});
+
+process.on('SIGINT', async () => {
+  console.log('🛑 Shutting down database pool...');
+  await pool.end();
+  process.exit(0);
+});
+
+// Global error handling
+process.on('uncaughtException', (err) => {
+  console.error('💥 Uncaught exception:', err);
+  if (process.env.NODE_ENV === 'production') {
+    process.exit(1);
+  }
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('💥 Unhandled rejection at:', promise, 'reason:', reason);
+});
 async function initializeDatabase() {
   try {
     console.log('🚀 Initializing database connection...');
