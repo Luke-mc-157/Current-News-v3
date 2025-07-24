@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"The International Court of Justice rules that countries must comply with climate commitments to address global warming.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/23/climate/icj-hague-climate-change.html\",\n        \"https://www.reuters.com/sustainability/cop/top-un-court-says-treaties-compel-wealthy-nations-curb-global-warming-2025-07-23/\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters reports on environmental and climate news updates from global sources.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/environment/\"\n      ]\n    },\n    {\n      \"headline\": \"BBC publishes content on climate-related topics and developments.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/cmj34zmwm1zt\"\n      ]\n    }\n  ],\n  \"semantic_posts_stories\": [\n    {\n      \"headline\": \"Bill Gates comments on the impact of U.S. tax law on climate technology investments.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/tech-news/could-have-been-far-worse-why-bill-gates-is-just-fine-with-donald-trumps-tax-law-despite-huge-cuts-in-climate-tech/articleshow/122617514.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Investor Vinod Khosla addresses immigration policy's effect on AI and climate technology competitiveness.\",\n      \"citations\": [\n        \"https://www.geekwire.com/2025/talent-drives-everything-vinod-khoslas-contrarian-take-on-americas-ai-and-climate-challenges/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three high-engagement stories identified from the last 24 hours; two additional semantic stories are included but from outside the 24-hour window.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/23/climate/icj-hague-climate-change.html",
+    "https://www.reuters.com/business/environment/",
+    "https://www.bbc.com/news/topics/cmj34zmwm1zt",
+    "https://www.reuters.com/sustainability/cop/top-un-court-says-treaties-compel-wealthy-nations-curb-global-warming-2025-07-23/",
+    "https://timesofindia.indiatimes.com/technology/tech-news/could-have-been-far-worse-why-bill-gates-is-just-fine-with-donald-trumps-tax-law-despite-huge-cuts-in-climate-tech/articleshow/122617514.cms",
+    "https://www.geekwire.com/2025/talent-drives-everything-vinod-khoslas-contrarian-take-on-americas-ai-and-climate-challenges/",
+    "https://heatmap.news/podcast/shift-key-s2-e48-obbba-debrief",
+    "https://finance.yahoo.com/news/climate-tech-market-report-2025-145700630.html",
+    "https://www.capgemini.com/us-en/news/analyst-recognition/capgemini-has-been-recognized-as-a-leader-by-independent-analyst-firm-in-green-quadrant-for-climate-change-consulting-2025/"
+  ]
+}

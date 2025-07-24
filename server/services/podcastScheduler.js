@@ -350,13 +350,12 @@ export async function processPendingPodcasts() {
         
         // Generate audio
         console.log(`🎵 Generating audio with voice ${voiceId}`);
-        const audioResult = await generateAudio(script, voiceId, episode.id);
+        const audioResult = await generateAudio(script, voiceId, episode.id, scheduled.userId);
         
         // Update episode with audio URL and local path
-        const audioPath = audioResult.filePath || audioResult;
         await storage.updatePodcastEpisode(episode.id, {
-          audioUrl: audioPath,
-          audioLocalPath: audioPath
+          audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
+          audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
         });
         
         // Send email
@@ -369,7 +368,7 @@ export async function processPendingPodcasts() {
         // Convert web path to absolute file path - FIXED for new folder structure
         const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
           ? path.join(process.cwd(), audioFilePath.substring(1)) // Remove leading / and join with cwd
-          : path.join(process.cwd(), audioFilePath);
+          : audioFilePath; // Use direct path if it's already absolute
           
         console.log(`📧 Audio file path: ${absoluteAudioPath}`);
         await sendPodcastEmail(user.email, absoluteAudioPath, "Current News");

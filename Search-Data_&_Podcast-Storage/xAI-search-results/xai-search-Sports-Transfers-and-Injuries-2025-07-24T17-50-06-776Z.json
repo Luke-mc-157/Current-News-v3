@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"Arsenal is close to finalizing a transfer agreement for Viktor Gyokeres from Sporting CP.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/\",\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html\"\n      ]\n    },\n    {\n      \"headline\": \"Newcastle United's Alexander Isak is not traveling with the team due to an injury, amid transfer rumors.\",\n      \"citations\": [\n        \"https://t.co/4p1srRIvjv\"  // From X post, but labeled as posts found on X\n      ]\n    },\n    {\n      \"headline\": \"Liverpool has opened transfer talks for Alexander Isak.\",\n      \"citations\": [\n        \"https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United has agreed a deal for Bryan Mbeumo.\",\n      \"citations\": [\n        \"https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32048931\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.nytimes.com/athletic/",
+    "https://www.bbc.com/",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html",
+    "https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32048931",
+    "https://www.theguardian.com/football/2025/jul/15/football-transfer-rumour-mill-arsenal-trossard-snub-fenerbahce-bayern-munich",
+    "https://www.espn.com/soccer/story/_/id/45744210/transfer-rumors-news-arsenal-bayern-munich-crystal-palace-eberechi-eze",
+    "https://www.bbc.com/sport/football/articles/cp86p606gvko",
+    "https://x.com/lee_ryder/status/1948356221423034810"
+  ]
+}

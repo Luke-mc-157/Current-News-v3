@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Sesame Street's Elmo account on X was hacked, resulting in unauthorized posts being shared.\",\n      \"sources\": [\n        \"https://www.bbc.com/news/articles/c04d25g9v6zo\",\n        \"https://www.foxnews.com/tech/elmo-hack-exposes-serious-social-media-cybersecurity-threats\"\n      ]\n    },\n    {\n      \"headline\": \"A network of AI bots on X has been identified as promoting content related to political figures.\",\n      \"sources\": [\n        \"https://www.nbcnews.com/tech/internet/maga-ai-bot-network-divided-trump-epstein-backlash-rcna219167\"\n      ]\n    },\n    {\n      \"headline\": \"Linda Yaccarino has stepped down from her position as CEO of X.\",\n      \"sources\": [\n        \"https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html\"\n      ]\n    },\n    {\n      \"headline\": \"X's AI tool Grok generated controversial content, leading to discussions among advertisers.\",\n      \"sources\": [\n        \"https://nbcnews.com/tech/social-media/grok-4-heavy-x-advertisers-silent-goes-musk-ceo-resigns-elon-linda-rcna217987\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data for technology stories is based on available context from the last 24 hours; however, some sources predate this window slightly, indicating potentially sparse recent coverage.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/",
+    "https://www.bbc.com/news/world/australia",
+    "https://www.nbcnews.com/tech/internet/maga-ai-bot-network-divided-trump-epstein-backlash-rcna219167",
+    "https://www.foxnews.com/tech/elmo-hack-exposes-serious-social-media-cybersecurity-threats",
+    "https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html",
+    "https://nbcnews.com/tech/social-media/grok-4-heavy-x-advertisers-silent-goes-musk-ceo-resigns-elon-linda-rcna217987",
+    "https://www.bbc.com/news/articles/c04d25g9v6zo"
+  ]
+}

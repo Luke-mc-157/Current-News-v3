@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Astronauts conducted a spacewalk on the International Space Station to perform repairs.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://nasa.gov/blogs\"\n      ]\n    },\n    {\n      \"headline\": \"NASA launched the TRACERS mission to study Earth's magnetic field and space weather.\",\n      \"citations\": [\n        \"https://nasa.gov/blogs\"\n      ]\n    },\n    {\n      \"headline\": \"Recent developments in space exploration were covered in global space industry news.\",\n      \"citations\": [\n        \"https://spacenews.com/section/news-archive/\"\n      ]\n    },\n    {\n      \"headline\": \"Updates on space discoveries and research were published in science news sources.\",\n      \"citations\": [\n        \"https://scitechdaily.com/news/space/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories were identified based on available data within the last 24 hours; some may be general updates due to sparse specific viral content.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/china/",
+    "https://www.reuters.com/world/us/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/war-in-ukraine",
+    "https://spacenews.com/section/news-archive/",
+    "https://scitechdaily.com/news/space/",
+    "https://www.cbsnews.com/space/",
+    "https://www.reuters.com/technology/space/",
+    "https://nasa.gov/blogs",
+    "https://x.com/MarioNawfal/status/1948095779635441814"
+  ]
+}

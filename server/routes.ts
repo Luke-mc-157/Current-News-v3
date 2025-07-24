@@ -514,7 +514,8 @@ export function registerRoutes(app) {
       // Generate audio for each segment
       const audioUrls = [];
       for (let i = 0; i < segments.length; i++) {
-        const audioUrl = await generateAudio(segments[i], episode.voiceId, `${episodeId}-${i}`);
+        const audioResult = await generateAudio(segments[i], episode.voiceId, `${episodeId}-${i}`, episode.userId);
+        const audioUrl = typeof audioResult === 'string' ? audioResult : audioResult.audioUrl;
         audioUrls.push(audioUrl);
         console.log(`📻 Generated segment ${i + 1}/${segments.length}: ${audioUrl}`);
       }
@@ -2118,11 +2119,12 @@ export function registerRoutes(app) {
 
         // Generate audio
         console.log(`🎵 Generating audio with voice ${voiceId}`);
-        const audioResult = await generateAudio(script, voiceId);
+        const audioResult = await generateAudio(script, voiceId, episode.id, userId);
         
-        // Update episode with audio URL
+        // Update episode with audio URL and local path
         await storage.updatePodcastEpisode(episode.id, {
-          audioUrl: audioResult.filePath || audioResult
+          audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
+          audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
         });
 
         // Send email
@@ -2130,7 +2132,7 @@ export function registerRoutes(app) {
           ? audioResult 
           : (audioResult.filePath || audioResult.audioUrl);
         
-        const audioPath = audioFilePath.startsWith('/podcast-audio/') 
+        const audioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
           ? path.join(process.cwd(), audioFilePath.substring(1))
           : path.join(process.cwd(), audioFilePath);
 

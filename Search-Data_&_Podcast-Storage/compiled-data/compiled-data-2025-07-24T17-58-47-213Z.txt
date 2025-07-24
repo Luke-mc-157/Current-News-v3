@@ -1,0 +1,805 @@
+
+TOPIC: AI news
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Wall Street's investment in AI sector surpasses levels seen during the 1990s dotcom bubble, based on market analysis.",
+      "citations": [
+        "https://www.reuters.com/markets/europe/is-todays-ai-boom-bigger-than-dotcom-bubble-2025-07-22/"
+      ]
+    },
+    {
+      "headline": "U.S. President Trump issues executive order focusing on preventing 'woke' AI in federal government operations.",
+      "citations": [
+        "https://www.nytimes.com/2025/07/23/us/politics/trump-ai-nuclear-weapons.html",
+        "https://www.washingtonpost.com/politics/2025/07/22/tech-brief-trump-ai-action-plan/"
+      ]
+    },
+    {
+      "headline": "AI chatbots frequently cite major news outlets including Reuters, Financial Times, and Axios for information, according to a recent report.",
+      "citations": [
+        "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude"
+      ]
+    },
+    {
+      "headline": "TechCrunch covers ongo
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Trump’s A.I. Challenge: Focus on Weapon Concerns or Woke-ism? - The New York Times: President Trump issued an executive order prioritizing the prevention of 'woke' AI in government systems, shifting focus from the Biden administration's concerns about AI enabling weapons of mass destruction. The order bars the use of AI models that contradict Trump's views, following incidents like Google's Gemini portraying diverse images of historical figures. Trump aims to boost AI dominance by expediting approvals for energy sources and data farms, framing the competition as a global race with China. The administration emphasizes economic and military benefits of AI leadership while acknowledging risks like cyberattacks and weapon development. Critics argue this approach could introduce bias and suppress diverse perspectives in AI technology. [https://www.reuters.com/]
+Key Quotes: "The American people do not want woke Marxist lunacy in the A.I. models" - President Trump | "The government should not be acting as a ministry of A.I. truth or insisting that A.I. models hew to its preferred interpretation of reality" - Samir Jain, Center for Democracy and Technology | "Whoever has the largest A.I. ecosystem will set global A.I. standards and reap broad economic and military benefits" - Trump administration officials
+
+---
+
+TOPIC: Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Sesame Street's Elmo account on X was hacked, resulting in unauthorized posts being shared.",
+      "sources": [
+        "https://www.bbc.com/news/articles/c04d25g9v6zo",
+        "https://www.foxnews.com/tech/elmo-hack-exposes-serious-social-media-cybersecurity-threats"
+      ]
+    },
+    {
+      "headline": "A network of AI bots on X has been identified as promoting content related to political figures.",
+      "sources": [
+        "https://www.nbcnews.com/tech/internet/maga-ai-bot-network-divided-trump-epstein-backlash-rcna219167"
+      ]
+    },
+    {
+      "headline": "Linda Yaccarino has stepped down from her position as CEO of X.",
+      "sources": [
+        "https://www.nytimes.com/2025/07/09/technology/linda-yaccarino-x-steps-down.html"
+      ]
+    },
+    {
+      "headline": "X's AI tool Grok generated controversial content, leading to discussions among advertisers.",
+      "sources": [
+        "https://nbcnews.com/tech/s
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Google News: The aggregated news feed includes a story from NPR about the Department of Justice planning to interview Epstein associate Ghislaine Maxwell and Trump unveiling a new AI order. This AI order likely involves policy initiatives related to artificial intelligence under the Trump administration. The content covers a broad range of topics, but the technology aspect highlights ongoing developments in AI and government actions. Other stories in the feed address various issues, including entertainment and politics, with the AI reference emphasizing its role in current events. The aggregation provides comprehensive updates from multiple sources, aiding users in staying informed on real-time news. [https://www.reuters.com/]
+
+- Elon Musk Warns of Potentially ‘Rough’ Times Ahead: Elon Musk issued a warning about challenging times for Tesla due to risks from Trump administration tariffs and the elimination of tax credits. The article discusses how these policies could impact the electric vehicle industry and AI development, with Tesla shares declining in premarket trading. It highlights the broader implications for tech companies amid shifting trade and regulatory environments. Musk's statements underscore the potential economic strains on innovation in AI and sustainable technology sectors. The context includes analysis of how presidential actions affect global business dynamics. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Shares in Tesla were down in premarket trading." - The New York Times
+
+- BBC Home: The BBC news site features sections on technology and innovation, including reports on network outages affecting thousands of users in the UK. It discusses AI's role in business and health, such as changes in social media dynamics and the benefits of emerging technologies. A specific story covers disruptions in digital voice calls by EE and BT, with restoration confirmed by the government. The content emphasizes the importance of online safety and AI applications in daily life. Overall, it provides updates on how technological failures and advancements impact society. [https://www.nytimes.com/]
+Key Quotes: "EE and BT digital voice calls to 999 have now been restored." - The government
+
+- MAGA AI bot network divided on Trump-Epstein backlash: Researchers identified a network of over 400 AI-powered bot accounts on X that support the Trump administration but show division on the Epstein files issue. The bots automatically generate replies with positive messages, though their contradictory statements reveal their AI-driven nature. It remains unclear who operates the network or which AI chatbot powers it, with accounts created in batches and posting consistently until the recent controversy. This incident illustrates challenges in detecting AI misinformation on social media. The study highlights how such bots can influence perceptions without seeking high engagement. [https://www.bbc.com/]
+Key Quotes: "They’re not really there to get engagement. They’re there to just be occasionally seen in those replies." - Darren Linvill, director of Clemson University’s Media Forensics Hub | "Retweet if you believe that Trump & his cronies are lying to the public and treating us like we’re stupid. We won’t be fooled by their games." - A bot account in the network
+
+- Elmo X account hack shows no social media brand is safe from cybercriminals: The hack of Elmo's verified X account involved posting hate speech and racist content, exposing vulnerabilities in social media security. Cybersecurity expert Daniel Tobok explained that credentials are often harvested and sold on the dark web, bypassing strong passwords and multi-factor authentication. The incident underscores the need for robust protective measures, such as enabling login alerts and using antivirus software. Sesame Workshop condemned the breach and secured the account, emphasizing that the posts did not reflect their values. Users are advised to adopt best practices to safeguard their online presence against similar threats. [https://www.bbc.com/news/world/australia]
+Key Quotes: "Unfortunately, a lot of credentials are harvested and sold on the dark web between different threat actor groups despite strong passwords or MFA barriers." - Daniel Tobok, CEO of Cypfer | "Brute-force attacks make a lot of noise and can trigger alerts. It's not the most popular strategy anymore because it's so noisy." - Daniel Tobok, CEO of Cypfer
+
+---
+
+TOPIC: Space exploration
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Astronauts conducted a spacewalk on the International Space Station to perform repairs.",
+      "citations": [
+        "https://www.reuters.com/world/",
+        "https://nasa.gov/blogs"
+      ]
+    },
+    {
+      "headline": "NASA launched the TRACERS mission to study Earth's magnetic field and space weather.",
+      "citations": [
+        "https://nasa.gov/blogs"
+      ]
+    },
+    {
+      "headline": "Recent developments in space exploration were covered in global space industry news.",
+      "citations": [
+        "https://spacenews.com/section/news-archive/"
+      ]
+    },
+    {
+      "headline": "Updates on space discoveries and research were published in science news sources.",
+      "citations": [
+        "https://scitechdaily.com/news/space/"
+      ]
+    }
+  ],
+  "notes": "Only four stories were identified based on available data within the last 24 hours; some may be general updates due to sparse specific viral content."
+}
+
+X POSTS FROM SEARCH (1):
+- Mario Nawfal: "HOW HIGH IS TOO HIGH? THIS IS WHAT IT'S LIKE TO BE AN ASTRONAUT
+
+This is the moment when astronauts stepped outside the ISS, 250 miles above Earth, to fix things in literal outer space.
+
+No ropes, no atmosphere, just two humans floating in a void that looks like it wants to https://t.co/evYd10eu4A https://t.co/1ZJHYysv8L" (50152 views, 65 likes) https://x.com/MarioNawfal/status/1948095779635441814
+
+SUPPORTING ARTICLES (7):
+- News Archives - SpaceNews: SpaceNews offers daily coverage of the global space industry with a focus on business and political news. Recent articles discuss Lockheed Martin's exploration of offering the Orion spacecraft as a commercial service for non-NASA applications. Other highlights include SpaceX's Falcon 9 launch of NASA's TRACERS space science mission and updates on commercial launch startups like iRocket. The site also covers policy developments, such as US lawmakers' interest in alternatives to the SLS EUS upper stage, and military space initiatives. Additionally, it features sections on webinars, podcasts, and job opportunities in the space sector. [https://www.reuters.com/world/]
+
+- Space News, Exploration & Discoveries - SciTechDaily: SciTechDaily's space section provides updates on astronomical discoveries and space exploration efforts. Key stories include a $621,000 NASA-funded hunt for alien chemistry on Earth and research on how radar signals may inadvertently reveal Earth's location to potential extraterrestrial civilizations. Astronomers have identified a bizarre 'infinity' galaxy and developed new methods to analyze gravitational waves from black hole collisions. Other articles cover NASA's detection of X-ray sources from neutron stars, the discovery of a mysterious solar system object with a 10-year Neptune orbit, and investigations into unexplained gases on Venus that could hint at life. The site emphasizes cutting-edge science to engage readers with cosmic phenomena. [https://www.reuters.com/world/china/]
+
+---
+
+TOPIC: Climate tech
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "The International Court of Justice rules that countries must comply with climate commitments to address global warming.",
+      "citations": [
+        "https://www.nytimes.com/2025/07/23/climate/icj-hague-climate-change.html",
+        "https://www.reuters.com/sustainability/cop/top-un-court-says-treaties-compel-wealthy-nations-curb-global-warming-2025-07-23/"
+      ]
+    },
+    {
+      "headline": "Reuters reports on environmental and climate news updates from global sources.",
+      "citations": [
+        "https://www.reuters.com/business/environment/"
+      ]
+    },
+    {
+      "headline": "BBC publishes content on climate-related topics and developments.",
+      "citations": [
+        "https://www.bbc.com/news/topics/cmj34zmwm1zt"
+      ]
+    }
+  ],
+  "semantic_posts_stories": [
+    {
+      "headline": "Bill Gates comments on the impact of U.S. tax law on climate technology investments.",
+      "citations": [
+        "https:/
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Top U.N. Court Says Countries Must Act on Climate Change: The International Court of Justice issued a unanimous advisory opinion declaring climate change an urgent existential threat that countries must address. It stated that failure to protect the climate system could constitute an internationally wrongful act and violate human rights obligations. The court emphasized that all states have a duty to limit global warming to 1.5 degrees Celsius and that historical emissions could lead to legal consequences. This opinion may influence global litigation and climate policy negotiations. Vulnerable nations like Vanuatu advocated for the ruling to hold major polluters accountable. [https://www.nytimes.com/2025/07/23/climate/icj-hague-climate-change.html]
+Key Quotes: "The environment is the foundation for human life, upon which the health and well-being of both present and future generations depend." - Judge Iwasawa Yuji | "on the frontline of a crisis we did not create." - Ralph Regenvanu
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/business/environment/]
+
+- Climate - BBC News: BBC News reports on various climate-related stories, including the International Court of Justice's ruling that countries can sue each other over climate change responsibilities. It covers local developments such as Wiltshire Council rejecting a motion to abandon carbon neutral aims and the first baby beavers born in a Cornish nature reserve. Other topics include eco-anxiety, solar power debates, and natural disasters like underwater bushfires affecting Australian reefs. The page also discusses global climate solutions and the origins of a major climate case at the UN court. [https://www.bbc.com/news/topics/cmj34zmwm1zt]
+Key Quotes: "constrained by unachievable targets" - Unknown
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/sustainability/cop/top-un-court-says-treaties-compel-wealthy-nations-curb-global-warming-2025-07-23/]
+
+- Could have been 'far worse': Why Bill Gates is 'just fine' with Donald Trump's Tax Law despite huge cuts in Climate tech: Bill Gates expressed that the Trump administration's tax law, which cut many climate incentives, was not as damaging as it could have been. He noted that tax credits for emerging technologies like geothermal and nuclear were preserved. Gates highlighted that global demand for clean energy technologies would continue despite U.S. policy changes. He reduced funding for clean energy advocacy to focus more on global health initiatives. Gates remains optimistic about innovation in climate tech through his Breakthrough Energy efforts. [https://timesofindia.indiatimes.com/technology/tech-news/could-have-been-far-worse-why-bill-gates-is-just-fine-with-donald-trumps-tax-law-despite-huge-cuts-in-climate-tech/articleshow/122617514.cms]
+Key Quotes: "It wasn’t quite the evisceration that a complete lack of believing in climate change might have led to." - Bill Gates
+
+- Investor Vinod Khosla offers contrarian take on AI and climate challenges: Vinod Khosla argued that U.S. immigration policy poses a greater threat to competitiveness in AI and climate tech than other factors like energy shortages. He expressed strong optimism about fusion energy becoming the dominant power source within five years. Khosla emphasized the importance of taking risks on breakthrough technologies to achieve significant climate goals by 2050. He criticized subsidies for mature technologies like solar and wind, advocating for focus on innovation. Despite policy challenges, he believes talent and technological advancement will drive solutions. [https://www.geekwire.com/2025/talent-drives-everything-vinod-khoslas-contrarian-take-on-americas-ai-and-climate-challenges/]
+Key Quotes: "Talent drives everything." - Vinod Khosla
+
+- Climate Policy in America: Where We Go From Here: The podcast discusses the impact of the One Big Beautiful Bill Act on U.S. climate policy, including the repeal of key clean energy tax credits. It explores potential electricity affordability crises due to rising demand and supply constraints. The conversation covers how policy changes could affect economic competitiveness and the energy transition. Hosts and guests express mixed emotions, with a focus on future strategies despite setbacks. The episode analyzes the broader implications for climate action and the need for new approaches. [https://heatmap.news/podcast/shift-key-s2-e48-obbba-debrief]
+Key Quotes: "Dizzy." - Jillian Goodman | "I would like a break." - Jesse Jenkins
+
+---
+
+TOPIC: Startup funding
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Limited direct information on viral startup funding stories from the last 24 hours was found; only one related story was identified from available sources.",
+  "stories": [
+    {
+      "headline": "Biotech startups Tessera and Generate:Biomedicines announce layoffs potentially linked to funding challenges.",
+      "citations": [
+        "https://www.biospace.com/biospace-layoff-tracker"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Flagship Unicorns Tessera, Generate:Biomedicines Downsize - BioSpace: Tessera Therapeutics, a biopharma startup valued over $1 billion, is reducing its workforce by 17% to support its transition to clinical development. Generate:Biomedicines, another unicorn startup, is cutting 10% of its staff to balance resources and focus on technology and portfolio needs. Both companies have received significant funding in the past, as indicated by their high valuations. The layoffs reflect strategic adjustments in the biopharma sector amid funding and market conditions. Other companies mentioned in the article, such as GSK and BioNTech, are also undergoing workforce reductions, highlighting broader industry trends. [https://www.reuters.com/markets/]
+Key Quotes: "the move will help support Tessera’s transition into clinical work" - Tessera Therapeutics spokesperson | "purposefully balancing human resources" - Generate:Biomedicines spokesperson
+
+---
+
+TOPIC: Death of Hulk Hogan
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Hulk Hogan dies at age 71, WWE confirms the passing of the wrestling icon.",
+      "citations": [
+        "https://www.washingtonpost.com/obituaries/2025/07/24/hulk-hogan-wrestler-dead/",
+        "https://www.reuters.com/world/us/hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-dies-71-2025-07-24/",
+        "https://www.nytimes.com/2025/07/24/sports/hulk-hogan-dead.html",
+        "https://www.bbc.com/news/live/cwyqq7z2z2wt",
+        "https://www.foxnews.com/sports/pro-wrestling-icon-hulk-hogan-dead",
+        "https://apnews.com/article/hulk-hogan-obit-wrestling-professional-wwe-fame-cc767794b616e155079b9f374c769ad0"
+      ]
+    },
+    {
+      "headline": "Hulk Hogan's death results from cardiac arrest, as reported by multiple news outlets.",
+      "citations": [
+        "https://www.foxnews.com/sports/pro-wrestling-icon-hulk-hogan-dead",
+        "https://news18.com/world/wrestling-icon-hulk-hogan-dies-at-71-following-cardi
+
+X POSTS FROM SEARCH (2):
+- Mail Sport: "Disturbing 911 audio as EMTs rushed to home of Hulk Hogan where WWE icon lay dying of cardiac arrest https://t.co/59qXv0P2oB" (9761 views, 15 likes) https://x.com/MailSport/status/1948428632537333803
+- FOX 29: "LIVE 🔴 BREAKING NEWS: Hulk Hogan dead, TMZ reports 
+
+LIVE COVERAGE: https://t.co/xsk0eXRUgI" (3264 views, 7 likes) https://x.com/FOX29philly/status/1948411682331508922
+
+SUPPORTING ARTICLES (7):
+- Hulk Hogan, Wrestling Superstar, Is Dead at 71: Hulk Hogan, born Terry Gene Bollea, died at 71 due to cardiac arrest in Clearwater, Florida. He was a transformative figure in professional wrestling, helping to elevate it from a niche entertainment to a global phenomenon. Hogan held multiple WWE championships and was known for iconic matches, such as his bout with Andre the Giant at WrestleMania III. He was involved in various entertainment ventures, including films and reality television, and a high-profile lawsuit against Gawker that resulted in a significant settlement. Hogan also engaged in political activities, including supporting Donald Trump and speaking at the Republican National Convention. His death was confirmed by local police and fire department personnel. [https://www.washingtonpost.com/obituaries/2025/07/24/hulk-hogan-wrestler-dead/]
+Key Quotes: "It is the dream of a lifetime, daddy. This is like going to the mountaintop 1,000 times over. I feel the energy. Hulkamania’s running worldwide!" - Hulk Hogan | "The moment I come home, the headband comes off the bald head, and it’s just Terry: dad, father, husband, friend." - Hulk Hogan | "What happened last week when they took a shot at my hero, and they tried to kill the next president of the United States. Enough was enough. And I said, let Trumpamania run wild, brother. Let Trumpamania rule again. Let Trumpamania make America great again." - Hulk Hogan
+
+- Hulk Hogan: Wrestling legend dies aged 71: Hulk Hogan, whose real name was Terry Bollea, died at 71 after suffering cardiac arrest at his home in Florida, as confirmed by his representative and local authorities. He was a defining figure in professional wrestling during the 1980s and 1990s, known for his charismatic persona, red and yellow outfits, and a massive fanbase called 'Hulkamaniacs.' Hogan debuted in 1977 and continued wrestling into his 50s, with significant contributions to events like WrestleMania. He was inducted into the WWE Hall of Fame and later reinstated after a period of controversy involving racist remarks. Tributes from fellow wrestlers and organizations highlighted his impact on the industry. His death prompted an outpouring of condolences from peers and fans worldwide. [https://www.reuters.com/world/us/hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-dies-71-2025-07-24/]
+Key Quotes: "Through the good times and the bad, I always loved my brother Terry!" - Brutus 'The Barber' Beefcake | "Unfortunately we must confirm that Terry Bollea, aka Hulk Hogan passed away this morning." - Linda Bose, Hulk Hogan's representative | "Hulk was always so nice to me." - John 'Bradshaw' Layfield
+
+- WWE legend Hulk Hogan dead at 71: Hulk Hogan died at 71 following a medical emergency, possibly cardiac arrest, at his home in Clearwater, Florida, and was pronounced dead at the hospital. He was a legendary figure in professional wrestling, credited with transforming the industry into a multibillion-dollar spectacle through his charisma and performances. Hogan won multiple championships across various promotions and was inducted into the WWE Hall of Fame. Beyond wrestling, he appeared in films, television shows, and supported political causes, including Donald Trump's presidential campaign. His death was confirmed by WWE and local authorities, with tributes emphasizing his cultural impact. Hogan's legacy includes iconic moments like his rivalries and the creation of 'Hulkamania.' [https://www.reuters.com/world/us/obituary-hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-2025-07-24/]
+Key Quotes: "WWE is saddened to learn WWE Hall of Famer Hulk Hogan has passed away." - WWE
+
+- Hulk Hogan, icon in professional wrestling, dies at age 71: Hulk Hogan, born Terry Bollea, died at 71 and was recognized as a major icon in professional wrestling. He played a key role in popularizing the sport during the 1980s, turning it into a mainstream entertainment phenomenon. Hogan won numerous world championships and was known for his larger-than-life persona, including his signature mustache and headscarf. His influence extended beyond wrestling into movies, television, and politics. Details on the cause of death were not specified in the available reports, but his contributions were widely acknowledged by the wrestling community and beyond. [https://www.nytimes.com/2025/07/24/sports/hulk-hogan-dead.html]
+
+---
+
+TOPIC: Advancements in Tesla and SpaceX Technologies
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "SpaceX has deployed nearly 8,000 Starlink satellites in low-Earth orbit, maintaining a lead in global satellite internet technology.",
+      "citations": [
+        "https://www.nytimes.com/video/technology/100000010290263/china-starlink-space-race.html"
+      ]
+    },
+    {
+      "headline": "Tesla opened its first showroom in India, expanding electric vehicle infrastructure in the region.",
+      "citations": [
+        "https://www.bbc.com/news/topics/c8nq32jwjnmt"
+      ]
+    },
+    {
+      "headline": "Tesla shareholders are considering a potential investment in xAI to support advancements in artificial intelligence technology.",
+      "citations": [
+        "https://bloomberg.com/news/articles/2025-07-23/musk-puts-potential-xai-investment-back-on-tesla-shareholders"
+      ]
+    }
+  ],
+  "notes": "Only three directly related stories about advancements in Tesla and SpaceX technologies were found from the last 24 hours based on high-engagement
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- In the Latest Space Race, It’s China vs. SpaceX - The New York Times: China has made catching up with SpaceX's Starlink satellite system a national priority, viewing it as a potential military threat. SpaceX currently operates nearly 8,000 satellites in low-Earth orbit for internet provision, while China has only 124 such satellites. Despite China's achievements in other aspects of its space program, it lags behind in this area. An investigative reporter from The New York Times, Selam Gebrekidian, explains the reasons for China's shortfall in this new space race competition. [https://www.nytimes.com/video/technology/100000010290263/china-starlink-space-race.html]
+
+- Tesla - BBC News: Tesla has pledged to produce cheaper electric vehicles amid falling profits caused by tariffs and reduced US support for EVs. The company opened its first showroom in India, marking a significant expansion milestone. Tesla launched its robotaxi service in Texas, aiming to compete in autonomous ride-hailing technology. A public feud with former US President Donald Trump, including criticism of Musk's political activities, led to a sharp decline in Tesla's share price. Despite these challenges, Tesla continues to focus on innovations in electric and autonomous vehicle technologies. [https://www.bbc.com/news/topics/c8nq32jwjnmt]
+Key Quotes: "ridiculous" - Donald Trump | "not interested" - Indian minister
+
+---
+
+TOPIC: Donald Trump's AI Development Initiatives
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "President Trump Unveils AI Action Plan to Promote U.S. Dominance in Technology",
+      "x_engagement_description": "High-engagement posts on X discuss the plan's focus on AI exports and U.S. leadership, with thousands of shares and replies highlighting public interest in tech policy.",
+      "correlating_sources": [
+        "https://www.washingtonpost.com/politics/2025/07/22/tech-brief-trump-ai-action-plan/",
+        "https://www.nytimes.com/2025/07/23/technology/trump-ai-executive-orders.html",
+        "https://www.reuters.com/legal/government/trump-administration-supercharge-ai-sales-allies-loosen-environmental-rules-2025-07-23/"
+      ]
+    },
+    {
+      "headline": "Trump Administration Releases Executive Orders on AI Development",
+      "x_engagement_description": "Posts on X with high engagement, including retweets and quotes from tech influencers, focus on the orders' implications for innovation and regulations.",
+      
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.washingtonpost.com]:  [https://www.washingtonpost.com/politics/2025/07/22/tech-brief-trump-ai-action-plan/]
+
+- Trump Plans to Give A.I. Developers a Free Hand - The New York Times: President Trump signed three executive orders and outlined an 'A.I. Action Plan' to promote AI development with less regulation and no partisan bias. The plan aims to remove red tape, speed up permitting for AI infrastructure, and ensure AI is free from ideological influences. Trump declared that the US must win the AI race against China and other countries. The initiatives include barring the government from buying biased AI tools and promoting the export of American AI products. Tech executives like Nvidia's Jensen Huang attended the event, and Trump emphasized growing the AI industry without restrictions. [https://www.nytimes.com/2025/07/23/technology/trump-ai-executive-orders.html]
+Key Quotes: "America is the country that started the A.I. race, and as president of the United States, I’m here today to declare that America is going to win it." - President Trump | "Once and for all, we are getting rid of woke." - President Trump | "We’re going to make this industry absolutely the top because right now it’s a beautiful baby that’s born. We have to grow that baby and let that baby thrive. We can’t stop it." - President Trump
+
+- [Article from www.washingtonpost.com]:  [https://www.washingtonpost.com/politics/2025/07/23/trump-ai-action-plan-big-tech/]
+
+- Attorney General Alerted Trump His Name Appeared in Epstein Files - The New York Times: Attorney General Pam Bondi informed President Trump that his name appeared in Jeffrey Epstein files during a briefing in May. The disclosure was part of a re-examination of the Epstein case, with officials stating no further investigation or prosecution was warranted. Trump denied wrongdoing and claimed the files might contain material manufactured by Democrats. The article details the background of Trump's past friendship with Epstein and the administration's handling of the files. Bondi and Deputy Attorney General Todd Blanche emphasized that the briefing was routine and nothing in the files indicated criminal activity by Trump. [https://www.nytimes.com/live/2025/07/23/us/trump-news]
+Key Quotes: "Nothing in the files warranted further investigation or prosecution." - Attorney General Pam Bondi and Deputy Attorney General Todd Blanche | "As part of our routine briefing, we made the president aware of the findings." - Attorney General Pam Bondi and Deputy Attorney General Todd Blanche
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/legal/government/trump-administration-supercharge-ai-sales-allies-loosen-environmental-rules-2025-07-23/]
+
+- [Article from www.reuters.com]:  [https://www.reuters.com/legal/government/trump-administration-supercharge-ai-sales-allies-loosen-environmental-rules-2025-07-23/]
+
+- No ‘woke AI’ in Washington, says Trump, as he launches AI action plan: President Trump signed an executive order to prevent 'woke AI' in the federal government, prioritizing truth-seeking AI over ideological agendas like diversity, equity, and inclusion (DEI). The order mandates that AI models be neutral and accurate, avoiding biases in outputs, and references past examples of inaccurate AI representations. Additional orders aim to accelerate AI innovation by reducing regulations and establish a program for exporting American AI technology. The AI Action Plan includes 90 federal policy actions across innovation, infrastructure, and international leadership. Trump criticized DEI in AI for potentially leading to discriminatory outcomes and emphasized the need for objective AI development. [https://www.cnbc.com/2025/07/24/no-woke-ai-in-washington-says-trump-as-he-launches-ai-action-plan.html]
+Key Quotes: "No ‘woke AI’ in Washington" - President Trump | "LLMs shall be neutral, nonpartisan tools that do not manipulate responses in favor of ideological dogmas such as DEI." - Executive Order
+
+---
+
+TOPIC: Sports Transfers and Injuries
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "",
+  "stories": [
+    {
+      "headline": "Arsenal is close to finalizing a transfer agreement for Viktor Gyokeres from Sporting CP.",
+      "citations": [
+        "https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/",
+        "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html"
+      ]
+    },
+    {
+      "headline": "Newcastle United's Alexander Isak is not traveling with the team due to an injury, amid transfer rumors.",
+      "citations": [
+        "https://t.co/4p1srRIvjv"  // From X post, but labeled as posts found on X
+      ]
+    },
+    {
+      "headline": "Liverpool has opened transfer talks for Alexander Isak.",
+      "citations": [
+        "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-man-united-liverpool-gyokeres-isak-eze-b2789091.html"
+      ]
+    },
+    {
+      "headline": "Manchester United has agreed a deal for Bryan 
+
+X POSTS FROM SEARCH (1):
+- Lee Ryder: "#NUFC dealing with Alexander Isak transfer bombshell after agent leaks BUT club insist injury is official reason why star is not on the plane with team-mates.
+
+https://t.co/4p1srRIvjv" (18358 views, 21 likes) https://x.com/lee_ryder/status/1948356221423034810
+
+SUPPORTING ARTICLES (7):
+- Arsenal on verge of total agreement for Viktor Gyokeres transfer from Sporting CP: Arsenal and Sporting CP are close to finalizing a transfer deal for striker Viktor Gyokeres worth €63.5 million plus up to €10 million in bonuses. The agreement faced delays due to disputes over the achievability of bonus payments, but negotiations are now at an advanced stage. Gyokeres, who scored 54 goals in 52 matches last season, was exclusively focused on joining Arsenal despite interest from other clubs. Arsenal aim to strengthen their attack after being hampered by injuries to key players like Kai Havertz and Gabriel Jesus during the previous season. The signing is part of Arsenal's active transfer window, which has already seen additions in midfield and defense under new sporting director Andrea Berta. [https://www.reuters.com/]
+Key Quotes: "Gyokeres was focused only on joining Arsenal and, despite late interest from elsewhere, he did not consider any other team." - David Ornstein | "Gyokeres would be issued a 'heavy fine' and told to apologise to his Sporting team-mates after the Swede missed the deadline to report for pre-season training amid Arsenal’s approach." - Frederico Varandas, president of Sporting CP
+
+- Arsenal FC - Transfer news, results, fixtures, video & audio: Arsenal have signed defender Cristhian Mosquera from Valencia, who expressed enthusiasm about joining a historic club. Midfielder Declan Rice highlighted his improved fitness and mental preparation for the new season after a full pre-season. Manager Mikel Arteta is carefully managing Gabriel Magalhaes' recovery from a hamstring injury and a recent training niggle to avoid risks. The team is nearing a deal for striker Viktor Gyokeres and has shown interest in other players like Xavi Simons. Arsenal's squad enhancements are aimed at improving competitiveness in the Premier League and beyond. [https://www.nytimes.com/athletic/6491250/2025/07/22/arsenal-viktor-gyokeres-transfer-latest/]
+Key Quotes: "I’m joining a historic, massive club." - Cristhian Mosquera | "I feel really fit and really strong." - Declan Rice | "Gabby had a little niggle the other day in training." - Mikel Arteta
+
+- Transfer news live: Isak bombshell opens door to Liverpool, Gyokeres to fly in for Arsenal move, Man Utd latest: Newcastle United's Alexander Isak has indicated a desire to leave the club, attracting interest from Liverpool and Chelsea. Arsenal are finalizing a transfer for Viktor Gyokeres, with the striker set to travel to London for medicals. Manchester United have agreed a deal for Bryan Mbeumo from Brentford and are pursuing additional targets amid ongoing squad changes. Liverpool are close to signing Hugo Ekitike from Eintracht Frankfurt, while rumors swirl around players like Marcus Rashford and Jadon Sancho. The transfer window involves multiple clubs actively strengthening their squads for the upcoming season, with a focus on key positions. [https://www.bbc.com/sport/football/teams/arsenal]
+Key Quotes: "at the highest level" - Mikel Arteta
+
+- Man United transfer news RECAP - Bryan Mbeumo deal agreed, Rodrygo latest, Benjamin Sesko links: Manchester United have agreed a £70 million deal to sign Bryan Mbeumo from Brentford, with the forward expected to undergo a medical soon. The club is linked with strikers like Benjamin Sesko and Rodrygo as they seek to bolster their attack. United are managing outgoing transfers, including players like Jadon Sancho and Marcus Rashford, to balance the squad. Pre-season training has seen several players return, with a focus on fitness and preparation under manager Ruben Amorim. The team aims to improve after a disappointing previous season, targeting key reinforcements in multiple positions. [https://www.nytimes.com/athletic/]
+Key Quotes: "He was like a son to me, he still is a son to me." - Erik ten Hag
+
+---
+
+TOPIC: Geopolitical Conflicts and Military Engagements
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Ukrainian military reports ongoing engagements in eastern regions",
+      "citations": [
+        "https://kyivindependent.com/",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "Strikes continue in Middle East conflict zones",
+      "citations": [
+        "https://www.aljazeera.com/",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "Naval activities escalate tensions in South China Sea",
+      "citations": [
+        "https://www.reuters.com/world/asia-pacific/",
+        "https://news.google.com/"
+      ]
+    },
+    {
+      "headline": "NATO discussions focus on alliance responses to global military threats",
+      "citations": [
+        "https://www.bbc.com/news/politics",
+        "https://npr.org/sections/world"
+      ]
+    }
+  ],
+  "notes": ""
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Israel-Iran Conflict Challenges UK Government: The UK government is facing a significant challenge from the Israel-Iran conflict, with reports of buildings burning in both Tehran and Tel Aviv. Laura Kuenssberg discusses how this adds to multiple crises the government is handling, including domestic and international pressures. The conflict highlights the need for diplomatic responses amid escalating tensions in the Middle East. Additionally, the UK is dealing with issues like migrant deals and global interconnectedness. This situation underscores the broader impact of geopolitical conflicts on national politics. [https://www.reuters.com/world/]
+Key Quotes: "As buildings burn in Tehran and Tel Aviv, the UK government is facing another crisis" - Laura Kuenssberg
+
+- People in Gaza are ‘Walking Corpses’, Says UNRWA: UNRWA describes people in Gaza as 'walking corpses' due to severe starvation amid the ongoing conflict, with 6,000 aid trucks ready but delayed in entering. One in five children in Gaza is malnourished, according to UN reports, highlighting the humanitarian crisis. BBC journalists share personal accounts of struggling to feed families in the region. This situation emphasizes the dire conditions caused by military engagements and geopolitical tensions in the Middle East. International inaction has been criticized, exacerbating the suffering of civilians. [https://www.bbc.com/news/politics]
+Key Quotes: "People in Gaza are ‘walking corpses’" - UNRWA | "The hardest time I have lived through" - BBC's Gaza freelance journalists
+
+- Israel Pulls Negotiators from Ceasefire Talks Amid Hamas Demands: Israel has recalled its negotiation team from ceasefire talks due to Hamas raising demands for prisoner releases, escalating the conflict in the region. Simultaneously, Ukrainian strikes are targeting Russian vacation spots, intensifying the Russia-Ukraine war and demonstrating ongoing military engagements. These events illustrate the volatility of geopolitical conflicts and the challenges in achieving peace agreements. The US and other nations are involved in diplomatic efforts, but progress remains stalled. Such developments underscore the broader implications for global stability and humanitarian concerns. [https://www.reuters.com/world/asia-pacific/]
+
+- Gaza’s Forcibly Starved Families ‘Breaking Down’ Amid World Inaction: The death toll in Gaza has risen to 62 since dawn, with Khan Younis hospital reporting 20 killed and 140 wounded in the last 24 hours due to ongoing military actions. US Congresswoman Rashida Tlaib criticizes fellow legislators for supporting Israel, highlighting political divisions. Israeli military strikes have targeted southern Lebanon, further escalating regional tensions. The US envoy blames Hamas for the failure to reach a ceasefire deal, amid accusations of inaction from the international community. This situation exemplifies the severe humanitarian impact of geopolitical conflicts and military engagements in the Middle East. [https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en]
+Key Quotes: "Gaza’s forcibly starved families are ‘breaking down’" - Al Jazeera report | "I was training to heal eyes in Gaza. Then everything went dark" - Lina Ghassan Abu Zayed
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by Reuters (7/24/2025): "Explosion in Yemen's al-Anad military base was munitions detonation, spokesman says" - An explosion heard at al-Anad military base in southwest Yemen was due to the detonation of munitions at a weapons depot, the Yemeni southern forces spokesperson said on Thursday. [https://www.reuters.com/world/middle-east/explosion-yemens-al-anad-military-base-was-munitions-detonation-spokesman-says-2025-07-24/]
+- [Updated RSS Feed] by Rocky Swift (7/24/2025): "OBITUARY Hulk Hogan, who helped turn pro wrestling into billion-dollar spectacle, dies at 71" - Hulk Hogan, the American sports and entertainment star who made professional wrestling a global phenomenon and loudly supported Donald Trump for president, has died at the age of 71, World Wrestling Entertainment said on Thursday. [https://www.reuters.com/world/us/obituary-hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-2025-07-24/]
+- [Updated RSS Feed] by @elonmusk (7/24/2025): "@elonmusk: SpaceX direct to cell phone growing fast" - SpaceX direct to cell phone growing fast pic.twitter.com/zzOAerzvME
+— Elon Musk (@elonmusk) July 24, 2025 [https://x.com/elonmusk/status/1948432437744468011]
+- [Updated RSS Feed] by Reuters (7/24/2025): "US to bring delegation home from Gaza truce talks, envoy Witkoff says" - U.S. Middle East peace envoy Steve Witkoff said on Thursday that the Trump administration has decided to bring its team home from Gaza ceasefire talks for consultations. [https://www.reuters.com/world/middle-east/us-bring-delegation-home-gaza-truce-talks-envoy-witkoff-says-2025-07-24/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "Accelerant valued at $6.4 billion as shares rise in NYSE debut" - Accelerant's shares jumped 35.7% in their New York Stock Exchange debut on Thursday, giving the specialty insurance marketplace - backed by billionaire sports financier Todd Boehly - a fully diluted valuation of $6.37 billion. [https://www.reuters.com/business/accelerant-valued-64-billion-shares-rise-nyse-debut-2025-07-24/]
+- [Updated RSS Feed] by @JessePeltan (7/24/2025): "@JessePeltan: RT by @elonmusk: People are starting to realize that China’s massive buildout of solar photovoltaics has nothing to do with climate change, and everything to do with tapping the resource that makes up >99.9% of Earth’s energy budget." - People are starting to realize that China’s massive buildout of solar photovoltaics has nothing to do with climate change, and everything to do with tapping the resource that makes up >99.9% of Earth’s energy budget. https://t.co/gNhxAAWAbm
+— Jesse Peltan (@JessePeltan) July 24, 2025 [https://x.com/JessePeltan/status/1948431709206446206]
+- [Updated RSS Feed] by @elonmusk (7/24/2025): "@elonmusk: Due to laws against data export, Tesla achieved the top results in China despite having no local training data. Tesla is adding training data from our world simulator and test tracks to achieve 6/6." - Due to laws against data export, Tesla achieved the top results in China despite having no local training data. 
+Tesla is adding training data from our world simulator and test tracks to achieve 6/6. https://t.co/grn336e45v
+— Elon Musk (@elonmusk) July 24, 2025 [https://x.com/elonmusk/status/1948430703395500264]
+- [Updated RSS Feed] by Reuters (7/24/2025): "New FAA administrator calls current state of US air traffic unacceptable" - The new head of the Federal Aviation Administration said Thursday the current state of the aging, understaffed U.S. air traffic control system is "not acceptable," vowing an aggressive modernization effort. [https://www.reuters.com/business/aerospace-defense/new-faa-administrator-calls-current-state-us-air-traffic-unacceptable-2025-07-24/]
+- [Updated RSS Feed] by Pritam Biswas (7/24/2025): "McGraw Hill valued at $3.25 billion as shares open flat in underwhelming debut" - U.S. publisher McGraw Hill was valued at $3.25 billion as its shares opened at par in their New York debut on Thursday, hinting at a mixed response from investors in an otherwise upbeat IPO market. [https://www.reuters.com/business/mcgraw-hill-valued-325-billion-shares-open-flat-underwhelming-debut-2025-07-24/]
+- [Updated RSS Feed] by Samuel Larreal, NOTUS (7/24/2025): "Trump announces plan to accelerate U.S. artificial intelligence development " - President Donald Trump on Wednesday announced a sweeping plan to accelerate the development of artificial intelligence and further integrate the technology across the federal government. His speech made clear he wanted to allow a lot of leeway for tech executives to lead, and that he sees artificial intelligence as a crucial way for the country... [https://sanjosespotlight.com/trump-announces-plan-to-accelerate-u-s-artificial-intelligence-development/]
+- [Updated RSS Feed] by @whitehouse (7/24/2025): "Wide Acclaim for President Trump’s Visionary AI Action Plan" - Yesterday, the White House unveiled the Trump Administration’s transformative strategy to propel the United States into a new era of artificial [https://www.whitehouse.gov/articles/2025/07/wide-acclaim-for-president-trumps-visionary-ai-action-plan/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "OpenAI prepares to launch GPT-5 in August, The Verge reports" - Artificial intelligence pioneer OpenAI plans to launch its GPT-5 model as early as August, The Verge reported on Thursday, citing sources familiar with the plans. [https://www.reuters.com/business/openai-prepares-launch-gpt-5-august-verge-reports-2025-07-24/]
+- [Updated RSS Feed] by Garrett Hottle (7/24/2025): "How artificial intelligence is being used to discover new drugs" - PALM SPRINGS, Calif. (KESQ) From streamlining clinical trials to identifying new drug candidates in record time, artificial intelligence is transforming the pharmaceutical industry. Coming up tonight, News Channel 3 will beak down how this technology works, the ethical concerns surrounding AI in medicine, and what this means for patients, researchers, and the future of drug [https://kesq.com/news/2025/07/24/how-artificial-intelligence-is-being-used-to-discover-new-drugs/]
+- [Updated RSS Feed] by @xai (7/24/2025): "@xai: RT by @sawyermerritt: Effective immediately, Kalshi and xAI are partnering to bring Grok to prediction markets. Two of the fastest growing companies in America are now on the same team. @xai 🤝 @Kalshi" - Effective immediately, Kalshi and xAI are partnering to bring Grok to prediction markets.
+Two of the fastest growing companies in America are now on the same team.@xAI  🤝 @Kalshi pic.twitter.com/MCh5eQd906
+— xAI (@xai) July 24, 2025 [https://x.com/xai/status/1948424094883471702]
+- [Updated RSS Feed] by @foxbusiness (7/24/2025): "FOX Business Briefs 7/24 " - American Airlines restores profit outlook; Chipotle customers are buying fewer burritos; TD Bank to start requiring in-person work; McDonald’s to test line of new premium drinks. [https://www.foxbusiness.com/video/6376075301112]
+- [Updated RSS Feed] by David Shepardson (7/24/2025): "TikTok will go dark in US without Chinese approval of sale deal, US commerce secretary says" - U.S. Commerce Secretary Howard Lutnick said on Thursday that TikTok will have to stop operating in the United States if China does not approve a deal for the sale of the Chinese-owned short video app that is used by some 170 million Americans. [https://www.reuters.com/business/media-telecom/tiktok-will-go-dark-us-without-chinese-approval-sale-deal-us-commerce-secretary-2025-07-24/]
+- [Updated RSS Feed] by Diana Nerozzi (7/24/2025): "Trump walks back threat to strip fed money from Elon Musk companies..." - <div><img src="https://nypost.com/wp-content/uploads/sites/2/2025/07/108657300.jpg?quality=75&strip=all&w=1024" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://content.jwplatform.com/players/gSJehtxv-SPdDOYds.html" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://nypost.com/2025/07/24/us-news/trump-walks-back-threat-to-strip-fed-money-from-elon-musk-companies-as-feud-cools/]
+- [Updated RSS Feed] by Nicholas Creel Nicholas Creel (7/24/2025): "Trump's Blueprint for Authoritarian Capitalism " - The oligarchy has arrived. The only question is whether anyone will fight it. [https://www.newsweek.com/business-obediencetrumps-blueprint-authoritarian-capitalism-opinion-2103628]
+- [Updated RSS Feed] by Reuters (7/24/2025): "US House Speaker Johnson says Epstein case 'not a hoax'" - Republican House of Representatives Speaker Mike Johnson said the Jeffrey Epstein scandal was "not a hoax" in an interview released on Thursday, as the case continued to stoke turmoil within President Donald Trump's party. [https://www.reuters.com/world/us/us-house-speaker-johnson-says-epstein-case-not-hoax-2025-07-24/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "McGraw Hill notches $3.25 billion valuation in NYSE debut as shares open at par" - U.S. publisher McGraw Hill was valued at $3.25 billion and its shares opened at par in their New York debut on Thursday, hinting at a mixed response from investors in the IPO market. [https://www.reuters.com/business/mcgraw-hill-notches-325-billion-valuation-nyse-debut-shares-open-par-2025-07-24/]
+- [Updated RSS Feed] by Business Wire (7/24/2025): "Step Named to CNBC’s World’s Top Fintech Companies 2025 List" - SAN FRANCISCO, July 24, 2025--Step, a Gen Z-focused fintech platform, has been recognized on the third edition of CNBC’s World’s Top Fintech Companies 2025, in partnership with Statista Inc., the globally recognized provider of market and consumer data. [https://finance.yahoo.com/news/step-named-cnbc-world-top-163000623.html]
+- [Updated RSS Feed] by Sheila Dang (7/24/2025): "Chevron tells Hess staff to focus on safety as they await job updates" - Chevron leaders told Hess employees to stay focused on safe operations and that they will hear next week if they will continue to have jobs following the oil producer's acquisition, according to two Hess employees who spoke with Reuters. [https://www.reuters.com/business/energy/chevron-tells-hess-staff-focus-safety-they-await-job-updates-2025-07-24/]
+- [Updated RSS Feed] by Sara Merken (7/24/2025): "Judge disqualifies three Butler Snow attorneys from case over AI citations" - A federal judge in Alabama disqualified three lawyers from U.S. law firm Butler Snow from a case after they inadvertently included made-up citations generated by artificial intelligence in court filings. [https://www.reuters.com/legal/government/judge-disqualifies-three-butler-snow-attorneys-case-over-ai-citations-2025-07-24/]
+- [Updated RSS Feed] by The Athletic UK Staff and more (7/24/2025): "Alexander Isak’s transfer options assessed: Liverpool? PSG? Al Hilal?" - Examining where the Newcastle striker could look after telling his club he wishes to explore a move away [https://www.nytimes.com/athletic/6513094/2025/07/24/alexander-isak-transfer-liverpool-saudi-arabia/]
+- [Updated RSS Feed] by Libby George,Rodrigo Campos (7/24/2025): "IMF plans August mission to Senegal on hidden debt, new programme" - The International Monetary Fund plans a mission to Senegal in August to address hidden debt and start talks on the "contours" of a new loan programme, it said on Thursday. [https://www.reuters.com/world/china/imf-plans-august-mission-senegal-hidden-debt-new-programme-2025-07-24/]
+- [Updated RSS Feed] by Nicole Cobler (7/24/2025): "Bat found at UT returns to West Texas" - Hubble the bat spent eight months in rehabilitation. [https://www.axios.com/local/austin/2025/07/24/bat-found-ut-returns-west-texas]
+- [Updated RSS Feed] by Niket Nishant,Isla Binnie (7/24/2025): "Blackstone says deal pipeline stronger than 2021 peak as profit beats estimates" - Blackstone is preparing more companies to go public than the record IPO year of 2021, President and Chief Operating Officer Jon Gray said, in a sign of growing market optimism as equities push higher despite lingering tariff worries. [https://www.reuters.com/business/finance/blackstone-says-deal-pipeline-stronger-than-2021-peak-profit-beats-estimates-2025-07-24/]
+- [Updated RSS Feed] by Nikhil Sharma,Pranav Kashyap (7/24/2025): "Alphabet results take S&P 500, Nasdaq to record highs; Dow falls" - The S&P 500 and the Nasdaq hit record highs on Thursday as major technology stocks rose after megacap Alphabet's robust earnings, while the Dow was weighed down by losses in IBM, UnitedHealth, and Honeywell. [https://www.reuters.com/business/alphabet-results-take-sp-500-nasdaq-record-highs-dow-falls-2025-07-24/]
+- [Updated RSS Feed] by Chris Mueller (7/24/2025): "7 Minnesota companies are among the best to work for in the U.S., according to US News" - A list compiled by U.S. News & World Report of the best companies to work for in 2025 includes seven based in Minnesota. [https://www.sctimes.com/story/news/2025/07/24/what-are-the-best-companies-to-work-for-in-minnesota/85355575007/]
+- [Updated RSS Feed] by Samantha Subin (7/24/2025): "Trump says he won't 'destroy' Musk's companies by taking away subsidies" - President Donald Trump denied claims that he wants to wreck Elon Musk's companies and their work with the U.S. government. [https://www.cnbc.com/2025/07/24/trump-musk-subsidies.html]
+- [Updated RSS Feed] by Chris Weatherspoon, Cerys Jones and more (7/24/2025): "Cristhian Mosquera to Arsenal: Everything you need to know" - Arsenal have added to their defensive options with Cristhian Mosquera from Valencia. We break down the deal [https://www.nytimes.com/athletic/6495223/2025/07/24/cristhian-mosquera-arsenal-transfer-analysis/]
+- [Updated RSS Feed] by Paul Taylor (7/24/2025): "Wrexham confirm signing of midfielder Lewis O’Brien from Nottingham Forest" - The 26-year-old spent much of his Forest career on loan but will now join the ambitious newly-promoted Championship side. [https://www.nytimes.com/athletic/6513415/2025/07/24/lewis-obrien-wrexham-nottingham-forest-transfer/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "Opendoor, Kohl's resume rally as meme stock frenzy continues" - Shares of retail favorites Opendoor Technologies and Kohl's resumed their rally on Thursday, fueled by continued meme stock euphoria and broader markets hitting record highs. [https://www.reuters.com/business/retail-consumer/opendoor-kohls-resume-rally-meme-stock-frenzy-continues-2025-07-24/]
+- [Updated RSS Feed] by nortonrosefulbright.com (7/24/2025): "Integrating Artificial Intelligence in M&A Processes: A New Strategic Era - Part 1: Leveraging AI and its Advantages" - Artificial intelligence (AI) is transforming established practices in multiple areas across all industries, and mergers and acquisitions (M&A) are not immune to this transformation. [https://www.nortonrosefulbright.com/en-ca/knowledge/publications/5f5749a7/integrating-artificial-intelligence-in-m-a-processes-a-new-strategic-era-part-1]
+- [Updated RSS Feed] by Katherine Tangalakis-Lippert, Brent D. Griffiths (7/24/2025): "In-N-Out billionaire Lynsi Snyder says her family will move to Tennessee, but the company's headquarters will stay in California" - In-N-Out owner Lynsi Snyder says her family is moving to Tennessee. She later clarified that the company's headquarters would remain in California. [https://www.businessinsider.com/in-n-out-lynsi-snyder-relocation-california-tennessee-business-expansion-2025-7]
+- [Updated RSS Feed] by Luke Kawa (7/24/2025): "Artificial intelligence will help save souls, ServiceNow CEO kind of says" - PrAIse be.... [https://sherwood.news/markets/servicenow-ceo-ai-save-souls/]
+- [Updated RSS Feed] by @SawyerMerritt (7/24/2025): "@SawyerMerritt: Tesla CFO Vaibhav Taneja yesterday on the loss of the U.S. $7,500 Federal EV credit on Sept 30: "We have rolled out all our planned incentives already and will start pairing them back as we start to sell. If you're in the U.S. and are looking to buy a car, place your order now…" - Tesla CFO Vaibhav Taneja yesterday on the loss of the U.S. $7,500 Federal EV credit on Sept 30:
+"We have rolled out all our planned incentives already and will start pairing them back as we start to sell. If you're in the U.S. and are looking to buy a car, place your order now… pic.twitter.com/cJgMDEXNo1
+— Sawyer Merritt (@SawyerMerritt) July 24, 2025 [https://x.com/SawyerMerritt/status/1948413080364270062]
+- [Updated RSS Feed] by James Pearce (7/24/2025): "Liverpool tour diary: Slot’s shift from Klopp time, Mac Allister’s Cantonese and loans latest" - James Pearce is with the team in the Far East and here he brings our readers all the latest from around the camp [https://www.nytimes.com/athletic/6512317/2025/07/24/liverpool-tour-diary-hong-kong/]
+- [Updated RSS Feed] by Lauryn Sink (7/24/2025): "Harvey Mason jr & Brandi Carlile To Kick Off AmericanaFest 2025 Business Conference" - Recording Academy CEO Harvey Mason jr. and Grammy-winning artist Brandi Carlile will kick off [...] [https://musicrow.com/2025/07/harvey-mason-jr-brandi-carlile-to-kick-off-americanafest-2025-business-conference/]
+- [Updated RSS Feed] by tim.hodson (7/24/2025): "Eight Companies Selected to Drive Tech Improvements for AHA Heart and Brain Accelerator" - July 22, 2025 — In a collaboration between American Heart Association Ventures and the Association’s Center for Health Technology and Innovation, eight companies have been selected to participate in the American Heart Association Heart and Brain Health Accelerator. Through the Accelerator, the American Heart Association, a global force changing the future of health for all, aims to drive innovation with the potential to enhance patient outcomes, lower costs and reduce barriers to care. This is one of many ways the Association is exploring cutting-edge technology solutions that are scalable, accessible and effective, ensuring that everyone, everywhere can live longer, healthier lives. “Innovation is essential to advancing health and improving outcomes for people affected by heart disease and stroke,” said Lisa Suennen, managing partner of American Heart Association Ventures. “Through the Heart and Brain Health Accelerator, we’re proud to support breakthrough technologies with the potential to transform care. By connecting these companies to mentorship, funding and our network of experts, we aim to accelerate their path from promising concept to lifesaving impact.” The Heart Association’s Heart and Brain Health Accelerator is one track within the larger MedTech Innovator Accelerator Program. The track is designed to identify and support companies with novel medical or digital health technologies aligned with the lifesaving mission of the American Heart Association. These eight finalists have specific solutions and applications identified by experts for their potential to positively impact women’s cardiovascular and brain health outcomes: Kelvin Health, a health care technology company that uses mobile thermal imaging and artificial intelligence (AI) to provide quick, non-invasive diagnostics for vascular diseases. LightHearted AI Health, a health technology company that offers a contactless biometric device using laser light and AI to quickly and accurately detect heart conditions, aiming to make heart diagnostics more accessible and affordable. MOMM Diagnostics, a health-tech startup developing a rapid, highly sensitive blood test designed to detect preeclampsia early in pregnancy using a simple fingerstick sample and a compact reader, enabling faster, more accurate diagnoses during routine checkups. Powerful Medical, a health technology company that uses AI to help doctors quickly and accurately interpret electrocardiograms (ECGs), which are used to record the electrical activity of the heart. Reach Neuro, a medical technology company that has developed an implantable device delivering small electrical pulses to the spinal cord, helping stroke survivors regain control of their arm and hand movements, even years after their stroke, by enhancing communication between the brain and muscles. Sinaptica Therapeutics, a medical technology company developing a non-invasive, personalized brain stimulation therapy aimed at slowing the progression of Alzheimer's disease by enhancing memory-related brain networks. SynchNeuro, a health technology company developing a non-invasive, behind-the-ear wearable device that uses brain signals to monitor blood sugar levels, aiming to help people with prediabetes manage their health without needles or implants. Veravas, a health technology company that has developed a patented platform using magnetic beads to purify and concentrate biomarkers from complex samples like blood or saliva, enabling earlier and more accurate detection of diseases such as Alzheimer's. The selected health tech companies now also become official members of the Medtech Innovator program for this year, which includes access to networking opportunities, funding and increased visibility within the medical technology industry. In addition, they will receive specialized mentorship, coaching and capacity building from American Heart Association Ventures, customized to their focus on cardiovascular and/or brain conditions and diseases. As participants in the Heart and Brain Health Accelerator, these companies qualify to participate in the MedTech Innovator Competition Finals, held at the MedTech Conference on Oct. 5-8, 2025, in San Diego. Astellas Rx+ sponsors the American Heart Association Heart and Brain Heath Accelerator track. The companies were selected by expert volunteers on an American Heart Association advisory committee. [https://www.dicardiology.com/content/eight-companies-selected-drive-tech-improvements-aha-heart-and-brain-accelerator]
+- [Updated RSS Feed] by Reuters (7/24/2025): "Carrefour in talks to sell Italy business, reports revenue growth" - Carrefour , Europe's biggest food retailer, is in exclusive talks to sell its loss-making business in Italy to NewPrinces Group, it said on Thursday, as part of a strategic review kicked off earlier this year. [https://www.reuters.com/business/retail-consumer/carrefour-talks-sell-italy-business-reports-revenue-growth-2025-07-24/]
+- [Updated RSS Feed] by David Ornstein (7/24/2025): "Newcastle exploring Benjamin Sesko move if Alexander Isak leaves" - The Athletic reported earlier on Thursday that Alexander Isak wants to leave Newcastle. [https://www.nytimes.com/athletic/6066349/2025/07/24/benjamin-sesko-newcastle-transfer/]
+- [Updated RSS Feed] by Charles Gasparino (7/24/2025): "Curtis Sliwa finally gets sit-down with NYC business leaders as mayor..." - <div><img src="https://nypost.com/wp-content/uploads/sites/2/2025/07/curtis-sliwa-zohran-mamdani.jpg?quality=75&strip=all&1753355941&w=1024" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://content.jwplatform.com/players/Af0nfcWh-SPdDOYds.html" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://nypost.com/2025/07/24/business/curtis-sliwa-finally-gets-sit-down-with-nyc-business-leaders-as-mayor-race-heats-up/]
+- [Updated RSS Feed] by @SawyerMerritt (7/24/2025): "@SawyerMerritt: Tesla CFO Vaibhav Taneja yesterday on the loss of the U.S. $7,500 Federal EV credit on Sept 30: "We have rolled out all our planned incentives already and will start pairing them back as we start to sell. If you're in the U.S. and are looking to buy a car, place your order now…" - Tesla CFO Vaibhav Taneja yesterday on the loss of the U.S. $7,500 Federal EV credit on Sept 30: "We have rolled out all our planned incentives already and will start pairing them back as we start to sell. If you're in the U.S. and are looking to buy a car, place your order now… [https://x.com/SawyerMerritt/status/1948409398520435084]
+- [Updated RSS Feed] by Mathias Rozario (7/24/2025): "Michelin posts H1 sales in line with market forecasts" - French tyre maker Michelin reported a 3.4% decline in sales in the first half of the year, in line with market expectations, as a fall in sales volumes was partly offset by higher selling prices. [https://www.reuters.com/business/michelin-posts-h1-sales-line-with-market-forecasts-2025-07-24/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "Brazil's top court rules out Bolsonaro arrest, for now" - Brazil's Supreme Court decided on Thursday not to order the arrest of former President Jair Bolsonaro for an "isolated" breach of court-imposed restrictions, but warned he could be imprisoned for future violations. [https://www.reuters.com/world/americas/brazils-top-court-rules-out-bolsonaro-arrest-now-2025-07-24/]
+- [Updated RSS Feed] by Al Jazeera (7/24/2025): "Former UK Labour leader Jeremy Corbyn launching new left-wing party" - New party set to challenge Labour from the left as government’s popularity wanes over welfare policy, war in Gaza. [https://www.aljazeera.com/news/2025/7/24/former-uk-labour-leader-jeremy-corbyn-launching-new-left-wing-party]
+- [Updated RSS Feed] by Reuters (7/24/2025): "Netherlands with 40 other OSCE countries ask probe into Russia's POW treatment" - The Netherlands and 40 other OSCE member states have formally called for an independent investigation into the alledged torture and mistreatment of Ukrainian prisoners of war by Russian forces, Dutch Foreign Minister Caspar Veldkamp said on social media platform X on Thursday. [https://www.reuters.com/world/europe/netherlands-with-40-other-osce-countries-ask-probe-into-russias-pow-treatment-2025-07-24/]
+- [Updated RSS Feed] by Reuters (7/24/2025): "ECB policymakers set high bar for Sept rate cut, sources say" - European Central Bank policymakers are setting a high bar for an interest rate cut in September and they would need to see a significant deterioration in growth and inflation before backing further easing, two sources told Reuters. [https://www.reuters.com/business/finance/ecb-policymakers-set-high-bar-sept-rate-cut-sources-say-2025-07-24/]
+- [Updated RSS Feed] by Betsy Klein (7/24/2025): "Trump administration still hopeful about a Harvard deal after Columbia reaches settlement " - The Trump administration is still optimistic about the possibility of reaching a deal with Harvard University after it announced a $200 million settlement with Columbia University on Wednesday. [https://www.cnn.com/2025/07/24/politics/harvard-columbia-trump-administration-mcmahon]
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Barstool Sports: "RIP Hulk Hogan. An absolute legend. https://t.co/XLALNclCPA" (3927870 views, 62008 likes) https://x.com/i/status/1948409794487779737
+- Fabrizio Romano: "⚪️⚫️⤵️✅ #NUFC https://t.co/afxGzFOhJr" (2209296 views, 14747 likes) https://x.com/i/status/1948414285224309050
+- Elon Musk: "Due to laws against data export, Tesla achieved the top results in China despite having no local training data. 
+
+Tesla is adding training data from our world simulator and test tracks to achieve 6/6. https://t.co/grn336e45v" (1126900 views, 9402 likes) https://x.com/i/status/1948430703395500264
+- Fabrizio Romano: "🚨❤️🤍 Official, confirmed. Cristhian Mosquera joins Arsenal on €15m fee plus add-ons from Valencia.
+
+“It’s an opportunity that came up and I couldn’t let it pass me by. I’m  joining a historic, massive club”. https://t.co/X1RrsFfOfV" (1094069 views, 32606 likes) https://x.com/i/status/1948414183197860113
+- Elon Musk: "SpaceX direct to cell phone growing fast https://t.co/zzOAerzvME" (1031971 views, 11996 likes) https://x.com/i/status/1948432437744468011
+- Barstool Sports: "What’s considered the greatest heel turn of all time:
+
+Hulk Hogan’s turn at Bash At The Beach 
+
+Rest in Peace to a wrestling icon 
+ https://t.co/l11nFlJJGm" (773080 views, 13392 likes) https://x.com/i/status/1948415567754330388
+- Fabrizio Romano: "🚨🔴⚫️ Emerson Royal will fly tomorrow to Brazil in order to join Flamengo. ✈️" (741216 views, 11105 likes) https://x.com/i/status/1948430873964986701
+- Fabrizio Romano: "🚨🟡 Villarreal are closing in on Tajon Buchanan permanent deal from Inter.
+
+€9m plus 20% sell-on clause for the Canadian wing back. 🇨🇦 https://t.co/ZxUUt4ZyCD" (686920 views, 8503 likes) https://x.com/i/status/1948423782026088515
+- Dave Portnoy: "The Hulkster was a true 1 of 1 American icon.  A part of America died today.   Rip to a true legend.  🇺🇸" (434946 views, 17118 likes) https://x.com/i/status/1948412055066693851
+- Adam Schefter: "An MRI confirmed an ACL tear for Dolphins CB Artie Burns, who now is expected to miss the 2025 season, per source." (415646 views, 2255 likes) https://x.com/i/status/1948422827729653900
+- Big Cat: "RIP in peace brother https://t.co/HDu1UIHqHn" (341285 views, 5183 likes) https://x.com/i/status/1948411012639555778
+- xAI: "Effective immediately, Kalshi and xAI are partnering to bring Grok to prediction markets.
+
+Two of the fastest growing companies in America are now on the same team.
+
+@xAI  🤝 @Kalshi https://t.co/MCh5eQd906" (304668 views, 2259 likes) https://x.com/i/status/1948424094883471702
+- BBC Breaking News: "US wrestling legend Hulk Hogan has died aged 71, US media report https://t.co/o3FvDShmY1" (227975 views, 581 likes) https://x.com/i/status/1948417191021281764
+- CNN: "Wrestling legend Hulk Hogan dies at age 71. His larger-than-life persona made him a household name and a crossover mainstream star. https://t.co/wFdp91tbop https://t.co/iEZ0sEY6LU" (199921 views, 2220 likes) https://x.com/i/status/1948418563355607147
+- Ian Rapoport: "Sources: The #Giants have rewarded star DT Dexter Lawrence, adding $3M in incentives to his current deal for 2025. Lawrence is set to make $17M this season, plus the newly negotiated incentives. 
+
+After another stellar season, NYG does right by its Pro Bowler. https://t.co/L1kxcG3ewX" (179051 views, 1324 likes) https://x.com/i/status/1948428253309366653
+- Barstool Sports: "Watch Now: https://t.co/fPzRdmMd3O" (146461 views, 5 likes) https://x.com/i/status/1948405467761316102
+- Barstool Sports: "Hulk Hogan Has Passed Away At 71 Years Old https://t.co/uWWhGGFo9B https://t.co/BiTZrgOwh4" (144541 views, 784 likes) https://x.com/i/status/1948414163853725817
+- Barstool Sports: "That time Hulk Hogan hopped out of his car &amp; rescued a teenager who was in an accident
+
+Rest in peace
+
+https://t.co/7I9T9U4OOp" (113642 views, 746 likes) https://x.com/i/status/1948411656771412479
+- Big Cat: "https://t.co/GARK1BPcIJ" (108239 views, 1372 likes) https://x.com/i/status/1948421736803762636
+- World of Statistics: "BREAKING: Hulk Hogan has died at 71 years old. https://t.co/epmYmQOzLY" (105244 views, 1404 likes) https://x.com/i/status/1948410357044621388
+- Mario Nawfal: "🇺🇸 HULK HOGAN DEAD AT 71 - THE IMMORTAL, GONE
+
+The legend of red and yellow is over.
+
+Hulk Hogan has died at 71, after a reported cardiac arrest early this morning at his Clearwater, Florida home. 
+
+EMTs and police flooded the scene. 
+He was stretchered out - unresponsive.
+
+Just https://t.co/jX2g0iYyJC https://t.co/D8XCieaEDF" (98410 views, 582 likes) https://x.com/i/status/1948410321250492632
+- The New York Times: "Breaking News: Hulk Hogan has died at 71. The shirt-shredding superstar helped transform professional wrestling into a multibillion-dollar industry. https://t.co/lctqZqfg5J" (98420 views, 381 likes) https://x.com/i/status/1948421791644287193
+- PFT Commenter: "Art of the deal https://t.co/IHVrPgmuu1" (89109 views, 77 likes) https://x.com/i/status/1948423986380967989
+- Barstool Sports: "Does the Browns’ viral video prove that we’re overestimating people’s internet literacy? @mostlysports https://t.co/qCE8YGLH2H" (88934 views, 40 likes) https://x.com/i/status/1948405464833667174
+- The New York Times: "Breaking News: The Food Network star Anne Burrell’s death has been ruled a suicide, the New York chief medical examiner’s office said. https://t.co/H6nnCAFDNO" (85198 views, 137 likes) https://x.com/i/status/1948429262328832112
+- Adam Schefter: "49ers have signed WR Quintez Cephus to a one-year deal and waived RB Israel Abanikanda." (80240 views, 370 likes) https://x.com/i/status/1948437499858014644
+- Barstool Sports: "What's for Lunch? Pasta Salad with @Return_Of_RB and @chefdonnyy https://t.co/rwrqUtvj0d" (80016 views, 49 likes) https://x.com/i/status/1948412864869326859
+- Big Cat: "Reminder - Plinko Day today. Very excited. Starts in 20" (79899 views, 153 likes) https://x.com/i/status/1948423379695866140
+- Barstool Sports: "'We're Gonna Win A Bunch' - Pete Carroll Slapped On Some Receiver Gloves For Practice And Basically Guaranteed The Raiders Are Done Being Losers https://t.co/czjV2aDUKg https://t.co/7it2qkZTk5" (78159 views, 41 likes) https://x.com/i/status/1948409104143138993
+- Barstool Sports: "NOOOO THEY GOT CHUCK E. CHEESE
+
+https://t.co/rJDDeVj9Co" (76365 views, 1356 likes) https://x.com/i/status/1948437243275686054
+- PFT Commenter: "See you on the other side brother https://t.co/6ArTtnYgJU" (75677 views, 680 likes) https://x.com/i/status/1948417645214073147
+- The New York Times: "From @TheAthletic: The Jacksonville Jaguars will play Travis Hunter on both offense and defense this fall. Here's how they're preparing the two-way sensation for action.
+
+“He’s the best-conditioned guy I think I’ve ever seen.”
+https://t.co/qCqxsKJHSR" (75416 views, 58 likes) https://x.com/i/status/1948406579889361008
+- Big Cat: "Oh My God that’s Mark Titus’s Music 
+
+Plinko Day starts now 
+
+https://t.co/J5AkF5B6wd" (74634 views, 32 likes) https://x.com/i/status/1948433910381023296
+- Barstool Sports: "'Its Buffalo Versus The World' - The Bills Hard Knocks Trailer Dropped And It's Impossible Not To Be Dreaming About Football Now https://t.co/48XOwAGXmK https://t.co/EdwW7i0Jbd" (74596 views, 61 likes) https://x.com/i/status/1948406578383614050
+- Barstool Sports: "Everybody Deserves To Have A Job That Requires You To As Little As Rob Thomson https://t.co/KdvpySsD54 https://t.co/wfGLUhLbiK" (74325 views, 38 likes) https://x.com/i/status/1948416659611349248
+- Barstool Sports: "Welcome Back: Eva Murati Made Her Long Waited Return And Promptly Reminded Everyone Why She's A Global Superstar https://t.co/dDNJelcIso https://t.co/l0DFY0q4pE" (74039 views, 104 likes) https://x.com/i/status/1948424202299625719
+- Barstool Sports: "The Second Half Of "The Bear" Season 4 Bounced Back In A Very Big Way https://t.co/GjuxrNCu20 https://t.co/tqAsImyZQr" (73642 views, 73 likes) https://x.com/i/status/1948421680230990071
+- Barstool Sports: "There's No Higher Responsibility As A Man Than Packing Everything Up For The Day On The Beach https://t.co/iEcP6dD5LJ https://t.co/TrBbuA3T1F" (72765 views, 158 likes) https://x.com/i/status/1948430125122433458
+- David Sacks: "Thanks to @andrewrsorkin @CNBC for a good conversation this morning on President Trump’s historic AI speech and action plan:
+
+https://t.co/cFRObJtTUN" (64978 views, 331 likes) https://x.com/i/status/1948418165467152696
+- Mario Nawfal: "🔴LIVE: NICK BRYANT ON EPSTEIN, TRUMP &amp; SEXUAL BLACKMAIL https://t.co/7vLB8eeg4j" (63902 views, 697 likes) https://x.com/i/status/1948407034602275125
+- Pardon My Take: "RIP Brother https://t.co/fCF5Wd7U2v" (61522 views, 522 likes) https://x.com/i/status/1948416144643096927
+- Nancy Pelosi Stock Tracker ♟: "Breaking 🚨:
+
+On a recent Joe Rogan podcast, state rep @jamestalarico called out his fellow Politicians suspiciously trading stocks
+
+The Medicaid trade he's referring was Rob Bresnahan (R) selling Centene $CNC on 5/14/25
+
+Centene provides healthcare exchanges for Medicaid
+
+A https://t.co/E67oaoDLkc" (58815 views, 355 likes) https://x.com/i/status/1948405428049912273
+- Mario Nawfal: "🇰🇭🇹🇭 CAMBODIAN TROOPS OPEN FIRE - HEAVY MACHINE GUN BURSTS TARGET THAI FORCES
+
+Cambodian infantry is now engaging Thai positions directly with heavy machine gun fire along the border.
+
+Sustained HMG bursts from entrenched Cambodian units aimed at Thai forward posts near the https://t.co/QQ1lwlEpof https://t.co/oVqNwqDtVA" (56776 views, 55 likes) https://x.com/i/status/1948409085919215734
+- Mario Nawfal: "🇹🇭🇰🇭 THAI ARTILLERY STRIKES BACK - FULL FIRE MISSION ON CAMBODIAN POSITIONS
+
+Artillery units just launched a coordinated fire mission on Cambodian military sites across the disputed border zone.
+
+Cambodian shellings hit Ubon Ratchathani, killing civilians and forcing mass https://t.co/8lrEgtPYy9 https://t.co/ZbJllI90Wh" (56063 views, 59 likes) https://x.com/i/status/1948406570745749514
+- Big Cat: "PLINKO Day 
+
+https://t.co/up8VQAiXD2 https://t.co/Luy7MJYGwn" (51958 views, 34 likes) https://x.com/i/status/1948427767231529047
+- Barstool Sports: "The @PardonMyTake guys hit Lake Michigan with some @MountainDew looking to win the first Barstool Bass Classic
+
+#DoTheDew | @StoolOutdoors 
+https://t.co/pVmCPHDJFp" (50451 views, 27 likes) https://x.com/i/status/1948428000015311020
+- Big Cat: "“Is there a worse sentence in in in in the American in…fuck.” 
+ https://t.co/dfJGljN3lo" (43949 views, 379 likes) https://x.com/i/status/1948434952934060309
+- @jason: "I’ve never heard of American eagle jeans — are they good?" (41404 views, 268 likes) https://x.com/i/status/1948416054968914113
+- Pardon My Take: "Who are you most excited to see week 1
+
+Presented by @ChevyTrucks #ad #silverado #chevy https://t.co/SfFCt3kmr8" (40593 views, 27 likes) https://x.com/i/status/1948425265413001537
+- World of Statistics: "2025 is 56% complete 🤓" (38553 views, 211 likes) https://x.com/i/status/1948406822638952562
+- Charles Hoskinson: "Ya'll wanted marketing https://t.co/Z7PBZnqvk9" (37179 views, 1332 likes) https://x.com/i/status/1948424865880379584
+- Sen. Bernie Sanders: "Our health care system is broken and dysfunctional. Trump’s Big Beautiful Bill will make it worse.  
+
+I had a great discussion with Dr. Georges Benjamin, the Executive Director of the American Public Health Association on where we go from here. https://t.co/ESPdwVyBPN" (37992 views, 267 likes) https://x.com/i/status/1948415955173814700
+- World of Statistics: "🪨 The World’s Largest Coal Producing Countries in 2024 (million tonnes):
+
+🇨🇳 China: 4780.0
+🇮🇳 India: 1085.1
+🇮🇩 Indonesia: 836.1
+🇺🇸 U.S.: 464.6
+🇦🇺 Australia: 462.9
+🇷🇺 Russian Federation: 427.2
+🇿🇦 South Africa: 235.0
+🇰🇿 Kazakhstan: 112.6
+🇲🇳 Mongolia: 106.5
+🇩🇪 Germany: 91.9
+🇹🇷" (37952 views, 184 likes) https://x.com/i/status/1948413879630942689
+- Sen. Bernie Sanders: "It is time to address the discuss the pay crisis teachers are facing throughout the United States.
+
+Join me LIVE NOW for a livestreamed town hall on saving public education in America https://t.co/gKReHbG9fQ" (36702 views, 369 likes) https://x.com/i/status/1948420741277319430
+- Sawyer Merritt: "Tesla CFO Vaibhav Taneja yesterday on the loss of the U.S. $7,500 Federal EV credit on Sept 30:
+
+"We have rolled out all our planned incentives already and will start pairing them back as we start to sell. If you're in the U.S. and are looking to buy a car, place your order now https://t.co/cJgMDEXNo1" (35111 views, 323 likes) https://x.com/i/status/1948413080364270062
+- Linda Yaccarino: "It’s surprising to some, but I’ve spent a significant portion of my career immersed in the world of professional wrestling. From the electrifying WCW era and the iconic Monday Night Nitro battles( IYKYK), there was no greater force of nature than Hulk Hogan . Yet off camera, he https://t.co/abmiwMWkYm" (32204 views, 1146 likes) https://x.com/i/status/1948429555103941066
+- Mario Nawfal: "🇪🇺🇨🇳 EU TELLS CHINA: PRESSURE PUTIN OR LOSE FRIENDS
+
+At a summit marking 50 years of ties, EU leaders told Xi it’s time to step up and help end the war in Ukraine.
+
+They said EU-China relations have hit an “inflection point” and warned the imbalance in trade and politics is https://t.co/qcu6MA4I3n https://t.co/BzsrAuW4b4" (32884 views, 50 likes) https://x.com/i/status/1948415377442279506
+- Mario Nawfal: "🇷🇺🇩🇪 RUSSIA FREAKS OUT OVER GERMANY’S DEFENSE UPGRADE
+
+New German chancellor Merz is sending weapons, boosting defense spending, and backing Ukraine hard.
+
+Russia says he's cranking up anti-Russia talk “literally every day” and turning Germany into a military machine.
+
+Zakharova https://t.co/5scJg17Uup https://t.co/I2bFkZ6Qek" (32113 views, 55 likes) https://x.com/i/status/1948417894054052145
+- @jason: "solar is a reliable, cheap, fast to install, requires little regulation and doesn’t pollute the environment 
+
+Cheaper than coal, much cheaper than clean coal 
+
+You just put them on the ground… and then put some more. As long as you have a space, it’s the obvious best solution. https://t.co/PdTEf7PLfD" (31280 views, 192 likes) https://x.com/i/status/1948424243055595668
+- Mario Nawfal: "🇺🇸BACKSTREET BOYS JUST TURNED THE SPHERE INTO A GALAXY
+
+"Into the Millennium" is lighting up Vegas like it’s 1999 again.
+
+It’s their first-ever residency and the first time a boy band takes over the Sphere.
+
+Stars on the screen, hits on the stage, and fans losing their minds. https://t.co/KMEFR8n6m7 https://t.co/yOHFlpxQqb" (30749 views, 56 likes) https://x.com/i/status/1948412867965055060
+- Mario Nawfal: "🇮🇪 MCGREGOR: “SAVE IRELAND WITH ME” - CALLS FOR MASSIVE PUBLIC SPENDING CUTS
+
+“I summon instantly the Minister for Finance… to implement the necessary cuts to any and all non serving public interest organisations.
+
+Don’t do your job for Ireland? Bye bye!
+
+I guarantee you I will https://t.co/gH3qCJDwmS https://t.co/GtEWnMDZuU" (29238 views, 135 likes) https://x.com/i/status/1948422932037800046
+- Mario Nawfal: "🇺🇸 REP. TORRES: PRO-HAMAS DEMS HAVE NO BUSINESS CALLING THEMSELVES HUMANITARIANS
+
+Rep. Ritchie Torres says those refusing to condemn Hamas' Oct 7 attacks, including murder, rape, and abductions, have forfeited the right to speak in the name of humanity.
+
+"A humanitarianism that https://t.co/T2eXcGrctY https://t.co/uQqfgTd2Me" (29278 views, 57 likes) https://x.com/i/status/1948407828076695729
+- Mario Nawfal: "🇺🇸 🇮🇷 IRAN TO U.S.: WE WILL TALK NUKES, BUT ON OUR TERMS
+
+Iran says it’s open to restarting nuclear talks with the U.S., but only if Washington plays by 3 rules.
+
+Tehran wants its rights under the Non-Proliferation Treaty respected, trust-building measures from the U.S., and https://t.co/fQmkuaBiFt https://t.co/GEPgtGjMz3" (29038 views, 52 likes) https://x.com/i/status/1948425443671191909
+- CSPAN: ".@SenAmyKlobuchar: "Acute malnutrition is rising. Hundreds of Palestinians have been killed in recent weeks while seeking food, most in the vicinity of Gaza Humanitarian Foundation distribution sites and others on the routes of aid convoys. This is simply unacceptable." https://t.co/7wbuQyCuNV" (28888 views, 54 likes) https://x.com/i/status/1948432925663297567
+- Mario Nawfal: "🇹🇭🇰🇭 THAI DRONE STRIKE: SPECIAL FORCES TARGET CAMBODIAN WEAPONS DEPOT 
+
+The Thai Army just dropped footage of a Special Task Force air op - and it’s straight out of a battlefield promo reel.
+
+An FPV drone, low and fast, zeroes in on a Cambodian weapons depot in the Phu Makhuea https://t.co/5KiMWJOmU8 https://t.co/Quqch25ZVb" (28582 views, 41 likes) https://x.com/i/status/1948411603822493882
+- Boston Celtics: "We heard it was #NBADunkWeek 😤 https://t.co/6DHAZCjVyX" (27891 views, 503 likes) https://x.com/i/status/1948406553918283860
+- Mario Nawfal: "🇺🇸 BREAKING: PROTESTER INTERRUPTS DESANTIS PRESSER WITH SHOUTS OF "PEDOPHILE"
+
+A protester was forcibly removed from a Ron DeSantis press conference moments ago after shouting accusations and disrupting the event.
+
+The protester called DeSantis a “pedophile” and criticized https://t.co/rlSbJ5FhDY https://t.co/sHH9B2pkp3" (27585 views, 82 likes) https://x.com/i/status/1948425203119435906
+- World of Engineering: "FAA audit of the 737 MAX assembly process found that mechanics at Spirit aerosystems (A Boeing supplier) were using hotel key cards to check the seal of emergency exits, and Dawn dish soap as a makeshift lubricant for door seals and wiped off the soap with a cheesecloth to make" (26751 views, 75 likes) https://x.com/i/status/1948405684896256151
+- World of Engineering: "A Photon checks into a hotel and the receptionist asks if he needs any help with his luggage.
+
+“No thanks,” says the Photon “I’m travelling light.”" (25007 views, 176 likes) https://x.com/i/status/1948415629809106963
+- Mario Nawfal: "BREAKING: xAI PARTNERS WITH KALSHI TO BRING GROK TO PREDICTION MARKETS
+
+xAI and Kalshi are teaming up to integrate Grok into Kalshi’s real-money prediction market platform—effective immediately.
+
+The partnership brings together two of America’s fastest-growing tech companies. https://t.co/6xwsTWVVRi https://t.co/fBDWyzvNX3" (24221 views, 54 likes) https://x.com/i/status/1948429219236905444
+- World of Statistics: "What's your most money consuming hobby?" (23373 views, 109 likes) https://x.com/i/status/1948436138768666866
+- Wonder of Science: "A beautiful time-lapse of sunrise in space captured from the International Space Station. https://t.co/ECirNHtZLt" (23207 views, 124 likes) https://x.com/i/status/1948407576208773276
+- Mario Nawfal: "WHEN YOUR CAT JOINS THE STAR WARS UNIVERSE
+
+Someone strapped a Mandalorian to their cat like it’s riding into battle.
+
+The cat looks 0% amused and 100% done with this Jedi nonsense.
+
+This is either the most loyal steed in the galaxy or the next Sith Lord.
+
+Either way, the Force https://t.co/9XVD1dbDfN https://t.co/eVRjoH2jYj" (22979 views, 47 likes) https://x.com/i/status/1948427967472042204
+- World of Engineering: "World of Engineering Quiz:
+
+What is the next term in the sequence: t, d, d, h, h, h, h, h, h, h, h, h, h, h, h, h, h, h, h,  h, ....?" (22945 views, 30 likes) https://x.com/i/status/1948430729181790678
+- Barstool Sports: "It's Coming Home: US Soccer Star Antonee Robinson Dominates England (Again) And Got His First Hole-In-One ... On A Par 4 ... With His Driver https://t.co/qKxUdgQiDM https://t.co/tDLUHwV1yl" (21526 views, 28 likes) https://x.com/i/status/1948436778483937281
+- @jason: "What’s the back story here? 
+
+This guy is a fucking hero risking his life — and she’s got strong hair!!  https://t.co/bxitrMTthR" (20896 views, 67 likes) https://x.com/i/status/1948425056419221741
+- Wonder of Science: "A cheetah running at full speed covers about 7m (23 ft) with each stride.
+https://t.co/oBHVvLSRLP" (20162 views, 278 likes) https://x.com/i/status/1948422926849761530
+- Mario Nawfal: "🇺🇸 HAPPENING NOW: TRUMP HONORS ROSE GARDEN CREW IN THE OVAL OFFICE
+
+Trump invited the crew working on the White House Rose Garden project into the Oval Office to personally thank them.
+
+Wearing matching bright orange shirts, the workers stood in a semicircle as Trump greeted https://t.co/Rh5NOUk2yd" (19750 views, 221 likes) https://x.com/i/status/1948419328589594750
+- Mario Nawfal: "🇪🇺🇺🇸 EU TO US: NO DEAL, NO DISCOUNT
+
+EU countries just backed a plan to slap up to 30% tariffs on €93B of US goods if no deal is made by August 7.
+
+Trump’s threat to hit EU imports with 30% tariffs by August 1 kicked negotiations into overdrive.
+
+Everything from soybeans to https://t.co/Hpnm3rf1Yy https://t.co/x54lgLKr0c" (19693 views, 35 likes) https://x.com/i/status/1948432993862680910
+- Mario Nawfal: "FROZEN RIVERS ARE HIDING MORE THAN JUST ICE
+
+Underneath all that frozen water? Wild patterns, trapped bubbles, and alien-looking vibes.
+
+It’s like nature’s secret art gallery you can only visit if you don’t mind frostbite.
+
+Source: @tweetciiiim https://t.co/jSkc3j7L2k" (19469 views, 93 likes) https://x.com/i/status/1948405311892492797
+- Mario Nawfal: "🇯🇵 JAPAN: WHERE EVEN 7-YEAR-OLDS HAVE BANK ACCOUNTS
+
+Kids walk to school solo like it’s no big deal.
+
+Nobody steals your stuff, not even your umbrella.
+
+Oh, and children have their own bank accounts like tiny CEOs.
+
+Source: @japanchronicless https://t.co/ZldYZ2gX8l" (19287 views, 127 likes) https://x.com/i/status/1948420410631946491
+- Barstool Sports: "High Stakes Plinko Day on @BarstoolYak
+
+Loser must get the @JeffDLowe Haircut
+
+Presented by @rhoback 
+
+ https://t.co/YCHs6e5Kcu" (17248 views, 14 likes) https://x.com/i/status/1948437456895795288
+- TESLARATI: "https://t.co/bX9lr7dhHc" (16400 views, 50 likes) https://x.com/i/status/1948407932313292922
+- Only In Boston: "30 of these military vehicles are driving down I-495 South right now... https://t.co/EFgstofitP" (16050 views, 118 likes) https://x.com/i/status/1948420410418327982
+- Barstool Sports: "Watch Now: https://t.co/WsYWuswN0M" (14902 views, 3 likes) https://x.com/i/status/1948437459240460739
+- Mario Nawfal: "@elonmusk Wow" (13543 views, 78 likes) https://x.com/i/status/1948432644187795913
+- CSPAN: "From 2024 RNC. Watch the full video here: https://t.co/10hAILirT9 https://t.co/lsr2lFymhn" (13343 views, 70 likes) https://x.com/i/status/1948426827858354619
+- Mario Nawfal: "SPACE MISSIONS REALLY TOOK THE SCENIC ROUTE
+
+To get to the giant planets, these spacecraft didn’t go in a straight line.
+
+They slingshotted around planets like they were playing interstellar pinball.
+
+Space travel: 90% science, 10% dramatic flair.
+
+Source: @konstructivizm https://t.co/vdam0BgYTv https://t.co/oX947GPjzP" (13345 views, 23 likes) https://x.com/i/status/1948435509774356980
+- U.S. Department of Energy: "President Trump: “I want to thank Chris…Chris is here because he’s helping with the tremendous energy success we are having…we have more energy than anyone else in the world.” 👏 👏👏 https://t.co/kix09ZiKnP" (12714 views, 262 likes) https://x.com/i/status/1948435273483763780
+- Car Dealership Guy: "[NEWS] Car shoppers are on pace to drop nearly $50B on new cars this July:
+
+The highest spend ever for the month, and an 11% jump from last year.
+
+But here’s the context:
+
+- Last July was inflated by 85K CDK-delayed deals.
+- This July is deflated by 173K tariff-pull-ahead sales" (12746 views, 10 likes) https://x.com/i/status/1948412896649592884
+- International Space Station: "Exp 73 on Thursday studied controlling planetary robots, improving space exercise, and how space affects digestion while getting ready for a crew swap. https://t.co/MuPAmmW9b9" (11327 views, 57 likes) https://x.com/i/status/1948435045926273353
+- Mario Nawfal: "SOLAR’S SCALING FASTER THAN THE GRID CAN CATCH UP
+
+Global solar capacity is projected to hit 420 GW in 2025, up from just 135 GW 5 years ago - a 210%+ increase.
+
+Utility-scale solar is now cheaper than coal or gas in over 60% of the world, and rooftop PV is closing the gap.
+
+New https://t.co/TcBMiSGaCS https://t.co/iuRmsnEqhC" (10725 views, 41 likes) https://x.com/i/status/1948437099377545501
+- CSPAN: ".@SenSanders &amp; @SenMarkey Hold Town Hall Discussion on Saving Public Education — LIVE on C-SPAN https://t.co/5vUFnOwV6g" (10470 views, 19 likes) https://x.com/i/status/1948419542637490401
+- CNN: "Food Network star Anne Burrell's death has been ruled a suicide, medical examiner finds https://t.co/RVg42fArk6" (10251 views, 26 likes) https://x.com/i/status/1948438441030541484
+- Only In Boston: "Wrestling legend Hulk Hogan has died at 71 years old, TMZ Sports has learned." (9939 views, 35 likes) https://x.com/i/status/1948412867964719220
+- CSPAN: ".@RepJamesComer: "The Republicans on the House Oversight Committee is very interested in this Epstein ordeal for weeks now...It's not like there was any coverup on the House committee because our guys really want to know." https://t.co/Wfdt7xr7fy" (9371 views, 48 likes) https://x.com/i/status/1948410444277829810
+- Car Dealership Guy: "The dealership experience is getting formalized.
+
+Students at the Automotive Business School of Canada are managing OEM booths and running full-scale auto shows—
+
+All before they’ve sold their first car.
+
+Luke Reymer, Student at the Automotive Business School of Canada, shares https://t.co/RyFLSrHirK" (8891 views, 4 likes) https://x.com/i/status/1948427963893981337
+- Porsche: "Some connections are built to last. From childhood admiration to racing glory, @aussiegrit’s journey with Porsche has been one of passion, performance and pushing the limits. More than just a car, it’s a lifelong bond – one that continues to evolve with every drive.
+
+Porsche. https://t.co/jkijX7Bvto" (8535 views, 239 likes) https://x.com/i/status/1948408135560941698
+- World and Science: "The breathtaking Lagoon Nebula, M8, is one of just two star-forming nebulae faintly visible to the naked eye from mid-northern latitudes.
+
+(Credit: ESO) https://t.co/c2L0H2oBGD" (8544 views, 18 likes) https://x.com/i/status/1948407355378442363

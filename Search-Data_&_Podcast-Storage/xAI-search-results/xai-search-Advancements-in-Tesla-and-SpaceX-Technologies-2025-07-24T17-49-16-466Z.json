@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"SpaceX has deployed nearly 8,000 Starlink satellites in low-Earth orbit, maintaining a lead in global satellite internet technology.\",\n      \"citations\": [\n        \"https://www.nytimes.com/video/technology/100000010290263/china-starlink-space-race.html\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla opened its first showroom in India, expanding electric vehicle infrastructure in the region.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/c8nq32jwjnmt\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla shareholders are considering a potential investment in xAI to support advancements in artificial intelligence technology.\",\n      \"citations\": [\n        \"https://bloomberg.com/news/articles/2025-07-23/musk-puts-potential-xai-investment-back-on-tesla-shareholders\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three directly related stories about advancements in Tesla and SpaceX technologies were found from the last 24 hours based on high-engagement posts and news articles.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/video/technology/100000010290263/china-starlink-space-race.html",
+    "https://www.bbc.com/news/topics/c8nq32jwjnmt",
+    "https://www.nytimes.com/section/us",
+    "https://www.reuters.com/world/us/",
+    "https://www.reuters.com/business/elon-musk/",
+    "https://www.reuters.com/world/us/spacex-warns-investors-elon-musk-could-return-us-politics-bloomberg-reports-2025-07-22/",
+    "https://nytimes.com/2025/07/18/podcasts/x-hits-grok-bottom-more-ai-talent-wars-crypto-week.html",
+    "https://www.bloomberg.com/news/features/2025-07-20/how-elon-musk-s-trump-feud-and-wild-bets-threaten-his-empire",
+    "https://www.reuters.com/business/elon-musk/",
+    "https://bloomberg.com/news/articles/2025-07-23/musk-puts-potential-xai-investment-back-on-tesla-shareholders"
+  ]
+}

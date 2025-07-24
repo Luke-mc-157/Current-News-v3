@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Wall Street's investment in AI sector surpasses levels seen during the 1990s dotcom bubble, based on market analysis.\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/europe/is-todays-ai-boom-bigger-than-dotcom-bubble-2025-07-22/\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. President Trump issues executive order focusing on preventing 'woke' AI in federal government operations.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/23/us/politics/trump-ai-nuclear-weapons.html\",\n        \"https://www.washingtonpost.com/politics/2025/07/22/tech-brief-trump-ai-action-plan/\"\n      ]\n    },\n    {\n      \"headline\": \"AI chatbots frequently cite major news outlets including Reuters, Financial Times, and Axios for information, according to a recent report.\",\n      \"citations\": [\n        \"https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude\"\n      ]\n    },\n    {\n      \"headline\": \"TechCrunch covers ongoing developments in artificial intelligence, including machine learning advancements and ethical considerations.\",\n      \"citations\": [\n        \"https://techcrunch.com/category/artificial-intelligence/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data for semantic posts on X not available in searches; only high-engagement stories identified from available sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/markets/europe/is-todays-ai-boom-bigger-than-dotcom-bubble-2025-07-22/",
+    "https://www.nytimes.com/2025/07/23/us/politics/trump-ai-nuclear-weapons.html",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/politics/2025/07/22/tech-brief-trump-ai-action-plan/",
+    "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude",
+    "https://www.npr.org/sections/news/",
+    "https://www.cbsnews.com/",
+    "https://axios.com/",
+    "https://techcrunch.com/category/artificial-intelligence/"
+  ]
+}

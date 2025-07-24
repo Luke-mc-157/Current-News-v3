@@ -54,7 +54,7 @@ export async function getAvailableVoices() {
 }
 
 // Generate audio from text  
-export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', episodeId) {
+export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', episodeId, userId) {
   if (!ELEVENLABS_API_KEY) {
     throw new Error("ElevenLabs API key not set. Please add ELEVENLABS_API_KEY to your secrets.");
   }
@@ -100,14 +100,22 @@ export async function generateAudio(text, voiceId = 'Xb7hH8MSUJpSbSDYk0k2', epis
       fs.mkdirSync(audioDir, { recursive: true });
     }
     
-    const filename = `podcast-${episodeId}-${Date.now()}.mp3`;
+    // Create proper filename format: ["userid #"-"date/time of podcast completion"-"podcast episode ID #"]
+    const now = new Date();
+    const dateTime = now.toISOString().replace(/[:.]/g, '-').slice(0, -5); // Remove milliseconds and format
+    const filename = `${userId || 'user'}-${dateTime}-${episodeId || 'episode'}.mp3`;
     const filepath = path.join(audioDir, filename);
     
     fs.writeFileSync(filepath, Buffer.from(audioBuffer));
     console.log(`✅ Audio saved to ${filepath}`);
     
-    // Return relative path for web access
-    return `/Search-Data_&_Podcast-Storage/podcast-audio/${filename}`;
+    // Return both web path and local path
+    const webPath = `/Search-Data_&_Podcast-Storage/podcast-audio/${filename}`;
+    return {
+      audioUrl: webPath,
+      audioLocalPath: webPath,
+      filePath: filepath
+    };
   } catch (error) {
     console.error("Error generating audio:", error.message);
     throw error;

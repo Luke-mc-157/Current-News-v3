@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Hulk Hogan dies at age 71, WWE confirms the passing of the wrestling icon.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/obituaries/2025/07/24/hulk-hogan-wrestler-dead/\",\n        \"https://www.reuters.com/world/us/hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-dies-71-2025-07-24/\",\n        \"https://www.nytimes.com/2025/07/24/sports/hulk-hogan-dead.html\",\n        \"https://www.bbc.com/news/live/cwyqq7z2z2wt\",\n        \"https://www.foxnews.com/sports/pro-wrestling-icon-hulk-hogan-dead\",\n        \"https://apnews.com/article/hulk-hogan-obit-wrestling-professional-wwe-fame-cc767794b616e155079b9f374c769ad0\"\n      ]\n    },\n    {\n      \"headline\": \"Hulk Hogan's death results from cardiac arrest, as reported by multiple news outlets.\",\n      \"citations\": [\n        \"https://www.foxnews.com/sports/pro-wrestling-icon-hulk-hogan-dead\",\n        \"https://news18.com/world/wrestling-icon-hulk-hogan-dies-at-71-following-cardiac-arrest-9461911.html\",\n        \"https://www.the-sun.com/sport/14810752/hulk-hogan-dead-wwe/\"\n      ]\n    },\n    {\n      \"headline\": \"Tributes and reactions emerge on X following the announcement of Hulk Hogan's death.\",\n      \"citations\": [\n        \"Posts found on X related to high-engagement discussions of Hulk Hogan's death\",\n        \"https://www.bbc.com/news/live/cwyqq7z2z2wt\",\n        \"https://www.reuters.com/world/us/hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-dies-71-2025-07-24/\"\n      ]\n    },\n    {\n      \"headline\": \"Hulk Hogan's contributions to professional wrestling highlighted in obituaries after his death.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/obituaries/2025/07/24/hulk-hogan-wrestler-dead/\",\n        \"https://www.reuters.com/world/us/obituary-hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-2025-07-24/\",\n        \"https://apnews.com/article/hulk-hogan-obit-wrestling-professional-wwe-fame-cc767794b616e155079b9f374c769ad0\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on data from the last 24 hours; however, they primarily derive from a single event, leading to overlapping content. No additional distinct stories were identified beyond these four synthesized from available high-engagement X posts and news articles.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/obituaries/2025/07/24/hulk-hogan-wrestler-dead/",
+    "https://www.reuters.com/world/us/hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-dies-71-2025-07-24/",
+    "https://www.reuters.com/world/us/obituary-hulk-hogan-who-helped-turn-pro-wrestling-into-billion-dollar-spectacle-2025-07-24/",
+    "https://www.nytimes.com/2025/07/24/sports/hulk-hogan-dead.html",
+    "https://www.bbc.com/news/live/cwyqq7z2z2wt",
+    "https://www.foxnews.com/sports/pro-wrestling-icon-hulk-hogan-dead",
+    "https://apnews.com/article/hulk-hogan-obit-wrestling-professional-wwe-fame-cc767794b616e155079b9f374c769ad0",
+    "https://news18.com/amp/world/wrestling-icon-hulk-hogan-dies-at-71-following-cardiac-arrest-9461911.html",
+    "https://www.bbc.com/news/live/cwyqq7z2z2wt",
+    "https://www.the-sun.com/sport/14810752/hulk-hogan-dead-wwe/",
+    "https://x.com/MailSport/status/1948428632537333803",
+    "https://x.com/FOX29philly/status/1948411682331508922"
+  ]
+}

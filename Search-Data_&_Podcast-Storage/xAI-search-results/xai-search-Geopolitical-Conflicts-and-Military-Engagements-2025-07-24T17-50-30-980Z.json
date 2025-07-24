@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Ukrainian military reports ongoing engagements in eastern regions\",\n      \"citations\": [\n        \"https://kyivindependent.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Strikes continue in Middle East conflict zones\",\n      \"citations\": [\n        \"https://www.aljazeera.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Naval activities escalate tensions in South China Sea\",\n      \"citations\": [\n        \"https://www.reuters.com/world/asia-pacific/\",\n        \"https://news.google.com/\"\n      ]\n    },\n    {\n      \"headline\": \"NATO discussions focus on alliance responses to global military threats\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://npr.org/sections/world\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/politics",
+    "https://www.reuters.com/world/asia-pacific/",
+    "https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en",
+    "https://www.reuters.com/",
+    "https://www.foxnews.com/",
+    "https://www.aljazeera.com/",
+    "https://reuters.com/world",
+    "https://npr.org/sections/world",
+    "https://kyivindependent.com/"
+  ]
+}
