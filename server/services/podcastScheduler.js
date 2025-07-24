@@ -233,6 +233,10 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
 // Process pending scheduled podcasts that are due
 export async function processPendingPodcasts() {
   try {
+    // Clean up podcast statuses first to ensure accurate processing
+    const { cleanupPodcastStatuses } = await import('./cleanupPodcastStatuses.js');
+    await cleanupPodcastStatuses();
+    
     console.log('🔄 Processing pending scheduled podcasts...');
     const now = new Date();
     console.log(`🕐 Current time: ${now.toISOString()} (${now.toLocaleString('en-US', { timeZone: 'America/Chicago' })} Central)`);
