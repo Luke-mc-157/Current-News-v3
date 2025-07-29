@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Deion Sanders underwent surgery to remove his bladder after a bladder cancer diagnosis and is now considered cured.\",\n      \"citations\": [\n        \"https://www.wdio.com/ap-top-news/deion-sanders-says-he-had-bladder-cancer-but-plans-to-coach-the-colorado-buffaloes-this-season/\",\n        \"https://www.tmz.com/2025/07/28/deion-sanders-reveals-bladder-cancer-diagnosis/\",\n        \"https://sports.yahoo.com/college-football/breaking-news/article/colorados-deion-sanders-had-bladder-removed-after-cancer-diagnosis-170526509.html\",\n        \"https://www.cnn.com/2025/07/28/sport/deion-sanders-bladder-cancer-beaten-spt\"\n      ]\n    },\n    {\n      \"headline\": \"Deion Sanders plans to continue coaching the Colorado Buffaloes following his bladder cancer treatment.\",\n      \"citations\": [\n        \"https://www.wdio.com/ap-top-news/deion-sanders-says-he-had-bladder-cancer-but-plans-to-coach-the-colorado-buffaloes-this-season/\",\n        \"https://www.cnn.com/2025/07/28/sport/deion-sanders-bladder-cancer-beaten-spt\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only two distinct high-engagement stories were identified from available data; additional stories may be sparse due to limited unique content in searches from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/6520082/2025/07/28/deion-sanders-cancer-health-update-colorado/",
+    "https://www.nytimes.com/athletic/6518338/2025/07/27/dolphins-minkah-fitzpatrick-revised-contract/",
+    "https://www.wdio.com/ap-top-news/deion-sanders-says-he-had-bladder-cancer-but-plans-to-coach-the-colorado-buffaloes-this-season/",
+    "https://www.tmz.com/2025/07/28/deion-sanders-reveals-bladder-cancer-diagnosis/",
+    "https://sports.yahoo.com/college-football/breaking-news/article/colorados-deion-sanders-had-bladder-removed-after-cancer-diagnosis-170526509.html",
+    "https://www.cnn.com/2025/07/28/sport/deion-sanders-bladder-cancer-beaten-spt",
+    "https://sports.yahoo.com/college-football/breaking-news/article/colorado-coach-deion-sanders-had-bladder-removed-after-bladder-cancer-diagnosis-170526397.html",
+    "https://x.com/UnnecRoughness/status/1949883685312008382"
+  ]
+}

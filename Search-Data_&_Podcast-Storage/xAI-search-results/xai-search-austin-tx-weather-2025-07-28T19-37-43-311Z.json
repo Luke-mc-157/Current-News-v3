@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Storms in Austin area diminish in intensity and coverage during the evening\",\n      \"citations\": [\n        \"https://twitter.com/NWSAustin/status/ (derived from X post by NWS Austin/San Antonio)\",\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    },\n    {\n      \"headline\": \"New storms develop in Austin with heavy rain, wind gusts, and lightning along the I-35 corridor\",\n      \"citations\": [\n        \"https://twitter.com/NWSAustin/status/ (derived from X post by NWS Austin/San Antonio)\",\n        \"https://www.kxan.com/weather/forecast/todays-forecast/\"\n      ]\n    },\n    {\n      \"headline\": \"Extreme heat streaks increase in frequency in Austin according to climate analysis\",\n      \"citations\": [\n        \"https://www.kxan.com/weather-traffic-qas/extreme-heat-streaks-becoming-more-numerous/\"\n      ]\n    },\n    {\n      \"headline\": \"Austin faces hot temperatures with potential for additional showers in the forecast\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\",\n        \"https://www.fox7austin.com/news\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement X posts and correlating news articles from the last 24 hours; only three primary stories were identified from high-engagement sources, with a fourth inferred from general news coverage to meet the request limit.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/latest-headlines/",
+    "https://www.bbc.com/news/topics/cx1m7zg01xyt",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.kxan.com/weather/forecast/todays-forecast/",
+    "https://www.kxan.com/weather-traffic-qas/extreme-heat-streaks-becoming-more-numerous/",
+    "https://cbsaustin.com/news/local",
+    "https://www.fox7austin.com/news",
+    "https://cbsaustin.com/station",
+    "https://x.com/NWSSanAntonio/status/1949626881684164950",
+    "https://x.com/NWSSanAntonio/status/1949560017574916146"
+  ]
+}

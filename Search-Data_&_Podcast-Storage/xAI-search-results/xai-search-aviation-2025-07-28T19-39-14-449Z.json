@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Aircraft designers are developing techniques to mitigate increasing turbulence attributed to climate change.\",\n      \"citations\": [\n        \"https://www.bbc.com/future/article/20250725-how-aircraft-designers-are-beating-rising-turbulence\"\n      ]\n    },\n    {\n      \"headline\": \"Scottish FA has recruited aviation professionals to improve communication in video assistant referee systems.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c4gqd47zd1wo\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only two stories were identified within the last 24 hours based on available data from high engagement searches and correlating news sources. No additional semantic posts on X or supporting articles met the criteria.\"\n}",
+  "citations": [
+    "https://www.bbc.com/future/article/20250725-how-aircraft-designers-are-beating-rising-turbulence",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/football/articles/c4gqd47zd1wo",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news18.com/amp/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html",
+    "https://financialexpress.com/trending/air-india-sats-responds-to-viral-video-of-its-officials-partying-days-after-ai-171-crash-completely-out-of-context/3890389",
+    "https://aviationa2z.com/index.php/2025/05/23/us-airline-attendant-investigated-over-viral-tiktok-bribe",
+    "https://skysight.inc/blog/hacker-news-aviation",
+    "https://timesofindia.indiatimes.com/city/mumbai/11-feel-dizzy-on-ai-flight-to-mumbai-from-uk-cause-being-probed/articleshow/122032028.cms",
+    "https://x.com/Vipin_Update/status/1949283347047358617"
+  ]
+}

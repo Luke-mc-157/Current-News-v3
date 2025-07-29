@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available high-engagement posts and related news articles from the last 24 hours; only three distinct stories were identified.\",\n  \"stories\": [\n    {\n      \"headline\": \"Storms in the Austin area have diminished in intensity and coverage as evening progressed.\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    },\n    {\n      \"headline\": \"Extreme heat streaks are increasing in frequency in Austin.\",\n      \"citations\": [\n        \"https://www.kxan.com/weather-traffic-qas/extreme-heat-streaks-becoming-more-numerous/\"\n      ]\n    },\n    {\n      \"headline\": \"Rain chances remain possible in Central Texas with potential for storms early in the week.\",\n      \"citations\": [\n        \"https://www.fox7austin.com/tag/weather\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.washingtonpost.com/latest-headlines/",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-PK&gl=PK&ceid=PK:en",
+    "https://cbsaustin.com/news/local",
+    "https://www.kxan.com/weather-traffic-qas/extreme-heat-streaks-becoming-more-numerous/",
+    "https://www.fox7austin.com/tag/weather",
+    "https://x.com/NWSSanAntonio/status/1949626881684164950",
+    "https://x.com/KristenCurrieTV/status/1949779171523051865"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"UK government announces plan to recognize Palestinian state in September if Israel does not meet ceasefire conditions\",\n      \"citations\": [\n        \"https://www.bbc.com/news/live/cdrkj810plvt\",\n        \"https://www.arabnews.com/node/2609906/world\",\n        \"https://www.bloomberg.com/news/articles/2025-07-29/uk-to-recognize-palestine-state-by-fall-unless-israel-stops-war\"\n      ]\n    },\n    {\n      \"headline\": \"British Prime Minister Keir Starmer states UK is considering recognition of Palestinian state due to Gaza situation\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/29/world/europe/uk-starmer-palestinian-state.html\",\n        \"https://abc.net.au/news/2025-07-30/int-starmer-says-uk-could-recognise-palestinian-state-as-early-a/105588518\",\n        \"https://thenews.com.pk/latest/1331717-uk-to-recognise-palestinian-state-in-september-unless-israel-acts\"\n      ]\n    },\n    {\n      \"headline\": \"UK sets September timeline for recognizing Palestinian state unless substantive progress in Gaza\",\n      \"citations\": [\n        \"https://biztoc.com/x/ecb9fbd4d551f622\",\n        \"https://www.reuters.com/world/middle-east/un-meets-urge-support-two-state-solution-us-israel-boycott-2025-07-28/\"\n      ]\n    },\n    {\n      \"headline\": \"UK officials confirm active consideration of Palestinian state recognition amid international pressure\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/world/2025/07/25/france-palestinian-state-countries-gaza-macron/\",\n        \"posts found on X related to UK recognition plans\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; fewer distinct viral stories identified, with some overlap in themes.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/world/2025/07/25/france-palestinian-state-countries-gaza-macron/",
+    "https://www.nytimes.com/2025/07/29/world/europe/uk-starmer-palestinian-state.html",
+    "https://www.bbc.com/news/live/cdrkj810plvt",
+    "https://www.reuters.com/world/middle-east/un-meets-urge-support-two-state-solution-us-israel-boycott-2025-07-28/",
+    "https://www.bbc.com/news/topics/c207p54m4rqt",
+    "https://biztoc.com/x/ecb9fbd4d551f622",
+    "https://www.arabnews.com/node/2609906/world",
+    "https://abc.net.au/news/2025-07-30/int-starmer-says-uk-could-recognise-palestinian-state-as-early-a/105588518",
+    "https://www.bloomberg.com/news/articles/2025-07-29/uk-to-recognize-palestine-state-by-fall-unless-israel-stops-war",
+    "https://thenews.com.pk/latest/1331717-uk-to-recognise-palestinian-state-in-september-unless-israel-acts"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla participated in a viral X post where companies shared origin stories\",\n      \"citations\": [\n        \"https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posted about Tesla vehicles in recent updates on X\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla updated its robotaxi geofence in Austin, which gained online attention\",\n      \"citations\": [\n        \"https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7\",\n        \"https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons\"\n      ]\n    },\n    {\n      \"headline\": \"A coalition discussed Tesla's stock performance in online posts\",\n      \"citations\": [\n        \"https://wired.com/story/tesla-takedown-definitive-story\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available context, but sources are not all from the last 24 hours; verification against current events is recommended.\"\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/football/womens",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://wired.com/story/tesla-takedown-definitive-story",
+    "https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons"
+  ]
+}

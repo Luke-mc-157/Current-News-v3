@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Liverpool is preparing a significant bid for Newcastle United's Alexander Isak\",\n      \"citations\": [\n        \"https://bbc.co.uk/sport/football/articles/cr5v5nl681zo\",\n        \"https://www.express.co.uk/sport/football/2086098/transfer-news-live-man-utd-liverpool-chelsea\"\n      ]\n    },\n    {\n      \"headline\": \"Newcastle United is targeting RB Leipzig's Benjamin Sesko as a potential signing\",\n      \"citations\": [\n        \"https://bbc.co.uk/sport/football/articles/cr5v5nl681zo\"\n      ]\n    },\n    {\n      \"headline\": \"Atlético Madrid is leading the efforts to acquire Manchester United's Antony\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/blog/transfer-talk/79\"\n      ]\n    },\n    {\n      \"headline\": \"Everton is pursuing a deal for Manchester City's Jack Grealish\",\n      \"citations\": [\n        \"https://www.transfermarkt.com/latest-transfer-news-xhaka-nears-sunderland-move-saliba-breaks-silence-on-new-contract/view/news/445145\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/transfers",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/teams/sheffield-wednesday",
+    "https://metro.co.uk/tag/transfer-news-and-rumours/",
+    "https://bbc.co.uk/sport/football/articles/cr5v5nl681zo",
+    "https://www.espn.com/soccer/blog/transfer-talk/79",
+    "https://www.express.co.uk/sport/football/2086098/transfer-news-live-man-utd-liverpool-chelsea",
+    "https://www.transfermarkt.com/latest-transfer-news-xhaka-nears-sunderland-move-saliba-breaks-silence-on-new-contract/view/news/445145"
+  ]
+}

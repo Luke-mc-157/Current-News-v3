@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"\",\n  \"stories\": [\n    {\n      \"headline\": \"Recent developments in India reported in global news sources\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/asia/india\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Latest world news updates from international media outlets\",\n      \"citations\": [\n        \"https://www.bbc.com/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Trending global events aggregated from news platforms\",\n      \"citations\": [\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\",\n        \"https://indianexpress.com/section/trending/\"\n      ]\n    },\n    {\n      \"headline\": \"Viral stories gaining attention in worldwide media\",\n      \"citations\": [\n        \"https://www.hindustantimes.com/trending\",\n        \"https://www.scmp.com/topics/viral-stories\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/news/world/asia/india",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/world/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://indianexpress.com/section/trending/",
+    "https://www.hindustantimes.com/trending",
+    "https://www.scmp.com/topics/viral-stories",
+    "https://reuters.com/article/us-usa-cyber-twitter/false-news-70-percent-more-likely-to-spread-on-twitter-study-idUSKCN1GK2QQ",
+    "https://business-standard.com/topic/twitter"
+  ]
+}

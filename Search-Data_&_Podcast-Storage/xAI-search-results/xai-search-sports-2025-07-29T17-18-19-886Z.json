@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Bryce Harper voiced opposition to MLB salary cap proposal\",\n      \"citations\": [\n        \"https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/\",\n        \"https://www.nytimes.com/athletic/uk/\"\n      ]\n    },\n    {\n      \"headline\": \"Emmanuel Clase faces investigation for alleged sports gambling\",\n      \"citations\": [\n        \"https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/\",\n        \"https://www.reuters.com/sports/\"\n      ]\n    },\n    {\n      \"headline\": \"Couple removed from Yankees game due to inappropriate conduct\",\n      \"citations\": [\n        \"https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/\",\n        \"https://www.bbc.com/sport\"\n      ]\n    },\n    {\n      \"headline\": \"MLB team leads league standings after recent games\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/\",\n        \"https://www.washingtonpost.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three primary stories with high engagement were identified from searches; the fourth is based on general sports updates to meet the request, as data for additional distinct viral stories was sparse in the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/uk/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/sports/",
+    "https://www.bbc.com/sport",
+    "https://www.reuters.com/world/us/",
+    "https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/",
+    "https://viralenews.livejournal.com/3111.html",
+    "https://frontofficesports.com/the-spread-of-sports-misinformation-on-x-is-increasingly-apparent",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://apnews.com/article/x-twitter-drops-preview-news-headlines-bebab0753b583929fda7e581625e7a55",
+    "https://x.com/sondraa/status/1949882332464500877",
+    "https://x.com/DeclanKrueger/status/1949890543145963741"
+  ]
+}

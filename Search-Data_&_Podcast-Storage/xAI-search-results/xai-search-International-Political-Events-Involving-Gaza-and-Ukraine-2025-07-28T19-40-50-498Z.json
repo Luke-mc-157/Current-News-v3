@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"International mediators continue efforts for cease-fire in Gaza conflict\",\n      \"citations\": [\n        \"https://www.nytimes.com/news-event/israel-hamas-gaza\",\n        \"https://www.bbc.com/news/topics/c2vdnvdg6xxt\"\n      ]\n    },\n    {\n      \"headline\": \"Ukraine reports ongoing military operations against Russian forces in eastern regions\",\n      \"citations\": [\n        \"https://www.nytimes.com/news-event/ukraine-russia\",\n        \"https://www.reuters.com/world/ukraine-russia-war/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Global leaders discuss sanctions and aid related to conflicts in Gaza and Ukraine\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified based on available data from the last 24 hours; data is sparse for additional stories.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/news-event/israel-hamas-gaza",
+    "https://www.nytimes.com/news-event/ukraine-russia",
+    "https://www.bbc.com/news/topics/c2vdnvdg6xxt",
+    "https://www.reuters.com/world/ukraine-russia-war/",
+    "https://www.bbc.com/news/world",
+    "https://justsecurity.org/117663/early-edition-july-23-2025",
+    "https://www.cip.uw.edu/2024/02/13/mert-can-bayar-new-elites-twitter-x-hamas-israel-gaza/",
+    "https://www.euronews.com/next/2023/10/12/elon-musks-x-removes-thousands-of-israel-hamas-misinformation-accounts-and-posts-amid-eu-d",
+    "https://www.washingtontimes.com/news/2023/oct/10/x-promises-highest-level-response-on-posts-about-i/",
+    "https://apnews.com/article/twitter-x-hamas-israel-war-elon-musk-misinformation-5e344fc9134741d4f5dc17ed04262940"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only one story was identified within the last 24 hours with high-engagement posts on X and correlating news articles. Additional semantic posts on X were not found to support more stories based on available data.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Chargers agree to a 4-year contract extension with offensive tackle Rashawn Slater worth $114 million, including $92 million guaranteed.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6440626/2025/07/27/chargers-rashawn-slater-nfl-contract-extension/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": []\n}",
+  "citations": [
+    "https://www.washingtonpost.com/sports/2025/07/25/nfl-players-social-media-pettiness/",
+    "https://www.bbc.com/sport/football",
+    "https://www.nytimes.com/athletic/6440626/2025/07/27/chargers-rashawn-slater-nfl-contract-extension/",
+    "https://www.reuters.com/sports/trump-threatens-washington-stadium-deal-unless-nfl-team-readopts-redskins-name-2025-07-20/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/sports/2025/07/25/nfl-players-social-media-pettiness/",
+    "https://usatoday.com/story/sports/nfl/2025/07/03/nfl-contract-extensions-micah-parsons-lamar-jackson/84457062007",
+    "https://sports.yahoo.com/nfl-x-twitter-renew-content-003241133.html",
+    "https://yardbarker.com/nfl/articles/will_compton_wants_credit_for_breaking_major_nfl_contract_news/s1_17616_42126348",
+    "https://awfulannouncing.com/twitter/nfl-reports-adam-schefter-ian-rapoport-prettyrickey213.html"
+  ]
+}

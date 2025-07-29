@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available context from the last 24 hours; only four stories identified as potentially viral based on high-engagement indicators from sources.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"OpenAI expands AI infrastructure through partnership with Oracle.\",\n      \"citations\": [\n        \"https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025\"\n      ]\n    },\n    {\n      \"headline\": \"AI chatbots frequently cite major news outlets as primary sources.\",\n      \"citations\": [\n        \"https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude\"\n      ]\n    },\n    {\n      \"headline\": \"BBC provides updates on artificial intelligence developments.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/ce1qrvleleqt\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters reports on artificial intelligence shaping new technological norms.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/artificial-intelligence/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": []\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025",
+    "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude",
+    "https://cnn.com/2023/04/02/tech/ai-generated-images-social-media/index.html",
+    "https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html",
+    "https://prdaily.com/we-put-4-ai-tools-through-a-pr-task-test-heres-what-came-out-on-top"
+  ]
+}

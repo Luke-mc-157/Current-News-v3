@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Buffalo Bills wide receiver Tyrell Shavers suffers ankle injury during training camp practice\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6518579/2025/07/27/bills-training-camp-receiver-injuries/\",\n        \"https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html\"\n      ]\n    },\n    {\n      \"headline\": \"Denver Broncos and wide receiver Courtland Sutton agree to contract extension\",\n      \"citations\": [\n        \"https://sports.yahoo.com/nfl/live/nfl-training-camp-july-26-2025-163830180.html\"\n      ]\n    },\n    {\n      \"headline\": \"Dallas Cowboys linebacker Micah Parsons engages with social media criticism related to team management during training camp\",\n      \"citations\": [\n        \"https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html\"\n      ]\n    },\n    {\n      \"headline\": \"Chicago Bears quarterback Caleb Williams experiences challenges during training camp sessions\",\n      \"citations\": [\n        \"https://www.cbssports.com/nfl/news/2025-nfl-training-camp-takeaways-bears-caleb-williams-out-of-sorts-browns-shedeur-sanders-odd-qb-out/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only four stories identified based on available high-engagement data from the last 24 hours; no additional semantic stories found that were not already covered.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/",
+    "https://www.nytimes.com/athletic/6518579/2025/07/27/bills-training-camp-receiver-injuries/",
+    "https://www.nytimes.com/athletic/6520476/2025/07/28/nfl-training-camp-cam-ward-titans-scoop-city/",
+    "https://www.bbc.com/news/articles/c2en7k2e77wo",
+    "https://www.nytimes.com/athletic/6521724/2025/07/28/new-york-shooting-nfl-headquarters-office-building/",
+    "https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html",
+    "https://sports.yahoo.com/nfl/live/nfl-training-camp-2025-news-highlights-updates-holdouts-clips-contracts-181622933.html",
+    "https://sports.yahoo.com/nfl/live/nfl-training-camp-july-26-2025-163830180.html",
+    "https://www.cbssports.com/nfl/news/2025-nfl-training-camp-takeaways-bears-caleb-williams-out-of-sorts-browns-shedeur-sanders-odd-qb-out/",
+    "https://www.foxnews.com/sports/brandon-aiyuks-wife-gives-intel-why-nfl-wags-in-panic-during-training-camp"
+  ]
+}

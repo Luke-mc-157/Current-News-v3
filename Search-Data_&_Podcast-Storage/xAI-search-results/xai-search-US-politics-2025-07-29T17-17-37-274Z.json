@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Former President Trump addresses starvation crisis in Gaza\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"Developments reported on changing timelines related to Russia in US politics\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"New information emerges regarding former President Trump and Jeffrey Epstein connections\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"US reaches deal with EU ahead of August 1 tariff deadline\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.nytimes.com/section/politics",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/",
+    "https://independentsentinel.com/x-posts-you-must-see-today",
+    "https://politicalwire.com/trending-news",
+    "https://www.nytimes.com/section/politics",
+    "https://x.com/mkraju/status/1949858110371144108"
+  ]
+}

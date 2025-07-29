@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"BeInCrypto reports recent trends and developments in the cryptocurrency market.\",\n      \"citations\": [\n        \"https://beincrypto.com/news\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only one story identified from sources within the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-CA&gl=CA&ceid=CA:en",
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/",
+    "https://timesofindia.indiatimes.com/business/cryptocurrency/cryptos-hottest-new-trend-publicly-traded-companies-buying-bunches-of-bitcoin/articleshow/121751443.cms",
+    "https://yellow.com/news/trending-crypto-topics-on-x-today-stablecoin-adoption-and-altcoin-outperformance-fuel-debates",
+    "https://invezz.com/news/cryptocurrency/meme-coin/",
+    "https://www.investopedia.com/cryptocurrency-news-5114163",
+    "https://beincrypto.com/news"
+  ]
+}

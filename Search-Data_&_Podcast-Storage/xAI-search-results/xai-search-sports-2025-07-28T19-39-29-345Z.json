@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Bryce Harper commented on MLB salary cap proposal\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/section/sports\"\n      ]\n    },\n    {\n      \"headline\": \"Emmanuel Clase faced investigation for sports gambling\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/section/sports\"\n      ]\n    },\n    {\n      \"headline\": \"Couple involved in incident at Yankees game\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.nytimes.com/section/sports\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories with sufficient evidence from high-engagement X posts and correlating news sources in the last 24 hours; data for a fourth story was sparse and not directly verifiable within the timeframe.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/uk/",
+    "https://www.nytimes.com/section/sports",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/",
+    "https://www.bbc.com/sport/football",
+    "https://frontofficesports.com/the-spread-of-sports-misinformation-on-x-is-increasingly-apparent",
+    "https://digiday.com/marketing/x-reminds-advertisers-theres-no-substitute-for-real-time-sports-conversation-amid-competition",
+    "https://sports.ndtv.com/othersports/6-time-moto-gp-champion-marc-marquez-pulls-off-viral-aura-farming-celebration-watch-8868992",
+    "https://timesofindia.indiatimes.com/sports/international-sports/hugh-grant-goes-viral-after-falling-asleep-behind-queen-camilla-during-novak-djokovic-match-at-wimbledon-2025/articleshow/122375017.cms",
+    "https://timesofindia.indiatimes.com/sports/esports/news/ill-fill-the-role-mrbeast-offers-to-be-the-new-ceo-of-x-as-linda-yaccarino-resigns-after-2-years/articleshow/122366382.cms",
+    "https://x.com/sondraa/status/1949882332464500877"
+  ]
+}

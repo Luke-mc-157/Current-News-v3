@@ -1,0 +1,18 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Bayern Munich agrees deal with Liverpool for Luis Diaz worth approximately £65.5 million.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c9qygz4r8jlo\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool is linked with potential transfer interest in Newcastle United's Alexander Isak.\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Liverpool FC transfer activities include discussions on player departures and squad changes.\",\n      \"citations\": [\n        \"https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three distinct stories were identified from high-engagement posts and semantic searches within the last 24 hours, based on available data. All information is treated as inconclusive for unverified claims from X.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/news/topics/cwdnm99je6gt",
+    "https://www.bbc.com/sport/football/articles/c9qygz4r8jlo",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048",
+    "https://metro.co.uk/tag/liverpool-transfer-news",
+    "https://timesofindia.indiatimes.com/india/morning-news-wrap-car-ploughs-into-crowd-in-liverpool-mumbai-sees-earliest-southwest-monsoon-and-more/articleshow/121426784.cms",
+    "https://www.thisisanfield.com/liverpool-fc-news/",
+    "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://x.com/Blair1867/status/1949815708507852896",
+    "https://x.com/eddieddy01/status/1949740952786022596",
+    "https://x.com/EbukaMeansGreat/status/1950143690476802184"
+  ]
+}

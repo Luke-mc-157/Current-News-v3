@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Police arrested and released a suspect involved in multiple store burglaries in Austin, Texas\",\n      \"citations\": [\n        \"https://t.co/vRDYo3i8HJ\"\n      ]\n    },\n    {\n      \"headline\": \"Alpha School in Austin, Texas, plans to expand to additional cities with AI-driven education programs\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/27/us/politics/ai-alpha-school-austin-texas.html\"\n      ]\n    },\n    {\n      \"headline\": \"NASCAR driver Austin Hill received a reckless driving penalty following a crash at Indianapolis Motor Speedway\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6517569/2025/07/26/austin-hill-reckless-driving-penalty-nascar/\"\n      ]\n    },\n    {\n      \"headline\": \"A plaque will be installed near the former factory site to commemorate ex-miners who built Austin pedal cars\",\n      \"citations\": [\n        \"https://www.bbc.com/news/articles/cdx5zlkz9lpo\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; if fewer stories were identified, only those are included.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/2025/07/27/us/politics/ai-alpha-school-austin-texas.html",
+    "https://www.bbc.com/news/articles/cdx5zlkz9lpo",
+    "https://www.nytimes.com/athletic/6517569/2025/07/26/austin-hill-reckless-driving-penalty-nascar/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://www.chron.com/news/houston-texas/article/austin-robot-cowboy-hat-20400542.php",
+    "https://cbsaustin.com/news/local/cbs-austins-top-20-stories-of-2024",
+    "https://www.kxan.com/news/local/austin/austin-food-bloggers-car-stolen-with-dog-still-inside-police-say/",
+    "https://austin.culturemap.com/news/city-life/popular-stories-best-2024/",
+    "https://www.kvue.com/article/news/year-in-review/austin-top-stories-2024/269-00f20c0a-f6e1-4495-b225-160e91b5aafa",
+    "https://x.com/MattMackowiak/status/1949855874240901571"
+  ]
+}

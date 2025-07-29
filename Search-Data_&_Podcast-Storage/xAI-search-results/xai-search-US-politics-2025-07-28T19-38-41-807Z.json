@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Donald Trump discusses starvation crisis in Gaza\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.bbc.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"Timeline changes reported on Russia-related matters involving Donald Trump\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/world/us/\"\n      ]\n    },\n    {\n      \"headline\": \"New developments emerge in investigations related to Donald Trump and Jeffrey Epstein\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"US negotiates trade deal with EU ahead of tariff deadline\",\n      \"sources\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://www.reuters.com/world/us/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement posts on X and correlating news articles from the last 24 hours; data is based on available context and may be limited.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/politics/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://www.reuters.com/world/us/",
+    "https://www.reuters.com/world/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://politicalwire.com/trending-news",
+    "https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/",
+    "https://www.washingtonpost.com/politics/",
+    "https://nytimes.com/international/section/politics",
+    "https://x.com/mkraju/status/1949858110371144108"
+  ]
+}

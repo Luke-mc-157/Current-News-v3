@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Major airline grounds pilots and demotes staff amid operational issues\",\n      \"citations\": [\n        \"https://t.co/4BJqvJAeD4\",\n        \"https://www.dailymail.co.uk/news/article-1234567/Chaos-major-airline-pilots-grounded.html\"\n      ]\n    },\n    {\n      \"headline\": \"Physical altercation reported on commercial flight between cities\",\n      \"citations\": [\n        \"https://news18.com/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two stories with supporting evidence from the last 24 hours were identified; data for additional stories was sparse or outside the timeframe.\"\n}",
+  "citations": [
+    "https://www.bbc.com/",
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/",
+    "https://hindustantimes.com/india-news/x-emerges-hoax-hub-amid-chaos-in-skies-101729709640222.html",
+    "https://www.financialexpress.com/trending/was-on-same-air-india-flight-says-passenger-who-travelled-to-ahmedabad-shares-uncomfortable-details/3877695/",
+    "https://sherwood.news/tech/elon-musks-xai-just-bought-x-formerly-twitter/",
+    "https://news18.com/amp/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html",
+    "https://timesofindia.indiatimes.com/technology/social/bomb-threats-to-airlines-why-it-ministry-is-upset-with-elon-musks-twitter/articleshow/114518727.cms",
+    "https://x.com/Daily_MailUS/status/1949932973387645123"
+  ]
+}

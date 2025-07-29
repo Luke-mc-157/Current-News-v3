@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk-owned social media platform X experiences a global outage.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posts multiple times on X regarding politics, justice system, and Tesla vehicles.\",\n      \"citations\": [\n        \"https://newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk-owned X faces scrutiny for potential violations of social media regulations in Europe.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-x-is-under-fire-over-potential-violation-of-social-media-laws/articleshow/122581061.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Various global news outlets report on breaking international events and updates.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on available context; some sources may not be strictly within the last 24 hours, indicating sparse recent information.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/world",
+    "https://www.washingtonpost.com/",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://www.cnbc.com/2023/10/04/elon-musks-x-gets-rid-of-story-headlines-and-links-for-some-users.html",
+    "https://hindustantimes.com/trending",
+    "https://newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-x-is-under-fire-over-potential-violation-of-social-media-laws/articleshow/122581061.cms"
+  ]
+}

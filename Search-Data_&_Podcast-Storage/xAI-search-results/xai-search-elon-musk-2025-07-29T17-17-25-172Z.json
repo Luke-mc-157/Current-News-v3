@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk stated on social media that he plans to create a new political party called the America Party.\",\n      \"citations\": [\n        \"https://www.nytimes.com/spotlight/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posted multiple times on X about politics and related topics in the recent period.\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk's company Tesla experienced a stock decline amid market fluctuations.\",\n      \"citations\": [\n        \"https://www.forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk engaged in online discussions related to his activities on X.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/elon-musk/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available context; not all sources are from the last 24 hours, resulting in potential gaps in real-time verification. Only directly related sources were included.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/spotlight/elon-musk",
+    "https://www.bbc.com/news/topics/cx1m7zg01xyt",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/video/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/business/elon-musk/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more/",
+    "https://timesofindia.indiatimes.com/world/us/federal-employees-x-rated-mail-to-elon-musk-goes-viral/articleshow/118570298.cms",
+    "https://www.hindustantimes.com/trending/elon-musk-s-life-of-a-gamer-meme-on-x-goes-crazy-viral-101696340365173.html"
+  ]
+}

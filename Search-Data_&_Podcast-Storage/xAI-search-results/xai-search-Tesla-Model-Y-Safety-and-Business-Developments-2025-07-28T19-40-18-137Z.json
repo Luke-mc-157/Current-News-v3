@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Tesla's refreshed Model Y achieves the highest safety rating from the IIHS for 2025.\",\n      \"citations\": [\n        \"https://t.co/BR3stC2yER\",\n        \"https://t.co/v3C6osRKXO\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla signs a $16.5 billion chip supply deal with Samsung.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/musks-tesla-signs-165-billion-chip-supply-deal-with-samsung-2025-07-28/\",\n        \"https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only two stories were identified from the last 24 hours based on available high-engagement posts and correlating news articles. No additional semantic posts on X were found that were not already included.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/musks-tesla-signs-165-billion-chip-supply-deal-with-samsung-2025-07-28/",
+    "https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.financialexpress.com/trending/rs-29-lakh-tax-on-tesla-model-y-triggers-online-uproar-viral-post-says-us-pays-50-less/3915942/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-x-model-y-take-cheap-shots-at-toyota-tacoma-482049",
+    "https://www.teslarati.com/fatal-tesla-model-y-crash-investigation-accelerator-pressed-viral-video/",
+    "https://firstpost.com/tag/tesla-model-x/amp",
+    "https://x.com/TCMesla/status/1949710945409970218",
+    "https://x.com/muskonomy/status/1949779936547647640"
+  ]
+}

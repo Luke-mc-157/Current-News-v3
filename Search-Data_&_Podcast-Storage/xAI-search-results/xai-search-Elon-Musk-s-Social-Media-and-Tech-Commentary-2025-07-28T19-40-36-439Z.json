@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Data for stories is based on available high-engagement X posts from the last 24 hours; correlating news articles from the provided context are limited and some are outside the 24-hour window, so only directly related sources were used.\",\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk highlights Grok AI's ability to identify objects through camera input.\",\n      \"citations\": [\n        \"https://news18.com/viral/x-ceo-linda-yaccarino-resigns-days-after-elon-musks-grok-shares-inappropriate-post-9432594.html\",\n        \"https://hindustantimes.com/trending/us/elon-musks-cryptic-post-goes-viral-grok-weighs-in-physics-sees-through-all-lies-perfectly-101751380237733.html\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk comments on widespread phone usage in social settings.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk expresses skepticism about his own technology knowledge in a post.\",\n      \"citations\": [\n        \"https://hindustantimes.com/trending/us/elon-musks-cryptic-post-goes-viral-grok-weighs-in-physics-sees-through-all-lies-perfectly-101751380237733.html\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk references an alleged assault incident on social media.\",\n      \"citations\": []\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/investigations/musk-ordered-shutdown-starlink-satellite-service-ukraine-retook-territory-russia-2025-07-25/",
+    "https://scmp.com/topics/elon-musk",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://news18.com/amp/viral/x-ceo-linda-yaccarino-resigns-days-after-elon-musks-grok-shares-inappropriate-post-9432594.html",
+    "https://hindustantimes.com/trending/us/elon-musks-cryptic-post-goes-viral-grok-weighs-in-physics-sees-through-all-lies-perfectly-101751380237733.html",
+    "https://timesofindia.indiatimes.com/technology/social/twitter-is-elon-musk-responds-to-china-and-us-meme-war-on-twitter/articleshow/120224216.cms",
+    "https://x.com/elonmusk/status/1949886338896888199",
+    "https://x.com/elonmusk/status/1949888675195867417",
+    "https://x.com/elonmusk/status/1949578170035994857",
+    "https://x.com/elonmusk/status/1949673737521139901",
+    "https://x.com/elonmusk/status/1949713654439407987"
+  ]
+}

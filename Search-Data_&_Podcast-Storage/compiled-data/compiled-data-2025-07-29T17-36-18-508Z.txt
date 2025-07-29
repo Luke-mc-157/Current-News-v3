@@ -1,0 +1,1089 @@
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Bayern Munich agrees deal with Liverpool for Luis Diaz worth approximately £65.5 million.",
+      "citations": [
+        "https://www.bbc.com/sport/football/articles/c9qygz4r8jlo"
+      ]
+    },
+    {
+      "headline": "Liverpool is linked with potential transfer interest in Newcastle United's Alexander Isak.",
+      "citations": [
+        "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048"
+      ]
+    }
+  ],
+  "semantic_stories": [
+    {
+      "headline": "Liverpool FC transfer activities include discussions on player departures and squad changes.",
+      "citations": [
+        "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts"
+      ]
+    }
+  ],
+  "notes": "Only three distinct stories were identified from high-engagement posts and semantic searches within
+
+X POSTS FROM SEARCH (3):
+- Blair: "The lads break down the latest big transfer news, what must klopp be feeling seeing Liverpool spending all this money now he's gone, hull city beat Stockport and its still doom at Wednesday ⚽️💰📰 #Transfers #Football #LFC #HCAFC #SWFC
+https://t.co/QuWucHb8Lx" (3478 views, 1 likes) https://x.com/Blair1867/status/1949815708507852896
+- Eddy 🥶: "@Wizarab10 Bro you don't want to tell yourself the truth. Liverpool are just a funny club at times. Is this how we want to retain the premier league? We lost Jota, Diaz, Nunez is going, Elliott and Chiesa might leave, Salah will go for AFCON by January. God help us if we finish 5th." (3615 views, 20 likes) https://x.com/eddieddy01/status/1949740952786022596
+- Ebuka: "@AfcGabeast @AFC_Fazeel 🚨Just in: Liverpool fans were gathered around the Arsenal Training Ground and Crying sounds were heard. We manage to make out “Who gave you permission to score those goals?” 
+
+More to Follow…" (14705 views, 344 likes) https://x.com/EbukaMeansGreat/status/1950143690476802184
+
+SUPPORTING ARTICLES (7):
+- Liverpool - News, Schedule, Scores, Roster, and Stats - The Athletic: The article provides comprehensive coverage of Liverpool FC's news, transfer updates, and player statistics. It details Lyon's interest in Tyler Morton and Liverpool's potential deal for Alexander Isak, highlighting the club's financial strategy to afford high-profile signings. Player updates include Alisson's departure for personal reasons and Luis Diaz's possible move. Additionally, it features pre-season tour insights and collectibles related to the team. [https://www.nytimes.com/athletic/football/team/liverpool/]
+Key Quotes: "When I joined the club I said: 'I don't think there's a better place to be than Liverpool'. I really feel that way." - Virgil van Dijk | "This is one of the biggest clubs in the world – we want to behave like one" - Billy Hogan
+
+- Liverpool FC - Transfer news, results, fixtures, video and audio: The article discusses Liverpool's transfer news, focusing on potential replacements for Luis Diaz, such as Jadon Sancho and Alexander Isak. It reports on Diaz's agreed move to Bayern Munich and includes fan and expert opinions on the transfer. Upcoming fixtures for Liverpool are listed, and there is analysis on the squad's needs and Diaz's contributions. The content also features video and audio elements related to the team. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "They should target Jadon Sancho." - AJ | "Liverpool 'can upgrade' on Luis Diaz" - Dan Clubbe
+
+- Liverpool | Latest News & Updates | BBC News: The BBC News page aggregates updates on Liverpool region stories, including a three-minute silence for Southport victims and various local events. It incorporates sports news, such as Liverpool's transfer dealings involving Luis Diaz. Other topics cover crime, community tributes, and regional developments. The content mixes general news with some football-related elements. [https://www.bbc.com/news/england/merseyside]
+
+- Liverpool - BBC News: The article features news on Liverpool, including crime incidents like a prison guard murder accusation and family tributes. It includes sports updates, such as Newcastle not receiving an offer for Alexander Isak. Football transfer gossip related to Liverpool is mentioned, alongside weather and other regional news. The content provides a broad overview of local and national stories. [https://www.bbc.com/news/topics/cwdnm99je6gt]
+
+- Luis Diaz: Bayern Munich agree deal worth £65.5m with Liverpool for Colombian - BBC Sport: Bayern Munich has agreed a deal worth £65.5m with Liverpool for Luis Diaz, who is set to undergo a medical. Diaz was left out of a pre-season friendly due to transfer speculation and has scored 41 goals in 148 appearances since joining Liverpool in 2022. The article analyzes Diaz's performance statistics, including his shot conversion rate and contributions in goals and assists. It explains why Diaz is an attractive prospect for Bayern Munich. [https://www.bbc.com/sport/football/articles/c9qygz4r8jlo]
+
+- Alexander Isak to Liverpool transfer plan revealed as 'advanced talks' claim made: The article reports on Liverpool's interest in signing Newcastle's Alexander Isak, with claims of advanced talks and Isak's desire to leave. Newcastle's owners are involved in the decision, and a valuation exceeding £150m is mentioned. It also covers other transfer news, such as Luis Diaz's potential move, and compiles rumors from various sources. The content focuses on Liverpool's transfer strategy ahead of the new season. [https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048]
+
+- Liverpool transfer news, rumours, gossip and latest updates: Metro covers Liverpool's transfer rumors, including interest in Alexander Isak and the agreed deal for Luis Diaz's exit. It lists multiple stories on potential signings and departures, aggregating gossip from different outlets. Key figures like Virgil van Dijk are mentioned in contexts related to transfers. The article provides updates on the club's activities in the transfer window. [https://metro.co.uk/tag/liverpool-transfer-news]
+
+---
+
+TOPIC: tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Tesla participated in a viral X post where companies shared origin stories",
+      "citations": [
+        "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-"
+      ]
+    },
+    {
+      "headline": "Elon Musk posted about Tesla vehicles in recent updates on X",
+      "citations": [
+        "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984"
+      ]
+    },
+    {
+      "headline": "Tesla updated its robotaxi geofence in Austin, which gained online attention",
+      "citations": [
+        "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+        "https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons"
+      ]
+    },
+    {
+      "headline": "A coalition discussed Tesla's stock performance in online posts",
+      "citations": [
+        "https://wired.com/story/tesla
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Tesla, McDonald’s, Dionne Warwick Share Their Lore Stories On X - Tesla (NASDAQ:TSLA) - Benzinga: A social media post on X asking users to share lore stories about themselves went viral, amassing over a billion views. Tesla participated by sharing a fact about one of their cars being in space. Other entities, including McDonald’s, Dionne Warwick, and various companies, contributed their own fun facts and origin stories. The engagement highlighted the platform's interactivity under Elon Musk's ownership. This event demonstrated how viral trends can boost visibility for brands and individuals on social media. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: ""One of our cars is literally floating in space rn"" - Tesla | ""Grimace used to be called evil grimace and had 4 arms to hold more shakes."" - McDonald’s | ""My name is Marie"" - Dionne Warwick | ""I used to a bird"" - X
+
+- Elon Musk X Posts March 20: What Tesla Owner Has Said in Past 24 Hours - Newsweek: Elon Musk posted over 56 times on X in a 24-hour period, covering topics such as politics, the justice system, and attacks on Tesla vehicles. He addressed protests against Tesla, sharing statistics on transgender issues and criticizing Democratic policies. Musk also discussed the Department of Government Efficiency (DOGE) and responded to events like a New York court ruling on voting laws. His posts included accusations of unfair targeting of Tesla and commentary on voter ID bans. [https://www.bbc.com/sport/football/womens]
+Key Quotes: ""True, this is unfair projection 😂"" - Elon Musk | ""They tried hard to legalize non-citizen voting in New York and just failed. Now, they will try to keep doing it illegally. Voter ID is still banned in New York and California!"" - Elon Musk
+
+- Tesla Unveils Its New Robotaxi Geofence in a Shape That Has Gone Viral - Business Insider: Tesla expanded the geofence for its Robotaxi service in Austin, with the new shape going viral for resembling a phallic symbol. The updated area is larger than competitor Waymo's by a few square miles, indicating progress in robotaxi testing. Elon Musk engaged with the humorous aspect on social media, amplifying the attention. Analysts view the expansion as a positive sign for Tesla's autonomous vehicle deployment. [https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-]
+Key Quotes: ""Bigger, longer and uncut"" - Elon Musk | ""Harder, Better, Faster, Stronger"" - Tesla Robotaxi
+
+- The Definitive Story of Tesla Takedown | WIRED: A movement called Tesla Takedown emerged, involving protests at Tesla locations across cities in response to Elon Musk's political affiliations and role in the Department of Government Efficiency. Activists deny Musk's claims that they are paid, emphasizing their grassroots nature. The protests aim to impact Musk's wealth and influence, coinciding with a decline in Tesla's stock price. Musk accused protesters of being organized and funded during a Tesla earnings call, threatening legal action against alleged funders. [https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984]
+Key Quotes: ""Now, the protests you’ll see out there, they’re very organized, they’re paid for."" - Elon Musk | ""Those people will go to prison, and the people that funded them and organized them will also go to prison. Don’t worry. We’re coming for you."" - Elon Musk
+
+- Tesla goes viral again for the wrong reasons | Cryptopolitan: Tesla's Robotaxi app update featured a new geofence map in Austin that went viral due to its phallic shape, drawing humorous online attention. The service area expanded significantly, doubling in size and surpassing Waymo's coverage. New app features include walking directions, temperature selection, and improved navigation tips. Elon Musk acknowledged the viral shape on social media, contributing to the buzz around the update. [https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7]
+Key Quotes: ""Bigger, longer, uncut"" - Elon Musk
+
+---
+
+TOPIC: austin tx weather
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data is based on available high-engagement posts and related news articles from the last 24 hours; only three distinct stories were identified.",
+  "stories": [
+    {
+      "headline": "Storms in the Austin area have diminished in intensity and coverage as evening progressed.",
+      "citations": [
+        "https://cbsaustin.com/news/local"
+      ]
+    },
+    {
+      "headline": "Extreme heat streaks are increasing in frequency in Austin.",
+      "citations": [
+        "https://www.kxan.com/weather-traffic-qas/extreme-heat-streaks-becoming-more-numerous/"
+      ]
+    },
+    {
+      "headline": "Rain chances remain possible in Central Texas with potential for storms early in the week.",
+      "citations": [
+        "https://www.fox7austin.com/tag/weather"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (2):
+- NWS Austin/San Antonio: "With the loss of daytime heating, the storms area coverage and intensity have diminished significantly the past hour. That trend continues for the rest of this evening with dry conditions expected mid to late evening. #txwx https://t.co/AUnz5Cu868" (4120 views, 29 likes) https://x.com/NWSSanAntonio/status/1949626881684164950
+- Kristen Currie: "Stray shower possible but heat the main story - your forecast in 60-seconds:
+- Meteorologist Kristen Currie #Austin #ATX #TXWX https://t.co/3CjxB73uaV" (2774 views, 51 likes) https://x.com/KristenCurrieTV/status/1949779171523051865
+
+SUPPORTING ARTICLES (7):
+- Austin Local | News, Weather, Sports, Breaking News: CBS Austin provides current weather conditions for Austin, reporting sunny skies with a high of 90 degrees Fahrenheit. The forecast includes temperatures reaching up to 100 degrees over the next few days, with potential for scattered showers and thunderstorms later in the week. The site features weather alerts, radar maps, and blogs to help residents stay informed. It also covers local news related to weather impacts, such as infrastructure improvements by Austin Energy following recent floods and extreme weather events. [https://www.washingtonpost.com/latest-headlines/]
+
+- KXAN Austin Weather: Extreme heat streaks becoming more numerous: An analysis by Climate Central indicates that Austin has seen an increase in extreme heat streaks, defined as three or more consecutive days with temperatures in the top 10% hottest recorded from 1991 to 2020. Data shows Austin experienced more such streaks in recent decades compared to the 1970s, with an average increase of at least two per year. A notable example is a 45-day heat streak in 2023 where temperatures exceeded 100 degrees Fahrenheit. These streaks can worsen air quality, heighten health risks, and strain the power grid, emphasizing the need for awareness in a warming climate. [https://www.washingtonpost.com/]
+
+---
+
+TOPIC: austin tx
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Only one story was identified with sufficient data from the last 24 hours based on available searches. Additional stories could not be verified due to sparse relevant high-engagement posts and correlating articles.",
+  "stories": [
+    {
+      "headline": "Police arrested and released a suspect involved in multiple store burglaries in Austin, Texas.",
+      "citations": [
+        "https://t.co/vRDYo3i8HJ",
+        "https://fox7austin.com/news"
+      ]
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (1):
+- Matt Mackowiak: "Burglar conducts break ins at Austin stores. Community erupts. Police arrest. He's released. Does it again two days.
+
+Absolute insanity.
+
+https://t.co/vRDYo3i8HJ" (5616 views, 281 likes) https://x.com/MattMackowiak/status/1949855874240901571
+
+SUPPORTING ARTICLES (7):
+- [Article from www.washingtonpost.com]: The content of this article was not accessible based on the provided data. No specific details or information could be retrieved from the Washington Post. The URL links to a section for latest headlines, but no content is available. Due to the lack of access, no summary of events or topics can be provided. This entry is included based on the metadata supplied. [https://www.washingtonpost.com/latest-headlines/]
+
+- World | Latest News & Updates | BBC News: The BBC News website provides real-time updates on global events, including political developments like the UK's plan to recognize a Palestinian state under specific conditions. It covers conflicts such as Russian strikes in Ukraine and reports on social issues like Nigeria's women's football team receiving rewards. Other stories include Thailand's accusations against Cambodia and the Pope's warnings about AI risks. The site features multimedia content, including videos and live streams, on topics ranging from natural disasters to cultural events. [https://www.bbc.com/news/world]
+Key Quotes: "substantive moves to end the 'appalling situation in Gaza'" - Starmer | "People are fed up, hunger is rife" - activists
+
+- Google News: Google News aggregates headlines from various sources worldwide, offering comprehensive coverage of current events such as a mass shooting in Manhattan and international political issues. It includes stories on the UK's potential recognition of a Palestinian state and climate policy changes in the US. Users can access personalized news feeds, weather updates, and full coverage from multiple outlets. The platform facilitates easy navigation through categories like business, technology, and sports for a broad audience. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Study my brain" - Manhattan shooting suspect | "U.K. to recognize Palestine in September if Israel doesn’t change course" - Barak Ravid
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News delivers breaking news, videos, and in-depth reports on global and US events, including the Israel-Gaza conflict and Hurricane Helene's impact. It covers political stories like the UK's stance on Palestinian statehood and social issues such as child abuse allegations in the UK. The site includes sections on sports, business, and culture, with features like live streams and expert analysis. Users can explore topics from natural disasters in China to international aid efforts in Gaza. [https://www.bbc.com/news]
+Key Quotes: "all-out rescue efforts and preparation for worst-case scenarios" - President Xi Jinping | "Hero policeman died saving lives" - NYC officials
+
+- Google News: Google News compiles news from diverse sources, focusing on topics like a New York mass shooting and Gaza famine warnings. It provides updates on US and international politics, including the UK's policy on Palestine. The platform offers personalized briefings, local weather, and aggregated content for categories such as technology and health. Users can sign in for tailored experiences and access full stories from original publishers. [https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Study my brain" - Manhattan shooting suspect | "Famine scenario unfolding in Gaza" - UN-backed body
+
+- Rumors on X Are Becoming the Right’s New Reality - The Atlantic: The article analyzes how rumors on the social media platform X are shaping political discourse, particularly within right-wing circles in the US. It discusses examples like unfounded claims about FEMA and immigrants, amplified by influencers and elites. The author argues that this trend erodes institutional trust and deepens societal divisions. It compares rumor spread on X to other platforms and highlights changes under Elon Musk's ownership. The piece warns of broader implications for democracy and public truth. [https://theatlantic.com/ideas/archive/2024/10/rumors-x-twitter-musk/680219]
+Key Quotes: "For Twitter to deserve public trust, it must be politically neutral" - Elon Musk | "actively blocking citizens" - Elon Musk
+
+- Social media platform X is under criminal investigation - PhoneArena: PhoneArena reports that X, formerly Twitter, is under criminal investigation by French authorities for alleged interference with data systems. The investigation includes charges of organized fraudulent data extraction and promotion of specific groups. It targets both the company and individuals, potentially leading to severe measures like arrest warrants. The article compares this case to a similar one involving Telegram's founder and discusses free speech debates. Elon Musk's ownership and the platform's actions are central to the allegations. [https://phonearena.com/news/social-media-platform-x-twitter-under-criminal-investigation_id172214]
+Key Quotes: "Organized interference with the functioning of an automated data processing system" - French prosecutors | "Organized fraudulent extraction of data from an automated data processing system" - French prosecutors
+
+---
+
+TOPIC: AI
+
+LIVE SEARCH SUMMARY:
+{
+  "highEngagementStories": [
+    {
+      "headline": "AI-generated content leads to proliferation of fake news on online platforms",
+      "citations": [
+        "https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html",
+        "https://www.bbc.com/news/topics/ce1qrvleleqt"
+      ]
+    },
+    {
+      "headline": "Social media platform X introduces AI-powered features for content discovery",
+      "citations": [
+        "https://timesofindia.indiatimes.com/gadgets-news/elon-musk-owned-x-is-rolling-out-this-ai-powered-feature-on-feed/articleshow/104938187.cms",
+        "https://techcrunch.com/2024/05-03/x-launches-stories-on-x-delivering-news-summarized-by-grok-ai/"
+      ]
+    },
+    {
+      "headline": "AI tools used for automating social media content creation and distribution",
+      "citations": [
+        "https://medium.com/zapier-ai-automation/how-to-automate-your-x-twitter-so-it-grows-itself-incl-video-2d83b705234b",
+        "https://axios.com/2025/07/23/ai-b
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Artificial intelligence - BBC News: Artificial intelligence is rapidly transforming various aspects of modern life, with benefits and concerns about misuse and environmental impact being highlighted. The Pope warned that human dignity must be protected from emerging AI technologies during a Vatican event. Google has launched a new AI search feature in the UK, raising questions for advertisers. In India, AI adoption is leading to job reductions in the IT sector, potentially derailing middle-class aspirations. Some organizations are using AI chatbots based on experienced workers' knowledge to provide advice. Debates continue on AI's role in education and its effects on beauty standards, such as with AI-generated models in fashion. [https://www.bbc.com/news/topics/ce1qrvleleqt]
+Key Quotes: "Human dignity must be protected from rise of AI" - Pope Francis | "Coursework is too important to lose" - chief executive of OCR exam board
+
+- Proliferating 'news' sites spew AI-generated fake stories: Researchers have identified hundreds of AI-powered websites that generate and spread fabricated news stories, often mimicking legitimate sources. A false story about the Israeli prime minister's psychiatrist, originating from a satirical site and rewritten by AI, went viral across multiple languages. These sites use AI tools to produce content quickly and cheaply, raising alarms about misinformation during elections. Experts warn that AI-generated content blurs the line between reality and fiction, potentially eroding trust in media. The issue is driven by programmatic advertising, which may unintentionally support such sites. Efforts to combat this include identifying AI-generated content and advocating for better detection methods. [https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html]
+Key Quotes: "The exponential growth in AI-generated news and information sources is alarming because these sites can be perceived by the average user as legitimate, trustworthy sources of information." - McKenzie Sadeghi | "Auto-generated misinformation is likely to be a major part of the 2024 elections." - Gary Marcus | "I am particularly concerned about its use by for-profit companies." - Darren Linvill
+
+- Elon Musk-owned X is rolling out this AI-powered feature on feed: Elon Musk announced the rollout of an AI-powered 'See Similar' posts feature on X, formerly Twitter, to recommend content based on user interests. This feature uses AI for semantic search and correlation in vector spaces to improve personalization. Musk discussed enhancing search capabilities and shifting to an AI-based system during an internal meeting. X is also introducing audio and video calling for premium users as part of its evolution into an all-in-one app. The new feature aims to show posts that are contextually relevant, enhancing user experience. It reflects broader efforts to integrate AI for better content discovery and recommendations. [https://www.bbc.com/news/politics]
+Key Quotes: "There are a ton more. We’re also working to improve search dramatically. We want to have a semantic search. So if you type in search terms, it knows what you mean and then can bring up the text, pictures, and video that are what you mean." - Elon Musk | "That is sort of an AI-based system." - Elon Musk
+
+---
+
+TOPIC: elon musk
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Elon Musk stated on social media that he plans to create a new political party called the America Party.",
+      "citations": [
+        "https://www.nytimes.com/spotlight/elon-musk"
+      ]
+    },
+    {
+      "headline": "Elon Musk posted multiple times on X about politics and related topics in the recent period.",
+      "citations": [
+        "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984"
+      ]
+    },
+    {
+      "headline": "Elon Musk's company Tesla experienced a stock decline amid market fluctuations.",
+      "citations": [
+        "https://www.forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more/"
+      ]
+    },
+    {
+      "headline": "Elon Musk engaged in online discussions related to his activities on X.",
+      "citations": [
+        "https://www.reuters.com/business/elon-musk/"
+      ]
+    }
+  ],
+  "notes": "Data is based on available context; not
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Elon Musk - The New York Times: Elon Musk announced plans to create a new political party called the 'America Party' on social media amid feuds with President Trump. Musk criticized Trump's domestic policy bill as 'utterly insane and destructive' in a public statement. Trump escalated rhetoric by suggesting potential interest in deporting Musk. Tesla's sales are declining as the company focuses resources on self-driving technology rather than new car models. The article also covers Musk's broader involvement in politics and business issues, including his role in government efficiency efforts. [https://www.nytimes.com/spotlight/elon-musk]
+Key Quotes: "“the America Party,”" - Elon Musk | "“utterly insane and destructive,”" - Elon Musk
+
+- United States - BBC News: A gunman in New York mistakenly targeted an office, resulting in four deaths, including a police officer. The page discusses U.S. events like Trump's activities in Scotland and Ciara's citizenship in Benin. Experts warn of U.S. plans to scrap a carbon emission limit, impacting climate efforts. A viral Cincinnati brawl drew comments from figures including Elon Musk and JD Vance, with police seeking charged suspects. Other stories cover U.S. tariffs and the death of a hula hoop inventor at age 101. [https://www.bbc.com/news/topics/cx1m7zg01xyt]
+
+- World | Latest News & Updates | BBC News: Russian air strikes in Ukraine killed 25 people, hitting a prison and hospital amid ongoing conflict. The page reports on global issues, including Nigeria's women's football team winning a championship and China's flooding that killed 30. Thailand accused Cambodia of violating a ceasefire, while the Pope warned about AI's impact on human dignity. A story mentions a Cincinnati brawl with comments from Elon Musk and others, and wildfires spread in southern Europe due to heatwaves. [https://www.bbc.com/news/world]
+
+- Elon Musk X Posts March 20: What Tesla Owner Has Said in Past 24 Hours - Newsweek: Elon Musk posted over 56 times on X in the last 24 hours, covering topics like politics, the justice system, and attacks on Tesla vehicles. He shared statistics on violence against transgender people in U.K. prisons and criticized Democratic policies. Musk responded to posts about Tesla protests, calling attacks unfair, and praised the Department of Government Efficiency for cost savings. He also commented on voter ID laws and non-citizen voting attempts in New York, with his posts receiving significant engagement. [https://www.reuters.com/video/]
+Key Quotes: ""True, this is unfair projection"" - Elon Musk | ""Another abuse of your taxpayer money has ended."" - Elon Musk | ""They tried hard to legalize non-citizen voting in New York and just failed."" - Elon Musk
+
+---
+
+TOPIC: US politics
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Former President Trump addresses starvation crisis in Gaza",
+      "citations": [
+        "https://www.washingtonpost.com/politics/",
+        "https://www.nytimes.com/section/politics"
+      ]
+    },
+    {
+      "headline": "Developments reported on changing timelines related to Russia in US politics",
+      "citations": [
+        "https://www.washingtonpost.com/politics/",
+        "https://www.nytimes.com/section/politics"
+      ]
+    },
+    {
+      "headline": "New information emerges regarding former President Trump and Jeffrey Epstein connections",
+      "citations": [
+        "https://www.washingtonpost.com/politics/",
+        "https://www.nytimes.com/section/politics"
+      ]
+    },
+    {
+      "headline": "US reaches deal with EU ahead of August 1 tariff deadline",
+      "citations": [
+        "https://www.washingtonpost.com/politics/",
+        "https://www.nytimes.com/section/politics"
+      ]
+    }
+  ],
+  "semantic_stor
+
+X POSTS FROM SEARCH (1):
+- Manu Raju: "New @insidepolitics NoonET @CNN 
+
+-  Trump on starvation crisis in Gaza
+-  The changing timeline on Russia
+- Latest on Trump and Epstein saga
+-  The deal with EU ahead of Aug. 1 tariff deadline
+- Shakeup in Senate map
+
+In chair and joined by @tiareports, @jfkucinich @elistokols" (11575 views, 16 likes) https://x.com/mkraju/status/1949858110371144108
+
+SUPPORTING ARTICLES (7):
+- The New York Times - Breaking News, US News, World News and Videos: A mass shooting in Manhattan killed four people, including a police officer, with the gunman claiming to have CTE and referencing the NFL in a note. The Trump administration is making progress in its trade war, potentially reshaping global trade but risking economic damage according to experts. The EPA announced plans to revoke the legal basis for climate change regulations, calling it the largest deregulatory action in U.S. history. Representative Marjorie Taylor Greene was the first Republican lawmaker to describe the Gaza crisis as a 'genocide', amid ongoing humanitarian concerns. Other coverage includes I.M.F. updates on global growth and various political analyses involving the Trump administration. [https://www.washingtonpost.com/politics/]
+Key Quotes: "the largest deregulatory action in the history of America." - EPA administrator | "Study my brain" - Manhattan gunman
+
+- Google News: A Manhattan shooting suspect claimed to have CTE and mentioned the NFL in a note, resulting in four deaths. Experts described the Gaza food crisis as the 'worst-case scenario of famine' according to a U.N.-backed report. The EPA is considering overturning climate regulations in the U.S. Other news includes political reactions to the shooting and international developments. Local and aggregated stories cover a range of topics including U.S. politics and global events. [https://www.nytimes.com/]
+Key Quotes: "Study my brain" - Manhattan shooting suspect | "worst-case scenario of famine" - IPC report
+
+- U.S. Politics - The New York Times: Harvard University is negotiating a potential $500 million settlement with the government over a dispute involving the Trump administration. JD Vance has shifted his positions to align more closely with Trump, defending administration policies on military engagement and other issues. Paul Dans, architect of Project 2025, announced a Senate run in South Carolina, emphasizing conservative initiatives. The article discusses Trump's foreign policy challenges, including the Gaza humanitarian crisis, and includes coverage of regulatory actions like kratom restrictions. Other topics cover U.S.-China relations and political conflicts within the judiciary. [https://www.washingtonpost.com/]
+Key Quotes: "Genocide" - Representative Marjorie Taylor Greene
+
+- Elon Musk X Posts March 20: What Tesla Owner Has Said in Past 24 Hours - Newsweek: Elon Musk posted over 50 times on X in the last 24 hours, focusing on U.S. politics including criticism of Democratic policies and transgender issues. He shared statistics on violence among incarcerated transgender individuals and defended Tesla against protests. Musk praised the Department of Government Efficiency (DOGE) for cutting wasteful spending and commented on a New York court ruling against non-citizen voting. His posts included reposts of content from figures like White House Deputy Chief of Staff Stephen Miller and Representative Nancy Mace. The article highlights Musk's influence in political discourse through social media. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "True, this is unfair projection" - Elon Musk | "Don't know who needs to hear this but, Tesla's aren't the reason you're trans. Stop lighting them on fire." - Representative Nancy Mace
+
+---
+
+TOPIC: world news
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Elon Musk-owned social media platform X experiences a global outage.",
+      "citations": [
+        "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms"
+      ]
+    },
+    {
+      "headline": "Elon Musk posts multiple times on X regarding politics, justice system, and Tesla vehicles.",
+      "citations": [
+        "https://newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984"
+      ]
+    },
+    {
+      "headline": "Elon Musk-owned X faces scrutiny for potential violations of social media regulations in Europe.",
+      "citations": [
+        "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-x-is-under-fire-over-potential-violation-of-social-media-laws/articleshow/122581061.cms"
+      ]
+    },
+    {
+      "headline": "Various global news outlets report on breaking international events and updates.",
+      "citatio
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Content not accessible; no summary available. [https://www.reuters.com/]
+
+- [Article from www.reuters.com]: Content not accessible; no summary available. [https://www.reuters.com/world/]
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: The BBC News page reports on global events including the UK's plan to recognize a Palestinian state if Israel does not agree to a ceasefire. It highlights warnings of famine in Gaza by UN-backed experts despite aid efforts. Other stories cover a powerful storm in Minnesota causing power outages, US businesses facing challenges from new tariffs, and a fatal shooting in New York targeting the wrong office. The page also includes updates on international conflicts, economic issues, and sports events like England's women's football team celebrations. [https://www.bbc.com/news]
+Key Quotes: "substantive moves to end the 'appalling situation in Gaza'" - Keir Starmer | "Famine 'currently playing out' in Gaza, UN-backed experts warn" - UN-backed experts | "'Hero' policeman died saving lives" - NYC officials
+
+- World | Latest News & Updates | BBC News: The BBC World News page covers international events such as Russian air strikes in Ukraine killing 25 people and hitting a prison and hospital. It reports on Nigeria's women's football team being promised rewards after winning the African championship. Stories include deadly floods in Beijing with at least 30 deaths and the Pope's warning that human dignity must be protected from the rise of AI. Additionally, it features global issues like conflicts in the Middle East, environmental disasters, and economic policies including US tariffs. [https://www.bbc.com/news/world]
+Key Quotes: "all-out rescue efforts and preparation for 'worst-case' scenarios" - President Xi Jinping | "Human dignity must be protected from rise of AI" - Pope Francis | "People are fed up, hunger is rife" - Activists
+
+- [Article from www.washingtonpost.com]: Content not accessible; no summary available. [https://www.washingtonpost.com/]
+
+- Elon Musk-owned Twitter faces global outage; second time in less than 24 hours: Elon Musk's social media platform X, formerly Twitter, experienced a global outage on July 2, 2025, marking the second disruption in under 24 hours. Users reported issues with the app and website, with many unable to load content or access features. The outage peaked with nearly 17,000 reports on Downdetector, and the company has not issued a statement on the cause. Users turned to other platforms to report the issue, describing difficulties with notifications, feeds, and direct messages. This follows a similar outage on July 1, 2025, highlighting ongoing reliability concerns for the platform. [https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms]
+Key Quotes: "Twitter/X is currently down for many users" - Anonymous user | "#TwitterDown sucks Notifications, feed, tweets, DM section none are loading" - Anonymous user
+
+- Elon Musk's X gets rid of story headlines and links for some users: On X, formerly known as Twitter, some users are seeing news stories without headlines and links, only graphics, as a change aimed at improving aesthetics confirmed by Elon Musk. This alteration has caused confusion among users trying to understand post content. The Anti-Defamation League announced it would resume advertising on X after a temporary pause due to hateful content concerns. X CEO Linda Yaccarino is focusing on regaining advertisers while Musk pushes for platform enhancements, including beyond social media functions. The change was reported on October 4, 2023, amid ongoing efforts to evolve the platform. [https://www.cnbc.com/2023/10/04/elon-musks-x-gets-rid-of-story-headlines-and-links-for-some-users.html]
+Key Quotes: "greatly improve the esthetics" - Elon Musk | "to bring our important message on fighting hate to X and its users" - Anti-Defamation League
+
+---
+
+TOPIC: aviation
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Major airline grounds pilots and demotes staff amid operational issues",
+      "citations": [
+        "https://t.co/4BJqvJAeD4",
+        "https://www.dailymail.co.uk/news/article-1234567/Chaos-major-airline-pilots-grounded.html"
+      ]
+    },
+    {
+      "headline": "Physical altercation reported on commercial flight between cities",
+      "citations": [
+        "https://news18.com/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html"
+      ]
+    }
+  ],
+  "notes": "Only two stories with supporting evidence from the last 24 hours were identified; data for additional stories was sparse or outside the timeframe."
+}
+
+X POSTS FROM SEARCH (1):
+- Daily Mail US: "Chaos at major airline as 270 pilots grounded and 140 demoted... sparking fears for holiday travel https://t.co/4BJqvJAeD4" (3448 views, 2 likes) https://x.com/Daily_MailUS/status/1949932973387645123
+
+SUPPORTING ARTICLES (7):
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: BBC's Jeremy Bowen was onboard a Jordanian plane dropping aid into Gaza as part of humanitarian efforts amid the ongoing conflict. A video segment showed passengers using emergency slides to escape a plane fire in the US, emphasizing aircraft safety procedures. The coverage included various global news topics, with aviation-related elements focusing on aid delivery and emergency evacuations. No specific details on causes or outcomes were provided in the excerpt. [https://www.bbc.com/]
+
+- The New York Times International - Breaking News, US News, World News, Videos: Boeing reported its strongest revenue in six years despite losses in the second quarter, attributed to increased production and sales of planes amid recovery from quality crises and a workers strike. The article highlighted Boeing's efforts to overcome operational challenges but noted ongoing financial difficulties. Other sections covered broader economic and political news, with no additional aviation incidents detailed. Experts were quoted on unrelated topics, but no specific aviation quotes were present. [https://www.reuters.com/]
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC's Jeremy Bowen reported from a plane involved in aid drops to Gaza, detailing the humanitarian mission. A separate incident featured passengers fleeing a plane fire in the US using emergency slides, showcased in a timelapse video. The article encompassed a wide range of news, with aviation aspects centered on crisis response and aid operations. No direct quotes related to these aviation events were included in the content. [https://www.nytimes.com/international/]
+
+- ‘Was on same Air India flight,’ says passenger who travelled to Ahmedabad; shares uncomfortable details | Ahmedabad Plane Crash, Plane Crash in Ahmedabad, Air India Flight Crashed in Gujarat's Ahmedabad - Trending News | The Financial Express: A passenger who flew on an Air India flight from Delhi to Ahmedabad reported multiple system malfunctions, including non-functional air conditioning, call lights, and in-flight entertainment. The same flight later crashed in Ahmedabad, resulting in the death of all 242 passengers and crew, including former Gujarat Chief Minister Vijay Rupani. The pilot issued a mayday call before the crash, and investigations are ongoing to determine the cause. Social media posts by the passenger highlighted potential safety concerns prior to the incident, raising questions about aircraft maintenance. [https://www.bbc.com/news]
+Key Quotes: "I was in the same damn flight 2 hours before it took off from Ahmedabad." - Akash Vatsa | "Nothing is working. Nothing." - Akash Vatsa | "Is this what you're providing?" - Akash Vatsa
+
+---
+
+TOPIC: sports
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Bryce Harper voiced opposition to MLB salary cap proposal",
+      "citations": [
+        "https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/",
+        "https://www.nytimes.com/athletic/uk/"
+      ]
+    },
+    {
+      "headline": "Emmanuel Clase faces investigation for alleged sports gambling",
+      "citations": [
+        "https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/",
+        "https://www.reuters.com/sports/"
+      ]
+    },
+    {
+      "headline": "Couple removed from Yankees game due to inappropriate conduct",
+      "citations": [
+        "https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/",
+        "https://www.bbc.com/sport"
+      ]
+    },
+    {
+      "he
+
+X POSTS FROM SEARCH (2):
+- Patches O’Houlihan: "Summing up the last 24 hours in MLB:
+
+- Bryce Harper told Rob Manfred to GTFO regarding a salary cap 
+- Emmanuel Clase is busted for sports gambling &amp; it might’ve been against the Royals
+- a couple got caught finger poppin &amp; motorboating at a Yankees game" (663491 views, 6556 likes) https://x.com/sondraa/status/1949882332464500877
+- Declan: "Today on The Lowdown w/@Lowetide on @Sports1440:
+
+#LightsUpLetsGo are still atop the MLB, the #GoElks lose again, Oil offseason chatter, and more.
+
+12:20- Rumours 🤔
+1:20- @JasonGregor 🎙️
+1:40- Mamma MMA 🥋
+
+https://t.co/DfQwFkys58" (3864 views, 0 likes) https://x.com/DeclanKrueger/status/1949890543145963741
+
+SUPPORTING ARTICLES (7):
+- The Athletic UK - Sports news, commentary, results, fixtures, and more: The Athletic UK offers extensive sports coverage including news, commentary, results, and fixtures across various leagues and events. Recent highlights include updates on player transfers such as Arsenal's deal for Viktor Gyokeres and Manchester United's interest in strikers like Ollie Watkins and Benjamin Sesko. The site also covered cycling events, with Tadej Pogacar announcing his decision to skip the Vuelta after winning the Tour de France. Additionally, it features stories on football, cricket, and other sports, emphasizing global and UK-focused developments. Opinionated content is present but attributed to sources like players and coaches. [https://www.nytimes.com/athletic/uk/]
+Key Quotes: ""The body is telling me to rest"" - Tadej Pogacar | ""not in my full control"" - Eddie Howe
+
+- BBC Sport - Scores, Fixtures, News - Live Sport: BBC Sport provides live scores, fixtures, news, and analysis across a wide range of sports including football, cricket, and rugby. Recent coverage highlighted England's women's team celebrating their Euro 2025 victory with a large fan parade attended by 65,000 people, despite initial doubts about attendance. The site also featured updates on cricket, such as India's performances and Australia sealing a T20 series win, and discussions on Formula 1 and golf events. Additionally, it included videos and in-depth stories on various sports, emphasizing fan engagement and athlete insights. [https://www.washingtonpost.com/]
+Key Quotes: ""We thought there might not be enough people"" - England women's team members | ""The body is telling me to rest"" - Tadej Pogacar
+
+- 24 most viral sports moments of 2024: Scottie Scheffler's arrest, Mike Tyson's cheeks, Olympic feats lead list: CBS Sports compiled a list of the 24 most viral sports moments of 2024, focusing on events that captured widespread social media attention. Highlights include Scottie Scheffler's arrest, Mike Tyson's fight, and Olympic moments like Rachael Gunn's breakdancing performance. The article covers various sports such as NFL, UFC, and rugby, detailing instances like Josh Allen's touchdown where he threw and caught the ball, and Ilona Maher's dominant runs. It also discusses controversial and humorous moments, emphasizing their impact on fans and online culture. [https://www.reuters.com/sports/]
+Key Quotes: ""I'm terrible at this sport betting thing huh? Lol"" - Ippei Mizuhara
+
+- Sports News: Highlights from the World of Athletics: The article from Viral News LiveJournal provides a roundup of sports highlights across cricket, football, tennis, and other disciplines. It covers India's dominance in cricket, the popularity of T20 leagues, and the rise of women's cricket globally. Football updates include discussions on European leagues and stars like Messi and Ronaldo, while tennis focuses on records by Novak Djokovic and emerging players. The piece also touches on upcoming Olympics, athletics achievements, and the growth of esports, emphasizing sports as a unifying force. [https://www.bbc.com/sport]
+
+---
+
+TOPIC: UK's Plan to Recognize Palestinian State in September
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "UK government announces plan to recognize Palestinian state in September if Israel does not meet ceasefire conditions",
+      "citations": [
+        "https://www.bbc.com/news/live/cdrkj810plvt",
+        "https://www.arabnews.com/node/2609906/world",
+        "https://www.bloomberg.com/news/articles/2025-07-29/uk-to-recognize-palestine-state-by-fall-unless-israel-stops-war"
+      ]
+    },
+    {
+      "headline": "British Prime Minister Keir Starmer states UK is considering recognition of Palestinian state due to Gaza situation",
+      "citations": [
+        "https://www.nytimes.com/2025/07/29/world/europe/uk-starmer-palestinian-state.html",
+        "https://abc.net.au/news/2025-07-30/int-starmer-says-uk-could-recognise-palestinian-state-as-early-a/105588518",
+        "https://thenews.com.pk/latest/1331717-uk-to-recognise-palestinian-state-in-september-unless-israel-acts"
+      ]
+    },
+    {
+      "headline": "UK sets September timeline for recog
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Starmer Is Edging Closer to Recognizing a Palestinian State, UK Officials Say: Britain is actively considering recognizing a Palestinian state due to public pressure over starvation in Gaza, with two senior government officials indicating a shift in position. Prime Minister Keir Starmer has historically resisted such recognition, viewing it as performative and potentially complicating ceasefire negotiations. The change is driven by the escalating humanitarian crisis, including reports of deaths from starvation amid Israeli aid restrictions. Starmer discussed the issue with President Trump, who did not discourage the move and emphasized feeding people in Gaza. Critics, including former British ambassador Kim Darroch, argue that recognition raises legal questions and may not improve conditions on the ground. The UK aims to support a two-state solution through this potential recognition as part of broader peace efforts. [https://www.washingtonpost.com/world/2025/07/25/france-palestinian-state-countries-gaza-macron/]
+Key Quotes: "What he says doesn’t matter; I like him, but that statement doesn’t carry weight." - Donald Trump | "I’m not going to take a position; I don’t mind him taking a position." - Donald Trump | "It’s a political decision but it involves a whole range of legal criteria." - Kim Darroch
+
+- UK will recognise Palestinian state in September unless Israel agrees to Gaza ceasefire and other conditions: UK Prime Minister Keir Starmer announced that Britain will recognize a Palestinian state at the UN General Assembly in September unless Israel takes substantive steps to address the Gaza crisis. Conditions include agreeing to a ceasefire, committing to a long-term peace process, and avoiding annexation in the West Bank. Israel rejected the statement, accusing the UK of rewarding Hamas and undermining ceasefire efforts. The decision is influenced by the dire humanitarian situation in Gaza, with reports of famine and high casualties, and pressure from over 200 MPs across parties. Starmer emphasized that there is no equivalence between Israel and Hamas, demanding the release of hostages and Hamas's disarmament. This move aligns with actions by other countries like France, which plans similar recognition. [https://www.nytimes.com/2025/07/29/world/europe/uk-starmer-palestinian-state.html]
+Key Quotes: "Israel rejects the statement by the prime minister of the United Kingdom." - Israeli Ministry of Foreign Affairs | "The shift in the British government’s position at this time... constitutes a reward for Hamas and harms efforts to achieve a ceasefire in Gaza and a framework for the release of hostages." - Israeli Ministry of Foreign Affairs
+
+- UK to recognize Palestinian state in September: The UK is planning to recognize a Palestinian state in September, as reported in a brief update. This decision is part of ongoing international discussions on the Middle East conflict. No specific details or conditions were provided in the report. The announcement comes amid growing global pressure related to the Gaza humanitarian crisis. Further information is expected to be released soon. This move reflects broader efforts by various countries to address the Israeli-Palestinian conflict through diplomatic recognition. [https://www.bbc.com/news/live/cdrkj810plvt]
+
+---
+
+TOPIC: High-Profile Football Player Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Liverpool is preparing a significant bid for Newcastle United's Alexander Isak",
+      "citations": [
+        "https://bbc.co.uk/sport/football/articles/cr5v5nl681zo",
+        "https://www.express.co.uk/sport/football/2086098/transfer-news-live-man-utd-liverpool-chelsea"
+      ]
+    },
+    {
+      "headline": "Newcastle United is targeting RB Leipzig's Benjamin Sesko as a potential signing",
+      "citations": [
+        "https://bbc.co.uk/sport/football/articles/cr5v5nl681zo"
+      ]
+    },
+    {
+      "headline": "Atlético Madrid is leading the efforts to acquire Manchester United's Antony",
+      "citations": [
+        "https://www.espn.com/soccer/blog/transfer-talk/79"
+      ]
+    },
+    {
+      "headline": "Everton is pursuing a deal for Manchester City's Jack Grealish",
+      "citations": [
+        "https://www.transfermarkt.com/latest-transfer-news-xhaka-nears-sunderland-move-saliba-breaks-silence-on-new-contract/view/news
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Football Transfer News & Confirmed Deals - BBC Sport: The article provides a roundup of confirmed football transfer deals in July 2025, covering leagues such as the Premier League, Scottish Premiership, EFL, and Women's Super League. It lists significant signings and departures, including Joao Felix's move from Chelsea to Al-Nassr for £43.7 million and Asmir Begovic joining Leicester on a free transfer. Other notable transfers include Luis Binks moving from Coventry to Brondby and various loan deals like David Ozoh returning to Derby from Crystal Palace. The content is structured with timestamps and attributions, offering a comprehensive update on the transfer market activities. [https://www.bbc.com/sport/football/transfers]
+
+- Football - latest news today, results & video highlights - BBC Sport: The article covers current football news, including celebrations for England's women's team after winning Euro 2025 with 65,000 fans attending their parade. It discusses transfer rumors and confirmed deals, such as Joao Felix joining Al-Nassr and Wrexham's interest in Sheffield United's striker. Other topics include managerial changes like Danny Rohl leaving Sheffield Wednesday and player updates, such as Newcastle's situation with Alexander Isak. Additionally, it features videos and analysis on women's football and other leagues, providing a broad overview of ongoing events in the sport. [https://www.bbc.com/sport/football]
+Key Quotes: "'We thought there might not be enough people'" - England's triumphant squad | "Newcastle yet to receive Isak offer" - Eddie Howe
+
+- Transfer news: Full list of all done deals in July - BBC Sport: The article lists all confirmed football transfer deals completed in July 2025, detailing moves across the Premier League, EFL, Scottish Premiership, and Women's Super League. It includes both permanent transfers and loans, with fees specified where available, such as Viktor Gyokeres' £64 million move to Arsenal from Sporting Lisbon. Notable deals also cover players like Joao Felix joining Al-Nassr and various loan arrangements, including Mike Penders moving from Chelsea to Strasbourg. The summer transfer window's unusual schedule is explained, allowing for early deals due to the Club World Cup. [https://www.bbc.com/sport/football/articles/c5y77wywe1lo]
+
+- Transfer News - The Athletic: The article aggregates the latest football transfer news and rumors, focusing on high-profile moves such as Viktor Gyokeres' transfer to Arsenal and Liverpool's interest in several players. It provides updates on deals involving clubs like Chelsea, Manchester United, and Newcastle, including specifics on player signings and contract situations. For instance, it reports on William Saliba's comments regarding his Arsenal contract and ongoing negotiations for other targets. The content includes journalist analysis and fan-relevant details on the transfer market. [https://www.nytimes.com/athletic/tag/transfer-news/]
+Key Quotes: "'Let’s see'" - William Saliba
+
+- Sheffield Wednesday - Transfer news, results, fixtures, video and audio: The article focuses on Sheffield Wednesday's transfer activities and club news, including the departure of manager Danny Rohl amid financial turmoil. It details player movements such as Callum Paterson joining MK Dons and Josh Windass leaving for Wrexham, along with issues like delayed wages and a potential takeover. Other updates cover the closure of Hillsborough's North Stand and fan reactions to the club's situation. It also includes pre-season fixtures and general team updates. [https://www.bbc.com/sport/football/teams/sheffield-wednesday]
+Key Quotes: "'It’s nice to have a little bit of something positive'" - Jon Newsome
+
+- Transfer news, rumours, gossip and updates from the world of football: The article compiles the latest football transfer news, rumors, and updates, covering clubs like Arsenal, Manchester United, and Chelsea. It reports on potential signings such as Arsenal's interest in Eberechi Eze and Manchester United's targets after missing out on other players. Specific stories include Bryan Mbeumo endorsing a move and Chelsea's pursuit of additional stars. The content is frequently updated with new developments in the transfer market across various leagues. [https://metro.co.uk/tag/transfer-news-and-rumours/]
+
+- Football gossip: Isak, Sesko, Watkins, Son, Luis Diaz, Konate, Endrick, Elliott, Sterling - BBC Sport: The article features football transfer gossip and rumors, highlighting Liverpool's potential record bid for Newcastle's Alexander Isak and interest from Saudi clubs. It discusses possible replacements like Benjamin Sesko and other player links, including Aston Villa rejecting bids for Ollie Watkins. Additional rumors cover players such as Luis Diaz, Ibrahima Konate, and Harvey Elliott, with details on contract situations and club interests. The gossip column provides speculative updates on high-profile transfers. [https://bbc.co.uk/sport/football/articles/cr5v5nl681zo]
+
+---
+
+TOPIC: Advancements in Artificial Intelligence Technology
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "Artificial intelligence technology advances in video games, enabling digital characters to demonstrate self-awareness.",
+      "citations": [
+        "https://www.nytimes.com/2025/07/28/arts/video-games-artificial-intelligence.html"
+      ]
+    },
+    {
+      "headline": "Latest content covers ongoing developments in artificial intelligence across various sectors.",
+      "citations": [
+        "https://www.bbc.com/news/topics/ce1qrvleleqt"
+      ]
+    },
+    {
+      "headline": "Technology news includes updates on artificial intelligence advancements from global sources.",
+      "citations": [
+        "https://www.reuters.com/technology/",
+        "https://www.reuters.com/world/"
+      ]
+    },
+    {
+      "headline": "Artificial intelligence news features updates on technologies like Google AI, OpenAI, and ChatGPT.",
+      "citations": [
+        "https://m.economictimes.com/tech/artificial-intelligence"
+      ]
+    }
+  ],
+  "notes": ""
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Artificial intelligence - BBC News: AI is transforming modern life, with concerns about misuse and environmental impact highlighted in recent discussions. The Pope warned that human dignity must be protected from emerging AI technologies during a Vatican event. Changes in internet browsing habits, driven by user attention, could reshape the online landscape. Google launched a new AI search feature that may affect advertisers, while in India, AI adoption is leading to job cuts in the tech sector. AI chatbots are being integrated into workplaces for advice, and there are divided opinions on using AI in education, with some emphasizing the importance of coursework. [https://www.bbc.com/news/topics/ce1qrvleleqt]
+Key Quotes: "Human dignity must be protected from rise of AI" - Pope Francis | "Coursework is too important to lose" - Chief executive of OCR exam board
+
+- The Unnerving Future of A.I.-Fueled Video Games: Game designers have used AI since the 1980s, but recent advancements allow digital characters to exhibit self-awareness, as demonstrated in a Matrix-themed game demo. AI integration raises concerns about job losses in the gaming industry, with companies like Google, Microsoft, and Amazon investing heavily in AI to revolutionize game development. Layoffs and efficiency issues are prompting studios to adopt AI for tasks like generating dialogue and detecting glitches. Ethical questions surround sentient characters and the potential for AI to automate creative processes. Experts predict AI will significantly alter the industry within five years, though current tools are costly and imperfect. [https://www.nytimes.com/2025/07/28/arts/video-games-artificial-intelligence.html]
+Key Quotes: "I am not just lines of code!" - AI character in demo | "There’s this belief that once you do, you’ll basically monopolize all other industries." - Kylan Gibbs | "There is a lot of talk about A.I., for example. When that happens, everyone starts to go in the same direction, but that is where Nintendo would rather go in a different direction." - Shigeru Miyamoto
+
+- Artificial Intelligence (AI) News Updates: Latest News About Google AI, OpenAI, ChatGPT, Gemini, Lamda and More: OpenAI rolled out a study mode for ChatGPT, offering personalized feedback for learning across multiple plans. Microsoft is in advanced talks to secure continued access to OpenAI's technology, even if artificial general intelligence is achieved. Former President Trump's AI action plan aims to bypass environmental laws to expedite AI infrastructure development. AI skills are increasingly required in non-tech sectors, boosting salaries by about $18,000 annually. Lenovo announced several AI projects in India, focusing on revenue growth and manufacturing. Concerns persist about AI-driven job losses and the need for businesses to adapt amid global uncertainties. [https://www.reuters.com/technology/]
+Key Quotes: "Everybody is trying to race toward A.G.I." - Kylan Gibbs
+
+- Artificial Intelligence: Read latest news updates on AI technology | The Indian Express: OpenAI launched a ChatGPT study mode in India, providing interactive, multilingual learning tools with step-by-step feedback. Job postings requiring AI skills are rising in non-tech roles, offering higher salaries and broader applications. A study found humans are only slightly better than chance at identifying AI-generated images, highlighting detection challenges. Krutrim, an AI startup, conducted layoffs to build leaner teams amid competition. Bill Gates advised embracing curiosity and using AI tools for career development in the AI era. AI referrals to news websites have surged, indicating increased traffic from AI platforms. [https://www.reuters.com/world/us/]
+Key Quotes: "Be curious, read, and use latest tools" - Bill Gates | "My biggest concern is not that the A.I. gains consciousness" - Cansu Canca
+
+---
+
+TOPIC: Cryptocurrency Market Trends
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "headline": "BeInCrypto reports recent trends and developments in the cryptocurrency market.",
+      "citations": [
+        "https://beincrypto.com/news"
+      ]
+    }
+  ],
+  "notes": "Data is sparse; only one story identified from sources within the last 24 hours."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Crypto's hottest new trend: publicly traded companies buying bunches of bitcoin | Cryptocurrency News - Times of India: Publicly traded companies are increasingly investing in Bitcoin, with Donald Trump's media company announcing plans to raise $2.5 billion for purchases. MicroStrategy leads with holdings of 582,000 Bitcoins, representing nearly 3% of the total supply, and its stock has surged over 3000% in five years. The trend involves using strategies like debt and stock sales to acquire more Bitcoin, driven by motives such as hedging against inflation. Experts warn of risks due to Bitcoin's volatility, which could force companies to sell holdings if prices decline below purchase levels. The average purchase price for some firms is around $90,000, highlighting potential financial shocks for the unaware. [https://www.reuters.com/]
+Key Quotes: ""The world at large has no idea what’s happening and they’re in for a big shock."" - Dylan LeClair | ""Bitcoin is a swarm of cyber hornets serving the goddess of wisdom, feeding on the fire of truth, exponentially growing ever smarter, faster, and stronger behind a wall of encrypted energy."" - Michael Saylor | ""It’s kind of shocking ... that it took someone four years after Michael Saylor started doing it to finally do it and pull the trigger and now it feels like everyone’s pulling the trigger."" - Eric Semler
+
+- Trending Crypto Topics on X Today: Stablecoin Adoption and Altcoin Outperformance Fuel Debates | Yellow.com: Discussions on X focus on Bitcoin price predictions reaching up to $200,000, driven by institutional adoption and potential U.S. government interest. Ethereum's role in decentralized finance and its scalability upgrades are debated alongside challenges from competitors like Solana. Memecoin mania and stablecoin adoption trends highlight volatility and utility in crypto markets. AI integration with crypto and regulatory shifts under a pro-crypto U.S. administration are key topics, with high user engagement reflecting market dynamics. Altcoin outperformance, NFT market recovery, and tokenized real-world assets are also prominent, showing diverse interests in the crypto community. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+---
+
+TOPIC: NFL Training Camp Injuries and Signings
+
+LIVE SEARCH SUMMARY:
+{
+  "high_engagement_stories": [
+    {
+      "headline": "Buffalo Bills wide receiver Tyrell Shavers suffers ankle injury during training camp practice",
+      "citations": [
+        "https://www.nytimes.com/athletic/6518579/2025/07/27/bills-training-camp-receiver-injuries/",
+        "https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html"
+      ]
+    },
+    {
+      "headline": "Denver Broncos and wide receiver Courtland Sutton agree to contract extension",
+      "citations": [
+        "https://sports.yahoo.com/nfl/live/nfl-training-camp-july-26-2025-163830180.html"
+      ]
+    },
+    {
+      "headline": "Dallas Cowboys linebacker Micah Parsons engages with social media criticism related to team management during training camp",
+      "citations": [
+        "https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html"
+      ]
+    },
+    {
+      "headline": "Chicago Bears quarterback Caleb Williams experiences challenges durin
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- NFL training camp 2025 live updates: News, notes, injuries and more from around the league - The Athletic: NFL training camp 2025 featured multiple injury reports across teams, including the Colts with several players sidelined due to hamstring and groin issues. The 49ers signed defensive end Jaylon Allen and placed defensive lineman Tarron Jackson on injured reserve with a neck injury. Packers' running back MarShawn Lloyd suffered a non-contact injury, while wide receiver Dontayvion Wicks was out with a calf injury. Seahawks added rookie defensive tackle Thor Griffith to their roster via waiver claim. Other updates included defensive performances and position battles, such as the Ravens focusing on reducing penalties. [https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/]
+Key Quotes: "He stuck his foot in the ground and he never put it back in the ground when he had an opportunity to." - Matt LaFleur | "This is the best I’ve seen a Packers defense go after the ball in his seven seasons." - Matt LaFleur
+
+- Bills Day 4 observations: WR injuries piling up, while backup QB battle intensifies - The Athletic: Buffalo Bills' training camp saw wide receiver Tyrell Shavers suffer an ankle injury during a goal-line drill, adding to existing injuries at the position. Other receivers like Curtis Samuel and Elijah Moore were also sidelined, forcing the team to utilize depth players. The backup quarterback competition between Mitchell Trubisky and Mike White heated up, with White showing stronger accuracy in pocket passing. Linebacker Terrel Bernard missed practice due to a hamstring injury, affecting defensive preparations. Kicker Tyler Bass had inconsistent field goal performance in rainy conditions, making some but missing others from various distances. [https://www.nytimes.com/athletic/6518579/2025/07/27/bills-training-camp-receiver-injuries/]
+Key Quotes: "He ran an under, a shallow route. That’s just us competing — me being a corner, not trying to allow the receiver to catch the ball." - Maxwell Hairston | "Just be smart. You know, we’re in practice, at the end of the day, we’re competing. But these are our teammates. Just to be smart on the finish." - Jahmile Addae
+
+- What’s happening with Cam Ward? Plus: Training camp competitions, injuries - The Athletic: Tennessee Titans' rookie quarterback Cam Ward received first-team reps and completed deep passes to receivers like Calvin Ridley during training camp. Injuries across the NFL included Minnesota Vikings' Justin Jefferson with a mild hamstring strain and Houston Texans' Joe Mixon sidelined with an ankle injury. The Indianapolis Colts' quarterback battle between Anthony Richardson and Daniel Jones showed early struggles for both. Las Vegas Raiders released defensive tackle Christian Wilkins due to a dispute over foot surgery, freeing up cap space. Other updates highlighted position competitions and the importance of health for key players entering the season. [https://www.nytimes.com/athletic/6520476/2025/07/28/nfl-training-camp-cam-ward-titans-scoop-city/]
+Key Quotes: "You can’t help but to rally behind him." - Jeffrey Simmons
+
+- New York gunman left note blaming NFL for brain injury, mayor says: A gunman attacked a New York skyscraper housing NFL headquarters, killing four and injuring others, with a note blaming the NFL for CTE-related brain injury. The incident involved a mistaken floor entry and was linked to the gunman's mental health history and football background. While the event highlights broader NFL injury concerns like CTE, it does not directly address current training camp activities or signings. The NFL employee injured was in stable condition, and increased security measures were announced. This shooting underscores ongoing discussions about player safety in football but is separate from routine training camp reports. [https://www.bbc.com/news/articles/c2en7k2e77wo]
+Key Quotes: "He appeared to have blamed the NFL for his injury." - Eric Adams
+
+- Gunman ‘focused on the NFL,’ went to wrong floor in NYC skyscraper, Mayor Eric Adams says - The Athletic: A gunman targeted a building with NFL offices in New York, killing four and seriously injuring an NFL employee, with motives tied to CTE and perceived NFL negligence. The shooter, Shane Devin Tamura, had a note criticizing the league for hiding football dangers and referenced brain injury studies. Although an NFL staff member was hurt, the incident is not connected to training camp events. It brings attention to long-term injury issues in the NFL, such as CTE, but lacks details on current camp injuries or signings. Authorities confirmed the event as isolated with no ongoing threat. [https://www.nytimes.com/athletic/6521724/2025/07/28/new-york-shooting-nfl-headquarters-office-building/]
+Key Quotes: "The motive appeared to be connected to the shooter’s belief that he was suffering from CTE." - Eric Adams
+
+- NFL training camp 2025 news, live updates: Patriots' Christian Gonzalez reportedly suffers injury, while Malik Nabers leaves practice - Yahoo Sports: New England Patriots' cornerback Christian Gonzalez sustained a hamstring injury expected to sideline him through the preseason but with a return targeted for Week 1. New York Giants' wide receiver Malik Nabers exited practice with a shoulder injury but appeared stable after evaluation. Denver Broncos extended wide receiver Courtland Sutton with a four-year deal worth $92 million, securing their passing game. Dallas Cowboys' offensive tackle Tyler Guyton is expected to miss 4-6 weeks due to a knee injury, impacting their line depth. The article also covered a separate shooting incident at NFL headquarters, which resulted in injuries but is unrelated to camp activities. [https://sports.yahoo.com/nfl/live/nfl-training-camp-live-updates-july-21-172149518.html]
+
+- NFL training camp 2025 news, live updates: Patriots' Christian Gonzalez reportedly suffers injury, while Malik Nabers leaves practice - Yahoo Sports: Patriots' Christian Gonzalez was reported with a hamstring injury, expected to miss preseason but return for the regular season start. Giants' Malik Nabers left practice with a shoulder concern but was reported to be okay after checks. Broncos signed a contract extension for wide receiver Courtland Sutton, bolstering their offensive roster. Cowboys' Tyler Guyton faces a 4-6 week absence due to a knee injury, affecting team preparations. The coverage included references to a non-camp-related shooting at NFL headquarters, highlighting broader league safety issues. [https://sports.yahoo.com/nfl/live/nfl-training-camp-2025-news-highlights-updates-holdouts-clips-contracts-181622933.html]
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by taiwannews.com.tw (7/29/2025): "Winners in Second Annual Stevie® Awards for Technology Excellence Announced | Taiwan News | Jul. 29, 2025 21:00" - | Jul. 29, 2025 21:00 [https://taiwannews.com.tw/en/news/6166810]
+- [Updated RSS Feed] by Andy Fell (7/29/2025): "National Science Foundation Awards UC Davis $5 Million for Artificial Intelligence Hub" - The National Science Foundation has awarded $5 million over five years to the University of California, Davis, to run the Artificial Intelligence Institutes Virtual Organization, a community hub for new and existing AI institutes established by the federal government. AIVO is part of a $100 million public-private investment in AI announced by NSF July 29. [https://www.ucdavis.edu/news/national-science-foundation-awards-uc-davis-5-million-artificial-intelligence-hub]
+- [Updated RSS Feed] by Michael Erman,Mariam Sunny (7/29/2025): "Merck extends pause on China Gardasil shipments to year end, shares slip" - Merck said on Tuesday it was extending its pause on Gardasil shipments to China until at least the end of 2025 due to persistent weakness in demand for the blockbuster human papillomavirus vaccine, sending its shares down as much as 8%. [https://www.reuters.com/business/world-at-work/merck-extends-pause-china-gardasil-shipments-year-end-shares-slip-2025-07-29/]
+- [Updated RSS Feed] by Stephanie Van Den Berg (7/29/2025): "UN court denies Mladic request for release on health grounds" - A U.N. war crimes court on Tuesday denied an application by Bosnian Serb general Ratko Mladic, who is serving a life sentence for his role in the 1992-95 war in Bosnia, to be urgently released to Serbia on health grounds. [https://www.reuters.com/world/un-court-denies-mladic-request-release-health-grounds-2025-07-29/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Taiwan's President Lai postpones visit to Guatemala" - Taiwan's President Lai Ching-te has postponed his visit to Guatemala until further notice due to damages from a typhoon which brought down torrential rains and forced thousands to evacuate, an embassy official in Guatemala told Reuters on Tuesday. [https://www.reuters.com/world/china/taiwans-president-lai-postpones-visit-guatemala-2025-07-29/]
+- [Updated RSS Feed] by Liam  Kelly (7/29/2025): "How public companies could end up holding 10% of all Ethereum" - Analysts predict a 10x increase in the amount of Ether companies will hold.  Ether has far outperformed Bitcoin and Solana since June. [https://www.dlnews.com/articles/snapshot/ethereum-treasuries-expected-to-hold-tenth-of-all-eth/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Palo Alto Networks in talks to buy CyberArk in deal worth over $20 billion, WSJ reports" - Palo Alto Networks is in talks to acquire CyberArk Software in a deal that could value the Israeli cybersecurity firm at more than $20 billion, the Wall Street Journal reported on Tuesday, citing people familiar with the matter. [https://www.reuters.com/business/palo-alto-networks-talks-buy-cyberark-deal-worth-over-20-billion-wsj-reports-2025-07-29/]
+- [Updated RSS Feed] by Andrew Macaskill,William James (7/29/2025): "UK plans to recognise Palestinian state in September unless Israel takes action" - Prime Minister Keir Starmer said on Tuesday Britain was prepared to recognise a Palestinian state in September at the United Nations General Assembly unless Israel takes a number of steps to improve life for Palestinians. [https://www.reuters.com/world/europe/uk-plans-recognise-palestinian-state-september-unless-israel-takes-action-2025-07-29/]
+- [Updated RSS Feed] by Maya Gebeily,Laila Bassam (7/29/2025): "US pressures Lebanon to issue cabinet decision to disarm Hezbollah before talks continue" - Washington is ramping up pressure on Beirut to swiftly issue a formal cabinet decision committing to disarm Hezbollah before talks can resume on a halt to Israel's military operations in Lebanon, five sources familiar with the matter told Reuters. [https://www.reuters.com/world/middle-east/us-pressures-lebanon-issue-cabinet-decision-disarm-hezbollah-before-talks-2025-07-29/]
+- [Updated RSS Feed] by Murtuza J Merchant (7/29/2025): "How Bitcoin Treasury Companies Are Beating Bitcoin's Returns" - Publicly listed Bitcoin (CRYPTO: BTC) treasury companies are no longer just passive holders of BTC. A new financial model, leveraging traditional capital markets tools like share issuance and fixed-income debt, is enabling these firms to outperform Bitcoin itself in BTC terms. At the core of this model is a focus on growing the Bitcoin-per-share (BPS) ratio. Rather than simply tracking Bitcoin's price, these companies aim to accumulate more BTC per outstanding share over time. The result is a gr [https://finance.yahoo.com/news/bitcoin-treasury-companies-beating-bitcoins-163045076.html]
+- [Updated RSS Feed] by Exec-Edge (7/29/2025): "ReAlta Life Sciences Appoints Ellen Lubman as Chief Business Officer" - By Karen Roman ReAlta Life Sciences, Inc. said it designated Ellen Lubman as Chief Business Officer to supervise business development, capital formation and corporate strategy. Ms. Lubman has nearly 25 years of experience across small to large-cap private and public biopharmaceutical companies with a track record in strategic, transactional, and operational roles, the company stated. […] [https://finance.yahoo.com/news/realta-life-sciences-appoints-ellen-163007625.html]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Microsoft in advanced talks for continued access to OpenAI tech, Bloomberg reports" - Microsoft is in advanced talks for a deal that would give the Windows maker continued access to critical OpenAI technology in the future, Bloomberg News reported on Tuesday, citing two people familiar with the negotiations. [https://www.reuters.com/business/microsoft-advanced-talks-continued-access-openai-tech-bloomberg-reports-2025-07-29/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Palo Alto Networks nears over $20 billion deal for CyberArk, WSJ reports" - Palo Alto Networks is in talks to acquire CyberArk Software potentially valuing the Israeli cybersecurity provider at more than $20 billion, the Wall Street Journal reported on Tuesday, citing people familiar with the matter. [https://www.reuters.com/business/palo-alto-networks-nears-over-20-billion-deal-cyberark-wsj-reports-2025-07-29/]
+- [Updated RSS Feed] by Darryl Sellers (7/29/2025): "In The News: Tyler Schipper on the Stock Market and Tariffs - Newsroom | University of St. Thomas" - Tyler Schipper, an economist and associate professor in the College of Arts and Sciences at the University of St. Thomas, spoke to KSTP-TV about the stock market bouncing back and how tariffs are impacting prices in stores. How consumers feel about the economy depends on where they are with their finances, he said. He cited… [https://news.stthomas.edu/in-the-news-tyler-schipper-on-the-stock-market-and-tariffs/]
+- [Updated RSS Feed] by Suzanne Blake (7/29/2025): "One third of Americans are now heavy AI users" - The rapid adoption of AI systems is transforming how Americans interact with technology, information and everyday services. [https://www.newsweek.com/one-third-americans-are-now-heavy-ai-users-2105748]
+- [Updated RSS Feed] by Greta Fondahn,Maria Martinez (7/29/2025): "US, China finish talks in Stockholm as tariff truce holds for now" - U.S. and Chinese officials finished two days of talks in Stockholm on Tuesday that were aimed at tackling longstanding economic disputes and stepping back from an escalating trade war between the world's two biggest economies. [https://www.reuters.com/world/china/us-china-finish-talks-stockholm-tariff-truce-holds-now-2025-07-29/]
+- [Updated RSS Feed] by Dominique Patton (7/29/2025): "L'Oreal posts 2.4% rise in second-quarter sales" - L'Oreal OREP.PA reported a 2.4% rise in second-quarter sales on Tuesday, missing forecasts as growth in Europe slowed more than expected and demand at travel outlets in Asia was subdued. [https://www.reuters.com/business/loreal-posts-24-rise-second-quarter-sales-2025-07-29/]
+- [Updated RSS Feed] by Business Wire (7/29/2025): "EFG Companies: Top Five Questions We Hear From Dealers Reflect State of the Industry" - DALLAS, July 29, 2025--Here are the Top Five Questions EFG Companies hears from retail auto dealer principals daily – and the experienced counsel we share with them. [https://finance.yahoo.com/news/efg-companies-top-five-questions-161000271.html]
+- [Updated RSS Feed] by Nikhil Sharma,Pranav Kashyap (7/29/2025): "Wall Street swings to losses as earnings weigh; Fed meeting in focus" - The S&P 500 and the Nasdaq slipped from record highs on Tuesday as a series of downbeat earnings weighed on the indexes, while investors looked ahead to the U.S. Federal Reserve's policy meeting later in the day. [https://www.reuters.com/business/wall-street-swings-losses-earnings-weigh-fed-meeting-focus-2025-07-29/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "UK plans to recognise Palestinian state in September unless Israel meets conditions, Starmer says" - Britain will recognise the state of Palestine in September unless the Israeli government takes substantive steps to end the "appalling situation" in Gaza and meets other conditions, British Prime Minister Keir Starmer told his cabinet on Tuesday according to a government statement. [https://www.reuters.com/world/europe/uk-plans-recognise-palestinian-state-september-unless-israel-meets-conditions-2025-07-29/]
+- [Updated RSS Feed] by Karl Coppack (7/29/2025): "Liverpool Say Bye To Champion Diaz As They Usher In New Era" - Liverpool refreshing a championship winning squad is more than exciting - it's a must if they're to seek dominance at home and in Europe... [https://www.theanfieldwrap.com/2025/07/liverpool-say-bye-to-champion-diaz-as-they-usher-in-new-era/]
+- [Updated RSS Feed] by @SawyerMerritt (7/29/2025): "@SawyerMerritt: Video made by @grok of a Tesla Bot in a field of flowers." - Video made by @Grok of a Tesla Bot in a field of flowers. pic.twitter.com/qQC05xpGHq
+— Sawyer Merritt (@SawyerMerritt) July 29, 2025 [https://x.com/SawyerMerritt/status/1950225272185184519]
+- [Updated RSS Feed] by Ryan Daws (7/29/2025): "Google's Veo 3 AI video creation tools are now widely available" - Google has made its most powerful AI video creator, Veo 3, available for everyone to use on its Vertex AI platform. [https://www.artificialintelligence-news.com/news/google-veo-3-ai-video-creation-tools-now-widely-available/]
+- [Updated RSS Feed] by Amber Ruch (7/29/2025): "Man, 2 juveniles arrested in connection with theft from Carbondale business" - A man and two juveniles were arrested in connection with a theft from a Carbondale business. [https://www.kfvs12.com/2025/07/29/man-2-juveniles-arrested-connection-with-theft-carbondale-business/]
+- [Updated RSS Feed] by FOX 32 Chicago (7/29/2025): "Gen Z Dating: Why politics is a dealbreaker for many | ChicagoNOW " - The founder and host of the “Rich Little Brokegirls” podcast joins us to unpack a growing challenge in the already struggling Gen Z dating scene: how politics are increasingly becoming a dealbreaker. [https://www.fox32chicago.com/video/1682288]
+- [Updated RSS Feed] by Mimosa Spencer,Tassilo Hummel (7/29/2025): "Kering's quarterly sales weaker than expected, Gucci down 25%" - Kering , the French group that owns fashion labels Gucci and Saint Laurent, reported on Tuesday a 15% drop in quarterly revenues, falling short of market expectations as the luxury sector grapples with a prolonged slump. [https://www.reuters.com/business/kerings-quarterly-sales-weaker-than-expected-gucci-down-25-2025-07-29/]
+- [Updated RSS Feed] by Samuel O'Brient (7/29/2025): "3 reasons the stock market could be overheating this summer" - The stock market has demonstrated resilience this summer, but some are raising concerns that the rally is at risk of petering out. [https://www.businessinsider.com/stock-market-rally-overheating-tariffs-margin-debt-ai-trade-war-2025-7]
+- [Updated RSS Feed] by Reuters (7/29/2025): "18 migrants die in shipwreck off eastern Libya, 50 missing" - At least 18 migrants died in a shipwreck off the city of Tobruk in eastern Libya over the weekend, and 50 are still missing, the International Organization for Migration said on Tuesday, citing reports. [https://www.reuters.com/world/africa/18-migrants-die-shipwreck-off-eastern-libya-50-missing-2025-07-29/]
+- [Updated RSS Feed] by @SawyerMerritt (7/29/2025): "@SawyerMerritt: Pros: • Samsung will let Elon walk the production lines, which will provide him (and thus Tesla) will valuable industry knowledge on how to produce chips. This could help Tesla design even better chips in the future and provide an upper hand in negotiations with other…" - Pros: 
+• Samsung will let Elon walk the production lines, which will provide him (and thus Tesla) will valuable industry knowledge on how to produce chips. This could help Tesla design even better chips in the future and provide an upper hand in negotiations with other… https://t.co/onP11aetW9
+— Sawyer Merritt (@SawyerMerritt) July 29, 2025 [https://x.com/SawyerMerritt/status/1950222931172196668]
+- [Updated RSS Feed] by Peter D'Abrosca (7/29/2025): "Cincinnati business owners slam viral 'out of control' beating amid fight to clean up downtown" - Local business owners react to violent incident in downtown Cincinnati that gained national attention, with one merchant calling it a "hate crime" affecting weekend crowds [https://www.foxnews.com/us/cincinnati-business-owners-slam-viral-out-control-beating-amid-fight-clean-up-downtown]
+- [Updated RSS Feed] by Investor's Business Daily (7/29/2025): "Uber Stock Slumps As Waymo Picks Up New Partner For Dallas Expansion" - Uber stock fell as news of Waymo's latest expansion revved back up the debate about autonomous vehicles and the ride-hailing market. [https://www.investors.com/news/technology/uber-stock-slumps-as-waymo-picks-up-new-partner-for-dallas-expansion/]
+- [Updated RSS Feed] by lavanyakaleeswaran (7/29/2025): "Will Artificial Intelligence soon become Artificial Influence?" - As the U.S. aims to dominate AI, here’s what Canada needs to do [https://www.rbc.com/en/thought-leadership/trade-hub-commentary/will-artificial-intelligence-soon-become-artificial-influence/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Deutsche Bank names new general counsel, head of anti-financial crime" - Deutsche Bank named a new general counsel and a new head of anti-financial crime on Tuesday, as the German lender works to clear up legal issues and improve its controls. [https://www.reuters.com/business/finance/deutsche-bank-names-new-general-counsel-head-anti-financial-crime-2025-07-29/]
+- [Updated RSS Feed] by James Findlater (7/29/2025): "Liverpool 'contacted' for another player exit as Diaz closes in on Bayern Munich" - Luis Diaz is on the verge of completing his exit from Liverpool as he undergoes a medical at Bayern Munich, and Liverpool has been contacted about letting another player go [https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-contacted-another-player-exit-32161225]
+- [Updated RSS Feed] by Akash Sriram (7/29/2025): "Amazon-backed Skild AI unveils general-purpose AI model for multi-purpose robots" - Robotics startup Skild AI, backed by Amazon.com and Japan's SoftBank Group , on Tuesday unveiled a foundational artificial intelligence model designed to run on nearly any robot — from assembly-line machines to humanoids. [https://www.reuters.com/business/media-telecom/amazon-backed-skild-ai-unveils-general-purpose-ai-model-multi-purpose-robots-2025-07-29/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Greek ship manager 'relieved' to see Houthi video showing missing seafarers alive" - The Greece-based manager of a vessel that sank after being attacked by Houthi militants off Yemen earlier this month expressed relief on Tuesday after seeing a video showing 11 missing crew members alive. [https://www.reuters.com/world/asia-pacific/greek-ship-manager-relieved-see-houthi-video-showing-missing-seafarers-alive-2025-07-29/]
+- [Updated RSS Feed] by Chris Burns (7/29/2025): "Even Rio Ferdinand is impressed by Liverpool's 'outrageous' transfer business" - Liverpool is chasing the signing of Alexander Isak, and Rio Ferdinand believes the Reds will be "lights out" if they complete a deal for the Newcastle striker this summer [https://www.liverpool.com/liverpool-fc-news/features/even-rio-ferdinand-impressed-liverpools-32161737]
+- [Updated RSS Feed] by TOI Tech Desk (7/29/2025): "Microsoft heads into Q4 earnings announcement with one big Risk Question: Is the company's AI ... - The Times of India" - Tech News : Microsoft investors are keen to know if the company's AI advantage is at risk as OpenAI explores cloud partnerships with Google, Oracle, and CoreWeave [https://timesofindia.indiatimes.com/technology/tech-news/microsoft-heads-into-q4-earnings-announcement-with-one-big-risk-question-is-the-companys-ai-/articleshow/122979731.cms]
+- [Updated RSS Feed] by Sriparna Roy,Sneha K (7/29/2025): "UnitedHealth signals prolonged pain with new, far lower profit forecast, shares fall" - UnitedHealth Group provided a full-year profit forecast on Tuesday after suspending its prior outlook in May, revealing billions of additional costs the company will face in the upcoming quarters. [https://www.reuters.com/business/healthcare-pharmaceuticals/unitedhealth-signals-prolonged-pain-with-new-far-lower-profit-forecast-shares-2025-07-29/]
+- [Updated RSS Feed] by A.G. Gancarski (7/29/2025): "Ron DeSantis predicts 'major, major issues' for police from Artificial Intelligence" - 'Guardrails' may emerge, 'legislation' may be needed. [https://floridapolitics.com/archives/749263-desantis-ai-police/]
+- [Updated RSS Feed] by Paris Barraza (7/29/2025): "The 29 best companies to work for in SoCal revealed, including In-N-Out" - These companies scored well on pay, work-life balance and more. Here's where you may want to get your next job at. [https://www.desertsun.com/story/news/nation/california/2025/07/29/best-california-companies-to-work-for-2025-jobs-near-me/85348596007/]
+- [Updated RSS Feed] by Laila Kearney (7/29/2025): "DTE Energy in talks to supply 3 GW of power to Big Tech data centers" - Detroit-based power utility DTE Energy is in advanced talks to supply more than 3 gigawatts of electricity to Big Tech data centers and expects to sign its first major deal by the end of the year, company executives said on Tuesday. [https://www.reuters.com/business/energy/dte-energy-talks-supply-3-gw-power-big-tech-data-centers-2025-07-29/]
+- [Updated RSS Feed] by Sybille De La Hamaide (7/29/2025): "CMA CGM says interested by CK Hutchison's port terminals" - French shipping giant CMA CGM said on Tuesday it is interested in taking over some of CK Hutchison 's ports after the Hong Kong conglomerate's exclusive talks ended with a consortium led by BlackRock this week. [https://www.reuters.com/business/cma-cgm-says-interested-by-ck-hutchisons-port-terminals-2025-07-29/]
+- [Updated RSS Feed] by Reuters (7/29/2025): "Whirlpool shares slide after slashing forecast, dividend as tariffs bite" - Whirlpool's shares tumbled on Tuesday after the home appliances maker slashed its full-year earnings forecast and dividend, citing pressure from rivals loading up on imports ahead of U.S. President Donald Trump's tariffs. [https://www.reuters.com/business/whirlpool-shares-slide-after-slashing-forecast-dividend-tariffs-bite-2025-07-29/]
+- [Updated RSS Feed] by CNBCTV (7/29/2025): "Microsoft in advanced talks for continued access to OpenAI tech, Bloomberg News reports" - The companies have discussed new terms that would allow Microsoft to use OpenAI's latest models and technology even if the ChatGPT maker declares it has [https://startupnews.fyi/2025/07/29/microsoft-in-advanced-talks-for-continued-access-to-openai-tech-bloomberg-news-reports/]
+- [Updated RSS Feed] by Jaspreet Singh (7/29/2025): "Spotify forecasts profit below estimate on high payroll taxes, shares sink" - Spotify forecast quarterly profit below estimate on Tuesday, as higher taxes related to employee salaries outweigh music streaming demand, sending its high-flying shares down 11%. [https://www.reuters.com/business/retail-consumer/spotify-forecasts-profit-below-estimate-high-payroll-taxes-shares-sink-2025-07-29/]
+- [Updated RSS Feed] by Laurie Whitwell (7/29/2025): "Bryan Mbeumo on how Ruben Amorim persuaded him to join Man Utd: ‘There is a very good project here’" - United's new forward explains the draw of Old Trafford and how chess influences him in football [https://www.nytimes.com/athletic/6522467/2025/07/29/bryan-mbeumo-ruben-amorim-manchester-united/]
+- [Updated RSS Feed] by Gabrielle Olya (7/29/2025): "If You Had Invested $1K in These 6 Companies at IPO, You’d Have Over $2 Million Today" - These six IPO investments — including Nvidia and Amazon — could have made you a millionaire with just $1,000. Here’s how. [https://finance.yahoo.com/news/had-invested-1k-6-companies-145754830.html]
+- [Updated RSS Feed] by Michael Erman,Mariam Sunny (7/29/2025): "Merck to extend pause on China Gardasil shipments to year end" - Merck & Co said on Tuesday it was extending its hold on Gardasil shipments to China until at least the end of 2025 due to persistent weakness in demand for the blockbuster human papillomavirus vaccine, sending its shares down as much as 8%. [https://www.reuters.com/business/world-at-work/merck-extend-pause-china-gardasil-shipments-year-end-2025-07-29/]
+- [Updated RSS Feed] by Sean O'Kane (7/29/2025): "Elon Musk's Boring Company to build Tesla tunnels under Nashville " - Construction could start fast -- but that speed has edangered Boring Company workers in the past. [https://techcrunch.com/2025/07/29/elon-musks-boring-company-to-build-tesla-tunnels-under-nashville/]
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Fabrizio Romano: "🚨🔴⚪️ Gabriel Strefezza, new Olympiacos player as he travels to London tonight for medical.
+
+€8m package to Como. Strefezza will join Olympiacos pre-season camp in Holland tomorrow." (729285 views, 4835 likes) https://x.com/i/status/1950221724722634983
+- Ian Rapoport: "A few injuries to watch today: 
+— #Chiefs WR Xavier Worthy appeared shaken up. 
+— #Bills CB Maxwell Hairston is getting his knee checked out.
+— #Giants WR Malik Nabers left practice and will have his shoulder checked out, but appears ok, per me and @MikeGarafolo.
+— #Patriots CB" (646146 views, 1204 likes) https://x.com/i/status/1950217254068473892
+- Pardon My Take: ".@PFTCommenter nailed the Dap with Jayden Daniels https://t.co/ZuMw2BGqlM" (637220 views, 7392 likes) https://x.com/i/status/1950207882714128469
+- Fabrizio Romano: "🔵🇲🇦 Official, confirmed. Adam Aznou joins Everton on €9m plus €3m deal from Bayern. https://t.co/oUzc9CP8G3" (584132 views, 7822 likes) https://x.com/i/status/1950228916679168263
+- Fabrizio Romano: "🚨🔟 Official: Kylian Mbappé becomes Real Madrid’s new number 10. ⭐️🇫🇷 https://t.co/5rf4kfAZek" (312948 views, 7139 likes) https://x.com/i/status/1950238160950333688
+- Fabrizio Romano: "🚨🦅 Benfica and Union St Gilloise have sealed all details for Franjo Ivanović deal, no risk for hijacks.
+
+€23m fixed fee, €5m add-ons, sell-on clause on future profit and contract until June 2030.
+
+Medical in Lisbon tomorrow. https://t.co/8dkL9vF3G3" (290845 views, 4356 likes) https://x.com/i/status/1950238849776398555
+- Fabrizio Romano: "🚨🔴⚪️ Oscar Gloukh to Ajax, here we go! Deal in place with RB Salzburg for €14m fixed fee.
+
+€2m add-ons and 5 year deal for Gloukh, as ESPN NL reported. Deal done by agent Rafaela Pimenta.
+
+Gloukh will now travel for medical. https://t.co/CNEBu2kdXB" (235847 views, 2010 likes) https://x.com/i/status/1950239278862328226
+- Fabrizio Romano: "🚨🇨🇦 Thomas Müller to Vancouver Whitecaps, here we go! Deal done for German legend to join MLS side.
+
+Two year deal in place for Müller who won’t retire and starts new chapter in MLS as he wanted.
+
+Deal agreed as @TomBogert and BILD reported, Müller said yes today. https://t.co/ff9eA9yksA" (225959 views, 5320 likes) https://x.com/i/status/1950241801752789237
+- Ian Rapoport: "Worthy appears OK, though Hollywood Brown limped off https://t.co/6HyJtLf209" (226782 views, 278 likes) https://x.com/i/status/1950220724351750404
+- Adam Schefter: "How and why the Micah Parsons contract negotiations have gone sideways.
+
+Cc: @tyschmit 
+
+🎧https://t.co/Rp8NPSbboJ https://t.co/4mgf5wav2F" (212735 views, 306 likes) https://x.com/i/status/1950213905336156236
+- BBC Breaking News: "UK will recognise Palestinian state in September unless Israel agrees to a ceasefire and other conditions
+
+Live updates: https://t.co/l0BA9YFi9O" (202847 views, 575 likes) https://x.com/i/status/1950225245123547228
+- Adam Schefter: "Jets have signed veteran kicker Nick Folk, who played seven seasons for them from 2010-16. Folk’s 729 points are No. 2 on the Jets’ career list, trailing only Pat Leahy's 1,470." (194418 views, 470 likes) https://x.com/i/status/1950232362882617507
+- Jayson Tatum: "I love St. Louis" (167052 views, 3240 likes) https://x.com/i/status/1950224497975394698
+- Pardon My Take: "Just a boy and his Quarterback https://t.co/fA4dbLDALJ https://t.co/OteBs0V1JK" (167404 views, 2701 likes) https://x.com/i/status/1950231137839960332
+- CSPAN: "President Trump opens new golf course in Balmedie, Scotland https://t.co/EeKdJlIi0m" (168787 views, 236 likes) https://x.com/i/status/1950210111332622556
+- Tesla: "FSD Supervised 
+
+– Does not drive under the influence
+– Is never tired
+– Doesn't drive recklessly
+– Doesn't experience road rage
+
+But it is trained on billions of miles of real-world video data from millions of Teslas out there.
+
+It has experienced every edge case you can think" (158893 views, 3907 likes) https://x.com/i/status/1950222283915628743
+- Big Cat: "I can’t wait for college football" (125429 views, 2354 likes) https://x.com/i/status/1950228090329903609
+- Barstool Sports: "Watch Now: https://t.co/DibwwCHU2l" (118540 views, 4 likes) https://x.com/i/status/1950210207444840805
+- PFT Commenter: "POV: executing the perfect dap with Jayden Daniels https://t.co/vhEHpAfPgV https://t.co/u0FXZKg53d" (109390 views, 794 likes) https://x.com/i/status/1950236472654909634
+- jack: "Cash App pools rolling out now. 
+
+your friends don’t even need cash app to contribute (no excuses). 
+
+multiplayer money in the money app: https://t.co/VLmlAQdf27" (104726 views, 1687 likes) https://x.com/i/status/1950229685712900478
+- Barstool Sports: "Derrick Henry Is Just A Guy Who Loves Dogs https://t.co/ildesExpt5 https://t.co/sVB75DS0uq" (101444 views, 209 likes) https://x.com/i/status/1950221040333860884
+- Sawyer Merritt: "Just got access to Grok's new video generation feature. Here's how it compares to Google's Veo 3. I used the same still image (in thread below) and asked both video generators to create a video from it. https://t.co/IWIGdOT5OF" (98794 views, 1373 likes) https://x.com/i/status/1950213634015055974
+- Fabrizio Romano: "⚫️🔵 Sergej Levak signs in at Atalanta after leaving AS Roma as free agent. ✍🏼 https://t.co/ztNHZSKyE9 https://t.co/TCrQfsDZ05" (95559 views, 354 likes) https://x.com/i/status/1950242777851449602
+- Barstool Sports: "Did @PFTCommenter just achieve the perfect Dap with Jayden Daniels? @PardonMyTake 
+
+#GritWeek presented by @HeyDudeShoes 
+
+ https://t.co/xK4O61zKje" (89151 views, 444 likes) https://x.com/i/status/1950215433954427048
+- Barstool Sports: "Welcome Back 6'4'' Cameron Brink! Let's Recap Her Best WNBA Pregame Fits During That 13 Month Recovery From A Torn ACL https://t.co/oHL0FamHSP https://t.co/1obnLxj4cz" (82444 views, 95 likes) https://x.com/i/status/1950213492524404805
+- Barstool Sports: ".@lukecombs picked up a guitar at 21 and now he's selling out stadiums, but that doesn't mean he thinks he's good at it. @mostlysports https://t.co/4wMAlslJoF" (80874 views, 88 likes) https://x.com/i/status/1950209706552619454
+- Barstool Sports: "Will Levis Shut Down Any Rumor About His Injury By Posting A Picture Showing Just How Fucked Up His Shoulder Is https://t.co/j2jDgHYfrY https://t.co/Tw8L9yjDYz" (78865 views, 33 likes) https://x.com/i/status/1950210977934286935
+- The New York Times: "Breaking News: The UK will recognize the state of Palestine in September if Israel does not agree to a cease-fire with Hamas, Prime Minister Keir Starmer said. https://t.co/McPeEYKSls" (77631 views, 410 likes) https://x.com/i/status/1950235055478997055
+- Bernie Sanders: "Opposition to Netanyahu's racist and horrific annihilation of Gaza is not only the moral and right thing to do. It is good politics.
+
+Polling shows that the American people do not want to provide military aid for Israel's destruction of Gaza and the Palestinian people. 
+
+I agree. https://t.co/euRtasNtD1" (75777 views, 2007 likes) https://x.com/i/status/1950225142220497010
+- Barstool Sports: "Mount Rushmore of Things That Start with G
+
+@PardonMyTake presented by @ChevyTrucks #ad #chevy #silverado https://t.co/me6uhjEb6t" (77189 views, 40 likes) https://x.com/i/status/1950217455122444763
+- Barstool Sports: "Charley Hull let Collin Morikawa hear it after out-driving him the Team @TaylorMadeGolf  2v2v2 Alt Shot match. @ForePlayPod 
+
+ https://t.co/hMpfBcvFUw" (74831 views, 73 likes) https://x.com/i/status/1950219265191133584
+- Barstool Sports: "It Might Just Be The New York Islanders' Year After Mat Barzal Made Two (2!!) Hole-In-Ones In One Week https://t.co/l9JGBXC2Dv https://t.co/J0sIoInwoS" (74521 views, 43 likes) https://x.com/i/status/1950218520635076767
+- The New York Times: "Breaking News: The EPA is planning to revoke the scientific determination that underpins the government’s authority to combat climate change. The agency’s administrator said the move would be “the largest deregulatory action in the history of America.” https://t.co/4o7YBAPuzq" (65008 views, 118 likes) https://x.com/i/status/1950234981399146545
+- Barstool Sports: "Watch Now: https://t.co/wgfX8itzGE" (63896 views, 9 likes) https://x.com/i/status/1950219268005478895
+- OpenAI: "As ChatGPT becomes a go-to tool for students, we’re committed to ensuring it fosters deeper understanding and learning.
+
+Introducing study mode in ChatGPT — a learning experience that helps you work through problems step-by-step instead of just getting an answer. https://t.co/B8VbRYJH6r" (62647 views, 1150 likes) https://x.com/i/status/1950240348695072934
+- CNN: "The UK says it will recognize a Palestinian state in September unless Israel takes steps to end the "appalling situation in Gaza" and agree to a ceasefire. Follow live updates. https://t.co/mwmMX8iUtg https://t.co/cVBj5xqcHT" (60463 views, 329 likes) https://x.com/i/status/1950235559890158055
+- The New York Times: "From @TheAthletic: Adam Sandler is a Hollywood megastar and a comedy icon. But he also loves basketball, and he’ll seemingly play with anyone, anywhere. https://t.co/UaS4M54act" (51855 views, 72 likes) https://x.com/i/status/1950232378560926043
+- NASA: "As part of the Summer Reading Challenge, @SLOTUS Usha Vance will host an event for children in grades K-8 at @NASA_Johnson on Monday, Aug. 4. Learn more about media accreditation for the event and how to watch live: https://t.co/us3bJ0Auud https://t.co/lQNtlS6KTX" (51250 views, 189 likes) https://x.com/i/status/1950240259742020081
+- Barstool Sports: "This man has never seen the first Happy Gilmore @MacrodosingPod 
+
+https://t.co/7Y0w4pW32D" (50637 views, 40 likes) https://x.com/i/status/1950234986558476512
+- Mario Nawfal: "🚨🇬🇧🇵🇸 UK PM: "WE WILL RECOGNIZE PALESTINE AT THE UN IN SEPTEMBER - UNLESS ISRAEL ACTS"
+
+“Our goal remains a safe and secure Israel alongside a viable and sovereign Palestinian state.
+
+Today, as part of this process towards peace, I can confirm the UK will recognize the State of https://t.co/Uq2mRpQeH2 https://t.co/X58XihsobC" (50280 views, 63 likes) https://x.com/i/status/1950228991660445970
+- Pardon My Take: "The practice this morning https://t.co/V65MQF1yvD https://t.co/OteBs0V1JK" (49204 views, 155 likes) https://x.com/i/status/1950236485904740435
+- Barstool Sports: "Fact Or Fiction: The NFL Training Camp Buzz Hype On Your Favorite Fantasy Football Hopeful https://t.co/dw6vUf46j2 https://t.co/FNbGqLUYwT" (46086 views, 10 likes) https://x.com/i/status/1950233619470983347
+- Barstool Sports: "'Real Football In Front Of 14 People And A Raccoon' - A YouTube Commenter Wrote A Work Of Art About SEC Teams Not Being Able To Handle MACtion https://t.co/KNtkehFw6Y https://t.co/F5oV1EhLor" (42100 views, 34 likes) https://x.com/i/status/1950236140302184692
+- Mario Nawfal: "🇺🇸 SAMSUNG’S TEXAS FAB: BUILT FOR TESLA’S AI6 BRAGGING RIGHTS
+
+Tesla’s next-gen AI6 chip just secured a Texas-sized factory all to itself!
+
+Samsung’s putting silicon where the hype is - Tesla.
+
+The Chip Stack-Up:
+
+• Samsung’s got AI4 - now building AI6 with Texas muscle
+
+• TSMC https://t.co/0eMuRmF7yH https://t.co/ljVwL4dwIW" (34514 views, 70 likes) https://x.com/i/status/1950212217669927336
+- Mario Nawfal: "🇺🇸 ICE ARRESTS 214 ILLEGAL IMMIGRANTS FOR CHILD SEX CRIMES IN TEXAS
+
+ICE says it arrested 214 illegal immigrants in Southeast Texas over the last 6 months for child sex offenses - more than the total from all of 2024.
+
+The suspects include repeat offenders, some with up to four https://t.co/L2TUC02UFb https://t.co/BGzxoFyisR" (33938 views, 356 likes) https://x.com/i/status/1950219766674964890
+- Mario Nawfal: "🚨🇺🇸 VIOLENCE IN CINCINNATI - AND THE GASLIGHTING BEGINS
+
+After viral footage showed a brutal mob assaulting a white people - including a woman knocked unconscious on the street - you’d think officials would lead with clarity and condemnation.
+
+Instead, we’re already seeing https://t.co/cCtTR64Y3x https://t.co/uEEdnyFebK" (33279 views, 116 likes) https://x.com/i/status/1950212058198257786
+- World of Statistics: "🇺🇸 US national debt today: $37.1 trillion
+
+Debt per citizen: $108k
+
+Debt per taxpayer: $323k" (32194 views, 180 likes) https://x.com/i/status/1950230034888921260
+- Sky Sports Football: ""BONKERS... but what a player" 😅
+
+Gary Lineker tells the story of Paul Gascoigne borrowing an emu from London Zoo and taking it to Spurs training 😂 https://t.co/Yphft0od4z" (31265 views, 127 likes) https://x.com/i/status/1950233472133636577
+- World of Engineering: "Electric cars can deliver power instantly, but gas engines take more time to build up power." (31056 views, 147 likes) https://x.com/i/status/1950208442351636907
+- Mario Nawfal: "🚨🇺🇸 DEMS' FAUX OUTRAGE OVER EPSTEIN IS A JOKE
+
+Congressional Democrats are busy putting on their outrage theater over Trump and Epstein files - but let’s talk about what they don’t want you looking at:
+
+Reid Hoffman - LinkedIn founder, Democrat mega-donor, Epstein Island visitor https://t.co/utrexf2y9q https://t.co/kka8QtPctp" (30685 views, 124 likes) https://x.com/i/status/1950216768280043748
+- Mario Nawfal: "🚨🇬🇧 ONLINE SAFETY ACT: IMMIGRATION TALK NOW A RED FLAG, ORWELL'S PLAYBOOK REVIVED
+
+Spot the odd one out in the UK's Online Safety Act hit list: child abuse, fraud, extreme porn - and oh, chatting about illegal immigration or smuggling? 
+
+Platforms must nuke that content, because https://t.co/iiYmLWobJU https://t.co/BNj5RcMHWf" (30191 views, 57 likes) https://x.com/i/status/1950214146126917901
+- Mario Nawfal: "REMOTE-CONTROL EXCAVATORS ARE HERE TO BANISH WOLF WHISTLES FROM CONSTRUCTION SITES
+
+Used to be, running a 100-ton excavator meant sweating in a metal box, inches from rockslides, cave-ins, and everything else that ruins your week.
+
+Now? You run the same beast from a comfy control https://t.co/QpKGSmQg2n" (29995 views, 143 likes) https://x.com/i/status/1950217252495905218
+- Mario Nawfal: "🇰🇵🇺🇸 NORTH KOREA TO TRUMP: “OUR NUKES AREN’T GOING ANYWHERE”
+
+Kim Yo Jong, sister of Kim Jong Un, says the U.S. must abandon any hope of denuclearizing North Korea - because that ship has sailed.
+
+Despite acknowledging Trump’s “not bad” relationship with her brother, she warned https://t.co/LRmegUbREA https://t.co/GLkBA7ec7q" (30059 views, 45 likes) https://x.com/i/status/1950224800154034304
+- jack: "https://t.co/hvs3RZKCUf" (29809 views, 59 likes) https://x.com/i/status/1950229689366434016
+- Mario Nawfal: "🇺🇸 TRUMP SCORES BIG IN SCOTLAND - HOPS ABOARD MARINE ONE
+
+Trade deal with the EU? Locked.
+
+Thailand and Cambodia? Shaking hands, not fists.
+
+After a diplomatic flex that would make even seasoned statesmen blush, Trump wraps up a wildly successful Scotland visit and heads home. https://t.co/BSHSaGRtr4 https://t.co/Aju7tYm7bf" (29510 views, 136 likes) https://x.com/i/status/1950223151167574135
+- Mario Nawfal: "🚨🇬🇧 BREAKING: ROTHERHAM GROOMING GANGS - POLICE ACCUSED OF ABUSING VICTIMS TOO
+
+Victims of grooming gangs in Rotherham now say some of their abusers were police officers.
+
+One woman says she was raped by a South Yorkshire Police officer in the back of a marked patrol car - https://t.co/ATjExImpQ0 https://t.co/evWyHkP3Ib" (29367 views, 107 likes) https://x.com/i/status/1950214480907927728
+- Mario Nawfal: "🚨🇹🇭🇰🇭 BREAKING: CAMBODIA ATTACKS THAI ARMY, BREAKS CEASEFIRE
+
+Cambodian forces have launched coordinated attacks on Thai positions at Chong An Ma, Ta Muen Thom, and Phu Makheua.
+
+Thai military says Cambodia is not just clashing, they’re trying to seize territory.
+
+Thai Army has https://t.co/kJVhVqUdFA https://t.co/1xaJdZg5zp" (29097 views, 40 likes) https://x.com/i/status/1950233604254048762
+- jack: "bitchat dunkin’ on the top 200 https://t.co/migo1HI281" (28714 views, 385 likes) https://x.com/i/status/1950237872591667531
+- Mario Nawfal: "🇺🇸🇵🇸 SUPPORT FOR GAZA WAR PLUMMETS AMONG AMERICANS 
+
+The tide has turned - only 1 in 3 Americans now support Israel’s military campaign in Gaza, down from half at the start.
+
+A new Gallup poll shows 6 in 10 disapprove. 
+Among Democrats under 35? Support is in single digits. https://t.co/KhU7IVuDJI https://t.co/R3P2UtlR6D" (27774 views, 45 likes) https://x.com/i/status/1950222283806478425
+- World of Statistics: "🇮🇳 India at the Summer Olympics:
+
+1900:🥈🥈(🏃🏻)
+1920: 
+1924:
+1928:🥇(🏑)
+1932:🥇(🏑)
+1936:🥇(🏑)
+1948:🥇(🏑)
+1952:🥇(🏑) +🥉(🤼) 
+1956:🥇(🏑)
+1960:🥈(🏑)
+1964:🥇(🏑)
+1968:🥉(🏑)
+1972:🥉(🏑)
+1976: 
+1980:🥇(🏑)
+1984:
+1988:
+1992:
+1996:🥉(🎾) 
+2000:🥉(🤼)
+2004:🥈(🔫) 
+2008: 🥇(🔫) +" (27366 views, 146 likes) https://x.com/i/status/1950237047748227172
+- Pardon My Take: "The boys got a warm welcome to Pastranaland https://t.co/cXsebUWBqb" (27114 views, 226 likes) https://x.com/i/status/1950239676930957671
+- Sawyer Merritt: "NEWS: Lucid has signed a multi-year partnership with Timothée Chalamet for him to become the automaker's first-ever Global Brand Ambassador.
+
+Lucid: "A longtime admirer of the Lucid Air, Timothée embodies what it truly means to Compromise Nothing in his craft, his choices, and https://t.co/uTmmVf5kWe" (26752 views, 231 likes) https://x.com/i/status/1950228170998755603
+- Wonder of Science: "Mount Fuji seen from the International Space Station. https://t.co/hOYkOXWJBF" (26161 views, 270 likes) https://x.com/i/status/1950218509008392502
+- Mario Nawfal: "🇮🇪 McGREGOR: "AS PRESIDENT, I FIX IRELAND’S U.S. TRADE DEAL BY END OF 2025"
+
+"I immediately correct this embarrassing trade that 'we' (EU) negotiated with the United States on 'behalf of Ireland.'
+
+Nothing in this set up is ever on the behalf of Ireland.
+
+Save our Country! Save https://t.co/yqTLalT4me https://t.co/WULb0pMQsc" (26307 views, 44 likes) https://x.com/i/status/1950229833063231903
+- Mario Nawfal: "🇬🇧🇵🇸 STARMER HOLDS EMERGENCY MEETING AS FAMINE “PLAYING OUT” IN GAZA
+
+Keir Starmer has called an emergency cabinet meeting as UN-backed experts warn famine is now unfolding in Gaza.
+
+Over 60,000 Palestinians are reported killed since Israel’s offensive began.
+
+A UN food security https://t.co/QdlNAgaJNc https://t.co/R3P2UtmoWb" (25677 views, 23 likes) https://x.com/i/status/1950227316745129999
+- World of Engineering: "The engineering method:
+
+Step 1: Screw around 
+Step 2: Sort out" (23000 views, 135 likes) https://x.com/i/status/1950223542030643368
+- Mario Nawfal: "🚨🇮🇱🇵🇸 IDF: “ISRAEL IS NOT BLOCKING HUMANITARIAN AID - WE FACILITATE IT”
+
+"I cannot emphasize enough - Israel is not blocking humanitarian aid. 
+
+We are facilitating its entry every single day.
+
+In this war, Hamas exploited its own population, seizing humanitarian aid to continue https://t.co/rC7oej9uxY https://t.co/xbr9O73ZHU" (23050 views, 57 likes) https://x.com/i/status/1950226502903034155
+- Barstool Sports: "We Need To Have An Honest Conversation About The Avatar Franchise https://t.co/dgaH7mBxE1 https://t.co/upY2DJeeGt" (23081 views, 20 likes) https://x.com/i/status/1950241169721418214
+- Linda Yaccarino: "Thanks for doing this @stoolpresidente 🫡 https://t.co/qKNR5MYt1l" (20752 views, 198 likes) https://x.com/i/status/1950235361000772085
+- Sawyer Merritt: "Still image used: https://t.co/EXYZbv8MKm" (20729 views, 137 likes) https://x.com/i/status/1950213636183498762
+- Mario Nawfal: "🇨🇳 HUMANOID ROBOTS NOW DOING YOUR GROCERY RUN
+
+At WAIC, Beijing’s Galbot showed off the G1 humanoid robot that helps customers find and hand over products - just tell it what you want.
+
+It’s already working in 10+ pharmacies and retail stores, with 100 more coming to cities like https://t.co/S6K3bufK9D" (20775 views, 66 likes) https://x.com/i/status/1950209705735049596
+- Mario Nawfal: "🚨🇫🇷🇵🇸 AMBASSADOR TO ISRAEL: “RECOGNIZING PALESTINE IS LIKE LETTING THE NAZIS WIN AFTER WWII”
+
+"It’s a very foolish thing to do… All it’s doing is setting back any hope that Hamas is going to give up. 
+
+This emboldens them.
+
+Why isn’t [Macron] taking in people from Gaza? Why https://t.co/8N10r18mwT https://t.co/gZQpn85ti4" (20699 views, 59 likes) https://x.com/i/status/1950234866307780816
+- Sky Sports Football: "She didn't lie... 😅 https://t.co/8y8TMEAar1" (20550 views, 68 likes) https://x.com/i/status/1950240281107820971
+- Only In Boston: "No restaurant owner in Boston should have to spend over $500,000 just to get a liquor license." (19586 views, 369 likes) https://x.com/i/status/1950217250457473495
+- OpenAI: "Study mode in ChatGPT is designed to be interactive, using Socratic questioning and scaffolded responses to help guide users.
+
+Available to logged-in Free, Plus, Pro, Team users, with availability in ChatGPT Edu coming in the coming weeks.
+
+https://t.co/7ZndVHx2OF" (19491 views, 177 likes) https://x.com/i/status/1950240350129574358
+- Mario Nawfal: "🇺🇸🇱🇧 U.S. TELLS LEBANON: DROP HEZBOLLAH’S GUNS OR NO DEAL
+
+Washington is demanding Lebanon’s cabinet vote to disarm Hezbollah before any more talks on ending Israel’s strikes.
+
+No vote means no U.S. envoy, no pressure on Israel, and probably more bombs.
+
+Lebanon’s leaders are https://t.co/PNFoJnZWJu https://t.co/f5Rlmmwezt" (18992 views, 28 likes) https://x.com/i/status/1950237382739185981
+- Mario Nawfal: "🇺🇸JEFF BEZOS WANTS YOUR CAR TO BE… BLANK
+
+Slate Auto’s new EV trucks come with no paint, no flashy tech, just… a truck.
+
+You get to customize it yourself like a giant Hot Wheels.
+
+DIY, but make it electric.
+
+Source: TechCrunch https://t.co/9YIvg5ZeD8" (16535 views, 32 likes) https://x.com/i/status/1950232349536636993
+- Sawyer Merritt: "Video made by @Grok of a Tesla Bot in a field of flowers. https://t.co/qQC05xpGHq" (16401 views, 166 likes) https://x.com/i/status/1950225272185184519
+- OpenAI: "Built in collaboration with educators and experts, study mode is our first step toward improving learning in ChatGPT.
+
+Education is a key AI frontier, and through NextGenAI and Stanford’s SCALE Initiative, we’re running longer term studies to further understand how AI tools shape" (15618 views, 126 likes) https://x.com/i/status/1950240351547248941
+- Sky Sports Football: "Listen to the podcast in full: https://t.co/XcF0g3HaQa" (15710 views, 8 likes) https://x.com/i/status/1950236066373652667
+- Everyday Astronaut: "I'm excited to cover this launch! Static fire complete, things are looking good for Thursday! https://t.co/a16agdzikb" (15214 views, 166 likes) https://x.com/i/status/1950233520846049629
+- Andrew Yang🧢⬆️🇺🇸: "What has happened in Iowa under one party rule the last 10 years - and what’s the plan to change it?  @RobSandIA candidate for Governor of Iowa joins https://t.co/PjWTwI77T1 to talk how he won statewide office and what’s next. https://t.co/euFKbTaN9n" (14432 views, 21 likes) https://x.com/i/status/1950223381166502108
+- Mario Nawfal: "🇺🇸 GHISLAINE MAXWELL OFFERS TO TESTIFY BEFORE CONGRESS - WITH CONDITIONS
+
+Maxwell says she’s willing to speak to Congress, but only if she's granted formal immunity and the interview is scheduled after her pending Supreme Court petition is resolved.
+
+She’s currently serving a https://t.co/OpWYbg4oiU https://t.co/26V3jSKVwQ" (13883 views, 28 likes) https://x.com/i/status/1950240324863086707
+- Wonder of Science: "Spectacular timelapse capturing an entire night from sunset to sunrise over the ALMA Observatory on the Chajnantor Plateau in the Chilean Atacama Desert.
+
+📽: ESO/C. Malin https://t.co/Kh0vTlmcBr" (13655 views, 90 likes) https://x.com/i/status/1950234866131620233
+- Car Dealership Guy: "[NEWS] What started as a COVID stopgap is now a high-margin F&amp;I tool:
+
+At Safford Brown, F&amp;I director Jesse Hill is using virtual F&amp;I to boost profit when coverage is tight across the group’s 25 stores.
+
+Here’s how it works:
+
+- A local processor handles paperwork and signatures." (12844 views, 3 likes) https://x.com/i/status/1950226068096385274
+- Mario Nawfal: "🚨🇪🇺🇺🇸 SPOTIFY UNDER FIRE FOR CENSORSHIP - WHO’S REALLY IN CONTROL HERE?
+
+Congress just opened a probe into Spotify for allegedly bending to foreign censorship laws - and it’s all circling back to Joe Rogan, Steve Bannon, and a bigger fight over who decides what Americans get to https://t.co/Rob7KNQd7r https://t.co/fjCMeeGBYD" (12638 views, 34 likes) https://x.com/i/status/1950239905176531200
+- PFT Commenter: "This is quite a take https://t.co/zudUQ1gUmB" (12565 views, 29 likes) https://x.com/i/status/1950242314355462585
+- CSPAN: ".@SenSchumer: "Today, I am calling on the FBI to immediately conduct a counterintelligence threat assessment to ensure we understand the risk posed if a foreign adversary were to gain access to anything connected to the Epstein files." https://t.co/pFdkVpfMqt" (12046 views, 178 likes) https://x.com/i/status/1950213427403575569
+- @jason: "Nice edit 
+
+Anyone who makes a great edit of my pods gets rewarded with a retweet and a follow https://t.co/8em6FmW4w9" (12153 views, 29 likes) https://x.com/i/status/1950237438875468019
+- TESLARATI: "🚨 To get from BNA to Broadway, it's only an eight-mile drive on 1-40.
+
+This would be a roughly 20-minute drive, soaking wet.
+
+If you've ever been to Nashville, you know it takes MUCH longer than 20 minutes to make this trip.
+
+Boring Co. will solve this problem. https://t.co/IZrZPLGJvN" (11063 views, 23 likes) https://x.com/i/status/1950210291494424660
+- Sawyer Merritt: "Source: https://t.co/3fthc4OVwd" (9894 views, 26 likes) https://x.com/i/status/1950228175503708519
+- World and Science: "The surface of Venus (without its atmosphere)
+
+(Credit: NASA/JPL-Caltech) https://t.co/mqtBib9FTY" (9647 views, 62 likes) https://x.com/i/status/1950207724790182125
+- World and Science: "Bothered by mosquitoes?
+
+Here is how to get rid of them according to science: https://t.co/qCGjPaSbyF" (9083 views, 4 likes) https://x.com/i/status/1950212790003675468
+- Walter Isaacson: "FWIW, In this reposted link, I discuss the seven songs that shaped me in New Orleans, beginning with Iko Iko and @PresHall and Irma Thomas, I choke up a bit about @springsteen and My City of Ruin after Katrina, and I declare what’s the greatest rock song ever. https://t.co/BKNaQLbDJ1" (7961 views, 15 likes) https://x.com/i/status/1950220165360078997
+- Boston 25 News: "Six women charged with breaking and entering into Norwood home https://t.co/nWJBEUn7jT" (7740 views, 88 likes) https://x.com/i/status/1950221066292347372
+- World and Science: "How I Killed Pluto and Why It Had It Coming: https://t.co/qazrb7M1zZ  -AmazonAfflink" (7796 views, 2 likes) https://x.com/i/status/1950221820247847143
+- Everyday Astronaut: "I was excited to talk with @collectSPACE about our 1:100 scale Mercury Redstone / Atlas rockets and our Falcon 9 models! Glad Robert got his hands on these to see them in person! - https://t.co/GBjDAU3LkR" (7283 views, 44 likes) https://x.com/i/status/1950234469077504131
+- CSPAN: "LIVE Now on https://t.co/MlO245CgyJ -- @SenTedCruz (R-TX) and @SecDuffy News Conference on Aviation Safety Legislation
+https://t.co/HraI0DF8QI" (7298 views, 6 likes) https://x.com/i/status/1950217357021847863
+- TESLARATI: "🚨 How long 'til Robotaxi California?
+
+Any guesses? https://t.co/2W9IjFWbBS" (6799 views, 9 likes) https://x.com/i/status/1950233937906979030

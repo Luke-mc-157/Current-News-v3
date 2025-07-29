@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Bayern Munich has agreed a deal worth 75 million euros with Liverpool for the transfer of Luis Diaz.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c9qygz4r8jlo\",\n        \"https://www.bbc.com/sport/football/articles/c9395ypv1v4o\"\n      ]\n    },\n    {\n      \"headline\": \"Luis Diaz was not included in Liverpool's friendly match squad against AC Milan.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c9395ypv1v4o\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC is linked with potential transfers involving players such as Alexander Isak amid ongoing speculation.\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048\"\n      ]\n    },\n    {\n      \"headline\": \"Discussions on social media platforms highlight concerns about Liverpool FC's player retention and performance in the upcoming season.\",\n      \"citations\": [\n        \"posts found on X\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Liverpool FC continues to feature in sports news updates regarding team updates and fixtures.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/england/merseyside\",\n        \"https://www.bbc.com/sport/football/teams/liverpool\"\n      ]\n    }\n  ],\n  \"notes\": \"Only stories with directly related sources from the last 24 hours or relevant context were included; fewer than four high-engagement stories with strong evidence were available, so all relevant ones are listed.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.nytimes.com/athletic/football/team/liverpool/",
+    "https://www.bbc.com/sport/football/articles/c9qygz4r8jlo",
+    "https://www.bbc.com/sport/football/articles/c9395ypv1v4o",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048",
+    "https://www.thisisanfield.com/liverpool-fc/twitter/",
+    "https://www.thisisanfield.com/2025/04/darwin-nunez-has-allegedly-called-out-liverpool-in-quickly-deleted-x-post/",
+    "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-fans-viral-tweet-shows-15787821",
+    "https://liverpoolecho.co.uk/sport/football/football-news/steven-gerrard-showed-true-colours-31970443",
+    "https://x.com/eddieddy01/status/1949740952786022596"
+  ]
+}

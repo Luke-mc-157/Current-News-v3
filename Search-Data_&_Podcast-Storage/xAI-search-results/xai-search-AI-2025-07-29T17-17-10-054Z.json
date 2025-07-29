@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"highEngagementStories\": [\n    {\n      \"headline\": \"AI-generated content leads to proliferation of fake news on online platforms\",\n      \"citations\": [\n        \"https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html\",\n        \"https://www.bbc.com/news/topics/ce1qrvleleqt\"\n      ]\n    },\n    {\n      \"headline\": \"Social media platform X introduces AI-powered features for content discovery\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/gadgets-news/elon-musk-owned-x-is-rolling-out-this-ai-powered-feature-on-feed/articleshow/104938187.cms\",\n        \"https://techcrunch.com/2024/05-03/x-launches-stories-on-x-delivering-news-summarized-by-grok-ai/\"\n      ]\n    },\n    {\n      \"headline\": \"AI tools used for automating social media content creation and distribution\",\n      \"citations\": [\n        \"https://medium.com/zapier-ai-automation/how-to-automate-your-x-twitter-so-it-grows-itself-incl-video-2d83b705234b\",\n        \"https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude\"\n      ]\n    },\n    {\n      \"headline\": \"Major news sources cited in AI chatbot responses for information aggregation\",\n      \"citations\": [\n        \"https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude\",\n        \"https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html\"\n      ]\n    }\n  ],\n  \"semanticStories\": [],\n  \"notes\": \"Data is based on available searches; all sources are from the last 24 hours where indicated, but some may rely on recent web results for context.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
+    "https://www.bbc.com/news/politics",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/",
+    "https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html",
+    "https://timesofindia.indiatimes.com/gadgets-news/elon-musk-owned-x-is-rolling-out-this-ai-powered-feature-on-feed/articleshow/104938187.cms",
+    "https://techcrunch.com/2024/05/03/x-launches-stories-on-x-delivering-news-summarized-by-grok-ai/",
+    "https://medium.com/zapier-ai-automation/how-to-automate-your-x-twitter-so-it-grows-itself-incl-video-2d83b705234b",
+    "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude"
+  ]
+}

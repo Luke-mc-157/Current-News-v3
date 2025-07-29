@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Artificial intelligence technology advances in video games, enabling digital characters to demonstrate self-awareness.\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/28/arts/video-games-artificial-intelligence.html\"\n      ]\n    },\n    {\n      \"headline\": \"Latest content covers ongoing developments in artificial intelligence across various sectors.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/ce1qrvleleqt\"\n      ]\n    },\n    {\n      \"headline\": \"Technology news includes updates on artificial intelligence advancements from global sources.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Artificial intelligence news features updates on technologies like Google AI, OpenAI, and ChatGPT.\",\n      \"citations\": [\n        \"https://m.economictimes.com/tech/artificial-intelligence\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.nytimes.com/2025/07/28/arts/video-games-artificial-intelligence.html",
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/world/us/",
+    "https://www.reuters.com/world/",
+    "https://m.economictimes.com/tech/artificial-intelligence",
+    "https://indianexpress.com/section/technology/artificial-intelligence/",
+    "https://aiwithprompts.com/ai-news-of-june-2025",
+    "https://www.artificialintelligence-news.com/artificial-intelligence-news/",
+    "https://www.washingtonpost.com/technology/innovations/"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Only one story was identified with sufficient data from the last 24 hours based on available searches. Additional stories could not be verified due to sparse relevant high-engagement posts and correlating articles.\",\n  \"stories\": [\n    {\n      \"headline\": \"Police arrested and released a suspect involved in multiple store burglaries in Austin, Texas.\",\n      \"citations\": [\n        \"https://t.co/vRDYo3i8HJ\",\n        \"https://fox7austin.com/news\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.washingtonpost.com/latest-headlines/",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://theatlantic.com/ideas/archive/2024/10/rumors-x-twitter-musk/680219",
+    "https://phonearena.com/news/social-media-platform-x-twitter-under-criminal-investigation_id172214",
+    "https://blog.parse.ly/austin-local-news-fosters-engagement/",
+    "https://fox7austin.com/tag/us/tx/travis-county/austin",
+    "https://fox7austin.com/news",
+    "https://x.com/MattMackowiak/status/1949855874240901571"
+  ]
+}
