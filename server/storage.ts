@@ -1,6 +1,6 @@
 import { users, userTopics, headlines, podcastSettings, podcastContent, podcastEpisodes, xAuthTokens, userFollows, userTimelinePosts, passwordResetTokens, podcastPreferences, scheduledPodcasts, userLastSearch, userRssFeeds, type User, type InsertUser, type UserTopics, type InsertUserTopics, type Headline, type InsertHeadline, type PodcastSettings, type InsertPodcastSettings, type PodcastContent, type InsertPodcastContent, type PodcastEpisode, type InsertPodcastEpisode, type XAuthTokens, type InsertXAuthTokens, type UserFollows, type InsertUserFollows, type UserTimelinePosts, type InsertUserTimelinePosts, type PasswordResetToken, type InsertPasswordResetToken, type PodcastPreferences, type InsertPodcastPreferences, type ScheduledPodcasts, type InsertScheduledPodcasts, type UserLastSearch, type InsertUserLastSearch, type UserRssFeeds, type InsertUserRssFeeds } from "@shared/schema";
 import { db, retryDatabaseOperation } from "./db";
-import { eq, desc, and, gte, lt, lte, gt } from "drizzle-orm";
+import { eq, desc, and, gte, lt, lte, gt, or } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -431,10 +431,23 @@ export class DatabaseStorage implements IStorage {
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
     const now = new Date();
+    const fifteenMinutesFromNow = new Date(now.getTime() + 15 * 60 * 1000);
+    const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
+    
+    // Get podcasts that are:
+    // - Status is 'pending' AND scheduled between 30 min ago and 15 min future
+    // - OR status is 'processing' AND stuck for more than 30 minutes
     const scheduled = await db.select().from(scheduledPodcasts)
-      .where(and(
-        eq(scheduledPodcasts.status, 'pending'),
-        lte(scheduledPodcasts.scheduledFor, now)
+      .where(or(
+        and(
+          eq(scheduledPodcasts.status, 'pending'),
+          gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo),
+          lte(scheduledPodcasts.scheduledFor, fifteenMinutesFromNow)
+        ),
+        and(
+          eq(scheduledPodcasts.status, 'processing'),
+          lte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo)
+        )
       ));
     
     return scheduled.map(item => ({

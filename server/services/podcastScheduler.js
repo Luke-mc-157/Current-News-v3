@@ -269,6 +269,12 @@ export async function processPendingPodcasts() {
       try {
         console.log(`🎧 Processing podcast for user ${scheduled.userId} (scheduled for ${scheduled.scheduledFor})`);
         
+        // Check if this is a stuck podcast being retried
+        if (scheduled.status === 'processing') {
+          const stuckTime = (now.getTime() - new Date(scheduled.scheduledFor).getTime()) / (1000 * 60);
+          console.log(`🔄 Retrying stuck podcast ${scheduled.id} (stuck for ${stuckTime.toFixed(1)} minutes)`);
+        }
+        
         // Update status to processing
         await storage.updateScheduledPodcast(scheduled.id, { status: 'processing' });
         
@@ -456,7 +462,7 @@ async function runDailyMaintenance() {
 
 // Start the scheduler (runs every 5 minutes)
 export function startPodcastScheduler() {
-  console.log('🚀 Starting podcast scheduler (checking every 5 minutes)');
+  console.log('🚀 Starting podcast scheduler (checking every 1 minute)');
   
   // Run immediately
   runPodcastScheduler();

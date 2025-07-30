@@ -106,7 +106,26 @@ Complete scheduling system for automated podcast delivery:
 - **ESBuild**: Fast JavaScript bundling for production builds
 - **PostCSS**: CSS processing with Tailwind CSS integration
 
-## Recent Updates (July 24, 2025 - 5:40 PM UTC)
+## Recent Updates (July 30, 2025 - 6:10 PM UTC)
+
+### **✅ COMPREHENSIVE PODCAST DELIVERY SYSTEM OVERHAUL COMPLETED** (July 30, 2025 - 6:10 PM UTC)
+- **Critical Issues Fixed**:
+  - **Time Window Bug**: Fixed `getPendingPodcastsDue()` which only looked for podcasts already past their time
+  - **New Time Window**: 15-minute forward-looking window + 30-minute grace period for past podcasts
+  - **Stuck Podcast Recovery**: Added automatic retry for podcasts stuck in "processing" status over 30 minutes
+  - **Direct Test Delivery**: Created `/api/dev/test-podcast-direct` endpoint that bypasses scheduling entirely
+  - **Health Monitoring**: Added `/api/podcast-health` endpoint to track stuck, failed, and upcoming podcasts
+- **Root Causes Addressed**:
+  - Scheduler was missing podcasts if it ran even 1 second late due to strict time comparison
+  - No recovery mechanism for podcasts that started processing but failed
+  - "Test Delivery Now" was incorrectly using scheduled system instead of direct generation
+- **Technical Improvements**:
+  - Enhanced error handling with comprehensive try-catch blocks
+  - Fixed misleading "checking every 5 minutes" log (actually 1 minute)
+  - Frontend updated to use new direct test endpoint
+- **Impact**: Podcast delivery system now robust with proper time windows, recovery mechanisms, and monitoring
+
+## Earlier Updates (July 24, 2025 - 5:40 PM UTC)
 
 ### **✅ COMPREHENSIVE SECURITY AND RELIABILITY HARDENING COMPLETED** (July 24, 2025 - 5:40 PM UTC)
 - **Systematic Security Improvements**:

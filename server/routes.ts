@@ -1753,6 +1753,212 @@ export function registerRoutes(app) {
     }
   });
   
+  // Direct test podcast generation - bypasses scheduling entirely
+  router.post("/api/dev/test-podcast-direct", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      
+      // Get user's podcast preferences and info
+      const preferences = await storage.getPodcastPreferences(userId);
+      if (!preferences || !preferences.enabled) {
+        return res.status(400).json({ error: "Podcast preferences not enabled" });
+      }
+
+      const user = await storage.getUser(userId);
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      console.log(`🚀 Direct test podcast triggered for user ${user.username} (${user.email})`);
+
+      // Extract preferences
+      const topics = preferences.topics || [];
+      const validTopics = topics.filter(topic => topic && topic.trim());
+      
+      if (validTopics.length === 0) {
+        return res.status(400).json({ error: "No valid topics configured" });
+      }
+      
+      const duration = preferences.duration || 5;
+      const voiceId = preferences.voiceId || 'ErXwobaYiN019PkySvjV';
+      const enhanceWithX = preferences.enhanceWithX || false;
+
+      // Get X auth if enabled
+      let userHandle = null;
+      let accessToken = null;
+      
+      if (enhanceWithX) {
+        const xAuth = await storage.getXAuthTokenByUserId(userId);
+        if (xAuth) {
+          userHandle = xAuth.xHandle;
+          accessToken = xAuth.accessToken;
+        }
+      }
+
+      // Import necessary services
+      const { getCompiledDataForPodcast } = await import('./services/liveSearchService.js');
+      const { generatePodcastScript } = await import('./services/podcastGenerator.js');
+      const { generateAudio } = await import('./services/voiceSynthesis.js');
+      const { sendPodcastEmail } = await import('./services/emailService.js');
+      const path = await import('path');
+
+      // Get compiled data directly
+      console.log(`📰 Fetching compiled data for topics: ${validTopics.join(', ')}`);
+      const compiledDataResult = await getCompiledDataForPodcast(
+        validTopics,
+        userId,
+        userHandle,
+        accessToken
+      );
+      
+      if (!compiledDataResult.compiledData) {
+        return res.status(500).json({ error: "Failed to generate compiled data" });
+      }
+
+      console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters`);
+
+      // Generate podcast script
+      console.log(`📝 Generating ${duration}-minute podcast script`);
+      const script = await generatePodcastScript(
+        compiledDataResult.compiledData,
+        null,
+        duration,
+        "Current News Test"
+      );
+
+      // Create podcast episode record
+      const episode = await storage.createPodcastEpisode({
+        userId: userId,
+        topics: validTopics,
+        durationMinutes: duration,
+        voiceId: voiceId,
+        script,
+        headlineIds: [],
+        wasScheduled: false
+      });
+
+      // Generate audio
+      console.log(`🎵 Generating audio with voice ${voiceId}`);
+      const audioResult = await generateAudio(script, voiceId, episode.id, userId);
+
+      // Update episode with audio URL
+      await storage.updatePodcastEpisode(episode.id, {
+        audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
+        audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
+      });
+
+      // Send email
+      console.log(`📧 Sending test podcast to ${user.email}`);
+      const audioFilePath = typeof audioResult === 'string' 
+        ? audioResult 
+        : (audioResult.filePath || audioResult.audioUrl);
+      
+      const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
+        ? path.default.join(process.cwd(), audioFilePath.substring(1))
+        : audioFilePath;
+      
+      await sendPodcastEmail(user.email, absoluteAudioPath, "Current News Test");
+
+      // Update episode with email sent timestamp
+      await storage.updatePodcastEpisode(episode.id, {
+        emailSentAt: new Date()
+      });
+
+      console.log(`✅ Direct test podcast successfully generated and sent to ${user.email}`);
+      
+      res.json({ 
+        success: true, 
+        episode,
+        message: `Test podcast generated and sent to ${user.email}`
+      });
+      
+    } catch (error) {
+      console.error("Error generating direct test podcast:", error);
+      res.status(500).json({ 
+        error: error.message || "Failed to generate test podcast",
+        details: error.stack
+      });
+    }
+  });
+
+  // Podcast health monitoring endpoint
+  router.get("/api/podcast-health", requireAuth, async (req, res) => {
+    try {
+      const userId = req.user.id;
+      const now = new Date();
+      const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+      
+      // Get all scheduled podcasts for the user
+      const allPodcasts = await storage.getScheduledPodcastsForUser(userId);
+      
+      // Filter stuck processing podcasts (processing for more than 30 minutes)
+      const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
+      const stuckProcessing = allPodcasts.filter(p => 
+        p.status === 'processing' && 
+        new Date(p.scheduledFor) < thirtyMinutesAgo
+      );
+      
+      // Filter failed podcasts in last 24 hours
+      const recentFailed = allPodcasts.filter(p => 
+        p.status === 'failed' && 
+        new Date(p.scheduledFor) > twentyFourHoursAgo
+      );
+      
+      // Filter pending podcasts that should have run (scheduled more than 5 minutes ago)
+      const fiveMinutesAgo = new Date(now.getTime() - 5 * 60 * 1000);
+      const missedPending = allPodcasts.filter(p => 
+        p.status === 'pending' && 
+        new Date(p.scheduledFor) < fiveMinutesAgo
+      );
+      
+      // Get next scheduled deliveries (next 7 days)
+      const sevenDaysFromNow = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+      const upcomingDeliveries = allPodcasts.filter(p => 
+        p.status === 'pending' && 
+        new Date(p.deliveryTime) > now && 
+        new Date(p.deliveryTime) < sevenDaysFromNow
+      ).sort((a, b) => new Date(a.deliveryTime).getTime() - new Date(b.deliveryTime).getTime());
+      
+      res.json({
+        currentTime: now.toISOString(),
+        health: {
+          stuckProcessing: stuckProcessing.map(p => ({
+            id: p.id,
+            scheduledFor: p.scheduledFor,
+            stuckMinutes: Math.round((now.getTime() - new Date(p.scheduledFor).getTime()) / (1000 * 60))
+          })),
+          recentFailed: recentFailed.map(p => ({
+            id: p.id,
+            scheduledFor: p.scheduledFor,
+            errorMessage: p.errorMessage || 'Unknown error'
+          })),
+          missedPending: missedPending.map(p => ({
+            id: p.id,
+            scheduledFor: p.scheduledFor,
+            minutesOverdue: Math.round((now.getTime() - new Date(p.scheduledFor).getTime()) / (1000 * 60))
+          })),
+          upcomingDeliveries: upcomingDeliveries.slice(0, 10).map(p => ({
+            id: p.id,
+            deliveryTime: p.deliveryTime,
+            scheduledFor: p.scheduledFor,
+            hoursUntilDelivery: Math.round((new Date(p.deliveryTime).getTime() - now.getTime()) / (1000 * 60 * 60) * 10) / 10
+          }))
+        },
+        summary: {
+          stuckCount: stuckProcessing.length,
+          failedCount: recentFailed.length,
+          missedCount: missedPending.length,
+          upcomingCount: upcomingDeliveries.length,
+          isHealthy: stuckProcessing.length === 0 && missedPending.length === 0
+        }
+      });
+      
+    } catch (error) {
+      console.error("Error checking podcast health:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   router.post("/api/dev/switch-user/:userId", devOnly, async (req, res) => {
     try {
       const userId = parseInt(req.params.userId);

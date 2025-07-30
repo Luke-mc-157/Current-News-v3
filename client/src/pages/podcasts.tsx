@@ -775,7 +775,7 @@ export default function Podcasts() {
                   <Button
                     variant="secondary"
                     onClick={() => {
-                      apiRequest('POST', '/api/dev/test-podcast-delivery')
+                      apiRequest('POST', '/api/dev/test-podcast-direct')
                         .then(async (response) => {
                           const data = await response.json();
                           toast({
@@ -786,7 +786,7 @@ export default function Podcasts() {
                         .catch((error) => {
                           toast({
                             title: "Error",
-                            description: error.message || "Failed to schedule test podcast",
+                            description: error.message || "Failed to generate test podcast",
                             variant: "destructive",
                           });
                         });
