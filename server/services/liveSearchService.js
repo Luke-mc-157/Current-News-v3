@@ -289,11 +289,21 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
   
   for (const topic of topics) {
     try {
-      const topicData = await getTopicDataFromLiveSearch(topic);
-      allTopicData.push(topicData);
+      const liveSearchData = await getTopicDataFromLiveSearch(topic);
+      // Structure the data exactly as RawSearchDataCompiler_AllData expects
+      allTopicData.push({
+        topic: topic,
+        webData: liveSearchData.content,
+        citations: liveSearchData.citations || []
+      });
     } catch (error) {
       console.error(`❌ Error fetching data for topic "${topic}":`, error.message);
-      // Continue with other topics even if one fails
+      // Add empty data structure even for failed topics
+      allTopicData.push({
+        topic: topic,
+        webData: '',
+        citations: []
+      });
     }
   }
   
