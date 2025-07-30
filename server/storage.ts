@@ -437,20 +437,15 @@ export class DatabaseStorage implements IStorage {
     
     // Get podcasts that are:
     // - Status is 'pending' AND scheduled between 30 min ago and 15 min future
-    // - OR status is 'processing' AND stuck for more than 30 minutes BUT less than 24 hours old
+    // REMOVED: Automatic retry of stuck 'processing' podcasts to prevent unwanted API consumption
     const scheduled = await db.select().from(scheduledPodcasts)
-      .where(or(
+      .where(
         and(
           eq(scheduledPodcasts.status, 'pending'),
           gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo),
           lte(scheduledPodcasts.scheduledFor, fifteenMinutesFromNow)
-        ),
-        and(
-          eq(scheduledPodcasts.status, 'processing'),
-          lte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo),
-          gte(scheduledPodcasts.scheduledFor, twentyFourHoursAgo)  // Don't retry podcasts older than 24 hours
         )
-      ));
+      );
     
     return scheduled.map(item => ({
       ...item,
