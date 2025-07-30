@@ -433,10 +433,11 @@ export class DatabaseStorage implements IStorage {
     const now = new Date();
     const fifteenMinutesFromNow = new Date(now.getTime() + 15 * 60 * 1000);
     const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
+    const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
     
     // Get podcasts that are:
     // - Status is 'pending' AND scheduled between 30 min ago and 15 min future
-    // - OR status is 'processing' AND stuck for more than 30 minutes
+    // - OR status is 'processing' AND stuck for more than 30 minutes BUT less than 24 hours old
     const scheduled = await db.select().from(scheduledPodcasts)
       .where(or(
         and(
@@ -446,7 +447,8 @@ export class DatabaseStorage implements IStorage {
         ),
         and(
           eq(scheduledPodcasts.status, 'processing'),
-          lte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo)
+          lte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo),
+          gte(scheduledPodcasts.scheduledFor, twentyFourHoursAgo)  // Don't retry podcasts older than 24 hours
         )
       ));
     
