@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement\": [\n    {\n      \"headline\": \"U.S. Department of Education issues guidance on using federal funds for AI in educational settings\",\n      \"citations\": [\n        \"https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority\"\n      ]\n    },\n    {\n      \"headline\": \"Teens increasingly turn to AI for advice, emotional support, and decision-making according to a new study\",\n      \"citations\": [\n        \"https://abcnews.go.com/Technology/wireStory/teens-turning-ai-advice-friendship-thinking-123986281\"\n      ]\n    }\n  ],\n  \"semantic\": [\n    {\n      \"headline\": \"AI technology risks exposing identities of law enforcement agents, according to official warnings\",\n      \"citations\": [\n        \"https://www.foxnews.com/politics/ice-chief-warns-ai-technology-could-lead-safety-risks-agents-fringe-organizations\"\n      ]\n    },\n    {\n      \"headline\": \"AI-generated content leads to spread of fake news stories on social media platforms\",\n      \"citations\": [\n        \"https://www.msnbc.com/rachel-maddow/watch/maddow-debunks-weird-fake-news-a-i-slop-stories-about-her-and-msnbc-infect-social-media-243601477992\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for high-engagement X posts and corresponding articles is limited to available sources within the last 24 hours; only four stories identified based on relevant context, with potential overlap in semantic searches.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.nytimes.com/trending/",
+    "https://www.reuters.com/world/uk/",
+    "https://www.nytimes.com/section/business",
+    "https://www.nytimes.com/ca/section/world",
+    "https://www.axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude",
+    "https://abcnews.go.com/Technology/wireStory/teens-turning-ai-advice-friendship-thinking-123986281",
+    "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority",
+    "https://www.foxnews.com/politics/ice-chief-warns-ai-technology-could-lead-safety-risks-agents-fringe-organizations",
+    "https://www.msnbc.com/rachel-maddow/watch/maddow-debunks-weird-fake-news-a-i-slop-stories-about-her-and-msnbc-infect-social-media-243601477992"
+  ]
+}

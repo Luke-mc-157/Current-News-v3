@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Amazon-backed Skild AI unveils general-purpose AI model for multi-purpose robots\",\n      \"citations\": [\n        \"https://www.reuters.com/business/media-telecom/amazon-backed-skild-ai-unveils-general-purpose-ai-model-multi-purpose-robots-2025-07-29/\"\n      ]\n    },\n    {\n      \"headline\": \"Scale AI competitor Micro1 raises funds at $500 million valuation\",\n      \"citations\": [\n        \"https://www.reuters.com/business/scale-ai-competitor-micro1-raising-funds-500-million-valuation-sources-say-2025-07-28/\"\n      ]\n    },\n    {\n      \"headline\": \"OpenAI expands Stargate project with Oracle partnership\",\n      \"citations\": [\n        \"https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025\"\n      ]\n    },\n    {\n      \"headline\": \"Netflix implements generative AI for content creation processes\",\n      \"citations\": [\n        \"https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories beyond the first two is based on sources from the last few days, as direct matches within the last 24 hours were limited; all headlines are synthesized from available context and may require verification for the most current details.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.reuters.com/business/scale-ai-competitor-micro1-raising-funds-500-million-valuation-sources-say-2025-07-28/",
+    "https://www.reuters.com/business/media-telecom/amazon-backed-skild-ai-unveils-general-purpose-ai-model-multi-purpose-robots-2025-07-29/",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025",
+    "https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html",
+    "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude",
+    "https://cnn.com/2023/04/02/tech/ai-generated-images-social-media/index.html",
+    "https://prdaily.com/we-put-4-ai-tools-through-a-pr-task-test-heres-what-came-out-on-top"
+  ]
+}

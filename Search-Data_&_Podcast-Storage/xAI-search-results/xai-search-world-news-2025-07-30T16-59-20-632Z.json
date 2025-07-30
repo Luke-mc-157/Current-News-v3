@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Social media platform X experiences a global outage affecting users worldwide.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms\",\n        \"https://www.etnownews.com/news/breaking-x-twitter-down-for-many-users-globally-article-152330629\"\n      ]\n    },\n    {\n      \"headline\": \"Various viral videos and memes gain popularity on social media platforms.\",\n      \"citations\": [\n        \"https://timesnownews.com/viral\",\n        \"https://indianexpress.com/section/trending/\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters reports ongoing developments in global news events.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"BBC covers latest news updates from India and Asia.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world/asia/india\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories are based on available search results from the last 24 hours; data for semantic posts on X was sparse and not included beyond initial high-engagement correlations.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.nytimes.com/trending/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world/asia/india",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://timesnownews.com/viral",
+    "https://indianexpress.com/section/trending/",
+    "https://www.reuters.com/world/",
+    "https://www.etnownews.com/news/breaking-x-twitter-down-for-many-users-globally-article-152330629"
+  ]
+}

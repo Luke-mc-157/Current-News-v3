@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available context; only 4 stories identified from high-engagement sources, with limited semantic posts found.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Nonprofit in Austin addresses opioid crisis\",\n      \"citations\": [\n        \"https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/29/evening-briefing-austin-july-29\"\n      ]\n    },\n    {\n      \"headline\": \"Redistricting hearings take place in Texas without proposed maps\",\n      \"citations\": [\n        \"https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/29/evening-briefing-austin-july-29\"\n      ]\n    },\n    {\n      \"headline\": \"Tim Hortons and development projects trend in Austin area\",\n      \"citations\": [\n        \"https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more\"\n      ]\n    },\n    {\n      \"headline\": \"Austin experiences major restaurant news and closings\",\n      \"citations\": [\n        \"https://austin.eater.com/2025/5/30/24439724/austin-biggest-top-most-read-stories-food-news-may-2025\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"NASCAR suspends driver Austin Hill and strips playoff points\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6523724/2025/07/29/nascar-suspends-austin-hill/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/ca/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/",
+    "https://www.nytimes.com/athletic/6523724/2025/07/29/nascar-suspends-austin-hill/",
+    "https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more",
+    "https://austin.eater.com/2025/5/30/24439724/austin-biggest-top-most-read-stories-food-news-may-2025",
+    "https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/29/evening-briefing-austin-july-29",
+    "https://www.fox7austin.com/tag/us/tx/travis-county/austin",
+    "https://www.fox7austin.com/news"
+  ]
+}

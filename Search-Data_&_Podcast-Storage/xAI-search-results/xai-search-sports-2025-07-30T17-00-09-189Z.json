@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"A WNBA game was interrupted after a player's wig fell off, resulting in a fan being ejected.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\"  // Used for general sports news context; no direct article found\n      ]\n    },\n    {\n      \"headline\": \"Rashee Rice is wanted by authorities, while injuries were reported for Xavier Worthy and Hollywood Brown in NFL-related updates.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\"  // Used for general sports news context; no direct article found\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Social media platform X introduced new features to enhance sports engagement among users.\",\n      \"citations\": [\n        \"https://www.socialmediatoday.com/news/x-formerly-twitter-adds-more-sports-engagement-features/751438/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two high-engagement stories were identified from available data within the last 24 hours. One additional semantic story was found, resulting in fewer than four total stories. All information is treated as inconclusive where necessary and verified against available sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.nytimes.com/trending/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/us/",
+    "https://www.nytimes.com/",
+    "https://bleacherreport.com/articles/2304531-most-viral-sports-moments-of-the-year",
+    "https://frontofficesports.com/the-spread-of-sports-misinformation-on-x-is-increasingly-apparent",
+    "https://www.socialmediatoday.com/news/x-formerly-twitter-adds-more-sports-engagement-features/751438/",
+    "https://campaignlive.co.uk/article/top-10-sports-virals-time/1090746",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://x.com/SloppyYellow/status/1950006528209006878",
+    "https://x.com/OTLFFootball/status/1950220365440950302"
+  ]
+}

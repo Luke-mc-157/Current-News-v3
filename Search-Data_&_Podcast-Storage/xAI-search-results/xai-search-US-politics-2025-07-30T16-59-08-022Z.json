@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"United States and European Union agree on 15 percent base tariff after negotiations\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/todayspaper\"\n      ]\n    },\n    {\n      \"headline\": \"Washington Post provides coverage of Biden administration and US political developments\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"NPR reports on US politics, elections, and national news\",\n      \"citations\": [\n        \"https://www.npr.org/sections/national/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three specific stories identified from the last 24 hours based on available data; insufficient data for a fourth story.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/section/todayspaper",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.npr.org/sections/national/",
+    "https://hindustantimes.com/world-news/us-news",
+    "https://www.nytimes.com/section/politics",
+    "https://www.telegraph.co.uk/news/usa/"
+  ]
+}

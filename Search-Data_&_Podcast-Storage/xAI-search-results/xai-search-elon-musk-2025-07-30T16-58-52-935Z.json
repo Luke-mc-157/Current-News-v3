@@ -1,0 +1,10 @@
+{
+  "content": "{\n  \"notes\": \"Data for the last 24 hours is sparse; available information from provided context is older than 24 hours. Using the most relevant recent items from context.\",\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk is the owner of X, SpaceX, Tesla, and The Boring Company, with ongoing updates on his activities.\",\n      \"citations\": [\n        \"https://www.scmp.com/topics/elon-musk\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posted about 'No Kings' in reference to a video game, which gained significant online attention.\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-no-kings-protest-viral-2085965\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk reacted to a statement about deportation in a social media exchange.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/world/us/so-so-elon-musks-14-word-viral-reaction-to-trumps-statement-on-deporting-him-to-south-africa/articleshow/122190959.cms\"\n      ]\n    },\n    {\n      \"headline\": \"A video of Elon Musk at an event sparked discussions about his behavior.\",\n      \"citations\": [\n        \"https://www.hindustantimes.com/world-news/us-news/elon-musk-is-so-high-that-viral-oval-office-video-fuels-drug-use-speculation-101748647107918.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.scmp.com/topics/elon-musk",
+    "https://www.newsweek.com/elon-musk-no-kings-protest-viral-2085965",
+    "https://timesofindia.indiatimes.com/world/us/so-so-elon-musks-14-word-viral-reaction-to-trumps-statement-on-deporting-him-to-south-africa/articleshow/122190959.cms",
+    "https://www.hindustantimes.com/world-news/us-news/elon-musk-is-so-high-that-viral-oval-office-video-fuels-drug-use-speculation-101748647107918.html",
+    "https://www.newsweek.com/elon-mu-2048708"
+  ]
+}

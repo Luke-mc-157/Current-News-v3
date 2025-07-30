@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Tesla has signed a $4.3 billion battery supply deal with LG Energy Solution to reduce reliance on Chinese imports.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla and Samsung have agreed on a $16.5 billion supply deal that may boost Samsung's US contract manufacturing business.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla is facing investigation over the alleged involvement of its Autopilot system in a fatal 2019 crash.\",\n      \"sources\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk has posted multiple times on X about Tesla-related topics, including politics and vehicle attacks, in the recent period.\",\n      \"sources\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Only four high-engagement stories identified from the last 24 hours based on available data. No additional semantic posts on X were found that were not included in high-engagement searches.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/",
+    "https://www.reuters.com/company/tesla-inc/",
+    "https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/",
+    "https://www.bbc.com/news/world",
+    "https://www.washingtonpost.com/",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-views",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-month-nissan-leaf-tesla-model-3-undercut-nissan-versa-toyota-corolla-512516/",
+    "https://www.cbsnews.com/tag/tesla/"
+  ]
+}

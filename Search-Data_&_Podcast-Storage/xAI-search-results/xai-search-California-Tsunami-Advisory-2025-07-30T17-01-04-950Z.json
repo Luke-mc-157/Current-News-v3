@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"highEngagementStories\": [\n    {\n      \"headline\": \"Tsunami advisory issued for California after 8.8 magnitude earthquake off Russia's coast\",\n      \"citations\": [\n        \"https://www.nytimes.com/2025/07/30/us/tsunami-warning-california.html\",\n        \"https://www.bbc.com/news/live/c3r4x9yrrg4t\",\n        \"https://www.washingtonpost.com/world/2025/07/29/tsunami-west-coast-japan-87-quake-russia/\"\n      ]\n    },\n    {\n      \"headline\": \"Tsunami waves reach California coast with no initial reports of damage\",\n      \"citations\": [\n        \"https://www.latimes.com/california/story/2025-07-29/tsunami-warning-issued-california-coast-massive-russian-earthquake\",\n        \"https://www.cnn.com/world/live-news/russia-japan-tsunami-earthquake-hnk-intl-07-30-25\",\n        \"https://www.newsweek.com/tsunami-warning-us-japan-earthquake-russia-live-updates-2106116\"\n      ]\n    },\n    {\n      \"headline\": \"Evacuation warnings issued in parts of California due to tsunami advisory\",\n      \"citations\": [\n        \"https://www.ksbw.com/article/tsunami-hawaii-80-magnitude-earthquake-russia/65545404\",\n        \"https://www.bbc.com/news/articles/c987dwrdl0zo\"\n      ]\n    },\n    {\n      \"headline\": \"Tsunami alerts remain in effect for California's West Coast following Pacific earthquake\",\n      \"citations\": [\n        \"https://ktla.com/news/california/tsunami-alerts-explained/\",\n        \"https://www.nytimes.com/live/2025/07/29/world/earthquake-tsunami-russia-japan-hawaii\"\n      ]\n    }\n  ],\n  \"semanticStories\": [],\n  \"notes\": \"Based on available data from the last 24 hours; no additional semantic posts on X were identified beyond high-engagement searches.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/live/c3r4x9yrrg4t",
+    "https://www.nytimes.com/2025/07/30/us/tsunami-warning-california.html",
+    "https://www.bbc.com/news/articles/c987dwrdl0zo",
+    "https://www.nytimes.com/live/2025/07/29/world/earthquake-tsunami-russia-japan-hawaii",
+    "https://www.washingtonpost.com/world/2025/07/29/tsunami-west-coast-japan-87-quake-russia/",
+    "https://www.cnn.com/world/live-news/russia-japan-tsunami-earthquake-hnk-intl-07-30-25",
+    "https://www.newsweek.com/tsunami-warning-us-japan-earthquake-russia-live-updates-2106116",
+    "https://www.latimes.com/california/story/2025-07-29/tsunami-warning-issued-california-coast-massive-russian-earthquake",
+    "https://www.ksbw.com/article/tsunami-hawaii-80-magnitude-earthquake-russia/65545404",
+    "https://ktla.com/news/california/tsunami-alerts-explained/"
+  ]
+}
