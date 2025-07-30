@@ -43,9 +43,11 @@ export async function cleanupPodcastStatuses() {
         correctStatus = 'failed';
       }
     } else if (minutesUntilScheduled <= 0 && minutesUntilScheduled >= -15) {
-      // Within 15-minute grace period past scheduled time - should be processing
+      // Within 15-minute grace period past scheduled time - KEEP AS PENDING
+      // DO NOT automatically change to processing - let the scheduler handle it
+      // This prevents podcasts from getting stuck in processing status
       if (podcast.status === 'pending') {
-        correctStatus = 'processing';
+        correctStatus = 'pending';  // Keep as pending so scheduler can process it
       }
     }
     
