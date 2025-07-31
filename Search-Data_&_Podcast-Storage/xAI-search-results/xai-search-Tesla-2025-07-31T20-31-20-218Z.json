@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Signs $4.3 Billion Battery Deal with LG Energy Solution\",\n      \"description\": \"Tesla has agreed to a $4.3 billion deal with LG Energy Solution for energy storage system batteries, aiming to reduce reliance on Chinese imports amid tariffs.\",\n      \"source\": \"Reuters\"\n    },\n    {\n      \"title\": \"Questions Raised Over Tesla Autopilot in 2019 Fatal Crash\",\n      \"description\": \"Tesla is facing scrutiny regarding the potential involvement of its Autopilot system in a 2019 crash that resulted in a fatality.\",\n      \"source\": \"CBS News\"\n    },\n    {\n      \"title\": \"Elon Musk Announces Grok AI Integration in Tesla Vehicles\",\n      \"description\": \"Elon Musk stated that his AI chatbot Grok will be integrated into Tesla vehicles by next week.\",\n      \"source\": \"CBS News\"\n    }\n  ],\n  \"notes\": \"Only three verifiable stories from the last 24 hours were identified based on available data.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/",
+    "https://www.reuters.com/company/tesla-inc/",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/",
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://benzinga.com/topic/tesla",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more",
+    "https://wired.com/story/november-2017-wired-top-stories"
+  ]
+}

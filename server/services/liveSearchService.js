@@ -1136,7 +1136,6 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
       }
       ],
       max_tokens: 100000,  // Fixed high limit for full compiled data processing
-      reasoning_effort: "high"
     });
     
     const content = response.choices[0].message.content;

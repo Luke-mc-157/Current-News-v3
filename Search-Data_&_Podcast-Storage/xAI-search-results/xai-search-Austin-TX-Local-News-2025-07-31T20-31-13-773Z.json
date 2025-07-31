@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Breaking Local News in Austin, Texas\",\n      \"description\": \"CBS Austin reports on the latest local news, including weather, sports, and breaking events in the Central Texas region, such as updates from Austin and surrounding areas.\",\n      \"source\": \"https://cbsaustin.com/news/local\"\n    }\n  ],\n  \"notes\": \"Only one directly related and verifiable story was found from the last 24 hours. Data is sparse for additional high-engagement viral stories about Austin, TX local news.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://www.nytimes.com/section/realestate",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more",
+    "https://cbsaustin.com/news/local",
+    "https://www.fox7austin.com/news",
+    "https://www.kvue.com/article/news/year-in-review/austin-top-stories-2024/269-00f20c0a-f6e1-4495-b225-160e91b5aafa",
+    "https://austin.culturemap.com/news/city-life/popular-stories-best-2024/"
+  ]
+}

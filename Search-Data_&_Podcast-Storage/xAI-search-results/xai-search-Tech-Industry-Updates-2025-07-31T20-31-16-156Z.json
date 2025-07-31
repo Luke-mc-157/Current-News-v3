@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Latest Technology News Coverage\",\n      \"description\": \"Reuters provides updates on global technology developments, including breaking news from various sectors of the tech industry.\",\n      \"source\": \"Reuters Tech News\"\n    },\n    {\n      \"title\": \"Artificial Intelligence Developments\",\n      \"description\": \"Reuters covers how AI is influencing industries and creating new norms, with recent updates on AI advancements and their implications.\",\n      \"source\": \"Reuters AI News\"\n    },\n    {\n      \"title\": \"Aggregated Global News Updates\",\n      \"description\": \"Google News aggregates real-time stories from around the world, including tech industry updates such as innovations and market changes.\",\n      \"source\": \"Google News\"\n    },\n    {\n      \"title\": \"UK News Including Tech Updates\",\n      \"description\": \"BBC News reports on current events in the UK, which may include tech-related stories such as digital innovations or industry impacts.\",\n      \"source\": \"BBC News\"\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours; however, specific viral tech stories were limited in the available data, so general updates were used where directly relevant.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/technology/cybersecurity/",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/uk",
+    "https://technologymagazine.com/articles/this-weeks-top-five-stories-in-technology",
+    "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-sharepoint-hacked-astronomer-ceo-and-hr-head-resign-realme-and-iqoo-launch-phones-ai-talent-war-heats-up-and-other-top-tech-news-of-the-week/articleshow/122924198.cms",
+    "https://www.scmp.com/tech",
+    "https://computerworld.com/article/1611381/10-most-notable-tech-stories-of-2023.html",
+    "https://thedailyjagran.com/technology/ios-26-starlink-and-more-what-made-headlines-in-tech-this-week-10255809"
+  ]
+}

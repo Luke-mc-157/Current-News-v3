@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"U.S. Stock Market Headlines\",\n      \"description\": \"Latest breaking news on U.S. stock markets, covering international finance and market developments.\",\n      \"source\": \"Reuters\",\n      \"published\": \"2025-07-31T19:49:02\"\n    },\n    {\n      \"title\": \"Global Market Headlines\",\n      \"description\": \"Breaking news on global stock markets, including international market and finance updates.\",\n      \"source\": \"Reuters\",\n      \"published\": \"2025-07-31T16:55:05\"\n    },\n    {\n      \"title\": \"Stock Market Headlines\",\n      \"description\": \"General breaking news on stock markets from around the globe, focusing on international finance.\",\n      \"source\": \"Reuters\",\n      \"published\": \"2025-07-31T05:46:05\"\n    }\n  ],\n  \"notes\": \"Only three directly related and verifiable stories were identified from the last 24 hours; data on viral aspects was sparse as specific high-engagement posts were not available.\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.nytimes.com/section/us",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more/",
+    "https://www.cnbc.com/2025/07/27/stock-market-today-live-updates.html",
+    "https://www.cbsnews.com/tag/stock-market/"
+  ]
+}

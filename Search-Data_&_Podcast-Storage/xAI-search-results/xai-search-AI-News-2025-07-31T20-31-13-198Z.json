@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"How Artificial Intelligence is Creating the Next Normal\",\n      \"description\": \"A discussion on the evolving role of AI in shaping everyday life and future developments, as covered in recent updates.\",\n      \"source\": \"Reuters AI News (https://www.reuters.com/technology/artificial-intelligence/)\"\n    },\n    {\n      \"title\": \"Latest Developments in Artificial Intelligence\",\n      \"description\": \"Overview of current AI trends and content from various sources, highlighting ongoing advancements and applications.\",\n      \"source\": \"BBC News on Artificial Intelligence (https://www.bbc.com/news/topics/ce1qrvleleqt)\"\n    }\n  ],\n  \"notes\": \"Only two directly related and verifiable AI news stories were found from the last 24 hours; data is sparse for additional viral stories.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://fintechfutures.com/ai-in-fintech/july-2025-top-five-ai-stories-of-the-month",
+    "https://moneycontrol.com/world/artificial-intelligence-news-live-updates-29-07-2025-alpha-liveblog-13340452.html",
+    "https://hkmu.edu.hk/oetools/news-events/weekly-ai-news-update-18-24-july-2025",
+    "https://radicaldatascience.wordpress.com/2025/07/24/ai-news-briefs-bulletin-board-for-july-2025",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025"
+  ]
+}

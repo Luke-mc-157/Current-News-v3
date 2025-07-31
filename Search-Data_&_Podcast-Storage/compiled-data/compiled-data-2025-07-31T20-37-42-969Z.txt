@@ -1,0 +1,956 @@
+
+TOPIC: sports
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [],
+  "notes": "Data is sparse; no specific viral sports news stories with high engagement on X and correlating news articles from the last 24 hours were identified from the available sources."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: The article content was not accessible, limiting available information. It is associated with a Reuters sports page based on the URL. No specific sports events or details could be extracted due to inaccessibility. As a result, no factual data on sports topics is available from this source. [https://www.reuters.com/sports/]
+
+- BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio: The BBC homepage covers a broad range of news, including sports sections with updates on cricket, Formula 1, and football. Key sports stories include England's mixed performance in a cricket match and Max Verstappen's announcement to race with Red Bull in 2026. Other highlights feature Tottenham's victory over Arsenal with a long-range goal and UFC news. The site also provides live sports coverage and videos, blending sports with other global news topics. [https://www.bbc.com/]
+Key Quotes: "Verstappen says he will race with Red Bull in 2026" - Max Verstappen | "'Watch him be massive' - Monye backs Kinghorn" - Ugo Monye
+
+- Rugby Union - British & Irish Lions scores, Results & Latest News - BBC Sport: The page focuses on rugby union news, particularly the British and Irish Lions' tour, with preparations for the final Test against Australia. Blair Kinghorn is backed by Ugo Monye to be a key player, while Australia will miss flanker Fraser Valetini. Other updates include Red Bull's takeover of Newcastle Falcons and Wales' caution against Australia in their series. The content features scores, fixtures, and podcasts discussing rugby events. [https://www.bbc.com/sport/rugby-union]
+Key Quotes: "'Watch him be massive' - Monye backs Kinghorn" - Ugo Monye | "'Job done but not complete' - Lions aim for whitewash" - British and Irish Lions team or analysts
+
+- BBC Sport - Scores, Fixtures, News - Live Sport: BBC Sport provides comprehensive coverage of various sports, including cricket with England's inconsistent bowling performance and Formula 1 news on Max Verstappen's Red Bull commitment. Football updates feature Tottenham's win over Arsenal with a notable goal, while other stories cover UFC appeals and Olympic swimming results. The site also includes golf and horse racing events, offering scores, fixtures, and video highlights for users. [https://www.bbc.com/sport]
+Key Quotes: "Verstappen says he will race with Red Bull in 2026" - Max Verstappen | "'Miss Versatility' Rowland crucial to England hopes" - BBC Sport analysts or reporters
+
+- Social media - BBC News: The page discusses social media impacts, such as screen time effects on children's brains and risks from viral trends like seeking secret beauty spots. It covers topics including a dating app hack and Australia's ban on social media for teens, with YouTube included. While not primarily sports-focused, it touches on how social media influences public behavior and safety, with indirect references to online trends affecting society. [https://www.bbc.com/news/topics/c207p54m4pdt]
+
+- Yankee Stadium moment goes viral as young couple appear to engage in explicit s*x act during live game: A viral video from Yankee Stadium showed a couple engaged in a sexual act during a baseball game between the New York Yankees and Philadelphia Phillies. The incident sparked significant outrage on social media and drew attention to similar past events at sports venues. No official statements were issued by the teams, and the couple's identities remain unknown. This event highlighted concerns about public behavior at live sports events. [https://timesofindia.indiatimes.com/sports/international-sports/yankee-stadium-moment-goes-viral-as-young-couple-appear-to-engage-in-explicit-sx-act-during-live-game/articleshow/122986611.cms]
+Key Quotes: "This is f—king insane." - Onlooker
+
+- 24 most viral sports moments of 2024: Scottie Scheffler's arrest, Mike Tyson's cheeks, Olympic feats lead list: CBSSports.com compiled a list of the 24 most viral sports moments of 2024, featuring events like Scottie Scheffler's arrest and Mike Tyson's fight. Olympic highlights included standout performances such as Ilona Maher's rugby plays and Stephen Curry's 3-point showdown. Other moments covered Josh Allen's unique touchdown and Vanderbilt's upset win over Alabama. The article emphasized the cultural impact of these events on social media. [https://www.cbssports.com/general/news/24-most-viral-sports-moments-of-2024-scottie-schefflers-arrest-mike-tysons-cheeks-olympic-feats-lead-list/]
+
+---
+
+TOPIC: liverpool fc
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Luis Diaz Transfers to Bayern Munich",
+      "description": "Bayern Munich has completed a deal to sign Liverpool winger Luis Diaz for £65.5m, as reported in transfer updates.",
+      "source": "BBC Sport - https://www.bbc.com/sport/football/articles/c1w8j9g5qleo"
+    },
+    {
+      "title": "Liverpool's Interest in Alexander Isak",
+      "description": "Liverpool is linked with Newcastle's Alexander Isak, with reports of advanced talks and transfer plans being discussed.",
+      "source": "Liverpool Echo - https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048"
+    },
+    {
+      "title": "Liverpool Transfer Window Updates",
+      "description": "Latest transfer news includes discussions on potential bids and pre-season activities, with Liverpool addressing player movements.",
+      "source": "BBC Sport - https://www.bbc.com/sport/football/live/c1dnd367544t"
+    },
+    {
+      "title": "Serie 
+
+X POSTS FROM SEARCH (3):
+- The Anfield Wrap: ""The messaging has moved rapidly in this one! From "He's not for sale" to "We're annoyed you haven't come up with a bid yet"
+
+"I think it's fair to say at some point Newcastle will ask for a fee to which Liverpool say "We're not going to pay that"
+
+🗣️🎥 The Transfer Gutter Show https://t.co/Cgry6V8GfI" (50213 views, 128 likes) https://x.com/TheAnfieldWrap/status/1950987381579927782
+- Liverpool FC News: "Inside Liverpool transfer window as Arne Slot talks Luis Diaz replacement and record-breaking spend
+
+By @ptgorst
+
+#LFC 
+
+https://t.co/Zllw5f07W3" (21741 views, 37 likes) https://x.com/LivEchoLFC/status/1950843888748687830
+- AnfieldIndex: "Report: Serie A giants enter talks with Liverpool over potential transfer
+
+It makes sense #LFC #LiverpoolFC
+
+Read below 👇" (4436 views, 8 likes) https://x.com/AnfieldIndex/status/1950978771663855919
+
+SUPPORTING ARTICLES (7):
+- Liverpool FC - Transfer news, results, fixtures, video and audio: Liverpool FC has made several new signings this summer, including Florian Wirtz, Milos Kerkez, Jeremie Frimpong, Hugo Ekitike, and Armin Pecsi. The team is preparing for upcoming fixtures, starting with a Community Shield match against Crystal Palace and Premier League games against Bournemouth and Newcastle United. Former player Emile Heskey discussed the pressure and support from Liverpool fans for new recruits. Manager Arne Slot praised 16-year-old Rio Ngumoha for his performances in pre-season matches. Luis Diaz has left the club after transferring to Bayern Munich, and there are discussions about potential new signings like Alexander Isak. [https://www.bbc.com/sport/football/teams/liverpool]
+Key Quotes: "It's a different pressure to any other club." - Emile Heskey | "Liverpool fans are a lot different to many clubs. They will give you all the time you need and more to be honest." - Emile Heskey | "Rio again showed the quality he has and that’s nice for us because we have a lot of very good players." - Arne Slot | "I arrived with all the dreams in the world, and I am leaving proud of everything we achieved together." - Luis Diaz
+
+- Liverpool | Latest News & Updates | BBC News: The page covers various news updates from the Liverpool region, including legal cases, local business closures, and arrests related to crimes. In the sports section, it reports on Luis Diaz's departure from Liverpool FC to Bayern Munich, where he expressed fulfillment in his duties. Other football-related content includes Everton transfer discussions and pre-season activities. The article also features general regional news such as tributes and community events. Fan reactions and player comments are highlighted in the context of recent football developments. [https://www.bbc.com/news/england/merseyside]
+Key Quotes: "I arrived with all the dreams in the world, and I am leaving proud of everything we achieved together." - Luis Diaz
+
+- Transfer news: James Trafford, Nick Pope and Aaron Ramsdale latest, plus Liverpool win & Newcastle lose in pre-season: James Trafford re-joined Manchester City from Burnley for a record fee, while Newcastle United is in talks to sign Aaron Ramsdale. Liverpool won their pre-season match against Yokohama F. Marinos 3-1, with goals from Florian Wirtz, Trey Nyoni, and Rio Ngumoha. Newcastle lost 1-0 to Team K League, and Joe Willock was injured during the game. The article discusses England's goalkeeper options and potential transfers involving Nick Pope. Fan and analyst reactions to transfer news were included, focusing on competition for places. [https://www.bbc.com/sport/football/live/c1dnd367544t]
+Key Quotes: "The reaction to this news is mainly negative." - Simon Pryde | "Ramsdale is the right age for a goalkeeper and is coming into his prime at 27." - John Anderson
+
+- Luis Diaz: Bayern Munich sign Liverpool winger in £65.5m deal: Bayern Munich signed Luis Diaz from Liverpool for £65.5m, with Diaz signing a four-year deal. Diaz scored 41 goals in 148 appearances for Liverpool and was part of the team that won the Premier League and other trophies. He expressed pride in his achievements and mentioned the tragic loss of team-mate Diogo Jota in his farewell message. Liverpool has offset spending on new signings with player sales, including Diaz. The transfer marks the end of Diaz's three-and-a-half-year stint at Anfield. [https://www.bbc.com/sport/football/articles/c1w8j9g5qleo]
+Key Quotes: "I arrived with all the dreams in the world, and I am leaving proud of everything we achieved together." - Luis Diaz | "It's good to be leaving with the feeling of a duty fulfilled, and, most of all, to be leaving a champion." - Luis Diaz
+
+- Football - latest news today, results & video highlights: The page covers various football news, including West Ham's Lucas Paqueta being cleared of spot-fixing charges. England women's team celebrated their Euro 2025 win, and Dundee United won a European match. Liverpool-related updates include Luis Diaz's transfer to Bayern Munich and discussions on potential signings like Alexander Isak. Other stories feature pre-season activities, transfer rumors, and team performances across leagues. The content highlights recent results and fan reactions to ongoing developments. [https://www.bbc.com/sport/football]
+
+- Alexander Isak to Liverpool transfer plan revealed as 'advanced talks' claim made: Liverpool is interested in signing Newcastle United's Alexander Isak, with reports indicating his desire to explore a transfer. Newcastle values Isak at over £150m and insists he is not for sale, with decisions involving the club's owners. There are claims of advanced talks between Bayern Munich and Liverpool for Luis Diaz, with Liverpool's asking price set. Liverpool has been active in the transfer market, completing several signings this summer. The article discusses potential moves and their implications for both clubs. [https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048]
+
+---
+
+TOPIC: US politics
+
+LIVE SEARCH SUMMARY:
+{
+  "notes": "Data is sparse as only general news sources from the last 24 hours were available; no specific viral stories were directly identified from high-engagement X posts or detailed articles.",
+  "stories": [
+    {
+      "title": "Latest U.S. News Stories",
+      "description": "Breaking developments in U.S. politics, including current events and updates as reported in real-time coverage.",
+      "source": "Reuters",
+      "published": "2025-07-31T06:08:30"
+    },
+    {
+      "title": "Latest Politics Updates",
+      "description": "Ongoing news and live updates on U.S. and global politics, focusing on recent events and developments.",
+      "source": "BBC News",
+      "published": "2025-07-31T04:45:09"
+    },
+    {
+      "title": "Breaking News and Headlines",
+      "description": "Coverage of U.S. politics, including investigations, analysis, and video reports on key national stories.",
+      "source": "The Washington Post",
+      "published": "2025-07-31T03:03:48"
+    },
+    
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Politics | Latest News & Updates | BBC News: The BBC News politics section covers the UK government's plan to recognize a Palestinian state in September unless Israel meets specific conditions, with Minister Jonathan Reynolds responding to criticisms from top lawyers about potential illegality. It reports on small boat migrant crossings reaching 25,000 for the year earlier than previous records, and a policy guru discussing the challenges of a potential Reform government. The content includes a former Conservative MP defecting to Reform UK and concerns over the prime minister's approach to Palestinian statehood. Additionally, it features analysis on Labour's first year in power, including housing developments and diplomatic relations with the US and France. [https://www.reuters.com/world/]
+Key Quotes: "plan to recognise Palestinian state may be illegal" - top lawyers | "an inspiring leader" - funeral service attendees | "not on the right side of history" - Emily Damari
+
+- Trump news at a glance: Musk mocks ‘Epstein hoax’ claims after president blasts its ‘stupid’ believers | Trump administration | The Guardian: Elon Musk mocked Donald Trump's claim that files related to Jeffrey Epstein are a hoax, suggesting Trump release them to clarify. Trump criticized his supporters for believing in the "Epstein hoax" and called them weaklings in a social media post. The article discusses Trump's private indications of potentially firing Federal Reserve Chair Jerome Powell, amid concerns over central bank independence. It also covers US deportations to Eswatini and the backfiring of Trump's tariff threats on Brazil intended to influence former President Bolsonaro's trial. Additionally, it mentions Columbia University's adoption of an antisemitism definition to regain federal funding and Republican efforts to cut public broadcasting and foreign aid funds. [https://www.bbc.com/news/politics]
+Key Quotes: "Wow, amazing that Epstein ‘killed himself’ and Ghislaine is in federal prison for a hoax" - Elon Musk | "Let these weaklings continue forward and do the Democrats work" - Donald Trump | "He should just release the files and point out which part is the hoax" - Elon Musk
+
+- US Politics - Latest news, comment and analysis - The Telegraph: The Telegraph's US politics coverage includes Donald Trump reducing tariffs on India to 25% while warning about arms ties, and opening a new golf course in Scotland. It reports on Trump's criticism of a payment to Beyoncé as potentially illegal and analysis suggesting Trump is at the peak of his political power despite the Epstein controversy. The content also covers Ukrainian President Zelensky defying US orders on a corruption law and a socialist candidate in Minnesota proposing to replace police with peace officers. Additionally, it discusses potential political shifts, such as Ellen DeGeneres citing Trump as a reason for moving to the UK, and ongoing debates within US politics. [https://www.reuters.com/]
+Key Quotes: "probably illegal" - Donald Trump | "an inspiring leader" - funeral service for Norman Tebbit | "life in the UK is ‘just better’" - Ellen DeGeneres
+
+---
+
+TOPIC: Austin TX Local News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Breaking Local News in Austin, Texas",
+      "description": "CBS Austin reports on the latest local news, including weather, sports, and breaking events in the Central Texas region, such as updates from Austin and surrounding areas.",
+      "source": "https://cbsaustin.com/news/local"
+    }
+  ],
+  "notes": "Only one directly related and verifiable story was found from the last 24 hours. Data is sparse for additional high-engagement viral stories about Austin, TX local news."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- 6 trending Austin-area stories: Tim Horton’s, Round Rock development and more | Community Impact: Community Impact reported on several trending developments in the Austin area, including the planned opening of a Tim Hortons coffee shop in Cedar Park by mid-2026. Other stories covered the opening of a Miniso retail store in Pflugerville's Stone Hill Town Center, a zoning change approved in Leander for a future subdivision, and a proposed downtown renovation project in Round Rock. The article also discussed Williamson County's decision to end spaceport development talks with Burnet County and shift focus to a potential partnership with Cedar Park, as well as tips for homeowners on installing electric vehicle chargers. Overall, the piece highlighted a mix of business, government, and practical news relevant to the Austin metropolitan region. [https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/]
+
+- Austin Local | News, Weather, Sports, Breaking News: CBS Austin's local news coverage included updates on weather, community events, and breaking news in the Austin area, such as Senator Ted Cruz introducing a bill to modernize weather radios with a focus on flood communications. Reports featured criticisms from the Hays County Sheriff regarding a judge's stance on surveillance cameras, announcements of staff cuts in Austin Independent School District due to federal funding delays, and the groundbreaking for affordable 3D-printed homes in Austin's Mueller neighborhood. Additional stories covered local incidents like a shooting in Leander, flood recovery efforts, and initiatives such as IHOP giving away free pancakes, alongside weather forecasts and community support programs. The page served as a comprehensive source for real-time news impacting Central Texas residents. [https://www.nytimes.com/section/realestate]
+
+---
+
+TOPIC: Upcoming events in Austin TX
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Local News and Events in Austin, TX",
+      "description": "Coverage of ongoing local news, including events in the Austin area such as weather, sports, and community activities.",
+      "source": "https://cbsaustin.com/news/local"
+    }
+  ],
+  "notes": "Only one relevant and recent source was found within the last 24 hours. Data is sparse for viral news stories about upcoming events in Austin, TX."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Austin Events | Live Music, Food & Drinks, Festivals & Outdoor Fun: HeyAustin is a platform dedicated to listing upcoming events in Austin, Texas, focusing on categories like live music, food and drink specials, festivals, and outdoor activities. The site features a searchable calendar with events scheduled for late July and early August 2025, including performances at venues such as Antone's and Flamingo Cantina, as well as community events like yoga rides and storytimes. Users can filter events by region, type, and keywords, with additional offerings like VIP party boat rentals and pub crawls. The platform aims to highlight Austin's vibrant cultural scene, providing recommendations and deals for locals and visitors to engage in entertainment options. [https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/]
+
+- LIVE COVERAGE: 'No Kings' protests begin in Austin, across central Texas: 'No Kings' protests occurred across central Texas on June 14, 2025, as part of nationwide demonstrations against the Trump administration, with events in Austin, Taylor, Bastrop, and Pflugerville. In Austin, gatherings started in the afternoon at the Capitol and other locations, drawing hundreds of participants amid a strong police presence. Governor Abbott deployed state troops to maintain order and warned against violence, while organizers emphasized peaceful demonstration. Live updates included reports of evacuations due to threats, arrests, and efforts to ensure safety during the events. The protests highlighted tensions over immigration policies and calls for non-violent expression of dissent. [https://www.bbc.com/news/uk]
+Key Quotes: "Peaceful protests are part of the fabric of our nation, but Texas will not tolerate the lawlessness we have seen in Los Angeles in response to President Donald Trump’s enforcement of immigration law." - Gov. Abbott
+
+---
+
+TOPIC: AI News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "How Artificial Intelligence is Creating the Next Normal",
+      "description": "A discussion on the evolving role of AI in shaping everyday life and future developments, as covered in recent updates.",
+      "source": "Reuters AI News (https://www.reuters.com/technology/artificial-intelligence/)"
+    },
+    {
+      "title": "Latest Developments in Artificial Intelligence",
+      "description": "Overview of current AI trends and content from various sources, highlighting ongoing advancements and applications.",
+      "source": "BBC News on Artificial Intelligence (https://www.bbc.com/news/topics/ce1qrvleleqt)"
+    }
+  ],
+  "notes": "Only two directly related and verifiable AI news stories were found from the last 24 hours; data is sparse for additional viral stories."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Artificial intelligence - BBC News: The BBC News page compiles various stories on artificial intelligence developments. It reports that an AI physio app halved wait lists for back pain treatment, saving 2,500 hours of clinician time in an NHS trial. Meta's profits are surging, driving investments in AI projects. Gulf countries like the UAE and Saudi Arabia are positioning themselves as AI hubs through US partnerships. Other coverage includes AI use in CCTV for fly-tipping, concerns about AI misuse and environmental impact, a warning from the Pope, and Google's launch of a new AI search feature in the UK. [https://www.reuters.com/technology/artificial-intelligence/]
+Key Quotes: "Human dignity must be protected from rise of AI" - Pope
+
+---
+
+TOPIC: Tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Tesla Signs $4.3 Billion Battery Deal with LG Energy Solution",
+      "description": "Tesla has agreed to a $4.3 billion deal with LG Energy Solution for energy storage system batteries, aiming to reduce reliance on Chinese imports amid tariffs.",
+      "source": "Reuters"
+    },
+    {
+      "title": "Questions Raised Over Tesla Autopilot in 2019 Fatal Crash",
+      "description": "Tesla is facing scrutiny regarding the potential involvement of its Autopilot system in a 2019 crash that resulted in a fatality.",
+      "source": "CBS News"
+    },
+    {
+      "title": "Elon Musk Announces Grok AI Integration in Tesla Vehicles",
+      "description": "Elon Musk stated that his AI chatbot Grok will be integrated into Tesla vehicles by next week.",
+      "source": "CBS News"
+    }
+  ],
+  "notes": "Only three verifiable stories from the last 24 hours were identified based on available data."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Google News: Google News aggregates real-time news from multiple sources worldwide, including coverage of Tesla-related developments. Recent stories highlight Tesla facing a wrongful death trial over its Autopilot system from a 2019 crash. Elon Musk announced that his AI chatbot Grok will be integrated into Tesla vehicles, sparking discussions on AI advancements. The platform also reports on stock fluctuations influenced by Musk's public feuds, such as with President Trump. Additionally, it covers broader topics like politics and health, allowing users to customize their news feed. [https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/]
+Key Quotes: "shut up" - Elon Musk
+
+- Tesla news - Today’s latest updates - CBS News: CBS News provides updates on Tesla's legal and business developments, including a wrongful death trial involving the Autopilot system from a 2019 fatal crash. Elon Musk announced that his AI chatbot Grok will be available in Tesla vehicles by the following week, amid ongoing AI integrations. The coverage includes stock market reactions to Musk's feuds with President Trump, which caused Tesla shares to decline. Musk responded to a tech analyst's recommendations by telling him to 'shut up' on social media. Other reports discuss Tesla's robotaxi testing and broader implications for automotive safety and technology. [https://www.reuters.com/company/tesla-inc/]
+Key Quotes: "shut up" - Elon Musk | "Grok is coming to Tesla vehicles" - Elon Musk
+
+- Tesla - Latest News and breaking headlines - Benzinga: Benzinga reports on Tesla's stock performance and corporate news, with a significant drop of $68 billion in market value following Elon Musk's announcement of the 'America Party' and related political backlash. Cathie Wood of Ark Invest sold Tesla shares amid these developments and competition from Chinese automakers. Musk committed to an intense work schedule, stating he is back to working seven days a week on Tesla and other projects. The site discusses potential future innovations, such as electric flying cars, and analyzes Tesla's strategic position in AI and electric vehicles. Analysts speculate on the impact of Musk's feuds and market dynamics on Tesla's long-term growth. [https://www.reuters.com/technology/]
+Key Quotes: "Back to working 7 days a week and sleeping in the office" - Elon Musk
+
+---
+
+TOPIC: Stock Market
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "U.S. Stock Market Headlines",
+      "description": "Latest breaking news on U.S. stock markets, covering international finance and market developments.",
+      "source": "Reuters",
+      "published": "2025-07-31T19:49:02"
+    },
+    {
+      "title": "Global Market Headlines",
+      "description": "Breaking news on global stock markets, including international market and finance updates.",
+      "source": "Reuters",
+      "published": "2025-07-31T16:55:05"
+    },
+    {
+      "title": "Stock Market Headlines",
+      "description": "General breaking news on stock markets from around the globe, focusing on international finance.",
+      "source": "Reuters",
+      "published": "2025-07-31T05:46:05"
+    }
+  ],
+  "notes": "Only three directly related and verifiable stories were identified from the last 24 hours; data on viral aspects was sparse as specific high-engagement posts were not available."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/markets/]
+
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/markets/us/]
+
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/markets/stocks/]
+
+- U.S. News - The New York Times: At a hearing in Kerr County, Texas, the emergency management coordinator explained he was ill and asleep during severe floods. A Trump ally advocated for the release of a Mexican citizen detained by ICE. The California gubernatorial race became more competitive after Kamala Harris decided not to run. David Nabarro, a prominent U.N. health expert, passed away at 75. U.S. senators are pushing for additional aid to Ukraine amounting to $54.6 billion. The Trump administration is debating higher tariff rates, with a clock ticking down, and other news includes a Yosemite accident and a Massachusetts funding proposal for colleges. [https://www.nytimes.com/section/us]
+Key Quotes: "'Not a Damned Penny.'" - Texas Flood Survivors | "saying too much risked premature judgments" - Justice Brett Kavanaugh
+
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/world/]
+
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/markets/stocks/]
+
+- [Article from www.reuters.com]: Article content was not accessible, no information available on stock market or any topics. [https://www.reuters.com/markets/us/]
+
+---
+
+TOPIC: world news
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Latest Viral News and Videos Trending Globally",
+      "description": "Reports on the most recent viral news stories, including trending videos and social media events from around the world.",
+      "supporting_articles": [
+        {
+          "source": "Times Now",
+          "url": "https://www.timesnownews.com/viral",
+          "published": "19 hours ago"
+        }
+      ]
+    },
+    {
+      "title": "Top Trending News and Viral Topics Worldwide",
+      "description": "Coverage of today's viral news, including trending events, videos, and social media highlights from global sources.",
+      "supporting_articles": [
+        {
+          "source": "The Indian Express",
+          "url": "https://indianexpress.com/section/trending/",
+          "published": "16 hours ago"
+        }
+      ]
+    },
+    {
+      "title": "Breaking World News Stories and Current Events",
+      "description": "Updates on the latest world news developments, focusing on high-
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- US to deny visas to Palestinian officials: The US has announced it will deny visas to Palestinian officials due to allegations of supporting terrorism. This decision targets both the PLO and the Palestinian Administration. The announcement was made in the context of US foreign policy. It comes amid ongoing regional conflicts. No specific details on the implementation timeline were provided in the report. [https://www.washingtonpost.com/]
+Key Quotes: "'terrorism'" - US
+
+- Virginia Giuffre’s Family Responds to Trump’s Claim That Epstein ‘Stole’ Her: Virginia Giuffre’s family responded to Donald Trump's claim that Jeffrey Epstein 'stole' her by urging him not to pardon Ghislaine Maxwell. They described Maxwell as a monster who deserves to remain in prison. This reaction stems from the ongoing Epstein case and related legal proceedings. The family's statement was reported in various news outlets. Trump's original comment was made in a public context, highlighting the sensitivity of the issue. [https://www.reuters.com/world/]
+Key Quotes: "'stole'" - Donald Trump | "'A monster who deserves to rot in prison'" - Family of Virginia Giuffre
+
+- Kyiv toll rises to 16 as Russian strikes defy Trump ceasefire demand: The death toll in Kyiv from Russian strikes has risen to 16, including a boy and his mother. This increase marks the highest number of child casualties reported in the war so far. The strikes occurred despite a ceasefire demand from Donald Trump. Kyiv authorities highlighted the severity of the attack in their statements. International responses and aid efforts are expected to address the escalating situation. [https://www.bbc.com/news]
+
+- Doctors continue surgery during Russia earthquake: An 8.8 magnitude earthquake struck Russia's Kamchatka Peninsula, triggering tsunami warnings across the Pacific. Despite the quake, doctors in Kamchatka continued performing surgery, an act that gained widespread online admiration. Tsunami alerts were later lifted with no reported deaths. The event underscores the resilience of medical professionals in natural disasters. Videos of the incident circulated virally on social media platforms. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+
+- Sea lions flee earthquake in Russia amid tsunami scare: A massive 8.8 magnitude earthquake hit near Russia's Kuril islands, causing sea lions to dive off cliffs in viral footage. Tsunami warnings were issued in several countries, including Japan and Russia, but were later canceled. No major casualties or damage were reported from the event. The video highlighted animal instincts during seismic activity. This incident is part of a series of natural disasters monitored globally in recent times. [https://www.bbc.com/news/world]
+
+---
+
+TOPIC: Football Player Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Manchester City Re-sign James Trafford from Burnley",
+      "description": "Manchester City have bought back their former academy goalkeeper James Trafford from Burnley for a record fee for a British goalkeeper.",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Manchester United Target Benjamin Sesko and Chelsea Agree Deal for Jorrel Hato",
+      "description": "Manchester United are targeting RB Leipzig striker Benjamin Sesko, while Chelsea have agreed a deal for Ajax defender Jorrel Hato.",
+      "source": "BBC Sport"
+    },
+    {
+      "title": "Alexander Isak Leaves Newcastle and Manchester United Learn Sesko Price",
+      "description": "Newcastle United are dealing with Alexander Isak's potential departure, and Manchester United have received updates on the price for Benjamin Sesko.",
+      "source": "Mirror Online"
+    },
+    {
+      "title": "Manchester United Prioritise Benjamin Sesko and Arsenal's Stance on Eberechi Eze",
+      
+
+X POSTS FROM SEARCH (1):
+- Daily Record Sport: "𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫 𝐧𝐞𝐰𝐬 𝐋𝐈𝐕𝐄✍️
+
+Semedo departs Wolves 👋
+Man Utd 'advancing' in move for Sesko 🆕
+
+Get all the latest updates from the SPFL and beyond in our LIVE blog 💻📱
+
+⬇️⬇️⬇️
+
+https://t.co/5I3xbpPlo7 https://t.co/JiecDz9vdN" (3258 views, 1 likes) https://x.com/Record_Sport/status/1950580641105379776
+
+SUPPORTING ARTICLES (7):
+- Football Transfer News & Confirmed Deals - BBC Sport: The article provides a comprehensive roundup of recent football transfers and confirmed deals across multiple leagues, including the Premier League, Scottish Premiership, EFL, and Women's Super League. It lists various signings and loans, such as Wigan agreeing to loan Brentford's midfielder Trevitt and Stockport signing Dodgson on loan from Burnley. The content highlights transfers from the past few days, with updates posted within the last 48 hours, covering both men's and women's football. Notable deals include Nottingham Forest signing winger Ndoye from Bologna and Manchester United's women's team acquiring midfielder Zigiotti. The page serves as a real-time resource for fans to track significant player movements during the transfer window. [https://www.bbc.com/sport/football/transfers]
+
+- James Trafford: Manchester City re-sign Burnley keeper for 'British record fee' - BBC Sport: Manchester City have re-signed goalkeeper James Trafford from Burnley for a fee reported as up to £31m plus add-ons, setting a new British record for a goalkeeper transfer. Trafford, a former City academy graduate, impressed at Burnley by helping them secure promotion to the Premier League and earning a spot in the Championship team of the year. He has signed a five-year contract with an option for an additional year and will compete with Ederson for the first-choice position. The move was enabled by a buy-back clause in his previous contract, and Trafford expressed enthusiasm about returning to develop further at City. Analysis suggests City believes they can enhance his skills, though he may need to improve his distribution to fit Pep Guardiola's system. [https://www.bbc.com/sport/football/articles/cgk3k0654x6o]
+Key Quotes: "Rejoining City is such a special and proud moment both for me and my family." - James Trafford | "James is already one of the most accomplished young goalkeepers in the English game." - Hugo Viana
+
+- Premier League Football - Latest news, results, stats & transfers - BBC Sport: The article covers a range of Premier League news, including pre-season match results like Tottenham's victory over Arsenal in Hong Kong, and transfer updates such as Nottingham Forest signing winger Ndoye from Bologna. It discusses Manchester United's interest in striker Benjamin Sesko and Arsenal's young players performing well in pre-season. Other topics include the trial of referee body cameras and analysis on clubs like Crystal Palace facing uncertainty with potential departures of key players. The content also features quotes from figures like David Moyes on transfer needs and fan perspectives on player exits, emphasizing the ongoing transfer window activities. [https://www.bbc.com/sport/football/premier-league]
+Key Quotes: "I would rather we take our time and be careful." - Phil Jagielka | "You have to judge people on what they do, not what they say." - Ken
+
+- Luis Diaz: Bayern Munich sign Liverpool winger in £65.5m deal - BBC Sport: Bayern Munich have signed Liverpool winger Luis Diaz for £65.5m, with Diaz agreeing to a four-year contract. Diaz reflected on his time at Liverpool, where he won the Premier League and other trophies, scoring 41 goals in 148 appearances. He described leaving as a 'duty fulfilled' but noted the sorrow due to the tragic loss of team-mate Diogo Jota. The transfer is part of Liverpool's significant summer sales, totaling around £115m, which has helped offset their spending on new players. Diaz's departure creates opportunities for other forwards in the Liverpool squad. [https://www.bbc.com/sport/football/articles/c1w8j9g5qleo]
+Key Quotes: "I arrived with all the dreams in the world, and I am leaving proud of everything we achieved together." - Luis Diaz
+
+- Transfer news LIVE: Latest on Benjamin Sesko, Jorrel Hato plus gossip, pre-season updates - BBC Sport: The live update covers ongoing transfer news, including Nottingham Forest confirming the signing of Swiss forward Dan Ndoye from Bologna for a reported £35m. It highlights Manchester United's interest in RB Leipzig striker Benjamin Sesko and Chelsea agreeing a deal for Ajax defender Jorrel Hato for an initial £37m. Other developments include Granit Xhaka joining Sunderland from Bayer Leverkusen and analysis on players like Sesko's scoring prowess. The article also mentions Bayern Munich's £65.5m acquisition of Luis Diaz from Liverpool and various rumors involving other clubs and players during the transfer window. [https://www.bbc.com/sport/football/live/ce8z8nw897wt]
+Key Quotes: "Aaron is someone I know very well and I've worked with previously." - Eddie Howe
+
+- Transfer news: Jack Grealish linked with Everton, Thomas Frank on Son Heung-min's future and Joao Felix leaves Chelsea for Al-Nassr - BBC Sport: The article reports on transfer rumors and confirmed deals, including Jack Grealish being linked with a move to Everton and Thomas Frank providing an update on Son Heung-min's future at Tottenham. Joao Felix has completed a transfer to Al-Nassr from Chelsea, while Eddie Howe stated that Alexander Isak's future at Newcastle is not fully under his control. Manchester United are targeting strikers Benjamin Sesko and Ollie Watkins, and there is discussion on Grealish's diminishing role at Manchester City. The content also covers done deals and gossip from the summer transfer window, emphasizing ongoing negotiations. [https://www.bbc.com/sport/football/live/c93k38vpz85t]
+Key Quotes: "Aaron is someone I know very well and I've worked with previously, but I am not going to discuss the chances of him coming to us." - Eddie Howe
+
+- Football transfer rumours: Ramsdale to Newcastle? Man Utd move for Watkins?: The article speculates on various transfer rumors, including Aaron Ramsdale potentially moving from Southampton to Newcastle United, and Manchester United's interest in Aston Villa striker Ollie Watkins. It mentions Arsenal being open to offers for players like Gabriel Martinelli and Gabriel Jesus, and Paris Saint-Germain bidding £50m for Bournemouth's Illia Zabarnyi. Other rumors include Thomas Müller's likely move to Vancouver Whitecaps and the possibility of deals involving concrete offers for Leandro Trossard. The content focuses on unconfirmed reports and potential player movements during the transfer window, based on sources from multiple clubs. [https://www.theguardian.com/football/2025/jul/30/football-transfer-rumours-manchester-united-ollie-watkins]
+
+---
+
+TOPIC: MLB Trade Deadline
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Astros Re-acquire Carlos Correa from Twins",
+      "description": "The Houston Astros have reacquired shortstop Carlos Correa from the Minnesota Twins as part of MLB trade deadline dealings.",
+      "source": "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/"
+    },
+    {
+      "title": "Phillies Targeting Outfielder Alex Call",
+      "description": "The Philadelphia Phillies are pursuing Washington Nationals outfielder Alex Call as a potential addition to their outfield before the deadline.",
+      "source": "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/LSqkvqnxENbP/"
+    },
+    {
+      "title": "Kyle Finnegan Traded to Tigers",
+      "description": "Reliever Kyle Finnegan has been traded from the Washington Nationals to the Detroit Tigers in exchange for two prospects.",
+      "source": "https://www.mlb.com/news/kyle
+
+X POSTS FROM SEARCH (2):
+- Phillies Tailgate: "Full Article: https://t.co/cGcCkTIlxJ MLB trade deadline 2025 live updates: Tracker, news, rumors and analysis of every deal" (4073 views, 3 likes) https://x.com/PhilsTailgate/status/1950655932398006417
+- Shoulda Moved More Needles: "Trade Deadline Predictions 
+
+8 for 13, White Sox selling their trash to Yankees cause no one else wants that trash
+
+****Buyers****
+Yankees ✅
+Phillies
+Mariners ❌
+Giants✅
+LA
+Tigers✅
+Mets✅
+Padres
+
+****Be Buyers FFS****
+Kansas City✅
+Cleveland 
+
+***Sellers***
+Red Sox✅
+O’s✅ https://t.co/DtZ4VIMl01" (4618 views, 0 likes) https://x.com/quallsastros/status/1950584711996432564
+
+SUPPORTING ARTICLES (7):
+- MLB trade deadline rumors and live updates: Astros re-acquire Carols Correa from Twins - The Athletic: The 2025 MLB trade deadline is set for 6 p.m. ET, with live updates covering various trades including the Astros re-acquiring Carlos Correa from the Twins. Other notable moves include the Phillies acquiring Jhoan Duran, the Mets trading for Tyler Rogers and Ryan Helsley, and the Padres securing Mason Miller and JP Sears. The Twins are actively selling multiple players, and there are ongoing discussions for pitchers like Dylan Cease. The blog provides real-time analysis from The Athletic staff on team strategies and deadline deals. [https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/]
+Key Quotes: ""There’s definitely more coming."" - Twins source | ""not something that I think is serious right now"" - Carlos Correa | ""I’d like to nominate that for Understatement of the Year."" - Aaron Gleeman
+
+- MLB Trade Deadline - The Athletic: The page serves as a hub for MLB trade deadline coverage, featuring trade grades and analyses for deals involving teams like the Mets, Padres, Yankees, and Phillies. It highlights key storylines such as the Padres' aggressive acquisitions and the market for pitchers like Sandy Alcantara. Articles discuss team needs, prospect costs, and potential moves for players including David Bednar and Eugenio Suárez. The content provides comprehensive reporting on how teams are positioning themselves for the deadline. [https://www.nytimes.com/athletic/tag/mlb-trade-deadline/]
+
+- The 8 biggest storylines to watch for on MLB trade deadline day - The Athletic: Ken Rosenthal outlines eight major storylines for the 2025 MLB trade deadline, focusing on the Padres' GM A.J. Preller's pursuit of players like Mason Miller and the availability of starting pitchers. He discusses the competitive bullpen market and teams like the Orioles and Pirates as active sellers. The article addresses the Red Sox's roster needs, the rivalry between the Mets and Phillies for outfielders, and the Cubs' efforts to improve pitching. Historical context is provided on the impact of deadline trades on World Series outcomes. [https://www.nytimes.com/athletic/6526906/2025/07/31/mlb-trade-deadline-storylines-pitchers/]
+Key Quotes: ""didn’t move the needle"" - Officials from two different clubs
+
+- Sources: The Phillies' next trade target - The Athletic: The Phillies are seeking outfield upgrades before the deadline, with interest in players like Alex Call from the Nationals due to his performance against left-handed pitching. They are also considering Luis Robert Jr. and Steven Kwan, but may opt for cost-effective options after acquiring Jhoan Duran. The team is evaluating internal promotions, such as prospect Justin Crawford, to complement potential trades. Sources indicate a measured approach to further deals as the deadline nears. [https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/LSqkvqnxENbP/]
+
+- MLB News - Major League Baseball Scores, Schedule, Standings, Stats, and Rumors - The Athletic: The page aggregates MLB news, including live trade deadline updates such as the Astros re-acquiring Carlos Correa and the Yankees adding relievers. It features trade grades for deals involving the Padres, Mets, Blue Jays, and Mariners, with analyses on player acquisitions and team strategies. Key topics include power rankings, prospect evaluations, and ongoing rumors for players like Eugenio Suárez and Luis Robert Jr. The content provides a broad overview of league activities and betting odds. [https://www.nytimes.com/athletic/mlb/]
+
+- MLB trade deadline rumors: Live updates, news on Yankees, Mets, Phillies, more with notable names set to move: CBS Sports offers live updates on the 2025 MLB trade deadline, reporting major deals like the Padres acquiring Mason Miller and JP Sears, and the Astros re-acquiring Carlos Correa. It covers rumors and potential moves for players such as Ryan O'Hearn and discussions between teams like the Yankees and Marlins. The blog tracks the intensity of trade activities, focusing on buyers and sellers, with updates on team needs and deadline strategies. Additional details include injury news and prospect involvement in trades. [https://www.cbssports.com/mlb/news/mlb-trade-deadline-rumors-live-updates-news-on-yankees-mets-phillies-more-with-notable-names-set-to-move/live/]
+
+- MLB trade deadline rumors and live updates: Astros re-acquire Carols Correa from Twins - The Athletic: The 2025 MLB trade deadline is set for 6 p.m. ET, with live updates covering various trades including the Astros re-acquiring Carlos Correa from the Twins. Other notable moves include the Phillies acquiring Jhoan Duran, the Mets trading for Tyler Rogers and Ryan Helsley, and the Padres securing Mason Miller and JP Sears. The Twins are actively selling multiple players, and there are ongoing discussions for pitchers like Dylan Cease. The blog provides real-time analysis from The Athletic staff on team strategies and deadline deals. [https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/]
+Key Quotes: ""There’s definitely more coming."" - Twins source | ""not something that I think is serious right now"" - Carlos Correa | ""I’d like to nominate that for Understatement of the Year."" - Aaron Gleeman
+
+---
+
+TOPIC: Tech Industry Updates
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Latest Technology News Coverage",
+      "description": "Reuters provides updates on global technology developments, including breaking news from various sectors of the tech industry.",
+      "source": "Reuters Tech News"
+    },
+    {
+      "title": "Artificial Intelligence Developments",
+      "description": "Reuters covers how AI is influencing industries and creating new norms, with recent updates on AI advancements and their implications.",
+      "source": "Reuters AI News"
+    },
+    {
+      "title": "Aggregated Global News Updates",
+      "description": "Google News aggregates real-time stories from around the world, including tech industry updates such as innovations and market changes.",
+      "source": "Google News"
+    },
+    {
+      "title": "UK News Including Tech Updates",
+      "description": "BBC News reports on current events in the UK, which may include tech-related stories such as digital innovations or industry impacts.",
+      "
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Google News: Google News aggregates news from various sources worldwide, providing users with up-to-date headlines on topics like politics, health, and business. Key stories include Virginia Giuffre’s family responding to Donald Trump’s claims about Jeffrey Epstein, with a quote urging no pardon for Ghislaine Maxwell. Other updates cover a US envoy's visit to Gaza amid reports of casualties during aid distribution and legal scrutiny of Trump's tariff policies. The platform also features personalized news feeds, weather updates, and options for users to sign in for customized content. Additionally, it includes stories from outlets like BBC and CNN on international events. [https://www.reuters.com/technology/]
+Key Quotes: "'A monster who deserves to rot in prison'" - Virginia Giuffre’s Family
+
+- UK | Latest News & Updates | BBC News: BBC News covers a range of UK and international stories, including health, politics, and technology updates. Nurse leaders from the Royal College of Nursing warned of potential strike action if pay issues are not addressed, highlighting feelings of being undervalued. A man injured in an incident involving far-right activist Tommy Robinson has been discharged from hospital, with police seeking to question Robinson. Children's author Allan Ahlberg passed away at age 87, known for books like The Jolly Postman. Ofcom is investigating 34 porn sites for failing to implement age verification checks, amid new UK regulations. [https://www.reuters.com/technology/cybersecurity/]
+Key Quotes: "'Either they’re having an affair, or they’re just very shy.'" - Chris Martin | "'Staff were physically sick'" - Former restaurateur
+
+- This Week's Top Five Stories in Technology: Technology Magazine highlighted several key tech industry developments in its weekly roundup. A ransomware attack targeted Peter Green Chilled, a supplier to UK supermarkets like Tesco and Sainsbury's, disrupting operations but leaving transport unaffected. Verizon abandoned its diversity, equity, and inclusion policies to secure a $20 billion acquisition of Frontier Communications amid regulatory pressure. Barrelhand and UNESCO collaborated on a digital artefact bound for the moon to preserve human culture. Jony Ive joined OpenAI to develop AI-native hardware, emphasizing the need to reimagine computer usage. [https://www.reuters.com/technology/artificial-intelligence/]
+Key Quotes: "The transport activities of the business have continued unaffected throughout this incident," - Tom Binks, Managing Director at Peter Green Chilled | "I think we have the opportunity here to kind of completely re-imagine what it means to use a computer," - Sam Altman, CEO of OpenAI
+
+- Microsoft SharePoint hacked; Astronomer CEO and HR head resign; Realme and iQoo launch phones, AI talent war heats up and other top tech news of the week: A major cyberattack compromised Microsoft SharePoint servers globally, potentially affecting thousands of organizations with security flaws. Astronomer CEO Andy Byron and HR head Kristin Cabot resigned following a viral 'Kiss Cam' incident at a Coldplay concert. Microsoft intensified its AI talent war by poaching staff from Google DeepMind, including engineers behind the Gemini chatbot. New product launches included smartphones and tablets from OnePlus, Realme, and iQoo in India, focusing on features like AI integration and high battery life. Intel announced plans to lay off 24,000 employees as part of cost-cutting measures, and Google revealed the launch date for its Pixel 10 series in India. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "'Either they’re having an affair, or they’re just very shy.'" - Chris Martin
+
+---
+
+TOPIC: Corporate Earnings Reports
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [],
+  "notes": "Data is sparse; no specific articles from the last 24 hours found on corporate earnings reports."
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Earnings Reports and News: Investopedia compiled summaries of recent corporate earnings announcements from various companies, highlighting financial performances across multiple sectors. Ford reported strong results and reinstated its outlook despite tariff impacts, while AB InBev's stock declined due to plunging demand in China and Brazil. Other companies like Comcast, Mastercard, and CVS Health surpassed Q2 estimates, with some raising their profit outlooks. Conversely, Spotify experienced weaker results and a soft outlook, leading to a stock decline. The reports, dated from July 2025, cover earnings in industries such as automotive, consumer goods, technology, and finance, providing insights into market trends and economic factors like tariffs. [https://www.reuters.com/world/]
+Key Quotes: "'Back to Starbucks' Plan Is Ahead of Schedule" - CEO Niccol (Starbucks) | "'Less Uncertain' World Now" - CEO (United Airlines)
+
+- FTSE MIB Rises as Corporate Earnings Boost Sentiment: The FTSE MIB index increased by 0.4% to close at 40,760, outperforming other major European indices, driven by positive corporate earnings from companies like Eni and Moncler. Eni shares gained 1.8% after reporting stronger-than-expected results, a reduction in net debt, and an improved full-year target for its gas and LNG division. Moncler climbed 2.9% following robust Q2 earnings, contributing to overall market sentiment. ECB President Christine Lagarde reiterated a cautious stance, downplaying the possibility of a rate cut in September despite inflation reaching the 2% target. Investors also monitored upcoming Federal Reserve meetings and trade negotiations, with Italian consumer confidence rising and business sentiment slightly declining. [https://www.reuters.com/]
+Key Quotes: "downplaying the likelihood of a rate cut in September despite inflation hitting the 2% target" - ECB President Christine Lagarde
+
+---
+
+TOPIC: Political and Tariff Developments
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "U.S. Imposes 50% Tariffs on Brazil and Sanctions",
+      "summary": "The U.S. has imposed a 50% tariff on Brazil and sanctioned a judge involved in investigations related to former President Jair Bolsonaro, escalating trade tensions and political relations.",
+      "source": "The New York Times - https://www.nytimes.com/2025/07/30/world/americas/trump-sanctions-brazil-judge-bolsonaro.html"
+    },
+    {
+      "title": "U.S. Announces Trade Deal with South Korea Involving Tariff Reductions",
+      "summary": "The U.S. has announced a trade deal with South Korea that reduces tariffs from 25% to 15%, aiming to address trade imbalances and promote economic cooperation.",
+      "source": "The New York Times - https://nytimes.com/live/2025/07/30/us/trump-news"
+    },
+    {
+      "title": "Trump Administration's Tariff Actions and Political Accusations",
+      "summary": "The Trump administration is pursuing aggressive tariff measures, including a 50% lev
+
+X POSTS FROM SEARCH (1):
+- Ankit Mayank: "#TrumpTariff in last 24 hours 🚨
+
+&gt; Imposed 25% tariff+penalty
+
+&gt; Announced deal with Pakistan
+
+&gt; Mocked &amp; insulted India 
+
+Meanwhile BJP IT cell : So what, Trump pulled chair Modi Ji 😭😭😭 https://t.co/H7NRRbdx5B" (45511 views, 603 likes) https://x.com/mr_mayank/status/1950771490091405705
+
+SUPPORTING ARTICLES (7):
+- What are tariffs, how do they work and why is Trump using them?: Tariffs are taxes imposed on imported goods, typically as a percentage of the product's value, which increases costs for importers and may be passed on to consumers. President Trump has used tariffs to boost American manufacturing, reduce the trade deficit, and pressure trade partners into favorable deals. Specific tariffs include 50% on steel and aluminum, and varying rates on imports from countries like China, Mexico, and Canada, with some exemptions and delays. These measures have caused volatility in global markets, higher prices for US consumers, and downgraded economic growth forecasts by organizations like the IMF and OECD. Critics argue the policies disrupt international trade, while Trump claims they protect US jobs and interests. [https://www.reuters.com/business/tariffs/]
+Key Quotes: "Trump says tariffs will encourage US consumers to buy more American-made goods, increase the amount of tax raised and boost investment." - Donald Trump | "He argues that America has been taken advantage of by 'cheaters', and 'pillaged' by foreigners." - Donald Trump | "Trump said the agreement with European Commission President Ursula von der Leyen was 'the biggest deal ever made'." - Donald Trump
+
+- U.S. Hits Brazil With 50% Tariffs and Sanctions in Sharp Escalation - The New York Times: The US imposed a 50% tariff on Brazilian imports and sanctioned Brazilian Supreme Court Justice Alexandre de Moraes for alleged human rights abuses related to cases against former President Jair Bolsonaro. President Trump justified the actions as a response to political persecution of his ally Bolsonaro and censorship in Brazil. Brazilian President Luiz Inácio Lula da Silva condemned the measures as an infringement on sovereignty and democracy, hinting at possible retaliatory tariffs. Many Brazilian exports, such as commercial aircraft and orange juice, are exempt from the tariffs, with the levies set to take effect soon. The sanctions were issued under the Global Magnitsky Act, freezing any US assets of the justice and prohibiting certain transactions. [https://www.reuters.com/business/procter-gamble-hikes-us-prices-blunt-tariff-hit-ceo-transition-looms-2025-07-29/]
+Key Quotes: "I think it’s important for President Trump to consider: If he wants to have a political fight, then let’s treat it as a political fight. If he wants to talk trade, let’s sit down and discuss trade. But you can’t mix everything together." - Luiz Inácio Lula da Silva | "Moraes is responsible for an oppressive campaign of censorship, arbitrary detentions that violate human rights, and politicized prosecutions — including against former President Jair Bolsonaro." - Scott Bessent | "Today is a historic day." - Eduardo Bolsonaro
+
+- President Announces Trade Deal With South Korea - The New York Times: President Trump announced a trade deal with South Korea reducing tariffs on South Korean goods from 25% to 15% and securing a $350 billion investment in the US. He also imposed a 50% tariff on copper products and additional tariffs on India, citing dissatisfaction with trade negotiations. The administration faced legal challenges, including a court ruling barring penalties against individuals associated with the International Criminal Court. Treasury Secretary Scott Bessent criticized Republican efforts to privatize Social Security through new accounts for children. The deal aims to strengthen US-South Korea economic ties amid broader tariff strategies. [https://www.bbc.com/news/articles/cn93e12rypgo]
+Key Quotes: "Today the dream of easily transportable, electronic medical records finally becomes a reality." - Donald Trump | "The system will be entirely opt-in, and there will be no centralized government-run database." - Donald Trump | "Trump accounts Republicans created for children in their tax and spending bill are a 'back door for privatizing Social Security.'" - Scott Bessent
+
+- Trump news at a glance: president on tariff blitz ahead of August deadline | Trump administration | The Guardian: Donald Trump imposed a 50% tariff on Brazilian exports and sanctioned a Supreme Court justice involved in prosecuting Jair Bolsonaro, prompting accusations of undermining Brazilian democracy. He also announced a 25% tariff on Indian goods and a 15% tariff on South Korean imports as part of a trade deal. The US Federal Reserve held interest rates steady despite pressure from Trump, and concerns were raised about a new health data system involving tech companies. Brazilian President Lula da Silva stated he does not fear conflict with Trump and criticized the actions as politically motivated. The moves are part of a broader tariff strategy ahead of deadlines, affecting global trade relations. [https://www.reuters.com/]
+Key Quotes: "I do not fear getting on the wrong side of Donald Trump." - Luiz Inácio Lula da Silva | "a direct attack on Brazilian democracy" - Allies of Luiz Inácio Lula da Silva
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by Lisa Richwine (7/31/2025): "Paramount Global beats earnings target ahead of sale to Skydance" - Paramount Global posted second-quarter earnings that exceeded Wall Street estimates on Thursday as the company prepares for a sale to Skydance Media. [https://www.reuters.com/business/media-telecom/paramount-global-beats-earnings-target-ahead-sale-skydance-2025-07-31/]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Roku beats second-quarter revenue estimates, shares rise" - Roku topped Wall Street estimates for second-quarter revenue on Thursday, helped by its expanding user base and advertising sales, sending its shares up 8% in trading after the bell. [https://www.reuters.com/business/media-telecom/roku-beats-second-quarter-revenue-estimates-shares-rise-2025-07-31/]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Coinbase reports rise on quarterly profit subscription strength" - Coinbase Global reported a jump in second quarter profit on Thursday, as the cryptocurrency exchange earned more from its subscription and services model. [https://www.reuters.com/business/coinbase-reports-rise-quarterly-profit-subscription-strength-2025-07-31/]
+- [Updated RSS Feed] by Deborah Sophia (7/31/2025): "Amazon projects quarterly revenue above market estimates" - Amazon.com forecast current-quarter revenue above market estimates on Thursday, encouraged by solid retail business despite pressures from U.S. tariffs on imports, while its cloud computing unit also benefits from strong AI demand. [https://www.reuters.com/business/retail-consumer/amazon-projects-quarterly-revenue-above-market-estimates-2025-07-31/]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Reddit forecasts strong revenue on AI-driven ad strength, shares surge" - Reddit forecast third-quarter revenue above Wall Street estimates on Thursday, betting on growing digital advertising driven by its artificial intelligence-powered marketing tools and sending its shares up 9% in extended trading. [https://www.reuters.com/business/media-telecom/reddit-forecasts-strong-revenue-ai-driven-ad-strength-shares-surge-2025-07-31/]
+- [Updated RSS Feed] by Chuck Mikolajczak (7/31/2025): "Equities stall as early enthusiasm ebbs; Amazon, Apple earnings due" - U.S. stocks closed well off early highs on Thursday, following the latest round of corporate earnings and economic data, as investors awaited results from megacaps Amazon and Apple due after the closing bell. [https://www.reuters.com/business/equities-stall-early-enthusiasm-ebbs-amazon-apple-earnings-due-2025-07-31/]
+- [Updated RSS Feed] by Luciana Magalhaes,Ana Mano (7/31/2025): "Brazilian companies react to Trump's tariffs with relief and doubt" - Brazilian companies reacted with a mix of relief and doubt after the White House surprised them on Wednesday with a list of nearly 700 exceptions to the 50% tariff U.S. President Donald Trump imposed on the country's exports from August 6. [https://www.reuters.com/business/aerospace-defense/brazilian-companies-react-trumps-tariffs-with-relief-doubt-2025-07-31/]
+- [Updated RSS Feed] by Dan Catchpole (7/31/2025): "Boeing makes new contract offer to St. Louis defense workers" - U.S. planemaker Boeing sent a new contract offer on Thursday to the union representing roughly 3,200 factory workers at Boeing's defense division, mostly in the St. Louis area. [https://www.reuters.com/business/world-at-work/boeing-makes-new-contract-offer-st-louis-defense-workers-2025-07-31/]
+- [Updated RSS Feed] by Carol Robinson | crobinson@al.com (7/31/2025): "Man killed when Tesla runs off road, crashes into trees, catches on fire in Walker County" - Alabama State Troopers identified the victim as Joshua K. Leblanc. He was 29. [https://www.al.com/news/2025/07/man-killed-when-tesla-runs-off-road-crashes-into-trees-catches-on-fire-in-walker-county.html]
+- [Updated RSS Feed] by @TeslaCharging (7/31/2025): "@TeslaCharging: RT by @sawyermerritt: Update: the new Electric Mobility regulation was approved in Portugal! Openings on track for this year, all ASAP: → Fatima (+18 stalls & V4 upgrade of existing stalls) → Mealhada (+20 stalls & V4 upgrade of existing stalls) → Alcantarilha (+12 stalls & V4 upgrade of existing…" - Update: the new Electric Mobility regulation was approved in Portugal!
+Openings on track for this year, all ASAP:
+→ Fatima (+18 stalls & V4 upgrade of existing stalls)
+→ Mealhada (+20 stalls & V4 upgrade of existing stalls)
+→ Alcantarilha (+12 stalls & V4 upgrade of existing… https://t.co/oP40Hm86mh
+— Tesla Charging (@TeslaCharging) July 31, 2025 [https://x.com/TeslaCharging/status/1951005305535697231]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Israel sharpens travel warning for Israelis in UAE, PM's office says" - The Israeli Prime Minister's office said on Thursday the National Security Council has sharpened its travel warning for Israelis staying in the United Arab Emirates. [https://www.reuters.com/world/middle-east/israel-sharpens-travel-warning-israelis-uae-pms-office-says-2025-07-31/]
+- [Updated RSS Feed] by ABC7 Chicago Digital Team (7/31/2025): "Gurnee police investigating 15 business break-ins, some burglaries" - Fifteen businesses in the north suburbs were broken into early Wednesday morning, police said Thursday. Some were burglarized. [https://abc7chicago.com/post/gurnee-police-investigating-15-business-break-ins-burglaries-riverside-drive/17378781/]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Activist Carronade builds pressure on Viasat to split business" - Activist investor Carronade Capital Management urged Viasat to split its defense business as part of the satellite communications firm's ongoing strategic review. [https://www.reuters.com/sustainability/boards-policy-regulation/activist-carronade-builds-pressure-viasat-split-business-2025-07-31/]
+- [Updated RSS Feed] by Jeff Mason,Nandita Bose (7/31/2025): "White House says no decision yet for location of 2026 G20 summit" - The White House said on Thursday it is not yet ready to announce the location of next year's Group of 20 leaders' summit, following reports that President Donald Trump is considering hosting the event at his Doral golf club in Miami, Florida. [https://www.reuters.com/world/white-house-says-no-decision-yet-location-2026-g20-summit-2025-07-31/]
+- [Updated RSS Feed] by Alistair Barr (7/31/2025): "Meta CEO Mark Zuckerberg is backsliding on the company's open-source approach to AI. It's a sensible pivot." - The Meta CEO is signaling a major strategic shift in the company's approach to generative AI. [https://www.businessinsider.com/meta-ceo-mark-zuckerberg-backsliding-open-source-approach-ai-2025-7]
+- [Updated RSS Feed] by Mike Hollan (7/31/2025): "President Trump Issues Letters to 17 Major Pharma Companies Demanding Action on Most-Favored-Nation Order" - The letter states that the companies have 60 days to meet the President's requirements. [https://www.pharmexec.com/view/president-trump-letters-17-most-favored-nation-order]
+- [Updated RSS Feed] by Chris Young (7/31/2025): "Tampa advocates to protest proposed Florida bear hunt outside FWC commissioner’s business" - On August 13th and 14th, the Florida Fish and Wildlife Conservation Commission will consider rules for a three-week bear hunt. [https://www.wmnf.org/tampa-advocates-to-protest-proposed-florida-bear-hunt-outside-fwc-commissioners-business/]
+- [Updated RSS Feed] by Talk Business & Politics staff (7/31/2025): "Arkansas-Asia business group names new executive director, board members - Talk Business & Politics" - The Arkansas Association of Asian Businesses has appointed Jayesh Ramnani of Bentonville as the association’s executive director, according to a Thursday (July 31) news release. The organization also named two new board... [https://talkbusiness.net/2025/07/arkansas-asia-business-group-names-new-executive-director-board-members/]
+- [Updated RSS Feed] by Yahoo Finance (7/31/2025): "The simple 3-step plan to build your business" - Listen and subscribe to The Big Idea with Elizabeth Gore on Apple Podcasts, Spotify, or wherever you find your favorite podcast. To find your “big idea” - start with what breaks your heart or lights your soul on fire - an emotion that drives great businesses. That’s what powerhouse entrepreneur Kathleen Griffith says on how to discover your business’s core purpose and turn it into a powerful brand. On this episode of The Big Idea, Kathleen reveals to host Elizabeth Gore that big ideas aren’t just for big brands. Griffith breaks down how to craft a brand mission, position it smartly and turn it into a one-liner that sells. Want to build like a boss? Start here on The Big Idea with Elizabeth Gore. Yahoo Finance’s The Big Idea with Elizabeth Gore takes you on a journey with America’s entrepreneurs as they navigate the world of small business. [https://finance.yahoo.com/video/simple-3-step-plan-build-190044788.html]
+- [Updated RSS Feed] by Alejandro Figueroa | Lauren Dake | Andrew Theen (7/31/2025): "‘OPB Politics Now’: Explaining Oregon’s farm stand rules kerfuffle" - Oregon's latest land use battle pits farm stands against one of the state's biggest conversation groups. [https://www.opb.org/article/2025/07/31/think-out-loud-farm-stand-land-use-agritourism/]
+- [Updated RSS Feed] by Chuck Mikolajczak (7/31/2025): "Equities ease from earlier highs with Amazon, Apple earnings due" - U.S. stocks were well off earlier highs on Thursday, as the Nasdaq and S&P clung to slight gains following the latest swath of corporate earnings and economic data, with results from megacaps Amazon and Apple due after the closing bell. [https://www.reuters.com/business/equities-ease-earlier-highs-with-amazon-apple-earnings-due-2025-07-31/]
+- [Updated RSS Feed] by Anastasiia Malenko,Vladyslav Smilianets (7/31/2025): "Russian strikes kill at least 14 people in Kyiv, 6-year-old boy among dead" - Russia launched waves of missiles and drones on Kyiv before dawn on Thursday, killing at least 14 people including a six-year-old boy, and wounding well over 100 others, officials in the Ukrainian capital said. [https://www.reuters.com/world/russian-strikes-kill-least-14-people-kyiv-6-year-old-boy-among-dead-2025-07-31/]
+- [Updated RSS Feed] by Madison Muller (7/31/2025): "Trump demands largest pharma companies slash US drug prices" - (Bloomberg) -- President Donald Trump sent letters to 17 of the world’s largest pharmaceutical companies — including Eli Lilly & Co., Novo Nordisk A/S and Pfizer Inc. — insisting they slash their US prices on new drugs to the lowest amount paid by certain other countries.Most Read from BloombergThe World’s Data Center Capital Has Residents SurroundedAn Abandoned Art-Deco Landmark in Buffalo Awaits RevivalWe Should All Be Biking Along the BeachBudapest’s Most Historic Site Gets a Controversial Re [https://finance.yahoo.com/news/trump-demands-largest-pharma-companies-180512353.html]
+- [Updated RSS Feed] by @7NewsWatertown (7/31/2025): "Jefferson Co. business owner speaks out after feds detain workers" - “They’re not taking criminals.” That’s what a Jefferson County business owner is saying after immigration officials recently detained his workers. [https://www.wwnytv.com/video/2025/07/31/jefferson-co-business-owner-speaks-out-after-feds-detain-workers/]
+- [Updated RSS Feed] by Wesley Matlock (7/31/2025): "Seattle City Light Earns 2025 Trusted Business Partner Award " - Seattle City Light has been named a 2025 Trusted Business Partner by Escalent, a leading data analytics and advisory firm specializing in human behavior research. This recognition places City Light among the top-performing utilities in the nation. The award highlights our commitment to providing exceptional customer service. We are proud of our success in building […] [https://powerlines.seattle.gov/2025/07/31/seattle-city-light-earns-2025-trusted-business-partner-award/]
+- [Updated RSS Feed] by Jeff Mason,Nandita Bose (7/31/2025): "Trump pressures 17 pharma CEOs to cut US drug prices" - U.S. President Donald Trump sent letters to the chief executives of 17 major pharmaceutical companies, urging immediate action to lower the cost of prescription drugs for Americans, the White House said on Thursday. [https://www.reuters.com/business/healthcare-pharmaceuticals/trump-pressures-17-pharma-ceos-cut-us-drug-prices-2025-07-31/]
+- [Updated RSS Feed] by Maggie Matteson (7/31/2025): "Huntsville man killed when Tesla crashed, catching fire in Walker County" - State Troopers say that a Huntsville man was killed in a single-vehicle crash on July 22 in Walker County. [https://whnt.com/news/huntsville/huntsville-man-killed-when-tesla-crashed-catching-fire-in-walker-county/]
+- [Updated RSS Feed] by Pia Singh (7/31/2025): "AI is 'bailing out' most of the U.S. stock market, Josh Brown says" - The investor called out a dangerous shift in focus towards AI and away from stocks considered "bellwether" indicators of U.S. economic and consumer health. [https://www.cnbc.com/2025/07/31/ai-is-bailing-out-most-of-the-us-stock-market-josh-brown-says-.html]
+- [Updated RSS Feed] by Peter Aitken (7/31/2025): "Trump sets deadline on drug price demand in letter to companies" - President Donald Trump sent a letter to 17 drug companies demanding a commitment to bring down prices in the next 60 days through a series of initiatives. [https://www.newsweek.com/trump-deadline-drug-price-demand-letter-companies-2107204]
+- [Updated RSS Feed] by Jayde  Ryan  (7/31/2025): "South Reno construction impacting a local business" - Business in South Reno impacted road construction [https://www.kolotv.com/2025/07/31/south-reno-construction-impacting-local-business/]
+- [Updated RSS Feed] by Investor's Business Daily (7/31/2025): "Figma Stock Blasts Off With Well-Received IPO" - Design software company Figma soared in its first day of trading after its IPO. Figma stock is one of the highest-profile IPOs this year. [https://www.investors.com/news/technology/figma-stock-fig-design-software-company-ipo/]
+- [Updated RSS Feed] by Reuters (7/31/2025): "Activist Carronade builds pressure on Viasat to split business, FT reports" - Activist investor Carronade Capital Management is urging Viasat to split its broadband and defense units, the Financial Times reported on Thursday, citing people familiar with the matter. [https://www.reuters.com/sustainability/boards-policy-regulation/activist-carronade-builds-pressure-viasat-split-business-ft-reports-2025-07-31/]
+- [Updated RSS Feed] by Phillip M. Bailey (7/31/2025): "Kamala Harris' decision kickstarts the 2028 Democratic presidential primary: 5 takeaways" - The former VP's decision to skip out on running for California governor changes the political math for her party - and back in her home state. [https://www.usatoday.com/story/news/politics/2025/07/31/kamala-harris-california-governor-2028-election-takeaways/85454240007/]
+- [Updated RSS Feed] by Amalya Dubrovsky (7/31/2025): "Stock market today: Dow, S&P 500, Nasdaq lose steam ahead of Trump tariff deadline, jobs report" - Wall Street weighed a tariff reprieve for Mexico, new trade deal with South Korea, and strong earnings from Meta and Microsoft. [https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-lose-steam-ahead-of-trump-tariff-deadline-jobs-report-133429649.html]
+- [Updated RSS Feed] by Max Mallow (7/31/2025): "Arne Slot Teases Liverpool Vice-Captain Replacement for Trent Alexander-Arnold" - Arne Slot has the important task this summer of not only bedding in new Liverpool signings, but also replacing a key member of his leadership group. [https://www.si.com/soccer/arne-slot-teases-liverpool-vice-captain-replacement-trent-alexander-arnold]
+- [Updated RSS Feed] by Peter Bolster (7/31/2025): "Liverpool's Adidas kits are back: What the shirts we wear really mean" - Read here. [https://www.thisisanfield.com/2025/07/liverpools-adidas-kits-are-back-what-the-shirts-we-wear-really-mean/]
+- [Updated RSS Feed] by Jamie Gardner (7/31/2025): "Alexander Isak's 'nuclear option' if Newcastle REFUSE to sanction Liverpool transfer " - Alexander Isak wants to join Liverpool from Newcastle United, but no offer has been forthcoming just yet from the Merseysiders, and the Magpies insist their wantaway player isn't for sale [https://www.mirror.co.uk/sport/football/transfer-news/alexander-isak-transfer-liverpool-newcastle-35653279]
+- [Updated RSS Feed] by Subhankar Mondal (7/31/2025): "Darwin Nunez: Liverpool set Darwin Nunez price-tag amid Juventus ‘discussions’ as Alexander Isak masterplan takes shape" - Liverpool striker Darwin Nunez is in talks with Juventus, as the Premier League champions plan to sell him to fund a deal for Alexander Isak. [https://www.teamtalk.com/liverpool/darwin-nunez-alexander-isak-liverpool-juventus-newcastle-united]
+- [Updated RSS Feed] by Danielle Wallace (7/31/2025): "Trump sends letters to 17 pharmaceutical companies on reducing drug prices" - President Donald Trump called out 17 Big Pharma CEOs over "exorbitant" drug pricing in individual letters sent out Thursday, the White House said. [https://www.foxbusiness.com/politics/trump-sends-letters-17-pharmaceutical-companies-reducing-drug-prices]
+- [Updated RSS Feed] by Madison Muller,Damian Garde,Robert Langreth (7/31/2025): "Trump Demands Pharma Companies Slash US Drug Prices in Letter" - President Donald Trump escalated his campaign to pressure pharmaceutical companies to lower drug prices, sending letters to 17 of the world’s largest drugmakers demanding they charge the US what other countries pay for new medicines. [https://www.bloomberg.com/news/articles/2025-07-31/trump-demands-pharma-companies-slash-us-drug-prices-in-letter]
+- [Updated RSS Feed] by Pranav Kashyap,Noel Randewich (7/31/2025): "Microsoft reaches $4 trillion valuation after solid results" - Microsoft hit $4 trillion in stock market value on Thursday, becoming the second publicly traded company after Nvidia to surpass that milestone following a blockbuster earnings report that showed its massive bets on AI are paying off. [https://www.reuters.com/business/retail-consumer/microsoft-reaches-4-trillion-valuation-after-solid-results-2025-07-31/]
+- [Updated RSS Feed] by Archie Griggs (7/31/2025): "Alexander Isak has already completed three big steps towards Liverpool transfer" - Alexander Isak is desperate to leave Newcastle and secure a move to Liverpool. [https://www.express.co.uk/sport/football/2089600/Alexander-Isak-Liverpool-transfer]
+- [Updated RSS Feed] by Jennifer Hansler (7/31/2025): "Democratic lawmakers press for answers from US security firms involved in controversial Gaza aid organization " - A group of Democratic lawmakers on Thursday pressed for answers from the heads of two private US-based security firms whose personnel have worked at the controversial Gaza Humanitarian Foundation and who the lawmakers say have been accused of deadly violence against civilians seeking aid in the starving enclave. [https://www.cnn.com/2025/07/31/politics/democrats-letter-security-firms-gaza-aid]
+- [Updated RSS Feed] by Stacker (7/31/2025): "How artificial intelligence could solve America's debt crisis" - Range reports AI-driven productivity gains could help combat America's rising debt crisis by boosting GDP, increasing tax revenues, and reducing inflation. [https://krdo.com/stacker-science/2025/07/31/how-artificial-intelligence-could-solve-americas-debt-crisis/]
+- [Updated RSS Feed] by David Lawder,Aida Pelaez-Fernandez (7/31/2025): "Trump gives Mexico 90-day tariff reprieve as deadline for higher duties looms" - U.S. President Donald Trump gave Mexico a 90-day reprieve from higher tariffs to negotiate a broader trade deal but was expected to issue higher final duty rates for most other countries as the clock wound down on his Friday deal deadline. [https://www.reuters.com/world/americas/trump-gives-mexico-90-day-tariff-reprieve-deadline-higher-duties-looms-2025-07-31/]
+- [Updated RSS Feed] by Amazon Web Services (7/31/2025): "Introducing AWS Batch Support for Amazon SageMaker Training jobs " - AWS Batch now seamlessly integrates with Amazon SageMaker Training jobs. In this post, we discuss the benefits of managing and prioritizing ML training jobs to use hardware efficiently for your business. We also walk you through how to get started using this new capability and share suggested best practices, including the use of SageMaker training plans. [https://aws.amazon.com/blogs/machine-learning/introducing-aws-batch-support-for-amazon-sagemaker-training-jobs/]
+- [Updated RSS Feed] by Amazon Staff (7/31/2025): "Everything you need to know about Amazon Nova" - From understanding models to creative content generation, the Amazon Nova family of foundation models is designed to meet customers’ needs. [https://www.aboutamazon.com/news/aws/amazon-nova-foundation-models-guide]
+- [Updated RSS Feed] by Brendan Keefe,azfamily staff (7/31/2025): "Not all utility companies are required to extend deadlines for customers on life support" - InvestigatesTV and Arizona's Family explains why not all utility companies are required to extend deadlines for customers on life support. [https://www.azfamily.com/2025/07/31/not-all-utility-companies-are-required-extend-deadlines-customers-life-support/]
+- [Updated RSS Feed] by Al Jazeera (7/31/2025): "UK, US and allies accuse Iran of cross-border assassination plots" - Fourteen countries in Europe and North America have accused Iran of plotting killings and kidnappings on Western soil. [https://www.aljazeera.com/news/2025/7/31/uk-us-and-allies-accuse-iran-of-cross-border-assassination-plots]
+- [Updated RSS Feed] by PBS News (7/31/2025): "Americans’ views on racial discrimination have shifted substantially in 4 years, poll shows" - A poll finds less than half of U.S. adults believe Black people face “a great deal” or “quite a bit” of discrimination. [https://www.pbs.org/newshour/politics/americans-views-on-racial-discrimination-have-shifted-substantially-in-4-years-poll-shows]
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Fabrizio Romano: "🚨 Manchester United have informed RB Leipzig that they are prepared to send formal bid for Benjamin Šeško, if player accepts the destination.
+
+Newcastle also ready to bid since last week and to match Šeško’s financial request.
+
+Decision up to Šeško 🇸🇮
+
+🎥 https://t.co/61BGikEmuB https://t.co/LeNhBoQZJ2" (2005687 views, 45113 likes) https://x.com/i/status/1950981253701718099
+- Fabrizio Romano: "🚨🇦🇷 After Vitor Reis, Manchester City also want Claudio Echeverri to go join Girona on loan for the season.
+
+Discussions ongoing between Echeverri and Girona to make final decision soon. https://t.co/LPzJ9HTTHR" (1096496 views, 17039 likes) https://x.com/i/status/1950989117916954810
+- Fabrizio Romano: "🚨🐺 EXCLUSIVE: Wolves agree deal to sign 23 year old Norwegian international left back David Møller Wolfe, here we go!
+
+Agreement in place with AZ Alkmaar and player due to travel for medical in next 24h. #WWFC beat Lille to the signing.
+
+Wolfe will replace Ait-Nouri. https://t.co/slwAAhzwqx" (1055616 views, 11214 likes) https://x.com/i/status/1950999845453570282
+- Fabrizio Romano: "🚨⚪️ Tottenham have agreed personal terms with João Palhinha and are in advanced talks with Bayern.
+
+Initial loan for Palhinha… and understand the agreement will also include a 𝐛𝐮𝐲 𝐨𝐩𝐭𝐢𝐨𝐧 𝐜𝐥𝐚𝐮𝐬𝐞, not mandatory.
+
+Spurs will cover his salary, deal at final stages. https://t.co/gdUGf5OkIU" (394233 views, 8505 likes) https://x.com/i/status/1951013835885912528
+- Barstool Sports: "Dudes rock
+
+https://t.co/LxjXIrOL8E" (395552 views, 3546 likes) https://x.com/i/status/1950994087953248260
+- Ian Rapoport: "Let’s go Mets. https://t.co/EwIMf9Aw9n" (308299 views, 896 likes) https://x.com/i/status/1951010363345952996
+- Ian Rapoport: "Let’s go. This was a blast, @Chubbies. https://t.co/Kdwm0EKyDT" (307065 views, 207 likes) https://x.com/i/status/1950999564590391511
+- Big Cat: "Just another @hen_ease hit job after Jimmy’s seafood. Guy can’t get some sun in peace anymore https://t.co/dfo4hS0UwD" (251807 views, 873 likes) https://x.com/i/status/1950999741673959691
+- Dave Portnoy: "Football season https://t.co/5b9y6swPEl" (250143 views, 461 likes) https://x.com/i/status/1950988324442607860
+- Big Cat: "We got the Orioles here for some gauntlet and trade deadline. Colton Cowser, Gunnar Henderson and Adley Rutschman 
+
+https://t.co/GeRCpMqv45" (238033 views, 95 likes) https://x.com/i/status/1950984582687264846
+- SpaceX: "Watch Falcon 9 launch 19 @Starlink satellites to orbit from California https://t.co/L5Nd9F4WvK" (187680 views, 1843 likes) https://x.com/i/status/1950986932642783367
+- Big Cat: "It’s coming. And if it doesn’t then Soroka is probably going to be incredible. This is the way https://t.co/ZcrZ1ZYV3a" (170435 views, 270 likes) https://x.com/i/status/1950998738647834633
+- Tesla: "Take in the views with FSD Supervised https://t.co/23k4TYToL8" (167880 views, 1510 likes) https://x.com/i/status/1950989287819714854
+- Ian Rapoport: "From Inside Training Camp Live: #Patriots RB TreVeyon Henderson could add a little flash to this team’s offense and like him, it could happen quickly. He spoke with me and @MikeGarafolo. https://t.co/FL8wjDpQAG" (161206 views, 441 likes) https://x.com/i/status/1950998678069518669
+- Big Cat: "Those are abs https://t.co/gWVBGT9Pmm" (156755 views, 216 likes) https://x.com/i/status/1951000375231914499
+- Big Cat: "Ive never been able to grow prominent chest hair, find a new slant https://t.co/DtW4Mk19k6" (156044 views, 126 likes) https://x.com/i/status/1951000570585547073
+- Sen. Bernie Sanders: "Tony Aguilar is a retired Special Forces Green Beret who won a Purple Heart for his service to this country. 
+
+He took a contract helping to distribute aid in Gaza. 
+
+There, he witnessed atrocities committed using American taxpayer dollars.
+
+Please watch this important video. https://t.co/eBp7XOeV1O" (139016 views, 3620 likes) https://x.com/i/status/1950989394795512233
+- Barstool Sports: "Speak when you see a college QB better than Jameis Winston @mostlysports https://t.co/892ExKolVq" (138703 views, 167 likes) https://x.com/i/status/1950989405880987961
+- PFT Commenter: "Looking for a lizard rental service in Chicago. Serious repsonses only  https://t.co/0w4tQAY6pH" (136085 views, 1347 likes) https://x.com/i/status/1951000824114716865
+- Barstool Sports: "Paige Spiranac Has A New Blonde Bomber Challenging Her In The Internet Golf Space. Welcome To The Party, Breckie Hill. https://t.co/BGa2syrKHs. https://t.co/b9IWRik3KP" (134880 views, 237 likes) https://x.com/i/status/1950988591393361947
+- Ian Rapoport: "Did you know why #Patriots WR Demario Douglas is nicknamed, “Pop?” Neither did we.
+
+Until Douglas joined me and @MikeGarafolo on Inside Training Camp Live for a fun visit. https://t.co/XG2OPBsR23" (131892 views, 250 likes) https://x.com/i/status/1951010310288003501
+- SpaceX: "Deployment of 19 @Starlink satellites confirmed" (126471 views, 1378 likes) https://x.com/i/status/1951004665317040238
+- Pardon My Take: "Is this real? https://t.co/RXyRkNezQ3" (103635 views, 1756 likes) https://x.com/i/status/1951006400085479424
+- Barstool Sports: "The List of Prospects Padres GM A.J. Preller Has Traded Over the Last Decade Is Certifiably Insane https://t.co/0JDuIyykyN https://t.co/hjRqp1qzRQ" (99260 views, 66 likes) https://x.com/i/status/1950983563051974882
+- Big Cat: "Aura https://t.co/gi7jke77yp" (98228 views, 550 likes) https://x.com/i/status/1950997392611819762
+- Barstool Sports: "The Astros got their guy back https://t.co/HAfhMV0zSG https://t.co/shM6HL60P5" (91549 views, 257 likes) https://x.com/i/status/1951014263033831777
+- Andrew Yang🧢⬆️🇺🇸: "New Microsoft study shows top 40 jobs subject to AI replacement.  The top 3 by number of jobs affected are Customer service reps, Sales reps and Market analysts.  Several million jobs will be automated away shortly. https://t.co/CZBbHcGH2i" (83446 views, 405 likes) https://x.com/i/status/1950980590318264406
+- Barstool Sports: ".@MeganMakinMoney likes Elly De La Cruz at the plate tonight against Carlos Carrasco and the Braves.
+
+She's taking over 1.5 total bases 
+
+@quickpicksshow @DraftKings #DKpartner 
+https://t.co/Mh9QQWt9tK" (83709 views, 37 likes) https://x.com/i/status/1950992349036974558
+- Barstool Sports: "The Biggest Move At The Trade Deadline Saw The Foo Fighters And Nine Inch Nails Trade Drummers https://t.co/fIgtArMjYL https://t.co/lGRPsZsbKi" (82033 views, 76 likes) https://x.com/i/status/1950981043793645724
+- Barstool Sports: "A chunked 5-iron is a stock 5-iron if we’re being honest.
+
+@FrankieBorrelli goes through his stock yardages with his @TaylorMadeGolf P•790’s. @ForePlayPod 
+
+ https://t.co/e2sxW3zWNE" (81746 views, 27 likes) https://x.com/i/status/1950989301535105325
+- The New York Times: "Robert Wilson, the acclaimed theater director, playwright and visual artist died on Thursday at 83. Wilson upended theatrical norms with wildly imaginative stagings of works like “Einstein on the Beach.” https://t.co/Q2Qk3uudYC" (80917 views, 44 likes) https://x.com/i/status/1950996167442985387
+- Barstool Sports: "You Are Looking Live: We Finally Get The Return Of Brent Musburger To TV, Joining The Booth To Help Call The Second Half Of Tonight's Game https://t.co/yzsBvqhX70 https://t.co/ILO4CbPhpk" (79899 views, 69 likes) https://x.com/i/status/1950991119069642902
+- The New York Times: "From @TheAthletic: World No. 2 Coco Gauff served 23 double faults and still won. This is how she won while giving away a set’s worth of points for free. https://t.co/DELNKflfh8 https://t.co/aA7moG0Ud4" (78702 views, 67 likes) https://x.com/i/status/1950982063743496393
+- Nancy Pelosi Stock Tracker ♟: "This ban seems to keep getting closer and closer
+
+Congrats to Unusual Whales on the White House shout out 🫡 https://t.co/vGxAQ8JuLc" (74234 views, 385 likes) https://x.com/i/status/1950989467273314660
+- EA SPORTS FC: "Check out the full Pitch Notes to see all of the updates coming to Clubs in #FC26: https://t.co/B3AiqRNIT3
+
+Let us know what you want to see in the mode here: https://t.co/uhMUy3LWOw" (73148 views, 151 likes) https://x.com/i/status/1950991301257683382
+- The New York Times: "From @TheAthletic: Top U.S. athletes will try to qualify for the World Championships starting today. Here's what you need to know about who's competing, including Olympic stars like Sha’Carri Richardson, Noah Lyles and Sydney McLaughlin-Levrone.  https://t.co/FE88Fcg87Z" (71564 views, 38 likes) https://x.com/i/status/1950996657291575500
+- CSPAN: "TONIGHT: Former President Biden Speaks at National Bar Association Gala in Chicago, IL (@nationalbar #nationalbar100) – LIVE at 8pm ET on C-SPAN https://t.co/ij2u6wm57n https://t.co/ihnU7Jo2Hq" (62870 views, 115 likes) https://x.com/i/status/1950981379371483239
+- The New York Times: "From @TheAthletic: The 2025 MLB trade deadline is today at 6 p.m. ET.
+
+The chaos is picking up. The New York Yankees just reportedly acquired David Bednar from the Pittsburgh Pirates. https://t.co/GsmvbZi9j7" (62792 views, 19 likes) https://x.com/i/status/1951004973510148155
+- National Geographic: "This summer, Earth is producing some of the shortest days since modern timekeeping began. On July 9, the planet completed its rotation 1.34 milliseconds quicker than the standard 24-hour day—and another record-setting day may still be on the horizon. 🔗  https://t.co/KWldEun9r2" (60911 views, 101 likes) https://x.com/i/status/1950994873785438248
+- Barstool Sports: "Day 3 of GRIT week recap. @PardonMyTake 
+
+Presented by @ChevyTrucks #chevy #ad #silverado
+
+ https://t.co/kOK4buujgu" (60208 views, 35 likes) https://x.com/i/status/1951012216314142932
+- Mario Nawfal: "🚨🇺🇸 FLOOD ALERT: NYC, NJ &amp; NY STATE BRACE FOR IMPACT
+
+1. Charge every device you own.
+2. Elevate boilers, water heaters, and electric panels above flood level.
+3. Move valuables upstairs or into waterproof containers.
+4. Use sandbags or barriers at basement doors and garages.
+5. https://t.co/WipQhWgwBZ" (59851 views, 179 likes) https://x.com/i/status/1950990596841013248
+- Barstool Sports: "Help Is On The Way: The Yankees Plan To Fix Their Bullpen Crisis Starts By Trading For Pirates Closer David Bednar https://t.co/2Nb19QaPKZ https://t.co/bvbkgoK1TG" (59448 views, 28 likes) https://x.com/i/status/1951011243776413955
+- World of Statistics: "What often destroys relationships but is hardly talked about?" (57837 views, 139 likes) https://x.com/i/status/1951000343170740371
+- Pardon My Take: "Thank you to everyone who came out to the Philly meet and Greet @trulyseltzer https://t.co/SuRMloCSaL" (51687 views, 150 likes) https://x.com/i/status/1950992089098879487
+- Tesla Charging: "Update: the new Electric Mobility regulation was approved in Portugal!
+
+Openings on track for this year, all ASAP:
+→ Fatima (+18 stalls &amp; V4 upgrade of existing stalls)
+→ Mealhada (+20 stalls &amp; V4 upgrade of existing stalls)
+→ Alcantarilha (+12 stalls &amp; V4 upgrade of existing https://t.co/oP40Hm86mh" (46890 views, 704 likes) https://x.com/i/status/1951005305535697231
+- Sky Sports Football: "Southampton have rejected an offer from Everton for midfielder Tyler Dibling ❌
+
+Sky Sports News understands the offer was around £27m. https://t.co/JvQGZSm5sS" (46283 views, 307 likes) https://x.com/i/status/1951006375338975585
+- Barstool Sports: "The Missing Piece: Giants DB Dru Phillips Found The Cheat Code To Success. He Got Surgery So He Can Actually See The Ball In The Air Now https://t.co/TnrkRBWpeU https://t.co/uTvvDcqbGC" (45909 views, 37 likes) https://x.com/i/status/1951013762015621328
+- Mario Nawfal: "🇺🇸 PRESS SEC LEAVITT: FROM MIDDLE EAST TO ASIA, TRUMP IS SHUTTING DOWN WARS
+
+"On the peace front, President Trump helped deliver an immediate and unconditional ceasefire between Thailand and Cambodia. 
+
+The 2 countries were engaged in a deadly conflict that had displaced more https://t.co/UPrhkJI2NF https://t.co/nsPlUSIBCj" (43728 views, 62 likes) https://x.com/i/status/1951006415901872180
+- Mario Nawfal: "🇺🇸 PRESS SEC LEAVITT:  TRUMP OPENED EUROPEAN MARKETS TO AMERICA LIKE NEVER BEFORE
+
+"On the trade front, the president secured a historic trade agreement with the European Union that puts America first and fundamentally strengthens the economic relationship between the 2 largest https://t.co/5DCYo2Fiqg https://t.co/2qeg0i2lBR" (41793 views, 63 likes) https://x.com/i/status/1951007457246904423
+- Mario Nawfal: "🇨🇳🇺🇸 U.S. MULLS CHINA TRAVEL WARNING AS DEADLY MOSQUITO VIRUS SPREADS
+
+Nearly 5,000 cases of chikungunya - a brutal mosquito-borne virus - have been reported in China, and the CDC is eyeing a travel alert.
+
+The outbreak exploded in Guangdong near Hong Kong, with 3,000+ infections https://t.co/GpKp3meyv2 https://t.co/66xRakOR7I" (41139 views, 71 likes) https://x.com/i/status/1950992357333278947
+- History Photographed: "Whose grandma is this? 1980s bikini competition https://t.co/6ypAAei4JO" (39196 views, 67 likes) https://x.com/i/status/1951005650911371523
+- Mario Nawfal: "🇺🇸 PRESS SEC LEAVITT: WHAT RECESSION? TRUMP’S POLICIES PROVE EXPERTS WRONG
+
+"What we are watching is President Trump rebuilding the greatest economy in the history of the world and simultaneously proving the so-called economic experts wrong at every turn. 
+
+Media pundits said a https://t.co/DU3fsx7lAS" (38344 views, 100 likes) https://x.com/i/status/1951004257819435364
+- Mario Nawfal: "🇺🇸 TRUMP'S EXECUTIVE ORDER: BIG PHARMA NEEDS TO REPENT
+
+Trump signed an order to force brand-name drug costs in the U.S. down to match the prices paid in other developed nations, where the same meds often cost three times less.
+
+The order gives companies like AbbVie 60 days to https://t.co/4MOB4d69jr https://t.co/bASxnB9wS9" (37004 views, 201 likes) https://x.com/i/status/1950983128899530997
+- World of Statistics: "BREAKING: 🇺🇸 Tech giant Microsoft passes $4 trillion milestone. 
+
+Microsoft has become only the second publicly traded company after Nvidia to surpass $4 trn in market valuation, after registering huge earnings." (36729 views, 196 likes) https://x.com/i/status/1950990180237623569
+- Mario Nawfal: "🇺🇸 🇰🇷TRUMP LANDS MASSIVE TRADE DEAL WITH SOUTH KOREA 
+
+South Korea will invest $350B in the U.S. and buy $100B worth of American LNG and energy.
+
+Seoul has also agreed to completely open trade and drop all tariffs on U.S. goods.
+
+Source: White House https://t.co/aittGDTs78 https://t.co/1Whwh6DqIM" (36244 views, 204 likes) https://x.com/i/status/1950985716516769836
+- Mario Nawfal: "🇧🇷 SANCTIONED JUSTICE MORAES COULD BRING DOWN BRAZIL’S BANKING SYSTEM
+
+Brazilian banks are paralyzed, unsure how far U.S. sanctions on Justice Moraes can reach, or how much damage they’ll cause.
+
+Despite leftist media insisting it’s “no big deal,” the sanctions under the Global https://t.co/09Dv01iG6P https://t.co/I2QFvQhygp" (35621 views, 467 likes) https://x.com/i/status/1950997292049445126
+- Fermat's Library: "2² + 3³ + 5⁵ + 7⁷ + 11¹¹ + ... + 89⁸⁹  is prime" (33090 views, 496 likes) https://x.com/i/status/1950987385988087926
+- Mario Nawfal: "🇺🇸 PETER NAVARRO: TRUMP DESERVES A NOBEL - FOR ECONOMICS
+
+“A lot of people talk about Trump for the Nobel Peace Prize. 
+
+I’m thinking that since he’s basically taught the world trade economics, he might be up for the Nobel in economics.
+
+This is a fundamental restructuring of the https://t.co/zWZ9TeD02J https://t.co/TeMpuO6E4M" (32192 views, 144 likes) https://x.com/i/status/1950989841673625720
+- World of Statistics: "🍌 The word “banana” in different languages:
+
+🇦🇱 banane 
+🇦🇿 banan
+🇧🇾 банан
+🇧🇦 banana
+🇧🇬 банан
+🇭🇷 banana
+🇨🇿 banán
+🇩🇰 banan
+🇳🇱 banaan 
+🇪🇪 banaan
+🇫🇮 banaani 
+🇫🇷 banane
+🇩🇪 Banane
+🇭🇺 banán
+🇮🇸 banani
+🇮🇪 banana
+🇮🇩 pisang 
+🇮🇹 Banana
+🇰🇿 банан
+🇱🇻 banāns
+🇱🇹 bananas
+🇲🇳 банан
+🇳🇴 banan
+🇵🇱" (32198 views, 76 likes) https://x.com/i/status/1951008512399610253
+- Mario Nawfal: "🇱🇹 LITHUANIA’S PM QUITS IN DISGRACE - GOVERNMENT COLLAPSES
+
+Gintautas Paluckas stepped down this morning after media exposés, corruption probes, and street protests made his position untenable.
+
+The final blow? Revelations he never paid off a fine from his role in the “rat poison https://t.co/zdNMyXmgNi https://t.co/ktFae7NhjS" (31728 views, 41 likes) https://x.com/i/status/1950997390560837935
+- Mario Nawfal: "🇪🇺🇭🇺 HUNGARY'S MEP: €17B IN EU FUNDS WENT TO LIBERAL ACTIVIST NETWORKS
+
+A new public database reveals the EU Commission handed out 37,000 contracts worth €17B from 2019–2023 to NGOs, many tied to political activism.
+
+Hungarian MEP Dömötör says these groups operate as “a liberal https://t.co/pwK7A1UQ8h https://t.co/nW8yAeTw8C" (31157 views, 63 likes) https://x.com/i/status/1950999907449577549
+- International Space Station: "Dust off your piloting skills, it’s time to land. 
+
+Manual Piloting evaluates how spaceflight affects an astronaut’s ability to safely land a spacecraft, a critical skill for future missions to the Moon and Mars. Dive into the details: https://t.co/Yib7GyubhX https://t.co/zdSvq7LPds" (28625 views, 146 likes) https://x.com/i/status/1950994961144430860
+- World of Statistics: "🇱🇹 Lithuania’s Prime Minister steps down" (28361 views, 92 likes) https://x.com/i/status/1951008904982524406
+- @jason: "Guys, stop…. I’m not running 🫡 
+
+Yet. https://t.co/oIaugDeyaT" (27118 views, 402 likes) https://x.com/i/status/1950999343223492663
+- Department of Government Efficiency: "Great work by the @USGSA for inking another OneGov deal with DocuSign. With this deal, Docusign’s e-signature plan will be offered at a 70% discount, and its Intelligent Agreement Management at a 50% discount. Potential savings at the GSA are $1.3B annually and opportunity for" (26763 views, 614 likes) https://x.com/i/status/1951016378728636609
+- Mario Nawfal: "ROBOT NOW DOES LAUNDRY... HUMANS OFFICIALLY OBSOLETE?
+
+A humanoid robot called Figure 02 just folded itself into CEO Brett Adcock’s house and started running the washing machine... completely on its own!
+
+It’s powered by Helix AI, which basically makes it smart enough to do your https://t.co/FS8RZd42ym" (27144 views, 131 likes) https://x.com/i/status/1951002424363069870
+- Illia Ponomarenko 🇺🇦: "Sixteen people, including kids, buried under the rubble of their home in Kyiv last night after yet another direct Russian missile strike.
+
+That -- once again-- is your fucking answer to whether Russia "wants peace," no matter how many more times you reach out to the Kremlin to" (25288 views, 474 likes) https://x.com/i/status/1951002961984835942
+- Illia Ponomarenko 🇺🇦: "Vovchansk. 
+
+The fortress city at the border has been holding on for over a year of battle.
+
+Population: 0. https://t.co/inAPVG1f8W" (22489 views, 360 likes) https://x.com/i/status/1951009191566647382
+- Mario Nawfal: "🚨🇺🇦 ON THE GROUND: UKRAINE’S FIGHT TO EXIST – BOMBS, HISTORY &amp; THE REFUSAL TO DISAPPEAR
+
+They said Kyiv would fall in 3 days.
+
+They were wrong.
+
+@EricBolling hosts a raw, unfiltered journey through Ukraine’s war for survival, featuring powerful testimony from @MDzhemilev, https://t.co/n0dPozsMC0 https://t.co/70aQkKmezI" (22489 views, 29 likes) https://x.com/i/status/1951015007040225444
+- Mario Nawfal: "🚨🇿🇦 SOUTH AFRICA SCRAMBLES TO AVOID U.S. TARIFF HIT - 100K JOBS ON THE LINE
+
+With 30% tariffs set to drop Friday, South Africa is racing to send a last-ditch trade offer to Trump’s White House - its 3rd in 3 months.
+
+The stakes? A $20B trade relationship and 100,000 jobs, https://t.co/qyGnglG79m https://t.co/hfcJ1hVEic" (20489 views, 30 likes) https://x.com/i/status/1951012490386538518
+- @jason: "Ok everyone, you can set you watch — it’s exactly SIX hours since the Figma IPO 😂😂😂 https://t.co/Hjgcr4fGGk" (20433 views, 53 likes) https://x.com/i/status/1950999421572784388
+- Mario Nawfal: "🇺🇸 TRUMP GREENLIGHTS $200M WHITE HOUSE BALLROOM PROJECT
+
+U.S. @PressSec, Karoline Leavitt:
+
+"We are proud to announce that the construction of the new White House Ballroom will begin soon. 
+
+For 150 years, presidents, administrations, and White House staff have longed for a large https://t.co/OMeV1vdAaq https://t.co/gHakd8vzst" (20271 views, 86 likes) https://x.com/i/status/1951009975683231931
+- Mario Nawfal: "THE LITTLE DRONE THAT MADE HISTORY ON ANOTHER PLANET
+
+NASA’s Ingenuity started as the underdog, a $80M experiment dismissed as a waste of time, costing less than the movie The Martian.
+
+Then, strapped under Perseverance, she touched down on Mars and pulled off the impossible: https://t.co/Y9TwjYEjIZ" (20100 views, 61 likes) https://x.com/i/status/1950987326013972620
+- Mario Nawfal: "🇷🇺 MICROSOFT: "RUSSIAN HACKERS ARE SPYING ON EMBASSIES IN MOSCOW"
+
+A major Kremlin-linked cyber unit dubbed “Secret Blizzard” is targeting foreign embassies by hacking local internet and telecom systems in Moscow, Microsoft says.
+
+The group used malware called ApolloShadow to https://t.co/eVZu72O9Tb" (18375 views, 52 likes) https://x.com/i/status/1950984807695212830
+- Mario Nawfal: "🔴LIVE: WHITE HOUSE ON RECENT UPDATES IN GAZA https://t.co/O6sxwZA3Ri" (18322 views, 83 likes) https://x.com/i/status/1950994311862165872
+- Car Dealership Guy: "[NEWS] Turns out hands-free driving is one of the hottest features on car buyers’ wishlists for 2025:
+
+A recent survey of 18K new vehicle shoppers shows 43% want semi-autonomous highway driving with driver attention.
+
+That’s up 20 points from last year.
+
+And the same share ranks" (18129 views, 44 likes) https://x.com/i/status/1950981019269759444
+- Mario Nawfal: "🔴LIVE: STATE DEPT ON MIDDLE-EAST PEACE DEAL https://t.co/zc4FxVxmTH" (15200 views, 49 likes) https://x.com/i/status/1951005843866132715
+- CSPAN: ".@PressSec: "We are proud to announce the construction of the new White House ballroom will begin...The White House state ballroom will be a much needed and exquisite addition of approximately 90,000 total square feet." https://t.co/Zm548HUNMc" (14032 views, 113 likes) https://x.com/i/status/1950985304199901450
+- Car Dealership Guy: "Car buyer acquisition is evolving—
+
+Social media is quietly becoming one of the most efficient channels in automotive.
+
+Matt Hogan, GM of Taverna Infiniti North Miami, breaks down how they’re landing $3 leads and $105 cost per car buyer using content-first strategies. https://t.co/7hltsCDktV" (13953 views, 11 likes) https://x.com/i/status/1950990119273422911
+- Car Dealership Guy: "➤ Stream the latest episode of the Car Dealership Guy Podcast now on your favorite platform—brought to you by Nomad Content Studio
+
+YouTube: https://t.co/AnSV3DXysz
+
+Apple Podcasts: https://t.co/Rz3PkOHx6e
+
+Spotify: https://t.co/nDsYzIavBq" (12772 views, 2 likes) https://x.com/i/status/1950990122070982949
+- NASA Webb Telescope: "NASA's Curious Universe podcast has a new series, and we're the star! 🌟
+
+In the first episode, Webb scientist Mic Bagley guides us through new discoveries made by Webb and how the telescope's data turns into the beautiful images we get to see.
+
+🎧 https://t.co/3tMkOiJtZ9 https://t.co/kqlxlddMke" (12635 views, 58 likes) https://x.com/i/status/1951015032747110600
+- Max Velocity: "MAJOR FLOODING THREAT is evolving in the Northeast right now, with several flash flood warnings in effect…
+
+Vehicles stranded and high waters in low-lying areas are causing big problems. Turn around, don’t drown! https://t.co/nYOv0Xacht" (11388 views, 207 likes) https://x.com/i/status/1951005449542574557
+- Car Dealership Guy: "[NEWS] Tariffs are hitting Ford where it hurts:
+
+The company now expects tariffs to shave $2B off annual operating profit, up from a $1.5B hit forecast just three months ago.
+
+That trims Ford’s projected operating income to $6.5–$7.5 billion.
+
+Which is down from the $7–$8.5B" (10742 views, 20 likes) https://x.com/i/status/1951010075620835543
+- World and Science: "Spectacular: Rays and shadows streaming from the centre of the nearby galaxy IC 5063, caused by a supermassive black hole and a dusty ring around it. 
+
+This effect, similar to sunset rays on Earth, stretches across 36,000 light-years!
+
+Credit: NASA, ESA, and W.P. Maksym (CfA) https://t.co/mDhO2oLRlU" (9448 views, 41 likes) https://x.com/i/status/1950993882902048782
+- TESLARATI: "🚨 Here's a maintenance list for an ICE vehicle:
+
+-Oil changes
+-Oil filter replacements
+-Spark plug replacements
+-Timing belt/chain replacements
+-Fuel filter replacements
+-Exhaust system maintenance
+-Emissions testing and inspections
+-Starter maintenance/replacements
+
+Here's a https://t.co/yvvl1M6bBl" (9245 views, 94 likes) https://x.com/i/status/1950986452361200091
+- Vintage Maps: "The world as known to the ancients. Droysen's Historical Atlas, 1886 https://t.co/Jt0ulsDdH7" (9108 views, 143 likes) https://x.com/i/status/1950987094685262252
+- TESLARATI: "https://t.co/syC9yJmH2E" (8775 views, 25 likes) https://x.com/i/status/1951002244188459416
+- Andrew Yang🧢⬆️🇺🇸: "Thanks for your leadership @RickCarusoLA - big days ahead for LA and California.  ⬆️🇺🇸 https://t.co/EgecT5jRdY" (8428 views, 19 likes) https://x.com/i/status/1951014761510084746
+- LabPadre Space: "Ship 37 has been static fire tested on Pad-1. A first static fire for the ship and a first stand-alone ship static fire on the launch mount. 🤙 https://t.co/7v3a7Y55aJ" (7012 views, 450 likes) https://x.com/i/status/1950997755788218844
+- World and Science: "Ten persistent myths about smoking that will not die: https://t.co/4Y4ZgmdkGQ" (7193 views, 4 likes) https://x.com/i/status/1951004868115616021
+- CSPAN: ".@SenatorRicketts, whose family owns the Chicago Cubs: "His family … and all the folks in the Cubs organization know how Ryne Sandberg was a man who was more than just a baseball player. He was the kind of man who was an example for all of us in this country." https://t.co/uwPKJCIrTE" (7170 views, 18 likes) https://x.com/i/status/1950985548618731960
+- CSPAN: ".@SenSchumer on Trump trade deals: "Each time it's the same story: Trump gets up, says whatever pops into his head that day, and the next day it comes out that everything he said was exaggerated, wrong, false." https://t.co/LNUOiIXd1f" (7019 views, 73 likes) https://x.com/i/status/1951005850446843991
+- NBC Sports Boston: "The Patriots' WR room got more crowded Thursday 👀
+
+@PhilAPerry breaks down how it all could shake out in a NEW 53-man roster projection 🔗 https://t.co/g2qym2PUB6 https://t.co/gQHNlAPM4h" (6756 views, 19 likes) https://x.com/i/status/1951006676535963977
+- Rocket Lab: "Launching next on Electron for its 69th mission is ‘The Harvest Goddess Thrives’ for @QPS_Inc 🚀 This will be Electron’s 4th launch this year for iQPS as part of a multi-launch contract to deploy their SAR Earth-imaging constellation.
+
+📅: NET August 5th UTC
+⌚: NET 03:45 UTC
+📍: https://t.co/s8fHAxe7u4" (6365 views, 249 likes) https://x.com/i/status/1951015036081811563
+- World and Science: "Is it true pasta doesn’t make you gain weight, and could even help you lose it? 
+
+Here is the science: https://t.co/BZf4bhCv6G" (6433 views, 7 likes) https://x.com/i/status/1951008977556295789
+- History Defined: "Barbara Hershey and David Carradine, 1970s https://t.co/DlLp6lPzFk" (6269 views, 73 likes) https://x.com/i/status/1950987410302509170
+- CSPAN: ".@SenSchumer News Conference on Tariffs – LIVE shortly online here: https://t.co/7zpAG6o3Lx" (6218 views, 4 likes) https://x.com/i/status/1950985359342342281
+- CSPAN: ".@StateDept briefing with @StateDeputySpox Tommy Pigott – LIVE shortly on C-SPAN3 https://t.co/erro53uAMe" (6136 views, 3 likes) https://x.com/i/status/1950982078268317772
+- History Defined: "Christina Applegate &amp; David Faustino on his birthday, 1992 https://t.co/mhJgKRBRTS" (6085 views, 30 likes) https://x.com/i/status/1950995267055931715

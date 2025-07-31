@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Local News and Events in Austin, TX\",\n      \"description\": \"Coverage of ongoing local news, including events in the Austin area such as weather, sports, and community activities.\",\n      \"source\": \"https://cbsaustin.com/news/local\"\n    }\n  ],\n  \"notes\": \"Only one relevant and recent source was found within the last 24 hours. Data is sparse for viral news stories about upcoming events in Austin, TX.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://www.bbc.com/news/uk",
+    "https://www.bbc.com/news/world",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://heyaustin.com/austin-events/",
+    "https://cbsaustin.com/news/local/live-coverage-no-kings-protests-begin-in-austin-across-central-texas",
+    "https://cbsaustin.com/news/local",
+    "https://austinot.com/things-to-do-in-austin-this-weekend-tx-fun-free-events-activities-couples-near-me",
+    "https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/29/evening-briefing-austin-july-29"
+  ]
+}

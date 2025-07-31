@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Latest Viral News and Videos Trending Globally\",\n      \"description\": \"Reports on the most recent viral news stories, including trending videos and social media events from around the world.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"Times Now\",\n          \"url\": \"https://www.timesnownews.com/viral\",\n          \"published\": \"19 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Top Trending News and Viral Topics Worldwide\",\n      \"description\": \"Coverage of today's viral news, including trending events, videos, and social media highlights from global sources.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"The Indian Express\",\n          \"url\": \"https://indianexpress.com/section/trending/\",\n          \"published\": \"16 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Breaking World News Stories and Current Events\",\n      \"description\": \"Updates on the latest world news developments, focusing on high-impact stories gaining widespread attention.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"Reuters\",\n          \"url\": \"https://www.reuters.com/world/\",\n          \"published\": \"15 hours ago\"\n        }\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories were identified from directly relevant sources in the last 24 hours due to limited available data on highly specific viral events.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/world",
+    "https://www.timesnownews.com/viral",
+    "https://indianexpress.com/section/trending/",
+    "https://news18.com/amp/buzz/latest-viral-news-live-updates-today-top-trending-social-media-viral-videos-livenews-7184857.html",
+    "https://torontosun.com/news/local-news/top-clicks-the-week-that-was-in-viral-stories-188",
+    "https://www.reuters.com/world/"
+  ]
+}
