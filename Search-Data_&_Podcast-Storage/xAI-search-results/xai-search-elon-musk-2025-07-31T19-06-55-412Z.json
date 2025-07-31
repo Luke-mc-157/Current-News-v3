@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk states that AI and robotics are essential for addressing global issues such as hunger, disease, and poverty.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/elon-musk/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk announces expansion of Tesla ride-hailing services to the San Francisco Bay Area.\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk describes a feature that integrates vehicle charging stations with drive-in movie theater capabilities.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/elon-musk/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk shares a custom prompt interaction using Grok on X.\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on high-engagement posts from X within the last 24 hours, with citations limited to directly related news sources; some supporting articles may not be explicitly from the last 24 hours due to available context.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.reuters.com/business/elon-musk/",
+    "https://www.hindustantimes.com/world-news/us-news/elon-musk-is-so-high-that-viral-oval-office-video-fuels-drug-use-speculation-101748647107918.html",
+    "https://www.newsweek.com/elon-musk-no-kings-protest-viral-2085965",
+    "https://cnn.com/2023/10/09/tech/musk-x-misinformation-israel-hamas-conflict",
+    "https://x.com/elonmusk/status/1950826456189473029",
+    "https://x.com/elonmusk/status/1950626837786439848",
+    "https://x.com/elonmusk/status/1950605071798165856",
+    "https://x.com/elonmusk/status/1950615786353201259",
+    "https://x.com/elonmusk/status/1950602459388452980"
+  ]
+}

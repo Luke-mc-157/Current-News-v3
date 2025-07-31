@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; only stories directly related to Austin, TX from the last 24 hours were identified, primarily from sports contexts involving names associated with Austin. No additional viral local stories were found in the searches.\",\n  \"stories\": [\n    {\n      \"headline\": \"NASCAR suspends driver Austin Hill and strips his playoff points for an intentional wreck.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6523724/2025/07/29/nascar-suspends-austin-hill/\"\n      ]\n    },\n    {\n      \"headline\": \"New York Yankees acquire outfielder Austin Slater in a trade with the Chicago White Sox.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6525105/2025/07/30/mlb-yankees-white-sox-austin-slater-trade/\"\n      ]\n    },\n    {\n      \"headline\": \"New York Yankees focus on adding to their bullpen and possibly a starting pitcher ahead of the MLB trade deadline.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6526616/2025/07/31/yankees-mlb-trade-deadline-austin-wells-error/\"\n      ]\n    },\n    {\n      \"headline\": \"MLB trade deadline updates include ongoing deals and analysis across the league.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://www.nytimes.com/athletic/6523724/2025/07/29/nascar-suspends-austin-hill/",
+    "https://www.nytimes.com/athletic/6525105/2025/07/30/mlb-yankees-white-sox-austin-slater-trade/",
+    "https://www.nytimes.com/athletic/6526616/2025/07/31/yankees-mlb-trade-deadline-austin-wells-error/",
+    "https://www.washingtonpost.com/",
+    "https://blog.parse.ly/austin-local-news-fosters-engagement/",
+    "https://www.fox7austin.com/news",
+    "https://austinmonitor.com/all-posts",
+    "https://austin.culturemap.com/news/entertainment/popular-stories-housing-market-risks/",
+    "https://cbsaustin.com/news/local"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Video footage shows Donald Trump on a golf course, leading to public accusations of cheating\",\n      \"citations\": [\n        \"https://www.newsweek.com/donald-trump-golf-cheating-viral-video-2104940\"\n      ]\n    },\n    {\n      \"headline\": \"Scottish newspaper publishes headline referring to Donald Trump as a convicted felon amid his visit\",\n      \"citations\": [\n        \"https://www.hindustantimes.com/world-news/donald-trump-convicted-felon-headline-in-scottish-paper-goes-viral-charges-against-us-president-101753513286654.html\",\n        \"https://economictimes.indiatimes.com/news/international/us/worlds-most-powerful-leader-a-convicted-us-felon-is-touring-scotland-and-its-newspaper-headline-on-donald-trump-is-going-viral/articleshow/122919104.cms\"\n      ]\n    }\n  ],\n  \"semantic_posts_stories\": [\n    {\n      \"headline\": \"BBC reports on Donald Trump's imposition of tariffs on various countries\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/cp7r8vgl2lgt\"\n      ]\n    },\n    {\n      \"headline\": \"Washington Post covers ongoing developments in Donald Trump's administration\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/donald-trump/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only four stories identified based on available data from the last 24 hours; data for semantic posts is limited to general Trump-related coverage as specific additional posts were not found.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/donald-trump/",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/topics/cp7r8vgl2lgt",
+    "https://www.nytimes.com/",
+    "https://news.google.com/home?hl=en-US&ceid=US:en&gl=US",
+    "https://www.newsweek.com/donald-trump-golf-cheating-viral-video-2104940",
+    "https://www.hindustantimes.com/world-news/donald-trump-convicted-felon-headline-in-scottish-paper-goes-viral-charges-against-us-president-101753513286654.html",
+    "https://abcnews.go.com/Politics/note-top-political-stories-day/story?id=42791145",
+    "https://economictimes.indiatimes.com/news/international/us/worlds-most-powerful-leader-a-convicted-us-felon-is-touring-scotland-and-its-newspaper-headline-on-donald-trump-is-going-viral/articleshow/122919104.cms?from=mdr",
+    "https://www.reuters.com/world/us/donald-trump/"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Pete Buttigieg criticizes Donald Trump\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://t.co/P4HRbSaFWC\"\n      ]\n    },\n    {\n      \"headline\": \"Democratic candidate sets new fundraising record\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://t.co/P4HRbSaFWC\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump faces scrutiny over recent public statements\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\",\n        \"https://t.co/P4HRbSaFWC\"\n      ]\n    },\n    {\n      \"headline\": \"US politics coverage includes updates on elections and administration\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/us\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories derived from high-engagement posts and news sources within the last 24 hours; data based on available context, treated as inconclusive for controversial topics.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/section/us",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&ceid=US:en&gl=US",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://politicalwire.com/trending-news",
+    "https://pewresearch.org/internet/2016/10/25/political-engagement-and-social-media",
+    "https://www.npr.org/sections/national/",
+    "https://www.buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook",
+    "https://x.com/TheDemCoalition/status/1950554512223035474"
+  ]
+}

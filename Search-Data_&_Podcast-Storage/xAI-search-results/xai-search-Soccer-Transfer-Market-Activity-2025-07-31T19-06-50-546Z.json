@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Nottingham Forest considers legal action over Tottenham Hotspur's pursuit of Morgan Gibbs-White\",\n      \"citations\": [\n        \"https://thescore.com/epl/news/3215176\"\n      ]\n    },\n    {\n      \"headline\": \"Federico Chiesa set to leave Liverpool and return to Italy\",\n      \"citations\": [\n        \"https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\"\n      ]\n    },\n    {\n      \"headline\": \"Borussia Dortmund eyes permanent transfer of Jadon Sancho from Manchester United\",\n      \"citations\": [\n        \"https://www.espn.com/soccer/story/_/id/45849375/transfer-rumors-news-newcastle-eye-jackson-replace-isak\"\n      ]\n    },\n    {\n      \"headline\": \"Florian Wirtz linked with potential move to Liverpool\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/transfers\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/transfers",
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/articles/czd055e4py2o",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://thescore.com/epl/news/3215176",
+    "https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://www.transfermarkt.co.uk/geruechte/aktuellegeruechte/statistik",
+    "https://www.espn.com/soccer/story/_/id/45785388/transfer-rumors-news-man-united-chelsea-jackson-leipzig-sesko",
+    "https://www.espn.com/soccer/story/_/id/45849375/transfer-rumors-news-newcastle-eye-jackson-replace-isak",
+    "https://x.com/Quick_RageEAFC/status/1950592151747801140"
+  ]
+}

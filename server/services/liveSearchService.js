@@ -932,19 +932,11 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement posts on X and correlating news articles from source types 'news' and 'RSS'. Use source type 'web' to support results if needed. Then, search for semantic posts on X that are not included in the previous searches, and correlating supporting articles from source types 'news' and 'RSS'. Return a JSON object. No additional text, explanations, or wrappers."
+          content: "You are a world class AI news aggregator. You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. Use source type 'web' to support results ONLY IF NEEDED. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
-          content: `Using first principles, identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Search X (formerly Twitter) and news sources for specific supporting articles from the last 24 hours. 
-
-Step 1: Use X keyword search tools to find the relevant posts, filtering for high engagement and excluding ads/promotions.
-
-Step 2: Search "News" for corresponding articles/posts.
-
-Step 3: For each story, synthesize a single factual, declarative headline (no opinions, just facts). Compile the list of citations links that informed it.
-
-Step 4: Use web search (focus on news sites like site:news.google.com or reputable sources) to find further supporting information if necessary.
+          content: `Identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Only cit specific supporting articles-from the last 24 hours ONLY. 
 
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.
 
@@ -1241,6 +1233,9 @@ function parseRobustJSON(content) {
   
   // Step 1: Clean up response in case of formatting issues
   let cleanContent = content.trim();
+  
+  // Remove JavaScript-style comments (// ...) that break JSON parsing
+  cleanContent = cleanContent.replace(/^\s*\/\/.*$/gm, '');
   
   // Remove markdown code blocks
   if (cleanContent.includes('```json')) {

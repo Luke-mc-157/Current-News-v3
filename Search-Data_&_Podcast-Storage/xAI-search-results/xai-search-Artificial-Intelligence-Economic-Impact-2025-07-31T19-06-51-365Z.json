@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"AI infrastructure company Fal raises $125 million in funding, valuing it at $1.5 billion.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/ai-infrastructure-company-fal-raises-125-million-valuing-company-15-billion-2025-07-31/\"\n      ]\n    },\n    {\n      \"headline\": \"China advances AI applications to compete with U.S. technological dominance.\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/world/2025/07/31/china-ai-united-states-control/\"\n      ]\n    },\n    {\n      \"headline\": \"AI projected to affect 18 million jobs in India's manufacturing, retail, and education sectors by 2030.\",\n      \"citations\": [\n        \"https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-to-impact-1-8-crore-jobs-in-manufacturing-retail-education-sectors-by-2030-report/articleshow/123002136.cms\"\n      ]\n    },\n    {\n      \"headline\": \"AI technology influences global labor market and economy across various sectors.\",\n      \"citations\": [\n        \"https://bloomberg.com/ai-jobs-economy\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data for semantic stories is sparse based on available searches; only high engagement stories with direct correlations were identified.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.washingtonpost.com/world/2025/07/31/china-ai-united-states-control/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/business/ai-infrastructure-company-fal-raises-125-million-valuing-company-15-billion-2025-07-31/",
+    "https://bloomberg.com/ai-jobs-economy",
+    "https://economictimes.indiatimes.com/topic/artificial-intelligence",
+    "https://www.economist.com/topics/artificial-intelligence",
+    "https://www.shrm.org/topics-tools/flagships/ai-hi/quick-hits-july-7",
+    "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-to-impact-1-8-crore-jobs-in-manufacturing-retail-education-sectors-by-2030-report/articleshow/123002136.cms"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"U.S. Federal Reserve maintains interest rates unchanged, leading to stock market fluctuations.\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/us/\",\n        \"https://finance.yahoo.com/news/live/stock-market-today-sp-500-crosses-6300-nasdaq-notches-record-with-big-tech-set-to-take-earnings-spotlight-200119190.html\"\n      ]\n    },\n    {\n      \"headline\": \"Meta and Microsoft report earnings exceeding expectations, contributing to stock market gains.\",\n      \"citations\": [\n        \"https://finance.yahoo.com/news/live/stock-market-today-sp-500-crosses-6300-nasdaq-notches-record-with-big-tech-set-to-take-earnings-spotlight-200119190.html\",\n        \"https://www.cnbc.com/2025/07/27/stock-market-today-live-updates.html\"\n      ]\n    },\n    {\n      \"headline\": \"S&P 500 index surpasses 6,300 amid ongoing corporate earnings reports.\",\n      \"citations\": [\n        \"https://finance.yahoo.com/news/live/stock-market-today-sp-500-crosses-6300-nasdaq-notches-record-with-big-tech-set-to-take-earnings-spotlight-200119190.html\",\n        \"https://www.reuters.com/markets/us/\"\n      ]\n    },\n    {\n      \"headline\": \"Investors anticipate U.S. Q2 GDP data release and corporate earnings amid market uncertainty.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/stock-market/\",\n        \"https://www.cnbc.com/2025/07/27/stock-market-today-live-updates.html\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/markets/",
+    "https://www.reuters.com/markets/currencies/",
+    "https://www.reuters.com/markets/europe/",
+    "https://finance.yahoo.com/news/live/stock-market-today-sp-500-crosses-6300-nasdaq-notches-record-with-big-tech-set-to-take-earnings-spotlight-200119190.html",
+    "https://www.cbsnews.com/tag/stock-market/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.cnbc.com/2025/07/27/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/news/stock-market-torrid-run-earnings-120007117.html",
+    "https://x.com/EinsteinoWallSt/status/1950666146967163332",
+    "https://x.com/Ajay_Bagga/status/1950377205579862347"
+  ]
+}

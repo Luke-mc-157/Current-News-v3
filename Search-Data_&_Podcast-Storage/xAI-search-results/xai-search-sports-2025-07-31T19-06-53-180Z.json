@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Arsenal Football Club has updates on transfers, results, and fixtures.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/teams/arsenal\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters publishes breaking sports news from around the world.\",\n      \"citations\": [\n        \"https://www.reuters.com/sports/\"\n      ]\n    },\n    {\n      \"headline\": \"The New York Times features coverage of sports events and updates.\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/sports\"\n      ]\n    },\n    {\n      \"headline\": \"BBC provides recent news on sports and global events.\",\n      \"citations\": [\n        \"https://www.bbc.com/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; specific viral stories may be limited due to sparse high-engagement X posts in the queried context.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/sports/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/",
+    "https://bleacherreport.com/articles/2304531-most-viral-sports-moments-of-the-year",
+    "https://www.phonearena.com/news/social-media-platform-x-twitter-under-criminal-investigation_id172214",
+    "https://frontofficesports.com/the-spread-of-sports-misinformation-on-x-is-increasingly-apparent",
+    "https://nytimes.com/section/sports",
+    "https://socialmediatoday.com/news/sports-topic-of-discussion-on-x-formally-twitter/727164"
+  ]
+}

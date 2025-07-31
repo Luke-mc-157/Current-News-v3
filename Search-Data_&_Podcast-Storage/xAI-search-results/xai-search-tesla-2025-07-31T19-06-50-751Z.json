@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Samsung Electronics signs $16.5 billion deal to produce AI semiconductors for Tesla\",\n      \"sources\": [\n        \"https://www.reuters.com/world/china/samsung-says-tariff-agreement-reduces-uncertainty-expects-tesla-deal-boost-2025-07-30/\",\n        \"https://www.bloomberg.com/news/articles/2025-07-28/samsung-bags-16-5-billion-deal-in-big-win-for-chipmaking-arm\",\n        \"https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/\"\n      ]\n    },\n    {\n      \"headline\": \"Leaked video shows Tesla Robotaxi drivers with hands on steering wheel in Bay Area\",\n      \"sources\": [\n        \"Posts found on X regarding Tesla Robotaxi incidents\"\n      ]\n    },\n    {\n      \"headline\": \"Spy shots on Chinese social media reveal Tesla's updated Model Y design for potentially lower price\",\n      \"sources\": [\n        \"https://electrek.co/2025/07/28/teslas-more-affordable-model-y-shown-in-spy-shots-on-chinese-social-media/\"\n      ]\n    },\n    {\n      \"headline\": \"Protesters gather at Tesla Diner in response to Elon Musk's involvement in US government spending reductions\",\n      \"sources\": [\n        \"https://www.cnn.com/2025/07/27/business/musk-tesla-diner-protest\"\n      ]\n    }\n  ],\n  \"notes\": \"All sources are from the last 24 hours based on available data; if data is sparse for any story, it is reflected in the sources listed.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/world/china/samsung-says-tariff-agreement-reduces-uncertainty-expects-tesla-deal-boost-2025-07-30/",
+    "https://www.bloomberg.com/news/articles/2025-07-28/samsung-bags-16-5-billion-deal-in-big-win-for-chipmaking-arm",
+    "https://electrek.co/2025/07/28/teslas-more-affordable-model-y-shown-in-spy-shots-on-chinese-social-media/",
+    "https://www.reuters.com/business/tesla-samsung-165-billion-supply-deal-may-spur-chipmakers-us-contract-business-2025-07-28/",
+    "https://seekingalpha.com/news/4472431-bullbear-debate-whats-next-for-tesla-after-its-earnings-release",
+    "https://www.cnn.com/2025/07/27/business/musk-tesla-diner-protest",
+    "https://x.com/ConsensusGurus/status/1950916771000590394"
+  ]
+}

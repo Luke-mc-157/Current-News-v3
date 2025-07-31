@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"NTSB holds hearings on Army helicopter's malfunctioning location system in deadly D.C. area plane crash\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/business/2025/07/30/ntsb-dc-plane-crash-reagan-national-airport/\"\n      ]\n    },\n    {\n      \"headline\": \"US airline attendant investigated following viral TikTok video promoting gifts for better in-flight treatment\",\n      \"citations\": [\n        \"https://aviationa2z.com/index.php/2025/05/23/us-airline-attendant-investigated-over-viral-tiktok-bribe\"\n      ]\n    },\n    {\n      \"headline\": \"Air India SATS addresses viral video showing officials at a gathering shortly after AI 171 aircraft incident\",\n      \"citations\": [\n        \"https://financialexpress.com/trending/air-india-sats-responds-to-viral-video-of-its-officials-partying-days-after-ai-171-crash-completely-out-of-context/3890389\"\n      ]\n    },\n    {\n      \"headline\": \"Physical altercation occurs on AirAsia flight from Kuala Lumpur to Chengdu involving passengers\",\n      \"citations\": [\n        \"https://news18.com/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html\"\n      ]\n    }\n  ],\n  \"notes\": \"All stories based on searches from high-engagement posts on X and correlating news articles from the last 24 hours; data is current as of 2025-07-31 and directly related to aviation topics.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/business/2025/07/30/ntsb-dc-plane-crash-reagan-national-airport/",
+    "https://www.reuters.com/",
+    "https://aviationa2z.com/index.php/2025/05/23/us-airline-attendant-investigated-over-viral-tiktok-bribe",
+    "https://financialexpress.com/trending/air-india-sats-responds-to-viral-video-of-its-officials-partying-days-after-ai-171-crash-completely-out-of-context/3890389",
+    "https://news18.com/amp/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html",
+    "https://www.reuters.com/business/aerospace-defense/",
+    "https://www.aljazeera.com/tag/aviation/"
+  ]
+}
