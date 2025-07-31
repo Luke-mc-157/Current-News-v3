@@ -945,7 +945,6 @@ CRITICAL: Do not include any sources or citations that are not directly related 
       ],
       search_parameters: {
         mode: "on",
-        max_search_results: 15,
         return_citations: true,
         reasoning_effort: "high",
         from_date: fromDate,
@@ -1073,7 +1072,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
 - RSS ARTICLES section contains supplementary content from user's RSS feeds
 - All engagement metrics preserved for ranking
 
-Return ONLY a JSON array in this exact format:
+Return ONLY a JSON array in this exact format (Use ONLY straight quotes " and ' in JSON. Escape all newlines as \n. No curly quotes or unescaped controls.):
 [
   {
     "title": "Specific headline from sources",
