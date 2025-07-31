@@ -118,6 +118,16 @@ Complete scheduling system for automated podcast delivery:
 - **Impact**: Podcasts now process with correct topic names throughout the entire pipeline
 - **Note**: This issue only appeared today due to recent code changes
 
+### **⚠️ ONGOING ISSUE: Podcasts Getting Stuck in Processing Status** (July 31, 2025 - 12:15 PM CST)
+- **Pattern Identified**: Multiple podcasts getting stuck in "processing" status instead of "pending"
+- **Examples Found**:
+  - 7am podcast (ID 412) marked as "failed" by cleanup function after missing 15-minute window
+  - 12:05pm podcast (ID 426) stuck in "processing" for 24+ hours
+  - 12:20pm podcast (ID 467) created with "processing" status instead of "pending"
+- **Impact**: Scheduler only processes "pending" podcasts, so stuck podcasts never run
+- **Temporary Fix**: Manually update stuck podcasts to "pending" status via SQL
+- **Root Cause**: Still investigating why new podcasts immediately go to "processing" status
+
 ### **✅ COMPREHENSIVE PODCAST DELIVERY SYSTEM OVERHAUL COMPLETED** (July 30, 2025 - 6:10 PM UTC)
 - **Critical Issues Fixed**:
   - **Time Window Bug**: Fixed `getPendingPodcastsDue()` which only looked for podcasts already past their time
