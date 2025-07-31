@@ -1,0 +1,18 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Trey Hendrickson reports to Cincinnati Bengals training camp\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/\"\n      ]\n    },\n    {\n      \"headline\": \"Las Vegas Raiders sign extension with offensive tackle Kolton Miller\",\n      \"citations\": [\n        \"https://x.com/IanRapoport/status/...\"\n      ]\n    },\n    {\n      \"headline\": \"Braelon Allen performs notably at New York Jets training camp\",\n      \"citations\": [\n        \"https://x.com/LinesTarDFS/status/...\"\n      ]\n    },\n    {\n      \"headline\": \"NFL training camps include various player updates and tryouts across teams\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/nfl/\",\n        \"https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available high-engagement posts and correlating articles from the last 24 hours; sources were verified for relevance to NFL player news and updates.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/",
+    "https://www.nytimes.com/athletic/6525499/2025/07/30/shannon-sharpe-lawsuit-settlement-espn-first-take/",
+    "https://www.reuters.com/world/us/nyc-skyscraper-shooters-suicide-note-blamed-nfl-brain-disease-2025-07-29/",
+    "https://www.nytimes.com/athletic/6522888/2025/07/29/nfl-headquarters-shooting-explainer/",
+    "https://timesofindia.indiatimes.com/sports/nfl/news/i-am-42-years-old-and-i-regret-losing-my-virginity-former-nfl-star-brandon-jacobs-goes-viral-after-sharing-regret-about-how-he-lost-his-virginity/articleshow/120432214.cms",
+    "https://www.sportico.com/business/media/2025/adam-schefter-nfl-free-agency-1234842529/",
+    "https://www.sportingnews.com/us/nfl/news/twitter-down-news-updates-social-media-nfl-free-agency/03265428756a189e4de8a23d",
+    "https://timesofindia.indiatimes.com/sports/nfl/news/why-is-the-nfl-ditching-tv-for-elon-musks-x-in-its-latest-top-100-player-rankings/articleshow/122172756.cms",
+    "https://timesofindia.indiatimes.com/sports/nfl/news/aaron-rodgers-picked-the-worst-day-to-break-nfl-news-as-donald-trump-and-elon-musk-go-viral/articleshow/121660117.cms",
+    "https://x.com/LineStarApp/status/1950681249145905474",
+    "https://x.com/MySportsUpdate/status/1950524467375227155",
+    "https://x.com/RapSheet/status/1950875755304370357"
+  ]
+}

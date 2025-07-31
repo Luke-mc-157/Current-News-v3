@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Luis Diaz transfers from Liverpool to Bayern Munich for £65.5 million\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c1w8j9g5qleo\",\n        \"https://www.bbc.com/sport/football/transfers\"\n      ]\n    },\n    {\n      \"headline\": \"Joao Felix completes transfer from Chelsea to Al-Nassr\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c93k38vpz85t\",\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html\"\n      ]\n    },\n    {\n      \"headline\": \"Jack Grealish linked with potential move to Everton\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c93k38vpz85t\",\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United pursues £65 million transfer deal\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html\",\n        \"https://www.bbc.com/sport/football/teams/manchester-united\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Arsenal shows interest in Eberechi Eze with transfer deadline noted\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html\",\n        \"https://www.transfermarkt.com/latest-transfer-news-wrexham-eye-premier-league-star-as-neymar-eyes-santos-stay/view/news/445145\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool expresses interest in Alexander Isak and Rodrygo as potential transfers\",\n      \"citations\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html\",\n        \"https://www.bbc.com/sport/football/transfers\"\n      ]\n    }\n  ],\n  \"notes\": \"Based on available data from the last 24 hours; only four high-engagement stories were identified as the most prominent, with semantic stories added for additional context where relevant. Data may be limited to verified sources.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/transfers",
+    "https://www.bbc.com/sport/football/teams/manchester-united",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.bbc.com/sport/football/articles/c1w8j9g5qleo",
+    "https://www.bbc.com/sport/football/live/c93k38vpz85t",
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-eze-rodrygo-isak-hjulmand-b1235099.html",
+    "https://www.transfermarkt.com/latest-transfer-news-wrexham-eye-premier-league-star-as-neymar-eyes-santos-stay/view/news/445145",
+    "https://www.football.london/chelsea-fc/transfer-news/breaking-chelsea-transfer-confirmed-rules-32174745",
+    "https://metro.co.uk/tag/transfer-news-and-rumours/",
+    "https://x.com/Passion4FM/status/1950655318293357023"
+  ]
+}

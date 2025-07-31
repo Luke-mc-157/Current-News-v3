@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Meta faces EU competition investigation over WhatsApp AI integration\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"link\": \"https://www.reuters.com/business/meta-faces-italian-competition-investigation-over-whatsapp-ai-chatbot-2025-07-30/\"\n        },\n        {\n          \"type\": \"web\",\n          \"link\": \"https://www.reuters.com/technology/\"\n        }\n      ]\n    },\n    {\n      \"headline\": \"Reuters covers advancements in artificial intelligence technology\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"link\": \"https://www.reuters.com/technology/artificial-intelligence/\"\n        },\n        {\n          \"type\": \"web\",\n          \"link\": \"https://news.google.com/\"\n        }\n      ]\n    },\n    {\n      \"headline\": \"Informatica introduces AI enhancements for enterprise data mapping\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"link\": \"https://venturebeat.com/category/ai/\"\n        }\n      ]\n    },\n    {\n      \"headline\": \"Global technology news highlights ongoing AI developments\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"link\": \"https://www.reuters.com/technology/\"\n        },\n        {\n          \"type\": \"web\",\n          \"link\": \"https://indianexpress.com/section/technology/artificial-intelligence/\"\n        }\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"AI technology advances in data processing and automation\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"link\": \"https://m.economictimes.com/tech/artificial-intelligence\"\n        }\n      ]\n    }\n  ],\n  \"notes\": \"Only 5 stories identified due to sparse data in the last 24 hours; some sources are from reputable sites but may overlap in relevance.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?tab=rn&hl=en-IE&gl=IE&ceid=IE:en",
+    "https://www.reuters.com/business/meta-faces-italian-competition-investigation-over-whatsapp-ai-chatbot-2025-07-30/",
+    "https://indianexpress.com/section/technology/artificial-intelligence/",
+    "https://m.economictimes.com/tech/artificial-intelligence",
+    "https://www.washingtonpost.com/technology/innovations/",
+    "https://www.artificialintelligence-news.com/artificial-intelligence-news/",
+    "https://venturebeat.com/category/ai/"
+  ]
+}

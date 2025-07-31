@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Tesla signs battery supply agreement with LG Energy Solution.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla faces investigation into Autopilot system involvement in a fatal crash.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two stories identified from the last 24 hours based on available data; additional stories may exist but were not sufficiently supported in searches.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/technology/",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://benzinga.com/news/social-media/25/07/46406622/tesla-x-mcdonalds-share-their-lore-stories-social-media-user-with-26k-followers-gets-1-billion-views",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.teslarati.com/category/news/",
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://wired.com/story/tesla-takedown-definitive-story"
+  ]
+}

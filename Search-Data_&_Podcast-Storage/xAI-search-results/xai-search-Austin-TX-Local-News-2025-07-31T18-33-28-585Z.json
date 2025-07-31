@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Cowboy-hat-wearing robot appears in Austin\",\n      \"sources\": [\n        \"https://www.chron.com/news/houston-texas/article/austin-robot-cowboy-hat-20400542.php\"\n      ]\n    },\n    {\n      \"headline\": \"Austin leads U.S. markets at risk of housing losses\",\n      \"sources\": [\n        \"https://austin.culturemap.com/news/entertainment/popular-stories-housing-market-risks/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Local news updates reported by FOX 7 Austin\",\n      \"sources\": [\n        \"https://www.fox7austin.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"CBS Austin covers Central Texas regional events\",\n      \"sources\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; only stories with potential relevance from available sources were included, but none are confirmed within the last 24 hours based on provided information.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=rn&hl=en-IE&gl=IE&ceid=IE:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-MY&gl=MY&ceid=MY:en",
+    "https://austin.culturemap.com/news/entertainment/popular-stories-housing-market-risks/",
+    "https://www.chron.com/news/houston-texas/article/austin-robot-cowboy-hat-20400542.php",
+    "https://www.fox7austin.com/news",
+    "https://cbsaustin.com/news/local/cbs-austins-top-20-stories-of-2024",
+    "https://cbsaustin.com/news/local"
+  ]
+}

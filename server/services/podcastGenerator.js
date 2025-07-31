@@ -64,8 +64,9 @@ CONTENT RULES:
 3. QUOTE SOURCES: When mentioning opinions, always attribute them: "According to [source]..." or "[Person] stated that..."
 4. Include as many headlines and stories as possible. If you can include ALL headlines with accurate supporting data + quotes, do it.
 5. NO ENGAGEMENT METRICS: Do not mention likes, retweets, shares, or social media engagement numbers.
-6. CITE SOURCES: Reference the X posts and articles naturally within the narrative. There are many cited articles from the user's timeline and RSS feeds - make sure to analyze them and use them in the script, as appropriate.
-7. STYLE: Write in a conversational, engaging style. Use contractions (e.g., "don't" instead of "do not").
+6. NO WORD COUNT METRICS: Do not mention word count or time metrics.
+7. CITE SOURCES: Reference the X posts and articles naturally within the narrative. There are many cited articles from the user's timeline and RSS feeds - make sure to analyze them and use them in the script, as appropriate.
+8. STYLE: Write in a conversational, engaging style. Use contractions (e.g., "don't" instead of "do not").
 
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."

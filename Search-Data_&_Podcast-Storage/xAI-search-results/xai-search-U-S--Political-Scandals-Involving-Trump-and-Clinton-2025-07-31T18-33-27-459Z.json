@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; only two directly related stories from the last 24 hours were identified based on available searches.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Donald Trump references Bill Clinton in connection to Jeffrey Epstein scandal\",\n      \"citations\": [\n        \"https://pjmedia.com/matt-margolis/2025/07/26/trump-goes-there-calls-out-bill-clinton-in-epstein-scandal-n4942117\",\n        \"https://atlantablackstar.com/2025/07/27/trump-tries-to-drag-bill-clinton-into-his-scandal-but-clinton-isnt-flinching-and-his-camps-response-just-flipped-the-narrative/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Historical analysis compares Donald Trump's scandals to those of past U.S. presidents including Bill Clinton\",\n      \"citations\": [\n        \"https://apnews.com/article/trump-indictment-past-presidential-scandals-6fe9d423c42ea7fd945befcb4dd83704\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/spotlight/donald-trump",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-MY&gl=MY&ceid=MY:en",
+    "https://pjmedia.com/matt-margolis/2025/07/26/trump-goes-there-calls-out-bill-clinton-in-epstein-scandal-n4942117",
+    "https://washingtonpost.com/politics",
+    "https://atlantablackstar.com/2025/07/27/trump-tries-to-drag-bill-clinton-into-his-scandal-but-clinton-isnt-flinching-and-his-camps-response-just-flipped-the-narrative/",
+    "https://www.newyorker.com/news/amy-davidson/donald-trumps-scandalous-clintons-scandals-speech",
+    "https://apnews.com/article/trump-indictment-past-presidential-scandals-6fe9d423c42ea7fd945befcb4dd83704"
+  ]
+}

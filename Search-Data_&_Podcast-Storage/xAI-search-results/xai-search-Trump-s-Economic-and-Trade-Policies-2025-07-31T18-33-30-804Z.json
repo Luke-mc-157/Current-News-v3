@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Donald Trump announces 25% tariffs on India, prompting government response on trade implications.\",\n      \"citations\": [\n        \"https://www.hindustantimes.com/india-news/25-tariffs-dead-economy-how-donald-trump-doubled-down-on-india-in-24-hours-101753949013607.html\",\n        \"https://axios.com/2025/07/31/trump-economy\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump shares claims about US economy, including inflation and trade war impacts.\",\n      \"citations\": [\n        \"https://b24.am/en/economy/14795.html\",\n        \"https://www.reuters.com/world/us/donald-trump/\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump's tariffs lead to viral discussions and memes about US manufacturing and trade policies.\",\n      \"citations\": [\n        \"https://economictimes.indiatimes.com/news/international/us/after-china-now-us-make-america-great-again-memes-go-viral-following-donald-trumps-tariffs-here-are-some-hilarious-ones/articleshow/120131192.cms\"\n      ]\n    }\n  ],\n  \"semantic_posts\": [\n    {\n      \"headline\": \"Latest polls show tracking of Donald Trump's approval rating amid economic discussions.\",\n      \"citations\": [\n        \"https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three high-engagement stories identified from searches within the last 24 hours; one additional semantic post included for completeness, as data for a fourth high-engagement story is sparse.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/spotlight/donald-trump",
+    "https://www.washingtonpost.com/",
+    "https://www.washingtonpost.com/donald-trump/",
+    "https://www.reuters.com/world/us/",
+    "https://www.nytimes.com/interactive/polls/donald-trump-approval-rating-polls.html",
+    "https://economictimes.indiatimes.com/news/international/us/after-china-now-us-make-america-great-again-memes-go-viral-following-donald-trumps-tariffs-here-are-some-hilarious-ones/articleshow/120131192.cms",
+    "https://b24.am/en/economy/14795.html",
+    "https://www.hindustantimes.com/india-news/25-tariffs-dead-economy-how-donald-trump-doubled-down-on-india-in-24-hours-101753949013607.html",
+    "https://axios.com/2025/07/31/trump-economy",
+    "https://www.reuters.com/world/us/donald-trump/",
+    "https://x.com/FloppingAces/status/1950354658054308064"
+  ]
+}

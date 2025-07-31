@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Based on available data from the last 24 hours, four stories were identified. Data is derived from high-engagement posts on X and correlating news/RSS sources.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Bayern Munich completes signing of Liverpool winger Luis Diaz for £65.5 million.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c1w8j9g5qleo\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool signs striker Hugo Ekitike from Eintracht Frankfurt for £79 million.\",\n      \"citations\": [\n        \"https://www.skysports.com/football/news/11095/13399673/hugo-ekitike-joins-liverpool-eintracht-frankfurt-striker-completes-79m-transfer-to-premier-league-champions\",\n        \"https://www.bbc.com/sport/football/live/c8e4zej8y0rt\",\n        \"https://www.liverpoolfc.com/news/hugo-ekitikes-temporary-liverpool-shirt-number-revealed\"\n      ]\n    },\n    {\n      \"headline\": \"Alexander Isak informs Newcastle of his desire to explore a transfer amid interest from Liverpool.\",\n      \"citations\": [\n        \"https://www.dailymail.co.uk/sport/football/article-14936385/Alexander-Isak-tells-Newcastle-wants-explore-transfer-Liverpool.html\",\n        \"https://www.skysports.com/football/news/11095/13398183/premier-league-champions-liverpool-will-look-very-different-this-season-after-a-busy-transfer-window\",\n        \"https://www.bbc.com/sport/football/articles/cqlerrl7dr3o\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool's pre-season activities include transfers and squad updates following recent signings.\",\n      \"citations\": [\n        \"https://www.skysports.com/football/news/11095/13398183/premier-league-champions-liverpool-will-look-very-different-this-season-after-a-busy-transfer-window\",\n        \"https://www.bbc.com/sport/football/live/c1dnd367544t\"\n      ]\n    }\n  ],\n  \"semantic_stories\": []\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/live/c1dnd367544t",
+    "https://www.bbc.com/sport/football/articles/c1w8j9g5qleo",
+    "https://www.bbc.com/sport/football/articles/cqlerrl7dr3o",
+    "https://www.dailymail.co.uk/sport/football/article-14936385/Alexander-Isak-tells-Newcastle-wants-explore-transfer-Liverpool.html",
+    "https://www.skysports.com/football/news/11095/13398183/premier-league-champions-liverpool-will-look-very-different-this-season-after-a-busy-transfer-window",
+    "https://www.skysports.com/football/news/11095/13399673/hugo-ekitike-joins-liverpool-eintracht-frankfurt-striker-completes-79m-transfer-to-premier-league-champions",
+    "https://www.bbc.com/sport/football/live/c8e4zej8y0rt",
+    "https://www.liverpoolfc.com/news/hugo-ekitikes-temporary-liverpool-shirt-number-revealed"
+  ]
+}

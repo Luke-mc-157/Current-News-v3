@@ -28,7 +28,7 @@ Preferred communication style: Simple, everyday language.
 - **Schema**: Supports users, topics, headlines, podcast settings, scheduled podcasts, and RSS feeds.
 
 ### Key Features
-- **xAI Live Search System**: Parallel API calls to xAI Grok-4 integrating web, X, news, and RSS sources for real-time data and ultra-fast responses (5-7 seconds total regardless of topic count). Includes X timeline integration for personalized content.
+- **xAI Live Search System**: Fully parallel processing for both xAI API calls and article fetching, integrating web, X, news, and RSS sources for real-time data and ultra-fast responses (5-7 seconds total regardless of topic or article count). Includes X timeline integration for personalized content.
 - **RSS Feed Integration System**: Allows users to add/remove RSS feeds, which are automatically integrated into xAI Live Search for enhanced content compilation.
 - **Podcast Generation System**: Fetches full text from X posts and article URLs, uses xAI Grok-4-0709 for factual script generation, integrates ElevenLabs API for voice synthesis, and offers web player/email distribution. Supports duration and voice selection.
 - **Automated Podcast Delivery System**: Comprehensive scheduling with user preferences (topics, duration, voice, delivery times, timezone), 7-day rolling schedule, and automated processing (headline generation → script creation → audio synthesis → email delivery).

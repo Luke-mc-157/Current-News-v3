@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available searches from the last 24 hours; only two distinct viral US politics stories with sufficient high-engagement X posts and correlating news articles were identified.\",\n  \"stories\": [\n    {\n      \"headline\": \"Pete Buttigieg criticizes Donald Trump in public statements.\",\n      \"citations\": [\n        \"https://t.co/P4HRbSaFWC\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posts about US politics and related topics on X.\",\n      \"citations\": [\n        \"https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/section/us",
+    "https://www.washingtonpost.com/politics/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/us/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://politicalwire.com/trending-news",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/",
+    "https://indianexpress.com/article/trending/top-10-listing/top-10-most-followed-people-on-x-formerly-twitter-in-2024-9456093",
+    "https://x.com/TheDemCoalition/status/1950554512223035474"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available context, which may not include events strictly from the last 24 hours; relying on recent references for synthesis.\",\n  \"stories\": [\n    {\n      \"headline\": \"Extreme weather events such as hurricanes, earthquakes, and floods occurred in various locations.\",\n      \"citations\": [\n        \"https://www.foxweather.com/extreme-weather/viral-videos-weather-2024-top-10\"\n      ]\n    },\n    {\n      \"headline\": \"Misinformation about extreme weather events spreads on social media platforms.\",\n      \"citations\": [\n        \"https://tribune.com.pk/story/2557389/extreme-weather-misinfo-putting-lives-at-risk\"\n      ]\n    },\n    {\n      \"headline\": \"A weatherman interrupted a live report due to difficulties in providing accurate forecasts.\",\n      \"citations\": [\n        \"https://upworthy.com/weatherman-cant-forecast-ex1\"\n      ]\n    },\n    {\n      \"headline\": \"Live weather reporting moments gained high viewership on news platforms.\",\n      \"citations\": [\n        \"https://www.foxweather.com/extreme-weather/viral-weather-reporting-2024\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.foxweather.com/extreme-weather/viral-videos-weather-2024-top-10",
+    "https://tribune.com.pk/story/2557389/extreme-weather-misinfo-putting-lives-at-risk",
+    "https://upworthy.com/weatherman-cant-forecast-ex1",
+    "https://www.foxweather.com/extreme-weather/viral-weather-reporting-2024",
+    "https://foxnews.com/category/weather"
+  ]
+}

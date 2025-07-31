@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Wall Street benchmarks closed higher following initial market confusion related to reports of potential Federal Reserve Chair firing\",\n      \"citations\": [\n        \"https://www.reuters.com/business/sp-500-nasdaq-futures-slip-rate-tariff-concerns-2025-07-16/\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. stock market saw breaking news updates on global finance and market performance\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/us/\"\n      ]\n    },\n    {\n      \"headline\": \"International stock market headlines reported ongoing coverage of global market activities\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/stocks/\"\n      ]\n    },\n    {\n      \"headline\": \"General business news included updates on markets and finance from international sources\",\n      \"citations\": [\n        \"https://www.reuters.com/business/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available recent sources; only a limited number of stories with direct evidence from the last 24 hours were identified, and some may rely on general headlines due to sparse specific viral content.\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/business/sp-500-nasdaq-futures-slip-rate-tariff-concerns-2025-07-16/",
+    "https://www.reuters.com/business/",
+    "https://economictimes.indiatimes.com/markets/stocks/news/from-broker-notes-to-memes-how-the-stock-market-went-viral/articleshow/80572342.cms",
+    "https://cnbc.com/amp/2025/07/22/stock-market-today-live-updates.html",
+    "https://www.thedailybeast.com/trump-goes-on-insane-truth-social-posting-spree-as-stock-market-freefalls/"
+  ]
+}
