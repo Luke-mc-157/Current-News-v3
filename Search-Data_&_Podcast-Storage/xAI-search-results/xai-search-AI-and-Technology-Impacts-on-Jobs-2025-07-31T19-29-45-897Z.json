@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only two relevant stories found within the last 24 hours based on available data.\",\n  \"stories\": [\n    {\n      \"headline\": \"Reuters publishes updates on artificial intelligence developments affecting job markets.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/artificial-intelligence/\"\n      ]\n    },\n    {\n      \"headline\": \"The New York Times features news on technology advancements, including AI's role in employment changes.\",\n      \"citations\": [\n        \"https://www.nytimes.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.reuters.com/technology/",
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.nytimes.com/",
+    "https://www.reuters.com/world/us/",
+    "https://axios.com/2025/07/23/ai-bots-news-sources-chatgpt-claude",
+    "https://techcrunch.com/2024/02/07/x-formerly-twitter-becomes-no-1-app-on-u-s-app-store-on-news-of-tucker-carlson-putin-interview/",
+    "https://ft.com/content/5009fd1e-85db-433f-aa2b-55d9b88b6481",
+    "https://webpronews.com/ai-disrupting-tech-jobs-layoffs-automation-and-upskilling-needs",
+    "https://www.bbc.com/news/technology-66679922"
+  ]
+}

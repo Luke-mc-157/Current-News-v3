@@ -1063,7 +1063,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
     console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
-      model: "grok-3-mini-fast",
+      model: "grok-4-latest",
       messages: [
         {
           role: "system",
@@ -1233,9 +1233,6 @@ function parseRobustJSON(content) {
   
   // Step 1: Clean up response in case of formatting issues
   let cleanContent = content.trim();
-  
-  // Remove JavaScript-style comments (// ...) that break JSON parsing
-  cleanContent = cleanContent.replace(/^\s*\/\/.*$/gm, '');
   
   // Remove markdown code blocks
   if (cleanContent.includes('```json')) {

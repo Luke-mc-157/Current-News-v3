@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only two relevant stories were identified from the available data, as specific viral news about upcoming events in Austin, TX from the last 24 hours was limited.\",\n  \"stories\": [\n    {\n      \"headline\": \"New developments including Tim Horton's planned in Round Rock, Austin area\",\n      \"citations\": [\n        \"https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more\"\n      ]\n    },\n    {\n      \"headline\": \"Upcoming sports events featured in Austin local news coverage\",\n      \"citations\": [\n        \"https://cbsaustin.com/sports\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/news/world",
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://www.bbc.com/news",
+    "https://www.bbc.com/news/uk",
+    "https://www.bbc.com/",
+    "https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more",
+    "https://cbsaustin.com/news/local",
+    "https://cbsaustin.com/sports",
+    "https://www.fox7austin.com/news",
+    "https://cbsaustin.com/station"
+  ]
+}

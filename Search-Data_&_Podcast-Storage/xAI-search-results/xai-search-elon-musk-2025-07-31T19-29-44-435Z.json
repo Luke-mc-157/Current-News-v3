@@ -1,0 +1,11 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Elon Musk announces ban on hashtags in advertisements on X\",\n      \"citations\": [\n        \"https://mashable.com/article/elon-musk-x-twitter-hashtags-ban-ads\",\n        \"https://www.newsweek.com/elon-musk-announces-change-x-twitter-social-media-adverts-2091020\",\n        \"https://hindustantimes.com/trending/elon-musk-declares-this-aesthetic-nightmare-will-be-banned-from-x-starting-tomorrow-101750930219391.html\",\n        \"https://indiatimes.com/trending/elon-musk-bans-hashtags-from-ads-on-x-heres-what-it-means-for-advertisers-and-regular-users-662187.html\"\n      ]\n    },\n    {\n      \"headline\": \"X implements new rule limiting emojis in advertisements under Elon Musk's direction\",\n      \"citations\": [\n        \"https://theweek.in/news/sci-tech/2025/07/22/running-ads-on-x-this-new-emoji-rule-from-elon-musk-social-media-platform.html\"\n      ]\n    }\n  ],\n  \"notes\": \"Only two stories identified from available data within the relevant context; data is sparse as no additional viral stories about Elon Musk were found from the last 24 hours in high engagement X posts or correlating news articles.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://mashable.com/article/elon-musk-x-twitter-hashtags-ban-ads",
+    "https://theweek.in/news/sci-tech/2025/07/22/running-ads-on-x-this-new-emoji-rule-from-elon-musk-social-media-platform.html",
+    "https://www.newsweek.com/elon-musk-announces-change-x-twitter-social-media-adverts-2091020",
+    "https://hindustantimes.com/trending/elon-musk-declares-this-aesthetic-nightmare-will-be-banned-from-x-starting-tomorrow-101750930219391.html",
+    "https://indiatimes.com/trending/elon-musk-bans-hashtags-from-ads-on-x-heres-what-it-means-for-advertisers-and-regular-users-662187.html"
+  ]
+}

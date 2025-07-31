@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Donald Trump returns to the White House as the 47th President of the United States\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/cp7r8vgl2lgt\",\n        \"https://www.nytimes.com/spotlight/donald-trump\"\n      ]\n    },\n    {\n      \"headline\": \"Footage shows Donald Trump at a golf event amid public scrutiny\",\n      \"citations\": [\n        \"https://www.newsweek.com/donald-trump-golf-cheating-viral-video-2104940\"\n      ]\n    },\n    {\n      \"headline\": \"A Scottish newspaper references Donald Trump's prior legal conviction in a headline\",\n      \"citations\": [\n        \"https://www.hindustantimes.com/world-news/donald-trump-convicted-felon-headline-in-scottish-paper-goes-viral-charges-against-us-president-101753513286654.html\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump discusses various topics including trade policies in recent statements\",\n      \"citations\": [\n        \"https://www.bbc.com/news/topics/cp7r8vgl2lgt\",\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on available sources from the last 24-72 hours; some entries reference content outside the strict 24-hour window due to sparse recent results, focusing on high-engagement themes.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/spotlight/donald-trump",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/news/topics/cp7r8vgl2lgt",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://abcnews.go.com/Politics/note-top-political-stories-day/story?id=42791145",
+    "https://www.newsweek.com/donald-trump-golf-cheating-viral-video-2104940",
+    "https://www.hindustantimes.com/world-news/donald-trump-convicted-felon-headline-in-scottish-paper-goes-viral-charges-against-us-president-101753513286654.html",
+    "https://www.reuters.com/world/us/donald-trump/",
+    "https://www.washingtonpost.com/politics/2025/07/21/trump-epstein-distractions/"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"notes\": \"Only two viral stories were identified from the last 24 hours based on available data; additional stories could not be verified from the searches.\",\n  \"stories\": [\n    {\n      \"headline\": \"A leaked video shows Tesla Robotaxi test drivers with hands on the steering wheel.\",\n      \"citations\": [\n        \"Posts found on X regarding the leaked video\"\n      ]\n    },\n    {\n      \"headline\": \"Tesla has signed a $4.3 billion deal with LG Energy Solution for battery supply.\",\n      \"citations\": [\n        \"https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/",
+    "https://www.reuters.com/company/tesla-inc/",
+    "https://www.nytimes.com/",
+    "https://www.nytimes.com/ca/",
+    "https://www.washingtonpost.com/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://teslarati.com/tesla-advertising-organic-social-media-engagement",
+    "https://www.notateslaapp.com/news/1974/breaking-tradition-tesla-hits-the-social-media-advertising-road",
+    "https://www.insidehook.com/electric/tesla-exploring-advertising-after-avoiding",
+    "https://www.teslarati.com/tesla-launches-advertising-x-u-s-expanding-small-scale-strategy-elon-musk/",
+    "https://x.com/ConsensusGurus/status/1950916771000590394"
+  ]
+}

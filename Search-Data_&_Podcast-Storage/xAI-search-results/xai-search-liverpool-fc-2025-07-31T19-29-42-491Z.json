@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"notes\": \"Only two distinct viral stories with sufficient high-engagement X posts and correlating news articles from the last 24 hours were identified; additional stories lack direct, verifiable evidence within the timeframe.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Bayern Munich signs Liverpool winger Luis Diaz for 65.5 million pounds.\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c1w8j9g5qleo\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC discusses potential player transfers during the summer window.\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Liverpool FC achieves high social media engagement in the Premier League.\",\n      \"citations\": [\n        \"https://www.liverpoolfc.com/news/lfc-remains-most-engaged-premier-league-club-social-media\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/articles/c1w8j9g5qleo",
+    "https://www.bbc.com/news/world/africa",
+    "https://www.reuters.com/world/",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048",
+    "https://fcbusiness.co.uk/news/liverpool-fc-remains-most-engaged-premier-league-club-on-social-media",
+    "https://www.theweek.in/news/sports/2025/07/05/trending-aizawl-s-liverpool-fc-store-shuts-to-mourn-digo-jota-s-demise-image-viral-on-mizo-social-media.html",
+    "https://www.liverpoolfc.com/news/lfc-remains-most-engaged-premier-league-club-social-media",
+    "https://www.liverpoolfc.com/news/lfcs-20th-league-title-win-creates-record-breaking-social-media-engagement",
+    "https://x.com/TheAnfieldWrap/status/1950987381579927782",
+    "https://x.com/LivEchoLFC/status/1950843888748687830"
+  ]
+}

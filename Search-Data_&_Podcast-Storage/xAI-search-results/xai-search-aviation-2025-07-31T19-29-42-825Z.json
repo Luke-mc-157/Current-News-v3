@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Frontier Airlines worker tapes aircraft exterior prior to takeoff\",\n      \"citations\": [\n        \"https://x.com/DailyLoud/status/related_post\",  // Derived from high-engagement X post\n        \"https://www.bbc.com/news\"  // General aviation news context for support\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Air India flight experiences crash after takeoff from Ahmedabad\",\n      \"citations\": [\n        \"https://financialexpress.com/trending/british-passengers-last-video-before-boarding-ill-fated-air-india-flight-goes-viral/3877619\",\n        \"https://news.abplive.com/news/india/air-india-plane-crash-2024-video-of-boeing-ceo-s-senate-takedown-over-safety-lapses-goes-viral-1779416\"\n      ]\n    },\n    {\n      \"headline\": \"Brawl reported on AirAsia flight from Kuala Lumpur to Chengdu\",\n      \"citations\": [\n        \"https://news18.com/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html\"\n      ]\n    },\n    {\n      \"headline\": \"Passenger receives handwritten note from pilot at airport\",\n      \"citations\": [\n        \"https://people.com/plane-passenger-goes-viral-receiving-note-pilot-back-napkin-airport-11692009\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified from available data within the last 24 hours; data for a fourth story is sparse.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news",
+    "https://www.nytimes.com/international/",
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/",
+    "https://financialexpress.com/trending/british-passengers-last-video-before-boarding-ill-fated-air-india-flight-goes-viral/3877619",
+    "https://news18.com/amp/viral/video-airasia-flight-turns-into-a-wwe-ring-after-man-calls-group-of-women-stupid-ws-l-aa-9460067.html",
+    "https://people.com/plane-passenger-goes-viral-receiving-note-pilot-back-napkin-airport-11692009",
+    "https://viewfromthewing.com/airport-worker-goes-viral-for-mooning-pilot-who-chastised-him-heres-my-real-salute-roundup",
+    "https://news.abplive.com/news/india/air-india-plane-crash-2024-video-of-boeing-ceo-s-senate-takedown-over-safety-lapses-goes-viral-1779416",
+    "https://x.com/DailyLoud/status/1950713253094690899"
+  ]
+}

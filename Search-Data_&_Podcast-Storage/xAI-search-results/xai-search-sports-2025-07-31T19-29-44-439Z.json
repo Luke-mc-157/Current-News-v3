@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data is sparse; no specific sports news stories found from the last 24 hours in the provided context. The following are based on available context, which is older than 24 hours.\",\n  \"stories\": [\n    {\n      \"headline\": \"Linda Yaccarino resigns as CEO of X, with MrBeast offering to take the role in the context of esports news.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/sports/esports/news/ill-fill-the-role-mrbeast-offers-to-be-the-new-ceo-of-x-as-linda-yaccarino-resigns-after-2-years/articleshow/122366382.cms\"\n      ]\n    },\n    {\n      \"headline\": \"NFL announces shift of annual Top 100 player rankings to X for a digital-first approach.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/sports/nfl/news/why-is-the-nfl-ditching-tv-for-elon-musks-x-in-its-latest-top-100-player-rankings/articleshow/122172756.cms\"\n      ]\n    },\n    {\n      \"headline\": \"X renews content partnership with the NFL.\",\n      \"citations\": [\n        \"https://deadline.com/2024/04/nfl-x-twitter-renew-content-partnership-ceo-linda-yaccarino-1235899239\"\n      ]\n    },\n    {\n      \"headline\": \"X introduces new features to enhance sports engagement on the platform.\",\n      \"citations\": [\n        \"https://www.socialmediatoday.com/news/x-formerly-twitter-adds-more-sports-engagement-features/751438/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/uk",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/",
+    "https://www.bbc.com/news/world",
+    "https://timesofindia.indiatimes.com/sports/esports/news/ill-fill-the-role-mrbeast-offers-to-be-the-new-ceo-of-x-as-linda-yaccarino-resigns-after-2-years/articleshow/122366382.cms",
+    "https://bleacherreport.com/articles/2664619-12-amazing-recent-sports-stories-you-should-know-about",
+    "https://timesofindia.indiatimes.com/sports/nfl/news/why-is-the-nfl-ditching-tv-for-elon-musks-x-in-its-latest-top-100-player-rankings/articleshow/122172756.cms",
+    "https://deadline.com/2024/04/nfl-x-twitter-renew-content-partnership-ceo-linda-yaccarino-1235899239",
+    "https://www.socialmediatoday.com/news/x-formerly-twitter-adds-more-sports-engagement-features/751438/"
+  ]
+}

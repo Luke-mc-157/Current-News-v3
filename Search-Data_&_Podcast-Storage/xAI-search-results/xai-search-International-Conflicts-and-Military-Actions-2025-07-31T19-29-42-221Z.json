@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only three relevant stories were identified from the last 24 hours based on available data; data for a fourth story was sparse.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Russia conducted a military strike on a Ukrainian training unit, resulting in casualties.\",\n      \"citations\": [\n        \"https://www.bbc.com/news/articles/cwyeg1l00rno\",\n        \"https://www.reuters.com/world/\"\n      ]\n    },\n    {\n      \"headline\": \"Misleading content related to Middle East conflicts spread rapidly on X, garnering significant views.\",\n      \"citations\": [\n        \"https://isdglobal.org/digital_dispatches/misleading-and-manipulated-content-goes-viral-on-x-twitter-in-middle-east-conflict-iran-israel-strikes\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Influential accounts on X are dominating discussions about the Israel-Hamas conflict.\",\n      \"citations\": [\n        \"https://nbcnews.com/tech/social-media/7-accounts-warp-israel-hamas-war-news-x-musk-rcna121465\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.bbc.com/news",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/articles/cwyeg1l00rno",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://isdglobal.org/digital_dispatches/misleading-and-manipulated-content-goes-viral-on-x-twitter-in-middle-east-conflict-iran-israel-strikes",
+    "https://www.nytimes.com/spotlight/atwar",
+    "https://www.foxnews.com/category/world/conflicts",
+    "https://nbcnews.com/tech/social-media/7-accounts-warp-israel-hamas-war-news-x-musk-rcna121465",
+    "https://newsx.com/world"
+  ]
+}

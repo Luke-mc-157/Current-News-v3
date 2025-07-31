@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Chinese historian's 2024 lecture discusses potential US political shifts and conflicts\",\n      \"sources\": [\n        \"https://timesofindia.indiatimes.com/world/us/chinese-historian-jiang-xueqins-2024-lecture-goes-viral-for-predicting-trumps-return-and-iran-war/articleshow/122055168.cms\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"BBC provides updates on global political developments\",\n      \"sources\": [\n        \"https://www.bbc.com/news/politics\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters reports on international news from various regions\",\n      \"sources\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/\"\n      ]\n    },\n    {\n      \"headline\": \"Reuters covers Asia-Pacific geopolitical events\",\n      \"sources\": [\n        \"https://www.reuters.com/world/asia-pacific/\",\n        \"https://www.firstpost.com/tag/geopolitics\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Social media platforms influence dissemination of geopolitical information\",\n      \"sources\": [\n        \"https://nbcnewyork.com/news/business/money-report/x-formerly-twitter-amplifies-disinformation-amid-the-israel-hamas-conflict/4752629\",\n        \"https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/\"\n      ]\n    }\n  ],\n  \"notes\": \"Based on available data from the last 24 hours; only relevant sources were included, and fewer semantic stories were identified.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/politics",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/world/asia-pacific/",
+    "https://www.reuters.com/",
+    "https://nbcnewyork.com/news/business/money-report/x-formerly-twitter-amplifies-disinformation-amid-the-israel-hamas-conflict/4752629",
+    "https://timesofindia.indiatimes.com/world/us/chinese-historian-jiang-xueqins-2024-lecture-goes-viral-for-predicting-trumps-return-and-iran-war/articleshow/122055168.cms",
+    "https://www.firstpost.com/tag/geopolitics",
+    "https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/",
+    "https://www.hurriyetdailynews.com/search/geopolitics"
+  ]
+}

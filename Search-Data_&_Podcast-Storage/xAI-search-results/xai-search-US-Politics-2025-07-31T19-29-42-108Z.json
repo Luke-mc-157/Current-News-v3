@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"notes\": \"Data is based on available context from searches; specific real-time stories from the last 24 hours may be limited, as context provided older references.\",\n  \"top_stories\": [\n    {\n      \"headline\": \"Republican content sees high engagement on social media platform X\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/\"\n      ]\n    },\n    {\n      \"headline\": \"Ongoing coverage of U.S. political developments including immigration and elections\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/us\"\n      ]\n    },\n    {\n      \"headline\": \"U.S. political news aggregated from major sources\",\n      \"citations\": [\n        \"https://news.google.com/home?hl=en-US&gl=US&ceid=US:en\"\n      ]\n    },\n    {\n      \"headline\": \"International perspectives on U.S. politics from global news outlets\",\n      \"citations\": [\n        \"https://www.reuters.com/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/section/us",
+    "https://www.nytimes.com/",
+    "https://www.washingtonpost.com/politics/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/technology/2024/10/29/elon-musk-x-republican-democrat-twitter-election/",
+    "https://buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook",
+    "https://politicalwire.com/trending-news",
+    "https://www.nytimes.com/section/politics"
+  ]
+}

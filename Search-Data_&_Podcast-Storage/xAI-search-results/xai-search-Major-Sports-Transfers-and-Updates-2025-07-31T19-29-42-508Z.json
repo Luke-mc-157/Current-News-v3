@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"headline\": \"Nélson Semedo has departed Wolverhampton Wanderers\",\n      \"sources\": [\n        \"https://www.bbc.com/sport/football\",\n        \"https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United is advancing in transfer negotiations for Benjamin Sesko\",\n      \"sources\": [\n        \"https://www.bbc.com/sport/football/teams/arsenal\",\n        \"https://www.skysports.com/football/live-blog/31771/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours\"\n      ]\n    },\n    {\n      \"headline\": \"Paris Saint-Germain is finalizing the signing of Illya Zabarnyi from AFC Bournemouth\",\n      \"sources\": [\n        \"https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\",\n        \"https://metro.co.uk/sport/football/\"\n      ]\n    },\n    {\n      \"headline\": \"Real Madrid has completed transfers for the 2025-26 season\",\n      \"sources\": [\n        \"https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\",\n        \"https://www.skysports.com/football/live-blog/31771/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport/football/teams/arsenal",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/news",
+    "https://www.goal.com/en/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://metro.co.uk/tag/transfer-news-and-rumours/",
+    "https://metro.co.uk/sport/football/",
+    "https://sports.yahoo.com/major-league-soccer-transfer-news-231700202.html",
+    "https://www.skysports.com/football/live-blog/31771/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+    "https://x.com/Record_Sport/status/1950580641105379776"
+  ]
+}

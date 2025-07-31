@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"CBS Austin reports on local sports events in the Texas Capitol Region.\",\n      \"citations\": [\n        \"https://cbsaustin.com/sports\"\n      ]\n    },\n    {\n      \"headline\": \"CBS Austin covers local news events in Austin and surrounding areas.\",\n      \"citations\": [\n        \"https://cbsaustin.com/news/local\"\n      ]\n    },\n    {\n      \"headline\": \"FOX 7 Austin provides updates on breaking news in Central Texas.\",\n      \"citations\": [\n        \"https://www.fox7austin.com/news\"\n      ]\n    },\n    {\n      \"headline\": \"KXAN Austin features stories on local community events in Texas.\",\n      \"citations\": [\n        \"https://www.kxan.com/news/local/austin\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [],\n  \"notes\": \"Data is sparse; only a limited number of relevant sources from the last 24 hours were identified, with no additional semantic posts on X found beyond high-engagement searches.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://cbsaustin.com/news/local",
+    "https://blog.parse.ly/austin-local-news-fosters-engagement/",
+    "https://cbsaustin.com/sports",
+    "https://www.fox7austin.com/news",
+    "https://www.kxan.com/news/local/austin/sxsw-documentary-stars-viral-24-year-old-texan-who-ran-for-city-council-hoping-to-inspire-others/"
+  ]
+}
