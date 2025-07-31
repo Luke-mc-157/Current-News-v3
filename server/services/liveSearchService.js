@@ -171,13 +171,13 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`📭 No timeline posts or RSS articles available for emergent topics discovery`);
   }
   
-  // Step 1: Call xAI Live Search API sequentially for all topics
-  console.log('📡 Step 1: xAI Live Search API calls for all topics (sequential)...');
-  const allTopicData = [];
+  // Step 1: Call xAI Live Search API in parallel for all topics
+  console.log('📡 Step 1: xAI Live Search API calls for all topics (parallel)...');
+  const parallelStartTime = Date.now();
   
-  for (let index = 0; index < topics.length; index++) {
-    const topic = topics[index];
-    console.log(`📝 Processing topic ${index + 1}/${topics.length}: ${topic}`);
+  // Create promises for parallel execution
+  const allTopicPromises = topics.map(async (topic, index) => {
+    console.log(`📝 Preparing parallel call for topic ${index + 1}/${topics.length}: ${topic}`);
     try {
       console.log(`🌐 xAI Live Search for ${topic}...`);
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
@@ -194,19 +194,42 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
         console.error(`❌ Could not save xAI search results: ${error.message}`);
       }
       
-      allTopicData.push({
+      return {
         topic: topic,
         webData: liveSearchData.content,
         citations: liveSearchData.citations || []
-      });
+      };
     } catch (error) {
       console.error(`❌ Error collecting data for ${topic}: ${error.message}`);
-      allTopicData.push({
+      return {
         topic: topic,
         webData: '',
         citations: []
-      });
+      };
     }
+  });
+
+  // Await all promises in parallel (use allSettled to handle partial failures)
+  const settledResults = await Promise.allSettled(allTopicPromises);
+  const allTopicData = settledResults.map((result, index) => {
+    if (result.status === 'fulfilled') {
+      return result.value;
+    } else {
+      console.error(`❌ Failed promise for topic ${topics[index]}: ${result.reason.message}`);
+      return { topic: topics[index] || 'unknown', webData: '', citations: [] };
+    }
+  });
+
+  const parallelTime = Date.now() - parallelStartTime;
+  console.log(`⚡ Parallel xAI Live Search completed in ${parallelTime}ms for ${topics.length} topics`);
+  console.log(`🚀 Performance boost: ~${Math.round((topics.length * 6000) / parallelTime)}x faster than sequential`);
+  
+  // Log successful vs failed topic processing
+  const successfulTopics = allTopicData.filter(data => data.webData && data.webData.length > 0);
+  const failedTopics = allTopicData.filter(data => !data.webData || data.webData.length === 0);
+  console.log(`✅ Successfully processed: ${successfulTopics.length}/${topics.length} topics`);
+  if (failedTopics.length > 0) {
+    console.log(`❌ Failed topics: ${failedTopics.map(t => t.topic).join(', ')}`);
   }
   
   // Step 1.5: Format timeline posts for Grok to categorize
