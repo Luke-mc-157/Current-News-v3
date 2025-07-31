@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Russia-Ukraine War Escalation\",\n      \"summary\": \"Recent reports indicate ongoing military actions in Ukraine, including attacks that have resulted in civilian casualties, amid broader tensions with Russia. This conflict continues to impact global security and economic stability.\",\n      \"supporting_article\": \"https://www.nytimes.com/news-event/ukraine-russia\"\n    },\n    {\n      \"title\": \"Developments in Middle East Conflicts\",\n      \"summary\": \"Updates from the Middle East highlight ongoing regional tensions, including military activities and diplomatic efforts, affecting countries in the area and international relations.\",\n      \"supporting_article\": \"https://www.bbc.com/news/world/middle_east\"\n    },\n    {\n      \"title\": \"Middle East Geopolitical Updates\",\n      \"summary\": \"News covers the latest events in the Middle East, including potential escalations in conflicts that involve multiple nations and influence global energy markets.\",\n      \"supporting_article\": \"https://www.reuters.com/world/middle-east/\"\n    },\n    {\n      \"title\": \"Global Geopolitical Tensions\",\n      \"summary\": \"World news reports detail various international conflicts and diplomatic developments, with a focus on regions experiencing heightened unrest and their implications for worldwide stability.\",\n      \"supporting_article\": \"https://www.reuters.com/world/\"\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://www.nytimes.com/news-event/ukraine-russia",
+    "https://www.reuters.com/world/middle-east/",
+    "https://www.nytimes.com/section/us",
+    "https://www.nytimes.com/news-event/ukraine-russia",
+    "https://www.ainvest.com/news/bitcoin-news-today-bitcoin-falls-4-144-8m-liquidations-geopolitical-tensions-spur-volatility-warnings-2507/",
+    "https://economictimes.indiatimes.com/topic/geopolitical-conflict",
+    "https://thebulwark.com/p/the-world-is-at-war-israel-gaza-ukraine-russia-india-pakistan-kashmir-congo-rwanda-balkans-syria-yemen",
+    "https://anewz.tv/world/world-news/11142/eu-china-summit-exposes-trade-and-geopolitical-rift/news"
+  ]
+}

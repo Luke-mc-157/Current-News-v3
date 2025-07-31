@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Latest Developments in Artificial Intelligence\",\n      \"description\": \"Coverage of ongoing AI advancements and related news as reported by a major news outlet.\",\n      \"source\": \"https://www.bbc.com/news/topics/ce1qrvleleqt\"\n    },\n    {\n      \"title\": \"Artificial Intelligence Shaping the Next Normal\",\n      \"description\": \"Discussion on how AI is influencing future societal and technological norms.\",\n      \"source\": \"https://www.reuters.com/technology/artificial-intelligence/\"\n    }\n  ],\n  \"notes\": \"Only two directly related and verifiable stories from the last 24 hours were identified; data is sparse for additional entries.\"\n}",
+  "citations": [
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.nytimes.com/section/us",
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/world/us/",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025",
+    "https://tooltrendai.com/7-biggest-ai-news-stories-from-last-week",
+    "https://www.cnn.com/2023/04/02/tech/ai-generated-images-social-media/index.html",
+    "https://blog.google/technology/ai/google-ai-news-recap-2024/",
+    "https://www.techrepublic.com/article/ai-news-biggest-stories-2024/"
+  ]
+}

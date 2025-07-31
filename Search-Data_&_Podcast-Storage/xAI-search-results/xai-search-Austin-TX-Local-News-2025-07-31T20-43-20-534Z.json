@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Only one story was found within the last 24 hours based on available data.\",\n  \"stories\": [\n    {\n      \"title\": \"Austin Local News Coverage\",\n      \"description\": \"Ongoing reports on local news, sports, and weather for the Austin area, including the Texas Capitol Region.\",\n      \"source\": \"CBS Austin\"\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/uk",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://cbsaustin.com/news/local/austin-police-are-investigating-3-shootings-that-occurred-in-a-little-over-24-hours",
+    "https://www.fox7austin.com/news",
+    "https://cbsaustin.com/news/local",
+    "https://www.kxan.com/weather/live-blog-historic-river-flooding-in-the-hill-country/",
+    "https://austinmonitor.com/whispers"
+  ]
+}

@@ -1232,6 +1232,9 @@ function parseRobustJSON(content) {
   // Step 1: Clean up response in case of formatting issues
   let cleanContent = content.trim();
   
+  // Remove JavaScript-style comments (// ...) that break JSON parsing
+  cleanContent = cleanContent.replace(/^\s*\/\/.*$/gm, '');
+  
   // Remove markdown code blocks
   if (cleanContent.includes('```json')) {
     cleanContent = cleanContent.replace(/```json\s*/g, '').replace(/```\s*$/g, '');
@@ -1239,6 +1242,19 @@ function parseRobustJSON(content) {
   if (cleanContent.includes('```')) {
     cleanContent = cleanContent.replace(/```\s*/g, '');
   }
+  
+  // Fix control characters in strings that break JSON parsing
+  cleanContent = cleanContent.replace(/[\x00-\x1F\x7F-\x9F]/g, (match) => {
+    // Replace common control characters with escaped versions
+    switch (match) {
+      case '\n': return '\\n';
+      case '\r': return '\\r';
+      case '\t': return '\\t';
+      case '\b': return '\\b';
+      case '\f': return '\\f';
+      default: return ''; // Remove other control characters
+    }
+  });
   
   // Remove any leading/trailing non-JSON content
   const jsonStart = cleanContent.indexOf('[');
@@ -1249,8 +1265,9 @@ function parseRobustJSON(content) {
   
   // Step 2: Try standard JSON parsing first
   try {
+    const result = JSON.parse(cleanContent);
     console.log('✅ Standard JSON parsing successful');
-    return JSON.parse(cleanContent);
+    return result;
   } catch (firstError) {
     console.log(`⚠️ Standard JSON parsing failed: ${firstError.message}`);
     console.log(`🔍 Error position: ${firstError.message.match(/position (\d+)/)?.[1] || 'unknown'}`);
@@ -1266,8 +1283,12 @@ function parseRobustJSON(content) {
     (str) => str.replace(/](\s*)\[/g, '],$1['),
     // Fix unescaped quotes in strings (basic)
     (str) => str.replace(/"([^"]*)"([^",}\]]*)"([^"]*)":/g, '"$1\\"$2\\"$3":'),
-    // Fix missing quotes around property names
-    (str) => str.replace(/([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)\s*:/g, '$1"$2":'),
+    // Fix missing quotes around property names (comprehensive)
+    (str) => str.replace(/([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:/g, '$1"$2":'),
+    // Fix single quotes to double quotes in property names
+    (str) => str.replace(/([{,]\s*)'([^']+)'\s*:/g, '$1"$2":'),
+    // Fix unescaped backslashes in strings
+    (str) => str.replace(/\\(?!["\\/bfnrt]|u[0-9a-fA-F]{4})/g, '\\\\'),
   ];
   
   for (let i = 0; i < fixes.length; i++) {

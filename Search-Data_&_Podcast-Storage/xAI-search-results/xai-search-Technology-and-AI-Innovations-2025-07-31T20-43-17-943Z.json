@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"AI Innovations Shaping the Next Normal\",\n      \"description\": \"Reuters reports on how artificial intelligence is driving advancements and creating new norms in technology, based on recent developments.\",\n      \"source\": \"Reuters AI News\"\n    },\n    {\n      \"title\": \"Latest Developments in Artificial Intelligence\",\n      \"description\": \"BBC News covers ongoing content and updates on artificial intelligence innovations, highlighting key stories from the technology sector.\",\n      \"source\": \"BBC News\"\n    },\n    {\n      \"title\": \"Global Technology News Updates\",\n      \"description\": \"Reuters provides comprehensive coverage of the latest technology news, including AI innovations from various global sources.\",\n      \"source\": \"Reuters Tech News\"\n    }\n  ],\n  \"notes\": \"Only three relevant stories were identified from the last 24 hours; data is sparse for a fourth.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/legal/government/trump-administration-supercharge-ai-sales-allies-loosen-environmental-rules-2025-07-23/",
+    "https://www.neudesic.com/blog/top-stories-ai-innovations/",
+    "https://techstartups.com/2025/01/23/this-week-in-ai-top-10-ai-news-stories-you-need-to-know",
+    "https://indianexpress.com/section/technology/artificial-intelligence/",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-a-07-july-2025",
+    "https://moneycontrol.com/world/artificial-intelligence-news-live-updates-29-07-2025-alpha-liveblog-13340452.html"
+  ]
+}

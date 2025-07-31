@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Trending Viral News and Videos\",\n      \"description\": \"A collection of the latest trending news stories, including viral videos, funny memes, and bizarre events from around the world, capturing high public engagement.\",\n      \"supporting_article\": \"Hindustan Times - Top Trending News (Published approximately 16 hours ago)\"\n    },\n    {\n      \"title\": \"Latest Viral and Trending Topics\",\n      \"description\": \"Coverage of the most recent viral news stories, including trending events, videos, and social media happenings with significant global interest.\",\n      \"supporting_article\": \"The Indian Express - Trending News (Published approximately 17 hours ago)\"\n    },\n    {\n      \"title\": \"Latest World News Developments\",\n      \"description\": \"Updates on key global events and breaking news stories that have gained widespread attention in the past 24 hours.\",\n      \"supporting_article\": \"Reuters World News - Latest Top Stories (Published 2025-07-31T05:36:04)\"\n    },\n    {\n      \"title\": \"Global News and Live Updates\",\n      \"description\": \"Real-time coverage of international news and events that are currently engaging audiences worldwide.\",\n      \"supporting_article\": \"BBC News - World Latest News (Published 2025-07-31T06:20:28)\"\n    }\n  ],\n  \"notes\": \"All stories are based on sources from the last 24 hours with high engagement indicators; data is derived from available news publications and may be subject to ongoing verification.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/us/",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/international/",
+    "https://www.hindustantimes.com/trending",
+    "https://indianexpress.com/section/trending/",
+    "https://timesofindia.indiatimes.com/sports/esports/news/astronomer-ceos-viral-affair-caught-on-camera-becomes-a-famous-video-game-within-just-hours/articleshow/122783798.cms",
+    "https://medium.com/write-a-catalyst/september-viral-articles-the-most-engaging-post-in-the-publication-3135938cd826",
+    "https://www.scmp.com/topics/viral-stories",
+    "https://x.com/toadmeister/status/1950705749086163289",
+    "https://x.com/toadmeister/status/1950353896221655108"
+  ]
+}

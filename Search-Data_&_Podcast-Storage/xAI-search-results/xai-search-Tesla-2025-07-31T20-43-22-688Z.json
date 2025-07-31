@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Signs $4.3 Billion Battery Deal with LG Energy Solution\",\n      \"description\": \"Tesla has agreed to a $4.3 billion deal with LG Energy Solution for energy storage system batteries, aiming to reduce reliance on Chinese imports amid tariffs.\",\n      \"source\": \"Reuters, https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/\"\n    },\n    {\n      \"title\": \"Questions Raised Over Tesla Autopilot in 2019 Fatal Crash\",\n      \"description\": \"Tesla is facing scrutiny regarding the potential involvement of its Autopilot system in a 2019 crash that resulted in a fatality, as reported in recent updates.\",\n      \"source\": \"CBS News, https://www.cbsnews.com/tag/tesla/\"\n    },\n    {\n      \"title\": \"Elon Musk Announces Grok AI Integration in Tesla Vehicles\",\n      \"description\": \"Elon Musk stated that his AI chatbot Grok will be integrated into Tesla vehicles by next week, enhancing in-car AI capabilities.\",\n      \"source\": \"CBS News, https://www.cbsnews.com/tag/tesla/\"\n    },\n    {\n      \"title\": \"Tesla Diner Experiences Go Viral on Social Media\",\n      \"description\": \"Tesla's retro-futuristic diner has garnered significant online attention due to reports of long wait times and mixed customer reviews.\",\n      \"source\": \"Fast Company, https://fastcompany.com/91377388/tesla-diner-goes-viral-for-long-waits-and-mixed-reviews\"\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/company/tesla-inc/",
+    "https://www.reuters.com/business/energy/tesla-signs-43-billion-lges-battery-deal-source-says-reducing-china-reliance-2025-07-30/",
+    "https://www.reuters.com/technology/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en",
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://benzinga.com/topic/tesla",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://www.kidsnews.com.au/science-technology/tesla-fails-roadrunner-safety-test-in-viral-video-exposing-major-flaw/news-story/622e555a9de36f2d7ff8cbeac22b6ef8",
+    "https://fastcompany.com/91377388/tesla-diner-goes-viral-for-long-waits-and-mixed-reviews"
+  ]
+}

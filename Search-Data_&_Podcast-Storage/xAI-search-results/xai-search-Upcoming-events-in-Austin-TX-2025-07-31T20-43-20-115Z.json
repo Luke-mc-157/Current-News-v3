@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Austin Local News Coverage\",\n      \"summary\": \"Recent updates on local events in the Austin area, including potential upcoming activities as part of ongoing news reporting.\",\n      \"source\": \"CBS Austin\",\n      \"url\": \"https://cbsaustin.com/news/local\"\n    }\n  ],\n  \"notes\": \"Data is sparse; only one relevant article from the last 24 hours was found that could pertain to upcoming events in Austin, TX. No other specific viral stories were identified from directly related sources.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/section/realestate",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/tennis",
+    "https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more",
+    "https://heyaustin.com/austin-events/",
+    "https://cbsaustin.com/news/local/live-coverage-no-kings-protests-begin-in-austin-across-central-texas",
+    "https://austinot.com/things-to-do-in-austin-this-weekend-tx-fun-free-events-activities-couples-near-me",
+    "https://cbsaustin.com/news/local"
+  ]
+}

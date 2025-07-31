@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Democratic Fundraising Milestone and Political Criticisms\",\n      \"description\": \"A Democratic figure has broken an all-time fundraising record, amid ongoing political criticisms involving former President Trump, as reported in recent social media discussions correlated with general US politics coverage.\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"url\": \"https://www.npr.org/sections/national/\",\n          \"published\": \"20 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Latest US Political Developments\",\n      \"description\": \"Ongoing coverage of US politics includes breaking news on national events, with a focus on current sentiments around key figures and policies.\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"url\": \"https://www.reuters.com/world/us/\",\n          \"published\": \"2025-07-31T06:08:30\"\n        }\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse for the last 24 hours; only two stories could be identified with direct supporting articles from news sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/politics",
+    "https://www.reuters.com/world/us/",
+    "https://www.washingtonpost.com/",
+    "https://telegraph.co.uk/us-politics",
+    "https://foxnews.com/politics/top-5-political-stories-2024",
+    "https://usnews.com/news/national-news/articles/2024-09-10/7-of-the-wildest-political-moments-since-the-last-presidential-debate",
+    "https://www.nbcnews.com/politics/politics-news/looking-back-biggest-political-news-stories-2024-rcna184752",
+    "https://www.npr.org/sections/national/",
+    "https://x.com/TheDemCoalition/status/1950554512223035474"
+  ]
+}
