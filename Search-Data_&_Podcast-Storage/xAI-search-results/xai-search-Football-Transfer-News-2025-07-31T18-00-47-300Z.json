@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Arsenal linked with Viktor Gyokeres transfer\",\n      \"citations\": [\n        \"https://fourfourtwo.com/news/arsenal-stars-brilliant-reaction-to-viktor-gyokeres-transfer-update-goes-viral\",\n        \"https://sports.ndtv.com/football/football-transfer-news-live-july-18-latest-transfer-news-fabrizio-romano-alexander-isak-luis-dias-benjamin-sesko-viktor-gyokeres-bryan-mbuemo-8898540\"\n      ]\n    },\n    {\n      \"headline\": \"Manchester United sign Bryan Mbuemo\",\n      \"citations\": [\n        \"https://sports.ndtv.com/football/football-transfer-news-live-july-18-latest-transfer-news-fabrizio-romano-alexander-isak-luis-dias-benjamin-sesko-viktor-gyokeres-bryan-mbuemo-8898540\"\n      ]\n    },\n    {\n      \"headline\": \"BBC Sport covers latest football transfer news\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/articles/c5y77wywe1lo\",\n        \"https://www.bbc.com/sport/football/transfers\"\n      ]\n    },\n    {\n      \"headline\": \"Transfer updates include James Trafford and Aaron Ramsdale moves\",\n      \"citations\": [\n        \"https://www.bbc.com/sport/football/live/c1dnd367544t\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources; some may not be strictly within the last 24 hours, as recent viral activity on X was limited in the provided context.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/articles/c5y77wywe1lo",
+    "https://www.bbc.com/sport/football",
+    "https://www.nytimes.com/athletic/tag/transfer-news/",
+    "https://www.bbc.com/sport/football/transfers",
+    "https://www.bbc.com/sport/football/live/c1dnd367544t",
+    "https://fourfourtwo.com/news/arsenal-stars-brilliant-reaction-to-viktor-gyokeres-transfer-update-goes-viral",
+    "https://sports.ndtv.com/football/football-transfer-news-live-july-18-latest-transfer-news-fabrizio-romano-alexander-isak-luis-dias-benjamin-sesko-viktor-gyokeres-bryan-mbuemo-8898540",
+    "https://givemesport.com/today-in-football-things-you-may-have-missed",
+    "https://deadline.com/2024/04/nfl-x-twitter-renew-content-partnership-ceo-linda-yaccarino-1235899239",
+    "https://www.scoopwhoop.com/football/chelsea-newcastle-united-alexander-isak-transfer-saga/"
+  ]
+}

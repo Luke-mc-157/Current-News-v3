@@ -1079,13 +1079,7 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
     
     // Parse JSON response with improved error handling
     try {
-      // Clean up response in case of formatting issues
-      let cleanContent = content.trim();
-      if (cleanContent.includes('```json')) {
-        cleanContent = cleanContent.replace(/```json\s*/, '').replace(/```\s*$/, '');
-      }
-      
-      const parsedData = JSON.parse(cleanContent);
+      const parsedData = parseRobustJSON(content);
       
       // Separate headlines and appendix
       let headlines = [];
@@ -1163,6 +1157,127 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
 function calculateEngagement(sourcePosts = []) {
   const totalLikes = sourcePosts.reduce((sum, post) => sum + (post.likes || 0), 0);
   return Math.max(totalLikes, Math.floor(Math.random() * 500) + 100);
+}
+
+// Robust JSON parser to handle malformed AI responses
+function parseRobustJSON(content) {
+  console.log('🔧 Attempting robust JSON parsing...');
+  
+  // Step 1: Clean up response in case of formatting issues
+  let cleanContent = content.trim();
+  
+  // Remove markdown code blocks
+  if (cleanContent.includes('```json')) {
+    cleanContent = cleanContent.replace(/```json\s*/g, '').replace(/```\s*$/g, '');
+  }
+  if (cleanContent.includes('```')) {
+    cleanContent = cleanContent.replace(/```\s*/g, '');
+  }
+  
+  // Remove any leading/trailing non-JSON content
+  const jsonStart = cleanContent.indexOf('[');
+  const jsonEnd = cleanContent.lastIndexOf(']');
+  if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
+    cleanContent = cleanContent.substring(jsonStart, jsonEnd + 1);
+  }
+  
+  // Step 2: Try standard JSON parsing first
+  try {
+    console.log('✅ Standard JSON parsing successful');
+    return JSON.parse(cleanContent);
+  } catch (firstError) {
+    console.log(`⚠️ Standard JSON parsing failed: ${firstError.message}`);
+    console.log(`🔍 Error position: ${firstError.message.match(/position (\d+)/)?.[1] || 'unknown'}`);
+  }
+  
+  // Step 3: Try common JSON fixes
+  const fixes = [
+    // Fix trailing commas
+    (str) => str.replace(/,(\s*[}\]])/g, '$1'),
+    // Fix missing commas between objects
+    (str) => str.replace(/}(\s*){/g, '},$1{'),
+    // Fix missing commas between array elements  
+    (str) => str.replace(/](\s*)\[/g, '],$1['),
+    // Fix unescaped quotes in strings (basic)
+    (str) => str.replace(/"([^"]*)"([^",}\]]*)"([^"]*)":/g, '"$1\\"$2\\"$3":'),
+    // Fix missing quotes around property names
+    (str) => str.replace(/([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)\s*:/g, '$1"$2":'),
+  ];
+  
+  for (let i = 0; i < fixes.length; i++) {
+    try {
+      const fixedContent = fixes[i](cleanContent);
+      const result = JSON.parse(fixedContent);
+      console.log(`✅ JSON parsing successful with fix ${i + 1}`);
+      return result;
+    } catch (error) {
+      console.log(`❌ Fix ${i + 1} failed: ${error.message}`);
+    }
+  }
+  
+  // Step 4: Try to extract partial valid JSON
+  try {
+    console.log('🔧 Attempting partial JSON extraction...');
+    
+    // Find complete objects by counting braces
+    const objects = [];
+    let braceCount = 0;
+    let currentObject = '';
+    let inString = false;
+    let escapeNext = false;
+    
+    for (let i = 0; i < cleanContent.length; i++) {
+      const char = cleanContent[i];
+      currentObject += char;
+      
+      if (escapeNext) {
+        escapeNext = false;
+        continue;
+      }
+      
+      if (char === '\\') {
+        escapeNext = true;
+        continue;
+      }
+      
+      if (char === '"') {
+        inString = !inString;
+        continue;
+      }
+      
+      if (!inString) {
+        if (char === '{') {
+          braceCount++;
+        } else if (char === '}') {
+          braceCount--;
+          if (braceCount === 0 && currentObject.trim().startsWith('{')) {
+            try {
+              const obj = JSON.parse(currentObject.trim());
+              objects.push(obj);
+              currentObject = '';
+            } catch (e) {
+              // Skip invalid object
+              currentObject = '';
+            }
+          }
+        }
+      }
+    }
+    
+    if (objects.length > 0) {
+      console.log(`✅ Extracted ${objects.length} valid objects from partial JSON`);
+      return objects;
+    }
+  } catch (partialError) {
+    console.log(`❌ Partial extraction failed: ${partialError.message}`);
+  }
+  
+  // Step 5: Final fallback - throw original error with context
+  console.error('❌ All JSON parsing attempts failed');
+  console.error('🔍 Content sample:', cleanContent.substring(0, 1000));
+  console.error('🔍 Content around error position (if available)');
+  
+  throw new Error(`JSON parsing failed after all repair attempts. Original content length: ${cleanContent.length}`);
 }
 
 export async function generateNewsletter(aggregatedData, topics) {

@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"S&P 500 Index reported real-time quotes and news updates as of July 31, 2025\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/quote/.SPX/\"\n      ]\n    },\n    {\n      \"headline\": \"Global stock market headlines featured breaking international finance news as of July 31, 2025\",\n      \"citations\": [\n        \"https://www.reuters.com/markets/\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Stock market trends discussed on social platforms with mentions of viral broker notes and memes\",\n      \"citations\": [\n        \"https://economictimes.indiatimes.com/markets/stocks/news/from-broker-notes-to-memes-how-the-stock-market-went-viral/articleshow/80572342.cms\"\n      ]\n    }\n  ],\n  \"notes\": \"Only three stories identified from searches within the last 24 hours; data for additional stories was sparse or outside the timeframe.\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/currencies/",
+    "https://www.reuters.com/markets/quote/.SPX/",
+    "https://www.reuters.com/markets/",
+    "https://economictimes.indiatimes.com/markets/stocks/news/from-broker-notes-to-memes-how-the-stock-market-went-viral/articleshow/80572342.cms",
+    "https://www.finder.com/ca/stock-trading/top-trending-stocks-on-twitter",
+    "https://stocktwits.com/news-articles/tags/trending",
+    "https://m.economictimes.com/markets/stocks/live-blog/bse-sensex-today-live-nifty-stock-market-updates-30-july-2025/amp_liveblog/122986610.cms",
+    "https://www.gorillatrades.com/how-to-see-stock-market-trends-on-twitter/"
+  ]
+}

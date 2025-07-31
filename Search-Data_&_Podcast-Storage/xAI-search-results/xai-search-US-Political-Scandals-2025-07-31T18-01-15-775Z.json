@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"notes\": \"Data from the last 24 hours is sparse; available context includes older sources that may not fully align with the current timeframe.\",\n  \"stories\": [\n    {\n      \"headline\": \"Article outlines alleged political sex scandals involving U.S. figures, including affairs and online activity.\",\n      \"citations\": [\n        \"https://www.washingtonian.com/2024/09/20/your-guide-to-all-the-political-sex-scandals-of-the-last-24-hours/\"\n      ]\n    },\n    {\n      \"headline\": \"Biden administration's hotline for unaccompanied migrant children reportedly left thousands of calls unanswered.\",\n      \"citations\": [\n        \"https://independentsentinel.com/x-posts-you-must-see-today\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/section/politics",
+    "https://www.reuters.com/",
+    "https://news.google.com/home/sections/CAQiSkNCQVNNUW9JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeUlPQ0FRYUNnb0lMMjB2TURWcWFHY3FEUW9MRWdsSVpXRmtiR2x1WlhNb0FBKioIAComCAoiIENCQVNFZ29JTDIwdk1ETm5aRFVTQW1WdUdnSlZVeWdBUAFQAQ?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.washingtonian.com/2024/09/20/your-guide-to-all-the-political-sex-scandals-of-the-last-24-hours/",
+    "https://independentsentinel.com/x-posts-you-must-see-today",
+    "https://www.pbs.org/weta/washingtonweek/article/2016/05/when-power-corrupts-16-biggest-political-scandals-last-50-years",
+    "https://pewresearch.org/internet/2020/07/16/2-congressional-social-media-engagement-driven-by-key-issues-events-and-language"
+  ]
+}

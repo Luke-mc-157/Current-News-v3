@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"Australia expands social media ban to include YouTube for users under 16\",\n      \"citations\": [\n        \"https://www.reuters.com/legal/litigation/australia-widens-teen-social-media-ban-youtube-scraps-exemption-2025-07-29/\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk-owned X platform experiences a global outage\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms\"\n      ]\n    },\n    {\n      \"headline\": \"Elon Musk posts multiple times on X regarding politics and Tesla vehicles\",\n      \"citations\": [\n        \"https://newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984\"\n      ]\n    },\n    {\n      \"headline\": \"X platform faces criminal investigation by French authorities\",\n      \"citations\": [\n        \"https://www.phonearena.com/news/social-media-platform-x-twitter-under-criminal-investigation_id172214\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; some citations may reference events slightly outside this window but are directly related to high-engagement topics.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/",
+    "https://www.reuters.com/legal/litigation/australia-widens-teen-social-media-ban-youtube-scraps-exemption-2025-07-29/",
+    "https://www.bbc.com/news/world/asia/india",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musk-owned-twitter-faces-global-outage-second-time-in-less-than-24-hours/articleshow/122208399.cms",
+    "https://newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.phonearena.com/news/social-media-platform-x-twitter-under-criminal-investigation_id172214",
+    "https://apnews.com/article/x-twitter-drops-preview-news-headlines-bebab0753b583929fda7e581625e7a55",
+    "https://www.cnn.com/2023/09/27/tech/x-twitter-misinformation-reporting-feature-scrapped/index.html"
+  ]
+}

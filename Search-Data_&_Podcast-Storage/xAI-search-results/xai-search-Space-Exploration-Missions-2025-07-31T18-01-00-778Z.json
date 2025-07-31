@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"SpaceX conducted two Starlink satellite launches within 24 hours\",\n      \"citations\": [\n        \"https://keeptrack.space/x-report/spacex-brief-2025-07-28\"\n      ]\n    },\n    {\n      \"headline\": \"Recent developments in astronomy and space exploration discoveries reported\",\n      \"citations\": [\n        \"https://www.sciencenewstoday.org/astronomy\"\n      ]\n    },\n    {\n      \"headline\": \"Updates on space news including exploration and discoveries shared\",\n      \"citations\": [\n        \"https://scitechdaily.com/news/space/\"\n      ]\n    },\n    {\n      \"headline\": \"News on various space missions and exploration activities covered\",\n      \"citations\": [\n        \"https://www.sci.news/news/space\"\n      ]\n    }\n  ],\n  \"notes\": \"Data for stories is based on available sources within the last 24 hours; some sources may predate this window but relate directly to ongoing missions.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.washingtonpost.com/",
+    "https://www.bbc.com/",
+    "https://keeptrack.space/x-report/spacex-brief-2025-07-28",
+    "https://www.sciencenewstoday.org/astronomy",
+    "https://scitechdaily.com/news/space/",
+    "https://www.sci.news/news/space",
+    "https://www.sciencedaily.com/news/space_time/space_missions/"
+  ]
+}

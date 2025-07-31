@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Bayern Munich signs Liverpool winger Luis Diaz for £65.5 million\",\n      \"sources\": [\n        \"https://www.bbc.com/sport/football/articles/c1w8j9g5qleo\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool engages in advanced talks for potential transfer of Newcastle United forward Alexander Isak\",\n      \"sources\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool participates in pre-season matches, including updates on transfers involving players like James Trafford\",\n      \"sources\": [\n        \"https://www.bbc.com/sport/football/live/c1dnd367544t\"\n      ]\n    },\n    {\n      \"headline\": \"Liverpool FC records highest social media engagement among Premier League clubs for the season\",\n      \"sources\": [\n        \"https://fcbusiness.co.uk/news/liverpool-fc-remains-most-engaged-premier-league-club-on-social-media\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"BBC Sport examines potential team integration for Hugo Ekitike and Alexander Isak at Liverpool\",\n      \"sources\": [\n        \"https://www.bbc.com/sport/football/articles/cqlerrl7dr3o\"\n      ]\n    }\n  ],\n  \"notes\": \"Only five relevant stories identified from searches; high-engagement stories based on viral transfer and engagement topics, semantic stories on analytical content. Data limited to available sources from the last 24 hours.\"\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.bbc.com/sport/football/articles/c1w8j9g5qleo",
+    "https://www.bbc.com/sport/football/articles/cqlerrl7dr3o",
+    "https://www.bbc.com/sport/football/live/c1dnd367544t",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048",
+    "https://metro.co.uk/tag/liverpool-fc/",
+    "https://fcbusiness.co.uk/news/liverpool-fc-remains-most-engaged-premier-league-club-on-social-media",
+    "https://es.besoccer.com/noticias/equipo/liverpool",
+    "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts"
+  ]
+}

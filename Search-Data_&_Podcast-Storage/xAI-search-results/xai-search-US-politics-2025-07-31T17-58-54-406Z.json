@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"headline\": \"US Transportation Secretary Pete Buttigieg makes public statements criticizing former President Donald Trump\",\n      \"citations\": [\n        \"https://t.co/P4HRbSaFWC\",\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"The New York Times reports on ongoing developments in US politics including White House and Congress activities\",\n      \"citations\": [\n        \"https://www.nytimes.com/section/politics\"\n      ]\n    },\n    {\n      \"headline\": \"The Washington Post covers recent political news from the White House, Congress, and Supreme Court\",\n      \"citations\": [\n        \"https://www.washingtonpost.com/politics/\"\n      ]\n    },\n    {\n      \"headline\": \"BBC News provides updates on US political events and global implications\",\n      \"citations\": [\n        \"https://www.bbc.com/news/politics\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is sparse; stories are based on available sources from the last 24 hours, with some reliance on general political coverage as specific viral events were limited in the provided context.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/section/politics",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/politics",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.washingtonpost.com/",
+    "https://www.newsweek.com/elon-musk-x-latest-posts-tweets-update-2047984",
+    "https://www.nytimes.com/topic/x-formerly-twitter",
+    "https://campaignlive.com/article/engagement-grew-x-despite-controversy-research-finds/1874828",
+    "https://theatlantic.com/ideas/archive/2024/10/rumors-x-twitter-musk/680219",
+    "https://www.cnn.com/2023/09/27/tech/x-twitter-misinformation-reporting-feature-scrapped/index.html",
+    "https://x.com/TheDemCoalition/status/1950554512223035474"
+  ]
+}

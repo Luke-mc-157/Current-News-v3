@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Severe weather events impact multiple regions in the United States\",\n      \"citations\": [\n        \"https://www.foxweather.com/extreme-weather/viral-videos-weather-2024-top-10\",\n        \"https://www.foxweather.com/weather-news/top-weather-stories-2024\"\n      ]\n    },\n    {\n      \"headline\": \"Global weather patterns show increased storm activity in recent days\",\n      \"citations\": [\n        \"https://www.reuters.com/world/\",\n        \"https://www.reuters.com/world/weather/\"\n      ]\n    },\n    {\n      \"headline\": \"Unusual flooding and precipitation reported in North America\",\n      \"citations\": [\n        \"https://www.bbc.com/news/world\",\n        \"https://www.washingtonpost.com/local/weather/\"\n      ]\n    },\n    {\n      \"headline\": \"Extreme weather claims circulate amid ongoing events\",\n      \"citations\": [\n        \"https://counterhate.com/research/extreme-weather-false-claims\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Ongoing heatwaves affect populations in various continents\",\n      \"citations\": [\n        \"https://www.reuters.com/world/us/\",\n        \"https://www.bbc.com/news/world\"\n      ]\n    },\n    {\n      \"headline\": \"Hurricane season developments noted in Atlantic regions\",\n      \"citations\": [\n        \"https://www.foxweather.com/weather-news/top-weather-stories-2024\",\n        \"https://www.reuters.com/world/\"\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; if fewer stories were identified, only those are included, ensuring all are neutral and verifiable.\"\n}",
+  "citations": [
+    "https://www.washingtonpost.com/local/weather/",
+    "https://www.reuters.com/world/",
+    "https://www.reuters.com/",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/us/",
+    "https://www.foxweather.com/extreme-weather/viral-videos-weather-2024-top-10",
+    "https://www.foxnews.com/category/weather",
+    "https://counterhate.com/research/extreme-weather-false-claims",
+    "https://www.foxweather.com/weather-news/top-weather-stories-2024",
+    "https://www.reuters.com/world/weather/"
+  ]
+}

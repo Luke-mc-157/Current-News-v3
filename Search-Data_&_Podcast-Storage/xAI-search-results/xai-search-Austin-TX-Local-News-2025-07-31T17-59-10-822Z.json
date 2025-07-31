@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"notes\": \"Data for the last 24 hours is sparse; only one relevant story was identified from available sources.\",\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Five people died in a 17-vehicle crash in Austin, Texas.\",\n      \"citations\": [\n        \"https://www.foxnews.com/us/17-vehicle-crash-austin-texas-leaves-3-adults-2-kids-dead\"\n      ]\n    }\n  ],\n  \"semantic_stories\": []\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/home?gl=AU&hl=en-AU&ceid=AU:en",
+    "https://news.google.com/home?hl=en-MY&gl=MY&ceid=MY:en",
+    "https://cbsaustin.com/news/local",
+    "https://www.fox7austin.com/news",
+    "https://blog.parse.ly/austin-local-news-fosters-engagement/",
+    "https://austinmonitor.com/all-posts",
+    "https://www.foxnews.com/us/17-vehicle-crash-austin-texas-leaves-3-adults-2-kids-dead"
+  ]
+}

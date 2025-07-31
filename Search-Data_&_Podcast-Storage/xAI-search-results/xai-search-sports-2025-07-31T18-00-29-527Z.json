@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"high_engagement_stories\": [\n    {\n      \"headline\": \"Marcus Rashford's transfer to FC Barcelona is indicated by leaked announcement footage\",\n      \"citations\": [\n        \"https://sports.yahoo.com/article/marcus-rashfords-barcelona-announcement-leaks-141400915.html\"\n      ]\n    },\n    {\n      \"headline\": \"Donald Trump advocates for Cleveland Guardians and Washington Commanders to revert to former names in sports imagery discussion\",\n      \"citations\": [\n        \"https://www.ideastream.org/sports/2025-07-22/the-history-of-native-american-sports-name-changes-from-the-obama-era-to-trumps-guardians-comments\"\n      ]\n    },\n    {\n      \"headline\": \"New York Jets introduce upgraded locker room facilities as training camp begins\",\n      \"citations\": [\n        \"https://sports.yahoo.com/article/jets-unveil-epic-locker-room-124902156.html\"\n      ]\n    },\n    {\n      \"headline\": \"Bayern Munich is recognized as the Social Media Champions of the Bundesliga\",\n      \"citations\": [\n        \"https://sports.yahoo.com/article/bayern-munich-named-social-media-010000964.html\"\n      ]\n    }\n  ],\n  \"semantic_stories\": [\n    {\n      \"headline\": \"Snapchat collaborates with TOGETHXR to enhance visibility for female athletes\",\n      \"citations\": [\n        \"https://www.socialmediatoday.com/news/snapchat-togethxr-partnership-snap-the-gap-female-sports-stars/753643/\"\n      ]\n    }\n  ],\n  \"notes\": \"\"\n}",
+  "citations": [
+    "https://www.reuters.com/sports/",
+    "https://www.washingtonpost.com/",
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/europe/",
+    "https://www.bbc.com/news",
+    "https://sports.yahoo.com/article/marcus-rashfords-barcelona-announcement-leaks-141400915.html",
+    "https://www.ideastream.org/sports/2025-07-22/the-history-of-native-american-sports-name-changes-from-the-obama-era-to-trumps-guardians-comments",
+    "https://sports.yahoo.com/article/jets-unveil-epic-locker-room-124902156.html",
+    "https://sports.yahoo.com/article/bayern-munich-named-social-media-010000964.html",
+    "https://www.socialmediatoday.com/news/snapchat-togethxr-partnership-snap-the-gap-female-sports-stars/753643/"
+  ]
+}
