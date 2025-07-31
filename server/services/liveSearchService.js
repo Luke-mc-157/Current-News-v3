@@ -3,6 +3,8 @@ import axios from 'axios';
 // Removed fetchXPosts import - no longer used in live search
 import { TwitterApi } from 'twitter-api-v2';
 import { fetchUserTimeline } from './xTimeline.js';
+import { storage } from '../storage.js';
+import { fetchRssArticles } from './rssService.js';
 
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
@@ -323,7 +325,7 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
         // Fetch and format RSS articles
         for (const feed of userRssFeeds) {
           try {
-            const articles = await fetchRSSArticles(feed.feedUrl);
+            const articles = await fetchRssArticles(feed.feedUrl);
             console.log(`📰 Fetched ${articles.length} articles from ${feed.feedName}`);
             
             articles.forEach(article => {
@@ -346,7 +348,7 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
     // Get timeline posts if X auth available
     if (userHandle && accessToken) {
       try {
-        const timelinePosts = await fetchUserTimeline(accessToken);
+        const timelinePosts = await fetchUserTimeline(userId);
         followedPosts.push(...timelinePosts);
         console.log(`📱 Fetched ${timelinePosts.length} timeline posts for @${userHandle}`);
       } catch (error) {
