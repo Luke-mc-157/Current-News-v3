@@ -878,11 +878,9 @@ ${rssText}`;
   // Add timeline posts section
   let timelineSection = '';
   if (formattedTimelinePosts.length > 0) {
-    const timelineText = formattedTimelinePosts.map(post => {
-      // Use author_name if available, fallback to authorHandle from the database, then 'Unknown'
-      const displayName = post.author_name || post.authorHandle || 'Unknown';
-      return `- ${displayName}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`;
-    }).join('\n');
+    const timelineText = formattedTimelinePosts.map(post => 
+      `- ${post.author_name || 'Unknown'}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
+    ).join('\n');
     
     timelineSection = `
 
@@ -938,7 +936,7 @@ async function getTopicDataFromLiveSearch(topic) {
         },
         {
           role: "user",
-          content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now. Cite specific supporting information from the last 24 hours ONLY. 
+          content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now. Cite specific supporting articles-from the last 24 hours ONLY. 
 
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.
 
