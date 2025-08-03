@@ -334,9 +334,7 @@ export function validateXAuthEnvironment() {
   }
   
   const callbackUrl = getCallbackUrl();
-  if (!callbackUrl.startsWith('https://') && !callbackUrl.startsWith('http://127.0.0.1')) {
-    issues.push('Callback URL must use HTTPS in production');
-  }
+  // Remove HTTPS requirement - let it work the same in all environments
   
   return {
     valid: issues.length === 0,

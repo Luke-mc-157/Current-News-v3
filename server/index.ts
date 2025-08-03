@@ -19,10 +19,10 @@ app.use(session({
   resave: false,
   saveUninitialized: true, // Allow session creation for all users
   cookie: {
-    secure: process.env.NODE_ENV === 'production',
+    secure: false, // Allow both HTTP and HTTPS to work the same in all environments
     httpOnly: true,
     maxAge: 24 * 60 * 60 * 1000, // 1 day instead of 7
-    sameSite: 'strict'
+    sameSite: 'lax' // Allow OAuth redirects to work properly
   },
   rolling: true // Reset expiry on each request
 }));
