@@ -76,6 +76,44 @@ export async function fetchUserTimeline(userId, days = 7) {
         tweetsLength: response.tweets?.length,
         dataLength: response.data?.length
       });
+      
+      // DEBUG: Log the complete response structure
+      console.log('🔍 DEBUG - Full response object keys:', Object.keys(response));
+      console.log('🔍 DEBUG - response.data exists:', !!response.data);
+      console.log('🔍 DEBUG - response._realData exists:', !!response._realData);
+      console.log('🔍 DEBUG - response.includes exists:', !!response.includes);
+      console.log('🔍 DEBUG - response._realData?.includes exists:', !!response._realData?.includes);
+      
+      // Log the includes section specifically
+      if (response.includes) {
+        console.log('🔍 DEBUG - response.includes structure:', {
+          keys: Object.keys(response.includes),
+          hasUsers: !!response.includes.users,
+          usersCount: response.includes.users?.length || 0,
+          firstUser: response.includes.users?.[0]
+        });
+      }
+      
+      if (response._realData?.includes) {
+        console.log('🔍 DEBUG - response._realData.includes structure:', {
+          keys: Object.keys(response._realData.includes),
+          hasUsers: !!response._realData.includes.users,
+          usersCount: response._realData.includes.users?.length || 0,
+          firstUser: response._realData.includes.users?.[0]
+        });
+      }
+      
+      // Log first tweet structure to see if user data is embedded
+      const firstTweet = response.tweets?.[0] || response.data?.[0] || response._realData?.data?.[0];
+      if (firstTweet) {
+        console.log('🔍 DEBUG - First tweet structure:', {
+          keys: Object.keys(firstTweet),
+          author_id: firstTweet.author_id,
+          hasAuthor: !!firstTweet.author,
+          hasUser: !!firstTweet.user,
+          tweet: firstTweet
+        });
+      }
 
       // Extract the actual tweets from the response - twitter-api-v2 may wrap data differently
       const tweets = response.tweets || response.data || response._realData?.data;
