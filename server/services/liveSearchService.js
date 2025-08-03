@@ -936,9 +936,9 @@ async function getTopicDataFromLiveSearch(topic) {
         },
         {
           role: "user",
-          content: `Identify the 4 biggest (viral) news stories about ${topic} hapenning right now. Only cit specific supporting articles-from the last 24 hours ONLY. 
+          content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now. Cite specific supporting articles-from the last 24 hours ONLY. 
 
-If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable. If data is sparse, note it in a "notes" field at the top level.
+If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.
 
 CRITICAL: Do not include any sources or citations that are not directly related to the topic.`
         },
