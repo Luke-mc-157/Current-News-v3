@@ -22,7 +22,7 @@ import { getXLoginUrl, handleXCallback, isXAuthConfigured, getXAuthStatus, valid
 import { fetchUserTimeline } from "./services/xTimeline.js";
 import { seedDatabase, clearTestData, getTestUsers } from "./services/devSeeder.js";
 import { devAutoLogin, devOnly, addDevHeaders } from "./middleware/devMiddleware.js";
-import { runPodcastScheduler, createScheduledPodcastsForUser, processPendingPodcasts } from "./services/podcastScheduler.js";
+import { runPodcastScheduler, createScheduledPodcastsForUser } from "./services/podcastScheduler.js";
 import rssRoutes from "./routes/rssRoutes.ts";
 import path from 'path';
 import fs from 'fs';
