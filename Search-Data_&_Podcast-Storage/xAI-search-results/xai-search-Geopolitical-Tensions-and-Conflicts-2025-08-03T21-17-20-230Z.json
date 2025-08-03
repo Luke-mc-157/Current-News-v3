@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"rank\": 1,\n      \"title\": \"Escalating Tensions in the Middle East\",\n      \"summary\": \"Recent developments in the Middle East include ongoing conflicts and diplomatic efforts, with updates on regional stability and international responses.\",\n      \"source\": \"Reuters\",\n      \"publication_time\": \"2025-08-03T03:36:17\"\n    },\n    {\n      \"rank\": 2,\n      \"title\": \"Global Geopolitical Conflicts and International News\",\n      \"summary\": \"Coverage of worldwide tensions, including investigations and analysis from regions such as Africa, the Americas, Asia, and Europe, focusing on current events.\",\n      \"source\": \"The New York Times\",\n      \"publication_time\": \"2025-08-03T07:38:18\"\n    },\n    {\n      \"rank\": 3,\n      \"title\": \"Updates on Middle East Conflicts\",\n      \"summary\": \"Live updates and content about ongoing geopolitical tensions in the Middle East, including potential escalations and regional impacts.\",\n      \"source\": \"BBC News\",\n      \"publication_time\": \"2025-08-02T20:09:17\"\n    },\n    {\n      \"rank\": 4,\n      \"title\": \"Worldwide Geopolitical Developments\",\n      \"summary\": \"Latest news on global conflicts and tensions, covering various regions and providing up-to-date information on international affairs.\",\n      \"source\": \"BBC News\",\n      \"publication_time\": \"2025-08-03T08:07:45\"\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/middle-east/",
+    "https://www.nytimes.com/section/world",
+    "https://www.bbc.com/news/world/middle_east",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://thebulwark.com/p/the-world-is-at-war-israel-gaza-ukraine-russia-india-pakistan-kashmir-congo-rwanda-balkans-syria-yemen",
+    "https://ainvest.com/news/geopolitical-tensions-ignite-defense-sector-strategic-opportunities-nuclear-age-arms-race-2508",
+    "https://justsecurity.org/118024/early-edition-july-29-2025",
+    "https://ndtv.com/topic/geopolitical-tensions",
+    "https://www.maplecroft.com/products-and-solutions/geopolitical-and-country-risk/insights/conflict-surges-in-28-countries-global-trade-facing-elevated-threats/"
+  ]
+}

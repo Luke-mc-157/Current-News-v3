@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"news_stories\": [\n    {\n      \"title\": \"Micah Parsons Requests Trade from Dallas Cowboys\",\n      \"summary\": \"Dallas Cowboys linebacker Micah Parsons has requested a trade amid contract disputes, as reported in ongoing NFL training camp updates.\",\n      \"source\": \"https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/6Nsx0UzjpQNx/\"\n    },\n    {\n      \"title\": \"Shedeur Sanders Sits Out Practice Due to Arm Soreness\",\n      \"summary\": \"Cleveland Browns rookie quarterback Shedeur Sanders missed practice because of arm soreness during NFL training camp.\",\n      \"source\": \"https://www.nytimes.com/athletic/6532159/2025/08/02/shedeur-sanders-injury-browns-training-camp/\"\n    },\n    {\n      \"title\": \"Washington Commanders' Terry McLaurin Seeks Trade\",\n      \"summary\": \"Washington Commanders wide receiver Terry McLaurin has expressed a desire to be traded, linked to contract negotiations during training camp.\",\n      \"source\": \"https://www.sportingnews.com/us/nfl/carolina-panthers/news/nfl-training-camp-news-commanders-terry-mclaurin-wants-out-panthers-wr-impossible-cover-travis-hunter-plays-both-ways-browns-rookie-gets-clowned/cb8482f1dd24329d05881561\"\n    },\n    {\n      \"title\": \"New Orleans Saints Make Interior Line Adjustments\",\n      \"summary\": \"The New Orleans Saints have made changes to their interior offensive line as part of training camp activities, potentially related to contract and depth decisions.\",\n      \"source\": \"https://www.sportingnews.com/us/nfl/new-orleans-saints/news/nfl-training-camp-news-saints-make-interior-line-move-jerry-jones-responds-micah-parsons-drama-ravens-add-rb-depth-chargers-denzel-perryman-arrested/c4758fb0bccec9edefccea2c\"\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/",
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/6Nsx0UzjpQNx/",
+    "https://www.nytimes.com/athletic/6532595/2025/08/02/raiders-training-camp-practice-report/",
+    "https://www.nytimes.com/athletic/6532159/2025/08/02/shedeur-sanders-injury-browns-training-camp/",
+    "https://www.sportingnews.com/us/nfl/new-orleans-saints/news/nfl-training-camp-news-saints-make-interior-line-move-jerry-jones-responds-micah-parsons-drama-ravens-add-rb-depth-chargers-denzel-perryman-arrested/c4758fb0bccec9edefccea2c",
+    "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-news-live-updates/FXqEG2fmZrgO/",
+    "https://www.sportingnews.com/us/nfl/carolina-panthers/news/nfl-training-camp-news-commanders-terry-mclaurin-wants-out-panthers-wr-impossible-cover-travis-hunter-plays-both-ways-browns-rookie-gets-clowned/cb8482f1dd24329d05881561",
+    "https://www.fantasysp.com/news/nfl/3055119/early-nfl-training-camp-injuries-and",
+    "https://www.bostonglobe.com/2025/08/02/sports/nfl-injuries-training-camp/"
+  ]
+}

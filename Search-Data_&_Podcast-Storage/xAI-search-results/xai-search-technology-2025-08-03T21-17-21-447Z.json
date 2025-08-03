@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"title\": \"Microsoft Achieves $4 Trillion Market Cap Amid Tech Sector Shifts\",\n      \"summary\": \"Microsoft and Nvidia reached a $4 trillion market capitalization, Apple reported record iPhone sales in Q3 2025, and TCS announced layoffs of 12,000 employees, highlighting ongoing dynamics in the tech industry.\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"url\": \"https://timesofindia.indiatimes.com/technology/tech-news/microsoft-becomes-4-trillion-company-tcs-lays-off-12000-employees-apples-record-iphone-growth-xiaomi-and-vivos-new-phone-and-other-top-tech-news-of-the-week/articleshow/123061441.cms\",\n          \"publication_date\": \"2025-08-02T03:17:11\"  // Approximate based on 18 hours ago from current date\n        }\n      ]\n    },\n    {\n      \"title\": \"XRP Sees Viral Speculation Following $1,000 Price Post and Ripple Transfers\",\n      \"summary\": \"Speculation around XRP surged due to a viral post suggesting a $1,000 price and reports of Ripple transferring $2 billion, amid ongoing interest in cryptocurrency markets.\",\n      \"sources\": [\n        {\n          \"type\": \"news\",\n          \"url\": \"https://www.ainvest.com/news/xrp-news-today-xrp-viral-speculation-fueled-1-000-post-ripple-2-billion-transfers-2508/\",\n          \"publication_date\": \"2025-08-02T21:17:11\"  // Approximate based on 1 day ago from current date\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/sport/football",
+    "https://www.washingtonpost.com/",
+    "https://www.nytimes.com/athletic/nfl/",
+    "https://www.bbc.com/news/topics/c255806071xt",
+    "https://timesofindia.indiatimes.com/technology/tech-news/google-fires-20-more-over-israel-protests-jiocinema-new-rs-29-plan-and-other-top-tech-stories-of-the-week/amp_articleshow/109663451.cms",
+    "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-becomes-4-trillion-company-tcs-lays-off-12000-employees-apples-record-iphone-growth-xiaomi-and-vivos-new-phone-and-other-top-tech-news-of-the-week/articleshow/123061441.cms",
+    "https://www.ainvest.com/news/xrp-news-today-xrp-viral-speculation-fueled-1-000-post-ripple-2-billion-transfers-2508/",
+    "https://rappler.com/technology/features/top-stories-2022",
+    "https://e.vnexpress.net/news/tech/tech-news/robot-disguised-as-bedside-lamp-goes-viral-for-folding-laundry-4921748.html",
+    "https://x.com/techradar/status/1951539343832785159"
+  ]
+}
