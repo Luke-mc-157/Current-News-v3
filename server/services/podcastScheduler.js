@@ -231,184 +231,159 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
   }
 }
 
-// Process pending scheduled podcasts that are due
+// Process overdue undelivered podcasts - Stateless approach
 export async function processPendingPodcasts() {
   try {
-    // Clean up podcast statuses first to ensure accurate processing
-    const { cleanupPodcastStatuses } = await import('./cleanupPodcastStatuses.js');
-    await cleanupPodcastStatuses();
-    
-    console.log('🔄 Processing pending scheduled podcasts...');
+    console.log('🔄 Processing overdue scheduled podcasts...');
     const now = new Date();
     console.log(`🕐 Current time: ${now.toISOString()} (${now.toLocaleString('en-US', { timeZone: 'America/Chicago' })} Central)`);
     
-    const pendingPodcasts = await storage.getPendingPodcastsDue();
-    console.log(`📋 getPendingPodcastsDue returned ${pendingPodcasts.length} podcasts`);
+    const overduePodcasts = await storage.getPendingPodcastsDue();
+    console.log(`📋 Found ${overduePodcasts.length} overdue undelivered podcasts`);
     
-    // Also check for any stuck pending podcasts
-    const allPending = await storage.getScheduledPodcastsForUser(4); // dev_user id is 4
-    const stuckPending = allPending.filter(p => p.status === 'pending');
-    if (stuckPending.length > 0) {
-      console.log(`⚠️ Found ${stuckPending.length} pending podcast(s), checking details:`);
-      stuckPending.forEach(p => {
-        const scheduledFor = new Date(p.scheduledFor);
-        const deliveryTime = new Date(p.deliveryTime);
-        const minutesUntilScheduled = (scheduledFor.getTime() - now.getTime()) / (1000 * 60);
-        console.log(`   - ID: ${p.id}, ScheduledFor: ${scheduledFor.toISOString()} (${minutesUntilScheduled.toFixed(1)} min), DeliveryTime: ${deliveryTime.toISOString()}`);
-      });
-    }
-    
-    if (pendingPodcasts.length === 0) {
-      console.log('✅ No pending podcasts due');
+    if (overduePodcasts.length === 0) {
+      console.log('✅ No overdue podcasts to deliver');
       return;
     }
     
-    console.log(`📊 Found ${pendingPodcasts.length} pending podcasts to process`);
-    
-    for (const scheduled of pendingPodcasts) {
+    for (const scheduled of overduePodcasts) {
       try {
-        console.log(`🎧 Processing podcast for user ${scheduled.userId} (scheduled for ${scheduled.scheduledFor})`);
+        const deliveryTime = new Date(scheduled.deliveryTime);
+        const overdueMins = (now.getTime() - deliveryTime.getTime()) / (1000 * 60);
+        console.log(`🎧 Processing overdue podcast ${scheduled.id} for user ${scheduled.userId} (${overdueMins.toFixed(1)} min overdue)`);
         
-        // Check if this is a stuck podcast being retried
-        if (scheduled.status === 'processing') {
-          const stuckTime = (now.getTime() - new Date(scheduled.scheduledFor).getTime()) / (1000 * 60);
-          console.log(`🔄 Retrying stuck podcast ${scheduled.id} (stuck for ${stuckTime.toFixed(1)} minutes)`);
+        // Call the exact same function used by "Test Delivery Now"
+        const success = await generateAndDeliverPodcast(scheduled);
+        
+        if (success) {
+          // Mark as delivered
+          await storage.markPodcastDelivered(scheduled.id);
+          console.log(`✅ Successfully delivered podcast ${scheduled.id}`);
+        } else {
+          // Mark as failed
+          await storage.markPodcastDelivered(scheduled.id, 'Generation failed');
+          console.log(`❌ Failed to deliver podcast ${scheduled.id}`);
         }
-        
-        // Update status to processing
-        await storage.updateScheduledPodcast(scheduled.id, { status: 'processing' });
-        
-        // Get user info
-        const user = await storage.getUser(scheduled.userId);
-        if (!user) {
-          console.error(`❌ User ${scheduled.userId} not found`);
-          await storage.updateScheduledPodcast(scheduled.id, { status: 'failed' });
-          continue;
-        }
-        
-        // Extract data from preference snapshot
-        const prefs = scheduled.preferenceSnapshot || {};
-        console.log(`📋 Preference snapshot for podcast ${scheduled.id}:`, JSON.stringify(prefs));
-        
-        const topics = prefs.topics || [];
-        // Filter out any undefined or empty topics
-        const validTopics = topics.filter(topic => topic && topic.trim());
-        
-        if (validTopics.length === 0) {
-          console.error(`❌ No valid topics found in preference snapshot for podcast ${scheduled.id}`);
-          await storage.updateScheduledPodcast(scheduled.id, { 
-            status: 'failed',
-            errorMessage: 'No valid topics found in preference snapshot'
-          });
-          continue;
-        }
-        
-        const duration = prefs.duration || 10;
-        const voiceId = prefs.voiceId || 'ErXwobaYiN019PkySvjV';
-        const enhanceWithX = prefs.enhanceWithX || false;
-        
-        // Get X auth if enhanceWithX is enabled
-        let userHandle = null;
-        let accessToken = null;
-        
-        if (enhanceWithX) {
-          const xAuth = await storage.getXAuthTokenByUserId(scheduled.userId);
-          if (xAuth) {
-            userHandle = xAuth.xHandle;
-            accessToken = xAuth.accessToken;
-          }
-        }
-        
-        // Get compiled data directly for podcast generation (bypassing headline generation)
-        console.log(`📰 Fetching compiled data for topics: ${validTopics.join(', ')}`);
-        const compiledDataResult = await getCompiledDataForPodcast(
-          validTopics,
-          scheduled.userId,
-          userHandle,
-          accessToken
-        );
-        
-        if (!compiledDataResult.compiledData || compiledDataResult.compiledData.length === 0) {
-          console.error('❌ No compiled data generated');
-          await storage.updateScheduledPodcast(scheduled.id, { 
-            status: 'failed',
-            errorMessage: 'Failed to generate compiled data for podcast'
-          });
-          continue;
-        }
-        
-        console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters from ${compiledDataResult.totalSources} sources`);
-        
-        // Generate podcast script directly from compiled data
-        console.log(`📝 Generating ${duration}-minute podcast script from compiled data`);
-        const script = await generatePodcastScript(
-          compiledDataResult.compiledData,
-          null, // No appendix from headline generation
-          duration,
-          "Current News"
-        );
-        
-        // Create podcast episode record
-        const episode = await storage.createPodcastEpisode({
-          userId: scheduled.userId,
-          topics: validTopics,
-          durationMinutes: duration,
-          voiceId: voiceId,
-          script,
-          headlineIds: [], // No headlines generated, using compiled data directly
-          wasScheduled: true
-        });
-        
-        // Generate audio
-        console.log(`🎵 Generating audio with voice ${voiceId}`);
-        const audioResult = await generateAudio(script, voiceId, episode.id, scheduled.userId);
-        
-        // Update episode with audio URL and local path
-        await storage.updatePodcastEpisode(episode.id, {
-          audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
-          audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
-        });
-        
-        // Send email
-        console.log(`📧 Sending podcast to ${user.email}`);
-        // Handle both object return and string return from generateAudio
-        const audioFilePath = typeof audioResult === 'string' 
-          ? audioResult 
-          : (audioResult.filePath || audioResult.audioUrl);
-        
-        // Convert web path to absolute file path - FIXED for new folder structure
-        const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
-          ? path.join(process.cwd(), audioFilePath.substring(1)) // Remove leading / and join with cwd
-          : audioFilePath; // Use direct path if it's already absolute
-          
-        console.log(`📧 Audio file path: ${absoluteAudioPath}`);
-        await sendPodcastEmail(user.email, absoluteAudioPath, "Current News");
-        
-        // Update episode with email sent timestamp
-        await storage.updatePodcastEpisode(episode.id, {
-          emailSentAt: new Date()
-        });
-        
-        // Mark scheduled podcast as completed
-        await storage.updateScheduledPodcast(scheduled.id, { 
-          status: 'completed',
-          completedAt: new Date()
-        });
-        
-        console.log(`✅ Successfully processed and sent podcast to ${user.email}`);
-        
-        // No need to schedule next podcast - daily maintenance will handle it
-        
       } catch (error) {
         console.error(`❌ Error processing scheduled podcast ${scheduled.id}:`, error);
-        await storage.updateScheduledPodcast(scheduled.id, { 
-          status: 'failed',
-          error_message: error.message || error.toString()
-        });
+        // Mark as failed with error message
+        await storage.markPodcastDelivered(scheduled.id, error.message || 'Processing failed');
       }
     }
   } catch (error) {
     console.error('❌ Error processing pending podcasts:', error);
+  }
+}
+
+// Core function that mimics "Test Delivery Now" functionality
+async function generateAndDeliverPodcast(scheduled) {
+  try {
+    // Get user info
+    const user = await storage.getUser(scheduled.userId);
+    if (!user) {
+      console.error(`❌ User ${scheduled.userId} not found`);
+      return false;
+    }
+    
+    // Extract data from preference snapshot
+    const prefs = scheduled.preferenceSnapshot || {};
+    console.log(`📋 Using preference snapshot:`, JSON.stringify(prefs));
+    
+    const topics = prefs.topics || [];
+    const validTopics = topics.filter(topic => topic && topic.trim());
+    
+    if (validTopics.length === 0) {
+      console.error(`❌ No valid topics found in preference snapshot`);
+      return false;
+    }
+    
+    const duration = prefs.duration || 10;
+    const voiceId = prefs.voiceId || 'ErXwobaYiN019PkySvjV';
+    const enhanceWithX = prefs.enhanceWithX || false;
+    
+    // Get X auth if enhanceWithX is enabled
+    let userHandle = null;
+    let accessToken = null;
+    
+    if (enhanceWithX) {
+      const xAuth = await storage.getXAuthTokenByUserId(scheduled.userId);
+      if (xAuth) {
+        userHandle = xAuth.xHandle;
+        accessToken = xAuth.accessToken;
+      }
+    }
+    
+    // Get compiled data directly for podcast generation
+    console.log(`📰 Fetching compiled data for topics: ${validTopics.join(', ')}`);
+    const compiledDataResult = await getCompiledDataForPodcast(
+      validTopics,
+      scheduled.userId,
+      userHandle,
+      accessToken
+    );
+    
+    if (!compiledDataResult.compiledData || compiledDataResult.compiledData.length === 0) {
+      console.error('❌ No compiled data generated');
+      return false;
+    }
+    
+    console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters from ${compiledDataResult.totalSources} sources`);
+    
+    // Generate podcast script
+    console.log(`📝 Generating ${duration}-minute podcast script`);
+    const script = await generatePodcastScript(
+      compiledDataResult.compiledData,
+      null, // No appendix from headline generation
+      duration,
+      "Current News"
+    );
+    
+    // Create podcast episode record
+    const episode = await storage.createPodcastEpisode({
+      userId: scheduled.userId,
+      topics: validTopics,
+      durationMinutes: duration,
+      voiceId: voiceId,
+      script,
+      headlineIds: [],
+      wasScheduled: true
+    });
+    
+    // Generate audio
+    console.log(`🎵 Generating audio with voice ${voiceId}`);
+    const audioResult = await generateAudio(script, voiceId, episode.id, scheduled.userId);
+    
+    // Update episode with audio URL and local path
+    await storage.updatePodcastEpisode(episode.id, {
+      audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
+      audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
+    });
+    
+    // Send email
+    console.log(`📧 Sending podcast to ${user.email}`);
+    const audioFilePath = typeof audioResult === 'string' 
+      ? audioResult 
+      : (audioResult.filePath || audioResult.audioUrl);
+    
+    // Convert web path to absolute file path
+    const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
+      ? path.join(process.cwd(), audioFilePath.substring(1))
+      : audioFilePath;
+      
+    console.log(`📧 Audio file path: ${absoluteAudioPath}`);
+    await sendPodcastEmail(user.email, absoluteAudioPath, "Current News");
+    
+    // Update episode with email sent timestamp
+    await storage.updatePodcastEpisode(episode.id, {
+      emailSentAt: new Date()
+    });
+    
+    console.log(`✅ Successfully generated and sent podcast to ${user.email}`);
+    return true;
+    
+  } catch (error) {
+    console.error(`❌ Error in generateAndDeliverPodcast:`, error);
+    return false;
   }
 }
 

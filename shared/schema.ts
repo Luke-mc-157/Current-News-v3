@@ -150,18 +150,16 @@ export const podcastPreferences = pgTable("podcast_preferences", {
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
-// Scheduled podcast jobs
+// Scheduled podcast jobs - Stateless approach
 export const scheduledPodcasts = pgTable("scheduled_podcasts", {
   id: serial("id").primaryKey(),
   userId: integer("user_id").notNull(),
-  scheduledFor: timestamp("scheduled_for").notNull(), // When to start processing (10 min before delivery)
-  deliveryTime: timestamp("delivery_time").notNull(), // When to send email
-  status: text("status").notNull(), // 'pending' | 'processing' | 'completed' | 'failed'
+  deliveryTime: timestamp("delivery_time").notNull(), // When to send email (UTC)
+  delivered: boolean("delivered").default(false).notNull(), // Simple delivered flag
   preferenceSnapshot: jsonb("preference_snapshot"), // Snapshot of preferences at schedule time
   episodeId: integer("episode_id"), // Link to generated podcast episode
-  errorMessage: text("error_message"),
-  processStarted: timestamp("process_started"),
-  processCompleted: timestamp("process_completed"),
+  deliveredAt: timestamp("delivered_at"), // When delivery completed
+  errorMessage: text("error_message"), // Last error (if any)
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 

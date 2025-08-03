@@ -399,89 +399,56 @@ export class DatabaseStorage implements IStorage {
 
   async createScheduledPodcast(scheduled: InsertScheduledPodcasts): Promise<ScheduledPodcasts> {
     return await retryDatabaseOperation(async () => {
-      const cleanScheduled = {
-        ...scheduled,
-        topics: Array.isArray(scheduled.topics) ? scheduled.topics as string[] : Array.from(scheduled.topics || []) as string[]
-      };
       if (process.env.NODE_ENV !== 'production') {
         console.log('Creating scheduled podcast:', {
-          userId: cleanScheduled.userId,
-          scheduledFor: cleanScheduled.scheduledFor,
-          deliveryTime: cleanScheduled.deliveryTime,
-          topicsCount: cleanScheduled.topics.length
+          userId: scheduled.userId,
+          deliveryTime: scheduled.deliveryTime,
+          delivered: scheduled.delivered || false
         });
       }
-      const [newScheduled] = await db.insert(scheduledPodcasts).values([cleanScheduled]).returning();
-      return {
-        ...newScheduled,
-        topics: newScheduled.topics as string[]
-      };
+      const [newScheduled] = await db.insert(scheduledPodcasts).values([scheduled]).returning();
+      return newScheduled;
     });
   }
 
   async getScheduledPodcast(id: number): Promise<ScheduledPodcasts | undefined> {
     const [scheduled] = await db.select().from(scheduledPodcasts).where(eq(scheduledPodcasts.id, id));
-    if (!scheduled) return undefined;
-    
-    return {
-      ...scheduled,
-      topics: scheduled.topics as string[]
-    };
+    return scheduled || undefined;
   }
 
   async getPendingPodcastsDue(): Promise<ScheduledPodcasts[]> {
     const now = new Date();
-    const fifteenMinutesFromNow = new Date(now.getTime() + 15 * 60 * 1000);
-    const thirtyMinutesAgo = new Date(now.getTime() - 30 * 60 * 1000);
-    const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
     
-    // Get podcasts that are:
-    // - Status is 'pending' AND scheduled between 30 min ago and 15 min future
-    // REMOVED: Automatic retry of stuck 'processing' podcasts to prevent unwanted API consumption
+    // Get podcasts that are overdue and not yet delivered
+    // Stateless approach: just check if delivery time has passed and not delivered
     const scheduled = await db.select().from(scheduledPodcasts)
       .where(
         and(
-          eq(scheduledPodcasts.status, 'pending'),
-          gte(scheduledPodcasts.scheduledFor, thirtyMinutesAgo),
-          lte(scheduledPodcasts.scheduledFor, fifteenMinutesFromNow)
+          eq(scheduledPodcasts.delivered, false),
+          lte(scheduledPodcasts.deliveryTime, now)
         )
-      );
+      )
+      .orderBy(scheduledPodcasts.deliveryTime);
     
-    return scheduled.map(item => ({
-      ...item,
-      topics: item.topics as string[]
-    }));
+    return scheduled;
   }
 
   async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {
     const scheduled = await db.select().from(scheduledPodcasts)
       .where(eq(scheduledPodcasts.userId, userId))
-      .orderBy(desc(scheduledPodcasts.scheduledFor));
+      .orderBy(desc(scheduledPodcasts.deliveryTime));
     
-    return scheduled.map(item => ({
-      ...item,
-      topics: item.topics as string[]
-    }));
+    return scheduled;
   }
 
   async updateScheduledPodcast(id: number, updates: Partial<ScheduledPodcasts>): Promise<ScheduledPodcasts | undefined> {
     return await retryDatabaseOperation(async () => {
-      const cleanUpdates = updates.topics ? {
-        ...updates,
-        topics: Array.isArray(updates.topics) ? updates.topics as string[] : Array.from(updates.topics || []) as string[]
-      } : updates;
-      
       const [updatedScheduled] = await db.update(scheduledPodcasts)
-        .set(cleanUpdates)
+        .set(updates)
         .where(eq(scheduledPodcasts.id, id))
         .returning();
       
-      if (!updatedScheduled) return undefined;
-      
-      return {
-        ...updatedScheduled,
-        topics: updatedScheduled.topics as string[]
-      };
+      return updatedScheduled || undefined;
     });
   }
 
@@ -556,7 +523,7 @@ export class DatabaseStorage implements IStorage {
     await db.delete(scheduledPodcasts)
       .where(and(
         eq(scheduledPodcasts.userId, userId),
-        eq(scheduledPodcasts.status, 'pending')
+        eq(scheduledPodcasts.delivered, false)
       ));
   }
 
@@ -564,7 +531,7 @@ export class DatabaseStorage implements IStorage {
     await db.delete(scheduledPodcasts)
       .where(and(
         eq(scheduledPodcasts.userId, userId),
-        gt(scheduledPodcasts.scheduledFor, date)
+        gt(scheduledPodcasts.deliveryTime, date)
       ));
   }
 
@@ -581,16 +548,14 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getAllScheduledPodcasts(): Promise<ScheduledPodcasts[]> {
-    const scheduled = await db.select().from(scheduledPodcasts);
-    
-    return scheduled.map(item => ({
-      ...item,
-      topics: item.topics as string[]
-    }));
+    return await db.select().from(scheduledPodcasts);
   }
 
-  async updateScheduledPodcastStatus(id: number, status: string, error?: string): Promise<void> {
-    const updates: any = { status };
+  async markPodcastDelivered(id: number, error?: string): Promise<void> {
+    const updates: any = { 
+      delivered: true, 
+      deliveredAt: new Date() 
+    };
     if (error) {
       updates.errorMessage = error;
     }
