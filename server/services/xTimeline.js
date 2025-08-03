@@ -126,7 +126,7 @@ export async function fetchUserTimeline(userId, days = 7) {
       }
 
       // Create users map for author details
-      const users = response.includes?.users || response._realData?.includes?.users || [];
+      const users = response._realData?.includes?.users || response.includes?.users || [];
       const usersMap = new Map(users.map(u => [u.id, u]));
 
       // Transform posts without date filtering for testing
