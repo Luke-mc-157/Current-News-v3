@@ -416,7 +416,20 @@ export class DatabaseStorage implements IStorage {
     return scheduled || undefined;
   }
 
-  // Removed getPendingPodcastsDue - no overdue processing needed
+  async getPodcastsDueNow(fromTime: Date, toTime: Date): Promise<ScheduledPodcasts[]> {
+    // Find podcasts due within a specific time window (for on-time delivery)
+    const scheduled = await db.select().from(scheduledPodcasts)
+      .where(
+        and(
+          eq(scheduledPodcasts.delivered, false),
+          gte(scheduledPodcasts.deliveryTime, fromTime),
+          lte(scheduledPodcasts.deliveryTime, toTime)
+        )
+      )
+      .orderBy(scheduledPodcasts.deliveryTime);
+    
+    return scheduled;
+  }
 
   async getScheduledPodcastsForUser(userId: number): Promise<ScheduledPodcasts[]> {
     const scheduled = await db.select().from(scheduledPodcasts)

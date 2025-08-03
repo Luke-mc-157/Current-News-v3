@@ -233,16 +233,165 @@ export async function createScheduledPodcastsForUser(userId, preferences) {
 
 // Removed overdue podcast processing - system delivers on time without cleanup
 
-// Removed generateAndDeliverPodcast - no overdue processing needed
+// Core function for on-time podcast delivery
+async function deliverScheduledPodcast(scheduled) {
+  try {
+    // Get user info
+    const user = await storage.getUser(scheduled.userId);
+    if (!user) {
+      console.error(`❌ User ${scheduled.userId} not found`);
+      return false;
+    }
+    
+    // Extract data from preference snapshot
+    const prefs = scheduled.preferenceSnapshot || {};
+    console.log(`📋 Using preference snapshot:`, JSON.stringify(prefs));
+    
+    const topics = prefs.topics || [];
+    const validTopics = topics.filter(topic => topic && topic.trim());
+    
+    if (validTopics.length === 0) {
+      console.error(`❌ No valid topics found in preference snapshot`);
+      return false;
+    }
+    
+    const duration = prefs.duration || 10;
+    const voiceId = prefs.voiceId || 'ErXwobaYiN019PkySvjV';
+    const enhanceWithX = prefs.enhanceWithX || false;
+    
+    // Get X auth if enhanceWithX is enabled
+    let userHandle = null;
+    let accessToken = null;
+    
+    if (enhanceWithX) {
+      const xAuth = await storage.getXAuthTokenByUserId(scheduled.userId);
+      if (xAuth) {
+        userHandle = xAuth.xHandle;
+        accessToken = xAuth.accessToken;
+      }
+    }
+    
+    // Get compiled data directly for podcast generation
+    console.log(`📰 Fetching compiled data for topics: ${validTopics.join(', ')}`);
+    const compiledDataResult = await getCompiledDataForPodcast(
+      validTopics,
+      scheduled.userId,
+      userHandle,
+      accessToken
+    );
+    
+    if (!compiledDataResult.compiledData || compiledDataResult.compiledData.length === 0) {
+      console.error('❌ No compiled data generated');
+      return false;
+    }
+    
+    console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters from ${compiledDataResult.totalSources} sources`);
+    
+    // Generate podcast script
+    console.log(`📝 Generating ${duration}-minute podcast script`);
+    const script = await generatePodcastScript(
+      compiledDataResult.compiledData,
+      null, // No appendix from headline generation
+      duration,
+      "Current News"
+    );
+    
+    // Create podcast episode record
+    const episode = await storage.createPodcastEpisode({
+      userId: scheduled.userId,
+      topics: validTopics,
+      durationMinutes: duration,
+      voiceId: voiceId,
+      script,
+      headlineIds: [],
+      wasScheduled: true
+    });
+    
+    // Generate audio
+    console.log(`🎵 Generating audio with voice ${voiceId}`);
+    const audioResult = await generateAudio(script, voiceId, episode.id, scheduled.userId);
+    
+    // Update episode with audio URL and local path
+    await storage.updatePodcastEpisode(episode.id, {
+      audioUrl: typeof audioResult === 'string' ? audioResult : audioResult.audioUrl,
+      audioLocalPath: typeof audioResult === 'string' ? audioResult : audioResult.audioLocalPath
+    });
+    
+    // Send email
+    console.log(`📧 Sending podcast to ${user.email}`);
+    const audioFilePath = typeof audioResult === 'string' 
+      ? audioResult 
+      : (audioResult.filePath || audioResult.audioUrl);
+    
+    // Convert web path to absolute file path
+    const absoluteAudioPath = audioFilePath.startsWith('/Search-Data_&_Podcast-Storage/') 
+      ? path.join(process.cwd(), audioFilePath.substring(1))
+      : audioFilePath;
+      
+    console.log(`📧 Audio file path: ${absoluteAudioPath}`);
+    await sendPodcastEmail(user.email, absoluteAudioPath, "Current News");
+    
+    // Update episode with email sent timestamp
+    await storage.updatePodcastEpisode(episode.id, {
+      emailSentAt: new Date()
+    });
+    
+    console.log(`✅ Successfully generated and sent podcast to ${user.email}`);
+    return true;
+    
+  } catch (error) {
+    console.error(`❌ Error in deliverScheduledPodcast:`, error);
+    return false;
+  }
+}
 
 // Main scheduler function that runs periodically
 export async function runPodcastScheduler() {
   console.log('🎧 Running podcast scheduler...');
   
-  // No overdue processing - system delivers on time
-  console.log('✅ No overdue processing needed - podcasts deliver on schedule');
+  // Process podcasts that are due RIGHT NOW (on-time delivery)
+  await processOnTimePodcasts();
   
   console.log('✅ Podcast scheduler completed');
+}
+
+// Process podcasts due at the current time (NOT overdue cleanup)
+async function processOnTimePodcasts() {
+  try {
+    const now = new Date();
+    console.log(`🕐 Checking for podcasts due at: ${now.toISOString()}`);
+    
+    // Find podcasts due within the current minute window
+    const oneMinuteAgo = new Date(now.getTime() - 60 * 1000);
+    const duePodcasts = await storage.getPodcastsDueNow(oneMinuteAgo, now);
+    
+    if (duePodcasts.length === 0) {
+      console.log('✅ No podcasts due at this time');
+      return;
+    }
+    
+    console.log(`🎧 Found ${duePodcasts.length} podcasts due for delivery`);
+    
+    for (const scheduled of duePodcasts) {
+      try {
+        console.log(`🎯 Delivering podcast ${scheduled.id} for user ${scheduled.userId}`);
+        const success = await deliverScheduledPodcast(scheduled);
+        
+        if (success) {
+          await storage.markPodcastDelivered(scheduled.id);
+          console.log(`✅ Successfully delivered podcast ${scheduled.id}`);
+        } else {
+          await storage.markPodcastDelivered(scheduled.id, 'Generation failed');
+          console.log(`❌ Failed to deliver podcast ${scheduled.id}`);
+        }
+      } catch (error) {
+        console.error(`❌ Error delivering podcast ${scheduled.id}:`, error);
+        await storage.markPodcastDelivered(scheduled.id, error.message || 'Processing failed');
+      }
+    }
+  } catch (error) {
+    console.error('❌ Error in processOnTimePodcasts:', error);
+  }
 }
 
 // Daily maintenance task to ensure all users have podcasts scheduled for next 7 days
