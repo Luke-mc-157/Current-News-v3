@@ -65,9 +65,11 @@ async function requireAuth(req, res, next) {
 export function registerRoutes(app) {
   const router = express.Router();
   
-  // Add development middleware
-  app.use(addDevHeaders);
-  app.use(devAutoLogin);
+  // Add development middleware only in development environment
+  if (process.env.NODE_ENV === 'development') {
+    app.use(addDevHeaders);
+    app.use(devAutoLogin);
+  }
   
   // Add RSS routes
   app.use(rssRoutes);

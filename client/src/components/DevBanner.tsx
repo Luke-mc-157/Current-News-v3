@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AlertTriangle, User, Zap, Database, RefreshCw } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
 
 interface DevEnvironmentInfo {
   environment: string;
@@ -23,11 +24,7 @@ export function DevBanner() {
   const [envInfo, setEnvInfo] = useState<DevEnvironmentInfo | null>(null);
   const [testUsers, setTestUsers] = useState<TestUser[]>([]);
   const [showDevTools, setShowDevTools] = useState(false);
-
-  // Only show in development
-  if (import.meta.env.PROD) {
-    return null;
-  }
+  const { user } = useAuth();
 
   useEffect(() => {
     fetchEnvironmentInfo();
@@ -101,6 +98,11 @@ export function DevBanner() {
       }
     }
   };
+
+  // Only show for dev_user
+  if (user?.username !== 'dev_user') {
+    return null;
+  }
 
   if (!envInfo) return null;
 

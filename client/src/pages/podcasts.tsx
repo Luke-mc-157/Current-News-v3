@@ -523,7 +523,7 @@ export default function Podcasts() {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            {import.meta.env.DEV ? (
+                            {user?.username === 'dev_user' ? (
                               // Development mode: 10-minute intervals
                               Array.from({ length: 144 }, (_, i) => {
                                 const totalMinutes = i * 10;
@@ -771,7 +771,7 @@ export default function Podcasts() {
                   )}
                   Save Preferences
                 </Button>
-                {import.meta.env.DEV && (
+                {user?.username === 'dev_user' && (
                   <Button
                     variant="secondary"
                     onClick={() => {
@@ -795,7 +795,7 @@ export default function Podcasts() {
                     🧪 Test Delivery Now
                   </Button>
                 )}
-                {import.meta.env.DEV && (
+                {user?.username === 'dev_user' && (
                   <Button
                     variant="outline"
                     onClick={() => {

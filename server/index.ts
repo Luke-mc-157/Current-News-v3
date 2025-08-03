@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 app.use(session({
   secret: process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex'), // Auto-generate if missing
   resave: false,
-  saveUninitialized: process.env.NODE_ENV === 'development', // Only true in development
+  saveUninitialized: true, // Allow session creation for all users
   cookie: {
     secure: process.env.NODE_ENV === 'production',
     httpOnly: true,

@@ -1,0 +1,611 @@
+
+TOPIC: technology
+
+LIVE SEARCH SUMMARY:
+{
+  "top_stories": [
+    {
+      "title": "Microsoft Achieves $4 Trillion Market Cap Amid Tech Sector Shifts",
+      "summary": "Microsoft and Nvidia reached a $4 trillion market capitalization, Apple reported record iPhone sales in Q3 2025, and TCS announced layoffs of 12,000 employees, highlighting ongoing dynamics in the tech industry.",
+      "sources": [
+        {
+          "type": "news",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-becomes-4-trillion-company-tcs-lays-off-12000-employees-apples-record-iphone-growth-xiaomi-and-vivos-new-phone-and-other-top-tech-news-of-the-week/articleshow/123061441.cms",
+          "publication_date": "2025-08-02T03:17:11"  // Approximate based on 18 hours ago from current date
+        }
+      ]
+    },
+    {
+      "title": "XRP Sees Viral Speculation Following $1,000 Price Post and Ripple Transfers",
+      "summary": "Speculation around XRP surged due to a viral post suggesting a $1,000 price and reports of 
+
+X POSTS FROM SEARCH (1):
+- TechRadar: "Here's your firmware update for August 2, 2025  https://t.co/W09VqIu8km" (2523 views, 1 likes) https://x.com/techradar/status/1951539343832785159
+
+SUPPORTING ARTICLES (7):
+- Google News: Google News aggregates real-time news from various global sources, providing comprehensive coverage on topics like politics, business, and technology. It offers personalized briefings, weather updates, and features such as advanced search and app access for Android and iOS users. In a recent feed, it highlighted stories including Larry Summers criticizing Trump's accusations on job numbers as 'preposterous' and White House defenses amid economic discussions. The platform emphasizes factual data compilation without bias, allowing users to customize settings for language and region. [https://news.google.com/home?hl=en-US&gl=US&ceid=US:en]
+Key Quotes: "Trump's accusations of manipulated jobs numbers are ‘preposterous’" - Larry Summers
+
+- TikTok - BBC News: BBC News covered multiple stories related to TikTok, including criminals exploiting the Labubu doll trend with dangerous fakes to profit illegally. It reported the removal of a video by Huda Beauty's boss for spreading anti-Israel conspiracy theories, and YouTube's inclusion in Australia's ban on social media for teens under 16. Other highlights included a TikTok star, PinkPantheress, receiving an honorary university degree, a legal battle over adult-themed videos involving Sylvanian Families toys, and the death of a WW2 veteran popular on TikTok. These reports underscore TikTok's role in cultural, commercial, and controversial issues globally. [https://www.bbc.com/sport/football]
+Key Quotes: "using her massive platform to spread vile antisemitic conspiracy theories" - Unknown | "the troubling issue of toxic sexual behaviours in some men" - Police
+
+- Top Tech Stories Of The Week: Google fires 20 more over Israel protests, JioCinema new Rs 29 plan and other: Google fired 20 more employees amid protests against its $1.2 billion cloud deal with the Israeli government, bringing total terminations to around 50. Reliance Jio launched JioCinema Premium plans starting at Rs 29 per month to compete with services like Netflix and Amazon Prime, offering ad-free streaming and high-quality content. WhatsApp warned that it might shut down in India if forced to break end-to-end encryption, as stated in court. Airtel introduced international roaming plans covering 184 countries with affordable daily rates, and Samsung reduced the price of its Galaxy S23 FE smartphone for the second time. These developments highlight ongoing issues in tech ethics, market competition, privacy regulations, and consumer pricing strategies. [https://www.washingtonpost.com/]
+Key Quotes: "Will shut down in India if told to break encryption" - WhatsApp
+
+- Microsoft becomes $4 trillion company, TCS lays off 12,000 employees, Apple’s record iPhone growth, Xiaomi and Vivo’s new phone and other top tech news of the week: Microsoft surpassed a $4 trillion market capitalization, becoming the second company after Nvidia to achieve this milestone, driven by strong cloud revenue growth. Apple reported record iPhone sales in its fiscal Q3 2025, with a 10% revenue increase and significant growth in emerging markets like India. TCS announced layoffs affecting 12,000 employees, attributing the decision to skill mismatches rather than AI advancements. Zomato's co-founder invited engineers to join his new aviation startup, while Xiaomi and Vivo launched new smartphones in India, expanding their product lines. These events reflect the dynamic shifts in tech valuations, corporate workforce adjustments, and competitive product launches in the global market. [https://www.nytimes.com/athletic/nfl/]
+
+---
+
+TOPIC: Football Player Transfers and News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Newcastle's Alexander Isak Transfer Situation",
+      "description": "Newcastle United manager Eddie Howe described the transfer situation surrounding striker Alexander Isak as complex and far from ideal, amid interest from other clubs.",
+      "sources": [
+        "https://www.bbc.com/sport/football/articles/ckgynrnyklxo"
+      ]
+    },
+    {
+      "title": "Burnley in Advanced Talks for Chelsea's Armando Broja",
+      "description": "Burnley are in advanced negotiations to sign Chelsea striker Armando Broja on a permanent deal as they prepare for the upcoming season.",
+      "sources": [
+        "https://www.bbc.com/sport/football/articles/cly3z24d99ro"
+      ]
+    },
+    {
+      "title": "Benjamin Sesko Transfer Rumors Involving Manchester United and Newcastle",
+      "description": "Reports indicate Benjamin Sesko has rejected a move to Manchester United, with Newcastle considering him as a potential target amid ongoing transfer discussions.",
+
+X POSTS FROM SEARCH (2):
+- Mirror Football: "📝 Sesko REJECTS Man Utd move
+📝 Son to leave Tottenham
+📝 Isak deal turns sour
+
+All of the latest transfer news and rumours: 
+
+https://t.co/MLaUDECafy https://t.co/Eu33Fci0lH" (18523 views, 25 likes) https://x.com/MirrorFootball/status/1951530439136432559
+- James Wokabi: "*Harambee Stars face off with DRC
+*Oliech is Chan ambassador 
+*Newcastle reject Liverpool offer for Isak
+*Man United and Newcastle fight for Sesko
+*Bajaber completes Simba move
+*Palhinha set for Spurs, Son to leave
+*Huge shake up at Police FC
+#FootballFix at 11am https://t.co/U5S5nzqmA4" (6260 views, 88 likes) https://x.com/JWokabi/status/1951904890931892272
+
+SUPPORTING ARTICLES (7):
+- Football - latest news today, results & video highlights - BBC Sport: Celtic began their Scottish Premiership season with a win over St Mirren, though the performance was unconvincing. Chelsea signed Ajax defender Jorrel Hato for £37m, while Bayern Munich's Joao Palhinha joined Tottenham on loan. Tottenham's James Maddison suffered an injury in a friendly match, and Manchester United are open to selling striker Rasmus Hojlund for £30m. Rangers' manager criticized their team's effort and mentality after a poor showing. West Ham signed former Newcastle striker Callum Wilson on a free transfer. [https://www.bbc.com/sport/football]
+Key Quotes: "Rangers 'didn't run enough, didn't fight enough, weren't brave enough'" - Rangers manager | "I knew we'd struggle in some games last season - Amorim" - Ruben Amorim, Manchester United manager
+
+- Transfer news: Full list of all done deals in August 2025 - BBC Sport: The summer transfer window is active, with several deals completed in August 2025 across various leagues. In the Premier League, Joao Palhinha joined Tottenham on loan and Jorrel Hato was signed by Chelsea for £37m. Other notable transfers include Aaron Ramsdale moving to Newcastle on loan and Callum Wilson joining West Ham on a free transfer. The window closes on 1 September for Premier League and EFL clubs, and on 4 September for the Women's Super League. A list of all transfers is archived for reference. [https://www.bbc.com/sport/football/articles/cp893r0d3ddo]
+
+- Alexander Isak: Newcastle manager Eddie Howe says transfer situation is 'complex' and 'far from ideal' - BBC Sport: Newcastle United manager Eddie Howe described the transfer situation involving striker Alexander Isak as complex and far from ideal. Liverpool made a £110m bid for Isak, which Newcastle rejected, valuing him at around £150m. Isak was omitted from Newcastle's pre-season tour due to a minor thigh injury and trained alone at his former club Real Sociedad. Howe expressed hope that Isak remains with Newcastle despite the uncertainty. A timeline of events shows Isak's situation evolving from May to August 2025. [https://www.bbc.com/sport/football/articles/ckgynrnyklxo]
+Key Quotes: "I think from my situation, I am very much removed from everything that is happening back home." - Eddie Howe, Newcastle United manager | "The situation is far from ideal. It is quite complex." - Eddie Howe, Newcastle United manager
+
+- Armando Broja: Burnley in advanced talks to sign Chelsea striker on permanent deal - BBC Sport: Burnley are in advanced negotiations to sign Chelsea striker Armando Broja on a permanent transfer. A broad agreement has been reached between the clubs, but Broja has not yet finalized the move. The 23-year-old is interested in joining Burnley, with a potential five-year contract and a transfer fee up to £20m. Broja has had multiple loan spells and made 38 appearances for Chelsea, scoring his first goal in 2022. Chelsea have been active in selling players this summer to reshape their squad. [https://www.bbc.com/sport/football/articles/cly3z24d99ro]
+
+- Arsenal - News, Schedule, Scores, Roster, and Stats - The Athletic: Arsenal are second in the Premier League, with updates on former midfielder Thomas Partey set to join Villarreal. Analysis covers why top Premier League clubs are increasingly buying from lower leagues. Insights from Arsenal's pre-season tour include player performances and fitness updates from manager Mikel Arteta. The club has spent £187m in the transfer market this summer, with discussions on potential sales for financial reasons. Other news includes record shirt sales for new signing Viktor Gyokeres and hopes for contract extensions. [https://www.nytimes.com/athletic/football/team/arsenal/]
+Key Quotes: "'Let’s see'" - William Saliba, Arsenal player
+
+- Football gossip: Isak, Sesko, Watkins, Son, Luis Diaz, Konate, Endrick, Elliott, Sterling - BBC Sport: Liverpool are considering a record bid for Newcastle's Alexander Isak, with Saudi club Al-Hilal also showing interest. Newcastle have identified RB Leipzig's Benjamin Sesko as a potential replacement if Isak leaves. Aston Villa have declared Ollie Watkins not for sale despite Manchester United's interest. Bayern Munich may pursue Liverpool's Luis Diaz again, and there is gossip on other players like Raheem Sterling and Harvey Elliott potentially moving clubs. Various sources report on transfer interests and bids across Europe. [https://bbc.com/sport/football/articles/cr5v5nl681zo]
+
+- Transfer news, rumours, gossip and updates from the world of football: The page aggregates latest transfer news and rumours from multiple clubs and players. Stories include Liverpool being urged to sign a former Arsenal target and interest from Manchester United and Newcastle in Benjamin Sesko. Chelsea's transfer activities feature updates on players like Antony and Armando Broja. Arsenal are in talks for new signings, and there are reports on managerial decisions and player rejections. The content provides ongoing updates on the summer transfer window activities. [https://metro.co.uk/tag/transfer-news-and-rumours/]
+
+---
+
+TOPIC: NFL Training Camp Injuries and Contracts
+
+LIVE SEARCH SUMMARY:
+{
+  "news_stories": [
+    {
+      "title": "Micah Parsons Requests Trade from Dallas Cowboys",
+      "summary": "Dallas Cowboys linebacker Micah Parsons has requested a trade amid contract disputes, as reported in ongoing NFL training camp updates.",
+      "source": "https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/6Nsx0UzjpQNx/"
+    },
+    {
+      "title": "Shedeur Sanders Sits Out Practice Due to Arm Soreness",
+      "summary": "Cleveland Browns rookie quarterback Shedeur Sanders missed practice because of arm soreness during NFL training camp.",
+      "source": "https://www.nytimes.com/athletic/6532159/2025/08/02/shedeur-sanders-injury-browns-training-camp/"
+    },
+    {
+      "title": "Washington Commanders' Terry McLaurin Seeks Trade",
+      "summary": "Washington Commanders wide receiver Terry McLaurin has expressed a desire to be traded, linked to contract negotiations during training camp.",
+      "source": "https://www.
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- NFL training camp 2025 live updates: News, notes, injuries and more from around the league - The Athletic: Buffalo Bills running back James Cook sat out practice amid contract negotiations, describing it as 'business'. Indianapolis Colts running back Salvon Ahmed suffered a severe leg injury during a hip-drop tackle in practice. Las Vegas Raiders safety Lonnie Johnson Jr. broke his fibula, potentially impacting his availability for the season. Cleveland Browns rookie quarterback Shedeur Sanders missed practice due to arm soreness, affecting the team's quarterback competition. Dallas Cowboys linebacker Micah Parsons requested a trade due to contract disputes, with owner Jerry Jones downplaying concerns. Various teams reported on position battles and defensive improvements during camp. [https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/]
+Key Quotes: "business" - James Cook | "We don’t encourage hip-drop tackles" - Shane Steichen | "I love Salvon" - Zaire Franklin | "The young DBs are really stepping up" - Joe Burrow
+
+- NFL News - National Football League Scores, Schedule, Standings, Stats, and Rumors - The Athletic: Buffalo Bills running back James Cook sat out practice amid contract negotiations. Indianapolis Colts running back Salvon Ahmed sustained a severe leg injury in training camp. Dallas Cowboys linebacker Micah Parsons requested a trade due to contract issues, with owner Jerry Jones advising not to worry. Denver Broncos extended defensive lineman Zach Allen with a four-year deal worth $102 million. Los Angeles Chargers linebacker Denzel Perryman was arrested on weapons charges. Other updates include quarterback competitions and Hall of Fame inductions across the league. [https://www.nytimes.com/athletic/nfl/]
+Key Quotes: "Don’t lose any sleep over it" - Jerry Jones
+
+- NFL training camp 2025 live updates: News, notes, injuries and more from around the league - The Athletic: Indianapolis Colts quarterback Anthony Richardson was active in practice sessions. Philadelphia Eagles wide receiver DeVonta Smith did not practice due to back tightness. New England Patriots are monitoring roster depth and injuries early in camp. Buffalo Bills offensive lineman Alec Anderson was attended to by medical staff during practice. Atlanta Falcons defensive lineman Ruke Orhorhoro commented on the competitive practice atmosphere. Various teams reported on player absences and position battles during training camp. [https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-2025-live-updates-news-injuries/wKpOIa2usaLl/6Nsx0UzjpQNx/]
+Key Quotes: "I will honestly say I really love it" - Ruke Orhorhoro
+
+- An unexpected shuffle on the O-line: Five things we learned this week at Raiders training camp - The Athletic: Las Vegas Raiders are holding a position battle at center between Jackson Powers-Johnson and Jordan Meredith. Safety Lonnie Johnson Jr. suffered a significant injury during practice. Cornerback Decamerion Richardson is competing for a starting role and showing improvement. The team is focusing on enhancing their 12 personnel effectiveness. Defensive end Maxx Crosby's extension was highlighted, emphasizing the team's commitment to key players. Linebacker competition continues with players like Devin White and Germaine Pratt vying for spots. [https://www.nytimes.com/athletic/6532595/2025/08/02/raiders-training-camp-practice-report/]
+Key Quotes: "It allows me to see the game from a different perspective" - Jordan Meredith | "You put in the work, you show up and it’s all about buying in" - Kolton Miller
+
+- Shedeur Sanders sits out Saturday’s Browns practice due to ‘arm soreness’ - The Athletic: Cleveland Browns rookie quarterback Shedeur Sanders missed practice due to arm soreness, reducing the quarterback competition to three participants. Joe Flacco and Dillon Gabriel took the majority of reps in competitive drills. Kenny Pickett, recovering from a hamstring injury, was limited in participation. The team has no set timeline for naming a starting quarterback. Joint practices and preseason games are key evaluation points upcoming. Sanders had been fully involved in prior practices before this setback. [https://www.nytimes.com/athletic/6532159/2025/08/02/shedeur-sanders-injury-browns-training-camp/]
+Key Quotes: "frustrating to not be out there competing" - Kenny Pickett
+
+- NFL Training Camp News: Saints make interior line move, Jerry Jones responds to Micah Parsons drama, Ravens add RB depth, Chargers' Denzel Perryman arrested | Sporting News: New Orleans Saints signed offensive lineman Shane Lemieux and placed guard Nick Saldiveri on injured reserve due to an injury. Dallas Cowboys owner Jerry Jones downplayed concerns over linebacker Micah Parsons' trade request related to contract issues. Baltimore Ravens added running back depth by signing D’Ernest Johnson. Los Angeles Chargers linebacker Denzel Perryman was arrested on felony weapons charges. The updates highlight a mix of roster moves, injuries, and legal issues across NFL teams during training camp. [https://www.sportingnews.com/us/nfl/new-orleans-saints/news/nfl-training-camp-news-saints-make-interior-line-move-jerry-jones-responds-micah-parsons-drama-ravens-add-rb-depth-chargers-denzel-perryman-arrested/c4758fb0bccec9edefccea2c]
+Key Quotes: "Don’t lose any sleep over this" - Jerry Jones
+
+- NFL training camp news and live updates: Contract extensions, injuries, holdouts, position battles and more - The Athletic: New England Patriots defensive tackle Christian Barmore was diagnosed with blood clots and is out indefinitely. Indianapolis Colts owner Jim Irsay supported quarterback Anthony Richardson's playing style despite injury concerns. New York Giants quarterback Daniel Jones had an uneven practice with both strong and errant throws. Los Angeles Chargers quarterback Justin Herbert and rookie wide receiver Ladd McConkey showed improving chemistry. Atlanta Falcons defensive lineman Eddie Goldman is attempting a comeback after previous absences. Teams are focusing on position battles and injury management as camp progresses. [https://www.nytimes.com/athletic/live-blogs/nfl-training-camp-news-live-updates/FXqEG2fmZrgO/]
+Key Quotes: "I have a ton of confidence in what we’re doing" - Trevor Lawrence | "It was pretty tough, but it was a lot of personal stuff going on" - Eddie Goldman
+
+---
+
+TOPIC: AI Technology Advancements
+
+LIVE SEARCH SUMMARY:
+{
+  "top_stories": [
+    {
+      "title": "Meta to Share AI Infrastructure Costs via $2 Billion Asset Sale",
+      "description": "Meta Platforms is advancing its AI capabilities by partnering with outside entities to fund infrastructure, including offloading $2 billion in data center assets to manage the costs of powering artificial intelligence technologies.",
+      "source": "Reuters, https://www.reuters.com/business/meta-share-ai-infrastructure-costs-via-2-billion-asset-sale-2025-08-01/"
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Artificial intelligence - BBC News: AI is being used to combat scams, such as fake minister posts targeting islanders, as advised by officials. In sports, Cambridge United is employing AI to manage player contracts, reducing costs and improving efficiency. A BBC Verify investigation revealed that AI has cloned voices of British public sector workers for Russian-linked disinformation campaigns. Healthcare applications include an AI physio app that halved wait times for back pain treatment, saving significant clinician hours. Meta's profits are surging due to heavy investments in AI projects, while Gulf countries like the UAE and Saudi Arabia are partnering with the US to become AI hubs. Ethical concerns were raised by the Pope, emphasizing the need to protect human dignity amid AI advancements. [https://www.bbc.com/news/topics/ce1qrvleleqt]
+Key Quotes: "Human dignity must be protected from rise of AI" - Pope Francis | "warn vulnerable people the posts were fraudulent" - Deputy Lindsay de Sausmarez
+
+- Artificial Intelligence: Read latest news updates on AI technology | The Indian Express: Manus launched Wide Research, a multi-agent AI tool designed to compete with OpenAI and Google in research capabilities. Anthropic blocked OpenAI's API access to Claude, citing violations of terms of service ahead of the GPT-5 launch. Reddit is expanding into the search engine market to challenge Google, leveraging AI for better user experiences. Google's Gemini 2.5 Deep Think model is now available to subscribers, enhancing capabilities in iterative development and scientific discovery. AI is impacting job markets, with a Microsoft study indicating rising demand for AI skills in non-tech roles and higher salaries. New AI features from companies like OpenAI and NotebookLM are improving education and learning tools through interactive and visual aids. [https://www.reuters.com/world/us/]
+Key Quotes: "Be curious, read, and use latest tools" - Bill Gates | "members of OpenAI’s technical staff interacted with Claude Code in ways that violated its terms of service" - Anthropic
+
+- Artificial Intelligence (AI) News Updates: Latest News About Google AI, OpenAI, ChatGPT, Gemini, Lamda and More: AI researchers are securing high pay packages comparable to NBA stars, reflecting intense competition in the field. Edtech firm Evo11ve introduced an AI coach portal aimed at improving academic outcomes for students. Concerns are growing about youth dependency on AI chatbots like ChatGPT for emotional validation and support. Apple CEO Tim Cook described AI as a critical opportunity for the company, emphasizing its potential impact. OpenAI's ChatGPT may face capacity issues ahead of the GPT-5 launch, while Elon Musk's Grok chatbot addressed controversies by deleting anti-Semitic posts. AI is expected to reshape millions of jobs in India by 2030, according to a ServiceNow report, highlighting both opportunities and challenges. [https://www.washingtonpost.com/]
+Key Quotes: "AI bubble will make more money than it erases" - Vinod Khosla
+
+---
+
+TOPIC: Brazilian Political Protests
+
+LIVE SEARCH SUMMARY:
+{
+  "news_stories": [
+    {
+      "title": "Supporters of Former President Jair Bolsonaro Protest Against Supreme Court and President Lula",
+      "description": "Supporters of Brazil's former President Jair Bolsonaro gathered in various cities to protest against Supreme Federal Court Justice Alexandre de Moraes and President Luiz Inácio Lula da Silva, amid accusations of plotting a coup following the 2022 election loss.",
+      "source": "Reuters",
+      "url": "https://reuters.com/world/americas/brazils-bolsonaro-supporters-protest-against-supreme-court-president-lula-2025-08-03",
+      "publication_time": "2025-08-03"
+    }
+  ]
+}
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- Brazil - BBC News: US President Trump imposed 50% tariffs on Brazil, accusing the country of attacks on US companies and conducting a witch hunt against former President Jair Bolsonaro. Brazilian Supreme Court justices have taken actions against Bolsonaro, including threatening arrest for breaching a social media ban and ordering him to wear an ankle tag with a curfew. These measures stem from allegations of Bolsonaro undermining democratic institutions. Additionally, the article covers other Brazilian issues like a new development law criticized for risking Amazon deforestation and the ongoing challenges for families affected by the Zika virus from a decade ago. [https://www.bbc.com/news/topics/cmj34zmw77wt]
+Key Quotes: ""attacks" on US companies and of conducting a "witch hunt" against Bolsonaro" - Donald Trump
+
+- Brazil - The New York Times: Brazil is the largest country in South America and experienced significant economic growth from 2000 to 2010 under President Luiz Inácio Lula da Silva. Discontent arose during Dilma Rousseff's administration, leading to protests over government spending on the 2014 World Cup and stalled projects. Rousseff was narrowly re-elected in 2014 despite criticism of her economic policies. Currently, political tensions involve President Lula da Silva responding to US tariffs imposed by Trump, linked to the prosecution of former President Jair Bolsonaro, highlighting ongoing international and domestic challenges. [https://www.nytimes.com/topic/destination/brazil]
+
+- Here’s What to Know About Trump’s 50% Tariffs on Brazil: US President Trump imposed 50% tariffs on Brazil, primarily for political reasons related to the prosecution of former President Jair Bolsonaro, whom Trump described as a victim of a witch hunt. Brazilian President Luiz Inácio Lula da Silva rejected Trump's demands, emphasizing Brazil's sovereignty and openness to dialogue on trade. Many Brazilian exports, such as orange juice and aircraft, are exempt from the tariffs, potentially mitigating severe economic impact. The tariffs affect sectors like coffee and beef, with potential price increases for US consumers, and stem from broader geopolitical tensions including trade practices and censorship issues. [https://www.nytimes.com/2025/07/31/world/americas/trump-brazil-tariffs-lula.html]
+Key Quotes: ""witch hunt"" - Donald Trump | ""I’m not going to cry over spilled milk"" - Luiz Inácio Lula da Silva | ""If the United States doesn’t want to buy something of ours, we are going to look for someone who will"" - Luiz Inácio Lula da Silva
+
+- BBC News - Breaking news, video and the latest top stories from the U.S. and around the world: BBC News covers a wide range of global topics, including a feature on women in Brazil affected by the Zika virus from a decade ago, who are raising children with disabilities together. The article also reports on international events such as conflicts in the Middle East and Europe, and US news including tariffs and shootings. While focusing on diverse issues, it touches on Latin American stories, but lacks direct coverage of current political protests in Brazil. Environmental and health challenges in Brazil are highlighted, reflecting broader social concerns. [https://www.bbc.com/news]
+
+---
+
+TOPIC: Geopolitical Tensions and Conflicts
+
+LIVE SEARCH SUMMARY:
+{
+  "top_stories": [
+    {
+      "rank": 1,
+      "title": "Escalating Tensions in the Middle East",
+      "summary": "Recent developments in the Middle East include ongoing conflicts and diplomatic efforts, with updates on regional stability and international responses.",
+      "source": "Reuters",
+      "publication_time": "2025-08-03T03:36:17"
+    },
+    {
+      "rank": 2,
+      "title": "Global Geopolitical Conflicts and International News",
+      "summary": "Coverage of worldwide tensions, including investigations and analysis from regions such as Africa, the Americas, Asia, and Europe, focusing on current events.",
+      "source": "The New York Times",
+      "publication_time": "2025-08-03T07:38:18"
+    },
+    {
+      "rank": 3,
+      "title": "Updates on Middle East Conflicts",
+      "summary": "Live updates and content about ongoing geopolitical tensions in the Middle East, including potential escalations and regional impacts.",
+      "source": "BBC News",
+      "publication_ti
+
+X POSTS FROM SEARCH (0):
+None found
+
+SUPPORTING ARTICLES (7):
+- World News - The New York Times: U.S. and Israeli officials are proposing an 'all or nothing' Gaza deal amid stalled ceasefire negotiations and a growing hunger crisis in the region. Ukraine has announced arrests targeting corruption in military procurement following a policy shift by President Zelensky. A long-dormant Russian volcano erupted for the first time in centuries after seismic events on the Kamchatka peninsula. Discussions around recognizing a Palestinian state reference the historical Sykes-Picot Agreement and its legacy of strife. Russia is expanding efforts to control its internet, including introducing a state-approved messaging app, while the Vatican is using social media influencers to engage youth at a major Catholic event. [https://www.reuters.com/world/middle-east/]
+Key Quotes: "living skeleton, buried alive" - Family of hostage | "We Hope This Is Enough" - Aid workers or participants in Gaza airdrop mission
+
+- Middle East | Latest News & Updates | BBC News: Some Palestinians express skepticism about UK Prime Minister Keir Starmer's promise to recognize a Palestinian state, viewing it as potentially ineffective. Israeli far-right minister Itamar Ben-Gvir sparked international anger by praying at the al-Aqsa mosque compound, violating a longstanding arrangement. Hamas has refused to disarm until a Palestinian state is established, stalling ceasefire negotiations with Israel. An aid worker from the Palestine Red Crescent Society was killed in an attack on their Gaza headquarters, which Israel is reviewing. Families in Gaza report children being shot while seeking aid, and there are efforts to bring seriously ill Gazan children to the UK for medical treatment. [https://www.nytimes.com/section/world]
+Key Quotes: "'Thank you, but it's too late'" - Jeremy Bowen, BBC International Editor | "direct strike" - Palestine Red Crescent Society
+
+- World | Latest News & Updates | BBC News: A Ukrainian drone attack caused a fire at a Russian oil depot in Sochi, amid ongoing reports of Russian air strikes on Ukrainian cities. Israeli minister Itamar Ben-Gvir provoked anger by praying at a sensitive Jerusalem holy site, breaching a decades-old agreement. Hamas released a video showing an emaciated Israeli hostage, with the family condemning the group for starvation. Ukraine arrested officials in a military drone corruption probe, and Chile is searching for missing miners after an earthquake-induced collapse. Other events include a New Zealand woman arrested for hiding a child in luggage and discussions on Trump's revival of a school fitness test. [https://www.bbc.com/news/world/middle_east]
+Key Quotes: "Hamas is starving him" - Family of hostage Evyatar David
+
+- The World at War - by Mark Hertling - The Bulwark: The article provides a situation report on multiple global conflicts, including Israel-Gaza, Ukraine-Russia, and others, emphasizing that wars stem from long-standing grievances and exploited wounds. In Gaza, humanitarian collapse is worsening with widespread malnutrition and stalled diplomacy. Ukraine faces intense fighting with Russia, while India-Pakistan tensions over Kashmir remain high with ceasefire violations. Conflicts in regions like the Democratic Republic of Congo, the Balkans, Syria, and Yemen are marked by weak governance, sectarian violence, and inadequate international support. The author highlights the complexity of achieving peace, noting that real solutions require time, honesty, and addressing historical traumas. [https://www.reuters.com/world/]
+Key Quotes: "Wars don’t erupt out of nowhere. They grow out of long-standing grievances, unhealed wounds, and leaders who exploit both." - James F. Dunnigan and Austin Bay
+
+- Geopolitical Tensions Ignite Defense Sector: Strategic Opportunities in a Nuclear-Age Arms Race: U.S.-Russia nuclear tensions have escalated with mutual deployments and rhetoric, driving increased demand for defense sector assets. Companies like Lockheed Martin and Raytheon are experiencing surges in orders for missile defense and naval systems due to the arms race. Cybersecurity firms such as Microsoft and CrowdStrike are benefiting from heightened threats, including state-sponsored hacks by groups like North Korea's Lazarus Group. Energy security shifts are favoring firms like Chevron amid sanctions on Russian and Chinese supplies. Investors are advised to balance risks with opportunities in defense and related sectors, monitoring catalysts like the New START treaty expiration. [https://www.bbc.com/news/world]
+Key Quotes: "step toward war" - Dmitry Medvedev, Russian Deputy Security Council Chairman
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by MPR News (8/4/2025): "Navigating artificial intelligence in the workplace" - Artificial intelligence is changing how we work, but are employers keeping up? Coming up at 9 a.m. on Monday, MPR News host Angela Davis and her guests talk about how different industries are using AI and how organizations are responding to the rapid changes. [https://www.mprnews.org/episode/2025/08/04/navigating-artificial-intelligence-in-the-workplace]
+- [Updated RSS Feed] by @SawyerMerritt (8/3/2025): "@SawyerMerritt: Elon on Tesla Robotaxi expansion: "A pretty good guide is that if Waymo is operating somewhere, then regulations allow robotaxi in that city or state."" - Elon on Tesla Robotaxi expansion: "A pretty good guide is that if Waymo is operating somewhere, then regulations allow robotaxi in that city or state." https://t.co/04OklDKouR
+— Sawyer Merritt (@SawyerMerritt) August 3, 2025 [https://x.com/SawyerMerritt/status/1952111733314576414]
+- [Updated RSS Feed] by Reuters (8/3/2025): "All five trapped workers at Chile's Codelco mine found dead" - Rescue teams are working to clear underground passages that collapsed in a strong tremor last week. [https://www.reuters.com/world/americas/all-five-trapped-workers-chiles-codelco-mine-found-dead-2025-08-03/]
+- [Updated RSS Feed] by @SpaceX (8/3/2025): "@SpaceX: RT by @sawyermerritt: This was the first Starship to be static fired on the orbital launch mount, which was modified by engineers and technicians at Starbase" - This was the first Starship to be static fired on the orbital launch mount, which was modified by engineers and technicians at Starbase pic.twitter.com/tUNW441hjf
+— SpaceX (@SpaceX) August 3, 2025 [https://x.com/SpaceX/status/1952105227584504129]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: RT by @sawyermerritt: Grok Imagine should get better almost every day. Make sure to download the latest @grok app, as we have an improved build every few days." - Grok Imagine should get better almost every day. 
+Make sure to download the latest @Grok app, as we have an improved build every few days. https://t.co/MGZtdMx26o
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952104431367208981]
+- [Updated RSS Feed] by Nidal Al-Mughrabi (8/3/2025): "Hamas says it will allow aid for hostages if Israel halts airstrikes, opens permanent humanitarian corridors" - Gaza's health ministry has said fuel shortages have severely impaired hospital services, forcing doctors to focus on treating only critically ill or injured patients. [https://www.reuters.com/world/middle-east/hamas-says-it-will-allow-aid-hostages-if-israel-halts-airstrikes-opens-permanent-2025-08-03/]
+- [Updated RSS Feed] by Reuters (8/3/2025): "Iran sets up new defence council in wake of war with Israel" - Iran's top security body approved the establishment of a National Defence Council on Sunday, according to state media, following a short air war with Israel in June that was Iran's most acute military challenge since the 1980s war with Iraq. [https://www.reuters.com/world/middle-east/iran-sets-up-new-defence-council-wake-war-with-israel-2025-08-03/]
+- [Updated RSS Feed] by https://www.nbcsports.com/author/charean-williams (8/3/2025): "James Cook sits out Bills' practice Sunday, calls it "business"" - The running back wants a contract extension but had fully participated in the first eight training camp practices. [https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/james-cook-sits-out-bills-practice-sunday-calls-it-business]
+- [Updated RSS Feed] by Reuters (8/3/2025): "Brazil's Bolsonaro supporters protest against Supreme Court, President Lula" - Supporters of Brazil's former President Jair Bolsonaro, accused of plotting a coup after he lost the 2022 general election, gathered on the streets of several Brazilian cities on Sunday to protest against Supreme Federal Court (STF) Justice Alexandre de Moraes and President Luiz Inácio Lula da Silva. [https://www.reuters.com/world/americas/brazils-bolsonaro-supporters-protest-against-supreme-court-president-lula-2025-08-03/]
+- [Updated RSS Feed] by Insider NJ (8/3/2025): "Campaigning in Middlesex, Ciattarelli says His Business-Owning Family has been here for 100 Years " - WOODBRIDGE - Republican nominee for Governor Jack Ciattarelli campaigned here in Middlesex County at a coffee shop. [https://www.insidernj.com/campaigning-in-middlesex-ciattarelli-says-his-business-owning-family-has-been-here-for-100-years/]
+- [Updated RSS Feed] by Simply Wall St (8/3/2025): "ASX Growth Companies With High Insider Ownership August 2025" - As the Australian market faces a challenging period with the ASX 200 futures down in response to impending U.S. tariffs, investors are closely monitoring economic developments that could impact growth prospects. In such uncertain times, companies with high insider ownership often attract attention as they may indicate strong confidence from those who know the business best, potentially offering stability and resilience amidst broader market volatility. [https://finance.yahoo.com/news/asx-growth-companies-high-insider-193806717.html]
+- [Updated RSS Feed] by @Starlink (8/3/2025): "@Starlink: RT by @elonmusk: Starlink provides reliable high-speed home internet and is designed for self-installation 🛰️🏠" - Starlink provides reliable high-speed home internet and is designed for self-installation 🛰️🏠 https://t.co/h1qcgvGh5S
+— Starlink (@Starlink) August 3, 2025 [https://x.com/Starlink/status/1952085929742717038]
+- [Updated RSS Feed] by @teslaownersSV (8/3/2025): "@teslaownersSV: RT by @elonmusk: SpaceX has come a long way" - SpaceX has come a long way pic.twitter.com/aOMwUgL7TO
+— Tesla Owners Silicon Valley (@teslaownersSV) August 3, 2025 [https://x.com/teslaownersSV/status/1952085185597775976]
+- [Updated RSS Feed] by Jay Harris (8/3/2025): "‘A beautiful ending to a beautiful story’ – Son Heung-min’s final game for Spurs" - Tottenham's much-loved captain played his final game for the club, as Spurs drew 1-1 with Newcastle on an emotionally-charged night in Seoul [https://www.nytimes.com/athletic/6533450/2025/08/03/son-last-game-tottenham-newcastle-korea/]
+- [Updated RSS Feed] by @gailalfaratx (8/3/2025): "@gailalfaratx: RT by @elonmusk: when the ride to the destination is the experience instead of the destination being the experience" - when the ride to the destination is the experience instead of the destination being the experience pic.twitter.com/bM0pXsryJW
+— Gail 🇺🇸 (@gailalfaratx) August 3, 2025 [https://x.com/gailalfaratx/status/1952081567138164919]
+- [Updated RSS Feed] by Alaina Getzenberg (8/3/2025): "RB Cook sits out Bills' practice: 'Just business'" - Buffalo Bills running back James Cook did not participate in a mandatory practice on Sunday for the first time since seeking an extension this offseason. [https://www.espn.com/nfl/story/_/id/45893264/seeking-deal-cook-sits-bills-practice-just-business]
+- [Updated RSS Feed] by Ben McCrum (8/3/2025): "Liverpool 'agree personal terms' with new forward as Alexander Isak transfer saga turns 'ugly'" - Arne Slot's Liverpool are preparing to make another huge signing this summer after Newcastle United rejected a bid for Alexander Isak. [https://www.sportbible.com/football/football-news/liverpool/transfer-news-alexander-isak-saga-ugly-personal-terms-747654-20250803]
+- [Updated RSS Feed] by @SawyerMerritt (8/3/2025): "@SawyerMerritt: I have to say, Grok Imagine is noticeably better than when I first used it just a week ago. Much faster video creation times and better end results. Pace of improvement has been good." - I have to say, Grok Imagine is noticeably better than when I first used it just a week ago. Much faster video creation times and better end results. Pace of improvement has been good. pic.twitter.com/3pHHrMW8Tb
+— Sawyer Merritt (@SawyerMerritt) August 3, 2025 [https://x.com/SawyerMerritt/status/1952073153334718871]
+- [Updated RSS Feed] by Reuters (8/3/2025): "At least 54 migrants die as boat sinks off Yemen, dozens missing" - At least 54 migrants died when a boat carrying around 150 people sank off Yemen's coast in bad weather on Sunday, with dozens still unaccounted for, health officials said. [https://www.reuters.com/world/middle-east/least-54-migrants-die-boat-sinks-off-yemen-dozens-missing-2025-08-03/]
+- [Updated RSS Feed] by Carl Campanile (8/3/2025): "LI's Suffolk county offering tax breaks to NYC companies who relocate..." - <div><img src="https://nypost.com/wp-content/uploads/sites/2/2025/08/newspress-collage-lt1lky5sc-1754243452943.jpg?quality=75&strip=all&1754229173&w=1024" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://content.jwplatform.com/players/2GDr2iBa-SPdDOYds.html" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://nypost.com/2025/08/03/us-news/lis-suffolk-county-offering-tax-breaks-to-nyc-companies-who-relocate-if-mamdani-becomes-mayor/]
+- [Updated RSS Feed] by Will Lancaster (8/3/2025): "Forget Isak: Liverpool Agree Personal Terms to Sign 'World-Beater'" - The Reds must move on from the Swede - they've agreed personal terms with another superb star ⭐ [https://www.givemesport.com/forget-isak-liverpool-agree-personal-terms-to-sign-world-beater/]
+- [Updated RSS Feed] by Chris Neiger (8/3/2025): "Better Artificial Intelligence Stock: BigBear.ai vs. Nvidia @themotleyfool #stocks $NVDA $BBAI" - Even in the rapidly expanding AI space, high-flying stocks eventually need to prove their business isn't all sizzle and no steak. Unfortunately, BigBear.ai doesn't pass the test. [https://www.fool.com/investing/2025/08/03/better-artificial-intelligence-stock-bigbearai-vs/]
+- [Updated RSS Feed] by Hina Nainani (8/3/2025): "From AI To Emerging Markets: How 6 Pros Would Allocate $10K In Today's Market" - Amid record-high markets, six Wall Street strategists shared where they would deploy $10,000 right now, identifying areas ranging from artificial intelligence to emerging markets, according to Business Insider. Experts say there’s still opportunity across various asset classes, including U.S. and global equities, small-cap stocks, and dividend-paying stocks. JPMorgan Backs International Stocks Over U.S. J.P. Morgan Asset Management Chief Market Strategist for the Americas Gabriela Santos said th [https://finance.yahoo.com/news/ai-emerging-markets-6-pros-180134759.html]
+- [Updated RSS Feed] by @SawyerMerritt (8/3/2025): "@SawyerMerritt: The still image: pic.twitter.com/V76mCjoOkg" - The still image: pic.twitter.com/V76mCjoOkg
+— Sawyer Merritt (@SawyerMerritt) August 3, 2025 [https://x.com/SawyerMerritt/status/1952066022992687220]
+- [Updated RSS Feed] by @SawyerMerritt (8/3/2025): "@SawyerMerritt: Put a still image of my Model Y into @Grok Imagine and put Fun Mode on 😂 pic.twitter.com/Rnip1kJzad" - Put a still image of my Model Y into @Grok Imagine and put Fun Mode on 😂 pic.twitter.com/Rnip1kJzad
+— Sawyer Merritt (@SawyerMerritt) August 3, 2025 [https://x.com/SawyerMerritt/status/1952065957351870820]
+- [Updated RSS Feed] by @SawyerMerritt (8/3/2025): "@SawyerMerritt: Normal mode: pic.twitter.com/IYyA7H0RVd" - Normal mode: pic.twitter.com/IYyA7H0RVd
+— Sawyer Merritt (@SawyerMerritt) August 3, 2025 [https://x.com/SawyerMerritt/status/1952066014088417613]
+- [Updated RSS Feed] by Farrell Keeling (8/3/2025): "Darwin Nunez getting closer to Liverpool exit after big Romano update" - Fabrizio Romano now reports on Darwin Nunez's talks with Al-Hilal of the Saudi Pro League ahead of a potential exit from Liverpool. [https://www.empireofthekop.com/2025/08/03/liverpool-saudi-pro-league-premier-league-darwin-nunez/]
+- [Updated RSS Feed] by PBS News (8/3/2025): "‘They roll right over’: Many Democrats think their party is weak, AP-NORC poll finds" - Many Democrats see their political party as “weak” or “ineffective,” according to a poll that finds considerable pessimism within Democratic ranks. Republicans are more complimentary of their party, although a small but significant share describe the GOP as “greedy” or say it is generally "bad." [https://www.pbs.org/newshour/politics/they-roll-right-over-many-democrats-think-their-party-is-weak-ap-norc-poll-finds]
+- [Updated RSS Feed] by Ryan Paton (8/3/2025): "Alisson Becker's wife's 'real life' health update after he left tour for 'private reason' " - The Liverpool FC number one departed the tour of the Far East early [https://www.liverpoolecho.co.uk/news/showbiz-news/alisson-beckers-wifes-real-life-32191955]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: Grok is increasing the #1 downloaded iPhone app in one country after another!" - Grok is increasing the #1 downloaded iPhone app in one country after another! https://t.co/TJyD8RNOuL
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952058534126117056]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: Teslas can drive themselves!" - Teslas can drive themselves! https://t.co/9TY6zgISh3
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952057897694937451]
+- [Updated RSS Feed] by David Ornstein (8/3/2025): "Al Hilal identify Liverpool’s Darwin Nunez as priority target" - Al Hilal pursued Victor Osimhen, with Alexander Isak and Benjamin Sesko also among the options considered. [https://www.nytimes.com/athletic/6533140/2025/08/03/darwin-nunez-al-hilal-liverpool-transfer/]
+- [Updated RSS Feed] by Chris Weatherspoon and more (8/3/2025): "Jorrel Hato to Chelsea: Everything you need to know" - Chelsea have added to their defensive options with the signing of Jorrel Hato from Ajax – here we break down the deal [https://www.nytimes.com/athletic/6526988/2025/08/03/jorrel-hato-chelsea-transfer-analysis/]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: Grok Imagine is now making *videos* in 1/2 to 1/4 the time that major competitors take to make a single image!" - Grok Imagine is now making *videos* in 1/2 to 1/4 the time that major competitors take to make a single image!
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952056689915842593]
+- [Updated RSS Feed] by Reuters (8/3/2025): "At least 54 migrants die as boat sinks off Yemen coast, medics say" - At least 54 migrants died when a boat sank off Yemen's coast due to bad weather on Sunday, medics told Reuters. [https://www.reuters.com/world/middle-east/least-54-migrants-die-boat-sinks-off-yemen-coast-medics-say-2025-08-03/]
+- [Updated RSS Feed] by @teslaownersSV (8/3/2025): "@teslaownersSV: RT by @elonmusk: 🚨BREAKING: Grok is now the #1 app in Singapore 🇸🇬" - 🚨BREAKING: Grok is now the #1 app in Singapore 🇸🇬
+ pic.twitter.com/vk1ksOuYNM
+— Tesla Owners Silicon Valley (@teslaownersSV) August 3, 2025 [https://x.com/teslaownersSV/status/1952055396157280258]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: Italy 🇮🇹" - Italy 🇮🇹 https://t.co/LGSMTLyBj8
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952055101352513928]
+- [Updated RSS Feed] by Simply Wall St (8/3/2025): "GigaCloud Technology (GCT) Surges 59% In Last Quarter" - GigaCloud Technology (GCT) recently announced the leasing of a new fulfillment center in Germany and the approval of a class action settlement, which adds to its operational and legal framework enhancements. These developments might have added weight to the company’s share price increase of 59% over the last quarter, even as the broader market experienced turbulence, tumbling by 18% recently amid trade uncertainties and weaker job data. Participation in key events like the Las Vegas Market... [https://simplywall.st/stocks/us/retail/nasdaq-gct/gigacloud-technology/news/gigacloud-technology-gct-surges-59-in-last-quarter]
+- [Updated RSS Feed] by @elonmusk (8/3/2025): "@elonmusk: I think we might have a shot of #1 app worldwide this week" - I think we might have a shot of #1 app worldwide this week https://t.co/71hNz0gI5d
+— Elon Musk (@elonmusk) August 3, 2025 [https://x.com/elonmusk/status/1952054369211609392]
+- [Updated RSS Feed] by Liam Twomey (8/3/2025): "Chelsea complete Jorrel Hato transfer on seven-year contract" - The Dutch international's move comes after the two clubs reached an agreement over a fee in excess of €40million plus a sell-on clause. [https://www.nytimes.com/athletic/6526881/2025/08/03/hato-chelsea-transfer-news/]
+- [Updated RSS Feed] by James Quinlan (8/3/2025): "Liverpool can sanction summer transfer after horror injury in next phase of Arne Slot grand plan " - There is still business for Liverpool to conduct in what remains of the summer transfer window [https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-can-sanction-summer-transfer-32191766]
+- [Updated RSS Feed] by Peter C. Herman (8/3/2025): "Opinion: Artificial intelligence and the end of college education" - College is not just about learning content, it’s also about learning how to think about content. AI undermines both by doing your work for you. [https://timesofsandiego.com/opinion/2025/08/03/opinion-artificial-intelligence-and-the-end-of-college-education/]
+- [Updated RSS Feed] by Grey Whitebloom (8/3/2025): "‘No. 1 Target’—Darwin Nunez Linked With New Liverpool Escape Route After Saudi Approach" - Liverpool’s valuation of Darwin Núñez could make his summer exit “difficult” according to a new report. [https://www.si.com/soccer/darwin-nunez-new-liverpool-escape-route-saudi-approach]
+- [Updated RSS Feed] by The Plumas Sun (8/3/2025): "SBDA offers free online small business course " - The Northern California Small Business Development Center and San Francisco Small Business Association will jointly host a free virtual course entitles [https://plumassun.org/2025/08/03/sbda-offers-free-online-small-business-course/]
+- [Updated RSS Feed] by @English_AS (8/3/2025): "AI is making you slow and stupid: How artificial intelligence causes detrimental effects on productivity and learning" - AI is supposed to boost productivity, but evidence shows it’s making some workers less creative and far slower. [https://en.as.com/latest_news/ai-is-making-you-slow-and-stupid-how-artificial-intelligence-causes-detrimental-effects-on-productivity-and-learning-n/]
+- [Updated RSS Feed] by seekingalpha.com (8/3/2025): "Earnings Scorecard: 13 out of 18 S&P 500 real estate companies beat earnings estimates" - This week, 13 of the 18 S&P 500 real estate companies (NYSEARCA:XLRE) that reported their quarterly earnings exceeded consensus estimates. Of the 18 companies, 15 reported a revenue beat. During the second quarter, XLRE declined 1.10%, while the SPDR S&P 500 ETF ("SPY") was up 10.14%. Earnings recap At the industry level, one data center REIT, two ... [https://seekingalpha.com/news/4476917-earnings-scorecard-13-out-of-18-sp-500-real-estate-companies-beat-earnings-estimates?feed_item_type=news&fr=1]
+- [Updated RSS Feed] by Natalie Neysa Alund (8/3/2025): "Who is Charlamagne tha God? What to know after radio host's Epstein-MAGA remark" - Trump responded to Charlamagne tha God after the host said some Republicans will use the fight over the Jeffrey Epstein files to take the party back. [https://www.usatoday.com/story/news/politics/2025/08/03/charlamagne-tha-god-trump/85497507007/]
+- [Updated RSS Feed] by Veronica Stracqualursi, Ella Nilsen (8/3/2025): "EPA administrator defends administration’s move to revoke 2009 finding pollution endangers human health " - EPA Administrator Lee Zeldin on Sunday defended the Trump administration’s move to repeal the so-called endangerment finding and cast doubt that greenhouse gas emissions endangers human health. [https://www.cnn.com/2025/08/03/politics/epa-administrator-pollution-human-health]
+- [Updated RSS Feed] by Laurynas Puikys (8/3/2025): "‘World-Class’ Liverpool Star ‘Agrees Personal Terms’ to Leave" - The 26-year-old Liverpool forward has ‘agreed a deal in principle’ over a summer move to the Saudi Pro League. [https://www.givemesport.com/world-class-liverpool-star-agrees-personal-terms-to-leave/]
+- [Updated RSS Feed] by Savannah Kuchar (8/3/2025): "'They're trying to rig the system': Sen. Padilla says Dems should fight fire with fire" - The Senator told NBC 'the stakes are simply too high' for Democrats to not respond to Texas' controversial gerrymandering. [https://www.usatoday.com/story/news/politics/2025/08/03/padilla-california-newsom-redistricting-texas/85498432007/]
+
+---
+
+USER'S TIMELINE POSTS (87 posts):
+- Fabrizio Romano: "🚨🔴⚪️ Understand Arsenal already made an approach for Jérémy Jacquet as new defender in case of exit for Zinchenko or Kiwior.
+
+Rennes consider the defender NOT for sale this summer, after extending his contract in May.
+
+#AFC remain keen on Jacquet, also eventually for 2026. 👀 https://t.co/7ojOUMoqP4" (1157602 views, 13660 likes) https://x.com/i/status/1952082814322811258
+- Fabrizio Romano: "🚨⚪️ Official, confirmed. João Palhinha joins Tottenham on initial loan deal from FC Bayern.
+
+Salary covered by #THFC and €30m buy option clause not mandatory. https://t.co/1qIOkm3qml" (842701 views, 18495 likes) https://x.com/i/status/1952083661341540450
+- Adam Schefter: "Colts veteran RB Salvon Ahmed, taken down by a defender with an illegal hip-drop tackle, suffered a severe lower right leg injury in Sunday’s training camp practice and was immediately taken to a hospital for X-rays.
+
+More via @HolderStephen:
+
+https://t.co/9Pm0rA4JRN" (735840 views, 1058 likes) https://x.com/i/status/1952076601455177747
+- Fabrizio Romano: "🔵🇺🇸 Cavan Sullivan has started training at Manchester City camp this week as planned, ahead of move to the club in 2027.
+
+Man City staff excited with his potential and closely monitoring every step of his growth, convinced to have signed a top talent. https://t.co/HYfHTo3gCf" (684555 views, 6874 likes) https://x.com/i/status/1952081915546407101
+- Fabrizio Romano: "🚨🔐 Almería have rejected two proposals for Dion Lopy in the recent days.
+
+OGC Nice and also a Premier League club asked for the midfielder but Almería insist to keep him, key for this season. https://t.co/OChbiWlMTv" (673861 views, 5707 likes) https://x.com/i/status/1952081327731384491
+- Adam Schefter: "Raiders safety Lonnie Johnson Jr. suffered a broken fibula during Saturday’s practice at Allegiant Stadium, a source told @JFowlerESPN. 
+
+https://t.co/7SjxFW3LZO" (523463 views, 594 likes) https://x.com/i/status/1952076076370526477
+- Adam Schefter: "Bills RB James Cook did not participate in a mandatory practice for the first time since seeking a contract extension this offseason.
+
+More via @agetzenberg:
+
+https://t.co/W6GSKm6H96" (454008 views, 435 likes) https://x.com/i/status/1952082237035356210
+- Elon Musk: "Grok Imagine should get better almost every day. 
+
+Make sure to download the latest @Grok app, as we have an improved build every few days. https://t.co/MGZtdMx26o" (368521 views, 2000 likes) https://x.com/i/status/1952104431367208981
+- Ian Rapoport: "Here we go https://t.co/iahbHODvkN" (332990 views, 741 likes) https://x.com/i/status/1952081102648082644
+- Ian Rapoport: "From Inside Training Camp Live: #Steelers star TJ Watt join me and @SteveSmithSr89to discuss his new teammates, his contract reveal… and what Scooptown lessons he learned from his brother, JJ. https://t.co/ieGRDcTjdk" (286165 views, 274 likes) https://x.com/i/status/1952080506918408328
+- Barstool Sports: "Daaaaaa Bears
+
+ https://t.co/TYKDxfwceN" (278687 views, 1845 likes) https://x.com/i/status/1952075337975898202
+- Fabrizio Romano: "🚨🦅 Besiktas have sent a formal bid to Leicester City for Wilfred Ndidi as potential option for midfield. Talks ongoing. https://t.co/rLlDMVRURK" (208129 views, 4206 likes) https://x.com/i/status/1952106056609624075
+- Ian Rapoport: "The backstory of @JJWatt’s #AZCardinals signing was tremendous. https://t.co/mfEd4HrKWS" (184404 views, 259 likes) https://x.com/i/status/1952081031328051461
+- Dave Portnoy: "Red Sox are a wagon alert!" (146479 views, 1015 likes) https://x.com/i/status/1952068001748206003
+- Ian Rapoport: "From Inside Training Camp Live: Talking #Steelers during practice with @SteveSmithSr89 and others. https://t.co/80XRUZtHsg" (132584 views, 229 likes) https://x.com/i/status/1952085125447004547
+- Barstool Sports: "The Mets broadcast is innovating in ways we’ve never seen before
+
+ https://t.co/fknWtVNKa5" (124675 views, 789 likes) https://x.com/i/status/1952082644545769494
+- Andrej Karpathy: "Shower of thoughts: Instead of keeping your Twitter/𝕏 payout, direct it towards a "PayoutChallenge" of your choosing - anything you want more of in the world!
+
+Here is mine for this round, combining my last 3 payouts of $5478.51:
+
+It is imperative that humanity not fall while AI" (111281 views, 1653 likes) https://x.com/i/status/1952076108565991588
+- Big Cat: "We’ve hit a new level of Cheah and I’m scared for everyone https://t.co/P3NM6xRoKg" (103738 views, 729 likes) https://x.com/i/status/1952097595163332990
+- @jason: "Job displacement is real concern. 
+
+We are only debating the timelines, and what jobs these individuals will eventually be trained for. 
+
+The three categories below represent ~20% of the American workforce. 
+
+The majority of these jobs will be gone in the next decade. 
+
+I know https://t.co/dDDVSIQNqZ" (83230 views, 220 likes) https://x.com/i/status/1952078942568886386
+- Mario Nawfal: "🚨🇺🇸🇧🇷 FIGHT, FIGHT, FIGHT: BRAZILIAN PROTESTER WAVES PRO-TRUMP BANNER IN ANTI-LULA UPRISING
+
+This is an epic shot of a protester in the anti-establishment protests that have swept across Brazil today. 
+
+Moraes went full Big Brother by ordering censorship on X. 
+
+And now they're https://t.co/3ze830PjUG https://t.co/4aaS8JTHzR" (72582 views, 4446 likes) https://x.com/i/status/1952066494902177816
+- Ian Rapoport: "“I think they’re the best defense I’ve ever seen.”
+
+New #Steelers WR DK Metcalf talks to me and @SteveSmithSr89 about his acclimation to Pittsburgh, his relationship with Aaron Rodgers, and how good the defense he faces in practice is. https://t.co/gKQYVvmxbD" (72337 views, 337 likes) https://x.com/i/status/1952111508567060566
+- Mario Nawfal: "🚨 ONLY 12% OF 30-YEAR-OLDS TODAY ARE MARRIED AND OWN A HOME
+
+In 1970? It was over 50%.
+Today? Just 12%.
+
+Marriage and home ownership - once the baseline of adult life - are now luxury goods.
+
+And the decline isn’t subtle. It’s a cliff.
+
+This chart isn’t about nostalgia. It’s a https://t.co/dVOpMC4tTK https://t.co/6d1AhkxKMT" (63877 views, 288 likes) https://x.com/i/status/1952073531598033134
+- National Geographic: "Native to parts of northern Mexico and the American Southwest, roadrunners seem to be expanding their horizons. Once a rare sight elsewhere in the U.S., sightings are increasing—and climate change could be the cause. 🔗 https://t.co/fD6Q2RUoIA" (62656 views, 132 likes) https://x.com/i/status/1952082037382197494
+- World of Statistics: "What celebrity are you unable to like because of how fake they come off?" (54927 views, 132 likes) https://x.com/i/status/1952083631058694371
+- Mario Nawfal: "🚨🇹🇼🇨🇳 TAIWAN SOUNDS THE ALARM: “CHINA IS PREPARING TO INVADE”
+
+In a rare on-camera warning, Taiwan’s Deputy Foreign Minister claims: 
+“China is preparing to invade Taiwan.”
+
+Francois Wu didn’t sugarcoat it - pointing to a surge in PLA aircraft, dual carrier deployments in the https://t.co/KpS9OQ3coC https://t.co/n9fhVALBwb" (52814 views, 153 likes) https://x.com/i/status/1952072011074703506
+- World of Statistics: " Tim Cook: Apple just sold its three-billionth iPhone since its launch in 2007." (51691 views, 331 likes) https://x.com/i/status/1952067709937574271
+- Barstool Sports: "If You Could Go To A College Football Game Every Single Week This Season Where Would You Go? https://t.co/6jx5B0Z4Wh https://t.co/lMtrPGK7p2" (51112 views, 30 likes) https://x.com/i/status/1952093372950118549
+- Mario Nawfal: "🚨🇺🇸🇮🇱 SPEAKER JOHNSON IN JERUSALEM: “AMERICA WILL ALWAYS STAY WITH ISRAEL”
+
+"We're so grateful to be in Israel, particularly on this day, recognizing the destruction of the two temples and, two types of history.
+
+It is such a moving time for us to be here at the Wailing Wall. https://t.co/l94l1YgyEM https://t.co/fJgBLIkdMz" (47226 views, 160 likes) https://x.com/i/status/1952077723075301682
+- SpaceX: "This was the first Starship to be static fired on the orbital launch mount, which was modified by engineers and technicians at Starbase https://t.co/tUNW441hjf" (44615 views, 1122 likes) https://x.com/i/status/1952105227584504129
+- Mario Nawfal: "🇺🇸 WELCOME TO THE DARK SIDE (WE HAVE PIZZA)
+
+This Star Wars-themed pizzeria didn’t just lean into the fandom, they built a Death Star and filled it with cheese.
+
+Life-sized R2-D2? Check. Yoda watching you eat? Yep.
+
+Stormtrooper on a speeder bike above the dining room? Obviously. https://t.co/5iqDDRWlqb https://t.co/jxdyuXgHPn" (40813 views, 79 likes) https://x.com/i/status/1952074487958032681
+- Mario Nawfal: "🚨🇺🇸 SEN MULLIN: TRUMP IS THE FIRST PRESIDENT TO HAVE ALL NOMINEES BLOCKED
+
+"Trump's the first president in history not to be able to have one single nominee go through by UC; that's unanimous consent or by a voice vote. 
+
+So we're trying to break that jam, and the price kept https://t.co/7H0mXpaJNs https://t.co/toO7tvV1PU" (39127 views, 116 likes) https://x.com/i/status/1952079521022161211
+- Mario Nawfal: "🚨🇺🇸 TRUMP KILLS $20B IN CLIMATE GRANTS, NONPROFITS LEFT IN THE DUST
+
+Groups like Rewiring America were set to electrify homes with funds from Biden’s climate law: they had $500M lined up.
+
+But Trump’s Environmental Agency scrapped those plans, claiming concerns about “fraud” and https://t.co/tXkEMmxGMX https://t.co/leWVJZEuzb" (38885 views, 165 likes) https://x.com/i/status/1952069455275753606
+- World of Statistics: "Skiing or snowboarding?" (37869 views, 51 likes) https://x.com/i/status/1952075034807169450
+- Tesla: "https://t.co/etqSkpAuCW" (37496 views, 215 likes) https://x.com/i/status/1952109015904768488
+- The Anfield Wrap: "Belter 👏 https://t.co/heUrg2CkcN" (36837 views, 466 likes) https://x.com/i/status/1952067552512770088
+- Mario Nawfal: "🚨🇺🇸 KEVIN HASSET: BIG BEAUTIFUL BILL WILL OFFSET TARRIF COSTS 
+
+Director of National Economic Council, Kevin Hasset:
+
+"The idea that tariffs are going to set off inflation and set off a recession is not in the data. 
+
+The Big Beautiful bill will add about $10,000 to a typical https://t.co/JlwH27br07 https://t.co/KtOpxoE0CI" (37100 views, 63 likes) https://x.com/i/status/1952077004628484215
+- The Anfield Wrap: "Arne Slot is on the banner ✊ https://t.co/CAolNxHxgW" (35917 views, 512 likes) https://x.com/i/status/1952067370828075300
+- Mario Nawfal: "🚨🇮🇱 NETANYAHU URGES RED CROSS ACTION: “WORLD CANNOT REMAIN INDIFFERENT”
+
+"I spoke today with the head of the Red Cross delegation in our region, and requested his immediate involvement in providing food to our hostages and supplying them with medical treatment.
+
+The lie of https://t.co/mRL6Qw8J74 https://t.co/cIbajVEiWz" (36240 views, 61 likes) https://x.com/i/status/1952066942136988000
+- Mario Nawfal: "🚨🇬🇧🇵🇸 UK TO BRING IN HUNDREDS OF GAZAN CHILDREN AMID WAR CONDITIONS
+
+The UK says it will finally start flying up to 300 wounded Gazan kids to Britain for urgent medical care after months of rejecting the idea.
+
+Each child will come with a guardian and be vetted before arriving https://t.co/TpOPjzNEew https://t.co/2hY2OhIc5l" (35943 views, 53 likes) https://x.com/i/status/1952071971136831701
+- Mario Nawfal: "🚨🇺🇸 KEVIN HASSETT: U.S. TARIFFS ON EUROPE WILL RAISE $100 BILLION ANNUALLY 
+
+Director of National Economic Council, Kevin Hassett:
+
+"The president likes those deals. 
+
+They are absolutely historically wonderful deals; we've got Europe agreeing to open its markets to our https://t.co/5sJbg3YPuP https://t.co/6iwGKTPNlP" (35916 views, 69 likes) https://x.com/i/status/1952084554258522356
+- Sawyer Merritt: "Put a still image of my Model Y into @Grok Imagine and put Fun Mode on 😂 https://t.co/Rnip1kJzad" (35265 views, 624 likes) https://x.com/i/status/1952065957351870820
+- Mario Nawfal: "🚨🇺🇸🇧🇷 U.S. TRADE REPRESENTATIVE: TRUMP'S TARIFFS ARE SUBSTITUTES FOR SANCTIONS ON BRAZIL
+
+U.S. Trade Representative, Jamieson Greer: 
+
+"There is a 10% tariff on Brazil because we have a surplus with them. 
+
+And then there's a 40% tariff that the President has chosen to do like https://t.co/1ZcScU2k77 https://t.co/2d2IEVwS22" (35623 views, 103 likes) https://x.com/i/status/1952087070727696781
+- Mario Nawfal: "🚨🇨🇭 SATOSHI STATUE STOLEN IN LUGANO - THEN WASHES UP ON THE WATERFRONT
+
+Bitcoin’s mystery founder just pulled a disappearing act... sort of.
+
+The Satoshi Nakamoto statue vanished from its spot in Lugano, Switzerland, sparking rumors of theft, protest, or some crypto-themed https://t.co/2EZ51h0KeJ https://t.co/9br86elmHz" (34947 views, 53 likes) https://x.com/i/status/1952082039630655666
+- Big Cat: "Willi Castro makes things happen" (31301 views, 100 likes) https://x.com/i/status/1952099372378009816
+- World of Engineering: "China's twin solar thermal towers. Molten salt stores the heat to produce electricity
+ https://t.co/a2gxC2XuJA" (31023 views, 216 likes) https://x.com/i/status/1952087755309089254
+- World of Engineering: "Turning a can into a camera 📷  This is one of the coolest things I have ever seen 👏
+
+Credit: Ian Ruhter
+https://t.co/VEqJkXb6Mp" (30353 views, 126 likes) https://x.com/i/status/1952073564649349303
+- Mario Nawfal: "🚨🇦🇺 MIRACLE IN AUSTRALIA: THERE IS A LOT OF SNOW OVER THERE NOW
+
+Parts of New South Wales just got walloped with up to 40 cm of snow, the most seen since the mid-1980s.
+
+Even Queensland saw snowfall for the first time in 10 years, which is like seeing crocs in snow boots. https://t.co/YaAyoSQ1ro https://t.co/H0meXlpBHk" (29705 views, 75 likes) https://x.com/i/status/1952092103808528841
+- Mario Nawfal: "🚨🇮🇷 IRANIAN OFFICIAL ADMITS: “OUR REAL GOAL WAS TO BUILD A BOMB”
+
+Deputy Speaker of the Iranian Parliament:
+
+"When we first entered nuclear activities, our real goal was to build a bomb.
+
+No point denying it... the whole system, everyone who started this.
+
+We had started and we https://t.co/eTrTOw2pYd https://t.co/eCDmIsPDD3" (29238 views, 104 likes) https://x.com/i/status/1952093695827996736
+- Tesla North America: "You can send any address to your Tesla &amp; it will plan the route including charging stops, if needed
+
+It will then drive itself (under your supervision) all the way to your destination https://t.co/uBJCEDgTbY" (28528 views, 327 likes) https://x.com/i/status/1952105805991362974
+- World of Statistics: "Max Verstappen just went 4 races in a row without a podium, the last time it happened was 7 years, 3 months and 26 days ago at the 2018 Bahrain Grand Prix." (26798 views, 108 likes) https://x.com/i/status/1952092848704422025
+- Mario Nawfal: "🚨🇬🇧 GTA 6 CLASHES WITH UK’S ONLINE SAFETY ACT IN WOKE WAR 1
+
+GTA 6 is aiming for a billion-dollar launch day, packed with gangland mayhem and Bonnie &amp; Clyde-inspired chaos.
+
+But Britain’s new Online Safety Act is ready to crash the party, targeting features like voice chat and https://t.co/rHFyyvOZtm https://t.co/zk2hAJHYb9" (26483 views, 77 likes) https://x.com/i/status/1952094620428472675
+- Sawyer Merritt: "I have to say, Grok Imagine is noticeably better than when I first used it just a week ago. Much faster video creation times and better end results. Pace of improvement has been good. https://t.co/3pHHrMW8Tb" (24996 views, 501 likes) https://x.com/i/status/1952073153334718871
+- Mario Nawfal: "🚨🇨🇩 BREAKING: ISLAMIST MILITANTS KILL 43 IN DRC CHURCH ATTACK
+
+An attack on a church in eastern DRC left at least 43 Christians dead, with an untold number of others fleeing the premises. 
+
+Local officials blame the Allied Democratic Forces, a group linked to ISIS.
+
+The massacre https://t.co/fvj8cmpQ0v https://t.co/izq68FwZDE" (23267 views, 95 likes) https://x.com/i/status/1952109369505833293
+- Mario Nawfal: "🚨🇺🇸 70% CHANCE OF TROPICAL STORM OFF NORTH CAROLINA COAST 
+
+The National Hurricane Center's says a system spinning a few hundred miles east of NC is expected to develop into a tropical storm within 48 hours.
+
+No landfall threat yet, but models show a possible brush with the East https://t.co/kvRvjw1iVV" (22972 views, 65 likes) https://x.com/i/status/1952084049117249721
+- Mario Nawfal: "BLACK HOLE TAKES A BITE, BURPS, AND GOES BACK FOR SECONDS
+
+Black holes aren’t supposed to snack - they’re supposed to obliterate. But a star just survived a run-in with one...and came back two years later for Round 2.
+
+The flare, dubbed AT 2022dbl, is nearly identical to one https://t.co/lMOZjTGs3M https://t.co/T7IXO0lJMO" (22730 views, 56 likes) https://x.com/i/status/1952109719960862764
+- @jason: "There is an easy way for LLM companies to play nice with the IP owners who they would be nothing without:
+
+1. respect them
+2. pay them 
+3. ask them for permission
+
+@OpenAI is going to lose their @nytimes case, and @disney and @UniversalPics will beat @midjourney.
+
+Why not do what https://t.co/spgAgkWg0J" (22400 views, 46 likes) https://x.com/i/status/1952088125603250499
+- World of Engineering: "Useful tip https://t.co/aoAT32LDHM" (22016 views, 143 likes) https://x.com/i/status/1952094850469548100
+- Mario Nawfal: "🚨 SCIENTISTS JUST PROVED YOU BREATHE LIKE IT'S A FINGERPRINT
+
+A new study shows your nose has a unique breathing pattern, like a fingerprint.
+
+Using a 24-hour wearable device, researchers ID’d people with 96.8% accuracy just from their nostril airflow.
+
+These nasal https://t.co/WFNR9jLKQs" (21901 views, 72 likes) https://x.com/i/status/1952089587230408854
+- Mario Nawfal: "🇺🇸  THE $5M SUPERCOMPUTER THAT LOST TO A FLIP PHONE
+
+In 1975, the Cray-1 was the crown jewel of computing: 
+
+160 megaflops, 60 miles of wire, and a design that screamed “NASA meets Studio 54.”
+
+Price tag? $5 million. 
+
+Performance? Today’s smartwatch could beat it blindfolded https://t.co/bIaYZtpsxl https://t.co/zhjwvjGMX0" (21896 views, 60 likes) https://x.com/i/status/1952110636604776802
+- Tim Urban: "Been using iOS 26 and the liquid glass UI delicious and futuristic (but a bit slow and glitchy on the beta version so maybe wait till official release to update)" (19633 views, 77 likes) https://x.com/i/status/1952080634689581437
+- Mario Nawfal: "🚨🇵🇸🇮🇱 136 TONS OF AID RAIN DOWN ON GAZA - IDF, EU STATES PUSH BACK ON “STARVATION” CLAIMS
+
+For the 3rd day in a row, countries including France, Germany, Jordan, the UAE, and now Belgium airdropped tons of food and water into Gaza - this time, 136 tons, north and south.
+
+The https://t.co/2JPIV5kifD https://t.co/qP296xsraM" (19229 views, 54 likes) https://x.com/i/status/1952097868023562391
+- @jason: "this is what our politics has come to... grown men trading meme barbs. 
+
+I'm here for it! let it rip! https://t.co/JwGRU0vcKk" (19018 views, 20 likes) https://x.com/i/status/1952085706236739718
+- Bernie Sanders: "After Trump promised not to cut Medicaid, the GOP reconciliation bill guts the program and throws 15 million people off their health care. It’s a disaster not only for rural hospitals but for nursing homes &amp; community health centers.
+
+We must expose him for the fraud that he is. https://t.co/TfOal7hiyM" (17794 views, 194 likes) https://x.com/i/status/1952099918283227255
+- Mario Nawfal: "🚨 STARSHIP LANDS LIKE ELON'S ABOUT TO TAKE US ALL TO MARS
+
+SpaceX just pulled off a perfect Starship landing. 
+
+NASA engineers used to call the manoeuvre it just pulled off "impossible."
+
+Elon called it “the most complex flying machine ever built,” and now it's landing smoother https://t.co/UAJ964kS13" (17138 views, 251 likes) https://x.com/i/status/1952097138445328661
+- Barstool Sports: ""I’m Going To Slap The F*** Out Of You" Johnny Manziel Challenged Gillie Da Kid To Fight At Rough N' Rowdy Over the Cam Newton/Jalen Hurts Drama. Gillie Clapped Back Covered In White Powder Telling Mr. Football To Go Join AA https://t.co/gu8mIjRazk https://t.co/BYkGYkx6Vz" (16294 views, 27 likes) https://x.com/i/status/1952100920763785396
+- World of Statistics: "Is global warming real?" (15480 views, 41 likes) https://x.com/i/status/1952099169616687379
+- Max Velocity: "well… that took a turn… https://t.co/9bxKCd5e33" (15030 views, 293 likes) https://x.com/i/status/1952081574172012951
+- Joe Gebbia: "Dems want to bring the top down rather than the bottom up. Another reason I don’t miss leaving them https://t.co/Hk9bUUOHFv" (14256 views, 318 likes) https://x.com/i/status/1952071255906992216
+- Tesla Charging: "New Tesla Supercharger: Béjar, Spain (8 stalls) 
+https://t.co/sZRysTHc86 https://t.co/g3O788rsFB" (13761 views, 462 likes) https://x.com/i/status/1952070504472613353
+- Sawyer Merritt: "Normal mode: https://t.co/IYyA7H0RVd" (13768 views, 94 likes) https://x.com/i/status/1952066014088417613
+- Mario Nawfal: "🇺🇸 EYES IN THE SKY OVER TEXAS - BORDER PATROL FLOATS DEFENSE DEPT SURVEILLANCE BALLOON
+
+The U.S. just launched a Defense Department aerostat over Sanderson, Texas - and it’s not for the weather.
+
+Dubbed the Helen Gardner, the high-altitude surveillance balloon gives agents “a https://t.co/zsF4qw8Gqe https://t.co/SrrKR2Hfew" (13751 views, 66 likes) https://x.com/i/status/1952099653677133921
+- World of Statistics: "🇩🇪 Mercedes-Benz Q2 2025 slides: Profit plunges 68% as tariffs and China headwinds bite" (13594 views, 54 likes) https://x.com/i/status/1952104418150900147
+- Vintage Maps: "All Red Line. A map of submarine cables connecting British Empire in 1902. https://t.co/EKZOVfKC9H" (13433 views, 197 likes) https://x.com/i/status/1952090358700998840
+- Cybertruck: "Cybertruck is the only pickup truck that can drive itself anywhere under your supervision https://t.co/sckJTvKJxz" (12770 views, 347 likes) https://x.com/i/status/1952092399070814310
+- Sawyer Merritt: "The still image: https://t.co/V76mCjoOkg" (13044 views, 68 likes) https://x.com/i/status/1952066022992687220
+- Internal Tech Emails: "[This document is from Comes v. Microsoft (2007).]" (12934 views, 16 likes) https://x.com/i/status/1952066630336516245
+- World of Statistics: "Nobel Prize winners sometimes develop a psychosis which even has a name, "Nobel Disease"" (12719 views, 49 likes) https://x.com/i/status/1952105029923389484
+- Big Cat: "Justin Turner! Let the balls hang" (12292 views, 220 likes) https://x.com/i/status/1952114976388219213
+- World and Science: "Interesting fact: Sand cats navigate harsh desert climates, enduring daytime temperatures as high as 51°C and facing steep drops to -0.5°C at night. https://t.co/4utJGBKlB1" (12067 views, 52 likes) https://x.com/i/status/1952068740331249849
+- Sawyer Merritt: "Elon on Tesla Robotaxi expansion: "A pretty good guide is that if Waymo is operating somewhere, then regulations allow robotaxi in that city or state." https://t.co/04OklDKouR" (11809 views, 219 likes) https://x.com/i/status/1952111733314576414
+- ARK Invest: "Spring home sales fell flat, and inventory is rising. With affordability still strained, @CathieDWood expects further price cuts, which could be a turning point. Falling shelter costs may finally pull inflation and rates down. Hear more macro takes from Cathie on "In The Know."" (11381 views, 48 likes) https://x.com/i/status/1952082039383212137
+- Elon Musk: "@SawyerMerritt @grok 🔥😂" (9901 views, 318 likes) https://x.com/i/status/1952103192202006599
+- Adam Schefter: "A day at the office for @dkm14.
+
+📸 @steelers https://t.co/1kHaCHOZzE" (9484 views, 493 likes) https://x.com/i/status/1952115552152957137
+- Mario Nawfal: "🚨🇺🇸 FAN KICKED OUT OF ST. LOUIS MLS GAME FOR MAGA HAT
+
+A man wearing a MAGA hat was escorted out of a St. Louis City SC match after refusing to remove it under a rule against showing political symbols in the stadium.  
+
+He filmed the whole thing, claiming he was “asked to leave https://t.co/xEpEr8aVzy" (9869 views, 83 likes) https://x.com/i/status/1952112240100036811
+- Mario Nawfal: "🚨🇷🇺 RUSSIAN PARTY GIRLS DETAINED AFTER VIBING TO EXPLOSIONS
+
+Dressed like they were headed to a nightclub, 21-year-old Daria and 19-year-old Karina filmed a video in front of a giant oil fire in Sochi, smiling and swaying like they were posting a “good vibes only” reel.
+
+They https://t.co/oHcmKUTdkO" (9683 views, 47 likes) https://x.com/i/status/1952104686691225790
+- Aviation: "Lightning seen from an airplane window! https://t.co/6HdkSCBN9E" (9231 views, 192 likes) https://x.com/i/status/1952102899154399424
+- Cybertruck: "@Teslarati Today, I wanted to eat a croissant
+So I went to a place that sells croissant
+And I bought a croissant
+And I returned home with the croissant
+And then I ate the croissant" (8944 views, 273 likes) https://x.com/i/status/1952091549522608381
