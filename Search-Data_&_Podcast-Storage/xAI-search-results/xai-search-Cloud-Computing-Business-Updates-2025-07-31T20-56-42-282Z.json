@@ -1,0 +1,17 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Microsoft to Spend Record $30 Billion on AI and Cloud Investments\",\n      \"description\": \"Microsoft has forecasted a record $30 billion in capital spending for the current fiscal quarter, driven by strong sales in its Azure cloud computing business, highlighting returns on its AI investments.\",\n      \"source\": \"Reuters article on Microsoft spending, published on 2025-07-30\"\n    },\n    {\n      \"title\": \"Western Digital Beats Quarterly Revenue Estimates Amid Cloud Demand\",\n      \"description\": \"Western Digital exceeded expectations for fourth-quarter revenue due to high demand for data storage products as enterprises increasingly adopt cloud computing solutions.\",\n      \"source\": \"Reuters article on Western Digital, published on 2025-07-30\"\n    },\n    {\n      \"title\": \"Oxide Computer Company Raises $100 Million for Cloud Server Expansion\",\n      \"description\": \"Oxide Computer Company secured $100 million in financing to enhance its manufacturing capabilities and accelerate the release of new cloud server products.\",\n      \"source\": \"Reuters article on Oxide funding, published on 2025-07-30\"\n    },\n    {\n      \"title\": \"OpenText Expands Focus on Private Cloud Solutions\",\n      \"description\": \"OpenText is emphasizing private cloud strategies, including cloud sovereignty and hybrid growth, amid ongoing developments in cloud computing.\",\n      \"source\": \"ChannelFutures article on OpenText, published approximately 1 day ago\"\n    }\n  ],\n  \"notes\": \"All stories are based on articles from the last 24 hours. Data is derived from available sources directly related to cloud computing business updates.\"\n}",
+  "citations": [
+    "https://www.reuters.com/business/microsoft-spend-record-30-billion-this-quarter-ai-investments-pay-off-2025-07-30/",
+    "https://www.nytimes.com/section/us",
+    "https://www.reuters.com/technology/western-digital-beats-quarterly-revenue-estimates-strong-data-storage-demand-2025-07-30/",
+    "https://news.google.com/home?tab=wn&hl=en-US&gl=US&ceid=US:en",
+    "https://www.reuters.com/technology/cloud-server-startup-oxide-computing-raises-100-million-2025-07-30/",
+    "https://www.channelfutures.com/cloud/opentext-doubles-down-private-cloud",
+    "https://www.businessinsider.com/top-business-stories-this-week-cloud-computing-2019-7",
+    "https://www.firstpost.com/tag/cloud-computing",
+    "https://www.business-standard.com/topic/cloud-computing",
+    "https://www.crn.com/slide-shows/cloud/the-10-biggest-cloud-computing-news-stories-of-2020-so-far-/5",
+    "https://x.com/pattaazhy/status/1950377037660897505",
+    "https://x.com/AndrewCurran_/status/1950536344574345422"
+  ]
+}

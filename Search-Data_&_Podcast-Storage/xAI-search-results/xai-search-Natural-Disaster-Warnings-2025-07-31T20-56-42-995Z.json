@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Powerful Earthquake off Russia's Kamchatka Peninsula Triggers Tsunami Warnings\",\n      \"description\": \"A significant 8.8-magnitude earthquake struck near Russia's Kamchatka Peninsula, leading to tsunami warnings across the Pacific region. The event caused evacuations and disruptions, including marine life fleeing the waves.\",\n      \"source\": \"Times of India article on tsunami alerts and evacuations\"\n    },\n    {\n      \"title\": \"India Launches NASA-ISRO Satellite for Monitoring Climate Threats and Natural Disasters\",\n      \"description\": \"India successfully launched a collaborative radar imaging satellite with NASA to enhance global monitoring of climate change and natural disasters, providing advanced warnings for events like earthquakes and tsunamis.\",\n      \"source\": \"Reuters article on the satellite launch\"\n    }\n  ],\n  \"notes\": \"Only two relevant stories were identified from the last 24 hours based on available data.\"\n}",
+  "citations": [
+    "https://www.reuters.com/",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/",
+    "https://www.reuters.com/sustainability/climate-energy/india-launches-nasa-isro-satellite-track-climate-threats-space-2025-07-30/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://thetimes-tribune.com/2025/07/29/the-latest-tsunami-warnings-lifted-in-many-places-but-chile-raises-it-to-highest-level",
+    "https://cbsnews.com/tag/tsunami",
+    "https://abc17news.com/news/2025/07/12/nature-gave-warning-of-recent-deadly-disasters-were-the-right-people-listening",
+    "https://timesofindia.indiatimes.com/world/europe/tsunami-disrupts-marine-life-hundreds-of-sea-lions-flee-powerful-waves-after-russia-earthquake-watch/articleshow/122993677.cms",
+    "https://timesofindia.indiatimes.com/world/europe/alerts-volcano-and-evacuation-tsunami-warnings-lifted-in-most-nations-after-strongest-earthquakes-hit-russia-heres-what-to-know/articleshow/123009888.cms"
+  ]
+}

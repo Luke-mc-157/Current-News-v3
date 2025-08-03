@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Latest Global Developments as Reported by Major News Outlets\",\n      \"description\": \"Ongoing coverage of international events and updates from around the world, based on recent reports.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"Reuters\",\n          \"url\": \"https://www.reuters.com/world/\",\n          \"published\": \"2025-07-31T05:36:04\"\n        },\n        {\n          \"source\": \"Reuters\",\n          \"url\": \"https://www.reuters.com/world/\",\n          \"published\": \"15 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Trending Viral News and Events Worldwide\",\n      \"description\": \"Coverage of viral stories and trending topics gaining significant attention globally.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"Times Now\",\n          \"url\": \"https://www.timesnownews.com/viral\",\n          \"published\": \"20 hours ago\"\n        },\n        {\n          \"source\": \"The Indian Express\",\n          \"url\": \"https://indianexpress.com/section/trending/\",\n          \"published\": \"17 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Key World News Updates from BBC\",\n      \"description\": \"Recent reports on global affairs, including live updates and breaking stories.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"BBC News\",\n          \"url\": \"https://www.bbc.com/news/world\",\n          \"published\": \"2025-07-31T07:09:23\"\n        }\n      ]\n    },\n    {\n      \"title\": \"General World Affairs and Current Events\",\n      \"description\": \"Summaries of recent international happenings and news developments.\",\n      \"supporting_articles\": [\n        {\n          \"source\": \"The Washington Post\",\n          \"url\": \"https://www.washingtonpost.com/\",\n          \"published\": \"2025-07-31T03:03:48\"\n        }\n      ]\n    }\n  ],\n  \"notes\": \"Data is based on available sources from the last 24 hours; specific viral stories may vary based on engagement metrics not fully detailed in the sources.\"\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://www.reuters.com/world/us/",
+    "https://www.washingtonpost.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.timesnownews.com/viral",
+    "https://indianexpress.com/section/trending/",
+    "https://www.foxnews.com/us/brutal-downtown-brawl-leaves-victims-bloodied-cincinnati-police-launch-investigation",
+    "https://medium.com/write-a-catalyst/september-viral-articles-the-most-engaging-post-in-the-publication-3135938cd826",
+    "https://www.reuters.com/world/"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"top_stories\": [\n    {\n      \"story\": \"Bayern Munich completes signing of Liverpool winger Luis Diaz for £65.5m\",\n      \"details\": \"German champions Bayern Munich have finalized the transfer of Liverpool and Colombia winger Luis Diaz in a deal worth £65.5m, marking a significant move in the summer transfer window.\",\n      \"source\": \"BBC Sport\"\n    },\n    {\n      \"story\": \"Latest updates on transfers involving Liverpool FC as part of the summer window\",\n      \"details\": \"The Athletic's Transfer DealSheet covers ongoing transfer activities, including developments related to Liverpool FC, such as potential deals and player interests.\",\n      \"source\": \"The Athletic\"\n    },\n    {\n      \"story\": \"Emergence of young player Ngumoha addresses Liverpool dilemma amid UEFA rules\",\n      \"details\": \"Discussions around Liverpool FC highlight how the rise of a young player like Ngumoha could resolve internal squad issues but may create new challenges due to UEFA regulations.\",\n      \"source\": \"Posts on X\"\n    },\n    {\n      \"story\": \"Latest news and rumors on Liverpool FC transfers and team updates\",\n      \"details\": \"Recent reports cover transfer activities and team news for Liverpool FC, including player interests and potential deals in the current window.\",\n      \"source\": \"BeSoccer\"\n    }\n  ],\n  \"notes\": {}\n}",
+  "citations": [
+    "https://www.bbc.com/sport/football/teams/liverpool",
+    "https://www.bbc.com/news/england/merseyside",
+    "https://www.nytimes.com/athletic/6519720/2025/07/29/manchester-united-transfer-latest-arsenal-liverpool-real-madrid-analysis/",
+    "https://www.bbc.com/sport/football",
+    "https://www.bbc.com/sport/football/articles/c1w8j9g5qleo",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/alexander-isak-liverpool-transfer-plan-32140048",
+    "https://es.besoccer.com/noticias/equipo/liverpool",
+    "https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-isak-guehi-32143676",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-ekitike-32100107",
+    "https://www.liverpool.com/liverpool-fc-news/transfer-news/liverpool-transfer-news-live-konate-32052484",
+    "https://x.com/LivEchoLFC/status/1950808647455670326"
+  ]
+}

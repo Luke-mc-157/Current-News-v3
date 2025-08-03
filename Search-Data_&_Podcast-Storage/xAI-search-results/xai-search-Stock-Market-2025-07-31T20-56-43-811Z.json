@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Global Market Headlines\",\n      \"description\": \"Latest stock market news from around the globe, covering breaking international market and finance updates.\",\n      \"source\": \"Reuters\",\n      \"url\": \"https://www.reuters.com/markets/\"\n    },\n    {\n      \"title\": \"U.S. Stock Market Headlines\",\n      \"description\": \"Breaking news on U.S. stock markets, including international market and finance developments.\",\n      \"source\": \"Reuters\",\n      \"url\": \"https://www.reuters.com/markets/us/\"\n    },\n    {\n      \"title\": \"Stock Market Headlines\",\n      \"description\": \"Latest updates on stock markets, featuring breaking international market and finance news.\",\n      \"source\": \"Reuters\",\n      \"url\": \"https://www.reuters.com/markets/stocks/\"\n    }\n  ],\n  \"notes\": \"Only three relevant stories were found within the last 24 hours based on available data.\"\n}",
+  "citations": [
+    "https://www.reuters.com/markets/",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.reuters.com/markets/currencies/",
+    "https://www.reuters.com/markets/europe/",
+    "https://finance.yahoo.com/video/tesla-samsung-energy-stocks-european-172324521.html",
+    "https://reuters.com/article/business/from-broker-notes-to-memes-how-the-stock-market-went-viral-idUSKBN29Y0PW",
+    "https://www.livemint.com/market/stock-market-news/stock-market-this-week-us-india-trade-deal-uss-fed-decision-q1-earnings-fiis-among-top-triggers-for-dalal-street-11753582472950.html",
+    "https://www.cbsnews.com/tag/stock-market/",
+    "https://m.economictimes.com/markets/stocks/live-blog/bse-sensex-today-live-nifty-stock-market-updates-30-july-2025/amp_liveblog/122986610.cms"
+  ]
+}

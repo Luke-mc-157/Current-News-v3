@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Austin Local News Updates\",\n      \"description\": \"Coverage of local events in the Austin area, including news, weather, and sports for the Texas Capitol Region.\",\n      \"source\": \"https://cbsaustin.com/news/local\",\n      \"published\": \"2025-07-31T19:56:00+00:00\"\n    }\n  ],\n  \"notes\": \"Data is sparse; only one relevant article from the last 24 hours was identified.\"\n}",
+  "citations": [
+    "https://www.nytimes.com/athletic/live-blogs/mlb-trade-deadline-2025-live-updates-news-rumors-deals/bjydUj7trHJP/",
+    "https://www.bbc.com/news/uk",
+    "https://www.reuters.com/",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://www.bbc.com/news/world",
+    "https://communityimpact.com/austin/bastrop-cedar-creek/business/2025/07/25/6-trending-austin-area-stories-tim-hortons-round-rock-development-and-more",
+    "https://cbsaustin.com/news/local/cbs-austins-top-20-stories-of-2024",
+    "https://cbsaustin.com/news/local",
+    "https://spectrumlocalnews.com/tx/austin/evening-briefing/2025/07/29/evening-briefing-austin-july-29",
+    "https://www.fox7austin.com/news"
+  ]
+}

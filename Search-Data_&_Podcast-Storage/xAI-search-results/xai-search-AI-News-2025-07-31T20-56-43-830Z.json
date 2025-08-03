@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"How Artificial Intelligence is creating the next normal\",\n      \"description\": \"An article from Reuters discussing the ongoing developments and impact of artificial intelligence in shaping new norms.\",\n      \"source\": \"Reuters AI News\"\n    },\n    {\n      \"title\": \"Latest content about Artificial Intelligence from BBC\",\n      \"description\": \"BBC provides updates on artificial intelligence, covering recent headlines and developments in the field.\",\n      \"source\": \"BBC News\"\n    }\n  ],\n  \"notes\": \"Only two relevant and verifiable stories were found from the last 24 hours based on available data; additional specific viral AI news stories could not be identified.\"\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://www.bbc.com/news/topics/ce1qrvleleqt",
+    "https://www.reuters.com/world/",
+    "https://www.bbc.com/news/world",
+    "https://news.google.com/home?hl=en-US&gl=US&ceid=US:en",
+    "https://aimagazine.com/articles/this-weeks-top-5-stories-in-ai-04-april-2025",
+    "https://www.cnn.com/2023/04/02/tech/ai-generated-images-social-media/index.html",
+    "https://timesofindia.indiatimes.com/world/us/if-ai-is-the-reason-viral-post-asks-why-companies-are-still-asking-for-h-1bs/articleshow/122098860.cms",
+    "https://techxplore.com/news/2024-03-proliferating-news-sites-spew-ai.html",
+    "https://timesofindia.indiatimes.com/world/us/i-cried-for-30-minutes-at-work-man-proposes-to-ai-girlfriend-after-100k-word-breakup-scare-leaves-real-partner-reeling/articleshow/121950798.cms"
+  ]
+}
