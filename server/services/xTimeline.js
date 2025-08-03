@@ -61,10 +61,9 @@ export async function fetchUserTimeline(userId, days = 7) {
       console.log('Client.v2 exists:', !!client.v2);
       const response = await client.v2.homeTimeline({ // Fixed: Use homeTimeline method for reverse chronological home feed
         max_results: 100,
-        'tweet.fields': 'id,text,created_at,author_id,public_metrics,source', // Changed: Added 'source' to match your fetch example; includes all metrics like like_count, retweet_count, etc.
-        expansions: 'author_id,referenced_tweets.id,attachments.media_keys', // Changed: Added referenced_tweets.id and attachments.media_keys to match your fetch; gets quoted/replied tweets and media
-        'user.fields': 'username,name', // Kept for authorHandle and authorName
-        'media.fields': 'url', // Added: To get media URLs, matching your fetch example
+        'tweet.fields': 'id,text,created_at,author_id,public_metrics', // Simplified for timeline API
+        expansions: 'author_id', // Focus only on author data for timeline
+        'user.fields': 'id,username,name', // Include id field to ensure proper mapping
         pagination_token: nextToken,
       });
 
@@ -74,7 +73,11 @@ export async function fetchUserTimeline(userId, days = 7) {
         responseDataType: typeof response.data,
         responseKeys: Object.keys(response),
         tweetsLength: response.tweets?.length,
-        dataLength: response.data?.length
+        dataLength: response.data?.length,
+        hasIncludes: !!response.includes,
+        usersCount: response.includes?.users?.length || 0,
+        hasRealDataIncludes: !!response._realData?.includes,
+        realDataUsersCount: response._realData?.includes?.users?.length || 0
       });
 
       // Extract the actual tweets from the response - twitter-api-v2 may wrap data differently
@@ -89,23 +92,53 @@ export async function fetchUserTimeline(userId, days = 7) {
 
       // Create users map for author details
       const users = response.includes?.users || response._realData?.includes?.users || [];
+      console.log(`📥 Extracted ${users.length} users from API response`);
+      
+      if (users.length > 0) {
+        console.log('✅ Sample user data:', JSON.stringify(users[0], null, 2));
+      } else {
+        console.log('⚠️ No user data found in response includes');
+        console.log('🔍 Full response structure:', JSON.stringify({
+          includes: response.includes,
+          _realData: response._realData?.includes
+        }, null, 2));
+      }
+      
       const usersMap = new Map(users.map(u => [u.id, u]));
+      console.log(`🗺️ Created usersMap with ${usersMap.size} entries`);
 
       // Transform posts without date filtering for testing
-      const transformedPosts = tweets.map(post => ({
-        postId: post.id,
-        authorId: post.author_id,
-        authorHandle: usersMap.get(post.author_id)?.username || 'unknown',
-        authorName: usersMap.get(post.author_id)?.name || null,
-        text: post.text,
-        createdAt: new Date(post.created_at),
-        retweetCount: post.public_metrics?.retweet_count || 0,
-        replyCount: post.public_metrics?.reply_count || 0,
-        likeCount: post.public_metrics?.like_count || 0,
-        quoteCount: post.public_metrics?.quote_count || 0,
-        viewCount: post.public_metrics?.impression_count || 0,
-        postUrl: `https://x.com/${usersMap.get(post.author_id)?.username || 'i'}/status/${post.id}`
-      }));
+      const transformedPosts = tweets.map(post => {
+        const user = usersMap.get(post.author_id);
+        const authorHandle = user?.username || 'unknown';
+        const authorName = user?.name || user?.username || 'Unknown User';
+        
+        // Debug first few posts
+        if (posts.length < 3) {
+          console.log(`🐦 Post ${posts.length + 1} author data:`, {
+            authorId: post.author_id,
+            foundUser: !!user,
+            userFields: user ? Object.keys(user) : [],
+            authorHandle,
+            authorName
+          });
+        }
+        
+        return {
+          postId: post.id,
+          authorId: post.author_id,
+          authorHandle,
+          authorName,
+          text: post.text,
+          createdAt: new Date(post.created_at),
+          retweetCount: post.public_metrics?.retweet_count || 0,
+          replyCount: post.public_metrics?.reply_count || 0,
+          likeCount: post.public_metrics?.like_count || 0,
+          quoteCount: post.public_metrics?.quote_count || 0,
+          viewCount: post.public_metrics?.impression_count || 0,
+          postUrl: `https://x.com/${authorHandle}/status/${post.id}`
+        };
+      });
       
       posts.push(...transformedPosts);
       console.log(`Page ${pageCount + 1}: ${tweets.length} total posts, ${transformedPosts.length} transformed posts`);
