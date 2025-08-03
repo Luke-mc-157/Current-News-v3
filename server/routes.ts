@@ -1590,11 +1590,11 @@ export function registerRoutes(app) {
         const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
         await cleanupPodcastStatuses();
         
-        const { createScheduledPodcastsForUser, processPendingPodcasts } = await import('./services/podcastScheduler.js');
+        const { createScheduledPodcastsForUser, runPodcastScheduler } = await import('./services/podcastScheduler.js');
         await createScheduledPodcastsForUser(userId, freshPreferences);
         
-        // Immediately process any podcasts that are due now (don't wait for interval)
-        await processPendingPodcasts();
+        // Immediately check for any podcasts that are due now (don't wait for interval)
+        await runPodcastScheduler();
       }
       
       res.json(savedPreferences);
@@ -1632,11 +1632,11 @@ export function registerRoutes(app) {
         const { cleanupPodcastStatuses } = await import('./services/cleanupPodcastStatuses.js');
         await cleanupPodcastStatuses();
         
-        const { createScheduledPodcastsForUser, processPendingPodcasts } = await import('./services/podcastScheduler.js');
+        const { createScheduledPodcastsForUser, runPodcastScheduler } = await import('./services/podcastScheduler.js');
         await createScheduledPodcastsForUser(userId, freshPreferences);
         
-        // Immediately process any podcasts that are due now (don't wait for interval)
-        await processPendingPodcasts();
+        // Immediately check for any podcasts that are due now (don't wait for interval)
+        await runPodcastScheduler();
       }
       
       res.json(updated);
@@ -2421,12 +2421,13 @@ export function registerRoutes(app) {
 
   router.post("/api/scheduler/process-pending", requireAuth, async (req, res) => {
     try {
-      console.log('⚡ Processing pending podcasts triggered by user:', req.user.username);
-      await processPendingPodcasts();
-      res.json({ success: true, message: "Pending podcasts processed" });
+      console.log('⚡ Running podcast scheduler triggered by user:', req.user.username);
+      const { runPodcastScheduler } = await import('./services/podcastScheduler.js');
+      await runPodcastScheduler();
+      res.json({ success: true, message: "Podcast scheduler run completed" });
     } catch (error) {
-      console.error("Error processing pending podcasts:", error);
-      res.status(500).json({ error: "Failed to process pending podcasts", message: error.message });
+      console.error("Error running podcast scheduler:", error);
+      res.status(500).json({ error: "Failed to run podcast scheduler", message: error.message });
     }
   });
 
@@ -2435,7 +2436,11 @@ export function registerRoutes(app) {
       const userId = req.user.id;
       const preferences = await storage.getPodcastPreferences(userId);
       const scheduledPodcasts = await storage.getScheduledPodcastsForUser(userId);
-      const pendingPodcasts = await storage.getPendingPodcastsDue();
+      
+      // Get podcasts due now (within current minute window)
+      const now = new Date();
+      const oneMinuteAgo = new Date(now.getTime() - 60 * 1000);
+      const duePodcasts = await storage.getPodcastsDueNow(oneMinuteAgo, now);
       
       res.json({
         user: {
@@ -2445,8 +2450,8 @@ export function registerRoutes(app) {
         },
         preferences,
         scheduledPodcasts,
-        pendingPodcasts: pendingPodcasts.filter(p => p.userId === userId),
-        totalPendingSystemWide: pendingPodcasts.length
+        pendingPodcasts: duePodcasts.filter(p => p.userId === userId),
+        totalPendingSystemWide: duePodcasts.length
       });
     } catch (error) {
       console.error("Error getting scheduler status:", error);
