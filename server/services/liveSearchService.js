@@ -612,7 +612,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an API. Reply **only** with a JSON object that starts with `{` and ends with `}`. Never add headings, explanations or code fences. You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
+          content: "You are an API. Reply **only** with a JSON object that starts with { and ends with }. Never add headings, explanations or code fences. You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
         },
         {
           role: "user",
@@ -1092,7 +1092,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
 - RSS ARTICLES section contains supplementary content from user's RSS feeds
 - All engagement metrics preserved for ranking
 
-You are an API. Reply **only** with a JSON array that starts with `[` and ends with `]`. Never add headings, explanations or code fences. Return ONLY this exact format (Use ONLY straight quotes " and ' in JSON. Escape all newlines as \n. No curly quotes or unescaped controls.):
+You are an API. Reply **only** with a JSON array that starts with [ and ends with ]. Never add headings, explanations or code fences. Return ONLY this exact format (Use ONLY straight quotes " and ' in JSON. Escape all newlines as \n. No curly quotes or unescaped controls.):
 [
   {
     "title": "Specific headline from sources",
