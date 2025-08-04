@@ -928,11 +928,11 @@ async function getTopicDataFromLiveSearch(topic) {
   const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
-      model: "grok-3-mini-fast",
+      model: "grok-4-latest",
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts, news publications, and the web. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. Use source type 'web' to support results ONLY IF NEEDED. No additional text, explanations, or wrappers."
+          content: "You are a world class AI news aggregator. You have live access to X posts and news publications. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
@@ -946,12 +946,10 @@ CRITICAL: Do not include any sources or citations that are not directly related 
       search_parameters: {
         mode: "on",
         return_citations: true,
-        reasoning_effort: "high",
         from_date: fromDate,
         sources: [
           {"type": "x","post_view_count": 2500},
           {"type": "news", "country": "US" },
-          {"type": "web", "allowed_websites": ["https://news.google.com", "https://www.bbc.com/news", "https://www.nytimes.com", "https://www.washingtonpost.com", "https://www.reuters.com"], "country": "US" }
         ]
       },
       max_tokens: 90000
