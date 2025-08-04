@@ -1060,7 +1060,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
     console.log(`📏 Sending full compiled data: ${compiledData.length} chars`);
     
     const response = await client.chat.completions.create({
-      model: "grok-4-latest",
+      model: "grok-3-fast-latest",
       messages: [
         {
           role: "system",
