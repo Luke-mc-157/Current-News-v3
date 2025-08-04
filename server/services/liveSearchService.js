@@ -506,7 +506,7 @@ async function fetchXPostsBatch(postIds, accessToken) {
           const author = data.includes?.users?.find(user => user.id === tweet.author_id);
           return {
             id: tweet.id,
-            text: tweet.text,
+            text: tweet.text.replace(/\n+/g, ' ').trim(), // Normalize text to prevent JSON parsing issues
             author_id: tweet.author_id,
             author_name: author?.name || author?.username || 'Unknown',
             created_at: tweet.created_at,
@@ -612,7 +612,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article. Return ONLY a JSON object with an 'articles' array. No additional text, explanations, or wrappers."
+          content: "You are an API. Reply **only** with a JSON object that starts with `{` and ends with `}`. Never add headings, explanations or code fences. You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
         },
         {
           role: "user",
@@ -646,10 +646,12 @@ ${articlesText}`
     const analysisContent = response.choices[0].message.content;
     console.log(`✅ Article analysis complete for ${topicName}: ${analysisContent.length} chars`);
     
-    // Parse JSON response
+    // Parse JSON response with slice fix
     let parsedAnalysis;
     try {
-      const jsonResult = JSON.parse(analysisContent);
+      // Strip anything before { and after }
+      const clean = analysisContent.slice(analysisContent.indexOf('{'), analysisContent.lastIndexOf('}') + 1);
+      const jsonResult = JSON.parse(clean);
       parsedAnalysis = jsonResult.articles || jsonResult; // Handle both formats
       console.log(`🔍 Parsed ${parsedAnalysis.length} article analyses for ${topicName}`);
     } catch (parseError) {
@@ -831,9 +833,13 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
   
   // Create structured text for Grok
   const topicsSection = compiledTopics.map(topic => {
-    const xPostsText = topic.xPostSources.map(post => 
-      `- ${post.author_name || 'Unknown'}: "${post.text}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`
-    ).join('\n');
+    // Limit to 20 posts per topic to prevent oversized prompts
+    const limitedPosts = topic.xPostSources.slice(0, 20);
+    const xPostsText = limitedPosts.map(post => {
+      // Normalize text: replace newlines with spaces
+      const normalizedText = post.text.replace(/\n+/g, ' ').trim();
+      return `- ${post.author_name || 'Unknown'}: "${normalizedText}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`;
+    }).join('\n');
     
     // Use AI analysis instead of full content to reduce character count
     let articlesText = '';
@@ -863,7 +869,7 @@ TOPIC: ${topic.topic}
 LIVE SEARCH SUMMARY:
 ${topic.liveSearchContent}
 
-X POSTS FROM SEARCH (${topic.xPostSources.length}):
+X POSTS FROM SEARCH (${limitedPosts.length}):
 ${xPostsText || 'None found'}
 
 SUPPORTING ARTICLES (${topic.articleSources.length}):
@@ -890,9 +896,11 @@ ${rssText}`;
   // Add timeline posts section
   let timelineSection = '';
   if (formattedTimelinePosts.length > 0) {
-    const timelineText = formattedTimelinePosts.map(post => 
-      `- ${post.author_name || 'Unknown'}: "${post.text}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`
-    ).join('\n');
+    const timelineText = formattedTimelinePosts.map(post => {
+      // Normalize text: replace newlines with spaces
+      const normalizedText = post.text.replace(/\n+/g, ' ').trim();
+      return `- ${post.author_name || 'Unknown'}: "${normalizedText}" (${post.public_metrics.view_count} views, ${post.public_metrics.like_count} likes) ${post.url}`;
+    }).join('\n');
     
     timelineSection = `
 
@@ -1052,7 +1060,9 @@ async function inferEmergentTopicsFromTimeline(posts, rssArticles = []) {
     });
 
     const content = response.choices[0].message.content;
-    const parsed = JSON.parse(content);
+    // Strip anything before { and after }
+    const clean = content.slice(content.indexOf('{'), content.lastIndexOf('}') + 1);
+    const parsed = JSON.parse(clean);
     return parsed.emergentTopics || [];
   } catch (error) {
     console.error('Emergent topics inference failed:', error);
@@ -1082,7 +1092,7 @@ async function compileNewsletterWithGrok(compiledData, sourceBreakdown) {
 - RSS ARTICLES section contains supplementary content from user's RSS feeds
 - All engagement metrics preserved for ranking
 
-Return ONLY a JSON array in this exact format (Use ONLY straight quotes " and ' in JSON. Escape all newlines as \n. No curly quotes or unescaped controls.):
+You are an API. Reply **only** with a JSON array that starts with `[` and ends with `]`. Never add headings, explanations or code fences. Return ONLY this exact format (Use ONLY straight quotes " and ' in JSON. Escape all newlines as \n. No curly quotes or unescaped controls.):
 [
   {
     "title": "Specific headline from sources",
