@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Announces New CEO Compensation Package\",\n      \"description\": \"Tesla has introduced a new compensation package for CEO Elon Musk, following the revocation of his previous $56 billion package by a judge six months ago.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    },\n    {\n      \"title\": \"Court Finds Tesla Partially Liable in 2019 Autopilot Crash\",\n      \"description\": \"A court has determined Tesla partially liable for a deadly 2019 crash involving its Autopilot system.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://futurism.com/tesla-promising-incredible-demo",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-month-nissan-leaf-tesla-model-3-undercut-nissan-versa-toyota-corolla-512516/",
+    "https://hindustantimes.com/trending/tesla-under-fire-elon-musk-breaks-silence-as-cybertrucks-torched-showrooms-vandalised-101741675634646.html",
+    "https://www.foxnews.com/us/police-search-for-suspect-in-viral-california-tesla-stunt-gone-wrong",
+    "https://x.com/Tesla/status/1952102455405171036",
+    "https://x.com/Tesla/status/1952130325179515192",
+    "https://x.com/Tesla/status/1952310686937190721"
+  ]
+}
