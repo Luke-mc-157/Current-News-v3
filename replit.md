@@ -1,7 +1,7 @@
 # Current - AI-Powered News Aggregation Platform
 
 ## Overview
-Current is an intelligent news aggregation application that transforms real-time social media content into personalized news summaries. It fetches authentic posts from X (Twitter), generates headlines using OpenAI, and compiles supporting articles from Google News RSS feeds, all powered by AI-driven content compilation and multi-source information synthesis. The project aims to provide fast, real-time, and personalized news delivery, including automated podcast generation and delivery.
+Current is an intelligent news aggregation application that transforms real-time social media content into personalized news summaries. It fetches authentic posts from X (Twitter), generates headlines using xAI's Grok, and compiles supporting articles from web and RSS feeds, all powered by AI-driven content compilation and multi-source information synthesis. The project aims to provide fast, real-time, and personalized news delivery, including automated podcast generation and delivery.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.

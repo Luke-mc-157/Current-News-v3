@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"AI Framework Automates Custom Chip Design for LLMs\",\n      \"description\": \"Researchers have developed and open-sourced a new AI framework that optimizes ASIC designs for large language models, enabling 9.5 times faster creation of custom chips tailored for AI applications. This breakthrough is generating significant buzz and high engagement on social platforms.\",\n      \"citations\": [\n        \"https://www.reuters.com/technology/artificial-intelligence/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://techcrunch.com/category/artificial-intelligence/",
+    "https://indianexpress.com/section/technology/artificial-intelligence/",
+    "https://venturebeat.com/category/ai/",
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-ai-01-july-2025",
+    "https://www.artificialintelligence-news.com/artificial-intelligence-news/",
+    "https://moneycontrol.com/world/artificial-intelligence-news-live-updates-31-07-2025-alpha-liveblog-13354327.html/amp",
+    "https://www.reuters.com/technology/openai/",
+    "https://x.com/Dr_Singularity/status/1952456178467799522"
+  ]
+}
