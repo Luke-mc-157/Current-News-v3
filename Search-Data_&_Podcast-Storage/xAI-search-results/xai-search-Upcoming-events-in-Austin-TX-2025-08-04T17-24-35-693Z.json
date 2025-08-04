@@ -1,0 +1,14 @@
+{
+  "content": "[\n  {\n    \"story\": \"Texas Tribune Festival announces new speakers for November event in Austin\",\n    \"description\": \"The Texas Tribune Festival, scheduled for November 13-15 in Austin, has added comedians, politicians, and media figures like John Mulaney, Michael Johnson, Amy Klobuchar, Kara Swisher, and Veronica Escobar to its lineup.\",\n    \"supporting_articles\": [\n      \"https://www.texastribune.org/tribfest/\"\n    ]\n  },\n  {\n    \"story\": \"Anti-ICE protest leads to arrests and vandalism in downtown Austin\",\n    \"description\": \"An emergency anti-ICE protest at the Texas Capitol over the last 24 hours resulted in over a dozen arrests and vandalism, with statements from organizers and law enforcement.\",\n    \"supporting_articles\": [\n      \"https://www.fox7austin.com/tag/us/tx/travis-county/austin/downtown\"\n    ]\n  },\n  {\n    \"story\": \"Local news coverage of events in Austin and surrounding areas\",\n    \"description\": \"CBS Austin provides ongoing coverage of local news, sports, and weather, including events in Austin and nearby communities.\",\n    \"supporting_articles\": [\n      \"https://cbsaustin.com/news/local\"\n    ]\n  }\n]",
+  "citations": [
+    "https://www.fox7austin.com/tag/us/tx/travis-county/austin/downtown",
+    "https://heyaustin.com/austin-events/",
+    "https://www.thelinehotel.com/austin/events/",
+    "https://www.movetoaustin.org/blog/october-events-in-austin/",
+    "https://cbsaustin.com/news/local",
+    "https://cbsaustin.com/station/schedule",
+    "https://austinot.com/things-to-do-in-austin-this-weekend-tx-fun-free-events-activities-couples-near-me",
+    "https://austinot.com/best-events-in-austin-in-july-2025",
+    "https://x.com/TexasTribune/status/1952096680016244844"
+  ]
+}

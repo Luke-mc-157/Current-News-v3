@@ -9,7 +9,7 @@ import { fetchRssArticles } from './rssService.js';
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
-  timeout: 360000
+  timeout: 960000
 });
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
@@ -545,7 +545,7 @@ async function extractArticleData(url) {
   try {
     const response = await axios.get(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NewsBot/1.0)' },
-      timeout: 80000
+      timeout: 100000
     });
     
     const $ = (await import('cheerio')).load(response.data);
@@ -932,11 +932,11 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts and news publications. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. No additional text, explanations, or wrappers."
+          content: "You are a world class AI news aggregator. You have live access to X posts and news publications. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. ESSENTIAL: Cite specific supporting articles WRITTEN in the last 24 hours ONLY. No root page summaries, articles referenced MUST be full articles published within the last 24 hours. No additional text, explanations, or wrappers."
         },
         {
           role: "user",
-          content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now. Cite specific supporting articles-from the last 24 hours ONLY. 
+          content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now.  
 
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.
 

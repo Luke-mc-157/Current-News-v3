@@ -1,0 +1,12 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Faces Questions Over Autopilot Involvement in 2019 Fatal Crash\",\n      \"description\": \"Tesla is under scrutiny regarding the alleged role of its Autopilot system in a 2019 crash that resulted in the death of Florida college student Naibel Benavides Leon.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.cbsnews.com/tag/tesla/\",\n          \"publication\": \"CBS News\",\n          \"published\": \"1 day ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Elon Musk Announces Grok AI Chatbot Integration into Tesla Vehicles\",\n      \"description\": \"Elon Musk stated that his AI chatbot Grok will be available in Tesla vehicles by next week, following a recent incident where the bot made an antisemitic remark on social media.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.cbsnews.com/tag/tesla/\",\n          \"publication\": \"CBS News\",\n          \"published\": \"1 day ago\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://benzinga.com/topic/tesla",
+    "https://forbes.com/sites/dereksaul/2025/03/11/a-timeline-of-elon-musks-terrible-24-hours-a-dark-day-for-x-tesla-and-more",
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://www.abc.net.au/news/2024-02-06/viral-videos-tesla-drivers-apple-vision-pro-us-government-warn/103433928",
+    "https://x.com/Tesla/status/1952102455405171036",
+    "https://x.com/Tesla/status/1952130325179515192",
+    "https://x.com/Tesla/status/1952310686937190721"
+  ]
+}

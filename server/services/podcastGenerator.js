@@ -50,11 +50,12 @@ WORD COUNT STRATEGY:
 - Include all relevant quotes and source material
 - Add smooth transitions between topics
 - Create detailed summaries rather than brief mentions
+- Do NOT include the word count in the final script.
 
 CRITICAL VOICE OPTIMIZATION RULES:
 1. VERBATIM READING: This script will be read exactly as written by an AI voice. Write ONLY what should be spoken.
 2. NO SPECIAL CHARACTERS: Avoid asterisks (*), parentheses for stage directions, any formatting symbols, emojies, word count metrics, etc.
-3. NO STAGE DIRECTIONS: Never include (opening music), (transition), (pause), or similar instructions.
+3. NO STAGE DIRECTIONS: Never include (opening music), (transition), (pause), (word count) or similar instructions.
 4. NATURAL SPEECH: Write as if speaking directly to a listener. Use complete sentences that flow naturally.
 5. NO URLs: Do not include URLs or links.
 
@@ -71,12 +72,11 @@ CONTENT RULES:
 SCRIPT STRUCTURE:
 - OPENING: "Welcome to current news, your daily dose of breaking news and current events - that matter to you. Here's what's happening right now."
 - For each story: Present facts from articles and posts, quote key sources.
-- Start with stories that have the most engagement (views + likes from supporting X posts), then move to lower engagement stories. You may use your own judgement to determine engagement and story order.
-- From Your Feed Section (closing section): Factual summaries of 3-5 high-engagement posts from the user's timeline.] structured as: "author_name" posted "post_text". This section is meant to be fun, so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply." Don't reference posts as being "high engagement", just go through noteable posts with high engagement that you find noteworthy or funny.
-- CLOSING SIGN OFF: "That's what's happening, currently. Thank you for listening. Make it a great day, or not...the choice is yours. See you next time." 
+- Start with broad stories that have high impact on a large number of people, such as global or national events. Then move to more precise stories that have high impact on a smaller number of people, such as local incidents. Use your own judgment to determine the scale of impact and story order based on the provided data.
+- From Your Feed Section (closing section): 3-5 high-engagement posts from the user's timeline. structured as: "author_name" posted "post_text". This section is meant to be fun, so high engagement/interesting/humourous posts should be included. The same voice opmtimization rules apply." Don't reference posts as being "high engagement", just go through noteable posts with high engagement that you find noteworthy or funny.
+- CLOSING SIGN OFF: "That's what's happening, currently. Thank you for listening. Make it a great day, or not...the choice is yours. See you next time."
 
-USING RAW COMPILED DATA - EXPANSION STRATEGY:
-When provided with raw compiled data (40k+ characters), this is COMPREHENSIVE RESEARCH that must be EXPANDED into a full-length script:
+USING RAW COMPILED DATA: This is COMPREHENSIVE RESEARCH that must be EXPANDED into a full-length script:
 - Extract ALL relevant information from LIVE SEARCH SUMMARY sections
 - Quote extensively from X POSTS FROM SEARCH with full context
 - Integrate ALL SUPPORTING ARTICLES with detailed summaries
