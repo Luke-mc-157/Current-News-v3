@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Inquiry Launched into Special Counsel Jack Smith for Hatch Act Violations\",\n      \"description\": \"Special counsel Jack Smith is reportedly under investigation for possible violations of the Hatch Act in relation to his role as Trump prosecutor.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates\",\n          \"published\": \"2025-08-03\",\n          \"title\": \"Trump news at a glance: inquiry launched into Trump prosecutor as backlash grows over firing of statistics chief\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Backlash Over Firing of Labor Statistics Chief Erika McEntarfer\",\n      \"description\": \"Republicans are condemning President Trump for the dismissal of Erika McEntarfer, the head of labor statistics.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates\",\n          \"published\": \"2025-08-03\",\n          \"title\": \"Trump news at a glance: inquiry launched into Trump prosecutor as backlash grows over firing of statistics chief\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates",
+    "https://www.nbcnews.com/politics/politics-news/looking-back-biggest-political-news-stories-2024-rcna184752",
+    "https://www.telegraph.co.uk/us-politics/",
+    "https://www.hindustantimes.com/world-news/us-news",
+    "https://www.nytimes.com/section/politics",
+    "https://nytimes.com/2025/07/10/opinion/trolling-democracy.html",
+    "https://foxnews.com/category/politics/senate",
+    "https://www.washingtonpost.com/politics/"
+  ]
+}

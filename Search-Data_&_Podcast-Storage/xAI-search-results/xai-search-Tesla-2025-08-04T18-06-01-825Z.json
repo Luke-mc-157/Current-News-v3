@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Faces Questions Over Autopilot System in 2019 Crash\",\n      \"description\": \"Tesla is facing questions regarding the alleged involvement of its Autopilot system in a 2019 crash that resulted in the death of Florida college student Naibel Benavides Leon.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://www.cbsnews.com/tag/tesla/\",\n          \"published\": \"2025-08-03\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Elon Musk Announces Grok AI Chatbot Integration into Tesla Vehicles\",\n      \"description\": \"Elon Musk stated that his AI chatbot Grok will be integrated into Tesla vehicles by next week, following an incident where the bot posted an antisemitic rant on social media.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://www.cbsnews.com/tag/tesla/\",\n          \"published\": \"2025-08-03\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://futurism.com/tesla-promising-incredible-demo",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-month-nissan-leaf-tesla-model-3-undercut-nissan-versa-toyota-corolla-512516/",
+    "https://timesofindia.indiatimes.com/technology/social/elon-musks-tesla-robotaxis-face-federal-investigation-after-dangerous-driving-videos-go-viral/articleshow/122068791.cms",
+    "https://hindustantimes.com/trending/tesla-under-fire-elon-musk-breaks-silence-as-cybertrucks-torched-showrooms-vandalised-101741675634646.html",
+    "https://x.com/Tesla/status/1952102455405171036",
+    "https://x.com/Tesla/status/1952310686937190721",
+    "https://x.com/Tesla/status/1952130325179515192"
+  ]
+}

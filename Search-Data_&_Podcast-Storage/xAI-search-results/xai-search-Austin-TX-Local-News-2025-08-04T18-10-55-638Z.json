@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Questionable Spending by Austin City Officials\",\n      \"description\": \"An investigation into potentially improper expenditures by Austin city officials has garnered significant attention on social media.\",\n      \"sources\": [\n        {\n          \"title\": \"Story on questionable spending by Austin city officials\",\n          \"url\": \"https://t.co/kDChaA2Sgx\",\n          \"published\": \"2025-08-03\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Latest Austin Headlines Summary\",\n      \"description\": \"A compilation of recent local news headlines from Austin, including community matters and weather updates.\",\n      \"sources\": [\n        {\n          \"title\": \"Your latest headlines\",\n          \"url\": \"https://spectrumlocalnews.com/tx/austin/spectrum-news-in-90/2025/08/03/your-latest-headlines53\",\n          \"published\": \"2025-08-04\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.austinchronicle.com/news/2025-08-01/headlines-quote-of-the-week/",
+    "https://www.fox7austin.com/tag/crime-publicsafety",
+    "https://cbsaustin.com/news/local",
+    "https://www.fox7austin.com/news",
+    "https://spectrumlocalnews.com/tx/austin/spectrum-news-in-90/2025/08/03/your-latest-headlines53",
+    "https://www.funklaw.com/category/car-accident-news",
+    "https://cbsaustin.com/sports",
+    "https://www.cbsnews.com/texas/news/five-north-texas-women-killed-fiery-crash-austin-birthday-trip/",
+    "https://x.com/lmcgaughy/status/1952038202082021603"
+  ]
+}

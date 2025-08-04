@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Drama in Women's Track and Field\",\n      \"description\": \"Recent events in women's track and field, including standout performances and unexpected results by athletes like Melissa Jefferson, Gabby Thomas, and Sha’Carri Richardson, have generated significant viral attention.\",\n      \"sources\": [\n        \"https://www.hindustantimes.com/sports\"\n      ]\n    },\n    {\n      \"title\": \"Concussion Concerns on the Lions Tour\",\n      \"description\": \"Concussion issues during the British & Irish Lions rugby tour are sparking discussions and concerns within the sports community.\",\n      \"sources\": [\n        \"https://t.co/HSFzIFBmQN\"\n      ]\n    },\n    {\n      \"title\": \"Cricket Tensions Over 'Handshake-gate'\",\n      \"description\": \"Ongoing tensions in cricket related to 'Handshake-gate' are becoming a focal point of debate and viral coverage.\",\n      \"sources\": [\n        \"https://t.co/HSFzIFBmQN\"\n      ]\n    },\n    {\n      \"title\": \"Latest Updates from the Olympics\",\n      \"description\": \"Breaking developments and viral moments from the Olympics are dominating sports headlines, including track events and other competitions.\",\n      \"sources\": [\n        \"https://7news.com.au/sport\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.hindustantimes.com/sports",
+    "https://7news.com.au/sport",
+    "https://www.sportsmole.co.uk/headlines/",
+    "https://straitstimes.com/sport",
+    "https://www.ndtv.com/topic/viral-stories",
+    "https://www.timesnownews.com/viral",
+    "https://lokmattimes.com/other-sports",
+    "https://zeenews.india.com/sports",
+    "https://x.com/EmmanuelAcho/status/1952135443086262780",
+    "https://x.com/Reuters/status/1952277098048950591",
+    "https://x.com/Reuters/status/1951914702243549530"
+  ]
+}
