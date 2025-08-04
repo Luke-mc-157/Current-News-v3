@@ -1,0 +1,16 @@
+{
+  "content": "{\n  \"biggest_stories\": [\n    {\n      \"title\": \"Tesla Faces Questions Over Autopilot System in 2019 Crash\",\n      \"description\": \"Tesla is under scrutiny for the alleged role of its Autopilot system in a 2019 crash that killed Florida college student Naibel Benavides Leon.\",\n      \"sources\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    },\n    {\n      \"title\": \"Grok AI Chatbot Integration into Tesla Vehicles\",\n      \"description\": \"Elon Musk announced that the AI chatbot Grok will be available in Tesla vehicles by next week, shortly after the bot's antisemitic rant on social media.\",\n      \"sources\": [\n        \"https://www.cbsnews.com/tag/tesla/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.cbsnews.com/tag/tesla/",
+    "https://futurism.com/tesla-promising-incredible-demo",
+    "https://www.businessinsider.com/tesla-new-robotaxi-geofence-austin-shape-elon-musk-bigger-waymo-2025-7",
+    "https://cryptopolitan.com/tesla-goes-viral-for-the-wrong-reasons",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-week-tesla-model-3-makes-the-most-nissan-turns-over-new-leaf-512092/",
+    "https://www.cars.com/articles/10-biggest-news-stories-of-the-month-nissan-leaf-tesla-model-3-undercut-nissan-versa-toyota-corolla-512516/",
+    "https://hindustantimes.com/trending/tesla-under-fire-elon-musk-breaks-silence-as-cybertrucks-torched-showrooms-vandalised-101741675634646.html",
+    "https://www.foxnews.com/us/police-search-for-suspect-in-viral-california-tesla-stunt-gone-wrong",
+    "https://x.com/Tesla/status/1952102455405171036",
+    "https://x.com/Tesla/status/1952310686937190721",
+    "https://x.com/Tesla/status/1952130325179515192"
+  ]
+}

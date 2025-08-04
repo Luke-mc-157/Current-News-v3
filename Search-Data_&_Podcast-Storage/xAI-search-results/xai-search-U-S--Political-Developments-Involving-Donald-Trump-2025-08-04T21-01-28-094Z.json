@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Trump Criticizes Latest Jobs Report\",\n      \"description\": \"President Donald Trump has publicly criticized the recent jobs report, attributing negative economic indicators to previous administrations while defending his current policies.\",\n      \"citations\": [\n        \"https://washingtonpost.com/politics/2025/08/04/trump-presidency-news\"\n      ]\n    },\n    {\n      \"title\": \"Ongoing US-China Relations and Trade Discussions\",\n      \"description\": \"Developments in US-China relations continue, with President Trump involved in ongoing trade talks amid global economic tensions.\",\n      \"citations\": [\n        \"https://www.scmp.com/topics/donald-trump\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://washingtonpost.com/politics/2025/08/04/trump-presidency-news",
+    "https://www.scmp.com/topics/donald-trump",
+    "https://www.aljazeera.com/tag/donald-trump/",
+    "https://www.theguardian.com/us-news/2025/aug/04/trump-administration-news-today-latest-updates",
+    "https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates",
+    "https://www.washingtonpost.com/politics/2025/08/01/trump-presidency-news/",
+    "https://reuters.com/business/autos-transportation/major-developments-trumps-trade-war-2025-05-26",
+    "https://cnn.com/politics/live-news/trump-news-today-doge-cuts-bahrain-07-16-25"
+  ]
+}
