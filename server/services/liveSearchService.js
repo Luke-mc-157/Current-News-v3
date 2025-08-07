@@ -1163,7 +1163,14 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
     
     // Parse JSON response with improved error handling
     try {
-      const parsedData = parseRobustJSON(content);
+      // Try simple parse first
+      let parsedData;
+      try {
+        parsedData = JSON.parse(content.trim());
+      } catch (simpleError) {
+        console.log('⚠️ Simple parse failed, trying robust parser...');
+        parsedData = parseRobustJSON(content);
+      }
       
       // Separate headlines and appendix
       let headlines = [];
