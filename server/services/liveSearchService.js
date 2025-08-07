@@ -1060,9 +1060,7 @@ async function inferEmergentTopicsFromTimeline(posts, rssArticles = []) {
     });
 
     const content = response.choices[0].message.content;
-    // Strip anything before { and after }
-    const clean = content.slice(content.indexOf('{'), content.lastIndexOf('}') + 1);
-    const parsed = JSON.parse(clean);
+    const parsed = JSON.parse(content.trim());
     return parsed.emergentTopics || [];
   } catch (error) {
     console.error('Emergent topics inference failed:', error);

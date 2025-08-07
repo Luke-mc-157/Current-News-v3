@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Microsoft Joins $4 Trillion Club\",\n      \"description\": \"Microsoft has become the latest tech giant to achieve a $4 trillion market capitalization, highlighting its dominance in cloud computing and AI innovations.\",\n      \"sources\": [\n        \"https://moneycontrol.com/technology/weekly-tech-wrap-tcs-announces-12-000-job-cuts-microsoft-joins-4-trillion-club-jiopc-launch-neuralink-milestone-xiaomi-vivo-new-phones-and-more-article-13377187.html\"\n      ]\n    },\n    {\n      \"title\": \"Neuralink Achieves New Milestone\",\n      \"description\": \"Elon Musk's Neuralink has reached a significant milestone in brain-computer interface technology, advancing potential applications in medical and human augmentation fields.\",\n      \"sources\": [\n        \"https://moneycontrol.com/technology/weekly-tech-wrap-tcs-announces-12-000-job-cuts-microsoft-joins-4-trillion-club-jiopc-launch-neuralink-milestone-xiaomi-vivo-new-phones-and-more-article-13377187.html\"\n      ]\n    },\n    {\n      \"title\": \"JioPC Launch\",\n      \"description\": \"Reliance Jio has launched JioPC, a new cloud-based personal computing solution aimed at providing affordable access to computing resources in India.\",\n      \"sources\": [\n        \"https://moneycontrol.com/technology/weekly-tech-wrap-tcs-announces-12-000-job-cuts-microsoft-joins-4-trillion-club-jiopc-launch-neuralink-milestone-xiaomi-vivo-new-phones-and-more-article-13377187.html\"\n      ]\n    },\n    {\n      \"title\": \"TCS Announces 12,000 Job Cuts\",\n      \"description\": \"Tata Consultancy Services (TCS) has announced plans to cut 12,000 jobs as part of restructuring efforts amid evolving technology landscapes and economic pressures.\",\n      \"sources\": [\n        \"https://moneycontrol.com/technology/weekly-tech-wrap-tcs-announces-12-000-job-cuts-microsoft-joins-4-trillion-club-jiopc-launch-neuralink-milestone-xiaomi-vivo-new-phones-and-more-article-13377187.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://moneycontrol.com/technology/weekly-tech-wrap-tcs-announces-12-000-job-cuts-microsoft-joins-4-trillion-club-jiopc-launch-neuralink-milestone-xiaomi-vivo-new-phones-and-more-article-13377187.html",
+    "https://www.sciencenewstoday.org/technology",
+    "https://www.thestar.com/business/technology/",
+    "https://technologymagazine.com/news/this-weeks-top-5-stories-in-technology",
+    "https://scitechdaily.com/news/technology/",
+    "https://interestingengineering.com/innovation",
+    "https://fortune.com/section/innovation/",
+    "https://www.telegraph.co.uk/technology/innovation/",
+    "https://x.com/TedCruz1072676/status/1951999459480719831"
+  ]
+}
