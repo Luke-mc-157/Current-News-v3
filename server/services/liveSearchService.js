@@ -861,7 +861,12 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
   for (let i = 0; i < allTopicData.length; i++) {
     const topicData = allTopicData[i];
     const topicXPosts = xSearchResults[i] || []; // Get X posts from our search
-    const { xPostIds, articleUrls } = categorizeCitations(topicData.citations);
+    
+    // Extract tweet URLs from X topic posts and add to citations for processing
+    const xTopicUrls = topicXPosts.map(post => post.tweetUrl).filter(url => url);
+    const combinedCitations = [...(topicData.citations || []), ...xTopicUrls];
+    
+    const { xPostIds, articleUrls } = categorizeCitations(combinedCitations);
     
     console.log(`📝 Processing ${topicData.topic}: ${topicXPosts.length} X posts from search, ${articleUrls.length} articles`);
     

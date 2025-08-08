@@ -1,0 +1,8 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Curated Guide to Major US Political Developments in the Last 24 Hours\",\n      \"description\": \"A weekday guide summarizing key news and developments in US politics over the past 24 hours, focusing on significant events and updates.\",\n      \"sources\": [\n        {\n          \"url\": \"https://justsecurity.org/118693/early-edition-august-8-2025\",\n          \"published\": \"4 hours ago\",\n          \"publisher\": \"Just Security\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://justsecurity.org/118693/early-edition-august-8-2025",
+    "https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates",
+    "https://www.theguardian.com/us-news/2025/aug/05/trump-administration-news-today-latest-updates"
+  ]
+}

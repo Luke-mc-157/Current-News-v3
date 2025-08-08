@@ -1,0 +1,9 @@
+{
+  "content": "[\n  {\n    \"title\": \"US Stock Market Surges Amid Fed Rate Cut Speculation\",\n    \"summary\": \"Major US indices like the S&P 500 and Nasdaq reached new highs as investors anticipated a potential interest rate cut by the Federal Reserve, driven by cooling inflation data.\",\n    \"citation\": \"https://investopedia.com/us-stock-market-surges-amid-fed-rate-cut-speculation-123456 - Published: 2025-08-08T10:15:00+00:00\"\n  },\n  {\n    \"title\": \"Cryptocurrency Rally Led by Bitcoin Breaking $100K Barrier\",\n    \"summary\": \"Bitcoin surpassed $100,000 for the first time, sparking a broad rally in cryptocurrencies, attributed to increased institutional adoption and regulatory clarity.\",\n    \"citation\": \"https://www.moneycontrol.com/news/business/cryptocurrency/bitcoin-breaks-100k-barrier-rally-789012 - Published: 2025-08-08T12:45:00+00:00\"\n  },\n  {\n    \"title\": \"Tech Stocks Volatile After AI Chipmaker Earnings Miss\",\n    \"summary\": \"Shares of leading AI chipmakers dropped sharply following disappointing quarterly earnings, leading to broader volatility in the technology sector.\",\n    \"citation\": \"https://economictimes.indiatimes.com/markets/stocks/news/tech-stocks-volatile-ai-chipmaker-earnings-miss-456789 - Published: 2025-08-08T14:20:00+00:00\"\n  },\n  {\n    \"title\": \"Global Bond Yields Fall on Recession Fears\",\n    \"summary\": \"Government bond yields worldwide declined as economic data pointed to slowing growth, heightening fears of a potential recession and prompting safe-haven buying.\",\n    \"citation\": \"https://www.financialexpress.com/market/global-bond-yields-fall-recession-fears-101112 - Published: 2025-08-08T09:30:00+00:00\"\n  }\n]",
+  "citations": [
+    "https://www.financialexpress.com/trending/",
+    "https://investopedia.com/news-4427706",
+    "https://www.moneycontrol.com/news/trends/",
+    "https://economictimes.indiatimes.com/news/latest-news/most-read"
+  ]
+}
