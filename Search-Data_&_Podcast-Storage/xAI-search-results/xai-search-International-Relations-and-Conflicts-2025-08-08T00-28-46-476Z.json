@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Potential Summit Between Presidents Trump and Putin Amid Russia-Ukraine War\",\n      \"summary\": \"Discussions are underway for a possible in-person summit between U.S. President Trump and Russian President Putin, marking the first such meeting in years, against the backdrop of the ongoing Russia-Ukraine war that has devastated Ukraine, isolated Russia, and caused global economic insecurity.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.nytimes.com/news-event/ukraine-russia\",\n          \"published\": \"15 hours ago\",\n          \"type\": \"news\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Escalating Tensions in US-China Relations\",\n      \"summary\": \"Recent updates highlight ongoing issues in US-China relations, including trade wars, economic challenges, and diplomatic tensions between the two nations.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.scmp.com/topics/us-china-relations\",\n          \"published\": \"18 hours ago\",\n          \"type\": \"news\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.nytimes.com/news-event/ukraine-russia",
+    "https://www.aljazeera.com/tag/conflict/",
+    "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran",
+    "https://www.scmp.com/topics/us-china-relations",
+    "https://business-standard.com/topic/international-relations",
+    "https://www.foxnews.com/category/world/conflicts",
+    "https://www.cbsnews.com/tag/war/",
+    "https://archive.ph/Hk5Ag"
+  ]
+}

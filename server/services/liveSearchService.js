@@ -967,7 +967,6 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         mode: "on",
         return_citations: true,
         from_date: fromDate,
-        to_date: toDate,
         sources: [
           {"type": "x","post_view_count": 2500},
           {"type": "news", "country": "US" },
@@ -1133,7 +1132,8 @@ CRITICAL: Extract exact URLs from the provided citations. Use specific article U
         },
         {
       role: "user",
-        content: `You are a world class news editor for a cutting edge, innovative news platform. Generate a newsletter for the platform user's front end UI in the specified format.
+        content: `You are a world class AI news editor for a cutting edge, innovative news platform. 
+        Your goal is to enerate a newsletter for the platform user's front end UI in the specified format.
 
         NEWSLETTER GENERATION INSTRUCTIONS:
         1. Thoroughly read the compiled raw data below these instructions, which contains live stories, headlines, and supporting information metadata from X posts, news articles, and RSS articles. 
