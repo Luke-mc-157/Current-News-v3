@@ -40,7 +40,7 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     console.log(`🔍 X search query: ${query}`);
     console.log(`📅 Time range: ${startTime.toISOString()} to ${endTime.toISOString()}`);
     
-    // Use raw axios to call X API v2 directly for better control
+    // Use fetch API to call X API v2 with user's X bearer token
     const searchUrl = 'https://api.x.com/2/tweets/search/recent';
     const params = new URLSearchParams({
       query: query,
@@ -53,17 +53,27 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
       'end_time': endTime.toISOString()
     });
     
-    const searchResult = await axios.get(`${searchUrl}?${params.toString()}`, {
-      headers: {
-        'Authorization': `Bearer ${bearerToken}`
-      }
-    }).then(res => res.data).catch(error => {
-      if (error.response) {
-        console.error(`❌ X API Error Response:`, error.response.data);
+    const options = { 
+      method: 'GET', 
+      headers: { 
+        'Authorization': `Bearer ${bearerToken}` 
+      } 
+    };
+    
+    const searchResult = await fetch(`${searchUrl}?${params.toString()}`, options)
+      .then(response => {
+        if (!response.ok) {
+          return response.json().then(errorData => {
+            console.error(`❌ X API Error Response:`, errorData);
+            throw new Error(`Request failed with status code ${response.status}`);
+          });
+        }
+        return response.json();
+      })
+      .catch(error => {
+        console.error(`❌ X API Error:`, error.message);
         throw error;
-      }
-      throw error;
-    });
+      });
     
     if (!searchResult.data || searchResult.data.length === 0) {
       console.log(`📭 No X posts found for topic: "${topicName}"`);
