@@ -966,14 +966,6 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
   
   // Create structured text for Grok
   const topicsSection = compiledTopics.map(topic => {
-    // Limit to 20 posts per topic to prevent oversized prompts
-    const limitedPosts = topic.xPostSources.slice(0, 20);
-    const xPostsText = limitedPosts.map(post => {
-      // Normalize text: replace newlines with spaces
-      const normalizedText = post.text.replace(/\n+/g, ' ').trim();
-      return `- ${post.author_name || 'Unknown'}: "${normalizedText}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`;
-    }).join('\n');
-    
     // Use AI analysis instead of full content to reduce character count
     let articlesText = '';
     if (topic.articleAnalysis && topic.articleAnalysis.analysis && Array.isArray(topic.articleAnalysis.analysis) && topic.articleAnalysis.analysis.length > 0) {
@@ -994,21 +986,29 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
       ).join('\n\n');
     }
     
-    // AI analysis is now integrated into articlesText above, no separate section needed
-    
     return `
 TOPIC: ${topic.topic}
 
 LIVE SEARCH SUMMARY:
 ${topic.liveSearchContent}
 
-X POSTS FROM SEARCH (${limitedPosts.length}):
-${xPostsText || 'None found'}
-
 SUPPORTING ARTICLES (${topic.articleSources.length}):
 ${articlesText || 'None found'}
 `;
   }).join('\n---\n');
+
+  // Collect all X topic posts for separate section
+  const allXTopicPosts = [];
+  compiledTopics.forEach(topic => {
+    if (topic.xPostSources && topic.xPostSources.length > 0) {
+      // Add topic label to each post for context
+      const postsWithTopic = topic.xPostSources.map(post => ({
+        ...post,
+        topicContext: topic.topic
+      }));
+      allXTopicPosts.push(...postsWithTopic);
+    }
+  });
   
   // Add RSS articles section if available
   let rssSection = '';
@@ -1024,6 +1024,24 @@ ${articlesText || 'None found'}
 
 RSS ARTICLES (${formattedRssArticles.length} articles):
 ${rssText}`;
+  }
+
+  // Add X topic posts section (between RSS and timeline)
+  let xTopicSection = '';
+  if (allXTopicPosts.length > 0) {
+    console.log(`🐦 Adding ${allXTopicPosts.length} X topic posts to compiled data...`);
+    const xTopicText = allXTopicPosts.map(post => {
+      // Normalize text: replace newlines with spaces
+      const normalizedText = post.text.replace(/\n+/g, ' ').trim();
+      return `- [${post.topicContext}] ${post.author_name || 'Unknown'}: "${normalizedText}" (${post.public_metrics.impression_count || post.public_metrics.view_count || 0} views, ${post.public_metrics.like_count} likes) ${post.url}`;
+    }).join('\n');
+    
+    xTopicSection = `
+
+---
+
+X TOPIC POSTS (${allXTopicPosts.length} posts):
+${xTopicText}`;
   }
 
   // Add timeline posts section
@@ -1043,25 +1061,25 @@ USER'S TIMELINE POSTS (${formattedTimelinePosts.length} posts):
 ${timelineText}`;
   }
   
-  const compiledData = topicsSection + rssSection + timelineSection;
+  const compiledData = topicsSection + rssSection + xTopicSection + timelineSection;
   
   const totalCompilationTime = Date.now() - parallelArticleStartTime;
   
   console.log(`✅ Data compilation complete with parallel optimizations:`);
   console.log(`📊 Topics: ${compiledTopics.length}`);
-  console.log(`🐦 xAI X Posts: ${totalXAIPosts}`);
+  console.log(`🐦 X Topic Posts: ${allXTopicPosts.length}`);
   console.log(`📰 Articles: ${totalArticles}`);
   console.log(`📰 RSS Articles: ${totalRssArticles}`);
   console.log(`📱 Timeline Posts: ${formattedTimelinePosts.length}`);
   console.log(`📏 Total data length: ${compiledData.length} chars`);
   console.log(`⚡ Total compilation time: ${totalCompilationTime}ms`);
-  console.log(`🚀 Parallel processing: xAI Live Search + Article fetching now fully concurrent`);
+  console.log(`🚀 Parallel processing: xAI Live Search + X API + Article fetching now fully concurrent`);
   
   return {
     compiledData: compiledData,
-    totalSources: totalXAIPosts + totalArticles + totalRssArticles + formattedTimelinePosts.length,
+    totalSources: allXTopicPosts.length + totalArticles + totalRssArticles + formattedTimelinePosts.length,
     breakdown: {
-      xaiPosts: totalXAIPosts,
+      xTopicPosts: allXTopicPosts.length,
       articles: totalArticles,
       rssArticles: totalRssArticles,
       timelinePosts: formattedTimelinePosts.length
@@ -1085,7 +1103,7 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to X posts and news publications. Output as JSON. Search for high engagement, SEMANTIC posts on X and correlating news articles from source types 'news'. ESSENTIAL: Cite specific supporting articles WRITTEN in the last 24 hours ONLY. No root page summaries, articles referenced MUST be full articles published within the last 24 hours. No additional text, explanations, or wrappers."
+          content: "You are a world class AI news aggregator. You have live access to to news publications. Output as JSON. Search for correlating news articles from source types 'news'."
         },
         {
           role: "user",
@@ -1093,7 +1111,7 @@ async function getTopicDataFromLiveSearch(topic) {
 
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.
 
-CRITICAL: Do not include any sources or citations that are not directly related to the topic.`
+CRITICAL: Cite specific supporting articles WRITTEN in the last 24 hours ONLY. No root page summaries, articles referenced MUST be full articles published within the last 24 hours. No additional text, explanations, or wrappers. Do not include any sources or citations that are not directly related to the topic.`
         },
       ],
       search_parameters: {
