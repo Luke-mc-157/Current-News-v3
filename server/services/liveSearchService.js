@@ -39,24 +39,24 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     console.log(`🔍 X search query: ${query}`);
     console.log(`📅 Time range: ${startTime.toISOString()} to ${endTime.toISOString()}`);
     
-    // Search tweets with all required fields
-    const response = await xClient.v2.search(query, {
+    // Search tweets using v2 search recent endpoint
+    const searchResult = await xClient.v2.search(query, {
       max_results: 50,
-      'tweet.fields': 'created_at,author_id,public_metrics,entities',
-      'user.fields': 'username,name,verified',
-      expansions: 'author_id',
+      'tweet.fields': ['created_at', 'author_id', 'public_metrics', 'entities'],
+      'user.fields': ['username', 'name', 'verified'],
+      expansions: ['author_id'],
       sort_order: 'relevancy',
       start_time: startTime.toISOString(),
       end_time: endTime.toISOString()
     });
     
-    if (!response.data || !response.data.data) {
+    if (!searchResult.data || searchResult.data.length === 0) {
       console.log(`📭 No X posts found for topic: "${topicName}"`);
       return [];
     }
     
-    const tweets = response.data.data;
-    const users = response.data.includes?.users || [];
+    const tweets = searchResult.data;
+    const users = searchResult.includes?.users || [];
     
     // Create user map for quick lookup
     const userMap = new Map();
