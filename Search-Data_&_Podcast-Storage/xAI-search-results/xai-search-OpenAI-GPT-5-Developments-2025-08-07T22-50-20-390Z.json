@@ -1,0 +1,14 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"OpenAI Officially Launches GPT-5\",\n      \"description\": \"OpenAI has released GPT-5, described as its smartest and most advanced model yet, available to all users with enhanced reasoning and integration capabilities.\",\n      \"citations\": [\n        \"https://www.techradar.com/news/live/openai-chatgpt5-launch\",\n        \"https://www.ft.com/content/dfdcf997-88fb-4001-98c7-1b5fe09939bf\",\n        \"https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog\",\n        \"https://openai.com/gpt-5/\"\n      ]\n    },\n    {\n      \"title\": \"GPT-5 Features and Variants\",\n      \"description\": \"The new model includes multiple variants such as GPT-5, mini, nano, and chat, with PhD-level intelligence, unified reasoning, and improved agentic capabilities, generating high engagement on social platforms.\",\n      \"citations\": [\n        \"https://www.techradar.com/news/live/openai-chatgpt5-launch\",\n        \"https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog\",\n        \"https://openai.com/gpt-5/\"\n      ]\n    },\n    {\n      \"title\": \"Live Event and Demonstrations\",\n      \"description\": \"During the launch event, OpenAI executives demonstrated GPT-5's features, including integrations with Google services and developer tools, emphasizing speed and personalization.\",\n      \"citations\": [\n        \"https://www.techradar.com/news/live/openai-chatgpt5-launch\",\n        \"https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog\"\n      ]\n    },\n    {\n      \"title\": \"Anticipated Capacity Issues and Delays\",\n      \"description\": \"OpenAI has warned of potential capacity constraints with the rollout of new models, which could lead to delays in availability.\",\n      \"citations\": [\n        \"https://dataconomy.com/2025/08/05/gpt-5-delayed-as-openai-braces-for-capacity-issues/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.techradar.com/news/live/openai-chatgpt5-launch",
+    "https://www.ft.com/content/dfdcf997-88fb-4001-98c7-1b5fe09939bf",
+    "https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog",
+    "https://openai.com/gpt-5/",
+    "https://dataconomy.com/2025/08/05/gpt-5-delayed-as-openai-braces-for-capacity-issues/",
+    "https://stocktwits.com/news-articles/markets/equity/anthropic-unveils-new-ai-model-ahead-of-openai-gpt-5-release/chrLxidRd2q",
+    "https://economictimes.indiatimes.com/tech/artificial-intelligence/openais-long-awaited-gpt-5-model-nears-release/articleshow/123140412.cms?from=mdr",
+    "https://www.storyboard18.com/digital/openai-may-roll-out-low-cost-go-chatgpt-plan-ahead-of-gpt-5-launch-78268.htm",
+    "https://x.com/dr_cintas/status/1953503893230391800"
+  ]
+}

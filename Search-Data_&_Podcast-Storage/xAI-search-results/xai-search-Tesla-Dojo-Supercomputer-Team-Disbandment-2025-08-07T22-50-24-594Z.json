@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla Disbands Dojo Supercomputer Team and Leader Peter Bannon Departs\",\n      \"description\": \"Tesla is disbanding its Dojo supercomputer team, with its leader Peter Bannon leaving the company, marking a shift in the automaker's AI and self-driving technology efforts.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/autos-transportation/tesla-disbands-dojo-supercomputer-team-bloomberg-news-reports-2025-08-07/\"\n      ]\n    },\n    {\n      \"title\": \"Tesla Shuts Down Dojo AI Training Supercomputer Project\",\n      \"description\": \"Tesla has shut down its Dojo supercomputer, previously highlighted as crucial for full self-driving capabilities, following the departure of around 20 workers to form a new AI company called DensityAI.\",\n      \"sources\": [\n        \"https://techcrunch.com/2025/08/07/tesla-shuts-down-dojo-the-ai-training-supercomputer-that-musk-said-would-be-key-to-full-self-driving/\"\n      ]\n    },\n    {\n      \"title\": \"Tesla Reportedly Disbands Dojo Computer Team, Impacting Stock\",\n      \"description\": \"Tesla has reportedly disbanded its Dojo Computer team, leading to a decline of more than 0.6% in its stock during after-hours trading.\",\n      \"sources\": [\n        \"https://news.futunn.com/en/flash/19210955/tesla-reportedly-disbanded-the-dojo-computer-team-with-its-stock\"\n      ]\n    },\n    {\n      \"title\": \"Tesla Abandons Dojo Supercomputer Plans as Key Team Members Form New Startup\",\n      \"description\": \"Tesla has abandoned its ambitious Dojo supercomputer project, with project head Peter Bannon and core team members leaving to start their own AI startup, increasing reliance on external partners like Nvidia, AMD, and Samsung.\",\n      \"sources\": [\n        \"https://wccftech.com/tesla-has-reportedly-abandoned-its-ambitious-dojo-supercomputer-project\",\n        \"https://electrek.co/2025/08/07/tesla-dojo-supercomputer-looks-dead-as-more-execs-leave-competing-startup/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/business/autos-transportation/tesla-disbands-dojo-supercomputer-team-bloomberg-news-reports-2025-08-07/",
+    "https://techcrunch.com/2025/08/07/tesla-shuts-down-dojo-the-ai-training-supercomputer-that-musk-said-would-be-key-to-full-self-driving/",
+    "https://news.futunn.com/en/flash/19210955/tesla-reportedly-disbanded-the-dojo-computer-team-with-its-stock",
+    "https://finance.yahoo.com/news/tesla-dojo-supercomputer-head-exits-172623532.html",
+    "https://finance.yahoo.com/news/teslas-dojo-supercomputer-head-leaves-173057489.html",
+    "https://wccftech.com/tesla-has-reportedly-abandoned-its-ambitious-dojo-supercomputer-project",
+    "https://electrek.co/2025/08/07/tesla-dojo-supercomputer-looks-dead-as-more-execs-leave-competing-startup/",
+    "https://www.theverge.com/2023/12/7/23992341/the-head-of-teslas-dojo-supercomputer-project-has-left-the-company",
+    "https://x.com/wallstengine/status/1953565445518496111",
+    "https://x.com/StockMKTNewz/status/1953569243988959675"
+  ]
+}

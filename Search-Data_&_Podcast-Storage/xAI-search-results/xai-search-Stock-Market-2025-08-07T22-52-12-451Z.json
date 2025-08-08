@@ -1,0 +1,13 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Thursday's Biggest Stock Market Stories Wrap-Up\",\n      \"summary\": \"A compilation of the hottest stock market stories for Thursday, aimed at providing investors with key updates and insights into current market trends.\",\n      \"citations\": [\n        \"https://www.tipranks.com/news/morning-news-wrap-up-thursdays-biggest-stock-market-stories-august-7th\"\n      ]\n    },\n    {\n      \"title\": \"Proposed Ban on Stock Trading by Members of Congress\",\n      \"summary\": \"Republican Sen. Josh Hawley voted with Democrats to advance legislation aimed at banning members of Congress from owning individual stocks.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/stock-market/\"\n      ]\n    },\n    {\n      \"title\": \"Investors Bracing for Q2 Corporate Earnings Reports\",\n      \"summary\": \"Investors are preparing for the release of second-quarter corporate earnings reports amid ongoing market conditions.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/stock-market/\"\n      ]\n    },\n    {\n      \"title\": \"Commerce Secretary Howard Lutnick's Economic Comments\",\n      \"summary\": \"Commerce Secretary Howard Lutnick discussed economic topics on 'Face the Nation with Margaret...'.\",\n      \"citations\": [\n        \"https://www.cbsnews.com/tag/stock-market/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.tipranks.com/news/morning-news-wrap-up-thursdays-biggest-stock-market-stories-august-7th",
+    "https://www.cbsnews.com/tag/stock-market/",
+    "https://www.cnbc.com/2025/07/31/fridays-big-stock-stories-whats-likely-to-move-the-market.html",
+    "https://www.reuters.com/markets/us/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://cnbc.com/2025/08/04/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2025/03/09/stock-market-news-today-live-updates.html",
+    "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-eke-out-records-as-markets-kick-off-huge-week-for-us-economy-200500414.html"
+  ]
+}
