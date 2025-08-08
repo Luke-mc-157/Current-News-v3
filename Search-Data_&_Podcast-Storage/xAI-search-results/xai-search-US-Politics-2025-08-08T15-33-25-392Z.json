@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"President Trump Hails Progress on Ukraine War and Potential Meeting with Putin\",\n      \"description\": \"President Trump has highlighted progress in the Ukraine war, with White House officials indicating a possible meeting with Putin as early as next week to discuss the conflict.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.theguardian.com/us-news/2025/aug/07/president-trump-administration-news-updates-today\",\n          \"published\": \"2025-08-07\"\n        }\n      ]\n    },\n    {\n      \"title\": \"President Trump Threatens India with Steep Tariffs\",\n      \"description\": \"Amid trade tensions, President Trump has threatened to impose steep tariffs on India.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.theguardian.com/us-news/2025/aug/07/president-trump-administration-news-updates-today\",\n          \"published\": \"2025-08-07\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.theguardian.com/us-news/2025/aug/07/president-trump-administration-news-updates-today",
+    "https://www.theguardian.com/us-news/2025/aug/03/trump-administration-news-today-latest-updates",
+    "https://www.theguardian.com/us-news/2025/aug/05/trump-administration-news-today-latest-updates",
+    "https://www.nbcnews.com/politics/politics-news/looking-back-biggest-political-news-stories-2024-rcna184752",
+    "https://www.telegraph.co.uk/us-politics/",
+    "https://www.hindustantimes.com/world-news/us-news",
+    "https://nytimes.com/2025/07/10/opinion/trolling-democracy.html",
+    "https://www.nytimes.com/section/politics",
+    "https://www.washingtonpost.com/politics/",
+    "https://www.timesnownews.com/viral",
+    "https://www.theguardian.com/us-news/live/2025/jul/31/donald-trump-tariffs-trade-canada-palestine-us-politics-live-news-updates",
+    "https://indianexpress.com/section/trending/",
+    "https://ndtv.com/world/us",
+    "https://www.cbsnews.com/politics/",
+    "https://www.reuters.com/world/us/donald-trump/"
+  ]
+}

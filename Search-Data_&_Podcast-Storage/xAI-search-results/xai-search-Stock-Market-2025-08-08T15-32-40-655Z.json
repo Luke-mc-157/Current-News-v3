@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Stocks Rise Amid Earnings Reports and Tariff Developments, Apple Soars While AMD Slides\",\n      \"description\": \"Major U.S. stock indices posted gains as investors analyzed quarterly earnings from key companies and followed global trade updates, with Apple shares rising significantly and AMD declining.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://www.investopedia.com/dow-jones-today-08062025-11785651\",\n          \"published\": \"1 day ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Latest Global Stock Market News and Finance Updates\",\n      \"description\": \"Ongoing coverage of stock market movements from around the world, including breaking international market and finance news.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://www.reuters.com/markets/stocks/\",\n          \"published\": \"18 hours ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"U.S. Stock Market Headlines and Breaking News\",\n      \"description\": \"Updates on U.S. stock market news, covering developments in markets and finance across the globe.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://www.reuters.com/markets/us/\",\n          \"published\": \"1 day ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Indian Stock Market Live Updates, BSE and NSE Gainers and Losers\",\n      \"description\": \"Latest news on stock market updates, including top gainers and losers on BSE and NSE, amid global cues.\",\n      \"supporting_articles\": [\n        {\n          \"url\": \"https://m.economictimes.com/markets/stocks\",\n          \"published\": \"16 hours ago\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.tipranks.com/news/morning-news-wrap-up-wednesdays-biggest-stock-market-stories-aug-6th",
+    "https://www.cbsnews.com/tag/stock-market/",
+    "https://www.reuters.com/markets/stocks/",
+    "https://www.cnbc.com/2025/08/06/thursdays-big-stock-stories-whats-likely-to-move-the-market.html",
+    "https://www.reuters.com/markets/us/",
+    "https://cnbc.com/2025/08/04/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2025/03/09/stock-market-news-today-live-updates.html",
+    "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-eke-out-records-as-markets-kick-off-huge-week-for-us-economy-200500414.html",
+    "https://www.fool.com/trending-news/",
+    "https://finance.yahoo.com/news/live/stock-market-today-nasdaq-dow-sp-500-nasdaq-futures-jump-as-big-tech-earnings-trade-deals-lift-spirits-232742876.html",
+    "https://m.economictimes.com/markets/stocks",
+    "https://www.cnbc.com/2025/06/26/stock-market-today-live-updates.html",
+    "https://www.moneycontrol.com/news/business/markets/",
+    "https://www.investopedia.com/dow-jones-today-08062025-11785651",
+    "https://timesofindia.indiatimes.com/business/india-business/stock-market-today-nifty50-bse-sensex-august-04-2025-dalal-street-indian-equities-global-markets-donald-trump-tariffs-india-us-trade/articleshow/123085395.cms"
+  ]
+}

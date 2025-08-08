@@ -1,0 +1,20 @@
+{
+  "content": "[\n  {\n    \"story\": \"Apple's Entry into Chatbot Competition\",\n    \"summary\": \"Apple is making a significant impact by entering the competitive chatbot market, potentially challenging established players like OpenAI and Google.\",\n    \"citations\": [\n      {\n        \"source\": \"AI Magazine\",\n        \"url\": \"https://aimagazine.com/news/this-weeks-top-5-stories-in-ai-08-august-2025\",\n        \"published\": \"7 hours ago\"\n      }\n    ]\n  },\n  {\n    \"story\": \"OpenAI Releases First Open-Source AI Models\",\n    \"summary\": \"OpenAI has launched its initial open-source AI models, marking a shift towards more accessible AI technology and sparking discussions on innovation and collaboration.\",\n    \"citations\": [\n      {\n        \"source\": \"AI Magazine\",\n        \"url\": \"https://aimagazine.com/news/this-weeks-top-5-stories-in-ai-08-august-2025\",\n        \"published\": \"7 hours ago\"\n      }\n    ]\n  },\n  {\n    \"story\": \"Advancements in AI Technology\",\n    \"summary\": \"Recent updates on AI advancements including Google AI, ChatGPT, and other technologies are highlighting rapid progress in the field.\",\n    \"citations\": [\n      {\n        \"source\": \"The Indian Express\",\n        \"url\": \"https://indianexpress.com/section/technology/artificial-intelligence/\",\n        \"published\": \"18 hours ago\"\n      }\n    ]\n  },\n  {\n    \"story\": \"Latest AI Trends and Insights\",\n    \"summary\": \"Coverage of emerging trends in artificial intelligence, including generative AI and machine learning applications across sectors.\",\n    \"citations\": [\n      {\n        \"source\": \"Analytics India Magazine\",\n        \"url\": \"https://analyticsindiamag.com/ai-news-updates/\",\n        \"published\": \"18 hours ago\"\n      }\n    ]\n  }\n]",
+  "citations": [
+    "https://aimagazine.com/news/this-weeks-top-5-stories-in-ai-08-august-2025",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://analyticsindiamag.com/ai-news-updates/",
+    "https://indianexpress.com/section/technology/artificial-intelligence/",
+    "https://leadstories.com/hoax-alert/2025/08/fact-check-ai-video-does-not-document-fatal-california-aquarium-collapse.html",
+    "https://www.artificialintelligence-news.com/artificial-intelligence-news/",
+    "https://venturebeat.com/category/ai/",
+    "https://www.ndtv.com/topic/viral-stories",
+    "https://m.economictimes.com/tech/artificial-intelligence",
+    "https://www.hindustantimes.com/trending/ceo-apologises-after-replit-ai-goes-rogue-deletes-firm-s-data-and-makes-up-fake-users-101753246635024.html",
+    "https://www.hindustantimes.com/world-news/us-news/ai-song-fuels-drama-over-epstein-files-check-viral-video-101752912887520.html",
+    "https://wired.com/story/generative-ai-backlash",
+    "https://today.com/video/creators-of-fake-feel-good-social-media-posts-speak-out-244297797575",
+    "https://timesofindia.indiatimes.com/world/us/if-ai-is-the-reason-viral-post-asks-why-companies-are-still-asking-for-h-1bs/articleshow/122098860.cms",
+    "https://www.cbsnews.com/tag/artificial-intelligence/"
+  ]
+}

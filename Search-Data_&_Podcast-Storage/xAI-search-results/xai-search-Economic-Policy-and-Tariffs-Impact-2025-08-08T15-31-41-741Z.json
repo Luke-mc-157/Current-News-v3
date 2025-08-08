@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tariff Day Again: Latest US Tariffs Announcement Sparks Market Reactions\",\n      \"summary\": \"President Trump's administration announced new tariff measures, leading to immediate responses from trading partners and fluctuations in US stock markets. This development is seen as part of ongoing efforts to reshape trade relations.\",\n      \"sources\": [\n        \"https://economist.com/in-brief/2025/08/07/the-us-in-brief-tariff-day-again\"\n      ]\n    },\n    {\n      \"title\": \"Trump Tariffs Live Updates: Boasts of Billions and Threats to China\",\n      \"summary\": \"President Trump highlighted billions in revenue from tariffs and warned of punishing China over Russian oil dealings, with potential unilateral tariff rates to be set soon. This has raised concerns about escalating trade tensions.\",\n      \"sources\": [\n        \"https://finance.yahoo.com/news/live/trump-tariffs-live-updates-trump-threatens-to-set-unilateral-tariff-rates-within-weeks-200619147.html\"\n      ]\n    },\n    {\n      \"title\": \"Latest Tariff Stories: Economic Impacts and Global Responses\",\n      \"summary\": \"Recent tariff implementations are affecting global supply chains, with reports indicating higher costs for consumers and businesses amid ongoing US trade policy adjustments.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/tariffs/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://npr.org/2025/08/02/nx-s1-5490063/catching-up-on-a-busy-week-of-economic-news",
+    "https://nytimes.com/topic/tariffs-news",
+    "https://www.reuters.com/business/tariffs/",
+    "https://economist.com/in-brief/2025/08/07/the-us-in-brief-tariff-day-again",
+    "https://www.hindustantimes.com/india-news/tariff-war-will-have-worse-impact-than-covid-kerala-minister-balagopal-101754392928564.html",
+    "https://news18.com/amp/videos/world/will-trump-s-tariffs-help-or-hurt-america-cnn-s-fareed-zakaria-warns-of-slowbalization-decade-9484585.html",
+    "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+    "https://npr.org/2025/08/04/nx-s1-5492483/the-global-impact-of-the-latest-u-s-tariffs",
+    "https://www.gov.ca.gov/2025/07/30/trump-tariff-policy-continues-to-cause-chaos-in-american-economy/",
+    "https://www.nytimes.com/live/2025/04/03/business/trump-tariffs",
+    "https://m.economictimes.com/news/web-stories/amp",
+    "https://www.bloomberg.com/graphics/trump-tariffs-tracker/",
+    "https://nbcnews.com/business/economy/us-economy-explainer-this-week-tariffs-jobs-inflation-what-to-know-rcna222569",
+    "https://finance.yahoo.com/news/live/trump-tariffs-live-updates-trump-threatens-to-set-unilateral-tariff-rates-within-weeks-200619147.html",
+    "https://budgetmodel.wharton.upenn.edu/issues/2025/4/10/economic-effects-of-president-trumps-tariffs"
+  ]
+}
