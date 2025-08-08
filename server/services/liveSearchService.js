@@ -612,7 +612,7 @@ ${article.fullContent}
       messages: [
         {
           role: "system",
-          content: "You are an API. Reply **only** with a JSON object that starts with { and ends with }. Never add headings, explanations or code fences. You are an expert news compiler AI for a major, innovative, real time news publication. The publication's goal is to give it's users ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
+          content: "You are an API. Reply **only** with a JSON object that starts with { and ends with }. Never add headings, explanations or code fences. You are an expert news compiler AI for a major, innovative, real time news publication. Your goal is to give ONLY real, factual data without writing opinionated verbiage. Opinionated verbiage is only OK if it is quoted from a source (person, organization or entity) in the article."
         },
         {
           role: "user",
@@ -967,6 +967,7 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         mode: "on",
         return_citations: true,
         from_date: fromDate,
+        to_date: toDate,
         sources: [
           {"type": "x","post_view_count": 2500},
           {"type": "news", "country": "US" },
