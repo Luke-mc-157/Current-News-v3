@@ -29,7 +29,8 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     const xClient = new TwitterApi(bearerToken);
     
     // Calculate time range (last 24 hours)
-    const endTime = new Date();
+    // X API requires end_time to be at least 10 seconds before current time
+    const endTime = new Date(Date.now() - (60 * 1000)); // 1 minute ago
     const startTime = new Date(endTime.getTime() - (hours * 60 * 60 * 1000));
     
     // Build search query - escape quotes in topic name
@@ -39,15 +40,29 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     console.log(`🔍 X search query: ${query}`);
     console.log(`📅 Time range: ${startTime.toISOString()} to ${endTime.toISOString()}`);
     
-    // Search tweets using v2 search recent endpoint
-    const searchResult = await xClient.v2.search(query, {
-      max_results: 50,
-      'tweet.fields': ['created_at', 'author_id', 'public_metrics', 'entities'],
-      'user.fields': ['username', 'name', 'verified'],
-      expansions: ['author_id'],
-      sort_order: 'relevancy',
-      start_time: startTime.toISOString(),
-      end_time: endTime.toISOString()
+    // Use raw axios to call X API v2 directly for better control
+    const searchUrl = 'https://api.x.com/2/tweets/search/recent';
+    const params = new URLSearchParams({
+      query: query,
+      max_results: '50',
+      'tweet.fields': 'created_at,author_id,public_metrics,entities',
+      'user.fields': 'username,name,verified',
+      'expansions': 'author_id',
+      'sort_order': 'relevancy',
+      'start_time': startTime.toISOString(),
+      'end_time': endTime.toISOString()
+    });
+    
+    const searchResult = await axios.get(`${searchUrl}?${params.toString()}`, {
+      headers: {
+        'Authorization': `Bearer ${bearerToken}`
+      }
+    }).then(res => res.data).catch(error => {
+      if (error.response) {
+        console.error(`❌ X API Error Response:`, error.response.data);
+        throw error;
+      }
+      throw error;
     });
     
     if (!searchResult.data || searchResult.data.length === 0) {

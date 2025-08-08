@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"US-Brokered Peace Agreement Signing at White House\",\n      \"summary\": \"Azerbaijan and Armenia are set to sign an initial peace agreement at the White House, hosted by President Trump, to enhance economic ties and end decades of conflict.\",\n      \"citations\": [\n        \"https://www.reuters.com/world/azerbaijan-armenia-sign-peace-agreement-white-house-says-2025-08-08/\",\n        \"https://www.intellinews.com/trump-confirms-armenia-azerbaijan-peace-deal-to-be-signed-at-white-house-summit-395310/\",\n        \"https://novayagazeta.eu/articles/2025/08/08/armenia-and-azerbaijan-set-to-end-decades-of-conflict-by-signing-us-brokered-peace-deal-en-news\",\n        \"https://mezha.net/eng/bukvy/trump-announces-historic-armenia-azerbaijan-peace-summit-at-white-house/\"\n      ]\n    },\n    {\n      \"title\": \"Weakening of Russia's Influence in the South Caucasus\",\n      \"summary\": \"The US-brokered peace deal between Armenia and Azerbaijan is expected to diminish Russia's role in the region.\",\n      \"citations\": [\n        \"https://newsukraine.rbc.ua/analytics/armenia-and-azerbaijan-sign-peace-deal-as-1754648795.html\"\n      ]\n    },\n    {\n      \"title\": \"Exclusive US Development Rights on Zangezur Corridor\",\n      \"summary\": \"As part of the agreement, Armenia plans to grant the US exclusive development rights on the Zangezur transit corridor for an extended period.\",\n      \"citations\": [\n        \"https://usa.news-pravda.com/usa/2025/08/08/410218.html\"\n      ]\n    },\n    {\n      \"title\": \"Groundwork for Comprehensive Peace Treaty\",\n      \"summary\": \"The upcoming agreement in Washington serves as a foundational step toward a full peace treaty between Azerbaijan and Armenia.\",\n      \"citations\": [\n        \"https://www.azernews.az/nation/245734.html\",\n        \"https://usa.news-pravda.com/world/2025/08/08/410140.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/azerbaijan-armenia-sign-peace-agreement-white-house-says-2025-08-08/",
+    "https://newsukraine.rbc.ua/analytics/armenia-and-azerbaijan-sign-peace-deal-as-1754648795.html",
+    "https://usa.news-pravda.com/world/2025/08/08/410140.html",
+    "https://usa.news-pravda.com/usa/2025/08/08/410218.html",
+    "https://www.intellinews.com/trump-confirms-armenia-azerbaijan-peace-deal-to-be-signed-at-white-house-summit-395310/",
+    "https://news-pravda.com/world/2025/08/07/1574330.html",
+    "https://www.therepublic.com/2025/08/07/trump-will-meet-friday-with-leaders-of-armenia-and-azerbaijan-to-sign-us-brokered-peace-deal/",
+    "https://mamul.am/en/news/333451",
+    "https://news-pravda.com/world/2025/08/04/1566461.html",
+    "https://azernews.az/nation/245538.html",
+    "https://www.aljazeera.com/news/2025/3/13/armenia-and-azerbaijan-finalise-draft-peace-deal-to-resolve-conflict",
+    "https://www.reuters.com/world/armenia-says-it-is-ready-sign-peace-agreement-with-azerbaijan-2025-03-13/",
+    "https://novayagazeta.eu/articles/2025/08/08/armenia-and-azerbaijan-set-to-end-decades-of-conflict-by-signing-us-brokered-peace-deal-en-news",
+    "https://www.azernews.az/nation/245734.html",
+    "https://mezha.net/eng/bukvy/trump-announces-historic-armenia-azerbaijan-peace-summit-at-white-house/"
+  ]
+}

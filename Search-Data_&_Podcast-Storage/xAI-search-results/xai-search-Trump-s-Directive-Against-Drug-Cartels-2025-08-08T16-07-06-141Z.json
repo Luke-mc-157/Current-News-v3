@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Trump Secretly Signs Directive for Military Action Against Latin American Drug Cartels\",\n      \"summary\": \"President Trump has signed a secret directive instructing the Pentagon to use military force against certain Latin American drug cartels designated as terrorist organizations, marking a shift to direct military involvement in the fight against drug trafficking.\",\n      \"sources\": [\n        \"https://thehill.com/homenews/administration/5442985-donald-trump-pentagon-military-force-drug-cartels/\",\n        \"https://politicalwire.com/2025/08/08/trump-directs-military-to-target-foreign-drug-cartels\"\n      ]\n    },\n    {\n      \"title\": \"Trump Authorizes Lethal Military Force Against Drug Cartels\",\n      \"summary\": \"The directive allows the U.S. military to deploy lethal force on foreign soil against designated drug cartels, escalating the administration's approach beyond traditional law enforcement methods.\",\n      \"sources\": [\n        \"https://www.the-express.com/news/politics/179774/trump-authorizes-lethal-military-force-cartels\",\n        \"https://rawstory.com/trump-cartel-war-secret-order\"\n      ]\n    },\n    {\n      \"title\": \"Pentagon Directed to Prepare Strikes on Terrorist-Designated Cartels\",\n      \"summary\": \"Trump's order provides an official basis for military operations at sea and on foreign territory against Latin American cartels involved in drug trafficking.\",\n      \"sources\": [\n        \"https://news-pravda.com/world/2025/08/08/1577918.html\",\n        \"https://elpais.com/internacional/2025-08-08/trump-ordena-al-ejercito-de-estados-unidos-combatir-a-los-carteles-de-la-droga-extranjeros.html\"\n      ]\n    },\n    {\n      \"title\": \"Trump Escalates Fight Against Drug Cartels with Military Deployment\",\n      \"summary\": \"The secret directive orders the use of armed forces against cartels, representing a significant policy change in addressing the drug crisis through military means.\",\n      \"sources\": [\n        \"https://www.outkick.com/culture/donald-trump-drug-cartels-targeting\",\n        \"https://mezha.net/eng/bukvy/trump-authorizes-military-action-against-latin-american-drug-cartels/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://news-pravda.com/world/2025/08/08/1577873.html",
+    "https://news-pravda.com/world/2025/08/08/1577918.html",
+    "https://thehill.com/homenews/administration/5442985-donald-trump-pentagon-military-force-drug-cartels/",
+    "https://politicalwire.com/2025/08/08/trump-directs-military-to-target-foreign-drug-cartels",
+    "https://news-pravda.com/world/2025/08/08/1578054.html",
+    "https://www.the-express.com/news/politics/179774/trump-authorizes-lethal-military-force-cartels",
+    "https://news-pravda.com/usa/2025/08/08/1577975.html",
+    "https://mezha.net/eng/bukvy/trump-authorizes-military-action-against-latin-american-drug-cartels/",
+    "https://www.outkick.com/culture/donald-trump-drug-cartels-targeting",
+    "https://news-pravda.com/world/2025/08/08/1577945.html",
+    "https://spanish.news-pravda.com/world/2025/08/08/526792.html",
+    "https://rawstory.com/trump-cartel-war-secret-order",
+    "https://trump.news-pravda.com/world/2025/08/08/188462.html",
+    "https://voxpopulinoticias.com.mx/2025/08/donald-trump-autoriza-el-uso-de-fuerza-militar-de-eu-para-combatir-carteles-de-la-droga-segun-new-york-times",
+    "https://elpais.com/internacional/2025-08-08/trump-ordena-al-ejercito-de-estados-unidos-combatir-a-los-carteles-de-la-droga-extranjeros.html"
+  ]
+}
