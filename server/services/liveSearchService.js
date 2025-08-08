@@ -5,12 +5,132 @@ import { TwitterApi } from 'twitter-api-v2';
 import { fetchUserTimeline } from './xTimeline.js';
 import { storage } from '../storage.js';
 import { fetchRssArticles } from './rssService.js';
+import { createAuthenticatedClient } from './xAuth.js';
 
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
   apiKey: process.env.XAI_API_KEY,
   timeout: 960000
 });
+
+// Search X posts for a specific topic using X API v2
+async function searchXPostsByTopic(topicName, userId, hours = 24) {
+  try {
+    console.log(`🐦 Searching X posts for topic: "${topicName}"`);
+    
+    // Get user's X auth tokens
+    const tokenData = await storage.getXTokensByUserId(userId);
+    if (!tokenData?.accessToken) {
+      console.log(`⚠️ No X auth tokens for user ${userId}, skipping X search`);
+      return [];
+    }
+    
+    // Create authenticated client
+    const result = await createAuthenticatedClient(
+      tokenData.accessToken,
+      tokenData.refreshToken,
+      tokenData.expiresAt
+    );
+    
+    if (!result || !result.client) {
+      console.error('Failed to create authenticated X client');
+      return [];
+    }
+    
+    const xClient = result.client;
+    
+    // Update tokens if refreshed
+    if (result.updatedTokens) {
+      await storage.updateXTokens(userId, result.updatedTokens);
+      console.log('✅ X tokens refreshed and updated');
+    }
+    
+    // Calculate time range (last 24 hours)
+    const endTime = new Date();
+    const startTime = new Date(endTime.getTime() - (hours * 60 * 60 * 1000));
+    
+    // Build search query - escape quotes in topic name
+    const escapedTopic = topicName.replace(/"/g, '\\"');
+    const query = `"${escapedTopic}" -is:retweet lang:en`;
+    
+    console.log(`🔍 X search query: ${query}`);
+    console.log(`📅 Time range: ${startTime.toISOString()} to ${endTime.toISOString()}`);
+    
+    // Search tweets with all required fields
+    const response = await xClient.v2.search(query, {
+      max_results: 50,
+      'tweet.fields': 'created_at,author_id,public_metrics,entities',
+      'user.fields': 'username,name,verified',
+      expansions: 'author_id',
+      sort_order: 'relevancy',
+      start_time: startTime.toISOString(),
+      end_time: endTime.toISOString()
+    });
+    
+    if (!response.data || !response.data.data) {
+      console.log(`📭 No X posts found for topic: "${topicName}"`);
+      return [];
+    }
+    
+    const tweets = response.data.data;
+    const users = response.data.includes?.users || [];
+    
+    // Create user map for quick lookup
+    const userMap = new Map();
+    users.forEach(user => userMap.set(user.id, user));
+    
+    // Transform tweets to our required format
+    const xPosts = tweets.map(tweet => {
+      const user = userMap.get(tweet.author_id) || {};
+      
+      // Extract URLs from entities (excluding X/Twitter URLs)
+      const articleUrls = [];
+      if (tweet.entities?.urls) {
+        tweet.entities.urls.forEach(url => {
+          const expandedUrl = url.expanded_url || url.url;
+          if (expandedUrl && 
+              !expandedUrl.includes('twitter.com') && 
+              !expandedUrl.includes('x.com')) {
+            articleUrls.push(expandedUrl);
+          }
+        });
+      }
+      
+      return {
+        id: tweet.id,
+        date: tweet.created_at,
+        username: user.username || 'unknown',
+        text: tweet.text,
+        articleUrls: articleUrls,
+        public_metrics: tweet.public_metrics || {},
+        tweetUrl: `https://x.com/${user.username || 'i'}/status/${tweet.id}`
+      };
+    });
+    
+    console.log(`✅ Found ${xPosts.length} X posts for topic: "${topicName}"`);
+    
+    // Log summary of first few posts
+    if (xPosts.length > 0) {
+      console.log(`📊 Sample X posts for "${topicName}":`);
+      xPosts.slice(0, 3).forEach((post, i) => {
+        console.log(`  [${i}] @${post.username}: ${post.text.substring(0, 50)}...`);
+        console.log(`       Metrics: ${post.public_metrics.like_count || 0} likes, ${post.public_metrics.view_count || 0} views`);
+      });
+    }
+    
+    return xPosts;
+    
+  } catch (error) {
+    console.error(`❌ Error searching X posts for topic "${topicName}":`, error.message);
+    
+    // Log rate limit information if available
+    if (error.code === 429) {
+      console.error('⏰ Rate limit exceeded. Will retry later.');
+    }
+    
+    return [];
+  }
+}
 
 export async function generateHeadlinesWithLiveSearch(topics, userId = "default", userHandle, accessToken) {
   console.log('🚀 Using xAI Live Search for headlines generation');
@@ -171,11 +291,21 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
     console.log(`📭 No timeline posts or RSS articles available for emergent topics discovery`);
   }
   
-  // Step 1: Call xAI Live Search API in parallel for all topics
-  console.log('📡 Step 1: xAI Live Search API calls for all topics (parallel)...');
+  // Step 1: Call X API and xAI Live Search API in parallel for all topics
+  console.log('📡 Step 1: X API + xAI Live Search API calls for all topics (parallel)...');
   const parallelStartTime = Date.now();
   
-  // Create promises for parallel execution
+  // Create X API search promises for all topics
+  const xSearchPromises = topics.map(async (topic) => {
+    try {
+      return await searchXPostsByTopic(topic, userId);
+    } catch (error) {
+      console.error(`❌ X search failed for topic "${topic}":`, error.message);
+      return [];
+    }
+  });
+  
+  // Create xAI Live Search promises for parallel execution
   const allTopicPromises = topics.map(async (topic, index) => {
     console.log(`📝 Preparing parallel call for topic ${index + 1}/${topics.length}: ${topic}`);
     try {
@@ -210,7 +340,11 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   });
 
   // Await all promises in parallel (use allSettled to handle partial failures)
-  const settledResults = await Promise.allSettled(allTopicPromises);
+  const [xSearchResults, settledResults] = await Promise.all([
+    Promise.all(xSearchPromises),
+    Promise.allSettled(allTopicPromises)
+  ]);
+  
   const allTopicData = settledResults.map((result, index) => {
     if (result.status === 'fulfilled') {
       return result.value;
@@ -221,7 +355,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   });
 
   const parallelTime = Date.now() - parallelStartTime;
-  console.log(`⚡ Parallel xAI Live Search completed in ${parallelTime}ms for ${topics.length} topics`);
+  console.log(`⚡ Parallel X API + xAI Live Search completed in ${parallelTime}ms for ${topics.length} topics`);
   console.log(`🚀 Performance boost: ~${Math.round((topics.length * 6000) / parallelTime)}x faster than sequential`);
   
   // Log successful vs failed topic processing
@@ -266,7 +400,7 @@ export async function generateHeadlinesWithLiveSearch(topics, userId = "default"
   
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
-  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles);
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles, xSearchResults);
   
   // Step 3: Generate newsletter with compiled data
   console.log('📝 Step 3: Generating newsletter with compiled data...');
@@ -308,10 +442,17 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
   console.log(`🎯 Starting compiled data generation for podcast delivery...`);
   console.log(`📋 Topics: ${topics.join(', ')}`);
   
-  // Step 1: Fetch all topic data from Live Search
-  console.log('📝 Step 1: Fetching Live Search data for all topics...');
+  // Step 1: Fetch all topic data from Live Search and X API
+  console.log('📝 Step 1: Fetching Live Search data and X posts for all topics...');
   const allTopicData = [];
+  const xSearchPromises = [];
   
+  // Create promises for parallel X search
+  for (const topic of topics) {
+    xSearchPromises.push(searchXPostsByTopic(topic, userId));
+  }
+  
+  // Fetch xAI data for each topic
   for (const topic of topics) {
     try {
       const liveSearchData = await getTopicDataFromLiveSearch(topic);
@@ -332,7 +473,11 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
     }
   }
   
+  // Wait for X search results
+  const xSearchResults = await Promise.all(xSearchPromises);
+  
   console.log(`✅ Live Search completed for ${allTopicData.length}/${topics.length} topics`);
+  console.log(`✅ X search completed, total posts: ${xSearchResults.reduce((sum, posts) => sum + posts.length, 0)}`);
   
   // Step 1.5: Get user timeline posts and RSS feeds if available
   const followedPosts = [];
@@ -409,7 +554,7 @@ export async function getCompiledDataForPodcast(topics, userId = null, userHandl
   
   // Step 2: Compile raw search data with metadata
   console.log('📝 Step 2: Compiling raw search data...');
-  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles);
+  const compiledResult = await RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles, xSearchResults);
   
   // Write compiled data to file for inspection
   try {
@@ -691,7 +836,7 @@ ${articlesText}`
 }
 
 // Compile all raw search data with metadata
-async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles = []) {
+async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePosts, accessToken, formattedRssArticles = [], xSearchResults = []) {
   console.log('🔄 Compiling raw search data with parallel article fetching...');
   const parallelArticleStartTime = Date.now();
   
@@ -704,34 +849,39 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
   const allArticleUrlsWithMeta = [];
   const topicXPostData = []; // Store X post data to process later
   
-  // Phase 1: Collect all URLs and fetch X posts
-  for (const topicData of allTopicData) {
+  // Phase 1: Collect all URLs and use X search results
+  for (let i = 0; i < allTopicData.length; i++) {
+    const topicData = allTopicData[i];
+    const topicXPosts = xSearchResults[i] || []; // Get X posts from our search
     const { xPostIds, articleUrls } = categorizeCitations(topicData.citations);
     
-    console.log(`📝 Processing ${topicData.topic}: ${xPostIds.length} X posts, ${articleUrls.length} articles`);
+    console.log(`📝 Processing ${topicData.topic}: ${topicXPosts.length} X posts from search, ${articleUrls.length} articles`);
     
-    // DEBUG: Log the actual post IDs being fetched for this topic
-    if (xPostIds.length > 0) {
-      console.log(`🔍 DEBUG ${topicData.topic} post IDs:`, xPostIds);
-    }
+    // Use X posts from our search instead of fetching from xAI citations
+    const xPostSources = topicXPosts.map(post => ({
+      id: post.id,
+      text: post.text,
+      author_name: `@${post.username}`,
+      created_at: post.date,
+      public_metrics: post.public_metrics || {},
+      url: post.tweetUrl,
+      source: 'x_api_search'
+    }));
     
-    // Batch fetch X posts with authentic metadata (use user token for better data)
-    const xPostSources = await fetchXPostsBatch(xPostIds, accessToken);
     totalXAIPosts += xPostSources.length;
     
-    // DEBUG: Log detailed info about fetched posts
-    console.log(`🔍 DEBUG ${topicData.topic}: Expected ${xPostIds.length} posts, got ${xPostSources.length} posts`);
-    if (xPostSources.length > 0) {
-      console.log(`🔍 DEBUG ${topicData.topic}: First post structure:`, {
-        id: xPostSources[0].id,
-        author_name: xPostSources[0].author_name,
-        text: xPostSources[0].text?.substring(0, 50) + '...',
-        url: xPostSources[0].url,
-        hasPublicMetrics: !!xPostSources[0].public_metrics
-      });
-    } else {
-      console.log(`⚠️ DEBUG ${topicData.topic}: No posts returned from fetchXPostsBatch despite ${xPostIds.length} IDs`);
-    }
+    // Also extract article URLs from X posts
+    const xPostArticleUrls = [];
+    topicXPosts.forEach(post => {
+      if (post.articleUrls && post.articleUrls.length > 0) {
+        xPostArticleUrls.push(...post.articleUrls);
+      }
+    });
+    
+    // Combine article URLs from xAI citations and X posts
+    const allArticleUrls = [...new Set([...articleUrls, ...xPostArticleUrls])]; // Dedupe URLs
+    
+    console.log(`🔍 ${topicData.topic}: ${xPostSources.length} X posts, ${allArticleUrls.length} total article URLs (${articleUrls.length} from xAI, ${xPostArticleUrls.length} from X posts)`);
     
     // Store X post data for later processing
     topicXPostData.push({
@@ -741,7 +891,7 @@ async function RawSearchDataCompiler_AllData(allTopicData, formattedTimelinePost
     });
     
     // NEW: Instead of fetching articles here, collect URLs with topic ref (limit per topic still)
-    allArticleUrlsWithMeta.push(...articleUrls.slice(0, 7).map(url => ({
+    allArticleUrlsWithMeta.push(...allArticleUrls.slice(0, 7).map(url => ({
       url,
       topic: topicData.topic  // Tag for grouping later
     })));
@@ -967,8 +1117,8 @@ CRITICAL: Do not include any sources or citations that are not directly related 
         mode: "on",
         return_citations: true,
         from_date: fromDate,
+        to_date: toDate,
         sources: [
-          {"type": "x","post_view_count": 2500},
           {"type": "news", "country": "US" },
         ]
       },
