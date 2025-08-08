@@ -18,32 +18,15 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
   try {
     console.log(`🐦 Searching X posts for topic: "${topicName}"`);
     
-    // Get user's X auth tokens
-    const tokenData = await storage.getXTokensByUserId(userId);
-    if (!tokenData?.accessToken) {
-      console.log(`⚠️ No X auth tokens for user ${userId}, skipping X search`);
+    // Use bearer token from environment variables
+    const bearerToken = process.env.X_BEARER_TOKEN;
+    if (!bearerToken) {
+      console.log(`⚠️ No X_BEARER_TOKEN found in environment variables, skipping X search`);
       return [];
     }
     
-    // Create authenticated client
-    const result = await createAuthenticatedClient(
-      tokenData.accessToken,
-      tokenData.refreshToken,
-      tokenData.expiresAt
-    );
-    
-    if (!result || !result.client) {
-      console.error('Failed to create authenticated X client');
-      return [];
-    }
-    
-    const xClient = result.client;
-    
-    // Update tokens if refreshed
-    if (result.updatedTokens) {
-      await storage.updateXTokens(userId, result.updatedTokens);
-      console.log('✅ X tokens refreshed and updated');
-    }
+    // Create client with bearer token (app-only auth)
+    const xClient = new TwitterApi(bearerToken);
     
     // Calculate time range (last 24 hours)
     const endTime = new Date();

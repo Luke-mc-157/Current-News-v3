@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"US Tariffs on India Threaten Manufacturing and Labor-Intensive Sectors\",\n      \"summary\": \"Experts warn that the 50% US tariffs on Indian imports could significantly impact India's economic growth, particularly affecting labor-intensive industries and manufacturing sectors.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/business/india-business/trade-war-us-tariffs-on-india-may-hurt-manufacturing-labour-intensive-sectors-experts-warn-of-wider-economic-impact/articleshow/123162476.cms\"\n      ]\n    },\n    {\n      \"title\": \"Trump's 50% Tariffs on India Deemed 'Worse than Covid' by Exporters\",\n      \"summary\": \"Indian exporters express concerns over US tariffs potentially disrupting India's GDP and China+1 strategy, with businesses scrambling to adapt to the increased costs.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/business/india-business/worse-than-covid-donald-trumps-50-tariffs-on-india-leave-exporters-troubled-will-us-move-impact-china1-strategy/articleshow/123171001.cms\"\n      ]\n    },\n    {\n      \"title\": \"Trump’s Tariffs Driving Up Prices on Consumer Goods\",\n      \"summary\": \"Businesses report inability to absorb rising costs from tariffs, leading to higher prices for everyday goods passed on to consumers.\",\n      \"citations\": [\n        \"https://nytimes.com/2025/08/07/business/economy/trump-tariffs-prices-consumers.html\"\n      ]\n    },\n    {\n      \"title\": \"Global Businesses React to Implementation of Trump's Latest Tariffs\",\n      \"summary\": \"US begins levying higher taxes on imports from multiple countries, prompting reactions from businesses and trading partners worldwide amid escalating trade tensions.\",\n      \"citations\": [\n        \"https://smdailyjournal.com/business/the-latest-trumps-tariffs-go-into-effect/article_137b0e26-0a2f-53f0-a3d7-2d1b3cc99d42.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://timesofindia.indiatimes.com/business/india-business/trade-war-us-tariffs-on-india-may-hurt-manufacturing-labour-intensive-sectors-experts-warn-of-wider-economic-impact/articleshow/123162476.cms",
+    "https://cbsnews.com/news/trump-tariffs-2025-prices",
+    "https://www.aljazeera.com/economy/2025/7/31/what-has-been-the-impact-of-trumps-tariffs-so-far",
+    "https://uschamber.com/tariffs/tariffs-rise-for-american-businesses-higher-prices-loom-for-consumers",
+    "https://www.nbcnews.com/business/consumer/trump-tariffs-stores-companies-economists-warning-for-consumers-rcna202779",
+    "https://www.foxbusiness.com/retail/small-business-owners-speak-out-about-effects-trump-tariffs-unsustainable",
+    "https://www.uschamber.com/co/events/small-business-tariffs-update",
+    "https://www.npr.org/2025/03/04/nx-s1-5316843/trump-tariffs-canada-mexico-us",
+    "https://www.uschamber.com/small-business/small-business-faq-what-you-need-to-know-about-tariffs",
+    "https://apnews.com/article/trump-tariffs-explainer-399b5d4da6e6be77cefabf25ceaa8191",
+    "https://www.cbsnews.com/news/trump-tariffs-china-small-business-tax-imports-impact/",
+    "https://nytimes.com/2025/08/07/business/economy/trump-tariffs-prices-consumers.html",
+    "https://timesofindia.indiatimes.com/business/india-business/worse-than-covid-donald-trumps-50-tariffs-on-india-leave-exporters-troubled-will-us-move-impact-china1-strategy/articleshow/123171001.cms",
+    "https://smdailyjournal.com/business/the-latest-trumps-tariffs-go-into-effect/article_137b0e26-0a2f-53f0-a3d7-2d1b3cc99d42.html",
+    "https://nbcnews.com/business/economy/us-economy-explainer-this-week-tariffs-jobs-inflation-what-to-know-rcna222569"
+  ]
+}
