@@ -44,7 +44,7 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     const searchUrl = 'https://api.x.com/2/tweets/search/recent';
     const params = new URLSearchParams({
       query: query,
-      max_results: '8',
+      max_results: '50',
       'tweet.fields': 'created_at,author_id,public_metrics,entities',
       'user.fields': 'username,name,verified',
       'expansions': 'author_id',
@@ -115,18 +115,26 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
       };
     });
     
-    console.log(`✅ Found ${xPosts.length} X posts for topic: "${topicName}"`);
+    // Filter posts by minimum engagement metrics (10k views, 500 likes)
+    const filteredPosts = xPosts.filter(post => {
+      const metrics = post.public_metrics || {};
+      const views = metrics.impression_count || 0;
+      const likes = metrics.like_count || 0;
+      return views >= 10000 && likes >= 500;
+    });
     
-    // Log summary of first few posts
-    if (xPosts.length > 0) {
-      console.log(`📊 Sample X posts for "${topicName}":`);
-      xPosts.slice(0, 3).forEach((post, i) => {
+    console.log(`✅ Found ${xPosts.length} X posts, ${filteredPosts.length} meet criteria (10k+ views, 500+ likes) for topic: "${topicName}"`);
+    
+    // Log summary of first few filtered posts
+    if (filteredPosts.length > 0) {
+      console.log(`📊 Sample filtered X posts for "${topicName}":`);
+      filteredPosts.slice(0, 3).forEach((post, i) => {
         console.log(`  [${i}] @${post.username}: ${post.text.substring(0, 50)}...`);
-        console.log(`       Metrics: ${post.public_metrics.like_count || 0} likes, ${post.public_metrics.view_count || 0} views`);
+        console.log(`       Metrics: ${post.public_metrics.like_count || 0} likes, ${post.public_metrics.impression_count || 0} views`);
       });
     }
     
-    return xPosts;
+    return filteredPosts;
     
   } catch (error) {
     console.error(`❌ Error searching X posts for topic "${topicName}":`, error.message);

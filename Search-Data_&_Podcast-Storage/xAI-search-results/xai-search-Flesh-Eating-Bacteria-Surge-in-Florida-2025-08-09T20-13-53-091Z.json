@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Climate Change Drives Surge in Deadly Flesh-Eating Bacteria in US Southeast\",\n      \"summary\": \"Vibrio vulnificus infections are increasing in southeastern US coastal waters due to warming temperatures from climate change, leading to flesh-eating illnesses through wounds or shellfish consumption. Florida has reported 13 cases and eight deaths this year, with experts predicting more outbreaks.\",\n      \"citations\": [\n        \"https://webpronews.com/climate-change-drives-surge-in-deadly-flesh-eating-bacteria-in-us-southeast\"\n      ]\n    },\n    {\n      \"title\": \"Flesh-Eating Bacteria Deaths Climb in Florida, Louisiana, and North Carolina\",\n      \"summary\": \"Deaths from Vibrio vulnificus are rising along southeastern US coasts, with increased cases in Florida, Louisiana, and North Carolina this year. The surge is linked to warm seawater and hurricane-related flooding, prompting warnings to prevent infections.\",\n      \"citations\": [\n        \"https://tribune.net.ph/2025/08/09/flesh-eating-bacteria-deaths-climb-in-florida-louisiana-and-north-carolina\"\n      ]\n    },\n    {\n      \"title\": \"Flesh-Eating Bacteria Cases Increasing in Florida and Other Parts of US Southeast\",\n      \"summary\": \"Cases of Vibrio-caused flesh-eating bacteria are rising along southeastern US coasts, resulting in multiple deaths in Florida and Louisiana. Health experts advise monitoring for symptoms and taking precautions in warm coastal waters.\",\n      \"citations\": [\n        \"https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/flesh-eating-bacteria-cases-increasing-in-florida-and-other-parts-of-us-southeast-what-to-watch-for/articleshow/123206547.cms\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://webpronews.com/climate-change-drives-surge-in-deadly-flesh-eating-bacteria-in-us-southeast",
+    "https://tribune.net.ph/2025/08/09/flesh-eating-bacteria-deaths-climb-in-florida-louisiana-and-north-carolina",
+    "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/flesh-eating-bacteria-cases-increasing-in-florida-and-other-parts-of-us-southeast-what-to-watch-for/articleshow/123206547.cms",
+    "https://www.local10.com/news/florida/2025/08/08/flesh-eating-bacteria-cases-increase-in-florida-department-of-health/",
+    "https://www.nbcnews.com/health/health-news/florida-flesh-eating-bacteria-risk-who-what-area-rcna219586",
+    "https://yahoo.com/news/articles/more-cases-deadly-flesh-eating-191612793.html",
+    "https://yahoo.com/news/articles/something-off-experts-stumped-sudden-161006272.html",
+    "https://nbcdfw.com/news/national-international/not-normal-deaths-flesh-eating-bacteria-on-the-rise/3901933",
+    "https://www.nationalgeographic.com/science/article/flesh-eating-vibrio-bacteria-florida",
+    "https://www.gulfcoastnewsnow.com/article/fifth-person-dies-flesh-eating-bacteria/65637322",
+    "https://wfin.com/fox-health-news/more-cases-of-deadly-flesh-eating-bacterial-infection-in-popular-vacation-destination",
+    "https://www.the-independent.com/news/health/flesh-eating-bacteria-deaths-southern-us-b2804446.html",
+    "https://www.cbsnews.com/miami/news/report-13-cases-of-flesh-eating-bacteria-eight-deaths-confirmed-in-florida/",
+    "https://www.miamiherald.com/news/health-care/article311607642.html",
+    "https://www.foxnews.com/health/four-people-dead-florida-from-flesh-eating-bacteria-found-coastal-waters"
+  ]
+}

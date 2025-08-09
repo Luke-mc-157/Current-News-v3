@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"NASA's SpaceX Crew-10 Splashes Down in Pacific After 5-Month ISS Mission\",\n      \"summary\": \"The Crew-10 mission concluded with a safe splashdown in the Pacific Ocean after 146 days in space, involving NASA astronauts Anne McClain and Nichole Ayers, JAXA astronaut Takuya Onishi, and Roscosmos cosmonaut Kirill Peskov, who conducted extensive scientific research.\",\n      \"citations\": [\n        \"https://republicworld.com/science/nasa-s-spacex-crew-10-splashes-down-in-pacific-after-5-month-iss-mission\",\n        \"https://webpronews.com/nasa-crew-10-astronauts-complete-146-day-iss-mission-splashdown\",\n        \"https://www.upi.com/Science_News/2025/08/09/space-nasa-crew-10-dragon-iss-return/8681754752089/\"\n      ]\n    },\n    {\n      \"title\": \"First NASA Crew Dragon Splashdown Off California Coast\",\n      \"summary\": \"Crew-10 marked the first NASA-sponsored Crew Dragon mission to splash down in the Pacific Ocean off San Diego, California, highlighting a shift to Pacific recoveries for debris management and safety.\",\n      \"citations\": [\n        \"https://spacecoastdaily.com/2025/08/nasas-spacex-crew-10-mission-returns-splashes-down-off-san-diego-california\",\n        \"https://spacenews.com/crew-10-splashes-down-off-california-coast\",\n        \"https://mypanhandle.com/news/national-news/spacex-astronauts-splashdown-safely-off-southern-california-coast\"\n      ]\n    },\n    {\n      \"title\": \"Crew-10 Departs ISS and Returns Safely to Earth\",\n      \"summary\": \"The four-member crew undocked from the International Space Station and splashed down after a nearly 24-hour journey, completing their mission with over 200 experiments conducted.\",\n      \"citations\": [\n        \"https://yahoo.com/news/articles/spacex-crew-10-makes-splashdown-183100106.html\",\n        \"https://www.yahoo.com/news/articles/splashdown-crew-10-returns-earth-181703135.html\",\n        \"https://wftv.com/news/local/brevard-county/splashdown-crew-10-returns-earth-challenges-with-next-falcon-9-launch/ZCVY5V5GBZAS7OI66WXSGZFGDY\"\n      ]\n    },\n    {\n      \"title\": \"Crew-10 Splashdown Details and Timeline\",\n      \"summary\": \"The Crew Dragon Endurance splashed down at approximately 11:33 a.m. EDT off the California coast, bringing the astronauts back after their extended stay on the ISS.\",\n      \"citations\": [\n        \"https://spacelaunchschedule.com/space-events/spacex-crew-10-crew-dragon-splashdown\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://spectrumlocalnews.com/nc/triad/space/2025/08/06/nasa-spacex-crew-10-splashdown",
+    "https://republicworld.com/science/nasa-s-spacex-crew-10-splashes-down-in-pacific-after-5-month-iss-mission",
+    "https://spacecoastdaily.com/2025/08/nasas-spacex-crew-10-mission-returns-splashes-down-off-san-diego-california",
+    "https://yahoo.com/news/articles/spacex-crew-10-makes-splashdown-183100106.html",
+    "https://opentools.ai/news/splash-down-success-spacex-crew-10-returns-safely",
+    "https://webpronews.com/nasa-crew-10-astronauts-complete-146-day-iss-mission-splashdown",
+    "https://www.cbsnews.com/news/four-outgoing-international-space-station-fliers-undock-head-for-saturday-splashdown/",
+    "https://news.faharas.net/366329/nasa-to-provide-live-coverage/",
+    "https://spacenews.com/crew-10-splashes-down-off-california-coast",
+    "https://mypanhandle.com/news/national-news/spacex-astronauts-splashdown-safely-off-southern-california-coast",
+    "https://www.yahoo.com/news/articles/splashdown-crew-10-returns-earth-181703135.html",
+    "https://spacecoastdaily.com/2025/08/watch-coverage-of-splashdown-return-of-nasas-astronaut-crew-10-set-for-aug-8-off-the-california-coast/",
+    "https://spacelaunchschedule.com/space-events/spacex-crew-10-crew-dragon-splashdown",
+    "https://www.upi.com/Science_News/2025/08/09/space-nasa-crew-10-dragon-iss-return/8681754752089/",
+    "https://wftv.com/news/local/brevard-county/splashdown-crew-10-returns-earth-challenges-with-next-falcon-9-launch/ZCVY5V5GBZAS7OI66WXSGZFGDY"
+  ]
+}
