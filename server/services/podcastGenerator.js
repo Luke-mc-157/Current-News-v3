@@ -10,14 +10,8 @@ const xai = new OpenAI({
 // Generate podcast script from raw compiled data
 export async function generatePodcastScript(compiledData, appendix = null, durationMinutes = 10, podcastName = "Current News") {
   try {
-    // Handle both old format (processed content) and new format (raw compiled data)
-    const isRawCompiledData = typeof compiledData === 'string';
-    
-    if (isRawCompiledData) {
-      console.log(`Generating ${durationMinutes}-minute podcast script from raw compiled data (${compiledData.length} chars)...`);
-    } else {
-      console.log(`Generating ${durationMinutes}-minute podcast script for ${compiledData.length} headlines... (legacy format)`);
-    }
+    // Generate podcast script from raw compiled data
+    console.log(`Generating ${durationMinutes}-minute podcast script from raw compiled data (${compiledData.length} chars)...`);
     
     // Estimate word count needed (150 words per minute average speaking rate)
     const targetWordCount = durationMinutes * 150;
@@ -96,21 +90,7 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
         },
         {
           role: "user",
-          content: isRawCompiledData 
-            ? `Create a ${durationMinutes}-minute podcast script for "${podcastName}" using this comprehensive research data:\n\n${compiledData}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
-            : `Create a ${durationMinutes}-minute podcast script for "${podcastName}" covering these stories:\n\n${JSON.stringify(compiledData.map(item => ({
-                headline: item.title,
-                summary: item.summary,
-                category: item.category,
-                keyPosts: item.posts?.slice(0, 3).map(p => ({
-                  author: p.handle,
-                  content: p.text
-                })) || [],
-                articleHighlights: item.articles?.slice(0, 2).map(a => ({
-                  source: a.title,
-                  excerpt: a.content?.substring(0, 500) || ''
-                })) || []
-              })), null, 2)}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
+          content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" using this comprehensive research data:\n\n${compiledData}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
         }
       ],
       search_parameters: {
