@@ -1132,9 +1132,6 @@ async function getTopicDataFromLiveSearch(topic) {
   const now = new Date();
   const yesterday = new Date(now.getTime() - (24 * 60 * 60 * 1000));
   const fromDate = yesterday.toISOString().split('T')[0];
-
-  // Format dates as ISO strings (YYYY-MM-DD format)
-  const fromDate = twentyFourHoursAgo.toISOString().split('T')[0];
   const toDate = now.toISOString().split('T')[0];
   try {
     const response = await client.chat.completions.create({
@@ -1158,7 +1155,7 @@ If fewer than 4 stories, return only those. Ensure all content is neutral, factu
         sources: [
           {"type": "news", "country": "US"},
           {"type": "web", "country": "US"},
-          {"type": "x", "post_favorite_count": 500, "post_view_count": 10000}
+          {"type": "x", "post_favorite_count": 500, "post_view_count": 10000},
           {"type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]}
         ]
       },
