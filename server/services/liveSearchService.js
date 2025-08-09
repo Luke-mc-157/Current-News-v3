@@ -1130,7 +1130,8 @@ async function getTopicDataFromLiveSearch(topic) {
   
   // Calculate 24-hour time window
   const now = new Date();
-  const twentyFourHoursAgo = new Date(now.getTime() - (24 * 60 * 60 * 1000));
+  const yesterday = new Date(now.getTime() - (24 * 60 * 60 * 1000));
+  const fromDate = yesterday.toISOString().split('T')[0];
 
   // Format dates as ISO strings (YYYY-MM-DD format)
   const fromDate = twentyFourHoursAgo.toISOString().split('T')[0];
@@ -1141,24 +1142,24 @@ async function getTopicDataFromLiveSearch(topic) {
       messages: [
         {
           role: "system",
-          content: "You are a world class AI news aggregator. You have live access to to news publications. Output as JSON. Search for correlating news articles from source types 'news'."
+          content: "You are an AI news aggregator. You have live access to news publications. Your goal is to find the most accurate, up to date information for real time news stories happening now. Output as JSON. CRITICAL: Cite specific supporting articles PUBLISHED in the last 24 hours ONLY. No root page summaries, articles referenced MUST be full articles published within the last 24 hours. No additional text, explanations, or wrappers. Do not include any sources or citations that are not directly related to the topic."
         },
         {
           role: "user",
           content: `Identify the 4 biggest (viral) news stories about ${topic} happening right now.  
 
-If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.
-
-CRITICAL: Cite specific supporting articles WRITTEN in the last 24 hours ONLY. No root page summaries, articles referenced MUST be full articles published within the last 24 hours. No additional text, explanations, or wrappers. Do not include any sources or citations that are not directly related to the topic.`
+If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.`
         },
       ],
       search_parameters: {
         mode: "on",
         return_citations: true,
         from_date: fromDate,
-        to_date: toDate,
         sources: [
-          {"type": "news", "country": "US" },
+          {"type": "news", "country": "US"},
+          {"type": "web", "country": "US"},
+          {"type": "x", "post_favorite_count": 500, "post_view_count": 10000}
+          {"type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]}
         ]
       },
       max_tokens: 90000

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Manchester United Complete Signing of Benjamin Sesko from RB Leipzig\",\n      \"description\": \"Manchester United have secured the transfer of forward Benjamin Sesko from RB Leipzig for an initial £66.26m plus add-ons, outbidding Newcastle United.\",\n      \"sources\": [\n        \"https://www.skysports.com/football/news/11095/13408955/benjamin-sesko-transfer-news-man-utd-complete-deal-to-sign-forward-from-rb-leipzig-as-newcastle-miss-out\",\n        \"https://www.nytimes.com/athletic/live-blogs/transfer-news-live-updates-friday-august-8/xTTBX0890vIL/\",\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-man-utd-liverpool-chelsea-eze-sesko-isak-b1241120.html\"\n      ]\n    },\n    {\n      \"title\": \"Arsenal Face Competition for Eberechi Eze\",\n      \"description\": \"Arsenal are encountering rivals in their pursuit of Crystal Palace's Eberechi Eze as the summer transfer window progresses.\",\n      \"sources\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-man-utd-liverpool-chelsea-eze-sesko-isak-b1241120.html\",\n        \"https://www.nytimes.com/athletic/live-blogs/transfer-news-live-updates-friday-august-8/xTTBX0890vIL/\"\n      ]\n    },\n    {\n      \"title\": \"Liverpool Submit Second Bid for Alexander Isak\",\n      \"description\": \"Liverpool have made a second bid for Newcastle's Alexander Isak amid ongoing transfer negotiations.\",\n      \"sources\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-man-utd-liverpool-chelsea-eze-sesko-isak-b1241120.html\"\n      ]\n    },\n    {\n      \"title\": \"Manchester United Interested in Brighton’s Carlos Baleba After Sesko Deal\",\n      \"description\": \"Following the Sesko signing, Manchester United are targeting Brighton's Carlos Baleba to strengthen their squad.\",\n      \"sources\": [\n        \"https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-man-utd-liverpool-chelsea-eze-sesko-isak-b1241120.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-man-utd-liverpool-chelsea-eze-sesko-isak-b1241120.html",
+    "https://www.skysports.com/football/news/11095/13408955/benjamin-sesko-transfer-news-man-utd-complete-deal-to-sign-forward-from-rb-leipzig-as-newcastle-miss-out",
+    "https://www.nytimes.com/athletic/live-blogs/transfer-news-live-updates-friday-august-8/xTTBX0890vIL/",
+    "https://www.bbc.com/sport/football/live/cn854683e5dt",
+    "https://www.bbc.co.uk/sport/football/articles/cn024epj8dno",
+    "https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32189663",
+    "https://www.nytimes.com/athletic/live-blogs/transfer-news-live-updates-tuesday-august-5/tyHikpnZO3PO/",
+    "https://metro.co.uk/2025/08/05/man-utd-told-sign-10m-newcastle-star-summer-transfer-window-23840393/",
+    "https://www.independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-man-united-isak-eze-sesko-b2801343.html",
+    "https://www.bbc.co.uk/sport/football/live/ce838xpzkrzt",
+    "https://www.football.london/chelsea-fc/transfer-news/breaking-chelsea-confirm-ninth-signing-32184858",
+    "https://www.manchestereveningnews.co.uk/sport/football/transfer-news/gallery/benjamin-sesko-six-manchester-united-32192054",
+    "https://sports.yahoo.com/article/atletico-madrid-switch-transfer-focus-185000484.html",
+    "https://www.espn.com/soccer/story/_/id/45868145/transfer-window-weekly-arsenal-open-eze-deal",
+    "https://metro.co.uk/tag/transfer-news-and-rumours/"
+  ]
+}

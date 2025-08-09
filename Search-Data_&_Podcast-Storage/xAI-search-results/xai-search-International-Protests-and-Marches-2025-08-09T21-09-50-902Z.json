@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Massive Arrests in London During Protests Supporting Palestine Action\",\n      \"summary\": \"Police arrested 466 people as hundreds rallied in support of Palestine Action, while thousands participated in a separate Palestine Solidarity march through London protesting the humanitarian crisis in Gaza.\",\n      \"sources\": [\n        \"https://www.independent.co.uk/news/uk/crime/london-protests-palestine-action-arrests-terror-ban-live-updates-b2804813.html\"\n      ]\n    },\n    {\n      \"title\": \"Protests in Chicago Against Trump Administration's Immigration Policies\",\n      \"summary\": \"Thousands gathered in Chicago's Loop to protest the Trump administration's handling of ICE and deportations, with tensions rising due to a counterprotester prompting angry chants from the main group.\",\n      \"sources\": [\n        \"https://www.cbsnews.com/chicago/tag/protest/\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.amnesty.org/en/latest/news/2025/03/turkiye-unlawful-and-indiscriminate-attacks-on-peaceful-protesters-must-end-and-protest-bans-must-be-lifted-immediately/",
+    "https://abcnews.go.com/US/live-updates/la-immigration-protests-live-updates-trump-deploys-2000/?id=122621279",
+    "https://www.cbsnews.com/chicago/tag/protest/",
+    "https://www.pbs.org/newshour/politics/from-taipei-to-turkey-trumpization-looms-over-international-may-day-marches",
+    "https://www.independent.co.uk/news/uk/crime/london-protests-palestine-action-arrests-terror-ban-live-updates-b2804813.html",
+    "https://www.scmp.com/topics/protests-around-world",
+    "https://7news.com.au/news/protest?page=1",
+    "https://www.reuters.com/pictures/may-day-protests-around-world-2025-05-01/",
+    "https://news.un.org/en/story/2025/07/1165542",
+    "https://abc7ny.com/post/rallies-protests-held-nyc-mark-may-day-international-workers/16294539/",
+    "https://www.cbsnews.com/news/international-womens-day-2025/",
+    "https://www.cnn.com/us/live-news/george-floyd-protests-05-31-20/index.html",
+    "https://www.foxnews.com/category/world/world-protests",
+    "https://www.pbs.org/newshour/world/protests-and-marches-worldwide-bring-together-iranians-living-abroad",
+    "https://reuters.com/pictures/scenes-may-day-protests-marches-rallies-around-world-2024-05-01/BLAGEQVFQ5LAHA3Q7XOFPAAJPM"
+  ]
+}

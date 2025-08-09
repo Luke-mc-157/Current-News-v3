@@ -1,0 +1,20 @@
+{
+  "content": "[\n  {\n    \"story\": \"Benjamin Sesko's potential transfer to Manchester United\",\n    \"description\": \"Benjamin Sesko is reportedly undergoing a medical and set to join Manchester United from RB Leipzig in a deal worth up to £74 million.\",\n    \"citations\": [\n      \"https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\",\n      \"https://www.express.co.uk/sport/football/2092717/Man-Utd-news-LIVE-Benjamin-Sesko-Carlos-Baleba-Gianluigi-Donnarumma\"\n    ]\n  },\n  {\n    \"story\": \"Rodrygo's potential transfer to Arsenal\",\n    \"description\": \"Real Madrid's Rodrygo is linked with a move to Arsenal amid hints about his future and interest from Saudi Arabia.\",\n    \"citations\": [\n      \"https://www.football.london/arsenal-fc/transfer-news/rodrygo-arsenal-transfer-latest-new-32232439\"\n    ]\n  },\n  {\n    \"story\": \"Eberechi Eze's potential transfer to Arsenal\",\n    \"description\": \"Arsenal's interest in Eberechi Eze depends on the futures of two current Gunners players, with a £61m decision pending.\",\n    \"citations\": [\n      \"https://www.football.london/arsenal-fc/transfer-news/eberechi-eze-arsenal-transfer-twist-32224394\"\n    ]\n  },\n  {\n    \"story\": \"Darwin Nunez's confirmed exit from Liverpool\",\n    \"description\": \"Darwin Nunez's departure from Liverpool has been confirmed, alongside updates on Alexander Isak and Marc Guehi.\",\n    \"citations\": [\n      \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-isak-32208791\"\n    ]\n  }\n]",
+  "citations": [
+    "https://nytimes.com/athletic/2280953/2021/01/03/social-media-transfers-fake-news",
+    "https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-chelsea-32216351",
+    "https://www.bbc.com/sport/football/live/c04r5n299k9t",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-isak-32208791",
+    "https://www.football.london/arsenal-fc/transfer-news/rodrygo-arsenal-transfer-latest-new-32232439",
+    "https://www.bbc.com/sport/football/live/c0rvkw05jq7t",
+    "https://www.bbc.com/sport/football/live/cvg31d03v3rt",
+    "https://www.bbc.com/sport/football/articles/c9d0jy4vqg7o",
+    "https://www.bbc.co.uk/sport/football/live/cn854683e5dt",
+    "https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://www.football.london/arsenal-fc/transfer-news/eberechi-eze-arsenal-transfer-twist-32224394",
+    "https://bbc.com/sport/football/articles/c24z9j12696o",
+    "https://www.express.co.uk/sport/football/2092717/Man-Utd-news-LIVE-Benjamin-Sesko-Carlos-Baleba-Gianluigi-Donnarumma",
+    "https://www.skysports.com/football/video/12606/13408349/benjamin-sesko-lands-in-uk-ahead-of-proposed-manchester-united-move",
+    "https://www.mirror.co.uk/sport/football/transfer-news/manchester-united-gianluigi-donnarumma-psg-35694269"
+  ]
+}

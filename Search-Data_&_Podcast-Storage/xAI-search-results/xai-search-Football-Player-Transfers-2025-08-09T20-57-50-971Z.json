@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Benjamin Sesko's Imminent Transfer to Manchester United\",\n      \"description\": \"Manchester United are set to unveil Benjamin Sesko after a £74 million deal from RB Leipzig, with the player undergoing medicals and expected to be presented soon.\",\n      \"citations\": [\n        \"https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks\",\n        \"https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32209123\",\n        \"https://www.express.co.uk/sport/football/2092717/Man-Utd-news-LIVE-Benjamin-Sesko-Carlos-Baleba-Gianluigi-Donnarumma\"\n      ]\n    },\n    {\n      \"title\": \"Darwin Nunez's Confirmed Exit from Liverpool\",\n      \"description\": \"Liverpool have confirmed Darwin Nunez's departure, amid ongoing transfer updates including twists with Alexander Isak and boosts for Marc Guehi.\",\n      \"citations\": [\n        \"https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-isak-32208791\"\n      ]\n    },\n    {\n      \"title\": \"Rodrygo's Potential Move to Arsenal Amid Real Madrid Hints\",\n      \"description\": \"Arsenal are linked with Rodrygo from Real Madrid, with new hints dropped and Saudi Arabia interest complicating the transfer.\",\n      \"citations\": [\n        \"https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-chelsea-32216351\",\n        \"https://www.football.london/arsenal-fc/transfer-news/rodrygo-arsenal-transfer-latest-new-32232439\"\n      ]\n    },\n    {\n      \"title\": \"Eberechi Eze Transfer Twist Involving Arsenal\",\n      \"description\": \"Arsenal's pursuit of Eberechi Eze hinges on decisions regarding two current players, with a £61 million valuation in play.\",\n      \"citations\": [\n        \"https://www.football.london/arsenal-fc/transfer-news/eberechi-eze-arsenal-transfer-twist-32224394\",\n        \"https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-chelsea-32216351\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://nytimes.com/athletic/2280953/2021/01/03/social-media-transfers-fake-news",
+    "https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-chelsea-32216351",
+    "https://www.bbc.com/sport/football/live/c04r5n299k9t",
+    "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-live-isak-32208791",
+    "https://www.football.london/arsenal-fc/transfer-news/rodrygo-arsenal-transfer-latest-new-32232439",
+    "https://www.bbc.com/sport/football/live/c0rvkw05jq7t",
+    "https://www.bbc.com/sport/football/live/cvg31d03v3rt",
+    "https://www.manchestereveningnews.co.uk/sport/football/transfer-news/man-united-transfer-news-live-32209123",
+    "https://www.bbc.com/sport/football/articles/c9d0jy4vqg7o",
+    "https://www.bbc.co.uk/sport/football/live/cn854683e5dt",
+    "https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://www.football.london/arsenal-fc/transfer-news/eberechi-eze-arsenal-transfer-twist-32224394",
+    "https://bbc.com/sport/football/articles/c24z9j12696o",
+    "https://www.express.co.uk/sport/football/2092717/Man-Utd-news-LIVE-Benjamin-Sesko-Carlos-Baleba-Gianluigi-Donnarumma",
+    "https://www.skysports.com/football/video/12606/13408349/benjamin-sesko-lands-in-uk-ahead-of-proposed-manchester-united-move"
+  ]
+}
