@@ -44,7 +44,7 @@ async function searchXPostsByTopic(topicName, userId, hours = 24) {
     const searchUrl = 'https://api.x.com/2/tweets/search/recent';
     const params = new URLSearchParams({
       query: query,
-      max_results: '50',
+      max_results: '8',
       'tweet.fields': 'created_at,author_id,public_metrics,entities',
       'user.fields': 'username,name,verified',
       'expansions': 'author_id',
