@@ -5,6 +5,7 @@ import { generatePodcastScript } from "./podcastGenerator.js";
 import { generateAudio } from "./voiceSynthesis.js";
 import { sendPodcastEmail } from "./emailService.js";
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { fromZonedTime, toZonedTime, format } from 'date-fns-tz';
 import { addDays, startOfDay, setHours, setMinutes } from 'date-fns';
@@ -286,6 +287,41 @@ async function deliverScheduledPodcast(scheduled) {
     }
     
     console.log(`✅ Compiled data generated: ${compiledDataResult.compiledData.length} characters from ${compiledDataResult.totalSources} sources`);
+    
+    // Save compiled data to file for analysis and debugging
+    try {
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+      const userInfo = user.username || `user${scheduled.userId}`;
+      const topicsStr = validTopics.join('_').replace(/[^a-zA-Z0-9_]/g, '').substring(0, 50);
+      const fileName = `scheduled_${userInfo}_${topicsStr}_${timestamp}.txt`;
+      const compiledDataDir = path.join(process.cwd(), 'Search-Data_&_Podcast-Storage', 'compiled-data');
+      const filePath = path.join(compiledDataDir, fileName);
+      
+      // Ensure directory exists
+      fs.mkdirSync(compiledDataDir, { recursive: true });
+      
+      // Create content with metadata
+      const fileContent = `SCHEDULED PODCAST COMPILED DATA
+Generated: ${new Date().toISOString()}
+User: ${user.username} (ID: ${scheduled.userId})
+Topics: ${validTopics.join(', ')}
+Duration: ${duration} minutes
+Voice: ${voiceId}
+Enhance with X: ${enhanceWithX}
+Total Sources: ${compiledDataResult.totalSources}
+Character Count: ${compiledDataResult.compiledData.length}
+Breakdown: ${JSON.stringify(compiledDataResult.breakdown, null, 2)}
+
+===== COMPILED DATA =====
+${compiledDataResult.compiledData}`;
+      
+      fs.writeFileSync(filePath, fileContent, 'utf8');
+      console.log(`💾 Compiled data saved to: ${fileName}`);
+      
+    } catch (saveError) {
+      console.warn(`⚠️ Failed to save compiled data to file:`, saveError.message);
+      // Continue with podcast generation even if file save fails
+    }
     
     // Generate podcast script
     console.log(`📝 Generating ${duration}-minute podcast script`);
