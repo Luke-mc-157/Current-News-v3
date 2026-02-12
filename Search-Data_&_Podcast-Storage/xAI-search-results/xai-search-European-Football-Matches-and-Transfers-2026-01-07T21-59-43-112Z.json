@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Fulham Secures 2-1 Victory Over Chelsea in Premier League Match\",\n      \"summary\": \"Fulham defeated Chelsea 2-1 at Craven Cottage, with key moments including a red card to Chelsea's Marc Cucurella and goals from Fulham's players, impacting Chelsea's position in the league standings.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/\"\n      ]\n    },\n    {\n      \"title\": \"Manchester City Draws 1-1 with Brighton in Premier League\",\n      \"summary\": \"Manchester City drew 1-1 against Brighton, marking their third consecutive draw and raising questions about their control in matches and the performance of young center-backs.\",\n      \"citations\": [\n        \"https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/\"\n      ]\n    },\n    {\n      \"title\": \"Marcus Rashford Likely to Return to Manchester United Following Ruben Amorim's Exit\",\n      \"summary\": \"Following the exit of head coach Ruben Amorim, Marcus Rashford is considered highly likely to return to Manchester United, affecting potential moves to clubs like Barcelona.\",\n      \"citations\": [\n        \"https://www.goal.com/en/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a\",\n        \"https://espn.com/soccer/story/_/id/47335534/man-united-transfers-latest-news-reports-analysis-rumours-signings-exits-deals-contracts\"\n      ]\n    },\n    {\n      \"title\": \"Transfer Rumors Involving Arsenal, Liverpool, and Manchester United\",\n      \"summary\": \"Arsenal has been advised to pay £86m for a target also linked to Tottenham, while Liverpool and Manchester United are competing for Brighton's Carlos Baleba, amid other January transfer updates including Marc Guehi's situation.\",\n      \"citations\": [\n        \"https://independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-tottenham-man-utd-b2895831.html\",\n        \"https://espn.com/soccer/story/_/id/47335534/man-united-transfers-latest-news-reports-analysis-rumours-signings-exits-deals-contracts\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.espn.com/soccer/transfers-news-and-features/",
+    "https://www.transfermarkt.com/",
+    "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+    "https://www.bbc.com/sport/football/transfers",
+    "https://www.skysports.com/football/live-blog/11095/13163353/efl-transfer-news-rumours-and-gossip-for-championship-league-one-and-league-two",
+    "https://bbc.com/sport/football/articles/c70l894lpx1o",
+    "https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks",
+    "https://www.goal.com/en/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a",
+    "https://independent.co.uk/sport/football/transfer-news-live-arsenal-liverpool-tottenham-man-utd-b2895831.html",
+    "https://espn.com/soccer/story/_/id/47335534/man-united-transfers-latest-news-reports-analysis-rumours-signings-exits-deals-contracts",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

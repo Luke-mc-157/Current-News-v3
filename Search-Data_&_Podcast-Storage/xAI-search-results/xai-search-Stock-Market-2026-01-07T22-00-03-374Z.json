@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"JPMorgan Reaches Deal to Take Over Apple Credit Card Program\",\n      \"summary\": \"JPMorgan Chase has agreed to take over the Apple credit card program from Goldman Sachs, as reported by sources familiar with the matter. This move could impact the financial services sector and related stock performances.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/\",\n          \"published\": \"2026-01-07T21:34:25Z\",\n          \"publisher\": \"Reuters\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Artificial Intelligence Reshaping the Global Energy Market\",\n      \"summary\": \"The expansion of AI is causing a surge in electricity demand, leading to increased reliance on fossil fuels for data centers while conflicting with climate goals, affecting energy stocks and market dynamics.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market\",\n          \"published\": \"2026-01-07T21:25:55Z\",\n          \"publisher\": \"The Information\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/markets/us/",
+    "https://finance.yahoo.com/topic/stock-market-news/",
+    "https://www.bloomberg.com/",
+    "https://www.cnn.com/markets",
+    "https://www.cnbc.com/",
+    "https://www.cnbc.com/2026/01/04/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/news/stocks-bonds-set-jittery-start-204423169.html",
+    "https://finance.yahoo.com/news/live/stock-market-today-dow-jumps-600-points-to-record-sp-500-and-nasdaq-rally-as-oil-stocks-surge-after-venezuela-strike-210048470.html",
+    "https://www.bloomberg.com/news/articles/2026-01-04/oil-stocks-bonds-futures-markets-latest-on-venezuela-trump-markets-wrap",
+    "https://finance.yahoo.com/news/live/stock-market-today-dow-crosses-49000-sp-500-jumps-to-new-high-in-record-setting-start-to-year-194907643.html",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

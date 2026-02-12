@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Newsrooms Pushing Deeper Into AI After a Rocky Year\",\n      \"summary\": \"Media organizations are increasingly integrating AI into newsrooms to enhance operations while addressing trust concerns, as explained by experts from outlets like The New York Times.\",\n      \"sources\": [\n        \"https://thewrap.com/media-platforms/journalism/ai-in-newsrooms-2026\"\n      ]\n    },\n    {\n      \"title\": \"Google Engineer Stunned by AI Coding Tool's Efficiency\",\n      \"summary\": \"A Google engineer expressed amazement after an AI coding tool completed in one hour what her team had spent a year developing, encouraging others to test such tools in their expertise areas.\",\n      \"sources\": [\n        \"https://indianexpress.com/article/trending/trending-globally/google-engineer-stunned-after-ai-coding-tool-builds-in-1-hour-what-her-team-spent-a-year-on-10454772\"\n      ]\n    },\n    {\n      \"title\": \"Artificial Intelligence Reshaping the Global Energy Market\",\n      \"summary\": \"The growth of AI is causing a surge in electricity demand, leading tech companies to rely more on fossil fuels for data centers, which conflicts with climate goals but may drive long-term renewable energy innovations.\",\n      \"sources\": [\n        \"https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.artificialintelligence-news.com/",
+    "https://www.reuters.com/technology/artificial-intelligence/",
+    "https://apnews.com/article/grok-x-musk-ai-nudification-abuse-2021bbdb508d080d46e3ae7b8f297d36",
+    "https://www.reuters.com/world/",
+    "https://www.pcmag.com/explainers/is-that-video-real-7-telltale-signs-its-an-ai-deepfake",
+    "https://cnbc.com/2026/01/06/ai-generated-deepfake-videos-venezuelan-viral-us-military-maduro-misinformation.html",
+    "https://thewrap.com/media-platforms/journalism/ai-in-newsrooms-2026",
+    "https://indianexpress.com/article/trending/trending-globally/google-engineer-stunned-after-ai-coding-tool-builds-in-1-hour-what-her-team-spent-a-year-on-10454772",
+    "https://apnews.com/article/grok-x-musk-ai-nudification-abuse-2021bbdb508d080d46e3ae7b8f297d36",
+    "https://techradar.com/ai-platforms-assistants/ai-hasnt-lived-up-to-the-hype-but-can-ces-2026-fix-that",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Deputy Shot and Killed at Austin Nightclub\",\n      \"summary\": \"An off-duty deputy was shot and killed while working security at Club Rodeo in Austin. One suspect has been apprehended, and the Austin Police Department is investigating the incident.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.foxnews.com/us/off-duty-deputy-shot-killed-while-working-security-job-texas-suspect-apprehended\",\n          \"published\": \"3 days ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Fatal Pedestrian Accident on I-35 in North Austin\",\n      \"summary\": \"All lanes of Interstate 35 near the US-290 interchange reopened after a fatal accident involving a pedestrian. The Austin Police Department responded to the scene.\",\n      \"sources\": [\n        {\n          \"url\": \"https://cbsaustin.com/news/local/i-35-in-north-austin-reopens-after-fatal-pedestrian-accident-near-us-290\",\n          \"published\": \"2 days ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Update on Brianna Aguilera Investigation\",\n      \"summary\": \"A neighbor's statement about the night Texas A&M student Brianna Aguilera fell from an apartment refutes parts of the Austin Police Department's timeline, according to the family's attorney Tony Buzbee.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.fox7austin.com/news/brianna-aguilera-investigation-update\",\n          \"published\": \"1 day ago\"\n        }\n      ]\n    },\n    {\n      \"title\": \"Map of Austin's Fatal Crashes in 2026\",\n      \"summary\": \"KXAN is tracking traffic fatalities in Austin for 2026, providing an interactive map showing the locations of these crashes.\",\n      \"sources\": [\n        {\n          \"url\": \"https://www.kxan.com/news/local/austin/austin-traffic-fatality-map-2026/\",\n          \"published\": \"2 days ago\"\n        }\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.fox7austin.com/",
+    "https://www.kxan.com",
+    "https://www.texastribune.org/",
+    "https://www.austinchronicle.com/",
+    "https://www.austintexas.gov/department/communications/news",
+    "https://www.fox7austin.com/news",
+    "https://www.kxan.com/news/local/austin/austin-traffic-fatality-map-2026/",
+    "https://www.foxnews.com/us/off-duty-deputy-shot-killed-while-working-security-job-texas-suspect-apprehended",
+    "https://cbsaustin.com/news/local/i-35-in-north-austin-reopens-after-fatal-pedestrian-accident-near-us-290",
+    "https://www.fox7austin.com/news/brianna-aguilera-investigation-update",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

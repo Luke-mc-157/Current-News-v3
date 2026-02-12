@@ -1,0 +1,21 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Minneapolis ICE Shooting Incident\",\n      \"description\": \"A video shows an ICE agent firing through a car window during an arrest attempt in Minneapolis, resulting in a woman's death amid a federal immigration raid. Officials cite vehicle ramming as justification, while local leaders demand investigation.\",\n      \"sources\": [\n        \"https://www.timesnownews.com/world/us/us-news/minneapolis-ice-shooting-video-agent-seen-firing-through-car-window-during-arrest-attempt-article-153412607\"\n      ]\n    },\n    {\n      \"title\": \"Fact-Check on Israeli Judge Benny Sagi's Death\",\n      \"description\": \"Israeli Judge Benny Sagi died in a traffic accident on January 4, 2026, with no evidence of foul play. Viral claims linking his death to Prime Minister Netanyahu’s corruption cases are unfounded, as Sagi was not involved in the trial.\",\n      \"sources\": [\n        \"https://www.timesnownews.com/world/middle-east/did-israel-judge-benny-sagi-die-in-mystrious-accident-while-handling-benjamin-netanyahu-corruption-cases-fact-checking-viral-claims-article-153412635\"\n      ]\n    },\n    {\n      \"title\": \"JPMorgan to Take Over Apple Credit Card Program\",\n      \"description\": \"JPMorgan Chase has agreed to acquire Apple's credit card program from Goldman Sachs, marking a significant shift in financial partnerships.\",\n      \"sources\": [\n        \"https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/\"\n      ]\n    },\n    {\n      \"title\": \"Artificial Intelligence Reshaping Global Energy Market\",\n      \"description\": \"The growth of AI is increasing electricity demand, leading tech companies to rely more on fossil fuels for data centers while pursuing long-term renewable energy solutions to meet climate goals.\",\n      \"sources\": [\n        \"https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.reuters.com/world/",
+    "https://www.usatoday.com/",
+    "https://apnews.com/us-news",
+    "https://www.ndtv.com/world-news",
+    "https://www.nbcnews.com/world",
+    "https://www.ndtv.com/world-news",
+    "https://www.timesnownews.com/world/us/us-news/minneapolis-ice-shooting-video-agent-seen-firing-through-car-window-during-arrest-attempt-article-153412607",
+    "https://www.ndtv.com/latest",
+    "https://www.ndtv.com/india",
+    "https://www.timesnownews.com/world/middle-east/did-israel-judge-benny-sagi-die-in-mystrious-accident-while-handling-benjamin-netanyahu-corruption-cases-fact-checking-viral-claims-article-153412635",
+    "https://x.com/ItsTheEnforcer/status/2008671729456152620",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

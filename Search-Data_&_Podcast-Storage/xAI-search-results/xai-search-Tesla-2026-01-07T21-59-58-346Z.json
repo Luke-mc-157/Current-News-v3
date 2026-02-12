@@ -1,0 +1,21 @@
+{
+  "content": "{\n  \"stories\": [\n    {\n      \"title\": \"Tesla's Holiday Update Includes Undocumented Features\",\n      \"description\": \"Tesla's 2025.44 holiday software update features 19 undocumented changes, enhancing user experience in vehicles.\",\n      \"sources\": [\n        \"https://www.notateslaapp.com/news/3490/teslas-holiday-update-19-undocumented-features-update-202544\"\n      ]\n    },\n    {\n      \"title\": \"Tesla Earnings Preview Indicates Profit Dip\",\n      \"description\": \"Analysts expect Tesla's fourth-quarter earnings to show a double-digit profit decline amid upcoming report.\",\n      \"sources\": [\n        \"https://www.inkl.com/news/tesla-earnings-preview-what-to-expect\"\n      ]\n    },\n    {\n      \"title\": \"Viral Claim About Tesla Influencers Returning Cybertrucks\",\n      \"description\": \"A viral tweet alleged that Tesla influencers returned Cybertrucks due to mechanical issues, sparking speculation and investigation into the claim's validity.\",\n      \"sources\": [\n        \"https://finance.yahoo.com/news/viral-tweet-claimed-tesla-influencers-190055446.html\"\n      ]\n    }\n  ]\n}",
+  "citations": [
+    "https://www.teslarati.com/",
+    "https://www.nasdaq.com/articles/tesla-just-delivered-very-bad-news-investors",
+    "https://www.notateslaapp.com/",
+    "https://www.fool.com/investing/2026/01/06/tesla-just-delivered-very-bad-news-for-investors/",
+    "https://www.notateslaapp.com/news/3490/teslas-holiday-update-19-undocumented-features-update-202544",
+    "https://www.fool.com/investing/2026/01/06/tesla-just-delivered-very-bad-news-for-investors/",
+    "https://apnews.com/article/tesla-sales-musk-trump-deliveries-robotaxi-6d60715babde97b3b1a8e2416f4065ca",
+    "https://latimes.com/california/story/2026-01-05/tesla-smashes-into-granada-hills-restaurant",
+    "https://www.inkl.com/news/tesla-earnings-preview-what-to-expect",
+    "https://finance.yahoo.com/news/viral-tweet-claimed-tesla-influencers-190055446.html",
+    "https://x.com/Tesla/status/2008979641168781716",
+    "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/",
+    "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+    "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/",
+    "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+    "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+  ]
+}

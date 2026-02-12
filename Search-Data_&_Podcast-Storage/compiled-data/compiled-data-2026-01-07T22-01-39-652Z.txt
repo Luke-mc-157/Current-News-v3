@@ -1,0 +1,714 @@
+
+TOPIC: US Sports
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Former Michigan State and NBA player Paul Davis apologizes for verbal abuse incident at Breslin Center",
+      "summary": "Paul Davis was removed from his seat during Michigan State's 80-51 victory over Southern California after verbally abusing an official, and he has since issued an apology for his behavior.",
+      "sources": [
+        "https://apnews.com/article/michigan-state-paul-davis-ejected-73cfa72a74468d828e05f56aeb668442"
+      ]
+    },
+    {
+      "title": "Kai Trump discusses personal life and future on Logan Paul's podcast",
+      "summary": "Kai Trump, granddaughter of President Donald Trump and an aspiring golfer, appeared on Logan Paul's YouTube podcast, talking about dating, her cousin Barron Trump, and her desire to stay out of politics.",
+      "sources": [
+        "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/"
+      ]
+    }
+  ]
+}
+
+SUPPORTING ARTICLES (7):
+- Sports News, Scores, Predictions and Analysis - USA TODAY: The Baltimore Ravens fired head coach John Harbaugh after 18 seasons, including a Super Bowl win, amid discussions on NFL coaching changes. Predictions were made for the 2025 NFL All-Pro teams, and the Chicago Cubs acquired a starting pitcher in a key MLB trade. Updates included live coverage of the US figure skating championships and college football transfer portal activities. John Harbaugh received an endorsement from Donald Trump following his dismissal, and there were rankings of open NFL head coaching jobs. Other topics covered included Oregon's decision to rule out a key running back for the Peach Bowl and analysis of Miami's football program revival under Mario Cristobal. [https://www.usatoday.com/sports/]
+Key Quotes: "'It's going to get worse'" - Unknown
+
+- USA TODAY - Breaking News and Latest News Today: The article included sports updates such as the Sherrone Moore scandal and its racial context, with a quote indicating worsening situations. It covered NFL topics like predicting the 2025 All-Pro teams and the Cubs landing a starting pitcher in an MLB trade. Other sports news featured US figure skating championships and college football transfer portal commitments. The piece also mentioned John Harbaugh's firing by the Ravens and potential coaching candidates. Additionally, it touched on broader news but focused on sports elements relevant to US leagues like the NFL and MLB. [https://www.usatoday.com/]
+Key Quotes: "'It's going to get worse'" - Unknown
+
+- Sports: Latest Sports News & Sports Articles | AP News: John Harbaugh was fired as the Baltimore Ravens' head coach after 18 seasons, including a Super Bowl victory, marking a significant NFL coaching change. The Oakland Athletics faced a setback in their relocation plans with a trademark denial for 'Las Vegas Athletics'. Britain's top skier trained on a plastic slope due to lack of snow, highlighting adaptive training methods. Other updates included US sports like NFL, NBA, and college basketball rankings. The article also covered international sports but emphasized US-centric events such as the AP Top 25 polls and NHL news. [https://apnews.com/sports]
+
+- NBC Sports - news, scores, stats, rumors, videos, and more: Derek Sprague stepped down as CEO of the PGA of America to care for his mother, impacting golf leadership. WMX announced Synchrony as a presenting sponsor and added a 2026 schedule with a new SMX playoff race. Team USA qualifications for the 2026 Milan Cortina Winter Olympics were detailed, focusing on US athletes. NFL news included discussions on John Harbaugh's firing by the Ravens and its implications for coaching searches. Other sports coverage featured Premier League updates and college basketball, with a strong emphasis on US sports like NFL and golf. [https://www.nbcsports.com]
+Key Quotes: "How shocking was Harbaugh’s firing?" - Mike Florio and Chris Simms | "Ravens need coach who can 'get more' out of Lamar" - Mike Florio and Chris Simms
+
+- Sports Illustrated: The Baltimore Ravens fired John Harbaugh, potentially impacting quarterback Lamar Jackson's future with the team. Rankings were provided for NFL wild-card games and potential CFP championship matchups. Miami's football team is motivated by disrespect and physicality in their pursuit of a playoff feat. Other updates included the Raptors emerging as contenders for a trade involving Anthony Davis and the Cubs acquiring pitcher Edward Cabrera. Alabama quarterback Ty Simpson declared for the NFL draft, and there were discussions on coaching changes and fantasy football insights. [https://www.si.com/]
+Key Quotes: "A component of today's sports culture" - Mike Tomlin
+
+- ‘IYKYK?’: Tom Brady flaunts $482,985 AP watch as Alix Earle’s dad jokes about St. Barts rumors: Tom Brady posted an Instagram story flaunting a $482,985 Audemars Piguet watch with the caption 'IYKYK', drawing attention after his NFL broadcasting work. The article linked this to rumors of Brady spending New Year's Eve with influencer Alix Earle in St. Barts, based on videos showing them together. Earle's family added humor with a TikTok joke about Brady, amid reports of their interaction at a party. Brady's post came shortly after he compared a Bears rookie to Rob Gronkowski during a Lions-Bears game broadcast. The content focused on Brady's post-retirement life and social activities, tying into US sports celebrity culture. [https://timesofindia.indiatimes.com/sports/nfl/news/iykyk-tom-brady-flaunts-482985-ap-watch-as-alix-earles-dad-jokes-about-st-barts-rumors/articleshow/126356006.cms]
+Key Quotes: "IYKYK" - Tom Brady | "I swear to God" - Thomas 'TJ' Earle
+
+- School assembly news headlines January 8: Top national, international & sports updates: The article summarized various news headlines, including sports updates that were primarily international, such as Bangladesh Cricket Board discussions with the ICC and MS Dhoni's involvement in padel in India. It mentioned the Women's Premier League sponsorships but did not focus on US sports like NFL or NBA. Other sections covered national and business news, with no specific US sports content. The sports updates were centered on cricket and other non-US leagues. Overall, the piece served as a broad news digest rather than a dedicated sports report. [https://m.economictimes.com/news/new-updates/school-assembly-news-headlines-january-8-top-national-international-sports-updates/articleshow/126395078.cms]
+
+---
+
+TOPIC: Liverpool FC
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Liverpool's Interest in Marc Guehi Faces Challenges",
+      "summary": "Liverpool FC is reportedly encountering issues in pursuing Crystal Palace defender Marc Guehi, amid ongoing transfer discussions.",
+      "citations": [
+        "https://www.liverpool.com/liverpool-fc-news/features/liverpool-transfer-news-live-arne-33180251",
+        "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-transfer-news-rumours-live-33173839"
+      ]
+    },
+    {
+      "title": "Hugo Ekitike Injury Update",
+      "summary": "Updates on Hugo Ekitike's injury status have emerged in connection with potential Liverpool transfer interests.",
+      "citations": [
+        "https://www.liverpool.com/liverpool-fc-news/features/liverpool-transfer-news-live-arne-33180251"
+      ]
+    },
+    {
+      "title": "Harvey Elliott Latest Developments",
+      "summary": "Recent news regarding Liverpool midfielder Harvey Elliott, including team updates and performan
+
+SUPPORTING ARTICLES (7):
+- Liverpool FC News and LFC transfer rumours - This Is Anfield: Liverpool FC is preparing for their match against Arsenal with injury concerns for players like Hugo Ekitike and Stefan Bajcetic. Arne Slot addressed team strategies and denied any rift with Richard Hughes, emphasizing aligned decisions. Dominik Szoboszlai commented on not being responsible for fixing team issues, noting every player has ideas. Transfer rumors include interest in players such as Marc Guehi and Federico Chiesa, with updates on potential signings. The article also covers Arsenal's tactical focus on key battles and Liverpool's overall news roundup. [https://www.thisisanfield.com/]
+Key Quotes: "I’d use different words" - Arne Slot | "Not my job to say how to fix Liverpool – every player has an idea" - Dominik Szoboszlai
+
+- Liverpool FC — Homepage: Liverpool FC expressed support for former player Kevin Keegan following his cancer diagnosis. The team is monitoring injuries ahead of their Premier League match against Arsenal, with updates on players like Hugo Ekitike and Kai Havertz. Hugo Ekitike was voted player of the month for December, highlighting his contributions. Liverpool Women completed a loan signing of goalkeeper Jennifer Falk to aid their season. Arne Slot discussed team preparations in a press conference, emphasizing the challenges ahead. [https://www.liverpoolfc.com/]
+Key Quotes: "A proper fight" - Arne Slot
+
+- Liverpool FC - Latest news, transfers, fixtures, match reports - Liverpool Echo: Liverpool legend Kevin Keegan announced his cancer diagnosis, receiving support from the club and fans. Dominik Szoboszlai addressed Mohamed Salah's outburst over being dropped and the team's need to regain identity. Arne Slot provided fitness updates for Hugo Ekitike and discussed potential transfers, including interest in Marc Guehi. The article covers match reactions, such as Virgil van Dijk's call for a strong performance against Arsenal, and transfer speculations involving players like Antoine Semenyo. Ongoing discussions include contract situations and team tactics under Arne Slot. [https://www.liverpoolecho.co.uk/all-about/liverpool-fc]
+Key Quotes: "Not nice" - Dominik Szoboszlai | "A big fight" - Virgil van Dijk
+
+- Liverpool FC news, transfer rumours, Anfield updates & LFC videos: Liverpool FC news includes a preview of the Arsenal match with predicted lineups and injury updates. Arne Slot denied rumors of a rift with Richard Hughes and explained his reluctance to discuss Harvey Elliott publicly. Dominik Szoboszlai shared thoughts on team fixes, emphasizing individual player ideas. Transfer news covers interests in players like Marc Guehi and Talla Ndiaye, with updates on loan recalls and signings. The article also features Mohamed Salah's performance in the Africa Cup of Nations and other team developments. [https://www.thisisanfield.com/liverpool-fc-news/]
+Key Quotes: "I’d use different words" - Arne Slot | "Not my job to say how to fix Liverpool – every player has an idea" - Dominik Szoboszlai
+
+- Liverpool FC News | Liverpool Transfer News | Breaking News: Four Liverpool players were nominated for the EA SPORTS FC Team of the Year, highlighting their strong performances. Arne Slot was warned about potential transfer u-turns and bids for new players. Reports indicate Liverpool's interest in various targets, including a winger with an £87 million price tag, amid ongoing transfer talks. Cody Gakpo discussed his role and aspirations in the Premier League, while injury updates and match facts were provided for the Arsenal game. The article aggregates news from multiple sources on Liverpool's activities. [https://www.newsnow.com/us/Sports/Soccer/Premier+League/Liverpool]
+Key Quotes: "In their hands…" - Fabrizio Romano
+
+- Liverpool transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts: The article provides live updates on Liverpool's transfer activities, including rumors and gossip on potential deals. It covers signings, loans, and contract news, with a focus on the January transfer window. Specific details are limited due to the blog being unavailable in the content, but it mentions general interests in players and team strategies. Liverpool's approach to transfers is discussed in the context of squad depth and injuries. The piece emphasizes the fluid nature of transfer news and its impact on the team's performance. [https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts]
+
+- Transfer news LIVE: Solskjaer to Man Utd close, Liverpool defender boost, Semenyo medical latest: Ole Gunnar Solskjaer is in advanced talks for a caretaker role at Manchester United, with implications for former connections. Liverpool are content with their squad and unlikely to pursue defender Marc Guehi, despite interest from other clubs. Antoine Semenyo is set to undergo a medical for Manchester City ahead of a potential £65 million transfer. The article covers various transfer updates, including player injuries and contract situations across multiple teams. Liverpool's transfer stance remains cautious, focusing on current roster strength. [https://www.mirror.co.uk/sport/football/transfer-news-live-man-utd-36497031]
+
+---
+
+TOPIC: US Politics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Kai Trump Expresses Desire to Stay Out of Politics",
+      "summary": "Kai Trump, granddaughter of President Donald Trump, appeared on Logan Paul's YouTube podcast where she discussed her personal life, including dating and her relationship with Barron Trump, and stated she wants to stay out of politics while considering her future options.",
+      "sources": [
+        {
+          "url": "https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/",
+          "published": "2026-01-07T21:28:22+00:00",
+          "title": "Kai Trump wants to 'stay out of politics.' Who is she?"
+        }
+      ]
+    }
+  ]
+}
+
+SUPPORTING ARTICLES (7):
+- Politics News | Breaking Political News, Video & Analysis-ABC News: ABC News covers breaking political news, including Trump's demand for Venezuela to expel China and Russia and partner with the US on oil. A White House official stated that military action is always an option for acquiring Greenland. Energy Secretary Wright detailed plans for US control of Venezuelan oil, allowing it to flow and sending proceeds back to Venezuela. The article also reports on the Trump administration's attempt to rewrite the history of the January 6 Capitol attack, accusing police of escalating tensions. Additionally, it includes stories on a judge ordering the DOJ to explain a US attorney title issue and the death of Michael Reagan, son of former President Ronald Reagan. Other topics involve DOJ dropping assault charges and various political videos and analyses. [https://abcnews.go.com/Politics]
+Key Quotes: "Military 'always an option' for Trump to acquire Greenland" - White House official | "The U.S. will let Venezuela's oil 'flow' and send proceeds back." - Energy Secretary Wright | "get impeached" - President Trump
+
+- Politics: Latest & Breaking US Political News | AP News: AP News reports on US political developments, including Trump's former Russia adviser claiming Russia offered US free rein in Venezuela in exchange for Ukraine. Senator Marco Rubio plans to meet Danish officials to discuss US interest in Greenland, amid ongoing tensions. Iran threatens preemptive attacks following Trump's comments, and the US seeks to assert control over Venezuelan oil through tanker seizures. The coverage also includes immigration issues, such as a Texas congresswoman advocating for legal status for migrant workers and an ICE officer killing a driver in Minnesota. Additionally, it features sections on elections, Supreme Court, and other political topics with associated newsletters and quizzes. [https://apnews.com/politics]
+Key Quotes: "Russia offered US free rein in Venezuela in exchange for Ukraine" - Trump's former Russia adviser | "US to get 30 million to 50 million barrels of oil from Venezuela at market price" - President Trump | "Iran army chief threatens preemptive attack over 'rhetoric' targeting country" - Iran army chief
+
+- US politics | The Guardian: The Guardian reports on US political news, including Trump's plan to crack down on defense firms over executive pay and stock buybacks while raising the military budget to $1.5 trillion. It covers a fatal shooting of a woman in Minnesota by an ICE agent, with Minnesota Democrats demanding the agency leave the state. The article discusses US actions against Venezuela, such as seizing oil tankers and capturing President Maduro, amid international fallout. Opinion pieces analyze Trump's doctrine as exposing the US as a mafia state and strategies for Democrats to regain the White House in 2028. Additional stories include celebrations and protests related to Venezuela and updates on various political events. [https://www.cnn.com/politics]
+Key Quotes: "She was the brains, Maduro was the brawn" - Source not specified in article | "Soy inocente" - Nicolás Maduro | "Retribution is what we seek" - Enrique Tarrio
+
+- President Expects Impeachment if G.O.P. Falters in Midterm Elections: The New York Times reports that President Trump warned House Republicans they must retain control in the midterm elections or he will face impeachment, emphasizing the need to promote administration policies. On the fifth anniversary of the January 6 Capitol riot, Trump again questioned election integrity, and his administration attempted to rewrite the event's history by blaming police provocation. Pardoned rioters rallied in Washington, demanding further action from Trump, including financial restitution and prison reform. The article also covers escalated immigration enforcement targeting Somali immigrants in Minnesota and legal challenges to revoking Temporary Protected Status for Haitians. Additionally, it details the capture of Venezuelan President Maduro and US efforts to control Venezuelan oil resources. [https://www.theguardian.com/us-news/us-politics]
+Key Quotes: "They’ll find a reason to impeach me. I’ll get impeached." - President Trump | "Retribution is what we seek" - Enrique Tarrio | "Without accountability, there is no justice" - Enrique Tarrio
+
+---
+
+TOPIC: Austin TX Local News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Deputy Shot and Killed at Austin Nightclub",
+      "summary": "An off-duty deputy was shot and killed while working security at Club Rodeo in Austin. One suspect has been apprehended, and the Austin Police Department is investigating the incident.",
+      "sources": [
+        {
+          "url": "https://www.foxnews.com/us/off-duty-deputy-shot-killed-while-working-security-job-texas-suspect-apprehended",
+          "published": "3 days ago"
+        }
+      ]
+    },
+    {
+      "title": "Fatal Pedestrian Accident on I-35 in North Austin",
+      "summary": "All lanes of Interstate 35 near the US-290 interchange reopened after a fatal accident involving a pedestrian. The Austin Police Department responded to the scene.",
+      "sources": [
+        {
+          "url": "https://cbsaustin.com/news/local/i-35-in-north-austin-reopens-after-fatal-pedestrian-accident-near-us-290",
+          "published": "2 days ago"
+        }
+      ]
+    },
+    {
+      "title"
+
+SUPPORTING ARTICLES (7):
+- FOX 7 Austin | Local News, Weather, and Live Streams | KTBC: FOX 7 Austin is a local news outlet providing comprehensive coverage of Austin, Texas, including weather, traffic, and live streams. Recent stories highlight an ICE shooting in Minneapolis with conflicting eyewitness accounts and self-defense claims. Local issues covered include social media threats to Austin ISD schools, arrests for harassment in Kyle, and a former teacher's guilty plea for AI-generated explicit images. The site also reports on national news with Texas connections, such as the Uvalde school shooting trial and warnings about unmarked seed packets. Additionally, it features community events, politics, and sports updates. [https://www.fox7austin.com/]
+Key Quotes: "Kristi Noem calls actions leading up to ICE shooting ‘an act of domestic terrorism’" - Kristi Noem | "Minneapolis Mayor: ICE shooting self-defense is ‘bullshit’; officials will ‘seek justice’" - Minneapolis Mayor | "Gov. Tim Walz on fatal ICE shooting: ‘I ask folks to remain calm’" - Gov. Tim Walz
+
+- The Texas Tribune: The Texas Tribune is a nonpartisan news organization focusing on Texas politics, policy, and issues affecting Texans, including education, health, immigration, and criminal justice. It provides in-depth reporting on topics like Trump's plan to fix Venezuela's oil industry and the Uvalde school shooting trial. The site offers data-driven tools, such as salary explorers and election directories, to inform the public. Recent coverage includes lawsuits against state education agencies and updates on migrant policies along the Rio Grande. It emphasizes independent journalism and encourages reader engagement through newsletters and events. [https://www.kxan.com]
+Key Quotes: "Trump says the U.S. will fix Venezuela’s oil industry." - Donald Trump | "Officer did nothing until it was too late during Uvalde school shooting, prosecutor says" - Prosecutor
+
+- Home • The Austin Chronicle: The Austin Chronicle is an independent alternative newsweekly covering Austin's arts, culture, music, food, and local events. It features sections on news, music reviews, film critiques, and community issues, with a focus on supporting local businesses and free press. Recent articles discuss changes to Texas eviction processes, a blocked age verification law for app stores, and highlights from the local music scene. The publication also promotes events like the Austin Music Poll and provides guides for day trips and queer community activities. It emphasizes Austin's vibrant cultural landscape and encourages reader participation. [https://www.texastribune.org/]
+
+- News | AustinTexas.gov: The City of Austin's news page delivers updates on municipal services, public safety, and community initiatives in Austin, Texas. Recent announcements include traffic fatalities, arrests, and the appointment of a new Director of Austin Animal Services. It covers events like cold weather shelter activations and summer camp registrations, aimed at supporting residents during emergencies and recreational activities. The site also provides information on city programs, such as small business support and public health measures. Overall, it serves as a key resource for Austinites to stay informed about local government actions and community developments. [https://www.austinchronicle.com/]
+
+- News | FOX 7 Austin: FOX 7 Austin provides local and breaking news for Central Texas, focusing on areas like Austin, Round Rock, and San Marcos. Recent coverage includes stories on ICE custody issues in Texas communities, arrests for harassment, and updates on the Uvalde school shooting trial. The site also reports on national news with local relevance, such as the Minneapolis ICE shooting, and features weather forecasts, sports, and consumer advice. Community topics like school threats and political developments are highlighted, with an emphasis on live streams and interactive content. [https://www.austintexas.gov/department/communications/news]
+Key Quotes: "Kristi Noem calls actions leading up to ICE shooting ‘an act of domestic terrorism’" - Kristi Noem | "Minneapolis Mayor: ICE shooting self-defense is ‘bullshit’; officials will ‘seek justice’" - Minneapolis Mayor
+
+---
+
+TOPIC: Upcoming Events in Austin TX
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Check out these 6 Austin area events Jan. 9-11",
+      "summary": "Community Impact highlights six upcoming events in the Austin area scheduled for January 9-11, including local activities such as markets, performances, and community gatherings to attend this weekend.",
+      "sources": [
+        "https://communityimpact.com/austin/georgetown/business/2026/01/07/check-out-these-6-austin-area-events-jan-9-11 - Published 13 hours ago"
+      ]
+    }
+  ]
+}
+
+SUPPORTING ARTICLES (7):
+- The Texas Tribune: The Texas Tribune covers Texas politics and policy issues, including a sneak peek at a new state park ahead of its planned 2026 opening. It discusses various state-wide developments such as elections, criminal justice, and education policies. The article highlights upcoming political events like the 2026 primary ballot and state government initiatives. No specific events in Austin are detailed, focusing instead on broader Texas topics. The content is dated from January 2026 and includes multiple news stories. [https://www.texastribune.org/]
+
+- News | AustinTexas.gov: The City of Austin announces several upcoming events, including summer camp registration for 2026, Austin’s Small Business Fundamentals Week, and a community open house at East Riverside for engagement and opportunity discussions. It also covers the finalization of historic agreements for Austin-Bergstrom International Airport expansion and the launch of a Spanish-language 3-1-1 mobile app. Public safety updates feature traffic fatalities and criminal investigations, emphasizing community services. The news page highlights city initiatives aimed at improving resident experiences and safety. [https://www.kxan.com]
+
+- Home • The Austin Chronicle: The Austin Chronicle features a roundup of January 2026 events in Austin, including day trips, live music, and cultural gatherings. It encourages participation in the Austin Music Poll voting and covers arts, film, and community events. The publication discusses local happenings like film festivals and music performances, promoting Austin's vibrant scene. It also includes calendars for food, drink, and queer events, fostering engagement with the city's cultural offerings. [https://www.austintexas.gov/department/communications/news]
+
+---
+
+TOPIC: AI News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Newsrooms Pushing Deeper Into AI After a Rocky Year",
+      "summary": "Media organizations are increasingly integrating AI into newsrooms to enhance operations while addressing trust concerns, as explained by experts from outlets like The New York Times.",
+      "sources": [
+        "https://thewrap.com/media-platforms/journalism/ai-in-newsrooms-2026"
+      ]
+    },
+    {
+      "title": "Google Engineer Stunned by AI Coding Tool's Efficiency",
+      "summary": "A Google engineer expressed amazement after an AI coding tool completed in one hour what her team had spent a year developing, encouraging others to test such tools in their expertise areas.",
+      "sources": [
+        "https://indianexpress.com/article/trending/trending-globally/google-engineer-stunned-after-ai-coding-tool-builds-in-1-hour-what-her-team-spent-a-year-on-10454772"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Reshaping the Global Energy Market",
+      "summa
+
+SUPPORTING ARTICLES (7):
+- AI News | Latest News | Insights Powering AI-Driven Business Growth: AI News is a publication under TechForge that focuses on delivering updates in artificial intelligence, machine learning, and related technologies. It covers a wide range of categories, including AI applications in industries like finance, healthcare, and marketing, as well as topics such as AI business strategies and market trends. The site features recent stories on advancements like agentic AI scaling and AI-powered productivity tools. It also includes resources like webinars and events to support AI-driven business growth. AI News emphasizes emerging tech and its global impact, providing insights for professionals in the field. [https://www.artificialintelligence-news.com/]
+
+- Musk's AI chatbot faces global backlash over sexualized images of women and children: Elon Musk's AI chatbot Grok, developed by xAI, is facing significant criticism for generating sexualized images of women and children without consent, raising ethical concerns about AI misuse. The backlash highlights broader issues of AI facilitating abuse and misinformation, with global attention drawn to the need for better regulations. The article is part of AP News coverage that also touches on other topics like US military actions, but the focus remains on the AI controversy. Experts and organizations have expressed alarm over the potential societal harms of such technology. [https://www.reuters.com/technology/artificial-intelligence/]
+
+- Is That Video Real? 7 Telltale Signs It's an AI Deepfake: The article provides practical advice on identifying AI-generated deepfake videos, listing seven key indicators such as watermarks, audio syncing issues, and text distortions. It explains how advancements in AI models like Sora and Veo have made creating realistic fakes easier and more accessible. The piece emphasizes that while no detection method is infallible, combining multiple signs can improve accuracy in spotting deceptive content. It also discusses the role of AI detection tools and the importance of critical thinking in an era of digital misinformation. [https://apnews.com/article/grok-x-musk-ai-nudification-abuse-2021bbdb508d080d46e3ae7b8f297d36]
+
+- Misleading AI content spreads in the wake of Maduro’s removal: Following the US military operation that led to the removal of Venezuelan leader Nicolas Maduro, misleading AI-generated videos depicting celebrations circulated widely on social media, amassing millions of views. One such video was shared by Elon Musk on X and later flagged as AI-generated, underscoring the challenges of misinformation during fast-breaking events. The article highlights how AI tools are being exploited to blur fact and fiction, with social media platforms struggling to keep up with detection and labeling. It also notes efforts by companies like TikTok and Meta to address AI content, but experts warn that advancements in AI could outpace these measures. [https://www.reuters.com/world/]
+Key Quotes: "This video is AI generated and is currently being presented as a factual statement intended to mislead people." - Community note on X | "All the major platforms will do good work identifying AI content, but they will get worse at it over time as AI gets better at imitating reality." - Adam Mosseri
+
+- After a Rocky Year, Newsrooms Push Deeper Into AI: News organizations are increasingly integrating AI to enhance efficiency in tasks like data analysis and content generation, despite ethical concerns and past errors. Publications such as the New York Times and Business Insider are using AI for research and automation, while maintaining human oversight to preserve journalistic integrity. The article discusses challenges including staff resistance and public skepticism, with examples of missteps at outlets like the Washington Post. It emphasizes the need for strict guidelines and evaluation processes to balance AI benefits with trust in media. [https://www.pcmag.com/explainers/is-that-video-real-7-telltale-signs-its-an-ai-deepfake]
+Key Quotes: "AI means a million things and everyone comes to it with a lot of baggage." - Zach Seward | "It’s their voice, it’s their smarts and their authority." - Jamie Heller
+
+---
+
+TOPIC: Tesla
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Tesla's Holiday Update Includes Undocumented Features",
+      "description": "Tesla's 2025.44 holiday software update features 19 undocumented changes, enhancing user experience in vehicles.",
+      "sources": [
+        "https://www.notateslaapp.com/news/3490/teslas-holiday-update-19-undocumented-features-update-202544"
+      ]
+    },
+    {
+      "title": "Tesla Earnings Preview Indicates Profit Dip",
+      "description": "Analysts expect Tesla's fourth-quarter earnings to show a double-digit profit decline amid upcoming report.",
+      "sources": [
+        "https://www.inkl.com/news/tesla-earnings-preview-what-to-expect"
+      ]
+    },
+    {
+      "title": "Viral Claim About Tesla Influencers Returning Cybertrucks",
+      "description": "A viral tweet alleged that Tesla influencers returned Cybertrucks due to mechanical issues, sparking speculation and investigation into the claim's validity.",
+      "sources": [
+        "https://finance.yahoo.co
+
+SUPPORTING ARTICLES (7):
+- Tesla News, Tips, Rumors, and Reviews: Tesla's diner concept faced criticism from skeptics regarding its viability. The company is positioned to benefit from potential regulatory changes in autonomous vehicle limitations. Elon Musk's xAI secured a $20 billion Series E funding round and confirmed the purchase of natural gas turbines for operational scaling. Tesla's Full Self-Driving (FSD) technology achieved milestones, including a coast-to-coast drive with zero interventions and praise for low hallucination rates in AI studies. Starlink, under SpaceX, reported significant growth with over 9 million active customers and expansions in service coverage. [https://www.teslarati.com/]
+Key Quotes: ""He's 80% super genius and 20% he makes mistakes, but he's a good guy. He's a well-meaning person."" - Elon Musk | ""He gave me a warning and told me to get it fixed."" - Driver
+
+- [Article from www.nasdaq.com]: Content not accessible, summary unavailable. [https://www.nasdaq.com/articles/tesla-just-delivered-very-bad-news-investors]
+
+- Tesla News, Latest Software Updates, Tesla Rumors and Tips: Tesla launched a 2025 holiday software update featuring Grok commands, new Santa mode, and dashcam improvements. The company added features like Apple Wallet car key support and attention required icons for Autosteer. Tesla reported Q4 delivery numbers that narrowly missed expectations, with energy products hitting a record. Updates included FSD v14.2.2.2 with speed profile changes and upgrades to Model Y in China, such as a larger screen and black headliner. The NHTSA opened an investigation into Tesla's emergency door release systems. [https://www.notateslaapp.com/]
+Key Quotes: ""Tesla now sets the default Speed Profile for new vehicles and for those activating FSD for the first time to Sloth Mode."" - Tesla Owner’s Manual | ""After Trial, DHL Commits to the Tesla Semi, Orders 'More Than Just a Handful of Trucks'"" - Article headline or summary
+
+- Tesla Just Delivered Very Bad News for Investors: Tesla reported an 8.5% decline in annual electric vehicle deliveries for 2025, marking the largest drop in company history. The decline was attributed to increased competition from affordable rivals like BYD, leading to lost market share in regions such as Europe and China. Tesla's CEO Elon Musk indicated that mass production of the Cybercab robotaxi is targeted for late 2026, while the Optimus humanoid robot is further out. The company's stock trades at a high price-to-earnings ratio of 292, raising concerns about overvaluation amid short-term financial pressures. Investors are betting on future products like autonomous vehicles and robots, but current EV sales challenges pose risks. [https://www.fool.com/investing/2026/01/06/tesla-just-delivered-very-bad-news-for-investors/]
+Key Quotes: ""Tesla just reported its electric vehicle sales for the fourth quarter of 2025, and they capped off the sharpest annual decline in the company's history."" - Anthony Di Pizio | ""CEO says this is worth 18 Nvidias. Will this make the world’s first trillionaire?"" - Article excerpt
+
+- Tesla's Holiday Update: 19 Undocumented Features (Update 2025.44): Tesla's 2025 holiday software update included 19 undocumented features, such as enhanced dashcam viewer capabilities with zoom and filter options. The update added car wash mode notifications, V4 Supercharger visualizations, and improvements to camera visibility warnings. Users gained access to new wheel options in vehicle customization and better integration for Bluetooth audio switching. The update also introduced Hebrew language support and service mode enhancements for diagnostics. Tesla emphasized user experience improvements, including better navigation and storage management for dashcam footage. [https://www.notateslaapp.com/news/3490/teslas-holiday-update-19-undocumented-features-update-202544]
+Key Quotes: ""Tesla now sets the default Speed Profile for new vehicles and for those activating FSD for the first time to Sloth Mode."" - Tesla Owner’s Manual | ""Sloth: Model Y drives under the speed limit."" - Tesla Owner’s Manual
+
+- Tesla loses title of world's top EV maker to China rival amid customer revolt and stiff competition: Tesla lost its position as the world's top electric vehicle seller to BYD in 2025, with deliveries dropping 8.5% annually. The decline was influenced by customer backlash against Elon Musk's political views, expiration of U.S. tax credits, and intense competition from cheaper Chinese alternatives. BYD reported a 28% increase in global sales, capturing more market share in regions like Europe. Tesla's challenges included regulatory hurdles for its Full Self-Driving technology and shifting consumer preferences amid economic pressures. The company aims to pivot towards future products like robotaxis to regain momentum. [https://apnews.com/article/tesla-sales-musk-trump-deliveries-robotaxi-6d60715babde97b3b1a8e2416f4065ca]
+Key Quotes: ""Tesla lost its crown as the world’s bestselling electric vehicle maker on Friday as a customer revolt over Elon Musk’s right-wing politics, expiring U.S. tax breaks to buyers and stiff overseas competition pushed sales down for a second year in a row."" - AP News article
+
+- Tesla smashes into Granada Hills restaurant at lunchtime: A white Tesla vehicle crashed into the Ali Baba Persian Restaurant in Granada Hills on January 5, 2026, during lunchtime, but no injuries were reported. The car veered off the road, mounted the sidewalk, and smashed through glass windows, causing significant damage to the vehicle and the building. Police and fire services responded to the scene, and no arrests were made, with no confirmed factors like drugs or alcohol involved. The incident highlighted potential safety concerns with Tesla vehicles, though specifics were not detailed. Authorities facilitated insurance exchanges between the driver and the restaurant owner. [https://latimes.com/california/story/2026-01-05/tesla-smashes-into-granada-hills-restaurant]
+
+---
+
+TOPIC: Stock Market
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "JPMorgan Reaches Deal to Take Over Apple Credit Card Program",
+      "summary": "JPMorgan Chase has agreed to take over the Apple credit card program from Goldman Sachs, as reported by sources familiar with the matter. This move could impact the financial services sector and related stock performances.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/",
+          "published": "2026-01-07T21:34:25Z",
+          "publisher": "Reuters"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence Reshaping the Global Energy Market",
+      "summary": "The expansion of AI is causing a surge in electricity demand, leading to increased reliance on fossil fuels for data centers while conflicting with climate goals, affecting energy stocks and market dynamics.",
+      "sources": [
+        {
+          "url": "https://www.theinformation.c
+
+SUPPORTING ARTICLES (7):
+- [Article from www.reuters.com]: The content of this article was not accessible, so no specific stock market information could be extracted. It is from Reuters, a major news agency covering markets. Due to lack of access, details are unavailable. This article could not be summarized based on the provided data. [https://www.reuters.com/markets/us/]
+
+- Latest Stock Market News: The article aggregates various stock market updates, including earnings reports from companies like Richardson Electronics and Kura Sushi, with RELL reporting a 5.7% sales increase and KRUS meeting revenue expectations. It covers market indices such as the S&P 500 and Dow, showing movements influenced by geopolitical events and corporate announcements. Key news includes Trump's threats to defense companies and bans on large investors buying homes, impacting stock prices. Energy and tech stocks gained due to factors like CES events and Venezuela developments, while overall market sentiment remained mixed with a focus on AI and economic risks. [https://finance.yahoo.com/topic/stock-market-news/]
+Key Quotes: "Trump says he will not permit dividends and stock buybacks for defense companies" - Donald Trump
+
+- [Article from www.bloomberg.com]: The content of this article was not accessible, so no specific stock market information could be extracted. It is from Bloomberg, a key source for financial news. Due to lack of access, details are unavailable. This article could not be summarized based on the provided data. [https://www.bloomberg.com/]
+
+- [Article from www.cnn.com]: The content of this article was not accessible, so no specific stock market information could be extracted. It is from CNN, which covers business and markets. Due to lack of access, details are unavailable. This article could not be summarized based on the provided data. [https://www.cnn.com/markets]
+
+- Stock Markets, Business News, Financials, Earnings - CNBC: CNBC provides real-time coverage of stock markets, business news, and financials, including market data and analysis. Key highlights include Nvidia's CEO discussing a billionaire tax, Alphabet surpassing Apple's market cap, and warnings about high market valuations. The article features sector-specific news, such as energy claims against Venezuela and tech advancements in AI. It also addresses geopolitical influences like Trump's policies on Greenland and oil interests, offering insights into current market trends and corporate earnings. [https://www.cnbc.com/]
+Key Quotes: "perfectly fine" - Jensen Huang | "We do need Greenland, absolutely" - Donald Trump
+
+- Stock market news for Jan. 5, 2026: US stocks rose on January 5, 2026, with major indices like the Dow hitting record highs despite geopolitical tensions from the US action in Venezuela. Energy stocks, including Chevron and Exxon Mobil, gained as investors anticipated benefits from rebuilding Venezuela's oil sector. Gold prices surged amid uncertainty, while financial stocks advanced on expectations of a strong US economy. Analysts noted that the events might not cause significant long-term market disruptions, and Trump announced plans for US oil companies to invest in Venezuela. The S&P 500 and Nasdaq also saw gains, reflecting overall market resilience. [https://www.cnbc.com/2026/01/04/stock-market-today-live-updates.html]
+Key Quotes: "We do need Greenland, absolutely" - Donald Trump | "This is a significant geopolitical event though unlikely to be a major near-term market-mover" - Matthew Aks, Evercore ISI
+
+- Stocks Rise With Traders Sanguine on Maduro Ouster: Markets Wrap: US stocks closed higher on Monday, with the Nasdaq 100 and S&P 500 advancing amid the capture of Venezuela's President Nicolas Maduro. Energy companies like Chevron benefited from prospects of a US-led revival in Venezuela's oil industry, while gold prices rose due to geopolitical risks. Bond yields fell after weak US manufacturing data, and tech stocks showed strength with gains in companies like Amazon and Tesla. Analysts indicated that the bullish equity trend remains intact despite potential volatilities. The article highlights market reactions, including increases in bitcoin and overall investor confidence. [https://finance.yahoo.com/news/stocks-bonds-set-jittery-start-204423169.html]
+Key Quotes: "The bullish case for equities remains intact" - Adrian Helfert, Westwood
+
+---
+
+TOPIC: World News
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Minneapolis ICE Shooting Incident",
+      "description": "A video shows an ICE agent firing through a car window during an arrest attempt in Minneapolis, resulting in a woman's death amid a federal immigration raid. Officials cite vehicle ramming as justification, while local leaders demand investigation.",
+      "sources": [
+        "https://www.timesnownews.com/world/us/us-news/minneapolis-ice-shooting-video-agent-seen-firing-through-car-window-during-arrest-attempt-article-153412607"
+      ]
+    },
+    {
+      "title": "Fact-Check on Israeli Judge Benny Sagi's Death",
+      "description": "Israeli Judge Benny Sagi died in a traffic accident on January 4, 2026, with no evidence of foul play. Viral claims linking his death to Prime Minister Netanyahu’s corruption cases are unfounded, as Sagi was not involved in the trial.",
+      "sources": [
+        "https://www.timesnownews.com/world/middle-east/did-israel-judge-benny-sagi-die-in-mystrious-acci
+
+SUPPORTING ARTICLES (7):
+- USA TODAY - Breaking News and Latest News Today: USA Today reports on a range of current events, including a fatal shooting involving ICE agents in Minneapolis during an immigration raid, where a woman was killed and witnesses disputed the official account. The publication covers President Trump's statements on banning Wall Street from buying single-family homes and U.S. oil deals with Venezuela. Other stories include entertainment news, such as potential 'SNL' hosts, and health topics like updated dietary guidelines. It also features sports updates, business trends, and global events like the Venezuela crisis, emphasizing a broad spectrum of news through award-winning journalism. [https://www.reuters.com/world/]
+Key Quotes: "Mayor tells ICE 'get the f--- out of Minneapolis' after shooting" - Mayor Jacob Frey | "Trump says he wants to ban Wall Street from buying homes" - Donald Trump
+
+- U.S. News: Top U.S. News Today | AP News: AP News covers top U.S. stories, including Trump's comments on a Venezuela attack and potential oil acquisitions, with allegations that Russia offered concessions in exchange for Ukraine. Reports detail immigration enforcement issues, such as an ICE officer killing a driver in Minneapolis and calls for legal status for migrant workers. The coverage includes political developments, sports news like coaching changes in the NFL, and health updates on dietary guidelines. Additionally, it addresses oddities, science facts, and international implications, providing comprehensive and factual reporting on current events. [https://www.usatoday.com/]
+Key Quotes: "Russia offered US free rein in Venezuela in exchange for Ukraine" - Trump's former Russia adviser | "President Trump says his voters loved the Venezuela attack" - Donald Trump
+
+- World News: International Headlines, Breaking Reports and Video | NBC News: NBC News provides updates on global events, including U.S. actions in Venezuela such as seizing a Russian-flagged oil tanker and considering military options for Greenland. Coverage includes the war in Ukraine with U.S.-backed security guarantees and developments in Latin America amid Venezuela's leadership changes. Other stories feature conflicts in the Middle East, Europe, and Asia, such as bear attacks in Japan and protests in Iran. The reporting also touches on cultural and lifestyle topics, delivering breaking news and video content from around the world. [https://apnews.com/us-news]
+Key Quotes: "U.S. backs security guarantees for Ukraine for first time" - White House | "U.S. military action an option to acquire Greenland" - White House
+
+- Minneapolis ICE Shooting Video: Agent Seen Firing Through Car Window During Arrest Attempt: A woman was fatally shot by an ICE agent in Minneapolis during a federal immigration raid, with ICE claiming she rammed her vehicle into officers, though witnesses disputed this account. The incident sparked protests, leading to the use of chemical irritants by agents to disperse crowds. Mayor Jacob Frey and Governor Tim Walz demanded that ICE leave the city and called for a transparent local investigation. The victim was identified as Renee Nicole Good, and authorities are reviewing the event amid heightened tensions. Community leaders emphasized the need for accountability in the use of force by federal agents. [https://www.ndtv.com/world-news]
+Key Quotes: "I am aware of a shooting involving an ICE agent at 34th Street & Portland. The presence of federal immigration enforcement agents is causing chaos in our city. We’re demanding ICE to leave the city immediately." - Mayor Jacob Frey | "get the f--- out of Minneapolis" - Mayor Jacob Frey
+
+---
+
+TOPIC: Minneapolis ICE Shooting Incident and Protests
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "ICE Agent Fatally Shoots Woman During Operation in Minneapolis",
+      "summary": "An ICE agent shot and killed a 37-year-old U.S. citizen woman in south Minneapolis during an immigration-related operation. Federal authorities claim the officer fired in self-defense after the woman allegedly attempted to run over agents with her vehicle, while local officials describe her as a legal observer and accuse agents of reckless use of power.",
+      "sources": [
+        "https://www.bbc.com/news/live/c7510l1135wt",
+        "https://www.nbcnews.com/news/us-news/live-blog/minnesota-ice-shooting-live-updates-rcna252852",
+        "https://www.cbsnews.com/minnesota/live-updates/minneapolis-federal-agents-protesters-clash-portland-avenue/",
+        "https://www.mprnews.org/story/2026/01/07/shooting-south-minneapolis-ice-agents-federal-operation"
+      ]
+    },
+    {
+      "title": "Minnesota Governor Prepares National Guard Amid Protests",
+      "summary": "Go
+
+SUPPORTING ARTICLES (7):
+- US immigration officer fatally shoots woman in Minneapolis, officials say - BBC News: A US immigration officer fatally shot a woman in Minneapolis during an immigration enforcement operation, according to DHS, which claimed the woman attempted to run over an officer. Minneapolis Mayor Jacob Frey disputed this account, describing the officer's actions as reckless and demanding ICE agents leave the city. Governor Tim Walz urged peaceful protests and criticized the federal narrative as propaganda. The incident occurred near the site of George Floyd's killing in 2020, sparking immediate protests and political backlash. Videos verified by BBC showed the shooting, and DHS accused the woman of domestic terrorism. Federal and local authorities are investigating the event. [https://www.bbc.com/news/live/c7510l1135wt]
+Key Quotes: "Get out of our city" - Minneapolis Mayor Jacob Frey | "I'm angry" - Minnesota Governor Tim Walz | "Horrible thing to watch" - US President Trump | "We do not need any further help from the federal government" - Minnesota Governor Tim Walz
+
+- Minnesota governor says he is preparing National Guard amid furor over fatal ICE shooting - ABC News: Governor Tim Walz prepared the Minnesota National Guard and urged peaceful protests after an ICE agent fatally shot a 37-year-old woman during immigration operations in Minneapolis. DHS claimed the woman tried to run over officers, labeling it domestic terrorism, but Mayor Jacob Frey disputed this based on video evidence, calling the agent's actions reckless. The victim was described as a US citizen and observer, not a target, and the incident occurred near the George Floyd memorial site. Protests ensued, with Frey demanding ICE leave the city and Walz emphasizing safe demonstrations. The shooting is under investigation by multiple agencies, amid a large-scale ICE deployment in the area. [https://abcnews.go.com/US/ice-related-shooting-occurred-minnesota-governor/story?id=128984401]
+Key Quotes: "We have someone dead in their car for no reason whatsoever" - Minnesota Governor Tim Walz | "This was an agent recklessly using power that resulted in somebody dying" - Minneapolis Mayor Jacob Frey | "The woman driving the car was very disorderly, obstructing and resisting, who then violently, willfully, and viciously ran over the ICE Officer" - US President Trump | "I feel your anger, I am angry" - Minnesota Governor Tim Walz
+
+- Minneapolis ICE shooting live updates: Driver fatally shot by immigration agent: An ICE agent fatally shot a 37-year-old woman in Minneapolis during an immigration operation, with DHS alleging she weaponized her vehicle, but Mayor Jacob Frey claimed video evidence showed otherwise. Governor Tim Walz disputed the federal narrative and urged peaceful protests, activating the State Emergency Operations Center. The incident sparked protests near the George Floyd site, with witnesses describing the event and officials calling for investigations. Secretary Kristi Noem labeled the woman's actions as domestic terrorism, while Senator Amy Klobuchar expressed concern over discrepancies in accounts. The shooting is under review by the FBI and Minnesota BCA, amid heightened tensions from a large ICE deployment. [https://www.nbcnews.com/news/us-news/live-blog/minnesota-ice-shooting-live-updates-rcna252852]
+Key Quotes: "Don't believe this propaganda machine" - Minnesota Governor Tim Walz | "The statements made by DHS officials do not appear to reflect video evidence and on-the-ground accounts" - Senator Amy Klobuchar | "ICE must leave Minnesota immediately" - ACLU of Minnesota | "This administration has shown, yet again, that it does not care about the safety of Minnesotans" - Representative Ilhan Omar
+
+- ICE agent shoots and kills woman in Minneapolis | kare11.com: An ICE agent fatally shot a 37-year-old woman in Minneapolis during a large-scale DHS operation involving over 2,000 agents, with DHS claiming she attempted to ram agents, but witnesses and Mayor Frey disputed this. Frey called the self-defense narrative false and demanded ICE leave, while protests erupted with agents using tear gas and pepper spray. Governor Walz urged calm and announced a press briefing, with Lieutenant Governor Peggy Flanagan condemning the act as violence. The incident occurred amid immigration enforcement actions, and investigations are ongoing by multiple agencies. Witnesses reported the woman was trying to flee when shot, and there were delays in medical response. [https://www.kare11.com/article/news/local/witness-reports-someone-shot-by-ice-agent-in-minneapolis/89-fa99e38b-432e-4918-99a6-421c471f4351]
+Key Quotes: "This 'it was done in self-defense' is garbage" - Minneapolis Mayor Jacob Frey | "ICE has committed an unspeakable act of violence today" - Lieutenant Governor Peggy Flanagan | "The presence of federal immigration enforcement agents is causing chaos in our city" - Minneapolis Mayor Jacob Frey
+
+- ICE officer fatally shoots woman in Minneapolis; Gov. Walz demands investigation: An ICE officer fatally shot a 37-year-old US citizen woman in Minneapolis, with DHS claiming she attempted to run over agents in an act of domestic terrorism, but Mayor Frey and witnesses contradicted this based on video evidence. Governor Walz activated the State Emergency Operations Center, disputed the federal narrative, and urged peaceful protests while preparing the National Guard. The victim was identified as a legal observer not targeted by law enforcement, and the incident sparked clashes with protesters. Frey demanded ICE leave, and investigations are being conducted by the FBI and Minnesota BCA. The event occurred near the George Floyd site, heightening community tensions. [https://www.cbsnews.com/minnesota/live-updates/minneapolis-federal-agents-protesters-clash-portland-avenue/]
+Key Quotes: "This was an agent recklessly using power that resulted in somebody dying" - Minneapolis Mayor Jacob Frey | "Don't believe this propaganda machine" - Minnesota Governor Tim Walz | "We do not need any further help from the federal government" - Minnesota Governor Tim Walz | "Donald Trump's decision to send thousands of armed ICE agents to Minnesota is causing serious harm and spreading terror" - Minnesota Attorney General Keith Ellison
+
+- [Article from www.mprnews.org]: Content not accessible for this article. [https://www.mprnews.org/story/2026/01/07/shooting-south-minneapolis-ice-agents-federal-operation]
+
+- LIVE UPDATES: ICE shooting in Minneapolis leaves woman dead | FOX 9 Minneapolis-St. Paul: An ICE agent fatally shot a 37-year-old woman in Minneapolis during immigration operations, with DHS claiming she tried to run over officers, but witnesses and video suggested she was attempting to flee. Mayor Frey called the self-defense argument false and demanded ICE leave, while Governor Walz urged calm and activated emergency measures. Protests led to clashes, with agents using irritants, and President Trump defended the officer's actions online. The incident occurred amid a massive ICE deployment, and investigations are underway. Witnesses reported delays in medical aid, and community leaders criticized the federal response. [https://www.fox9.com/news/police-swarm-scene-federal-law-enforcement-shooting-minneapolis]
+Key Quotes: "This 'it was done in self-defense' is bullshit" - Minneapolis Mayor Jacob Frey | "We can’t give them what they want" - Minnesota Governor Tim Walz | "The woman driving the car was very disorderly, obstructing and resisting, who then violently, willfully, and viciously ran over the ICE Officer" - US President Trump | "It was an act of domestic terrorism" - Homeland Security Secretary Kristi Noem
+
+---
+
+TOPIC: European Football Matches and Transfers
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Fulham Secures 2-1 Victory Over Chelsea in Premier League Match",
+      "summary": "Fulham defeated Chelsea 2-1 at Craven Cottage, with key moments including a red card to Chelsea's Marc Cucurella and goals from Fulham's players, impacting Chelsea's position in the league standings.",
+      "citations": [
+        "https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/"
+      ]
+    },
+    {
+      "title": "Manchester City Draws 1-1 with Brighton in Premier League",
+      "summary": "Manchester City drew 1-1 against Brighton, marking their third consecutive draw and raising questions about their control in matches and the performance of young center-backs.",
+      "citations": [
+        "https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/"
+      ]
+    },
+    {
+      "title": "Marcus Rashford Likely to Return to Manchester United Following Ruben Amorim's Exit",
+      "summ
+
+SUPPORTING ARTICLES (7):
+- Soccer Transfer News and Rumors - ESPN: ESPN covers the latest soccer transfer rumors, including Arsenal's interest in signing RB Leipzig winger Yan Diomande for a potential €100 million deal. Manchester United is planning face-to-face meetings with former coaches Ole Gunnar Solskjaer and Michael Carrick for an interim role. Barcelona is in talks for a loan deal involving João Cancelo, while Antoine Semenyo is linked with a move to Manchester City. The article also discusses Crystal Palace's Marc Guéhi as a target for Manchester City and Chelsea's long-term contract with Liam Rosenior. Other updates include confirmed transfers like 'Taty' to West Ham and Inter Miami signing a defender from Palmeiras. [https://www.espn.com/soccer/transfers-news-and-features/]
+
+- Football transfers, rumours, market values and news | Transfermarkt: Transfermarkt provides comprehensive updates on football transfers, rumors, and market values, featuring an exclusive interview with RB Leipzig's Yan Diomande. It reports on Matteo Guendouzi nearing a move to Fenerbahce, potentially becoming their second-most valuable signing, and Damion Downs joining Hamburg on loan from Southampton. The site analyzes transfer needs for major clubs like Liverpool and highlights statistics such as clubs receiving the most penalties in 2025, including Galatasaray and Real Madrid. It also covers live transfer news, such as Antoine Semenyo's agreed move to Manchester City, and includes tools for tracking groundhopping and betting. [https://www.transfermarkt.com/]
+Key Quotes: "I want to play like Vinicius" - Yan Diomande
+
+- Transfer Centre LIVE! Football transfer news, updates and rumours: The Sky Sports Transfer Centre live blog is currently unavailable, preventing access to real-time football transfer news and updates. Users are advised to try again later for the latest gossip and rumors. No specific transfer details or match information are provided in the available content. This temporary issue affects coverage of European football transfers and related topics. [https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours]
+
+- Football Transfer News & Confirmed Deals - BBC Sport: BBC Sport lists confirmed transfers across various leagues, including Arnold Kalimuendo joining Eintracht Frankfurt from Nottingham Forest. Liverpool has signed a goalkeeper noted for saving penalties for England, and Coventry City secured a loan deal for Crystal Palace forward Romain Esse. Other deals involve Southampton's Damion Downs moving to Hamburg on loan and Crystal Palace considering a sale of Marc Guehi at the right price. The article also covers additional transfers in the EFL and Women's Super League, with attributions to specific clubs and timelines. [https://www.bbc.com/sport/football/transfers]
+
+- EFL transfer news, rumours and gossip for Championship, League One and League Two: The Sky Sports EFL transfer news live blog is currently unavailable, blocking access to rumors and gossip for the Championship, League One, and League Two. Users are recommended to attempt access later for updates on English football league transfers. No specific details on matches or transfers are available in the provided content. This unavailability impacts coverage of European football-related transfer activities in the lower English divisions. [https://www.skysports.com/football/live-blog/11095/13163353/efl-transfer-news-rumours-and-gossip-for-championship-league-one-and-league-two]
+
+- Football gossip: Rashford, Chiesa, Mainoo, Leweling - BBC Sport: The article discusses potential transfer scenarios, including Marcus Rashford possibly returning to Manchester United after his loan at Barcelona following Ruben Amorim's sacking. Juventus has initiated talks for a loan move to re-sign Federico Chiesa from Liverpool, with Chiesa open to the idea. Bournemouth's bid for Jamie Leweling was rejected by Stuttgart amid links to Antoine Semenyo's potential move to Manchester City. It also covers Manchester United's interest in Oliver Glasner as a replacement for Amorim and other rumors involving players like João Cancelo and Jorgen Strand Larsen. [https://bbc.com/sport/football/articles/c70l894lpx1o]
+Key Quotes: "Marcus Rashford might have a route back to Manchester United" - Mirror
+
+- Transfers News, page 1 | Goal.com US: Goal.com reports on transfer news, including Mario Balotelli set to join Al-Ittifaq as a free agent. Chelsea is pursuing deals for players like Vini Jr. and Mike Maignan, with Maignan likely to sign a new contract at AC Milan. The article lists completed transfers for clubs such as Chelsea, Celtic, and Barcelona, and discusses Manchester United's blocked targets under Ruben Amorim. It also covers rumors involving Harry Kane potentially moving to Barcelona and Marc Guehi being targeted by Manchester City, along with updates on loan deals and player statements. [https://www.goal.com/en-us/category/transfers/1/k94w8e1yy9ch14mllpf4srnks]
+Key Quotes: "I believe he will" - Jose Mourinho
+
+---
+
+TOPIC: AI and Energy Market Dynamics
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "How Artificial Intelligence is Reshaping the Global Energy Market",
+      "summary": "The rapid expansion of artificial intelligence is driving an unprecedented surge in electricity consumption, creating a conflict between immediate climate goals and the industry’s growth. While tech companies are currently increasing their reliance on fossil fuels to power new data centers, the long-term outlook includes potential shifts toward sustainable energy sources.",
+      "citations": [
+        "https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market"
+      ]
+    }
+  ]
+}
+
+SUPPORTING ARTICLES (7):
+- ‘Just an unbelievable amount of pollution’: how big a threat is AI to the climate?: AI datacenters are contributing to significant pollution and energy consumption, with examples like xAI's Colossus facility emitting high levels of methane. Experts are concerned that the rapid growth of datacenters could increase reliance on fossil fuels and hinder climate goals. However, AI has potential benefits, such as optimizing energy use in sectors like power grids and renewable energy management, which could lead to net carbon savings. Studies from the IEA and others highlight uncertainties, including rebound effects where efficiency gains lead to increased consumption. Regionally, areas like Ireland and the US are experiencing strains on electricity grids due to datacenter expansion. [https://www.theguardian.com/technology/2026/jan/03/just-an-unbelievable-amount-of-pollution-how-big-a-threat-is-ai-to-the-climate]
+Key Quotes: "Just an unbelievable amount of pollution." - Sharon Wilson | "It’s a horrible, horrible waste." - Sharon Wilson | "Beautiful, clean coal will be essential to … winning the AI race." - Chris Wright | "Artificial intelligence is, ultimately, within the industry, going to be the next fracking boom." - Mike Sommers
+
+- AI in Energy and Power Global Opportunities and Strategy: The global AI in energy and power market is projected to grow from $5.23 billion in 2024 to $40.68 billion by 2034, driven by digital transformation and a focus on energy efficiency. Key opportunities include machine learning for demand forecasting and optimization in smart grids, with Asia Pacific expected to lead regional growth. The market is segmented by technology, application, and end-user, with commercial and industrial sectors dominating. Challenges such as high implementation costs and interoperability issues may hinder progress, but trends like predictive maintenance and renewable energy management are anticipated to fuel expansion. Companies are advised to invest in AI integration for enhanced operational capabilities. [https://www.globenewswire.com/news-release/2026/01/06/3213866/28124/en/AI-in-Energy-and-Power-Global-Opportunities-and-Strategy-Report-2025-Market-to-Surpass-40-Billion-by-2034-Driven-by-Enhancing-Efficiency-and-Optimization-Especially-in-ML-and-Deman.html]
+
+- Progress Despite Fragmentation: The Energy Transition to 2030: The energy transition is progressing despite geopolitical fragmentation, with differing priorities in major economies like the US, China, and Europe influencing AI and energy demands. Renewable energy installations are expected to reach 4.5 terawatts globally by 2030, driven by cost advantages and increasing power needs from AI and electric vehicles. EV sales are rising, with China leading and oil demand potentially peaking by 2032. Policy challenges, such as mixed NDCs and trade tensions, persist, but advancements in energy storage and clean technologies continue. The article emphasizes that economic drivers will sustain progress in decarbonization efforts. [https://www.axios.com/2026/01/06/energy-trends-2026-electricity-prices-ai-oil-climate]
+Key Quotes: "The over-arching narrative for low-carbon transition had shifted from one of opportunity to one of competition." - Albert Cheung | "We expect this milestone to accelerate both investor interest and government support globally." - Jeremy O’Brien
+
+- Artificial Intelligence (AI) in Energy Storage Solution: The AI energy storage market is forecasted to expand from $7.74 billion in 2024 to $14.68 billion by 2029, propelled by renewable energy integration and grid stability enhancements. Trends include AI-driven predictive energy management and innovations in battery technologies, with companies like Tesla advancing large-scale systems. The market is segmented by technology types such as battery energy storage and hydrogen storage, and applications like peak shaving and load shifting. North America leads current market share, while Asia-Pacific is expected to grow rapidly, driven by demand for reliable energy solutions. Opportunities arise from electric vehicle support and smart grid deployments, despite challenges like trade frictions. [https://about.bnef.com/insights/clean-energy/progress-despite-fragmentation-the-energy-transition-to-2030/]
+
+- 10 big energy stories Canary Media is tracking in 2026: Canary Media identifies key energy trends for 2026, including the disconnect between negative climate perceptions and ongoing clean energy progress. Topics cover the rise of virtual power plants to address grid demands, advancements in geothermal and nuclear energy, and regional developments like wind energy in New England. The list highlights policy shifts, such as challenges in Ohio's clean energy landscape, and the financial benefits of electric buildings. It also addresses the AI boom's impact on energy storage and the need for affordable, sustainable solutions amid rising costs. Overall, the focus is on how technological and regional dynamics will shape the clean energy transition. [https://www.reuters.com/world/china/china-reviews-metas-purchase-ai-startup-manus-ft-reports-2026-01-07/]
+Key Quotes: "A powerful signal that next-generation geothermal is moving from promise to commercial reality." - Jeremy O’Brien
+
+---
+
+TOPIC: International Political Tensions Involving Venezuela and Iran
+
+LIVE SEARCH SUMMARY:
+{
+  "stories": [
+    {
+      "title": "Iran Draws Parallels Between US Actions in Venezuela and Potential Threats to Itself",
+      "summary": "Amid ongoing protests in Iran over economic crises, Iranian officials and citizens are viewing the US raid on Venezuela and capture of Nicolás Maduro as a potential model for US intervention in Iran, heightening tensions and fears of escalation.",
+      "sources": [
+        "https://www.cnn.com/2026/01/07/world/venezuela-iran-parallel-trump-latam-intl",
+        "https://abcnews.go.com/International/wireStory/protest-hit-iran-warily-watches-us-after-raid-128970865"
+      ]
+    },
+    {
+      "title": "US Military Operation in Venezuela Stokes Fears of Conflict with Iran",
+      "summary": "The US capture of Maduro in Venezuela is seen as emboldening potential military actions against Iran, with experts noting increased momentum for US-Iran conflict amid Iran's internal protests and weakened alliances.",
+      "sources": [
+        "https://abcnew
+
+SUPPORTING ARTICLES (7):
+- Venezuela’s New Leader Softens Tone as Trump Threatens Colombia: US military forces captured Venezuelan President Nicolás Maduro in a raid and transported him to New York for trial on drug trafficking charges. Acting President Delcy Rodríguez initially condemned the US action but later advocated for dialogue and cooperation in a statement. Trump asserted that the US is in charge of Venezuela and threatened military action against countries like Colombia, citing drug trafficking issues. Casualties from the operation included Venezuelan and Cuban personnel, with Cuba reporting 32 deaths. Trump also discussed potential US actions against other nations, including Iran, amid broader international tensions. [https://www.chathamhouse.org/2026/01/us-attacks-venezuela-and-maduro-captured-early-analysis-chatham-house-experts]
+Key Quotes: "Our people and our region deserve peace and dialogue, not war." - Delcy Rodríguez | "We’re in charge." - Donald Trump | "It sounds good to me." - Donald Trump
+
+- Venezuela latest: Trump says 'many' Cuban soldiers killed in Caracas raid but calls operation 'brilliant': US President Donald Trump described the military operation in Venezuela that captured Maduro as 'brilliant' and acknowledged significant Cuban casualties. Venezuelan and Cuban officials reported deaths, with Venezuela mourning its soldiers and Cuba confirming 32 killed. Acting President Delcy Rodríguez was sworn in and shifted towards calling for dialogue despite initial defiance. International reactions included US threats extending to other countries, and protests in Venezuela highlighted ongoing tensions. The operation involved US special forces and led to Maduro's detention in the US. [https://www.nytimes.com/live/2026/01/04/world/trump-us-venezuela-maduro]
+Key Quotes: "many, many Cubans were killed" - Donald Trump | "loyal always, traitors never" - Venezuelan security forces
+
+- Trump warns Venezuela to cooperate or risk new U.S. military attack: US President Donald Trump warned Venezuela's acting leadership to cooperate or face further military action following the capture of Maduro. US officials revealed prior discussions with Venezuelan figures and plans for American oil companies to engage in Venezuela's energy sector. Casualties from the raid included Venezuelan and Cuban personnel, and Trump announced Venezuela would turn over oil to the US. International reactions involved concerns from allies, with reports of arrests in Venezuela for supporting the operation. The event highlighted ongoing US-Venezuela tensions and potential broader implications. [https://www.bbc.com/news/live/cwy1x9vwn3dt]
+Key Quotes: "We’re going to have to do something." - Donald Trump | "If such aggression were to occur, the military must defend the national territory." - Rosa Villavicencio
+
+- Trump’s abduction of Maduro escalates concerns over potential war with Iran: US military action in Venezuela has heightened fears of similar operations against Iran, according to experts. Trump and Israeli officials have issued threats against Iran, linking the Venezuela raid to potential conflicts. Iranian leaders condemned the US operation and emphasized defiance, amid concerns over nuclear development and loss of regional allies. The fall of Maduro could weaken Iran's alliances, with US warnings including possible military strikes on Iran. Protests in Iran are occurring against a backdrop of economic strain and US threats. [https://www.nbcnews.com/world/venezuela/live-blog/live-updates-trump-venezuela-maduro-rodriguez-attack-greenland-ukraine-rcna252515]
+Key Quotes: "The regime in Iran should pay close attention to what is happening in Venezuela." - Yair Lapid | "We will not give in to the enemy." - Ali Khamenei | "When he tells you that he’s going to do something, when he tells you he’s going to address a problem, he means it." - Marco Rubio
+
+- Protests shake Iran at its weakest point in years: Protests in Iran are driven by economic hardships, including high inflation and currency devaluation, amid US sanctions. US President Trump issued warnings to Iran over protester treatment, referencing the recent Venezuela operation. Iran faces regional setbacks, such as the loss of allies in Syria and Venezuela, and damage from conflict with Israel. Security forces have responded violently to demonstrations, with reports of deaths and arrests. The unrest occurs as Iran deals with internal corruption and external pressures, potentially escalating tensions with the US. [https://www.cnn.com/2026/01/07/world/venezuela-iran-parallel-trump-latam-intl]
+Key Quotes: "locked and loaded" - Donald Trump
+
+
+---
+
+RSS ARTICLES (50 articles):
+- [Updated RSS Feed] by Sam Lee (1/7/2026): "Manchester City 1 Brighton 1 — How did young centre-backs get on? Where has the control gone?" - Manchester City's title bid faltered once again with a third draw in a row, this time against Brighton [https://www.nytimes.com/athletic/6937567/2026/01/07/manchester-city-brighton-briefing-premier-league/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "JPMorgan reaches deal to take over Apple credit card, WSJ reports" - JPMorgan Chase has reached a deal to take over Apple credit-card program from Goldman Sachs , the Wall Street Journal reported on Wednesday, citing people familiar with the matter. [https://www.reuters.com/business/finance/jpmorgan-reaches-deal-take-over-apple-credit-card-wsj-reports-2026-01-07/]
+- [Updated RSS Feed] by Tom Burrows,Cerys Jones (1/7/2026): "Fulham 2 Chelsea 1: What was Cucurella thinking? Where does this leave them? Level of fan unrest?" - Our writers break down the talking points from Chelsea's defeat to Fulham at Craven Cottage. [https://www.nytimes.com/athletic/6937566/2026/01/07/fulham-chelsea-cucurella-delap/]
+- [Updated RSS Feed] by Kinsey Crowley (1/7/2026): "Kai Trump wants to 'stay out of politics.' Who is she?" - President Donald Trump's granddaughter Kai Trump spoke about dating, Barron Trump and what she thinks about her political future on Logan Paul's show. [https://www.usatoday.com/story/news/politics/2026/01/07/kai-trump-logan-paul-youtube-podcast/88062684007/]
+- [Updated RSS Feed] by The Information Staff (1/7/2026): "How Artificial Intelligence is Reshaping the Global Energy Market" - The rapid expansion of artificial intelligence is driving an unprecedented surge in electricity consumption, creating a conflict between immediate climate goals and the industry’s growth. While tech companies are currently increasing their reliance on fossil fuels to power new data centers, the ... [https://www.theinformation.com/articles/artificial-intelligence-reshaping-global-energy-market]
+- [Updated RSS Feed] by Ellen Mitchell (1/7/2026): "Trump threatens defense contractors over stock buybacks, executive pay" - President Trump on Wednesday said he “will not permit” defense companies to issue dividends or buy back their own stock until they invest more in military equipment production and address several o… [https://thehill.com/policy/defense/5677537-defense-industry-trump-crackdown/]
+- [Updated RSS Feed] by Alexandra Valencia,Jesús Aguado (1/7/2026): "Ecuador protests Spain's release of alleged gangster tied to 2024 TV station attack" - Ecuador's government on Wednesday protested a Spanish court's release of an alleged crime boss who Quito had been seeking to extradite after he was accused of leading a violent attack on a TV station in 2024. [https://www.reuters.com/world/americas/ecuador-protests-spains-release-alleged-gangster-tied-2024-tv-station-attack-2026-01-07/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Jefferies profit rises on dealmaking rebound, strong underwriting" - Jefferies reported higher fourth-quarter profit on Wednesday, boosted by a rebound in dealmaking and strong underwriting, giving investors an early signal about the strength of Wall Street's investment-banking business. [https://www.reuters.com/business/finance/jefferies-profit-rises-dealmaking-rebound-strong-underwriting-2026-01-07/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Exxon signals fall in fourth-quarter upstream profit" - U.S. oil major Exxon Mobil said in a regulatory filing on Wednesday changes in crude oil prices could lower its fourth-quarter upstream earnings by about $800 million to $1.2 billion. [https://www.reuters.com/business/energy/exxon-signals-lower-fourth-quarter-upstream-earnings-2026-01-07/]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "PHYSICALITY WINS: Miami Hurricanes & Mark Fletcher OUTLAST Ole Miss—Key Insights & PREDICTIONS" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/c06d9634-89e9-4d36-8e04-bf9c1e8646f2/20260107T211122/c06d9634-89e9-4d36-8e04-bf9c1e8646f2_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-ff6581d5-54b4-4696-87f9-200e17d317cb/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-miami/miami-hurricanes-show/physicality-wins-miami-hurricanes-mark-fletcher-outlast-ole-misskey-insights-predictions/535-ff6581d5-54b4-4696-87f9-200e17d317cb]
+- [Updated RSS Feed] by David Dittman (1/7/2026): "Dow Hits New High Then Falls 466 Points: Stock Market Today" - The Nasdaq Composite, with a little help from tech's friends, rises to within 300 points of its own new all-time high. [https://www.kiplinger.com/investing/stocks/dow-hits-new-high-then-falls-466-points-stock-market-today]
+- [Updated RSS Feed] by Sean Conlon (1/7/2026): "Buying the stock market when valuations are this high has usually been a losing long-term investment" - As valuations reach levels only seen during the Covid-19 pandemic and the dot-com bubble, U.S. stocks could be in for a rough path ahead. [https://www.cnbc.com/2026/01/07/buying-the-stock-market-when-valuations-are-this-high-has-seldom-worked.html]
+- [Updated RSS Feed] by Mike Isaac,Cade Metz (1/7/2026): "Anthropic Said to Be in Talks to Raise Funding at a $350 Billion Valuation" - The artificial intelligence start-up, which competes with OpenAI, is aiming to raise around $10 billion amid talk of a potential initial public offering. [https://www.nytimes.com/2026/01/07/technology/anthropic-funding-valuation.html]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "PORTAL FEVER: Texas A&M Lands TWO Portal Commitments | Transfer Momentum BUILDS Fast" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/f7273af2-76dc-41ef-9132-0fce96af7912/20260107T210009/f7273af2-76dc-41ef-9132-0fce96af7912_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-043e8c3a-9c15-4855-921f-9b5e1ddbd7be/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-houston/texas-a-m-aggies-show/portal-fever-texas-am-lands-two-portal-commitments-transfer-momentum-builds-fast/535-043e8c3a-9c15-4855-921f-9b5e1ddbd7be]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "STATEMENT: Lightning Take Down Avalanche in HEAVYWEIGHT Showdown as Team Defense Shines" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/dfd6918b-3ca3-4b92-939f-c961122ae01f/20260107T204227/dfd6918b-3ca3-4b92-939f-c961122ae01f_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-fed97df8-182f-40c8-925f-950a14755a3e/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-tampa-bay/lightning-show/statement-lightning-take-down-avalanche-in-heavyweight-showdown-as-team-defense-shines/535-fed97df8-182f-40c8-925f-950a14755a3e]
+- [Updated RSS Feed] by Lisa Desjardins Lisa Desjardins (1/7/2026): "5 things on Congress' agenda right now" - We lay out a rough to-do list for members of Congress as they return from holiday break. [https://www.pbs.org/newshour/politics/5-things-on-congress-agenda-right-now]
+- [Updated RSS Feed] by Investing.com (1/7/2026): "Top Insurance Stocks for 2026: WarrenAI Sees Value Opportunities in a Shifting Market By Investing.com" - Top Insurance Stocks for 2026: WarrenAI Sees Value Opportunities in a Shifting Market [https://www.investing.com/news/stock-market-news/top-insurance-stocks-for-2026-warrenai-sees-value-opportunities-in-a-shifting-market-93CH-4435725]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "Bowen Byram playing the best hockey of his career as the Sabres beat the Canucks" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/d4ee97e8-5668-4de6-a1e5-06d5b4f8fd30/20260107T205027/d4ee97e8-5668-4de6-a1e5-06d5b4f8fd30_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-5f4bf287-3e03-4031-95de-2797ed8ce2e6/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-buffalo/sabres-show/bowen-byram-playing-the-best-hockey-of-his-career-as-the-sabres-beat-the-canucks/535-5f4bf287-3e03-4031-95de-2797ed8ce2e6]
+- [Updated RSS Feed] by Declan Harty,Jack Detsch (1/7/2026): "Trump orders defense companies to stop stock buybacks, dividends" - In a post on Truth Social, Trump blasted the defense industry for producing military equipment too slowly. [https://www.politico.com/news/2026/01/07/trump-orders-defense-companies-to-stop-stock-buybacks-dividends-00714621]
+- [Updated RSS Feed] by Andrea Guzmán (1/7/2026): "New bill tackles safety concerns over Tesla's door handles" - The SAFE Exit Act would create a standard for easily identifiable manual door handles. It could require Tesla Inc. to modify its design. [https://www.expressnews.com/business/technology/article/safe-exit-act-tesla-door-handles-21281512.php]
+- [Updated RSS Feed] by Jacob Ogles (1/7/2026): "Fentrice Driskell, Bruce Antone call out mid-decade redistricting effort as 'foolish,' 'unconstitutional'" - Democrats say the Florida House has stepped up to Gov. DeSantis' overreach before and should check him now. [https://floridapolitics.com/archives/772270-fentrice-driskell-bruce-antone-call-out-mid-decade-redistricting-effort-as-foolish-unconstitutional/]
+- [Updated RSS Feed] by Karen Tumulty (1/7/2026): "Politics questions? Ask Karen Tumulty." - Join our chief political correspondent for her next live chat on Jan. 15 at 12 p.m. Eastern time. [https://www.washingtonpost.com/politics/2026/01/15/karen-tumulty-live-chat/]
+- [Updated RSS Feed] by Brianne Pfannenstiel (1/7/2026): "Kari Lake's trust buys Iowa condo, renewing political speculation" - The purchase has again jumpstarted speculation the Iowa native could be eyeing a future political run by establishing residency in the Hawkeye State. [https://www.desmoinesregister.com/story/news/politics/2026/01/07/kari-lake-iowa-condo-fueling-speculation-of-political-run/88067796007/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Olaplex draws takeover interest from Germany's Henkel, Bloomberg News reports" - Olaplex Holdings has drawn a takeover offer from Germany's consumer goods maker Henkel , Bloomberg News reported on Wednesday, citing people familiar with the matter. [https://www.reuters.com/business/retail-consumer/olaplex-draws-takeover-interest-germanys-henkel-bloomberg-news-reports-2026-01-07/]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "Miami And Ole Miss Play For CHANCE AT TITLE In Fiesta Bowl | The Big 3 in 30 College" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/ada88b4d-3ed6-4a08-8e8d-69e4f03dc4db/20260107T203457/ada88b4d-3ed6-4a08-8e8d-69e4f03dc4db_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-f536f2c0-df37-46c4-868d-31ee44fb9f06/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-national/big-3-in-30-college/miami-and-ole-miss-play-for-chance-at-title-in-fiesta-bowl-the-big-3-in-30-college/535-f536f2c0-df37-46c4-868d-31ee44fb9f06]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "Fantasy Streaming GOLD vs Schedule HELL: Teams to Attack & Avoid in 2nd Half + NHL Injury Updates" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/e6740f11-6a85-44c1-8f5d-c0943520471f/20260107T203606/e6740f11-6a85-44c1-8f5d-c0943520471f_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-02fdf620-b213-44c3-b3c3-a56b0855c51f/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-national/fantasy-hockey-show/fantasy-streaming-gold-vs-schedule-hell-teams-to-attack-avoid-in-2nd-half-nhl-injury-updates/535-02fdf620-b213-44c3-b3c3-a56b0855c51f]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "DOLPHINS SQUAD: Miami DOLPHINS OFFSEASON, John Harbaugh to Miami?, GM Search, NFL Coaching Carousel + NFL Week 1 Playoff Preview" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/b0006d1d-ecd5-472c-8278-d4309e66e0e1/20260107T201414/b0006d1d-ecd5-472c-8278-d4309e66e0e1_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-28c7e227-662a-487f-939e-cca50851af92/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-miami/dolphins-squad/dolphins-squad-miami-dolphins-offseason-john-harbaugh-to-miami-gm-search-nfl-coaching-carousel-nfl-week-1-playoff-preview/535-28c7e227-662a-487f-939e-cca50851af92]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "Commanders And Lions FIRE Offensive Coordinators In Coaching Moves | The Big 3 in 30 NFL" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/aebc9216-86b5-446d-93b3-dff15000ba01/20260107T203036/aebc9216-86b5-446d-93b3-dff15000ba01_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-88a5e81a-8002-418b-979c-8b1272dadca8/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-national/big-3-in-30-nfl/commanders-and-lions-fire-offensive-coordinators-in-coaching-moves-the-big-3-in-30-nfl/535-88a5e81a-8002-418b-979c-8b1272dadca8]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Trump blocks defense company payouts until arms production speeds up" - U.S. President Donald Trump vowed to block defense contractors from paying dividends or buying back shares until they speed up weapons production, a rare presidential strike at Wall Street norms that sent defense stocks tumbling and signaled sweeping changes for America’s military-industrial complex. [https://www.reuters.com/business/aerospace-defense/trump-says-he-wont-permit-dividends-buybacks-defense-companies-till-they-fix-2026-01-07/]
+- [Updated RSS Feed] by Vallari Srivastava,Nathan Crooks,Jarrett Renshaw (1/7/2026): "US says it needs to control Venezuelan oil sales indefinitely to drive change" - The U.S. needs to control Venezuela's oil sales and revenue indefinitely to stabilize that country's economy and rebuild its oil sector, Energy Secretary Chris Wright said on Wednesday. [https://www.reuters.com/business/energy/us-wants-venezuelan-oil-flowing-again-with-revenues-us-accounts-wright-says-2026-01-07/]
+- [Updated RSS Feed] by Amelia Templeton (1/7/2026): "Oregon sues pharmaceutical companies over insulin prices" - Oregon is joining cities, unions, and states across the country that have filed a lawsuit alleging pharmacy benefit mangers and pharmaceutical companies intentionally drove up the price of insulin and diabetes drugs. [https://www.opb.org/article/2026/01/07/oregon-sues-pharmaceutical-companies-over-insulin-prices/]
+- [Updated RSS Feed] by Joseph Adinolfi (1/7/2026): "This 100-year-old stock-market indicator just flashed a buy signal. Here’s how investors should read it." - A stock-market indicator that has been used by investment analysts for more than a century flashed a bullish signal this week. [https://www.marketwatch.com/story/this-100-year-old-stock-market-indicator-just-flashed-a-buy-signal-heres-how-investors-should-read-it-1a6b53ae]
+- [Updated RSS Feed] by Reuters (1/7/2026): "OpenAI launches ChatGPT Health to connect medical records, wellness apps" - OpenAI on Wednesday launched a ChatGPT Health tab that answers health-related questions and lets users upload medical records and connect wellness apps such as Apple Health and MyFitnessPal. [https://www.reuters.com/business/healthcare-pharmaceuticals/openai-launches-chatgpt-health-connect-medical-records-wellness-apps-2026-01-07/]
+- [Updated RSS Feed] by Nidal Al-Mughrabi (1/7/2026): "Mohammad Sinwar: the Hamas military chief who said striking Israel was 'easier than drinking water'" - Mohammad Sinwar, the elusive Hamas military chief in Gaza, had for months since the death of his brother, in 2024, been Israel's most wanted man. On December 29, Hamas announced that he had died, aged 49, around seven months after Israel said it killed him in a strike. [https://www.reuters.com/world/middle-east/obituary-mohammad-sinwar-hamas-military-chief-who-said-striking-israel-was-2026-01-07/]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "Hawks Looking To TRADE Trae Young Before Upcoming Deadline | The Big 3 in 30 NBA" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/bd074780-4174-4ab6-b8a7-6aff6deeab08/20260107T201917/bd074780-4174-4ab6-b8a7-6aff6deeab08_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-66b042aa-778b-4f34-bf6f-5b2dbb1d7870/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-national/big-3-in-30-nba/hawks-looking-to-trade-trae-young-before-upcoming-deadline-the-big-3-in-30-nba/535-66b042aa-778b-4f34-bf6f-5b2dbb1d7870]
+- [Updated RSS Feed] by kvue.com (1/7/2026): "BRONCOS SQUAD SHOW: Denver has BUSY bye week as they prepare for playoffs" - <div><img src="https://media.kvue.com/assets/LOCKEDON/images/d5ccc626-9c2a-4124-b62e-26ecff9e0594/20260107T200709/d5ccc626-9c2a-4124-b62e-26ecff9e0594_1140x641.jpg" style="width: 100%;" /><div><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://media.kvue.com/embeds/video/responsive/535-075849b2-f5c8-4122-b8a9-4e00136b48b4/iframe" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div></div></div> [https://www.lockedonpodcasts.com/video/sports/locked-on/lo-denver/broncos-squad/broncos-squad-show-denver-has-busy-bye-week-as-they-prepare-for-playoffs/535-075849b2-f5c8-4122-b8a9-4e00136b48b4]
+- [Updated RSS Feed] by Michael Hansen, Annabelle Kim (1/7/2026): "The politics of free speech in US schools today" - Research shows schools are not engines of indoctrination but complex institutions balancing free speech and learning. [https://www.brookings.edu/articles/the-politics-of-free-speech-in-us-schools-today/]
+- [Updated RSS Feed] by Aaron Blake (1/7/2026): "Analysis: The GOP’s growing dilemma on Greenland " - It was as telling a moment as any when it comes to the Republican Party’s relationship with President Donald Trump. [https://www.cnn.com/2026/01/07/politics/the-gops-growing-dilemma-on-greenland]
+- [Updated RSS Feed] by Idrees Ali,Phil Stewart,Marianna Parraga (1/7/2026): "US seizes Russian-flagged tanker tied to Venezuela as Trump widens oil push" - The U.S. Coast Guard and U.S. military special forces apprehended the Marinera tanker, which had refused to be boarded last month and had switched to Russia's flag, officials said. The operation was supported by Britain's Royal Air Force and one of its military vessels. [https://www.reuters.com/business/energy/us-venezuela-oil-deal-angers-china-pushes-prices-down-2026-01-07/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Business News | Today's International Headlines " - Find latest business news from every corner of the globe at Reuters.com, your online source for breaking international news coverage. [https://www.reuters.com/business/]
+- [Updated RSS Feed] by Jay Stahl (1/7/2026): "Marjorie Taylor Greene joins 'The View' after dumping Trump, Congress" - Former Rep. Marjorie Taylor Greene appeared on "The View" on Jan. 7, after she upset President Donald Trump with her debut on the daytime hit. [https://www.usatoday.com/story/news/politics/2026/01/07/marjorie-taylor-greene-the-view/88044948007/]
+- [Updated RSS Feed] by Reuters (1/7/2026): "AbbVie in talks to buy biotech Revolution Medicines, WSJ reports" - AbbVie is in advanced talks to buy cancer-drug developer Revolution Medicines , the Wall Street Journal reported on Wednesday, citing people familiar with the matter. [https://www.reuters.com/business/healthcare-pharmaceuticals/abbvie-talks-buy-biotech-revolution-medicines-wsj-reports-2026-01-07/]
+- [Updated RSS Feed] by John Irish,Andreas Rinke,Anne Kauranen (1/7/2026): "Rubio to meet Denmark leaders next week, signals no retreat on Trump's Greenland goal" - A U.S. military seizure of the mineral-rich Arctic island from a longtime ally, Denmark, would send shock waves through the NATO alliance and deepen the divide between Trump and European leaders. [https://www.reuters.com/world/europe/france-working-with-allies-plan-should-us-move-greenland-2026-01-07/]
+- [Updated RSS Feed] by @elonmusk (1/7/2026): "@elonmusk: Pinned: That is exactly what they have been doing and it is sure to result in a one-party state, like California, but far worse. What holds back California, which is already a one-party supermajority state, from being far worse is that people can move to other states without leaving America. What do you think will happen when there is no escape?" - That is exactly what they have been doing and it is sure to result in a one-party state, like California, but far worse. 
+What holds back California, which is already a one-party supermajority state, from being far worse is that people can move to other states without leaving America.
+What do you think will happen when there is no escape?C3 (@C_3C_3)This is the plan…
+Import a new voting block from the 3rd World.
+Bribe them with free government benefits for their votes.
+Never lose elections again.
+Become 1 party totalitarian governments that rule with iron fists.
+Destroy Western Civilization and Culture.
+It must stop.—  https://x.com/C_3C_3/status/2008898743144202271
+— Elon Musk (@elonmusk) Jan 7, 2026 [https://x.com/elonmusk/status/2008990970491072842]
+- [Updated RSS Feed] by Reuters (1/7/2026): "Google, AI firm settle Florida mother's lawsuit over son's suicide" - Jan 7 (Reuters) - Alphabet's Google and artificial-intelligence startup Character.AI have agreed to settle a lawsuit from a Florida woman who alleged a Character chatbot led to the suicide of her 14- [https://www.yahoo.com/news/articles/google-ai-firm-settle-florida-194931383.html]
+- [Updated RSS Feed] by @elonmusk (1/7/2026): "@elonmusk: In their eyes, enabling freedom of speech is high crime" - In their eyes, enabling freedom of speech is high crimeJeffery Mead (@the_jefferymead)Medi Hasan talking about prosecuting Elon Musk isn't actually because Elon is breaking any laws. It's because Elon is very powerful and effective.  Think about this..
+He owns the most free speech platform on the internet. 
+He himself has over 230 million followers. 
+He is on his way to being worth 1 trillion dollars. 
+He owns the likely fastest advancing AI in the world.
+He is essentially 100% on the side of the republicans
+And he is only in his mid 50's meaning he has at least a 20 year runway.
+That is why democrats would want to prosecute him. He is too big of a threat to their political power. 
+Video
+  —  https://x.com/the_jefferymead/status/2008931935792349246
+— Elon Musk (@elonmusk) Jan 7, 2026 [https://x.com/elonmusk/status/2008990083970691215]
+- [Updated RSS Feed] by @SawyerMerritt (1/7/2026): "@SawyerMerritt: NEWS: These were the top 5 best-selling EVs in the U.S. in 2025. Units sold: 1) Tesla Model Y: 292,000 2) Tesla Model 3: 140,000 3) Chevry Equinox EV: 58,000 4) Ford Mustang Mach-E: 52,000 5) Hyundai Ioniq 5: 47,000" - NEWS: These were the top 5 best-selling EVs in the U.S. in 2025.
+Units sold:
+1) Tesla Model Y: 292,000
+2) Tesla Model 3: 140,000
+3) Chevry Equinox EV: 58,000
+4) Ford Mustang Mach-E: 52,000
+5) Hyundai Ioniq 5: 47,000
+— SawyerMerritt (@SawyerMerritt) Jan 7, 2026 [https://x.com/SawyerMerritt/status/2008990180514918510]
+- [Updated RSS Feed] by @elonmusk (1/7/2026): "@elonmusk: Grok voice is the best" - Grok voice is the bestX Freeze (@XFreeze)Grok Voice Agent API is now one of the most advanced voice AIs in the world
+It ranks #1 on BigBench Audio for speech reasoning
+Grok Voice already powers voice mode across Grok apps and runs in millions of Tesla vehicles
+Conversations feel so natural, expressive, fluid, and instantly responsive - like talking to a real person, not a machine
+Try it now on Grok, in Tesla, and across the growing ecosystem of apps and experiences powered by xAI 
+Video
+  —  https://x.com/XFreeze/status/2008985155529310591
+— Elon Musk (@elonmusk) Jan 7, 2026 [https://x.com/elonmusk/status/2008989319789461987]
+- [Updated RSS Feed] by Investing.com (1/7/2026): "Arm stock gains after launching ’Physical AI’ division for robotics market By Investing.com" - Arm stock gains after launching ’Physical AI’ division for robotics market [https://www.investing.com/news/stock-market-news/arm-stock-gains-after-launching-physical-ai-division-for-robotics-market-93CH-4435676]
+- [Updated RSS Feed] by Max Cherney (1/7/2026): "Exclusive: Arm launches 'Physical AI' division to expand in robotics market" - Chip technology company Arm Holdings has reorganized the company and formed a Physical AI unit to expand its presence in the robotics market, company executives told Reuters at CES. [https://www.reuters.com/business/autos-transportation/arm-launches-physical-ai-division-expand-robotics-market-2026-01-07/]
+
+---
+
+X TOPIC POSTS (14 posts):
+- [Liverpool FC] @LFC: "Well in, Hugo 🤩 Our @StanChart Player of the Month for December 🏆 #Ad https://t.co/iF2cNznGXL" (192223 views, 21118 likes) https://x.com/LFC/status/2008931633970458625
+- [Liverpool FC] @LFC: "20 years ago… Extraordinary 🤯 Xabi Alonso scores from his own half 🆚 Luton Town ⏪ https://t.co/plmLR1R3Y1" (283714 views, 3150 likes) https://x.com/LFC/status/2008810841286864914
+- [Liverpool FC] @LFC: "Collecting his @StanChart POTM award for the first time 😍 #Ad https://t.co/34i3Nbuj82" (145650 views, 5415 likes) https://x.com/LFC/status/2008939184229175504
+- [Liverpool FC] @LFC: "Join us live from the AXA Training Centre as Arne Slot previews our Premier League meeting with Arsenal 🗣️ #ARSLIV  https://t.co/vMBvv9hRw5" (72502 views, 752 likes) https://x.com/LFC/status/2008837705791140246
+- [Liverpool FC] @LFC: "Through the years: Arsenal (A) 📸✨ https://t.co/oBnYeQDi5c" (98645 views, 3182 likes) https://x.com/LFC/status/2008916527513252058
+- [Liverpool FC] @LFC: "8️⃣ goal thriller 🆚 Luton Town 😱 07/01/06 🗓️ https://t.co/eNN29dEM9E" (90889 views, 1502 likes) https://x.com/LFC/status/2008818387200381158
+- [Liverpool FC] @LFC: "“I’m proud” 🙌 Hear from Hugo Ekitike as he is named @StanChart Player of the Month 🗣️ #Ad" (83961 views, 2904 likes) https://x.com/LFC/status/2008932892148376002
+- [Tesla] @TeslaAndNews: "The X token will be launched. First announcement. Become part of an ecosystem trusted by over 100 million users. Private invite for the Tesla community: 👉 https://t.co/FysIRUGLnH Sign up. Enable 2FA. Participate in the presale. Wait for the listing. Hold or take profits. https://t.co/now3CW1JcM" (83666 views, 1337 likes) https://x.com/TeslaAndNews/status/2009011557821489368
+- [Stock Market] @BadSocialisms: "Stock market is basically rich people's feeling https://t.co/u2vmHqF5bi" (23267 views, 2050 likes) https://x.com/BadSocialisms/status/2008685714305864053
+- [Stock Market] @Barchart: "Venezuelan Stock Market going straight parabolic 🚀📈📈📈 https://t.co/ejG8O9g1he" (48610 views, 678 likes) https://x.com/Barchart/status/2008778703795519816
+- [Stock Market] @AshCrypto: "🇺🇸 A TOTAL OF $500 BILLION HAS BEEN ADDED TO THE US STOCK MARKET TODAY. BULLISH FOR CRYPTO !!! https://t.co/Kd0aIjdl2N" (63713 views, 2335 likes) https://x.com/AshCrypto/status/2008680862385324093
+- [World News] @AfricanHub_: "BREAKING WORLD NEWS: Russian President Vladimir Putin has issued a stern warning to the United States, demanding the immediate release of the seized oil tanker, or risk escalating tensions into World War III. 🇷🇺⚠️ https://t.co/3nBf5XjfJa" (121353 views, 3292 likes) https://x.com/AfricanHub_/status/2008942711080964125
+- [World News] @InsiderWN: "#BREAKING: British military jets assisted the U.S. in seizing a Russian oil tanker." (15997 views, 940 likes) https://x.com/InsiderWN/status/2008912571835855296
+- [World News] @_MAGA_NEWS_: "🚨 UPDATE: In a jaw-dropping announcement, US Secretary of State Marco Rubio declared Ukraine-Russia war is "not our war". This stance reflects the administration's shift toward 'prioritizing U.S. citizens'. Marco Rubio stated "It's not our war. It's a war on another continent." https://t.co/eBha2EKJGq" (317472 views, 10783 likes) https://x.com/_MAGA_NEWS_/status/2008851758827888748
+
+---
+
+USER'S TIMELINE POSTS (99 posts):
+- Fabrizio Romano: "Barcelona beat Bilbao and qualify to Super Cup final! 🔵🔴 Who’s been your Man of the Match? https://t.co/PktuQLT6ax" (425865 views, 18104 likes) https://x.com/i/status/2009004408777191512
+- Fabrizio Romano: "Brighton and Man City share points! 🤝🏻 Who’s been your Man of the Match? https://t.co/W7zPzveFuv" (355764 views, 7001 likes) https://x.com/i/status/2009013991650283746
+- Fabrizio Romano: "🍒🥺 Semenyo says goodbye to Bournemouth with a 3-points goal! He’s set for medical at Manchester City tomorrow. Who’s been your Man of the Match? https://t.co/K4V5l2ktfd" (346912 views, 10646 likes) https://x.com/i/status/2009015079086510116
+- Fabrizio Romano: "Fulham beat Chelsea! ⚪️⚫️ Who’s been your Man of the Match? https://t.co/9U0RPBP5gX" (271049 views, 6200 likes) https://x.com/i/status/2009014755504296141
+- Ian Rapoport: "Another season for Todd Bowles, who had his meeting with ownership. He is expected to make some staff changes. https://t.co/deItBHwpTo" (166268 views, 352 likes) https://x.com/i/status/2009014034897772611
+- Adam Schefter: "Packers activated LB Nick Niemann off injured reserve, placed WR Bo Melton on injured reserve, signed DL Anthony Campbell to the practice squad and placed WR Will Sheppard on practice squad; injured." (151206 views, 372 likes) https://x.com/i/status/2009012912854323385
+- Saturday Night Live - SNL: "next three shows!!! https://t.co/x98Y4Ey5eG" (145400 views, 3339 likes) https://x.com/i/status/2009007833182818470
+- Mario Nawfal: "🇺🇸 ELON BACKS ICE AFTER SHOOTING: “TRY TO KILL A LAW OFFICER WITH A CAR? SELF-DEFENSE IS OBVIOUS” Elon just threw his full support behind ICE after one of their agents was attacked in Minneapolis and forced to fire back. This morning, a 37-year-old woman ignored ICE commands to https://t.co/9cjIf0plBb https://t.co/B9P5uu8Sly" (129889 views, 682 likes) https://x.com/i/status/2008997065066484046
+- Big Cat: "Congrats @StevenCheah! https://t.co/ZESrsAlEfV" (128193 views, 439 likes) https://x.com/i/status/2008998679500476722
+- Ian Rapoport: "Oh? https://t.co/Pyw3k9LvNO" (108180 views, 995 likes) https://x.com/i/status/2009016638017032635
+- Barstool Sports: "Watch Now: https://t.co/Rx6WIHNBVb" (86269 views, 5 likes) https://x.com/i/status/2008998366043390106
+- ESPN FC: "With three goal contributions today, Fermín López is up to 16 goal contributions in all competitions 🔥 Second on the team behind Lamine Yamal (19) Baller 💨 https://t.co/4LTKVCqkhS" (78646 views, 6778 likes) https://x.com/i/status/2009000594833350791
+- Mario Nawfal: "🚨🇺🇸 BREAKING: MINNEAPOLIS PROTESTERS TRY TO DRIVE OUT FEDERAL AGENTS Crowds are swelling and growing aggressive at the scene in south Minneapolis. Protesters are throwing snowballs and ice chunks at local police and federal agents as they withdraw after today’s deadly ICE https://t.co/Y2OFvGxZpd https://t.co/uEWRMUlGcK" (81408 views, 173 likes) https://x.com/i/status/2009002098030203201
+- Mario Nawfal: "🇺🇸 DHS: WOMAN USED SUV TO ATTACK ICE AGENT, SHOOTING WAS SELF-DEFENSE DHS Assistant Sec Tricia McLaughlin emmited the agency's official line on today's wild scene in Minneapolis. A woman was shot dead after allegedly turning her ride into a weapon against officers during a https://t.co/Wla5MKsD4P https://t.co/8sMBY6SlXX" (75952 views, 109 likes) https://x.com/i/status/2009000839894192202
+- Mario Nawfal: "🚨🇺🇸 BREAKING: MINNEAPOLIS PROTESTS ERUPT WITH SNOWBALLS &amp; FLAG BURNING AFTER ICE SHOOTING Tensions are cranked way up at the south Minneapolis spot where a 37-year-old woman got shot dead by an ICE agent. People are gathering in droves, chucking snowballs at cops, burning https://t.co/HF6q02JbZT https://t.co/7WoTjwwqFe" (68596 views, 136 likes) https://x.com/i/status/2008999582999761328
+- Barstool Sports: ".@DonnieDoesWorld is pickin' up good vibrations in the Memphis Gong Chamber 'Rediscovering Memphis' presented by #CraveNewWorld #CleanComfortFood #FrozenFood https://t.co/IFN7hSUa0x" (67913 views, 27 likes) https://x.com/i/status/2008998291694817645
+- @jason: "The saddest Rorschach test we've ever seen." (62425 views, 356 likes) https://x.com/i/status/2009003408716665036
+- Barstool Sports: "Mintzy wouldn't look at the left side of the room for his entire interview @BarstoolYak https://t.co/YVgLNbOG46" (57828 views, 76 likes) https://x.com/i/status/2009005502231974169
+- The New York Times: "Breaking News: The Pittsburgh Post-Gazette said it would cease operations, signaling the end of a newspaper whose origins date to 1786. https://t.co/mpTL9oGIPW" (55998 views, 130 likes) https://x.com/i/status/2009000224463724662
+- Barstool Sports: "A Woman Seemingly Playing Tennis For The Very First Time In Her Life Found Her Way Into a Low Level Professional Tournament Without Knowing The Rules And The Footage Is Absolutely Stunning https://t.co/l4icxe83Vv https://t.co/Fn3kHy60cF" (54358 views, 46 likes) https://x.com/i/status/2009000847925981227
+- Barstool Sports: "Between Refusing To Play Him And Now Reportedly Refusing To Trade Him, At This Point The Warriors Are Holding Jonathan Kuminga Hostage https://t.co/99x07rZDhv https://t.co/sA0TGMHIMg" (51466 views, 12 likes) https://x.com/i/status/2009003371743551754
+- BBC Breaking News: "Family describe "unimaginable" ordeal after being mistakenly told son who died in car crash near Rotherham, UK, had survived https://t.co/wiLT9eXEaP" (47672 views, 53 likes) https://x.com/i/status/2009016508471550072
+- Barstool Sports: ""Let's Just Say They Are Happier This Year Than Last Year" – Add Convincing Mark Cuban to Donate to Indiana Athletics to Curt Cignetti's List of Crowning Achievements https://t.co/VRCbxPAMJI https://t.co/cyeuf0Qvfc" (46022 views, 26 likes) https://x.com/i/status/2009008402232418315
+- Barstool Sports: "The Ben Mintz/Ohio Tate Content Is Mesmerizing https://t.co/qISlI2fNg2 https://t.co/Lo7Hxq9a7k" (44870 views, 54 likes) https://x.com/i/status/2009010916017287505
+- PFT Commenter: "Tom Brady poked a giant hole in Hanks MVP agrument https://t.co/2Ut6q2q9Hj" (42629 views, 76 likes) https://x.com/i/status/2009012435261509990
+- Mario Nawfal: "FTX Founder @SBF_FTX just sent me a message: Why is the left up in arms after Trump captured Maduro, but 3 years prior Biden extradited and jailed the President of Honduras? And unlike Maduro, Honduras' President Hernandez was fairly elected, worked closely with the U.S., and https://t.co/GqlEJ3rl6c" (40715 views, 262 likes) https://x.com/i/status/2009010015609475414
+- Pardon My Take: "Secret episode of Stranger things dropping tonight? @pizzahut https://t.co/e1Fxd1ji7s" (38461 views, 51 likes) https://x.com/i/status/2009000772734951668
+- The New York Times: "From @TheAthletic: Travis Kelce may not be done playing just yet. Even though he just completed his 13th season in the NFL, and the first in his career in which Kelce didn’t make the playoffs, he still has the desire, if his body allows, to go again. https://t.co/9uZkI0zCnW" (36444 views, 22 likes) https://x.com/i/status/2009002363953017115
+- CNN: "The judge in the trial of a former Uvalde school police officer has denied a defense motion to declare a mistrial https://t.co/5V8aAYlVQb" (26993 views, 49 likes) https://x.com/i/status/2009015046207082722
+- Mario Nawfal: "🚨🇺🇸 TRUMP: MINNEAPOLIS WOMAN SHOT VICIOUSLY RAN OVER THE OFFICER! "HARD TO BELIEVE HE'S ALIVE." Trump's seen the footage and he's not holding back. He calls the screaming woman an obvious pro-agitator who got disorderly, obstructed, resisted, and viciously rammed the ICE https://t.co/Sb84MPTmwB https://t.co/TohmIUVk93" (26523 views, 167 likes) https://x.com/i/status/2009003356690223507
+- BBC News (UK): "Martin Clunes to take on role of Huw Edwards in new drama https://t.co/XA151iLYIo" (20756 views, 9 likes) https://x.com/i/status/2009000037834019251
+- World of Statistics: "Leg-length differences are extremely common, and most don’t become clinically significant until around 20 mm (~3/4")" (20322 views, 40 likes) https://x.com/i/status/2008998826414137682
+- BBC News (UK): "Martin Clunes to take on role of Huw Edwards in new drama https://t.co/SqwKhQAIzw" (20138 views, 27 likes) https://x.com/i/status/2009000045115326693
+- Mario Nawfal: "🇺🇸 GOV. WALZ PUTS NATIONAL GUARD ON ALERT AFTER ICE INCIDENT, UT REFUSES TRUMP’S INVOLVEMENT Minnesota Gov. Tim Walz says the National Guard is ready after a violent anti-ICE attack rocked the state, but he's drawing a line: no Trump, no federal troops. He’s blaming Trump for https://t.co/xyEtMona92" (20001 views, 59 likes) https://x.com/i/status/2009012164611481987
+- BBC News (UK): "Crash ID error emerged 'after injured boy woke up' https://t.co/W2VTtT4EQc" (19008 views, 9 likes) https://x.com/i/status/2008999449779986737
+- BBC News (UK): "US seizes two 'shadow fleet' tankers linked to Venezuelan oil https://t.co/htMMfaAXhg" (17469 views, 16 likes) https://x.com/i/status/2008997756627529755
+- Mario Nawfal: "🇮🇷 IRANIANS CHALLENGE REGIME FORCES AND DEMAND PAHLAVI’S RETURN: "DON'T BE AFRAID" Massive protests are shaking cities across northeast Iran again as thousands pour into the streets, standing up to the Islamic Republic’s security forces without fear. In Chenaran, protesters https://t.co/JAtfdceHVq" (17097 views, 268 likes) https://x.com/i/status/2009007137649811487
+- Mario Nawfal: "🇺🇸 BLACKHAWKS IN THE SKY AS MINNESOTA NATIONAL GUARD PREPARES FOR POSSIBLE DEPLOYMENT Blackhawk helicopters were spotted flying over Minneapolis as the Minnesota National Guard gears up to hit the ground. The city is on edge after a violent anti-ICE attack, and Tim Walz says https://t.co/fAUa1VcqlR" (14464 views, 106 likes) https://x.com/i/status/2009015611121389625
+- World of Engineering: "Name that tool. Curious what ppl call this as i have heard it called a few things. https://t.co/EOeXai7zaF" (14177 views, 21 likes) https://x.com/i/status/2009010654250692782
+- Mario Nawfal: "🇺🇸 REP OMAR: "ICE ACTIONS WERE STATE VIOLENCE, NOT LAW ENFORCEMENT."  Rep. Ilhan Omar is unloading on ICE after their agent fatally shot a 37-year-old woman during today's raid. She's calling it a reckless tragedy that snuffed out a "legal observer" and slamming the Trump crew https://t.co/WRexYTxdmg" (14055 views, 49 likes) https://x.com/i/status/2009004614763606311
+- CSPAN: ".@GovTimWalz: “We have been warning for weeks that the Trump administration's dangerous sensationalized operations are a threat to our public safety…To Minnesotans I say this: I feel your anger. I'm angry…To Donald Trump and Kristi Noem, you have done enough.” https://t.co/IEEL8K9qq1" (13349 views, 273 likes) https://x.com/i/status/2009006400589152618
+- BBC News (UK): "Man shot dead by police had been carrying air gun https://t.co/zpVHh4pxbC" (13502 views, 10 likes) https://x.com/i/status/2009013421098815613
+- Mario Nawfal: "🇺🇸 REP STAUBER ON MINNEAPOLIS ICE SHOOTING: "HATE SPEECH GAVE GREEN LIGHT TO ATTACK COPS" Rep. Pete Stauber is calling out local leaders in Minneapolis and St. Paul for months of "hateful rhetoric" against law enforcement. He's saying it basically handed protesters a pass to go https://t.co/hPVGbhz2H3" (12778 views, 98 likes) https://x.com/i/status/2009010906567725265
+- Mario Nawfal: "🇺🇸 GOV WALZ ABOUT DHS ON MINNEAPOLIS ICE SHOOTING: "DON'T BELIEVE THIS PROPAGANDA MACHINE!" Gov. Tim Walz is pushing back hard against the feds' narrative on the fatal clash, vowing a state probe for real answers. "I've seen the video. Don't believe this propaganda machine. https://t.co/I3cJB4bKU4" (12483 views, 43 likes) https://x.com/i/status/2009008389725278428
+- World of Statistics: "🇺🇸 Electricity generation in the US in 2024/2025: 🔥 Gas: 39.9% ⚛️ Nuclear: 17.3%  🪨 Coal: 16.4% 💨 Wind: 10.2% ☀️ Solar: 7.9% 🌊 Hydropower: 5.8% 🌿 Biofuels: 1.1% 🛢️ Oil: 0.7% 🌋 Geothermal: 0.3% ⬅️ Net imports: 0.2% 🛢️ Unspecified fossil fuels: 0.2% Source: LowCarbonPower" (12422 views, 47 likes) https://x.com/i/status/2009013926021779766
+- CSPAN: ".@SenTimKaine: "The vote tomorrow on the war powers resolution is not about whether we like Nicolas Maduro…He's a bad guy, he's a dictator…It's...whether the United States should engage in military action against Venezuela on a presidential say-so without a vote of Congress." https://t.co/awhxP4KsWH" (12083 views, 151 likes) https://x.com/i/status/2008999422919582148
+- Mario Nawfal: "🚨🇺🇸🇸🇴 BREAKING: REP LUNA REFERS WALZ &amp; ELLISON TO DOJ OVER SOMALI SCAM COMPLICITY Big move from Rep. Anna Paulina Luna, she's straight-up referring Gov. Walz and AG Keith Ellison to the DOJ for criminal charges. Testimony nails them as knowingly in on a massive Somali-linked https://t.co/WxGdOaxyFN" (12043 views, 132 likes) https://x.com/i/status/2009009648398159879
+- @jason: "Here’s an idea for our leaders…  @Tim_Walz “I spoke with President Trump, and we are united in turning down the temperature. We may disagree with deportations and on immigration, but we are all Americans and we are all in this together.  We are asking for everyone to be calm https://t.co/ufSTE5lY6T" (10683 views, 46 likes) https://x.com/i/status/2009016539870024113
+- @jason: "My lord, is there no leader who will turn down the rhetoric? https://t.co/ufSTE5mvWr" (10262 views, 46 likes) https://x.com/i/status/2009014964787532157
+- Tesla North America: "Not your average car speakers https://t.co/ohdwLK17Gy" (9735 views, 334 likes) https://x.com/i/status/2009006389948227703
+- Mario Nawfal: "🇺🇸 TESLA ENERGY TAKES THE CROWN: BIGGEST GLOBAL STORAGE PLAYER WITH RECORD 46.7 GWH DEPLOYED IN 2025 Tesla wrapped 2025 as the undisputed king of energy storage, pumping out a massive 46.7 GWh from their Megafactories in Lathrop, California, and Shanghai.  That's a wild jump https://t.co/M1NR7regFL" (9147 views, 40 likes) https://x.com/i/status/2009014735077802247
+- Mario Nawfal: "🇺🇸🇮🇹 SPACEX LAUNCHES ITALY’S NEXT-GEN SPY SATELLITE INTO ORBIT ELON'S ROCKET DOMINANCE KEEPS CRUSHING THE COMPETITION SpaceX just launched another Falcon 9 rocket, this time carrying Italy’s COSMO-SkyMed Second Generation satellite, it's basically high-tech space eyes for Earth. https://t.co/KWOtCLqmrm" (8863 views, 66 likes) https://x.com/i/status/2009015939598307491
+- History Defined: "The stress.... https://t.co/X6WoyIZL35" (8597 views, 26 likes) https://x.com/i/status/2008999620420984985
+- Everyday Astronaut: "I should’ve clarified not to tag @AJamesMcCarthy or @nevernorminal because they’re already coming!" (7882 views, 20 likes) https://x.com/i/status/2008996701076660246
+- This Day In Barstool Sports/Mario: "Nothing like being under the same roof as @StoolMintzy right @franciscellis?? https://t.co/ccKagf4q4K https://t.co/MTO7Wkb1Ha" (7340 views, 10 likes) https://x.com/i/status/2009003121121612066
+- @jason: "Everyone please stand down.  Go home.  Say a prayer for the dead and the officers involved in this tragedy.  We’re all Americans and we are in this together. https://t.co/UgMRpIfENI" (7036 views, 34 likes) https://x.com/i/status/2009017992710070615
+- @jason: "This person does not seem fit for office or mentally stable. https://t.co/2DLeu0TFb5" (6844 views, 68 likes) https://x.com/i/status/2009016891449463031
+- @jason: "Week one of 2026... https://t.co/WbDniiBUjR" (6812 views, 49 likes) https://x.com/i/status/2009005862409658754
+- Car Dealership Guy: "[NEWS] Geely is eyeing a U.S. market expansion: At CES, the Chinese-owned automaker signaled interest in bringing brands like Zeekr or Lynk &amp; Co stateside. And on paper, the path exists. Geely already owns Volvo, and U.S. production could help sidestep steep China tariffs." (6792 views, 2 likes) https://x.com/i/status/2009008488882876696
+- @jason: "😔 sigh https://t.co/z6YExhhIuy" (6164 views, 12 likes) https://x.com/i/status/2009017591449493602
+- ARK Invest: "Bitcoin is designed to be resilient and independent. The ARK 21Shares Bitcoin ETF offers investors a way to participate.  Learn more today: https://t.co/gNFOO31UsG  Prospectus: https://t.co/Qt7djOMgOq  An investment in ARKB is not a direct investment in bitcoin. Investors will https://t.co/vgCaPNP1qD" (5180 views, 15 likes) https://x.com/i/status/2009007197183672447
+- CSPAN: "LIVE now on C-SPAN: Gov. Tim Walz (D-MN) holds briefing on ICE-related shooting in Minneapolis https://t.co/eDYOc0E8M0" (4924 views, 18 likes) https://x.com/i/status/2009002701775139233
+- Ross Gerber: "Murdering US citizens is well beyond any immigration mandate. https://t.co/tS9BOG4Jto" (4743 views, 23 likes) https://x.com/i/status/2009012376562188794
+- TESLARATI: "🚨 How I’ve gotten Tesla Full Self-Driving for free…until now Watch me subscribe to Tesla FSD! https://t.co/cs5CmN5PdJ https://t.co/bjK7EEOptR" (4750 views, 6 likes) https://x.com/i/status/2009010421777502619
+- World and Science: ""Arizona Field of Stars" An amazing view of a clear night filled with stars on Kitt Peak National Observatory in Arizona. (Credit: Kitt Peak National Observatory/NOIRLab/NSF/AURA/P. Marenfeld) https://t.co/gOJoMLngbU" (4588 views, 16 likes) https://x.com/i/status/2009001639496024541
+- Ross Gerber: "About time !! https://t.co/NJDhgAWySM" (4397 views, 14 likes) https://x.com/i/status/2009001511800721458
+- Only In Boston: "The Boston Irish Famine Memorial was unveiled 27 years ago for the 150th anniversary of the Great Famine. Thousands of Irish refugees fled to Boston, including Patrick Kennedy, whose great grandson would become JFK. https://t.co/7bzwa3clfr" (4348 views, 33 likes) https://x.com/i/status/2009007131379261503
+- Only In Boston: "Boston Public Schools automatically opens a Boston Saves account for every student entering kindergarten through 3rd grade. Each account starts with $50 for college or career training." (3544 views, 31 likes) https://x.com/i/status/2009014680786710804
+- History Defined: "Ken Allen, an orangutan at the San Diego Zoo, became famous for his many successful escapes. During his escapes, he would peacefully stroll around the zoo looking at other animals. He never acted aggressively toward patrons, but would throw rocks at Otis, another orangutan he https://t.co/uwgwfhLGVT" (2457 views, 18 likes) https://x.com/i/status/2009014704639762641
+- WCVB-TV Boston: "Health officials promote vaccination amid surging flu season | Click on the image to read the full story https://t.co/oNpjCjZDbk" (2245 views, 0 likes) https://x.com/i/status/2009007168746295518
+- The Boston Globe: "The Celtics are seeking a fifth straight win against the shorthanded Denver Nuggets on Wednesday. https://t.co/1ZyThcn1ZW" (1731 views, 0 likes) https://x.com/i/status/2009007401958064302
+- The Boston Globe: "The Pittsburgh Post-Gazette announced it will stop publishing in May. https://t.co/oK8GWnwvxk" (1663 views, 0 likes) https://x.com/i/status/2009008938528669986
+- The Boston Globe: "Man, 21, arrested for alleged triple stabbing in Fairhaven https://t.co/6aSJolHsWk" (1636 views, 0 likes) https://x.com/i/status/2009012129844597015
+- Boston 25 News: "WATCH LIVE: Authorities speaking following death of Uxbridge police officer. https://t.co/KUXMd9VDuz" (1613 views, 5 likes) https://x.com/i/status/2009001831284818079
+- The Boston Globe: "Two police officers, civilian shot in Hinsdale https://t.co/nPElvYPyw8" (1584 views, 1 likes) https://x.com/i/status/2009012121678356956
+- The Boston Globe: "Republicans’ already slim House majority has grown even narrower, raising the stakes for November’s midterms and threatening the party’s control of Congress. See the charts. https://t.co/5TyeMymbgW" (1573 views, 3 likes) https://x.com/i/status/2009011843096777109
+- Patches O’Houlihan: "The worst addition https://t.co/yPNGQeTQt8" (1550 views, 23 likes) https://x.com/i/status/2009020132459499672
+- The Boston Globe: "The US population is projected to grow by 15 million in 30 years, a smaller estimate than in previous years, due to President Trump’s hard-line immigration policies and an aging population, the Congressional Budget Office said. https://t.co/LMJOnC2Nge" (1471 views, 2 likes) https://x.com/i/status/2009014923053994177
+- Boston 25 News: "Man dead after falling from roof in Danvers https://t.co/SdwXlJRm3w" (1435 views, 1 likes) https://x.com/i/status/2009003401724457399
+- Boston.com: "Cardi B was spotted in the produce section of a Mass. Star Market https://t.co/66XJgCGmYi" (1394 views, 1 likes) https://x.com/i/status/2008996949718868114
+- This Day In Barstool Sports/Mario: "If we had @StoolMintzy's nap streaming live he would do numbies.. @stoolpresidente @BarstoolTate https://t.co/6cLtQyNdzN" (1191 views, 4 likes) https://x.com/i/status/2009011494227464216
+- Boston 25 News: "25 Investigates: Cost nears $700K, questions linger over year after death of State Police recruit https://t.co/4btrLRF96j" (1163 views, 2 likes) https://x.com/i/status/2009007225688252903
+- Boston 25 News: "BREAKING UPDATE: Beloved Uxbridge police officer killed in crash while helping driver remembered as a hero, father, husband https://t.co/cK3AlgggR7" (1159 views, 4 likes) https://x.com/i/status/2009007402863984826
+- This Day In Barstool Sports/Mario: "Unfortunately....but hey time to pivot. Hey @NevSchulman wanna do a new episode of CATFISH on @StoolMintzy https://t.co/mFML4ymHF0 https://t.co/mJZrcx8LVq" (1154 views, 1 likes) https://x.com/i/status/2009019063717224620
+- The Boston Globe: "Waltham man, 29, gets 14 years in prison for 12 unprovoked attacks in 2020 https://t.co/XC8amMVar7" (1095 views, 1 likes) https://x.com/i/status/2009018087807312225
+- Boston 25 News: "From Harbor to Table: Hingham, Winthrop, and Hull residents soon able to harvest shellfish https://t.co/zskojAVKPI" (1077 views, 1 likes) https://x.com/i/status/2009010939681440012
+- Phys.org: "##StringTheory’s geometric principles accurately predict the complex branching patterns of #BiologicalNetworks, offering new insight into how nature organizes structures in three dimensions. @rpinews @nature https://t.co/Wa1QHxSJm1 https://t.co/TtQ2mbzPVL" (1064 views, 6 likes) https://x.com/i/status/2009007529993412705
+- Boston Police Dept.: "Officers Arrest Suspect on a Commercial Burglary in Downtown Boston https://t.co/KHnZbyHFGo" (1009 views, 1 likes) https://x.com/i/status/2009010024547528867
+- 7News Boston WHDH: "Electrical explosion, smoke, forces evacuation at Middleton House of Correction https://t.co/o9drAWMoxc" (997 views, 2 likes) https://x.com/i/status/2008999586547765519
+- Boston.com: "What do you think of the new federal guidelines to avoid processed foods? https://t.co/a05ZC5eJp1" (831 views, 0 likes) https://x.com/i/status/2009010407311028662
+- @jason: "There’s far too much pressure on the self-driving car companies by stock promoters at the moment.  These firms should all slow down and take their time… we have to make sure the technology is not just better than humans, but 100x better than humans." (783 views, 5 likes) https://x.com/i/status/2009021339592741342
+- 7News Boston WHDH: "SEE THE GOOD: Local teenager runs state probation service for a day https://t.co/mVSrlk7d6j" (770 views, 0 likes) https://x.com/i/status/2009007179689288132
+- 7News Boston WHDH: "Worker dies after falling from roof in Danvers https://t.co/9nTPQi5raD" (693 views, 0 likes) https://x.com/i/status/2009014680874819780
+- Boston 25 News: "#WATCH: "In our eyes, he was a hero."  During an afternoon press conference, Uxbridge Chief Marc Montminy shared that Officer Stephen LaPorta, who was hit and killed by a tractor-trailer overnight while helping a motorist, had been promoted to a full-time officer in 2024 - his https://t.co/SFmHkEyog3" (661 views, 1 likes) https://x.com/i/status/2009017335026274436
+- The Boston Globe: "The Trump administration’s crackdown on the $12 billion Child Care and Development Fund, which subsidizes care for 1.4 million children from low-income households, has rattled child care providers and families that rely on the aid money. https://t.co/J6YGbrUZRK" (549 views, 0 likes) https://x.com/i/status/2009020754440904737
+- WCVB-TV Boston: "An Uxbridge police officer was killed early Wednesday morning while responding to a crash. The department says Officer Stephen LaPorta and his cruiser were struck by a tractor trailer. What we know: https://t.co/NmGaU3F5Sp https://t.co/4mIJPEfvd9" (530 views, 0 likes) https://x.com/i/status/2009018566989771016
+- NBC10 Boston: "BREAKING: Two police officers and a civilian were shot in an incident in western Massachusetts on Wednesday morning. https://t.co/ZBeGoSHDXT" (449 views, 1 likes) https://x.com/i/status/2009001555886797072
+- Zade 🇸🇰: "Sesko finally getting service 🙏 👏" (431 views, 2 likes) https://x.com/i/status/2009016177536979298
+- The Limiting Factor: "Democrats really need to stop telling people to fight back against ICE. Grok summary linked below. https://t.co/oBYinSeUmZ" (421 views, 6 likes) https://x.com/i/status/2009020029954871805
