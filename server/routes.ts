@@ -191,12 +191,7 @@ export function registerRoutes(app) {
     try {
       console.log('🧪 Testing raw xAI Live Search responses');
       
-      // Import OpenAI client
-      const OpenAI = (await import('openai')).default;
-      const client = new OpenAI({
-        baseURL: "https://api.x.ai/v1",
-        apiKey: process.env.XAI_API_KEY,
-      });
+      const { callXAIWithTools } = await import('./services/xaiSearchClient.js');
       
       const rawResponses = [];
       
@@ -205,28 +200,29 @@ export function registerRoutes(app) {
       console.log(`🔍 Testing raw xAI response for: ${topic}`);
       
       try {
+        const responsePromise = callXAIWithTools({
+          model: "grok-4",
+          messages: [
+            {
+              role: "user",
+              content: `Get latest news about ${topic} from from the last 24 hours. Include source URLs in your citations.`
+            }
+          ],
+          tools: [
+            { type: "x_search" },
+            { type: "web_search" }
+          ],
+          maxTokens: 2000
+        });
+        
         const response = await Promise.race([
-          client.chat.completions.create({
-            model: "grok-4",
-            messages: [
-              {
-                role: "user",
-                content: `Get latest news about ${topic} from from the last 24 hours. Include source URLs in your citations.`
-              }
-            ],
-            search_parameters: {
-              mode: "on",
-              max_search_results: 15,
-              return_citations: true
-            },
-            max_tokens: 2000
-          }),
+          responsePromise,
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error('Request timeout')), 30000)
           )
         ]);
         
-        const content = response.choices[0].message.content;
+        const content = response.content;
         const citations = response.citations || [];
         
         console.log(`📄 Raw response received: ${content.length} chars, ${citations.length} citations`);
@@ -243,8 +239,8 @@ export function registerRoutes(app) {
             content: content,
             citations: citations,
             responseMetadata: {
-              model: response.model,
-              usage: response.usage
+              model: response.model || 'unknown',
+              usage: response.usage || {}
             }
           }
         });

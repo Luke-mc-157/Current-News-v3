@@ -28,14 +28,14 @@ Preferred communication style: Simple, everyday language.
 - **Schema**: Supports users, topics, headlines, podcast settings, scheduled podcasts, and RSS feeds.
 
 ### Key Features
-- **xAI Live Search System**: Fully parallel processing for both xAI API calls and article fetching, integrating web, X, news, and RSS sources for real-time data and ultra-fast responses (5-7 seconds total regardless of topic or article count). Includes X timeline integration for personalized content.
-- **RSS Feed Integration System**: Allows users to add/remove RSS feeds, which are automatically integrated into xAI Live Search for enhanced content compilation.
+- **xAI Tools-Based Search System**: Uses xAI's new Tools API (x_search + web_search) via direct fetch calls through `xaiSearchClient.js` helper. Fully parallel processing for both xAI API calls and article fetching. Includes X timeline integration for personalized content. Migrated from deprecated search_parameters API (retiring Jan 12, 2026).
+- **RSS Feed Integration System**: Allows users to add/remove RSS feeds, fetched separately via `rssService.js` and compiled into prompt context. RSS data flows through the separate fetch pipeline (not through xAI search tools).
 - **Podcast Generation System**: Fetches full text from X posts and article URLs, uses xAI Grok-4-0709 for factual script generation, integrates ElevenLabs API for voice synthesis, and offers web player/email distribution. Supports duration and voice selection.
 - **Automated Podcast Delivery System**: Comprehensive scheduling with user preferences (topics, duration, voice, delivery times, timezone), 7-day rolling schedule, and automated processing (headline generation → script creation → audio synthesis → email delivery). Uses stateless delivery system with no retry mechanisms to prevent duplicate API consumption.
 - **Security & Reliability**: Includes robust session security, development isolation, payload compression, graceful shutdown, global error handling, and enhanced database retry logic.
 
 ### Technical Implementations
-- **Modular Services**: `liveSearchService.js`, `xAuth.js`, `xTimeline.js`, `xaiAnalyzer.js`, `contentFetcher.js`, `podcastGenerator.js`, `voiceSynthesis.js`, `emailService.js`, `podcastScheduler.js` (stateless design with no overdue processing).
+- **Modular Services**: `liveSearchService.js`, `xaiSearchClient.js` (shared helper for xAI Tools API), `xAuth.js`, `xTimeline.js`, `xaiAnalyzer.js`, `contentFetcher.js`, `podcastGenerator.js`, `voiceSynthesis.js`, `emailService.js`, `podcastScheduler.js` (stateless design with no overdue processing).
 - **Data Flow**: User input topics initiate backend workflow. xAI Live Search fetches and compiles content. xAI generates newsletters/headlines. Optional podcast generation with voice synthesis. Delivery via download, email, or scheduled automation.
 - **Timezone Handling**: Consistent timezone handling throughout the podcast scheduling pipeline using `date-fns` and `date-fns-tz`.
 - **X Token Refresh**: Automatic X authentication token refresh to maintain persistent user authentication.

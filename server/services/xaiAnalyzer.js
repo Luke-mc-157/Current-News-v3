@@ -1,29 +1,37 @@
 import OpenAI from "openai";
+import { callXAIWithTools } from './xaiSearchClient.js';
 
 const xai = new OpenAI({
   baseURL: "https://api.x.ai/v1",
   apiKey: process.env.XAI_API_KEY,
 });
 
-// Simple xAI helper for API calls
 async function callXAI(systemPrompt, userContent, searchParams = {}) {
   try {
+    const needsSearch = searchParams.mode === "on";
+
+    if (needsSearch) {
+      const tools = [{ type: "web_search" }, { type: "x_search" }];
+      const response = await callXAIWithTools({
+        model: "grok-3-fast",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userContent }
+        ],
+        tools,
+        responseFormat: { type: "json_object" }
+      });
+      return response.content;
+    }
+
     const response = await xai.chat.completions.create({
       model: "grok-3-fast",
       messages: [
-        {
-          role: "system",
-          content: systemPrompt
-        },
-        {
-          role: "user",
-          content: userContent
-        }
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userContent }
       ],
-      response_format: { type: "json_object" },
-      search_parameters: searchParams.mode ? searchParams : undefined
+      response_format: { type: "json_object" }
     });
-    
     return response.choices[0].message.content;
   } catch (error) {
     console.error(`xAI API error: ${error.message}`);

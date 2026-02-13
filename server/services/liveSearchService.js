@@ -6,6 +6,7 @@ import { fetchUserTimeline } from './xTimeline.js';
 import { storage } from '../storage.js';
 import { fetchRssArticles } from './rssService.js';
 import { createAuthenticatedClient } from './xAuth.js';
+import { callXAIWithTools } from './xaiSearchClient.js';
 
 const client = new OpenAI({
   baseURL: 'https://api.x.ai/v1',
@@ -1128,13 +1129,12 @@ ${timelineText}`;
 async function getTopicDataFromLiveSearch(topic) {
   console.log(`⏱️ Starting Live Search API call for topic: ${topic}`);
   
-  // Calculate 24-hour time window
   const now = new Date();
   const yesterday = new Date(now.getTime() - (24 * 60 * 60 * 1000));
   const fromDate = yesterday.toISOString().split('T')[0];
   const toDate = now.toISOString().split('T')[0];
   try {
-    const response = await client.chat.completions.create({
+    const response = await callXAIWithTools({
       model: "grok-4-latest",
       messages: [
         {
@@ -1148,36 +1148,30 @@ async function getTopicDataFromLiveSearch(topic) {
 If fewer than 4 stories, return only those. Ensure all content is neutral, factual, and verifiable.`
         },
       ],
-      search_parameters: {
-        mode: "on",
-        return_citations: true,
-        from_date: fromDate,
-        sources: [
-          {"type": "news", "country": "US"},
-          {"type": "web", "country": "US"},
-          {"type": "x", "post_favorite_count": 500, "post_view_count": 10000},
-          {"type": "rss", "links": ["https://rss.app/feeds/_HsS8DYAWZWlg1hCS.xml"]}
-        ]
-      },
-      max_tokens: 90000
+      tools: [
+        { type: "x_search", from_date: fromDate, to_date: toDate },
+        { type: "web_search" }
+      ],
+      maxTokens: 90000
     });
 
-        console.log(`📅 Search range: ${fromDate} (24 hours)`);
+    console.log(`📅 Search range: ${fromDate} to ${toDate} (24 hours)`);
     
-    const content = response.choices[0].message.content;
+    const content = response.content;
     const citations = response.citations || [];
     
     console.log(`📊 Live Search returned ${content.length} chars, ${citations.length} citations`);
     
-    // DEBUG: Log first few citations to see format
     if (citations.length > 0) {
       console.log(`🔍 DEBUG: First 3 citations for ${topic}:`);
       citations.slice(0, 3).forEach((citation, i) => {
-        console.log(`  [${i}]: ${citation}`);
+        console.log(`  [${i}]: ${typeof citation === 'string' ? citation : JSON.stringify(citation)}`);
       });
       
-      // Check for X/Twitter URLs specifically
-      const xUrls = citations.filter(url => url.includes('x.com') || url.includes('twitter.com'));
+      const xUrls = citations.filter(url => {
+        const urlStr = typeof url === 'string' ? url : url?.url || '';
+        return urlStr.includes('x.com') || urlStr.includes('twitter.com');
+      });
       console.log(`🐦 DEBUG: Found ${xUrls.length} X/Twitter URLs in citations`);
       if (xUrls.length > 0) {
         console.log(`🐦 DEBUG: X URLs:`, xUrls.slice(0, 3));

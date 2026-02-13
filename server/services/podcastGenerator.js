@@ -1,7 +1,6 @@
 // Service to generate podcast scripts using xAI
 import OpenAI from "openai";
 
-// Initialize xAI client
 const xai = new OpenAI({
   baseURL: "https://api.x.ai/v1",
   apiKey: process.env.XAI_API_KEY,
@@ -93,12 +92,9 @@ Remember: Write exactly what the voice should say. No formatting, no stage direc
           content: `Create a ${durationMinutes}-minute podcast script for "${podcastName}" using this comprehensive research data:\n\n${compiledData}\n\nFrom Your Feed appendix:\n${JSON.stringify(appendixContent, null, 2)}`
         }
       ],
-      search_parameters: {
-        mode: "on"
-      },
       reasoning_effort: "high",
       temperature: 0.4,
-      max_tokens: Math.max(15000, targetWordCount * 1.5) // Dynamic scaling: ensure sufficient tokens for longer podcasts
+      max_tokens: Math.max(15000, targetWordCount * 1.5)
     });
     
     const script = response.choices[0].message.content;
